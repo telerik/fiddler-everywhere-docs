@@ -6,6 +6,8 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 exclude_navigation: ["knowledge-base/*"]
 ## List your directory names and order here, like this:
 navigation:
+    knowledge-base:
+        position: 10
     getting-started:
         title: Getting Started
         position: 1
