@@ -6,7 +6,7 @@ publish: true
 ---
 
 # Allow Remote Computers to Connect
-Fiddler allows you to capture traffic from remote devices. 
+Fiddler allows you to capture traffic from remote devices. This article lists the steps you need to perform to achieve this.
 
 ## Enable the Allow Remote Computers to Connect Setting 
 
@@ -15,4 +15,5 @@ Fiddler allows you to capture traffic from remote devices.
 3. Ensure that __Allow remote computers to connect__ checkbox is checked.
 ![Allow Remote Connections Setting](../../../images/allow-remote-connections-setting.png)
 4. Click the __Save Changes__ button to save the changes.
-5. Fiddler is now ready to capture traffic from remote devices.
+
+__Fiddler is now ready to capture traffic from remote devices.__

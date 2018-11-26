@@ -13,3 +13,8 @@ res_type: kb
 How to install Fiddler root certificate on Mac OS
 
 ## Solution
+1. Go to your __Desktop__ and click on __FiddlerRootCertificate.crt__.
+2. In __Keychain Access__ click on __DO_NOT_TRUST_FiddlerRoot__ certificate to open the __Trust dialog__
+3. Choose __Always Trust__ in the __When using this certiciate__ dropdown.
+
+__Fiddler root certificate is now installed.__

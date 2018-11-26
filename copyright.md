@@ -5,7 +5,7 @@ description: Copyright
 slug: license-copyright
 tags: copyright
 published: True
-position: 1200
+position: 20
 ---
 
 # Copyright

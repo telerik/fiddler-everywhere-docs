@@ -4,43 +4,32 @@ url: "https://docs.telerik.com/fiddler-everywhere"
 # Exclude files which should not be in the output
 exclude: [README.md, Gemfile, Gemfile.lock]
 exclude_navigation: ["knowledge-base/*"]
-navigation:
 ## List your directory names and order here, like this:
+navigation:
     getting-started:
         title: Getting Started
         position: 1
-
-    configuration:
-        title: Configuration
+    user-guide:
+        title: User Guide
         position: 2
-
-    configuration/settings:
+    user-guide/settings:
         title: Settings
         position: 0
-
-    configuration/settings/general:
+    user-guide/settings/general:
         title: General
         position: 0
-
-    configuration/settings/https:
+    user-guide/settings/https:
         title: HTTPS
         position: 1
-
-    configuration/settings/connections:
+    user-guide/settings/connections:
         title: Connections
         position: 2
-
-    configuration/settings/gateway:
+    user-guide/settings/gateway:
         title: Gateway
         position: 3
-
-    configuration/toolbar:
+    user-guide/toolbar:
         title: Toolbar
         position: 1
-
-
-    knowledge-base:
-        title: "Knowledge Base"
 
 ## Product title
 product: "Progress Telerik Fiddler"
@@ -61,6 +50,7 @@ defaults:
         editable: true
 
 has_kb_portal: true
+has_api_reference: false
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: 84c25215-7f22-0eb3-160f-78751ef7a337
