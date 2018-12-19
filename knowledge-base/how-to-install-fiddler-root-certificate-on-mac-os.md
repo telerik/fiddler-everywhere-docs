@@ -7,7 +7,6 @@ tags: https, install, root certificate
 publish: true
 res_type: kb
 ---
-# How to Install Fiddler Root Certificate on Mac OS
 
 ## Description
 How to install Fiddler root certificate on Mac OS
