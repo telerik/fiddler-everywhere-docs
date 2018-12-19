@@ -7,7 +7,6 @@ tags: https, install, root certificate, firefox
 publish: true
 res_type: kb
 ---
-# How to Install Fiddler Root Certificate in Firefox on Linux
 
 ## Description
 How to install Fiddler root certificate in Firefox on Linux
