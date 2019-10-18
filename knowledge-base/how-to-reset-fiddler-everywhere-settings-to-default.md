@@ -47,4 +47,4 @@ To troubleshoot common issues, resetting the Fiddler Everywhere settings to defa
 
 #### Gateway Settings
 
-![default gateway settings](../images/default-gateway-settings.pmg)
+![default gateway settings](../images/default-gateway-settings.png)
