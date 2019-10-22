@@ -8,7 +8,6 @@ position:
 tags: how-to, default-settings
 ticketid: 1388381
 res_type: kb
-category: knowledge-base
 ---
 
 ## Environment
