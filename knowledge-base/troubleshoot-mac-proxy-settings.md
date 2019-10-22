@@ -56,5 +56,5 @@ When Fiddler Everywhere is open with the default settings, the System Proxy Sett
 ![mac proxy settings with proxy](../images/mac-proxy-settings-proxy-on.png)
 
 ### See Also
-[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
-[How-To Reset Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)
+*	[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
+*	[How-To Reset Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)
