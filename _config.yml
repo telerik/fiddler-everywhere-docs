@@ -6,34 +6,33 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 exclude_navigation: ["knowledge-base/*"]
 ## List your directory names and order here, like this:
 navigation:
-"installation":
-    title: Installation
-    position: 10
-"user-guide":
-    title: User Guide
-    position: 30
-    expanded: true
-"user-guide/settings":
-    title: Settings
-    position: 10
-    "user-guide/settings/general":
-        title: General
+    knowledge-base:
+        title: Knowledge Base
         position: 10
-    "user-guide/settings/https":
+    getting-started:
+        title: Getting Started
+        position: 1
+    user-guide:
+        title: User Guide
+        position: 2
+    user-guide/settings:
+        title: Settings
+        position: 0
+    user-guide/settings/general:
+        title: General
+        position: 0
+    user-guide/settings/https:
         title: HTTPS
-        position: 20
-    "user-guide/settings/connections":
+        position: 1
+    user-guide/settings/connections:
         title: Connections
-        position: 30
-    "user-guide/settings/gateway":
+        position: 2
+    user-guide/settings/gateway:
         title: Gateway
-        position: 40
-"user-guide/toolbar":
-    title: Toolbar
-    position: 20
-"knowledge-base":
-    title: Knowledge Base
-    position: 500
+        position: 3
+    user-guide/toolbar:
+        title: Toolbar
+        position: 1
 
 ## Product title
 product: "Progress Telerik Fiddler Everywhere"
