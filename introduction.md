@@ -6,7 +6,10 @@ publish: true
 position: 0
 ---
 # Welcome to Fiddler Everywhere!
-Progress® Telerik® Fiddler is a free web debugging proxy for any browser, system or platform.
+
+
+Progress ® Telerik ® Fiddler Everywhere is an open-source web debugging proxy for any browser, system or platform. This proxy server that runs on your Windows, Linux, or Mac platforms. 
+Locally running programs like web browsers, MS Office applications, and other clients send their HTTP and HTTPS requests to Fiddler Everywhere, which then forwards the traffic to a web server. The server’s responses are then returned to Fiddler Everywhere, which passes the traffic back to the client. Fiddler Everywhere can decrypt HTTPS traffic and display and modify the encrypted requests using a man-in-the-middle decryption technique.  
 
 ## Licensing
 License agreement and detailed information about the different licenses and which one you should acquire is available in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddler) section.
