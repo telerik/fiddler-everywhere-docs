@@ -14,9 +14,9 @@ Steps to install Fiddler proxy in your system:
 
 - Click on **Download Now** button the web page. 
 
-- Redirects to a page providing OS choice (Default option is the currently used OS). Click **Download for <your-OS>**  and **_Progress Telerik Fiddler.exe_** file gets downloaded. 
+- Redirects to a page providing OS choice (Default option is the currently used OS). Click **Download for <Your-OS-here>**, and **Progress Telerik Fiddler.exe** file gets downloaded. 
 
-- Run the **_Progress Telerik Fiddler.exe_** file. The installation process begins.
+- Run the **Progress Telerik Fiddler.exe** file. The installation process begins.
 
 - Create and login with your Fiddler credentials or use Google authentication login.
 

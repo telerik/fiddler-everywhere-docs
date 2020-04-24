@@ -12,6 +12,9 @@ navigation:
     user-guide:
         title: User Guide
         position: 20
+    user-guide/menu:
+        title: Fiddler's Main Menu
+        position: 5
     user-guide/settings:
         title: Settings
         position: 10
