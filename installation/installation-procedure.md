@@ -20,7 +20,7 @@ Steps to install Fiddler proxy in your system:
 
 4. Create and login with your Fiddler credentials or use Google authentication login.
 
-![login-screen](../images/login-screen-fiddler.png)
+![login-screen](../images/login/login-screen-fiddler.png)
 
 5. Fiddler Everywhere is ready for is to be used.
 

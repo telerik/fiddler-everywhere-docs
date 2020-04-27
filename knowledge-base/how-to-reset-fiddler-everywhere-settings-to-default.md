@@ -32,10 +32,6 @@ To troubleshoot common issues, resetting the Fiddler Everywhere settings to defa
 
  The following screenshots represent the Fiddler Everywhere Default Settings.
 
-#### General Settings
-
-![default general settings](../images/default-general-settings.png)
-
 #### HTTPS Settings
 
 ![default https settings](../images/default-https-settings.png)
