@@ -10,6 +10,11 @@ position: 30
 
 The __Gateway__ submenu provide options to easily configure how Fiddler Everywhere accesses the network. By default, Fiddler Everywhere "chains" to the system's default proxy. These settings allows you to overwrite that behavior.
 
+There are three select options in the submenu:
+- __Use system proxy (recommended)__ (default value)
+- __Manual proxy configuration__
+- __No proxy__
+
 ## Use system proxy
 
 - __Use system proxy (recommended)__ is the default selection. Fiddler uses the OS system proxy. Some browsers and many applications use the system proxy by default and re notified when it changes. 
@@ -40,3 +45,5 @@ The proxy bypass list supports wildcards and the special tokens `<local>` (meani
 ```
 
 ## No proxy
+
+Select __No proxy__ if you want to send all traffic directly to the origin server.
