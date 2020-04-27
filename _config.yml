@@ -18,18 +18,18 @@ navigation:
     user-guide/settings:
         title: Settings
         position: 10
-    user-guide/settings/general:
-        title: General
-        position: 10
     user-guide/settings/https:
         title: HTTPS
-        position: 20
+        position: 1
     user-guide/settings/connections:
         title: Connections
-        position: 30
+        position: 2
     user-guide/settings/gateway:
         title: Gateway
-        position: 40
+        position: 3
+    user-guide/settings/privacy:
+        title: Gateway
+        position: 4
     user-guide/toolbar:
         title: Toolbar
         position: 20

@@ -1,12 +1,14 @@
 ---
-title: Allow Remote Computers to Connect
+title: Connections
 slug: allow-remote-computers-to-connect
 tags: remote connections, remote traffic
 publish: true
+position: 20
 ---
 
 # Allow Remote Computers to Connect
-Fiddler allows you to capture traffic from remote devices. This article lists the steps you need to perform to achieve this.
+
+Fiddler Everywhere allows you to capture traffic from remote devices. This article lists the steps you need to perform to achieve this.
 
 ## Enable the Allow Remote Computers to Connect Setting 
 

@@ -12,18 +12,18 @@ The Progress ® Telerik ® Fiddler Everywhere.exe file is available for download
 
 Steps to install Fiddler proxy in your system: 
 
-- Click on **Download Now** button the web page. 
+1. Click on **Download Now** button the web page. 
 
-- Redirects to a page providing OS choice (Default option is the currently used OS). Click **Download for <Your-OS-here>**, and **Progress Telerik Fiddler.exe** file gets downloaded. 
+2. Redirects to a page providing OS choice (Default option is the currently used OS). Click **Download for <Your-OS-here>**, and **Progress Telerik Fiddler.exe** file gets downloaded.
 
-- Run the **Progress Telerik Fiddler.exe** file. The installation process begins.
+3. Run the **Progress Telerik Fiddler.exe** file. The installation process begins.
 
-- Create and login with your Fiddler credentials or use Google authentication login.
+4. Create and login with your Fiddler credentials or use Google authentication login.
 
 ![login-screen](../images/login-screen-fiddler.png)
 
-- Fiddler Everywhere is ready for is to be used.
+5. Fiddler Everywhere is ready for is to be used.
 
-- (Optional) Enable capturing and decoding secure traffic (HTTPS).
+6. (Optional) Enable capturing and decoding secure traffic (HTTPS).
 
 By default, the standard installation will allow you to track only non-secure HTTP traffic. To enable tracking and decoding of HTTPS, you will need to install a trusted certificate as shown [here]({% slug decrypt-https-traffic %}).
