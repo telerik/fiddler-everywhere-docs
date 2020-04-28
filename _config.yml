@@ -30,9 +30,24 @@ navigation:
     user-guide/settings/privacy:
         title: Gateway
         position: 4
-    user-guide/toolbar:
-        title: Toolbar
+    user-guide/live-traffic:
+        title: Live traffic
         position: 20
+    user-guide/live-traffic/sessions-list:
+        title: Saved Sessions
+        position: 1
+    user-guide/live-traffic/web-sessions:
+        title: Web Sessions List
+        position: 2
+    user-guide/live-traffic/inspectors:
+        title: Inspectors Tab
+        position: 4
+    user-guide/live-traffic/auto-responder:
+        title: Auto Responder Tab
+        position: 5
+    user-guide/composer:
+        title: Composer
+        position: 30
     knowledge-base:
         title: Knowledge Base
         position: 100
