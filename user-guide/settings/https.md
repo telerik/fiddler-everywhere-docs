@@ -17,7 +17,7 @@ The submenu provides the following options:
 - __Capture HTTPS traffic__ checkbox (in-active by default).
 
 
-## HTTPS Capturing for Windows & MacOS
+## HTTPS Capturing for Windows
 
 To enable HTTPS capturing & decoding on Windows or MacOS, use the __Trust Root Certificate__ option as follows:
 
@@ -28,6 +28,7 @@ A popup confirmation appears (__"Fiddler root certificate trusted successfully"_
 4. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
 5. Click the __Save__ button to save the changes.
 
+## HTTPS Capturing for Mac OS
 
 ## HTTPS Capturing for Linux
 
