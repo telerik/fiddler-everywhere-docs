@@ -34,13 +34,13 @@ navigation:
         title: Live traffic
         position: 20
     user-guide/live-traffic/web-sessions:
-        title: Web Sessions List
+        title: Web Sessions
         position: 1
     user-guide/live-traffic/inspectors:
-        title: Inspectors Tab
+        title: Inspectors
         position: 2
     user-guide/live-traffic/auto-responder:
-        title: Auto Responder Tab
+        title: Auto Responder
         position: 3
     user-guide/sessions-list:
         title: Saved Sessions

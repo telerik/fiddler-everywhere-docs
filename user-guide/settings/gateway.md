@@ -19,6 +19,8 @@ There are three select options in the submenu:
 
 - __Use system proxy (recommended)__ is the default selection. Fiddler uses the OS system proxy. Some browsers and many applications use the system proxy by default and re notified when it changes. 
 
+![Example manual proxy configuration](../../images/settings/gateway-system-proxy.png)
+
 ## Manual proxy configuration
 
 Select __Manual proxy configuration__  to specify the upstream proxy string (first textbox) and proxy bypass list (second textbox). 
@@ -43,6 +45,8 @@ The proxy bypass list supports wildcards and the special tokens `<local>` (meani
 ```
 <local>;*.extranet.example.com;
 ```
+
+![Example manual proxy configuration](../../images/settings/gateway-manual-proxy.png)
 
 ## No proxy
 

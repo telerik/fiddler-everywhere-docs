@@ -1,9 +1,9 @@
 ---
 title: Web Sessions List
-slug: saved-sessions-tab
+slug: web-sessions-list
 tags: web sessions, capturing traffic, live traffic
 publish: true
-position: 20
+position: 30
 ---
 
 # Web Sessions List
