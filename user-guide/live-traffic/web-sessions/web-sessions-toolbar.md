@@ -8,6 +8,8 @@ position: 20
 
 # Web Sessions Toolbar
 
+## General
+
 The Web Sessions toolbar provides various functionalities like streaming mode, decoding content, filtering by criteria, saving, and sharing sessions.
 
 ![Web Sessions Toolbar](../../../images/livetraffic/websessions/websessions-toolbar-all.png)
@@ -73,11 +75,11 @@ Use __Save__ buttton to save sessions for later use or to prepare sessions for s
 
 Sharing sessions greatly improves colaboration and Fiddler Everywhere provides several options to export and share sessions:
 
-- Sharing via __Share__ button from the __Web Sessions__ list toolbar.
-- Sharing via __Share__ button from the toolbar of already saved session (in __Saved Sessions__).
-- Sharing via __Share__ option from the __Web Sessions__ list context menu.
-- Sharing by exporting saved sessions in __SAZ__ format (context menu in __Saved Sessions__).
-- Sharing by exporting in different session formats (via [File menu]({%slug  file-menu%}#export-sessions))
+- Sharing [via __Share__ button from the __Web Sessions__ list toolbar](#share-live-traffic-sessions).
+- Sharing [via __Share__ button from the toolbar of already saved session (in __Saved Sessions__)](#share-previosly-saved-sessions).
+- Sharing [via __Share__ option from the __Web Sessions__ list context menu]({%slug web-sessions-list%}#share).
+- Sharing by exporting saved sessions in __SAZ__ format ([via context menu in __Saved Sessions__]({%slug saved-sessions-tab%}#export)).
+- Sharing by exporting in different session formats ([via __File menu__]({%slug  file-menu%}#export-sessions))
 
 This article demonstrates how to share sessions using the first two options. See the linked articles for examples on how to use exporting or sharing via the context menu.
 
@@ -108,4 +110,6 @@ The toolbar comes with __Share__ button that will save the currently displayed s
 
 ## Remove All
 
-The __Remove All__ button is removing all currently  captured traffic from the __Web Sessions__ list.
+The __Remove All__ button is removing __all__ currently captured traffic from the __Web Sessions__ list. To remove specific sessions only use the [context menu]({%slug web-sessions-list%}#remove)
+
+![Remove all captured traffic](../../../images/livetraffic/websessions/websessions-toolbar-remove.png)
