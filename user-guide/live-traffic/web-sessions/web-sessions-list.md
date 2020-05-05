@@ -49,13 +49,13 @@ The context menu for the Web Sessions list exposes several actions that can be a
 
 The context menu option __Save__ provides the means to save selected sessions. The saved sessions will appear in the __Saved Sessions__ (the list to the left of Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
 
-- __Selected sessions__ - Saves all selected sessions.
-- __Unselected sessions__ - Saves all unselected sessions.
-- __All Sessions__ - Saves all captured traffic.
+- __Selected sessions__ - Saves all selected sessions. Keyboard shortcut: __S__.
+- __Unselected sessions__ - Saves all unselected sessions. Keyboard shortcut: __Shift__ + __Cmd__ + __S__ (Mac)  __Shift__ + __S__ (Windows).
+- __All Sessions__ - Saves all captured traffic (Keyboard shortcut: __S__). Keyboard shortcut: __Cmd__ + __S__ (Mac)  __Ctrl__ + __S__ (Windows).
 
 All three options will display a save prompt.
 
-1. Choose a save option from the context menu
+1.  Select the sessions, open the context menu, and click on __Save__ option.
 ![Context menu Save options](../../../images/livetraffic/websessions/websessions-list-context-save-options.png)
 
 2. Enter your session name and click __Save__
@@ -79,7 +79,7 @@ The context menu option __Share__ enables the sharing of sessions. Before any se
 
 All three options will initially display a save prompt and then a share prompt window.
 
-1. Choose a share option from the context menu
+1. Select the sessions, open the context menu,  and click on __Share__ option.
 ![Context menu Share options](../../../images/livetraffic/websessions/websessions-list-share-options.png)
 
 2. The selected sessions are being saved. Enter your session name and click __Save and proceed__
@@ -90,12 +90,75 @@ All three options will initially display a save prompt and then a share prompt w
 
 >important Fiddler Everywhere has a quota limit for creating snapshots of sessions. Refer to the FIddler Everywhere plans page for details.
 
-
+>tip Alternatively, you can share captured traffic [via the __Share__ button from the toolbar]({%slug web-sessions-toolbar%}#share)
 
 ## Remove
+
+Use the __Remove__ context menu options to delete sessions from your __Web Sessions__ list. 
+
+- __Selected sessions__ - Removes all selected sessions. Keyboard shortcut: __Cmd__ + __Back__ (Mac), __Del__ (Windows).
+- __Unselected sessions__ - Removes all unselected sessions. Keyboard shortcut: __Shift__ + __Cmd__ + __Back__ (Mac), __Shift__ + __Del__ (Windows).
+- __All Sessions__ - Removes all captured traffic. Keyboard shortcut: __Cmd__ + __X__ (Mac), __Ctrl__ + __X__ (Windows).
+
+![Removing Sessions](../../../images/livetraffic/websessions/websessions-list-remove.png)
+
 ## Comment
+
+Use the __Comment__ context menu option to add comments for the assoiated sessions. 
+
+1. Select the sessions, open the context menu, and click on __Comment__ option. Keyboard shortcut: __M__.
+
+2. A __Comment__ dialog appears. Enter the comment and click __Ok__. 
+![Comment dialog](../../../images/livetraffic/websessions/websessions-list-comment-prompt.png)
+
+3. The text is added in the comment field for the selected sessions.
+![Comment Field](../../../images/livetraffic/websessions/websessions-list-comment-field.png)
+
 ## Mark
+
+Use the __Mark__ context menu option to apply different colors or to strikeouth selected sessions.
+
+1. Select the sessions, open the context menu, and click on __Mark__ option.
+
+2. Click on the preffered marking style to apply it.
+![Marking Sessions](../../../images/livetraffic/websessions/websessions-list-mark.png)
+
 ## Replay
+
+Use the __Replay__ context menu option to replay previosly captured session.  Keyboard shortcut: __R__.
+
+![Replay Request](../../../images/livetraffic/websessions/websessions-list-replay.png)
+
 ## Select
+
+Use the __Select__ context menu option to select sessions that are directly related to the currently selected session. The options are to select __parent__, __children__, and __duplicate__ sessions.
+
+- __Parent request__ Selects the session that is parent of the currently selected session. Keyboard shortcut: __P__
+- __Children requests__ Selects the sessions that are children of the currently selected session. Keyboard shortcut: __C__
+- __Duplicaterequest__ Selects the session that is a duplicate to the currently selected session. Keyboard shortcut: __D__
+
+![Select Parent & Child Sessions](../../../images/livetraffic/websessions/websessions-list-select-child.png)
+
 ## Copy
+
+Use the __Copy__ context menu option to place a session information in the clipboard. The copied information options are:
+
+- __URL__ Provides the session URL. Keyboard shortcut:__Cmd__ + __U__ (Mac), __Ctrl__ + __U__ (Windows)
+- __FUll Summary__ Provides verbose session details. Keyboard shortcut: __Cmd__ + __C__ (Mac), __Ctrl__ + __C__ (Windows)
+
+![Copying Session info](../../../images/livetraffic/websessions/websessions-list-copy-full.png)
+
+_Example for copying URL_
+```
+http://0.0.0.0:4000/fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png
+```
+
+_Example for copying full info_
+```
+#	RESULT	PROTOCOL	HOST	URL	METHOD	BODY	CACHING	CONTENT-TYPE	PROCESS	COMMENTS
+277	200	HTTP	0.0.0.0:4000	/fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png	GET	207,094	private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate	image/png; charset=utf-8		
+```
+
 ## Add New Rule
+
+![Adding new rule](../../../images/livetraffic/websessions/websessions-list-newrule.png)
