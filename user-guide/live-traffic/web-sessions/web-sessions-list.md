@@ -10,9 +10,9 @@ position: 30
 
 ## General
 
-The Web Sessions list is the most important feature of Fiddler Everywhere - it displays a short sumary of each Session that Fiddler Everywhere has captured.
+The Web Sessions list is an essential feature of Fiddler Everywhere - it displays a summary of each Session that Fiddler Everywhere has captured.
 
->tip A Web Session represents a single transaction between a client and a server, sometimes known as request/response pair. Each Session appears as a single entry in the Web Sessions List (refer to the images below). Each Session object has a Request and a Response, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the Session, and a Timers object that stores timestamps logged in the course of processing the Session.
+>tip A Web Session represents a single transaction between a client and a server, sometimes known as request/response pair. Each session appears as a separate entry in the Web Sessions List (refer to the images below). Each Session object has a Request and a Response, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the session, and a Timers object that stores timestamps logged in the course of processing the session.
 
 ![Web Sessions List](../../../images/livetraffic/websessions/websessions-list-all.png)
 
@@ -20,7 +20,7 @@ Many operations begin by selecting one or more entries in the Web Sessions list 
 - To select more than one Sessions, hold the __Ctrl__ (__Command__ on Mac) or __Shift__ keys while clicking on the desired rows.
 - Double-click or press __Enter__ (__Return__ on Mac) to activate the default inspectors for a single selected Session.
 
-When the Inspectors are activated, they will automatically decide which Inspector is best suited to display the selected Session's request and response.
+When the Inspectors are activated, they will automatically decide which Inspector is best suited to display the selected session's request and response.
 
 ### Web Sessions List Columns
 
@@ -104,28 +104,28 @@ Use the __Remove__ context menu options to delete sessions from your __Web Sessi
 
 ## Comment
 
-Use the __Comment__ context menu option to add comments for the assoiated sessions. 
+Use the __Comment__ context menu option to add comments for the associated sessions. 
 
-1. Select the sessions, open the context menu, and click on __Comment__ option. Keyboard shortcut: __M__.
+1. Select the sessions, open the context menu, and click on the __Comment__ option. Keyboard shortcut: __M__.
 
 2. A __Comment__ dialog appears. Enter the comment and click __Ok__. 
 ![Comment dialog](../../../images/livetraffic/websessions/websessions-list-comment-prompt.png)
 
-3. The text is added in the comment field for the selected sessions.
+3. The text is added to the comment field for the selected sessions.
 ![Comment Field](../../../images/livetraffic/websessions/websessions-list-comment-field.png)
 
 ## Mark
 
-Use the __Mark__ context menu option to apply different colors or to strikeouth selected sessions.
+Use the __Mark__ context menu option to apply different colors or to strikeout selected sessions.
 
 1. Select the sessions, open the context menu, and click on __Mark__ option.
 
-2. Click on the preffered marking style to apply it.
+2. Click on the preferred marking style to apply it.
 ![Marking Sessions](../../../images/livetraffic/websessions/websessions-list-mark.png)
 
 ## Replay
 
-Use the __Replay__ context menu option to replay previosly captured session.  Keyboard shortcut: __R__.
+Use the __Replay__ context menu option to replay previously captured sessions.  Keyboard shortcut: __R__.
 
 ![Replay Request](../../../images/livetraffic/websessions/websessions-list-replay.png)
 
@@ -133,7 +133,7 @@ Use the __Replay__ context menu option to replay previosly captured session.  Ke
 
 Use the __Select__ context menu option to select sessions that are directly related to the currently selected session. The options are to select __parent__, __children__, and __duplicate__ sessions.
 
-- __Parent request__ Selects the session that is parent of the currently selected session. Keyboard shortcut: __P__
+- __Parent request__ Selects the session that is a parent of the currently selected session. Keyboard shortcut: __P__
 - __Children requests__ Selects the sessions that are children of the currently selected session. Keyboard shortcut: __C__
 - __Duplicaterequest__ Selects the session that is a duplicate to the currently selected session. Keyboard shortcut: __D__
 
