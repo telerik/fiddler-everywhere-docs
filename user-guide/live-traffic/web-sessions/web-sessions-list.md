@@ -31,8 +31,8 @@ Certain key information is displayed in the columns of the Web Sessions list, in
 - __Protocol__ - The protocol (HTTP/HTTPS/FTP) used by the Session
 - __Host__ - The hostname and the port of the server to which the request was sent
 - __URL__ - The URL path, file, and query string from the request
-- __Method__ - The HTTP Method used by the request (GET, POST, etc,)
-- __Body__ - The number of bytes in the responze body
+- __Method__ - The HTTP Method used by the request (GET, POST, etc.)
+- __Body__ - The number of bytes in the response body
 - __Caching__ - Values from the Response's Expires and Cache-Control headers
 - __Content-Type__ The Content-Type header from the response
 - __Process__ The local OS process from which the traffic originated
@@ -40,31 +40,58 @@ Certain key information is displayed in the columns of the Web Sessions list, in
 
 ### Web Sessions Context Menu
 
-The context menu for the Web Sessions list exposes a number of actions that can be applied for a Session or multiple Sessions.
-- To invoke the context menu, press right click on Winows (__Control__ + mouse click on Mac).
+The context menu for the Web Sessions list exposes several actions that can be applied for a Session or multiple Sessions.
+- To show the context menu, press right-click on Windows (__Control__ + mouse click on Mac).
 
 ![Web Sessions list context menu](../../../images/livetraffic/websessions/websessions-list-context-menu.png)
 
 ## Save
 
-The menu option __Save__ provides means to save selected sessions. The saved sessions will appear in the __Saved Sessions__ (the list to the left of Fiddler Everywhere interface) from where they can be re-opened later, exported and shared.
+The context menu option __Save__ provides the means to save selected sessions. The saved sessions will appear in the __Saved Sessions__ (the list to the left of Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
 
-- Selected sessions - Saves all currently selected sessions.
-- Unselected sessions - Saves all currently unselected sessions.
-- All Sessions - All captured traffic will be saved.
+- __Selected sessions__ - Saves all selected sessions.
+- __Unselected sessions__ - Saves all unselected sessions.
+- __All Sessions__ - Saves all captured traffic.
 
-ALl three options will prompt a save dialog.
+All three options will display a save prompt.
 
+1. Choose a save option from the context menu
+![Context menu Save options](../../../images/livetraffic/websessions/websessions-list-context-save-options.png)
+
+2. Enter your session name and click __Save__
 ![Save session prompt](../../../images/livetraffic/websessions/websessions-list-context-save.png)
 
-The saved sessions are immediatly loaded in the __Saved Sessions__ list.
+3. The saved sessions are immediately loaded in the __Saved Sessions__ list.
 ![Saved Sessions list](../../../images/livetraffic/websessions/websessions-list-context-saved-list.png)
 
-Double-click on the saved session to load it in the __Web Sessions__ list.
+4. Double-click on the saved session to load it in the __Web Sessions__ list.
 ![Load saved session](../../../images/livetraffic/websessions/websessions-list-context-saved-loaded.png)
 
+>tip Alternatively, you can save all captured traffic [via the __Save__ button from the toolbar]({%slug web-sessions-toolbar%}#save)
 
 ## Share
+
+The context menu option __Share__ enables the sharing of sessions. Before any session is shared, it is saved as an entry in the __Saved Sessions__ list. Then the entry can be shared via email.
+
+- __Selected sessions__ - Saves & shares all selected sessions.
+- __Unselected sessions__ - Saves & shares all unselected sessions.
+- __All Sessions__ - Saves and shares all captured traffic.
+
+All three options will initially display a save prompt and then a share prompt window.
+
+1. Choose a share option from the context menu
+![Context menu Share options](../../../images/livetraffic/websessions/websessions-list-share-options.png)
+
+2. The selected sessions are being saved. Enter your session name and click __Save and proceed__
+![Save session prompt](../../../images/livetraffic/websessions/websessions-list-context-save.png)
+
+3. The share screen prompt window appears. Enter valid email and optionally add notes. Once ready, click __Share__.
+![Save session prompt](../../../images/livetraffic/websessions/websessions-list-share-email-window.png)
+
+>important Fiddler Everywhere has a quota limit for creating snapshots of sessions. Refer to the FIddler Everywhere plans page for details.
+
+
+
 ## Remove
 ## Comment
 ## Mark
