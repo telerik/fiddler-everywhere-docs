@@ -25,8 +25,8 @@ The __Rules Editor__ interface enables creating and editing rules. You need to e
 
 Tips:
 - Rules are applied in the order that they appear in the __Queue Viewer__. Hit the __Down Arrow__ to demote a rule.
-- You can export a list of rules via the __Up Arrow__ from the __Queue Viewer__ toolbar.
-- You can import a __*.SAZ__ or __*.FARX__ file to create rules based on previously captured traffic.
+- You can export the current queue of rules [via the __Export__ button]({%slug auto-responder-queue-viewer%}#export-rules) from the __Queue Viewer__ toolbar.
+- You can import a __*.FARX__ file [via the __Import__ button]({%slug auto-responder-queue-viewer%}#import-rules) to queue rules based on previously captured traffic.
 
 
 ## Match Rules
