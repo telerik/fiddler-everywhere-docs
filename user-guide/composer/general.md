@@ -1,18 +1,18 @@
 ---
 title: Composer
 slug: composer-tab
-tags: HTTP composer, send request, headers, body, GET, POST
+tags: HTTP composer, send request, headers, body, GET, POST, Fiddler Composer
 publish: true
 position: 10
 ---
 
 # Composer
 
-_content goes here_
+The __Composer__ tab enables you to manually build and send HTTP, HTTPS, and FTP requests.
 
 ## Get Started
 
-_content goes here_
+![Composer User Interface](../../images/composer/composer-all.png)
 
 ## HTTP Methods
 
