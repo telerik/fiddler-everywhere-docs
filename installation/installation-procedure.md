@@ -8,15 +8,13 @@ position: 20
 
 # Installation Procedure 
  
-The Progress ® Telerik ® Fiddler Everywhere.exe file is available for download on [Progress website](https://www.telerik.com/fiddler-everywhere). 
+Steps to install Fiddler Everywhere client on your system: 
 
-Steps to install Fiddler proxy in your system: 
+1. The Progress® Telerik® Fiddler Everywhere installer is available for download on the [Progress website](https://www.telerik.com/download/fiddler-everywhere).
 
-1. Click on **Download Now** button the web page. 
+2. Click **Download for <Your-OS-here>** to start downloading the installer for the respective operating system. The default operating system option is determined based on the currently used system.
 
-2. Redirects to a page providing OS choice (Default option is the currently used OS). Click **Download for <Your-OS-here>**, and **Progress Telerik Fiddler.exe** file gets downloaded.
-
-3. Run the **Progress Telerik Fiddler.exe** file. The installation process begins.
+3. Run the **Progress Telerik Fiddler.exe** file to start the installation process.
 
 4. Create and login with your Fiddler credentials or use Google authentication login.
 

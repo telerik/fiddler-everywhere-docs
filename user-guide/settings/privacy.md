@@ -8,26 +8,24 @@ position: 40
 
 # Privacy submenu
 
-The __Privacy__ submenu provide options to opt-out of receiving emails from Progress and its partners and the option to delete your Fiddler Everywhere associated account.
+The __Privacy__ submenu contains options to opt-out of receiving emails from Progress and its partners and the opportunity to request the deletion of your Fiddler Everywhere associated account.
 
-There are two options in the submenu:
+There are several options in the submenu:
 
 - __Unsubscribe from emails__
 - __Delete your Fiddler Account__
-- __Submit anonymous usage statistics__ checkbox
+- __Send anonymous usage statistics__ checkbox
+
+![Privacy settings](../../images/settings/privacy-all.png)
 
 ## Unsubscribe from emails
 
-To sumbit a request to unsubscribe from receiving future emails, click on the __Unsibscribe__ link. You will be redirected to a unsubscribe page where you should follow the given instructions.
-
-![Unsubscribe from emails](../../images/settings/privacy-unsub.png)
+To submit a request to unsubscribe from receiving future emails, click on the __Unsibscribe__ link. You will be redirected to a unsubscribe page where you should follow the given instructions.
 
 ## Delete your Fiddler Account
 
-To sumbit a request to click on the __Submut "Delete Account" request__ link. You will be reditected to a page where you should follow the given instructions.
+To submit a request to click on the __Submut "Delete Account" request__ link. You will be redirected to a page where you should follow the given instructions.
 
-![Unsubscribe from emails](../../images/settings/privacy-delete.png)
+## Send anonymous usage statistics
 
-## Submit anonymous usage statistics
-
-Checke/uncheck the option depending on whether you want to send anonymous usage statistic. Once the choice is made click on __Save Changes__ to apply then change.
+Check/uncheck the __Send anonymous usage statistics__ option depending on whether you want to send anonymous usage statistics. Once the choice is made, click on __Save Changes__ to apply then change.
