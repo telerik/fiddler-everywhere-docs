@@ -75,6 +75,6 @@ The __Request Composer__ is allowing you to further modify your request by addin
 
 ## Response Inspector
 
-With the __Request Inspector__, you can inspect the received response (from the executed request). The inspector provides several specific views to visualize specific parts of the request in specific formats. Find detailed information on each inspector type in the dedicated article about [__Inspector Types__]({%slug inspector-types%})
+With the __Response Inspector__, you can inspect the received response (from the executed request). The inspector provides several views to visualize different parts of the request in specific formats. Find detailed information on each inspector type in the dedicated article about [__Inspector Types__]({%slug inspector-types%})
 
 ![Response inspectors](../../images/composer/composer-response-inspectors.png)

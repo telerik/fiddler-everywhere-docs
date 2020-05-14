@@ -6,7 +6,7 @@ publish: true
 position: 20
 ---
 
-# Connections submenu
+# Connections
 
 The __Connections__ menu exposes some finer control over proxy settings and remote connection. 
 

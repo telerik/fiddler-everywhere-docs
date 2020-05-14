@@ -12,8 +12,6 @@ position: 30
 
 The Web Sessions list is an essential feature of Fiddler Everywhere - it displays a summary of each Session that Fiddler Everywhere has captured.
 
->tip A Web Session represents a single transaction between a client and a server, sometimes known as request/response pair. Each session appears as a separate entry in the Web Sessions List (refer to the images below). Each Session object has a Request and a Response, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the session, and a Timers object that stores timestamps logged in the course of processing the session.
-
 ![Web Sessions List](../../../images/livetraffic/websessions/websessions-list-all.png)
 
 Many operations begin by selecting one or more entries in the Web Sessions list and then activating other features.

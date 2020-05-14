@@ -20,5 +20,5 @@ The __Auto Responder__ is one of the most powerful features of Fiddler Everywher
 
 - The __Queue Rules Viewer__ list the currently used rules and provides additional control over them. The tab also exposes options to import/export rules files (__FARX__), to change the priority of the rules (of execution) and to entirely enable/disable the __Auto Responder__ or specific rules. See details on how to use the editor in the [__Queue Rules Viewer__ article]({%slug auto-responder-rules-editor%})
 
->tip You need o enable Live Traffic to _Capturing_ to be able to apply auto responder rules.
+>tip You need to enable Live Traffic _Capturing_ to be able to apply auto responder rules.
 

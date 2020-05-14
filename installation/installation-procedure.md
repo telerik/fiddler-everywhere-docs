@@ -20,8 +20,6 @@ Steps to install Fiddler Everywhere client on your system:
 
     ![login-screen](../images/login/login-screen-fiddler.png)
 
-5. Fiddler Everywhere is ready for is to be used.
+5. Fiddler Everywhere is ready to be used.
 
-6. (Optional) Enable capturing and decoding secure traffic (HTTPS).
-
-By default, the standard installation will allow you to track only non-secure HTTP traffic. To enable tracking and decoding of HTTPS, you will need to install a trusted certificate as shown [here]({% slug decrypt-https-traffic %}).
+>important By default, the standard installation will allow you to track only non-secure HTTP traffic. To enable tracking and decoding of HTTPS, you will need to install a trusted certificate as shown in the [HTTPS]({%slug decrypt-https-traffic%}) article.

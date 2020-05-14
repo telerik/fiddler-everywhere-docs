@@ -11,7 +11,7 @@ res_type: kb
 ## Description
 How to install Fiddler root certificate on Mac OS.
 
->tip Fidller Everywhere provides automatic option to install the root trust certtificate (administrative account still needed). Use [this documentation section]({%slug decrypt-https-traffic%}) as a reference and use the method below only if you need to add the certficate manually.
+>tip Fiddler Everywhere provides automatic option to install the root trust certtificate (administrative account still needed). Use [this documentation section]({%slug decrypt-https-traffic%}) as a reference and use the method below only if you need to add the certificate manually.
 
 ## Solution
 1. Go to your __Desktop__ and click on __FiddlerRootCertificate.crt__.

@@ -6,7 +6,7 @@ publish: true
 position: 10
 ---
 
-# Web Sessions Section
+# Web Sessions
 
 The Web Session section is one of the most important feature of Fiddler Everywhere. It display a short summary of each captured session (in the Web Session list) and provides functionalities to work with these sessions (via the Web Session toolbar and the Inspectors tabs). Fiddler Everywhere enables sessions saving and sharing.
 

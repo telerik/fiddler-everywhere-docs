@@ -8,28 +8,35 @@ position: 20
 
 # Inspector Types
 
+Fiddler's Inspectors are displaying the request and the response for the selected session in the __Web Sessions__ list. The inspectors are situated in the right panel with the Request inspectors above the Response inspectors.
+
+1. Double-click or press __Enter__ on a session (from the __Web Sessions__ list on the left). Request inspectors are shown at the top and Response inspectors are shown at the bottom (on the right panel)
+![Inspectors for Traffic Monitoring](../../../images/livetraffic/inspectors/inspectors-all.png)
+
+2. Click on desired Inspector's name (for example __Image__ or __Raw__) to switch the loaded inspector.
+![Inspector types](../../../images/livetraffic/inspectors/inspectors-all-types.png)
+
 The Inspectors allow you to view the content of each session's request and response in a variety of different formats. Fiddler supports multiple inspector types for the sessions' request (at the top) and response (at the bottom).
 
 ## Headers
 
-The __Headers__ inspector, allows you to view the HTTP headers of the request and the response. By default, the content of the __Headers__ inspector is read-only and can't be edited.
-
+The __Headers__ inspector, allows you to view the HTTP headers of the request and the response.
 ![Headers Inspector](../../../images/livetraffic/inspectors/inspectors-headers.png)
 
 There are some conceptual differences between Request Headers and Response Headers, as listed below.
 
 - Request Headers
 
-Every HTTP request begins with plaintext headers that describe what resource or operation is sought by the client.The first line of the request (the _"Request line"_) contains three values: the HTTP method (e.g. __GET__), the URL path which is being requested (e.g. __"/index.html"__), and the HTTP version (e.g. __"HTTP/1.2"__). Request line can be one of one or more lines containing name-value pairs of metadata about the request and the client, such as the _User-Agent_ and _Accept-Language_.
+Every HTTP request begins with plaintext headers that describe what resource or operation is sought by the client.The first line of the request (the _"Request line"_) contains three values: the HTTP method (for example __GET__), the URL path which is being requested (for example __"/index.html"__), and the HTTP version (for example __"HTTP/1.2"__). Request line can consist of one or more rows containing name-value pairs of metadata about the request and the client, such as the _User-Agent_ and _Accept-Language_.
 
 - Response Header
 
-Similar to an HTTP request, every HTTP response begins with plaintext headers that describe the result from the request. The first line of the response (the _"Status line"_) contains the HTTP version (e.g. __"HTTP/1.1"__), the response status code (e.g. __"200"__), and the response status text (e.g. __"OK"__). Following the _Status line_ are one or more lines containing name-value pairs of metadata about the response and the server, such as the length of the response file, the Content-Type, and information about how the response may be cached.
+Similar to an HTTP request, every HTTP response begins with plaintext headers that describe the result from the request. The first line of the response (the _"Status line"_) contains the HTTP version (for example __"HTTP/1.1"__), the response status code (for example __"200"__), and the response status text (for example __"OK"__). Following the _Status line_ are one or more lines containing name-value pairs of metadata about the response and the server, such as the length of the response file, the Content-Type, and information about how the response may be cached.
 
 
 ## Text
 
-The __Text__ inspector allows you to view the request and response bodies as text. The inspector truncates its display at the first null byte it finds, and as such, is unsuitable for displaying binary content.
+The __Text__ inspector allows you to view the request and response bodies as text. The  __Text__ inspector truncates the data it shows at the first null byte it finds, which makes it inappropriate choice for displaying binary content.
 
 Most of the inspector is a large text area that displays the body text interpreted using the character set detected using the headers, the byte-order-marker, or an embedded META tag declaration.
 
@@ -38,7 +45,7 @@ Most of the inspector is a large text area that displays the body text interpret
 
 ## Image
 
-The __Image__ inspector (__Response only__) allows you to view the response bodies as an image. The inspector can display most common web image formats, including JPEGs, PNGs, and GIFs, as well as less common formats including cursors, WebP, JPEG-XR, bitmaps, TIFF. The inspector does not support display or SVG graphics (SVG responses can be viewed using the __Web__ inspector).
+The __Image__ inspector (__Response only__) allows you to view the response bodies as an image. The inspector can display most common web image formats, including JPEG, PNG, and GIF, as well as less common formats like cursors, WebP, JPEG-XR, bitmaps, TIFF. The inspector does not support displaying SVG graphics (SVG responses can be viewed using the __Web__ inspector).
 
 ![Image Inspector](../../../images/livetraffic/inspectors/inspectors-image.png)
 
@@ -52,7 +59,7 @@ The __WebForms__ inspector (__Request only__) parses the request's query string 
 
 ## Web
 
-The __Web__ inspector (__Response only__) allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the __Web Sessions__ list), meaning that most images and styles will be not be displayed. Additionally, scripting and navigating are blocked, providing a read-only preview.
+The __Web__ inspector (__Response only__) allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the __Web Sessions__ list), meaning that most images and styles will not be displayed. Additionally, scripting and navigating are blocked, providing a read-only preview.
 
 
 ## Cookies

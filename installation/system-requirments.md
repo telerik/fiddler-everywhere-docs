@@ -14,4 +14,4 @@ Fiddler Everywhere is available for Windows, MacOS, and Linux. The application u
 
 - (Optional) Account with administrative rights.
 
->important By default, Fiddler Everywhere can be installed and used without administrative rights if you need to capture non-secure HTTP traffic. However, for capturing secure traffic (HTTPS), the user will need administrative rights to install and trust a root certificate (learn more [here]({% slug decrypt-https-traffic %})).
+>important By default, Fiddler Everywhere can be installed and used without administrative rights if you need to capture non-secure HTTP traffic. However, for capturing secure traffic (HTTPS), the user will need administrative rights to install and trust a root certificate For more information, check the [HTTPS]({%slug decrypt-https-traffic%})) article.

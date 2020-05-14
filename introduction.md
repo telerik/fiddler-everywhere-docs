@@ -8,11 +8,11 @@ position: 0
 
 # Welcome to Fiddler Everywhere!
 
-**Progress® Fiddler Everywhere** is an open-source web debugging proxy for any browser, system or platform. This proxy server that runs on your Windows, Linux, or Mac platforms. Locally running programs like web browsers, MS Office applications, and other clients send their HTTP and HTTPS requests to Fiddler Everywhere, which then forwards the traffic to a web server. The server’s responses are then returned to Fiddler Everywhere, which passes the traffic back to the client. Fiddler Everywhere can decrypt HTTPS traffic and display and modify the encrypted requests using a man-in-the-middle decryption technique.  
+Thank you for choosing [**Progress® Fiddler Everywhere**(https://www.telerik.com/fiddler-everywhere)]! The __Fiddler Everywhewre__ client is web debugging proxy. The client can be installed on Windows, Linux, Mac systems and supports multitude of different browsers and programs. Locally running programs like web browsers, MS Office applications, and other clients send their HTTP and HTTPS requests to Fiddler Everywhere, which then forwards the traffic to a web server. The server’s responses are then returned to Fiddler Everywhere, which passes the traffic back to the client. Fiddler Everywhere can display and modify the encrypted requests by decrypting the HTTPS traffic using a man-in-the-middle technique.  
 
 ## Licensing
 
-License agreement and detailed information about the different licenses and which one you should acquire is available in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddler) section.
+
 
 ## Installation
 
@@ -21,6 +21,10 @@ To learn how to install Fiddler Everywhere, visit the [Installation]({% slug ins
 ## Help us Improve the Fiddler Everywhere Documentation
 
 We believe the documentation is at its best when the content is a product of collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better, and we encourage you to help us with that task in the way that you choose:
+
+### Send Feedback
+
+Use the __Was this article helpful?__ functionality to give us feedback and idfeas on how we could improve the documentation.
 
 ### Create an Issue
 
