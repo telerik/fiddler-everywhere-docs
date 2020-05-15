@@ -1,5 +1,5 @@
 ---
-title: Composer
+title: General
 slug: composer-tab
 tags: HTTP composer, send request, headers, body, GET, POST, Fiddler Composer
 publish: true
@@ -53,24 +53,35 @@ From the __HTTP Version__ drop-down, you can select the following HTTP versions:
 
 ## Request Composer
 
-The __Request Composer__ is allowing you to further modify your request by adding your __Headers__, __Params__, and __Body__.
+The __Request Composer__ is allowing you to further modify your request by adding your custom __Headers__, __Params__, __Body__ and observing the composed request via the __Raw__ view.
 
-1. __Headers__ - Enables you to add/modify your request headers (e.g., like `Content-Type`, `Authorization`, etc.). 
+### Headers
+
+Enables you to add/modify your request headers (e.g., like `Content-Type`, `Authorization`, etc.). 
  - Add a new header by entering the header key-value pair and then clicking the tick.
  ![Adding header](../../images/composer/composer-headers-before.png)
  - The new header is added to your request. The header can now be disabled/enabled or completely deleted.
   ![Added header](../../images/composer/composer-headers-after.png)
 
-2. __Params__ - Enables you to add query parameters to your request URL easily. Any key-value pair added through the  __Params__ view will be automatically added to the request URL.
+>important Most of the servers using newer versions of TLS will require a **User-Agent** header to be set. By default, Fiddler Everywhere will a **User-Agent** key set with value **Fiddler Everywhere** and description **_Lets servers and network peers identify the application, operating system, vendor, and version of the requesting user agent_**. The header is non-mandatory, but keep in mind that without valid **User-Agent** some requests to secure servers might fail.
+![Default User-Agent](../../images/composer/composer-user-agent.png)
+
+### Params
+
+Enables you to add query parameters to your request URL easily. Any key-value pair added through the  __Params__ view will be automatically added to the request URL.
  - Add new query params by entering the params key-value pair and then clicking the tick.
  ![Adding header](../../images/composer/composer-params-before.png)
  - The new query params are added to your request URL. The params can now be disabled/enabled or completely deleted.
  ![Adding header](../../images/composer/composer-params-after.png)
 
 
-3. __Body__ - Enables you to manually specify the data that should be sent with the request.
+### Body
 
-4. __Raw__ - The view is a raw representation of the composed request. This view is non-editable.
+Enables you to manually specify the data that should be sent with the request.
+
+### Raw
+
+The view is a raw representation of the composed request. This view is non-editable.
 ![Raw view of the written request](../../images/composer/composer-raw-view.png)
 
 ## Response Inspector
