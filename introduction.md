@@ -8,11 +8,11 @@ position: 0
 
 # Welcome to Fiddler Everywhere!
 
-Thank you for choosing [**Progress® Fiddler Everywhere**(https://www.telerik.com/fiddler-everywhere)]! The __Fiddler Everywhewre__ client is web debugging proxy. The client can be installed on Windows, Linux, Mac systems and supports multitude of different browsers and programs. Locally running programs like web browsers, MS Office applications, and other clients send their HTTP and HTTPS requests to Fiddler Everywhere, which then forwards the traffic to a web server. The server’s responses are then returned to Fiddler Everywhere, which passes the traffic back to the client. Fiddler Everywhere can display and modify the encrypted requests by decrypting the HTTPS traffic using a man-in-the-middle technique.  
+Thank you for choosing [**Progress® Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere)! The __Fiddler Everywhewre__ client is web debugging proxy. The client can be installed on Windows, Linux, Mac systems and supports multitude of different browsers and programs. Locally running programs like web browsers, MS Office applications, and other clients send their HTTP and HTTPS requests to Fiddler Everywhere, which then forwards the traffic to a web server. The server’s responses are then returned to Fiddler Everywhere, which passes the traffic back to the client. Fiddler Everywhere can display and modify the encrypted requests by decrypting the HTTPS traffic using a man-in-the-middle technique.  
 
 ## Licensing
 
-
+Licensing agreement and detailed information about the different licenses and which one you should acquire is available in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere-beta) section.
 
 ## Installation
 

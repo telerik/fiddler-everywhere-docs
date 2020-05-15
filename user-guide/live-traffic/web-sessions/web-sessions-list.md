@@ -8,10 +8,7 @@ position: 30
 
 # Web Sessions List
 
-## General
-
 The Web Sessions list is an essential feature of Fiddler Everywhere - it displays a summary of each Session that Fiddler Everywhere has captured.
-
 ![Web Sessions List](../../../images/livetraffic/websessions/websessions-list-all.png)
 
 Many operations begin by selecting one or more entries in the Web Sessions list and then activating other features.
@@ -40,7 +37,6 @@ Certain key information is displayed in the columns of the Web Sessions list, in
 
 The context menu for the Web Sessions list exposes several actions that can be applied for a Session or multiple Sessions.
 - To show the context menu, press right-click on Windows (__Control__ + mouse click on Mac).
-
 ![Web Sessions list context menu](../../../images/livetraffic/websessions/websessions-list-context-menu.png)
 
 ## Save
@@ -97,7 +93,6 @@ Use the __Remove__ context menu options to delete sessions from your __Web Sessi
 - __Selected sessions__ - Removes all selected sessions. Keyboard shortcut: __Cmd__ + __Back__ (Mac), __Del__ (Windows).
 - __Unselected sessions__ - Removes all unselected sessions. Keyboard shortcut: __Shift__ + __Cmd__ + __Back__ (Mac), __Shift__ + __Del__ (Windows).
 - __All Sessions__ - Removes all captured traffic. Keyboard shortcut: __Cmd__ + __X__ (Mac), __Ctrl__ + __X__ (Windows).
-
 ![Removing Sessions](../../../images/livetraffic/websessions/websessions-list-remove.png)
 
 ## Comment
