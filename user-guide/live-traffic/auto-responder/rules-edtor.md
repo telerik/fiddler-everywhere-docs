@@ -45,13 +45,13 @@ Fiddler Everywhere will accept string literals, regular expressions, and a set o
 
 The __NOT:__ rule is applied only if the string does not match.
 
-- __NOT:EXAMPLE__ - Will match URLs that are not containing the **EXAMPLE** string.
+- __NOT:EXAMPLE__ - Will match URLs that do not contain the **EXAMPLE** string.
 ```
 NOT:google.com
 
 www.example.com/Path1/query=foo // (MATCH)
 ```
-- __NOT:path1/__ - Will match URL that are not containing **path1/**.
+- __NOT:path1/__ - Will match URL that do not contain **path1/**.
 ```
 NOT:path2/
 
@@ -59,7 +59,7 @@ www.example.com/path1/query=foo // (MATCH)
 www.example.com/path2/query=foo // (No Match)
 ```
 
-- __NOT:query__ - Will match URLs that are not containing **query**.
+- __NOT:query__ - Will match URLs that do not contain **query**.
 
 ### EXACT Match
 
@@ -98,18 +98,21 @@ www.example.com/Path1/query=somegif.gif // (MATCH)
 
 ## Action Strings
 
-Enter the __action string__. Beyond simply returning files, the __Auto Responder__ can perform some specific actions:
+Beyond simply returning files, the __Auto Responder__ can perform some specific actions:
 
-- __filename__  - Return contents of the filename as the response.
-- __http://targetURL__ - Returns the content of the __targetURL__ as the response.
-- __*redir:http://targetURL__ - Returns a HTTP Redirect to the target URL. Unlike the simple URL rule, this ensures that the client knows where its request is going so proper cookies are sent, etc.
-- __*bpu__ - Breaks on request before hitting the server. Non-final acti0on.
-- __*delay:####__ - Delay sending request to the server by __####__ of miliseconds. Non-final action.
-- __*header:Name=Value__ - Set the Request header with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. Non-final action.
-- __*flag:Name=Value__ - Set the Session Flag, with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. Non-final action.
-- __*CORSPreflightAllow__ - Returns a response that indicates that CORS is allowed.
-- __*reset__ - Reset the client connection immediately using a TCP/IP RST to the client.
-- __*drop__ - Close the client connection immediately without sending a response.
-- __*exit__ - Stop processing rules at this point.
+
+| Action String     | Description | Action Type |
+| :---- | :---- | :---- |
+| __filename__      | Return contents of the filename as the response. | Final |
+| __http://targetURL__ | Returns the content of the __targetURL__ as the response. | Final |
+| __*redir:http://targetURL__ | Returns a HTTP Redirect to the target URL. Unlike the simple URL rule, this ensures that the client knows where its request is going so proper cookies are sent, etc. | Final |
+| __*bpu__ | Breaks on request before hitting the server. | Non-final|
+| __*delay:####__ | Delay sending request to the server by __####__ of miliseconds. | Non-final |
+| __*header:Name=Value__ | Set the Request header with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. | Non-final |
+| __*flag:Name=Value__ | Set the Session Flag, with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. | Non-final |
+| __*CORSPreflightAllow__ | Returns a response that indicates that CORS is allowed. | Final |
+| __*reset__ | Reset the client connection immediately using a TCP/IP RST to the client. | Final |
+| __*drop__ | Close the client connection immediately without sending a response. | Final |
+| __*exit__ | Stop processing rules at this point. | Final |
 
 Rules with Non-final actions will allow the request to match multiple Auto Responder rules. As soon a rule specifying a final action is reached, the matching process exists, and no further rules are processed for that session.

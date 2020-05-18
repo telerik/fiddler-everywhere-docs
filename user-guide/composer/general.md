@@ -14,9 +14,9 @@ The __Composer__ tab enables you to manually build and send HTTP, HTTPS, and FTP
 
 The __Composer__ contains three major sections that are used to construct a request and observe the response.
 
-1. The top section contains a drop-down for selecting __HTTP Methods__, an __URL textfield__, a drop-down to select the used __HTTP version__, and an __Execute__ button.
-2. The mid-section is  a __request composer__ that provides options to further modify your request via __Headears__, __Body__, __Params__, or __Raw__ views.
-3. The bottom section is a __response inspector__, which shows the response from the made request.
+1. The top section contains a drop-down for selecting __HTTP Methods__, an __URL field__, a drop-down to select the used __HTTP version__, and an __Execute__ button.
+2. The mid-section is  a __request composer__ that provides options to further modify your request via __Headers__, __Body__, __Params__, or __Raw__ views.
+3. The bottom section is a __response inspector__, which shows the response from the executed request.
 
 ![Composer User Interface](../../images/composer/composer-sections.png)
 
@@ -24,20 +24,20 @@ The __Composer__ contains three major sections that are used to construct a requ
 
 The __Composer__ supports creating a request while using one of the following HTTP methods:
 
-1. __GET__
-2. __PUT__
-3. __POST__
-4. __DELETE__
-5. __HEAD__
-6. __TRACE__
-7. __SEARCH__
-8. __PROPFIND__
+- __GET__
+- __PUT__
+- __POST__
+- __DELETE__
+- __HEAD__
+- __TRACE__
+- __SEARCH__
+- __PROPFIND__
 
 ![HTTP Methods](../../images/composer/composer-http-methods.png)
 
-## URL TextField
+## URL Field
 
-The  __URL Textfiled__ is the place to endpoint URL for the composed request.
+The  __URL field__ is the place to endpoint URL for the composed request.
 ![URL Address textview](../../images/composer/composer-addresss-bar.png)
 
 ## HTTP Version selection
