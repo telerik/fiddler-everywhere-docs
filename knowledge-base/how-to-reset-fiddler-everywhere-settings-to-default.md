@@ -32,18 +32,14 @@ To troubleshoot common issues, resetting the Fiddler Everywhere settings to defa
 
  The following screenshots represent the Fiddler Everywhere Default Settings.
 
-#### General Settings
-
-![default general settings](../images/default-general-settings.png)
-
 #### HTTPS Settings
 
-![default https settings](../images/default-https-settings.png)
+![default https settings](../images/kb/default-https-settings.png)
 
 #### Connection Settings
 
-![default connection settings](../images/default-connection-settings.png)
+![default connection settings](../images/kb/default-connection-settings.png)
 
 #### Gateway Settings
 
-![default gateway settings](../images/default-gateway-settings.png)
+![default gateway settings](../images/kb/default-gateway-settings.png)

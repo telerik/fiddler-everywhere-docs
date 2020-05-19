@@ -48,12 +48,12 @@ The Fiddler Everywhere default settings will **Act as a System Proxy on Startup*
 #### Proxy Settings Off
 When Fiddler Everywhere is closed with the default settings, the System Proxy Settings will look like the following.
 
-![mac proxy settings no proxy](../images/mac-proxy-settings-no-proxy.png)
+![mac proxy settings no proxy](../images/kb/mac-proxy-settings-no-proxy.png)
 
 #### Proxy Settings On
 When Fiddler Everywhere is open with the default settings, the System Proxy Settings will look like the following.
 
-![mac proxy settings with proxy](../images/mac-proxy-settings-proxy-on.png)
+![mac proxy settings with proxy](../images/kb/mac-proxy-settings-proxy-on.png)
 
 ### See Also
 *	[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
