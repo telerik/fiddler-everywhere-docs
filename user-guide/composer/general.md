@@ -20,6 +20,8 @@ The __Composer__ contains three major sections that are used to construct a requ
 
 ![Composer User Interface](../../images/composer/composer-sections.png)
 
+>important Fiddler's Composer is adding by default its own `User-Agent` so that HTTPS rerequest could be sent properly. You could remove the default `User-Agent` header but notice that this could break composing a secure request (HTTPS). The default key-value
+
 ## HTTP Methods
 
 The __Composer__ supports creating a request while using one of the following HTTP methods:

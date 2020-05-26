@@ -48,6 +48,12 @@ navigation:
     user-guide/composer:
         title: Composer
         position: 40
+    get-started:
+        title: Get Started
+        position: 30
+    get-started/observe-traffic:
+        title: Observe Traffic
+        position: 1   
     knowledge-base:
         title: Knowledge Base
         position: 100
