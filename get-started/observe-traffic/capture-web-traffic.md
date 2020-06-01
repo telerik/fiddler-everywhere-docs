@@ -1,7 +1,7 @@
 ---
 title: Capture & Inspect Web Traffic
 slug: capture-observe-traffic
-tags: Fiddler Everywhere traffic, capture traffic, observe HTTPS sessions, inspect web traffic
+tags: Fiddler Everywhere traffic, capture traffic, observe HTTPS sessions, inspect web traffic, inspect web sessions
 position: 10
 ---
 
@@ -11,7 +11,9 @@ Fiddler Everywhere main feature is to capture and inspect web traffic through HT
 
 ## Capturing Web Traffic
 
-Fiddler Everywhere can capture web traffic (for example, from a browser) made via HTTP or HTTPS. Follow these steps to capture the traffic:
+Fiddler Everywhere can capture web traffic (for example, from a browser) made via HTTP or HTTPS. The captured traffic is listed as __Web Sessions__ (or just __sessions__) in the [__Web Sessions List__]({%slug web-sessions-list%}).
+
+Follow these steps to capture web traffic:
 
 - Open Fiddler Everywhere and focus the main [__Web Session List__ section.]({%slug web-sessions-general%}). Make sure that __Live Traffic__ is set to __Capturing__. To stop capturing the live traffic, switch it back to __Paused__.
 
@@ -31,7 +33,7 @@ Fiddler Everywhere provides functionality to inspect the already captured sessio
 
 Follow these steps to start inspecting a request & response:
 
-- Capture traffic (as described [here](#capturing-web-traffic))
+- Open Fiddler Everywhere and capture traffic (as described [here](#capturing-web-traffic))
 - Select a session row in the __Web Sessions List__.
 - To the right, at the top, is located the __Request Inspector__. You could choose a different inspector type to visualize the requested content. The default one is __Headers__.
 - To the right, at the bottom, is located the __Response Inspector__. You could choose a different inspector type to visualize the requested content. The default one is __Headers__.
