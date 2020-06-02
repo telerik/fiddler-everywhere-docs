@@ -14,49 +14,52 @@ navigation:
         position: 20
     user-guide/menu:
         title: Fiddler's Main Menu
-        position: 5
+        position: 205
     user-guide/settings:
         title: Settings
-        position: 10
+        position: 210
     user-guide/settings/https:
         title: HTTPS
-        position: 1
+        position: 2110
     user-guide/settings/connections:
         title: Connections
-        position: 2
+        position: 2120
     user-guide/settings/gateway:
         title: Gateway
-        position: 3
+        position: 2130
     user-guide/settings/privacy:
         title: Gateway
-        position: 4
+        position: 2140
     user-guide/live-traffic:
         title: Live traffic
-        position: 20
+        position: 220
     user-guide/live-traffic/web-sessions:
         title: Web Sessions
-        position: 1
+        position: 2210
     user-guide/live-traffic/inspectors:
         title: Inspectors
-        position: 2
+        position: 2220
     user-guide/live-traffic/auto-responder:
         title: Auto Responder
-        position: 3
+        position: 2230
     user-guide/sessions-list:
         title: Saved Sessions
-        position: 30
+        position: 230
     user-guide/composer:
         title: Composer
-        position: 40
+        position: 240
     get-started:
         title: Get Started
         position: 30
     get-started/observe-traffic:
         title: Observe Traffic
-        position: 1   
+        position: 310
+    get-started/sharing-traffic:
+        title: Share Traffic
+        position: 330  
     knowledge-base:
         title: Knowledge Base
-        position: 100
+        position: 90
 
 ## Product title
 product: "Progress Telerik Fiddler Everywhere"
