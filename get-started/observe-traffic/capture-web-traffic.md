@@ -37,5 +37,3 @@ Follow these steps to start inspecting a request & response:
 - Select a session row in the __Web Sessions List__.
 - To the right, at the top, is located the __Request Inspector__. You could choose a different inspector type to visualize the requested content. The default one is __Headers__.
 - To the right, at the bottom, is located the __Response Inspector__. You could choose a different inspector type to visualize the requested content. The default one is __Headers__.
-
->tip By default, Fiddler Everywhere is not capturing HTTPS traffic. Once, you e[nable capturing of secure traffic]({%slug decrypt-https-traffic%}), you might also need to [enable the __Decode__ option]({%slug web-sessions-toolbar%}#decode). This way, an encoded response will be decoded into a readable form.
