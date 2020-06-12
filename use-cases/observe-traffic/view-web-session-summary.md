@@ -5,7 +5,7 @@ tags: Web Sessions, Fiddler Everywhere sessions, captured traffic, inspect web s
 position: 20
 ---
 
-# View Web Sessions Summary
+## View Web Sessions Summary
 
 Each __Web Session__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Use these to identify HTTP related issues, to track and debug your site performance, and to leave custom comments.
 

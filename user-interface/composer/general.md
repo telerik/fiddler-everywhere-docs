@@ -6,7 +6,7 @@ publish: true
 position: 10
 ---
 
-# Composer
+## Composer
 
 The __Composer__ tab enables you to manually build and send HTTP, HTTPS, and FTP requests.
 

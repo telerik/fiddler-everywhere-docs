@@ -6,7 +6,7 @@ publish: true
 position: 1
 ---
 
-# Help Menu
+## Help Menu
 
 The **Help** menu provides an option to check for updates and install the latest version of Fiddler Everywhere.
 

@@ -6,55 +6,55 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 exclude_navigation: ["knowledge-base/*"]
 ## List your directory names and order here, like this:
 navigation:
-    installation:
-        title: Installation
-        position: 10
-    user-guide:
-        title: User Guide
-        position: 20
-    user-guide/menu:
-        title: Fiddler's Main Menu
-        position: 205
-    user-guide/settings:
-        title: Settings
-        position: 210
-    user-guide/settings/https:
-        title: HTTPS
-        position: 2110
-    user-guide/settings/connections:
-        title: Connections
-        position: 2120
-    user-guide/settings/gateway:
-        title: Gateway
-        position: 2130
-    user-guide/settings/privacy:
-        title: Gateway
-        position: 2140
-    user-guide/live-traffic:
-        title: Live traffic
-        position: 220
-    user-guide/live-traffic/web-sessions:
-        title: Web Sessions
-        position: 2210
-    user-guide/live-traffic/inspectors:
-        title: Inspectors
-        position: 2220
-    user-guide/live-traffic/auto-responder:
-        title: Auto Responder
-        position: 2230
-    user-guide/sessions-list:
-        title: Saved Sessions
-        position: 230
-    user-guide/composer:
-        title: Composer
-        position: 240
     get-started:
         title: Get Started
+        position: 10
+    user-interface:
+        title: User Interface
+        position: 20
+    user-interface/menu:
+        title: Fiddler's Main Menu
+        position: 205
+    user-interface/settings:
+        title: Settings
+        position: 210
+    user-interface/settings/https:
+        title: HTTPS
+        position: 2110
+    user-interface/settings/connections:
+        title: Connections
+        position: 2120
+    user-interface/settings/gateway:
+        title: Gateway
+        position: 2130
+    user-interface/settings/privacy:
+        title: Gateway
+        position: 2140
+    user-interface/live-traffic:
+        title: Live traffic
+        position: 220
+    user-interface/live-traffic/web-sessions:
+        title: Web Sessions
+        position: 2210
+    user-interface/live-traffic/inspectors:
+        title: Inspectors
+        position: 2220
+    user-interface/live-traffic/auto-responder:
+        title: Auto Responder
+        position: 2230
+    user-interface/sessions-list:
+        title: Saved Sessions
+        position: 230
+    user-interface/composer:
+        title: Composer
+        position: 240
+    use-cases:
+        title: Use Cases
         position: 30
-    get-started/observe-traffic:
+    use-cases/observe-traffic:
         title: Observe Traffic
         position: 310
-    get-started/sharing-traffic:
+    use-cases/sharing-traffic:
         title: Share Traffic
         position: 330  
     knowledge-base:

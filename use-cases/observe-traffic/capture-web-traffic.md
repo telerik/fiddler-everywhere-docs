@@ -5,7 +5,7 @@ tags: Fiddler Everywhere traffic, capture traffic, observe HTTPS sessions, inspe
 position: 10
 ---
 
-# Capture and Inspect Web Traffic
+## Capture and Inspect Web Traffic
 
 Fiddler Everywhere main feature is to capture and inspect web traffic through HTTP and HTTPS. Checking the captured traffic allows you to debug your web application while using [the Fiddler's Request and Response Inspectors]({%slug inspector-types%}).
 
