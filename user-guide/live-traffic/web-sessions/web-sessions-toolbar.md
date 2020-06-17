@@ -28,7 +28,7 @@ Streaming mode is useful for low-level network timing scenarios (for example, by
 
 ## Decode
 
-Use __Decode__ toggle button to remove all HTTP content and Transfer enconding from requests and responses.
+Use __Decode__ toggle button to remove all HTTP content and Transfer encoding from requests and responses.
 
 1. Click on the __Toggle__ button to enable/disable decoding the encoded content.
 ![Decode Toggle button](../../../images/livetraffic/websessions/websessions-toolbar-decode-toggle.png)
