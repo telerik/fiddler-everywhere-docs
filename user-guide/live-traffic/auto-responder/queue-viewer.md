@@ -6,7 +6,7 @@ publish: true
 position: 30
 ---
 
-# Queue Viewer
+## Queue Viewer
 
 The __Queue Viewer__ (a.k.a. __Queue Rules Viewer__) interface is a queue of the created auto responder rules. The __Queue Viewer__ allows the listed rules to be enabled and disabled, to be promoted and demoted (by changing their queue position), to be edited, to be exported and imported. The option to enable the __Auto Responder__ and to allow a non-matching request to pass-through is also part of the __Queue Viewer__.
 

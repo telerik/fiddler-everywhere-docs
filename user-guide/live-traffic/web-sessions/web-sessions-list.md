@@ -33,6 +33,8 @@ Certain key information is displayed in the columns of the Web Sessions list, in
 - __Process__ The local OS process from which the traffic originated
 - __Comments__ Field for showing the custom comments added by you (or the author of a shared session).
 
+See a detailed explanation for the values in each column in the [View Web Sessions Summary]({%slug web-session-summary%}) article.
+
 ### Web Sessions Context Menu
 
 The context menu for the Web Sessions list exposes several actions that can be applied for a Session or multiple Sessions.

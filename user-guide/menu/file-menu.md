@@ -6,7 +6,7 @@ publish: true
 position: 1
 ---
 
-# File Menu
+## File Menu
 
 The File menu contains commands to load and store captured traffics. The menu provides options to create and load an archive that includes the whole captured traffic (creates a SAZ file) as well as an option to import/export only specific sessions.
 

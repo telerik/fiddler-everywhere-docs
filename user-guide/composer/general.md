@@ -6,7 +6,7 @@ publish: true
 position: 10
 ---
 
-# Composer
+## Composer
 
 The __Composer__ tab enables you to manually build and send HTTP, HTTPS, and FTP requests.
 
@@ -19,6 +19,8 @@ The __Composer__ contains three major sections that are used to construct a requ
 3. The bottom section is a __response inspector__, which shows the response from the executed request.
 
 ![Composer User Interface](../../images/composer/composer-sections.png)
+
+>important Fiddler's Composer is adding by default its own `User-Agent` so that HTTPS rerequest could be sent properly. You could remove the default `User-Agent` header but notice that this could break composing a secure request (HTTPS). The default key-value
 
 ## HTTP Methods
 

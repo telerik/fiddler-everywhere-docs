@@ -7,7 +7,7 @@ position: 20
 ---
 
 
-# Rules Editor
+## Rules Editor
 
 The __Rules Editor__ interface enables creating and editing rules. You need to enter a __match rule__ and an __action string__, and Fiddler Everywhere will undertake the action if the request URI matches the __match rule__.
 

@@ -6,7 +6,7 @@ publish: true
 position: 10
 ---
 
-# HTTPS
+## Capturing Secure Traffic
 
 After the initial startup, the Fiddler Everywhere application could only capture non-secure traffic (HTTP) while SSL traffic is not captured. To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ submenu in __Settings__.
 
@@ -54,6 +54,7 @@ Some Linux distributions are using different security features and different way
 5. Click the __Save__ button to save the changes.
 
 >important Some Linux distributions like Ubuntu will use localized paths (for example, the __Desktop__ folder is renamed with the related word used in the locale language). That might cause for __step 3__ to fail due to a missing folder named __Desktop__ with an error message of type _Could not find a part of the path ..._. Until an out-of-the-box solution is implemented, you could easily workaround this issue by creating a folder called __Desktop__ at your root directory (`mkdir ~/Desktop`) and then export the certificate to the newly-created directory. Once the certificate is installed, you could safely remove the directory.
+
 
 ## See Also
 

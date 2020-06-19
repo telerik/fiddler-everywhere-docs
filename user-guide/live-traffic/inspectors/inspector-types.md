@@ -8,7 +8,7 @@ position: 20
 
 # Inspector Types
 
-Fiddler's Inspectors are displaying the request and the response for the selected session in the __Web Sessions__ list. The inspectors are situated in the right panel with the Request inspectors above the Response inspectors.
+Fiddler's Inspectors are displaying the **request** and the **response** for the selected session in the __Web Sessions__ list. The inspectors are situated in the right panel with the Request inspectors above the Response inspectors.
 
 1. Double-click or press __Enter__ on a session (from the __Web Sessions__ list on the left). Request inspectors are shown at the top and Response inspectors are shown at the bottom (on the right panel)
 ![Inspectors for Traffic Monitoring](../../../images/livetraffic/inspectors/inspectors-all.png)

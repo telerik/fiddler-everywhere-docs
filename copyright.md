@@ -8,7 +8,7 @@ published: True
 position: 90
 ---
 
-# Copyright
+## Copyright
  
 __© {{ site.time | date: '%Y' }} Progress Software Corporation and/or one of its subsidiaries or affiliates. All rights reserved.__
 
