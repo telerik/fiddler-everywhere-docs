@@ -6,9 +6,7 @@ publish: true
 position: 0
 ---
 
-# Welcome to Fiddler Everywhere!
-
-## Fiddler Everywhere
+## Welcome to Fiddler Everywhere!
 
 Thank you for choosing [**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) web debugging proxy. The client can be installed on Windows, Linux, and macOS systems and supports a multitude of browsers and programs. Locally-running programs like web browsers, MS Office applications, and other clients send their HTTP and HTTPS requests to Fiddler Everywhere, which then forwards the traffic to a web server. Then, the server’s responses are returned to Fiddler Everywhere, which passes the traffic back to the client. Fiddler Everywhere can display and modify the encrypted requests by decrypting the HTTPS traffic using a man-in-the-middle technique.  
 
