@@ -29,7 +29,7 @@ _For example:_ Open Google Chrome browser and enter `https://docs.telerik.com/fi
 
 ## Inspect Web Traffic
 
-Fiddler Everywhere provides functionality to inspect the already captured sessions. The live traffic sessions are composed of HTTP/HTTPS requests and responses. Each HTTP request can be observed in details through the **Request Inspector**. Each HTTP response can be observed in details through the **Response Inspector**. Both inspectors are powerful tools that can visualize the received content via different I [nspector types]({%slug inspector-types%}).
+Fiddler Everywhere provides functionality to inspect the already captured sessions. The live traffic sessions are composed of HTTP/HTTPS requests and responses. Each HTTP request can be observed through the **Request Inspector**. Each HTTP response can be observed through the **Response Inspector**. Both inspectors are powerful tools that can visualize the received content via different I [nspector types]({%slug inspector-types%}).
 
 Follow these steps to start inspecting a request & response:
 
