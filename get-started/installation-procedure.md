@@ -55,6 +55,7 @@ On most **Linux** distributions before the installation can be started, the user
 
     ![KDE setting executible](../images/installation/exec-kde.jpg)
 
+
 ## Update
 
 Steps to update Fiddler Everywhere to the latest version:

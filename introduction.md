@@ -46,3 +46,9 @@ We believe documentation is at its best when the content is a product of collabo
     Creating an issue is great, but what we love are pull requests. So, if you find an issue in the docs, or even feel like creating new content, we’d be happy to have your contributions! 
 
     In order to do this, you must fork our documentation and submit a pull request. That way, you may contribute an update exactly where you found the error. After that, our technical writing team will need to approve your change request. Please use only standard markdown. For more detailed instructions, please follow the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing) published in GitHub. You could directly initiate a pull request by using the __Improve this article__ functionality.
+
+
+## License
+
+Licensing agreement and detailed information about the different licenses and which one you should acquire is available in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere-beta) section.
+

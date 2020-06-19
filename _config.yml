@@ -9,43 +9,43 @@ navigation:
     get-started:
         title: Get Started
         position: 10
-    user-interface:
-        title: User Interface
+    user-guide:
+        title: User Guide
         position: 20
-    user-interface/menu:
+    user-guide/menu:
         title: Fiddler's Main Menu
         position: 205
-    user-interface/settings:
+    user-guide/settings:
         title: Settings
         position: 210
-    user-interface/settings/https:
+    user-guide/settings/https:
         title: HTTPS
         position: 2110
-    user-interface/settings/connections:
+    user-guide/settings/connections:
         title: Connections
         position: 2120
-    user-interface/settings/gateway:
+    user-guide/settings/gateway:
         title: Gateway
         position: 2130
-    user-interface/settings/privacy:
+    user-guide/settings/privacy:
         title: Gateway
         position: 2140
-    user-interface/live-traffic:
+    user-guide/live-traffic:
         title: Live traffic
         position: 220
-    user-interface/live-traffic/web-sessions:
+    user-guide/live-traffic/web-sessions:
         title: Web Sessions
         position: 2210
-    user-interface/live-traffic/inspectors:
+    user-guide/live-traffic/inspectors:
         title: Inspectors
         position: 2220
-    user-interface/live-traffic/auto-responder:
+    user-guide/live-traffic/auto-responder:
         title: Auto Responder
         position: 2230
-    user-interface/sessions-list:
+    user-guide/sessions-list:
         title: Saved Sessions
         position: 230
-    user-interface/composer:
+    user-guide/composer:
         title: Composer
         position: 240
     use-cases:
@@ -54,9 +54,6 @@ navigation:
     use-cases/observe-traffic:
         title: Observe Traffic
         position: 310
-    use-cases/sharing-traffic:
-        title: Share Traffic
-        position: 330  
     knowledge-base:
         title: Knowledge Base
         position: 90
