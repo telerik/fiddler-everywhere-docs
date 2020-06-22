@@ -1,7 +1,7 @@
 ---
 title: Installation
 slug: installation
-tags: installation
+tags: installation, accounts, updates
 publish: true
 position: 20
 ---
