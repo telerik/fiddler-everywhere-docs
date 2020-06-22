@@ -8,7 +8,7 @@ position: 40
 
 ## First Steps in Capturing Web Traffic
 
-Once Fiddler Everywhere is [installed]({%slug installation%}) and [configured]({%slug configuration-get-started%}) , it is time to utilize the main feature of the proxy client - Web traffic capturing. The client logs all HTTP and HTTPS traffic between your computer and the internet. You can analyze and debug the incoming & outgoing traffic from virtually any application that supports a proxy (like Google Chrome, Firefox, Microsoft Teams, Outlook, etc.). The already captured traffic can be used to debug issues, find performance bottlenecks, or share it with your teammates.
+Once Fiddler Everywhere is [installed]({%slug installation%}) and [configured]({%slug configuration-get-started%}) , it is time to utilize one of the main features of the proxy client - web traffic capturing. The client logs all HTTP and HTTPS traffic between your computer and the internet. You can analyze and debug the incoming & outgoing traffic from virtually any application that supports a proxy (like Google Chrome, Firefox, Microsoft Teams, Outlook, etc.). The already captured traffic can be used to debug issues, find performance bottlenecks, or share it with your teammates.
 
 Capturing traffic with Fiddler Everywhere is as easy as executing two steps:
 
@@ -18,6 +18,8 @@ Capturing traffic with Fiddler Everywhere is as easy as executing two steps:
 
 That's it! Your incoming and outgoing traffic will be immediately captured and displayed in the [Web Sessions List]({%slug web-sessions-list%}).
 
+>tip With **Live Traffic** turned on to **Capturing**, open a browser like Google Chrome and type an address (like `http://example.com`). Return to Fiddler Everywhere and you will immediatly notice that the request is intercepted and the Wewb Sessions List is populated. The **Result** field for that test address should return **200**. Your first request is now successfully captured with Fiddler!
+
 ## Next Steps
 
-Now that your traffic is captured, the next steps are to inspect it in detail. Learn more about [inspecting traffic with Fiddler Everywhere]({%slug inspecting-traffic-get-started%}).
+Now that your traffic is captured, the next steps are to inspect it in details. Learn more about [inspecting traffic with Fiddler Everywhere]({%slug inspecting-traffic-get-started%}).

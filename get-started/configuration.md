@@ -25,3 +25,7 @@ The **Connections** submenu located in [**_Settings >  Connections_**]({%slug co
 ## Proxy Configuration
 
 Advanced proxy configuration can set via the **Gateway** submenu in [**_Settings > Gateway_**]({%slug gateway-submenu%}). The default behavior is for Fiddler Everywhere to use the system proxy. Alternatively, the client exposes options to [set the upstream proxy with proxy bypass list]({%slug gateway-submenu%}#manual-proxy-configuration) or to directly [send all traffic to the origin server]({%slug gateway-submenu%}#no-proxy) option.
+
+## Next Steps
+
+Once the client is configured, you can start using its features. Learn how to [capture traffic]({%slug capture-traffic-get-started%}), [inspect traffic]({%slug inspecting-traffic-get-started%}), edit traffic, mock a server response, create an API request, or how to share captured sessions with teammates.
