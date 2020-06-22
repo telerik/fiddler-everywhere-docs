@@ -8,7 +8,7 @@ position: 20
 
 ## Installation 
  
-Steps to install Fiddler Everywhere client on your system: 
+Steps to install Fiddler Everywhere client on your system (Mac OS, Windows, or Linux): 
 
 1. The Fiddler Everywhere installer is available for download on the [Progress website](https://www.telerik.com/download/fiddler-everywhere).
 
@@ -26,7 +26,7 @@ Steps to install Fiddler Everywhere client on your system:
 
 ### Linux Installation
 
-On most **Linux** distributions before the installation can be started, the user needs to set the installation file as executable. This can be achieved via command line or via the GUI
+On most **Linux** distributions before the installation can be started, the user needs to set the installation file as executable. This can be achieved via the command line or via the GUI.
 
 - **Command line instructions**
 
@@ -55,6 +55,32 @@ On most **Linux** distributions before the installation can be started, the user
 
     ![KDE setting executible](../images/installation/exec-kde.jpg)
 
+
+## Create an Account
+
+Fiddler Everywhere account enables you to save and share sessions with collaborators and additionally provides access to the Pro features (if Pro version is purchased). Signing in is mandatory for both Free and Pro versions. You can sign up by [creating an unique Fiddler account](#create-new-fiddler-account) or by [using existing Google account](#use-google-account).
+
+### Create New Fiddler Account
+
+1. Launch Fiddler Everywhere application. The initial screen shows the **Sign In & Create Account** options. Click on **Create Account**.
+![Create new account - Step 1](../images/login/account-journey-001.png)
+
+2. The **Create Account** screen loads. Enter the requested information and accept the terms of the agreement. Note that the valid email provided here is the one that is later used for sharing and receiving sessions and notifications.
+![Create new account - Step 2](../images/login/account-journey-002.png)
+
+3. Fiddler sends a confirmation email to the provided address.
+![Create new account - Step 3. Confirmation email](../images/login/account-journey-003.png)
+
+4. Open the confirmation email and follow the instructions to complete the registration.
+![Create new account - Step 4. Complete registration](../images/login/account-journey-004.png)
+
+### Use Google Account
+
+Alternatively, you can directly sign in with an existing Google account.
+
+1. Launch Fiddler Everywhere application. 
+
+2. Click on **Sign in with Google** button.
 
 ## Update
 
