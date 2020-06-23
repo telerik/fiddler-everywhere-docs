@@ -58,9 +58,9 @@ On most **Linux** distributions before the installation can be started, the user
 
 ## Create an Account
 
-Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere client. You can sign up by [creating an unique Fiddler account](#create-new-fiddler-account) or by [using existing Google account](#use-google-account). The Fiddler Everywhere account enables you to save and share sessions with collaborators and additionally provides access to the Pro features (if Pro version is purchased).
+Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere client. You can sign up by [creating an unique Fiddler account](#create-fiddler-account) or by [using existing Google account](#use-google-account). The Fiddler Everywhere account enables you to save and share sessions with collaborators and additionally provides access to the Pro features (if Pro version is purchased).
 
-### Create New Fiddler Account
+### Create Fiddler Account
 
 1. Launch the Fiddler Everywhere client. The initial screen shows the **Sign In & Create Account** options. Click on **Create Account**.
 ![Create new account - Step 1](../images/login/account-journey-001.png)
