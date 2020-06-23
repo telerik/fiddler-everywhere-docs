@@ -6,11 +6,11 @@ publish: true
 position: 20
 ---
 
-# Inspector Types
+## Inspector Types
 
-Fiddler's Inspectors are displaying the **request** and the **response** for the selected session in the __Web Sessions__ list. The inspectors are situated in the right panel with the Request inspectors above the Response inspectors.
+Fiddler's Inspectors are displaying the **request** and the **response** for the selected session in the __Live Traffic__ list. The inspectors are situated in the right panel with the Request inspectors above the Response inspectors.
 
-1. Double-click or press __Enter__ on a session (from the __Web Sessions__ list on the left). Request inspectors are shown at the top and Response inspectors are shown at the bottom (on the right panel)
+1. Double-click or press __Enter__ on a session (from the __Live Traffic__ list). Request inspectors are shown at the top and Response inspectors are shown at the bottom (on the right panel)
 ![Inspectors for Traffic Monitoring](../../../images/livetraffic/inspectors/inspectors-all.png)
 
 2. Click on desired Inspector's name (for example __Image__ or __Raw__) to switch the loaded inspector.
@@ -59,7 +59,7 @@ The __WebForms__ inspector (__Request only__) parses the request's query string 
 
 ## Web
 
-The __Web__ inspector (__Response only__) allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the __Web Sessions__ list), meaning that most images and styles will not be displayed. Additionally, scripting and navigating are blocked, providing a read-only preview.
+The __Web__ inspector (__Response only__) allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the __Live Traffic__ list), meaning that most images and styles will not be displayed. Additionally, scripting and navigating are blocked, providing a read-only preview.
 
 
 ## Cookies
