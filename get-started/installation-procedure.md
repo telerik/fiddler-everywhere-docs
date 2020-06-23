@@ -58,11 +58,11 @@ On most **Linux** distributions before the installation can be started, the user
 
 ## Create an Account
 
-Fiddler Everywhere account enables you to save and share sessions with collaborators and additionally provides access to the Pro features (if Pro version is purchased). Signing in is mandatory for both Free and Pro versions. You can sign up by [creating an unique Fiddler account](#create-new-fiddler-account) or by [using existing Google account](#use-google-account).
+Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere client. You can sign up by [creating an unique Fiddler account](#create-new-fiddler-account) or by [using existing Google account](#use-google-account). The Fiddler Everywhere account enables you to save and share sessions with collaborators and additionally provides access to the Pro features (if Pro version is purchased).
 
 ### Create New Fiddler Account
 
-1. Launch Fiddler Everywhere application. The initial screen shows the **Sign In & Create Account** options. Click on **Create Account**.
+1. Launch the Fiddler Everywhere client. The initial screen shows the **Sign In & Create Account** options. Click on **Create Account**.
 ![Create new account - Step 1](../images/login/account-journey-001.png)
 
 2. The **Create Account** screen loads. Enter the requested information and accept the terms of the agreement. Note that the valid email provided here is the one that is later used for sharing and receiving sessions and notifications.
@@ -78,7 +78,7 @@ Fiddler Everywhere account enables you to save and share sessions with collabora
 
 Alternatively, you can directly sign in with an existing Google account.
 
-1. Launch Fiddler Everywhere application. 
+1. Launch the Fiddler Everywhere client. 
 
 2. Click on **Sign in with Google** button.
 
@@ -94,4 +94,4 @@ Steps to update Fiddler Everywhere to the latest version:
 
 ## Next Steps
 
-Once the Fiddler Everywhere client is installed, updated and stasrted with user account, you can review its [default configuration]({%slug configuration-get-started%}).
+Once the Fiddler Everywhere client is installed, updated and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).

@@ -8,9 +8,10 @@ position: 30
 
 ## HTTPS Configuration
 
-By default, Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client act as a man-in-the-middle (against the HTTPS traffic). To achieve that, the proxy must generate a root certificate and use that root certificate to create multiple end-entity certificates, one for each intercepted HTTPS site. 
+By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To achieve that, the proxy must generate a root certificate and use that root certificate to create multiple end-entity certificates, one for each intercepted HTTPS site. 
 
-Generate and trust the root certificate via the options provided in [**_Settings > HTTPS_**]({%slug decrypt-https-traffic%}) section. For specific related to enabling HTTPS capturing on the different operating system see the links below:
+Generate and trust the root certificate via the options provided in [**_Settings > HTTPS_**]({%slug decrypt-https-traffic%}) section. Generate and trust the root certificate via the options provided in [**_Settings > HTTPS_**]({%slug decrypt-https-traffic%}) section. For more details on how to enable HTTPS capturing
+ on different operating systems, see the links below:
 
 - For __Windows OS__ follow the steps described in [HTTPS capturing for Windows]({%slug decrypt-https-traffic%}#https-capturing-for-windows) documenation section.
 
