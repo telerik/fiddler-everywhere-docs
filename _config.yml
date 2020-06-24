@@ -88,6 +88,7 @@ google_tag_manager: GTM-6X92
 gcs_engine: '001595215763381649090:dyayucp6jmq'
 gcs_api_key: 'AIzaSyCR292MCaU5T4cBKtvla6ZJTpPjQuM6dtU'
 
+hide_contact_support: true
 edit_repo_url: https://github.com/telerik/fiddler-everywhere-docs/edit/master
 download: https://www.telerik.com/download/fiddler-everywhere
 nav:
