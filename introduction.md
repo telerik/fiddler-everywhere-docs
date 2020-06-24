@@ -19,11 +19,12 @@ Thank you for choosing [**Fiddler Everywhere**](https://www.telerik.com/fiddler-
 - Capture web traffic (HTTP & HTTPS).
 - Decrypt secure traffic (HTTPS).
 - Inspect captured sessions.
-- Compose and inspect requests.
-- Advanced features to modify and debug traffic via AutoResponder.
 - Save, share, and receive captured traffic with collaborators.
+- Compose and inspect requests.
+- Save composed requests in collections.
+- Advanced features to modify and debug traffic via AutoResponder.
 - In-app interactive tutorials.
-- Online feedback portal
+- Online feedback portal and documentation.
 
 ## Installation
 

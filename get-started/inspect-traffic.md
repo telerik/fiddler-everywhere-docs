@@ -17,3 +17,7 @@ With traffic already captured, the process of analyzing has begun. The first pla
 **Save** a selected session or multiple selected sessions [via the context menu]({%slug web-sessions-list%}#save) (alternatively via a keyboard shortcut). Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}) from which they can be reloaded or shared with collaborators.
 
 Inspecting sessions is often done with teammates or external collaborators. **Share** a selected session or multiple selected sessions directly from the [__Live Traffic__ list]({%slug web-sessions-list%}#share) or via the [__Sessions__ list]({%slug saved-sessions-tab%}).
+
+## Next Steps
+
+Get to know how to create or edit a session via the Composer, how to mock server response and how to share snapshots of sessions with collaborators.

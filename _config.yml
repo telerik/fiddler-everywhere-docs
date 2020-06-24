@@ -43,11 +43,14 @@ navigation:
         title: Auto Responder
         position: 2230
     user-guide/sessions-list:
-        title: Saved Sessions
+        title: Sessions list
         position: 230
     user-guide/composer:
         title: Composer
         position: 240
+    user-guide/requests-list:
+        title: Requests list
+        position: 250
     use-cases:
         title: Use Cases
         position: 30
