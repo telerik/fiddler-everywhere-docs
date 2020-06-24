@@ -8,23 +8,31 @@ position: 0
 
 ## Welcome to Fiddler Everywhere!
 
-Thank you for choosing [**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) web debugging proxy. The client can be installed on Windows, Linux, and macOS systems and supports a multitude of browsers and programs. Locally-running programs like web browsers, MS Office applications, and other clients send their HTTP and HTTPS requests to Fiddler Everywhere, which then forwards the traffic to a web server. Then, the server’s responses are returned to Fiddler Everywhere, which passes the traffic back to the client. Fiddler Everywhere can display and modify the encrypted requests by decrypting the HTTPS traffic using a man-in-the-middle technique.  
+[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool which logs all HTTP(S) traffic between your computer and the Internet, inspect and edit traffic, issue requets, and fiddle with incoming and outgoing data.
+
+**HTTP(S) traffic Inspection & Analysis**
+
+Fiddler Everywhere logs all HTTP(S) traffic between your computer and the internet. It captures traffic from virtually any application that supports a system proxy.
+
+**Request and Response Mocking**
+
+Fiddler support mocking or modifying request and responses on any application. It’s a quick and easy way to change HTTP(S) requests and responses without changes in the code.
+
+**API Composing**
+
+User Fiddler API Composer to quickly test APIs by creating and sending requests. Useful while developing new APIs or when testing existing APIs.
 
 ![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png)
-
-## Features
+## Key Features
 
 - Compatible with MacOS, Windows, and Linux.
-- Electron-based UI with intuitive design. 
-- Capture web traffic (HTTP & HTTPS).
+- Inspect web traffic (HTTP & HTTPS).
 - Decrypt secure traffic (HTTPS).
-- Inspect captured sessions.
-- Save, share, and receive snapshots of captured traffic with collaborators.
-- Compose and inspect requests.
-- Save composed requests in collections.
-- Advanced features to modify and debug traffic via AutoResponder.
-- In-app interactive tutorials.
-- Online feedback portal and documentation.
+- Save, share, and receive captured traffic with collaborators.
+- Mock requests and respones
+- Modify response
+- Compose API requests
+- Save composed API requests
 - [Fiddler Everywhere Pro](#fiddler-everywhere-pro) features with extended sharing and collaboration options.
 
 ## Fiddler Everywhere Pro
@@ -42,6 +50,9 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 
 >tip A **Snapshot** in Fiddler Everywhere is a term that describes an entry that holds single or multiple sessions (captured traffic). Saved snapshot entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as [**SAZ** archive]({%slug file-menu%}).
 
+## Release history
+
+To learn more about the release history, visit [Release History Page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history)
 
 ## Installation
 
