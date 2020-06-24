@@ -25,6 +25,25 @@ Thank you for choosing [**Fiddler Everywhere**](https://www.telerik.com/fiddler-
 - Advanced features to modify and debug traffic via AutoResponder.
 - In-app interactive tutorials.
 - Online feedback portal and documentation.
+- [Fiddler Everywhere Pro](#fiddler-everywhere-pro) features with extended sharing and collaboration options.
+
+## Fiddler Everywhere Pro
+
+All Fiddler Everywhere features are available in both the **Free** and the **Pro** version. However, the **Fiddler Everywhere Pro** version dramatically extends the free version's sharing and collaboration options. The free version has some limitations related to sharing quotas. Refer to the table below for a detailed comparison of the Free versus Pro versions.
+
+| __Features__ |  __Free__ | __Pro__ |
+|---|---|---|
+| Capture and Inspect Traffic | **Unlimited** | **Unlimited** |
+| Compose Requests | **Unlimited** | **Unlimited** |
+| Creating Auto Responder Rules | Up to 2 rules | **Unlimited** |
+| Creating Saved Sessions Archives (SAZ) | Up to 5 sessions | **Unlimited** |
+| Sharing Session Snapshots | Up to 5 snapshot (with up to one user) | 500 sessions/month  |
+| Shared Snapshots Size | Max 5 MB | Max 50 MB |
+| Sharing Composer Requests | Up to 30 requests | **Unlimited** |
+| Sharing Auto Responder Rules | Up to 2 rules | **Unlimited** |
+| Sharing Auto Responder Rules | Up to 2 rules | **Unlimited** |
+
+See more details about the [Fiddler Everywhere Pro pricing](https://www.telerik.com/fiddler-everywhere).
 
 ## Installation
 
