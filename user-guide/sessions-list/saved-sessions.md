@@ -12,6 +12,8 @@ The Fiddler Everywhere client provides the opportunity to save and share the cap
 
 ![Sessions list](../../images/sessions/saved-sessions-all.png)
 
+>tip A **Snapshot** in Fiddler Everywhere is a term that describes an entry that holds single or multiple sessions (captured traffic). Saved snapshot entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as [**SAZ** archive]({%slug file-menu%}).
+
 ## Sessions Menu
 
 Once a snapshot (of sessions) is saved (or saved & shared) it will be appended to the __Sessions__ list. Each snapshot comes with quick menu options.

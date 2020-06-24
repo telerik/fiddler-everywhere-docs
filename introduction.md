@@ -19,7 +19,7 @@ Thank you for choosing [**Fiddler Everywhere**](https://www.telerik.com/fiddler-
 - Capture web traffic (HTTP & HTTPS).
 - Decrypt secure traffic (HTTPS).
 - Inspect captured sessions.
-- Save, share, and receive captured traffic with collaborators.
+- Save, share, and receive snapshots of captured traffic with collaborators.
 - Compose and inspect requests.
 - Save composed requests in collections.
 - Advanced features to modify and debug traffic via AutoResponder.
@@ -34,16 +34,14 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 | __Features__ |  __Free__ | __Pro__ |
 |---|---|---|
 | Capture and Inspect Traffic | **Unlimited** | **Unlimited** |
-| Compose Requests | **Unlimited** | **Unlimited** |
-| Creating Auto Responder Rules | Up to 2 rules | **Unlimited** |
-| Creating Saved Sessions Archives (SAZ) | Up to 5 sessions | **Unlimited** |
-| Sharing Session Snapshots | Up to 5 snapshot (with up to one user) | 500 sessions/month  |
+| Creating Composer Requests | **Unlimited** | **Unlimited** |
+| Using Auto Responder Rules | Up to 2 rules simultaneously | **Unlimited** |
+| Creating Saved Sessions Snapshots * | Up to 5 sessions | **Unlimited** |
+| Sharing Saved Session Snapshots | Up to 5 snapshot (with up to one user) | 500 sessions/month  |
 | Shared Snapshots Size | Max 5 MB | Max 50 MB |
-| Sharing Composer Requests | Up to 30 requests | **Unlimited** |
-| Sharing Auto Responder Rules | Up to 2 rules | **Unlimited** |
-| Sharing Auto Responder Rules | Up to 2 rules | **Unlimited** |
 
-See more details about the [Fiddler Everywhere Pro pricing](https://www.telerik.com/fiddler-everywhere).
+>tip A **Snapshot** in Fiddler Everywhere is a term that describes an entry that holds single or multiple sessions (captured traffic). Saved snapshot entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as [**SAZ** archive]({%slug file-menu%}).
+
 
 ## Installation
 
