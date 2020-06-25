@@ -38,7 +38,7 @@ A popup confirmation appears (__"Fiddler root certificate trusted successfully"_
     ![Enter Keychain credentials to trust the root certificate](../../images/settings/settings-https-mac-keychain.png)
 
 4. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
-    ![Enter Keychain credentials to trust the root certificate](../../images/settings/settings-https-mac-capture.png)
+    ![Enter Keychain credentials to trust the root certificate](../../images/settings/settings-https-capture-https.png)
     
 5. Click the __Save__ button to save the changes.
 
