@@ -22,4 +22,4 @@ That's it! Your incoming and outgoing traffic will be immediately captured and d
 
 ## Next Steps
 
-Now that you are capturing the traffic, the next steps are are to inspect it in detail. Learn more about [inspecting traffic with Fiddler Everywhere]({%slug inspecting-traffic-get-started%}).
+Now that you are capturing the traffic, the next steps are to inspect it in detail. Learn more about [inspecting traffic with Fiddler Everywhere]({%slug inspecting-traffic-get-started%}).

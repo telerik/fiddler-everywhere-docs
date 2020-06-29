@@ -38,5 +38,5 @@ To create and test your first AutoResponder rule follow these steps:
 
     >important Once the AutoResponder is turned on (via **Enable AutoResponses**), the activated rules apply for all incoming/outgoing traffic. If a session does not match any of the specified rules, the Fiddler Everywhere client will generate an `HTTP/404 Not Found` response. In case, you want unmatched requests to be sent generally to the servers, then [activate the **Unmatched Requests Passthrough** option]({%slug auto-responder-queue-viewer%}#unmatched-requests-passthrough) from the toolbar.
 
-6. Open the application (e.g., a browser) and execute the request. As a result, if the request contains PNG images, they will be dropped. Adequately, you have just tested a website against a scenario where the user has disabled all photos.
+6. Open the application (e.g., a browser) and execute the request. As a result, if the request contains PNG images, they will be dropped. You have just tested a website against a scenario where the user has disabled all photos.
 

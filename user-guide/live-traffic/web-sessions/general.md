@@ -16,7 +16,7 @@ The main instruments that the section provides are:
 
 - The [Live Traffic List]({%slug web-sessions-list%})
 
->tip A session (a.k.a. web session) represents a single transaction between a client and a server, sometimes known as request/response pair. Each Session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a Request and a Response, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the Session, and a Timers object that stores timestamps logged in the course of processing the Session.
+>tip A **session** (also mentioned as **web session**) represents a single transaction between a client and a server, sometimes known as request/response pair. Each Session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a Request and a Response, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the Session, and a Timers object that stores timestamps logged in the course of processing the Session.
 
 ![Live Traffic toolbar and list](../../../images/livetraffic/websessions/websessions-toolbar-list-full.png)
 

@@ -8,7 +8,7 @@ position: 10
 
 ## Sessions
 
-The Fiddler Everywhere client provides the opportunity to save and share the captured traffic (a.k.a. __snapshots__ of sessions). Use the __Live Traffic__ list's [__Save__]({%slug web-sessions-toolbar%}#save) and [__Share__]({%slug web-sessions-toolbar%}#share) options to add snapshots to the __Sessions__ list. The saved snapshots are available for later usage and sharing in the __Sessions__ list. 
+The Fiddler Everywhere client provides the opportunity to save and share the captured traffic (also mentioned as __snapshots__ of sessions). Use the __Live Traffic__ list's [__Save__]({%slug web-sessions-toolbar%}#save) and [__Share__]({%slug web-sessions-toolbar%}#share) options to add snapshots to the __Sessions__ list. The saved snapshots are available for later usage and sharing in the __Sessions__ list. 
 
 ![Sessions list](../../images/sessions/saved-sessions-all.png)
 

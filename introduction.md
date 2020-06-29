@@ -20,7 +20,7 @@ Fiddler support mocking or modifying request and responses on any application. I
 
 **API Composing**
 
-User Fiddler API Composer to quickly test APIs by creating and sending requests. Useful while developing new APIs or when testing existing APIs.
+Use Fiddler API Composer to quickly test APIs by creating and sending requests. Useful while developing new APIs or when testing existing APIs.
 
 ![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png)
 ## Key Features
@@ -37,7 +37,7 @@ User Fiddler API Composer to quickly test APIs by creating and sending requests.
 
 ## Fiddler Everywhere Pro
 
-All Fiddler Everywhere features are available in both the **Free** and the **Pro** version. However, the **Fiddler Everywhere Pro** version dramatically extends the free version's sharing and collaboration options. The free version has some limitations related to sharing quotas. Refer to the table below for a detailed comparison of the Free versus Pro versions.
+All Fiddler Everywhere features are available in both the **Free** and the **Pro** version. However, the **Fiddler Everywhere Pro** version extends the free version's sharing and collaboration options. The free version has some limitations related to sharing quotas. Refer to the table below for a detailed comparison of the Free versus Pro versions.
 
 | __Features__ |  __Free__ | __Pro__ |
 |---|---|---|
