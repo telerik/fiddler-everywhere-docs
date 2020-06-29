@@ -1,13 +1,13 @@
 ---
-title: View Web Session Summary
+title: View Sessions Summary
 slug: web-session-summary
-tags: Web Sessions, Fiddler Everywhere sessions, captured traffic, inspect web sessions
+tags: Web Sessions, Fiddler Everywhere sessions, captured traffic, inspect sessions, fiddler sessions, Fiddler Live Traffic
 position: 20
 ---
 
-## View Web Sessions Summary
+## View Sessions Summary
 
-Each __Web Session__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Use these to identify HTTP related issues, to track and debug your site performance, and to leave custom comments.
+Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Use these to identify HTTP related issues, to track and debug your site performance, and to leave custom comments.
 
 ## \# (ID) 
 

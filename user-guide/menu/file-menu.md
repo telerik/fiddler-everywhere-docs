@@ -10,9 +10,12 @@ position: 1
 
 The File menu contains commands to load and store captured traffics. The menu provides options to create and load an archive that includes the whole captured traffic (creates a SAZ file) as well as an option to import/export only specific sessions.
 
+>tip A **SAZ** file in Fiddler Everywhere is a term that describes an archive that holds a **snapshot** of single or multiple sessions (captured traffic). The **SAZ** files can be loaded as snapshot entries in the **Sessions** list or shared with other Fiddler Everywhere users. A good practice is to protect your SAZ files with an encrypted password while [creating the archive](#save-archive).
+
+
 ## Load Archive
 
-The **Load Archive** command allows you to reload previously-captured traffic stored in a SAZ file.
+The **Load Archive** command allows you to reload previously-captured traffic stored in a SAZ file. The content will be loaded as a snapshot in the **Sessions** list.
 
 ![load-archive](../../images/menu/menu-load-archive.png)
 

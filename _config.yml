@@ -34,7 +34,7 @@ navigation:
         title: Live traffic
         position: 220
     user-guide/live-traffic/web-sessions:
-        title: Web Sessions
+        title: Live Traffic
         position: 2210
     user-guide/live-traffic/inspectors:
         title: Inspectors
@@ -43,11 +43,14 @@ navigation:
         title: Auto Responder
         position: 2230
     user-guide/sessions-list:
-        title: Saved Sessions
+        title: Sessions list
         position: 230
     user-guide/composer:
         title: Composer
         position: 240
+    user-guide/requests-list:
+        title: Requests list
+        position: 250
     use-cases:
         title: Use Cases
         position: 30

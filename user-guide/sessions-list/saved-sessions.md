@@ -1,20 +1,22 @@
 ---
-title: Saved Sessions List
+title: Sessions List
 slug: saved-sessions-tab
-tags: web sessions, saved sessions
+tags: Fiddler sessions, saved sessions, sessions list, Fiddler sessions tab
 publish: true
 position: 10
 ---
 
-# Saved Sessions
+## Sessions
 
-Fiddler Everywhere provides the opportunity to save and share the captured traffic (a.k.a. __snapshots__ of sessions). Use the __Web Sessions__ list's [__Save__]({%slug web-sessions-toolbar%}#save) and [__Share__]({%slug web-sessions-toolbar%}#share) options to add snapshots to the __Saved Sessions__ list. The saved snapshots are available for later usage and sharing in the __Saved Sessions__ list. 
+The Fiddler Everywhere client provides the opportunity to save and share the captured traffic (also mentioned as __snapshots__ of sessions). Use the __Live Traffic__ list's [__Save__]({%slug web-sessions-toolbar%}#save) and [__Share__]({%slug web-sessions-toolbar%}#share) options to add snapshots to the __Sessions__ list. The saved snapshots are available for later usage and sharing in the __Sessions__ list. 
 
-![Saved Sessions list](../../images/sessions/saved-sessions-all.png)
+![Sessions list](../../images/sessions/saved-sessions-all.png)
 
-## Saved Sessions Menu
+>tip A **Snapshot** in Fiddler Everywhere is a term that describes an entry that holds single or multiple sessions (captured traffic). Saved snapshot entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as [**SAZ** archive]({%slug file-menu%}).
 
-Once a snapshot (of sessions) is saved (or saved & shared) it will be appended to the __Saved Sessions__ list. Each snapshot comes with quick menu options.
+## Sessions Menu
+
+Once a snapshot (of sessions) is saved (or saved & shared) it will be appended to the __Sessions__ list. Each snapshot comes with quick menu options.
 
 ![Saved snapshot fast options](../../images/sessions/sessions-shared-in-list.png)
 
@@ -24,15 +26,15 @@ Once a snapshot (of sessions) is saved (or saved & shared) it will be appended t
  
 - __Share__ option prompts a window where you could add user emails that you want to share the snapshot with. Available only for the snapshot owner.
 
-- __Delete__ option removes the snapshot from the __Saved Sessions__ list. Shared snapshot can be recovered from the __Notifications__ drop-down menu.
+- __Delete__ option removes the snapshot from the __Sessions__ list. Shared snapshot can be recovered from the __Notifications__ drop-down menu.
 
-## Saved Sessions Context Menu
+## Sessions Context Menu
 
 Each snapshot has several commands that can be accessed via the context menu (or with keyboard shortcuts).
 
-![Saved Sessions context menu](../../images/sessions/sessions-shared-context.png)
+![Saved sessions context menu](../../images/sessions/sessions-shared-context.png)
 
-- __Open__ option will load the selected snapshot in the __Web Sessions__ list. Keyboard shortcut: __Cmd__ + __Enter__ (Mac), __Enter__ (Windows).
+- __Open__ option will load the selected snapshot in the __Live Traffic__ list. Keyboard shortcut: __Cmd__ + __Enter__ (Mac), __Enter__ (Windows).
 
 - __Export__ option promts the __Export__ windows. The snapshot can be exported in SAZ format which can be encrypted (optional). Keyboard shortcut: __Cmd__ + __E__ (Mac), __Ctrl__ + __E__ (Windows).
 
@@ -40,6 +42,6 @@ Each snapshot has several commands that can be accessed via the context menu (or
 
 - __Share__ option promts a window where you could add user emails that you want to share the snapshot with. Available only for the snapshot owner. Keyboard shortcut: __Cmd__ + __Shift__ + __=__ (Mac), __Ctrl__ + __Shift__ + __=__ (Windows).
 
-- __Delete__ option removes the snapshot from the __Saved Sessions__ list. Keyboard shortcut: __Cmd__ + __Back__ (Mac), __Del__ (Windows).
+- __Delete__ option removes the snapshot from the __Sessions__ list. Keyboard shortcut: __Cmd__ + __Back__ (Mac), __Del__ (Windows).
 
 - __Manage Users__ option allows you to manage the users with which the snapshot is being shared. Active only for the snapshot owner.
