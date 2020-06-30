@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="container-fluid headbanner">
+  <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h1>{{ page.heading }}</h1>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      {% if page.subheading %}
+      <p class="lead">
+          <span class="sticky">{{ page.subheading | replace:'\n','</span> <span class="sticky">' }}</span>
+      </p>
+      {% endif %}
+    </div>
+    </div>
+  </div>
+
+  {% if page.toc %}
+    {% include article-toc.html %}
+  {% endif %}
+  </div>
+</div>
+
+<div class="container-fluid mt-30 mb-60">
+
+  <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+
+    <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+    {{ content }}
+    </div>
+    </div>
+
+  </div>
+  </div>
+
+</div>

@@ -1,0 +1,45 @@
+{% if page.platform %}{% include top-nav-{{page.platform}}.html %}{% else %}{% include top-nav.html %}{% endif %}
+  
+{% if site.platform and site.platform == "aspnet-core" %}
+  <script type="text/javascript">!function(e,r){if(!!navigator.userAgent.match(/(Mac)/i))for(var t=e.querySelectorAll("#js-tlrk-nav a.TK-Button--CTA, a.js-try-now"),n=0;n<t.length;n++){var a=t[n],f=-1!=a.href.indexOf("?")?"&":"?";a.href+=f+"file=pkg"}}(document);</script>
+{% endif %}
+  <script>
+    {% if page.is_search_page != true  %}
+     var searchContainer = $(".global-search");
+
+     function hideSearch(e){
+      if (!searchContainer.is(e.target) && 
+          searchContainer.has(e.target).length === 0 && 
+          $(e.target).parents("#refine-search-popup").length === 0) {
+            setTimeout(function(e) {
+              searchContainer.removeClass("show-search");
+              $(document).off('click', hideSearch);
+            }, 200)
+      }
+    }
+
+    function showSearch() {
+
+      searchContainer.toggleClass("show-search")
+          .one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(e) {
+              if (searchContainer.hasClass("show-search")) {
+                searchContainer.find("input:first")
+                    .focus();
+                $(document).on("click", hideSearch);
+              }
+          });
+    }
+
+    $(document).off("click", ".search-icon")
+               .on("click", ".search-icon", showSearch);
+    {% endif %}
+
+    function navigate(e) {
+        trackItemFromCurrentPage('docs-navigation', e.target.children[e.target.selectedIndex].text);
+        window.open(e.target.value, "_blank");
+    }
+    
+      $(document)
+        .off("change", "#nav-dropdown")
+        .on("change", "#nav-dropdown", navigate);
+  </script>

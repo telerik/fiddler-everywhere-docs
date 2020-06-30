@@ -1,0 +1,44 @@
+{% javascript "feedback" %}
+
+<div class="row feedback-row">
+  <input id="hidden-sheet-id" type="hidden" value="{{site.ff-sheet-id}}">
+  <div class="col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row feedback">
+          <div class="feedback-question">
+            <div class="col-xs-8">
+              <h4>Was this article helpful?</h4>
+            </div>
+            <div class="col-xs-4 text-right">
+              <button class="feedback-vote-button">Yes</button>
+              &nbsp;/&nbsp;
+              <button class="feedback-vote-button feedback-no-button">No</button>
+            </div>
+            <div class="close-button-container">
+              <svg version="1.1"  xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                <path fill="#FFFFFF"
+                  d="M8.7,8l6.1,6.1l-0.7,0.7L8,8.7l-6.1,6.1l-0.7-0.7L7.3,8L1.2,1.9l0.7-0.7L8,7.3l6.1-6.1l0.7,0.7L8.7,8z" />
+              </svg></div>
+          </div>
+
+          <div class="feedback-more-info">
+            <div class="row">
+              <span>Tell us how we can improve this article</span>
+            </div>
+            <div class="row">
+              <textarea id="feedback-other-text-input" class="feedback-other-text-input"
+                placeholder="Please let us know how we can improve this page. (Optional)"></textarea>
+            </div>
+            <div class="row">
+              <button type="submit" class="feedback-ab-submit-button feedback-send-data-button">Submit</button>
+              <span class="feedback-skip-button feedback-send-data-button">Skip</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

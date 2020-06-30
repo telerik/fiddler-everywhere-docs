@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="turbolinks-root" content="{{site.baseurl}}/">
+        <title>{% if page.title_prefix %}{{ page.title_prefix }} | {% endif %}{{ page.page_title | default: page.title }}{% if site.use_product_in_title != false %} | {{ site.product }} {% endif %}</title>
+        <meta name="description" content="{{ page.description | parse_front_matter }}" />
+        {% if page.res_type %}<meta name="restype" content="{{ page.res_type }}">{% else %}<meta name="restype" content="documentation">{% endif %}
+        {% if site.progress_hosting != true %}
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://docs.telerik.com{{site.baseurl}}{{page.url | replace: '.html',''}}"
+            },
+            "headline": "{% if page.title_prefix %}{{ page.title_prefix }} | {% endif %}{{ page.page_title | default: page.title }}{% if site.use_product_in_title != false %} | {{ site.product }} {% endif %}",
+            "author":{
+            "@type":"Organization",
+            "name":"Telerik"},
+            "publisher": {
+              "@type": "Organization",
+              "name": "Telerik",
+              "alternateName":"Телерик",
+              "url":"https://www.telerik.com/",
+              "sameAs":["https://www.facebook.com/Telerik",
+              "https://twitter.com/Telerik",
+              "https://plus.google.com/+Telerik",
+              "https://www.linkedin.com/company/telerik",
+              "https://github.com/telerik","https://www.youtube.com/user/TelerikInc"],
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://telerik-media.s3.amazonaws.com/assets/progress-telerik-logo-black.png"
+              }
+            },
+            "description": "{{ page.description | parse_front_matter }}",
+            "about": "{{ site.product }}",
+            "isPartOf": "{% if site.product_url %}{{ site.product_url }}{% else %}https://docs.telerik.com{{site.baseurl}}{% endif %}"
+          }
+          </script>
+          {% endif %}
+        <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico"/>
+
+        {% if page.needs_canonical %}
+        <link rel="canonical" href="{{ site.url  }}{{ page.canonical_url }}">
+        {% endif %}
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/{{ site.cdnVersion | default: '2018.3.1017' }}/styles/kendo.common.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500,700" />
+        <link rel="stylesheet" type="text/css" href="https://d6vtbcy3ong79.cloudfront.net/fonts/1.1.5/css/metric.min.css">
+        {% if site.main_theme %}{% stylesheet "bundle-{{ site.main_theme }}" %}{% else %}{% stylesheet "bundle" %}{% endif %}
+        {% if site.enable_dojo == true %}
+        {% stylesheet "dojo" %}
+        {% endif %}
+        {% if page.kind == "api" %}
+        {% if site.has_web_api == true or site.has_web_api_index == true %} {% stylesheet "api" %} {% endif %}
+        {% if page.has_api_toc == true %}
+        {% stylesheet "api-toc" %}
+        {% javascript "api-toc" %}
+        {% endif %}
+        {% endif %}
+        {% if site.platforms.size > 0 %} {% stylesheet "platform_styles" %} {% endif %}
+        {% javascript "main" %}
+        {% if page.is_api %}
+        {% javascript "api" %}
+        {% endif %}
+        {% if site.enable_dojo == true %}
+        {% javascript "dojo" %}
+        {% endif %}
+        <!-- Google Tag Manager -->
+        {% if site.google_tag_manager %} {% assign gtm_id = site.google_tag_manager %} {% else %} {% assign gtm_id = 'GTM-6X92' %} {% endif %}
+        <script type="text/plain" class="optanon-category-1">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer', '{{ gtm_id }}');</script>
+        <!-- End Google Tag Manager -->
+        <script>	
+            var prd = '{{ site.product }}';
+            var e = document.documentElement;	
+            e.className = e.className.replace(/(^|\s)no-js(\s|$)/i, "$2");	
+        </script>
+        {% if site.trackjs %}
+        <script src="https://cdn.ravenjs.com/3.16.1/raven.min.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Raven.config('https://e7cc5054385e4b4cb97bd7ea376c6174@sentry.io/112659', {
+              autoBreadcrumbs: {
+                xhr: false
+              },
+              release: '{{site.time | sha256 }}',
+              ignoreUrls: [
+                /\/ki.js\//i,
+                /\/gtm.js\//i
+              ]
+            }).install();
+            var trackjs = {{site.trackjs}};
+        </script>
+        {% endif %}
+
+        <script src="https://kendo.cdn.telerik.com/{{ site.cdnVersion | default: '2018.3.1017' }}/js/kendo.web.min.js"></script>
+    </head>
+
+{% if page.brand %}
+<body role="document" class="layout-{{ page.layout }} brand brand-{{ page.brand }}">
+{% else %}
+<body role="document" class="layout-{{ page.layout }} brand">
+{% endif %}
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_id }}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager -->
+
+    <script>
+      kinveyAppKey = {% if site.environment == 'test' or site.environment == 'dev' %} "kid_ryLIO7OtI" {% else %} "kid_Hk57KwIFf" {% endif %};
+      hasDataLang = {% if site.code_lang == true %} true {% else %} false {% endif %};
+      {% if site.has_web_api == true or site.has_web_api_index == true %}
+      {% if page.kind == 'api'%}
+      isMainApiPage = {% if page.is_main or page.has_api_toc %} true {% else %} false {% endif %};
+      hasWebApiData = {% if site.has_web_api == true %} true {% else %} false {% endif %};
+      {% endif %}
+      {% endif %}
+      {% if site.api_columns_count %}
+      apiColumnsCount = {{ site.api_columns_count }};
+      {% endif %}
+    </script>
+{% if page.announcement %}{% include announcement.html %}{% endif %}
+{% include nav.html %}
+
+<div id="content">
+
+  {{ content }}
+
+  <div id="push" class="pt-60 pb-40"></div> <!-- Sticky Footer -->
+
+</div>
+
+{% include footer.html %}
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-language="en" type="text/javascript" charset="UTF-8" {% if site.progress_hosting == true %} data-domain-script="f9397248-1dbe-47fc-9dbf-c50e7dd51096" {% else %} data-domain-script="3dfce4f2-dab6-4128-9f33-df7e0597da82" {%endif%}></script>
+<script src="https://da189i1jfloii.cloudfront.net/js/kinvey-html5-sdk-3.10.1.min.js"></script>
+</body>
+</html>

@@ -64,11 +64,20 @@ Some Linux distributions are using different security features and different way
 
     ![Export root certificate](../images/settings/settings-export-cert.png)
 
-5. Import and trust the exported certificate.
+5. Import and trust the exported certificate. To be able to install the FE certificate, you need to follow some additonal steps on Linux:
+
+    - Create a directory and copy the certificate (exported in the previous steps). The last command will start the tool to upgrade the certificates. 
+    ![Make dir and copy certificate](../images/configuration/cert_ubunto_001.png)
+    - From the prompt select **Yes** to install new certificates
+    ![Add new certificate](../images/configuration/cert_ubunto_002.png)
+    - Choose the FiddlerRootCertficate.crt and press **OK**
+    ![Add Fiddler certificate](../images/configuration/cert_ubunto_003.png)
+    - The certificates are being updated
+    ![Add Fiddler certificate](../images/configuration/cert_ubunto_004.png)
 
 6. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
 
-    ![Enable capturing HTTPS traffic](../images/settings/settings-https-capture-https-adv.png)
+    ![Enable capturing HTTPS traffic](../images/configuration/cert_ubunto_005.png)
 
 7. Click the __Save__ button to save the changes.
 

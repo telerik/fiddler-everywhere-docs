@@ -1,0 +1,38 @@
+
+$accent: #ffcc33; /*#ee5247*/
+$accent-solid: #3f5366;
+$text-active-color: #4b4e52;
+$code-background-color: rgba(79, 93, 108, 0.8);
+
+$link-color: #2489d8; /*#2f8eb8*/
+$link-hover-color: #0061A4; /*006a88*/
+$link-background-color: #f2f8ff;
+$navigation-link-color: #696b6e;
+$side-nav-link-color: #000000;
+$side-nav-selected-fw: 600;
+
+$try-now: #E74B3C;
+$try-now-hover: #E53321;
+
+$font-heading: "Roboto", Helvetica, Arial, sans-serif;
+$font-regular: "Roboto", Helvetica, Arial, sans-serif;
+$font-light: $font-regular;
+$font-medium: $font-regular;
+$font-code: Consolas, Menlo, "Ubuntu Mono", monospace;
+$heading-fw: 500;
+
+$footer-bg: #1b1e24;
+$env-develop-bg: $accent;
+
+$feedback-background: $accent;
+$feedback-foreground: #000000;
+$feedback-button-foreground: #333333;
+
+$tip-bg: #e4f1df;
+$important-bg: #f9edc6;
+$caution-bg: #f7e1df;
+
+$btn-action-background: $accent;
+$btn-action-foreground: #000000;
+$btn-action-active: #f5b800;
+$btn-action-active-color: $btn-action-foreground;

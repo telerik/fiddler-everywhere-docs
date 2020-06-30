@@ -1,0 +1,10 @@
+<h1>Changelog</h1>
+
+{% for release in page.releases %}
+{% unless release.name contains "-" %}
+<h2 id="release-{{release.id}}">{{release.name}} <span class="release-date">({{release.date | date: "%F" }})</span></h2>
+<div>
+    {{release.body | markdownify }}
+</div>
+{% endunless %}
+{% endfor %}

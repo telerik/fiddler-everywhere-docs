@@ -1,0 +1,42 @@
+<div id="footer" class="container-fluid pb-40">
+  {% if page.is_search_page != true and page.is_main != true %}
+  {% include feedback.html %}
+  {% endif %}
+  <div class="row mt-60">
+    <div class="col-lg-8 col-lg-offset-2">
+      <div class="row">
+      <div class="col-md-12 col-lg-10 col-lg-offset-1">
+      <div class="row">
+        {% if site.footer %}
+          {% for column in site.footer %}
+            <div class="col-sm-{{ 12 | divided_by: site.footer.size }} mb-20">
+                <h6 class="mt-0 mb-10">{{ column.title }}</h6>
+                <ul class="list-unstyled">
+                  {% for item in column.links %}
+                    <li><a href="{{ item[1] }}" target="_blank">{{ item[0] }}</a></li>
+                  {% endfor %}
+                </ul>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+      <div class="row copyright">
+       <div class="col-sm-4 social-icons">
+          <span class="sticky">
+            {% if site.footer_social.facebook %}<a class="social-icon" href="{{ site.footer_social.facebook }}" title="">{% include icons/facebook.svg %}</a>{% endif %}
+            {% if site.footer_social.twitter %}<a class="social-icon" href="{{ site.footer_social.twitter }}" title="">{% include icons/twitter.svg %}</a>{% endif %}
+            {% if site.footer_social.youtube %}<a class="social-icon" href="{{ site.footer_social.youtube }}" title="">{% include icons/youtube.svg %}</a>{% endif %}
+            {% if site.footer_social.linkedin %}<a class="social-icon" href="{{ site.footer_social.linkedin }}" title="">{% include icons/linkedin.svg %}</a>{% endif %}
+          </span>
+       </div>
+       <div class="col-sm-8">
+         <p>Copyright &copy; {{ site.time | date: '%Y' }} Progress Software Corporation and/or its subsidiaries or affiliates.<br /> All Rights Reserved.</p>
+
+         <p>Progress, Telerik, and certain product names used herein are trademarks or registered trademarks of Progress Software Corporation and/or one of its subsidiaries or affiliates in the U.S. and/or other countries. See <a href="https://www.progress.com/legal/trademarks">Trademarks</a> for appropriate markings.</p>
+       </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+---
+title: Knowledge Base
+heading: Knowledge Base
+description: Knowledge Base Portal
+is_search_page: true
+sitemap: false
+slug: knowledge_base
+editable: false
+kb_portal_root: true
+isNew: true
+position: 1100
+published: True
+res_type: kb
+---
+<div class="container-fluid headbanner">
+  <div class="row">
+  <div class=" col-sm-10 col-sm-offset-1 col-lg-offset-2">
+    <div class="row mt-40">
+    <div class="col-sm-12">
+      <article>
+        <h1>{{ page.heading }}</h1>
+        <div class="local-search mt-20">
+            <div class="search-input-container">
+              <input id="local-search" placeholder="Search for &hellip;" name="q" class="kb-search"/>
+              <div id='refine-search-container'>
+                  <div id='refine-search-button' class='unselectable'>
+                    <span id='refine-search-label' data-bind='text: label'></span>
+                    <span class='k-icon k-i-arrow-chevron-down'></span>
+                  </div>
+                </div>
+                <div id="refine-search-popup" style="display: none">
+                  <ul>
+                    <li>
+                      <label class="custom-checkbox unselectable"><input type="checkbox" {% if page.res_type != 'kb' and page.res_type != 'api' %} disabled="true" {% endif %} data-bind="checked: documentation" /><span class="k-icon k-i-check"></span>Search in Documentation</label>
+                    </li>
+                    <li>
+                      <label class="custom-checkbox unselectable"><input type="checkbox" {% if page.res_type == 'kb' %} disabled="true" {% endif %} data-bind="checked: kb" /><span class="k-icon k-i-check"></span>Search in Knowledge Base</label>
+                    </li>
+                    {% if site.has_api_reference != false %}
+                    <li>
+                      <label class="custom-checkbox unselectable"><input type="checkbox" {% if page.res_type == 'api' %} disabled="true" {% endif %} data-bind="checked: api" /><span class="k-icon k-i-check"></span>Search in API Reference</label>
+                    </li>
+                    {% endif %}
+                  </ul>
+                </div>
+            </div>
+            
+            <script>
+                var gcsInstance = '{{site.gcs_engine}}';
+                var gcsKey = '{{site.gcs_api_key}}';
+                siteHasKbPortal = true; 
+                isKbPortalRoot = true;
+                isKbPage = true;
+                hasApiReference = {% if site.has_api_reference != false %} true {% else %} false {% endif %};
+            </script>
+
+            {% javascript "knowledge-base" %}
+        </div>
+      </article>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="container-fluid mt-30 mb-80">
+  <div class="row">
+  <div class="col-sm-10 col-sm-offset-1 col-lg-offset-2">
+    <div class="row">
+    <div class="col-sm-12">
+        <div id="search-container" style="display: none">
+            <div class="results-message mb-5"></div>
+            <div id="results" class="mb-20">
+            </div>
+            <div class="site-pager"></div>
+        </div>
+        <div id="no-results" style="display: none">
+            <h1>Sorry,</h1>
+            <h2>There were no results found. Maybe try a broader search or:</h2>
+            <ul class="list-unstyled">
+              <li>Make sure all words are spelled correctly.</li>
+              <li>Try different keywords.</li>
+              <li>Try more general keywords.</li>
+              <li class="mt-30"><a href="javascript:history.back()" class="go-back">{% include icons/arrow-left.svg %} Go back</a></li>
+            </ul>
+        </div>
+
+      <script type="text/x-kendo-template" id="results-template">
+        <div>
+          <h2><a href="#= url #">#= title #</a></h2>
+          <p>#= excerpt #</p>
+          <p><a href="#= url #">#= url #</a></p>
+        </div>
+      </script>
+
+      {% if site.old_kb_portal_link %}
+        Older KB articles can be found <a target="_blank" href="{{ site.old_kb_portal_link }}">here</a>.
+      {% endif %}
+    </div>
+    </div>
+  </div>
+  </div>
+
+</div>

@@ -1,0 +1,157 @@
+---
+layout: default
+---
+
+<div class="container-fluid">
+  <div class="row">
+  <div class="side-nav col-sm-4 col-md-3 col-lg-2">
+    {% include side-nav.html %}
+  </div>
+  <div class="content-wrapper col-sm-8 col-sm-offset-4 col-md-offset-3 col-lg-8 col-lg-offset-2">
+    <div class="row" style="overflow: hidden;">
+      <div class="col-md-10 col-md-offset-1 mb-40">
+        
+        <div id="navbar" class="nav navbar-collapse row">
+            <div class="col-xs-2">
+              <span class="k-icon all-components-expanded-icon"></span>
+              <a class="button all-components" ><span class="item-expanded"></span></a>
+            </div>
+              {% if site.has_search != false %}
+              {% if page.is_search_page != true  %}
+                <div class="global-search">
+                  {% include search.html %}
+                </div>
+              {% endif %}
+              {% endif %}
+          </div>
+
+        {% if site.platforms.size > 0 %} {% platforms Available for: %} {% endif %}
+
+        {% if page.res_type != 'kb' %}
+        <p class="breadcrumbs">
+          {% if site.nested_bread_crumbs and page.has_api_toc != true %}
+            <a href="{{site.baseurl}}/#{{site.nested_bread_crumbs.toc}}">{{site.nested_bread_crumbs.title}}</a> /
+          {% endif %}
+          {% if page.has_api_toc != true %}
+          {% render_bread_crumbs %}
+          {% endif %}
+          {% if site.has_web_api == true and page.kind == 'api' and page.is_main != true %}
+          <div id="markdown-toc"></div>
+          {% endif %}
+        </p>
+        {% endif %}
+
+        {% if page.kind == "api" and page.position != 1 %}
+        <article class="api-reference">
+        {% else %}
+        <article>
+        {% endif %}
+
+        {% if page.res_type == 'kb' and page.kb_portal_root != true and page.title and site.has_kb_portal == true %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+        {{ content }} 
+        </article>
+
+        {% if page.enable_prev_next == true %} {% if page.node.prev != null or page.node.next != null %} 
+        <div class="row prev-next">
+          <div class="col-xs-6 previous">
+            {% if page.node.prev != null and page.has_prev != false %}
+            {% assign prev_url = page.node.prev.url %}
+            <a href="{{site.baseurl}}{{prev_url}}" class="pt-40 pb-40">
+                {% include icons/arrow-left.svg %}
+                Previous
+                <span>
+                    {% if page.node.prev.parent != null %}
+                        {{page.node.prev.parent.title}} /
+                    {% endif %}
+                    {{page.node.prev.title}}
+                </span>
+              </a>
+            {% endif %}
+          </div>
+          <div class="col-xs-6 next">
+            {% if page.node.next != null and page.has_next != false %}
+            {% assign next_url = page.node.next.url %}
+            <a href="{{site.baseurl}}{{next_url}}" class="pt-40 pb-40">
+                Next
+                {% include icons/arrow-right.svg %}
+                <span>
+                    {% if page.node.next.parent != null %}
+                        {{page.node.next.parent.title}} /
+                    {% endif %}
+                    {{page.node.next.title}}
+                </span>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+        {% endif %}
+
+      </div>
+    </div><!-- /row right content -->
+  </div>
+
+  <div class="additional-content-column col-md-2 visible-lg">
+    {% if page.toc != false %}
+    {% include article-toc.html %}
+    {% endif %}
+    
+    {% include related-articles.html %}
+
+    <div class="support-info-area">
+      {% unless site.hide_contact_support == true %}
+      <span class="additional-info-content">Not finding the help you need?</span>
+      <div>
+        {% if site.contact_support_url %}
+        <a class="btn btn-action" href='{{ site.contact_support_url }}' target="_blank" onclick="trackItemFromCurrentPage('docs-contact-support', '{{ site.product }}')">Contact support</a>
+        {% else %}
+        <a class="btn btn-action" href='https://www.telerik.com/account/support-tickets?pid={{ site.data.support_products[site.product] }}' target="_blank" onclick="trackItemFromCurrentPage('docs-contact-support', '{{ site.product }}')">Contact support</a>
+        {% endif %}  
+      </div>
+      {% endunless %}
+      {% if site.edit_repo_url and page.is_search_page != true and page.editable != false %}
+      <a class="btn-edit-article" href="{{ site.edit_repo_url }}/{{ page.path | replace: '.md','' }}.md" target="_blank">Improve this article</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+    var mainSdkExamples = {{ site.sdk_examples | prepend: '"' | append: '"' }};
+    var sdkRepoPath = {{ site.sdk_repo_path | prepend: '"' | append: '"' }};
+    var sdkCdnRepoPath = {{ site.sdk_cdn_path | prepend: '"' | append: '"' }};
+    $(".read-prev").hover(function() {
+        $(".title-prev").show();
+    }, function() {
+        $(".title-prev").hide();
+    });
+
+    $(".read-next").hover(function() {
+        $(".title-next").show();
+    }, function() {
+        $(".title-next").hide();
+    });
+
+    $(".all-components").click(function() {
+      var showComponentsClassName = 'show-components';
+      $(".all-components").toggleClass(showComponentsClassName);
+      
+      var sideNav = $('.side-nav');
+      sideNav.toggleClass(showComponentsClassName);
+      if (sideNav.hasClass(showComponentsClassName)) {
+        scrollNodeIntoView($('#page-tree').data('kendoTreeView').select());
+      }
+    });
+
+    $(".api-index").toggleClass(function() {
+      return $.grep(
+        $(this).find("ul"),
+        function(ul) { return $(ul).children().length > 20; }
+      ).length > 0 ? "api-columns" : "";
+    });
+
+    $(".api-columns > div").addClass("components pb-20 mb-20");
+</script>

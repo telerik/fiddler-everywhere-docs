@@ -1,0 +1,38 @@
+<form action="{{site.baseurl}}/search" method="get">
+  <div class="search-input-container">
+    <input id="local-search" placeholder="Search for &hellip;" name="q" />
+    <div id='refine-search-container'>
+        <div id='refine-search-button' class='unselectable'>
+          <span id='refine-search-label' data-bind='text: label'></span>
+          <span class='k-icon k-i-arrow-chevron-down'></span>
+        </div>
+      </div>
+      <div id="refine-search-popup" style="display: none">
+        <ul>
+          <li>
+            <label class="custom-checkbox unselectable"><input type="checkbox" data-bind="checked: documentation" {% if site.has_kb_portal != true and site.has_api_reference == false %} disabled="true" {% endif %} /><span class="k-icon k-i-check"></span>Search in Documentation</label>
+          </li>
+          {% if site.has_kb_portal %}
+          <li>
+            <label class="custom-checkbox unselectable"><input type="checkbox" data-bind="checked: kb" /><span class="k-icon k-i-check"></span>Search in Knowledge Base</label>
+          </li>
+          {% endif %}
+          {% if site.has_api_reference != false %}
+          <li>
+            <label class="custom-checkbox unselectable"><input type="checkbox" {% if page.res_type == 'api' %} disabled="true" {% endif %} data-bind="checked: api" /><span class="k-icon k-i-check"></span>Search in API Reference</label>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+  </div>
+</form>
+
+<script>
+    var gcsInstance = '{{site.gcs_engine}}';
+    var gcsKey = '{{site.gcs_api_key}}';
+    isKbPage = {% if page.res_type == 'kb' %} true {% else %} false {% endif %};
+    siteHasKbPortal = {% if site.has_kb_portal == true %} true {% else %} false {% endif %};
+    hasApiReference = {% if site.has_api_reference != false %} true {% else %} false {% endif %};
+</script>
+
+{% javascript "search-results" %}

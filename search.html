@@ -1,0 +1,61 @@
+---
+title: Search results
+position: 1
+heading: Search results
+include_in_navigation: false
+is_search_page: true
+sitemap: false
+---
+<div class="container-fluid headbanner">
+  <div class="row">
+  <div class=" col-sm-10 col-sm-offset-1 col-lg-offset-2">
+    <div class="row mt-40">
+    <div class="col-sm-12">
+      <article>
+        <h1>{{ page.heading }}</h1>
+        <div class="local-search mt-20">
+            {% include search.html %}
+        </div>
+      </article>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="container-fluid mt-30 mb-80">
+  <div class="row">
+  <div class="col-sm-10 col-sm-offset-1 col-lg-offset-2">
+    <div class="row">
+    <div class="col-sm-12">
+        <div id="search-container" style="display: none">
+            <div class="results-message mb-5"></div>
+            <div id="results" class="mb-20">
+            </div>
+            <div class="site-pager"></div>
+        </div>
+        <div id="no-results" style="display: none">
+            <h1>Sorry,</h1>
+            <h2>There were no results found. Maybe try a broader search or:</h2>
+            <ul class="list-unstyled">
+              <li>Make sure all words are spelled correctly.</li>
+              <li>Try different keywords.</li>
+              <li>Try more general keywords.</li>
+              <li class="mt-30"><a href="javascript:history.back()" class="go-back">{% include icons/arrow-left.svg %} Go back</a></li>
+            </ul>
+        </div>
+
+      <script type="text/x-kendo-template" id="results-template">
+        <div>
+          <h2><a href="#= url #">#= title #</a></h2>
+          <p>#= excerpt #</p>
+          <p><a href="#= url #">#= url #</a></p>
+        </div>
+      </script>
+
+    </div>
+    </div>
+  </div>
+  </div>
+
+</div>

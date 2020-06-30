@@ -1,0 +1,18 @@
+<table id="allcontrols-table">	
+	<tbody>	
+		<tr>
+      {% for intro_column in site.intro_columns %}
+        <td>
+          <ul>
+            {% for category in intro_column.categories %}
+              <li class="control-category">{{ category.title }}</li>
+              {% for item in category.items %}
+                <li><a href="{% if item[1].isLink == true %}{{ item[1].value }}{% else %}{%slug {{ item[1] }}%}{% endif %}">{{ item[0] }}</a></li>
+              {% endfor%}
+            {% endfor %}
+          </ul>
+        </td>
+      {% endfor %}
+		</tr>
+	</tbody>
+</table>
