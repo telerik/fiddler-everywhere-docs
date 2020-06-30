@@ -44,33 +44,33 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
 3. Install the downloaded package
 
-On most **Linux** distributions before the installation can be started, the user needs to set the installation file as executable. This can be achieved via the command line or via the GUI.
+    On most **Linux** distributions before the installation can be started, the user needs to set the installation file as executable. This can be achieved via the command line or via the GUI.
 
-- **Command line instructions**
+    - **Command line instructions**
 
-    - Open a terminal
-    - Navigate to the folder where the installation file resides.
-    - Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
-    - Enter your username and password (if prompted) and press **Enter**.
+        - Open a terminal
+        - Navigate to the folder where the installation file resides.
+        - Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
+        - Enter your username and password (if prompted) and press **Enter**.
 
-- **GUI Instructions**
+    - **GUI Instructions**
 
-    Alternatively, many Linux distributions are providing options to set the file executable rights via the used GUI.
-
-
-    **Gnome**
-
-    ![Gnome setting executible](../images/installation/exec-gnome.jpg)
+        Alternatively, many Linux distributions are providing options to set the file executable rights via the used GUI.
 
 
-    **Cinnamon**
+        **Gnome**
 
-    ![Cinnamon setting executible](../images/installation/exec-cinnamon.jpg)
+        ![Gnome setting executible](../images/installation/exec-gnome.jpg)
 
 
-    **KDE**
+        **Cinnamon**
 
-    ![KDE setting executible](../images/installation/exec-kde.jpg)
+        ![Cinnamon setting executible](../images/installation/exec-cinnamon.jpg)
+
+
+        **KDE**
+
+        ![KDE setting executible](../images/installation/exec-kde.jpg)
 
 
 ## Create an Account
@@ -80,7 +80,8 @@ Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere
 ### Create Fiddler Account
 
 1. Launch the Fiddler Everywhere client. The **Create Account** screen loads. Enter the requested information and accept the terms of the agreement. Note that the valid email provided here is the one that is later used for sharing and receiving sessions and notifications.
-![Create new account - Step 2](../images/login/create-account-screen.jpg)
+
+    ![Create new account - Step 2](../images/login/create-account-screen.jpg)
 
 2. Fiddler sends a confirmation email to the provided address.
 
