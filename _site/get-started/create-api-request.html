@@ -240,26 +240,20 @@
         
 
         
-        <h2 id="composer"><a href="#composer">Composer</a></h2>
+        <h2 id="create-api-request"><a href="#create-api-request">Create API Request</a></h2>
 
 <p>The Fiddler's <strong>Composer</strong> allows you to create requests to APIs. Requests made to local and online APIs will enable you to check and debug various endpoints, inspect and analyze requests and responses, and to retrieve and receive data quickly.</p>
 
 <p><img src="../images/composer/create-api-request.png" alt="Creating API request"></p>
 
-<h2 id="create-api-request"><a href="#create-api-request">Create API Request</a></h2>
-
 <p>To create your first API request, follow these steps:</p>
 
 <ol>
+<li><p>Select an appropriate <strong>HTTP method</strong> and enter the endpoint URL. The Composer supports <strong>GET</strong>, <strong>POST</strong>, <strong>PUT</strong>, <strong>DELETE</strong>, <strong>TRACE</strong>, <strong>SEARCH</strong> and <strong>PROPFIND</strong> methods.The <strong>Composer</strong> allows you also to change the version of the HTTP protocol via a drop-down menu to the left of the <strong>Execute</strong> button.</p></li>
 <li>
-<p>Select an appropriate <strong>HTTP method</strong> and enter the endpoint URL. The Composer supports <strong>GET</strong>, <strong>POST</strong>, <strong>PUT</strong>, <strong>DELETE</strong>, <strong>TRACE</strong>, <strong>SEARCH</strong> and <strong>PROPFIND</strong> methods.</p>
+<p>(<em>Optional</em>) If required, enter additional headers, params, and body. For example, common scenarios are to enter an authorization header, a <code>Content-type</code> header, or custom body data.</p>
 
-<blockquote class="tip"><p>The <strong>Composer</strong> allows you also to change the version of the HTTP protocol via a drop-down menu to the left of the <strong>Execute</strong> button.</p></blockquote>
-</li>
-<li>
-<p>(<em>Optional</em>) If required, enter additional headers, params, and body. For example, common scenarios are to enter an authorization header, a 'Content-type` header, or custom body data.</p>
-
-<blockquote class="tip"><p>The <strong>Raw</strong> view is read-only and allows you to see the raw request sent to the server.</p></blockquote>
+<blockquote class="tip"><p>Use the <strong>Raw</strong> view to inspect in detail the request that will be sent to the server. The view is read-only.</p></blockquote>
 </li>
 <li><p>Click on the <strong>Execute</strong> button to send the composed API request.</p></li>
 <li><p>Inspect the result in the Composer's <strong>Response inspector</strong>. Like the inspectors for the <strong>Live Traffic</strong> tab, the <strong>Response</strong> inspector for the Composer provides multiple views (for example, <em>Headers</em>, <em>Raw</em>, <em>JSON</em>, etc.).</p></li>

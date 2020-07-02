@@ -253,7 +253,7 @@
 <li>
 <p>Select the <strong>AutoResponder</strong> tab and create your rule. </p>
 
-<p><img src="../images/livetraffic/autoresponder/autoresponder-main-before.png" alt="Auto Responder button"></p>
+<p><img src="../images/livetraffic/autoresponder/autoresponder-main-before.png" alt="AutoResponder button"></p>
 </li>
 <li>
 <p>In the <strong>MATCH</strong> field, enter your match criteria. For this example, in the lines below, you will find a simple rule that matches ALL requests ending with PNG (the rules are created while using <strong>regular expressions</strong>).</p>
@@ -261,9 +261,9 @@
 <pre lang="r"><code>regex:(?inx).+\.png$ #Match strings ending with PNG
 </code></pre>
 
-<p><img src="../images/livetraffic/autoresponder/gs-autoresponder-rule-match.png" alt="Auto Responder button"></p>
+<p><img src="../images/livetraffic/autoresponder/gs-autoresponder-rule-match.png" alt="AutoResponder button"></p>
 
-<blockquote class="tip"><p>The following basic example is creating a MATCH rule that will modify all requests that are ending with PNG. In most cases, you would like to mock a response from a request against a specific host. For that case, you could use the <a href="/fiddler-everywhere/user-guide/live-traffic/auto-responder/rules-edtor#exact-match">EXACT match</a>. See more examples for <a href="/fiddler-everywhere/user-guide/live-traffic/auto-responder/rules-edtor#match-rules">creating different MATCH conditions</a>.</p></blockquote>
+<blockquote class="tip"><p>The following basic example is creating a MATCH rule that will modify all requests that are ending with PNG. In most cases, you would like to mock a response from a request against a specific host. For that case, you could use the <a href="/fiddler-everywhere/user-guide/live-traffic/autoresponder#exact-match">EXACT match</a>. See more examples for <a href="/fiddler-everywhere/user-guide/live-traffic/autoresponder#match-rules">creating different MATCH conditions</a>.</p></blockquote>
 </li>
 <li>
 <p>In the <strong>ACTION</strong> field, enter the desired action. For this example, in the lines below, you will find a simple action that will drop everything corresponding to the MATCH criteria.</p>
@@ -271,21 +271,21 @@
 <pre lang="*"><code>*drop
 </code></pre>
 
-<p><img src="../images/livetraffic/autoresponder/gs-autoresponder-rule-action.png" alt="Auto Responder button"></p>
+<p><img src="../images/livetraffic/autoresponder/gs-autoresponder-rule-action.png" alt="AutoResponder button"></p>
 
-<p>See more examples for <a href="/fiddler-everywhere/user-guide/live-traffic/auto-responder/rules-edtor#action-strings">creating actions</a></p>
+<p>See more examples for <a href="/fiddler-everywhere/user-guide/live-traffic/autoresponder#action-strings">creating actions</a></p>
 </li>
 <li>
 <p>Add the rule to the AutoResponder rules list</p>
 
-<p><img src="../images/livetraffic/autoresponder/gs-autoresponder-rule-add.png" alt="Auto Responder button"></p>
+<p><img src="../images/livetraffic/autoresponder/gs-autoresponder-rule-add.png" alt="AutoResponder button"></p>
 </li>
 <li>
 <p>Enable the AutoResponder </p>
 
-<p><img src="../images/livetraffic/autoresponder/gs-autoresponder-enable.png" alt="Auto Responder button"></p>
+<p><img src="../images/livetraffic/autoresponder/gs-autoresponder-enable.png" alt="AutoResponder button"></p>
 
-<blockquote class="important"><p>Once the AutoResponder is turned on (via <strong>Enable AutoResponses</strong>), the activated rules apply for all incoming/outgoing traffic. If a session does not match any of the specified rules, the Fiddler Everywhere client will generate an <code>HTTP/404 Not Found</code> response. In case, you want unmatched requests to be sent generally to the servers, then <a href="/fiddler-everywhere/user-guide/live-traffic/auto-responder/queue-viewer#unmatched-requests-passthrough">activate the <strong>Unmatched Requests Passthrough</strong> option</a> from the toolbar.</p></blockquote>
+<blockquote class="important"><p>Once the AutoResponder is turned on (via <strong>Enable AutoResponses</strong>), the activated rules apply for all incoming/outgoing traffic. If a session does not match any of the specified rules, the Fiddler Everywhere client will generate an <code>HTTP/404 Not Found</code> response. In case, you want unmatched requests to be sent generally to the servers, then <a href="/fiddler-everywhere/user-guide/live-traffic/autoresponder#unmatched-requests-passthrough">activate the <strong>Unmatched Requests Passthrough</strong> option</a> from the toolbar.</p></blockquote>
 </li>
 <li><p>Open the application (e.g., a browser) and execute the request. As a result, if the request contains PNG images, they will be dropped. You have just tested a website against a scenario where the user has disabled all photos.</p></li>
 </ol> 

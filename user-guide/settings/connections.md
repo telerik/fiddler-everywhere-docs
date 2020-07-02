@@ -20,7 +20,8 @@ __Fiddler listens on port:__ textbox controls which port Fiddler Everywhere uses
 
 ## Act as a System Proxy on Startup
 
-The __Act as a system proxy on startup__ controls whether or not Fiddler Everywhere registers as the system proxy during startup. Some browsers and many applications use the system proxy by default and re notified when it changes. 
+The __Act as a system proxy on startup__ controls whether or not Fiddler Everywhere registers as the system proxy during startup. Some browsers and many applications use the system proxy by default and re notified when it changes.
+
 ![Act as a system proxy on startup setting](../../images/settings/connections-act-as-proxy.png)
 
 ## Allow Remote Computers to Connect
@@ -30,7 +31,8 @@ Fiddler Everywhere allows you to capture traffic from remote devices. This artic
 1. Start Fiddler on the device that will capture the traffic.
 2. Go to __Settings > Connections.__
 3. Ensure that __Allow remote computers to connect__ checkbox is checked.
-![Allow Remote Connections setting](../../images/settings/connections-allow-remoter.png)
+
+    ![Allow Remote Connections setting](../../images/settings/connections-allow-remoter.png)
 
 4. Click the __Save Changes__ button to save the changes.
 

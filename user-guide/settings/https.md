@@ -8,25 +8,21 @@ position: 10
 
 ## HTTPS Settings
 
-![default https settings](../../images/settings/settings-https.png)
-
-## General settings
-
 After the initial startup, the Fiddler Everywhere application could only capture non-secure traffic (HTTP) while SSL traffic is not captured. To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ submenu in __Settings__.
+
+![default https settings](../../images/settings/settings-https.png)
 
 #### Trust Root Certificate
 
-The button installs and trusts the Fiddler root certificate (macOS and Windows only)
+The button installs and trusts the Fiddler root certificate (macOS and Windows only).
 
 #### Capture HTTPS traffic
 
 The option defines if Fiddler will capture HTTPS traffic or will skip it. It is inactive by default.  To active it, the root certificate should be trusted first.
 
-## Advanced settings
-
 #### Export Root Certificate to Desktop and Trust Certificate
 
-The button export Fiddler the root certificate to the Desktop folder for manual import and trust. 
+Expand __Advanced Settings__ drop-down to show the __Export Root Certificate to Desktop and Trust Certificate__ button. Click the button to export Fiddler the root certificate to the Desktop folder for manual import and trusting of the certificate.
 
 ## See Also
 
