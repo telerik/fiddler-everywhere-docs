@@ -9,7 +9,7 @@ position: 30
 ## Capturing Secure Traffic
 
 By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ submenu in __Settings__.
-
+FF
 ## Configure on macOS
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
@@ -24,11 +24,11 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-mac-keychain.png)
 
-4. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
+5. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
 
     ![Enable capturing HTTPS traffic](../images/settings/settings-https-capture-https.png)
     
-5. Click the __Save__ button to save the changes.
+6. Click the __Save__ button to save the changes.
 
 ## Configure on Windows
 
@@ -44,11 +44,11 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-cert-win.png)
 
-4. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
+5. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-capture-https.png)
     
-5. Click the __Save__ button to save the changes.
+6. Click the __Save__ button to save the changes.
 
 ## Configure on Linux
 
@@ -81,7 +81,7 @@ Some Linux distributions are using different security features and different way
 
 7. Click the __Save__ button to save the changes.
 
->important Some Linux distributions like Ubuntu will use localized paths (for example, the __Desktop__ folder is renamed with the related word used in the locale language). That might cause for __step 3__ to fail due to a missing folder named __Desktop__ with an error message of type _Could not find a part of the path ..._. Until an out-of-the-box solution is implemented, you could easily workaround this issue by creating a folder called __Desktop__ at your root directory (`mkdir ~/Desktop`) and then export the certificate to the newly-created directory. Once the certificate is installed, you could safely remove the directory.
+    >important Some Linux distributions like Ubuntu will use localized paths (for example, the __Desktop__ folder is renamed with the related word used in the locale language). That might cause for __step 3__ to fail due to a missing folder named __Desktop__ with an error message of type _Could not find a part of the path ..._. Until an out-of-the-box solution is implemented, you could easily workaround this issue by creating a folder called __Desktop__ at your root directory (`mkdir ~/Desktop`) and then export the certificate to the newly-created directory. Once the certificate is installed, you could safely remove the directory.
 
 
 ## Next Steps

@@ -1,0 +1,22 @@
+{
+  "name": "docs-watcher",
+  "version": "0.0.1",
+  "description": "Watch and syncs files between host machine and Docker container for Telerik documentation in local setup.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telerik/docs-seed.git"
+  },
+  "keywords": [
+    "documentation"
+  ],
+  "author": "Telerik <support@telerik.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/telerik/docs-seed/issues"
+  },
+  "homepage": "https://github.com/telerik/docs-seed#readme",
+  "dependencies": {
+    "chokidar": "1.7.0"
+  }
+}

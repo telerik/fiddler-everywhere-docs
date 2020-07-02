@@ -111,6 +111,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
+  execjs
   github-markdown
   html-pipeline
   jekyll (~> 3.0)
