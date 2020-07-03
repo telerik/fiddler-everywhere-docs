@@ -27,3 +27,7 @@ Create your first API request by following these steps:
 5. (**_Optional_**) You can save the request by clicking on the **Save** button (to the right of **Execute**). Saved requests are loaded in a collection in the **Requests list** and can be reused or shared with collaborators.
 
 ![Creating API request](../images/composer/create-api-request.png)
+
+## Next Steps 
+
+- Learn more about [the Composer UI]({%slug composer-tab%}).

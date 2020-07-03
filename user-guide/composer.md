@@ -14,9 +14,11 @@ The __Composer__ tab enables you to manually build and send HTTP, HTTPS, and FTP
 
 The __Composer__ contains three major sections used to construct a request and observe the response.
 
-- The top section contains a drop-down for selecting __HTTP Methods__, an __URL field__, a drop-down to select the used __HTTP version__, and an __Execute__ button.
-- The mid-section is  a __request composer__ that provides options to further modify your request via __Headers__, __Body__, __Params__, or __Raw__ views.
-- The bottom section is a __response inspector__, which shows the response from the executed request.
+The top section contains a drop-down for selecting __HTTP Methods__, an __URL field__, a drop-down to select the used __HTTP version__, and an __Execute__ button.
+
+The mid-section is  a __request composer__ that provides options to further modify your request via __Headers__, __Body__, __Params__, or __Raw__ views.
+
+The bottom section is a __response inspector__, which shows the response from the executed request.
 
 ![Composer User Interface](../images/composer/composer-sections.png)
 
@@ -57,31 +59,35 @@ From the __HTTP Version__ drop-down, you can select the following HTTP versions:
 
 The __Request Composer__ is allowing you to further modify your request by adding your custom __Headers__, __Params__, __Body__, and observing the composed request via the __Raw__ view.
 
-### Headers
+#### Headers
 
 Enables you to add/modify your request headers (e.g., `Content-Type`, `Authorization`, etc.). 
- - Add a new header by entering the header key-value pair and then clicking the tick.
- ![Adding header](../images/composer/composer-headers-before.png)
- - Adds the new header to your request. The header can now be disabled/enabled or completely deleted.
-  ![Added header](../images/composer/composer-headers-after.png)
+
+Add a new header by entering the header key-value pair and then clicking the tick.
+![Adding header](../images/composer/composer-headers-before.png)
+
+Adds the new header to your request. The header can now be disabled/enabled or completely deleted.
+![Added header](../images/composer/composer-headers-after.png)
 
 >important Most of the servers using newer versions of TLS will require a **User-Agent** header to be set. By default, Fiddler Everywhere will a **User-Agent** key set with value **Fiddler Everywhere** and description **_Lets servers and network peers identify the application, operating system, vendor, and version of the requesting user agent_**. The header is non-mandatory, but keep in mind that without valid **User-Agent**, some requests to secure servers might fail.
 ![Default User-Agent](../images/composer/composer-user-agent.png)
 
-### Params
+#### Params
 
 Enables you to add query parameters to your request URL easily. Adds any key-value pair appended through the  __Params__ view to the request URL.
- - Add new query params by entering the params key-value pair and then clicking the tick.
+
+Add new query params by entering the params key-value pair and then clicking the tick.
  ![Adding header](../images/composer/composer-params-before.png)
- - Add the new query params to your request URL. The params can be disabled/enabled or completely deleted.
+
+Add the new query params to your request URL. The params can be disabled/enabled or completely deleted.
  ![Adding header](../images/composer/composer-params-after.png)
 
 
-### Body
+#### Body
 
 Enables you to manually specify the data that should be sent with the request.
 
-### Raw
+#### Raw
 
 The view is a raw representation of the composed request. This view is non-editable.
 ![Raw view of the written request](../images/composer/composer-raw-view.png)

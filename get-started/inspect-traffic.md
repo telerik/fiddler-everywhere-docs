@@ -26,4 +26,4 @@ Inspecting sessions is often done with teammates or external collaborators. **Sh
 
 ## Next Steps
 
-Get to know how to create or edit a session via the Composer, how to mock server response and how to share snapshots of sessions with collaborators.
+Get to know how to [create an API request via the Composer]({%slug composer-get-started%}), how to [mock server response]({%slug autoresponder-get-started%}) and how to share snapshots of sessions with collaborators.

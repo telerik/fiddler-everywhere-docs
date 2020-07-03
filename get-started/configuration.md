@@ -9,7 +9,7 @@ position: 30
 ## Capturing Secure Traffic
 
 By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ submenu in __Settings__.
-FF
+
 ## Configure on macOS
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.

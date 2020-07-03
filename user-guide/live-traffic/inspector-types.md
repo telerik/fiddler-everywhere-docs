@@ -1,5 +1,5 @@
 ---
-title: Inspector
+title: Inspectors
 slug: inspector-types
 tags: Fiddler inspectors types, request, response, HTTP headers, secure requests, headers, textview, webforms, cookies, raw, XML
 publish: true

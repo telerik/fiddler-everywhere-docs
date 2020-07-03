@@ -22,7 +22,7 @@ The Live Traffic toolbar provides various functionalities like streaming mode, d
 To start capturing, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing.
 ![Enabling Live Traffic](../../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
 
-### Stream
+#### Stream
 
 By default, Fiddler Everywhere uses __buffering mode__, which means that the responses are fully collected before any part is sent to the client. Buffering alters the responses (for example, an image won't begin to download until the containing page download is complete). With __streaming mode__, the server's responses are immediately returned to the client as it is downloaded. In streaming mode, tampering with the response body is not possible.
 
@@ -35,7 +35,7 @@ By default, Fiddler Everywhere uses __buffering mode__, which means that the res
 
     Streaming mode is also useful in cases where a site delivers audo or video streams. These kind of never-ending streams can't be buffered by Fiddler Everywhere.
 
-### Decode
+#### Decode
 
 Use __Decode__ toggle button to remove all HTTP content and Transfer encoding from requests and responses.
 
@@ -49,7 +49,7 @@ _Example HTTP response with_ *Decode* _toggled to ON_
 ![Decode ON](../../images/livetraffic/websessions/websessions-toolbar-decode-on.png)
 
 
-### Filter
+#### Filter
 
 Use __Filter__ to apply advanced filters based on the Request and Response headers. Only sessions that are covering the filter criteria will appear in the Live Traffic list.
 
@@ -61,7 +61,7 @@ Use __Filter__ to apply advanced filters based on the Request and Response heade
 
     ![Advanced filters popup](../../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
 
-### Save
+#### Save
 
 Use __Save__ buttton to save sessions for later use or to prepare sessions for sharing.
 
@@ -75,7 +75,7 @@ Use __Save__ buttton to save sessions for later use or to prepare sessions for s
 
 >important The __Save__ button will automatically save all captured traffic. If you want to save only specific sessions, you can select the wanted sessions and use [the context menu]({%slug web-sessions-list%}#save) for advanced save options.
 
-### Share
+#### Share
 
 Sharing sessions greatly improves colaboration and Fiddler Everywhere provides several options to export and share sessions:
 
@@ -87,7 +87,7 @@ Sharing sessions greatly improves colaboration and Fiddler Everywhere provides s
 
 This article demonstrates how to share sessions using the first two options. See the linked articles for examples on how to use exporting or sharing via the context menu.
 
-### Share Sessions
+#### Share Sessions
 
 The toolbar comes with __Share__ button that will save the currently displayed sessions (captured from __Live Traffic__) in a file, and then shares them through email (provided explicitly).
 
@@ -111,7 +111,7 @@ To share Previosly Saved Sessions
 
 3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on __Share__ button.
 
-### Remove All
+#### Remove All
 
 The __Remove All__ button is removing __all__ currently captured traffic from the __Live Traffic__ list. To remove specific sessions only use the [context menu]({%slug web-sessions-list%}#remove)
 
@@ -126,7 +126,7 @@ Many operations begin by selecting one or more entries in the Live Traffic and t
 
 When the Inspectors are activated, they will automatically decide which Inspector is best suited to display the selected session's request and response.
 
-### Live Traffic Columns
+#### Live Traffic Columns
 
 Certain key information is displayed in the columns of the Live Traffic, including:
 
@@ -144,13 +144,13 @@ Certain key information is displayed in the columns of the Live Traffic, includi
 
 See a detailed explanation for the values in each column in the [View Live Traffic Summary]({%slug web-session-summary%}) article.
 
-### Live Traffic Context Menu
+#### Live Traffic Context Menu
 
 The context menu for the Live Traffic exposes several actions that can be applied for a Session or multiple Sessions.To show the context menu, press right-click on Windows (__Control__ + mouse click on Mac).
 
 ![Live Traffic context menu](../../images/livetraffic/websessions/websessions-list-context-menu.png)
 
-### Save
+#### Save
 
 The context menu option __Save__ provides the means to save selected sessions. The saved sessions will appear in the __Sessions__ (the list to the left of Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
 
@@ -167,7 +167,7 @@ All three options will display a save prompt.
 
 >tip Alternatively, you can save all captured traffic [via the __Save__ button from the toolbar]({%slug web-sessions-list%}#save)
 
-### Share
+#### Share
 
 The context menu option __Share__ enables the sharing of sessions. Before any session is shared, it is saved as an entry in the __Sessions__ list. Then the entry can be shared via email.
 
@@ -185,7 +185,7 @@ All three options will initially display a save prompt and then a share prompt w
 
 >tip Alternatively, you can share captured traffic [via the __Share__ button from the toolbar]({%slug web-sessions-list%}#share)
 
-### Remove
+#### Remove
 
 Use the __Remove__ context menu options to delete sessions from your __Live Traffic__ list. 
 
@@ -193,7 +193,7 @@ Use the __Remove__ context menu options to delete sessions from your __Live Traf
 - __Unselected sessions__ - Removes all unselected sessions. Keyboard shortcut: __Shift__ + __Cmd__ + __Back__ (Mac), __Shift__ + __Del__ (Windows).
 - __All Sessions__ - Removes all captured traffic. Keyboard shortcut: __Cmd__ + __X__ (Mac), __Ctrl__ + __X__ (Windows).
 
-### Comment
+#### Comment
 
 Use the __Comment__ context menu option to add comments for the associated sessions. 
 
@@ -201,18 +201,18 @@ Use the __Comment__ context menu option to add comments for the associated sessi
 2. A __Comment__ dialog appears. Enter the comment and click __Ok__. 
 3. The text is added to the comment field for the selected sessions.
 
-### Mark
+#### Mark
 
 Use the __Mark__ context menu option to apply different colors or to strikeout selected sessions.
 
 1. Select the sessions, open the context menu, and click on __Mark__ option.
 2. Click on the preferred marking style to apply it.
 
-### Replay
+#### Replay
 
 Use the __Replay__ context menu option to replay previously captured sessions.  Keyboard shortcut: __R__.
 
-### Select
+#### Select
 
 Use the __Select__ context menu option to select sessions that are directly related to the currently selected session. The options are to select __parent__, __children__, and __duplicate__ sessions.
 
@@ -220,7 +220,7 @@ Use the __Select__ context menu option to select sessions that are directly rela
 - __Children requests__ Selects the sessions that are children of the currently selected session. Keyboard shortcut: __C__
 - __Duplicaterequest__ Selects the session that is a duplicate to the currently selected session. Keyboard shortcut: __D__
 
-### Copy
+#### Copy
 
 Use the __Copy__ context menu option to place a session information in the clipboard. The copied information options are:
 
@@ -239,6 +239,6 @@ _Example for copying full info_
 277	200	HTTP	0.0.0.0:4000	/fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png	GET	207,094	private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate	image/png; charset=utf-8		
 ```
 
-### Add New Rule
+#### Add New Rule
 
 Use the __Add new rule__ option to apply an autoresponder rule for the selected sessions.
