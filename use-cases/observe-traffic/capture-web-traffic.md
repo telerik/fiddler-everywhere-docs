@@ -15,7 +15,7 @@ Fiddler Everywhere can capture web traffic (for example, from a browser) made vi
 
 Follow these steps to capture web traffic:
 
-- Open Fiddler Everywhere and focus the main [__Live Traffic__ tab.]({%slug web-sessions-general%}). Make sure that __Live Traffic__ switch is set to __Capturing__. To stop capturing the live traffic, switch it back to __Paused__.
+- Open Fiddler Everywhere and focus the main [__Live Traffic__ tab.]({%slug web-sessions-list%}). Make sure that __Live Traffic__ switch is set to __Capturing__. To stop capturing the live traffic, switch it back to __Paused__.
 
 >tip By default, Fiddler Everywhere can capture only non-secure traffic (HTTP). If you want to enable capturing of secure traffic (HTTPS) then follow the steps described in the [_Settings > HTTPS_ article]({%slug decrypt-https-traffic%}).
 

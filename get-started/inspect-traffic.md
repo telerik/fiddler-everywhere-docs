@@ -18,7 +18,7 @@ With traffic already captured, the process of analyzing has begun. The first pla
 
 Learn more about all [the Fiddler Inspectors]({%slug inspector-types%}) 
 
->tip In case, the HTTPS capturing is enabled, and the [**Decode**]({%slug web-sessions-toolbar%}#decode) option is activated, you will also be able to analyze encoded content (removes all HTTP Content and Transfer encoding from requests and responses).
+>tip In case, the HTTPS capturing is enabled, and the [**Decode**]({%slug web-sessions-list%}#decode) option is activated, you will also be able to analyze encoded content (removes all HTTP Content and Transfer encoding from requests and responses).
 
 **Save** a selected session or multiple selected sessions [via the context menu]({%slug web-sessions-list%}#save) (alternatively via a keyboard shortcut). Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}) from which they can be reloaded or shared with collaborators.
 
@@ -26,4 +26,4 @@ Inspecting sessions is often done with teammates or external collaborators. **Sh
 
 ## Next Steps
 
-Get to know how to create or edit a session via the Composer, how to mock server response and how to share snapshots of sessions with collaborators.
+Get to know how to [create an API request via the Composer]({%slug composer-get-started%}), how to [mock server response]({%slug autoresponder-get-started%}) and how to share snapshots of sessions with collaborators.

@@ -12,45 +12,12 @@ navigation:
     user-guide:
         title: User Guide
         position: 20
-    user-guide/menu:
-        title: Fiddler's Main Menu
-        position: 205
     user-guide/settings:
         title: Settings
-        position: 210
-    user-guide/settings/https:
-        title: HTTPS
-        position: 2110
-    user-guide/settings/connections:
-        title: Connections
-        position: 2120
-    user-guide/settings/gateway:
-        title: Gateway
-        position: 2130
-    user-guide/settings/privacy:
-        title: Gateway
-        position: 2140
+        position: 20
     user-guide/live-traffic:
-        title: Live traffic
-        position: 220
-    user-guide/live-traffic/web-sessions:
         title: Live Traffic
-        position: 2210
-    user-guide/live-traffic/inspectors:
-        title: Inspectors
-        position: 2220
-    user-guide/live-traffic/auto-responder:
-        title: Auto Responder
-        position: 2230
-    user-guide/sessions-list:
-        title: Sessions list
-        position: 230
-    user-guide/composer:
-        title: Composer
-        position: 240
-    user-guide/requests-list:
-        title: Requests list
-        position: 250
+        position: 30
     use-cases:
         title: Use Cases
         position: 30
