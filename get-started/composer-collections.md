@@ -16,8 +16,8 @@ Create your first collection of composed requests by following these steps:
 
 2. After the request is composed, press **Save**. Enter a request name and select the collection (folder) in which the request should be saved. Alternatively, you can create a new collection by pressing the folder icon to the right.
 
-![Requests lists](../images/requests/requests-enter-name-and-folder.png)
+    ![Requests lists](../images/requests/requests-enter-name-and-folder.png)
 
 3. Press **Save** to close the dialog window and successfully add the request to the collection.
 
-![Requests lists](../images/requests/requests-created-collection.png)
+!   [Requests lists](../images/requests/requests-created-collection.png)
