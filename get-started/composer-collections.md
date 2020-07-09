@@ -20,4 +20,4 @@ Create your first collection of composed requests by following these steps:
 
 3. Press **Save** to close the dialog window and successfully add the request to the collection.
 
-!   [Requests lists](../images/requests/requests-created-collection.png)
+    ![Requests lists](../images/requests/requests-created-collection.png)
