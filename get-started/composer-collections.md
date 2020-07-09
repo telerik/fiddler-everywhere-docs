@@ -1,12 +1,12 @@
 ---
-title: Organise Requests
+title: Organize Requests
 slug: composer-collections-get-started
 tags: create composer collections, share composed requests
 publish: true
 position: 90
 ---
 
-## Organise Requests into Collections
+## Organize Requests into Collections
 
 With the Fiddler Everywhere client, you can save and organize multiple composed requests via the **Requests** list. Collections of requests can be arranged in different folders from where they could be reloaded and executed promptly. The **Requests** list is located to the left (below the **Sessions** list) and can hold multiple collections.
 
