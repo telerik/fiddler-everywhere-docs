@@ -13,8 +13,15 @@ The Fiddler Everywhere client provides for easy and secure sharing of network de
 
 ## Save and share sessions
 
-Network sessions captured by Fiddler Everywhere can be saved into workspaces and replayed later. These same sessions can also be shared with your teammates! Simply use the sharing features of Fiddler Everywhere and invite other team members to collaborate.
+Network sessions captured by the Fiddler Everywhere client can be saved into workspaces and replayed later. These same sessions can also be shared with your teammates! Simply use the sharing features of Fiddler Everywhere and invite other team members to collaborate.
 
+To save and share a session follow these steps:
+ 1. Capture the traffic (that you would like to share with your collaborators).
+ 2. Use a prefered way to save and share a session. With Fiddler Everywhere, you can share captured traffic via:
+    - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar)
+    - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)
+    - [Sessions list]({%slug saved-sessions-tab%})
+    - [File menu]({%slug file-menu%})
 
 ## Add context for teammates
 
