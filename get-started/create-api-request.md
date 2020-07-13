@@ -30,4 +30,4 @@ Create your first API request by following these steps:
 
 ## Next Steps 
 
-- Learn more about [the Composer UI]({%slug composer-tab%}).
+Learn more about [saving and organizing API requests in folders]({%slug composer-collections-get-started%}), and [the Composer UI]({%slug composer-tab%}).

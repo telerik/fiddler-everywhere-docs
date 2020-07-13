@@ -10,10 +10,6 @@ position: 20
 
 The __Connections__ menu exposes some finer control over proxy settings and remote connection. 
 
-- __Fiddler listens on port:__ textbox with default port set to 8866.
-- __Act as a system proxy on startup__ checkbox (checked by default).
-- __Allow remote computers to connect__ checkbox.
-
 ![Act as a system proxy on startup setting](../../images/settings/connections-act-as-proxy.png)
 
 #### Setting Proxy Port

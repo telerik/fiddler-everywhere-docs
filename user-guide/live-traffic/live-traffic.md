@@ -40,6 +40,7 @@ By default, Fiddler Everywhere uses __buffering mode__, which means that the res
 Use __Decode__ toggle button to remove all HTTP content and Transfer encoding from requests and responses.
 
 1. Click on the __Toggle__ button to enable/disable decoding the encoded content.
+    
     ![Decode Toggle button](../../images/livetraffic/websessions/websessions-toolbar-decode-toggle.png)
 
 _Example HTTP response with_ *Decode* _toggled to OFF_
@@ -47,7 +48,6 @@ _Example HTTP response with_ *Decode* _toggled to OFF_
 
 _Example HTTP response with_ *Decode* _toggled to ON_
 ![Decode ON](../../images/livetraffic/websessions/websessions-toolbar-decode-on.png)
-
 
 #### Filter
 
