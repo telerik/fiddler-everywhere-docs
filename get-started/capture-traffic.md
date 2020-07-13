@@ -1,5 +1,5 @@
 ---
-title: Capturing Traffic
+title: Capture Traffic
 slug: capture-traffic-get-started
 tags: capturing web traffic, capture sessions, sniffing, captured HTTPS, Fiddler Live Traffic
 publish: true
