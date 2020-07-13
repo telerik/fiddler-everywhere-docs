@@ -23,7 +23,7 @@ Follow these steps, to load and modify a session via the **Composer**:
 
     ![Change the loaded request values in Composer](../images/composer/edit-in-composer-002.png)
 
-    >tip To modify a header, select it and change the needed key-value pair. You can add a new header using the top key-value row (which is empty by default and ready to receive new values). Once the modifying or adding new header is done, press the confirmation button (a tick) to the right to apply the made changes.
+    >tip To modify a header, select it and change the needed key-value pair. You can add a new header using the top key-value row (which is empty by default and ready to receive new values). Once the modifying or adding new header is done, press the confirmation button (a tick) to the right to apply the changes.
 
 4. Click the **Execute** button to execute the request.
 
