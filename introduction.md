@@ -43,12 +43,12 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 |---|---|---|
 | Capture and Inspect Traffic | **Unlimited** | **Unlimited** |
 | Creating Composer Requests | **Unlimited** | **Unlimited** |
-| Using AutoResponder Rules | Up to 5 enabled rules | **Unlimited** |
-| Creating Saved Sessions Snapshots * | Up to 5 snapshots | **Unlimited** |
-| Sharing Saved Session Snapshots | Up to 5 snapshot (with up to one user) | 1000 snapshots  |
-| Shared Snapshots Size | Max 5 MB | Max 50 MB |
+| Using Auto Responder Rules | Up to 5 enabled rules | **Unlimited** |
+| Creating Saved Sessions entries * | Up to 5 sessions | **Unlimited** |
+| Sharing Saved Sessions | Up to 5 session (with up to one user) | 1000 session  |
+| Shared Session Size | Max 5 MB | Max 50 MB |
 
->tip A **Snapshot** in Fiddler Everywhere is a term that describes an entry that holds single or multiple sessions (captured traffic). Saved snapshot entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as [**SAZ** archive]({%slug file-menu%}).
+>tip A **Session** in Fiddler Everywhere is a term that describes an entry that holds single or multiple requests and responses (captured traffic). Saved session entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as [**SAZ** archive]({%slug file-menu%}).
 
 ## Release history
 
