@@ -20,7 +20,7 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
 >tip By default, the standard installation will allow you to track only non-secure HTTP traffic. To enable tracking and decoding of HTTPS, you will need to install a trusted certificate, as shown in the [HTTPS]({%slug decrypt-https-traffic%}) article.
 
-### macOS
+#### macOS
 
 1. The Fiddler Everywhere installer is available for download on the [Progress website](https://www.telerik.com/download/fiddler-everywhere).
 
@@ -28,7 +28,7 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
 3. Run the **Fiddler Everywhere** dmg file to start the installation process.
 
-### Windows
+#### Windows
 
 1. The Fiddler Everywhere installer is available for download on the [Progress website](https://www.telerik.com/download/fiddler-everywhere).
 
@@ -36,7 +36,7 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
 3. Run the **Fiddler Everywhere** exe file to start the installation process.
 
-### Linux
+#### Linux
 
 1. The Fiddler Everywhere installer is available for download on the [Progress website](https://www.telerik.com/download/fiddler-everywhere).
 
@@ -77,7 +77,7 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
 Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere client. You can sign up by [creating an unique Fiddler account](#create-fiddler-account) or by [using existing Google account](#use-google-account). The Fiddler Everywhere account enables you to save and share sessions with collaborators and additionally provides access to the Pro features (if Pro version is purchased).
 
-### Create Fiddler Account
+#### Create Fiddler Account
 
 1. Launch the Fiddler Everywhere client. The **Create Account** screen loads. Enter the requested information and accept the terms of the agreement. Note that the valid email provided here is the one that is later used for sharing and receiving sessions and notifications.
 
@@ -87,7 +87,7 @@ Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere
 
 3. Open the confirmation email and follow the instructions to complete the registration.
 
-### Use Google Account
+#### Use Google Account
 
 Alternatively, you can directly sign in with an existing Google account.
 

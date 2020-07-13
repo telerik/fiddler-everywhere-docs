@@ -10,12 +10,6 @@ position: 40
 
 The __Privacy__ submenu contains options to opt-out of receiving emails from Progress and its partners and the opportunity to request the deletion of your Fiddler Everywhere associated account.
 
-There are several options in the submenu:
-
-- __Unsubscribe from emails__
-- __Delete your Fiddler Account__
-- __Send anonymous usage statistics__ checkbox
-
 ![Privacy settings](../../images/settings/privacy-all.png)
 
 #### Unsubscribe from emails
