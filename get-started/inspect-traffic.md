@@ -28,6 +28,6 @@ Inspecting sessions is often done with teammates or external collaborators. **Sh
 
 Get to know how to 
 - [Create an API request via the Composer]({%slug composer-get-started%})
-- [Modify traffic]({%slug modify-traffix-get-started%})
+- [Modify traffic]({%slug modify-traffic-get-started%})
 - [Mock server response]({%slug autoresponder-get-started%})
 - Share snapshots of sessions with collaborators.

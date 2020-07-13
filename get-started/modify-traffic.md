@@ -1,6 +1,6 @@
 ---
 title: Modify Traffic
-slug: modify-traffix-get-started
+slug: modify-traffic-get-started
 tags: edit captured traffic, edit sessions
 publish: true
 position: 60
