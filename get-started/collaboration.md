@@ -14,15 +14,15 @@ In previous versions of Fiddler Everywhere, collaboration was limited to exporti
 
 ## Save and Share Sessions
 
-Network sessions captured by the Fiddler Everywhere client can be saved into workspaces and replayed later. These same sessions can also be shared with your teammates! Simply use the sharing features of Fiddler Everywhere and invite other team members to collaborate.
+Network sessions captured by the Fiddler Everywhere client can be saved and viewed later. These same sessions can also be shared with your teammates. Simply use the sharing features of Fiddler Everywhere and invite other team members to collaborate.
 
 Save and share a session with a collaborator while following these steps:
- 1. Capture the traffic (that you would like to share with your collaborators).
- 2. Use a preferred way to save and share a session. With Fiddler Everywhere, you can share captured traffic via:
+ 1. [Capture the traffic]({%slug capture-traffic-get-started%}) (that you would like to share with your collaborators).
+ 2. Use a preferred way to save and share a session. With Fiddler Everywhere, you can save and share captured traffic via:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Save** and **Share** options.
     - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Save** and **Share** options via the context menu.
-    - [Sessions list]({%slug saved-sessions-tab%}) provides **Share** functionality via dedicated button.
-    - [File menu]({%slug file-menu%}) allows you to import/export different known formats (like HTTPArchive, Packet Capture, Folder Tree, and others) and to load and save Fiddler archives (SAZ format).
+    - [Sessions list]({%slug saved-sessions-tab%}) provides **Share** functionality via dedicated button. The list contains previosly saved sessions or sessions shared with the user.
+    - [File menu]({%slug file-menu%}) allows you to import/export different known formats (like HTTPArchive, Packet Capture, Folder Tree, and others) and to load and save Fiddler archives (**SAZ** format) that are holding captured sessions.
 
 >tip The Fiddler Everywhere free version has a quota for sharing sessions with collaborators. Check [the advantages provided by Fiddler Everywhere Pro]({%slug introduction%}#fiddler-everywhere-pro), which significantly extends the collaboration quotas.
 
@@ -30,14 +30,30 @@ Save and share a session with a collaborator while following these steps:
 
 Some network sessions can be missing important context that is not captured in the technical details. Fiddler Everywhere allows you to add meaning to sessions by adding comments. Your peers as well can add information to the same comment thread for full communication and collaboration.
 
-The Fiddler Everywhere client allows you to add comments and description in the following ways:
-- Add a custom comment to one or more captured sessions. To add a comment, use the **Comment** option from the context menu or press **M** while having the desired courses selected.
+The Fiddler Everywhere client allows you to add additional context by adding **comments** (per session) and adding **notes** (per shared entities).
 
-    ![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
+#### Add Comments
 
-- Add a custom description while sharing a session or several sessions. To add a description, use the **Share** option (from the **Live Traffic toolbar** or from the **share** button in the **Sessions** list) and provide the additional information as a note. The note will be received as a context in the email received from the recipients (the collaborator's emails).
+Add a custom comment to one or more captured sessions to provide additional context.
 
-    ![Add a note in share prompt window](../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
+1. Select a session from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) or load saved sessions from the [**Sessions list**]({%slug saved-sessions-tab%}).
+2. Add a comment using the **Comment** option from the context menu or press **M** while having the desired sessions selected.
+
+![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
+
+The newly added comment will appear in [the **Commments** column]({%slug web-sessions-list%}#live-traffic-list).
+
+#### Add Notes
+
+Add additional context in the form of a descriptive note while sharing a session or several sessions. 
+
+1. Use the **Share** option from the [**Live Traffic toolbar**]({%slug web-sessions-list%}#live-traffic-toolbar) or from the **share** button in the [**Sessions list**]({%slug saved-sessions-tab%}).
+2. In the first dialog window, provide a name for the shared sessions.
+3. In the second dialog window, provide the additional information in the **Add a note** field. 
+
+The note will be received as a context in the email received from the recipients (the collaborator's emails).
+
+![Add a note in share prompt window](../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
 
 ## Notifications for Shared Content
 
