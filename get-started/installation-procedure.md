@@ -10,9 +10,16 @@ position: 10
 
 Fiddler Everywhere is available for Windows, macOS, and Linux. The application utilizes built-in .NET Core (cross-platform version .NET framework). 
 
-- macOS High Sierra (10.13+) x64, Windows 7 or later High Sierra (10.13+) 64 bit, or Ubuntu 18+ x64
+- macOS High Sierra (10.13+) x64, Windows 7 or newer x64 version, or Ubuntu 18+ x64
 - 300MB of free disk space
 - Account with administrative rights. Needed for capturing and decoding HTTPS traffic.
+- Active internet connection with access to the following URLs:
+```
+    https://login.getfiddler.com/
+    https://api.getfiddler.com/
+    https://auth.getfiddler.com/
+```
+
 
 ## Installation 
  
