@@ -28,6 +28,12 @@ Create your first API request by following these steps:
 
 ![Creating API request](../images/composer/create-api-request.png)
 
-## Next Steps 
+## Next Steps
 
-Learn more about [saving and organizing API requests in folders]({%slug composer-collections-get-started%}), and [the Composer UI]({%slug composer-tab%}).
+Get to know how to 
+- [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
+- [Create an API request via the Composer]({%slug composer-get-started%})
+- [Modify traffic]({%slug modify-traffic-get-started%})
+- [Mock server response]({%slug autoresponder-get-started%})
+- [Organize requests]({%slug composer-collections-get-started%})
+- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).

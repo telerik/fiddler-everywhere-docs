@@ -30,4 +30,5 @@ Get to know how to
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
 - [Mock server response]({%slug autoresponder-get-started%})
-- Share snapshots of sessions with collaborators.
+- [Organize requests]({%slug composer-collections-get-started%})
+- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).

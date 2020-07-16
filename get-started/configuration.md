@@ -96,4 +96,10 @@ For more information about Fiddler Everyehere settings, visit [**_Settings_**]({
 
 ## Next Steps
 
-Once the client is configured, you can start using its features. Learn how to [capture traffic]({%slug capture-traffic-get-started%}), [inspect traffic]({%slug inspecting-traffic-get-started%}), [mock a server response]({%slug autoresponder-get-started %}), or [create an API request]({%slug composer-get-started %})
+Once the client is configured, you can start using its features. Get to know how to:
+
+- [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
+- [Create an API request via the Composer]({%slug composer-get-started%})
+- [Modify traffic]({%slug modify-traffic-get-started%})
+- [Mock server response]({%slug autoresponder-get-started%})
+- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).

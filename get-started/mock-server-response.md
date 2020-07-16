@@ -55,4 +55,9 @@ To create and test your first AutoResponder rule follow these steps:
 
 ## Next Steps
 
-Get to know how to [create an API request via the Composer]({%slug composer-get-started%}).
+Get to know how to 
+- [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
+- [Create an API request via the Composer]({%slug composer-get-started%})
+- [Modify traffic]({%slug modify-traffic-get-started%})
+- [Organize requests]({%slug composer-collections-get-started%})
+- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).
