@@ -29,3 +29,13 @@ Create your first collection of composed requests by following these steps:
 3. Press **Save** to close the dialog window and add the request to the collection.
 
     ![Requests lists](../images/requests/requests-created-collection.png)
+    
+
+## Next Steps
+
+Get to know how to 
+- [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
+- [Create an API request via the Composer]({%slug composer-get-started%})
+- [Modify traffic]({%slug modify-traffic-get-started%})
+- [Mock server response]({%slug autoresponder-get-started%})
+- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).

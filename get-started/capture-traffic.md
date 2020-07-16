@@ -24,4 +24,10 @@ That's it! Your incoming and outgoing traffic will be immediately captured and d
 
 ## Next Steps
 
-Now that you are capturing the traffic, the next steps are to inspect it in detail. Learn more about [inspecting traffic with Fiddler Everywhere]({%slug inspecting-traffic-get-started%}).
+Get to know how to 
+- [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
+- [Create an API request via the Composer]({%slug composer-get-started%})
+- [Modify traffic]({%slug modify-traffic-get-started%})
+- [Mock server response]({%slug autoresponder-get-started%})
+- [Organize requests]({%slug composer-collections-get-started%})
+- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).
