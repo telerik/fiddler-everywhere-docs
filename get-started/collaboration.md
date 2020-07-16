@@ -10,7 +10,7 @@ position: 100
 
 The Fiddler Everywhere client provides easy and secure sharing of network debugging logs within your teams for quick analysis, communication, and resolution. 
 
-In previous versions of Fiddler Everywhere, collaboration was limited to exporting .saz files and emailing back and forth. Now, all sharing and commenting happen directly within the Fiddler Everywhere UI, providing a much more comfortable and secure manner of collaborating with your team.
+In previous versions of Fiddler Everywhere, collaboration was limited to exporting .saz files and sharing them over a different channel. Now, all sharing and commenting happen directly within the Fiddler Everywhere UI, providing a much more comfortable and secure manner of collaborating with your team.
 
 ## Save and Share Sessions
 
