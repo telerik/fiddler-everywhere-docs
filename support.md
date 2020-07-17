@@ -13,7 +13,7 @@ position: 80
  
 #### Who has access to support? 
 
-All users in who have obtained a Trial subscription or PRO plan subscription will have access to support for the duration of the active subscription period, the table below describes the comparison between different plans and level of support offered for each plan. 
+All users who have obtained a Trial subscription or PRO plan subscription will have access to support for the duration of the active subscription period, the table below describes the comparison between different plans and level of support offered for each plan. 
 
 
 <!-- TODO the plan table here -->
