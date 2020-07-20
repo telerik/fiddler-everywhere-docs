@@ -13,10 +13,8 @@ position: 80
  
 #### Who has access to support? 
 
-All users who have obtained a Trial subscription or PRO plan subscription will have access to support for the duration of the active subscription period, the table below describes the comparison between different plans and level of support offered for each plan. 
+Users who have purchased a paid subscription or have activated the trial period can reach out to the Fiddler Everywhere team for help. The table below shows a comparison between the different plans and their respective level of support.
 
-
-<!-- TODO the plan table here -->
 |   |**Free**   |**Trial**   |**Pro**  |
 |---|---|---|---|
 | Email support |  - |  __Unlimited__* | __Unlimited__* |
@@ -27,13 +25,13 @@ All users who have obtained a Trial subscription or PRO plan subscription will h
 
 #### What is the Fair Usage Policy? 
 
-Most of our product licenses include unlimited access to the support service. In order to keep providing our industry-leading level of support, we have instituted a fair usage policy for our support services: 
+Our product subscription include unlimited access to the support service. In order to keep providing our industry-leading level of support, we have instituted a fair usage policy for our support services: 
 
 A support manager will review customer activities that exceed at least ten times the average amount of support requests to determine if such activities are deemed to be excessive. 
 
-#### How to create a support ticket? 
+#### How to contact support?
 
-A support ticket can be created by sending an email to support@getfiddler.com 
+A support case can be created by sending an email to support@getfiddler.com 
 
 
 #### How can I submit feature requests? 
