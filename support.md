@@ -31,7 +31,7 @@ A support manager will review customer activities that exceed at least ten times
 
 #### How to contact support?
 
-A support case can be created by sending an email to support@getfiddler.com 
+To reach out to the support team, please send an email to support@getfiddler.com
 
 
 #### How can I submit feature requests? 
