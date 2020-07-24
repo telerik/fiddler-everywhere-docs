@@ -53,6 +53,10 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 
 >tip A **Session** in Fiddler Everywhere is a term that describes an entry that holds single or multiple requests and responses (captured traffic). Saved session entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as [**SAZ** archive]({%slug file-menu%}).
 
+#### Trial version
+
+To try Fiddler Everywhere PRO for FREE for 30 days, press the **Try PRO** button and press **Start Trial**. An **Upgrade Successful** prompt window confirms your trial subscriptions. The trial activation does not require a credit card or any other additional information.
+
 ## Release history
 
 To learn more about the release history, visit [Release History Page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history)
