@@ -19,6 +19,7 @@ Network sessions captured by the Fiddler Everywhere client can be saved and view
 #### Save Sessions
 
 Save a session while following these steps:
+
  1. [Capture the traffic]({%slug capture-traffic-get-started%}).
  2. Use a preferred way to save a session. With Fiddler Everywhere, you can save captured traffic via:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Save**  option.
