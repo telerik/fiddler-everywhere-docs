@@ -10,6 +10,8 @@ position: 50
 
 The __Composer__ tab enables you to manually build and send HTTP, HTTPS, and FTP requests.
 
+![Composer User Interface](../images/composer/composer.png)
+
 ## Get Started
 
 The __Composer__ contains three major sections used to construct a request and observe the response.

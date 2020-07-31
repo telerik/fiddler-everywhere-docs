@@ -58,6 +58,8 @@ The __WebForms__ inspector (__Request only__) parses the request's query string 
 
 The __Web__ Inspector (__Response only__) allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the __Live Traffic__ list), meaning that most images and styles will not be displayed. Additionally, scripting and navigating are blocked, providing a read-only preview.
 
+![WebForms Inspector](../../images/livetraffic/inspectors/inspectors-web.png)
+
 ## Cookies Inspector
 
 The __Cookies__ inspector displays the contents of any outbound `Cookie` and `Cookie2` request headers and any inbound `Set-Cookie`, `Set-Cookie2` and `P3P` response headers.
