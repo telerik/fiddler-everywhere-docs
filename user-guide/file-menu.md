@@ -51,3 +51,15 @@ The **Help** menu provides an option to check for updates and install the latest
 #### Check for Updates
 
 The **Check For Updates** command contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
+
+#### Forums
+
+The **Forums** command opens a new browser tab with the link to the Fiddler Evevywhere forums portal
+
+#### Documentation
+
+The **Documentation** command opens a new browser tab with the link to the Fiddler Evevywhere documentation website
+
+#### Contact Support
+
+The **Contact Support** command opens a new email window with email to support@getfiddler.com

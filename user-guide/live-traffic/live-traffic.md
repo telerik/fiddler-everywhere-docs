@@ -150,6 +150,10 @@ The context menu for the Live Traffic exposes several actions that can be applie
 
 ![Live Traffic context menu](../../images/livetraffic/websessions/websessions-list-context-menu.png)
 
+#### Edit in Composer
+
+The context menu option __Edit in Composer__ loads the selected recust into the composer windows where it can be editted and reissued.
+
 #### Save
 
 The context menu option __Save__ provides the means to save selected sessions. The saved sessions will appear in the __Sessions__ (the list to the left of Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
