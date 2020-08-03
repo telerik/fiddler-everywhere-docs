@@ -11,11 +11,13 @@ position: 80
 
 #### Who has access to support?
 Users who have purchased a paid subscription or have activated the trial period can reach out to the Fiddler Everywhere team for help. The table below shows a comparison between the different plans and their respective level of support.
+
 |   |**Free**   |**Trial**   |**Pro**  |
 |---|---|---|---|
 | Email support |  - |  __Unlimited__* | __Unlimited__* |
 | Community Forums   | Yes | Yes | Yes |
 | Feedback Portal   | Yes | Yes | Yes |
+
 *subject to __fair usage policy__
 
 #### What is the Fair Usage Policy?
