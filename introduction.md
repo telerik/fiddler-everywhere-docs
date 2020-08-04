@@ -8,7 +8,7 @@ position: 0
 
 ## Welcome to Fiddler Everywhere!
 
-[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool which logs all HTTP(S) traffic between your computer and the Internet, inspect and edit traffic, issue requets, and fiddle with incoming and outgoing data.
+[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool which logs all HTTP(S) traffic between your computer and the Internet, inspect and edit traffic, issue requests, and fiddle with incoming and outgoing data.
 
 **HTTP(S) traffic Inspection & Analysis**
 
