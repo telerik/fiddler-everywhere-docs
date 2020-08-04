@@ -86,5 +86,5 @@ We believe documentation is at its best when the content is a product of collabo
 
 ## License
 
-Licensing agreement and detailed information about the different licenses and which one you should acquire is available in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere-beta) section.
+Licensing agreement and detailed information about the different licenses and which one you should acquire is available in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere) section.
 
