@@ -18,12 +18,6 @@ navigation:
     user-guide/live-traffic:
         title: Live Traffic
         position: 30
-    use-cases:
-        title: Use Cases
-        position: 30
-    use-cases/observe-traffic:
-        title: Observe Traffic
-        position: 310
     knowledge-base:
         title: Knowledge Base
         position: 90

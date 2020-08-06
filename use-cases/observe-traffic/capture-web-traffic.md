@@ -3,6 +3,7 @@ title: Capture & Inspect Web Traffic
 slug: capture-observe-traffic
 tags: Fiddler Everywhere traffic, capture traffic, observe HTTPS sessions, inspect web traffic, inspect web sessions, live traffic
 position: 10
+publish: false
 ---
 
 ## Capture and Inspect Web Traffic
