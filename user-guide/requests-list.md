@@ -8,9 +8,78 @@ position: 60
 
 ## Requests
 
-The Fiddler Everywhere client provides the opportunity to save the composed requests. Use the __Composer__  to save requests and add them to the collection of requests in the __Requests__ list. The __Requests__  list contains one or more collections (folders) of saved requests. Expand a collection and double-click on a selected request to reload it. Collections can be renamed and deleted through the context menu.
+The Fiddler Everywhere client provides the option to save and share the composed requests. Previously, we discussed on the __Composer__ feature which enables you to manually build and send HTTP, HTTPs and FTP requests. When you save a request using the Composer, the request is added to the collection of requests in the Requests list. 
+
+The Request list looks like as shown in the image below: 
 
 ![Requests list](../images/requests/requests-list-all.png)
+
+The Requests list contains one or more collection (folders) of saved requests. In the above image, two different requests have been saved to two different folders. To reload or start working on the saved requests, simply expand a collection and double-click on a selected request. 
+
+>tip You can also rename or delete the collections using the context menu. 
+
+Requests Menu 
+
+The Fiddler Everywhere requests menu contains list of options which can be executed to share or create new collection. You can also create a new Request using the ![Create New Request](../images/requests/create-new-requests-sign.png) button. Refer to the image below: 
+
+![Requests Shared & New Collection](../images/requests/requests-shared-new-collection.png)
+
+When you save a Composer Request, they automatically get appended to the Requests list. In the list each Requests has some options to be executed. Refer to the image below: 
+
+![Requests Shared & Delete Tab](../images/requests/Requests-share-delete-tab.png)
+
+### Manage Requests Tab
+
+The Requests tab contains the folders containing the composer requests. You can create as many folders and requests as you want. Every folder created under the Requests tab can have more than one requests. 
+
+![Requests Tab with Folder Structure](../images/requests/requests-tab-with-folder-structure.png)
+
+As the composer allows you to compose requests and test those requests, the folders under requests help in differentiating different types of requests. It comes in handy when you want to share the request with a teammate or someone you are working with. 
+
+If you are using a Pro version of the Fiddler Everywhere, you can share as n number of requests with anyone. 
+
+#### Share 
+
+To share the requests folder: 
+
+- Click on the __Share__ icon. 
+- Clicking the icon will prompt a window where you must mention the email ids of the users you want to share with. 
+
+The sharing window looks like as shown below:
+
+![Share Request Popup](../images/requests/share-requests-popup.png)
+
+>tip This feature is only available if you own the session. 
+
+#### Delete 
+
+The delete option will remove the folder or the composer request from the Requests tab. You can either delete an individual request or the entire folder which contains more than one requests. 
+
+To delete the requests folder: 
+
+- Click on the delete icon of the folder. 
+- Clicking the icon will prompt a window where the application asks for the final call of deleting the Requests folder. 
+- Click __Delete__. 
+
+The prompt window looks like as shown below: 
+
+![Delete Requests Folder](../images/requests/delete-requests-folder.png)
+
+In a similar way you can also delete an individual request. To do that: 
+
+- Click on the delete icon of the respective request. 
+- Clicking the icon will prompt a window where the application asks for the final call of deleting the request. 
+- Click __Delete__.  
+
+The prompt window looks like as shown below: 
+
+![Delete an individual Request](../images/requests/delete-an-individual-request.png)
+
+### Request Context Menu 
+
+Each Requests folder have options that can be accessed via context menu (or with keyboard shortcuts). The dropdown looks like as shown below: 
+
+![Requests Folder Dropdown](../images/requests/requests-folder-dropdown.png)
 
 >tip Each saved request can be updated by inputting the modification (for example, in the Headers) and pressing the __Save__ button. If you want to save a new instance of already saved request use the __Save as__ drop-down option (available only for already saved requests)
 
