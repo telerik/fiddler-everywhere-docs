@@ -8,17 +8,17 @@ position: 60
 
 ## Requests
 
-The Fiddler Everywhere client provides the option to save and share the composed requests. Previously, we discussed on the __Composer__ feature which enables you to manually build and send HTTP, HTTPs and FTP requests. When you save a request using the Composer, the request is added to the collection of requests in the Requests list. 
+The Fiddler Everywhere client provides the option to save and share the composed requests. Previously, we discussed on the [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) feature which enables you to manually build and send HTTP, HTTPs and FTP requests. When you save a request using the Composer, the request is added to the collection of requests in the Requests list. 
 
 The Request list looks like as shown in the image below: 
 
 ![Requests list](../images/requests/requests-list-all.png)
 
-The Requests list contains one or more collection (folders) of saved requests. In the above image, two different requests have been saved to two different folders. To reload or start working on the saved requests, simply expand a collection and double-click on a selected request. 
+The Requests list contains one or more collection (folders) of saved requests. In the above image, two different requests have been saved to two different folders. To reload or start working on the saved requests, simply expand a collection and double click on a selected request. 
 
->tip You can also rename or delete the collections using the context menu. 
+>tip You can __Rename__ or __Delete__ the collections using the context menu. 
 
-Requests Menu 
+## Requests Menu 
 
 The Fiddler Everywhere requests menu contains list of options which can be executed to share or create new collection. You can also create a new Request using the ![Create New Request](../images/requests/create-new-requests-sign.png) button. Refer to the image below: 
 
@@ -28,15 +28,15 @@ When you save a Composer Request, they automatically get appended to the Request
 
 ![Requests Shared & Delete Tab](../images/requests/Requests-share-delete-tab.png)
 
-### Manage Requests Tab
+## Manage Requests Tab
 
-The Requests tab contains the folders containing the composer requests. You can create as many folders and requests as you want. Every folder created under the Requests tab can have more than one requests. 
+The Requests tab contain the folders containing the composer requests. You can create as many folders and requests as you want. Every folder created under the Requests tab can have more than one requests. 
 
 ![Requests Tab with Folder Structure](../images/requests/requests-tab-with-folder-structure.png)
 
 As the composer allows you to compose requests and test those requests, the folders under requests help in differentiating different types of requests. It comes in handy when you want to share the request with a teammate or someone you are working with. 
 
-If you are using a Pro version of the Fiddler Everywhere, you can share as n number of requests with anyone. 
+If you are using a [Pro version](https://www.telerik.com/purchase/fiddler) of the Fiddler Everywhere, you can share __n__ number of requests with anyone. 
 
 #### Share 
 
@@ -75,7 +75,7 @@ The prompt window looks like as shown below:
 
 ![Delete an individual Request](../images/requests/delete-an-individual-request.png)
 
-### Request Context Menu 
+## Request Context Menu 
 
 Each Requests folder have options that can be accessed via context menu (or with keyboard shortcuts). The dropdown looks like as shown below: 
 
@@ -104,11 +104,11 @@ The option allows you to __share__ the requests folder. Clicking on the share op
 
 #### Duplicate Collection 
 
-This option lets you create a duplicate folder of the existing one. The name of the folder is structured as `FolderName_Cloned`. 
+This option lets you create a duplicate folder of the existing one. The name of the folder is structured as __FolderName_Cloned__. 
 
-### Individual Requests Dropdown
+## Individual Requests Dropdown
 
-Each individual `requests` have options to either __rename__ or __delete__ via dropdown menu (or with keyboard shortcuts). The dropdown looks like as shown below:
+Each individual __requests__ have options to either __Rename__ or __Delete__ via dropdown menu (or with keyboard shortcuts). The dropdown looks like as shown below:
 
 ![Individual Requests Dropdown](../images/requests/individual-requests-dropdown.png)
 
