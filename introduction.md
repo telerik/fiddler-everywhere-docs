@@ -8,19 +8,19 @@ position: 0
 
 ## Welcome to Fiddler Everywhere!
 
-[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool which logs all HTTP(S) traffic between your computer and the Internet, inspect and edit traffic, issue requests, and fiddle with incoming and outgoing data.
+[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool that logs all HTTP(S) traffic between your computer and the Internet, inspects and editing traffic, issue requests, and fiddle with incoming and outgoing data.
 
 **HTTP(S) traffic Inspection & Analysis**
 
-Fiddler Everywhere logs all HTTP(S) traffic between your computer and the internet. It captures traffic from virtually any application that supports a system proxy.
+Fiddler Everywhere logs all HTTP(S) traffic between your computer and the Internet. It captures traffic from virtually any application that supports a system proxy.
 
 **Request and Response Mocking**
 
-Fiddler support mocking or modifying request and responses on any application. It’s a quick and easy way to change HTTP(S) requests and responses without changes in the code.
+Fiddler support mocking or modifying request and responses on any application. It’s a quick and easy way to change HTTP(S) requests and responses without changing the code.
 
 **API Composing**
 
-Use Fiddler API Composer to quickly test APIs by creating and sending requests. Useful while developing new APIs or when testing existing APIs.
+Use Fiddler API Composer to test APIs by creating and sending requests quickly. Useful while developing new APIs or when testing existing APIs.
 
 ![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png)
 ## Key Features
@@ -29,7 +29,7 @@ Use Fiddler API Composer to quickly test APIs by creating and sending requests. 
 - Inspect web traffic (HTTP & HTTPS).
 - Decrypt secure traffic (HTTPS).
 - Save, share, and receive captured traffic with collaborators.
-- Mock requests and respones
+- Mock requests and responses
 - Modify response
 - Compose API requests
 - Save composed API requests
@@ -70,16 +70,16 @@ To learn how to install Fiddler Everywhere, visit the [Installation]({% slug ins
 
 [Official Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/introduction?_ga=2.206480400.2086505781.1591948423-772467175.1590489532)
 
-We believe documentation is at its best when the content is a product of collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better, and we encourage you to help us with that task in the way that you choose:
+We believe documentation is best when the content is a product of collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better, and we encourage you to help us with that task in the way that you choose:
 
 - Send Feedback
-    Use the __Was this article helpful?__ functionality to give us feedback and ideas on how we can improve the documentation. Alternatively, you could request a feture or report a bug using the [Fiddler Everywhere Feedback Portal](https://feedback.telerik.com/fiddler-everywhere).
+    Use the __Was this article helpful?__ functionality to give us feedback and ideas on how we can improve the documentation. Alternatively, you could request a feature or report a bug using the [Fiddler Everywhere Feedback Portal](https://feedback.telerik.com/fiddler-everywhere).
 
 - Create an Issue
-    If you find an issue with our docs that needs addressing, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/fiddler-everywhere-docs). When creating an issue, please provide a descriptive title, be as specific as possible, and link to the documentation article in question. If you can provide a link to the closest anchor to the issue, that is even better.
+    If you find an issue with our docs that needs addressing, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/fiddler-everywhere-docs). When creating an issue, please provide a descriptive title, be as specific as possible, and link it to the documentation article. If you can provide a link to the closest anchor to the issue, that is even better.
 
 - Send a Pull Request
-    Creating an issue is great, but what we love are pull requests. So, if you find an issue in the docs, or even feel like creating new content, we’d be happy to have your contributions! 
+    Creating an issue is excellent, but what we love are pull requests. So, if you find an issue in the docs, or even feel like creating new content, we’d be happy to have your contributions! 
 
     In order to do this, you must fork our documentation and submit a pull request. That way, you may contribute an update exactly where you found the error. After that, our technical writing team will need to approve your change request. Please use only standard markdown. For more detailed instructions, please follow the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing) published in GitHub. You could directly initiate a pull request by using the __Improve this article__ functionality.
 
