@@ -30,7 +30,7 @@ When you save a Composer Request, they automatically get appended to the Request
 
 ## Manage Requests Tab
 
-The Requests tab contain the folders containing the composer requests. You can create as many folders and requests as you want. Every folder created under the Requests tab can have more than one requests. 
+The Requests tab contains the folders containing the composer requests. You can create as many folders and requests as you want. Every folder created under the Requests tab can have more than one requests. 
 
 ![Requests Tab with Folder Structure](../images/requests/requests-tab-with-folder-structure.png)
 
@@ -40,10 +40,7 @@ If you are using a [Pro version](https://www.telerik.com/purchase/fiddler) of th
 
 #### Share 
 
-To share the requests folder: 
-
-- Click on the __Share__ icon. 
-- Clicking the icon will prompt a window where you must mention the email ids of the users you want to share with. 
+To share the requests folder click on the __Share__ icon to prompt a window where you must mention the email ids of the users you want to share with. 
 
 The sharing window looks like as shown below:
 
