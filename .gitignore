@@ -29,5 +29,6 @@ robots.txt
 search.html
 start-docs.sh
 watch.sh
+to_delete.md
 
 .asset-cache/

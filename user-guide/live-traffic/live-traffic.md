@@ -142,8 +142,6 @@ Certain key information is displayed in the columns of the Live Traffic, includi
 - __Process__ The local OS process from which the traffic originated
 - __Comments__ Field for showing the custom comments added by you (or the author of a shared session).
 
-See a detailed explanation for the values in each column in the [View Live Traffic Summary]({%slug web-session-summary%}) article.
-
 #### Live Traffic Context Menu
 
 The context menu for the Live Traffic exposes several actions that can be applied for a Session or multiple Sessions.To show the context menu, press right-click on Windows (__Control__ + mouse click on Mac).

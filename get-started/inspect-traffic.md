@@ -8,7 +8,7 @@ position: 50
 
 ## Inspecting traffic
 
-With traffic already captured, the process of analyzing has begun. The first place where we can extract information about the captured sessions is the [**Live Traffic**]({%slug web-sessions-list%}). Each session (a session is the request/response entry) is listed in a row with multiple column fields in the __sessions list__. You can extract useful information like the returned status code, the host and the URL, type of used protocol (HTTP vs. HTTPS), body sizer in bytes, used HTTP method (like GET or POST), and more (learn more about [the Live Traffic fields]({%slug web-session-summary%})).
+With traffic already captured, the process of analyzing has begun. The first place where we can extract information about the captured sessions is the [**Live Traffic**]({%slug web-sessions-list%}). Each session (a session is the request/response entry) is listed in a row with multiple column fields in the __sessions list__. You can extract useful information like the returned status code, the host and the URL, type of used protocol (HTTP vs. HTTPS), body sizer in bytes, used HTTP method (like GET or POST), and more.
 
 ![Live Traffic](../images/livetraffic/websessions/websessions-list-all.png)
 
