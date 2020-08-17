@@ -6,7 +6,7 @@ publish: true
 position: 70
 ---
 
-## Mocking Server Response with AutoResponder
+# Mocking Server Response
 
 One of the most powerful features of the Fiddler Everywhere client is the **AutoResponder** - a tool for mocking server responses and simulating various real-life scenarios. With AutoResponder, you can create **rules**, which will automatically trigger to a specific request (that covers the criteria set in the rule). Mocking a server response is as easy as setting as enabling AutoResponder, setting a rule, and executing the request (that will trigger the rule).
 
