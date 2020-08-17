@@ -6,7 +6,7 @@ publish: true
 position: 40
 ---
 
-## Capturing Traffic
+# Capture Traffic
 
 Once Fiddler Everywhere is [installed]({%slug installation%}) and [configured]({%slug configuration-get-started%}), it is time to utilize one of the main features of the proxy client - web traffic capturing. The client logs all HTTP and HTTPS traffic between your computer and the internet. You can analyze and debug the incoming & outgoing traffic from virtually any application that supports a proxy (like Google Chrome, Firefox, Microsoft Teams, Outlook, etc.). You can use the captured traffic to debug issues, find performance bottlenecks, or share it with your teammates.
 
