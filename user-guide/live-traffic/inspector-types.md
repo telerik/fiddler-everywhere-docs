@@ -6,7 +6,7 @@ publish: true
 position: 20
 ---
 
-## Inspectors
+# Inspectors
 
 Fiddler's Inspectors display the **request** and the **response** for the selected session in the __Live Traffic__ list. The inspectors are located in the right panel with the Request inspectors above the Response inspectors.
 
@@ -25,11 +25,11 @@ The __Headers__ Inspector allows you to view the HTTP headers of the request and
 
 There are some conceptual differences between Request Headers and Response Headers, as listed below.
 
-#### Request Headers
+### Request Headers
 
 Every HTTP request begins with plaintext headers that describe what the client requests as a resource or operation. The first line of the request (the _"Request line"_) contains three values: the HTTP method (for example __GET__), the URL path which is being requested (for example __"/index.html"__), and the HTTP version (for example __"HTTP/1.2"__). Request line can consist of one or more rows containing name-value pairs of metadata about the request and the client, such as the _User-Agent_ and _Accept-Language_.
 
-#### Response Header
+### Response Header
 
 Like the HTTP request, every HTTP response begins with plaintext headers that describe the result from the request. The first line of the response (the _"Status line"_) contains the HTTP version (for example __"HTTP/1.1"__), the response status code (for example __"200"__), and the response status text (for instance __"OK"__). Following the _Status line,_ are one or more lines containing name-value pairs of metadata about the response and the server, such as the length of the response file, the Content-Type, and how the response may be cached.
 

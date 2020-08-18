@@ -6,7 +6,7 @@ publish: true
 position: 30
 ---
 
-## AutoResponder
+# AutoResponder
 
 The __AutoResponder__ is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
 
@@ -48,7 +48,7 @@ The __Rules Editor__ interface enables creating and editing rules. You need to e
 
 Fiddler Everywhere will accept string literals, regular expressions, and a set of some special match rules as listed below.
 
-#### String Literals
+### String Literals
 
 They will match string literals (case insensitively).
 
@@ -73,7 +73,7 @@ http://www.example.com/Path1/q=**Query**
 http://www.example.com/Path1/**query**=hello
 ```
 
-#### NOT rules (for String Literals)
+### NOT rules (for String Literals)
 
 The __NOT:__ rule is applied only if the string does not match.
 
@@ -99,7 +99,7 @@ www.example.com/path1/query=foo // (No Match)
 www.example.com/path2/somethingElse=foo // (MATCH)
 ```
 
-#### EXACT Match
+### EXACT Match
 
 The __EXACT:__ is a case-sensitive match syntax for expressions and strings.
 
@@ -111,7 +111,7 @@ www.example.com/Path1/query=foo // (MATCH)
 www.example.com/PATH1/query=foo // (No Match - mismatched case)
 ```
 
-#### Regular Expressions
+### Regular Expressions
 
 Fiddler Everywhere supports regular expressions syntax for expressions that begin with __regex:__. The regular expression will be used to replace the inbound URL with the string in the Actions row. Use __.+__ to match a sequence of one or more characters or __.*__ to match zero or more characters. Use __^__ at the front of your regex to mean "Start of the URL" and use __$__ at the tail of the regex to mean "End of the URL".
 
