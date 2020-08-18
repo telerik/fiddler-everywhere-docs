@@ -112,6 +112,4 @@ Steps to update Fiddler Everywhere to the latest version:
 
 3. Fiddler Everywhere will restart and automatically update to the latest version.
 
-## Next Steps
-
-Once the Fiddler Everywhere client is installed, updated and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).
+>important Once the Fiddler Everywhere client is installed, updated and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).

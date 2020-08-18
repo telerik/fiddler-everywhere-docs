@@ -53,9 +53,8 @@ To create and test your first AutoResponder rule follow these steps:
 
 6. Open the application (e.g., a browser) and execute the request. As a result, if the request contains PNG images, they will be dropped. You have just tested a website against a scenario where the user has disabled all photos.
 
-## Next Steps
+## Additional Resources
 
-Get to know how to 
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})

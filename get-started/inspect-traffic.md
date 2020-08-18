@@ -24,9 +24,8 @@ Learn more about all [the Fiddler Inspectors]({%slug inspector-types%})
 
 Inspecting sessions is often done with teammates or external collaborators. **Share** a selected session or multiple selected sessions directly from the [__Live Traffic__ list]({%slug web-sessions-list%}#share) or via the [__Sessions__ list]({%slug saved-sessions-tab%}).
 
-## Next Steps
+## Additional Resources
 
-Get to know how to 
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
 - [Mock server response]({%slug autoresponder-get-started%})

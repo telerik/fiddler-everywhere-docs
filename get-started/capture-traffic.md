@@ -22,9 +22,8 @@ That's it! Your incoming and outgoing traffic will be immediately captured and d
 
 >tip With **Live Traffic** turned on to **Capturing**, open a browser like Google Chrome and type an address (like `http://example.com`). Return to Fiddler Everywhere and you will immediatly notice that the request is intercepted and the Live Traffic is populated. The **Result** field for that test address should return **200**. Your first request is now successfully captured with Fiddler!
 
-## Next Steps
+## Additional Resources
 
-Get to know how to 
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})

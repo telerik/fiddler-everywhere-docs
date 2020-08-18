@@ -28,9 +28,8 @@ Create your first API request by following these steps:
 
 ![Creating API request](../images/composer/create-api-request.png)
 
-## Next Steps
+## Additional Resources
 
-Get to know how to 
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})

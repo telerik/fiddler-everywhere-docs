@@ -96,7 +96,7 @@ Some Linux distributions are using different security features and different way
 
 For more information about Fiddler Everyehere settings, visit [**_Settings_**]({%slug decrypt-https-traffic%}) page.
 
-## Next Steps
+## Additional Resources
 
 Once the client is configured, you can start using its features. Get to know how to:
 

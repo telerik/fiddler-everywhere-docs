@@ -28,9 +28,8 @@ Follow these steps, to load and modify a session via the **Composer**:
 
 Effectively, you have modified an existing request the same way your application would. In the [**Live Traffic list**]({slug web-sessions-list}#live-traffic-list), you can find the newly executed request and the response from the server.
 
-## Next Steps
+## Additional Resources
 
-Get to know how to 
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Mock server response]({%slug autoresponder-get-started%}) 
 - Share snapshots of sessions with collaborators.

@@ -34,9 +34,8 @@ Create your first collection of composed requests by following these steps:
     
 >tip For the detailed description of the Requests tab, click [here](https://docs.telerik.com/fiddler-everywhere/user-guide/requests-list)
 
-## Next Steps
-
-Get to know how to 
+## Additional Resources
+ 
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
