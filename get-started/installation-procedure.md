@@ -8,7 +8,7 @@ position: 10
 
 # Installation
 
-Fiddler Everywhere being a cross-platform web debugging proxy allows you to inspect network traffic and debug it. It is available for Windows, maxOS and Linux. In this page, we'll discuss about the system required to run Fiddler Everywhere.
+Fiddler Everywhere being a cross-platform web debugging proxy allows you to inspect network traffic and debug it. It is available for Windows, macOS and Linux. In this page, we'll discuss about the system required to run Fiddler Everywhere.
 
 ## System Requirments
 

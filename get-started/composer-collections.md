@@ -8,7 +8,7 @@ position: 90
 
 # Organize Requests into Collections
 
-With the Fiddler Everywhere client, you can save and organize multiple composed requests via the [**Requests**](https://docs.telerik.com/fiddler-everywhere/user-guide/requests-list) list. Collections of requests can be arranged in different folders from where they could be reloaded and executed promptly. The **Requests** list is located to the left (below the **Sessions** list) and can hold multiple collections.
+With the Fiddler Everywhere client, you can save and organize multiple composed requests via the [**Requests**]({%slug saved-requests-tab%}) list. Collections of requests can be arranged in different folders from where they could be reloaded and executed promptly. The **Requests** list is located to the left (below the **Sessions** list) and can hold multiple collections.
 
 Refer to the image below:
 
@@ -32,7 +32,7 @@ Create your first collection of composed requests by following these steps:
 
     ![Requests lists](../images/requests/requests-created-collection.png)
     
->tip For the detailed description of the Requests tab, click [here](https://docs.telerik.com/fiddler-everywhere/user-guide/requests-list)
+>tip For the detailed description of the Requests tab, click [here]({%slug saved-requests-tab%})
 
 ## Additional Resources
  

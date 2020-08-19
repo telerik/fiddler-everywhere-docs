@@ -18,7 +18,7 @@ The button installs and trusts the Fiddler root certificate (macOS and Windows o
 
 ### Capture HTTPS traffic
 
-The option defines if Fiddler Everywhere should capture HTTPS traffic or skip it. By default, this option is disabled. To enable the HTTPS traffic capturing, firstly you need to confirm whetherthe root certificate trusted first. If it is trusted you can simply enable the capture option.
+The option defines if Fiddler Everywhere should capture HTTPS traffic or skip it. By default, this option is disabled. To enable the HTTPS traffic capturing, first you need to confirm whether the root certificate is trusted. If it is trusted you can simply enable the capture option.
 
 ### Export Root Certificate to Desktop and Trust Certificate
 
