@@ -6,7 +6,7 @@ publish: true
 position: 50
 ---
 
-## Inspecting traffic
+# Inspect Traffic
 
 With traffic already captured, the process of analyzing has begun. The first place where we can extract information about the captured sessions is the [**Live Traffic**]({%slug web-sessions-list%}). Each session (a session is the request/response entry) is listed in a row with multiple column fields in the __sessions list__. You can extract useful information like the returned status code, the host and the URL, type of used protocol (HTTP vs. HTTPS), body sizer in bytes, used HTTP method (like GET or POST), and more.
 
@@ -24,9 +24,8 @@ Learn more about all [the Fiddler Inspectors]({%slug inspector-types%})
 
 Inspecting sessions is often done with teammates or external collaborators. **Share** a selected session or multiple selected sessions directly from the [__Live Traffic__ list]({%slug web-sessions-list%}#share) or via the [__Sessions__ list]({%slug saved-sessions-tab%}).
 
-## Next Steps
+## Additional Resources
 
-Get to know how to 
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
 - [Mock server response]({%slug autoresponder-get-started%})

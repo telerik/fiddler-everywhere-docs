@@ -6,7 +6,7 @@ publish: true
 position: 0
 ---
 
-## Welcome to Fiddler Everywhere!
+# Welcome to Fiddler Everywhere!
 
 [**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool which logs all HTTP(S) traffic between your computer and the Internet, inspect and edit traffic, issue requests, and fiddle with incoming and outgoing data.
 
@@ -23,6 +23,7 @@ Fiddler support mocking or modifying request and responses on any application. I
 Use Fiddler API Composer to quickly test APIs by creating and sending requests. Useful while developing new APIs or when testing existing APIs.
 
 ![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png)
+
 ## Key Features
 
 - Compatible with MacOS, Windows, and Linux.

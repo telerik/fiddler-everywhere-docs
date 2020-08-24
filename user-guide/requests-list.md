@@ -6,7 +6,7 @@ publish: true
 position: 60
 ---
 
-## Requests
+# Requests
 
 The Fiddler Everywhere client provides the option to save and share the composed requests. Previously, we discussed on the [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) feature which enables you to manually build and send HTTP, HTTPs and FTP requests. When you save a request using the Composer, the request is added to the collection of requests in the Requests list. 
 
@@ -38,7 +38,7 @@ As the composer allows you to compose requests and test those requests, the fold
 
 If you are using a [Pro version](https://www.telerik.com/purchase/fiddler) of the Fiddler Everywhere, you can share __n__ number of requests with anyone. 
 
-#### Share 
+### Share 
 
 To share the requests folder click on the __Share__ icon to prompt a window where you must mention the email ids of the users you want to share with. 
 
@@ -48,7 +48,7 @@ The sharing window looks like as shown below:
 
 >tip This feature is only available if you own the session. 
 
-#### Delete 
+### Delete 
 
 The delete option will remove the folder or the composer request from the Requests tab. You can either delete an individual request or the entire folder which contains more than one requests. 
 
@@ -80,26 +80,26 @@ Each Requests folder have options that can be accessed via context menu (or with
 
 The options available in the list is as follows:
 
-#### New Folder 
+### New Folder 
 
 The option lets you create a __new folder__ for the composer requests. You can either: 
 
 - Add a new folder using this dropdown 
 - Or a new folder can also be created while saving a Composer Request. 
 
-#### Rename
+### Rename
 
 The option allows you to __rename__ the requests folder. This option is only applicable for the session owner. Keyboard shortcut: __F2__ (Mac), __F2__ (Windows). 
 
-#### Delete 
+### Delete 
 
 __Delete__ option is used to remove the request folder from the list. This also deletes all the requests present in the folder. Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows). 
 
-#### Share
+### Share
 
 The option allows you to __share__ the requests folder. Clicking on the share option will prompt a window where you must mention the email ids of the users you want to share with. Keyboard shortcut: __CMD + Shift + =__ (Mac), __Ctrl + Shift + =__ (Windows). 
 
-#### Duplicate Collection 
+### Duplicate Collection 
 
 This option lets you create a duplicate folder of the existing one. The name of the folder is structured as __FolderName_Cloned__. 
 
@@ -109,11 +109,11 @@ Each individual __requests__ have options to either __Rename__ or __Delete__ via
 
 ![Individual Requests Dropdown](../images/requests/individual-requests-dropdown.png)
 
-#### Rename 
+### Rename 
 
 The option allows you to __rename__ an individual request. This option is only applicable for the session owner. Keyboard shortcut: __F2__ (Mac), __F2__ (Windows). 
 
-#### Delete
+### Delete
 
 __Delete__ option is used to remove an individual request from the list. Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows). 
 

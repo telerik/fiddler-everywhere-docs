@@ -6,28 +6,32 @@ publish: true
 position: 10
 ---
 
+# Installation
+
+Fiddler Everywhere being a cross-platform web debugging proxy allows you to inspect network traffic and debug it. It is available for Windows, macOS and Linux. In this page, we'll discuss about the system required to run Fiddler Everywhere.
+
 ## System Requirments
 
-Fiddler Everywhere is available for Windows, macOS, and Linux. The application utilizes built-in .NET Core (cross-platform version .NET framework). 
+Fiddler Everywhere utilizes built-in .NET Core (cross-platform version .NET framework).
 
 - macOS High Sierra (10.13+) x64, Windows 7 or newer x64 version, or Ubuntu 18+ x64
 - 300MB of free disk space
 - Account with administrative rights. Needed for capturing and decoding HTTPS traffic.
 - Active internet connection with access to the following URLs:
+
 ```
     https://login.getfiddler.com/
     https://api.getfiddler.com/
     https://auth.getfiddler.com/
 ```
 
-
-## Installation 
+## Install Fiddler Everywhere
  
 Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Linux)
 
 >tip By default, the standard installation will allow you to track only non-secure HTTP traffic. To enable tracking and decoding of HTTPS, you will need to install a trusted certificate, as shown in the [HTTPS]({%slug decrypt-https-traffic%}) article.
 
-#### macOS
+### macOS
 
 1. The Fiddler Everywhere installer is available for download on the [Progress website](https://www.telerik.com/download/fiddler-everywhere).
 
@@ -35,7 +39,7 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
 3. Run the **Fiddler Everywhere** dmg file to start the installation process.
 
-#### Windows
+### Windows
 
 1. The Fiddler Everywhere installer is available for download on the [Progress website](https://www.telerik.com/download/fiddler-everywhere).
 
@@ -43,7 +47,7 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
 3. Run the **Fiddler Everywhere** exe file to start the installation process.
 
-#### Linux
+### Linux
 
 1. The Fiddler Everywhere installer is available for download on the [Progress website](https://www.telerik.com/download/fiddler-everywhere).
 
@@ -64,27 +68,23 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
         Alternatively, many Linux distributions are providing options to set the file executable rights via the used GUI.
 
-
         **Gnome**
 
         ![Gnome setting executible](../images/installation/exec-gnome.jpg)
-
 
         **Cinnamon**
 
         ![Cinnamon setting executible](../images/installation/exec-cinnamon.jpg)
 
-
         **KDE**
 
         ![KDE setting executible](../images/installation/exec-kde.jpg)
-
 
 ## Create an Account
 
 Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere client. You can sign up by [creating an unique Fiddler account](#create-fiddler-account) or by [using existing Google account](#use-google-account). The Fiddler Everywhere account enables you to save and share sessions with collaborators and additionally provides access to the Pro features (if Pro version is purchased).
 
-#### Create Fiddler Account
+### Create Fiddler Account
 
 1. Launch the Fiddler Everywhere client. The **Create Account** screen loads. Enter the requested information and accept the terms of the agreement. Note that the valid email provided here is the one that is later used for sharing and receiving sessions and notifications.
 
@@ -94,7 +94,7 @@ Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere
 
 3. Open the confirmation email and follow the instructions to complete the registration.
 
-#### Use Google Account
+### Use Google Account
 
 Alternatively, you can directly sign in with an existing Google account.
 
@@ -112,6 +112,4 @@ Steps to update Fiddler Everywhere to the latest version:
 
 3. Fiddler Everywhere will restart and automatically update to the latest version.
 
-## Next Steps
-
-Once the Fiddler Everywhere client is installed, updated and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).
+>important Once the Fiddler Everywhere client is installed, updated and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).

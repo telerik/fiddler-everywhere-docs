@@ -6,7 +6,7 @@ publish: true
 position: 100
 ---
 
-## Fiddler Everywhere Collaboration
+# Fiddler Everywhere Collaboration
 
 The Fiddler Everywhere client provides easy and secure sharing of network debugging logs within your teams for quick analysis, communication, and resolution. 
 
@@ -16,7 +16,7 @@ In previous versions of Fiddler Everywhere, collaboration was limited to exporti
 
 Network sessions captured by the Fiddler Everywhere client can be saved and viewed later. These same sessions can also be shared with your teammates. Simply use the sharing features of Fiddler Everywhere and invite other team members to collaborate.
 
-#### Save Sessions
+### Save Sessions
 
 Save a session while following these steps:
  1. [Capture the traffic]({%slug capture-traffic-get-started%}).
@@ -25,7 +25,7 @@ Save a session while following these steps:
     - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Save** option via the context menu.
     - [File menu]({%slug file-menu%}) allows you to import/export different known formats (like HTTPArchive, Packet Capture, Folder Tree, and others) and to load and save Fiddler archives (**SAZ** format) that are holding captured sessions.
 
-#### Share Sessions
+### Share Sessions
 
 Share a session with a collaborator while following these steps:
  1. [Capture the traffic]({%slug capture-traffic-get-started%}) (that you would like to share with your collaborators). Alternatively, select a saved session from the [**Sessions list**]({%slug saved-sessions-tab%}).
@@ -43,7 +43,7 @@ Some network sessions can be missing important context that is not captured in t
 
 The Fiddler Everywhere client allows you to add additional context by adding **comments** (per session) and adding **notes** (per shared entities).
 
-#### Add Comments
+### Add Comments
 
 Add a custom comment to one or more captured sessions to provide additional context.
 
@@ -54,7 +54,7 @@ Add a custom comment to one or more captured sessions to provide additional cont
 
 The newly added comment will appear in [the **Commments** column]({%slug web-sessions-list%}#live-traffic-list).
 
-#### Add Notes
+### Add Notes
 
 Add additional context in the form of a descriptive note while sharing a session or several sessions. 
 
