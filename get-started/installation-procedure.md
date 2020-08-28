@@ -14,7 +14,7 @@ Fiddler Everywhere being a cross-platform web debugging proxy allows you to insp
 
 Fiddler Everywhere utilizes built-in .NET Core (cross-platform version .NET framework).
 
-- macOS High Sierra (10.13+) x64, Windows 7 or newer x64 version, or Ubuntu 18+ x64
+- macOS High Sierra (10.13+) x64, Windows 7 (with the [.NET Core deps](https://docs.microsoft.com/en-us/dotnet/core/install/windows#additional-deps) met) or newer x64 version, or Ubuntu 18+ x64
 - 300MB of free disk space
 - Account with administrative rights. Needed for capturing and decoding HTTPS traffic.
 - Active internet connection with access to the following URLs:
