@@ -33,7 +33,7 @@ Fiddler Everywhere certificate is installed to inspect network traffic and debug
 
 - Scroll to the __DO_NOT_TRUST_FiddlerRoot__ certificate and press __Delete__.
 
-![MacOS 1st & 2nd Step](../images/kb/skeychain-access-login-and-do-not-trust-fiddlerroot-delete.png)
+![MacOS 1st & 2nd Step](../images/kb/keychain-access-login-and-do-not-trust-fiddlerroot-delete.png)
 
 - Pressing the __Delete__ button prompts a window asking for a confirmation. In the pop-up window, answer __Yes__ and enter your system __Password__ in the prompt window. This will update the Keychain settings. 
 
