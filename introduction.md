@@ -8,7 +8,7 @@ position: 0
 
 ## Welcome to Fiddler Everywhere!
 
-[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool that logs all HTTP(S) traffic between your computer and the Internet, inspects and editing traffic, issue requests, and fiddle with incoming and outgoing data.
+[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool that logs all HTTP(S) traffic between your computer and the Internet, inspects and edits traffic, issue requests, and fiddle with incoming and outgoing data.
 
 **HTTP(S) traffic Inspection & Analysis**
 
@@ -20,7 +20,7 @@ Fiddler support mocking or modifying request and responses on any application. I
 
 **API Composing**
 
-Use Fiddler API Composer to test APIs by creating and sending requests quickly. Useful while developing new APIs or when testing existing APIs.
+Use Fiddler API Composer to test APIs by creating and sending requests. Useful while developing new APIs or when testing existing APIs.
 
 ![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png)
 ## Key Features
@@ -79,7 +79,7 @@ We believe documentation is best when the content is a product of collaboration 
     If you find an issue with our docs that needs addressing, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/fiddler-everywhere-docs). When creating an issue, please provide a descriptive title, be as specific as possible, and link it to the documentation article. If you can provide a link to the closest anchor to the issue, that is even better.
 
 - Send a Pull Request
-    Creating an issue is excellent, but what we love are pull requests. So, if you find an issue in the docs, or even feel like creating new content, we’d be happy to have your contributions! 
+    Creating an issue is great, but what we love are pull requests. So, if you find an issue in the docs, or even feel like creating new content, we’d be happy to have your contributions! 
 
     In order to do this, you must fork our documentation and submit a pull request. That way, you may contribute an update exactly where you found the error. After that, our technical writing team will need to approve your change request. Please use only standard markdown. For more detailed instructions, please follow the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing) published in GitHub. You could directly initiate a pull request by using the __Improve this article__ functionality.
 
