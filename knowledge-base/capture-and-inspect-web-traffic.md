@@ -1,9 +1,9 @@
 ---
 title: How to Capture and Inspect Web Traffic
-description: An example on how to install Fiddler root certificate on Windows
+description: An article on how to capture and inspect web traffic using Fiddler Everywhere
 type: how-to
 slug: how-to-capture-and-inspect-web-traffic
-tags: https, install, root certificate
+tags: capture web traffic, inspect web traffic, web traffic, https, web application
 publish: true
 res_type: kb
 ---
