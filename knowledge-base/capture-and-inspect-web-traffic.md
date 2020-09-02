@@ -14,7 +14,7 @@ Fiddler Everywhere captures and inspects web traffic through HTTP and HTTPS. The
 
 Fiddler Everywhere can capture web traffic (for example, from a browser) made via HTTP or HTTPS. The captured traffic is listed as __sessions__ in the [__Live Traffic__]({%slug web-sessions-list%}).
 
-The steps to capture web traffic is given below:
+The steps to capture web traffic are given below:
 
 1. Open Fiddler Everywhere and focus the main [__Live Traffic__ tab.]({%slug web-sessions-list%}). Make sure that __Live Traffic__ switch is set to __Capturing__. To stop capturing the live traffic, switch it back to __Paused__.
 
@@ -33,9 +33,9 @@ For example: Open Google Chrome browser and enter https://docs.telerik.com/fiddl
 
 ## Inspect Web Traffic
 
-Fiddler Everywhere provides functionality to inspect the already captured sessions. The live traffic sessions are composed of HTTP/HTTPS requests and responses. Each HTTP request can be observed through the __Request Inspector__. Each HTTP response can be observed through the __Response Inspector__. Both inspectors are powerful tools that can visualize the received content via different I [nspector types]({%slug inspector-types%}).
+Fiddler Everywhere provides functionality to inspect the already captured sessions. The live traffic sessions are composed of HTTP/HTTPS requests and responses. Each HTTP request can be observed through the __Request Inspector__. Each HTTP response can be observed through the __Response Inspector__. Both inspectors are powerful tools that can visualize the received content via different [Inspector types]({%slug inspector-types%}).
 
-The steps to inspect a request and response to it is given below:
+The steps to inspect a request and its respective response are given below:
 
 1. Open Fiddler Everywhere and capture traffic as mentioned above.
 
