@@ -74,7 +74,7 @@ The __Expires__ header contains the date/time after which the response is consid
 Expires: Fri, 20 Apr 2020 19:00:00 GMT
 ```
 
->tip In case, where a __Cache-Control__ header with __max-age__ or __s-maxage__ is set, then the value from __Expires__ will be ignored.
+>tip In a scerario where a __Cache-Control__ header with __max-age__ or __s-maxage__ is set, the value from __Expires__ will be ignored.
 
 ## Content-Type
 
