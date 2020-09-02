@@ -78,15 +78,15 @@ Expires: Fri, 20 Apr 2020 19:00:00 GMT
 
 ## Content-Type
 
-The Content-Type header from the response.
+The __Content-Type__ header is the header which is originated from the response.
 
-The __Content-Type__ header is an indication of the media type of the resource. It is used with requests of type __POST__ and __PUT__ where the client indicates to the server the type of data that is sent. The __Content-Type__ header supports three directives (__media-type__, __charset__ and __boundary__) which values are separated in the column by a semicolon. An example for __Content-Type__ header: `Content-Type: application/json;charset=UTF-8`
+The __Content-Type__ header is an indication of the media type of the resource. It is used with requests of type __POST__ and __PUT__ where the client indicates to the server the type of data that is sent. The __Content-Type__ header supports three directives (__media-type__, __charset__ and __boundary__) which values are separated in the column by a semicolon. An example for __Content-Type__ header is: `Content-Type: application/json;charset=UTF-8`
 
->tip The are many different media-types values which can be used to explicitly set the type of the passed resource. See the list of the common ones [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).
+>tip There are different media-type values which can be used to explicitly set the type of the passed resource. Click [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) to get the list of the common media-types.
 
 ## Process
 
-The local OS process from which the traffic originated. Examples for __Process__ values:
+__Process__ is the local OS process from which the traffic has been originated. An example of a __Process__ values are mentioned below:
 
 ```
 Process: chrome:54000
@@ -96,6 +96,6 @@ Process: teams:18352
 
 ## Comments
 
-A field for showing the custom comment.
+__Comments__ are the field for showing the custom comment.
 
 This column will have a value only if the comment was added previously (for example, when looking into a list of [shared sessions]({%slug saved-sessions-tab%}) with already added comments) or when you explicitly add a comment (via [__Comment__ in the context menu]({%slug web-sessions-list%}#comment)).
