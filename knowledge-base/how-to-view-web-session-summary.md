@@ -2,8 +2,8 @@
 title: How to View Web Session Summary
 description: An article on how to capture and inspect web traffic using Fiddler Everywhere
 type: how-to
-slug: how-to-capture-and-inspect-web-traffic
-tags: capture web traffic, inspect web traffic, web traffic, https, web application
+slug: how-to-view-web-session-summary
+tags: view web session, session summary, web session summary
 publish: true
 res_type: kb
 ---
