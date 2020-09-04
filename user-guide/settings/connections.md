@@ -18,7 +18,7 @@ The __Fiddler listens on port__ option controls which port Fiddler Everywhere us
 
 ### Act as a System Proxy on Startup
 
-The __Act as a system proxy on startup__ option whether or not Fiddler Everywhere registers as the system proxy during startup. Some browsers and many applications use the system proxy by default and re notified when it changes.
+The __Act as a system proxy on startup__ option whether or not Fiddler Everywhere registers as the system proxy during startup. Some browsers and many applications use the system proxy by default and are notified when it changes.
 
 ### Allow Remote Computers to Connect
 

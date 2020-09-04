@@ -10,7 +10,7 @@ position: 10
 
 Fiddler Everywhere being a cross-platform web debugging proxy allows you to inspect network traffic and debug it. It is available for Windows, macOS and Linux. In this page, we'll discuss about the system required to run Fiddler Everywhere.
 
-## System Requirments
+## System Requirements
 
 Fiddler Everywhere utilizes built-in .NET Core (cross-platform version .NET framework).
 
@@ -70,15 +70,15 @@ Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Li
 
         **Gnome**
 
-        ![Gnome setting executible](../images/installation/exec-gnome.jpg)
+        ![Gnome setting executable](../images/installation/exec-gnome.jpg)
 
         **Cinnamon**
 
-        ![Cinnamon setting executible](../images/installation/exec-cinnamon.jpg)
+        ![Cinnamon setting executable](../images/installation/exec-cinnamon.jpg)
 
         **KDE**
 
-        ![KDE setting executible](../images/installation/exec-kde.jpg)
+        ![KDE setting executable](../images/installation/exec-kde.jpg)
 
 ## Create an Account
 

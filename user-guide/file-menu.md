@@ -18,7 +18,7 @@ The **Load Archive** command allows you to reload previously-captured traffic st
 
 ### Save Archive
 
-The **Save Archive** submenu exposes options that allow you to save traffic to SAZ files. You can save all current sessions or just the selected sessions. 
+The **Save Archive** sub-menu exposes options that allow you to save traffic to SAZ files. You can save all current sessions or just the selected sessions. 
 
 After selecting an option, a **Save** prompt will appear. The dialog provides options to use encryption (AES256) to create a password-protected archive.
 
@@ -30,7 +30,7 @@ The **Import Sessions** command allows you to import previously-captured traffic
 
 ### Export Sessions
 
-The **Export Sessions** submenu exposes options to export traffic in various file formats. You can export all current sessions or just the selected sessions. 
+The **Export Sessions** sub-menu exposes options to export traffic in various file formats. You can export all current sessions or just the selected sessions. 
 
 After selecting an option, a **Choose Format** prompt will appear. The supported formats are as follows:
 - WCAT Script
@@ -54,11 +54,11 @@ The **Check For Updates** command contacts a web service to determine whether th
 
 ### Forums
 
-The **Forums** command opens a new browser tab with the link to the Fiddler Evevywhere forums portal
+The **Forums** command opens a new browser tab with the link to the Fiddler Everywhere forums portal
 
 ### Documentation
 
-The **Documentation** command opens a new browser tab with the link to the Fiddler Evevywhere documentation website
+The **Documentation** command opens a new browser tab with the link to the Fiddler Everywhere documentation website
 
 ### Contact Support
 

@@ -33,7 +33,7 @@ By default, Fiddler Everywhere uses __buffering mode__, which means that the res
     Streaming mode is useful for low-level network timing scenarios (for example, by design some browsers will parse partially-downloaded HTML, and that would start downloading external resources in parallel before the remote server has finished delivering the content).
     ![Buffering mode vs Streaming Mode](../../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
 
-    Streaming mode is also useful in cases where a site delivers audo or video streams. These kind of never-ending streams can't be buffered by Fiddler Everywhere.
+    Streaming mode is also useful in cases where a site delivers audio or video streams. These kind of never-ending streams can't be buffered by Fiddler Everywhere.
 
 ### Decode
 
@@ -63,7 +63,7 @@ Use __Filter__ to apply advanced filters based on the Request and Response heade
 
 ### Save
 
-Use __Save__ buttton to save sessions for later use or to prepare sessions for sharing.
+Use __Save__ button to save sessions for later use or to prepare sessions for sharing.
 
 1. Click on the __Save__ button.
 
@@ -77,7 +77,7 @@ Use __Save__ buttton to save sessions for later use or to prepare sessions for s
 
 ### Share
 
-Sharing sessions greatly improves colaboration and Fiddler Everywhere provides several options to export and share sessions:
+Sharing sessions greatly improves collaboration and Fiddler Everywhere provides several options to export and share sessions:
 
 - Sharing [via __Share__ button from the __Live Traffic__ list toolbar](#share-live-traffic-sessions).
 - Sharing [via __Share__ button from the toolbar of already saved session (in __Saved Sessions__)](#share-previosly-saved-sessions).
@@ -94,20 +94,20 @@ The toolbar comes with __Share__ button that will save the currently displayed s
 1. Click on the __Share__ button.
 2. The __Save Session__ prompt window appears. You need to save the sessions before they could be shared.
 
-    ![Saving before traffic coulod be shared](../../images/livetraffic/websessions/websessions-toolbar-share-saveprompt.png)
+    ![Saving before traffic could be shared](../../images/livetraffic/websessions/websessions-toolbar-share-saveprompt.png)
 
 3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on __Share__ button.
 
     ![Share prompt window](../../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
 
 
-To share Previosly Saved Sessions
+To share Previously Saved Sessions
 
 1. Double-click on the saved sessions entry from __Sessions__ list.
 
 2. The selected entry opens in a new tab. Click on the __Share__ button.
 
-    ![Loading previosly saved sessions](../../images/livetraffic/websessions/websessions-toolbar-share-savedshare.png)
+    ![Loading previously saved sessions](../../images/livetraffic/websessions/websessions-toolbar-share-savedshare.png)
 
 3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on __Share__ button.
 
@@ -151,7 +151,7 @@ The context menu for the Live Traffic exposes several actions that can be applie
 
 ### Edit in Composer
 
-The context menu option __Edit in Composer__ loads the selected recust into the composer windows where it can be editted and reissued.
+The context menu option __Edit in Composer__ loads the selected request into the composer windows where it can be edited and reissued.
 
 ### Save
 
@@ -221,7 +221,7 @@ Use the __Select__ context menu option to select sessions that are directly rela
 
 - __Parent request__ Selects the session that is a parent of the currently selected session. Keyboard shortcut: __P__
 - __Children requests__ Selects the sessions that are children of the currently selected session. Keyboard shortcut: __C__
-- __Duplicaterequest__ Selects the session that is a duplicate to the currently selected session. Keyboard shortcut: __D__
+- __Duplicate request__ Selects the session that is a duplicate to the currently selected session. Keyboard shortcut: __D__
 
 ### Copy
 

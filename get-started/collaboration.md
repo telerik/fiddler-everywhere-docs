@@ -52,7 +52,7 @@ Add a custom comment to one or more captured sessions to provide additional cont
 
 ![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
 
-The newly added comment will appear in [the **Commments** column]({%slug web-sessions-list%}#live-traffic-list).
+The newly added comment will appear in [the **Comments** column]({%slug web-sessions-list%}#live-traffic-list).
 
 ### Add Notes
 

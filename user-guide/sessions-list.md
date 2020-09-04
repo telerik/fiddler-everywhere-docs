@@ -44,7 +44,7 @@ The option will load the selected session in the __Live Traffic__ list. Keyboard
 
 ### Export
 
-The option promts the __Export__ windows. The session can be exported in SAZ format which can be encrypted (optional). Keyboard shortcut: __Cmd__ + __E__ (Mac), __Ctrl__ + __E__ (Windows).
+The option prompts the __Export__ windows. The session can be exported in SAZ format which can be encrypted (optional). Keyboard shortcut: __Cmd__ + __E__ (Mac), __Ctrl__ + __E__ (Windows).
 
 ### Rename
 
@@ -52,7 +52,7 @@ The option allows you to rename the selected session. Available only for the ses
 
 ### Share
 
-The option promts a window where you could add user emails that you want to share the session with. Available only for the session owner. Keyboard shortcut: __Cmd__ + __Shift__ + __=__ (Mac), __Ctrl__ + __Shift__ + __=__ (Windows).
+The option prompts a window where you could add user emails that you want to share the session with. Available only for the session owner. Keyboard shortcut: __Cmd__ + __Shift__ + __=__ (Mac), __Ctrl__ + __Shift__ + __=__ (Windows).
 
 ### Delete
 

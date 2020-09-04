@@ -8,7 +8,7 @@ position: 30
 
 # Gateway
 
-The __Gateway__ submenu provide options to easily configure how Fiddler Everywhere accesses the network. By default, Fiddler Everywhere "chains" to the system's default proxy. These settings allows you to overwrite that behavior.
+The __Gateway__ sub-menu provides options to easily configure how Fiddler Everywhere accesses the network. By default, Fiddler Everywhere "chains" to the system's default proxy. These settings allows you to overwrite that behavior.
 
 ![Example manual proxy configuration](../../images/settings/gateway-system-proxy.png)
 
