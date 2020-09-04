@@ -27,19 +27,7 @@ res_type: kb
 
 Fiddler Everywhere certificate is installed to inspect network traffic and debug it. The __Composer__ feature in Fiddler Everywhere enables you to manually build and send HTTP, HTTPS requests. Click [here]({%slug composer%}) to know more about Fiddler Everywhere Composer.
 
-Refer to the image below:
-
-![Composer User Interface](../images/composer/composer-sections.png)
-
-The Composer is divided into three major sections. 
-
-- The top section contains a drop-down for selecting __HTTP Methods__, an __URL field__, a drop-down to select the used __HTTP version__, and an __Execute__ button.
-
-- The mid-section is  a __request composer__ that provides options to further modify your request via __Headers__, __Body__, __Params__, or __Raw__ views.
-
-- The bottom section is a __response inspector__, which shows the response from the executed request.
-
-All of the sections are used to construct a request and ovserve the response.
+In the context of an HTTP transaction, __Basic Access Authentication__ is a method for an HTTP user agent (e.g. a web browser) to provide a user name and password when making a request. In __Basic HTTP Authentication__, a request contains a header field in the form of Authorization: Basic <credentials>, where credentials is the __Base64__ encoding of `ID` and `password` joined by a single colon(`:`).
 
 Now, let's see how can you create Composer request for APIs that require authentication:
 
@@ -65,7 +53,7 @@ In the above image you can see that the values of the `user` and `passwd` variab
 
 Once you create the object in the Body, go to the __Headers__ tab, where you can see a predefined key `User-Agent` added from Fiddler Everywhere. Now, lets add the Authorization key to the header. For that:
 
-- Encode the values of the variables set in the JSON format. The encoded value of __user1:pass1__ is `dXNlcjFwYXNzMQ==`.
+- Encode the values of the variables set in the JSON format. The encoding can be done with simple Base64 converters. The format of the text should be `<username>:<password>` The encoded value of __user1:pass1__ is `dXNlcjFwYXNzMQ==`.
 
 - In __Headers__ tab:
     - Set the __Key__ to `Authorization`.
@@ -82,8 +70,10 @@ Clicking the __Execute__ button will add two more Keys to the __Headers__ tab na
 
 ![Added Keys to the Headers Tab](../images/kb/added-keys-to-the-headers-tab.png)
 
-Following the above steps will create the basic authentication with Fiddler Everywhere. To check go thorugh the __Response Inspector__ section of the Composer. If the Raw and the JSON tab of the __Response Inspector__ shows the value of `"authenticated": true,`, you have successfully completed the authentication process.
+Following the above steps will create the basic authentication with Fiddler Everywhere. To check go thorugh the __Response Inspector__ section of the Composer. A successful request should return __status 200__ from the server along with the server specific payload.
 
 Refer to the image below:
 
 ![Response Inspector](../images/kb/authentication-to-true-in-response-inspector.png)
+
+The above response is HTTPBin specific as we used it to create the Basic Authentication. 
