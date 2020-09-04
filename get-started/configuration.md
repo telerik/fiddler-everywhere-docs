@@ -10,7 +10,7 @@ position: 30
 
 In this article we'll discuss about how to configure Fiddler Everywhere in your system. 
 
-By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ submenu in __Settings__.
+By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ sub-menu in __Settings__.
 
 ## Configure on macOS
 
@@ -60,13 +60,13 @@ Some Linux distributions are using different security features and different way
 
 2. Go to __Settings > HTTPS__
 
-3. Expand the __Advanced Settings__ submenu
+3. Expand the __Advanced Settings__ sub-menu
 
 4. Click the __Export Root Certificate to Desktop__ button.
 
     ![Export root certificate](../images/settings/settings-export-cert.png)
 
-5. Import and trust the exported certificate. To be able to install the FE certificate, you need to follow some additonal steps on Linux:
+5. Import and trust the exported certificate. To be able to install the FE certificate, you need to follow some additional steps on Linux:
 
     - Create a directory and copy the certificate (exported in the previous steps). The last command will start the tool to upgrade the certificates. 
 
@@ -76,7 +76,7 @@ Some Linux distributions are using different security features and different way
 
         ![Add new certificate](../images/configuration/cert_ubunto_002.png)
 
-    - Choose the FiddlerRootCertficate.crt and press **OK**
+    - Choose the FiddlerRootCertificate.crt and press **OK**
 
         ![Add Fiddler certificate](../images/configuration/cert_ubunto_003.png)
 
@@ -94,7 +94,7 @@ Some Linux distributions are using different security features and different way
     >important Some Linux distributions like Ubuntu will use localized paths (for example, the __Desktop__ folder is renamed with the related word used in the locale language). That might cause for __step 3__ to fail due to a missing folder named __Desktop__ with an error message of type _Could not find a part of the path ..._. Until an out-of-the-box solution is implemented, you could easily workaround this issue by creating a folder called __Desktop__ at your root directory (`mkdir ~/Desktop`) and then export the certificate to the newly-created directory. Once the certificate is installed, you could safely remove the directory.
 
 
-For more information about Fiddler Everyehere settings, visit [**_Settings_**]({%slug decrypt-https-traffic%}) page.
+For more information about Fiddler Everywhere settings, visit [**_Settings_**]({%slug decrypt-https-traffic%}) page.
 
 ## Additional Resources
 
