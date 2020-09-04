@@ -134,7 +134,7 @@ www.example.com/Path1/query=example.jpg // (MATCH)
 ```HTML
 regex:+.(jpg|gif|bmp)$
 
-www.example.com/Path1/query=foo.jpg&bar // (No Match - imnproper ending)
+www.example.com/Path1/query=foo.jpg&bar // (No Match - improper ending)
 www.example.com/Path1/query=exam ple.jpg // (MATCH)
 www.example.com/Path1/query=foo.JPG // (No Match - mismatched case)
 www.example.com/Path1/query=somegif.gif // (MATCH)
@@ -151,7 +151,7 @@ Beyond simply returning files, the __AutoResponder__ can perform some specific a
 | __http://targetURL__ | Returns the content of the __targetURL__ as the response. | Final |
 | __*redir:http://targetURL__ | Returns a HTTP Redirect to the target URL. Unlike the simple URL rule, this ensures that the client knows where its request is going so proper cookies are sent, etc. | Final |
 | __*bpu__ | Breaks on request before hitting the server. | Non-final|
-| __*delay:###__ | Delay sending request to the server by __###__ of miliseconds. | Non-final |
+| __*delay:###__ | Delay sending request to the server by __###__ of milliseconds. | Non-final |
 | __*header:Name=Value__ | Set the Request header with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. | Non-final |
 | __*flag:Name=Value__ | Set the Session Flag, with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. | Non-final |
 | __*CORSPreflightAllow__ | Returns a response that indicates that CORS is allowed. | Final |
