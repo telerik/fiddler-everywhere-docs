@@ -1,5 +1,8 @@
 ---
 title: Installation
+redirect_from:
+  - /getting-started/installation
+  - /installation/installation-procedure
 slug: installation
 tags: installation, accounts, updates
 publish: true
