@@ -1,6 +1,6 @@
 ---
 title: Installation
-previous_url: /getting-started/installation, /installation/installation-procedure
+previous_url: https://testdocs.telerik.com/fiddler-everywhere/getting-started/installation
 slug: installation
 tags: installation, accounts, updates
 publish: true
