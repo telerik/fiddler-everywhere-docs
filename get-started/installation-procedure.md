@@ -1,5 +1,6 @@
 ---
 title: Installation
+previous_url: /getting-started/installation, /installation/installation-procedure
 slug: installation
 tags: installation, accounts, updates
 publish: true
