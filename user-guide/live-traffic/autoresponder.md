@@ -22,7 +22,7 @@ The [AutoResponder Queue Viewer]({%slug auto-responder-general%}#queue-viewer) l
 
 The __Rules Editor__ interface enables creating and editing rules. You need to enter a __match rule__ and an __action string__, and Fiddler Everywhere will undertake the action if the request URI matches the __match rule__.
 
-### Create New Rule
+## Create New Rule
 
 1. Click on __Create New Rule__ button in the __Rules Editor__.
 
@@ -44,7 +44,7 @@ The __Rules Editor__ interface enables creating and editing rules. You need to e
     - You can import a __*.FARX__ file [via the __Import__ button]({%slug auto-responder-general%}#import-rules) to queue rules based on previously captured traffic.
 
 
-### Match Rules
+## Match Rules
 
 Fiddler Everywhere will accept string literals, regular expressions, and a set of some special match rules as listed below.
 
@@ -140,9 +140,9 @@ www.example.com/Path1/query=foo.JPG // (No Match - mismatched case)
 www.example.com/Path1/query=somegif.gif // (MATCH)
 ```
 
-### Action Strings
+## Action Strings
 
-Beyond simply returning files, the __AutoResponder__ can perform some specific actions:
+When Fiddler Everywhere identifies a request which matches the Auto Responder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files, the __AutoResponder__ can perform some specific actions:
 
 
 | Action String     | Description | Action Type |
@@ -158,6 +158,8 @@ Beyond simply returning files, the __AutoResponder__ can perform some specific a
 | __*reset__ | Reset the client connection immediately using a TCP/IP RST to the client. | Final |
 | __*drop__ | Close the client connection immediately without sending a response. | Final |
 | __*exit__ | Stop processing rules at this point. | Final |
+| __Return manually crafted response__ | Allows modifying the current response (HTML, JS, JSON) previously returned by the server. | Final |
+| __Find a file...__ | The __Find a file…__ option in the Actions dropdown displays a file picker to allow you to select a filename that should be returned.| Final |
 
 __Rules with Non-final__ actions will allow the request to match multiple AutoResponder rules. As soon a rule specifying a final action is reached, the matching process exists, and no further rules are processed for that session.
 
