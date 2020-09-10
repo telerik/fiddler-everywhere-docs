@@ -17,46 +17,47 @@ First you have to have Fiddler Everywhere installed on your desktop machine. The
 
 ### Configure Fiddler Everywhere
 
-1. Enable the remote connecions in Fiddler Everywhere client via _Settings_ > _Connections_ > _Allow remote computers to connect_
+1. Enable the remote connecions in Fiddler Everywhere client via **_Settings_ > _Connections_ > _Allow remote computers to connect_**
 
-2. Remember the IP address of the machine on which Fiddler Everywhere is running. You can use build-in OS tools to obtain the IP adress (like **ipconfig** on Windows or **ifconfig** on Linux) or the Fiddler Everywhere popup status on the bottom right part of the client. For demonstration purposes let's assume that the local IP used by the machine (which runs Fiddler Everywher) is 192.168.0.109
+2. Remember the IP address of the machine on which Fiddler Everywhere is running. You can use build-in OS tools to obtain the IP adress (like **ipconfig** on Windows or **ifconfig** on Linux) or the Fiddler Everywhere popup status on the bottom right part of the client. 
+
+For demonstration purposes let's assume that the local IP used by the machine (which runs Fiddler Everywher) is **192.168.0.101**
 
 ### Configure Android Device
 
 1. Check Android device IP address 
 
+- Open the connected Wifi and tap on **_Settings_**.
+- Extended **_Advanced Settigns_**.
+- Get the IP address of the device. For demonstration purposes let's assume the device IP is **192.168.0.222**
 
-- Open the connected Wifi and tap on "Settings"
-- Extended "Advanced Settigns"
-- Get the IP address of the device e.g. 192.168.0.101
 
 2. Modify Android device Proxy
-- Open the connected Wifi and tap on "Settings"
+- Open the connected Wifi and tap on **_Settings_**.
 
-- Press "Edit" and expand "Advanced settings". 
-On older Android version make a long-press on network name and tap on "Modify" and expand "Advanced settings"
+- Press **_Edit_** and expand **_Advanced Settigns_**.
+On older Android version you might have to do a long-press on the connefcted network name and then tap on **_Modify_** and expand **_Advanced settings_**.
 
-- On "Proxy" select "Manual proxy"
-  - As IP address put the adress of the computer (on which Fiddler Everywhere client is running) e.g. 192.168.0.6
-  - As port use the port set in Fiddler Everywhere client. By default it is 8866
-  - Tap "Save"
+- On **_Proxy_** select **_Manual proxy_**.
+  - As IP address put the adress of the computer (on which Fiddler Everywhere client is running), for example **192.168.0.101**
+  - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere settings). 
+  - Tap **_Save_**.
 
-3. Install the certificate on the Android device
-- open a browser on the device and type http://ipv4.fiddler
-- Tap to download the certificate
-- Enter a certificate name and press Save
+3. Install the trust certificate on the Android device.
+- Open a browser on the device and type the Fiddler echo service address: **http://ipv4.fiddler**
+- Tap the option to download the certificate.
+- In the prompt windows, enter a certificate name and press **_Save_**.
 
 ## Inspect Browser Traffic
 
-1. Start monitoring HTTP/HTTPS traffic from the browsers
+WIth all of the above done, you can immediatly start monitoring HTTP/HTTPS traffic from the mobile browsers. For example open a CHrome browser on your Andorid device, type an address of your choice and observe the traffic being captured in the **_Live Traffic_** section of Fiddler Everywhere client.
 
 ## Inspect Application Traffic
 
-1. You will be able to monitor traffic from apps that are actively developed (or to where you have access to the codebase)
-- For API24  and above an additional code needs to be introduced to the app
+1. You will be able to monitor traffic from apps that are in active development (application for which you have access to the codebase). For Android API24 and above, an additional code needs to be introduced to the app as follows:
 
-- Put in Android/src/main/res/xml/network_security_config.xml
-
+- Put in **_Android/src/main/res/xml/network_security_config.xml_**
+```XML
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <base-config>
@@ -68,10 +69,21 @@ On older Android version make a long-press on network name and tap on "Modify" a
 	</trust-anchors>
     </base-config>
 </network-security-config>
+```
 
-- Then in AndroidManiFiddler Everywhere clientst.xml add the above file under application
-
+- Then in the **_AndroidManifest.xml_** file, add the above as reference via a parameter in the **_application_** tag
+```XML
 android:networkSecurityConfig="@xml/network_security_config"
+```
+
+For exmaple:
+```XML
+	<application
+		android:name="com.tns.NativeScriptApplication"
+		android:allowBackup="true"
+		android:icon="@drawable/icon"
+        android:networkSecurityConfig="@xml/network_security_config">
+```
 
 - rebuild the app and you can start monitoring its HTTP/HTTPS traffic
 
