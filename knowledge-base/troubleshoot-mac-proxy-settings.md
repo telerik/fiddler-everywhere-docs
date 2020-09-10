@@ -2,9 +2,8 @@
 title: Troubleshoot Mac Proxy Settings
 description: Troubleshooting Mac Proxy Settings will help isolate Issues
 type: troubleshooting
-page_title: Verifying Mac Proxy Settings
 slug: troubleshoot-mac-proxy-settings
-position: 
+page_title: Verifying Mac Proxy Settings
 tags: troubleshooting, apple, mac, proxy
 ticketid: 1388381
 res_type: kb

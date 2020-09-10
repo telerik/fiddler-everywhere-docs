@@ -4,7 +4,6 @@ description: To troubleshoot common issues, reset the Fiddler Everywhere setting
 type: how-to
 page_title: Configure Fiddler Everywhere Default Settings
 slug: how-to-reset-fiddler-everywhere-settings-to-default
-position: 
 tags: how-to, default-settings
 ticketid: 1388381
 res_type: kb
