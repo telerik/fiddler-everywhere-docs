@@ -17,31 +17,23 @@ res_type: kb
 ## Configure Fiddler Everywhere
 
 1. Enable the remote connections in Fiddler Everywhere client via **_Settings_ > _Connections_ > _Allow remote computers to connect_**
-
-2. Remember the IP address of the machine on which Fiddler Everywhere is running. You can use built-in OS tools to obtain the IP address (like **ipconfig** on Windows or **ifconfig** on Linux) or the Fiddler Everywhere popup status on the bottom right part of the client. гит
-
+2. Remember the IP address of the machine on which Fiddler Everywhere is running. You can use built-in OS tools to obtain the IP address (like **ipconfig** on Windows or **ifconfig** on Linux) or the Fiddler Everywhere popup status on the bottom right part of the client.
 For demonstration purposes, let's assume that the local IP used by the machine (which runs Fiddler Everywhere) is **192.168.0.101**
 
 ## Configure Android Device
 
 1. Check Android device IP address 
-
-- Open the connected Wifi and tap on **_Settings_**.
-- Extended **_Advanced Settigns_**.
-- Get the IP address of the device. For demonstration purposes, let's assume the device IP is **192.168.0.222**
-
-
+    - Open the connected Wifi and tap on **_Settings_**.
+    - Extended **_Advanced Settings_**.
+    - Get the IP address of the device. For demonstration purposes, let's assume the device IP is **192.168.0.222**
 2. Modify Android device Proxy
-- Open the connected Wifi and tap on **_Settings_**.
-
-- Press **_Edit_** and expand **_Advanced Settigns_**.
-On older Android versions, you might have to do a long-press on the connected network name and then tap on **_Modify_** and expand **_Advanced settings_**.
-
-- On **_Proxy_** select **_Manual proxy_**.
-  - As IP address put the address of the computer (on which Fiddler Everywhere client is running), for example, **192.168.0.101**
-  - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere settings). 
-  - Tap **_Save_**.
-
+    - Open the connected Wifi and tap on **_Settings_**.
+    - Press **_Edit_** and expand **_Advanced Settings_**.
+    On older Android versions, you might have to do a long-press on the connected network name and then tap on **_Modify_** and expand **_Advanced Settings_**.
+    - On **_Proxy_** select **_Manual proxy_**.
+    - As IP address put the address of the computer (on which Fiddler Everywhere client is running), for example, **192.168.0.101**
+    - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere settings). 
+    - Tap **_Save_**.
 3. Install the trust certificate on the Android device.
 - Open a browser on the device and type the Fiddler echo service address: **http://ipv4.fiddler**
 - Tap the option to download the certificate.
