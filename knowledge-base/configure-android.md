@@ -8,6 +8,16 @@ publish: true
 res_type: kb
 ---
 
+#### Environment
+
+|   |   |
+|---|---|
+| Product  | Fiddler Everywhere  |
+| Product Version | 1.0.2 and above  |
+
+#### Description
+
+Fiddler Everywhere can be used to capture and inspect traffic that comes from Android devices.
 
 ## Prerequisites
 

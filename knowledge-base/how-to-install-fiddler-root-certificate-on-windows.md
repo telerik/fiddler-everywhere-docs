@@ -8,7 +8,16 @@ publish: true
 res_type: kb
 ---
 
-## Description
+#### Environment
+
+|   |   |
+|---|---|
+| Product  | Fiddler Everywhere  |
+| Product Version | 1.0.0 and above  |
+| OS | Windows |
+
+#### Description
+
 How to install Fiddler root certificate on Windows
 
 >tip Fiddler Everywhere provides automatic option to install the root trust certificate (administrative account still needed). Use [this documentation section]({%slug decrypt-https-traffic%}) as a reference and use the method below only if you need to add the certificate manually.

@@ -8,22 +8,15 @@ publish: true
 res_type: kb
 ---
 
-## Environment
 
-<table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>1.0.1</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>Fiddler Everywhere</td>
-		</tr>
-	</tbody>
-</table>
+#### Environment
 
-## Description
+|   |   |
+|---|---|
+| Product  | Fiddler Everywhere  |
+| Product Version | 1.0.1 and above  |
+
+#### Description
 
 Fiddler Everywhere certificate allows the inspection and debugging of network traffic. The __Composer__ feature in Fiddler Everywhere enables you to manually build and send HTTP or HTTPS requests. Click [here]({%slug composer-tab%}) to know more about Fiddler Everywhere Composer.
 

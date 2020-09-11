@@ -8,7 +8,17 @@ publish: true
 res_type: kb
 ---
 
-## Description
+
+#### Environment
+
+|   |   |
+|---|---|
+| Product  | Fiddler Everywhere  |
+| Product Version | 1.0.0 and above  |
+| OS | Linux |
+
+#### Description
+
 How to install Fiddler root certificate in Firefox on Linux
 
 ## Solution

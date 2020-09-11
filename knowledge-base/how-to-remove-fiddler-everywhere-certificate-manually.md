@@ -8,26 +8,18 @@ publish: true
 res_type: kb
 ---
 
-## Environment
+#### Environment
 
-<table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>1.0.1</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>Fiddler Everywhere</td>
-		</tr>
-	</tbody>
-</table>
+|   |   |
+|---|---|
+| Product  | Fiddler Everywhere  |
+| Product Version | 1.0.0 and above  |
 
-## Description 
+#### Description
 
 Fiddler Everywhere certificate is installed to inspect network traffic and debug it. If you don't want the traffic monitoring anymore, you can remove the Fiddler Everywhere HTTPS certificate from your system. The steps to remove the Fiddler Everywhere HTTPS certificate are given below: 
 
-### macOS 
+## macOS 
 
 1. In your system, open the __Keychain Access__ application. Select the __login__ keychain from the list and __All Items__ from the category list. 
 
@@ -41,7 +33,7 @@ Fiddler Everywhere certificate is installed to inspect network traffic and debug
 
 Following the above steps will remove the Fiddler Everywhere HTTPS certificate from your macOS. 
 
-### Windows 
+## Windows 
 
 1. In the search bar of your Windows system, type __Manage User Certificates__. Click on it to open. 
 
