@@ -11,14 +11,14 @@ res_type: kb
 
 ## Prerequisites
 
-- Fiddler Everywhere client installed on your desktop machine.
-- The PC (that holds Fiddler Everywhere) and the Android device should be **discoverable** on the same network.
+- [Fiddler Everywhere client](https://www.telerik.com/download/fiddler-everywhere) installed on your machine.
+- The computer (that holds Fiddler Everywhere) and the Android device should be **discoverable** on the same network.
 
 ## Configure Fiddler Everywhere
 
 1. Enable the remote connections in Fiddler Everywhere client via **_Settings_ > _Connections_ > _Allow remote computers to connect_**
 
-2. Remember the IP address of the machine on which Fiddler Everywhere is running. You can use built-in OS tools to obtain the IP address (like **ipconfig** on Windows or **ifconfig** on Linux) or the Fiddler Everywhere popup status on the bottom right part of the client. 
+2. Remember the IP address of the machine on which Fiddler Everywhere is running. You can use built-in OS tools to obtain the IP address (like **ipconfig** on Windows or **ifconfig** on Linux) or the Fiddler Everywhere popup status on the bottom right part of the client. гит
 
 For demonstration purposes, let's assume that the local IP used by the machine (which runs Fiddler Everywhere) is **192.168.0.101**
 
