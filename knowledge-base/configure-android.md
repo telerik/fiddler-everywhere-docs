@@ -35,9 +35,9 @@ For demonstration purposes, let's assume that the local IP used by the machine (
     - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere settings). 
     - Tap **_Save_**.
 3. Install the trust certificate on the Android device.
-- Open a browser on the device and type the Fiddler echo service address: **http://ipv4.fiddler**
-- Tap the option to download the certificate.
-- In the prompt windows, enter a certificate name and press **_Save_**.
+    - Open a browser on the device and type the Fiddler echo service address: **http://ipv4.fiddler**
+    - Tap the option to download the certificate.
+    - In the prompt windows, enter a certificate name and press **_Save_**.
 
 ## Inspect Browser Traffic
 
@@ -45,7 +45,7 @@ With all of the above done, you can immediately monitor HTTP/HTTPS traffic from 
 
 ## Inspect Android Application Traffic
 
-1. You will be able to monitor traffic from apps that are in active development (application for which you have access to the codebase). For Android API24 and above, an additional code needs to be introduced to the app as follows:
+You will be able to monitor traffic from apps that are in active development (application for which you have access to the codebase). For Android API 24 and above, an additional code needs to be introduced to the app as follows:
 
 - Put in **_Android/src/main/res/xml/network_security_config.xml_**
 ```XML
