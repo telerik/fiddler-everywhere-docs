@@ -8,6 +8,16 @@ publish: true
 res_type: kb
 ---
 
+
+#### Environment
+
+|   |   |
+|---|---|
+| Product  | Fiddler Everywhere  |
+| Product Version | 1.0.2 and above  |
+
+#### Description
+
 Fiddler Everywhere captures and inspects web traffic through HTTP and HTTPS. The captured traffic allows you to debug your web application while using [the Fiddler's Request and Response Inspectors]({%slug inspector-types%}).
 
 ## Capturing Web Traffic

@@ -8,9 +8,16 @@ publish: true
 res_type: kb
 ---
 
-## View Sessions Summary
+#### Environment
 
-Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Use these to identify HTTP-related issues, track and debug your site performance, and to leave custom comments.
+|   |   |
+|---|---|
+| Product  | Fiddler Everywhere  |
+| Product Version | 1.0.0 and above  |
+
+#### Description
+
+A detailed list of the columns available in the **Live Traffic** list and the information extracted from each column's value. Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Use these to identify HTTP-related issues, track and debug your site performance, and to leave custom comments.
 
 ## ID(#)
 
