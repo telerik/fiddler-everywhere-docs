@@ -17,7 +17,7 @@ res_type: kb
 
 #### Description
 
-Traffic sent to http://localhost or http://127.0.0.1 is not captured when using some browsers like Google Chrome or Firefox.
+Traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http://127.0.0.1) is not captured when using some browsers like Google Chrome or Firefox (when Fiddler Everywhere capturing mode is turned on).
 
 ## Solution
 
@@ -33,7 +33,7 @@ Instead of using _localhost_ like this:
 http://localhost:8081/mytestpage.aspx
 ```
 
-Use the machine name as follows:
+**Use the machine name** as follows:
 ```Shell
 http://myrootuserid:8081/mytestpage.aspx
 ```
@@ -57,7 +57,7 @@ http://ipv4.fiddler:8081/mytestpage.aspx
 http://ipv6.fiddler:8081/mytestpage.aspx
 ```
 
-**or** (to hit _localhost_ in the Host header - applicable for ISS Express)
+**or** (to hit _localhost_ in the _Host_ header - applicable for ISS Express)
 ```Shell
 http://ipv4.fiddler:8081/mytestpage.aspx
 ```
