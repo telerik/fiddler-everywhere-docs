@@ -21,9 +21,9 @@ Traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http:
 
 ## Solution
 
-There are two different solutions, both of which are resolving the described problem. The first one is to [use the machine name](#using-machine-name) instead of _localhost_, and the second one is to [use one of the specially provided aliases](@using-aliases) in Fiddler Everywhere. Note that both the aliases and the machine name replacement will work when Fiddler Everywhere client capturing mode is ON.
+There are two different solutions, both of which are resolving the described problem. The first one is to [use the machine name](#using-machine-name) instead of _localhost_, and the second one is to [use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere. Note that both the aliases and the machine name replacement will work when Fiddler Everywhere client capturing mode is ON.
 
-### Using Machine Name
+## Using Machine Name
 
 Use the **machine name** as an alias for _localhost_ or _127.0.0.1_ loopback addresses.
 
@@ -38,7 +38,7 @@ http://localhost:8081/mytestpage.aspx
 http://myrootuserid:8081/mytestpage.aspx
 ```
 
-### Using Aliases
+## Using Aliases
 
 Use a special Fiddler allias **ipv4.fiddler** (for connections using Internet Protocol version 4) or **ipv6.fiddler** (for connections using Internet Protocol version 6) or **localhost.fiddler** to hit _localhost_ in the _Host_ header (IIS Express).
 
