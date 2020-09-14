@@ -42,7 +42,7 @@ For demonstration purposes, let's assume that the local IP used by the machine (
     You might have to do a long-press on the connected network name on older Android versions and then tap on **_Modify_** and expand **_Advanced Settings_**.
     - On **_Proxy_** select **_Manual proxy_**.
     - As IP address put the address of the computer (on which Fiddler Everywhere client is running), for example, **192.168.0.101**
-    - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere [connections settings]({%slug connections-submenu#setting-proxy-port%})). 
+    - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere [connections settings]({%slug connections-submenu%}#setting-proxy-port)).
     - Tap **_Save_**.
 3. Install the trust certificate on the Android device.
     - Open a browser on the device and type the Fiddler echo service address: **http://ipv4.fiddler**
