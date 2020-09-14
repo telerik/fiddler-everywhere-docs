@@ -1,14 +1,15 @@
 ---
-title: File Menu
+title: Main Menu
+previous_url: /user-guide/file-menu
 slug: file-menu
-tags: main menu, Fiddler's menu
+tags: main menu, Fiddler's menu, Fiddler Everywhere file menu, Fiddler Everywhere help menu
 publish: true
 position: 10
 ---
 
-# File Menu
+## File Menu
 
-The File menu contains commands to load and store captured traffic. The menu provides options to create and load an archive that includes the whole captured traffic (creates a SAZ file) as well as an option to import/export only specific sessions.
+The File menu contains commands to load and store captured traffic. The menu provides options to create and load an archive that includes the whole captured traffic (creates a SAZ file) and an option to import/export only specific sessions.
 
 ![load-archive](../images/menu/menu-load-archive.png)
 
@@ -54,12 +55,12 @@ The **Check For Updates** command contacts a web service to determine whether th
 
 ### Forums
 
-The **Forums** command opens a new browser tab with the link to the Fiddler Everywhere forums portal
+The **Forums** command opens a new browser tab with the Fiddler Everywhere forums portal.
 
 ### Documentation
 
-The **Documentation** command opens a new browser tab with the link to the Fiddler Everywhere documentation website
+The **Documentation** command opens a new browser tab with the Fiddler Everywhere documentation website.
 
 ### Contact Support
 
-The **Contact Support** command opens a new email window with email to support@getfiddler.com
+The **Contact Support** command opens a new email window with an email to support@getfiddler.com
