@@ -6,7 +6,7 @@ publish: true
 position: 30
 ---
 
-# AutoResponder
+## AutoResponder Tab
 
 The __AutoResponder__ is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
 
