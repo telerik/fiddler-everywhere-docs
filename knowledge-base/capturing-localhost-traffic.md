@@ -61,3 +61,9 @@ http://ipv6.fiddler:8081/mytestpage.aspx
 ```Shell
 http://ipv4.fiddler:8081/mytestpage.aspx
 ```
+
+## Filter Localhost Traffic
+
+While using one of the above solutions to capture localhost requests, the traffic will be captured in the Live Traffic list, and as host name, the loopback address will be displayed (usually **127.0.0.1**). To filter by the **Host** column so that only localhost traffic is displayed, you will need to enter the loopback address as host value and not the aliases used in the browsers.
+
+![Example Localhost filtering](../images/kb/localhost-filtering.png)
