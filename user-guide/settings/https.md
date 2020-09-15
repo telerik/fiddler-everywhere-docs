@@ -4,7 +4,7 @@ slug: decrypt-https-traffic
 tags: https, https traffic, SSL, decrypt https, https decryption, capturing HTTPS, trust certificate
 publish: true
 position: 10
-previous_url: /user-guide/settings/https/https-decryption, /user-guide/settings/https
+previous_url: /user-guide/settings/https/https-decryption
 ---
 
 ## HTTPS Settings Menu
