@@ -4,6 +4,7 @@ slug: web-sessions-list
 tags: Fiddler Live Traffic, sniffed traffic, captured web traffic, sessions, fiddler sessions, share sessions, http sessions, 
 publish: true
 position: 10
+previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar
 ---
 
 ## Live Traffic Tab
