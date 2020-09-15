@@ -6,11 +6,12 @@ publish: true
 position: 60
 ---
 
-# Requests
 
-The Fiddler Everywhere client provides the option to save and share the composed requests. Previously, we discussed on the [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) feature which enables you to manually build and send HTTP, HTTPs and FTP requests. When you save a request using the Composer, the request is added to the collection of requests in the Requests list. 
+## Requests List
 
-The Request list looks like as shown in the image below: 
+The Fiddler Everywhere client provides the option to save and share the composed requests. Previously, we discussed on the [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) feature which enables you to manually build and send HTTP, HTTPs and FTP requests. When you save a request using the Composer, the request is added to the collection of requests in the **Requests** list. 
+
+The **Requests** list looks like as shown in the image below: 
 
 ![Requests list](../images/requests/requests-list-all.png)
 

@@ -6,7 +6,7 @@ publish: true
 position: 20
 ---
 
-# Inspectors
+## Inspector Types
 
 Fiddler's Inspectors display the **request** and the **response** for the selected session in the __Live Traffic__ list. The inspectors are located in the right panel with the Request inspectors above the Response inspectors.
 

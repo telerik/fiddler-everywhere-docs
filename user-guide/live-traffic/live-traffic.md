@@ -6,7 +6,7 @@ publish: true
 position: 10
 ---
 
-# Live Traffic
+## Live Traffic Tab
 
 The __Live Traffic__ tab is one of the most important feature of Fiddler Everywhere. It display a short summary of each captured session (in the __Live Traffic list__) and provides functionalities to work with these sessions (via the __Live Traffic toolbar__ and the Inspectors tabs). Fiddler Everywhere enables sessions saving and sharing.
 

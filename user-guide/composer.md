@@ -6,27 +6,27 @@ publish: true
 position: 50
 ---
 
-# Composer
+## Composer
 
 The __Composer__ tab enables you to manually build and send HTTP, HTTPS, and FTP requests.
 
 ![Composer User Interface](../images/composer/composer.png)
 
-## Get Started
+## Compose a Request
 
 The __Composer__ contains three major sections used to construct a request and observe the response.
 
-The top section contains a drop-down for selecting __HTTP Methods__, an __URL field__, a drop-down to select the used __HTTP version__, and an __Execute__ button.
+The top section contains a drop-down for selecting [__HTTP Methods__](#http-methods), an [__URL field__](#url-field), a drop-down to select the used [__HTTP version__](#http-version-selection), and an __Execute__ button.
 
-The mid-section is  a __request composer__ that provides options to further modify your request via __Headers__, __Body__, __Params__, or __Raw__ views.
+The mid-section is  a [__request composer__ ](#request-composer) that provides options to further modify your request via [__Headers__](#headers), [__Body__](#body), [__Params__](#params), or [__Raw__](#raw) views.
 
-The bottom section is a __response inspector__, which shows the response from the executed request.
+The bottom section is a [__response inspector__](#response-inspector), which shows the response from the executed request.
 
 ![Composer User Interface](../images/composer/composer-sections.png)
 
 >important Fiddler's Composer is adding by default its own `User-Agent` so that it sends HTTPS request correctly. You could remove the default `User-Agent` header but notice that this could break composing a secure request (HTTPS). The default key-value
 
-## HTTP Methods
+### HTTP Methods
 
 The __Composer__ supports creating a request while using one of the following HTTP methods:
 
@@ -41,12 +41,12 @@ The __Composer__ supports creating a request while using one of the following HT
 
 ![HTTP Methods](../images/composer/composer-http-methods.png)
 
-## URL Field
+### URL Field
 
 The  __URL field__ is the place to endpoint URL for the composed request.
 ![URL Address textview](../images/composer/composer-addresss-bar.png)
 
-## HTTP Version selection
+### HTTP Version selection
 
 From the __HTTP Version__ drop-down, you can select the following HTTP versions:
 - __HTTP 2.0__
@@ -59,7 +59,7 @@ From the __HTTP Version__ drop-down, you can select the following HTTP versions:
 
 ## Request Composer
 
-The __Request Composer__ is allowing you to further modify your request by adding your custom __Headers__, __Params__, __Body__, and observing the composed request via the __Raw__ view.
+The __Request Composer__ section is allowing you to further modify your request by adding your custom __Headers__, __Params__, __Body__, and observing the composed request via the __Raw__ view.
 
 ### Headers
 

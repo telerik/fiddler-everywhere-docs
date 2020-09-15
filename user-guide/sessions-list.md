@@ -6,7 +6,7 @@ publish: true
 position: 40
 ---
 
-# Sessions
+## Sessions List
 
 The Fiddler Everywhere client provides the option to save and share the captured traffic. Use the __Live Traffic__ list's [__Save__]({%slug web-sessions-list%}#save) and [__Share__]({%slug web-sessions-list%}#share) options to save sessions to the __Sessions__ list.  
 
