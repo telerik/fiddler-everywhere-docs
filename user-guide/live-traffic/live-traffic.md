@@ -62,13 +62,6 @@ Use __Filter__ to apply advanced filters based on the Request and Response heade
 
     ![Advanced filters popup](../../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
 
-### Clear All Filters
-
-Use __Clear All Filters__ to reset all active filters applied though the __Filter__ button or through the
-
-![Filter sessions button](../../images/livetraffic/websessions/websessions-toolbar-filter-clearall.png)
-
-
 ### Save
 
 Use __Save__ button to save sessions for later use or to prepare sessions for sharing.
