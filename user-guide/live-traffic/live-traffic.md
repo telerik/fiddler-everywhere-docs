@@ -73,7 +73,6 @@ Use the __Advanced Filters__ to apply filters based on the Request and Response 
 
     ![Advanced filters popup](../../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
 
-
 > **Note:** Alternatively, you can apply filters through the _more_ option on each Live Traffic column (e.g., apply a filter for _Host_ column).
 
 
