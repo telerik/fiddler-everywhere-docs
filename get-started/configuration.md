@@ -70,7 +70,11 @@ Some Linux distributions are using different security features and different way
 
     - Create a directory and copy the certificate (exported in the previous steps). The last command will start the tool to upgrade the certificates. 
 
-        ![Make dir and copy certificate](../images/configuration/cert_ubunto_001.png)
+        ```shell
+        $ sudo mkdir /usr/share/ca-certificates/extra
+        $ sudo cp ~/Desktop/FiddlerRootCertificate.crt /usr/share/ca-certificates/extra
+        $ sudo dpkg-reconfigure ca-certificates
+        ```
 
     - From the prompt select **Yes** to install new certificates
 
