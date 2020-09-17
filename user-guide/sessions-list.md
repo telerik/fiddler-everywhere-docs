@@ -12,6 +12,35 @@ The Fiddler Everywhere client provides the option to save and share the captured
 
 ![Sessions list](../images/sessions/saved-sessions-all.png)
 
+
+### Open Saved Session
+
+Follow the steps below to open previously saved Session.
+
+1. Double-click on the saved Session entry from the __Sessions__ list.
+
+2. The selected entry opens in a new tab. Click on the __Share__ button.
+
+### Share Saved Session
+
+Follow the steps below to share previously saved Session:
+
+1. Select the saved Session entry from the __Sessions__ list.
+
+2. Click on the __Share__ button.
+
+3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on the __Share__ button.
+
+Alternative method:
+
+1. Select the saved Session entry from the __Sessions__ list.
+
+2. The selected entry opens in a new tab. Click on the __Share__ button.
+
+    ![Loading previously saved sessions](../images/livetraffic/websessions/websessions-toolbar-share-savedshare.png)
+
+3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on the __Share__ button.
+
 ## Sessions Menu
 
 Once sessions are saved (or saved & shared), they will be appended to the __Sessions__ list. Each session comes with quick menu options.
