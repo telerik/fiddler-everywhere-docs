@@ -13,7 +13,6 @@ res_type: kb
 |   |   |
 |---|---|
 | Product  | Fiddler Everywhere  |
-| Product  | Cisco VPN  |
 | Product Version | 1.1.0 and above  |
 
 #### Description
@@ -39,7 +38,7 @@ The article covers the specific configuration needed to use Fiddler Everywhere w
 
     ![Bypassing VPN addresses](../images/kb/vpn/vpn-cisco-bypass.png)
 
-    >tip As a separator for multiple addresses in the bypass list, you can use a comma, semicolon, new line, and white space. All separators will be converted to the OS supported separator after saving the values. Once the addresses in **_Bypass Fiddler for URLs that starts with:_** are set, the values are persisted and used by Fiddler Everywhere to set the OS’s bypass list (for example, you can open the **_Proxy Settigns_** on Windows OS and check that the values are persisted in **_Use the proxy server except for addresses that starts wtih.._** textbox).
+    >tip As a separator for multiple addresses in the bypass list, you can use a comma, semicolon, new line, and white space. All separators will be converted to the OS supported separator after saving the values. Once the addresses in **_Bypass Fiddler for URLs that starts with:_** are set, the values are persisted and used by Fiddler Everywhere to set the OS’s bypass list (for example, you can open the **_Proxy Settigns_** on Windows OS and check that the values are persisted in **_Use the proxy server except for addresses that starts with.._** textbox).
 
 5. Start the Cisco VPN client and connect to the VPN network.
 
