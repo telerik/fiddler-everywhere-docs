@@ -45,7 +45,7 @@ The article covers the specific configuration needed to use Fiddler Everywhere w
 
 6. Start capturing traffic with Fiddler Everywhere.
 
-7. To ensure proper OS network configuration is preserved, refer to the [Disconnection VPN]{#disconnection-vpn} section.
+7. To ensure proper OS network configuration is preserved, refer to the [Disconnection VPN](#disconnecting-vpn) section.
 
 ## Disconnecting VPN 
 
