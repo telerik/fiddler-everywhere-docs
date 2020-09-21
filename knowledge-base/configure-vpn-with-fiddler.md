@@ -58,4 +58,4 @@ To prevent Cisco VPN from using cached proxy information, we must first stop the
 
 4. Disconnect the Cisco VPN client.
 
-2. Stop Fiddler Everywhere with disabled Capturing mode.
+5. Stop Fiddler Everywhere with disabled Capturing mode.
