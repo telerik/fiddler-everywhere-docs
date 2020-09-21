@@ -250,7 +250,7 @@ Use the __Replay__ context menu option to replay previously captured sessions.  
 Use the __Select__ context menu option to select sessions that are directly related to the currently selected session. The possibilities are to choose  __parent__, __children__, and __duplicate__ sessions.
 
 - __Parent request__ Selects the session that is a parent of the currently selected session. Keyboard shortcut: __P__
-- __Children requests__ Select the sessions that are children of the currently selected session. Keyboard shortcut: __C__
+- __Children requests__ Selects the sessions that are children of the currently selected session. Keyboard shortcut: __C__
 - __Duplicate request__ Selects the session that is a duplicate to the currently selected session. Keyboard shortcut: __D__
 
 ### Copy
