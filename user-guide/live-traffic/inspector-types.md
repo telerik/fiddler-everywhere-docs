@@ -61,6 +61,16 @@ The **WebForms inspector** (_Request_ only) parses the request's query string an
 
 ![WebForms Inspector](../../images/livetraffic/inspectors/inspectors-webforms.png)
 
+
+The **WebForms inspector** provides several options to copy the key-value pairs content from the context menu:
+
+- **_Copy Value_** - copies only the value of the selected parameter' key-value pair.
+- **_Copy Key/Value_** - copies the key-value pair of the selected parameter.
+- **_Copy All Query Data_** - copies all parameters from the request.
+
+![Copying Information from the WebForms Inspector](../../images/livetraffic/inspectors/webforms-copy.png)
+
+
 ## Web Inspector
 
 The **Web Inspector** (*Response* only) allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the Live Traffic list), meaning that most images and styles will not be displayed. Additionally, scripting and navigating are blocked, providing a read-only preview.
