@@ -62,11 +62,11 @@ The **WebForms inspector** (_Request_ only) parses the request's query string an
 ![WebForms Inspector](../../images/livetraffic/inspectors/inspectors-webforms.png)
 
 
-The **WebForms inspector** provides several options to copy the key-value pairs content from the context menu:
+The **WebForms inspector** provides several options to copy the parameter's content from the context menu:
 
-- **_Copy Value_** - copies only the value of the selected parameter' key-value pair.
+- **_Copy Value_** - copies only the value of the selected parameter key-value pair.
 - **_Copy Key/Value_** - copies the key-value pair of the selected parameter.
-- **_Copy All Query Data_** - copies all parameters from the request.
+- **_Copy All Query Data_** - copies all parameters (as key-value pairs) from the request.
 
 ![Copying Information from the WebForms Inspector](../../images/livetraffic/inspectors/webforms-copy.png)
 
