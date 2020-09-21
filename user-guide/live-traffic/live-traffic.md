@@ -160,7 +160,15 @@ Certain key information is displayed in the columns of Live Traffic, including:
 - __Process__ The local OS process from which the traffic originated
 - __Comments__ A field for showing the custom comments added by you (or the author of a shared session).
 
-Each column comes with a **more** button (three vertical dots), which opens a **Filter** popup. Use this functionality to apply filters for the currently selected column only (e.g., filter all the traffic by _host_ name or by a specific _status code_). Columns with active filters will have a blue filter indicator. You can clear active filters via the **Filter** popup (for the filtered column) or use the global [__Clear All Filters__ button](#clear-all-filters).
+Each column comes with a **more** button (three vertical dots), which opens a popup with **Filter**  and **Columns** submenus. 
+
+Use the **Filter** submenu to apply filters for the currently selected column only (e.g., filter all the traffic by _host_ name or by a specific _status code_). Columns with active filters will have a blue filter indicator. You can clear active filters via the **Filter** popup (for the filtered column) or use the global [__Clear All Filters__ button](#clear-all-filters).
+
+![Filter context submenu](../../images/livetraffic/columns/dots-filter.png)
+
+Use the **Columns** submenu to select which column should be visible in the **Live Traffic** list. By default all columns are visible.
+
+![Columns context submenu](../../images/livetraffic/columns/dots-columns.png)
 
 Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
 
@@ -185,7 +193,7 @@ The context menu option __Save__ provides the means to save selected sessions. T
 
 All three options will display a save prompt.
 
-1.  Select the sessions, open the context menu, and click on the __Save__ option.
+1. Select the sessions, open the context menu, and click on the __Save__ option.
 2. Enter your session name and click __Save__
 3. The saved sessions are immediately loaded in the __Sessions__ list.
 4. Double-click on the saved session to load it in the __Live Traffic__ list.
@@ -239,7 +247,7 @@ Use the __Replay__ context menu option to replay previously captured sessions.  
 
 ### Select
 
-Use the __Select__ context menu option to select sessions that are directly related to the currently selected session.  The possibilities are to choose  __parent__, __children__, and __duplicate__ sessions.
+Use the __Select__ context menu option to select sessions that are directly related to the currently selected session. The possibilities are to choose  __parent__, __children__, and __duplicate__ sessions.
 
 - __Parent request__ Selects the session that is a parent of the currently selected session. Keyboard shortcut: __P__
 - __Children requests__ Select the sessions that are children of the currently selected session. Keyboard shortcut: __C__
