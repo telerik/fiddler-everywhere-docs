@@ -7,9 +7,11 @@ publish: true
 position: 10
 ---
 
+The main menu in Fiddler Everywhere is placed at the top toolbar and consists of **File** and **Help** submenus.
+
 ## File Menu
 
-The File menu contains commands to load and store captured traffic. The menu provides options to create and load an archive that includes the whole captured traffic (creates a SAZ file) and an option to import/export only specific sessions.
+The **File** menu contains commands to load and store captured traffic. The menu provides options to create and load an archive that includes the whole captured traffic (creates a SAZ file) and an option to import/export only specific sessions.
 
 ![load-archive](../images/menu/menu-load-archive.png)
 
@@ -22,7 +24,7 @@ The **Load Archive** command allows you to reload previously-captured traffic st
 The **Save Archive** sub-menu exposes options that allow you to save traffic to SAZ files. You can save all current sessions or just the selected sessions. 
 
 After selecting an option, a **Save** prompt will appear. The dialog provides options to use encryption (AES256) to create a password-protected archive.
-
+   
 ![save-archive-choose-format](../images/menu/menu-save-archive-002.png)
 
 ### Import Sessions
@@ -61,6 +63,8 @@ The **Forums** command opens a new browser tab with the Fiddler Everywhere forum
 
 The **Documentation** command opens a new browser tab with the Fiddler Everywhere documentation website.
 
-### Contact Support
+### About
 
-The **Contact Support** command opens a new email window with an email to support@getfiddler.com
+The **About** command opens a dialog window that provides information about the current version and build date of the Fiddler Everywhere client.
+
+![the About dialog](../images/menu/menu-help-about.png)
