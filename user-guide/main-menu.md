@@ -23,7 +23,7 @@ The **Load Archive** command allows you to reload previously-captured traffic st
 
 The **Save Archive** sub-menu exposes options that allow you to save traffic to SAZ files. You can save all current sessions or just the selected sessions. 
 
-After selecting an option, a **Save** prompt will appear. The dialog provides options to use encryption (AES256) to create a password-protected archive.
+After selecting an option, a **Save** prompt will appear. The dialog provides opportunities to use encryption (AES256) to create a password-protected archive.
    
 ![save-archive-choose-format](../images/menu/menu-save-archive-002.png)
 
@@ -65,6 +65,6 @@ The **Documentation** command opens a new browser tab with the Fiddler Everywher
 
 ### About
 
-The **About** command opens a dialog window that provides information about the current version and build date of the Fiddler Everywhere client.
+The **About** command opens a dialog window that provides information about the Fiddler Everywhere client's current version and build date.
 
 ![the About dialog](../images/menu/menu-help-about.png)
