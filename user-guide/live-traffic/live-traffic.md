@@ -144,6 +144,8 @@ Many operations begin by selecting one or more entries in the Live Traffic and t
 
 When the Inspectors are activated, they will automatically decide which Inspector is best suited to display the selected session's request and response.
 
+### Live Traffic List Icons
+
 The **Live Traffic List** uses the following icons to provide additional context for each recorded session:
 
 - ![Generic document icon](../../images/livetraffic/icons/generic-document.png) - Represents a generic successful response.
