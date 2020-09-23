@@ -144,6 +144,32 @@ Many operations begin by selecting one or more entries in the Live Traffic and t
 
 When the Inspectors are activated, they will automatically decide which Inspector is best suited to display the selected session's request and response.
 
+The **Live Traffic List** uses the following icons to provide additional context for each recorded session:
+
+- ![Generic document icon](../../images/livetraffic/icons/generic-document.png) - Represents a generic successful response.
+- ![Websocket tunnel icon](../../images/livetraffic/icons/websocket-tunnel.png) - A tunnel used for Websocket traffic.
+- ![HTTPS tunnel icon](../../images/livetraffic/icons/https-tunnel.png) - The request used **HTTP CONNECT** method - establishes a tunnel used for HTTPS traffic.
+- ![Aborted icon](../../images/livetraffic/icons/aborted.png) - The session was aborted by the client, Fiddler, or the Server.
+- ![RPC tunnel icon](../../images/livetraffic/icons/rpc-tunnel.png) - A tunnel used for RPC traffic.
+- ![No Content icon](../../images/livetraffic/icons/no-content.png) - No Content loaded.
+- ![Unauthorized icon](../../images/livetraffic/icons/unauthorized.png) - The response returned status code 401 Unauthorized.
+- ![Error icon](../../images/livetraffic/icons/error.png) - The response was a server error.
+- ![Redirect icon](../../images/livetraffic/icons/redirect.png) - The response returned status code 300, 301, 302, 303 or 307 redirect.
+- ![Not modified icon](../../images/livetraffic/icons/not-modified.png) - Not modified.
+- ![Partial content icon](../../images/livetraffic/icons/partial-content.png) - Partial content.
+- ![Image icon](../../images/livetraffic/icons/image.png) - The response was an image.
+- ![JavaScript icon](../../images/livetraffic/icons/javascript.png) - The response was a JavaScript file.
+- ![CSS icon](../../images/livetraffic/icons/css.png) - The response was a CSS file.
+- ![HTML icon](../../images/livetraffic/icons/html.png) - The response was a HTML file.
+- ![Flash icon](../../images/livetraffic/icons/flash.png) - The response was a Flash file.
+- ![XML icon](../../images/livetraffic/icons/xml.png) - The response was a XML file.
+- ![Silverlight icon](../../images/livetraffic/icons/silverlight.png) - The response was a Silverlight file.
+- ![Audio icon](../../images/livetraffic/icons/audio.png) - The response was an audio file.
+- ![Video icon](../../images/livetraffic/icons/video.png) - The response was a video file.
+- ![Font icon](../../images/livetraffic/icons/font.png) - The response was a font file.
+- ![JSON icon](../../images/livetraffic/icons/json.png) - The response was a JSON file.
+- ![POST method icon](../../images/livetraffic/icons/post-method-request.png) - The request used POST method.
+
 ## Live Traffic Columns
 
 Certain key information is displayed in the columns of Live Traffic, including:
