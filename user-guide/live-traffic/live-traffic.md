@@ -149,14 +149,18 @@ When the Inspectors are activated, they will automatically decide which Inspecto
 The **Live Traffic List** uses the following icons to provide additional context for each recorded session:
 
 - ![Generic document icon](../../images/livetraffic/icons/generic-document.png) - Represents a generic successful response.
+- ![Uploading icon](../../images/livetraffic/icons/uploading.png) - Uploading content for a session in progress (the request is being sent to the server).
+- ![Upload paused icon](../../images/livetraffic/icons/upload-paused.png) - Uploading paused for session in progress.
+- ![Downloading icon](../../images/livetraffic/icons/downloading.png) - Downloading content for session in progress (the response is being read from the server).
+- ![Downloading paused icon](../../images/livetraffic/icons/download-paused.png) - Downloading paused for session in progress.
+- ![Aborted icon](../../images/livetraffic/icons/aborted.png) - The session was aborted by the client, Fiddler, or the Server.
+- ![Error icon](../../images/livetraffic/icons/error.png) - The response was a server error.
+- ![Unauthorized icon](../../images/livetraffic/icons/unauthorized.png) - The response returned status code 401 Unauthorized.
+- ![Redirect icon](../../images/livetraffic/icons/redirect.png) - The response returned status code 300, 301, 302, 303 or 307 redirect.
 - ![WebSocket tunnel icon](../../images/livetraffic/icons/websocket-tunnel.png) - A tunnel used for WebSocket traffic.
 - ![HTTPS tunnel icon](../../images/livetraffic/icons/https-tunnel.png) - The request used the **HTTP CONNECT** method - establishes a tunnel used for HTTPS traffic.
-- ![Aborted icon](../../images/livetraffic/icons/aborted.png) - The session was aborted by the client, Fiddler, or the Server.
 - ![RPC tunnel icon](../../images/livetraffic/icons/rpc-tunnel.png) - A tunnel used for RPC traffic.
-- ![No Content icon](../../images/livetraffic/icons/no-content.png) - No Content loaded.
-- ![Unauthorized icon](../../images/livetraffic/icons/unauthorized.png) - The response returned status code 401 Unauthorized.
-- ![Error icon](../../images/livetraffic/icons/error.png) - The response was a server error.
-- ![Redirect icon](../../images/livetraffic/icons/redirect.png) - The response returned status code 300, 301, 302, 303 or 307 redirect.
+- ![No Content icon](../../images/livetraffic/icons/no-content.png) - No content loaded.
 - ![Not modified icon](../../images/livetraffic/icons/not-modified.png) - Not modified.
 - ![Partial content icon](../../images/livetraffic/icons/partial-content.png) - Partial content.
 - ![Image icon](../../images/livetraffic/icons/image.png) - The response was an image.
