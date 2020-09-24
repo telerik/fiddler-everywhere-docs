@@ -89,7 +89,7 @@ Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere
 
 1. Launch the Fiddler Everywhere client. The **Create Account** screen loads. Enter the requested information and accept the terms of the agreement. Note that the valid email provided here is the one that is later used for sharing and receiving sessions and notifications.
 
-    ![Create new account - Step 2](../images/login/create-account-screen.jpg)
+    ![Create new account - Step 2](../images/login/create-account-screen.png)
 
 2. Fiddler sends a confirmation email to the provided address.
 
