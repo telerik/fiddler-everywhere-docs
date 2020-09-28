@@ -37,6 +37,12 @@ Share a session with a collaborator while following these steps:
 
 >important The Fiddler Everywhere free version has a quota for sharing sessions with collaborators. Check [the advantages provided by Fiddler Everywhere Pro]({%slug introduction%}#fiddler-everywhere-pro), which significantly extends the collaboration quotas.
 
+### Delete Shared Sessions
+
+With version 1.1.0 of Fiddler Everywhere, the user has options to delete previously shared sessions. The sessions can be deleted from the **Sessions list** via the **delete** icon. All users added as collaborators will be notified that the shared session is now deleted [via the notification bar and an email message](#notifications-for-shared-content).
+
+>tip Deleting previously shared sessions will free your sharing quotas. Learn more about the quotas for the free and pro versions of Fiddler everywhere via [the comparison table]({%slug introduction%}#fiddler-everywhere-pro).
+
 ## Add Context for Teammates
 
 Some network sessions can be missing important context that is not captured in the technical details. Fiddler Everywhere allows you to add meaning to sessions by adding comments. Your peers as well can add information to the same comment thread for full communication and collaboration.
