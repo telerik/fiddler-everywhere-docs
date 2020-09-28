@@ -20,17 +20,15 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 
 3. Click the __Trust Root Certificate__ button. 
 
-    ![default https settings](../images/settings/settings-trust-root-certificate.png)
-
 4. A keychain user & password box appears. Enter your __machine administrative credentials__.
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-mac-keychain.png)
 
 5. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
-
-    ![Enable capturing HTTPS traffic](../images/settings/settings-https-capture-https.png)
     
 6. Click the __Save__ button to save the changes.
+
+    ![default https settings](../images/settings/settings-trust-root-certificate.png)
 
 ## Configure on Windows
 
@@ -40,17 +38,15 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 
 3. Click the __Trust Root Certificate__ button. 
 
-    ![default https settings](../images/settings/settings-trust-root-certificate.png)
-
 4.  Trust certificate popup appears to confirm and add the certificate. 
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-cert-win.png)
 
 5. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
-
-    ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-capture-https.png)
     
 6. Click the __Save__ button to save the changes.
+
+    ![default https settings](../images/settings/settings-trust-root-certificate.png)
 
 ## Configure on Linux
 
