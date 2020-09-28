@@ -18,9 +18,11 @@ The __Live Traffic__ tab is  is an essential feature of Fiddler Everywhere. It d
 ## Live Traffic Toolbar
 
 The Live Traffic toolbar provides various functionalities like streaming mode, decoding content, filtering by different criteria, saving, and sharing sessions.
+
 ![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
 
 To start capturing, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing.
+
 ![Enabling Live Traffic](../../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
 
 The Live Traffic toolbar provides the following functionalities:
