@@ -30,6 +30,8 @@ Fiddler Everywhere can be used to capture and inspect traffic that comes from An
 2. Remember the IP address of the machine on which Fiddler Everywhere is running. You can use built-in OS tools to obtain the IP address (like **ipconfig** on Windows or **ifconfig** on Linux) or the Fiddler Everywhere popup status on the bottom right part of the client.
 For demonstration purposes, let's assume that the local IP used by the machine (which runs Fiddler Everywhere) is **192.168.0.101**
 
+>important Depending on the environment, an Android **emulator** might not be able to support ICMP, used for "ping". 
+
 ## Configure Android Device
 
 The steps below are applicable for **real devices** and **emulators** (a.k.a. AVDs), but there are significant differences in how emulators access the internet via the local network. Depending on whether you are using a real device or an emulator, you should apply the proper sub-step.
@@ -44,7 +46,7 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
     - Press **_Edit_** and expand **_Advanced Settings_**.
     You might have to do a long-press on the connected network name on older Android versions and then tap on **_Modify_** and expand **_Advanced Settings_**.
     - On **_Proxy_**, select **_Manual proxy_**.
-    - (**Real devices only**) As IP address put the address of the computer (on which Fiddler Everywhere client is running), for example, **192.168.0.101**
+    - (**Real devices only**) As IP address put the address of the computer (on which Fiddler Everywhere client is running), for example, **192.168.0.101** (see [above](#configure-fiddler-everywhere))
     - (**Android emulators only**) As IP address put the emulator's gateway address, In most cases, the Android emulator gateway IP is **10.0.2.2** (Note: For GenyMotion emulator, the gateway IP by default is **10.0.3.2**).
     - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere [connections settings]({%slug connections-submenu%}#setting-proxy-port)).
     - Tap **_Save_**.
