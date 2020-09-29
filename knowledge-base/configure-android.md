@@ -32,16 +32,20 @@ For demonstration purposes, let's assume that the local IP used by the machine (
 
 ## Configure Android Device
 
+The steps below are applicable for **real devices** and **emulators** (a.k.a. AVDs), but there are significant differences in how emulators access the internet via the local network. Depending on whether you are using a real device or an emulator, you should apply the proper sub-step.
+
 1. Check Android device IP address 
     - Open the connected Wifi and tap on **_Settings_**.
     - Extended **_Advanced Settings_**.
-    - Get the IP address of the device. For demonstration purposes, let's assume the device IP is **192.168.0.222**
+    - (**Real devices only**) Get the IP address of the real Android device. For demonstration purposes, let's assume the device IP is **192.168.0.222**
+    - (**Android emulators only**) Get the IP address of the emulator. In most cases, the Android emulator IP is of kind **10.0.2.XXX** (Note: For GenyMotion emulator, the IP by default is **10.0.3.XXX**).
 2. Modify Android device Proxy
     - Open the connected Wifi and tap on **_Settings_**.
     - Press **_Edit_** and expand **_Advanced Settings_**.
     You might have to do a long-press on the connected network name on older Android versions and then tap on **_Modify_** and expand **_Advanced Settings_**.
-    - On **_Proxy_** select **_Manual proxy_**.
-    - As IP address put the address of the computer (on which Fiddler Everywhere client is running), for example, **192.168.0.101**
+    - On **_Proxy_**, select **_Manual proxy_**.
+    - (**Real devices only**) As IP address put the address of the computer (on which Fiddler Everywhere client is running), for example, **192.168.0.101**
+    - (**Android emulators only**) As IP address put the emulator's gateway address, In most cases, the Android emulator gateway IP is **10.0.2.2** (Note: For GenyMotion emulator, the gateway IP by default is **10.0.3.2**).
     - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere [connections settings]({%slug connections-submenu%}#setting-proxy-port)).
     - Tap **_Save_**.
 3. Install the trust certificate on the Android device.
@@ -51,11 +55,11 @@ For demonstration purposes, let's assume that the local IP used by the machine (
 
 ## Inspect Browser Traffic
 
-With all of the above done, you can immediately monitor HTTP/HTTPS traffic from mobile browsers. For example, open a Chrome browser on your Android device, type an address of your choice and observe the traffic being captured in the **_Live Traffic_** section of Fiddler Everywhere.
+With all of the above done, you can immediately monitor HTTP/HTTPS traffic from mobile browsers. For example, open a Chrome browser on your Android device, type an address of your choice, and observe the traffic being captured in the **_Live Traffic_** section of Fiddler Everywhere.
 
 ## Inspect Android Application Traffic
 
-You will be able to monitor traffic from apps that are in active development (application for which you have access to the codebase). For Android API 24 and above, an additional code needs to be introduced to the app as follows:
+You will be able to monitor traffic from apps in active development (application for which you have access to the codebase). For Android API 24 and above, an additional code needs to be introduced to the app as follows:
 
 - Put in **_Android/src/main/res/xml/network_security_config.xml_**
 ```XML
