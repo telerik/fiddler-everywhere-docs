@@ -26,6 +26,8 @@ Fiddler Everywhere utilizes built-in .NET Core (cross-platform version .NET fram
     https://auth.getfiddler.com/
 ```
 
+>tip Fiddler Everywhere version 1.1.0 and above is supporting predefined OS proxy settings (for direct internet access). If you setup is accessing the internet via a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
+
 ## Install Fiddler Everywhere
  
 Steps to install Fiddler Everywhere client on your system (macOS, Windows, or Linux)
