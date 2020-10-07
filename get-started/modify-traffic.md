@@ -18,7 +18,7 @@ Follow these steps, to load and modify a session via the **Composer**:
 
     ![Edit in Composer](../images/composer/edit-in-composer.png)
 
-3. The session is opened in a new Composer windows. Change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
+3. The session opens in a new Composer window and then you could change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
 
     ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
 
