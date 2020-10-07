@@ -32,5 +32,5 @@ Effectively, you have modified an existing request the same way your application
 
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Mock server response]({%slug autoresponder-get-started%}) 
-- Share snapshots of sessions with collaborators.
+- [Share snapshots of sessions with collaborators]({%slug collaboration-get-started%}).
 

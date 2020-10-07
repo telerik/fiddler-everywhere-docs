@@ -44,6 +44,7 @@ The __Composer__ supports creating a request while using one of the following HT
 ### URL Field
 
 The  __URL field__ is the place to endpoint URL for the composed request.
+
 ![URL Address textview](../images/composer/composer-addresss-bar.png)
 
 ### HTTP Version selection
@@ -66,12 +67,15 @@ The __Request Composer__ section is allowing you to further modify your request 
 Enables you to add/modify your request headers (e.g., `Content-Type`, `Authorization`, etc.). 
 
 Add a new header by entering the header key-value pair and then clicking the tick.
+
 ![Adding header](../images/composer/composer-headers-before.png)
 
 Adds the new header to your request. The header can now be disabled/enabled or completely deleted.
+
 ![Added header](../images/composer/composer-headers-after.png)
 
 >important Most of the servers using newer versions of TLS will require a **User-Agent** header to be set. By default, Fiddler Everywhere will a **User-Agent** key set with value **Fiddler Everywhere** and description **_Lets servers and network peers identify the application, operating system, vendor, and version of the requesting user agent_**. The header is non-mandatory, but keep in mind that without valid **User-Agent**, some requests to secure servers might fail.
+
 ![Default User-Agent](../images/composer/composer-user-agent.png)
 
 ### Params
@@ -79,10 +83,12 @@ Adds the new header to your request. The header can now be disabled/enabled or c
 Enables you to add query parameters to your request URL easily. Adds any key-value pair appended through the  __Params__ view to the request URL.
 
 Add new query params by entering the params key-value pair and then clicking the tick.
- ![Adding header](../images/composer/composer-params-before.png)
+
+![Adding header](../images/composer/composer-params-before.png)
 
 Add the new query params to your request URL. The params can be disabled/enabled or completely deleted.
- ![Adding header](../images/composer/composer-params-after.png)
+
+![Adding header](../images/composer/composer-params-after.png)
 
 
 ### Body
@@ -92,6 +98,7 @@ Enables you to manually specify the data that should be sent with the request.
 ### Raw
 
 The view is a raw representation of the composed request. This view is non-editable.
+
 ![Raw view of the written request](../images/composer/composer-raw-view.png)
 
 ## Response Inspector
@@ -99,3 +106,15 @@ The view is a raw representation of the composed request. This view is non-edita
 With the __Response Inspector__, you can inspect the received response (from the executed request). The inspector provides several views to visualize different parts of the request in specific formats. Find detailed information on each inspector type in the dedicated article about [__Inspector Types__]({%slug inspector-types%})
 
 ![Response inspectors](../images/composer/composer-response-inspectors.png)
+
+## Edit Captured Traffic in Composer
+
+A session previosly captured in the [Live Traffic]({%slug web-sessions-list%}) could be loaded in the Composer for applying further modifications.
+
+1. Select the desired session and make a right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing key **E**.
+
+    ![Edit in Composer](../images/composer/edit-in-composer.png)
+
+2. The session opens in a new Composer window and then you could change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
+
+    ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
