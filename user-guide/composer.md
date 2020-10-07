@@ -18,15 +18,15 @@ The __Composer__ contains three major sections used to construct a request and o
 
 The top section contains a drop-down for selecting [__HTTP Methods__](#http-methods), an [__URL field__](#url-field), a drop-down to select the used [__HTTP version__](#http-version-selection), and an __Execute__ button.
 
-The mid-section is  a [__request composer__ ](#request-composer) that provides options to further modify your request via [__Headers__](#headers), [__Body__](#body), [__Params__](#params), or [__Raw__](#raw) views.
+The mid-section provides options to further modify your request via [__Headers__](#headers), [__Body__](#body), [__Params__](#params), or [__Raw__](#raw) views.
 
 The bottom section is a [__response inspector__](#response-inspector), which shows the response from the executed request.
 
 ![Composer User Interface](../images/composer/composer-sections.png)
 
->important Fiddler's Composer is adding by default its own `User-Agent` so that it sends HTTPS request correctly. You could remove the default `User-Agent` header but notice that this could break composing a secure request (HTTPS). The default key-value
+>important Fiddler's Composer is adding by default its `User-Agent` so that it sends HTTPS request correctly. You could remove the default `User-Agent` header but notice that this could break composing a secure request (HTTPS). The default key-value
 
-### HTTP Methods
+## HTTP Methods
 
 The __Composer__ supports creating a request while using one of the following HTTP methods:
 
@@ -34,20 +34,26 @@ The __Composer__ supports creating a request while using one of the following HT
 - __PUT__ - replaces all current representations of the target resource with the request payload.
 - __POST__ - Used to submit an entity to the specified resource, often causing a change in state or side effects on the server.
 - __DELETE__ - Deletes the specified resource.
-- _HEAD_ _ - Asks for a response identical to that of a GET request, but without the response body.
+- __HEAD__ - Asks for a response identical to a __GET__ request, but without the response body.
 - __TRACE__ - Performs a message loop-back test along the path to the target resource.
 - __SEARCH__ - Used by a client to ask the server to perform a query operation (described by the request payload) over some set of data scoped to the effective request URI.
 - __PROPFIND__ - Retrieves properties defined on the resource identified by the Request-URI.
+- __PATCH__ - Used to apply partial modifications to a resource.
+- __MKCOL__ - The method may be included in the scope of a transaction by submitting a Transaction Header with a lock token that corresponds to that transaction.
+- __MOVE__ - Used to move a resource to the location specified by a request Uniform Resource Identifier (URI
+- __LOCK__ - Used to take out a lock of any access type on a resource so that another principal will not modify the resource while it is being edited.
+- __UNLOCK__ - Used to remove the lock on the resource at the request Uniform Resource Identifier (URI).
+- __OPTIONS__ - Used to describe the communication options for the target resource.
 
 ![HTTP Methods](../images/composer/composer-http-methods.png)
 
-### URL Field
+## URL Field
 
 The  __URL field__ is the place to endpoint URL for the composed request.
 
 ![URL Address textview](../images/composer/composer-addresss-bar.png)
 
-### HTTP Version selection
+## HTTP Version
 
 From the __HTTP Version__ drop-down, you can select the following HTTP versions:
 - __HTTP 2.0__
@@ -58,9 +64,9 @@ From the __HTTP Version__ drop-down, you can select the following HTTP versions:
 
 ![HTTP Versions drop-down](../images/composer/composer-http-version.png)
 
-## Request Composer
+## Headers, Params and Body
 
-The __Request Composer__ section is allowing you to further modify your request by adding your custom __Headers__, __Params__, __Body__, and observing the composed request via the __Raw__ view.
+The __Headers, Params and Body__ section is allowing you to further modify your request by adding your custom __Headers__, __Params__, __Body__, and observing the composed request via the __Raw__ view.
 
 ### Headers
 
