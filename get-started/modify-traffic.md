@@ -18,9 +18,9 @@ Follow these steps, to load and modify a session via the **Composer**:
 
     ![Edit in Composer](../images/composer/edit-in-composer.png)
 
-3. Change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
+3. The session opens in a new Composer window and then you could change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
 
-    ![Change the loaded request values in Composer](../images/composer/edit-in-composer-002.png)
+    ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
 
     >tip To modify a header, select it and change the needed key-value pair. You can add a new header using the top key-value row (which is empty by default and ready to receive new values). Once the modifying or adding new header is done, press the confirmation button (a tick) to the right to apply the changes.
 
@@ -32,5 +32,5 @@ Effectively, you have modified an existing request the same way your application
 
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Mock server response]({%slug autoresponder-get-started%}) 
-- Share snapshots of sessions with collaborators.
+- [Share snapshots of sessions with collaborators]({%slug collaboration-get-started%}).
 
