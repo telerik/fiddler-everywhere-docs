@@ -18,16 +18,15 @@ res_type: kb
 
 #### Description
 
-The **Fiddler Everywhere** client is an electron application that depends on modifying the local network configuration to be able to capture traffic. In some occasion, you might need to access the generated log files to investigate potential problems that might prevent the client from working properly.
+The **Fiddler Everywhere** client is an electron application that depends on modifying the local network configuration to capture traffic. On some occasions, you might need to access the generated log files to investigate potential problems that might prevent the client from working correctly.
 
 ## Log Files
 
 The **Fiddler Everywhere** application generates two log files as follows:
+- [**electron.log**](#the-electron-log) - This is a file that logs the basic operations needed for the electron application to startup properly.
+- [**netcore.log**](#the-netcore-log) file  - This is a file that logs the operations done by the Fiddler core logic (for example, applying the proxy settings, trust certificate setup, login process, etc.)
 
-- [**electron.log**](#the-electron-log) file - This is a file that logs the basic operations needed for the electron application to startup properly.
-- [**netcore.log**](#the-netcore-log) file - This is a file that logs the operations done by the Fiddler core logic (foe example, applyiing the proxy settings, trust certificate setup, login process, etc.,)
-
-Both log files are useful to investigate cases where the client is not working properly. The location of these files varies depending on the operating system on which Fiddler Everywhere is working. 
+Both log files are useful to investigate cases where the client is not working properly. The location of these files varies depending on the operating system on which Fiddler Everywhere is working.
 
 **macOS** log files destination folder:
 ```Console
@@ -41,13 +40,13 @@ C:\Users\<username>\AppData\Roaming\Fiddler Everywhere\Logs
 Note that you will have to replace `<username>` with the user that is currently active on Windows.
 
 **Linux** log files destination folder: 
-```Shell
+```Console
 ~/.config/Fiddler Everywhere/Logs
 ```
 
 ## The Electron Log
 
-The **electron.log** file will output info, warnings and errors related to the startup of the app, its connectivity and the availability of newer versions.
+The **electron.log** file will output info, warnings, and errors related to the app's startup, its connectivity, and the availability of newer versions.
 
 _Example content of the **electron.log** file_
 
@@ -82,8 +81,7 @@ _Example content of the **electron.log** file_
 
 ## The Netcore Log
 
-The **netcore.log** file will output info, warning, and errors related to the network operations, the login process, the trust certificate setup, the uswer quota initialization, etc.,
-
+The **netcore.log** file will output info, warning, and errors related to the network operations, the login process, the trust certificate setup, the user quota initialization, etc.,
 
 _Example content of the **electron.log** file_
 
