@@ -140,6 +140,8 @@ www.example.com/Path1/query=foo.JPG // (No Match - mismatched case)
 www.example.com/Path1/query=somegif.gif // (MATCH)
 ```
 
+The standard regex implementation also allows using regex variables. An example of creating a redirect while using automatically created regex variables can be found in [this KB article]({%slug autoresponder-redirect-traffic%}#redirect-with-regex).
+
 ## Action Strings
 
 When Fiddler Everywhere identifies a request which matches the Auto Responder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files, the __AutoResponder__ can perform some specific actions:
