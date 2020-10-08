@@ -42,7 +42,6 @@ The log files on **Windows** are available in the following folder:
 %APPDATA%\Fiddler Everywhere\Logs
 ```
 
-
 ### Linux
 
 The log files on **Linux** are available in the following folder: 
