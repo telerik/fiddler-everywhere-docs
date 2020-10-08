@@ -39,9 +39,8 @@ The log files on **macOS** are available in the following folder:
 
 The log files on **Windows** are available in the following folder: 
 ```Console
-C:\Users\<username>\AppData\Roaming\Fiddler Everywhere\Logs
+%APPDATA%\Fiddler Everywhere\Logs
 ```
-Note that you will have to replace `<username>` with the user that is currently active on Windows.
 
 ### Linux
 
@@ -89,7 +88,7 @@ _Example content of the **electron.log** file_
 
 The **netcore.log** file will output info, warning, and errors related to the network operations, the login process, the trust certificate setup, the user quota initialization, etc.,
 
-_Example content of the **electron.log** file_
+_Example content of the **netcore.log** file_
 
 ```C
 [2020-10-06 13:49:55:025] [Information] [Angular] Requesting shared item ID.
