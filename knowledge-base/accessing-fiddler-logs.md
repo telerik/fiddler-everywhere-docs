@@ -28,18 +28,24 @@ The **Fiddler Everywhere** application generates two log files as follows:
 
 Both log files are useful to investigate cases where the client is not working properly. The location of these files varies depending on the operating system on which Fiddler Everywhere is working.
 
-**macOS** log files destination folder:
+### macOS
+
+The log files on **macOS** are available in the following folder: 
 ```Console
 ~/Library/Application Support/Fiddler Everywhere/Logs
 ```
 
-**Windows** log files destination folder: 
+### Windows
+
+The log files on **Windows** are available in the following folder: 
 ```Console
 C:\Users\<username>\AppData\Roaming\Fiddler Everywhere\Logs
 ```
 Note that you will have to replace `<username>` with the user that is currently active on Windows.
 
-**Linux** log files destination folder: 
+### Linux
+
+The log files on **Linux** are available in the following folder: 
 ```Console
 ~/.config/Fiddler Everywhere/Logs
 ```
