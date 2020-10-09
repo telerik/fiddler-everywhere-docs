@@ -22,7 +22,7 @@ To troubleshoot common issues, resetting the Fiddler Everywhere settings to defa
 
 ## Resetting Fiddler Everywhere Settings
 
- The following screenshots represent the Fiddler Everywhere Default Settings.
+The following screenshots represent the Fiddler Everywhere Default Settings.
 
 ### HTTPS Settings
 
