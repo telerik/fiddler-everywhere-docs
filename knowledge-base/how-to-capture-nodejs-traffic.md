@@ -23,7 +23,7 @@ res_type: kb
 
 Many developers are using **Node.js** libraries that make HTTP and HTTPS requests. This article explains how to proxy these requests so that you could capture and analyze them with FIddler Everywhere.
 
->important Some Node.js modules like [**request**](https://www.npmjs.com/package/request) are reading the proxy information from the windows environment variable. Others like the state [**HTTP** module](https://nodejs.org/api/http.html) are not respecting the global proxy configuration (of Node.js), so their requests need to be proxied explicitly. The sections that follow below are demonstrating a basic approach for each of the mentioned scenarios.
+>important Some Node.js modules like [**request**](https://www.npmjs.com/package/request) are reading the proxy information from the windows environment variable ([global proxy settings](#setting-proxy-globally)). Others like the state [**HTTP** module](https://nodejs.org/api/http.html) are not respecting the global proxy configuration (of Node.js), so we need to [proxy their requests explicitly](#setting-proxy-explicitly). The sections that follow below are demonstrating a basic approach for each of the mentioned scenarios.
 
 
 ## Setting Proxy Globally
@@ -46,6 +46,7 @@ set NODE_TLS_REJECT_UNAUTHORIZED=
 
 Alternatively, instead of using the terminal, we could use a simple JavaScript to set the environment variable through code.
 
+_Example file **fiddler-everywhere-test.js**_
 ```JavaScript
 const url = require("url");
 const fiddlerProxy = {
@@ -68,7 +69,7 @@ const removeFiddlerProxy = () => {
 
 setFiddlerPorxy();
 
-// ... make request with libraries that respect the global proxy settigns
+// ... make requests with libraries that are reusing the global proxy settings
 
 removeFiddlerProxy();
 ```
