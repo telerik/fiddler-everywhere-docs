@@ -16,13 +16,14 @@ res_type: kb
 | Product  | Fiddler Everywhere  |
 | Product Version | 1.0.0 and above  |
 |---|---|
-| Library  | State NodeJS HTTP |
+| Node.js Module  | http |
+| Node.js Module  | request |
 
 #### Description
 
 Many developers are using **Node.js** libraries that make HTTP and HTTPS requests. This article explains how to proxy these requests so that you could capture and analyze them with FIddler Everywhere.
 
->important Some Node.js modules (like [request](https://www.npmjs.com/package/request)) are reading the proxy information from the windows environment variable. Others like [the state HTTP module](https://nodejs.org/api/http.html) are not respecting the global proxy configuration (of Node.js), so their requests need to be proxied explicitly. The sections that follow below are demonstrating a basic approach for each of the mentioned scenarios.
+>important Some Node.js modules like [**request**](https://www.npmjs.com/package/request) are reading the proxy information from the windows environment variable. Others like the state [**HTTP** module](https://nodejs.org/api/http.html) are not respecting the global proxy configuration (of Node.js), so their requests need to be proxied explicitly. The sections that follow below are demonstrating a basic approach for each of the mentioned scenarios.
 
 
 ## Setting Proxy Globally
@@ -74,15 +75,17 @@ removeFiddlerProxy();
 
 ## Setting Proxy Explicitly
 
-The global proxy settings won't work for modules like the [HTTP module](https://nodejs.org/api/http.html), where we need to proxy each individual HTTP request to Fiddler Everywhere. One way to solve that is to explictly set the proxy through the code.
+The [global proxy settings](#settingproxy-globally) won't work for modules like the [HTTP module](https://nodejs.org/api/http.html), where we need to proxy each individual HTTP request to Fiddler Everywhere. One way to solve that is to explictly set the proxy through the code.
 
+
+_Example file **fiddler-everywhere-test.js**_
 ```JavaScript
 "use strict";
 
 const url = require("url");
 const http = require("http");
 
-const proxy = {
+const fiddlerEverywhereProxy = {
     protocol: "http:",
     hostname: "127.0.0.1",
     port: 8866,
@@ -101,9 +104,9 @@ const setFiddlerProxy = (options) => {
         hostname: options.hostname,
         port: options.port
     });
-    options.protocol = proxy.protocol;
-    options.hostname = proxy.hostname;
-    options.port = proxy.port;
+    options.protocol = fiddlerEverywhereProxy.protocol;
+    options.hostname = fiddlerEverywhereProxy.hostname;
+    options.port = fiddlerEverywhereProxy.port;
     options.href = null;
     options.host = null;
     return options;
@@ -111,6 +114,16 @@ const setFiddlerProxy = (options) => {
 
 const exampleUrl = "https://www.example.com";
 http.request(setFiddlerProxy(exampleUrl), (res) => {
-    console.log(res)
+    console.log(res);
 }).end(); // Through Fiddler.
 ```
+
+With the above, we can test the request through the terminal.
+
+```Console
+node fiddler-everywhere-test.js
+```
+
+As a result, Fiddler Everywhere will capture the request and the response.
+
+![Successfully captured NodeJS traffic](../images/kb/nodejs/success-capture-nodejs.png)
