@@ -59,6 +59,8 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
 
 With all of the above done, you can immediately monitor HTTP/HTTPS traffic from mobile browsers. For example, open a Chrome browser on your Android device, type an address of your choice, and observe the traffic being captured in the **_Live Traffic_** section of Fiddler Everywhere.
 
+>tip Once you’re done debugging, don’t forget to remove the WiFi proxy from your Android device.
+
 ## Inspect Android Application Traffic
 
 You will be able to monitor traffic from apps in active development (application for which you have access to the codebase). For Android API 24 and above, an additional code needs to be introduced to the app as follows:
