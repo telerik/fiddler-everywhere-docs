@@ -51,7 +51,7 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
     - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere [connections settings]({%slug connections-submenu%}#setting-proxy-port)).
     - Tap **_Save_**.
 3. Install the trust certificate on the Android device.
-    - Open a browser on the device and type the Fiddler echo service address: **http://ipv4.fiddler:8866**
+    - Open a browser on the Android device and type the Fiddler echo service address: **http://ipv4.fiddler:8866**
     - Tap the option to download the certificate.
     - In the prompt windows, enter a certificate name and press **_Save_**.
 
