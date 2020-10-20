@@ -29,7 +29,7 @@ As developers, you frequently need to simulate and test various user conditions 
 
 3. Add the **MATCH** condition (e.g., https://www.example.com)
 
-4. Add the **ACTION** rule. In this case choose **Return manually crafted response** from the dropdown and enter the content as shown below.
+4. Add the **ACTION** rule. In this case, choose **Return manually crafted response** from the dropdown and enter the content, as shown below.
 
     ```JSON
     HTTP/1.1 502 Unreachable Server
@@ -50,3 +50,25 @@ As developers, you frequently need to simulate and test various user conditions 
     ![Manually crafted response to mock 502 status code and error message](../images/kb/dat-files/manually-crafted-502-inspector.png)
 
 ## DAT Files
+
+Using the above action is handy, but we need a better workflow to automate multiple mock responses. For this reason, Fiddler Everywhere provides the functionality to provide a file (with the mocked response content) via the **Choose saved response file...** action. The files that will contain the custom response needs to be in DAT format.
+
+>tip A DAT file is a generic data file created by a specific application. It may contain data in binary or text format (text-based DAT files can be viewed in a text editor).
+
+1. Open your favorite text editor.
+
+2. Enter the custom response content. For example:
+
+    ```
+    HTTP/1.1 403 Access Denied
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Content-Length: 520
+    
+    Fiddler: HTTP/403 Access Denied. 
+    ```
+3. Save the file with **dat** extension . For example save as **_action-403-status.dat_**.
+
+4. Add the **ACTION** rule via **Choose saved response file...** and in the popup window, choose the newly created DAT file (**_action-403-status.dat_**).
+
+5. Finally, enable the Auto Responder, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations - you have just mocked a 403 status code response while using a DAT file!
