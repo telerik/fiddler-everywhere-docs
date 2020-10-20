@@ -27,6 +27,7 @@ Fiddler Everywhere can be used to capture and inspect traffic that comes from An
 ## Configure Fiddler Everywhere
 
 1. Enable the remote connections in Fiddler Everywhere client via **_Settings_ > _Connections_ > _Allow remote computers to connect_**
+
 2. Remember the IP address of the machine on which Fiddler Everywhere is running. You can use built-in OS tools to obtain the IP address (like **ipconfig** on Windows or **ifconfig** on Linux) or the Fiddler Everywhere popup status on the bottom right part of the client.
 For demonstration purposes, let's assume that the local IP used by the machine (which runs Fiddler Everywhere) is **192.168.0.101**
 
@@ -41,6 +42,7 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
     - Extended **_Advanced Settings_**.
     - (**Real devices only**) Get the IP address of the real Android device. For demonstration purposes, let's assume the device IP is **192.168.0.222**
     - (**Android emulators only**) Get the IP address of the emulator. In most cases, the Android emulator IP is of kind **10.0.2.XXX** (Note: For GenyMotion emulator, the IP by default is **10.0.3.XXX**).
+
 2. Modify Android device Proxy
     - Open the connected Wifi and tap on **_Settings_**.
     - Press **_Edit_** and expand **_Advanced Settings_**.
@@ -50,6 +52,7 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
     - (**Android emulators only**) As IP address put the emulator's gateway address, In most cases, the Android emulator gateway IP is **10.0.2.2** (Note: For GenyMotion emulator, the gateway IP by default is **10.0.3.2**).
     - As port use the port set in Fiddler Everywhere client. The default port is **8866** (it could be changed from the Fiddler Everywhere [connections settings]({%slug connections-submenu%}#setting-proxy-port)).
     - Tap **_Save_**.
+
 3. Install the trust certificate on the Android device.
     - Open a browser on the device and type the Fiddler echo service address: **http://ipv4.fiddler:8866**
     - Tap the option to download the certificate.

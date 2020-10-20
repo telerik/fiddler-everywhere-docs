@@ -22,6 +22,7 @@ res_type: kb
 How to install Fiddler root certificate in Firefox on Linux
 
 ## Solution
+
 1. Open Firefox.
 2. Go to __Preferences > Privacy & Security__.
 3. Click the __View Certificates__ button.

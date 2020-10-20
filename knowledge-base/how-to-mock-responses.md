@@ -24,9 +24,13 @@ As developers, you frequently need to simulate and test various user conditions 
 
 
 1. Open the [**Auto Responder**]({%slug auto-responder-general%})
+
 2. Create a new rule via the **Add new rule** button.
+
 3. Add the **MATCH** condition (e.g., https://www.example.com)
-4. Add the **ACTION** rule. In this case choose **Return manually crafted response** from the dropdown and enter the following:
+
+4. Add the **ACTION** rule. In this case choose **Return manually crafted response** from the dropdown and enter the content as shown below.
+
     ```JSON
     HTTP/1.1 502 Unreachable Server
     Date: Fri, 25 Jan 2013 16:49:29 GMT
@@ -42,6 +46,7 @@ As developers, you frequently need to simulate and test various user conditions 
     ![Manually crafted response to mock 502 status code and error message](../images/kb/dat-files/manually-crafted-502.png)
 
 5. Finally, enable the Auto Responder, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 502 with your custom error message. Congratulations - you have just mocked a 502 status code response!
+
     ![Manually crafted response to mock 502 status code and error message](../images/kb/dat-files/manually-crafted-502-inspector.png)
 
 ## DAT Files

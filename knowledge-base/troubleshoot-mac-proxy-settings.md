@@ -30,9 +30,13 @@ For example, after [Installing Fiddler Everywhere on a Mac](https://docs.telerik
 In order to troubleshoot this, it is recommended to perform the following steps:
 
 1. [Reset the Fiddler Everywhere Settings to the default values](how-to-reset-fiddler-everywhere-settings-to-default)
+
 2. Close Fiddler Everywhere
+
 3. [Verify the Mac Proxy Settings](#verifying-mac-proxy-settings)
+
 4. Open Fiddler Everywhere
+
 5. [Verify the Mac Proxy Settings](#verifying-mac-proxy-settings)
 
 ## Verifying Mac Proxy Settings
@@ -47,13 +51,13 @@ The Fiddler Everywhere default settings will **Act as a System Proxy on Startup*
 
 When Fiddler Everywhere is closed with the default settings, the System Proxy Settings will look like the following.
 
-![mac proxy settings no proxy](../images/kb/mac-proxy-settings-no-proxy.png)
+![mac proxy settings no proxy](../images/kb/mac-proxy-settings/mac-proxy-settings-no-proxy.png)
 
 ### Proxy Settings On
 
 When Fiddler Everywhere is open with the default settings, the System Proxy Settings will look like the following.
 
-![mac proxy settings with proxy](../images/kb/mac-proxy-settings-proxy-on.png)
+![mac proxy settings with proxy](../images/kb/mac-proxy-settings/mac-proxy-settings-proxy-on.png)
 
 ## See Also
 
