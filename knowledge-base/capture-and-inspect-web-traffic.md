@@ -28,18 +28,17 @@ Follow the steps below to capture web traffic:
 
 1. Open Fiddler Everywhere and focus the main [__Live Traffic__ tab.]({%slug web-sessions-list%}). Make sure that __Live Traffic__ switch is set to __Capturing__. To stop capturing the live traffic, switch it back to __Paused__.
 
-![Capturing Live Traffic](../images/kb/capture-live-traffic-under-capture-and-inspect-web-traffic.png)
+    ![Capturing Live Traffic](../images/kb/capture-live-traffic-under-capture-and-inspect-web-traffic.png)
 
->tip By default, Fiddler Everywhere can capture only non-secure traffic (HTTP). If you want to enable capturing of secure traffic (HTTPS), then follow the steps described in the [Settings > HTTPS article]({%slug decrypt-https-traffic%}).
+    >tip By default, Fiddler Everywhere can capture only non-secure traffic (HTTP). If you want to enable capturing of secure traffic (HTTPS), then follow the steps described in the [Settings > HTTPS article]({%slug decrypt-https-traffic%}).
 
-2. With the __Live Traffic__ being set to __Capturing__, open a browser, enter the HTTP address and make the request. Alternatively, if you do not make the HTTP/HTTPS request through a browser, open the application and make the web request.
-For example: Open Google Chrome browser and enter [https://docs.telerik.com/fiddler-everywhere](https://docs.telerik.com/fiddler-everywhere)
+2. With the __Live Traffic__ being set to __Capturing__, open a browser, enter the HTTP address and make the request. Alternatively, if you do not make the HTTP/HTTPS request through a browser, open the application and make the web request. For example: Open Google Chrome browser and enter [https://docs.telerik.com/fiddler-everywhere](https://docs.telerik.com/fiddler-everywhere)
 
 3. Go back to Fiddler Everywhere. In the __Live Traffic__ section, you will notice the live traffic being captured.
 
-![Capturing Live Traffic](../images/kb/capture-live-traffic-under-capture-and-inspect-web-traffic-1.png)
+    ![Capturing Live Traffic](../images/kb/capture-live-traffic-under-capture-and-inspect-web-traffic-1.png)
 
->tip Any new outgoing requests and upcoming responses (for example, after navigating deeper into a website or opening a new website) are continuously captured in the __Live Traffic__ panel. Switch back to __Paused__ to stop the live capturing and investigate specific sessions without polluting your __Live Traffic_. You could also select one or more sessions from the __Live Traffic__ and save and share them or remove them from the list.
+    >tip Any new outgoing requests and upcoming responses (for example, after navigating deeper into a website or opening a new website) are continuously captured in the __Live Traffic__ panel. Switch back to __Paused__ to stop the live capturing and investigate specific sessions without polluting your __Live Traffic_. You could also select one or more sessions from the __Live Traffic__ and save and share them or remove them from the list.
 
 ## Inspect Web Traffic
 
@@ -53,8 +52,8 @@ Follow the steps below to inspect a request and its respective response:
 
 3. To the right, at the top, is located the __Request Inspector__. You could choose a different inspector type to visualize the requested content. The default one is __Headers__.
 
-![Request Inspector](../images/kb/request-inspector-under-capture-and-inspect-web-traffic.png)
+    ![Request Inspector](../images/kb/request-inspector-under-capture-and-inspect-web-traffic.png)
 
 4. To the right, at the bottom, is located the __Response Inspector__. You could choose a different inspector type to visualize the requested content. The default one is __Headers__.
 
-![Response Inspector](../images/kb/response-inspector-under-capture-and-inspect-web-traffic.png)
+    ![Response Inspector](../images/kb/response-inspector-under-capture-and-inspect-web-traffic.png)

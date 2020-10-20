@@ -26,12 +26,12 @@ The following screenshots represent the Fiddler Everywhere Default Settings.
 
 ### HTTPS Settings
 
-![default https settings](../images/kb/default-https-settings.png)
+![default https settings](../images/kb/default-settings/default-https-settings.png)
 
 ### Connection Settings
 
-![default connection settings](../images/kb/default-connection-settings.png)
+![default connection settings](../images/kb/default-settings/default-connection-settings.png)
 
 ### Gateway Settings
 
-![default gateway settings](../images/kb/default-gateway-settings.png)
+![default gateway settings](../images/kb/default-settings/default-gateway-settings.png)

@@ -23,6 +23,7 @@ How to install Fiddler root certificate on Windows
 >tip Fiddler Everywhere provides automatic option to install the root trust certificate (administrative account still needed). Use [this documentation section]({%slug decrypt-https-traffic%}) as a reference and use the method below only if you need to add the certificate manually.
 
 ## Solution
+
 1. Go to your __Desktop__ and double click on __FiddlerRootCertificate.crt__.
 2. Click the __Install Certificate...__ button.
 3. Choose the Store Location and click __Next__.
@@ -31,4 +32,4 @@ How to install Fiddler root certificate on Windows
 6. Click __Next__ to go to the final step of __Certificate Import Wizard__.
 7. Click __Finish__.
 
-__Fiddler root certificate is now installed.__
+**Fiddler root certificate is now installed.**
