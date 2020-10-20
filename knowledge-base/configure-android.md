@@ -54,13 +54,15 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
     - Tap **_Save_**.
 
 3. Install the trust certificate on the Android device.
-    - Open a browser on the device and type the Fiddler echo service address: **http://ipv4.fiddler:8866**
+    - Open a browser on the Android device and type the Fiddler echo service address: **http://ipv4.fiddler:8866**
     - Tap the option to download the certificate.
     - In the prompt windows, enter a certificate name and press **_Save_**.
 
 ## Inspect Browser Traffic
 
 With all of the above done, you can immediately monitor HTTP/HTTPS traffic from mobile browsers. For example, open a Chrome browser on your Android device, type an address of your choice, and observe the traffic being captured in the **_Live Traffic_** section of Fiddler Everywhere.
+
+>tip Once you’re done debugging, don’t forget to remove the WiFi proxy from your Android device.
 
 ## Inspect Android Application Traffic
 
