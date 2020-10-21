@@ -1,5 +1,6 @@
 ---
 title: Connections
+previous_url: /user-guide/settings/connections/allow-remote-connections
 slug: connections-submenu
 tags: remote connections, remote traffic, system proxy, network port
 publish: true
