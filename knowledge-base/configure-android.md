@@ -56,7 +56,7 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
 3. Install the trust certificate on the Android device.
     - Open a browser on the Android device and type the Fiddler echo service address: **http://ipv4.fiddler:8866**
     - Tap the option to download the certificate.
-    - In the prompt windows, enter a certificate name and press **_Save_**.
+    - In the prompt window, enter a certificate name and press **_Save_**.
 
 ## Inspect Browser Traffic
 
