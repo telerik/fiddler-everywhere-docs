@@ -75,7 +75,7 @@ Use the __Advanced Filters__ to apply filters based on the Request and Response 
 
     ![Advanced filters popup](../../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
 
-Currently, the __Advanced Filters__ entries are using **AND** logical operator. Each value is using the **EXACT** match.
+Currently, the __Advanced Filters__ entries are using **AND** logical operator. Each value is complying with the **EXACT** match.
 
 >tip Alternatively, you can apply filters through the _more_ option on each Live Traffic column (e.g., apply a filter for _Host_ column). The column filtering allows using AND and OR logical operators (for two lines) and multiple comparison rules (for example, like **Is equal to**, **contains**, **ends with**, etc.).
 
