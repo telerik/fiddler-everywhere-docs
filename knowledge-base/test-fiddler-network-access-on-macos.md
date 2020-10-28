@@ -60,7 +60,7 @@ The Fiddler Everywhere client will use the name of the active network adapter (f
 
 _An example output from executing test.sh_
 ```
-Wi-Fi
+"Wi-Fi"
 ```
 
 Refer to the next section on how to use this name for further troubleshooting.
