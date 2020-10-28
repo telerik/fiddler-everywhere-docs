@@ -4,6 +4,7 @@ slug: introduction
 tags: introduction
 publish: true
 position: 0
+previous_url: /license
 ---
 
 # Welcome to Fiddler Everywhere!
