@@ -39,7 +39,7 @@ The Fiddler Everywhere client will use the name of the active network adapter (f
             rc="$?"
             if [ "$rc" -eq 0 ]; then
                 currentservice="$sname"
-                echo "$currentservice"
+                echo "\"$currentservice\""
                 break
             fi
         fi
