@@ -1,5 +1,5 @@
 ---
-title: Composer Settings
+title: Composer
 slug: composer-settings-submenu
 tags: composer settings, follow redirects, Fiddler composer
 publish: true
@@ -10,7 +10,7 @@ position: 50
 
 The __Composer__ sub-menu contains an option to set the behavior for composed requests returning status code **3xx** (redirects).
 
-![Composer settings](../../images/settings/psettings-composer.png)
+![Composer settings](../../images/settings/settings-composer.png)
 
 ## Follow Redirects Automatically
 

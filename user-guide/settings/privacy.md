@@ -1,5 +1,5 @@
 ---
-title: Privacy Settings
+title: Privacy
 slug: privacy-submenu
 tags: privacy, delete account, unsubscribe, email list
 publish: true

@@ -1,5 +1,5 @@
 ---
-title: Gateway Settings
+title: Gateway
 slug: gateway-submenu
 tags: system proxy, manual proxy
 publish: true
