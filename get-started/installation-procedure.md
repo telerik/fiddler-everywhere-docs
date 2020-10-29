@@ -89,13 +89,17 @@ Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere
 
 ### Create Fiddler Account
 
-1. Launch the Fiddler Everywhere client. The **Create Account** screen loads. Enter the requested information and accept the terms of the agreement. Note that the valid email provided here is the one that is later used for sharing and receiving sessions and notifications.
+1. Launch the Fiddler Everywhere client. At this point , you could use existing account (via existing Fiddler account or Google authentication) or press the **New User? Create Account** button.
 
-    ![Create new account - Step 2](../images/login/create-account-screen.png)
+    ![Login screen](../images/login/login-screen.png)
 
-2. Fiddler sends a confirmation email to the provided address.
+2. The **Create Account** screen loads. Enter the requested information and accept the terms of the agreement. Note that the valid email provided here is the one that is later used for sharing and receiving sessions and notifications.
 
-3. Open the confirmation email and follow the instructions to complete the registration.
+    ![Create new account screen](../images/login/create-acc-screen.png)
+
+3. Fiddler sends a confirmation email to the provided address.
+
+4. Open the confirmation email and follow the instructions to complete the registration.
 
 ### Use Google Account
 
@@ -111,7 +115,7 @@ Steps to update Fiddler Everywhere to the latest version:
 
 1. Start __Fiddler Everywhere__.
 
-2. From the main menu, choose _Help_ > _Check for Update_. If a newer version is available, a notification will ask for your agreement to download and install it.
+2. From the main menu, choose **_Help_ > _Check for Update_**. If a newer version is available, a notification will ask for your agreement to download and install it.
 
 3. Fiddler Everywhere will restart and automatically update to the latest version.
 
