@@ -1,5 +1,5 @@
 ---
-title: HTTPS
+title: HTTPS Settings
 slug: decrypt-https-traffic
 tags: https, https traffic, SSL, decrypt https, https decryption, capturing HTTPS, trust certificate
 publish: true
