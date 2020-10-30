@@ -149,7 +149,7 @@ When the Inspectors are activated, they will automatically decide which Inspecto
 
 ### Live Traffic List Icons
 
-The **Live Traffic List** uses the following icons to provide additional context for each recorded session:
+The **Live Traffic List** uses the icons listed below to provide additional context for each recorded session. Hover on an icon on an entry in the Live Traffic list to trigger an explanatory tooltip.
 
 - ![Generic document icon](../../images/livetraffic/icons/generic-document.png) - Represents a generic successful response.
 - ![Uploading icon](../../images/livetraffic/icons/uploading.png) - Uploading content for a session in progress (the request is being sent to the server).
