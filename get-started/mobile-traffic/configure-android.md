@@ -1,5 +1,5 @@
 ---
-title: Capture and Inspect Android Traffic with Fiddler Everywhere
+title: Capture and Inspect Android Traffic
 description: An article on how to capture and inspect traffic from Android device while using Fiddler Everywhere
 type: how-to
 slug: capture-mobile-android-traffic
