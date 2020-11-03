@@ -1,11 +1,12 @@
 ---
-title: Capture and Inspect Android Traffic
+title: Capture and Inspect Android Traffic with Fiddler Everywhere
 description: An article on how to capture and inspect traffic from Android device while using Fiddler Everywhere
 type: how-to
-slug: capture-android-traffic
+slug: capture-mobile-android-traffic
 tags: capture Android traffic, inspect Android traffic, mobile traffic, https, Android application, Fiddler Everywhere Android
 publish: true
-res_type: kb
+position: 10
+previous_url: /knowledge-base/configure-android
 ---
 
 #### Environment

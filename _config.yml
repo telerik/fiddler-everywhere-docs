@@ -9,6 +9,9 @@ navigation:
     get-started:
         title: Get Started
         position: 10
+    get-started/mobile-traffic:
+        title: Mobile Traffic
+        position: 110
     user-guide:
         title: User Guide
         position: 20
