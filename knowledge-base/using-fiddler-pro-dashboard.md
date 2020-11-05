@@ -59,7 +59,7 @@ During the payment, you could choose to purchase multiple subscriptions for your
 
 ## Invoice Information
 
-Access all previously issue invoices via the **My Invoice** section in the [dashboard](https://dashboard.getfiddler.com/myaccount).
+Access and download all previously issue invoices via the **My Invoice** section in the [dashboard](https://dashboard.getfiddler.com/myaccount).
 
 ![My Invoice section](../images/kb/dashboard/dashboard-002.png)
 
