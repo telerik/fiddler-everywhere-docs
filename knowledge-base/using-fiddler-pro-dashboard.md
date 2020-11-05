@@ -31,26 +31,36 @@ _An example of the dashboard page for users with Free plan_
 _An example of the landing dashboard page for users with PRO plan_
 ![Main dashboard page of Fiddler Everywhere](../images/kb/dashboard/dashboard-001.png)
 
-### Upgrade to PRO
+## Upgrade to PRO
 
 To activate the PRO version of Fiddler Everywhere, you need to purchase a PRO plan. The PRO plan allows you to choose different payment options (monthly and annual payment).
 
 - Open Fiddler Everywhere and click on the **Upgrade** button. Alternatively, load [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com) and click on **Upgrade to PRO Now** button.
+
 - Choose your payment options and proceed. After a successful payment, you will see a confirmation page.
 
     ![Plan activation confirmation page](../images/kb/dashboard/fiddler-payment-process-001.png)
 
 - Restart your Fiddler Everywhere client to complete the PRO version activation.
 
-### Activating Subscriptions
+## Activating Subscriptions
 
 During the payment, you could choose to purchase multiple subscriptions for your team and collaborators. Activating the subscriptions for unique Fiddler Everywhere users are available through the [dashboard](https://dashboard.getfiddler.com/myaccount).
 
 - Open the **My Plan** section in the [dashboard](https://dashboard.getfiddler.com/myaccount).
+
 - To activate a subscription, enter the user's email ID and confirm (via the &#10004;).
 
     ![Plan activation confirmation page](../images/kb/dashboard/fiddler-payment-process-002.png)
 
-- The provided ID is now activated subscription. Its subscriptions can be canceled or entirely removed at any time.
+- The provided ID is now activated subscription. All subscription entries can be canceled or entirely removed at any time.
 
     ![Email ID added to subscriptions](../images/kb/dashboard/fiddler-payment-process-003.png)
+
+## Invoice Information
+
+Access all previously issue invoices via the **My Invoice** section in the [dashboard](https://dashboard.getfiddler.com/myaccount).
+
+![My Invoice section](../images/kb/dashboard/dashboard-002.png)
+
+
