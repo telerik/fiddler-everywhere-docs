@@ -59,6 +59,11 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 
 To try Fiddler Everywhere PRO for FREE for 30 days, press the **Try PRO** button and press **Start Trial**. An **Upgrade Successful** prompt window confirms your trial subscriptions. The trial activation does not require a credit card or any other additional information.
 
+
+#### Fiddler Everywhere PRO Dashboard
+
+More information on how to manage your plans and subscriptions via the Fiddler Everywhere dashboard panel can be found [here]({%slug fiddler-dashboard%}).
+
 ## Release history
 
 To learn more about the release history, visit [Release History Page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history)
