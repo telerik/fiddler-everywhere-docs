@@ -19,14 +19,34 @@ res_type: kb
 
 #### Description
 
-How to install Fiddler root certificate on Mac OS.
+To capture secure traffic (HTTPS), Fiddler Everywhere needs to install a root trust certificate in the Keychain Access application. The certificate is called **DO_NOT_TRUST_FiddlerRoot**. This article provides detailed instructions for installing the trust certificate automatically (recommended) or manually (for troubleshooting and some specific corner cases).
 
->tip Fiddler Everywhere provides automatic option to install the root trust certificate (administrative account still needed). Use [this documentation section]({%slug decrypt-https-traffic%}) as a reference and use the method below only if you need to add the certificate manually.
+## Installing the Certificate Automatically (recommended)
 
-## Solution
+1. Open **Fiddler Everywhere** and go to **_Settings > HTTPS_**.
 
-1. Go to your __Desktop__ and click on __FiddlerRootCertificate.crt__.
-2. In __Keychain Access__ click on __DO_NOT_TRUST_FiddlerRoot__ certificate to open the __Trust dialog__
-3. Choose __Always Trust__ in the __When using this certificate__ dropdown.
+2. Click on the **Trust root certificate** button. **Fiddler root certificate is now installed and trusted.**
 
-__Fiddler root certificate is now installed.__
+3. Open **Fiddler Everywhere** and start capturing secure traffic.
+
+## Installing the Certificate Manually
+
+In some cases, the automatic installation and enabling of the trust certificate might not work. For similar cases, you could manually add the Fiddler Everywhere trust certificate to your keychain.
+
+1. Open **Fiddler Everywhere** and go to **_Settings > HTTPS_** and expand the **_Advanced Settings_** menu.
+
+2. Click on **_Export root certificate to Desktop_**. As a result a file **FiddlerRootCertificate.crt** will be created on **Desktop** folder.
+
+3. Go to the **Desktop** folder and click on **FiddlerRootCertificate.crt**. The **Keychain Access** application will start and open the **Certificates** section.
+
+4. Double-click on **DO_NOT_TRUST_FiddlerRoot** certificate to open it.
+
+5. Expand the **Trust** section and choose **Always Trust** in the **When using this certificate** dropdown.
+
+    ![Manually trusting the certificate](../images/kb/mac-certificate/trusting-certificate.png)
+
+    **Fiddler root certificate is now installed and trusted.**
+
+6. Open **Fiddler Everywhere** and start capturing secure traffic.
+
+

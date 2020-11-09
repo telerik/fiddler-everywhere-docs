@@ -1,22 +1,22 @@
 ---
-title: AutoResponder
+title: Auto Responder
 slug: auto-responder-general
-tags: Fiddler autoresponder, autoresponder, mock server response, Fiddler's rules
+tags: Fiddler Auto Responder, custom HTTP responses, auto responder, mock server response, Fiddler's rules
 publish: true
 position: 30
 ---
 
-## AutoResponder Tab
+## Auto Responder Tab
 
-The __AutoResponder__ is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
+The __Auto Responder__ is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
 
 ![AutoResponder button](../../images/livetraffic/autoresponder/autoresponder-main-all.png)
 
-The [AutoResponder Rules Editor]({%slug auto-responder-general%}#rules-editor)  allows you to create new rules and edit existing ones.
+The [Auto Responder Rules Editor]({%slug auto-responder-general%}#rules-editor)  allows you to create new rules and edit existing ones.
 
-The [AutoResponder Queue Viewer]({%slug auto-responder-general%}#queue-viewer) lists the currently used rules and provides additional control over them. The tab also exposes options to import/export rules files (__FARX__), to change the priority of the rules (of execution) and to entirely enable/disable the __AutoResponder__ or specific rules.
+The [Auto Responder Queue Viewer]({%slug auto-responder-general%}#queue-viewer) lists the currently used rules and provides additional control over them. The tab also exposes options to import/export rules files (__FARX__), to change the priority of the rules (of execution) and to entirely enable/disable the __Auto Responder__ or specific rules.
 
->tip You need to enable Live Traffic _Capturing_ to be able to apply AutoResponder rules.
+>tip You need to enable Live Traffic _Capturing_ to be able to apply Auto Responder rules.
 
 ## Rules Editor
 
@@ -144,7 +144,7 @@ The standard regex implementation also allows using regex variables. An example 
 
 ## Action Strings
 
-When Fiddler Everywhere identifies a request which matches the Auto Responder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files, the __AutoResponder__ can perform some specific actions:
+When Fiddler Everywhere identifies a request which matches the Auto Responder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files, the __Auto Responder__ can perform some specific actions:
 
 
 | Action String     | Description | Action Type |
@@ -161,13 +161,13 @@ When Fiddler Everywhere identifies a request which matches the Auto Responder **
 | __*drop__ | Close the client connection immediately without sending a response. | Final |
 | __*exit__ | Stop processing rules at this point. | Final |
 | __Return manually crafted response__ | Allows modifying the current response (HTML, JS, JSON) previously returned by the server. | Final |
-| __Find a file...__ | The __Find a file…__ option in the Actions dropdown displays a file picker to allow you to select a filename that should be returned.| Final |
+| __Choose saved response file...__ | The __Choose saved response file..…__ option in the Actions dropdown displays a file picker to allow you to select a filename that should be returned.| Final |
 
-__Rules with Non-final__ actions will allow the request to match multiple AutoResponder rules. As soon a rule specifying a final action is reached, the matching process exists, and no further rules are processed for that session.
+__Rules with Non-final__ actions will allow the request to match multiple Auto Responder rules. As soon a rule specifying a final action is reached, the matching process exists, and no further rules are processed for that session.
 
 ## Queue Viewer
 
-The __Queue Viewer__ (a.k.a. __Queue Rules Viewer__) interface is a queue of the created AutoResponder rules. The __Queue Viewer__ allows the listed rules to be enabled and disabled, to be promoted and demoted (by changing their queue position), to be edited, to be exported and imported. The option to enable the __AutoResponder__ and to allow a non-matching request to pass-through is also part of the __Queue Viewer__.
+The __Queue Viewer__ (a.k.a. __Queue Rules Viewer__) interface is a queue of the created Auto Responder rules. The __Queue Viewer__ allows the listed rules to be enabled and disabled, to be promoted and demoted (by changing their queue position), to be edited, to be exported and imported. The option to enable the __Auto Responder__ and to allow a non-matching request to pass-through is also part of the __Queue Viewer__.
 
 ### Rules Grouping & Priority
 
@@ -181,30 +181,30 @@ Use __Group/Ungroup__ toggle button to create croups for selected rules in the q
 
 ### Enable Auto Responses
 
-Use the __Enable Auto Responses__ checkbox to activate the __AutoResponder__. Note that __Live Traffic__ switch should also be turned on to _Capturing_ mode.
-![Enable AutoResponder](../../images/livetraffic/autoresponder/autoresponder-enable.png)
+Use the __Enable Auto Responses__ checkbox to activate the __Auto Responder__. Note that __Live Traffic__ switch should also be turned on to _Capturing_ mode.
+![Enable Auto Responder](../../images/livetraffic/autoresponder/autoresponder-enable.png)
 
 ### Import Rules
 
-You can import rules from a __FARX__ (Fiddler AutoResponder XML) file. The __FARX__ file contains a set of previously created AutoResponder rules. Your current set of rules is automatically saved on exit and reloaded when you start Fiddler Everywhere again.
+You can import rules from a __FARX__ (Fiddler Auto Responder XML) file. The __FARX__ file contains a set of previously created Auto Responder rules. Your current set of rules is automatically saved on exit and reloaded when you start Fiddler Everywhere again.
 
 Use the __Import__ button to provide a FARX file that contains the set of rules.
 ![Import rules](../../images/livetraffic/autoresponder/autoresponder-rules-import.png)
 
 ### Export Rules
 
-You can export rules in a FARX file (Fiddler AutoResponder XML). The exported file can be easily reused via the [import functionality](#import-rules).
+You can export rules in a FARX file (Fiddler Auto Responder XML). The exported file can be easily reused via the [import functionality](#import-rules).
 
 Use the __Export__ button to create a FARX file that contains the set of rules.
 ![Export rules](../../images/livetraffic/autoresponder/autoresponder-rules-export.png)
 
 ### Unmatched Requests Passthrough
 
-The __Unmatched Requests Passthrough__ option controls what happens when a Session does not match any of the applied rules. When the checkbox is checked, the unmatched requests are sent to the server normally, without any interference from the AutoResponder. When the option is OFF (the checkbox is unchecked), Fiddler will generate a __404__ Not Found response for any _unconditional_ requests that are not matching the applied rules.
+The __Unmatched Requests Passthrough__ option controls what happens when a Session does not match any of the applied rules. When the checkbox is checked, the unmatched requests are sent to the server normally, without any interference from the Auto Responder. When the option is OFF (the checkbox is unchecked), Fiddler will generate a __404__ Not Found response for any _unconditional_ requests that are not matching the applied rules.
 
 ![Export rules](../../images/livetraffic/autoresponder/autoresponder-passthrough.png)
 
->important By default, when the __AutoResponder__ is enabled, the __Unmatch Requests Passthrough__ option is turned off, meaning that all unmatched requests will start to fail with a __404 (Fiddled)__ response.
+>important By default, when the __Auto Responder__ is enabled, the __Unmatch Requests Passthrough__ option is turned off, meaning that all unmatched requests will start to fail with a __404 (Fiddled)__ response.
 
 For example, Fiddler generated a 404 response due to a request that is not matching the applied rules when __Unmatch Requests Passthrough__ option is turned off.
 ![Unmatched Request](../../images/livetraffic/autoresponder/autoresponder-umatched-passnot.png)
