@@ -1,12 +1,4 @@
----
-title: How to set the Fiddler proxy for macOS terminal
-description: An article on how to set the Fiddler Everywhere proxy for macOS terminals
-type: how-to
-slug: fiddler-macos-terminal
-tags: Fiddler Everywhere terminal, Fiddler Everywhere iTerm, Fiddler Everywhere iterm2, Fiddler macOS shell, Fiddler macOS terminal proxy
-publish: true
-res_type: kb
----
+
 
 
 #### Environment
@@ -27,10 +19,19 @@ The article explains how to set the Fiddler Everywhere proxy for commonly used c
 
 Terminal applications on macOS like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)) or [iTerm2](https://www.iterm2.com/) are capable of executing HTTP and HTTPS requests. However, in the common case, they won't use the system proxy, and for Fiddler Everywhere to capture traffic that passes through them, they need to set the Fiddler Everywhere proxy explicitly. To achieve that, we could use the **export** command.
 
-```Shell
+```Bash
 export http_proxy=127.0.0.1:8866
 export https_proxy=127.0.0.1:8866
 ```
+
+Once the Fiddler Everywhere proxy is set, we could immediately capture traffic through the terminal application.
+
+_Example for making a request while using_ **_curl_** _via iTerm2 and intercepting the traffic in Fiddler Everywhere_
+```Bash
+curl https://docs.telerik.com/fiddler-everywhere
+```
+
+![Result from curl request in Fiddler Everywhere](../images/kb/macos-terminal/curl-traffic.png)
 
 >tip The **export** command makes a variable that will be included in a child process environment. It does not affect other already existing environments.
 
