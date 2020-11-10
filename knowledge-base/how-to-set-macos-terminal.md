@@ -1,4 +1,12 @@
-
+---
+title: How to set the Fiddler proxy for macOS terminal
+description: An article on how to set the Fiddler Everywhere proxy for macOS terminals
+type: how-to
+slug: fiddler-macos-terminal
+tags: Fiddler Everywhere terminal, Fiddler Everywhere iTerm, Fiddler Everywhere iterm2, Fiddler macOS shell, Fiddler macOS terminal proxy
+publish: true
+res_type: kb
+---
 
 
 #### Environment
