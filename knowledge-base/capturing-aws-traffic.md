@@ -41,7 +41,7 @@ To capture traffic generated from AWS CLI commands, you need to configure the Fi
     ```Shell
     export AWS_CA_BUNDLE=~/Desktop/FiddlerRootCertificate.pem
     ```
-    
+
     >tip The `AWS_CA_BUNDLE` specifies the path to a certificate bundle to use for HTTPS certificate validation. If defined, this environment variable overrides the value for the profile setting `ca_bundle`.
 
 5. Start capturing traffic generated from AWS CLI commands.
@@ -53,7 +53,7 @@ To capture traffic generated from AWS CLI commands, you need to configure the Fi
 
 ## Reset AWS CLI to Default Settings
 
-After the debugging of the request made through are over, you could reset the `AWS_CA_BUNDLE` environment variable while using the `unset` command.
+After the debugging of the request made through are over, you could reset the `AWS_CA_BUNDLE` environment variable while using the **unset** command.
 
 ```Shell
 unset AWS_CA_BUNDLE
