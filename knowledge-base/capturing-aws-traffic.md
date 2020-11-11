@@ -35,14 +35,21 @@ To capture traffic generated from AWS CLI commands, you need to configure the Fi
     openssl x509 -inform DER -in ~/Desktop/FiddlerRootCertificate.crt -out ~/Desktop/FiddlerRootCertificate.pem
     ```
 
->tip The sample path **~/Desktop/FiddlerRootCertificate.crt** might differ on your side, depending on the used operating system.
+    >tip The sample path **~/Desktop/FiddlerRootCertificate.crt** might differ on your side, depending on the used operating system.
 
 4. Use the generated PEM file to set the `AWS_CA_BUNDLE` environment variable.
     ```Shell
     export AWS_CA_BUNDLE=~/Desktop/FiddlerRootCertificate.pem
     ```
+    
+    >tip The `AWS_CA_BUNDLE` specifies the path to a certificate bundle to use for HTTPS certificate validation. If defined, this environment variable overrides the value for the profile setting `ca_bundle`.
 
->tip The `AWS_CA_BUNDLE` specifies the path to a certificate bundle to use for HTTPS certificate validation. If defined, this environment variable overrides the value for the profile setting `ca_bundle`.
+5. Start capturing traffic generated from AWS CLI commands.
+    ```Shell
+    aws sts get-caller-identity
+    ```
+
+
 
 ## Reset AWS CLI to Default Settings
 
