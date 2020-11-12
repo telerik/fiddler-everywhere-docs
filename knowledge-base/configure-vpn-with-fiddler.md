@@ -23,7 +23,7 @@ The article covers the specific configuration needed to use Fiddler Everywhere w
 ## Prerequisites
 
 - [Fiddler Everywhere client **version 1.1.0 and above**](https://www.telerik.com/download/fiddler-everywhere) installed on your machine.
-- VPN software with pre-configured VPN network access. The article covers the steps needed for **Cisco AnyConnect**.
+- VPN software with pre-configured VPN network access. The article covers the steps needed for [**Cisco AnyConnect**](https://www.cisco.com/c/en/us/products/security/anyconnect-secure-mobility-client/index.html).
 
 ## Configuration Steps
 
