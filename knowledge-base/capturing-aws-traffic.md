@@ -49,6 +49,7 @@ To capture traffic generated from AWS CLI commands, you need to configure the Fi
     aws sts get-caller-identity
     ```
 
+    ![Traffic captured from AWS CLI](../images/kb/aws/aws-traffic.png)
 
 
 ## Reset AWS CLI to Default Settings
