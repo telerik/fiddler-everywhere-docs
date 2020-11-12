@@ -1,9 +1,9 @@
 ---
-title: Configuring Fiddler Everywhere alongside Cisco VPN
-description: An article explaining how to configure Cisco VPN to work alongside Fiddler Everywhere
+title: Configuring Fiddler Everywhere alongside Cisco AnyConnect
+description: An article explaining how to use Cisco AnyConnect alongside Fiddler Everywhere
 type: how-to
 slug: configure-vpn-fiddler
-tags: VPN Fiddler Everywhere, Cisco VPN Fiddler, capturing VPN traffic, Fiddler VPN configuration, VPN bypass, connections bypass list, Fiddler connections bypass
+tags: VPN Fiddler Everywhere, Cisco VPN Fiddler, capturing VPN traffic, Fiddler VPN configuration, VPN bypass, connections bypass list, Fiddler connections bypass, Fiddler Cisco AnyConnect
 publish: true
 res_type: kb
 ---
@@ -14,21 +14,22 @@ res_type: kb
 |---|---|
 | Product  | Fiddler Everywhere  |
 | Product Version | 1.1.0 and above  |
+| 3rd-party tool| [Cisco AnyConnect](https://www.cisco.com/c/en/us/products/security/anyconnect-secure-mobility-client/index.html) |
 
 #### Description
 
-The article covers the specific configuration needed to use Fiddler Everywhere with VPN software like Cisco VPN.
+The article covers the specific configuration needed to use Fiddler Everywhere with VPN software like [Cisco AnyConnect](https://www.cisco.com/c/en/us/products/security/anyconnect-secure-mobility-client/index.html).
 
 ## Prerequisites
 
 - [Fiddler Everywhere client **version 1.1.0 and above**](https://www.telerik.com/download/fiddler-everywhere) installed on your machine.
-- VPN software with pre-configured VPN network access. The article covers the steps needed for **Cisco VPN**.
+- VPN software with pre-configured VPN network access. The article covers the steps needed for [**Cisco AnyConnect**](https://www.cisco.com/c/en/us/products/security/anyconnect-secure-mobility-client/index.html).
 
 ## Configuration Steps
 
->important The steps' executing order is crucial for the proper setup of the Cisco VPN alongside Fiddler Everywhere.
+>important The steps' executing order is crucial for the proper setup of the Cisco AnyConnect alongside Fiddler Everywhere.
 
-1. Make sure your Cisco VPN client is disconnected.
+1. Make sure your Cisco AnyConnect client is disconnected.
 
 2. Start Fiddler Everywhere and turn on the **Capturing** mode.
 
@@ -46,16 +47,20 @@ The article covers the specific configuration needed to use Fiddler Everywhere w
 
 7. To ensure proper OS network configuration is preserved, refer to the [Disconnection VPN](#disconnecting-vpn) section.
 
-## Disconnecting VPN 
+>important Due to some architectural differences in how VPN is set on macOS, you will need to strictly follow the order of
 
-To prevent Cisco VPN from using cached proxy information, we must first stop the Cisco VPN software and then close Fiddler Everywhere (or pause Capturing mode). The workflow for Cisco VPN alongside Fiddler Everywhere is as follows:
+## Reusing VPN 
+
+To prevent Cisco AnyConnect from using cached proxy information, we must first stop the Cisco VPN software and then close Fiddler Everywhere (or pause Capturing mode). The workflow for Cisco AnyConnect alongside Fiddler Everywhere is as follows:
 
 1. Start Fiddler Everywhere and enable Capturing mode.
 
-2. Connect the Cisco VPN client.
+2. Connect the Cisco AnyConnect client.
 
 3. Capture traffic.
 
-4. Disconnect the Cisco VPN client.
+4. Disconnect the Cisco AnyConnect client.
 
 5. Stop Fiddler Everywhere with disabled Capturing mode.
+
+>important Preserving the order of execution of the above steps is mandatory for macOS users.
