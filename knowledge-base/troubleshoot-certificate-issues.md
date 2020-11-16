@@ -1,9 +1,9 @@
 ---
 title: Troubleshoot macOS Trust Certificate Issues
-description: An article on how to troubleshoot issue related to Fiddler's root trust certificate and the related error "Fiddler root certificate NOT trusted successfully".
+description: An article on how to troubleshoot an issue related to Fiddler's root trust certificate and the related error "Fiddler root certificate NOT trusted successfully".
 type: how-to
 slug: troubleshoot-certificate-error
-tags: Fiddler Everywhere Root Trust Certificate, Fiddler certificate issues, Fiddler MITM certificate, Fiddler macOS certificate, Fiddler macOS Keychaing Access
+tags: Fiddler Everywhere Root Trust Certificate, Fiddler certificate issues, Fiddler MITM certificate, Fiddler macOS certificate, Fiddler macOS Keychain Access
 publish: true
 res_type: kb
 ---
@@ -23,9 +23,9 @@ To capture secure traffic (HTTPS), Fiddler Everywhere needs to install and enabl
 
 ## Test Certificate Import
 
-To test importing the Fiddler Root certificate with a Bash script execute the following steps:
+To test importing the Fiddler Root certificate with a Bash script, execute the following steps:
 
-1. Create a Bash file, for example **_import.sh_**.
+1. Create a Bash file, for example, **_import.sh_**.
 
 2. Save the following script in the above file:
     ```Bash
@@ -54,7 +54,7 @@ To test importing the Fiddler Root certificate with a Bash script execute the fo
     ./import.sh
     ```
 
-    After successfull execution, you will be prompted for your macOS username and password. Enter the credentials and the generated trust certificate will be added in the Keychain Access application (under **_login > Certificates_** as **DO_NOT_TRUST_FiddlerRoot**).
+    After successful execution, you will be prompted for your macOS username and password. Enter the credentials, and the generated trust certificate will be added in the Keychain Access application (under **_login > Certificates_** as **DO_NOT_TRUST_FiddlerRoot**).
 
 4. Test that the certificate generated from Fiddler is successfully **installed and trusted** by running the following command in your Bash shell:
 
@@ -62,7 +62,7 @@ To test importing the Fiddler Root certificate with a Bash script execute the fo
     security trust-settings-export /tmp/trustSettings.xml
     ```
     
-    When successfull, the command should output a success message:
+    When successful, the command should output a success message:
     ```Bash
     ...Trust Settings exported successfully.
     ```
@@ -75,3 +75,5 @@ To test importing the Fiddler Root certificate with a Bash script execute the fo
     ```
 
     ![Check SHA1 signature](../images/kb/mac-certificate/certificate-sha-check.png)
+
+    >tip You can safely delete the **_/tmp/trustSettings.xml_** file after the troubleshooting. It is only needed to check that the SHA-1 key is properly exported.
