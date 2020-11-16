@@ -77,3 +77,11 @@ To test importing the Fiddler Root certificate with a Bash script, execute the f
     ![Check SHA1 signature](../images/kb/mac-certificate/certificate-sha-check.png)
 
     >tip You can safely delete the **_/tmp/trustSettings.xml_** file after the troubleshooting. It is only needed to check that the SHA-1 key is properly exported.
+
+
+## See Also
+
+*   [Troubleshoot HTTPS capturing on macOS]({%slug troubleshoot-capturing-traffic%})
+*   [Troubleshoot Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
+*	[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
+*	[How-To Reset Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)
