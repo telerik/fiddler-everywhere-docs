@@ -69,4 +69,9 @@ To test importing the Fiddler Root certificate with a Bash script execute the fo
 
 5. Confirm that the **DO_NOT_TRUST_FiddlerRoot** is present in the Keychain Access application (under **_login > Certificates_**). Double click on the certificate, scroll to the bottom and note the SHA-1 value. Open the exported settings file from **_ /tmp/trustSettings.xml_** and check that the SHA-1 value is present there. For example, the certificate from your Keychain Access application (see the screenshot) should be identical to the SHA1
 
+    _The SHA1 key in trustSettings.xml file should also be present in the Keychain Access_
+    ```XML
+    <key>68E0B8FE34DF4A756B664E300B067CA9A1B9DE8</key>
+    ```
+
     ![Check SHA1 signature](../images/kb/mac-certificate/certificate-sha-check.png)
