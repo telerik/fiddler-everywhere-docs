@@ -61,5 +61,7 @@ When Fiddler Everywhere is open with the default settings, the System Proxy Sett
 
 ## See Also
 
+*   [Troubleshoot HTTPS capturing on macOS]({%slug troubleshoot-capturing-traffic%})
+*   [Troubleshoot macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
 *	[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
 *	[How-To Reset Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)

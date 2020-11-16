@@ -114,3 +114,6 @@ If the issue persist or unsure, for example, there are too many captured session
 
 *   [Troubleshoot Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
 *   [Access and Inspect Fiddler Everywhere log files]({%slug fiddler-log-files%})
+*   [Troubleshoot macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
+*	[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
+*	[How-To Reset Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)
