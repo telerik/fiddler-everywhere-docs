@@ -47,24 +47,31 @@ After selecting an option, a **Choose Format** prompt will appear. The supported
 
 ## Help Menu
 
-The **Help** menu provides an option to check for updates and install the latest version of Fiddler Everywhere.
+The **Help** menu provides several options for version update and information, fast access to forums, documentation and support channel. The support option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) verison.
 
-![check-for-update](../images/menu/menu-help-update.png)
 
 ### Check for Updates
 
-The **Check For Updates** command contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
+The **Check For Updates** option contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
+
+![check-for-update](../images/menu/menu-help-update.png)
 
 ### Forums
 
-The **Forums** command opens a new browser tab with the Fiddler Everywhere forums portal.
+The **Forums** option opens a new browser tab with the Fiddler Everywhere forums portal.
 
 ### Documentation
 
-The **Documentation** command opens a new browser tab with the Fiddler Everywhere documentation website.
+The **Documentation** option opens a new browser tab with the Fiddler Everywhere documentation website.
 
 ### About
 
 The **About** command opens a dialog window that provides information about the Fiddler Everywhere client's current version and build date.
 
 ![the About dialog](../images/menu/menu-help-about.png)
+
+
+### Contact Support
+
+The **Contact Support** option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) verison.
+. Click on the command to open the preferred email tool and post your support query to `support@getfiddler.com`.
