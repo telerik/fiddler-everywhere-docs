@@ -1,7 +1,7 @@
 ---
 title: HTTPS
 slug: decrypt-https-traffic
-tags: HTTPS , HTTPS traffic, SSL, decrypt https, https decryption, capturing HTTPS, trust certificate
+tags: HTTPS settings Fiddler Everywhere, HTTPS Fiddler setup, Fiddler Ignore server certificate error, decrypt https, https decryption, capturing HTTPS
 publish: true
 position: 10
 ---
@@ -14,7 +14,7 @@ After the initial startup, the Fiddler Everywhere application could only capture
 
 ## Trust root certificate
 
-The **Trust root certificate** button installs and trusts the Fiddler root certificate (macOS and Windows only).
+The **Trust root certificate** button installs and trusts the Fiddler root certificate. The option is available on macOS and Windows - on Linux OS you will have to manually export and trust the root certificate.
 
 ## Capture HTTPS traffic
 
