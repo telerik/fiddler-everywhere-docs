@@ -1,12 +1,12 @@
 ---
 title: HTTPS
 slug: decrypt-https-traffic
-tags: https, https traffic, SSL, decrypt https, https decryption, capturing HTTPS, trust certificate
+tags: HTTPS , HTTPS traffic, SSL, decrypt https, https decryption, capturing HTTPS, trust certificate
 publish: true
 position: 10
 ---
 
-## HTTPS Settings Menu
+# HTTPS Menu
 
 After the initial startup, the Fiddler Everywhere application could only capture non-secure traffic (HTTP) while SSL traffic is not captured. To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ sub-menu in __Settings__.
 
@@ -18,7 +18,7 @@ The button installs and trusts the Fiddler root certificate (macOS and Windows o
 
 ## Capture HTTPS traffic
 
-The option defines if Fiddler Everywhere should capture HTTPS traffic or skip it. By default, this option is disabled. To enable the HTTPS traffic capturing, first you need to confirm whether the root certificate is trusted. If it is trusted you can simply enable the capture option.
+The option defines if Fiddler Everywhere should capture HTTPS traffic or skip it. By default, this option is disabled. First, you need to confirm whether the root certificate is trusted to enable the HTTPS traffic capturing. If it is trusted, you can enable the capture option.
 
 ## Export Root Certificate to Desktop and Trust Certificate
 

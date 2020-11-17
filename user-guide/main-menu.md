@@ -63,6 +63,10 @@ The **Forums** option opens a new browser tab with the [Fiddler Everywhere forum
 
 The **Documentation** option opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
 
+### Show Logs
+
+The **Show Logs** option opens the local folder that contains the Fiddler Everywhere log files. Learn more [here]({%slug fiddler-log-files%}) about how to use the log files for troubleshooting your local setup.
+
 ### About
 
 The **About** command opens a dialog window that provides information about the Fiddler Everywhere client's current version and build date.
@@ -72,5 +76,5 @@ The **About** command opens a dialog window that provides information about the 
 
 ### Contact Support
 
-The **Contact Support** option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) verison.
-. Click on the command to open the preferred email tool and post your support query to `support@getfiddler.com`.
+The **Contact Support** option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) version (including the Trial PRO version).
+. Click on the command to send us your support query.
