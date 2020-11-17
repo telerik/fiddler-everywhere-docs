@@ -17,11 +17,11 @@ The **File** menu contains commands to load and store captured traffic. The menu
 
 ### Load Archive
 
-The **Load Archive** command allows you to reload previously-captured traffic stored in a SAZ file. The content will be loaded in the **Sessions** list.
+The **Load Archive** command allows you to reload previously-captured traffic stored as a **SAZ** file. The content will be loaded in the **Sessions** list.
 
 ### Save Archive
 
-The **Save Archive** sub-menu exposes options that allow you to save traffic to SAZ files. You can save all current sessions or just the selected sessions. 
+The **Save Archive** sub-menu exposes options that allow you to save traffic to **SAZ** files. You can save all current sessions or just the selected sessions. 
 
 After selecting an option, a **Save** prompt will appear. The dialog provides opportunities to use encryption (AES256) to create a password-protected archive.
    
@@ -49,20 +49,19 @@ After selecting an option, a **Choose Format** prompt will appear. The supported
 
 The **Help** menu provides several options for version update and information, fast access to forums, documentation and support channel. The support option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) verison.
 
+![check-for-update](../images/menu/menu-help-update.png)
 
 ### Check for Updates
 
 The **Check For Updates** option contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
 
-![check-for-update](../images/menu/menu-help-update.png)
-
 ### Forums
 
-The **Forums** option opens a new browser tab with the Fiddler Everywhere forums portal.
+The **Forums** option opens a new browser tab with the [Fiddler Everywhere forums portal](https://community.getfiddler.com/support/discussions). Use the forums to search for information about possible use cases, report issues and bugs, and request features.
 
 ### Documentation
 
-The **Documentation** option opens a new browser tab with the Fiddler Everywhere documentation website.
+The **Documentation** option opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
 
 ### About
 
