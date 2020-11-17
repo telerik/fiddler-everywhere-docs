@@ -12,15 +12,21 @@ After the initial startup, the Fiddler Everywhere application could only capture
 
 ![default https settings](../../images/settings/settings-https.png)
 
-## Trust Root Certificate
+## Trust root certificate
 
-The button installs and trusts the Fiddler root certificate (macOS and Windows only).
+The **Trust root certificate** button installs and trusts the Fiddler root certificate (macOS and Windows only).
 
 ## Capture HTTPS traffic
 
-The option defines if Fiddler Everywhere should capture HTTPS traffic or skip it. By default, this option is disabled. First, you need to confirm whether the root certificate is trusted to enable the HTTPS traffic capturing. If it is trusted, you can enable the capture option.
+The **Capture HTTPS traffic** option defines if Fiddler Everywhere should capture HTTPS traffic or skip it. By default, this option is disabled. First, you need to confirm whether the root certificate is trusted to enable the HTTPS traffic capturing. If it is trusted, you can enable the capture option.
 
-## Export Root Certificate to Desktop and Trust Certificate
+## Ignore server certificate Errors (unsafe)
+
+The **Ignore server certificate errors** controls whether Fiddler will warn you if an HTTPS server has presented a certificate that did not validate. You should not check this box when surfing the Internet due to the spoofing security threat. 
+
+>tip A typical case example would be certificate validation error on macOS while trying to access *.icloud.com domains. Use the option to ignore the validation error and continue the debugging process.
+
+## Export root certificate to Desktop
 
 Expand __Advanced Settings__ drop-down to show the __Export Root Certificate to Desktop and Trust Certificate__ button. Click the button to export Fiddler the root certificate to the Desktop folder for manual import and trusting of the certificate.
 
