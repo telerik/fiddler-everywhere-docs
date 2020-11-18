@@ -21,9 +21,7 @@ The Live Traffic toolbar provides various functionalities like streaming mode, d
 
 ![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
 
-To start capturing, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing.
-
-![Enabling Live Traffic](../../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
+To start capturing traffic, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing (**Paused** mode).
 
 The Live Traffic toolbar provides the following functionalities:
 
