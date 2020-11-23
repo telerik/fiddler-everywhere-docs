@@ -115,7 +115,7 @@ The **Links** menu provides several useful fast links.
 
 - A **Forums** link to the Fiddler Everywhere community forums at https://community.getfiddler.com/support/discussions
 - A **Documentation** link to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/
-- A **Contact Support** link (available only for PRO & Trial versions) for posting a support ticket to the Fiddler Everywhere support team. More about Fiddler Everywhere PRO support [here]({%support-page%}).
+- A **Contact Support** link (available only for PRO & Trial versions) for posting a support ticket to the Fiddler Everywhere support team. More about Fiddler Everywhere PRO support [here]({%slug support-page%}).
 
 ## Notifications
 
