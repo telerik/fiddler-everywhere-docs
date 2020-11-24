@@ -1,7 +1,7 @@
 ---
 title: Inspectors
 slug: inspector-types
-tags: Fiddler inspectors types, request, response, HTTP headers, secure requests, headers, textview, webforms, cookies, raw, XML
+tags: Fiddler inspectors types, request, response, HTTP headers, secure requests, headers, text, webforms, form data, cookies, raw, XML, preview responses, HTML responses
 publish: true
 position: 20
 ---
@@ -10,7 +10,7 @@ position: 20
 
 Fiddler's Inspectors display the **request** and the **response** for the selected session in the **Live Traffic list**. The inspectors are located in the right panel with the Request inspectors above the Response inspectors.
 
-Select a session (from the __Live Traffic__ list) to load its data into the Inspector's section. Request inspectors are shown at the top and Response inspectors are shown at the bottom (on the right panel).
+Select a session (from the __Live Traffic__ list) to load its data into the Inspector's section. Request inspectors are shown at the top, and Response inspectors are shown at the bottom (on the right panel).
 
 ![Inspectors for Traffic Monitoring](../../images/livetraffic/inspectors/inspectors-all.png)
 
@@ -41,7 +41,7 @@ Every HTTP request begins with plaintext headers that describe what the client r
 
 ### Response Header
 
-Like the HTTP request, every HTTP response begins with plaintext headers that describe the result from the request. The first line of the response (the _"Status line"_) contains the HTTP version (for example __"HTTP/1.1"__), the response status code (for example __"200"__), and the response status text (for instance __"OK"__). Following the _"Status line"_ there are one or more lines containing name-value pairs of metadata about the response and the server, such as the length of the response file, the Content-Type, and how the response may be cached.
+Like the HTTP request, every HTTP response begins with plaintext headers that describe the result from the request. The first line of the response (the _"Status line"_) contains the HTTP version (for example __"HTTP/1.1"__), the response status code (for example __"200"__), and the response status text (for instance __"OK"__). Following the _"Status line"_ one or more lines contain name-value pairs of metadata about the response and the server, such as the length of the response file, the Content-Type, and how the response may be cached.
 
 ## Cookies Inspector
 
@@ -62,7 +62,7 @@ _Decoded raw content_
 
 ## Preview Inspector
 
-The **Preview Inspector** (_Response_ only) allows you to view the response bodies as an image or as a HTML page depending on the response content. The Inspector can display most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, TIFF.
+The **Preview Inspector** (_Response_ only) allows you to view the response bodies as an image or an HTML page depending on the response content. The Inspector can display most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, TIFF.
 
 ![Preview Inspector rendering image](../../images/livetraffic/inspectors/inspectors-image.png)
 
@@ -72,7 +72,7 @@ If the content is in HTML format then the **Preview Inspector**  allows you to v
 
 ## Body Inspectors
 
-There are several different **Body Inspectors** suiatable for different types of requests and responses. Fiddler Everywhere will try to automatically load the most suiatable type of Body Inspector depending on the content. 
+There are several different **Body Inspectors** suitable for different types of requests and responses. Fiddler Everywhere will try to automatically load the most suitable type of Body Inspector depending on the content. 
 
 ### Text
 
@@ -109,8 +109,3 @@ The **Form Data inspector** provides several options to copy the parameter's con
 - **_Copy Key/Value_** - copies the key-value pair of the selected parameter.
 
 ![Copying Information from the Form Data Inspector](../../images/livetraffic/inspectors/webforms-copy.png)
-
-
-
-
-
