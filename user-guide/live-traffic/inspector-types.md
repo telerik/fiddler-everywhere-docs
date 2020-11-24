@@ -6,7 +6,7 @@ publish: true
 position: 20
 ---
 
-## Inspector Types
+# Inspector Types
 
 Fiddler's Inspectors display the **request** and the **response** for the selected session in the **Live Traffic list**. The inspectors are located in the right panel with the Request inspectors above the Response inspectors.
 
@@ -25,7 +25,8 @@ The inspectors are based on the Monaco editor and are coming with a lot of perks
 
 ![Inspector types](../../images/livetraffic/inspectors/inspectors-all-types.png)
 
->tip All inspector types are coming with **Copy all content to clipboard** button at the top-right corner.
+>tip All inspector types (except **Preview**) are coming with **Copy all content to clipboard** button at the top-right corner.
+
 
 ## Headers Inspector
 
@@ -43,11 +44,20 @@ Every HTTP request begins with plaintext headers that describe what the client r
 
 Like the HTTP request, every HTTP response begins with plaintext headers that describe the result from the request. The first line of the response (the _"Status line"_) contains the HTTP version (for example __"HTTP/1.1"__), the response status code (for example __"200"__), and the response status text (for instance __"OK"__). Following the _"Status line"_ one or more lines contain name-value pairs of metadata about the response and the server, such as the length of the response file, the Content-Type, and how the response may be cached.
 
+
+## Params Inspector
+
+The **Params inspector** (_Request_ only) displays the content from any input endpoints parameters. 
+
+![Params Inspector](../../images/livetraffic/inspectors/inspectors-params.png)
+
+
 ## Cookies Inspector
 
 The **Cookies inspector** displays the contents of any outbound `Cookie` and `Cookie2` request headers and any inbound `Set-Cookie`, `Set-Cookie2`, and `P3P` response headers.
 
 ![Cookies Inspector](../../images/livetraffic/inspectors/inspectors-cookies.png)
+
 
 ## Raw Inspector
 
@@ -70,6 +80,7 @@ If the content is in HTML format then the **Preview Inspector**  allows you to v
 
 ![Preview Inspector rendering HTML content](../../images/livetraffic/inspectors/inspectors-web.png)
 
+
 ## Body Inspectors
 
 There are several different **Body Inspectors** suitable for different types of requests and responses. Fiddler Everywhere will try to automatically load the most suitable type of Body Inspector depending on the content. 
@@ -81,6 +92,7 @@ Most of the Inspector is a large text area that displays the body text interpret
 
 ![Text Inspector](../../images/livetraffic/inspectors/inspectors-textview.png)
 
+
 ### JSON
 
 The **JSON Inspector** interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object's nodes. In case when the body can't be interpreted as JSON, the tree view will remain empty (as demonstrated for the request in the screenshot below). The JSON inspector can render the data even if the request/response is compressed or has HTTP chunked encoding applied. The Inspector provides __Expand All / Collapse All__ toggle button that will expand or collapse all nodes of the JSON tree.
@@ -88,6 +100,7 @@ The **JSON Inspector** interprets the selected request or response body as a Jav
 ![JSON Inspector](../../images/livetraffic/inspectors/inspectors-json.png)
 
 >important If the JSON data is malformed (if, for instance, the name component of a name/value pair is unquoted), the JSON inspector will show a warning in the footer.
+
 
 ### XML
 
