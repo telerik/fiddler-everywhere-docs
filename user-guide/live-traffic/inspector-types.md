@@ -10,7 +10,7 @@ position: 20
 
 Fiddler's Inspectors display the **request** and the **response** for the selected session in the **Live Traffic list**. The inspectors are located in the right panel with the Request inspectors above the Response inspectors.
 
-Select a session (from the __Live Traffic__ list) to load its data into the Inspector's section. Request inspectors are shown at the top, and Response inspectors are shown at the bottom (on the right panel).
+Select a session (from the __Live Traffic__ list) to load its data into the Inspector's section. Request inspectors are located at the top, and Response inspectors are located at the bottom (on the right panel).
 
 ![Inspectors for Traffic Monitoring](../../images/livetraffic/inspectors/inspectors-all.png)
 
@@ -74,18 +74,18 @@ The **Raw Inspector** allows you to view the complete request and response, incl
 
 ## Preview Inspector
 
-The **Preview Inspector** (_Response_ only) allows you to view the response bodies as an image or an HTML page depending on the response content. The Inspector can display most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, TIFF.
+The **Preview Inspector** (_Response_ only) allows you to view the response bodies as an image or an HTML page, depending on the response content. The Inspector can display most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, TIFF.
 
 ![Preview Inspector rendering image](../../images/livetraffic/inspectors/inspectors-image.png)
 
-If the content is in HTML format then the **Preview Inspector**  allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the Live Traffic list), meaning that most images and styles will not be displayed. Additionally, scripting and navigating are blocked, providing a read-only preview.
+If the content is in HTML format, then the **Preview Inspector**  allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the Live Traffic list), meaning that most images and styles will not be displayed. Additionally, scripting and navigating are blocked, providing a read-only preview.
 
 ![Preview Inspector rendering HTML content](../../images/livetraffic/inspectors/inspectors-web.png)
 
 
 ## Body Inspectors
 
-There are several different **Body Inspectors** suitable for different types of requests and responses. Fiddler Everywhere will try to automatically load the most suitable type of Body Inspector depending on the content. 
+There are several different **Body Inspectors** suitable for different types of requests and responses. Fiddler Everywhere will try to automatically load the most appropriate type of Body Inspector depending on the content. 
 
 ### Text
 
@@ -97,7 +97,7 @@ Most of the Inspector is a large text area that displays the body text interpret
 
 ### JSON
 
-The **JSON Inspector** interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object's nodes. In case when the body can't be interpreted as JSON, the tree view will remain empty (as demonstrated for the request in the screenshot below). The JSON inspector can render the data even if the request/response is compressed or has HTTP chunked encoding applied. The Inspector provides __Expand All / Collapse All__ toggle button that will expand or collapse all nodes of the JSON tree.
+The **JSON Inspector** interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object's nodes. In case when the body can't be interpreted as JSON, the tree view will remain empty (as demonstrated for the request in the screenshot below). The JSON inspector can render the data even if the request/response is compressed or has HTTP chunked encoding applied. The Inspector provides __Expand All / Collapse All__ toggle button that will expand or collapse all JSON tree nodes.
 
 ![JSON Inspector](../../images/livetraffic/inspectors/inspectors-json.png)
 
@@ -106,7 +106,7 @@ The **JSON Inspector** interprets the selected request or response body as a Jav
 
 ### XML
 
-The **XML Inspector** interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document's nodes. If the body can't be interpreted as XML, the tree view will remain empty (as demonstrated for the request in the screenshot below). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after the element's name. The Inspector provides __Expand All / Collapse All__ toggle button that will expand or collapse all nodes of the XML tree.
+The **XML Inspector** interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document's nodes. If the body can't be interpreted as XML, the tree view will remain empty (as demonstrated for the request in the screenshot below). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after the element's name. The Inspector provides __Expand All / Collapse All__ toggle button that will expand or collapse all XML tree nodes.
 
 ![XML Inspector](../../images/livetraffic/inspectors/inspectors-xml.png)
 
