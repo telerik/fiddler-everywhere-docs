@@ -64,10 +64,10 @@ The **Cookies inspector** displays the contents of any outbound `Cookie` and `Co
 The **Raw Inspector** allows you to view the complete request and response, including headers and bodies, as text. Most of the Inspector is a large text area that displays the body text interpreted using the character set detected using the headers, the byte-order-marker, or an embedded META tag declaration. If the request/response is encoded, the **Raw Inspector** could show the body as received or decoded (this would mutate the session and the Content-Encoding header will be removed after the content is decoded).
 
 _Encoded raw content_
-![Raw Inspector](../../images/livetraffic/inspectors/inspectors-raw.png)
+    ![Raw Inspector](../../images/livetraffic/inspectors/inspectors-raw.png)
 
 _Decoded raw content_
-![Raw Inspector Decoded](../../images/livetraffic/inspectors/inspectors-raw-decoded.png)
+    ![Raw Inspector Decoded](../../images/livetraffic/inspectors/inspectors-raw-decoded.png)
 
 
 ## Preview Inspector
