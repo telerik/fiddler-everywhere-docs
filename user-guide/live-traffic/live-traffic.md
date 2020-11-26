@@ -9,24 +9,21 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 ## Live Traffic Tab
 
-The __Live Traffic__ tab is  is an essential feature of Fiddler Everywhere. It display a summary of each captured session (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Auto Responder**]({%slug auto-responder-general%}). The section also enables sessions saving and sharing, editing issued requests, marking, commeting sessions, and applying Auto Responder rules.
+The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It display a summary of each captured session log (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Auto Responder**]({%slug auto-responder-general%}). The section also enables session logs saving and sharing, editing issued requests, marking, commenting session logs, and applying Auto Responder rules.
 
->tip A **Session** (also mentioned as a **web session**) represents a single transaction between a client and a server, sometimes known as request/response pair. Each Session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the Session and a Timers object that stores timestamps logged during the Session processing.
+>tip A **Session Log** (also mentioned as a **Network Log** or **HTTP Log**) represents a single transaction between a client and a server, sometimes known as to request/response pair. Each **Session Log** appears as a single entry in the Live Traffic (refer to the images below). Each **Session Log** object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The **Session Log** object also maintains a set of Flags that record metadata about the network activity and a Timers object that stores timestamps logged during the activity processing.
 
 ![Live Traffic toolbar and list](../../images/livetraffic/websessions/websessions-toolbar-list-full.png)
 
 ## Live Traffic Toolbar
 
-The Live Traffic toolbar provides various functionalities like streaming mode, decoding content, filtering by different criteria, saving, and sharing sessions.
+The Live Traffic toolbar provides various functionalities like streaming mode, decoding content, filtering by different criteria, saving, and sharing sessions. 
 
 ![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
 
-To start capturing, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing.
-
-![Enabling Live Traffic](../../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
-
 The Live Traffic toolbar provides the following functionalities:
 
+- [Live Traffic Switch](#live-traffic-switch)
 - [Stream](#stream)
 - [Decode](#decode)
 - [Advanced Filters](#advanced-filters)
@@ -34,6 +31,13 @@ The Live Traffic toolbar provides the following functionalities:
 - [Save](#save)
 - [Share](#share)
 - [Remove All](#remove-all)
+
+
+### Live Traffic Switch
+
+To start capturing, you need to enable __Live Traffic__ switch to **Capturing** mode. To stop the traffic capturing, disable the switch to **Paused** mode.
+
+![Live Traffic Capturing mode ON](../../images/livetraffic/websessions/websessions-toolbar-live-traffic.png)
 
 ### Stream
 
