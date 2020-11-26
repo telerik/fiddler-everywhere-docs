@@ -1,7 +1,7 @@
 ---
 title: Live Traffic
 slug: web-sessions-list
-tags: Fiddler Live Traffic, sniffed traffic, captured web traffic, sessions, fiddler sessions, share sessions, http sessions, 
+tags: Fiddler Live Traffic, captured web traffic, sessions, Fiddler session logs, share sessions, http sessions, websessions, session logs, sniffed traffic, captured traffic, captured session logs
 publish: true
 position: 10
 previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar
@@ -9,7 +9,7 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 ## Live Traffic Tab
 
-The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It display a summary of each captured session log (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Auto Responder**]({%slug auto-responder-general%}). The section also enables session logs saving and sharing, editing issued requests, marking, commenting session logs, and applying Auto Responder rules.
+The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It display a summary of each captured session log (in the [**Session Logs list**](#session-logs-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Auto Responder**]({%slug auto-responder-general%}). The section also enables session logs saving and sharing, editing issued requests, marking, commenting session logs, and applying Auto Responder rules.
 
 >tip A **Session Log** (also mentioned as a **Network Log** or **HTTP Log**) represents a single transaction between a client and a server, sometimes known as to request/response pair. Each **Session Log** appears as a single entry in the Live Traffic (refer to the images below). Each **Session Log** object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The **Session Log** object also maintains a set of Flags that record metadata about the network activity and a Timers object that stores timestamps logged during the activity processing.
 
@@ -53,19 +53,6 @@ By default, Fiddler Everywhere uses __buffering mode__, which means that the res
 
     Streaming mode is also useful in cases where a site delivers audio or video streams. These kinds of never-ending streams can't be buffered by Fiddler Everywhere.
 
-### Decode
-
-Use the __Decode__ toggle button to remove all HTTP content and Transfer encoding from requests and responses.
-
-1. Click on the __Toggle__ button to toggle the decoding of an encoded content.
-    
-    ![Decode Toggle button](../../images/livetraffic/websessions/websessions-toolbar-decode-toggle.png)
-
-_An example for HTTP response with_ *Decode* _toggled to OFF_
-![Decode OFF](../../images/livetraffic/websessions/websessions-toolbar-decode-off.png)
-
-_An example for HTTP response with_ *Decode* _toggled to ON_
-![Decode ON](../../images/livetraffic/websessions/websessions-toolbar-decode-on.png)
 
 ### Advanced Filters
 
@@ -85,7 +72,7 @@ Currently, the __Advanced Filters__ entries are using **AND** logical operator. 
 
 ### Clear All Filters
 
-Use the __Clear All Filters__ to reset all filters applied by __Advanced Filters__ and filters applied for each column (see [the columns section](#-live-traffic-columns))
+Use the __Clear All Filters__ to reset all filters applied by __Advanced Filters__ and filters applied for each column (see [the columns section](#session-logs-list-columns))
 
 ![Clear All Filter  button](../../images/livetraffic/websessions/websessions-toolbar-filter-clearall.png)
 
@@ -139,9 +126,9 @@ The __Remove All__ button is removing __all__ currently captured traffic from th
 
 ![Remove All button](../../images/livetraffic/websessions/websessions-toolbar-removeall.png)
 
-## Live Traffic List
+## Session Logs List
 
-The Live Traffic list is an essential feature of Fiddler Everywhere - it displays a list of web sessions with a summary of each session that the Fiddler Everywhere client has captured.
+The **Session Logs List** (a.k.a. Live Traffic list) is an essential feature of Fiddler Everywhere - it displays a list of web sessions with a summary of each session that the Fiddler Everywhere client has captured.
 
 ![Live Traffic](../../images/livetraffic/websessions/websessions-list-all.png)
 
@@ -151,9 +138,9 @@ Many operations begin by selecting one or more entries in the Live Traffic and t
 
 When the Inspectors are activated, they will automatically decide which Inspector is best suited to display the selected session's request and response.
 
-### Live Traffic List Icons
+### Session Logs List Icons 
 
-The **Live Traffic List** uses the icons listed below to provide additional context for each recorded session. Hover on an icon on an entry in the Live Traffic list to trigger an explanatory tooltip.
+The **Session Logs List** uses the icons listed below to provide additional context for each recorded session. Hover on an icon on an entry in the Live Traffic list to trigger an explanatory tooltip.
 
 - ![Generic document icon](../../images/livetraffic/icons/generic-document.png) - Represents a generic successful response.
 - ![Uploading icon](../../images/livetraffic/icons/uploading.png) - Uploading content for a session in progress (the request is being sent to the server).
@@ -183,36 +170,42 @@ The **Live Traffic List** uses the icons listed below to provide additional cont
 - ![JSON icon](../../images/livetraffic/icons/json.png) - The response was a JSON file.
 - ![POST method icon](../../images/livetraffic/icons/post-method-request.png) - The request used the POST method.
 
-## Live Traffic Columns
+## Session Logs List Columns 
 
 Certain key information is displayed in the columns of Live Traffic, including:
 
-- __\#__ - An identification number generated by Fiddler Everywhere
-- __Result__ - The status code from the response
-- __Protocol__ - The protocol (HTTP/HTTPS/FTP) used by the Session
-- __Host__ - The hostname and the port of the server to which the request was sent
-- __URL__ - The URL path, file, and query string from the request
-- __Method__ - The HTTP Method used by the made request (GET, POST, PUT, etc.)
-- __Body__ - The number of bytes in the response body
-- __Caching__ - Values from the Response's Expires and Cache-Control headers
-- __Content-Type__ The Content-Type header from the response
-- __Process__ The local OS process from which the traffic originated
+- __\#__ - An unique identification number generated by Fiddler Everywhere. This column is always visible.
+- __Result__ - The status code generated from the response.
+- __Protocol__ - The protocol (HTTP/HTTPS/FTP) used to make the request.
+- __Host__ - The hostname and the port of the server to which the request was sent.
+- __Path__ - The endpoint path of the server to which the request was sent.
+- __URL__ - The URL path, file, and query string from the request.
+- __Method__ - The HTTP Method used by the made request (GET, POST, PUT, etc.).
+- __Process__ - The local OS process from which the traffic originated.
+- __Client IP__ - Indicates the client IP that sent this request (a.k.a. `x-clientIP` session flag in the classic Fiddler).
+- __Remote IP__ - Indicates the IP address of the server used for this request. (a.k.a. `x-hostIP` session flag in the classic Fiddler).
+- __Body Size__ - The size of the body in bytes.
+- __Caching__ - Values from the Response's **Expires** and **Cache-Control** headers.
+- __Content-Type__ The **Content-Type** header from the response.
+- __Time__ - The hour timestamp indicating when the request/response is made.
+- __Date__ - The date timestamp indicating when the request/response is made.
+- __Duration__ - The duration in milliseconds.
 - __Comments__ A field for showing the custom comments added by you (or the author of a shared session).
 
 Each column comes with a **more** button (three vertical dots), which opens a popup with **Filter**  and **Columns** submenus. 
 
 Use the **Filter** submenu to apply filters for the currently selected column only (e.g., filter all the traffic by _host_ name or by a specific _status code_). Columns with active filters will have a blue filter indicator. You can clear active filters via the **Filter** popup (for the filtered column) or use the global [__Clear All Filters__ button](#clear-all-filters).
 
-![Filter context submenu](../../images/livetraffic/columns/dots-filter.png)
+![Filter context submenu](../../images/livetraffic/websessions/dots-filter.png)
 
 Use the **Columns** submenu to select which column should be visible in the **Live Traffic** list. By default all columns are visible.
 
-![Columns context submenu](../../images/livetraffic/columns/dots-columns.png)
+![Columns context submenu](../../images/livetraffic/websessions/dots-columns.png)
 
 Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
 
 
-## Live Traffic Context Menu
+## Session Logs List Context Menu
 
 The context menu for the Live Traffic exposes several actions that can be applied for a Session or multiple Sessions. To show the context menu, press right-click on Windows (__Control__ + mouse click on Mac).
 

@@ -16,7 +16,7 @@ Capturing traffic with Fiddler Everywhere is as easy as executing two steps:
 
 2. Switch **Live Traffic** to **Capturing**. 
 
-    ![Enabling Live Traffic](../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
+    ![Enabling Live Traffic](../images/livetraffic/websessions/websessions-toolbar-live-traffic.png)
 
 That's it! Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug web-sessions-list%}).
 

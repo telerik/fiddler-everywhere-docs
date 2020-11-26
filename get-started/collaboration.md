@@ -22,7 +22,7 @@ Save a session while following these steps:
  1. [Capture the traffic]({%slug capture-traffic-get-started%}).
  2. Use a preferred way to save a session. With Fiddler Everywhere, you can save captured traffic via:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Save**  option.
-    - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Save** option via the context menu.
+    - [Live Traffic list]({%slug web-sessions-list%}#session-logs-list) provides **Save** option via the context menu.
     - [File menu]({%slug file-menu%}) allows you to import/export different known formats (like HTTPArchive, Packet Capture, Folder Tree, and others) and to load and save Fiddler archives (**SAZ** format) that are holding captured sessions.
 
 ### Share Sessions
@@ -31,7 +31,7 @@ Share a session with a collaborator while following these steps:
  1. [Capture the traffic]({%slug capture-traffic-get-started%}) (that you would like to share with your collaborators). Alternatively, select a saved session from the [**Sessions list**]({%slug saved-sessions-tab%}).
  2. Use a preferred way to share a session. With Fiddler Everywhere, you can save and share captured traffic via:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Share** option. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
-    - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Share** option via the context menu. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
+    - [Live Traffic list]({%slug web-sessions-list%}#session-logs-list) provides **Share** option via the context menu. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
     - [Sessions list]({%slug saved-sessions-tab%}) provides **Share** functionality via dedicated button. The list contains previously saved sessions or sessions shared with the user. Press the **Share** button to prompt a window for entering share related information.
     - [File menu]({%slug file-menu%}) allows you to import/export different known formats (like HTTPArchive, Packet Capture, Folder Tree, and others) and to load and save Fiddler archives (**SAZ** format) that are holding captured sessions.
 
@@ -53,12 +53,12 @@ The Fiddler Everywhere client allows you to add additional context by adding **c
 
 Add a custom comment to one or more captured sessions to provide additional context.
 
-1. Select a session from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) or load saved sessions from the [**Sessions list**]({%slug saved-sessions-tab%}).
+1. Select a session from the [**Live Traffic list**]({%slug web-sessions-list%}#session-logs-list) or load saved sessions from the [**Sessions list**]({%slug saved-sessions-tab%}).
 2. Add a comment using the **Comment** option from the context menu or press **M** while having the desired sessions selected.
 
 ![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
 
-The newly added comment will appear in [the **Comments** column]({%slug web-sessions-list%}#live-traffic-list).
+The newly added comment will appear in [the **Comments** column]({%slug web-sessions-list%}#session-logs-list).
 
 ### Add Notes
 

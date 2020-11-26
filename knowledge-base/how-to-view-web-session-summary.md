@@ -3,7 +3,7 @@ title: How to View Web Session Summary
 description: An article on how to capture and inspect web traffic using Fiddler Everywhere
 type: how-to
 slug: how-to-view-web-session-summary
-tags: view web session, session summary, web session summary
+tags: Fiddler session logs, Fiddler Everywhere columns, session log summary, web session summary, 
 publish: true
 res_type: kb
 ---
@@ -17,11 +17,11 @@ res_type: kb
 
 #### Description
 
-A detailed list of the columns available in the **Live Traffic** list and the information extracted from each column's value. Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Use these to identify HTTP-related issues, track and debug your site performance, and to leave custom comments.
+A detailed list of the columns available in the **Session Logs** list and the information extracted from each column's value. Each __Session Log__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Use these to identify HTTP-related issues, track and debug your site performance, and to leave custom comments.
 
 ## ID(#)
 
-An auto-generated identification number for the currently listed sessions.
+An auto-generated unique identification number for the currently listed session logs. This column is always visible (all other columns can be removed/added via the [context menu]({%slug web-sessions-list%}#session-logs-list-columns)).
 
 ## Result
 
@@ -41,15 +41,19 @@ Indicates the used protocol, which can be __HTTP__ (Hypertext Transfer Protocol)
 
 ## Host
 
-The hostname and the port of the server to which the request was sent.
+The hostname and the port of the server to which the request was sent. For example: `docs.telerik.com` or `localhost:4000`
+
+## Path
+
+The endpoint path of the server to which the request was sent. For example: `/fiddler-everywhere/introduction`
 
 ## URL
 
-The URL path, file, and query string from the request.
+The URL path, file, and query string from the request. For example: `https://docs.telerik.com/fiddler-everywhere/introduction`
 
 ## Method
 
-The HTTP method used by the request (__GET__, __POST__, etc.). The HTTP methods are used to set the desired action that needs to be applied to a given resource.
+The HTTP method used by the request (For example: __GET__, __POST__, etc.). The HTTP methods are used to set the desired action that needs to be applied to a given resource.
 
 - __GET__: The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
 - __HEAD__: The HEAD method asks for a response identical to that of a GET request, but without the response body.
@@ -61,9 +65,9 @@ The HTTP method used by the request (__GET__, __POST__, etc.). The HTTP methods 
 - __TRACE__: The TRACE method performs a message loop-back test along the path to the target resource.
 - __PATCH__: The PATCH method is used to apply partial modifications to a resource.
 
-## Body
+## Body Size
 
-Shows the number of bytes in the response body.
+INdicates the size of the response body in bytes.
 
 ## Caching
 

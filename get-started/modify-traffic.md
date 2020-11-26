@@ -26,7 +26,7 @@ Follow these steps, to load and modify a session via the **Composer**:
 
 4. Click **Execute**.
 
-Effectively, you have modified an existing request the same way your application would. In the [**Live Traffic list**]({slug web-sessions-list}#live-traffic-list), you can find the newly executed request and the response from the server.
+Effectively, you have modified an existing request the same way your application would. In the [**Live Traffic list**]({slug web-sessions-list}#session-logs-list), you can find the newly executed request and the response from the server.
 
 ## Additional Resources
 
