@@ -189,7 +189,7 @@ Certain key information is displayed in the columns of Live Traffic, including:
 - __Content-Type__ The **Content-Type** header from the response.
 - __Time__ - The hour timestamp indicating when the request/response is made.
 - __Date__ - The date timestamp indicating when the request/response is made.
-- __Duration__ - The duration in milliseconds.
+- __Duration__ - The duration in milliseconds. The duration measures the period from when the client's request is received (from the Fiddler proxy) to the moment when the server response is received (from the Fiddler proxy).
 - __Comments__ A field for showing the custom comments added by you (or the author of a shared session).
 
 Each column comes with a **more** button (three vertical dots), which opens a popup with **Filter**  and **Columns** submenus. 
@@ -207,7 +207,7 @@ Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-w
 
 ## Session Logs List Context Menu
 
-The context menu for the Live Traffic exposes several actions that can be applied for a Session or multiple Sessions. To show the context menu, press right-click on Windows (__Control__ + mouse click on Mac).
+The context menu for the Session Logs List exposes several actions that can be applied for a session log or multiple logs. To show the context menu, press right-click on Windows (__Control__ + mouse click on Mac).
 
 ![Live Traffic context menu](../../images/livetraffic/websessions/websessions-list-context-menu.png)
 
@@ -217,7 +217,7 @@ The context menu option __Edit in Composer__ loads the selected request in a new
 
 ### Save
 
-The context menu option __Save__ provides the means to save selected sessions. The saved sessions will appear in the __Sessions__ (the list to the left of Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
+The context menu option __Save__ provides the means to save selected session logs. The saved logs will appear in the __Sessions__ (the list to the left of Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
 
 - __Selected sessions__ - Saves all selected sessions. Keyboard shortcut: __S__.
 - __Unselected sessions__ - Saves all unselected sessions. Keyboard shortcut: __Shift__ + __Cmd__ + __S__ (Mac)  __Shift__ + __S__ (Windows).
@@ -228,7 +228,7 @@ All three options will display a save prompt.
 1. Select the sessions, open the context menu, and click on the __Save__ option.
 2. Enter your session name and click __Save__
 3. The saved sessions are immediately loaded in the __Sessions__ list.
-4. Double-click on the saved session to load it in the __Live Traffic__ list.
+4. Double-click on the saved session to load it in the __Session Logs List__.
 
 >tip Alternatively, you can save all captured traffic [via the __Save__ button from the toolbar]({%slug web-sessions-list%}#save)
 
@@ -252,7 +252,7 @@ All three options will initially display a save prompt and then a share prompt w
 
 ### Remove
 
-Use the __Remove__ context menu options to delete sessions from your __Live Traffic__ list. 
+Use the __Remove__ context menu options to delete sessions from your __Session Logs__ list. 
 
 - __Selected sessions__ - Removes all selected sessions. Keyboard shortcut: __Cmd__ + __Back__ (Mac), __Del__ (Windows).
 - __Unselected sessions__ - Removes all unselected sessions. Keyboard shortcut: __Shift__ + __Cmd__ + __Back__ (Mac), __Shift__ + __Del__ (Windows).
