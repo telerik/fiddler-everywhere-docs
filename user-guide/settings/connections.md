@@ -31,3 +31,7 @@ Fiddler Everywhere allows you to capture traffic from remote devices. This artic
 4. Click the __Save Changes__ button to save the changes.
 
 The Fiddler Everywhere client is now ready to capture traffic from remote devices.
+
+## Bypass Fiddler for URLs that starts with
+
+The **_Bypass Fiddler for URLs that starts with:_** option allows you to add addresses that Fiddler Everywhere proxy will explicitly bypass. One common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere]({%slug configure-vpn-fiddler%}). The passed addresses could be separated by a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings (for example, on Windows 10, that would be **_Proxy Settings > Proxy > Manual Proxy > Use proxy server except for addresses ..._**).

@@ -28,6 +28,10 @@ The **Fiddler Everywhere** application generates two log files as follows:
 
 Both log files are useful to investigate cases where the client is not working properly. The location of these files varies depending on the operating system on which Fiddler Everywhere is working.
 
+## Accessing The Logs
+
+Fiddler Everywhere version **1.3.0 and above** provides a UI option via **_Help > Show Logs_** to automatically open the folder that contains the log files. You could manually navigate to the folder on your operating system on an older version, as shown below.
+
 ### macOS
 
 The log files on **macOS** are available in the following folder: 

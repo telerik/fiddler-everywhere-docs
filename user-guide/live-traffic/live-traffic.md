@@ -9,9 +9,9 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 ## Live Traffic Tab
 
-The __Live Traffic__ tab is  is an essential feature of Fiddler Everywhere. It display a summary of each captured session (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Auto Responder**]({%slug auto-responder-general%}). The section also enables sessions saving and sharing, editing issued requests, marking, commeting sessions, and applying Auto Responder rules.
+The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It display a summary of each captured session (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Auto Responder**]({%slug auto-responder-general%}). The section also enables sessions saving and sharing, editing issued requests, marking, commenting sessions, and applying Auto Responder rules.
 
->tip A **Session** (also mentioned as a **web session**) represents a single transaction between a client and a server, sometimes known as request/response pair. Each Session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the Session and a Timers object that stores timestamps logged during the Session processing.
+>tip A **Session** (also mentioned as a **web session**) represents a single transaction between a client and a server, sometimes known as for request/response pair. Each session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the session and a Timers object that stores timestamps logged during the Session processing.
 
 ![Live Traffic toolbar and list](../../images/livetraffic/websessions/websessions-toolbar-list-full.png)
 
@@ -21,9 +21,7 @@ The Live Traffic toolbar provides various functionalities like streaming mode, d
 
 ![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
 
-To start capturing, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing.
-
-![Enabling Live Traffic](../../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
+To start capturing traffic, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing (**Paused** mode).
 
 The Live Traffic toolbar provides the following functionalities:
 
@@ -53,7 +51,7 @@ By default, Fiddler Everywhere uses __buffering mode__, which means that the res
 
 Use the __Decode__ toggle button to remove all HTTP content and Transfer encoding from requests and responses.
 
-1. Click on the __Toggle__ button to toggle the decoding of an encoded content.
+1. Click on the __Toggle__ button to toggle the decoding of encoded content.
     
     ![Decode Toggle button](../../images/livetraffic/websessions/websessions-toolbar-decode-toggle.png)
 
@@ -71,13 +69,13 @@ Use the __Advanced Filters__ to apply filters based on the Request and Response 
 
     ![Filter sessions button](../../images/livetraffic/websessions/websessions-toolbar-filter.png)
 
-2. The __Advanced Filters__ window allow you to set specific criteria that will filter the captured traffic. Set the filter rules and click __Apply__.
+2. The __Advanced Filters__ window allows you to set specific criteria that will filter the captured traffic. Set the filter rules and click __Apply__.
 
     ![Advanced filters popup](../../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
 
 Currently, the __Advanced Filters__ entries are using **AND** logical operator. Each value is complying with the **EXACT** match.
 
->tip Alternatively, you can apply filters through the _more_ option on each Live Traffic column (e.g., apply a filter for _Host_ column). The column filtering allows using AND and OR logical operators (for two lines) and multiple comparison rules (for example, like **Is equal to**, **contains**, **ends with**, etc.).
+>tip Alternatively, you can apply filters through the _more_ option on each Live Traffic column (e.g., apply a filter for _Host_ column). The column filtering allows using AND and OR logical operators (for two lines), and multiple comparison rules (for example, like **Is equal to**, **contains**, **ends with**, etc.).
 
 ### Clear All Filters
 
@@ -88,19 +86,19 @@ Use the __Clear All Filters__ to reset all filters applied by __Advanced Filters
 
 ### Save
 
-Use the __Save__ button to save sessions for later use or to prepare sessions for sharing.
+Use the __Save__ button to save sessions for later use or prepare sessions for sharing.
 
 1. Click on the __Save__ button.
 
     ![Save button](../../images/livetraffic/websessions/websessions-toolbar-save.png)
 
-2. A __Save Sessions__ prompt windows appears. Enter a valid name and click __Save__.
+2. A __Save Sessions__ prompt windows appear. Enter a valid name and click __Save__.
 
     ![Save prompt window](../../images/livetraffic/websessions/websessions-toolbar-save-prompt.png)
 
 3. The current entry (of sessions) appears in the __Sessions__ list.
 
->important The __Save__ button will automatically save all captured traffic. If you want to save only specific sessions, you can select the wanted sessions and use [the context menu]({%slug web-sessions-list%}#save) for advanced save options.
+>important The __Save__ button will automatically save all captured traffic. If you want to keep only specific sessions, you can select the wanted sessions and use [the context menu]({%slug web-sessions-list%}#save) for advanced save options.
 
 ### Share
 
@@ -142,7 +140,7 @@ The Live Traffic list is an essential feature of Fiddler Everywhere - it display
 ![Live Traffic](../../images/livetraffic/websessions/websessions-list-all.png)
 
 Many operations begin by selecting one or more entries in the Live Traffic and then activating other features.
-- To select more than one Sessions, hold the __Ctrl__ (__Command__ on Mac) or __Shift__ keys while clicking on the desired rows.
+- To select more than one Session, hold the __Ctrl__ (__Command__ on Mac) or __Shift__ keys while clicking on the desired rows.
 - Double-click or press __Enter__ (__Return__ on Mac) to activate the default inspectors for a single selected Session.
 
 When the Inspectors are activated, they will automatically decide which Inspector is best suited to display the selected session's request and response.
@@ -201,7 +199,7 @@ Use the **Filter** submenu to apply filters for the currently selected column on
 
 ![Filter context submenu](../../images/livetraffic/columns/dots-filter.png)
 
-Use the **Columns** submenu to select which column should be visible in the **Live Traffic** list. By default all columns are visible.
+Use the **Columns** submenu to select which column should be visible in the **Live Traffic** list. By default, all columns are visible.
 
 ![Columns context submenu](../../images/livetraffic/columns/dots-columns.png)
 
@@ -220,7 +218,7 @@ The context menu option __Edit in Composer__ loads the selected request in a new
 
 ### Save
 
-The context menu option __Save__ provides the means to save selected sessions. The saved sessions will appear in the __Sessions__ (the list to the left of Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
+The context menu option __Save__ provides the means to save selected sessions. The saved sessions will appear in the __Sessions__ (the list to the left of the Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
 
 - __Selected sessions__ - Saves all selected sessions. Keyboard shortcut: __S__.
 - __Unselected sessions__ - Saves all unselected sessions. Keyboard shortcut: __Shift__ + __Cmd__ + __S__ (Mac)  __Shift__ + __S__ (Windows).
@@ -282,11 +280,11 @@ Use the __Replay__ context menu option to replay previously captured sessions.  
 
 ### Select
 
-Use the __Select__ context menu option to select sessions that are directly related to the currently selected session. The possibilities are to choose  __parent__, __children__, and __duplicate__ sessions.
+Use the __Select__ context menu option to select sessions directly related to the currently selected session. The possibilities are to choose  __parent__, __children__, and __duplicate__ sessions.
 
 - __Parent request__ Selects the session that is a parent of the currently selected session. Keyboard shortcut: __P__
 - __Children requests__ Select the sessions that are children of the currently selected session. Keyboard shortcut: __C__
-- __Duplicate request__ Selects the session that is a duplicate to the currently selected session. Keyboard shortcut: __D__
+- __Duplicate request__ Selects the session that is duplicated to the currently selected session. Keyboard shortcut: __D__
 
 ### Copy
 
@@ -303,8 +301,8 @@ http://0.0.0.0:4000/fiddler-everywhere/images/livetraffic/websessions/websession
 
 _Example for copying full info_
 ```
-#	RESULT	PROTOCOL	HOST	URL	METHOD	BODY	CACHING	CONTENT-TYPE	PROCESS	COMMENTS
-277	200	HTTP	0.0.0.0:4000	/fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png	GET	207,094	private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate	image/png; charset=utf-8		
+#   RESULT  PROTOCOL    HOST    URL METHOD  BODY    CACHING CONTENT-TYPE    PROCESS COMMENTS
+277 200 HTTP    0.0.0.0:4000    /fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png   GET 207,094 private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate   image/png; charset=utf-8        
 ```
 
 ### Add New Rule
