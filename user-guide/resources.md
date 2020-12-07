@@ -33,6 +33,6 @@ The **Webinars** link leads to the official blog of Fiddler Everywhere hosted at
 
 ## In-app Tutorials
 
-The welcome page contains in-app tutorials with necessary steps explaining some of the core features of Fiddler Everywhere.
+The welcome page contains in-app tutorials with necessary steps explaining some of the core features of Fiddler Everywhere. Click on a tutorial to start the interactive journey through the FIddler Everywhere functionalities.
 
 ![Interactive in-app tutorials](../images/resources/in-app-tuto-002.png)
