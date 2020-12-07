@@ -7,7 +7,7 @@ publish: true
 position: 10
 ---
 
-# Main Menu
+## Main Menu
 
 The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you could find the [**File**](#file), [**View**](#view), and [**Help**](#help) submenus plus [a **Plan** information options](#plan-information). To the right, you will find [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out** option](#sign-out).
 
