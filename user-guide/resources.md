@@ -10,7 +10,7 @@ position: 60
 
 The welcome page loads on the startup of the Fiddler Everywhere application. The page contains useful information about the state of Fiddler Everywhere, several links to the official documentation, blogs, video channel, webinars, and interactive in-app tutorials.
 
-The screen will show on consecutive startups unless it is explicitly disabled via the **_Don't show this window on startup_** checkbox. If you want to show the welcome page, you could use the **My Resouces** option at the Fiddler Everywhere application's bottom-left side.
+The screen will show on consecutive startups unless it is explicitly disabled via the **_Don't show this window on startup_** checkbox. To show the welcome page, use the **My Resouces** option at the Fiddler Everywhere application's bottom-left side.
 
 ![My Resources option at the bottom-left](../images/resources/my-resources-main-page.png)
 
