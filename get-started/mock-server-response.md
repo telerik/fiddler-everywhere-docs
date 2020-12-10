@@ -41,13 +41,9 @@ To create and test your first Auto Responder rule follow these steps:
     See more examples for [creating actions]({%slug auto-responder-general%}#action-strings)
 
 
-5. Add the rule to the Auto Responder rules list
+5. Add the rule to the Auto Responder rules list via the **Add to Queue** button.
 
-    ![Auto Responder button](../images/livetraffic/autoresponder/gs-autoresponder-rule-add.png)
-
-6. Enable the Auto Responder 
-
-    ![Auto Responder button](../images/livetraffic/autoresponder/gs-autoresponder-enable.png)
+6. Enable the **Auto Responder** and each rules that you need to execute.
 
     >important Once the Auto Responder is turned on (via **Enable AutoResponses**), the activated rules apply for all incoming/outgoing traffic. If a session does not match any of the specified rules, the Fiddler Everywhere client will generate an `HTTP/404 Not Found` response. In case, you want unmatched requests to be sent generally to the servers, then [activate the **Unmatched Requests Passthrough** option]({%slug auto-responder-general%}#unmatched-requests-passthrough) from the toolbar.
 
