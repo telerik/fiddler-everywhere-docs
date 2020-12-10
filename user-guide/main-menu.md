@@ -77,9 +77,9 @@ The **Forums** option opens a new browser tab with the [Fiddler Everywhere forum
 
 The **Documentation** option opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
 
-### Show Logs
+### Open Application Logs Folder
 
-The **Show Logs** option opens the local folder that contains the Fiddler Everywhere log files. Learn more [here]({%slug fiddler-log-files%}) about how to use the log files for troubleshooting your local setup.
+The **Open Application Logs Folder** option opens the local folder that contains the Fiddler Everywhere log files. Learn more [here]({%slug fiddler-log-files%}) about how to use the log files for troubleshooting your local setup.
 
 ### About
 
