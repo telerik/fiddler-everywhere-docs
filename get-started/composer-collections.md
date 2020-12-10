@@ -16,13 +16,9 @@ Refer to the image below:
 
 Create your first collection of composed requests by following these steps:
 
-1. Create your API request by clicking the "+" button in the collections
+1. Create your нев API request by clicking the **"+"** button in the collections. This action will open a new **Composer** tab with *Untitled* as default name.
 
-    ![Requests lists](../images/requests/requests-create-new.png)
-
-2. After the request is composed, press **Save**. 
-
-    ![Requests lists](../images/requests/requests-save.png)
+2. After the request is composed, press **Save**. Alternatively, choose **Save as** option to prevent overwriting an existing entry.
 
 3. Enter a request name and select the collection (folder) in which the request should be saved. Alternatively, you can create a new collection by pressing the folder icon to the right.
 

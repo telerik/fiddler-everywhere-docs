@@ -9,53 +9,21 @@ position: 10
 
 ## Main Menu
 
-The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you could find the [**File**](#file), [**View**](#view), and [**Help**](#help) submenus plus [a **Plan** information options](#plan-information). To the right, you will find [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out** option](#sign-out).
+The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you could find the [**View**](#view), and [**Help**](#help) submenus plus [a **Plan** information options](#plan-information). To the right, you will find [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out** option](#sign-out).
 
 ![Fiddler Everywhere main menu](../images/menu/main-menu-all.png)
 
-## File
-
-The **File** menu contains commands to load and store captured traffic. The menu provides options to create and load an archive that includes the whole captured traffic (creates a SAZ file) and an option to import/export only specific sessions.
-
-![Load archive option](../images/menu/menu-load-archive.png)
-
-### Load Archive
-
-The **Load Archive** command allows you to reload previously-captured traffic stored as a **SAZ** file. The content will be loaded in the **Sessions** list.
-
-### Save Archive
-
-The **Save Archive** sub-menu exposes options that allow you to save traffic to **SAZ** files. You can save all current sessions or just the selected sessions. 
-
-After selecting an option, a **Save** prompt will appear. The dialog provides opportunities to use encryption (AES256) to create a password-protected archive.
-   
-![Save archive option](../images/menu/menu-save-archive-002.png)
-
-### Import Sessions
-
-The **Import Sessions** command allows you to import previously-captured traffic from various file formats.
-
-### Export Sessions
-
-The **Export Sessions** sub-menu exposes options to export traffic in various file formats. You can export all current sessions or just the selected sessions. 
-
-After selecting an option, a **Choose Format** prompt will appear. The supported formats are as follows:
-- WCAT Script
-- MeddlerScript
-- cUrl Script
-- Raw File
-- HttpArchive v1.1
-- HttpArchive v1.2
-
-![Export session formats](../images/menu/menu-export-sessions-002.png)
 
 ## View
 
 The **View** menu provides options to change the overall Fiddler Everywhere UI size using zoom in and zoom out.
 
-- **Actual Size** option.Keyboard shortcut: __Cmd and 0__ (Mac), __Ctrl and 0__ (Windows). 
+- **Preferences** option to load the Fiddler Everywhere settings window. Keyboard shortcut: __Cmd and ,__ (Mac), __Ctrl and ,__ (Windows). 
+- **Actual Size** option. Keyboard shortcut: __Cmd and 0__ (Mac), __Ctrl and 0__ (Windows). 
 - **Zoom In** option. Keyboard shortcut: __Cmd and +__ (Mac), __Ctrl and +__ (Windows). 
 - **Zoom Out** option. Keyboard shortcut: __Cmd and -__ (Mac), __Ctrl and -__ (Windows). 
+- **Select Previous Tab** option. Keyboard shortcut: __Ctrl, Shift and Tab__ (Mac), __Ctrl, Shift and Tab__ (Windows). 
+- **Select Next Tab** option. Keyboard shortcut: __Ctrl and Tab__ (Mac), __Ctrl and Tab__ (Windows). 
 
 ![View menu with zoom options](../images/menu/main-menu-view.png)
 
