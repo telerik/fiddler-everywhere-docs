@@ -36,7 +36,7 @@ The __Rules Editor__ interface enables creating and editing rules. You need to e
 
     ![New Action String](../../images/livetraffic/autoresponder/autoresponder-create-new-action.png)
 
-4. Add the newly created rule to the __Queue Viewer__ list of rules.
+4. Usae the **Add to Queue** buttton to add the newly created rule to the __Queue Viewer__ list of rules.
 
     Tips:
     - Rules are applied in the order that they appear in the __Queue Viewer__. Hit the __Down Arrow__ to demote a rule.
@@ -52,22 +52,22 @@ Fiddler Everywhere will accept string literals, regular expressions, and a set o
 
 They will match string literals (case insensitively).
 
-- __*__ will match everything
+- Using asterix char (__*__) will match everything.
 ```
 http://www.example.com/Path1/query=example
 http://www.example.com/SomethingCompletelyDifferent
 ```
-- __EXAMPLE__ will match URLs
+- __EXAMPLE__ will match all URLs that are containing the keyword (in this case __EXAMPLE__)
 ```
 http://www.**example**.com/Path1/
 http://www.something.com/Path1/query=**Example**
 ```
-- __path1/__ will match URLs
+- __path1/__ will match all URLs that are containing the path (in this case __path1/__)
 ```
 http://www.example.com/**Path1/**query=example
 http://www.example.com/returnUrl=**Path1/**OtherPlace
 ```
-- __query__ will match URLs
+- __query__ will match all URLs that are containing the key or value keyword (in this case __query__)
 ```
 http://www.example.com/Path1/q=**Query**
 http://www.example.com/Path1/**query**=hello
@@ -174,14 +174,17 @@ The __Queue Viewer__ (a.k.a. __Queue Rules Viewer__) interface is a queue of the
 By default, the __Queue Viewer__ will list all created & imported rules based on their priority (see [Rule Options](#rule-options) for details on how to promote/demote a rule in the queue). You can also create a custom group for the rules in the queue by using __Group View/Priority View__ toggle button. 
 
 Use __Group View/Priority View__ toggle to switch the rules in the queue based on priority vs. group identity.
+
 ![Toggle between Group and Priority](../../images/livetraffic/autoresponder/autoresponder-viewer-view.png)
 
 Use __Group/Ungroup__ toggle button to create croups for selected rules in the queue. Note that the __Group/Ungroup__ button is visible only when you have toggled to __Group View__.
+
 ![Grouping rules](../../images/livetraffic/autoresponder/autoresponder-viewer-groups.png)
 
 ### Enable Auto Responses
 
 Use the __Enable Auto Responses__ checkbox to activate the __Auto Responder__. Note that __Live Traffic__ switch should also be turned on to _Capturing_ mode.
+
 ![Enable Auto Responder](../../images/livetraffic/autoresponder/autoresponder-enable.png)
 
 ### Import Rules
