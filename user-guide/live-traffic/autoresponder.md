@@ -36,9 +36,9 @@ The __Rules Editor__ interface enables creating and editing rules. You need to e
 
     ![New Action String](../../images/livetraffic/autoresponder/autoresponder-create-new-action.png)
 
-4. Usae the **Add to Queue** buttton to add the newly created rule to the __Queue Viewer__ list of rules.
+4. Use the **Add to Queue** buttton to add the newly created rule to the __Queue Viewer__ list of rules.
 
-    Tips:
+    >Tips:
     - Rules are applied in the order that they appear in the __Queue Viewer__. Hit the __Down Arrow__ to demote a rule.
     - You can export the current queue of rules [via the __Export__ button]({%slug auto-responder-general%}#export-rules) from the __Queue Viewer__ toolbar.
     - You can import a __*.FARX__ file [via the __Import__ button]({%slug auto-responder-general%}#import-rules) to queue rules based on previously captured traffic.
@@ -50,40 +50,41 @@ Fiddler Everywhere will accept string literals, regular expressions, and a set o
 
 ### String Literals
 
-They will match string literals (case insensitively).
+Use string literals to create simple match conditions (case-insensitively). The asterisk char (__*__) can be used as a wildcard, while every other string literal will be checked for a match in the request URL. Below you will find some basic examples for matching conditions when using specific strings.
 
-- Using asterix char (__*__) will match everything.
+- Using asterisk char (__*__) will match everything.
 ```
-http://www.example.com/Path1/query=example
-http://www.example.com/SomethingCompletelyDifferent
+www.example.com/Path1/query=example
+www.example.com/SomethingCompletelyDifferent
 ```
 - __EXAMPLE__ will match all URLs that are containing the keyword (in this case __EXAMPLE__)
 ```
-http://www.**example**.com/Path1/
-http://www.something.com/Path1/query=**Example**
+www.**example**.com/Path1/
+www.something.com/Path1/query=**Example**
 ```
 - __path1/__ will match all URLs that are containing the path (in this case __path1/__)
 ```
-http://www.example.com/**Path1/**query=example
-http://www.example.com/returnUrl=**Path1/**OtherPlace
+www.example.com/**Path1/**query=example
+www.example.com/returnUrl=**Path1/**OtherPlace
 ```
 - __query__ will match all URLs that are containing the key or value keyword (in this case __query__)
 ```
-http://www.example.com/Path1/q=**Query**
-http://www.example.com/Path1/**query**=hello
+www.example.com/Path1/q=**Query**
+www.example.com/Path1/**query**=hello
 ```
 
 ### NOT rules (for String Literals)
 
-The __NOT:__ rule is applied only if the string does not match.
+The __NOT:__ rule is applied only if the string does not match. Below you will find some basic examples for matching conditions when using specific strings.
 
-- __NOT:EXAMPLE__ will match URLs that do not contain the **EXAMPLE** string.
+- __NOT:EXAMPLE__ will match all URLs that do not contain the **EXAMPLE** string.
 ```
 NOT:google.com
 
 www.example.com/Path1/query=foo // (MATCH)
 ```
-- __NOT:path1/__ will match URL that do not contain **path1/**.
+
+- __NOT:path1/__ will match all URLs that do not contain **path1/**.
 ```
 NOT:path2/
 
@@ -91,7 +92,7 @@ www.example.com/path1/query=foo // (MATCH)
 www.example.com/path2/query=foo // (No Match)
 ```
 
-- __NOT:query__ wWill match URLs that do not contain **query**.
+- __NOT:query__ wWill match all URLs that do not contain **query**.
 ```
 NOT:query/
 
@@ -144,11 +145,12 @@ The standard regex implementation also allows using regex variables. An example 
 
 ## Action Strings
 
-When Fiddler Everywhere identifies a request which matches the Auto Responder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files, the __Auto Responder__ can perform some specific actions:
+When Fiddler Everywhere identifies a request which matches the Auto Responder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files or predefined responses, the __Auto Responder__ can perform some specific actions:
 
 
 | Action String     | Description | Action Type |
 | :---- | :---- | :---- |
+| __xxx.dat__      | Return response with HTTP status based on the provided __xxx__ value. Fiddler Everywhere provides a predefined collection of different HTTP statuses via the drop-down menu. | Final |
 | __filename__      | Return contents of the filename as the response. | Final |
 | __http://targetURL__ | Returns the content of the __targetURL__ as the response. | Final |
 | __*redir:http://targetURL__ | Returns a HTTP Redirect to the target URL. Unlike the simple URL rule, this ensures that the client knows where its request is going so proper cookies are sent, etc. | Final |
