@@ -65,7 +65,7 @@ The UI option appears only if the session entry is stored in the cloud and share
 
 ## Delete
 
-The option removes the session from the __Sessions__ list. The shared session can be recovered from the **Shared Sessions** list.
+The **Delete** button (to the right of the selected entry) removes the selected session entry from the __Sessions__ list. The shared session can be recovered from the [**Shared Sessions**](#shared-sessions) list.
 
 
 ## Sessions Context Menu
