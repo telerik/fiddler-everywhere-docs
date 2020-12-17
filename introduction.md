@@ -54,7 +54,7 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 
 *subject to fair usage policy. Learn more about the support offering [here]({%slug support-page%}).
 
->tip A **Session** in Fiddler Everywhere is a term that describes an entry that holds single or multiple requests and responses (captured traffic). Saved session entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as [**SAZ** archive]({%slug file-menu%}).
+>tip A **Session** in Fiddler Everywhere is a term that describes an entry that holds single or multiple requests and responses (captured traffic). Saved session entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as **SAZ** archive or other known formats.
 
 #### Trial version
 

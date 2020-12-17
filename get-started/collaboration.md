@@ -28,7 +28,7 @@ Save a session while following these steps:
 ### Share Sessions
 
 Share a session with a collaborator while following these steps:
- 1. [Capture the traffic]({%slug capture-traffic-get-started%}) (that you would like to share with your collaborators). Alternatively, select a saved session from the [**Sessions list**]({%slug saved-sessions-tab%}).
+ 1. [Capture the traffic]({%slug capture-traffic-get-started%}) (that you would like to share with your collaborators). Alternatively, select a saved session from the [**Sessions** list]({%slug saved-sessions-tab%}).
  2. Use a preferred way to share a session. With Fiddler Everywhere, you can save and share captured traffic via:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Share** option. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
     - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Share** option via the context menu. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
@@ -39,7 +39,7 @@ Share a session with a collaborator while following these steps:
 
 ### Delete Shared Sessions
 
-With version 1.1.0 of Fiddler Everywhere, the user has options to delete previously shared sessions. The sessions can be deleted from the **Sessions list** via the **delete** icon. All users added as collaborators will be notified that the shared session is now deleted [via the notification bar and an email message](#notifications-for-shared-content).
+With version 1.1.0 of Fiddler Everywhere, the user has options to delete previously shared sessions. The sessions can be deleted from the **Sessions** list via the **Delete** button. All users added as collaborators will be notified that the shared session is now deleted [via the notification bar and an email message](#notifications-for-shared-content). Deleted sessions can be restored via the [**Shared Sessions** option]({%slug saved-sessions-tab%}#shared-sessions).
 
 >tip Deleting previously shared sessions will free your sharing quotas. Learn more about the quotas for the free and pro versions of Fiddler everywhere via [the comparison table]({%slug introduction%}#fiddler-everywhere-pro).
 
@@ -53,7 +53,7 @@ The Fiddler Everywhere client allows you to add additional context by adding **c
 
 Add a custom comment to one or more captured sessions to provide additional context.
 
-1. Select a session from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) or load saved sessions from the [**Sessions list**]({%slug saved-sessions-tab%}).
+1. Select a session from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) or load saved sessions from the [**Sessions** list]({%slug saved-sessions-tab%}).
 2. Add a comment using the **Comment** option from the context menu or press **M** while having the desired sessions selected.
 
 ![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
@@ -64,7 +64,7 @@ The newly added comment will appear in [the **Comments** column]({%slug web-sess
 
 Add additional context in the form of a descriptive note while sharing a session or several sessions. 
 
-1. Use the **Share** option from the [**Live Traffic toolbar**]({%slug web-sessions-list%}#live-traffic-toolbar) or from the **share** button in the [**Sessions list**]({%slug saved-sessions-tab%}).
+1. Use the **Share** option from the [**Live Traffic toolbar**]({%slug web-sessions-list%}#live-traffic-toolbar) or from the **share** button in the [**Sessions** list]({%slug saved-sessions-tab%}).
 2. In the first dialog window, provide a name for the shared sessions.
 3. In the second dialog window, provide the additional information in the **Add a note** field. 
 
