@@ -1,5 +1,29 @@
 [
     {
+        "version": "1.4.1",
+        "title": "Fiddler Everywhere v1.4.1",
+        "date": "December 16, 2020",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Requests to localhost are not captured on Windows in some cases"
+                    },
+                    {
+                        "title": "Autoupdate does not work on Windows when user does not have access to Machine registry"
+                    },
+                    {
+                        "title": "Coloring is not applied in the Response Body inspectors on the first Composer execution"
+                    },
+                    {
+                        "title": "Analytics improvements"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "1.4.0",
         "title": "Fiddler Everywhere v1.4.0",
         "date": "December 10, 2020",
