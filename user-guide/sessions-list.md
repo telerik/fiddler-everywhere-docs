@@ -17,17 +17,20 @@ The Fiddler Everywhere provides the option to save. modify, inspect and share pr
 
 Previously saved sessions can be selected, inspected, modified, and shared with collaborators. The saved session entries can be saved locally or in the cloud. Sharing a session with a collaborator is automatically uploading the saved session entry to the cloud. 
 
+A list of some simple actions that can be applied on saved session entry:
+
 - Single click on the saved session entry from the __Sessions__ list to select it.
 
-- Right-click on a selected session entry to load the context menu.
+- Right-click on a selected session entry to load [the context menu](#sessions-context-menu). The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
 
-- Double click on the saved session entry from the __Sessions__ list to open it in a new tab.
-
-    ![Sessions list](../images/sessions/saved-sessions-open.png)
+- Double-click on the saved session entry from the __Sessions__ list to open it in a new tab.
 
 - Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 
 - Use the UI buttons at the very top to [**Import**](#import-sessions) sessions archives or to access previosly [**Shared Sessions**](#shared-sessions-list) entries.
+
+![Sessions list](../images/sessions/saved-sessions-open.png)
+
 
 ## Sharing Sessions
 
