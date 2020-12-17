@@ -1,0 +1,17 @@
+[
+    {
+        "version": "1.4.1",
+        "items": [
+            {
+                "title": "Fiddler is Getting a New Look",
+                "description": "Fiddler Everywhere is the next generation of Fiddler, and it's getting a new user interface and user experience to make your web and desktop network debugging on macOS, Linux, and Windows even easier.",
+                "url": "https://www.telerik.com/blogs/fiddler-everywhere-new-look?utm_medium=product&utm_source=blogs&utm_campaign=fe_product_gettingstarted"
+            },
+            {
+                "title": "A Team Ready Fiddler Experience",
+                "description": "Fiddler is getting a new feature that makes collaborating with others on web debugging easier than ever. Read on to see how you can use it in your teams today.",
+                "url": "https://www.telerik.com/blogs/introducing-collaboration-a-team-ready-fiddler-experience?utm_medium=product&utm_source=blogs&utm_campaign=fe_product_gettingstarted"
+            }
+        ]
+    }
+]
