@@ -19,11 +19,11 @@ Previously saved sessions can be selected, inspected, modified, and shared with 
 
 A list of some simple actions that can be applied on saved session entry:
 
-- Single click on the saved session entry from the __Sessions__ list to select it.
+- **Single click** on the saved session entry from the __Sessions__ list to select it.
 
-- Right-click on a selected session entry to load [the context menu](#sessions-context-menu). The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
+- **Right-click** on a selected session entry to load the [**context menu**](#sessions-context-menu). The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
 
-- Double-click on the saved session entry from the __Sessions__ list to open it in a new tab.
+- **Double-click** on the saved session entry from the __Sessions__ list to open it in a new tab.
 
 - Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 
