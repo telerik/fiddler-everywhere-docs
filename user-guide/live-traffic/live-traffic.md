@@ -104,13 +104,9 @@ Use the __Save__ button to save sessions for later use or prepare sessions for s
 
 Sharing sessions greatly improves collaboration, and Fiddler Everywhere provides several options to export and share sessions:
 
-- Sharing [via __Share__ button from the __Live Traffic__ list toolbar](#share-live-traffic-sessions).
-- Sharing [via __Share__ button from the toolbar of the already saved session (in __Saved Sessions__)](#share-previosly-saved-sessions).
-- Sharing [via __Share__ option from the __Live Traffic__ list context menu]({%slug web-sessions-list%}#share).
-- Sharing by exporting saved sessions in __SAZ__ format ([via the context menu in __Saved Sessions__]({%slug saved-sessions-tab%}#export)).
-- Sharing by exporting in different session formats ([via __File menu__]({%slug  file-menu%}#export-sessions))
-
-This article section demonstrates how to share sessions using the first two options. See the linked articles for examples on how to use other sharing functionalities with Fiddler Everywhere.
+- Sharing via the __Share__ button from a saved session entry in the __Sessions__ list]({%slug saved-sessions-tab%}#sharing-sessions)).
+- Sharing via the __Share__ option from [the __Live Traffic__ list context menu]({%slug web-sessions-list%}#share).
+- Sharing via the __Share__ button from the __Live Traffic__ list toolbar (see details below).
 
 The toolbar comes with a __Share__ button that will save the currently displayed sessions (captured from __Live Traffic__) in a file and then shares them through email (provided explicitly).
 

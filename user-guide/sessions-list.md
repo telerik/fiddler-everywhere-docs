@@ -6,60 +6,64 @@ publish: true
 position: 40
 ---
 
-## Sessions List
+# Sessions List
 
-The Fiddler Everywhere client provides the option to save and share the captured traffic. Use the __Live Traffic__ list's [__Save__]({%slug web-sessions-list%}#save) and [__Share__]({%slug web-sessions-list%}#share) options to save sessions to the __Sessions__ list.  
+The Fiddler Everywhere provides the option to save. modify, inspect and share previosly captured traffic. Use the __Live Traffic__ list's [__Save__]({%slug web-sessions-list%}#save) and [__Share__]({%slug web-sessions-list%}#share) options to save sessions to the __Sessions__ list.  
 
 ![Sessions list](../images/sessions/saved-sessions-all.png)
 
 
-### Open Saved Session
+## Working with Saved Sessions
 
-Follow the steps below to open previously saved Session.
+Previously saved sessions can be selected, inspected, modified, and shared with collaborators. The saved session entries can be saved locally or in the cloud. Sharing a session with a collaborator is automatically uploading the saved session entry to the cloud. 
 
-1. Double-click on the saved Session entry from the __Sessions__ list.
+- Single click on the saved session entry from the __Sessions__ list to select it.
 
-2. The selected entry opens in a new tab. Click on the __Share__ button.
+- Right-click on a selected session entry to load the context menu.
 
-### Share Saved Session
+- Double click on the saved session entry from the __Sessions__ list to open it in a new tab.
 
-Follow the steps below to share previously saved Session:
+    ![Sessions list](../images/sessions/saved-sessions-open.png)
 
-1. Select the saved Session entry from the __Sessions__ list.
+- Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 
-2. Click on the __Share__ button.
+- Use the UI buttons at the very top to [**Import**](#import-sessions) sessions archives or to access previosly [**Shared Sessions**](#shared-sessions-list) entries.
+
+## Sharing Sessions
+
+To share captured traffic with other collaborators, we must first save the session in the cloud. Note that sessions held **locally** will be transferred to the cloud if you use the share functionalities. The Fiddler Everywhere provides several UI solutions for sharing and collaboration as follows:
+
+### Share Selected Session
+
+1. Select a saved session entry from the __Sessions__ list.
+
+2. Click on the __Share__ button on the right from the entry's name.
 
 3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on the __Share__ button.
 
-Alternative method:
 
-1. Select the saved Session entry from the __Sessions__ list.
+### Share Loaded Saved Session
 
-2. The selected entry opens in a new tab. Click on the __Share__ button.
+1. Double click on a saved Session entry from the __Sessions__ list.
 
-    ![Loading previously saved sessions](../images/livetraffic/websessions/websessions-toolbar-share-savedshare.png)
+2. The session entry opens in a new tab. Click on the __Share__ button from the toolbar.
+
+    ![Sessions list](../images/sessions/saved-sessions-reshare.png)
 
 3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on the __Share__ button.
 
-## Sessions Menu
 
-Once sessions are saved (or saved & shared), they will be appended to the __Sessions__ list. Each session comes with quick menu options.
+## Manage Users
 
-![Saved session fast options](../images/sessions/sessions-shared-in-list.png)
-
-### Manage Users
-
-The option appears only if the session is already shared. Click on the __Manage Users__ to prompt a window that allows you to manage the list of users that have access to the shared session.
+The UI option appears only if the session entry is stored in the cloud and shared. Click on the __Manage Users__ to prompt a window that allows you to manage the list of users that have access to the shared session.
 
 ![Manage Users](../images/sessions/sessions-shared-manage-users.png)
  
-### Share
 
-The option prompts a window where you could add user emails that you want to share the session with. Available only for the session owner.
+## Delete
 
-### Delete
+The option removes the session from the __Sessions__ list. The shared session can be recovered from the **Shared Sessions** list.
 
-The option removes the session from the __Sessions__ list. The shared session can be recovered from the __Notifications__ drop-down menu.
 
 ## Sessions Context Menu
 
@@ -89,4 +93,25 @@ The option removes the session from the __Sessions__ list. Keyboard shortcut: __
 
 ### Manage Users
 
-The option allows you to manage the users with which the session is being shared. Active only for the session owner.
+The option allows you to manage the users with which the session is being shared. Active only for the session owner. 
+
+>important The option is available only for session entries **stored in the cloud**.
+
+### Save In The Cloud
+
+The option allows you to manage the users with which the session is being shared. Active only for the session owner. 
+
+>important The option is available only for session entries that are **locally stored**.
+
+## Import Sessions
+
+The **Import Session** option provides option to load sessions saved in various known formats such as _*.saz_ (Fiddler Archive), _*.har_ (HTTPrchive), _*.tstest_ (TestStudio LoadTest), _*.cap_ (Packet Capture), _*.xml_ (IE F12 NetXML).
+
+![Saved sessions import](../images/sessions/saved-sessions-import.png)
+
+## Shared Sessions List
+
+The **Shared Session** button loads a window with the account history of previously shared session entries. Deleted session entries can be restored from here while using the **Download** option.
+
+![Saved sessions import](../images/sessions/saved-sessions-shared-list.png)
+
