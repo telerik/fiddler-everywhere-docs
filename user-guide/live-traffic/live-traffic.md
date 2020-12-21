@@ -301,9 +301,13 @@ _Example for copying full info_
 277 200 HTTP    0.0.0.0:4000    /fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png   GET 207,094 private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate   image/png; charset=utf-8        
 ```
 
-### Add New Rule
+## Add New Rule
 
-Use the __Add new rule__ option to apply an [Auto Responder]({%slug auto-responder-general%}) rule for the selected sessions.
+A captured session entry can be used to mock some server behavior. For similar cases, the session URL can be used alongside [the Auto Responder]({%slug auto-responder-general%}). Creating Auto Responder rules allows you to test complex scenarios and various mock responses.
+
+1. Select the desired session entry and make a right-click to open the context menu. From the context menu, select **Add New Rule**.
+
+2. New Auto Responder rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response via the **Return manually crafted response** action option.
 
 
 ## Additional Resources
