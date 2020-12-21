@@ -133,14 +133,17 @@ With the __Response Inspector__, you can inspect the received response (from the
 
 ![Response inspectors](../images/composer/composer-response-inspectors.png)
 
-## Edit Captured Traffic in Composer
+## Edit in Composer
 
 A session previosly captured in the [Live Traffic]({%slug web-sessions-list%}) could be loaded in the Composer for applying further modifications.
 
-1. Select the desired session and make a right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing key **E**.
+1. Select the desired session entry and make a right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing key **E**.
 
     ![Edit in Composer](../images/composer/edit-in-composer.png)
 
 2. The session opens in a new Composer window and then you could change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
 
     ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
+
+
+   
