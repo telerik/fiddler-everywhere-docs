@@ -1,7 +1,7 @@
 ---
 title: Requests List
 slug: saved-requests-tab
-tags: Fiddler requests list, saved requests, share requests
+tags: Fiddler Evwerywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
 publish: true
 position: 60
 ---
@@ -9,114 +9,85 @@ position: 60
 
 ## Requests List
 
-The Fiddler Everywhere client provides the option to save and share the composed requests. Previously, we discussed on the [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) feature which enables you to manually build and send HTTP, HTTPs and FTP requests. When you save a request using the Composer, the request is added to the collection of requests in the **Requests** list. 
-
-The **Requests** list looks like as shown in the image below: 
+The **Requests** list in Fiddler Everywhere provides the option to save, modify, execute, and share previously composed requests. The [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) tab enables you to build and send HTTP and HTTPS request manually. When you **save** a request using the Composer, the request is added to a **collection** in the **Requests** list. 
 
 ![Requests list](../images/requests/requests-list-all.png)
 
-The Requests list contains one or more collection (folders) of saved requests. In the above image, two different requests have been saved to two different folders. To reload or start working on the saved requests, simply expand a collection and double click on a selected request. 
+The Requests list contains one or more **collections** (root folders) of saved requests (or subfolders). You can also further organize your request in subfolders. To reload or start working on the saved requests, expand a collection, and double click on a selected request. 
 
->tip You can __Rename__ or __Delete__ the collections using the context menu. 
+>tip You can [**Rename**](#rename) collection, [**Delete**](#delete) collection, or make a [**New Folder**](#new-folder) using the context menu. 
 
 ## Requests Menu 
+The **Requests menu** contains three buttons situated to the right of the section title.
 
-The Fiddler Everywhere requests menu contains list of options which can be executed to share or create new collection. You can also create a new Request using the ![Create New Request](../images/requests/create-new-requests-sign.png) button. Refer to the image below: 
+- Use the ![Create New Request](../images/requests/create-new-requests-sign.png) button to open a new **Composer** tab.
+- Use the **Shared Collections** icon to list and manage the root request collections (folders).
+- Use the **Create New Collection** to create a new collection folder at the Requests list's root level.
 
-![Requests Shared & New Collection](../images/requests/requests-shared-new-collection.png)
+![Requests menu options](../images/requests/requests-main-menu.png)
 
-When you save a Composer Request, they automatically get appended to the Requests list. In the list each Requests has some options to be executed. Refer to the image below: 
+## Collection Menu
 
-![Requests Shared & Delete Tab](../images/requests/Requests-share-delete-tab.png)
+The **Collection menu** contains several options to manage your currently selected requests collection (folder).
 
-## Manage Requests Tab
+![Requests collection options](../images/requests/requests-collection-menu.png)
 
-The Requests tab contains the folders containing the composer requests. You can create as many folders and requests as you want. Every folder created under the Requests tab can have more than one requests. 
+- Use the **Create New Collection** option to create a new collection folder at the selected collection root level.
+- Use the **Manage Shared Collection** option to list and manage users with shared access rights.
+- Use the [**Share Collection**](#share-collection) option to open the sharing prompt and provide users with shared access rights.
+- Use the [**Delete**](#delete) option to delete the selected collection completely. This action will also remove the collection for shared users.
 
-![Requests Tab with Folder Structure](../images/requests/requests-tab-with-folder-structure.png)
+### Share Collection
 
-As the composer allows you to compose requests and test those requests, the folders under requests help in differentiating different types of requests. It comes in handy when you want to share the request with a teammate or someone you are working with. 
+To share a collection, click on the __Share__ icon to prompt a window where you must mention the email ids of the users you want to share with. 
 
-If you are using a [Pro version](https://www.telerik.com/purchase/fiddler) of the Fiddler Everywhere, you can share __n__ number of requests with anyone. 
+![Share collection popup](../images/requests/share-requests-popup.png)
 
-### Share 
-
-To share the requests folder click on the __Share__ icon to prompt a window where you must mention the email ids of the users you want to share with. 
-
-The sharing window looks like as shown below:
-
-![Share Request Popup](../images/requests/share-requests-popup.png)
-
->tip This feature is only available if you own the session. 
+>tip This feature is only available if you are the collection owner. 
 
 ### Delete 
 
-The delete option will remove the folder or the composer request from the Requests tab. You can either delete an individual request or the entire folder which contains more than one requests. 
+The delete option will remove a selected collection or a specific request from the Requests list. 
 
-To delete the requests folder: 
+Follow these steps to delete a collection: 
 
-- Click on the delete icon of the folder. 
-- Clicking the icon will prompt a window where the application asks for the final call of deleting the Requests folder. 
+- Click on the **delete** icon of the folder. 
+- A prompt window appears for final confirmation. 
 - Click __Delete__. 
 
-The prompt window looks like as shown below: 
+![Delete Requests Folder](../images/requests/delete-requests-collection.png)
 
-![Delete Requests Folder](../images/requests/delete-requests-folder.png)
+>tip You could also delete a specific sub-folder or a particular request using the **delete** option for the selected entry.
 
-In a similar way you can also delete an individual request. To do that: 
+## Collection Context Menu 
 
-- Click on the delete icon of the respective request. 
-- Clicking the icon will prompt a window where the application asks for the final call of deleting the request. 
-- Click __Delete__.  
+Each collection has options accessible via a context menu. 
 
-The prompt window looks like as shown below: 
+![Requests Collection Context Menu](../images/requests/requests-collection-context.png)
 
-![Delete an individual Request](../images/requests/delete-an-individual-request.png)
 
-## Request Context Menu 
+- **New Folder**: Creates __new folder__ within the selected collection.
 
-Each Requests folder have options that can be accessed via context menu (or with keyboard shortcuts). The dropdown looks like as shown below: 
+- **Rename**: Renames the selected collection. This option is only applicable for the collection owner. _Keyboard shortcut: __F2__ (Mac), __F2__ (Windows)._
 
-![Requests Folder Dropdown](../images/requests/requests-folder-dropdown.png)
+- **Delete**: Deletes the collection from the Requests list. TWill also delete all the requests present in the collection. If the collection is shared, this action will also remove the collection for the shared users. _Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows)._
 
-The options available in the list is as follows:
+- **Share**: Triggers the **Share Collection** window. _Keyboard shortcut: __CMD + Shift + =__ (Mac), __Ctrl + Shift + =__ (Windows)._ 
 
-### New Folder 
+- **Manage Users**: Lists the users with shared access rights. You can use this option to remove users.
 
-The option lets you create a __new folder__ for the composer requests. You can either: 
+- **Save As Local Collection**: Makes a local copy of your cloud saved collection. Useful for testing changes that you don't need to share with the collaborators using the cloud collection. _The option is available only for cloud collections_.
 
-- Add a new folder using this dropdown 
-- Or a new folder can also be created while saving a Composer Request. 
+- **Duplicate Collection**: Makes a local copy of your collection. _The option is available only for locally saved collections_.
 
-### Rename
+## Requests Context Menu
 
-The option allows you to __rename__ the requests folder. This option is only applicable for the session owner. Keyboard shortcut: __F2__ (Mac), __F2__ (Windows). 
+Each  __requests__ has options to either __Rename__ or __Delete__ via its context menu (or via keyboard shortcuts).
 
-### Delete 
+![Requests context menu](../images/requests/requests-context-menu.png)
 
-__Delete__ option is used to remove the request folder from the list. This also deletes all the requests present in the folder. Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows). 
+- **Rename**: Renames the selected request. _Keyboard shortcut: __F2__ (Mac), __F2__ (Windows)._ 
 
-### Share
+- **Delete**: Deletes the selected request from the collection. _Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows)._ 
 
-The option allows you to __share__ the requests folder. Clicking on the share option will prompt a window where you must mention the email ids of the users you want to share with. Keyboard shortcut: __CMD + Shift + =__ (Mac), __Ctrl + Shift + =__ (Windows). 
-
-### Duplicate Collection 
-
-This option lets you create a duplicate folder of the existing one. The name of the folder is structured as __FolderName_Cloned__. 
-
-## Individual Requests Dropdown
-
-Each individual __requests__ have options to either __Rename__ or __Delete__ via dropdown menu (or with keyboard shortcuts). The dropdown looks like as shown below:
-
-![Individual Requests Dropdown](../images/requests/individual-requests-dropdown.png)
-
-### Rename 
-
-The option allows you to __rename__ an individual request. This option is only applicable for the session owner. Keyboard shortcut: __F2__ (Mac), __F2__ (Windows). 
-
-### Delete
-
-__Delete__ option is used to remove an individual request from the list. Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows). 
-
->tip Each saved request can be updated by inputting the modification (for example, in the Headers) and pressing the __Save__ button. If you want to save a new instance of already saved request use the __Save as__ drop-down option (available only for already saved requests)
-
+>tip Each saved request can be updated by inputting the modification (for example, in the Headers) and pressing the __Save__ button. If you want to save a new instance of an already saved request, use the __Save as__ drop-down option (available only for already saved requests).
