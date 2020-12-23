@@ -1,7 +1,7 @@
 ---
 title: Requests List
 slug: saved-requests-tab
-tags: Fiddler requests list, saved requests, share requests
+tags: Fiddler Evwerywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
 publish: true
 position: 60
 ---
@@ -9,15 +9,13 @@ position: 60
 
 ## Requests List
 
-The **Requests** list in Fiddler Everywhere provides the option to save, modify, execute, and share the previously composed requests. The [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) tab enables you to build and send HTTP and HTTPS request manually. When you **save** a request using the Composer, the request is added to the collection of requests in the **Requests** list. 
-
-The **Requests** list looks like as shown in the image below: 
+The **Requests** list in Fiddler Everywhere provides the option to save, modify, execute, and share previously composed requests. The [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) tab enables you to build and send HTTP and HTTPS request manually. When you **save** a request using the Composer, the request is added to a **collection** in the **Requests** list. 
 
 ![Requests list](../images/requests/requests-list-all.png)
 
-The Requests list contains one or more collections (folders) of saved requests. You can also further organize your request in subfolders. To reload or start working on the saved requests, expand a collection, and double click on a selected request. 
+The Requests list contains one or more **collections** (root folders) of saved requests (or subfolders). You can also further organize your request in subfolders. To reload or start working on the saved requests, expand a collection, and double click on a selected request. 
 
->tip You can [**Rename**](#rename), [**Delete**](#delete), or make a [**New Folder**](#new-folder) using the context menu. 
+>tip You can [**Rename**](#rename) collection, [**Delete**](#delete) collection, or make a [**New Folder**](#new-folder) using the context menu. 
 
 ## Requests Menu 
 The **Requests menu** contains three buttons situated to the right of the section title.
