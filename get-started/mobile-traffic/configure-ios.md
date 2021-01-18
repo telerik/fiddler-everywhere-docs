@@ -28,9 +28,6 @@ For demonstration purposes, let's assume that the local IP used by the machine (
 
 ## Configure iOS Device
 
-With the current setup, you should be able to capture HTTP traffic. However, if you try to open any HTTPS website, you'll get the **_This site's security certificate is not trusted!_** error. To fix this, you should trust the Fiddler root certificate.
-
-
 1. Go to **_Settings > WiFi_** on your iOS device.
 2. Find your current network and click the **i** icon.
 3. Scroll to the bottom and choose **Manual** in the **_Configure Proxy_** option.
