@@ -6,7 +6,7 @@ publish: true
 position: 10
 ---
 
-## HTTPS Menu
+# HTTPS Menu
 
 After the initial startup, the Fiddler Everywhere application could only capture non-secure traffic (HTTP) while SSL traffic is not captured. To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ sub-menu in __Settings__.
 
@@ -26,9 +26,26 @@ The **Ignore server certificate errors** controls whether Fiddler will warn you 
 
 >tip A typical case example would be certificate validation error on macOS while trying to access *.icloud.com domains. Use the option to ignore the validation error and continue the debugging process.
 
-## Export root certificate to Desktop
+## Advanced Settings
 
-Expand __Advanced Settings__ drop-down to show the __Export Root Certificate to Desktop and Trust Certificate__ button. Click the button to export Fiddler the root certificate to the Desktop folder for manual import and trusting of the certificate.
+The **Advanced Settings** drop-down provides several options to operate with the root Fiddler certificate. Use the buttons to trigger actions as described below.
+
+![ Advanced Settings](../../images/settings/settings-https-advanced.png)
+
+### Export root certificate
+
+Expand __Advanced Settings__ drop-down to show the __Export Root Certificate__ button. Click the button to export Fiddler the root certificate to the _Desktop_ folder for manual import and trusting of the Fiddler Everywhere certificate. The exported file will be named **FiddlerRootCertificate.crt**
+
+>tip Some operating systems might not have a folder named _Desktop_. In such cases, you will need to create this folder to export the certificate manually successfully.
+
+### Reset root certificate
+
+Expand __Advanced Settings__ drop-down to show the __Reset root certificate__ button. The action will remove the currently trusted root certificate, generates a new one, and trust it. Several OS prompts will be shown that you will have to accept.
+
+### Remove root certificate
+
+Expand __Advanced Settings__ drop-down to show the __Remove Root Certificate__ button. The action will remove the currently trusted root certificate from the OS certificate store. As a result, this will disable the capturing of HTTPS traffic.
+
 
 ## Additional Resources
 

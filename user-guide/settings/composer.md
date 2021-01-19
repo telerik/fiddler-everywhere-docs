@@ -6,7 +6,7 @@ publish: true
 position: 50
 ---
 
-## Composer Menu
+# Composer Menu
 
 The __Composer__ sub-menu contains an option to set the behavior for composed requests returning status code **3xx** (redirects).
 

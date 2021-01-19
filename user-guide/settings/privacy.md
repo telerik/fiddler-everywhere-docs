@@ -6,7 +6,7 @@ publish: true
 position: 40
 ---
 
-## Privacy Menu
+# Privacy Menu
 
 The __Privacy__ sub-menu contains options to opt-out of receiving emails from Progress and its partners and the opportunity to request the deletion of your Fiddler Everywhere associated account.
 
