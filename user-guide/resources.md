@@ -6,7 +6,7 @@ publish: true
 position: 60
 ---
 
-## Welcome Page
+# Welcome Page
 
 The welcome page loads on the startup of the Fiddler Everywhere application. The page contains useful information about the state of Fiddler Everywhere, several links to the official documentation, blogs, video channel, webinars, and interactive in-app tutorials.
 
