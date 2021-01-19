@@ -6,9 +6,9 @@ publish: true
 position: 20
 ---
 
-## Inspector Types
+# Inspector Types
 
-Fiddler's Inspectors display the **request** and the **response** for the selected session in the **Live Traffic list**. The inspectors are located in the right panel with the Request inspectors above the Response inspectors.
+Fiddler Everywhere's inspectors display the **request** and the **response** for the selected session in the **Live Traffic list**. The inspectors are located in the right panel with the Request inspectors above the Response inspectors.
 
 Select a session (from the __Live Traffic__ list) to load its data into the Inspector's section. Request inspectors are located at the top, and Response inspectors are located at the bottom (on the right panel).
 

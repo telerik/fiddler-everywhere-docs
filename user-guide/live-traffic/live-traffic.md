@@ -7,13 +7,13 @@ position: 10
 previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar
 ---
 
-## Live Traffic Tab
+# Live Traffic Tab
 
 The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It display a summary of each captured session (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Auto Responder**]({%slug auto-responder-general%}). The section also enables sessions saving and sharing, editing issued requests, marking, commenting sessions, and applying Auto Responder rules.
 
 >tip A **Session** (also mentioned as a **web session**) represents a single transaction between a client and a server, sometimes known as for request/response pair. Each session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the session and a Timers object that stores timestamps logged during the Session processing.
 
-![Live Traffic toolbar and list](../../images/livetraffic/websessions/websessions-toolbar-list-full.png)
+![Live Traffic toolbar and list](../../images/livetraffic/websessions/websessions-list-all.png)
 
 ## Live Traffic Toolbar
 
@@ -133,7 +133,7 @@ The __Remove All__ button is removing __all__ currently captured traffic from th
 
 The Live Traffic list is an essential feature of Fiddler Everywhere - it displays a list of web sessions with a summary of each session that the Fiddler Everywhere client has captured.
 
-![Live Traffic](../../images/livetraffic/websessions/websessions-list-all.png)
+![Live Traffic](../../images/livetraffic/websessions/websessions-list-columns.png)
 
 Many operations begin by selecting one or more entries in the Live Traffic and then activating other features.
 - To select more than one Session, hold the __Ctrl__ (__Command__ on Mac) or __Shift__ keys while clicking on the desired rows.
@@ -246,6 +246,16 @@ All three options will initially display a save prompt and then a share prompt w
 >important Fiddler Everywhere has a quota limit for creating snapshots of sessions. Refer to the FIddler Everywhere plans page for details.
 
 >tip Alternatively, you can share captured traffic [via the __Share__ button from the toolbar]({%slug web-sessions-list%}#share)
+
+
+### Export
+
+The context menu option __Export__ allows you to export the captured trafcic in different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
+
+- __Selected sessions__ - Saves & shares all selected sessions.
+- __Unselected sessions__ - Saves & shares all unselected sessions.
+- __All Sessions__ - Saves and shares all captured traffic.
+
 
 ### Remove
 

@@ -6,7 +6,7 @@ publish: true
 position: 40
 ---
 
-## Sessions List
+# Sessions List
 
 The Fiddler Everywhere provides the option to save. modify, inspect and share previosly captured traffic. Use the __Live Traffic__ list's [__Save__]({%slug web-sessions-list%}#save) and [__Share__]({%slug web-sessions-list%}#share) options to save sessions to the __Sessions__ list.  
 
@@ -80,7 +80,7 @@ The option will load the selected session in the __Live Traffic__ list. Keyboard
 
 ### Export
 
-The option prompts the __Export__ windows. The session can be exported in SAZ format which can be encrypted (optional). Keyboard shortcut: __Cmd__ + __E__ (Mac), __Ctrl__ + __E__ (Windows).
+The option prompts the __Export__ windows. The session can be exported in various know formats (like SAZ, HTTPArchive, WCATScript, cURL Script, RAW, and others). Keyboard shortcut: __Cmd__ + __E__ (Mac), __Ctrl__ + __E__ (Windows).
 
 ### Rename
 

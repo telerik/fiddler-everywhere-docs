@@ -7,7 +7,7 @@ position: 60
 ---
 
 
-## Requests List
+# Requests List
 
 The **Requests** list in Fiddler Everywhere provides the option to save, modify, execute, and share previously composed requests. The [Composer](https://docs.telerik.com/fiddler-everywhere/user-guide/composer) tab enables you to build and send HTTP and HTTPS request manually. When you **save** a request using the Composer, the request is added to a **collection** in the **Requests** list. 
 

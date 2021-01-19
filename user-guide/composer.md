@@ -6,7 +6,7 @@ publish: true
 position: 50
 ---
 
-## Composer
+# Composer
 
 The __Composer__ tab enables you to manually create, edit, send and test HTTP and HTTPS requests. You can make a new request from scratch or edit a request already captured by Fiddler Everywhere. To get started, open the **Composer** tab next to the [**Live Traffic**]({%slug web-sessions-list%}) tab. You can also open a new Composer tab by clicking on the **New Request** button in the [**Requests**]({%slug saved-requests-tab%}) tab (the button with the **+** sign). The Composer tab has the Request Composer and the Request Inspector.
 

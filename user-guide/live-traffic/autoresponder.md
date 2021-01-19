@@ -6,13 +6,13 @@ publish: true
 position: 30
 ---
 
-## Auto Responder Tab
+# Auto Responder Tab
 
-The __Auto Responder__ is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
+The **Auto Responder** is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
 
 ![AutoResponder button](../../images/livetraffic/autoresponder/autoresponder-main-all.png)
 
-The [Auto Responder Rules Editor]({%slug auto-responder-general%}#rules-editor)  allows you to create new rules and edit existing ones.
+The [**Auto Responder Rules Editor**]({%slug auto-responder-general%}#rules-editor)  allows you to create new rules and edit existing ones.
 
 The [Auto Responder Queue Viewer]({%slug auto-responder-general%}#queue-viewer) lists the currently used rules and provides additional control over them. The tab also exposes options to import/export rules files (__FARX__), to change the priority of the rules (of execution) and to entirely enable/disable the __Auto Responder__ or specific rules.
 
