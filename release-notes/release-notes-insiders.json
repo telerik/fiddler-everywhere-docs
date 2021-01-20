@@ -15,9 +15,6 @@
                     },
                     {
                         "title": "Add 'Remove root certificate' option in the Settings"
-                    },
-                    {
-                        "title": "Add information that the PRO plan has support included"
                     }
                 ]
             },
@@ -25,16 +22,16 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "App will not work in case there are bash commands that print on the terminal (macOS and Linux)"
+                        "title": "The app does not work in case any of the bash profiles has commands that print on the terminal (macOS and Linux)"
                     },
                     {
-                        "title": "App does not capture traffic when 'Require an administrator password to access system-wide preferences' option is checked (macOS)"
+                        "title": "The app does not capture traffic when 'Require an administrator password to access system-wide preferences' option is checked (macOS)"
                     },
                     {
                         "title": "Auto Responder returns incorrect response when creating a rule from session and original response is encoded"
                     },
                     {
-                        "title": "App is crashing silently when there is not enough memory for starting the .NET Core process"
+                        "title": "The app is crashing silently when there is not enough memory for starting the .NET Core process"
                     }
                 ]
             }
