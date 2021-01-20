@@ -1,5 +1,46 @@
 [
     {
+        "version": "1.5.0",
+        "title": "Fiddler Everywhere v1.5.0",
+        "date": "January 21, 2021",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add option to show Release Notes inside the app"
+                    },
+                    {
+                        "title": "Add 'Reset root certificate' option in the Settings"
+                    },
+                    {
+                        "title": "Add 'Remove root certificate' option in the Settings"
+                    },
+                    {
+                        "title": "Add information that the PRO plan has support included"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "App will not work in case there are bash commands that print on the terminal (macOS and Linux)"
+                    },
+                    {
+                        "title": "App does not capture traffic when 'Require an administrator password to access system-wide preferences' option is checked (macOS)"
+                    },
+                    {
+                        "title": "Auto Responder returns incorrect response when creating a rule from session and original response is encoded"
+                    },
+                    {
+                        "title": "App is crashing silently when there is not enough memory for starting the .NET Core process"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "1.4.1",
         "title": "Fiddler Everywhere v1.4.1",
         "date": "December 16, 2020",
