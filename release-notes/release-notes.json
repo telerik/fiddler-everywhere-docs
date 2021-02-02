@@ -1,5 +1,20 @@
 [
     {
+        "version": "1.5.1",
+        "title": "Fiddler Everywhere v1.5.1",
+        "date": "February 2, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "High memory usage during sharing"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "1.5.0",
         "title": "Fiddler Everywhere v1.5.0",
         "date": "January 22, 2021",
