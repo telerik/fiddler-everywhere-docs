@@ -18,55 +18,56 @@ res_type: kb
 
 #### Description
 
-Fiddler Everywhere certificate allows the inspection and debugging of network traffic. The __Composer__ feature in Fiddler Everywhere enables you to manually build and send HTTP or HTTPS requests. Click [here]({%slug composer-tab%}) to know more about Fiddler Everywhere Composer.
-
 In the context of an HTTP transaction, __Basic Access Authentication__ is a method for an HTTP user agent (for example, a web browser) to provide a user name and password when making a request. In __Basic HTTP Authentication__, a request contains a header field in the form of __`Authorization: Basic <base64 string>`__, where credentials are the __Base64__ encoding of `username` and `password` joined by a single colon(`:`).
 
-Now, let's see how you can create a Composer request for APIs that require __Authentication__:
+In this article, we list the steps to [create a request for APIs that require __Authentication__](#create-a-basic-authentication-request) by using the Fiddler Everywhere [Composer]({%slug composer-tab%}) and provide a [complete example](#basic-authentication-request-example) of the procedure.
 
->tip In the steps shown below, you can use [httpbin.org](https://httpbin.org/) for HTTP request and response service.
+## Create a Basic Authentication Request
 
-## Step 1
+The following steps provide an overview of the procedure used to create a basic authentication request:
 
-Set the HTTP/HTTPS method to __GET__ and add the URL in the URL field. The added URL has been generated from the [httpbin.org](https://httpbin.org/).
+1. Select the [Composer]({%slug composer-tab%}) tab.
+1. Set the HTTP/HTTPS method to __GET__ and add the URL in the URL field.
+1. Create an object in the request __Body__ and the `user` and `passwd` variables and their values. In this object, `user` and `passwd` are the predefined variables for the __Basic Authentication__.
+1. Add an `Authorization` key to the header:
+    * Encode the value of the `<username>:<password>` string with a [__Base64 converter__](https://www.base64decode.org/) and note the encoded value.
+    * In the __Headers__ tab, set the __Key__ to `Authorization` and add the encoded `<username>:<password>` under __Value__.
+    * Add a __Description__ for the key. Click the __tick__ to add the `Authorization` key.
 
-![Composer URL Field](../images/kb/url-field-of-composer-with-http-method.png)
+## Basic Authentication Request Example
 
-In the above image, the specified URL is [https://httpbin.org/basic-auth/user1/pass1](https://httpbin.org/basic-auth/user1/pass1). Here __basic-auth__ determines that the __Authentication__ taking place is Basic. The next two fields __user1__ and __pass1__ are the values of `user` and `passwd` variables, respectively.
+1. In the [Composer]({%slug composer-tab%}) tab, set the HTTP/HTTPS method to __GET__ and add [https://httpbin.org/basic-auth/user1/pass1](https://httpbin.org/basic-auth/user1/pass1) in the URL field.
 
-## Step 2
+   ![Composer URL Field](../images/kb/url-field-of-composer-with-http-method.png)
 
-Create an object inside the __Body__ tab. The predefined variables for the __Basic Authentication__ are `user` and `passwd`. Set the values for both variables.
+   The [https://httpbin.org/basic-auth/user1/pass1](https://httpbin.org/basic-auth/user1/pass1) URL includes the following fields:
 
-![JSON Body](../images/kb/body-of-composer-with-username-password.png)
+      * The [httpbin.org](https://httpbin.org/) HTTP request and response service. 
+      * The authentication scheme [__basic-auth__](https://tools.ietf.org/html/rfc7617).
+      * The values of the `user` and `passwd` variables: __user1__ and __pass1__.
 
-In the above image, the values of the `user` and `passwd` variables are __user1__ and __pass1__, respectively.
+1. Create a JSON object in the __Body__ tab:
 
-## Step 3
+   ![JSON Body](../images/kb/body-of-composer-with-username-password.png)
 
-Once you create the object in the __Body__, go to the __Headers__ tab, where you can see a predefined key `User-Agent` added from Fiddler Everywhere. Now, let's add the Authorization key to the header. For that:
+   The predefined variables for __Basic Authentication__ are `user` and `passwd`. Set their values to __user1__ and __pass1__, respectively.
 
-- Encode the values of the variables set in the JSON format. Encode the texts with simple __Base64 converters__. The format of the text should be `<username>:<password>`. The encoded value of __user1:pass1__ is `dXNlcjFwYXNzMQ==`.
+1. Add the Authorization key in the __Headers__ tab:
+   * Encode the value of the `<username>:<password>` string with a __Base64 converter__. The resulting string from the encoding of __user1:pass1__ is `dXNlcjE6cGFzczE=`.
+   * In __Headers__ tab, set the __Key__ to `Authorization`.
+   * Set the __Value__ to `Basic dXNlcjE6cGFzczE=`.
+   * Add a __Description__ for the key, and select the __tick__ to add the Authorization key.
 
-- In __Headers__ tab:
-    - Set the __Key__ to `Authorization`.
-    - Set the __Value__ to `Basic dXNlcjFwYXNzMQ==`.
-    - Add a __Description__ for the key. Click the __tick__.
+   ![Authorization Key](../images/kb/authorization-key-added-to-the-headers-tab.png)
 
-A key named `Authorization` has been added to the __Headers__ tab.
+After performing all the above steps, select __Execute__ (placed at the right side of the URL field) to send the request.
 
-![Authorization Key](../images/kb/authorization-key-added-to-the-headers-tab.png)
-
-After executing all the above steps, click __Execute__ (placed at the right side of the URL field).
-
-Clicking the __Execute__ button will add two more Keys to the __Headers__ tab named `Host` and `Content-Length`.
+Clicking the __Execute__ button adds two more Keys to the __Headers__ tab named `Host` and `Content-Length`:
 
 ![Added Keys to the Headers Tab](../images/kb/added-keys-to-the-headers-tab.png)
 
-Following the above steps will create __Basic Authentication__ with Fiddler Everywhere. To check, go through the __Response Inspector__ section of the Composer. A successful request should return __status 200__ from the server along with the server-specific payload.
-
-Refer to the image below:
+Following the above steps will create __Basic Authentication__ with Fiddler Everywhere. To check, go through the __Response Inspector__ section of the Composer. A successful request should return __status 200__ from the server along with the server-specific payload:
 
 ![Response Inspector](../images/kb/authentication-to-true-in-response-inspector.png)
 
-The above response is HTTPBin specific as we used it to create the __Basic Authentication__. 
+The above response is HTTPBin specific as we used it to create the __Basic Authentication__.
