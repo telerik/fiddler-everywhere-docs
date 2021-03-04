@@ -17,11 +17,13 @@ res_type: kb
 
 #### Description
 
-Traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http://127.0.0.1) is not captured when using some browsers like Google Chrome or Firefox (when Fiddler Everywhere capturing mode is turned on).
+Traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http://127.0.0.1) is not captured when using some browsers like Google Chrome or Firefox even though Fiddler Everywhere **Capturing** is turned on.
 
 ## Solution
 
-There are two different solutions, both of which are resolving the described problem. The first one is to [use the machine name](#using-machine-name) instead of _localhost_, and the second one is to [use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere. Note that both the aliases and the machine name replacement will work when Fiddler Everywhere client capturing mode is ON.
+There are two possible solutions. The first one is to [use the machine name](#using-machine-name) instead of _localhost_. The second one is to [use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere. 
+
+>Both solutions require that Fiddler Everywhere [Capturing]({%slug capture-traffic-get-started%}) is enabled.
 
 ## Using Machine Name
 
@@ -40,27 +42,37 @@ http://myrootuserid:8081/mytestpage.aspx
 
 ## Using Aliases
 
-Use a special Fiddler allias **ipv4.fiddler** (for connections using Internet Protocol version 4) or **ipv6.fiddler** (for connections using Internet Protocol version 6) or **localhost.fiddler** to hit _localhost_ in the _Host_ header (IIS Express).
+Depending on the specific scenario, you can replace _localhost_ or _127.0.0.1_ with one of the following special Fiddler aliases:
 
-Instead of using _localhost_ like this:
+* **ipv4.fiddler** for connections using Internet Protocol version 4.
+* **ipv6.fiddler** for connections using Internet Protocol version 6.
+* **localhost.fiddler** to hit _localhost_ in the _Host_ header (applicable for IIS Express).
+
+For example, traffic sent to the following URL may not be captured:
+
 ```Shell
 http://localhost:8081/mytestpage.aspx
 ```
 
-**Use the alias** as follows (to hit _localhost_ on **IPv4** adapter):
-```Shell
-http://ipv4.fiddler:8081/mytestpage.aspx
-```
+To capture the traffic with Fiddler Everywhere:
 
-**or** (to hit _localhost_ on **IPv6** adapter)
-```Shell
-http://ipv6.fiddler:8081/mytestpage.aspx
-```
+* replace _localhost_ with the **ipv4.fiddler** alias to hit _localhost_ on an **IPv4** adapter:
 
-**or** (to hit _localhost_ in the _Host_ header - applicable for ISS Express)
-```Shell
-http://ipv4.fiddler:8081/mytestpage.aspx
-```
+    ```Shell
+    http://ipv4.fiddler:8081/mytestpage.aspx
+    ```
+
+* replace _localhost_ with the **ipv6.fiddler** alias to hit _localhost_ on an **IPv6** adapter:
+
+    ```Shell
+    http://ipv6.fiddler:8081/mytestpage.aspx
+    ```
+
+* replace _localhost_ with the **localhost.fiddler** alias to hit _localhost_ in the _Host_ header:
+
+    ```Shell
+    http://ipv4.fiddler:8081/mytestpage.aspx
+    ```
 
 ## Filter Localhost Traffic
 

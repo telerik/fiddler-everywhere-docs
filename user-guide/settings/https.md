@@ -8,44 +8,43 @@ position: 10
 
 # HTTPS Menu
 
-After the initial startup, the Fiddler Everywhere application could only capture non-secure traffic (HTTP) while SSL traffic is not captured. To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ sub-menu in __Settings__.
+After the initial startup, the Fiddler Everywhere application captures only non-secure traffic (HTTP). SSL encrypted traffic isn't captured by default. To enable capturing and decrypting HTTPS traffic, you need to install the Fiddler root certificate via the __HTTPS__ sub-menu under __Settings__.
 
 ![default https settings](../../images/settings/settings-https.png)
 
 ## Trust root certificate
 
-The **Trust root certificate** button installs and trusts the Fiddler root certificate. The option is available on macOS and Windows - on Linux OS you will have to manually export and trust the root certificate.
+The **Trust root certificate** button installs and trusts the Fiddler root certificate. The option is available only on macOS and Windows. On Linux, you have to manually export and trust the root certificate. After you install the certificate, you are ready to [enable the capturing of HTTPS traffic](#capture-https-traffic).
 
 ## Capture HTTPS traffic
 
-The **Capture HTTPS traffic** option defines if Fiddler Everywhere should capture HTTPS traffic or skip it. By default, this option is disabled. First, you need to confirm whether the root certificate is trusted to enable the HTTPS traffic capturing. If it is trusted, you can enable the capture option.
+The **Capture HTTPS traffic** option defines if Fiddler Everywhere should capture HTTPS traffic or skip it. By default, this option is disabled. Before you enable the capturing of HTTPS traffic, you must [trust the Fiddler root certificate](#trust-root-certificate).
 
 ## Ignore server certificate Errors (unsafe)
 
-The **Ignore server certificate errors** controls whether Fiddler will warn you if an HTTPS server has presented a certificate that did not validate. You should not check this box when surfing the Internet due to the spoofing security threat. 
+The **Ignore server certificate errors** button controls whether Fiddler warns you if an HTTPS server presents a certificate that cannot be validated. You should not check this box when surfing the Internet due to the spoofing security threat.
 
->tip A typical case example would be certificate validation error on macOS while trying to access *.icloud.com domains. Use the option to ignore the validation error and continue the debugging process.
+>tip A typical use case for the **Ignore server certificate errors** option would be certificate validation errors on macOS while trying to access *.icloud.com domains. Use the option to ignore the validation error and continue the debugging process.
 
 ## Advanced Settings
 
-The **Advanced Settings** drop-down provides several options to operate with the root Fiddler certificate. Use the buttons to trigger actions as described below.
+The **Advanced Settings** drop-down provides several additional options related to the Fiddler root certificate.
 
 ![ Advanced Settings](../../images/settings/settings-https-advanced.png)
 
 ### Export root certificate
 
-Expand __Advanced Settings__ drop-down to show the __Export Root Certificate__ button. Click the button to export Fiddler the root certificate to the _Desktop_ folder for manual import and trusting of the Fiddler Everywhere certificate. The exported file will be named **FiddlerRootCertificate.crt**
+Expand the __Advanced Settings__ drop-down to show the __Export Root Certificate__ button. Click the button to export the Fiddler root certificate to the _Desktop_ folder. Then you can manually import and trust the Fiddler Everywhere certificate. The name of the exported file is **FiddlerRootCertificate.crt**.
 
->tip Some operating systems might not have a folder named _Desktop_. In such cases, you will need to create this folder to export the certificate manually successfully.
+>tip Some operating systems might not have a folder named _Desktop_. In such cases, you need to create this folder to export the certificate successfully.
 
 ### Reset root certificate
 
-Expand __Advanced Settings__ drop-down to show the __Reset root certificate__ button. The action will remove the currently trusted root certificate, generates a new one, and trust it. Several OS prompts will be shown that you will have to accept.
+Expand the __Advanced Settings__ drop-down to show the __Reset root certificate__ button. Click the button to remove the currently trusted root certificate, generate a new one, and trust it. Several OS prompts will be shown, and you have to accept all of them.
 
 ### Remove root certificate
 
-Expand __Advanced Settings__ drop-down to show the __Remove Root Certificate__ button. The action will remove the currently trusted root certificate from the OS certificate store. As a result, this will disable the capturing of HTTPS traffic.
-
+Expand the __Advanced Settings__ drop-down to show the __Remove Root Certificate__ button. Click the button to remove the currently trusted root certificate from the OS certificate store. As a result, the capturing of HTTPS traffic will be disabled.
 
 ## Additional Resources
 
