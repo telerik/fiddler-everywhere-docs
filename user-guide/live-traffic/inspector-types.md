@@ -24,8 +24,6 @@ The inspectors are based on the Monaco editor and are coming with a lot of perks
 - Powerful search functionality that supports strings and regular expressions.
 - Context styling that highlights the content based on its type (e.g. Image renderers, HTML & XML formatters, JSON formatter, etc.).
 
-![Inspector types](../../images/livetraffic/inspectors/inspectors-all-types.png)
-
 >tip All inspector types (except **Preview**) are coming with **Copy all content to clipboard** button at the top-right corner.
 
 
