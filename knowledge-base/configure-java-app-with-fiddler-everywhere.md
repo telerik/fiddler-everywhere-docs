@@ -23,14 +23,11 @@ The Java Virtual Machine has its own proxy configuration settings. This article 
 ## Solution
 
 - [Export the Fiddler Everywhere root certificate]({%slug decrypt-https-traffic%}#export-root-certificate)
-- Create a JVM keystore using the exported certificate while using [the **keytool** application](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html). Note that you will need admin access rights to use the keytool application.
-```Java
-%JAVA_HOME%\bin\keytool.exe -import -file <path-to-exported-certificate>\FiddlerRootCertificate.crt -keystore <your-export-path>\FiddlerKeystoreFile -alias Fiddler
-```
-The above command prompts for password creation and then outputs **FiddlerKeystoreFile** in the preset export path.
+- Create a JVM keystore using the exported certificate while using [the **keytool** application](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html). Note that you will need admin access rights to use the keytool application. The command below prompts for password creation and then outputs **FiddlerKeystoreFile** in the pre-set export path.
+    ```Java
+    %JAVA_HOME%\bin\keytool.exe -import -file <path-to-exported-certificate>\FiddlerRootCertificate.crt -keystore <your-export-path>\FiddlerKeystoreFile -alias Fiddler
+    ```
 - Configure the java application to use the Fiddler proxy and certificate through **jre**
 ```
-jre -DproxySet=true -DproxyHost=127.0.0.1 -DproxyPort=8866 -Djavax.net.ssl.trustStore=<your-export-path>\FiddlerKeystoreFile -Djavax.net.ssl.trustStorePassword=<Keystore Password> MyApp
+jre -DproxySet=true -DproxyHost=127.0.0.1 -DproxyPort=8866 -Djavax.net.ssl.trustStore=<your-export-path>\FiddlerKeystoreFile -Djavax.net.ssl.trustStorePassword=<Keystore Password>
 ```
-
-Alternatively, skip the MyApp to set all Java applications to use the Fiddler proxy.
