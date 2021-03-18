@@ -58,7 +58,7 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 
 #### Trial version
 
-To try Fiddler Everywhere PRO for FREE for 30 days, press the **Try PRO** button and press **Start Trial**. An **Upgrade Successful** prompt window confirms your trial subscriptions. The trial activation does not require a credit card or any other additional information.
+To try Fiddler Everywhere PRO for FREE for 30 days, press the **Upgrade** button and press **TRY PRO FOR 30 DAYS**. An **Upgrade Successful** prompt window confirms your trial subscriptions. The trial activation does not require a credit card or any other additional information.
 
 
 #### Fiddler Everywhere PRO Dashboard
