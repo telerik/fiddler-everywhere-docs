@@ -24,7 +24,7 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-mac-keychain.png)
 
-1. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
+1. Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
     
 1. Click the __Save__ button to save the changes.
 
