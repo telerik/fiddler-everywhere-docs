@@ -30,7 +30,7 @@ The Fiddler Everywhere [instructions for installing the trusted root certificate
 
 1. Export the Fiddler Everywhere root certificate via __Settings__ > __HTTPS__ > __Advanced Settings__ > __Export Root Certificate to Desktop__.
 
-1. Open a terminal and copy the exported certificate to the shared certificate storage directory
+1. Open a terminal and copy the exported certificate to the shared certificate storage directory:
 
     ```
     cp ~/Desktop/FiddlerRootCertificate /etc/pki/ca-trust/source/anchors/
@@ -43,5 +43,4 @@ The Fiddler Everywhere [instructions for installing the trusted root certificate
     ```
 
 1. Return back to the Fiddler Everywhere application and enable HTTPS capturing via __Settings__ > __HTTPS__ > __Capture HTTPS traffic__ checkbox.
-
 
