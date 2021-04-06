@@ -150,7 +150,7 @@ When Fiddler Everywhere identifies a request which matches the Auto Responder **
 
 | Action String     | Description | Action Type |
 | :---- | :---- | :---- |
-| __xxx.dat__      | Return response with HTTP status based on the provided __xxx__ value. Fiddler Everywhere provides a predefined collection of different HTTP statuses via the drop-down menu. | Final |
+| __xxx.dat__      | Return response with HTTP status based on the content of the selected __xxx.dat__ file. Fiddler Everywhere provides [a predefined collection of different responses via the Actions drop-down menu]({%slug fiddler-ar-actions%}). | Final |
 | __filename__      | Return contents of the filename as the response. | Final |
 | __http://targetURL__ | Returns the content of the __targetURL__ as the response. | Final |
 | __*redir:http://targetURL__ | Returns a HTTP Redirect to the target URL. Unlike the simple URL rule, this ensures that the client knows where its request is going so proper cookies are sent, etc. | Final |
