@@ -66,126 +66,125 @@ GIF89a #encoded string for a transparent GIF follows here
 
 1. **204_NoContent.dat**
 
-```HTTP
-HTTP/1.1 204 No Content
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Content-Length: 0
-```
+    ```HTTP
+    HTTP/1.1 204 No Content
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Content-Length: 0
+    ```
 
 1. **302_Redirect.dat**
 
-```HTTP
-HTTP/1.1 302 Redirect
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
-Content-Length: 0
-```
+    ```HTTP
+    HTTP/1.1 302 Redirect
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
+    Content-Length: 0
+    ```
 
 1. **303_RedirectWithGet.dat**
 
-```HTTP
-HTTP/1.1 303 Redirect Using GET
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
-Content-Length: 0
-```
+    ```HTTP
+    HTTP/1.1 303 Redirect Using GET
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
+    Content-Length: 0
+    ```
 
 1. **304_NotModified.dat**
 
-```HTTP
-
-HTTP/1.1 304 Not Modified
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Content-Length: 0
-```
+    ```HTTP
+    HTTP/1.1 304 Not Modified
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Content-Length: 0
+    ```
 
 1. **307_RedirectWithMethod.dat**
 
-```HTTP
-HTTP/1.1 307 Redirect using same Method
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
-Content-Length: 0
-```
+    ```HTTP
+    HTTP/1.1 307 Redirect using same Method
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
+    Content-Length: 0
+    ```
 
 1. **401_AuthBasic.dat**
 
-```HTTP
-HTTP/1.1 401 Authentication Required
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-WWW-Authenticate: Basic realm="Fiddler"
-Content-Type: text/html
-Content-Length: 520
+    ```HTTP
+    HTTP/1.1 401 Authentication Required
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    WWW-Authenticate: Basic realm="Fiddler"
+    Content-Type: text/html
+    Content-Length: 520
 
-Fiddler: HTTP/401 Basic Server Auth Required.    
-```
+    Fiddler: HTTP/401 Basic Server Auth Required.    
+    ```
 
 1. **401_AuthDigest.dat**
 
-```HTTP
-HTTP/1.1 401 Authentication Required
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-WWW-Authenticate: Digest realm="realm@example.com",qop="auth,auth-int",nonce="dcd98b7102dd2f0e8b11d0f600bfb0c093",opaque="5ccc069c403ebaf9f0171e9517f40e41"
-Content-Type: text/html
-Content-Length: 520
+    ```HTTP
+    HTTP/1.1 401 Authentication Required
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    WWW-Authenticate: Digest realm="realm@example.com",qop="auth,auth-int",nonce="dcd98b7102dd2f0e8b11d0f600bfb0c093",opaque="5ccc069c403ebaf9f0171e9517f40e41"
+    Content-Type: text/html
+    Content-Length: 520
 
-Fiddler: HTTP/401 Digest Server Auth Required. 
-```
+    Fiddler: HTTP/401 Digest Server Auth Required. 
+    ```
 
 1. **403_AuthDeny.dat**
 
-```HTTP
-HTTP/1.1 403 Access Denied
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Content-Length: 520
+    ```HTTP
+    HTTP/1.1 403 Access Denied
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Content-Length: 520
 
-Fiddler: HTTP/403 Access Denied.   
-```
+    Fiddler: HTTP/403 Access Denied.   
+    ```
 
 1. **404_Plain.dat**
 
-```HTTP
-HTTP/1.1 404 Not Found
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Content-Type: text/html
-Content-Length: 520
+    ```HTTP
+    HTTP/1.1 404 Not Found
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Content-Type: text/html
+    Content-Length: 520
 
-Fiddler: HTTP/404 Not Found 
-```
+    Fiddler: HTTP/404 Not Found 
+    ```
 
 1. **407_ProxyAuthBasic.dat**
 
-```HTTP
-HTTP/1.1 407 Proxy Auth Required
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Proxy-Authenticate: Basic realm="Fiddler (just hit Ok)"
-Content-Type: text/html
-Content-Length: 520
+    ```HTTP
+    HTTP/1.1 407 Proxy Auth Required
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Proxy-Authenticate: Basic realm="Fiddler (just hit Ok)"
+    Content-Type: text/html
+    Content-Length: 520
 
-Fiddler: HTTP/407 Proxy Auth Required.
-```
+    Fiddler: HTTP/407 Proxy Auth Required.
+    ```
 
 1. **502_Unreachable.dat**
 
-```HTTP
-HTTP/1.1 502 Unreachable Server
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-FiddlerTemplate: True
-Content-Type: text/html
-Content-Length: 520
+    ```HTTP
+    HTTP/1.1 502 Unreachable Server
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    FiddlerTemplate: True
+    Content-Type: text/html
+    Content-Length: 520
 
-Fiddler: HTTP/502 unreachable server. 
-```
+    Fiddler: HTTP/502 unreachable server. 
+    ```
 
 ## Custom DAT File
 
