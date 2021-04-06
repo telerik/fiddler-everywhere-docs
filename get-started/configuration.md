@@ -58,7 +58,7 @@ Many Linux distributions are using different security features and different way
 
 1. Click the __Export Root Certificate to Desktop__ button.
 
-1. Import and trust the exported certificate. To be able to install the FE certificate, you need to follow some additional steps on Linux:
+1. Import and trust the exported certificate. To install the Fiddler Everywhere certificate, you need to follow some additional steps on Linux:
 
     - Create a directory and copy the certificate (exported in the previous steps). The last command will start the tool to upgrade the certificates. 
 
