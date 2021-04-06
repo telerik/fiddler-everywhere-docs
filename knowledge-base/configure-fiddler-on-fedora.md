@@ -37,10 +37,9 @@ The Fiddler Everywhere [instructions for installing the trusted root certificate
     ```
     >tip The paths in the command above might differ on your Linux distributions - the example shows the default paths on Fedora 33.
 
-1. Trust the certificate by updating the certificate authority via the following terminal command
+1. Trust the certificate by updating the certificate authority via the following terminal command:
     ```
     update-ca-trust
     ```
 
 1. Return back to the Fiddler Everywhere application and enable HTTPS capturing via __Settings__ > __HTTPS__ > __Capture HTTPS traffic__ checkbox.
-
