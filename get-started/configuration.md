@@ -50,7 +50,7 @@ Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
 
 ## Configure on Linux
 
-Many Linux distributions are using different security features and different ways of adding a root certificate. For such cases, the Fiddler Everywhere provides means to export the root trust certificate so that it could be manually imported in your Linux OS. Use the __Export Root Certificate to Desktop and Trust Certificate__ option as follows:
+Many Linux distributions are using different security features and different ways of adding a root certificate. For such cases, Fiddler Everywhere provides means to export the trusted root certificate so that you can manually import it in your Linux OS. Use the __Export Root Certificate to Desktop and Trust Certificate__ option as follows:
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
 
