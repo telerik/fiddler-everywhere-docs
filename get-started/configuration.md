@@ -37,7 +37,7 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 
 1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button. 
 
-1.  Trust certificate popup appears to confirm and add the certificate. 
+  Trust certificate popup appears to confirm and add the certificate. 
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-cert-win.png)
 
