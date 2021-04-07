@@ -199,7 +199,7 @@ The Auto Responder **Actions** drop-down provides an option to load your own cus
 
 Another option that the Auto Responder provides is to directly create the mocked custom HTTP response.
 
-- Scroll to the bottom of the drop-down Actions menu and select **Return manually crafted response**.
+1. Scroll to the bottom of the drop-down Actions menu and select **Return manually crafted response**.
 1. Write the custom response in the **Raw** inspector.
 
 ![Manually crafted response](../images/livetraffic/autoresponder/kb-auroresponder-manual-response.png)
