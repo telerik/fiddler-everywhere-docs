@@ -188,7 +188,7 @@ GIF89a #encoded string for a transparent GIF follows here
 
 ## Custom DAT File
 
-The Auto Responder actions drop-down provides an option to load your own custom DAT file with an entirely custom HTTP response. 
+The Auto Responder **Actions** drop-down provides an option to load your own custom DAT file with an entirely custom HTTP response:
 
 1. Scroll to the bottom of the drop-down Actions menu and select **Choose saved response file...**.
 - In the file selection window, select your own DAT file and load it as an action rule.
