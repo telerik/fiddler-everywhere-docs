@@ -150,20 +150,18 @@ When Fiddler Everywhere identifies a request which matches the Auto Responder **
 
 | Action String     | Description | Action Type |
 | :---- | :---- | :---- |
-| __xxx.dat__      | Return response with HTTP status based on the provided __xxx__ value. Fiddler Everywhere provides a predefined collection of different HTTP statuses via the drop-down menu. | Final |
-| __filename__      | Return contents of the filename as the response. | Final |
-| __http://targetURL__ | Returns the content of the __targetURL__ as the response. | Final |
-| __*redir:http://targetURL__ | Returns a HTTP Redirect to the target URL. Unlike the simple URL rule, this ensures that the client knows where its request is going so proper cookies are sent, etc. | Final |
-| __*bpu__ | Breaks on request before hitting the server. | Non-final|
-| __*delay:###__ | Delay sending request to the server by __###__ of milliseconds. | Non-final |
-| __*header:Name=Value__ | Set the Request header with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. | Non-final |
-| __*flag:Name=Value__ | Set the Session Flag, with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. | Non-final |
-| __*CORSPreflightAllow__ | Returns a response that indicates that CORS is allowed. | Final |
-| __*reset__ | Reset the client connection immediately using a TCP/IP RST to the client. | Final |
-| __*drop__ | Close the client connection immediately without sending a response. | Final |
+| __xxx.dat__      | Return response with HTTP status based on the content of the selected __xxx.dat__ file. Fiddler Everywhere provides [a predefined collection of different responses via the Actions drop-down menu]({%slug fiddler-ar-actions%}). | Final |
 | __*exit__ | Stop processing rules at this point. | Final |
-| __Return manually crafted response__ | Allows modifying the current response (HTML, JS, JSON) previously returned by the server. | Final |
-| __Choose saved response file...__ | The __Choose saved response file..…__ option in the Actions dropdown displays a file picker to allow you to select a filename that should be returned.| Final |
+| __*drop__ | Close the client connection immediately without sending a response. | Final |
+| __*reset__ | Reset the client connection immediately using a TCP/IP RST to the client. | Final |
+| __*delay:###__ | Delay sending request to the server by __###__ of milliseconds. | Non-final |
+| __*ReplyWithTunnel__ | Responds with an HTTP/200 tunnel for HTTPS traffic. Example: CONNECT method. | Final |
+| __*CORSPreflightAllow__ | Returns a response that indicates that CORS is allowed. | Final |
+| __*header:Name=Value__ | Set the Request header with the given __Name__ to the specified __Value__. If no header of that name exists, a new header will be created. | Non-final |
+| __*redir:http://targetURL__ | Returns a HTTP Redirect to the target URL. Unlike the simple URL rule, this ensures that the client knows where its request is going so proper cookies are sent, etc. | Final |
+| __http://targetURL__ | Returns the content of the __targetURL__ as the response. | Final |
+| __Return manually crafted response__ | [Allows modifying the current response]({%slug fiddler-ar-actions%}#custom-http-response) (HTML, JS, JSON) previously returned by the server. | Final |
+| __Choose saved response file...__ | The __Choose saved response file..…__ option in the Actions dropdown displays a file picker to allow you to select [a DAT file that contains modified HTTP response]({%slug fiddler-ar-actions%}#custom-dat-file).| Final |
 
 __Rules with Non-final__ actions will allow the request to match multiple Auto Responder rules. As soon a rule specifying a final action is reached, the matching process exists, and no further rules are processed for that session.
 
