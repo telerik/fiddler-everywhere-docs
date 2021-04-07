@@ -21,7 +21,7 @@ res_type: kb
 
 The [Auto Responder]({%slug auto-responder-general%}) is one of the most powerful debugging functionalities that Fiddler Everywhere provides. The main idea behind the Auto Responder is to provide a set of rules (based on match rules and actions) that quickly mock a server response and behavior without going through the trouble of modifying the server. Within seconds, you could execute many complex and different rules and test your site against multiple scenarios.
 
-This article is listing in detail each of the predefined actions listed in the Actions drop-down as DAT files.
+This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. We also explain how to customize the Auto Responder by adding a [Custom DAT file](#custom-dat-file) or a [Custom HTTP Response](#custom-http-response).
 
 ![Auto Responder predefined actions](../images/livetraffic/autoresponder/kb-auroresponder-actions.png)
 
