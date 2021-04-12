@@ -1,5 +1,61 @@
 [
     {
+        "version": "1.6.0-insiders",
+        "title": "Fiddler Everywhere v1.6.0",
+        "date": "April 12, 2021",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add a text input to search in the URL and Headers of all sessions"
+                    },
+                    {
+                        "title": "Add an option to Share Feedback for the app"
+                    },
+                    {
+                        "title": "Enable sorting of captured traffic"
+                    },
+                    {
+                        "title": "Improve the app architecture to reduce the CPU usage during Live Traffic capturing"
+                    },
+                    {
+                        "title": "Migrate the login to case-insensitive system. Added specific UI for cases where the migration requires merge of multiple accounts in a single one"
+                    },
+                    {
+                        "title": "Update Electron to version 11, Angular to version 11 and .NET to version 5"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Trust and enable certificate from grid icon sometimes does not set the 'Capture HTTPS traffic' to on"
+                    },
+                    {
+                        "title": "The app is not restarted after update on macOS Big Sur"
+                    },
+                    {
+                        "title": "ESC key does not close the Settings dialog"
+                    },
+                    {
+                        "title": "The app may fail to start when HTTPS_PROXY and HTTP_PROXY env variables are set"
+                    },
+                    {
+                        "title": "Traffic to localhost is not captured by default on macOS and Linux"
+                    },
+                    {
+                        "title": "Errors are raised when executing 'Check for updates' multiple times"
+                    },
+                    {
+                        "title": "The app's state is incorrect when there's no access to *.getfiddler.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "1.5.1-insiders",
         "title": "Fiddler Everywhere v1.5.1",
         "date": "February 1, 2021",
