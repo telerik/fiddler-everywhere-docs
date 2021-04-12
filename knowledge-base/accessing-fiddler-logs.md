@@ -34,7 +34,9 @@ Fiddler Everywhere version **1.3.0 and above** provides a UI option via **_Help 
 
 ![Fiddler Everywhere log files](../images/kb/logs/log-files.png)
 
-Alternatively, you could manually navigate to the folder on your operating system on an older version, as shown below.
+## Logs Destination Folder
+
+Alternatively, you could manually navigate to the folder on your operating system and obtain the Fiddler Everywhere log files. Manual extraction of the logs can be useful in scenarios where your Fiddler Everywhere client is not starting at all, or you can't access the UI.
 
 ### macOS
 

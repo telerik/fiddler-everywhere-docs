@@ -19,7 +19,6 @@ The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It displ
 
 The Live Traffic toolbar provides various functionalities like streaming mode, decoding content, filtering by different criteria, saving, and sharing sessions.
 
-![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
 
 To start capturing traffic, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing (**Paused** mode).
 
@@ -34,13 +33,13 @@ The Live Traffic toolbar provides the following functionalities:
 - [Search](#search)
 
 
+![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
+
 ### Stream
 
 By default, Fiddler Everywhere uses __buffering mode__, which means that the responses are fully collected before any part is sent to the client. Buffering alters the responses (for example, an image won't begin to download until the containing page download is complete). With __streaming mode__, the server's responses are immediately returned to the client as it is downloaded. In streaming mode, tampering with the response body is not possible.
 
 1. Click on the __Stream__ button to toggle between the streaming and buffering modes.
-
-    ![Stream Toggle button](../../images/livetraffic/websessions/websessions-toolbar-stream-toggle.png)
 
     Streaming mode is useful for low-level network timing scenarios (for example, by design, some browsers will parse partially-downloaded HTML. That would start downloading external resources in parallel before the remote server has finished delivering the content).
     
@@ -179,7 +178,14 @@ Certain key information is displayed in the columns of Live Traffic, including:
 - __Duration__ - Indicates the duration in miliseconds that took for the session to complete.
 - __Comments__ A field for showing the custom comments added by you (or the author of a shared session).
 
-Each column comes with a **more** button (three vertical dots), which opens a popup with **Filter**  and **Columns** submenus. 
+
+### Live Traffic Sorting
+
+By default, the captured traffic is sorted in the order they appear during the traffic capturing (sort by the unique identification number column). Create a custom sorting order by clicking on the desired column. For example, click on the **URL** column to sort alphabetically based on the URL, or click on the **Body Size** column to sort based on the bytes' session size.
+
+### Filter and Columns Options
+
+Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter**  and **Columns** submenus. 
 
 Use the **Filter** submenu to apply filters for the currently selected column only (e.g., filter all the traffic by _host_ name or by a specific _status code_). Columns with active filters will have a blue filter indicator. You can clear active filters via the **Filter** popup (for the filtered column) or use the global [__Clear All Filters__ button](#clear-all-filters).
 

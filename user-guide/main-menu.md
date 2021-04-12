@@ -9,7 +9,7 @@ position: 10
 
 # Main Menu
 
-The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you could find the [**View**](#view), and [**Help**](#help) submenus plus [a **Plan** information options](#plan-information). To the right, you will find [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out** option](#sign-out).
+The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you could find the [**View**](#view), and [**Help**](#help) submenus plus [a **Plan** information options](#plan-information). To the right, you will find [**Share Feedback**](#share-feedback), [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out**](#sign-out) option.
 
 ![Fiddler Everywhere main menu](../images/menu/main-menu-all.png)
 
@@ -58,8 +58,7 @@ The **About** command opens a dialog window that provides information about the 
 
 ### Contact Support
 
-The **Contact Support** option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) version (including the Trial PRO version).
-. Click on the command to send us your support query.
+The **Contact Support** is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) version (including the Trial PRO version). The option uses the operating system default email client.
 
 ## Plan Information
 
@@ -74,6 +73,14 @@ The plan information window will provide information about the current user plan
     ![Pro plan window and button](../images/menu/pro-plan-window.png)
 
 >tip Refer to [the comparison table]({%slug introduction%}#fiddler-everywhere-pro) to uncover the perks of using the Fiddler Everywhere Pro version.
+
+
+## Share Feedback
+
+Use the **Share Feedback** option to send us your observations, recommendations, and impressions for the Fiddler Everywhere client application.
+
+![Share Feedback popup window](../images/menu/share-feedback.png)
+
 
 ## Links
 
