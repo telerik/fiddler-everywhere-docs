@@ -19,27 +19,27 @@ The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It displ
 
 The Live Traffic toolbar provides various functionalities like streaming mode, decoding content, filtering by different criteria, saving, and sharing sessions.
 
-![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
 
 To start capturing traffic, you need to enable __Live Traffic__ switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing (**Paused** mode).
 
 The Live Traffic toolbar provides the following functionalities:
 
 - [Stream](#stream)
-- [Decode](#decode)
 - [Advanced Filters](#advanced-filters)
 - [Clear All Filters](#clear-all-filters)
 - [Save](#save)
 - [Share](#share)
 - [Remove All](#remove-all)
+- [Search](#search)
+
+
+![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
 
 ### Stream
 
 By default, Fiddler Everywhere uses __buffering mode__, which means that the responses are fully collected before any part is sent to the client. Buffering alters the responses (for example, an image won't begin to download until the containing page download is complete). With __streaming mode__, the server's responses are immediately returned to the client as it is downloaded. In streaming mode, tampering with the response body is not possible.
 
 1. Click on the __Stream__ button to toggle between the streaming and buffering modes.
-
-    ![Stream Toggle button](../../images/livetraffic/websessions/websessions-toolbar-stream-toggle.png)
 
     Streaming mode is useful for low-level network timing scenarios (for example, by design, some browsers will parse partially-downloaded HTML. That would start downloading external resources in parallel before the remote server has finished delivering the content).
     
@@ -53,8 +53,6 @@ Use the __Advanced Filters__ to apply filters based on the Request and Response 
 
 1. Click on the filter button to open the advanced filters popup windows.
 
-    ![Filter sessions button](../../images/livetraffic/websessions/websessions-toolbar-filter.png)
-
 2. The __Advanced Filters__ window allows you to set specific criteria that will filter the captured traffic. Set the filter rules and click __Apply__.
 
     ![Advanced filters popup](../../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
@@ -67,16 +65,12 @@ Currently, the __Advanced Filters__ entries are using **AND** logical operator. 
 
 Use the __Clear All Filters__ to reset all filters applied by __Advanced Filters__ and filters applied for each column (see [the columns section](#-live-traffic-columns))
 
-![Clear All Filter  button](../../images/livetraffic/websessions/websessions-toolbar-filter-clearall.png)
-
 
 ### Save
 
 Use the __Save__ button to save sessions for later use or prepare sessions for sharing.
 
 1. Click on the __Save__ button.
-
-    ![Save button](../../images/livetraffic/websessions/websessions-toolbar-save.png)
 
 2. A __Save Sessions__ prompt windows appear. Enter a valid name and click __Save__.
 
@@ -98,8 +92,6 @@ The toolbar comes with a __Share__ button that will save the currently displayed
 
 1. Click on the __Share__ button.
 
-    ![Share button](../../images/livetraffic/websessions/websessions-toolbar-share.png)
-
 2. The __Save Session__ prompt window appears. You need to save the sessions before they could be shared.
 
     ![Saving before traffic could be shared](../../images/livetraffic/websessions/websessions-toolbar-share-saveprompt.png)
@@ -111,9 +103,13 @@ The toolbar comes with a __Share__ button that will save the currently displayed
 
 ### Remove All
 
-The __Remove All__ button is removing __all__ currently captured traffic from the __Live Traffic__ list. To remove specific selected sessions, use the [context menu]({%slug web-sessions-list%}#remove)
+Use the __Remove All__ button to remove __all__ captured traffic from the __Live Traffic__ list. To remove specific selected sessions, use the [context menu]({%slug web-sessions-list%}#remove)
 
-![Remove All button](../../images/livetraffic/websessions/websessions-toolbar-removeall.png)
+
+### Search
+
+Use the __Search__ text input to search for specific values in the URL and the Headers of all sessions. The search action will immediately filter and show all sessions that are containing the search term.
+
 
 ## Live Traffic List
 
@@ -126,6 +122,7 @@ Many operations begin by selecting one or more entries in the Live Traffic and t
 - Double-click or press __Enter__ (__Return__ on Mac) to activate the default inspectors for a single selected Session.
 
 When the Inspectors are activated, they will automatically decide which Inspector is best suited to display the selected session's request and response.
+
 
 ### Live Traffic List Icons
 
@@ -181,7 +178,14 @@ Certain key information is displayed in the columns of Live Traffic, including:
 - __Duration__ - Indicates the duration in miliseconds that took for the session to complete.
 - __Comments__ A field for showing the custom comments added by you (or the author of a shared session).
 
-Each column comes with a **more** button (three vertical dots), which opens a popup with **Filter**  and **Columns** submenus. 
+
+### Live Traffic Sorting
+
+By default, the captured traffic is sorted in the order they appear during the traffic capturing (sort by the unique identification number column). Create a custom sorting order by clicking on the desired column. For example, click on the **URL** column to sort alphabetically based on the URL, or click on the **Body Size** column to sort based on the bytes' session size.
+
+### Filter and Columns Options
+
+Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter**  and **Columns** submenus. 
 
 Use the **Filter** submenu to apply filters for the currently selected column only (e.g., filter all the traffic by _host_ name or by a specific _status code_). Columns with active filters will have a blue filter indicator. You can clear active filters via the **Filter** popup (for the filtered column) or use the global [__Clear All Filters__ button](#clear-all-filters).
 
@@ -300,7 +304,7 @@ _Example for copying full info_
 277 200 HTTP    0.0.0.0:4000    /fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png   GET 207,094 private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate   image/png; charset=utf-8        
 ```
 
-## Add New Rule
+### Add New Rule
 
 A captured session entry can be used to mock some server behavior. For similar cases, the session URL can be used alongside [the Auto Responder]({%slug auto-responder-general%}). Creating Auto Responder rules allows you to test complex scenarios and various mock responses.
 
