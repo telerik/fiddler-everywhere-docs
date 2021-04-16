@@ -28,10 +28,16 @@ The following screenshots represent the Fiddler Everywhere Default Settings.
 
 ![default https settings](../images/kb/default-settings/default-https-settings.png)
 
+>important The default settings are resetting Fiddler to its initial state, thus meaning that the secure traffic won't be captured (until the **Capture HTTPS** is checked)
+
 ### Connection Settings
 
-![default connection settings](../images/kb/default-settings/default-connection-settings.png)
+![default Connection settings](../images/kb/default-settings/default-connection-settings.png)
 
 ### Gateway Settings
 
-![default gateway settings](../images/kb/default-settings/default-gateway-settings.png)
+![default Gateway settings](../images/kb/default-settings/default-gateway-settings.png)
+
+### Composer Settings
+
+![default Composer settings](../images/kb/default-settings/default-composer-settings.png)
