@@ -30,7 +30,7 @@ The following screenshots represent the Fiddler Everywhere Default Settings.
 
 >important The default settings are resetting Fiddler to its initial state, thus meaning that the secure traffic won't be captured (until the **Capture HTTPS** is checked)
 
-### Connection Settings
+## Connection Settings
 
 ![default Connection settings](../images/kb/default-settings/default-connection-settings.png)
 
