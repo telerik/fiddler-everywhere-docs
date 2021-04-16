@@ -20,11 +20,11 @@ res_type: kb
 
 To troubleshoot common issues, resetting the Fiddler Everywhere settings to default values will help.
 
-## Resetting Fiddler Everywhere Settings
+# Resetting Fiddler Everywhere Settings
 
 The following screenshots represent the Fiddler Everywhere Default Settings.
 
-### HTTPS Settings
+## HTTPS Settings
 
 ![default https settings](../images/kb/default-settings/default-https-settings.png)
 
@@ -34,10 +34,10 @@ The following screenshots represent the Fiddler Everywhere Default Settings.
 
 ![default Connection settings](../images/kb/default-settings/default-connection-settings.png)
 
-### Gateway Settings
+## Gateway Settings
 
 ![default Gateway settings](../images/kb/default-settings/default-gateway-settings.png)
 
-### Composer Settings
+## Composer Settings
 
 ![default Composer settings](../images/kb/default-settings/default-composer-settings.png)
