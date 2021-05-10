@@ -5,7 +5,7 @@ slug: configuration-get-started
 tags: configuration, getting started
 publish: true
 position: 30
-previous_url: /user-interface/settings/https
+previous_url: /user-interface/settings/https,/user-guide/settings/https/https-decryption
 ---
 
 # Configuration
