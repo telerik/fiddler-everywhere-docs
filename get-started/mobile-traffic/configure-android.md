@@ -57,6 +57,7 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
     1. Open a browser on the Android device and type the Fiddler echo service address: **http://ipv4.fiddler:8866**
     1. Tap the option to download the certificate.
     1. In the prompt window, enter a certificate name and press **_Save_**.
+    1. Install the downloaded Fiddler certificate in the device certificate storage (the settings location depends on the Android version but usually is located under **_Settings_ > Security > Encryption & Credentials > Install a certificate**)
 
 ## Inspect Browser Traffic
 
