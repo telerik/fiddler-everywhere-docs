@@ -1,9 +1,8 @@
 ---
 title: How to Capture Traffic from Node.js libraries
-description: An article on how to capture HTTP and HTTPS traffic from Node.js libraries
+description: Configuring the FIddler proxy alongside Node.js and capturing HTTPS traffic
 type: how-to
 slug: fiddler-nodejs-traffic
-tags: Fiddler Everywhere NodeJS, capturing Node.js traffic, Node.js HTTP library, Fiddler NodeJS proxy settings, Fiddler Everywhere NodeJS
 publish: true
 res_type: kb
 ---
@@ -21,7 +20,7 @@ res_type: kb
 
 #### Description
 
-Many developers are using **Node.js** libraries that make HTTP and HTTPS requests. This article explains how to proxy these requests so that you could capture and analyze them with FIddler Everywhere.
+Many developers are using Fiddler Everywhere to capture traffic from **Node.js** libraries that make HTTP and HTTPS requests. This article explains how to proxy these requests so that you could capture and analyze them with FIddler Everywhere.
 
 >important Some Node.js modules like [**request**](https://www.npmjs.com/package/request) are reading the proxy information from the windows environment variable ([global proxy settings](#setting-proxy-globally)). Others like the state [**HTTP** module](https://nodejs.org/api/http.html) are not respecting the global proxy configuration (of Node.js), so we need to [proxy their requests explicitly](#setting-proxy-explicitly). The sections that follow below are demonstrating a basic approach for each of the mentioned scenarios.
 
@@ -44,7 +43,7 @@ set http_proxy=
 set NODE_TLS_REJECT_UNAUTHORIZED=
 ```
 
-Alternatively, instead of using the terminal, we could use a simple JavaScript to set the environment variable through code.
+Alternatively, instead of using the terminal, we could use simple JavaScript to set the environment variable through code.
 
 _Example file **fiddler-everywhere-test.js**_
 ```JavaScript
@@ -58,7 +57,7 @@ const setFiddlerPorxy = () => {
     var proxyUrl = url.format(fiddlerProxy);
     env.http_proxy = proxyUrl;
     env.https_proxy = proxyUrl;
-    env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+    env.NODE_TLS_REJECT_UNAUTHORIZED = 0; // Use this only for debugging purposes as it introduces a security issue
 };
 const removeFiddlerProxy = () => {
     env.http_proxy = "";
@@ -76,7 +75,7 @@ removeFiddlerProxy();
 
 ## Setting Proxy Explicitly
 
-The [global proxy settings](#settingproxy-globally) won't work for modules like the [HTTP module](https://nodejs.org/api/http.html), where we need to proxy each individual HTTP request to Fiddler Everywhere. One way to solve that is to explictly set the proxy through the code.
+The [global proxy settings](#settingproxy-globally) won't work for modules like the [HTTP module](https://nodejs.org/api/http.html), where we need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to set the proxy through the code explicitly.
 
 
 _Example file **fiddler-everywhere-test.js**_
@@ -91,6 +90,9 @@ const fiddlerEverywhereProxy = {
     hostname: "127.0.0.1",
     port: 8866,
 };
+
+// Use this only for debugging purposes as it introduces a security issue
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 const setFiddlerProxy = (options) => {
     if (typeof options === "string") { // options can be URL string.
@@ -128,3 +130,7 @@ node fiddler-everywhere-test.js
 As a result, Fiddler Everywhere will capture the request and the response.
 
 ![Successfully captured NodeJS traffic](../images/kb/nodejs/success-capture-nodejs.png)
+
+## Fiddler Everywhere Alongside Node Proxy
+
+After setting the proxy for your Node.js process (no matter if set [globally](#setting-proxy-globally) or [explicitly](#setting-proxy-explicitly)), it is essential to notice that Fiddler Everywhere will immediately start capturing all of the traffic that goes through the Node proxy. There is no need to use the Live Traffic toggle switch. Keeping the Live Traffic switch off will allow you to capture only the process from your Node.js libraries. Turning on the Live Traffic switch will also set Fiddler as a system proxy (and Fiddler will start capturing traffic for all applications using the OS system proxy).
