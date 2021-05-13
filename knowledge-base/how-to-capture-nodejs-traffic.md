@@ -1,6 +1,6 @@
 ---
 title: How to Capture Traffic from Node.js libraries
-description: Configuring the FIddler proxy alongside Node.js and capturing HTTPS traffic
+description: Configuring the Fiddler proxy alongside Node.js and capturing HTTPS traffic
 type: how-to
 slug: fiddler-nodejs-traffic
 publish: true
