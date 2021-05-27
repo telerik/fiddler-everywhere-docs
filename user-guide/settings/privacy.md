@@ -20,6 +20,6 @@ To submit a request to unsubscribe from receiving future emails, click on the __
 
 To submit a request, click on the __Submit "Delete Account" request__ link. You will be redirected to a page where you should follow the given instructions.
 
-## Send anonymous usage statistics
+## Automatically send data to help us improve the product
 
-Check/uncheck the __Send anonymous usage statistics__ option depending on whether you want to send anonymous usage statistics. Once the choice is made, click on __Save Changes__ to apply the change.
+Your information and usage statistics help us understand product usage better and continue building the product you love. To subscribe or unsubscribe from participating in the usage statistics sharing, check/uncheck the __Automatically send data to help us improve the product__ option depending on whether you want to send usage statistics. Once the choice is made, click on __Save__ to apply the change.
