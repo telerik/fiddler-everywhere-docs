@@ -1,5 +1,29 @@
 [
     {
+        "version": "1.6.1-insiders",
+        "title": "Fiddler Everywhere v1.6.1",
+        "date": "May 27, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Unable to set the system proxy on macOS when adapter name has multiple spaces next to each other"
+                    },
+                    {
+                        "title": "Unable to set the system proxy on macOS default Thunderbolt adapters"
+                    },
+                    {
+                        "title": "The system proxy is not respected when starting the application on macOS in some cases"
+                    },
+                    {
+                        "title": "The system proxy is not used for some of the initial requests during application startup"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "1.6.0-insiders",
         "title": "Fiddler Everywhere v1.6.0",
         "date": "April 13, 2021",
