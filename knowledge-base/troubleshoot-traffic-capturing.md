@@ -3,7 +3,6 @@ title: Troubleshoot HTTPS capturing on macOS
 description: An article with troubleshooting tips for traffic capturing with Fiddler Everywhere on macOS
 type: how-to
 slug: troubleshoot-capturing-traffic
-tags: Fiddler Everywhere macOS troubleshoot, macOS Fiddler troubleshooting, Fiddler capturing issues, Fiddler Everywhere cURL, macOS HTTPS traffic
 publish: true
 res_type: kb
 ---
@@ -13,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | Operating System | macOS |
 

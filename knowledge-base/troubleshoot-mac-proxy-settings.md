@@ -1,10 +1,9 @@
 ---
 title: Troubleshoot Mac Proxy Settings
-description: Troubleshooting Mac Proxy Settings will help isolate Issues
+description: Troubleshooting Mac Proxy Settings to isolate issues related to Fiddler Everywhere startup.
 type: troubleshooting
 slug: troubleshoot-mac-proxy-settings
 page_title: Verifying Mac Proxy Settings
-tags: troubleshooting, apple, mac, proxy
 ticketid: 1388381
 publish: true
 res_type: kb
@@ -14,7 +13,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 
 #### Description
@@ -61,6 +60,7 @@ When Fiddler Everywhere is open with the default settings, the System Proxy Sett
 
 ## See Also
 
+*   [Troublshoot Fiddler Everywhere Network Access]({%slug fiddler-test-network-access-macos%})
 *   [Troubleshoot HTTPS capturing on macOS]({%slug troubleshoot-capturing-traffic%})
 *   [Troubleshoot macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
 *	[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)

@@ -1,7 +1,7 @@
 ---
 title: Create API Request
+description: Using the Fiddler's Composer to createa and test API requests
 slug: composer-get-started
-tags: create api request, compose requests, fiddler composer
 publish: true
 position: 80
 ---

@@ -12,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 |---|---|
 | Node.js Module  | http |

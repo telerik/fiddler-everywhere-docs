@@ -1,7 +1,7 @@
 ---
 title: Introduction
+description: Fiddler Everywhere is a high performance, cross-platform web debugging proxy for any browser, system or platform
 slug: introduction
-tags: introduction
 publish: true
 position: 0
 previous_url: /license

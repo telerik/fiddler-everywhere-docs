@@ -3,7 +3,6 @@ title: How to View Web Session Summary
 description: An article on how to capture and inspect web traffic using Fiddler Everywhere
 type: how-to
 slug: how-to-view-web-session-summary
-tags: view web session, session summary, web session summary
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 
 #### Description

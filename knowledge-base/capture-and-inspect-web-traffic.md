@@ -3,7 +3,6 @@ title: How to Capture and Inspect Web Traffic
 description: An article on how to capture and inspect web traffic using Fiddler Everywhere
 type: how-to
 slug: how-to-capture-and-inspect-web-traffic
-tags: capture web traffic, inspect web traffic, web traffic, https, web application
 publish: true
 res_type: kb
 ---
@@ -13,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.2 and above  |
 
 #### Description

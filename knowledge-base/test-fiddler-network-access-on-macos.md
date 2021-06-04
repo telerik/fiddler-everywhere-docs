@@ -1,8 +1,8 @@
 ---
-title: Troubleshoot macOS Proxy Settings Access
+title: Troubleshoot macOS Proxy Settings and Network Access
+description: Use a custom made Shell script to troubleshoot the network access of Fiddler Everywhere
 type: how-to
 slug: fiddler-test-network-access-macos
-tags: Fiddler Everywhere macOS, troubleshooting Fiddler Everywhere, proxy settings issues, Fiddler accessing proxy settings
 publish: true
 res_type: kb
 ---
@@ -12,8 +12,8 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
-| Product Version | 1.0.0 and above  |
+| Product   |
+| Product Version | 1.6.0 and above  |
 |---|---|
 | Operating System  | macOS |
 
@@ -32,10 +32,10 @@ The Fiddler Everywhere client will use the name of the active network adapter (f
     services=$(networksetup -listnetworkserviceorder | sed '1d;s/^([^)]*) \(.*\)$/\1FIDDLER_SEPARATOR/g;s/^.*Device: \([^)]*\))/\1/g;/^$/d' | sed 'N;s/\n//')
 
     while read line; do
-        sname=$(echo $line | awk -F  "FIDDLER_SEPARATOR" '{print $1}')
-        sdev=$(echo $line | awk -F  "FIDDLER_SEPARATOR" '{print $2}')
+        sname=$(echo "$line" | awk -F  "FIDDLER_SEPARATOR" '{print $1}')
+        sdev=$(echo "$line" | awk -F  "FIDDLER_SEPARATOR" '{print $2}')
         if [ -n "$sdev" ]; then
-            ifconfig $sdev 2>/dev/null | grep 'status: active' > /dev/null 2>&1
+            ifconfig "$sdev" 2>/dev/null | grep 'status: active' > /dev/null 2>&1
             rc="$?"
             if [ "$rc" -eq 0 ]; then
                 currentservice="$sname"
@@ -53,7 +53,7 @@ The Fiddler Everywhere client will use the name of the active network adapter (f
 
 3. Execute the **_test.sh_** via the terminal
     ```Console
-    sh <path-to-script>/shell.sh
+    sh <path-to-script>/test.sh
     ```
 
 4. On success, as an output, you should see the name of the active network adapter (for demonstration purposes, we will assume the result is **_Wi-Fi_**). Not being able to get the active network adapter name successfully indicates system restrictions or wrongful network configuration.

@@ -1,8 +1,7 @@
 ---
 title: Configuration
-description: The article lists the Fiddler Everywhere configuration steps for installing and trusting the Fiddler root certificate on different operating systems. The root certificate is needed so that Fiddler Everywhere could act as a MITM and capture HTTPS traffic.
+description: Fiddler Everywhere configuration steps for installing and trusting the Fiddler root certificate on different operating systems
 slug: configuration-get-started
-tags: configuration, getting started
 publish: true
 position: 30
 previous_url: /user-interface/settings/https,/user-guide/settings/https/https-decryption

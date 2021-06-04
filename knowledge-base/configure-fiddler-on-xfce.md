@@ -3,7 +3,6 @@ title: Configure Fiddler Everywhere on XFCE
 description: How to properly configure or fix leaked Fiddler proxy on XFCE and other Linux desktop environments without graphical proxy settings.
 type: how-to
 slug: fiddler-xfce
-tags: Fiddler dconf, fiddler XFCE, Fiddler Everywhere Linux desktop environments, Fiddler Everywhere Xubuntu, Fiddler Ubuntu Studio, Fiddler Kali Linux
 publish: true
 res_type: kb
 ---
@@ -13,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [XFCE](https://aws.amazon.com/cli/) |
 | Supported OS | Linux |

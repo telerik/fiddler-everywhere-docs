@@ -1,9 +1,8 @@
 ---
-title: Localhost Traffic Capturing with Fiddler Everywhere
+title: Localhost Traffic Capturing 
 description: An article on how to capture and inspect localhost traffic using Fiddler Everywhere
 type: how-to
 slug: how-to-capture-localhost-traffic
-tags: view localhost session, localhost traffic, Fiddler Everywhere localhost, Fiddler Everywhere localhost aliases 
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 
 #### Description

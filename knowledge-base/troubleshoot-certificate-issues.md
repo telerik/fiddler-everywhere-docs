@@ -3,7 +3,6 @@ title: Troubleshoot macOS Trust Certificate Issues
 description: An article on how to troubleshoot an issue related to Fiddler's root trust certificate and the related error "Fiddler root certificate NOT trusted successfully".
 type: how-to
 slug: troubleshoot-certificate-error
-tags: Fiddler Everywhere Root Trust Certificate, Fiddler certificate issues, Fiddler MITM certificate, Fiddler macOS certificate, Fiddler macOS Keychain Access
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | Supported OS | macOS |
 | OS tool | Keychain Access |

@@ -1,7 +1,7 @@
 ---
 title: Modify Traffic
+description: Using Fiddler Everywhere to modify captured session headers and bodies.
 slug: modify-traffic-get-started
-tags: edit captured traffic, edit sessions
 publish: true
 position: 60
 ---

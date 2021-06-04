@@ -1,9 +1,8 @@
 ---
-title: Basic Authentication with Fiddler Everywhere
+title: Basic Authentication Requests
 description: This article briefs about the steps of basic authentication with fiddler everywhere.
 type: how-to
 slug: basic-authentication-with-fiddler-everywhere
-tags: basic authentication, fiddler everywhere, authentication with fiddler everywhere
 publish: true
 res_type: kb
 ---
@@ -13,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.1 and above  |
 
 #### Description

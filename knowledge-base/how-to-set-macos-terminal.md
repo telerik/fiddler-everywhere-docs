@@ -3,7 +3,6 @@ title: How to set the Fiddler proxy for terminal apps
 description: An article on how to set the Fiddler Everywhere proxy for terminals
 type: how-to
 slug: fiddler-macos-terminal
-tags: Fiddler Everywhere terminal, Fiddler Everywhere iTerm, Fiddler Everywhere iterm2, Fiddler macOS shell, Fiddler macOS terminal proxy, Fiddler command prompt
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | Operating System | macOS, Windows, Linux  |
 | 3rd-party tools | macOS Terminal, iTerm2, Command Prompt, Bash |
