@@ -57,20 +57,20 @@ Use string literals to create simple match conditions (case-insensitively). The 
 www.example.com/Path1/query=example
 www.example.com/SomethingCompletelyDifferent
 ```
-- __EXAMPLE__ will match all URLs that are containing the keyword (in this case __EXAMPLE__)
+- A basic string value (like __example__) will match all URLs that are containing the value (in this case __example__)
 ```
-www.**example**.com/Path1/
-www.something.com/Path1/query=**Example**
+www.example.com/Path1/
+www.something.com/Path1/query=example
 ```
 - __path1/__ will match all URLs that are containing the path (in this case __path1/__)
 ```
-www.example.com/**Path1/**query=example
-www.example.com/returnUrl=**Path1/**OtherPlace
+www.example.com/path1/query=example
+www.example.com/returnUrl=path1/OtherPlace
 ```
 - __query__ will match all URLs that are containing the key or value keyword (in this case __query__)
 ```
-www.example.com/Path1/q=**Query**
-www.example.com/Path1/**query**=hello
+www.example.com/Path1/q=Query
+www.example.com/Path1/query=hello
 ```
 
 ### NOT rules (for String Literals)
