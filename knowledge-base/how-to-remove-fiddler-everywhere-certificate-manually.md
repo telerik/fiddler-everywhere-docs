@@ -3,7 +3,6 @@ title: How to Remove Fiddler Everywhere Certificate Manually
 description: Steps to remove Fiddler Everywhere certificate from windows and macOS manually
 type: how-to
 slug: how-to-remove-fiddler-everywhere-certificate-manually
-tags: https, remove, https certificate, fiddler everywhere certificate
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 
 #### Description

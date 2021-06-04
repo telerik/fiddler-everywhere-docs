@@ -1,7 +1,7 @@
 ---
 title: Mock Server Response
+description: Learn how to use the Auto Responder to mock different server behavior.
 slug: autoresponder-get-started
-tags: mocking server response, autoresponder, setting response rules, Fiddler Auto Responder
 publish: true
 position: 70
 ---

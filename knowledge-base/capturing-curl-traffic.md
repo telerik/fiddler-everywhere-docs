@@ -1,9 +1,8 @@
 ---
-title: Capturing CURL Traffic with Fiddler Everywhere
+title: Capturing CURL Traffic
 description: An article on how to capture CURL traffic using Fiddler Everywhere
 type: how-to
 slug: how-to-capture-curl-traffic
-tags: Fiddler curl,  Fiddler explicit proxy, CURL, 
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [curl](https://curl.se/docs/manpage.html) |
 | Supported OS | macOS, Linux, Windows |

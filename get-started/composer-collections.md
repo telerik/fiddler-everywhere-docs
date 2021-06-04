@@ -1,7 +1,7 @@
 ---
 title: Organize Requests
+description: Create and share collections of Composer's requests
 slug: composer-collections-get-started
-tags: create composer collections, share composed requests
 publish: true
 position: 90
 ---

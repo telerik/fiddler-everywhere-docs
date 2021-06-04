@@ -3,7 +3,6 @@ title: Redirecting traffic from one server to another via the Auto Responder
 description: An article on how to create match rules and actions to redirect traffic while using regex variables
 type: how-to
 slug: autoresponder-redirect-traffic
-tags: Fiddler Auto Responder redirect, traffic redirect, Auto Responder regex usage, Auto Responder regex variables, Fiddler regex
 publish: true
 res_type: kb
 ---
@@ -13,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 
 #### Description

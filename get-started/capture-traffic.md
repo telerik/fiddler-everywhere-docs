@@ -1,8 +1,7 @@
 ---
 title: Capture Traffic
-description: Capture HTTP/HTTPS traffic with Fiddler Everywhere for macOS, Windows, and Linux. Simply turn on the Live Traffic switch to enhance your web debugging productivity.
+description: Capture HTTP/HTTPS traffic Live Traffic in Fiddler Everywhere for macOS, Windows, and Linux. 
 slug: capture-traffic-get-started
-tags: capturing web traffic, capture sessions, sniffing, captured HTTPS, Fiddler Live Traffic
 publish: true
 position: 40
 ---

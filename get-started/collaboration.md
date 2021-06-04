@@ -1,8 +1,7 @@
 ---
 title: Collaboration
-description: Use the Fiddler Everywhere built-in collaboration functionalities to share and investigate network issues with your team.
+description: Use the Fiddler Everywhere built-in collaboration functionalities to share and investigate network issues with your team
 slug: collaboration-get-started
-tags: Fiddler collaboration, share sessions, share traffic, add collaborators, fiddler users
 publish: true
 position: 100
 ---

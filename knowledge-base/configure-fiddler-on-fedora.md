@@ -3,7 +3,6 @@ title: Configure Fiddler Everywhere on Fedora, CentOS, or RedHat
 description: Instructions for configuring Fiddler Everywhere trust certificate on Fedora, CentOS, RedHat, or any other Linux distribution that uses shared system certificates storage.
 type: how-to
 slug: fiddler-fedora-centos
-tags: Fiddler shared system certificates storage, Fiddler Everywhere Fedora, Fiddler Everywhere Red Hat, Fiddler Everywhere Xubuntu, Fiddler CentOS
 publish: true
 res_type: kb
 ---
@@ -13,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [Shared System Certificates storage](https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/) |
 | Supported OS | Fedora, CentOS, RedHat, and others |

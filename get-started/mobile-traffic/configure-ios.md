@@ -1,9 +1,8 @@
 ---
 title: Capture and Inspect iOS Traffic
-description: An article on how to capture and inspect traffic from iOS device while using Fiddler Everywhere
+description: Capture and inspect traffic from iOS device while using Fiddler Everywhere
 type: how-to
 slug: capture-mobile-ios-traffic
-tags: capture iOS traffic, inspect iOS traffic, mobile traffic, https, iOS application, Fiddler Everywhere iOS
 publish: true
 position: 20
 previous_url: /knowledge-base/configure-ios
@@ -13,7 +12,7 @@ previous_url: /knowledge-base/configure-ios
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 
 #### Description

@@ -1,9 +1,8 @@
 ---
-title: Capturing AWS Traffic with Fiddler Everywhere
+title: Capturing AWS Traffic
 description: An article on how to capture Amazon Web Services traffic using Fiddler Everywhere
 type: how-to
 slug: how-to-capture-aws-traffic
-tags: Fiddler AWS,  Fiddler AWS Command Line Interface, Amazon Web Services traffic, Fiddler Everywhere Amazon Web Services, AWS CA Bundle, Fiddler Amazon certificate, AWS CLI Fiddler
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [AWS CLI](https://aws.amazon.com/cli/) |
 | Supported OS | macOS, Linux, Windows |

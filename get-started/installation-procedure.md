@@ -1,9 +1,8 @@
 ---
 title: Installation
+description: Basic requirements and installation procedure for Fiddler Everywhere
 previous_url: /getting-started/installation, /installation/installation-procedure
 slug: installation
-tags: installation, accounts, updates
-publish: true
 position: 10
 ---
 

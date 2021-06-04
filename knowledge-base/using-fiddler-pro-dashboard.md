@@ -13,7 +13,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere PRO |
+| Product  PRO |
 | Product Version | 1.0.0 and above  |
 | Admin Panel Address | https://dashboard.getfiddler.com  |
 

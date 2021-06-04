@@ -3,7 +3,6 @@ title: Configuring Java application alongside Fiddler Everywhere
 description: Configure Java application to send traffic to the Fiddler Everywhere proxy and use the Fiddler root trust certificate for secure traffic.
 type: how-to
 slug: configure-java-fiddler-everywhere
-tags: Java application Fiddler Everywhere, JRE Fiddler, DproxySet Fiddler Everywhere
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool| Java Virtual Machine, Java applications |
 

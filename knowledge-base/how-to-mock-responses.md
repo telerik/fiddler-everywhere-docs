@@ -3,7 +3,6 @@ title: How to Create Custom Responses
 description: An article on creating manually crafted responses, mock status codes, and use external files with predefined responses.
 type: how-to
 slug: using-custom-responses
-tags: Fiddlermanually crafted response, Fiddler Everywhere dat file, mocking status codes, modifying server response, Auto Responder files, DAT files
 publish: true
 res_type: kb
 ---
@@ -13,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 
 #### Description

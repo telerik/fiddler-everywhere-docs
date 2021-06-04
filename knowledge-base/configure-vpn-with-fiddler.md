@@ -3,7 +3,6 @@ title: Configuring Fiddler Everywhere alongside Cisco AnyConnect
 description: An article explaining how to use Cisco AnyConnect alongside Fiddler Everywhere
 type: how-to
 slug: configure-vpn-fiddler
-tags: VPN Fiddler Everywhere, Cisco VPN Fiddler, capturing VPN traffic, Fiddler VPN configuration, VPN bypass, connections bypass list, Fiddler connections bypass, Fiddler Cisco AnyConnect
 publish: true
 res_type: kb
 ---
@@ -12,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.1.0 and above  |
 | 3rd-party tool| [Cisco AnyConnect](https://www.cisco.com/c/en/us/products/security/anyconnect-secure-mobility-client/index.html) |
 

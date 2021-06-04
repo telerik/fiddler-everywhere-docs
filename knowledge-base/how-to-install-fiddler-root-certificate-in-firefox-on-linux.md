@@ -3,7 +3,6 @@ title: How to Install Fiddler Root Certificate in Firefox on Linux
 description: An example on how to install Fiddler root certificate in Firefox on Linux
 type: how-to
 slug: how-to-install-fiddler-root-certificate-in-firefox-on-linux
-tags: https, install, root certificate, firefox
 publish: true
 res_type: kb
 ---
@@ -13,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Fiddler Everywhere  |
+| Product   |
 | Product Version | 1.0.0 and above  |
 | OS | Linux |
 

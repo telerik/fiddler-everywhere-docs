@@ -1,7 +1,7 @@
 ---
 title: Inspect Traffic
+description: Use the Inspectors tab to deep-dive in the captured session's headers and bodies.
 slug: inspecting-traffic-get-started
-tags: inspecting web traffic, inspect sessions,analyzing captured traffic, Fiddler inspectors
 publish: true
 position: 50
 ---
