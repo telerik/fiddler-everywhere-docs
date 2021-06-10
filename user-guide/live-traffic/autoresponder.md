@@ -1,7 +1,7 @@
 ---
 title: Auto Responder
+description: UI instructions for working with the Auto Responder tab in the Fiddler Everywhere application
 slug: auto-responder-general
-tags: Fiddler Auto Responder, custom HTTP responses, auto responder, mock server response, Fiddler's rules
 publish: true
 position: 30
 ---

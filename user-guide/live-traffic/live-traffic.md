@@ -1,7 +1,7 @@
 ---
 title: Live Traffic
+description: UI instructions for working with the Live Traffic tab in the Fiddler Everywhere application
 slug: web-sessions-list
-tags: Fiddler Live Traffic, sniffed traffic, captured web traffic, sessions, fiddler sessions, share sessions, http sessions, 
 publish: true
 position: 10
 previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar

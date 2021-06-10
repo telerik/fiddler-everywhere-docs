@@ -1,7 +1,7 @@
 ---
 title: Inspectors
+description: UI instructions for working with the Inspectors tab in the Fiddler Everywhere application
 slug: inspector-types
-tags: Fiddler inspectors types, request, response, HTTP headers, secure requests, headers, text, webforms, form data, cookies, raw, XML, preview responses, HTML responses
 publish: true
 position: 20
 previous_url: /user-guide/live-traffic/inspectors/request-inspector

@@ -83,7 +83,7 @@ Many Linux distributions are using different security features and different way
 
 1. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
 
-    ![Enable capturing HTTPS traffic](../images/configuration/cert_ubunto_005.png)
+    ![Enable capturing HTTPS traffic](../images/settings/settings-trust-root-certificate.png)
 
 1. Click the __Save__ button to save the changes.
 
