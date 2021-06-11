@@ -9,6 +9,19 @@ position: 15
 
 # Overview Tab
 
+The **Overview** tab provides an easy way for the user to get structured information and different statistic data for one or more captured sessions. The tab is available for captured session in the [**Live Traffic** tab]({%slug web-sessions-list%}) and for all entries in the [**Sessions** list]({%slug saved-sessions-tab%}).
+
+The **Overview** tab has several widgets:
+
+When a single session is selected, the following widgets should be visible:
+
+- [Timings](#timings)
+- [Sizes](#sizes)
+- [Statistics](#statistics) (available for multiple sessions selection only)
+- [Request Details](#request-details) (available for single session selection only)
+- [Response Details](#response-details) (available for single session selection only)
+
+
 ## Timings
 
 In this widget we want to show a visual presentation of the time it took to execute each step of the request and response. By default, the used chart should be split into two parts - one for the request and another one for the response. The header must contain the information for the total time that it took for execution, i.e. from beginning of the request till the end of the response. The header must have a tooltip describing what is this value. The time must be the same as the duration time in the sessions grid. In case multiple sessions are selected, the header must show the time from start of the first request till the end of the last received response.
