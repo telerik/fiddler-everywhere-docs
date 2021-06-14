@@ -24,12 +24,11 @@ When a single session is selected, the following widgets should be visible:
 
 ## Timings
 
-The **Timings** widget provides a visual representation of the time needed to execute a single session or a selection of multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart presentation of the request and response timings.
+The **Timings** widget provides a visual representation of the time needed to execute a single session or a selection of multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart of the request and response timings. 
 
-The session URL maximum length is 30 symbols. Use the three dots at the end of the wrapped URL to visualize a tooltip with the entire session URL. The timings chart is split into two main parts - the blue section of chart is related to the request, and the orange section of the charts is related to the response. Each sub chart section has a tooltip with descriptive information about the visualized timing.
+The URL maximum length is 30 symbols. Use the three dots at the end of the wrapped URL to visualize a tooltip with the entire session URL. The timings chart is split into two main parts - the blue section of chart is shwoing timings related to the request, and the orange section of the charts is showing timings related to the response. Each sub-chart section has a tooltip with descriptive information about the visualized timing.
 
-Full list of tracked timing events (both request and response timings).
-
+Full list of tracked timing events (both request and response timings):
 - Gateway Determination Time
 - DNS Time
 - TCP Connect Time
@@ -48,6 +47,10 @@ Full list of tracked timing events (both request and response timings).
 - Client Done Response
 
 
+Below the list of session lines, you will find two footers called **Request** (light blue) and **Response** (orange) with total timings in milliseconds (**ms**) or in seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the Live Traffic list, the displayed time in the **Request** and **Response** footers is the total time taken for all five selected requests/responses.
+
+![Timings widget](../images/overview/overview-timings.png)
+
 <!-- JIRA Description below
 
 ??? The header must contain the information for the total time that it took for execution, i.e. from beginning of the request till the end of the response. The header must have a tooltip describing what is this value. The time must be the same as the duration time in the sessions grid. In case multiple sessions are selected, the header must show the time from start of the first request till the end of the last received response.
@@ -63,21 +66,35 @@ Full list of tracked timing events (both request and response timings).
 
 ## Sizes
 
-This widget must show sizes of the headers and body of request and response, each included in a single chart. The header must contain the information for the total size. The header must have a tooltip describing what is this value.
-Each session should be presented with a URL, with three dots at the end if the length is above 30 symbols (check if this number is okay based on the implementation). 
+The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart that shows sizes of the headers and body of request and response, each included in a single chart. 
+
+The URL maximum length is 30 symbols. Use the three dots at the end of the wrapped URL to visualize a tooltip with the entire session URL.
+
+Full list of tracked sizes:
+- Request Headers
+- Request Body
+- Response Headers
+- Response Body
+
+
+Below the list of session lines, you will find fpur footers called **Request Headers** (dark blue), **Request Body** (light blue), **Response Headers** (red) and **Response Body** (orange) with the total size in kilobytes (**kB**) or bytes (**B**) for all listed sessions.
+
+![Sizes widget](../images/overview/overview-sizes.png)
+
+<!--
+
+??? The header must contain the information for the total size. The header must have a tooltip describing what is this value.
+
 The labels for Request Headers, Request Body, Response Headers and Response Body must show the actual size. When multiple sessions are selected we can show the sum of each one in the label or we can hide the values from the labels.
+
 Each chart part must have tooltips with information what is this, for example for the request headers it should be Size of request headers: 200bytes.
 When multiple sessions are selected, the chart sizes must be adjusted based on the largest one. I.e. others should be shown as percentage of this size, so they should be shorter in terms of the used chart.
 
-```
-Request Headers
+-->
 
-Request Body
 
-Response Headers
+## Statistics
 
-Response Body
-```
 
 ## Request Details
 
