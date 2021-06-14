@@ -24,11 +24,22 @@ When a single session is selected, the following widgets should be visible:
 
 ## Timings
 
-In this widget we want to show a visual presentation of the time it took to execute each step of the request and response. By default, the used chart should be split into two parts - one for the request and another one for the response. The header must contain the information for the total time that it took for execution, i.e. from beginning of the request till the end of the response. The header must have a tooltip describing what is this value. The time must be the same as the duration time in the sessions grid. In case multiple sessions are selected, the header must show the time from start of the first request till the end of the last received response.
-Each session should be presented with a URL, with three dots at the end if the length is above 30 symbols (check if this number is okay based on the implementation). 
-When a single session is selected, an arrow must be shown on the lef of the URL. Expanding it must open a waterfall presentation of each available timing steps. NOTE: For each session the steps might be different.
-When multiple sessions are selected we should not have an expander for the moment.
+The **Timings** widget provides a visual representation of the time needed to execute a single session or selection of multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart presentation of the request and response timings.
+
+The session URL maximum length is 30 symbols. Use the three dots at the end of the length to visualize a tooltip with the entire session URL.
+
+The timings chart is split into two main parts. The blue chart parts are request-related, and the orange chart parts are response-related.
+
+<!-- JIRA Description below -->
+
+??? The header must contain the information for the total time that it took for execution, i.e. from beginning of the request till the end of the response. The header must have a tooltip describing what is this value. The time must be the same as the duration time in the sessions grid. In case multiple sessions are selected, the header must show the time from start of the first request till the end of the last received response.
+
+??? When a single session is selected, an arrow must be shown on the lef of the URL. Expanding it must open a waterfall presentation of each available timing steps. NOTE: For each session the steps might be different.
+
+??? When multiple sessions are selected we should not have an expander for the moment.
+
 The labels for Request and Response must show the full time required to execute each of the step. I.e. from the moment when request started till the end of the request. When multiple sessions are selected we can show the time for execution from first request till the end of the latest request (similar for response) or we can hide the values from the labels.
+
 Each chart part must have tooltips with information what is this, for example for the request it should be Time for request execution: 5ms.
 When session is expanded, each step in the waterfall must have a tooltip describing what is this.
 
