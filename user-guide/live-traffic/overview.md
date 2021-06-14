@@ -24,13 +24,31 @@ When a single session is selected, the following widgets should be visible:
 
 ## Timings
 
-The **Timings** widget provides a visual representation of the time needed to execute a single session or selection of multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart presentation of the request and response timings.
+The **Timings** widget provides a visual representation of the time needed to execute a single session or a selection of multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart presentation of the request and response timings.
 
-The session URL maximum length is 30 symbols. Use the three dots at the end of the length to visualize a tooltip with the entire session URL.
+The session URL maximum length is 30 symbols. Use the three dots at the end of the wrapped URL to visualize a tooltip with the entire session URL. The timings chart is split into two main parts - the blue section of chart is related to the request, and the orange section of the charts is related to the response. Each sub chart section has a tooltip with descriptive information about the visualized timing.
 
-The timings chart is split into two main parts. The blue chart parts are request-related, and the orange chart parts are response-related.
+Full list of tracked timing events (both request and response timings).
 
-<!-- JIRA Description below -->
+- Gateway Determination Time
+- DNS Time
+- TCP Connect Time
+- HTTPS Handshake Time
+- Client Connected
+- Client Begin Request
+- Fiddler Got Request Headers
+- Client Done Request
+- Server Connected
+- Fiddler Begin Request
+- Server Got Request
+- Server Begin Response
+- Fiddler Got Response Headers
+- Server Done Response
+- Client Begin Response
+- Client Done Response
+
+
+<!-- JIRA Description below
 
 ??? The header must contain the information for the total time that it took for execution, i.e. from beginning of the request till the end of the response. The header must have a tooltip describing what is this value. The time must be the same as the duration time in the sessions grid. In case multiple sessions are selected, the header must show the time from start of the first request till the end of the last received response.
 
@@ -38,10 +56,10 @@ The timings chart is split into two main parts. The blue chart parts are request
 
 ??? When multiple sessions are selected we should not have an expander for the moment.
 
-The labels for Request and Response must show the full time required to execute each of the step. I.e. from the moment when request started till the end of the request. When multiple sessions are selected we can show the time for execution from first request till the end of the latest request (similar for response) or we can hide the values from the labels.
+??? The labels for Request and Response must show the full time required to execute each of the step. I.e. from the moment when request started till the end of the request. When multiple sessions are selected we can show the time for execution from first request till the end of the latest request (similar for response) or we can hide the values from the labels.
 
-Each chart part must have tooltips with information what is this, for example for the request it should be Time for request execution: 5ms.
-When session is expanded, each step in the waterfall must have a tooltip describing what is this.
+ -->
+
 
 ## Sizes
 
@@ -51,6 +69,15 @@ The labels for Request Headers, Request Body, Response Headers and Response Body
 Each chart part must have tooltips with information what is this, for example for the request headers it should be Size of request headers: 200bytes.
 When multiple sessions are selected, the chart sizes must be adjusted based on the largest one. I.e. others should be shown as percentage of this size, so they should be shorter in terms of the used chart.
 
+```
+Request Headers
+
+Request Body
+
+Response Headers
+
+Response Body
+```
 
 ## Request Details
 
