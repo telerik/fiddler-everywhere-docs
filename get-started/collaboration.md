@@ -35,13 +35,12 @@ Share a session with a collaborator while following these steps:
     - [Sessions list]({%slug saved-sessions-tab%}) provides **Share** functionality via dedicated button. The list contains previously saved sessions or sessions shared with the user. Press the **Share** button to prompt a window for entering share related information.
     - [Context menu]({%slug web-sessions-list%}#live-traffic-context-menu) allows you to export different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
 
->important The Fiddler Everywhere free version has a quota for sharing sessions with collaborators. Check [the advantages provided by Fiddler Everywhere Pro]({%slug introduction%}#fiddler-everywhere-pro), which significantly extends the collaboration quotas.
 
 ### Delete Shared Sessions
 
 With version 1.1.0 of Fiddler Everywhere, the user has options to delete previously shared sessions. The sessions can be deleted from the **Sessions** list via the **Delete** button. All users added as collaborators will be notified that the shared session is now deleted [via the notification bar and an email message](#notifications-for-shared-content). Deleted sessions can be restored via the [**Shared Sessions** option]({%slug saved-sessions-tab%}#shared-sessions).
 
->tip Deleting previously shared sessions will free your sharing quotas. Learn more about the quotas for the free and pro versions of Fiddler everywhere via [the comparison table]({%slug introduction%}#fiddler-everywhere-pro).
+>tip Deleting previously shared sessions will free your sharing quotas. Learn more about the quotas in Fiddler everywhere via [the comparison table]({%slug introduction%}#key-features).
 
 ## Add Context for Teammates
 

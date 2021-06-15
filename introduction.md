@@ -31,26 +31,25 @@ Use Fiddler API Composer to test APIs by creating and sending requests. Useful w
 - Inspect web traffic (HTTP & HTTPS).
 - Decrypt secure traffic (HTTPS).
 - Save, share, and receive captured traffic with collaborators.
-- Mock requests and responses
-- Modify response
-- Compose API requests
-- Save composed API requests
-- [Fiddler Everywhere Pro](#fiddler-everywhere-pro) features with extended sharing and collaboration options.
+- Mock requests and responses.
+- Modify requests and responses.
+- Compose new and edit existing API requests.
+- Save and share composed API requests.
+- Extended sharing and collaboration options.
+- Modern intuituve UI with multiple themes.
 
-## Fiddler Everywhere Pro
+The **Fiddler Everywhere** features are subject to some pre-defined limitations. Refer to the table below for details about the **Fiddler Everywhere Pro** subscription plan.
 
-All Fiddler Everywhere features are available in both the **Free** and the **Pro** version. However, the **Fiddler Everywhere Pro** version extends the free version's sharing and collaboration options. The free version has some limitations related to sharing quotas. Refer to the table below for a detailed comparison of the Free versus Pro versions.
-
-| __Features__ |  __Free__ | __Pro__ |
-|---|---|---|
-| Capture and Inspect Traffic | **Unlimited** | **Unlimited** |
-| Creating Composer Requests | **Unlimited** | **Unlimited** |
-| Using Rules Builder Rules | Up to 5 enabled rules | **Unlimited** |
-| Sharing Rules Builder Rules | Up to 5 rules | **Unlimited** |
-| Creating Saved Sessions entries * | Up to 5 sessions | **Unlimited** |
-| Sharing Saved Sessions | Up to 5 sessions (with up to one user) | 1000 sessions  |
-| Shared Session Size | Max 5 MB | Max **50 MB** |
-| Email Support | - | **Unlimited*** |
+| __Features__ |  __Pro__ |
+|---|---|
+| Capture and Inspect Traffic |  **Unlimited** |
+| Creating Composer Requests | **Unlimited** |
+| Using Rules Builder rules |  **Unlimited** |
+| Sharing Rules Builder rules | **Unlimited** |
+| Creating Saved Sessions entries * |  **Unlimited** |
+| Sharing Saved Sessions |  1000 sessions  |
+| Shared Session Size |  Max **50 MB** |
+| Email Support | **Unlimited*** |
 
 *subject to fair usage policy. Learn more about the support offering [here]({%slug support-page%}).
 
@@ -58,10 +57,10 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 
 #### Trial version
 
-To try Fiddler Everywhere PRO for FREE for 30 days, press the **Upgrade** button and press **TRY PRO FOR 30 DAYS**. An **Upgrade Successful** prompt window confirms your trial subscriptions. The trial activation does not require a credit card or any other additional information.
+To try Fiddler Everywhere for 30 days, press the **Upgrade** button and press **TRY PRO FOR 30 DAYS**. An **Upgrade Successful** prompt window confirms your trial subscriptions. The trial activation does not require a credit card or any other additional information. The trial version activates all the perks of the [**Fiddler Everywhere Pro** subscription plan](#key-features).
 
 
-#### Fiddler Everywhere PRO Dashboard
+#### Fiddler Everywhere Dashboard
 
 More information on how to manage your plans and subscriptions via the Fiddler Everywhere dashboard panel can be found [here]({%slug fiddler-dashboard%}).
 

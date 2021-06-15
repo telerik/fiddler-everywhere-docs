@@ -29,7 +29,7 @@ The **View** menu provides options to change the overall Fiddler Everywhere UI s
 
 ## Help
 
-The **Help** menu provides several options for version update and information, fast access to forums, documentation and support channel. The support option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) verison.
+The **Help** menu provides several options for version update and information, fast access to forums, documentation and support channel. The support option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) verison.
 
 ![Check for updates](../images/menu/menu-help-update.png)
 
@@ -58,21 +58,17 @@ The **About** command opens a dialog window that provides information about the 
 
 ### Contact Support
 
-The **Contact Support** is available only for [Fiddler Everywhere PRO]({%slug introduction%}#fiddler-everywhere-pro) version (including the Trial PRO version). The option uses the operating system default email client.
+The **Contact Support** is available for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) version (including the **Trial** version). The option uses the operating system default email client.
 
 ## Plan Information
 
-The plan information window will provide information about the current user plan usage limits and quotas. The plan button and windows will differ depending on whether the currently logged user uses **Free**, **Trial**, or **Pro** plan. 
-
-- **Free plan** window. Invoke the plan details window via the orange drop-down arrow. Use the **Upgrade** button to load [the **Upgrade to Pro plan** page](https://dashboard.getfiddler.com/purchase?source=fe).
-
-    ![Free plan window and button](../images/menu/free-plan-window.png)
+The plan information window will provide information about the current user plan usage limits and quotas. The plan button and windows will differ depending on whether the currently logged user uses the **Trial** or the **Pro** plan. 
 
 - **Pro plan** window. Invoke the plan details window via the green drop-down arrow. Use the **PRO Plan** button to load [the account dashboard page](https://dashboard.getfiddler.be/myaccount). Find more information about the dashboard options [here]({%slug fiddler-dashboard%}).
 
     ![Pro plan window and button](../images/menu/pro-plan-window.png)
 
->tip Refer to [the comparison table]({%slug introduction%}#fiddler-everywhere-pro) to uncover the perks of using the Fiddler Everywhere Pro version.
+>tip Refer to [the comparison table]({%slug introduction%}#key-features) to uncover the perks of using the Fiddler Everywhere Pro version.
 
 
 ## Share Feedback
