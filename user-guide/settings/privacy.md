@@ -1,7 +1,7 @@
 ---
 title: Privacy
+description: Privacy settings the in Fiddler Everywhere application
 slug: privacy-submenu
-tags: privacy, delete account, unsubscribe, email list
 publish: true
 position: 40
 ---
@@ -10,7 +10,7 @@ position: 40
 
 The __Privacy__ sub-menu contains options to opt-out of receiving emails from Progress and its partners and the opportunity to request the deletion of your Fiddler Everywhere associated account.
 
-![Privacy settings](../../images/settings/privacy-all.png)
+![Privacy settings](../../images/settings/settings-privacy.png)
 
 ## Unsubscribe from emails
 

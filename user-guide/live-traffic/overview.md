@@ -49,7 +49,7 @@ Full list of tracked timing events (both request and response timings):
 
 Below the list of session lines, you will find two footers called **Request** (light blue) and **Response** (orange) with total timings in milliseconds (**ms**) or in seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the Live Traffic list, the displayed time in the **Request** and **Response** footers is the total time taken for all five selected requests/responses.
 
-![Timings widget](../images/overview/overview-timings.png)
+![Timings widget](../../images/overview/overview-timings.png)
 
 <!-- JIRA Description below
 
@@ -79,7 +79,7 @@ Full list of tracked sizes:
 
 Below the list of session lines, you will find fpur footers called **Request Headers** (dark blue), **Request Body** (light blue), **Response Headers** (red) and **Response Body** (orange) with the total size in kilobytes (**kB**) or bytes (**B**) for all listed sessions.
 
-![Sizes widget](../images/overview/overview-sizes.png)
+![Sizes widget](../../images/overview/overview-sizes.png)
 
 <!--
 

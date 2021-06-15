@@ -45,8 +45,8 @@ All Fiddler Everywhere features are available in both the **Free** and the **Pro
 |---|---|---|
 | Capture and Inspect Traffic | **Unlimited** | **Unlimited** |
 | Creating Composer Requests | **Unlimited** | **Unlimited** |
-| Using Auto Responder Rules | Up to 5 enabled rules | **Unlimited** |
-| Sharing Auto Responder Rules | Up to 5 rules | **Unlimited** |
+| Using Rules Builder Rules | Up to 5 enabled rules | **Unlimited** |
+| Sharing Rules Builder Rules | Up to 5 rules | **Unlimited** |
 | Creating Saved Sessions entries * | Up to 5 sessions | **Unlimited** |
 | Sharing Saved Sessions | Up to 5 sessions (with up to one user) | 1000 sessions  |
 | Shared Session Size | Max 5 MB | Max **50 MB** |

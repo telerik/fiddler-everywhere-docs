@@ -1,22 +1,23 @@
 ---
-title: Auto Responder
-description: UI instructions for working with the Auto Responder tab in the Fiddler Everywhere application
-slug: auto-responder-general
+title: Rules Builder
+description: UI instructions for working with the Rules Builder tab in the Fiddler Everywhere application
+slug: rules-builder-general
 publish: true
 position: 30
+previous_url: /user-guide/live-traffic/autoresponder
 ---
 
-# Auto Responder Tab
+# Rules Builder Tab
 
-The **Auto Responder** is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
+The **Rules Builder** is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
 
 ![AutoResponder button](../../images/livetraffic/autoresponder/autoresponder-main-all.png)
 
-The [**Auto Responder Rules Editor**]({%slug auto-responder-general%}#rules-editor)  allows you to create new rules and edit existing ones.
+The [**Rules Builder Rules Editor**]({%slug rules-builder-general%}#rules-editor)  allows you to create new rules and edit existing ones.
 
-The [Auto Responder Queue Viewer]({%slug auto-responder-general%}#queue-viewer) lists the currently used rules and provides additional control over them. The tab also exposes options to import/export rules files (__FARX__), to change the priority of the rules (of execution) and to entirely enable/disable the __Auto Responder__ or specific rules.
+The [Rules Builder Queue Viewer]({%slug rules-builder-general%}#queue-viewer) lists the currently used rules and provides additional control over them. The tab also exposes options to import/export rules files (__FARX__), to change the priority of the rules (of execution) and to entirely enable/disable the __Rules Builder__ or specific rules.
 
->tip You need to enable Live Traffic _Capturing_ to be able to apply Auto Responder rules.
+>tip You need to enable Live Traffic _Capturing_ to be able to apply Rules Builder rules.
 
 ## Rules Editor
 
@@ -40,8 +41,8 @@ The __Rules Editor__ interface enables creating and editing rules. You need to e
 
     >Tips:
     - Rules are applied in the order that they appear in the __Queue Viewer__. Hit the __Down Arrow__ to demote a rule.
-    - You can export the current queue of rules [via the __Export__ button]({%slug auto-responder-general%}#export-rules) from the __Queue Viewer__ toolbar.
-    - You can import a __*.FARX__ file [via the __Import__ button]({%slug auto-responder-general%}#import-rules) to queue rules based on previously captured traffic.
+    - You can export the current queue of rules [via the __Export__ button]({%slug rules-builder-general%}#export-rules) from the __Queue Viewer__ toolbar.
+    - You can import a __*.FARX__ file [via the __Import__ button]({%slug rules-builder-general%}#import-rules) to queue rules based on previously captured traffic.
 
 
 ## Match Rules
@@ -141,11 +142,11 @@ www.example.com/Path1/query=foo.JPG // (No Match - mismatched case)
 www.example.com/Path1/query=somegif.gif // (MATCH)
 ```
 
-The standard regex implementation also allows using regex variables. An example of creating a redirect while using automatically created regex variables can be found in [this KB article]({%slug autoresponder-redirect-traffic%}#redirect-with-regex).
+The standard regex implementation also allows using regex variables. An example of creating a redirect while using automatically created regex variables can be found in [this KB article]({%slug rulesbuilder-redirect-traffic%}#redirect-with-regex).
 
 ## Action Strings
 
-When Fiddler Everywhere identifies a request which matches the Auto Responder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files or predefined responses, the __Auto Responder__ can perform some specific actions:
+When Fiddler Everywhere identifies a request which matches the Rules Builder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files or predefined responses, the __Rules Builder__ can perform some specific actions:
 
 
 | Action String     | Description | Action Type |
@@ -163,11 +164,11 @@ When Fiddler Everywhere identifies a request which matches the Auto Responder **
 | __Return manually crafted response__ | [Allows modifying the current response]({%slug fiddler-ar-actions%}#custom-http-response) (HTML, JS, JSON) previously returned by the server. | Final |
 | __Choose saved response file...__ | The __Choose saved response file..…__ option in the Actions dropdown displays a file picker to allow you to select [a DAT file that contains modified HTTP response]({%slug fiddler-ar-actions%}#custom-dat-file).| Final |
 
-__Rules with Non-final__ actions will allow the request to match multiple Auto Responder rules. As soon a rule specifying a final action is reached, the matching process exists, and no further rules are processed for that session.
+__Rules with Non-final__ actions will allow the request to match multiple Rules Builder rules. As soon a rule specifying a final action is reached, the matching process exists, and no further rules are processed for that session.
 
 ## Queue Viewer
 
-The __Queue Viewer__ (a.k.a. __Queue Rules Viewer__) interface is a queue of the created Auto Responder rules. The __Queue Viewer__ allows the listed rules to be enabled and disabled, to be promoted and demoted (by changing their queue position), to be edited, to be exported and imported. The option to enable the __Auto Responder__ and to allow a non-matching request to pass-through is also part of the __Queue Viewer__.
+The __Queue Viewer__ (a.k.a. __Queue Rules Viewer__) interface is a queue of the created Rules Builder rules. The __Queue Viewer__ allows the listed rules to be enabled and disabled, to be promoted and demoted (by changing their queue position), to be edited, to be exported and imported. The option to enable the __Rules Builder__ and to allow a non-matching request to pass-through is also part of the __Queue Viewer__.
 
 ### Rules Grouping & Priority
 
@@ -183,31 +184,31 @@ Use __Group/Ungroup__ toggle button to create croups for selected rules in the q
 
 ### Enable Auto Responses
 
-Use the __Enable Auto Responses__ checkbox to activate the __Auto Responder__. Note that __Live Traffic__ switch should also be turned on to _Capturing_ mode.
+Use the __Enable Auto Responses__ checkbox to activate the __Rules Builder__. Note that __Live Traffic__ switch should also be turned on to _Capturing_ mode.
 
-![Enable Auto Responder](../../images/livetraffic/autoresponder/autoresponder-enable.png)
+![Enable Rules Builder](../../images/livetraffic/autoresponder/autoresponder-enable.png)
 
 ### Import Rules
 
-You can import rules from a __FARX__ (Fiddler Auto Responder XML) file. The __FARX__ file contains a set of previously created Auto Responder rules. Your current set of rules is automatically saved on exit and reloaded when you start Fiddler Everywhere again.
+You can import rules from a __FARX__ (Fiddler Rules Builder XML) file. The __FARX__ file contains a set of previously created Rules Builder rules. Your current set of rules is automatically saved on exit and reloaded when you start Fiddler Everywhere again.
 
 Use the __Import__ button to provide a FARX file that contains the set of rules.
 ![Import rules](../../images/livetraffic/autoresponder/autoresponder-rules-import.png)
 
 ### Export Rules
 
-You can export rules in a FARX file (Fiddler Auto Responder XML). The exported file can be easily reused via the [import functionality](#import-rules).
+You can export rules in a FARX file (Fiddler Rules Builder XML). The exported file can be easily reused via the [import functionality](#import-rules).
 
 Use the __Export__ button to create a FARX file that contains the set of rules.
 ![Export rules](../../images/livetraffic/autoresponder/autoresponder-rules-export.png)
 
 ### Unmatched Requests Passthrough
 
-The __Unmatched Requests Passthrough__ option controls what happens when a Session does not match any of the applied rules. When the checkbox is checked, the unmatched requests are sent to the server normally, without any interference from the Auto Responder. When the option is OFF (the checkbox is unchecked), Fiddler will generate a __404__ Not Found response for any _unconditional_ requests that are not matching the applied rules.
+The __Unmatched Requests Passthrough__ option controls what happens when a Session does not match any of the applied rules. When the checkbox is checked, the unmatched requests are sent to the server normally, without any interference from the Rules Builder. When the option is OFF (the checkbox is unchecked), Fiddler will generate a __404__ Not Found response for any _unconditional_ requests that are not matching the applied rules.
 
 ![Export rules](../../images/livetraffic/autoresponder/autoresponder-passthrough.png)
 
->important By default, when the __Auto Responder__ is enabled, the __Unmatch Requests Passthrough__ option is turned off, meaning that all unmatched requests will start to fail with a __404 (Fiddled)__ response.
+>important By default, when the __Rules Builder__ is enabled, the __Unmatch Requests Passthrough__ option is turned off, meaning that all unmatched requests will start to fail with a __404 (Fiddled)__ response.
 
 For example, Fiddler generated a 404 response due to a request that is not matching the applied rules when __Unmatch Requests Passthrough__ option is turned off.
 ![Unmatched Request](../../images/livetraffic/autoresponder/autoresponder-umatched-passnot.png)
@@ -224,7 +225,7 @@ Each rule present in the __Queue Viewer__ can be controlled via the following op
 
 - __Demote__ lowers the priority of the specified rule in the queue.
 
-- __Edit__ opens the specified rule in the [__Rules Editor__]({%slug auto-responder-general%}) where it can be edited and saved.
+- __Edit__ opens the specified rule in the [__Rules Editor__]({%slug rules-builder-general%}) where it can be edited and saved.
 
 - __Delete__ deletes the specified rule permanently.
 

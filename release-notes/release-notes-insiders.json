@@ -123,7 +123,7 @@
                         "title": "The app does not capture traffic when 'Require an administrator password to access system-wide preferences' option is checked (macOS)"
                     },
                     {
-                        "title": "Auto Responder returns incorrect response when creating a rule from session and original response is encoded"
+                        "title": "Rules Builder returns incorrect response when creating a rule from session and original response is encoded"
                     },
                     {
                         "title": "The app is crashing silently when there is not enough memory for starting the .NET Core process"
@@ -236,7 +236,7 @@
                         "title": "Improve Body, Date and Duration columns – we’ve used the opportunity to further improve the information we show to the users – the Body column is now called Body Size, it can be filtered with numeric comparison (was text before) and it has the unit. For Duration column we’ve also changed the filter to be numeric and we’ve added the unit. The Date column’s filter is now Calendar based, which makes it easy to get the information you need for specific date range. With all those changes we unlock new scenarios of using Fiddler Everywhere: finding sessions which take more than specified time has never been so easy. The same is valid for finding requests above specified size, etc."
                     },
                     {
-                        "title": "Add predefined responses for Auto Responder rules – in Fiddler Classic there was an easy way to create responses for specific HTTP Codes, like 404, 301, etc. Now, the same is valid for Fiddler Everywhere – just create (edit) your AR rules and use the predefined responses from there. With a few clicks you can simulate 404 or 200 and see how your code behaves in this situation."
+                        "title": "Add predefined responses for Rules Builder rules – in Fiddler Classic there was an easy way to create responses for specific HTTP Codes, like 404, 301, etc. Now, the same is valid for Fiddler Everywhere – just create (edit) your AR rules and use the predefined responses from there. With a few clicks you can simulate 404 or 200 and see how your code behaves in this situation."
                     },
                     {
                         "title": "Add Client IP column – we’ve added a new column (it should be manually included in the list from the Columns menu) which shows the Client IP from which the request has been executed. This is extremely helpful when you capture requests from mobile devices and your machine as well."

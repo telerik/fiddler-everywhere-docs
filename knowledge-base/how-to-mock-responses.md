@@ -17,12 +17,12 @@ res_type: kb
 
 #### Description
 
-As developers, you frequently need to simulate and test various user conditions to ensure the client-side experience doesn't suffer due to unexpected issues. With **Fiddler Everywhere**, you could modify the current response (HTML, JS, JSON) previously returned by the server. This article explains how to achieve that via **Return manually crafted response** or via **Choose saved response file...** actions of the [**Auto Responder**]({%slug auto-responder-general%}).
+As developers, you frequently need to simulate and test various user conditions to ensure the client-side experience doesn't suffer due to unexpected issues. With **Fiddler Everywhere**, you could modify the current response (HTML, JS, JSON) previously returned by the server. This article explains how to achieve that via **Return manually crafted response** or via **Choose saved response file...** actions of the [**Rules Builder**]({%slug rules-builder-general%}).
 
 ## Manually crafted response
 
 
-1. Open the [**Auto Responder**]({%slug auto-responder-general%})
+1. Open the [**Rules Builder**]({%slug rules-builder-general%})
 
 2. Create a new rule via the **Add new rule** button.
 
@@ -44,7 +44,7 @@ As developers, you frequently need to simulate and test various user conditions 
     The newly created rule should look like this:
     ![Manually crafted response to mock 502 status code and error message](../images/kb/dat-files/manually-crafted-502.png)
 
-5. Finally, enable the Auto Responder, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 502 with your custom error message. Congratulations - you have just mocked a 502 status code response!
+5. Finally, enable the Rules Builder, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 502 with your custom error message. Congratulations - you have just mocked a 502 status code response!
 
     ![Manually crafted response to mock 502 status code and error message](../images/kb/dat-files/manually-crafted-502-inspector.png)
 
@@ -70,4 +70,4 @@ Using the above action is handy, but we need a better workflow to automate multi
 
 4. Add the **ACTION** rule via **Choose saved response file...** and in the popup window, choose the newly created DAT file (**_action-403-status.dat_**).
 
-5. Finally, enable the Auto Responder, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations - you have just mocked a 403 status code response while using a DAT file!
+5. Finally, enable the Rules Builder, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations - you have just mocked a 403 status code response while using a DAT file!

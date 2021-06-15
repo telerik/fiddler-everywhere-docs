@@ -34,5 +34,5 @@ Create your first collection of composed requests by following these steps:
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
-- [Mock server response]({%slug autoresponder-get-started%})
+- [Mock server response]({%slug rulesbuilder-get-started%})
 - [Share captured traffic with collaborators]({%slug collaboration-get-started%}).

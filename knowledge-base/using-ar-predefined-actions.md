@@ -1,9 +1,9 @@
 ---
-title: Fiddler Auto Responder Predefined Actions
-description: Fiddler Everywhere comes with multiple predefined Auto Responder actions that allow you to mock different HTTP responses out of the box.
+title: Fiddler Rules Builder Predefined Actions
+description: Fiddler Everywhere comes with multiple predefined Rules Builder actions that allow you to mock different HTTP responses out of the box.
 type: how-to
 slug: fiddler-ar-actions
-tags: Fiddler Everywhere Auto Responder templates, Auto Responder actions, predefined Fiddler actions
+tags: Fiddler Everywhere Rules Builder templates, Rules Builder actions, predefined Fiddler actions
 publish: true
 res_type: kb
 ---
@@ -19,13 +19,13 @@ res_type: kb
 
 #### Description
 
-The [Auto Responder]({%slug auto-responder-general%}) is one of the most powerful debugging functionalities that Fiddler Everywhere provides. The main idea behind the Auto Responder is to provide a set of rules (based on match rules and actions) that quickly mock a server response and behavior without going through the trouble of modifying the server. Within seconds, you could execute many complex and different rules and test your site against multiple scenarios.
+The [Rules Builder]({%slug rules-builder-general%}) is one of the most powerful debugging functionalities that Fiddler Everywhere provides. The main idea behind the Rules Builder is to provide a set of rules (based on match rules and actions) that quickly mock a server response and behavior without going through the trouble of modifying the server. Within seconds, you could execute many complex and different rules and test your site against multiple scenarios.
 
-This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. We also explain how to customize the Auto Responder by adding a [Custom DAT file](#custom-dat-file) or a [Custom HTTP Response](#custom-http-response).
+This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. We also explain how to customize the Rules Builder by adding a [Custom DAT file](#custom-dat-file) or a [Custom HTTP Response](#custom-http-response).
 
-![Auto Responder predefined actions](../images/livetraffic/autoresponder/kb-auroresponder-actions.png)
+![Rules Builder predefined actions](../images/livetraffic/autoresponder/kb-auroresponder-actions.png)
 
-## Predefined Actions in Auto Responder
+## Predefined Actions in Rules Builder
 
 The Actions drop-down menu provides several options named *XXX.dat* where *XXX* is a descriptive name of the response. The content of each predefined DAT file is listed below.
 
@@ -188,7 +188,7 @@ GIF89a #encoded string for a transparent GIF follows here
 
 ## Custom DAT File
 
-The Auto Responder **Actions** drop-down provides an option to load your own custom DAT file with an entirely custom HTTP response:
+The Rules Builder **Actions** drop-down provides an option to load your own custom DAT file with an entirely custom HTTP response:
 
 1. Scroll to the bottom of the drop-down Actions menu and select **Choose saved response file...**.
 1. In the file selection window, select your own DAT file and load it as an action rule.
@@ -197,7 +197,7 @@ The Auto Responder **Actions** drop-down provides an option to load your own cus
 
 ## Custom HTTP Response
 
-Another option that the Auto Responder provides is to directly create the mocked custom HTTP response:
+Another option that the Rules Builder provides is to directly create the mocked custom HTTP response:
 
 1. Scroll to the bottom of the drop-down Actions menu and select **Return manually crafted response**.
 1. Write the custom response in the **Raw** inspector.

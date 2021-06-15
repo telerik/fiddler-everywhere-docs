@@ -1,7 +1,7 @@
 ---
 title: HTTPS
+description: Secure traffic (HTTPS) capturing and root certificate options in the Fiddler Everywhere application
 slug: decrypt-https-traffic
-tags: HTTPS settings Fiddler Everywhere, HTTPS Fiddler setup, Fiddler Ignore server certificate error, decrypt https, https decryption, capturing HTTPS
 publish: true
 position: 10
 ---
@@ -29,8 +29,6 @@ The **Ignore server certificate errors** button controls whether Fiddler warns y
 ## Advanced Settings
 
 The **Advanced Settings** drop-down provides several additional options related to the Fiddler root certificate.
-
-![ Advanced Settings](../../images/settings/settings-https-advanced.png)
 
 ### Export root certificate
 

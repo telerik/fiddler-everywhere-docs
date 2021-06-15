@@ -1,17 +1,17 @@
 ---
 title: Connections
-previous_url: /user-guide/settings/connections/allow-remote-connections
+description: Changing the default Fiddler proxy port and allowing remote connections in Fiddler Everywhere
 slug: connections-submenu
-tags: remote connections, remote traffic, system proxy, network port
 publish: true
 position: 20
+previous_url: /user-guide/settings/connections/allow-remote-connections
 ---
 
 # Connections Menu
 
 The __Connections__ menu exposes options that allow for granular control over proxy settings and remote connection.
 
-![Act as a system proxy on startup setting](../../images/settings/connections-act-as-proxy.png)
+![Act as a system proxy on startup setting](../../images/settings/settings-connections.png)
 
 ## Setting Proxy Port
 

@@ -27,6 +27,6 @@ That's it! Your incoming and outgoing traffic will be immediately captured and d
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
 - [Create an API request via the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
-- [Mock server response]({%slug autoresponder-get-started%})
+- [Mock server response]({%slug rulesbuilder-get-started%})
 - [Organize requests]({%slug composer-collections-get-started%})
 - [Share captured traffic with collaborators]({%slug collaboration-get-started%}).

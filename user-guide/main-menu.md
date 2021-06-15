@@ -94,7 +94,7 @@ The **Links** menu provides several useful fast links.
 
 ## Notifications
 
-The **Notifications** button shows a drop-down list that contains the most recently received notifications. The Fiddler Everywhere client will send and receive notifications upon using the collaboration functionalities (like sharing session logs, composer collections, and Auto Responder rulesets).
+The **Notifications** button shows a drop-down list that contains the most recently received notifications. The Fiddler Everywhere client will send and receive notifications upon using the collaboration functionalities (like sharing session logs, composer collections, and Rules Builder rulesets).
 
 ![Example notifications in Fiddler Everywhere](../images/menu/menu-notifications.png)
 
