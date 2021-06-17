@@ -155,8 +155,11 @@ The Response Details widget must contain a table with the following information 
     RGB - A hexadecimal representation of the percentage of red, green, and blue pixels in the image.
     GeoLocation - If a JPEG image contains geographic location information, it is displayed here
 
+<!-- 
+
+Is any of those below missing from the 2.0 implementation !? -
 Statistics
-<!-- Is any of those below missing from the 2.0 implementation !? -
+
 The Statistics widget must contain a table with the following information (NOTE: Some of the items should be bold and alone on a row, to differentiate the information before and after this line):
 
 Request Count
