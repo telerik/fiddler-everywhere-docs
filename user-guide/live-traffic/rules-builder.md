@@ -9,21 +9,25 @@ previous_url: /user-guide/live-traffic/autoresponder
 
 # Rules Builder Tab
 
-The **Rules Builder** is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, to reproduce previously captured bugs (in SAZ files), or to run website demos while being entirely offline.
+The **Rules Builder** is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, reproducing previously captured bugs (in SAZ files), or running website demos while being entirely offline. The collaboration functionalities allow you to import and export s single rule or rulesets and share rules directly with other Fiddler Everywhere collaborators. Each rule has different order priority and execution weight which can be easily controlled by promoting or demoting a rule.
 
-![AutoResponder button](../../images/livetraffic/autoresponder/autoresponder-main-all.png)
+![AutoResponder button](../../images/livetraffic/rb/rules-builder-all.png)
 
-The [**Rules Builder Rules Editor**]({%slug rules-builder-general%}#rules-editor)  allows you to create new rules and edit existing ones.
+The **Rules Builder** tab contains the following sections:
 
-The [Rules Builder Queue Viewer]({%slug rules-builder-general%}#queue-viewer) lists the currently used rules and provides additional control over them. The tab also exposes options to import/export rules files (__FARX__), to change the priority of the rules (of execution) and to entirely enable/disable the __Rules Builder__ or specific rules.
+- **Rules Builder Toolbar** - Provides means for sharing, manual import/export and manual execution.
+- **Rule Editor** - Allows you to create new rules and edit existing ones.
+- **Rules Queue** - A queue of created rules that are executed in the order of appearance (from the top one to the bottom one). Each rule in the queue has its toolbar with different rule-related functionalities.
 
->tip You need to enable Live Traffic _Capturing_ to be able to apply Rules Builder rules.
+>tip The **Rules Builder** is available with version 2.0.0 of Fiddler Everywhere while older versions had the **Auto Responder**. The main difference lies in the capabilities of both functionalities. Tthe Rules Builder is able to change what the servers will receive (in terms of request and responses and given that such rules are applied) while the Auto Responder was only capable of mocking a server request/response and actually modifying the local request/response. It is important to notice that not all rules are actually modifying the server data.
 
-## Rules Editor
+## Rules Builder Toolbar
+
+## Rule Editor
 
 The __Rules Editor__ interface enables creating and editing rules. You need to enter a __match rule__ and an __action string__, and Fiddler Everywhere will undertake the action if the request URI matches the __match rule__.
 
-## Create New Rule
+### Create New Rule
 
 1. Click on __Create New Rule__ button in the __Rules Editor__.
 
@@ -45,11 +49,11 @@ The __Rules Editor__ interface enables creating and editing rules. You need to e
     - You can import a __*.FARX__ file [via the __Import__ button]({%slug rules-builder-general%}#import-rules) to queue rules based on previously captured traffic.
 
 
-## Match Rules
+### Match Rules
 
 Fiddler Everywhere will accept string literals, regular expressions, and a set of some special match rules as listed below.
 
-### String Literals
+#### String Literals
 
 Use string literals to create simple match conditions (case-insensitively). The asterisk char (__*__) can be used as a wildcard, while every other string literal will be checked for a match in the request URL. Below you will find some basic examples for matching conditions when using specific strings.
 
@@ -74,7 +78,7 @@ www.example.com/Path1/q=Query
 www.example.com/Path1/query=hello
 ```
 
-### NOT rules (for String Literals)
+#### NOT rules (for String Literals)
 
 The __NOT:__ rule is applied only if the string does not match. Below you will find some basic examples for matching conditions when using specific strings.
 
@@ -101,7 +105,7 @@ www.example.com/path1/query=foo // (No Match)
 www.example.com/path2/somethingElse=foo // (MATCH)
 ```
 
-### EXACT Match
+#### EXACT Match
 
 The __EXACT:__ is a case-sensitive match syntax for expressions and strings.
 
@@ -113,7 +117,7 @@ www.example.com/Path1/query=foo // (MATCH)
 www.example.com/PATH1/query=foo // (No Match - mismatched case)
 ```
 
-### Regular Expressions
+#### Regular Expressions
 
 Fiddler Everywhere supports regular expressions syntax for expressions that begin with __regex:__. The regular expression will be used to replace the inbound URL with the string in the Actions row. Use __.+__ to match a sequence of one or more characters or __.*__ to match zero or more characters. Use __^__ at the front of your regex to mean "Start of the URL" and use __$__ at the tail of the regex to mean "End of the URL".
 
@@ -144,7 +148,7 @@ www.example.com/Path1/query=somegif.gif // (MATCH)
 
 The standard regex implementation also allows using regex variables. An example of creating a redirect while using automatically created regex variables can be found in [this KB article]({%slug rulesbuilder-redirect-traffic%}#redirect-with-regex).
 
-## Action Strings
+### Action Strings
 
 When Fiddler Everywhere identifies a request which matches the Rules Builder **Match** Rule, it automatically bypasses the server and maps it to the **ACTION** mentioned in the ruleset. Beyond simply returning files or predefined responses, the __Rules Builder__ can perform some specific actions:
 
@@ -166,7 +170,7 @@ When Fiddler Everywhere identifies a request which matches the Rules Builder **M
 
 __Rules with Non-final__ actions will allow the request to match multiple Rules Builder rules. As soon a rule specifying a final action is reached, the matching process exists, and no further rules are processed for that session.
 
-## Queue Viewer
+## Rules Queue
 
 The __Queue Viewer__ (a.k.a. __Queue Rules Viewer__) interface is a queue of the created Rules Builder rules. The __Queue Viewer__ allows the listed rules to be enabled and disabled, to be promoted and demoted (by changing their queue position), to be edited, to be exported and imported. The option to enable the __Rules Builder__ and to allow a non-matching request to pass-through is also part of the __Queue Viewer__.
 
