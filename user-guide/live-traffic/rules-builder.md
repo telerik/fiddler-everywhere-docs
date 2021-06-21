@@ -11,7 +11,7 @@ previous_url: /user-guide/live-traffic/autoresponder
 
 The **Rules Builder** is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, reproducing previously captured bugs (in SAZ files), or running website demos while being entirely offline. The collaboration functionalities allow you to import and export s single rule or rulesets and share rules directly with other Fiddler Everywhere collaborators. Each rule has different order priority and execution weight which can be easily controlled by promoting or demoting a rule.
 
-![AutoResponder button](../../images/livetraffic/rb/rules-builder-all.png)
+![Rules Builder](../../images/livetraffic/rb/rules-builder-all.png)
 
 The **Rules Builder** tab contains the following sections:
 
@@ -22,6 +22,13 @@ The **Rules Builder** tab contains the following sections:
 >tip The **Rules Builder** is available with version 2.0.0 of Fiddler Everywhere while older versions had the **Auto Responder**. The main difference lies in the capabilities of both functionalities. Tthe Rules Builder is able to change what the servers will receive (in terms of request and responses and given that such rules are applied) while the Auto Responder was only capable of mocking a server request/response and actually modifying the local request/response. It is important to notice that not all rules are actually modifying the server data.
 
 ## Rules Builder Toolbar
+
+The main toolbar of the **Rules Builder** comes with the following functionalities:
+
+- **Add New Rule** - Opens the **Rule Editor** window to create new rule.
+- **Shared Rules Builder Ruleset** - Opens a list of the shared rulesets.
+- **Share** - Opens the share windows and 
+![Rules Builder toolbar](../../images/livetraffic/rb/rules-builder-toolbar.png)
 
 ## Rule Editor
 
@@ -233,4 +240,4 @@ Each rule present in the __Queue Viewer__ can be controlled via the following op
 
 - __Delete__ deletes the specified rule permanently.
 
-
+## Rules Builder Settings
