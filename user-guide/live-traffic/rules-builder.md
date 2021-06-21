@@ -80,11 +80,11 @@ The **Rule Editor** can add and use single or multiple conditions. The condition
 
 <table style="width: 100%">
     <colgroup>
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 40%;">
+       <col span="1" style="width: 14%;">
+       <col span="1" style="width: 14%;">
+       <col span="1" style="width: 14%;">
+       <col span="1" style="width: 14%;">
+       <col span="1" style="width: 44%;">
     </colgroup>
     <tbody>
         <tr>
