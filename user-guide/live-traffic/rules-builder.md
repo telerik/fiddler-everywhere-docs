@@ -78,27 +78,58 @@ The __Rules Editor__ interface enables creating and editing rules. For each new 
 
 The **Rule Editor** can add and use single or multiple conditions. The conditions are logical structures with different number of statements (from two to four statements - see the list below for details).
 
+<table style="width: 100%">
+    <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 40%;">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td style="background-color: #777">Condition Value</td>
+            <td style="background-color: #aaa">Field Options</td>
+            <td style="background-color: #777">Field Options</td>
+            <td style="background-color: #aaa">Field Options</td>
+            <td style="background-color: #777">Usage Description</td>
+        </tr>
+        <tr>
+            <td>Protocol</td>
+            <td>HTTP or HTTPS</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Differentiate the traffic based on the used protocol (HTTP vs HTTPS)</td>
+        </tr>
+        <tr>
+            <td>Host</td>
+            <td>String modifyers</td>
+            <td>The search value</td>
+            <td>n/a</td>
+            <td> Search for a specific keyword in the <b>Host</b> column.</td>
+        </tr>
+    </tbody>
+</table>
 
-|Condition Value |Field Options |Field Options |Field Options |Usage Description                       |
-|:--|:--|:--|:--|:--|
-| Protocols  | HTTP, HTTPS  |n/a |n/a   |  Differentiate the traffic based on the used protocol (HTTP vs HTTPS) |
-| Host | String modifyers  | search value  |n/a   | Search for a specific keyword in the **Host** column.   |
-| Path | String modifyers  | search value |n/a   | Search for a specific keyword in the **Path** column.   |
-| Url | String modifyers  | search value  |n/a   | Search for a specific keyword in the **URL** column.   |
-| Status  |  Number modifyers (compares three-digit status codes) | search value  |   |   Search for a specific keyword in the **Result** column. |
-| Url | String modifyers  | search value  |n/a   | Search for a specific keyword in the **URL** column.   |
-| Method | String modifyers  | search value  |n/a   | Search for a specific keyword in the **Method** column.   |
-| Process ID | String modifyers  | search value  |n/a   | Search for a specific keyword in the **Process** column.   |
-| Client IP | String modifyers  | search value  |n/a   | Search for a specific keyword in the **Client IP** column.   |
-| Remote IP | String modifyers  | search value  |n/a   | Search for a specific keyword in the **Remote IP** column.   |
-| Body Size  |  Number modifyers (compares bytes) | search value  |   |   Search for a specific keyword in the **Body Size** column. |
-| Duration  |  Number modifyers (compares milliseconds) | search value  |   |   Search for a specific keyword in the **Duration** column. |
-| Comment | String modifyers  | search value  |n/a   | Search for a specific keyword in the **Comment** column.   |
-| Request Body | String modifyers  | search value  |n/a   | Search for a specific keyword in the session request body.   |
-| Request Headers |  header name | String modifyers  | search value  | Search for a specific keyword in the explicitly mentioned request header.   |
-| Response Body | String modifyers  | search value  |n/a   | Search for a specific keyword in the session response body.   |
-| Response Headers |  header name | String modifyers  | search value  | Search for a specific keyword in the explicitly mentioned response header.   |
-| Cookie | the magic string | n/a | n/a  | n/a | A legacy filed for entering String literals as in the Fiddler Classic or the older versions of Fiddler Everywhere.   |
+| Condition Value | Field Options | Field Options | Field Options | Usage Description |
+|---|---|---|---|---|
+| **Protocol**  | HTTP or HTTPS  | n/a | n/a   |  Differentiate the traffic based on the used protocol (HTTP vs HTTPS) |
+| **Host** | String modifyers  | The search value  | n/a | Search for a specific keyword in the **Host** column.   |
+| **Path** | String modifyers  | The search value | n/a | Search for a specific keyword in the **Path** column.   |
+| **Url** | String modifyers  | The search value  | n/a | Search for a specific keyword in the **URL** column.   |
+| **Status**  | Number modifyers (compares three-digit status codes) | search value  |   |   Search for a specific keyword in the **Result** column. |
+| **Method** | String modifyers  | The search value  | n/a  | Search for a specific keyword in the **Method** column.   |
+| **Process ID** | String modifyers  | The search value  | n/a   | Search for a specific keyword in the **Process** column.   |
+| **Client IP** | String modifyers  | The search value  | n/a   | Search for a specific keyword in the **Client IP** column.   |
+| **Remote IP** | String modifyers  | The search value  | n/a   | Search for a specific keyword in the **Remote IP** column.   |
+| **Body Size**  | Number modifyers (compares bytes) | The search value  |   |   Search for a specific keyword in the **Body Size** column. |
+| **Duration**  | Number modifyers (compares milliseconds) | The search value  |   |   Search for a specific keyword in the **Duration** column. |
+| **Comment** | String modifyers  | search value  |n/a   | Search for a specific keyword in the **Comment** column.   |
+| **Request Body** | String modifyers  | The search value  | n/a  | Search for a specific keyword in the session request body.   |
+| **Request Headers** | Header name | String modifyers  | The search value  | Search for a specific keyword in the explicitly mentioned request header.   |
+| **Response Body** | String modifyers  | The search value  | n/a | Search for a specific keyword in the session response body.   |
+| **Response Headers** | Header name | String modifyers  | The search value | Search for a specific keyword in the explicitly mentioned response header.   |
+| **Cookie** | The magic string | n/a | n/a | n/a | A legacy filed for entering String literals as in the Fiddler Classic or the older versions of Fiddler Everywhere.   |
 
 
 ![Rule Editor Conditions](../../images/livetraffic/rb/rules-builder-re-conditions.png)
