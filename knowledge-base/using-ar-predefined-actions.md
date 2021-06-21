@@ -23,7 +23,6 @@ The [Rules Builder]({%slug rules-builder-general%}) is one of the most powerful 
 
 This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. We also explain how to customize the Rules Builder by adding a [Custom DAT file](#custom-dat-file) or a [Custom HTTP Response](#custom-http-response).
 
-![Rules Builder predefined actions](../images/livetraffic/autoresponder/kb-auroresponder-actions.png)
 
 ## Predefined Actions in Rules Builder
 
@@ -193,7 +192,6 @@ The Rules Builder **Actions** drop-down provides an option to load your own cust
 1. Scroll to the bottom of the drop-down Actions menu and select **Choose saved response file...**.
 1. In the file selection window, select your own DAT file and load it as an action rule.
 
-![Custom DAT file](../images/livetraffic/autoresponder/kb-auroresponder-custom-dat.png)
 
 ## Custom HTTP Response
 
@@ -202,4 +200,3 @@ Another option that the Rules Builder provides is to directly create the mocked 
 1. Scroll to the bottom of the drop-down Actions menu and select **Return manually crafted response**.
 1. Write the custom response in the **Raw** inspector.
 
-![Manually crafted response](../images/livetraffic/autoresponder/kb-auroresponder-manual-response.png)

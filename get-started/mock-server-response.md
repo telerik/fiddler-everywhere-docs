@@ -18,15 +18,11 @@ To create and test your first Rules Builder rule follow these steps:
 
 2. Select the **Rules Builder** tab and create your rule. 
 
-    ![Rules Builder button](../images/livetraffic/autoresponder/autoresponder-main-before.png)
-
 3. In the **MATCH** field, enter your match criteria. For this example, in the lines below, you will find a simple rule that matches ALL requests ending with PNG (the rules are created while using **regular expressions**).
 
     ```r
     regex:(?inx).+\.png$ #Match strings ending with PNG
     ```
-
-    ![Rules Builder button](../images/livetraffic/autoresponder/gs-autoresponder-rule-match.png)
 
     >tip The following basic example is creating a MATCH rule that will modify all requests that are ending with PNG. In most cases, you would like to mock a response from a request against a specific host. For that case, you could use the [EXACT match]({%slug rules-builder-general%}#exact-match). See more examples for [creating different MATCH conditions]({%slug rules-builder-general%}#match-rules).
 
@@ -35,10 +31,6 @@ To create and test your first Rules Builder rule follow these steps:
     ```*
     *drop
     ```
-
-    ![Rules Builder button](../images/livetraffic/autoresponder/gs-autoresponder-rule-action.png)
-
-    See more examples for [creating actions]({%slug rules-builder-general%}#action-strings)
 
 
 5. Add the rule to the Rules Builder rules list via the **Add to Queue** button.
