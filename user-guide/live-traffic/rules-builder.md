@@ -68,10 +68,10 @@ The __Rules Editor__ interface enables creating and editing rules. For each new 
 1. Add one or more actions. See the [actions section](#actions) for more details.
 1. Press **Save** to close the **Rule Editor** and add the newly created rule to the **Rules Queue**.
 
-    >Tips:
-    - Rules are applied in the order that they appear in the **Rules Queue**. Use the **Down Arrow** to demote a rule and the **Up Arrow** to promote a rule in the queue.
-    - You can export the current queue of rules [via the **Export** button]({%slug rules-builder-general%}#export-rules) from the **Rules Queue** toolbar.
-    - You can import a ***.FARX** file [via the **Import** button]({%slug rules-builder-general%}#import-rules) to queue rules based on previously captured traffic.
+>Tips:
+> - Rules are applied in the order that they appear in the **Rules Queue**. Use the **Down Arrow** to demote a rule and the **Up Arrow** to promote a rule in the queue.
+> - You can export the current queue of rules [via the **Export** button]({%slug rules-builder-general%}#export-rules) from the **Rules Queue** toolbar.
+> - You can import a ***.FARX** file [via the **Import** button]({%slug rules-builder-general%}#import-rules) to queue rules based on previously captured traffic.
 
 
 ### Conditions
@@ -79,8 +79,8 @@ The __Rules Editor__ interface enables creating and editing rules. For each new 
 The **Rule Editor** can add and use single or multiple conditions. The conditions are logical structures with different number of statements (from two to four statements - see the list below for details).
 
 
-|Field Value |Field Options |Field Options |Field Options |Usage Description |
-|---|---|---|---|---|
+|Condition Value |Field Options |Field Options |Field Options |Usage Description                       |
+|:--|:--|:--|:--|:--|
 | Protocols  | HTTP, HTTPS  |n/a |n/a   |  Differentiate the traffic based on the used protocol (HTTP vs HTTPS) |
 | Host | String modifyers  | search value  |n/a   | Search for a specific keyword in the **Host** column.   |
 | Path | String modifyers  | search value |n/a   | Search for a specific keyword in the **Path** column.   |
