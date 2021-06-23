@@ -56,7 +56,7 @@ The **Help** menu provides several options for a version update and information,
 
 ## Manage Subscriptions
 
-The **Manage Subscriptions** window will redirect the user to the [Fiddler dashboard site]({%slug %}) located at https://dashboard.getfiddler.com. Account owners will manage the subscription plans, add and remove seats, update payment details, etc. Users that are not account owners will be able to see their subscription status.
+The **Manage Subscriptions** window will redirect the user to the [Fiddler dashboard site]({%slug fiddler-dashboard%}) located at https://dashboard.getfiddler.com. Account owners will manage the subscription plans, add and remove seats, update payment details, etc. Users that are not account owners will be able to see their subscription status.
 
 
 ## Feedback
