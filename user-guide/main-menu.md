@@ -52,7 +52,7 @@ The **Help** menu provides several options for a version update and information,
 
     ![About dialog](../images/menu/menu-help-about.png)
 
-- **Contact Support** -The **Contact Support** is available for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) version (including the **Trial** version). The option uses the operating system default email client.
+- **Contact Support** -The **Contact Support** is available for both the Trial and the [Fiddler Everywhere PRO]({%slug introduction%}#key-features) version. The support option uses the operating system default email client.
 
 ## Manage Subscriptions
 
@@ -74,7 +74,7 @@ The **Links** menu provides several useful fast links.
 
 - A **Forums** link to the Fiddler Everywhere community forums at https://community.getfiddler.com/support/discussions
 - A **Documentation** link to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/
-- A **Contact Support** link (available only for PRO & Trial versions) for posting a support ticket to the Fiddler Everywhere support team. More about Fiddler Everywhere PRO support [here]({%slug support-page%}).
+- A **Contact Support** link (available for both the PRO & Trial versions) for posting a support ticket to the Fiddler Everywhere support team. More about Fiddler Everywhere PRO support [here]({%slug support-page%}).
 
 ## Notifications
 
