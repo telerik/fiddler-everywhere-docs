@@ -8,7 +8,7 @@ position: 70
 
 # Mocking Server Response
 
-One of the most powerful features of the Fiddler Everywhere client is the **Rules** tab - a tool for mocking server responses and simulating various real-life scenarios. With Rules Builder, you can create **rules**, automatically triggering a specific request (that covers the criteria set in the rule). Mocking a server response is as easy as enabling the **Rules** tab, setting a rule, and executing the request (that will trigger the rule).
+One of the most powerful features of the Fiddler Everywhere client is the **Rules** tab - a tool for mocking server responses and simulating various real-life scenarios. With Rules Builder, you can create **rules**, automatically triggering a specific request (covering the criteria set in the rule). Mocking a server response is as easy as enabling the **Rules** tab, setting a rule, and executing the request (that will trigger the rule).
 
 ## Creating a Rule
 

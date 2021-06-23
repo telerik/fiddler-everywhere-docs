@@ -18,7 +18,7 @@ The main menu in Fiddler Everywhere is placed at the top and consists of several
 
 The **View** menu provides options to change the overall Fiddler Everywhere UI size using zoom in and zoom out.
 
-- **Preferences** option to load the Fiddler Everywhere settings window. Keyboard shortcut: __Cmd and ,__ (Mac), __Ctrl and ,__ (Windows). 
+- **Preferences** option to load the Fiddler Everywhere settings window. Keyboard shortcut: __Cmd__ (Mac), __Ctrl and ,__ (Windows). 
 
 - **Actual Size** option. Keyboard shortcut: __Cmd and 0__ (Mac), __Ctrl and 0__ (Windows). 
 
@@ -34,15 +34,15 @@ The **View** menu provides options to change the overall Fiddler Everywhere UI s
 
 ## Help
 
-The **Help** menu provides several options for version update and information, fast access to forums, documentation and support channel. The support option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) verison.
+The **Help** menu provides several options for a version update and information, fast access to forums, documentation, and support channel. The support option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) version.
 
 ![Help Menu](../images/menu/menu-help-update.png)
 
-- **Release notes** - Opens a screen that list the Fiddler Everywhere release notes.
+- **Release notes** - Opens a screen that lists the Fiddler Everywhere release notes.
 
 - **Check for Updates** - The **Check For Updates** option contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
 
-- **Forums** - The **Forums** option opens a new browser tab with the [Fiddler Everywhere forums portal](https://community.getfiddler.com/support/discussions). Use the forums to search for information about possible use cases, report issues and bugs, and request features.
+- **Forums** - The **Forums** option opens a new browser tab with the [Fiddler Everywhere forums portal](https://community.getfiddler.com/support/discussions). Use the forums to search for possible use cases, report issues and bugs, and request features.
 
 - **Documentation** - The **Documentation** option opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
 
@@ -56,18 +56,12 @@ The **Help** menu provides several options for version update and information, f
 
 ## Manage Subscriptions
 
-The **Manage Subscriptions** window will redirect the user to the [Fiddler dashboard site]({%slug %}) located at https://dashboard.getfiddler.com. Account owners will be able to manage the subscription plans, add and remove seats, update payment details, etc. User that are not account owners will be able to see their subscrition status
-
-- **Pro plan** window. Invoke the plan details window via the green drop-down arrow. Use the **PRO Plan** button to load [the account dashboard page](https://dashboard.getfiddler.be/myaccount). Find more information about the dashboard options [here]({%slug fiddler-dashboard%}).
-
-    ![Pro plan window and button](../images/menu/pro-plan-window.png)
-
->tip Refer to [the comparison table]({%slug introduction%}#key-features) to uncover the perks of using the Fiddler Everywhere Pro version.
+The **Manage Subscriptions** window will redirect the user to the [Fiddler dashboard site]({%slug %}) located at https://dashboard.getfiddler.com. Account owners will manage the subscription plans, add and remove seats, update payment details, etc. Users that are not account owners will be able to see their subscription status.
 
 
 ## Feedback
 
-Use the **Share Feedback** option to send us your observations, recommendations, and impressions for the Fiddler Everywhere client application.
+Use the **Feedback** option to send us your observations, recommendations, and impressions for the Fiddler Everywhere client application.
 
 ![Share Feedback popup window](../images/menu/share-feedback.png)
 
@@ -84,13 +78,13 @@ The **Links** menu provides several useful fast links.
 
 ## Notifications
 
-The **Notifications** button shows a drop-down list that contains the most recently received notifications. The Fiddler Everywhere client will send and receive notifications upon using the collaboration functionalities (like sharing session logs, composer collections, and Rules Builder rulesets).
+The **Notifications** button shows a drop-down list that contains the most recently received notifications. The Fiddler Everywhere application will send and receive notifications upon using the collaboration functionalities (like sharing session logs, composer collections, and Rules Builder rulesets).
 
 ![Example notifications in Fiddler Everywhere](../images/menu/menu-notifications.png)
 
 ## Settings
 
-The **Settings** button opens a window that allows you to manage core Fiddler Everywhere functionalities like secure traffic enablement, remote connections, bypassing addressews, privacy and more. Refer to the detailed documentation articles to learn more about each section in the **Settings** window.
+The **Settings** button opens a window that allows you to manage core Fiddler Everywhere functionalities like secure traffic enablement, remote connections, bypassing addresses, privacy, and more. Refer to the detailed documentation articles to learn more about each section in the **Settings** window.
 
 - [**HTTPS** section]({%slug decrypt-https-traffic%})
 - [**Connections** section]({%slug connections-submenu%})
@@ -100,4 +94,4 @@ The **Settings** button opens a window that allows you to manage core Fiddler Ev
 
 ## Sign Out
 
-The **Sign Out** button allows you to logout of the currently logged user. Click on the button to logout and navigate to [an intro page]({%slug installation%}#create-an-account) that provides options to create a new user or use another existing account.
+The **Sign Out** button allows you to log out of the currently logged user. Click on the button to log out and navigate to [an intro page]({%slug installation%}#create-an-account) that provides options to create a new user or use another existing account.
