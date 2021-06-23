@@ -12,7 +12,7 @@ With traffic already captured, the process of analyzing has begun. The first pla
 
 Single-click on a session or select multiple sessions to open structured information about the session timings, sizes, request  and response details in the [**Overview** tab]({%slug overview-tab%}). 
 
-![Live Traffic and session overview](../images/livetraffic/websessions/websessions-list-all-overview.png.png)
+![Live Traffic and session overview](../images/livetraffic/websessions/websessions-list-all-overview.png)
 
 Double-click on a session to load [the request and response inspectors]({%slug inspector-types%}). The [**Inspectors** tab]({%slug inspector-types%}) is powerful tool that will allow you to deep-dive in each session so you and your teammates can debug it or find performance bottlenecks. 
 

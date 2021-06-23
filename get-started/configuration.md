@@ -13,6 +13,9 @@ In this article we'll discuss about how to configure Fiddler Everywhere in your 
 
 By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ sub-menu in __Settings__.
 
+![default https settings](../images/settings/settings-trust-root-certificate.png)
+
+
 ## Configure on macOS
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
@@ -27,9 +30,6 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
     
 1. Click the __Save__ button to save the changes.
 
-    ![default https settings](../images/settings/settings-trust-root-certificate.png)
-
-
 ## Configure on Windows
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
@@ -43,9 +43,6 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
     
 1. Click the __Save__ button to save the changes.
-
-    ![default https settings](../images/settings/settings-trust-root-certificate.png)
-
 
 ## Configure on Linux
 
@@ -82,8 +79,6 @@ Many Linux distributions are using different security features and different way
 
 
 1. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
-
-    ![Enable capturing HTTPS traffic](../images/settings/settings-trust-root-certificate.png)
 
 1. Click the __Save__ button to save the changes.
 

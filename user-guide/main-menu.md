@@ -9,7 +9,7 @@ position: 10
 
 # Main Menu
 
-The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you could find the [**View**](#view), and [**Help**](#help) submenus plus [a **Plan** information options](#plan-information). To the right, you will find [**Share Feedback**](#share-feedback), [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out**](#sign-out) option.
+The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you could find the [**View**](#view), and [**Help**](#help) submenus plus [Manage Subscriptions options](#manage-subscriptions). To the right, you will find [**Feedback**](#feedback), [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out**](#sign-out) option.
 
 ![Fiddler Everywhere main menu](../images/menu/main-menu-all.png)
 
@@ -19,10 +19,15 @@ The main menu in Fiddler Everywhere is placed at the top and consists of several
 The **View** menu provides options to change the overall Fiddler Everywhere UI size using zoom in and zoom out.
 
 - **Preferences** option to load the Fiddler Everywhere settings window. Keyboard shortcut: __Cmd and ,__ (Mac), __Ctrl and ,__ (Windows). 
+
 - **Actual Size** option. Keyboard shortcut: __Cmd and 0__ (Mac), __Ctrl and 0__ (Windows). 
+
 - **Zoom In** option. Keyboard shortcut: __Cmd and +__ (Mac), __Ctrl and +__ (Windows). 
+
 - **Zoom Out** option. Keyboard shortcut: __Cmd and -__ (Mac), __Ctrl and -__ (Windows). 
+
 - **Select Previous Tab** option. Keyboard shortcut: __Ctrl, Shift and Tab__ (Mac), __Ctrl, Shift and Tab__ (Windows). 
+
 - **Select Next Tab** option. Keyboard shortcut: __Ctrl and Tab__ (Mac), __Ctrl and Tab__ (Windows). 
 
 ![View menu with zoom options](../images/menu/main-menu-view.png)
@@ -31,38 +36,27 @@ The **View** menu provides options to change the overall Fiddler Everywhere UI s
 
 The **Help** menu provides several options for version update and information, fast access to forums, documentation and support channel. The support option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) verison.
 
-![Check for updates](../images/menu/menu-help-update.png)
+![Help Menu](../images/menu/menu-help-update.png)
 
-### Check for Updates
+- **Release notes** - Opens a screen that list the Fiddler Everywhere release notes.
 
-The **Check For Updates** option contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
+- **Check for Updates** - The **Check For Updates** option contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
 
-### Forums
+- **Forums** - The **Forums** option opens a new browser tab with the [Fiddler Everywhere forums portal](https://community.getfiddler.com/support/discussions). Use the forums to search for information about possible use cases, report issues and bugs, and request features.
 
-The **Forums** option opens a new browser tab with the [Fiddler Everywhere forums portal](https://community.getfiddler.com/support/discussions). Use the forums to search for information about possible use cases, report issues and bugs, and request features.
+- **Documentation** - The **Documentation** option opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
 
-### Documentation
+- **Open Application Logs Folder** - The **Open Application Logs Folder** option opens the local folder that contains the Fiddler Everywhere log files. Learn more [here]({%slug fiddler-log-files%}) about how to use the log files for troubleshooting your local setup.
 
-The **Documentation** option opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
+- **About** - The **About** command opens a dialog window that provides information about the Fiddler Everywhere client's current version and build date.
 
-### Open Application Logs Folder
+    ![About dialog](../images/menu/menu-help-about.png)
 
-The **Open Application Logs Folder** option opens the local folder that contains the Fiddler Everywhere log files. Learn more [here]({%slug fiddler-log-files%}) about how to use the log files for troubleshooting your local setup.
+- **Contact Support** -The **Contact Support** is available for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) version (including the **Trial** version). The option uses the operating system default email client.
 
-### About
+## Manage Subscriptions
 
-The **About** command opens a dialog window that provides information about the Fiddler Everywhere client's current version and build date.
-
-![About dialog](../images/menu/menu-help-about.png)
-
-
-### Contact Support
-
-The **Contact Support** is available for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) version (including the **Trial** version). The option uses the operating system default email client.
-
-## Plan Information
-
-The plan information window will provide information about the current user plan usage limits and quotas. The plan button and windows will differ depending on whether the currently logged user uses the **Trial** or the **Pro** plan. 
+The **Manage Subscriptions** window will redirect the user to the [Fiddler dashboard site]({%slug %}) located at https://dashboard.getfiddler.com. Account owners will be able to manage the subscription plans, add and remove seats, update payment details, etc. User that are not account owners will be able to see their subscrition status
 
 - **Pro plan** window. Invoke the plan details window via the green drop-down arrow. Use the **PRO Plan** button to load [the account dashboard page](https://dashboard.getfiddler.be/myaccount). Find more information about the dashboard options [here]({%slug fiddler-dashboard%}).
 
@@ -71,7 +65,7 @@ The plan information window will provide information about the current user plan
 >tip Refer to [the comparison table]({%slug introduction%}#key-features) to uncover the perks of using the Fiddler Everywhere Pro version.
 
 
-## Share Feedback
+## Feedback
 
 Use the **Share Feedback** option to send us your observations, recommendations, and impressions for the Fiddler Everywhere client application.
 

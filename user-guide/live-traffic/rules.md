@@ -58,6 +58,7 @@ The main toolbar of the **Rules** comes with the following functionalities:
 
 The **Rule Builder** interface enables creating and editing rules. For each new rule, you need to enter a **condition** (previously known as **match rule**) and an **action** (previously known as **action string**), and Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed. 
 
+![Rule Builder Conditions](../../images/livetraffic/rb/rules-re-conditions.png)
 
 ### Add New Rule
 
@@ -212,14 +213,9 @@ The **Rule Builder** can add and use single or multiple conditions. The conditio
     </tbody>
 </table>
 
-![Rule Builder Conditions](../../images/livetraffic/rb/rules-re-conditions.png)
-
-
-
 ### Actions
 
 When Fiddler Everywhere identifies a request which matches the rule's **Conditions**, it automatically maps it to the **Action** set in the ruleset. Beyond simply returning files or predefined responses, a rule can perform some specific actions:
-
 
 <table style="width: 100%">
     <colgroup>
@@ -353,7 +349,6 @@ When Fiddler Everywhere identifies a request which matches the rule's **Conditio
 </table>
 
 
-
 ## Rules Queue
 
 The **Rules Queue** (a.k.a. __Queue Viewer__ and __Queue Rules Viewer__) interface is a queue of the created rules. The **Rules Queue** allows the listed rules to be enabled and disabled, promoted and demoted (by changing their queue position), edited, exported, imported, shared, and immediately executed.
@@ -383,6 +378,8 @@ Each different rule has its panel with the rule name, its toolbar with rule opti
 - **Share** button - Shares the rule with other Fiddler Everywhere collaborators.
 - **Delete** button - Deletes the rule from the **Rules Queue**.
 - Enable/Disable toggle - A toggle that explicitly enables or disables the rule execution. Available only for **Live Traffic** sessions and will be hidden when interacting with saved sessions.
+
+![Rules Builder toolbar](../../images/livetraffic/rb/rules-individual-rule.png)
 
 ## Rules Settings
 
