@@ -44,8 +44,8 @@ The **Fiddler Everywhere** features are subject to some pre-defined limitations.
 |---|---|
 | Capture and Inspect Traffic |  **Unlimited** |
 | Creating Composer Requests | **Unlimited** |
-| Using Rules Builder rules |  **Unlimited** |
-| Sharing Rules Builder rules | **Unlimited** |
+| Using rules |  **Unlimited** |
+| Sharing  rules | **Unlimited** |
 | Creating Saved Sessions entries * |  **Unlimited** |
 | Sharing Saved Sessions |  1000 sessions  |
 | Shared Session Size |  Max **50 MB** |

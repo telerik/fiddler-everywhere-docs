@@ -11,7 +11,7 @@ previous_url: /user-guide/live-traffic/autoresponder
 
 The **Rules** tab is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, reproducing previously captured bugs (in SAZ files), or running website demos while being entirely offline. The collaboration functionalities allow you to import and export a single rule or rulesets and share rules directly with other Fiddler Everywhere collaborators. Each rule has different order priority and execution weight which can be easily controlled by promoting or demoting a rule.
 
-![Rules Builder](../../images/livetraffic/rb/rules-all.png)
+![Rules tab](../../images/livetraffic/rb/rules-all.png)
 
 The **Rules** tab contains the following sections:
 
@@ -21,7 +21,7 @@ The **Rules** tab contains the following sections:
 
 ## Rule of Thumbs
 
-The following rules of thumb are essential to understand how the Rules Builder executes each rule depending on whether the session is actively captured (ongoing Live Traffic sessions) or running a rule on previously saved sessions.
+The following rules of thumb are essential to understand how the Rules tab executes each rule depending on whether the session is actively captured (ongoing Live Traffic sessions) or running a rule on previously saved sessions.
 
 _Live Traffic and Rules tab basic guidelines_
 
@@ -38,7 +38,7 @@ _Saved Sessions and Rules tab basic guidelines_
  - The **Execute** button from a selected rule toolbar will only execute the currently selected rule.
 
 
->tip The **Rules** tab is available with version 2.0.0 of Fiddler Everywhere, while older versions had the **Auto Responder** tab. The main difference lies in the capabilities of both functionalities. The Rules Builder can change what the servers will receive (in terms of requests and responses and given that such rules are applied). At the same time, the Auto Responder was only capable of mocking a server request/response and modifying the local request/response. Therefore, it is essential to notice that not all rules are changing the server data.
+>tip The **Rules** tab is available with version 2.0.0 of Fiddler Everywhere, while older versions had the **Auto Responder** tab. The main difference lies in the capabilities of both functionalities. The Rule Builder can change what the servers will receive (in terms of requests and responses and given that such rules are applied). At the same time, the Auto Responder was only capable of mocking a server request/response and modifying the local request/response. Therefore, it is essential to notice that not all rules are changing the server data.
 
 
 ## Rules Toolbar
@@ -52,7 +52,7 @@ The main toolbar of the **Rules** comes with the following functionalities:
 - **Export** - Exports all created rules in a FARX file.
 - **Execute** - Executes the selected rules for the captured traffic (or for the loaded, saved sessions).
 
-![Rules Builder toolbar](../../images/livetraffic/rb/rules-toolbar.png)
+![Rules tab toolbar](../../images/livetraffic/rb/rules-toolbar.png)
 
 ## Rule Builder
 
@@ -373,19 +373,19 @@ Each different rule has its panel with the rule name, its toolbar with rule opti
 - **Play** button - Executes the current rule only.
 - **Promote** up arrow - Promotes the selected rule in the **Rules Queue**.
 - **Demote** down arrow - Demotes the selected rule in the **Rules Queue**.
-- **Edit** button - Opens the **Rules Builder** to edit the rule.
+- **Edit** button - Opens the **Rule Builder** to edit the rule.
 - **Duplicate** button - Creates a duplicate copy of the selected rule.
 - **Share** button - Shares the rule with other Fiddler Everywhere collaborators.
 - **Delete** button - Deletes the rule from the **Rules Queue**.
 - Enable/Disable toggle - A toggle that explicitly enables or disables the rule execution. Available only for **Live Traffic** sessions and will be hidden when interacting with saved sessions.
 
-![Rules Builder toolbar](../../images/livetraffic/rb/rules-individual-rule.png)
+![Rules tab toolbar](../../images/livetraffic/rb/rules-individual-rule.png)
 
 ## Rules Settings
 
 ### Unmatched Requests Passthrough
 
-The __Unmatched Requests Passthrough__ option (available in **_Settings > Rules > Unmatched Requests_** ) controls what happens when a Session does not match any of the applied rules. When the option is enabled, the unmatched requests are sent to the server, usually without interference from the Rules Builder. When the option is disabled (the checkbox is unchecked), Fiddler will generate a __404__ Not Found response for any _unconditional_ requests that are not matching the applied rules.
+The __Unmatched Requests Passthrough__ option (available in **_Settings > Rules > Unmatched Requests_** ) controls what happens when a Session does not match any of the applied rules. When the option is enabled, the unmatched requests are sent to the server, usually without interference from the Rules tab. When the option is disabled (the checkbox is unchecked), Fiddler will generate a __404__ Not Found response for any _unconditional_ requests that are not matching the applied rules.
 
 ![Unmatched Requests Passthrough](../../images/livetraffic/rb/rules-unmacthed-setting.png)
 

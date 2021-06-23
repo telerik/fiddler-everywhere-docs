@@ -23,7 +23,7 @@ As developers, you frequently need to simulate and test various user conditions 
 
 1. Open the [**Rules**]({%slug rules-general%}) tab.
 
-1. Create a new rule via the **Add New rule** button. The **Rules Builder** opens
+1. Create a new rule via the **Add New rule** button. This will open the [**Rule Builder**]({%slug rules-general%}#rule-builder).
 
 1. Add the match condition as per your requirements.
 
@@ -69,4 +69,4 @@ Using the above action is handy, but we need a better workflow to automate multi
 
 4. Add the **Action** in the rule via **Response file**, and in the popup window, choose the newly created DAT file (**_action-403-status.dat_**).
 
-5. Finally, enable the Rules Builder, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations - you have just mocked a 403 status code response while using a DAT file!
+5. Finally, enable the Rules tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations - you have just mocked a 403 status code response while using a DAT file!

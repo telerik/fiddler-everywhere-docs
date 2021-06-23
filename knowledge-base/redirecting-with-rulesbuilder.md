@@ -1,5 +1,5 @@
 ---
-title: Redirecting traffic from one server to another via the Rules Builder
+title: Redirecting traffic from one server to another via the Rules tab
 description: An article on how to create match rules and actions to redirect traffic while using regex variables
 type: how-to
 slug: rulesbuilder-redirect-traffic
@@ -18,12 +18,12 @@ previous_url: /knowledge-base/redirecting-with-autoresponder
 
 #### Description
 
-This article demonstrates a basic example for using the [**Rules Builder**]({%slug rules-general%}) for redirecting traffic from one server to another. The job can be accomplished via an Rules Builder rule that (optionally) utilizes regex and regex variables.
+This article demonstrates a basic example for using the [**Rules**]({%slug rules-general%}) tab for redirecting traffic from one server to another. The job can be accomplished via a rule that (optionally) utilizes regex and regex variables.
 
 
 ## Basic Redirect
 
-Redirecting traffic from one server to another can be achieved via a simple Rules Builder rule.
+Redirecting traffic from one server to another can be achieved via a simple WWrule.
 
 
 ```JS

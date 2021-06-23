@@ -9,7 +9,7 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 # Live Traffic Tab
 
-The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It display a summary of each captured session (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Rules Builder**]({%slug rules-general%}). The section also enables sessions saving and sharing, editing issued requests, marking, commenting sessions, and applying Rules Builder rules.
+The __Live Traffic__ tab is an essential feature of Fiddler Everywhere. It display a summary of each captured session (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (via the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Rules tab**]({%slug rules-general%}). The section also enables sessions saving and sharing, editing issued requests, marking, commenting sessions, and applying rules.
 
 >tip A **Session** (also mentioned as a **web session**) represents a single transaction between a client and a server, sometimes known as for request/response pair. Each session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the session and a Timers object that stores timestamps logged during the Session processing.
 
@@ -306,16 +306,16 @@ _Example for copying full info_
 
 ### Add New Rule
 
-A captured session entry can be used to mock some server behavior. For similar cases, the session URL can be used alongside [the Rules Builder]({%slug rules-general%}). Creating Rules Builder rules allows you to test complex scenarios and various mock responses.
+A captured session entry can be used to mock some server behavior. For similar cases, the session URL can be used alongside the [Rules tab]({%slug rules-general%}). Creating rules allows you to test complex scenarios and various mock responses.
 
 1. Select the desired session entry and make a right-click to open the context menu. From the context menu, select **Add New Rule**.
 
-2. New Rules Builder rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response via the **Return manually crafted response** action option.
+2. New rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response via the **Return manually crafted response** action option.
 
 
 ## Additional Resources
 
-- [Rules Builder]({%slug rules-general%})
+- [Rules tab]({%slug rules-general%})
 - [Inspectors types]({%slug inspector-types%})
 - [Composer tab]({%slug composer-tab%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
