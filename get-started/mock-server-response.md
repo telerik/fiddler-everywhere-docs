@@ -24,7 +24,7 @@ To create and test your first Rules Builder rule follow these steps:
     regex:(?inx).+\.png$ #Match strings ending with PNG
     ```
 
-    >tip The following basic example is creating a MATCH rule that will modify all requests that are ending with PNG. In most cases, you would like to mock a response from a request against a specific host. For that case, you could use the [EXACT match]({%slug rules-builder-general%}#exact-match). See more examples for [creating different MATCH conditions]({%slug rules-builder-general%}#match-rules).
+    >tip The following basic example is creating a MATCH rule that will modify all requests that are ending with PNG. In most cases, you would like to mock a response from a request against a specific host. For that case, you could use the [EXACT match]({%slug rules-general%}#exact-match). See more examples for [creating different MATCH conditions]({%slug rules-general%}#match-rules).
 
 4. In the **ACTION** field, enter the desired action. For this example, in the lines below, you will find a simple action that will drop everything corresponding to the MATCH criteria.
 
@@ -37,7 +37,7 @@ To create and test your first Rules Builder rule follow these steps:
 
 6. Enable the **Rules Builder** and each rules that you need to execute.
 
-    >important Once the Rules Builder is turned on (via **Enable AutoResponses**), the activated rules apply for all incoming/outgoing traffic. If a session does not match any of the specified rules, the Fiddler Everywhere client will generate an `HTTP/404 Not Found` response. In case, you want unmatched requests to be sent generally to the servers, then [activate the **Unmatched Requests Passthrough** option]({%slug rules-builder-general%}#unmatched-requests-passthrough) from the toolbar.
+    >important Once the Rules Builder is turned on (via **Enable AutoResponses**), the activated rules apply for all incoming/outgoing traffic. If a session does not match any of the specified rules, the Fiddler Everywhere client will generate an `HTTP/404 Not Found` response. In case, you want unmatched requests to be sent generally to the servers, then [activate the **Unmatched Requests Passthrough** option]({%slug rules-general%}#unmatched-requests-passthrough) from the toolbar.
 
 6. Open the application (e.g., a browser) and execute the request. As a result, if the request contains PNG images, they will be dropped. You have just tested a website against a scenario where the user has disabled all photos.
 

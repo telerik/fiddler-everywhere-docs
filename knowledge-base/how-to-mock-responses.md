@@ -17,12 +17,12 @@ res_type: kb
 
 #### Description
 
-As developers, you frequently need to simulate and test various user conditions to ensure the client-side experience doesn't suffer due to unexpected issues. With **Fiddler Everywhere**, you could modify the current response (HTML, JS, JSON) previously returned by the server. This article explains how to achieve that via **Return manually crafted response** or via **Choose saved response file...** actions of the [**Rules Builder**]({%slug rules-builder-general%}).
+As developers, you frequently need to simulate and test various user conditions to ensure the client-side experience doesn't suffer due to unexpected issues. With **Fiddler Everywhere**, you could modify the current response (HTML, JS, JSON) previously returned by the server. This article explains how to achieve that via **Return manually crafted response** or via **Choose saved response file...** actions of the [**Rules Builder**]({%slug rules-general%}).
 
 ## Manually crafted response
 
 
-1. Open the [**Rules Builder**]({%slug rules-builder-general%})
+1. Open the [**Rules Builder**]({%slug rules-general%})
 
 2. Create a new rule via the **Add new rule** button.
 

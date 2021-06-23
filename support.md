@@ -1,9 +1,9 @@
 ---
 title: Support
+description: Professional support services for Fiddler Everywhere users
 page_title: Support
 description: Copyright
 slug: support-page
-tags: Fiddler support, trial, pro version, paid support
 published: True
 position: 80
 ---

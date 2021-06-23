@@ -18,7 +18,7 @@ previous_url: /knowledge-base/redirecting-with-autoresponder
 
 #### Description
 
-This article demonstrates a basic example for using the [**Rules Builder**]({%slug rules-builder-general%}) for redirecting traffic from one server to another. The job can be accomplished via an Rules Builder rule that (optionally) utilizes regex and regex variables.
+This article demonstrates a basic example for using the [**Rules Builder**]({%slug rules-general%}) for redirecting traffic from one server to another. The job can be accomplished via an Rules Builder rule that (optionally) utilizes regex and regex variables.
 
 
 ## Basic Redirect
