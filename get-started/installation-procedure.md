@@ -25,10 +25,8 @@ Other requirements:
 - Active internet connection with access to the following URLs:
 
 ```
-    https://login.getfiddler.com/
-    https://api.getfiddler.com/
-    https://auth.getfiddler.com/
-    https://amazonaws.com/
+    https://*.getfiddler.com/
+    https://*.amazonaws.com/
 ```
 
 >tip Fiddler Everywhere version 1.1.0 and above supports predefined OS proxy settings (for direct internet access). If your system is accessing the internet via a predefined proxy, make sure you have the latest version of Fiddler Everywhere.

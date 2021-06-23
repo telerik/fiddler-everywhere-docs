@@ -38,7 +38,7 @@ _Saved Sessions and Rules tab basic guidelines_
  - The **Execute** button from a selected rule toolbar will only execute the currently selected rule.
 
 
->tip The **Rules** is available with version 2.0.0 of Fiddler Everywhere, while older versions had the **Auto Responder**. The main difference lies in the capabilities of both functionalities. The Rules Builder can change what the servers will receive (in terms of requests and responses and given that such rules are applied). At the same time, the Auto Responder was only capable of mocking a server request/response and modifying the local request/response. Therefore, it is essential to notice that not all rules are changing the server data.
+>tip The **Rules** tab is available with version 2.0.0 of Fiddler Everywhere, while older versions had the **Auto Responder** tab. The main difference lies in the capabilities of both functionalities. The Rules Builder can change what the servers will receive (in terms of requests and responses and given that such rules are applied). At the same time, the Auto Responder was only capable of mocking a server request/response and modifying the local request/response. Therefore, it is essential to notice that not all rules are changing the server data.
 
 
 ## Rules Toolbar

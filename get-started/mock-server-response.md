@@ -15,9 +15,9 @@ One of the most powerful features of the Fiddler Everywhere client is the **Rule
 To create and test your first rule follow these steps:
 
 1. Select the **Rules** tab and click on **Add New Rule**. This will open the [**Rules Builder**]({%slug rules-general%}#rule-builder). 
-1. Enter a descriptive rule name. The rule name will later appear in the [**Rules Queue**]({%slug rule-general%}#rules-queue).
-1. Add a [condition or a set of conditions]({%slug rule-general%}#conditions) to match sessions.
-1. Add an [action or a set of actions]({%slug rule-general%}#actions) to modify the matched sessions.
+1. Enter a descriptive rule name. The rule name will later appear in the [**Rules Queue**]({%slug rules-general%}#rules-queue).
+1. Add a [condition or a set of conditions]({%slug rules-general%}#conditions) to match sessions.
+1. Add an [action or a set of actions]({%slug rules-general%}#actions) to modify the matched sessions.
 1. Press **Save** to save and add the created rule in the **Rules Queue**.
 1. Switch the [ **Live traffic** to **Capturing** mode.]({%slug capture-traffic-get-started%}).
     - If testing with **Live Traffic**, make sure to enable the main **Rules** toggle.  The open the application (e.g., the Chrome browser) and execute a request that matches the set conditions. The rule is immediately applied to the ongoing captured traffic.
