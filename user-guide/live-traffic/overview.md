@@ -20,6 +20,8 @@ When a single session is selected, the following widgets should be visible:
 - [Request Details](#request-details) (available for single session selection only)
 - [Response Details](#response-details) (available for single session selection only)
 
+![Timings widget](../../images/overview/overview-all.png)
+
 
 ## Timings
 
