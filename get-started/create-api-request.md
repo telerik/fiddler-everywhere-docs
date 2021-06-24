@@ -12,7 +12,7 @@ The Fiddler's **Composer** allows you to create requests to APIs. Requests made 
 
 Create your first API request by following these steps:
 
-1. Select an appropriate **HTTP method** and enter the endpoint URL. The Composer supports **GET**, **POST**, **PUT**, **DELETE**, **TRACE**, **SEARCH** and **PROPFIND** methods.The **Composer** allows you also to change the version of the HTTP protocol via a drop-down menu to the left of the **Execute** button.
+1. Select an appropriate **HTTP method** and enter the endpoint URL. The Composer supports **GET**, **POST**, **PUT**, **DELETE**, **TRACE**, **SEARCH** and **PROPFIND** methods.The **Composer** allows you also to change the version of the HTTP protocol through a drop-down menu to the left of the **Execute** button.
 
 2. (**_Optional_**) If required, enter additional headers, params, and body. For example, common scenarios are to enter an authorization header, a `Content-type` header, or custom body data. 
 
@@ -24,14 +24,14 @@ Create your first API request by following these steps:
 
 4. Inspect the result in the Composer's **Response inspector**. Like the inspectors for the **Live Traffic** tab, the **Response** inspector for the Composer provides multiple views (for example, *Headers*, *Raw*, *JSON*, etc.).
 
-5. (**_Optional_**) You can save the request by clicking on the **Save** button (to the right of **Execute**). Saved requests are loaded in a collection in the **Requests list** and can be reused or shared with collaborators.
+5. (**_Optional_**) You can save the request by clicking the **Save** button (to the right of **Execute**). Saved requests are loaded in a collection in the **Requests list** and can be reused or shared with collaborators.
 
 ![Creating API request](../images/composer/create-api-request.png)
 
 ## Additional Resources
 
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
-- [Create an API request via the Composer]({%slug composer-get-started%})
+- [Create an API request through the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
 - [Mock server response]({%slug rulesbuilder-get-started%})
 - [Organize requests]({%slug composer-collections-get-started%})

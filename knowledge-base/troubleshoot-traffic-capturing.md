@@ -33,9 +33,9 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
     curl -v --url https://www.example.com/ -x 127.0.0.1:8866
     ```
 
-    The `-x` option sets the Fiddler Everywhere proxy. The `-v` option provides verbose logs. Optionally, you could use the `-k` option to disable SSL verification.
+    The `-x` option sets the Fiddler Everywhere proxy. The `-v` option provides verbose logs. Optionally, you can use the `-k` option to disable SSL verification.
 
-3. Check the command output. There should be a line related to the Server certificate, and under it, the certificate should list Fiddler's URL (http://www.fiddler2.com)
+3. Check the command output. There will be a line related to the Server certificate, and under it, the certificate will list Fiddler's URL (http://www.fiddler2.com)
 
     ```Console
     *   Trying 127.0.0.1...
@@ -91,7 +91,7 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
     < Content-Length: 1256
     ```
 
-4. Check the Fiddler Everywhere application window. A new session should be visible in the Live Traffic tab, and the protocol should be **HTTPS**, and there should be no Tunnel to indicate in the Host column. If the above is correct, the Fiddler Everywhere is configured to capture HTTPS traffic.
+4. Check the Fiddler Everywhere application window. A new session will be visible in the Live Traffic tab, and the protocol will be **HTTPS**. There will be no Tunnel to indicate in the Host column. If the above is correct, the Fiddler Everywhere is configured to capture HTTPS traffic.
 
     ![Fiddler showing HTTPS traffic](../images/kb/troubleshoot/curl-request-fiddler.png)
 

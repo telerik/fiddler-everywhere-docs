@@ -18,7 +18,7 @@ res_type: kb
 
 #### Description
 
-To capture secure traffic (HTTPS), Fiddler Everywhere needs to install and enable a root trust certificate in macOS's Keychain Access application. On some occasions, this process might fail, leading to an error in the Fiddler Everywhere client, which states **_"Fiddler root certificate NOT trusted successfully"_**. This article explains how to troubleshoot the certificate installation on macOS via custom bash scripts and terminal commands.
+To capture secure traffic (HTTPS), Fiddler Everywhere needs to install and enable a root trust certificate in macOS's Keychain Access application. On some occasions, this process might fail, leading to an error in the Fiddler Everywhere client, which states **_"Fiddler root certificate NOT trusted successfully"_**. This article explains how to troubleshoot the certificate installation on macOS through custom bash scripts and terminal commands.
 
 ## Test Certificate Import
 
@@ -61,14 +61,14 @@ To test importing the Fiddler Root certificate with a Bash script, execute the f
     security trust-settings-export /tmp/trustSettings.xml
     ```
     
-    When successful, the command should output a success message:
+    When successful, the command will output a success message:
     ```Bash
     ...Trust Settings exported successfully.
     ```
 
-5. Confirm that the **DO_NOT_TRUST_FiddlerRoot** is present in the Keychain Access application (under **_login > Certificates_**). Double click on the certificate, scroll to the bottom and note the SHA-1 value. Open the exported settings file from **_ /tmp/trustSettings.xml_** and check that the SHA-1 value is present there. For example, the certificate from your Keychain Access application (see the screenshot) should be identical to the SHA1
+5. Confirm that the **DO_NOT_TRUST_FiddlerRoot** is present in the Keychain Access application (under **_login > Certificates_**). Double-click  the certificate, scroll to the bottom and note the SHA-1 value. Open the exported settings file from **_ /tmp/trustSettings.xml_** and check that the SHA-1 value is present there. For example, the certificate from your Keychain Access application (see the screenshot) will be identical to the SHA1
 
-    _The SHA1 key in trustSettings.xml file should also be present in the Keychain Access_
+    _The SHA1 key in trustSettings.xml file will also be present in the Keychain Access_
     ```XML
     <key>68E0B8FE34DF4A756B664E300B067CA9A1B9DE8</key>
     ```

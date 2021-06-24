@@ -27,7 +27,7 @@ You need the __FiddlerRootCertificate.crt__ file. For the instructions to downlo
 
 ## Solution
 
-1. Go to your __Desktop__ and double click on __FiddlerRootCertificate.crt__.
+1. Go to your __Desktop__ and double-click  the __FiddlerRootCertificate.crt__ file.
 2. Click the __Install Certificate...__ button.
 3. Select the __Local Machine__ Store Location and click __Next__.
 4. Select the __Place all certificates in the following store__ option and click __Browse...__.

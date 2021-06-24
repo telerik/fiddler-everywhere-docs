@@ -25,7 +25,7 @@ In some corner cases, the Fiddler Everywhere client might not access the macOS n
 
 The Fiddler Everywhere client will use the name of the active network adapter (for example, something like **_Wi-FI_**) to set the Fiddler proxy. You can get the name manually by creating and executing a [Shell script](https://en.wikipedia.org/wiki/Shell_script).
 
-1. Create a Shell file via your preferred IDE. For demonstration purposes, we will name ours **_test.sh_**
+1. Create a Shell file through your preferred IDE. For demonstration purposes, name ours **_test.sh_**
 
 2. In the newly created **_test.sh_** copy and paste the following Shell script.
     ```Shell
@@ -46,17 +46,17 @@ The Fiddler Everywhere client will use the name of the active network adapter (f
     done <<< "$(echo "$services")"
 
     if ! [ -n "$currentservice" ]; then
-        >&2 echo "Could not find current service"
+        >&2 echo "Can't find current service"
         exit 1
     fi
     ```
 
-3. Execute the **_test.sh_** via the terminal
+3. Execute the **_test.sh_** through the terminal
     ```Console
     sh <path-to-script>/test.sh
     ```
 
-4. On success, as an output, you should see the name of the active network adapter (for demonstration purposes, we will assume the result is **_Wi-Fi_**). Not being able to get the active network adapter name successfully indicates system restrictions or wrongful network configuration.
+4. On success, as an output, you will see the name of the active network adapter (for demonstration purposes, let's assume the result is **_Wi-Fi_**). Not being able to get the active network adapter name successfully indicates system restrictions or wrongful network configuration.
 
 _An example output from executing test.sh_
 ```
@@ -67,7 +67,7 @@ Refer to the next section on how to use this name for further troubleshooting.
 
 ## Troubleshooting the Proxy Settings
 
-Once we can successfully get the active network adapter's name, we can use it to access the OS network settings. Use the commands below to achieve the above - note that for demonstration purposes, we are assuming that the adapter name is **_Wi-Fi_**.
+Once you can successfully get the active network adapter's name, you can use it to access the OS network settings. Use the commands below to achieve the above - note that for demonstration purposes, assume that the adapter name is **_Wi-Fi_**.
 
 ```Console
 networksetup -getproxyautodiscovery "Wi-Fi"
@@ -79,7 +79,7 @@ networksetup -getftpproxy "Wi-Fi"
 networksetup -getsocksfirewallproxy "Wi-Fi"
 ```
 
-The output from the above commands will vary depending on the OS network settings that are in place. You can use the output to troubleshoot your OS network settings with and without Fiddler Everywhere capturing mode. For example, when FIddler Everywhere is properly set to capture traffic and capturing mode is ON, the **_getsecurewebproxy_** option should returng the Fiddler proxy (by default this is **_127.0.0.1:8866_**).
+The output from the above commands will vary depending on the OS network settings that are in place. You can use the output to troubleshoot your OS network settings with and without Fiddler Everywhere capturing mode. For example, when FIddler Everywhere is properly set to capture traffic and capturing mode is ON, the **_getsecurewebproxy_** option will return the Fiddler proxy (by default this is **127.0.0.1:8866**).
 
 _An example output for the **networksetup -getwebproxy <adapter-name>** command when there is no Web proxy being set_
 ```Console

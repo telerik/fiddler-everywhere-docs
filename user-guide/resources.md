@@ -10,7 +10,7 @@ position: 60
 
 The welcome page loads on the startup of the Fiddler Everywhere application. The page contains useful information about the state of Fiddler Everywhere, several links to the official documentation, blogs, video channel, webinars, and interactive in-app tutorials.
 
-The screen will show on consecutive startups unless it is explicitly disabled via the **_Don't show this window on startup_** checkbox. To show the welcome page, use the **My Resouces** option at the Fiddler Everywhere application's bottom-left side.
+The screen will show on consecutive startups unless it is explicitly disabled through the **_Don't show this window on startup_** checkbox. To show the welcome page, use the **My Resouces** option at the Fiddler Everywhere application's bottom-left side.
 
 ![My Resources option at the bottom-left](../images/resources/my-resources-main-page.png)
 
@@ -33,6 +33,6 @@ The **Webinars** link leads to the official blog of Fiddler Everywhere hosted at
 
 ## In-app Tutorials
 
-The welcome page contains in-app tutorials with necessary steps explaining some of the core features of Fiddler Everywhere. Click on a tutorial to start the interactive journey through the FIddler Everywhere functionalities.
+The welcome page contains in-app tutorials with necessary steps explaining some of the core features of Fiddler Everywhere.  Start a tutorial to experience an interactive journey through the Fiddler Everywhere functionalities.
 
 ![Interactive in-app tutorials](../images/resources/in-app-tuto-002.png)

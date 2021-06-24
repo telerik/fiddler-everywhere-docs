@@ -8,7 +8,7 @@ position: 10
 
 # Installation
 
-Fiddler Everywhere is a cross-platform web debugging proxy available for Windows, macOS, and Linux. In this article, we list the system requirements and describe the steps to install Fiddler Everywhere on all supported operating systems.
+Fiddler Everywhere is a cross-platform web debugging proxy available for Windows, macOS, and Linux. This article lists the system requirements and describe the steps to install Fiddler Everywhere on all supported operating systems.
 
 ## System Requirements
 
@@ -29,7 +29,7 @@ Other requirements:
     https://*.amazonaws.com/
 ```
 
->tip Fiddler Everywhere version 1.1.0 and above supports predefined OS proxy settings (for direct internet access). If your system is accessing the internet via a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
+>tip Fiddler Everywhere version 1.1.0 and above supports predefined OS proxy settings (for direct internet access). If your system is accessing the internet through a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
 
 ## Install Fiddler Everywhere
 
@@ -70,7 +70,7 @@ Other requirements:
 
     - **GUI Instructions**
 
-        Alternatively, many Linux distributions provide options to set the file's executable rights via the used GUI.
+        Alternatively, many Linux distributions provide options to set the file's executable rights through the used GUI.
 
         **Gnome**
 

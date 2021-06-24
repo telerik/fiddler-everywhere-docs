@@ -36,7 +36,7 @@ Full list of all response status code is available at the [HTTP/1.1 status code 
 
 ## Protocol
 
-Indicates the used protocol, which can be __HTTP__ (Hypertext Transfer Protocol) or __HTTPS__ (secure HTTP). The __HTTPS__ is HTTP but with an added secure layer, which is usually TLS (or SSL). The secure layer encrypts the standard HTTP requests and responses, making them far more reliable than the plain-text HTTP. Fiddler can decode the encrypted content, but a trust root certificate should be installed for this to happen. Once the trust certificate is installed and the HTTPS capturing is enabled, Fiddler is effectively a "man-in-the-middle" and can now decode encrypted sessions by switching on the __Decode__ button.
+Indicates the used protocol, which can be __HTTP__ (Hypertext Transfer Protocol) or __HTTPS__ (secure HTTP). The __HTTPS__ is HTTP but with an added secure layer, which is usually TLS (or SSL). The secure layer encrypts the standard HTTP requests and responses, making them far more reliable than the plain-text HTTP. Fiddler can decode the encrypted content, but a trust root certificate have to be installed for this to happen. Once you install it and the HTTPS capturing is enabled, Fiddler is effectively a "man-in-the-middle" and can now decode encrypted sessions by switching on the __Decode__ button.
 
 ## Host
 
@@ -50,7 +50,7 @@ The URL path, file, and query string from the request.
 
 The HTTP method used by the request (__GET__, __POST__, etc.). The HTTP methods are used to set the desired action that needs to be applied to a given resource.
 
-- __GET__: The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
+- __GET__: The GET method requests a representation of the specified resource. Requests using GET will only retrieve data.
 - __HEAD__: The HEAD method asks for a response identical to that of a GET request, but without the response body.
 - __POST__: The POST method is used to submit an entity to the specified resource, often causing a change in state or side effects on the server.
 - __PUT__: The PUT method replaces all current representations of the target resource with the request payload.
@@ -66,7 +66,7 @@ Shows the number of bytes in the response body.
 
 ## Caching
 
-Values (if any) from __Cache-Control__ and __Expires__ headers. In case, where both headers are present, the column will display first the values from __Cache-Control__ and then the values for __Expires__ header (separated by semicolon).
+Values (if any) from __Cache-Control__ and __Expires__ headers. If, where both headers are present, the column will display first the values from __Cache-Control__ and then the values for __Expires__ header (separated by semicolon).
 
 The __Cache-Control__ header is containing instructions for caching (for both requests and responses). An example of standard __Cache-Control__ header:
 
@@ -104,4 +104,4 @@ Process: teams:18352
 
 __Comments__ is the field for showing the custom comment.
 
-This column will have a value only if the comment was added previously (for example, when looking into a list of [shared sessions]({%slug saved-sessions-tab%}) with already added comments) or when you explicitly add a comment (via [__Comment__ in the context menu]({%slug web-sessions-list%}#comment)).
+This column will have a value only if the comment was added previously (for example, when looking into a list of [shared sessions]({%slug saved-sessions-tab%}) with already added comments) or when you explicitly add a comment (through [__Comment__ in the context menu]({%slug web-sessions-list%}#comment)).

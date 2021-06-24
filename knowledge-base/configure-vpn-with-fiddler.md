@@ -50,7 +50,7 @@ The article covers the specific configuration needed to use Fiddler Everywhere w
 
 ## Reusing VPN 
 
-To prevent Cisco AnyConnect from using cached proxy information, we must first stop the Cisco VPN software and then close Fiddler Everywhere (or pause Capturing mode). The workflow for Cisco AnyConnect alongside Fiddler Everywhere is as follows:
+To prevent Cisco AnyConnect from using cached proxy information, you must first stop the Cisco VPN software and then close Fiddler Everywhere (or pause Capturing mode). The workflow for Cisco AnyConnect alongside Fiddler Everywhere is as follows:
 
 1. Start Fiddler Everywhere and enable Capturing mode.
 

@@ -26,7 +26,7 @@ The following rules of thumb are essential to understand how the Rules tab execu
 _Live Traffic and Rules tab basic guidelines_
 
   - The **Rules** main toggle is available only for the **Live Traffic** section.
-  - The **Unmatched Requests Passthrough** is applicable only for ongoing capture via the **Live Traffic** section.
+  - The **Unmatched Requests Passthrough** is applicable only for ongoing capture through the **Live Traffic** section.
  -  If the **Rules** toggle is ON, and a selected rule toggle is ON, that means the rule executes for all of the inbound/outbound captured traffic (**Live Traffic** section with enabled **Capturing**).
   - If the **Rules** toggle is ON, and a selected rule toggle is OFF, that means that the rule won't execute for all of the inbound/outbound captured traffic (**Live Traffic** section with enabled **Capturing**).
 
@@ -62,7 +62,7 @@ The **Rule Builder** interface enables creating and editing rules. For each new 
 
 ### Add New Rule
 
-1. Click on the **Add New Rule** button from the main toolbar.
+1. Click the **Add New Rule** button from the main toolbar.
 1. Add a new name for your rule in the **Rule Name** text field.
 1. Set the _When_ rule based on one of the following statements:
     - **all these conditions** - The rule will be applied when all conditions are true (logical TRUE).
@@ -74,8 +74,8 @@ The **Rule Builder** interface enables creating and editing rules. For each new 
 
 >Tips:
 > - Rules are applied in the order that they appear in the **Rules Queue**. Use the **Down Arrow** to demote a rule and the **Up Arrow** to promote a rule in the queue.
-> - You can export the current queue of rules [via the **Export** button]({%slug rules-general%}#export-rules) from the **Rules Queue** toolbar.
-> - You can import a ***.FARX** file [via the **Import** button]({%slug rules-general%}#import-rules) to queue rules based on previously captured traffic.
+> - You can export the current queue of rules [through the **Export** button]({%slug rules-general%}#export-rules) from the **Rules Queue** toolbar.
+> - You can import a ***.FARX** file [through the **Import** button]({%slug rules-general%}#import-rules) to queue rules based on previously captured traffic.
 
 
 ### Conditions
@@ -355,11 +355,11 @@ The **Rules Queue** (a.k.a. __Queue Viewer__ and __Queue Rules Viewer__) interfa
 
 ### Rules Priority
 
-By default, the **Rules Queue** will list all created & imported rules based on their priority. Rules will be executed in the order they appear in the queue (the first rule will be executed first, then the second one, etc.). When selecting specific rules and using the explicit **Execute** button, they will also be executed in the order they appear in the queue.
+By default, the **Rules Queue** will list all created and imported rules based on their priority. Rules will be executed in the order they appear in the queue (the first rule will be executed first, then the second one, etc.). When selecting specific rules and using the explicit **Execute** button, they will also be executed in the order they appear in the queue.
 
 ### Automatic Rules Execution for Live Traffic
 
-Use the **Rules** toggle (from the main toolbar) to activate all enabled rules (an enabled rule is one with an active toggle). Note that __Live Traffic__ switch should also be turned on to _Capturing_ mode.
+Use the **Rules** toggle (from the main toolbar) to activate all enabled rules (an enabled rule is one with an active toggle). Note that __Live Traffic__ switch have to be turned on to **Capturin** mode.
 
 ### Explicit Rules Execution
 

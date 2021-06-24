@@ -15,7 +15,7 @@ This article describes how to organize and modify existing requests. To learn mo
 
 ![Requests list](../images/requests/requests-list-all.png)
 
-The **Requests** list is organized in **collections**. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double click on a selected request.
+The **Requests** list is organized in **collections**. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double-click a selected request.
 
 >tip You can [**Rename**](#rename) a collection, [**Delete**](#delete) a collection, or make a [**New Folder**](#new-folder) using the context menu. 
 
@@ -60,11 +60,11 @@ Follow these steps to delete a collection:
 
 ![Delete Requests Folder](../images/requests/delete-requests-collection.png)
 
->tip You could also delete a specific sub-folder or a particular request using the **delete** option for the selected entry.
+>tip You can also delete a specific sub-folder or a particular request using the **delete** option for the selected entry.
 
 ## Collection Context Menu 
 
-Each collection has options accessible via a context menu. 
+Each collection has options accessible through a context menu. 
 
 ![Requests Collection Context Menu](../images/requests/requests-collection-context.png)
 
@@ -80,7 +80,7 @@ Each collection has options accessible via a context menu.
 
 ## Requests Context Menu
 
-Each  __requests__ has options to either __Rename__ or __Delete__ via its context menu (or via keyboard shortcuts).
+Each  __requests__ has options to either __Rename__ or __Delete__ through its context menu (or through keyboard shortcuts).
 
 ![Requests context menu](../images/requests/requests-context-menu.png)
 

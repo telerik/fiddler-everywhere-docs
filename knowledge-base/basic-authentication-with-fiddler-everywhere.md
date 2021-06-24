@@ -19,7 +19,7 @@ res_type: kb
 
 In the context of an HTTP transaction, __Basic Access Authentication__ is a method for an HTTP user agent (for example, a web browser) to provide a user name and password when making a request. In __Basic HTTP Authentication__, a request contains a header field in the form of __`Authorization: Basic <base64 string>`__, where credentials are the __Base64__ encoding of `username` and `password` joined by a single colon(`:`).
 
-In this article, we list the steps to [create a request for APIs that require __Authentication__](#create-a-basic-authentication-request) by using the Fiddler Everywhere [Composer]({%slug composer-tab%}) and provide a [complete example](#basic-authentication-request-example) of the procedure.
+This article lists the steps to [create a request for APIs that require __Authentication__](#create-a-basic-authentication-request) by using the Fiddler Everywhere [Composer]({%slug composer-tab%}) and provide a [complete example](#basic-authentication-request-example) of the procedure.
 
 ## Create a Basic Authentication Request
 
@@ -65,8 +65,8 @@ Clicking the __Execute__ button adds two more Keys to the __Headers__ tab named 
 
 ![Added Keys to the Headers Tab](../images/kb/added-keys-to-the-headers-tab.png)
 
-Following the above steps will create __Basic Authentication__ with Fiddler Everywhere. To check, go through the __Response Inspector__ section of the Composer. A successful request should return __status 200__ from the server along with the server-specific payload:
+Following the above steps will create __Basic Authentication__ with Fiddler Everywhere. To check, go through the __Response Inspector__ section of the Composer. A successful request will return __status 200__ from the server along with the server-specific payload:
 
 ![Response Inspector](../images/kb/authentication-to-true-in-response-inspector.png)
 
-The above response is HTTPBin specific as we used it to create the __Basic Authentication__.
+The above response is [HTTPBin](https://httpbin.org) specific as it was used to create the __Basic Authentication__.

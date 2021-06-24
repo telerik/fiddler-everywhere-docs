@@ -9,7 +9,7 @@ position: 10
 
 # Main Menu
 
-The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you could find the [**View**](#view), and [**Help**](#help) submenus plus [Manage Subscriptions options](#manage-subscriptions). To the right, you will find [**Feedback**](#feedback), [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out**](#sign-out) option.
+The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you can find the [**View**](#view), and [**Help**](#help) submenus plus [Manage Subscriptions options](#manage-subscriptions). To the right, you will find [**Feedback**](#feedback), [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out**](#sign-out) option.
 
 ![Fiddler Everywhere main menu](../images/menu/main-menu-all.png)
 
@@ -74,7 +74,7 @@ The **Links** menu provides several useful fast links.
 
 - A **Forums** link to the Fiddler Everywhere community forums at https://community.getfiddler.com/support/discussions
 - A **Documentation** link to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/
-- A **Contact Support** link (available for both the PRO & Trial versions) for posting a support ticket to the Fiddler Everywhere support team. More about Fiddler Everywhere PRO support [here]({%slug support-page%}).
+- A **Contact Support** link (available for both the PRO and Trial versions) for posting a support ticket to the Fiddler Everywhere support team. More about Fiddler Everywhere PRO support [here]({%slug support-page%}).
 
 ## Notifications
 
@@ -94,4 +94,4 @@ The **Settings** button opens a window that allows you to manage core Fiddler Ev
 
 ## Sign Out
 
-The **Sign Out** button allows you to log out of the currently logged user. Click on the button to log out and navigate to [an intro page]({%slug installation%}#create-an-account) that provides options to create a new user or use another existing account.
+The **Sign Out** button allows you to log out of the currently logged user. Click the button to log out and navigate to [an intro page]({%slug installation%}#create-an-account) that provides options to create a new user or use another existing account.

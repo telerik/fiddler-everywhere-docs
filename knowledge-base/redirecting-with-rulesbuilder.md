@@ -1,5 +1,5 @@
 ---
-title: Redirecting traffic from one server to another via the Rules tab
+title: Redirecting traffic from one server to another through the Rules tab
 description: An article on how to create match rules and actions to redirect traffic while using regex variables
 type: how-to
 slug: rulesbuilder-redirect-traffic
@@ -18,12 +18,12 @@ previous_url: /knowledge-base/redirecting-with-autoresponder
 
 #### Description
 
-This article demonstrates a basic example for using the [**Rules**]({%slug rules-general%}) tab for redirecting traffic from one server to another. The job can be accomplished via a rule that (optionally) utilizes regex and regex variables.
+This article demonstrates a basic example for using the [**Rules**]({%slug rules-general%}) tab for redirecting traffic from one server to another. The job can be accomplished through a rule that (optionally) utilizes regex and regex variables.
 
 
 ## Basic Redirect
 
-Redirecting traffic from one server to another can be achieved via a simple WWrule.
+Redirecting traffic from one server to another can be achieved through a simple WWrule.
 
 
 ```JS
@@ -33,7 +33,7 @@ Action: http://localhost:4000/fiddler-everywhere/introduction
 
 ## Redirect with Regex
 
-In some cases, we would like to create more complex redirect rules. Here Fiddler Everywhere provides regex support for creating **Match** rules and **Actions**.
+In some cases, you will want to create more complex redirect rules. Here Fiddler Everywhere provides regex support for creating **Match** rules and **Actions**.
 
 ```JS
 Match: regex:(.*)docs.telerik.com/(.*)

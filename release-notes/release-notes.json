@@ -117,7 +117,7 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "The app does not work in case any of the bash profiles has commands that print on the terminal (macOS and Linux)"
+                        "title": "The app does not work If any of the bash profiles has commands that print on the terminal (macOS and Linux)"
                     },
                     {
                         "title": "The app does not capture traffic when 'Require an administrator password to access system-wide preferences' option is checked (macOS)"
@@ -239,7 +239,7 @@
                         "title": "Add predefined responses for Rule Builder rules – in Fiddler Classic there was an easy way to create responses for specific HTTP Codes, like 404, 301, etc. Now, the same is valid for Fiddler Everywhere – just create (edit) your AR rules and use the predefined responses from there. With a few clicks you can simulate 404 or 200 and see how your code behaves in this situation."
                     },
                     {
-                        "title": "Add Client IP column – we’ve added a new column (it should be manually included in the list from the Columns menu) which shows the Client IP from which the request has been executed. This is extremely helpful when you capture requests from mobile devices and your machine as well."
+                        "title": "Add Client IP column – we’ve added a new column (it will be manually included in the list from the Columns menu) which shows the Client IP from which the request has been executed. This is extremely helpful when you capture requests from mobile devices and your machine as well."
                     },
                     {
                         "title": "Integrate in-app nudges – with this release we can now send targeted information (for webinars for example) to users who have allowed user tracking."

@@ -18,9 +18,9 @@ res_type: kb
 
 #### Description
 
-The [Rules tab]({%slug rules-general%}) is one of the most powerful debugging functionalities that Fiddler Everywhere provides. The main idea behind the Rules tab is to provide a set of rules (based on match rules and actions) that quickly mock a server response and behavior without going through the trouble of modifying the server. Within seconds, you could execute many complex and different rules and test your site against multiple scenarios.
+The [Rules tab]({%slug rules-general%}) is one of the most powerful debugging functionalities that Fiddler Everywhere provides. The main idea behind the Rules tab is to provide a set of rules (based on match rules and actions) that quickly mock a server response and behavior without going through the trouble of modifying the server. Within seconds, you can execute many complex and different rules and test your site against multiple scenarios.
 
-This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. We also explain how to customize a rule by adding a [Custom DAT file](#custom-dat-file) or a [Custom HTTP Response](#custom-http-response).
+This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. It also explain how to customize a rule by adding a [Custom DAT file](#custom-dat-file) or a [Custom HTTP Response](#custom-http-response).
 
 
 ## Predefined Actions in Rule Builder

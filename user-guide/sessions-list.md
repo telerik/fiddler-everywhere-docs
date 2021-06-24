@@ -8,7 +8,7 @@ position: 40
 
 # Sessions List
 
-The Fiddler Everywhere provides the option to save. modify, inspect and share previosly captured traffic. Use the __Live Traffic__ list's [__Save__]({%slug web-sessions-list%}#save) and [__Share__]({%slug web-sessions-list%}#share) options to save sessions to the __Sessions__ list.  
+The Fiddler Everywhere provides the option to save. modify, inspect and share previosly captured traffic. Use the **Live Traffic** list's [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options to save sessions to the **Sessions** list.  
 
 ![Sessions list](../images/sessions/saved-sessions-all.png)
 
@@ -19,11 +19,11 @@ Previously saved sessions can be selected, inspected, modified, and shared with 
 
 A list of some simple actions that can be applied on saved session entry:
 
-- **Single click** on the saved session entry from the __Sessions__ list to select it.
+- **Single-click** the saved session entry from the **Sessions** list to select it.
 
-- **Right-click** on a selected session entry to load the [**context menu**](#sessions-context-menu). The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
+- **Right-click** a selected session entry to load the [**context menu**](#sessions-context-menu). The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
 
-- **Double-click** on the saved session entry from the __Sessions__ list to open it in a new tab.
+- **Double-click** the saved session entry from the **Sessions** list to open it in a new tab.
 
 - Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 
@@ -34,65 +34,65 @@ A list of some simple actions that can be applied on saved session entry:
 
 ## Sharing Sessions
 
-To share captured traffic with other collaborators, we must first save the session in the cloud. Note that sessions held **locally** will be transferred to the cloud if you use the share functionalities. The Fiddler Everywhere provides several UI solutions for sharing and collaboration as follows:
+To share captured traffic with other collaborators, you must first save the session in the cloud. Note that sessions held **locally** will be transferred to the cloud if you use the share functionalities. The Fiddler Everywhere provides several UI solutions for sharing and collaboration as follows:
 
 ### Share Selected Session
 
-1. Select a saved session entry from the __Sessions__ list.
+1. Select a saved session entry from the **Sessions** list.
 
-2. Click on the __Share__ button on the right from the entry's name.
+2. Click the **Share** button on the right from the entry's name.
 
-3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on the __Share__ button.
+3. The **Share Sessions** prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on the **Share** button.
 
 
 ### Share Loaded Saved Session
 
-1. Double click on a saved Session entry from the __Sessions__ list.
+1. Double-click a saved Session entry from the **Sessions** list.
 
-2. The session entry opens in a new tab. Click on the __Share__ button from the toolbar.
+2. The session entry opens in a new tab. Click the **Share** button from the toolbar.
 
     ![Sessions list](../images/sessions/saved-sessions-reshare.png)
 
-3. The __Share Sessions__ prompt window appears. Enter a valid email (mandatory) and notes (optional) and click on the __Share__ button.
+3. The **Share Sessions** prompt window appears. Enter a valid email (mandatory) and notes (optional) and click the **Share** button.
 
 
 ## Manage Users
 
-The UI option appears only if the session entry is stored in the cloud and shared. Click on the __Manage Users__ to prompt a window that allows you to manage the list of users that have access to the shared session.
+The UI option appears only if the session entry is stored in the cloud and shared. Click the **Manage Users** to prompt a window that allows you to manage the list of users that have access to the shared session.
 
 ![Manage Users](../images/sessions/sessions-shared-manage-users.png)
  
 
 ## Delete
 
-The **Delete** button (to the right of the selected entry) removes the chosen session entry from the __Sessions__ list. The shared session can be recovered from the [**Shared Sessions**](#shared-sessions) list.
+The **Delete** button (to the right of the selected entry) removes the chosen session entry from the **Sessions** list. The shared session can be recovered from the [**Shared Sessions**](#shared-sessions) list.
 
 
 ## Sessions Context Menu
 
-Each session has several commands that can be accessed via the context menu (or with keyboard shortcuts).
+Each session has several commands that can be accessed through the context menu (or with keyboard shortcuts).
 
 ![Saved sessions context menu](../images/sessions/sessions-shared-context.png)
 
 ### Open
 
-The option will load the selected session in the __Live Traffic__ list. Keyboard shortcut: __Cmd__ + __Enter__ (Mac), __Enter__ (Windows).
+The option will load the selected session in the **Live Traffic** list. Keyboard shortcut: **Cmd** + **Enter** (Mac), **Enter** (Windows).
 
 ### Export
 
-The option prompts the __Export__ windows. The session can be exported in various know formats (like SAZ, HTTPArchive, WCATScript, cURL Script, RAW, and others). Keyboard shortcut: __Cmd__ + __E__ (Mac), __Ctrl__ + __E__ (Windows).
+The option prompts the **Export** windows. The session can be exported in various know formats (like SAZ, HTTPArchive, WCATScript, cURL Script, RAW, and others). Keyboard shortcut: **Cmd** + **E** (Mac), **Ctrl** + **E** (Windows).
 
 ### Rename
 
-The option allows you to rename the selected session. Available only for the session owner. Keyboard shortcut: __F2__ (Mac), __F2__ (Windows).
+The option allows you to rename the selected session. Available only for the session owner. Keyboard shortcut: **F2** (Mac), **F2** (Windows).
 
 ### Share
 
-The option prompts a window where you could add user emails that you want to share the session with. Available only for the session owner. Keyboard shortcut: __Cmd__ + __Shift__ + __=__ (Mac), __Ctrl__ + __Shift__ + __=__ (Windows).
+The option prompts a window where you can add user emails that you want to share the session with. Available only for the session owner. Keyboard shortcut: **Cmd** + **Shift** + **=** (Mac), **Ctrl** + **Shift** + **=** (Windows).
 
 ### Delete
 
-The option removes the session from the __Sessions__ list. Keyboard shortcut: __Cmd__ + __Back__ (Mac), __Del__ (Windows).
+The option removes the session from the **Sessions** list. Keyboard shortcut: **Cmd** + **Back** (Mac), **Del** (Windows).
 
 ### Manage Users
 

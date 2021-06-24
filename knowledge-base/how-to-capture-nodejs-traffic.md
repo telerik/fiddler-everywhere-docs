@@ -20,14 +20,14 @@ res_type: kb
 
 #### Description
 
-Many developers are using Fiddler Everywhere to capture traffic from **Node.js** libraries that make HTTP and HTTPS requests. This article explains how to proxy these requests so that you could capture and analyze them with FIddler Everywhere.
+Many developers are using Fiddler Everywhere to capture traffic from **Node.js** libraries that make HTTP and HTTPS requests. This article explains how to proxy these requests so that you can capture and analyze them with FIddler Everywhere.
 
->important Some Node.js modules like [**request**](https://www.npmjs.com/package/request) are reading the proxy information from the windows environment variable ([global proxy settings](#setting-proxy-globally)). Others like the state [**HTTP** module](https://nodejs.org/api/http.html) are not respecting the global proxy configuration (of Node.js), so we need to [proxy their requests explicitly](#setting-proxy-explicitly). The sections that follow below are demonstrating a basic approach for each of the mentioned scenarios.
+>important Some Node.js modules like [**request**](https://www.npmjs.com/package/request) are reading the proxy information from the windows environment variable ([global proxy settings](#setting-proxy-globally)). Others like the state [**HTTP** module](https://nodejs.org/api/http.html) are not respecting the global proxy configuration (of Node.js), so you need to [proxy their requests explicitly](#setting-proxy-explicitly). The sections that follow below are demonstrating a basic approach for each of the mentioned scenarios.
 
 
 ## Setting Proxy Globally
 
-This scenario is useful for libraries like [request](https://www.npmjs.com/package/request) that reuse the proxy settings in the environment variables. With Node.js, we can set the proxy directly in the terminal. 
+This scenario is useful for libraries like [request](https://www.npmjs.com/package/request) that reuse the proxy settings in the environment variables. With Node.js, you can set the proxy directly in the terminal. 
 
 ```Console
 set https_proxy=http://127.0.0.1:8866 
@@ -35,7 +35,7 @@ set http_proxy=http://127.0.0.1:8866
 set NODE_TLS_REJECT_UNAUTHORIZED=0
 ```
 
-Once the above settings are applied, we can now call modules like [request](https://www.npmjs.com/package/request) and make the HTTP request. The request will be captured by Fiddler Everywhere. Once the capturing is over, we could revert the global proxy settings as follows:
+Once the above settings are applied, you can now call modules like [request](https://www.npmjs.com/package/request) and make the HTTP request. The request will be captured by Fiddler Everywhere. Once the capturing is over, you can revert the global proxy settings as follows:
 
 ```Console
 set https_proxy=
@@ -43,7 +43,7 @@ set http_proxy=
 set NODE_TLS_REJECT_UNAUTHORIZED=
 ```
 
-Alternatively, instead of using the terminal, we could use simple JavaScript to set the environment variable through code.
+Alternatively, instead of using the terminal, you can use simple JavaScript to set the environment variable through code.
 
 _Example file **fiddler-everywhere-test.js**_
 ```JavaScript
@@ -75,7 +75,7 @@ removeFiddlerProxy();
 
 ## Setting Proxy Explicitly
 
-The [global proxy settings](#settingproxy-globally) won't work for modules like the [HTTP module](https://nodejs.org/api/http.html), where we need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to set the proxy through the code explicitly.
+The [global proxy settings](#settingproxy-globally) won't work for modules like the [HTTP module](https://nodejs.org/api/http.html), where you need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to set the proxy through the code explicitly.
 
 
 _Example file **fiddler-everywhere-test.js**_
@@ -121,7 +121,7 @@ http.request(setFiddlerProxy(exampleUrl), (res) => {
 }).end(); // Through Fiddler.
 ```
 
-With the above, we can test the request through the terminal.
+With the above, you can test the request through the terminal.
 
 ```Console
 node fiddler-everywhere-test.js

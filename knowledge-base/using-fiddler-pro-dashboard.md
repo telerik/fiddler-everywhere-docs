@@ -17,39 +17,44 @@ res_type: kb
 
 #### Description
 
-The Fiddler dashboard site provides means for managing plans, payments, and the activation of plan subscriptions and seats for Fiddler Everywhere and Fiddler Jam. This KB article demonstrates the functionalities accessible from [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com) and the steps needed to activate & manage your subscriptions.
+The Fiddler dashboard site provides means for managing plans, payments, and the activation of plan subscriptions and seats for Fiddler Everywhere and Fiddler Jam. This KB article demonstrates the functionalities accessible from [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com) and the steps needed to activate and manage your subscriptions.
 
 
 ## Fiddler Everywhere Dashboard
 
-The Fiddler dashboard site is where you could purchase and manage subscription plans, check and download your invoices, and maintain the payment methods. The site requires login with a Fiddler account or social login (Google authentication is supported).
+The Fiddler dashboard site is where you can purchase and manage subscription plans, check and download your invoices, and maintain the payment methods. The site requires you to log in with a Fiddler or social media account.
 
 
 ## Activating Subscription Plan
 
-To purchase the Fiddler Everywhere Pro subscription plan:
+New users can purchase the Fiddler Everywhere Pro subscription plan as described below. Existing trial users
 
-- Open the Fiddler Everywhere client, click on the **Buy Now** button (available only to users with active trial version) or follow the link to the dashboard site on the landing screen.
-    ![Buy Fiddler Everywhere Pro subscription plan](../images/kb/dashboard/dash-001.png)
+1. Open the Fiddler Everywhere client, click on the **Buy Now** button on the landing page. As a result, you will land on the [Fiddler Dashboard](https://dashboard.getfiddler.com) page.
 
-- Alternatively, you could directly open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where after successful login, you will land on the main dashboard page.
+    >tip You can use the **Start Free Trial** button to activate the 30-days trial. Note that this step is available only for new users. If you are an existing user with an expired trial, go to the next step.
 
-- Navigate [to the Plans page](https://dashboard.getfiddler.be/plans), select the desired Fiddler product, and use the **Purchase Plan** to proceed order details page.
+1. Alternatively, directly open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com).
 
-- The order details page presents you with the option to choose between annual vs. monthly payments, adding additional subscription seats (by default, each plan activates a single seat), and adding promotional coupons. Press **Next** to proceed to the payment details page.
+1. Navigate [to the Plans page](https://dashboard.getfiddler.be/plans), and select the desired Fiddler product.
 
-- On the payment details page, you have the option to add a new payment method or to use a saved card. Then, use the **Pay** button to finalize the order.
+1. Press **Purchase Plan** to proceed to the order details page. The order details page presents you with the option to choose between annual vs. monthly payments, adding additional subscription seats (by default, each plan activates a single seat), and adding promotional coupons. 
 
-- Restart your Fiddler Everywhere client to activate the purchased subscription plan fully.
+1. Press **Next** to proceed to the payment details page. On the payment details page, you have the option to add a new payment method or to use a saved card.
+
+1. Press **Pay** button to finalize the order.
+
+1. Restart your Fiddler Everywhere client to fully activate the purchased subscription plan.
 
 
 ## Manage Subscriptions
 
-To manage active subscription for any Fiddler products:
+Only the account owners can manage subscriptions (add/remove seats, change plans, etc.). To manage the active subscription for any Fiddler products:
 
 Open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where you will land on the main dashboard page after successful login.
 
 - Use the **Manage Subscription** link from the active subscription.
+
+    >tip Users with an active subscription can start Fiddler Everywhere and use the **Manage Subscriptions** button from the application.
 
 - On the subscription management page, you have the options to:
     - View and switch to alternative plans.
@@ -60,6 +65,6 @@ Open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where
 
 ## Invoice Information
 
-Access and download all previously issue invoices via the [**Invoices** section](https://dashboard.getfiddler.be/invoices).
+Access and download all previously issue invoices through the [**Invoices** section](https://dashboard.getfiddler.be/invoices).
 
 

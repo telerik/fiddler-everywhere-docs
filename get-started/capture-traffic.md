@@ -8,7 +8,7 @@ position: 40
 
 # Capture Traffic
 
-Once Fiddler Everywhere is [installed]({%slug installation%}) and [configured]({%slug configuration-get-started%}), it is time to utilize one of the main features of the proxy client - web traffic capturing. The client logs all HTTP and HTTPS traffic between your computer and the internet. You can analyze and debug the incoming & outgoing traffic from virtually any application that supports a proxy (like Google Chrome, Firefox, Microsoft Teams, Outlook, etc.). You can use the captured traffic to debug issues, find performance bottlenecks, or share it with your teammates.
+Once Fiddler Everywhere is [installed]({%slug installation%}) and [configured]({%slug configuration-get-started%}), it is time to utilize one of the main features of the proxy client - web traffic capturing. The client logs all HTTP and HTTPS traffic between your computer and the internet. You can analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy (like Google Chrome, Firefox, Microsoft Teams, Outlook, etc.). You can use the captured traffic to debug issues, find performance bottlenecks, or share it with your teammates.
 
 Capturing traffic with Fiddler Everywhere is as easy as executing two steps:
 
@@ -20,12 +20,12 @@ Capturing traffic with Fiddler Everywhere is as easy as executing two steps:
 
 That's it! Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug web-sessions-list%}).
 
->tip With **Live Traffic** turned on to **Capturing**, open a browser like Google Chrome and type an address (like `http://example.com`). Return to Fiddler Everywhere and you will immediately notice that the request is intercepted and the Live Traffic is populated. The **Result** field for that test address should return **200**. Your first request is now successfully captured with Fiddler!
+>tip With **Live Traffic** turned on to **Capturing**, open a browser like Google Chrome and type an address (like `http://example.com`). Return to Fiddler Everywhere and you will immediately notice that the request is intercepted and the Live Traffic is populated. The **Result** field for that test address will return **200**. Your first request is now successfully captured with Fiddler!
 
 ## Additional Resources
 
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
-- [Create an API request via the Composer]({%slug composer-get-started%})
+- [Create an API request through the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
 - [Mock server response]({%slug rulesbuilder-get-started%})
 - [Organize requests]({%slug composer-collections-get-started%})
