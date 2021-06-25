@@ -35,7 +35,7 @@ For demonstration purposes, let's assume that the local IP of the Fiddler Everyw
 
 ## Configure Android Device
 
-The steps below are applicable for **real devices** and **emulators** (a.k.a. AVDs). There are significant differences in how emulators access the internet through the local network. To configure your device, apply the steps that correspond to your use case:
+The steps below are applicable for **real devices** and **emulators** (also known as AVDs) with some minor differences as described below.
 
 1. Check Android device IP address 
     1. Open the connected Wifi and tap on **Settings**.
@@ -43,7 +43,7 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
        - (**Real devices only**) Note the IP address of the real Android device. For demonstration purposes, let's assume the device IP is **192.168.0.222**
        - (**Android emulators only**) Note the IP address of the emulator. In most cases, the Android emulator IP is of kind **10.0.2.XXX** (Note: For GenyMotion emulator, the IP by default is **10.0.3.XXX**).
 
-2. Modify Android device Proxy
+1. Modify Android device Proxy
     1. Open the connected Wifi and tap on **Settings**.
     1. Select **Edit** and expand **Advanced Settings**. You might have to touch and hold the connected network's name on older Android versions and then tap on **Modify** and expand **Advanced Settings**.
     1. On **Proxy**, select **Manual proxy**.
@@ -52,7 +52,7 @@ The steps below are applicable for **real devices** and **emulators** (a.k.a. AV
     1. Enter the proxy port. Use the port configured in the Fiddler Everywhere client. The default port is **8866** (it can be changed from the Fiddler Everywhere [connections settings]({%slug connections-submenu%}#setting-proxy-port)).
     1. Tap **_Save_**.
 
-3. Install the Fiddler root certificate on the Android device.
+1. Install the Fiddler root certificate on the Android device.
     1. Open a browser on the Android device and type the Fiddler echo service address: **http://ipv4.fiddler:8866**
     1. Tap the option to download the certificate.
     1. In the prompt window, enter a certificate name and press **Save**.

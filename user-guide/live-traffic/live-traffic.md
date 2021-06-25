@@ -176,16 +176,21 @@ Certain key information is displayed in the columns of Live Traffic, including:
 - **Time** - Indicates the time when the session was executed in **HH:MM:SS:ms** format.
 - **Date** - Indicates the date when the session was executed in **MM:DD:YYYY** format.
 - **Duration** - Indicates the duration in miliseconds that took for the session to complete.
+- **Rules Modified** - Indicates if the session is modified by active rules from the **Rules** tab.
 - **Comments** A field for showing the custom comments added by you (or the author of a shared session).
 
 
-### Live Traffic Sorting
+## Sort and Filter Traffic
 
-By default, the captured traffic is sorted in the order they appear during the traffic capturing (sort by the unique identification number column). Create a custom sorting order by clicking the desired column. For example, click  the **URL** column to sort alphabetically based on the URL, or click the **Body Size** column to sort based on the bytes' session size.
+By default, the captured traffic is sorted in the order they appear during the traffic capturing (sort by the unique identification number column), and no active filters are applied. You can use the built-in [sorting](#sorting-options) and [filtering](#filtering-options) options to optimize the outcome.
 
-### Filter and Columns Options
+### Sorting Options
 
-Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter**  and **Columns** submenus. 
+Create a custom sorting order by clicking the desired column. For example, click the **URL** column to sort alphabetically based on the URL, or click the **Body Size** column to sort based on the bytes' session size. The defaukt sorting order is based on the unique identification number  (order of appearance)
+
+### Filter Options
+
+Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter** and **Columns** submenus. 
 
 Use the **Filter** submenu to apply filters for the currently selected column only (for example, filter all the traffic by _host_ name or by a specific _status code_). Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or use the global [**Clear All Filters** button](#clear-all-filters).
 
@@ -195,7 +200,7 @@ Use the **Columns** submenu to select which column will be visible in the **Live
 
 ![Columns context submenu](../../images/livetraffic/columns/dots-columns.png)
 
-## Live Traffic Context Menu
+## Context Menu Options
 
 The context menu for the Live Traffic exposes several actions that can be applied for a Session or multiple Sessions. To show the context menu, press right-click (Windows OS) or **Control** + mouse-click (macOS).
 

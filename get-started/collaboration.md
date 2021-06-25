@@ -23,7 +23,7 @@ Save a session while following these steps:
  2. Use a preferred way to save a session. With Fiddler Everywhere, you can save captured traffic through:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Save**  option.
     - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Save** option through the context menu.
-    - [Context menu]({%slug web-sessions-list%}#live-traffic-context-menu) allows you to export the captured trafcic in different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
+    - [Context menu]({%slug web-sessions-list%}#context-menu-options) allows you to export the captured trafcic in different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
 
 ### Share Sessions
 
@@ -33,7 +33,7 @@ Share a session with a collaborator while following these steps:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Share** option. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
     - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Share** option through the context menu. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
     - [Sessions list]({%slug saved-sessions-tab%}) provides **Share** functionality through dedicated button. The list contains previously saved sessions or sessions shared with the user. Press the **Share** button to prompt a window for entering share related information.
-    - [Context menu]({%slug web-sessions-list%}#live-traffic-context-menu) allows you to export different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
+    - [Context menu]({%slug web-sessions-list%}#context-menu-options) allows you to export different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
 
 
 ### Delete Shared Sessions

@@ -50,7 +50,7 @@ curl https://docs.telerik.com/fiddler-everywhere --
 
 ## Reset Fiddler Proxy (terminal app)
 
-Once our debugging with Fiddler Everywhere is done, you can reset the current environment's proxy by merely removing the Fiddler Everywhere proxy variables. To achieve that, you can use the **unset** command on macOS and Linux. On Windows, you need to set an empty string (as there is no **unset** command)
+Once our debugging with Fiddler Everywhere is done, reset the current environment's proxy by merely removing the Fiddler Everywhere proxy variables. To achieve that, you can use the **unset** command on macOS and Linux. On Windows, you need to set an empty string.
 
 - Unsetting the proxy on **macOS** and **Linux**
 ```bash

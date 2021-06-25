@@ -81,7 +81,7 @@ networksetup -getsocksfirewallproxy "Wi-Fi"
 
 The output from the above commands will vary depending on the OS network settings that are in place. You can use the output to troubleshoot your OS network settings with and without Fiddler Everywhere capturing mode. For example, when FIddler Everywhere is properly set to capture traffic and capturing mode is ON, the **_getsecurewebproxy_** option will return the Fiddler proxy (by default this is **127.0.0.1:8866**).
 
-_An example output for the **networksetup -getwebproxy <adapter-name>** command when there is no Web proxy being set_
+_An example output for the **networksetup -getwebproxy <adapter-name>** command when no proxy is set_
 ```Console
 Enabled: No
 Server: 

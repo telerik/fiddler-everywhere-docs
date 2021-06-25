@@ -126,7 +126,7 @@
                         "title": "Rules Builder returns incorrect response when creating a rule from session and original response is encoded"
                     },
                     {
-                        "title": "The app is crashing silently when there is not enough memory for starting the .NET Core process"
+                        "title": "The app is crashing silently due to not enough memory for starting the .NET Core process"
                     }
                 ]
             }

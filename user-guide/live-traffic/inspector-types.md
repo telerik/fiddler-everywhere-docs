@@ -33,13 +33,13 @@ The __Headers__ Inspector allows you to view the HTTP headers of the request and
 
 ![Headers Inspector](../../images/livetraffic/inspectors/inspectors-headers.png)
 
-There are some conceptual differences between Request Headers and Response Headers, as listed below.
+Some conceptual differences between [Request Headers](#request-headers) and [Response Headers](#response-headers), as listed below.
 
 ### Request Headers
 
 Every HTTP request begins with plaintext headers that describe what the client requests as a resource or operation. The first line of the request (the _"Request line"_) contains three values: the HTTP method (for example __GET__), the URL path which is being requested (for example __"/index.html"__), and the HTTP version (for example __"HTTP/1.2"__). Request line can consist of one or more rows containing name-value pairs of metadata about the request and the client, such as the _User-Agent_ and _Accept-Language_.
 
-### Response Header
+### Response Headers
 
 Like the HTTP request, every HTTP response begins with plaintext headers that describe the result from the request. The first line of the response (the _"Status line"_) contains the HTTP version (for example __"HTTP/1.1"__), the response status code (for example __"200"__), and the response status text (for instance __"OK"__). Following the _"Status line"_ one or more lines contain name-value pairs of metadata about the response and the server, such as the length of the response file, the Content-Type, and how the response may be cached.
 

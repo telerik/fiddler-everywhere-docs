@@ -88,7 +88,7 @@ The __Content-Type__ is the header which is originating from the response.
 
 The __Content-Type__ header is an indication of the media type of the resource. It is used with requests of type __POST__ and __PUT__ where the client indicates to the server the type of data that is sent. The __Content-Type__ header supports three directives (__media-type__, __charset__ and __boundary__) which values are separated in the column by a semicolon. An example for __Content-Type__ header is: `Content-Type: application/json;charset=UTF-8`
 
->tip There are different media-type values which can be used to explicitly set the type of the passed resource. Click [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) to get the list of the common media-types.
+>tip Different `media-type` values can be used to set the type of the passed resource explicitly. Learn more about the [common `media-types`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) variants.
 
 ## Process
 
