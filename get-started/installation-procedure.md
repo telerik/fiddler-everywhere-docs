@@ -33,7 +33,7 @@ Other requirements:
 
 ## Install Fiddler Everywhere
 
->tip After the installation, Fiddler Everywhere allows you to track only non-secure HTTP traffic. To enable capturing and decoding of HTTPS traffic, you need to install a trusted certificate, as shown in the [HTTPS]({%slug decrypt-https-traffic%}) article.
+>important After the installation, Fiddler Everywhere allows you to track only non-secure HTTP traffic. To enable capturing and decoding of HTTPS traffic, you need to install a trusted certificate, as shown in the [Configuration article]({%slug configuration-get-started%}).
 
 ### macOS
 

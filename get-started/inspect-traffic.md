@@ -18,9 +18,6 @@ Double-click a session to load [the request and response inspectors]({%slug insp
 
 ![Live Traffic and Inspectors](../images/livetraffic/websessions/websessions-list-all.png)
 
-Learn more about all [the Fiddler Inspectors]({%slug inspector-types%}) 
-
->tip If the HTTPS capturing is enabled, and the [**Decode**]({%slug web-sessions-list%}#decode) option is activated, you will also be able to analyze encoded content (removes all HTTP Content and Transfer encoding from requests and responses).
 
 **Save** a selected session or multiple selected sessions [through the context menu]({%slug web-sessions-list%}#save) (alternatively with a keyboard shortcut). Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}) from which they can be reloaded or shared with collaborators.
 
