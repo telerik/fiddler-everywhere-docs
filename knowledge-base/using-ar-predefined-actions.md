@@ -20,8 +20,9 @@ res_type: kb
 
 The [Rules tab]({%slug rules-general%}) is one of the most powerful debugging functionalities that Fiddler Everywhere provides. The main idea behind the Rules tab is to provide a set of rules (based on match rules and actions) that quickly mock a server response and behavior without going through the trouble of modifying the server. Within seconds, you can execute many complex and different rules and test your site against multiple scenarios.
 
-This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. It also explain how to customize a rule by adding a [Custom DAT file](#custom-dat-file) or a [Custom HTTP Response](#custom-http-response).
+This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. It also explain how to customize a rule by adding a [Custom response file](#custom-response-file) or a [Manual Response](#custom-manual-response).
 
+>important All three response modification actions are **final**. Final actions will immediately stop any other consecutive actions and rules from execution.
 
 ## Predefined Actions in Rule Builder
 
@@ -184,18 +185,22 @@ GIF89a #encoded string for a transparent GIF follows here
     Fiddler: HTTP/502 unreachable server. 
     ```
 
-## Custom DAT File
+## Custom Response File
 
 The Rule Builder **Actions** drop-down provides an option to load your own custom DAT file with an entirely custom HTTP response:
 
-1. Scroll to the bottom of the drop-down Actions menu and select **Choose saved response file...**.
-1. In the file selection window, select your own DAT file and load it as an action rule.
+1. Scroll the drop-down Actions menu and select **Response file**.
+1. In the file selection window, load the DAT file with the curtom HTTP Response.
+1. Press **Save** to create/update the rule.
 
+![Response file](../images/kb/dat-files/kb-rules-response-file.png)
 
-## Custom HTTP Response
+## Custom Manual Response
 
-Another option that the Rule Builder provides is to directly create the mocked custom HTTP response:
+Another option that the Rule Builder provides is to create the mocked custom HTTP response manually:
 
-1. Scroll to the bottom of the drop-down Actions menu and select **Return manually crafted response**.
-1. Write the custom response in the **Raw** inspector.
+1. Scroll the drop-down Actions menu and select **Manual Response**.
+1. Write the custom HTTP Response in the text field.
+1. Press **Save** to create/update the rule.
 
+![Response file](../images/kb/dat-files/kb-rules-response-manul.png)

@@ -40,12 +40,13 @@ As developers, you frequently need to simulate and test various user conditions 
 
     {"errors": "Hey, hey - the server is unreachable at this moment!"}
     ```
-    The newly created rule will look like this:
-    ![Manually crafted response to mock 502 status code and error message](../images/kb/dat-files/manually-crafted-502.png)
 
-5. Finally, enable the **Rules** tab (for Live Traffic capturing), activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. Congratulations - you have just mocked a 502 status code response!
+    ![Sample unreachable host rule](../images/kb/dat-files/kb-rules-unreachable.png)
 
-    ![Manually crafted response to mock 502 status code and error message](../images/kb/dat-files/manually-crafted-502-inspector.png)
+1. Finally, enable the **Rules** tab (for Live Traffic capturing), activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. Congratulations - you have just mocked a 502 status code response!
+
+    ![Unreachable rule applied in Chrome](../images/kb/dat-files/kb-rules-chrome-result.png)
+
 
 ## DAT Files
 
