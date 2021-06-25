@@ -76,4 +76,4 @@ You can access and download all previously issue invoices through the [**Invoice
 
 ## Payment Methods
 
-Set your payment method by adding credit card details through the [**Saved Cards**](https://dashboard.getfiddler.com/cards) section. Use the green switch to set a default card. The default card will be used for ongoing payments.
+Set your payment method by adding credit card details through the [**Saved Cards**](https://dashboard.getfiddler.com/cards) section. Use the green switch to set a default card. The default card will be used for ongoing payments.``
