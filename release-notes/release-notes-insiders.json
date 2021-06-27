@@ -1,5 +1,40 @@
 [
     {
+        "version": "2.0.0-insiders",
+        "title": "Fiddler Everywhere v2.0.0",
+        "date": "June 29, 2021",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "UI themes - now you can choose between four different themes - two light and two dark"
+                    },
+                    {
+                        "title": "Overview inspector - a new tab which includes information about size, timing, and statistics of the selected session(s)"
+                    },
+                    {
+                        "title": "Rules - Redesigned and more powerful Auto Responder with a new Rule Builder supporting more scenarios, including modifications of requests and responses of already captured sessions, marking requests with different colors, and many more"
+                    },
+                    {
+                        "title": "Update Sign-Up and Sign-In screens design"
+                    },
+                    {
+                        "title": "Move to premium subscription only with free trial"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Validity period for generated certificates is too long and mobile browsers reject them. Set the validity to be less than a year"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "1.6.1-insiders",
         "title": "Fiddler Everywhere v1.6.1",
         "date": "May 27, 2021",
