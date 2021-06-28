@@ -28,11 +28,11 @@ You need the __FiddlerRootCertificate.crt__ file. For the instructions to downlo
 ## Solution
 
 1. Go to your __Desktop__ and double-click  the __FiddlerRootCertificate.crt__ file.
-2. Click the __Install Certificate...__ button.
-3. Select the __Local Machine__ Store Location and click __Next__.
-4. Select the __Place all certificates in the following store__ option and click __Browse...__.
-5. Choose the __Trusted Root Certification Authorities__ folder and click __OK__.
-6. Click __Next__ to go to the final step of __Certificate Import Wizard__.
-7. Click __Finish__.
+1. Click the __Install Certificate...__ button.
+1. Select the __Local Machine__ Store Location and click __Next__.
+1. Select the __Place all certificates in the following store__ option and click __Browse...__.
+1. Choose the __Trusted Root Certification Authorities__ folder and click __OK__.
+1. Click __Next__ to go to the final step of __Certificate Import Wizard__.
+1. Click __Finish__.
 
 The Fiddler root certificate is now installed.

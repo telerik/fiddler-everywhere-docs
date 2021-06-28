@@ -188,7 +188,7 @@ By default, the captured traffic is sorted in the order they appear during the t
 
 ### Sorting Options
 
-Create a custom sorting order by clicking the desired column. For example, click the **URL** column to sort alphabetically based on the URL, or click the **Body Size** column to sort based on the bytes' session size. The defaukt sorting order is based on the unique identification number  (order of appearance)
+Create a custom sorting order by clicking the desired column. For example, click the **URL** column to sort alphabetically based on the URL, or click the **Body Size** column to sort based on the bytes' session size. The default sorting order is based on the unique identification number (order of appearance).
 
 ### Filter Options
 
