@@ -35,7 +35,7 @@ For demonstration purposes, let's assume that the local IP of the Fiddler Everyw
 
 ## Configure Android Device
 
-The steps below are applicable for **real devices** and **emulators** (also known as AVDs) with some minor differences as described below.
+The following steps are applicable for **real devices** and **emulators** (also known as AVDs) with some minor differences as described below.
 
 1. Check Android device IP address 
     1. Open the connected Wifi and tap on **Settings**.

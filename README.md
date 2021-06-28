@@ -10,7 +10,7 @@
 <h2>
 <a name="contributing" class="anchor" href="#contributing"><span class="mini-icon mini-icon-link"></span></a>Contributing</h2>
 
-<p>You can contribute to the public Fiddler Everywhere documentation in two way: either create an issue in this repository, or fork the repo, make the change and send us a pull request!</p>
+<p>You can contribute to the public Fiddler Everywhere documentation in the following ways: either create an issue in this repository, or fork the repo, make the change and send us a pull request!</p>
 
 <ul>
 <li>
