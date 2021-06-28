@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+  <g transform="scale(.7) translate(160 120)">
+    <rect transform="scale(.96) translate(10 10)" width="384" height="512" rx="10"
+      fill="#fff" stroke="#000" stroke-width="30"
+      stroke-dasharray="60 40 60 40 60 40 60 40 60 40 60 40 60 40 60 40 60 40 60 40 60 40 60 40 60 220">
+    </rect>
+    <rect x="100" y="320" width="380" height="150" rx="50" fill="#1765F4"></rect>
+  </g>
+</svg>
