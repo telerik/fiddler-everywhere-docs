@@ -47,7 +47,7 @@ The **Fiddler Everywhere** features are subject to some pre-defined limitations.
 | Using rules |  **Unlimited** |
 | Sharing  rules | **Unlimited** |
 | Creating Saved Sessions entries * |  **Unlimited** |
-| Sharing Saved Sessions |  1000 sessions  |
+| Sharing Saved Sessions |  **Unlimited***  |
 | Shared Session Size |  Max **50 MB** |
 | Email Support | **Unlimited*** |
 
