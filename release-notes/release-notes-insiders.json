@@ -117,7 +117,7 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "The app does not work If any of the bash profiles has commands that print on the terminal (macOS and Linux)"
+                        "title": "The app does not work if any of the bash profiles has commands that print on the terminal (macOS and Linux)"
                     },
                     {
                         "title": "The app does not capture traffic when 'Require an administrator password to access system-wide preferences' option is checked (macOS)"

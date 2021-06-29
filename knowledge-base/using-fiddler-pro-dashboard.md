@@ -56,7 +56,7 @@ New users can purchase the Fiddler Everywhere Pro subscription plan as described
 
 Only the account owners can manage subscriptions (add/remove seats, change plans, etc.). To manage the active subscription for any Fiddler products:
 
-Open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where you will land on the main dashboard page after successful login.
+Open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where you will land on the main dashboard page after a successful login.
 
 - Use the **Manage Subscription** link from the active subscription.
 
