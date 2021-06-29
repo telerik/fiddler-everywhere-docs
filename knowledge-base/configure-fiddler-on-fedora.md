@@ -25,9 +25,9 @@ The Fiddler Everywhere [instructions for installing the trusted root certificate
 
 ## Solution
 
-1. Install and open the Fiddler Everywhere application on Fedora, CentOS, RedHat, or other Linux distribution. In case the distribution provides the dkpg-reconfigure command, proceed with [the standard instructions]({%slug configuration-get-started%}#configure-on-linux). Otherwise, proceed to the next step.
+1. Install and open the Fiddler Everywhere application on Fedora, CentOS, RedHat, or other Linux distribution. If the distribution provides the dkpg-reconfigure command, proceed with [the standard instructions]({%slug configuration-get-started%}#configure-on-linux). Otherwise, proceed to the next step.
 
-1. Export the Fiddler Everywhere root certificate via __Settings__ > __HTTPS__ > __Advanced Settings__ > __Export Root Certificate to Desktop__.
+1. Export the Fiddler Everywhere root certificate through __Settings__ > __HTTPS__ > __Advanced Settings__ > __Export Root Certificate to Desktop__.
 
 1. Open a terminal and copy the exported certificate to the shared certificate storage directory:
 
@@ -36,9 +36,9 @@ The Fiddler Everywhere [instructions for installing the trusted root certificate
     ```
     >tip The paths in the command above might differ on your Linux distributions - the example shows the default paths on Fedora 33.
 
-1. Trust the certificate by updating the certificate authority via the following terminal command:
+1. Trust the certificate by updating the certificate authority through the following terminal command:
     ```
     update-ca-trust
     ```
 
-1. Return back to the Fiddler Everywhere application and enable HTTPS capturing via __Settings__ > __HTTPS__ > __Capture HTTPS traffic__ checkbox.
+1. Return back to the Fiddler Everywhere application and enable HTTPS capturing through __Settings__ > __HTTPS__ > __Capture HTTPS traffic__ checkbox.

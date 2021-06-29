@@ -10,7 +10,7 @@
 <h2>
 <a name="contributing" class="anchor" href="#contributing"><span class="mini-icon mini-icon-link"></span></a>Contributing</h2>
 
-<p>There are two ways you can contribute to the public Fiddler Everywhere documentation: either create an issue in this repository, or fork the repo, make the change and send us a pull request!</p>
+<p>You can contribute to the public Fiddler Everywhere documentation in the following ways: either create an issue in this repository, or fork the repo, make the change and send us a pull request!</p>
 
 <ul>
 <li>
@@ -36,7 +36,7 @@ Description: The image for setting up the the foobar handler is missing. https:/
 <p>Then, open up the fiddler-everywhere-docs folder in your favorite text editor and contribute away! Of course, as you work with the docs, we do ask that you follow a couple of ground rules:</p>
 
 <ul>
-<li>Fixing grammar, punctuation, and other general errors is always appreciated. So are changes that expand on key ideas or correct errors in logic phrasing or otherwise. If your ambitions are greater, however, and you want to add completely new content to the site--like a new tutorial on using Fiddler Everywhere with an Atari 2600, for instance--we suggest you contact a member of the team first (or enter an issue!) to vet your idea. We would all be happy to hear your idea and offer advice.</li>
+<li>Fixing grammar, punctuation, and other general errors is always appreciated. So are changes that expand on key ideas or correct errors in logic phrasing or otherwise. If your ambitions are greater, however, and you want to add completely new content to the site--like a new tutorial on using Fiddler Everywhere with an Atari 2600, for instance--we suggest you contact a member of the team first (or enter an issue!) to vet your idea. We will all be happy to hear your idea and offer advice.</li>
 <li>
 <p>Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the <a href="http://www.fiddler2.com/docs">www.fiddler2.com/docs</a> site. Please don't edit the content in this section of a document.</p>
 

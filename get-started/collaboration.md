@@ -20,28 +20,27 @@ Network sessions captured by the Fiddler Everywhere client can be saved and view
 
 Save a session while following these steps:
  1. [Capture the traffic]({%slug capture-traffic-get-started%}).
- 2. Use a preferred way to save a session. With Fiddler Everywhere, you can save captured traffic via:
+ 2. Use a preferred way to save a session. With Fiddler Everywhere, you can save captured traffic through:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Save**  option.
-    - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Save** option via the context menu.
-    - [Context menu]({%slug web-sessions-list%}#live-traffic-context-menu) allows you to export the captured trafcic in different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
+    - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Save** option through the context menu.
+    - [Context menu]({%slug web-sessions-list%}#context-menu-options) allows you to export the captured trafcic in different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
 
 ### Share Sessions
 
 Share a session with a collaborator while following these steps:
- 1. [Capture the traffic]({%slug capture-traffic-get-started%}) (that you would like to share with your collaborators). Alternatively, select a saved session from the [**Sessions** list]({%slug saved-sessions-tab%}).
- 2. Use a preferred way to share a session. With Fiddler Everywhere, you can save and share captured traffic via:
+ 1. [Capture the traffic]({%slug capture-traffic-get-started%}) (that you will like to share with your collaborators). Alternatively, select a saved session from the [**Sessions** list]({%slug saved-sessions-tab%}).
+ 2. Use a preferred way to share a session. With Fiddler Everywhere, you can save and share captured traffic through:
     - [Live Traffic toolbar]({%slug web-sessions-list%}#live-traffic-toolbar) provides **Share** option. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
-    - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Share** option via the context menu. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
-    - [Sessions list]({%slug saved-sessions-tab%}) provides **Share** functionality via dedicated button. The list contains previously saved sessions or sessions shared with the user. Press the **Share** button to prompt a window for entering share related information.
-    - [Context menu]({%slug web-sessions-list%}#live-traffic-context-menu) allows you to export different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
+    - [Live Traffic list]({%slug web-sessions-list%}#live-traffic-list) provides **Share** option through the context menu. Press the **Share** button to prompt two consecutive windows for entering save and share related information.
+    - [Sessions list]({%slug saved-sessions-tab%}) provides **Share** functionality through dedicated button. The list contains previously saved sessions or sessions shared with the user. Press the **Share** button to prompt a window for entering share related information.
+    - [Context menu]({%slug web-sessions-list%}#context-menu-options) allows you to export different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
 
->important The Fiddler Everywhere free version has a quota for sharing sessions with collaborators. Check [the advantages provided by Fiddler Everywhere Pro]({%slug introduction%}#fiddler-everywhere-pro), which significantly extends the collaboration quotas.
 
 ### Delete Shared Sessions
 
-With version 1.1.0 of Fiddler Everywhere, the user has options to delete previously shared sessions. The sessions can be deleted from the **Sessions** list via the **Delete** button. All users added as collaborators will be notified that the shared session is now deleted [via the notification bar and an email message](#notifications-for-shared-content). Deleted sessions can be restored via the [**Shared Sessions** option]({%slug saved-sessions-tab%}#shared-sessions).
+With version 1.1.0 of Fiddler Everywhere, the user has options to delete previously shared sessions. The sessions can be deleted from the **Sessions** list through the **Delete** button. All users added as collaborators will be notified that the shared session is now deleted [through the notification bar and an email message](#notifications-for-shared-content). Deleted sessions can be restored through the [**Shared Sessions** option]({%slug saved-sessions-tab%}#shared-sessions).
 
->tip Deleting previously shared sessions will free your sharing quotas. Learn more about the quotas for the free and pro versions of Fiddler everywhere via [the comparison table]({%slug introduction%}#fiddler-everywhere-pro).
+>tip Deleting previously shared sessions will free your sharing quotas. Learn more about the quotas in Fiddler Everywhere through [the comparison table]({%slug introduction%}#key-features).
 
 ## Add Context for Teammates
 
@@ -75,7 +74,7 @@ The note will be received as a context in the email received from the recipients
 ## Notifications for Shared Content
 
 The Fiddler Everywhere client informs the collaborators for shared sessions in two channels:
-- The collaborators will receive an email with an invitation to open the shared sessions. In case the creator has added note, the email will contain the note as well.
-- All listed collaborators will receive a notification within the Fiddler Everywhere client. You can click on the notification to immediately open the share sessions in a separate tab.
+- The collaborators will receive an email with an invitation to open the shared sessions. If the creator has added note, the email will contain the note as well.
+- All listed collaborators will receive a notification within the Fiddler Everywhere client. You can click the notification to immediately open the share sessions in a separate tab.
 
     ![Notification for received content](../images/settings/notifications-for-shared-content.png)

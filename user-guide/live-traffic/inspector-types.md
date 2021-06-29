@@ -1,7 +1,7 @@
 ---
 title: Inspectors
+description: UI instructions for working with the Inspectors tab in the Fiddler Everywhere application
 slug: inspector-types
-tags: Fiddler inspectors types, request, response, HTTP headers, secure requests, headers, text, webforms, form data, cookies, raw, XML, preview responses, HTML responses
 publish: true
 position: 20
 previous_url: /user-guide/live-traffic/inspectors/request-inspector
@@ -15,14 +15,14 @@ Select a session (from the __Live Traffic__ list) to load its data into the Insp
 
 ![Inspectors for Traffic Monitoring](../../images/livetraffic/inspectors/inspectors-all.png)
 
-The Fiddler Everywhere' Inspectors allow you to view the content of each session's request and response in a variety of different formats. Fiddler supports multiple inspector types for the sessions' request (at the top) and response (at the bottom). Click on the desired Inspector's name (for example, __Image__ or __Raw__) to switch the loaded Inspector.
+The Fiddler Everywhere' Inspectors allow you to view the content of each session's request and response in a variety of different formats. Fiddler supports multiple inspector types for the sessions' request (at the top) and response (at the bottom). Click the desired Inspector's name (for example, __Image__ or __Raw__) to switch the loaded Inspector.
 
 The inspectors are based on the Monaco editor and are coming with a lot of perks:
 
 - Great performance for loading large chunks of data
 - Line IDs to quickly identify and mark a specific portion of the request/response.
 - Powerful search functionality that supports strings and regular expressions.
-- Context styling that highlights the content based on its type (e.g. Image renderers, HTML & XML formatters, JSON formatter, etc.).
+- Context styling that highlights the content based on its type (for example Image renderers, HTML and XML formatters, JSON formatter, etc.).
 
 >tip All inspector types (except **Preview**) are coming with **Copy all content to clipboard** button at the top-right corner.
 
@@ -33,13 +33,13 @@ The __Headers__ Inspector allows you to view the HTTP headers of the request and
 
 ![Headers Inspector](../../images/livetraffic/inspectors/inspectors-headers.png)
 
-There are some conceptual differences between Request Headers and Response Headers, as listed below.
+Some conceptual differences between [Request Headers](#request-headers) and [Response Headers](#response-headers), as listed below.
 
 ### Request Headers
 
 Every HTTP request begins with plaintext headers that describe what the client requests as a resource or operation. The first line of the request (the _"Request line"_) contains three values: the HTTP method (for example __GET__), the URL path which is being requested (for example __"/index.html"__), and the HTTP version (for example __"HTTP/1.2"__). Request line can consist of one or more rows containing name-value pairs of metadata about the request and the client, such as the _User-Agent_ and _Accept-Language_.
 
-### Response Header
+### Response Headers
 
 Like the HTTP request, every HTTP response begins with plaintext headers that describe the result from the request. The first line of the response (the _"Status line"_) contains the HTTP version (for example __"HTTP/1.1"__), the response status code (for example __"200"__), and the response status text (for instance __"OK"__). Following the _"Status line"_ one or more lines contain name-value pairs of metadata about the response and the server, such as the length of the response file, the Content-Type, and how the response may be cached.
 
@@ -96,7 +96,7 @@ Most of the Inspector is a large text area that displays the body text interpret
 
 ### JSON
 
-The **JSON Inspector** interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object's nodes. In case when the body can't be interpreted as JSON, the tree view will remain empty (as demonstrated for the request in the screenshot below). The JSON inspector can render the data even if the request/response is compressed or has HTTP chunked encoding applied. The Inspector provides __Expand All / Collapse All__ toggle button that will expand or collapse all JSON tree nodes.
+The **JSON Inspector** interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object's nodes. If when the body can't be interpreted as JSON, the tree view will remain empty (as demonstrated for the request in the screenshot below). The JSON inspector can render the data even if the request/response is compressed or has HTTP chunked encoding applied. The Inspector provides __Expand All / Collapse All__ toggle button that will expand or collapse all JSON tree nodes.
 
 ![JSON Inspector](../../images/livetraffic/inspectors/inspectors-json.png)
 

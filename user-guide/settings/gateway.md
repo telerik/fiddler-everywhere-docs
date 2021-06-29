@@ -1,7 +1,7 @@
 ---
 title: Gateway
+description: Gateway options for advanced proxy setup with Fiddler Everywhere
 slug: gateway-submenu
-tags: system proxy, manual proxy
 publish: true
 position: 30
 ---
@@ -10,7 +10,7 @@ position: 30
 
 The __Gateway__ sub-menu provides options to easily configure how Fiddler Everywhere accesses the network. By default, Fiddler Everywhere "chains" to the system's default proxy. These settings allow you to overwrite that behavior.
 
-![Example manual proxy configuration](../../images/settings/gateway-system-proxy.png)
+![Example manual proxy configuration](../../images/settings/settings-gateway.png)
 
 ## Use system proxy
 

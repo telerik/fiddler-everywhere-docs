@@ -29,13 +29,13 @@ Both log files are useful to investigate cases where the client is not working p
 
 ## Accessing The Logs
 
-Fiddler Everywhere version **1.3.0 and above** provides a UI option via **_Help > Open Application Logs Folder_** to automatically open the folder that contains the log files. 
+Fiddler Everywhere version **1.3.0 and above** provides a UI option through **_Help > Open Application Logs Folder_** to automatically open the folder that contains the log files. 
 
 ![Fiddler Everywhere log files](../images/kb/logs/log-files.png)
 
 ## Logs Destination Folder
 
-Alternatively, you could manually navigate to the folder on your operating system and obtain the Fiddler Everywhere log files. Manual extraction of the logs can be useful in scenarios where your Fiddler Everywhere client is not starting at all, or you can't access the UI.
+Alternatively, you can manually navigate to the folder on your operating system and obtain the Fiddler Everywhere log files. Manual extraction of the logs can be useful in scenarios where your Fiddler Everywhere client is not starting at all, or you can't access the UI.
 
 ### macOS
 

@@ -25,17 +25,17 @@ Test if **Fiddler Everywhere** is correctly configured to capture HTTPS traffic 
 
 The user can execute a simple **cURL** command in the **macOS** terminal and check the output in the terminal and inside Fiddler Everywhere:
 
-1. Open Fiddler Everywhere and ensure that it is configured to capture HTTPS traffic (Settings > HTTPS > Capture HTTPS traffic is checked). There is no need to turn Live Traffic on - it does not matter in this test.
+1. Open Fiddler Everywhere and ensure that it is configured to capture HTTPS traffic (The root certificate is installed and trusted and **Settings > HTTPS > Capture HTTPS traffic** is checked).
 
-2. Open a terminal and enter the following command: 
+1. Open a terminal and enter the following command: 
 
     ```Shell
     curl -v --url https://www.example.com/ -x 127.0.0.1:8866
     ```
 
-    The `-x` option sets the Fiddler Everywhere proxy. The `-v` option provides verbose logs. Optionally, you could use the `-k` option to disable SSL verification.
+    The `-x` option sets the Fiddler Everywhere proxy. The `-v` option provides verbose logs. Optionally, you can use the `-k` option to disable SSL verification.
 
-3. Check the command output. There should be a line related to the Server certificate, and under it, the certificate should list Fiddler's URL (http://www.fiddler2.com)
+1. Check the command output. There will be a line related to the Server certificate, and under it, the certificate will list Fiddler's URL (http://www.fiddler2.com)
 
     ```Console
     *   Trying 127.0.0.1...
@@ -91,11 +91,11 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
     < Content-Length: 1256
     ```
 
-4. Check the Fiddler Everywhere application window. A new session should be visible in the Live Traffic tab, and the protocol should be **HTTPS**, and there should be no Tunnel to indicate in the Host column. If the above is correct, the Fiddler Everywhere is configured to capture HTTPS traffic.
+1. Check the Fiddler Everywhere application window. A new session will be visible in the Live Traffic tab, and the protocol will be **HTTPS**. There will be no Tunnel to indicate in the Host column. If the above is correct, the Fiddler Everywhere is configured to capture HTTPS traffic.
 
     ![Fiddler showing HTTPS traffic](../images/kb/troubleshoot/curl-request-fiddler.png)
 
-5. After the above steps, the user should try turning the Live Traffic to **Capturing** mode and open the Chrome browser. Use the incognito mode to make sure no credentials or cookies are cashed. Then open each of these URLs and see if they are captured inside Fiddler Everywhere:
+1. After the above steps, the user should try turning the Live Traffic to **Capturing** mode and open the Chrome browser. Use the incognito mode to make sure no credentials or cookies are cashed. Then open each of these URLs and see if they are captured inside Fiddler Everywhere:
 
     - http://httpbin.org (notice this requst is using **HTTP**)
 
@@ -104,7 +104,7 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
     - https://www.google.com 
 
  
-6. After opening each of the above URLs, check the Live Traffic list and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic - [use the Clear All Filters option]({%slug web-sessions-list%}#clear-all-filters) to remove any preset filters. 
+1. After opening each of the above URLs, check the Live Traffic list and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic - [use the Clear All Filters option]({%slug web-sessions-list%}#clear-all-filters) to remove any preset filters. 
 
 If the issue persist or unsure, for example, there are too many captured sessions, and you cannot find the three URLs above, save the captured sessions (_File > Save Archive > All Sessions)_, and post them in [the support channels]({%slug support-page%}). 
 

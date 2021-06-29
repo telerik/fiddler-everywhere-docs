@@ -1,7 +1,7 @@
 ---
 title: Composer
+description: Setting the Fiddler Everywhere Composer to follow redirects (responses with status 3xx)
 slug: composer-settings-submenu
-tags: composer settings, follow redirects, Fiddler composer
 publish: true
 position: 50
 ---

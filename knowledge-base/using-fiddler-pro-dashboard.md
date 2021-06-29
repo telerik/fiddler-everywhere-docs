@@ -1,9 +1,8 @@
 ---
-title: Fiddler Pro Dashboard
-description: An article on how to use Fiddler Pro dashboard for managing plans and subscriptions
+title: Fiddler Dashboard Site
+description: An article on how to use the Fiddler dashboard site for managing plans and subscriptions for Fiddler products
 type: how-to
 slug: fiddler-dashboard
-tags: Fiddler Everywhere dashboard, Fiddler PRO plans, Fiddler subscriptions, Fiddler Everywhere teams
 publish: true
 res_type: kb
 ---
@@ -13,54 +12,68 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  PRO |
-| Product Version | 1.0.0 and above  |
+| Product | Fiddler Everywhere, Fiddler Jam |
 | Admin Panel Address | https://dashboard.getfiddler.com  |
 
 #### Description
 
-Fiddler Everywhere PRO activates multiple options for extended collaboration. The PRO dashboard provides means for managing plans, payments, and the activation of multiple subscriptions of different accounts. This KB article demonstrates the functionalities accessible from [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com)
+The Fiddler dashboard site provides means for managing subscription plans, payments, and the activation of account seats for Fiddler Everywhere and Fiddler Jam. This KB article demonstrates the functionalities accessible from [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com) and the steps needed to activate and manage your subscriptions.
+
 
 ## Fiddler Everywhere Dashboard
 
-Open Fiddler Everywhere client, click on the orange **Upgrade** button (for users without PRO version) or the green **PRO Plan** button (for a user already activated the PRO version). Both are placed in the top-left corner of the Fiddler Everywhere client. Alternatively, you could directly open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where after successful login, you will land on the main dashboard page.
+The Fiddler dashboard site is where you can purchase and manage subscription plans, check and download your invoices, and maintain the payment methods. The site requires you to log in with a Fiddler or social media account. The dashboard contains the following main sections:
 
-_An example of the dashboard page for users with Free plan_
-![Main dashboard page of Fiddler Everywhere](../images/kb/dashboard/dashboard-000.png)
+- [**Login**](https://dashboard.getfiddler.com/login) - The landing page for new users and users with expired credentials. You can create a Fiddler account or use Google's social login.
+- [**Overview**](https://dashboard.getfiddler.com/overview) - The landing page for logged-in users. You can manage your active subscriptions and see the actual plan offerings.
+- [**Plans**](https://dashboard.getfiddler.com/plans) - This page contains details and purchase links for the active Fiddler Everywhere and Fiddler Jam offerings.
+- [**Invoices**](https://dashboard.getfiddler.com/invoices) - A page that lists all invoices issued so far. You can download each invoice as a PDF or load it on the Stripe details page.
+- [**Saved Cards**](https://dashboard.getfiddler.com/cards) - Yiu can add, remove and edit credit card details. The card set as the default card is the one used for your ongoing payments.
 
-_An example of the landing dashboard page for users with PRO plan_
-![Main dashboard page of Fiddler Everywhere](../images/kb/dashboard/dashboard-001.png)
 
-## Upgrade to PRO
+## Activating Subscription Plan
 
-To activate the PRO version of Fiddler Everywhere, you need to purchase a PRO plan. The PRO plan allows you to choose different payment options (monthly and annual payment).
+New users can purchase the Fiddler Everywhere Pro subscription plan as described below. Existing trial users
 
-- Open Fiddler Everywhere and click on the **Upgrade** button. Alternatively, load [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com) and click on **Upgrade to PRO Now** button.
+1. Open the Fiddler Everywhere client, click on the **Buy Now** button on the landing page. As a result, you will land on the [Fiddler Dashboard](https://dashboard.getfiddler.com) page.
 
-- Choose your payment options and proceed. After a successful payment, you will see a confirmation page.
+    >tip You can use the **Start Free Trial** button to activate the 30-days trial. Note that this step is available only for new users. If you are an existing user with an expired trial, go to the next step.
 
-    ![Plan activation confirmation page](../images/kb/dashboard/fiddler-payment-process-001.png)
+1. Alternatively, directly open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com).
 
-- Restart your Fiddler Everywhere client to complete the PRO version activation.
+1. Navigate [to the Plans page](https://dashboard.getfiddler.com/plans), and select the desired Fiddler product.
 
-## Activating Subscriptions
+1. Press **Purchase Plan** to proceed to the order details page. The order details page presents you with the option to choose between annual vs. monthly payments, adding additional subscription seats (by default, each plan activates a single seat), and adding promotional coupons. 
 
-During the payment, you could choose to purchase multiple subscriptions for your team and collaborators. Activating the subscriptions for unique Fiddler Everywhere users are available through the [dashboard](https://dashboard.getfiddler.com/myaccount).
+1. Press **Next** to proceed to the payment details page. On the payment details page, you have the option to add a new payment method or to use a saved card.
 
-- Open the **My Plan** section in the [dashboard](https://dashboard.getfiddler.com/myaccount).
+1. Press **Pay** button to finalize the order.
 
-- To activate a subscription, enter the user's email ID and confirm (via the &#10004;).
+1. Restart your Fiddler Everywhere client to fully activate the purchased subscription plan.
 
-    ![Plan activation confirmation page](../images/kb/dashboard/fiddler-payment-process-002.png)
 
-- The provided ID is now activated subscription. All subscription entries can be canceled or entirely removed at any time.
+## Manage Subscriptions
 
-    ![Email ID added to subscriptions](../images/kb/dashboard/fiddler-payment-process-003.png)
+Only the account owners can manage subscriptions (add/remove seats, change plans, etc.). To manage the active subscription for any Fiddler products:
+
+Open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where you will land on the main dashboard page after a successful login.
+
+- Use the **Manage Subscription** link from the active subscription.
+
+    >tip Users with an active subscription can start Fiddler Everywhere and use the **Manage Subscriptions** button from the application.
+
+- On the subscription management page, you have the options to:
+    - View and switch to alternative plans.
+    - Cancel ongoing subscriptions.
+    - Change the recurring payment method.
+    - Assign, unassign, and edit seats.
+    - Buy additional seats.
 
 ## Invoice Information
 
-Access and download all previously issue invoices via the **My Invoice** section in the [dashboard](https://dashboard.getfiddler.com/myaccount).
-
-![My Invoice section](../images/kb/dashboard/dashboard-002.png)
+You can access and download all previously issue invoices through the [**Invoices**](https://dashboard.getfiddler.be/invoices) section.
 
 
+## Payment Methods
+
+Set your payment method by adding credit card details through the [**Saved Cards**](https://dashboard.getfiddler.com/cards) section. Use the green switch to set a default card. The default card will be used for ongoing payments.``

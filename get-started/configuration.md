@@ -11,7 +11,10 @@ previous_url: /user-interface/settings/https,/user-guide/settings/https/https-de
 
 In this article we'll discuss about how to configure Fiddler Everywhere in your system. 
 
-By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate via the __HTTPS__ sub-menu in __Settings__.
+By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate through the __HTTPS__ sub-menu in __Settings__.
+
+![default https settings](../images/settings/settings-trust-root-certificate.png)
+
 
 ## Configure on macOS
 
@@ -19,16 +22,13 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 
 1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button. 
 
-1. A keychain user & password box appears. Enter your __machine administrative credentials__.
+1. A keychain user and password box appears. Enter your __machine administrative credentials__.
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-mac-keychain.png)
 
 1. Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
     
 1. Click the __Save__ button to save the changes.
-
-    ![default https settings](../images/settings/settings-trust-root-certificate.png)
-
 
 ## Configure on Windows
 
@@ -43,9 +43,6 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
     
 1. Click the __Save__ button to save the changes.
-
-    ![default https settings](../images/settings/settings-trust-root-certificate.png)
-
 
 ## Configure on Linux
 
@@ -83,11 +80,9 @@ Many Linux distributions are using different security features and different way
 
 1. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
 
-    ![Enable capturing HTTPS traffic](../images/configuration/cert_ubunto_005.png)
-
 1. Click the __Save__ button to save the changes.
 
-    >important Some Linux distributions like Ubuntu will use localized paths (for example, the __Desktop__ folder is renamed with the related word used in the locale language). That might cause for __step 3__ to fail due to a missing folder named __Desktop__ with an error message of type _Could not find a part of the path ..._. Until an out-of-the-box solution is implemented, you could easily workaround this issue by creating a folder called __Desktop__ at your root directory (`mkdir ~/Desktop`) and then export the certificate to the newly-created directory. Once the certificate is installed, you could safely remove the directory.
+    >important Some Linux distributions like Ubuntu will use localized paths (for example, the __Desktop__ folder is renamed with the related word used in the locale language). That might cause for __step 3__ to fail due to a missing folder named __Desktop__ with an error message of type _Could not find a part of the path ..._. Until an out-of-the-box solution is implemented, you can easily workaround this issue by creating a folder called __Desktop__ at your root directory (`mkdir ~/Desktop`) and then export the certificate to the newly-created directory. Once the certificate is installed, you can safely remove the directory.
 
 
 For more information about Fiddler Everywhere settings, visit [**_Settings_**]({%slug decrypt-https-traffic%}) page.
@@ -97,7 +92,7 @@ For more information about Fiddler Everywhere settings, visit [**_Settings_**]({
 Once the client is configured, you can start using its features. Get to know how to:
 
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
-- [Create an API request via the Composer]({%slug composer-get-started%})
+- [Create an API request through the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})
-- [Mock server response]({%slug autoresponder-get-started%})
+- [Mock server response]({%slug rulesbuilder-get-started%})
 - [Share captured traffic with collaborators]({%slug collaboration-get-started%}).

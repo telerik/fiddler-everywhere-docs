@@ -8,9 +8,9 @@ position: 60
 
 # Modify Traffic
 
-Editing traffic with Fiddler Everywhere client is one of the easiest and yet most powerful debugging techniques. Instead of trying to test your API or a website via the UI and make multiple clicks, you can reload the desired session in the [**Composer**]({%slug composer-tab%}), make edits to the desired values, and re-execute the request.
+Editing traffic with Fiddler Everywhere client is one of the easiest and yet most powerful debugging techniques. Instead of trying to test your API or a website through the UI and make multiple clicks, you can reload the desired session in the [**Composer**]({%slug composer-tab%}), make edits to the desired values, and re-execute the request.
 
-Follow these steps, to load and modify a session via the **Composer**:
+Follow these steps, to load and modify a session through the **Composer**:
 
 1. Set **Live Traffic** to _Capturing_ and make the request. The session is captured and displayed in the **Live Traffic list**. 
 
@@ -18,7 +18,7 @@ Follow these steps, to load and modify a session via the **Composer**:
 
     ![Edit in Composer](../images/composer/edit-in-composer.png)
 
-3. The session opens in a new Composer window and then you could change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
+3. The session opens in a new Composer window and then you can change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
 
     ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
 
@@ -30,7 +30,7 @@ Effectively, you have modified an existing request the same way your application
 
 ## Additional Resources
 
-- [Create an API request via the Composer]({%slug composer-get-started%})
-- [Mock server response]({%slug autoresponder-get-started%}) 
+- [Create an API request through the Composer]({%slug composer-get-started%})
+- [Mock server response]({%slug rulesbuilder-get-started%}) 
 - [Share snapshots of sessions with collaborators]({%slug collaboration-get-started%}).
 

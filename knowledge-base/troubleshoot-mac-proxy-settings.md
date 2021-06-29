@@ -29,14 +29,10 @@ For example, after [Installing Fiddler Everywhere on a Mac](https://docs.telerik
 In order to troubleshoot this, it is recommended to perform the following steps:
 
 1. [Reset the Fiddler Everywhere Settings to the default values](how-to-reset-fiddler-everywhere-settings-to-default)
-
-2. Close Fiddler Everywhere
-
-3. [Verify the Mac Proxy Settings](#verifying-mac-proxy-settings)
-
-4. Open Fiddler Everywhere
-
-5. [Verify the Mac Proxy Settings](#verifying-mac-proxy-settings)
+1. Close Fiddler Everywhere
+1. [Verify the Mac Proxy Settings](#verifying-mac-proxy-settings)
+1. Open Fiddler Everywhere
+1. [Verify the Mac Proxy Settings](#verifying-mac-proxy-settings)
 
 ## Verifying Mac Proxy Settings
 

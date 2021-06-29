@@ -1,0 +1,11 @@
+.git/
+.vscode/
+.asset-cache/
+_site/
+.github/
+_buildApi/
+README.md
+.gitignore
+.contentignore
+exclude_files.txt
+exclude_dirs.txt

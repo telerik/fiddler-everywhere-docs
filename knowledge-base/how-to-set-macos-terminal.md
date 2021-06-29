@@ -23,7 +23,7 @@ The article explains how to set the Fiddler Everywhere proxy for commonly used c
 
 ## Set Fiddler Proxy (terminal app)
 
-Terminal applications on macOS like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests thought 3rd-party tools like CURL. However, in the common case, these terminals won't use the system proxy. For Fiddler Everywhere to capture traffic that passes through them, they need to set the Fiddler Everywhere proxy explicitly. To achieve that, we could use the **export** command (macOS and Linux) or the **set** command (for Windows).
+Terminal applications on macOS like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests thought 3rd-party tools like CURL. However, in the common case, these terminals won't use the system proxy. For Fiddler Everywhere to capture traffic that passes through them, they need to set the Fiddler Everywhere proxy explicitly. To achieve that, you can use the **export** command (macOS and Linux) or the **set** command (for Windows).
 
 - Setting proxy settings on **macOS** and **Linux**
 ```bash
@@ -37,9 +37,9 @@ set http_proxy=127.0.0.1:8866
 set https_proxy=127.0.0.1:8866
 ```
 
-Once the Fiddler Everywhere proxy is set, we could immediately capture traffic through the terminal application.
+Once the Fiddler Everywhere proxy is set, you can immediately capture traffic through the terminal application.
 
-_Example for requesting while using_ **_curl_** _via iTerm2 and intercepting the traffic in Fiddler Everywhere_
+_Example for requesting while using_ **_curl_** _through iTerm2 and intercepting the traffic in Fiddler Everywhere_
 ```Bash
 curl https://docs.telerik.com/fiddler-everywhere --
 ```
@@ -50,7 +50,7 @@ curl https://docs.telerik.com/fiddler-everywhere --
 
 ## Reset Fiddler Proxy (terminal app)
 
-Once our debugging with Fiddler Everywhere is done, we could reset the current environment's proxy by merely removing the Fiddler Everywhere proxy variables. To achieve that, we could use the **unset** command on macOS and Linux. On Windows, we need to set an empty string (as there is no **unset** command)
+Once our debugging with Fiddler Everywhere is done, reset the current environment's proxy by merely removing the Fiddler Everywhere proxy variables. To achieve that, you can use the **unset** command on macOS and Linux. On Windows, you need to set an empty string.
 
 - Unsetting the proxy on **macOS** and **Linux**
 ```bash

@@ -8,7 +8,7 @@ position: 10
 
 # Installation
 
-Fiddler Everywhere is a cross-platform web debugging proxy available for Windows, macOS, and Linux. In this article, we list the system requirements and describe the steps to install Fiddler Everywhere on all supported operating systems.
+Fiddler Everywhere is a cross-platform web debugging proxy available for Windows, macOS, and Linux. This article lists the system requirements and describe the steps to install Fiddler Everywhere on all supported operating systems.
 
 ## System Requirements
 
@@ -25,17 +25,15 @@ Other requirements:
 - Active internet connection with access to the following URLs:
 
 ```
-    https://login.getfiddler.com/
-    https://api.getfiddler.com/
-    https://auth.getfiddler.com/
-    https://amazonaws.com/
+    https://*.getfiddler.com/
+    https://*.amazonaws.com/
 ```
 
->tip Fiddler Everywhere version 1.1.0 and above supports predefined OS proxy settings (for direct internet access). If your system is accessing the internet via a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
+>tip Fiddler Everywhere version 1.1.0 and above supports predefined OS proxy settings (for direct internet access). If your system is accessing the internet through a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
 
 ## Install Fiddler Everywhere
 
->tip After the installation, Fiddler Everywhere allows you to track only non-secure HTTP traffic. To enable capturing and decoding of HTTPS traffic, you need to install a trusted certificate, as shown in the [HTTPS]({%slug decrypt-https-traffic%}) article.
+>important After the installation, Fiddler Everywhere allows you to track only non-secure HTTP traffic. To enable capturing and decoding of HTTPS traffic, you need to install a trusted certificate, as shown in the [article on configuration]({%slug configuration-get-started%}).
 
 ### macOS
 
@@ -72,7 +70,7 @@ Other requirements:
 
     - **GUI Instructions**
 
-        Alternatively, many Linux distributions provide options to set the file's executable rights via the used GUI.
+        Alternatively, many Linux distributions provide options to set the file's executable rights through the used GUI.
 
         **Gnome**
 
@@ -88,7 +86,7 @@ Other requirements:
 
 ## Create an Account
 
-Signing in is mandatory for both Free and Pro versions of the Fiddler Everywhere client. You can sign up by [creating a Fiddler account](#create-fiddler-account) or by [using an existing Google account](#use-google-account). The Fiddler Everywhere account enables you to save and share sessions with collaborators and additionally provides access to the Pro features (if you purchased the Pro version).
+Signing in is mandatory for both Trial and Pro versions of the Fiddler Everywhere client. You can sign up by [creating a Fiddler account](#create-fiddler-account) or by [using an existing Google account](#use-google-account). Fiddler Everywhere supports Google Authentication and own account system.
 
 ### Create Fiddler Account
 

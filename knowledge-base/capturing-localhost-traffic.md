@@ -20,7 +20,10 @@ Traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http:
 
 ## Solution
 
-There are two possible solutions. The first one is to [use the machine name](#using-machine-name) instead of _localhost_. The second one is to [use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere. 
+To solve this issue, use either of the following approaches:
+
+- [Use the machine name](#using-machine-name) instead of **localhost**. 
+- [Use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere. 
 
 >Both solutions require that Fiddler Everywhere [Capturing]({%slug capture-traffic-get-started%}) is enabled.
 

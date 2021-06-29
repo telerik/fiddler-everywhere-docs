@@ -21,7 +21,7 @@ Fiddler Everywhere captures and inspects web traffic through HTTP and HTTPS. The
 
 ## Capturing Web Traffic
 
-Fiddler Everywhere can capture web traffic (for example, from a browser) made via HTTP or HTTPS. The captured traffic is listed as __sessions__ in the [__Live Traffic__]({%slug web-sessions-list%}).
+Fiddler Everywhere can capture web traffic (for example, from a browser) made through HTTP or HTTPS. The captured traffic is listed as __sessions__ in the [__Live Traffic__]({%slug web-sessions-list%}).
 
 Follow the steps below to capture web traffic:
 
@@ -37,11 +37,11 @@ Follow the steps below to capture web traffic:
 
     ![Capturing Live Traffic](../images/kb/capture-live-traffic-under-capture-and-inspect-web-traffic-1.png)
 
-    >tip Any new outgoing requests and upcoming responses (for example, after navigating deeper into a website or opening a new website) are continuously captured in the __Live Traffic__ panel. Switch back to __Paused__ to stop the live capturing and investigate specific sessions without polluting your __Live Traffic_. You could also select one or more sessions from the __Live Traffic__ and save and share them or remove them from the list.
+    >tip Any new outgoing requests and upcoming responses (for example, after navigating deeper into a website or opening a new website) are continuously captured in the **Live Traffic** panel. Switch back to **Paused** to stop the live capturing and investigate specific sessions without polluting your **Live Traffic**. You can also select one or more sessions from the **Live Traffic** and save and share them or remove them from the list.
 
 ## Inspect Web Traffic
 
-Fiddler Everywhere provides functionality to inspect the already captured sessions. The live traffic sessions are composed of HTTP/HTTPS requests and responses. Each HTTP request can be observed through the __Request Inspector__. Each HTTP response can be observed through the __Response Inspector__. Both inspectors are powerful tools that can visualize the received content via different [Inspector types]({%slug inspector-types%}).
+Fiddler Everywhere provides functionality to inspect the already captured sessions. The live traffic sessions are composed of HTTP/HTTPS requests and responses. Each HTTP request can be observed through the __Request Inspector__. Each HTTP response can be observed through the __Response Inspector__. Both inspectors are powerful tools that can visualize the received content through different [Inspector types]({%slug inspector-types%}).
 
 Follow the steps below to inspect a request and its respective response:
 
@@ -49,10 +49,10 @@ Follow the steps below to inspect a request and its respective response:
 
 2. Select a session row in the __Live Traffic__.
 
-3. To the right, at the top, is located the __Request Inspector__. You could choose a different inspector type to visualize the requested content. The default one is __Headers__.
+3. To the right, at the top, is located the __Request Inspector__. You can choose a different inspector type to visualize the requested content. The default one is __Headers__.
 
     ![Request Inspector](../images/kb/request-inspector-under-capture-and-inspect-web-traffic.png)
 
-4. To the right, at the bottom, is located the __Response Inspector__. You could choose a different inspector type to visualize the requested content. The default one is __Headers__.
+4. To the right, at the bottom, is located the __Response Inspector__. You can choose a different inspector type to visualize the requested content. The default one is __Headers__.
 
     ![Response Inspector](../images/kb/response-inspector-under-capture-and-inspect-web-traffic.png)

@@ -27,7 +27,7 @@ To capture traffic generated from AWS CLI commands, you need to configure the Fi
 
 1. Open the terminal app where the AWS CLI commands will run. Set the terminal app to use the Fiddler Everywhere proxy, as described in [this KB article]({%slug fiddler-macos-terminal%}).
 
-2. Open Fiddler Everywhere and export the **FiddlerRootCertificate.crt** file via **_Settings > HTTPS > Advanced Settings > Export root certificate to Desktop_**.
+2. Open Fiddler Everywhere and export the **FiddlerRootCertificate.crt** file through **_Settings > HTTPS > Advanced Settings > Export root certificate to Desktop_**.
 
 3. Use [OpenSSL toolkit](https://www.openssl.org/) to generate **FiddlerRootCertificate.pem** from the exported **FiddlerRootCertificate.crt**.
     ```Shell
@@ -53,7 +53,7 @@ To capture traffic generated from AWS CLI commands, you need to configure the Fi
 
 ## Reset AWS CLI to Default Settings
 
-After the debugging of the request made through are over, you could reset the `AWS_CA_BUNDLE` environment variable while using the **unset** command.
+After the debugging of the request made through are over, you can reset the `AWS_CA_BUNDLE` environment variable while using the **unset** command.
 
 ```Shell
 unset AWS_CA_BUNDLE

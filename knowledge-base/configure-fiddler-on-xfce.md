@@ -16,12 +16,12 @@ res_type: kb
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [XFCE](https://aws.amazon.com/cli/) |
 | Supported OS | Linux |
-| Reported via | https://community.getfiddler.com/support/discussions/topics/12000025720 |
+| Reported through | https://community.getfiddler.com/support/discussions/topics/12000025720 |
 
 
 #### Description
 
-Fiddler Everywhere uses the **dconf** for setting/getting the proxy configuration via the UI. Some alternative desktop environments like XFCE store the data in different locations or lack a graphical interface for setting the system proxy. This would lead to Fiddler Everywhere not to set or unset the system proxy, which could break the application and the internet connectivity due to leaked proxy settings.
+Fiddler Everywhere uses the **dconf** for setting/getting the proxy configuration through the UI. Some alternative desktop environments like XFCE store the data in different locations or lack a graphical interface for setting the system proxy. This will lead to Fiddler Everywhere not to set or unset the system proxy, which can break the application and the internet connectivity due to leaked proxy settings.
 
 
 ## Solution
