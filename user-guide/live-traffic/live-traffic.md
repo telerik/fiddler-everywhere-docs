@@ -243,8 +243,6 @@ All three options will initially display a save prompt and then a share prompt w
 1. The selected sessions are being saved. Enter your session name and click **Save and proceed**
 1. The share screen prompt window appears. Enter valid email and optionally add notes. Once ready, click **Share**.
 
->important Fiddler Everywhere has a quota limit for creating snapshots of sessions. Refer to the FIddler Everywhere plans page for details.
-
 >tip Alternatively, you can share captured traffic [through the **Share** button from the toolbar]({%slug web-sessions-list%}#share)
 
 

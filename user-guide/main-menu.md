@@ -34,7 +34,7 @@ The **View** menu provides options to change the overall Fiddler Everywhere UI s
 
 ## Help
 
-The **Help** menu provides several options for a version update and information, fast access to forums, documentation, and support channel. The support option is available only for [Fiddler Everywhere PRO]({%slug introduction%}#key-features) version.
+The **Help** menu provides several options for a version update and information, fast access to forums, documentation, and support channel.
 
 ![Help Menu](../images/menu/menu-help-update.png)
 
@@ -74,7 +74,7 @@ The **Links** menu provides several useful fast links.
 
 - A **Forums** link to the Fiddler Everywhere community forums at https://community.getfiddler.com/support/discussions
 - A **Documentation** link to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/
-- A **Contact Support** link (available for both the PRO and Trial versions) for posting a support ticket to the Fiddler Everywhere support team. More about Fiddler Everywhere PRO support [here]({%slug support-page%}).
+- A **Contact Support** link (available for both the PRO and Trial versions) for posting a support ticket to the Fiddler Everywhere support team. Learn more about Fiddler Everywhere support [here]({%slug support-page%}).
 
 ## Notifications
 

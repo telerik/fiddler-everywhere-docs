@@ -40,7 +40,6 @@ Share a session with a collaborator while following these steps:
 
 With version 1.1.0 of Fiddler Everywhere, the user has options to delete previously shared sessions. The sessions can be deleted from the **Sessions** list through the **Delete** button. All users added as collaborators will be notified that the shared session is now deleted [through the notification bar and an email message](#notifications-for-shared-content). Deleted sessions can be restored through the [**Shared Sessions** option]({%slug saved-sessions-tab%}#shared-sessions).
 
->tip Deleting previously shared sessions will free your sharing quotas. Learn more about the quotas in Fiddler Everywhere through [the comparison table]({%slug introduction%}#key-features).
 
 ## Add Context for Teammates
 
