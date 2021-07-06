@@ -17,7 +17,8 @@ You can use Fiddler Everywhere to capture and inspect traffic that comes from An
 |   |   |
 |---|---|
 | Product   |
-| Product Version | 1.0.2 and above  |
+| Fiddler Everywhere | 1.0.0 and above  |
+| Android | All versions  |
 
 ## Prerequisites
 

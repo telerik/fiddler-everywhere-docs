@@ -29,7 +29,7 @@ A support manager will review customer activities that exceed at least ten times
 
 ### How to contact support?
 
-To reach out to the support team, please send an email to support@getfiddler.com (available only for Pro and Trial versions).
+To reach out to the support team, please send an email to support@getfiddler.com (available only for accounts with Pro subscription plan including an activated Trial version).
 
 >tip Users without an active subscription can ask their questions in the [Fiddler Everywhere community forum](https://community.getfiddler.com/support/discussions). Posting in the forums does not guarantee a response from the Fiddler Everywhere team, although we are trying to answer all questions.
 
@@ -40,6 +40,7 @@ Feature requests can be submitted in the [Feature Request section](https://commu
 ## What's included in Support?
 
 ### Guidance for built-in features
+
 We provide guidance and explanation for built-in features of the products. We provide clients with references to existing resources to demonstrate the intended use of the product. We also provide information on proper configuration of the product.
 
 ### Bug Confirmation

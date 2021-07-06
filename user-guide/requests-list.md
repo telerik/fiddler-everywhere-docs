@@ -46,8 +46,8 @@ To share a collection, click the __Share__ icon, then enter the email addresses 
 
 ![Share collection popup](../images/requests/share-requests-popup.png)
 
-> - You can share a collection only if you are the collection owner.
-> - You can share only collection folders on the root level of the **Requests** list. You cannot share individual sub-folders.  
+- You can share a collection only if you are the collection owner.
+- You can share only collection folders on the root level of the **Requests** list. You cannot share individual sub-folders.  
 
 ### Delete 
 
