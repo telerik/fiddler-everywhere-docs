@@ -1,5 +1,35 @@
 [
     {
+        "version": "2.0.1",
+        "title": "Fiddler Everywhere v2.0.1",
+        "date": "July 07, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "When Fiddler Everywhere is unable to remove the proxy settings from the machine, next start leads to blank screen with no error and no indication for the user how to proceed"
+                    },
+                    {
+                        "title": "Unmatched Requests Passthrough setting is saved immediately when changed while it should be saved when using the Save button of the Settings dialog"
+                    },
+                    {
+                        "title": "Expanded/collapsed states of rules is not persisted"
+                    },
+                    {
+                        "title": "Rules added to list are expanded by default, while they should be collapsed"
+                    },
+                    {
+                        "title": "Rules tab breaks when the rules are on more than one page and all of the rules on the last page are deleted"
+                    },
+                    {
+                        "title": "Toggled Decode (on) will remain toggled on Inspector change while content will be encoded again"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.0.0",
         "title": "Fiddler Everywhere v2.0.0",
         "date": "June 29, 2021",
