@@ -1,5 +1,38 @@
 [
     {
+        "version": "2.0.2",
+        "title": "Fiddler Everywhere v2.0.2",
+        "date": "July 26, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Fixed some text placeholders in the rules editor window"
+                    },
+                    {
+                        "title": "Fix issues with importing shared rules and duplicating rules with manual response"
+                    },
+                    {
+                        "title": "Fix issue when importing a rule with a regular expression in the match condition"
+                    },
+                    {
+                        "title": "Fix some UI color and size issues with the new dark theme"
+                    },
+                    {
+                        "title": "Fix issue with long email addresses on shared item dialogs"
+                    },
+                    {
+                        "title": "Fix missing text on some sign-in and sign-up error screens"
+                    },
+                    {
+                        "title": "Fix EULA window not always showing the latest EULA content"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.0.1-insiders",
         "title": "Fiddler Everywhere v2.0.1",
         "date": "July 07, 2021",
