@@ -1,5 +1,44 @@
 [
     {
+        "version": "2.0.2-insiders",
+        "title": "Fiddler Everywhere v2.0.2",
+        "date": "July 26, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Some text placeholders in the rules editor window had incorrect text"
+                    },
+                    {
+                        "title": "Issues with importing shared rules and duplicating rules, which have a manual response action"
+                    },
+                    {
+                        "title": "Issue when importing a rule with a regular expression in the match condition"
+                    },
+                    {
+                        "title": "Some UI color and size issues with the new dark theme"
+                    },
+                    {
+                        "title": "Issue with long email addresses on shared item dialogs"
+                    },
+                    {
+                        "title": "Missing text on some sign-in and sign-up error screens"
+                    },
+                    {
+                        "title": "EULA window not always showing the latest EULA content"
+                    },
+                    {
+                        "title": "Some new users remain on the loading state of the start trial screen without indication on how to proceed"
+                    },
+                    {
+                        "title": "Application menus on Windows/Linux are not visible in the sign in page"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.0.1-insiders",
         "title": "Fiddler Everywhere v2.0.1",
         "date": "July 07, 2021",
