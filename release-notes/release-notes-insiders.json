@@ -8,25 +8,31 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Fixed some text placeholders in the rules editor window"
+                        "title": "Some text placeholders in the rules editor window had incorrect text"
                     },
                     {
-                        "title": "Fix issues with importing shared rules and duplicating rules with manual response"
+                        "title": "Issues with importing shared rules and duplicating rules, which have a manual response action"
                     },
                     {
-                        "title": "Fix issue when importing a rule with a regular expression in the match condition"
+                        "title": "Issue when importing a rule with a regular expression in the match condition"
                     },
                     {
-                        "title": "Fix some UI color and size issues with the new dark theme"
+                        "title": "Some UI color and size issues with the new dark theme"
                     },
                     {
-                        "title": "Fix issue with long email addresses on shared item dialogs"
+                        "title": "Issue with long email addresses on shared item dialogs"
                     },
                     {
-                        "title": "Fix missing text on some sign-in and sign-up error screens"
+                        "title": "Missing text on some sign-in and sign-up error screens"
                     },
                     {
-                        "title": "Fix EULA window not always showing the latest EULA content"
+                        "title": "EULA window not always showing the latest EULA content"
+                    },
+                    {
+                        "title": "Some new users remain on the loading state of the start trial screen without indication on how to proceed"
+                    },
+                    {
+                        "title": "Application menus on Windows/Linux are not visible in the sign in page"
                     }
                 ]
             }
