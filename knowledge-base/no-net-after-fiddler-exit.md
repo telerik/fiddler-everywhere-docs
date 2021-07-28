@@ -36,8 +36,10 @@ To check & remove leaked proxy and restore the Internet connectivity on macOS, f
 - Go to **Advanced...** > **Proxies**.
 - Verify that the Fiddler proxy is not set for **Web Proxy (HTTP)** and **Secure Web Proxy (HTTPS)**. If the Fiddler proxy is present, remove the IP and Port, uncheck both options (or restore your default proxy settings), and click OK to confirm the changes.
 
-## Linux Solution
+## Ubuntu Solution
 
 - [Disable the Live Traffic capturing]({%slug web-sessions-list%}#live-traffic-toolbar) and exit the Fiddler Everywhere application.
+- In Ubuntu, go to **Settings** > **Network**
+- Verify that the **Network Proxy** option is set to **Off** (or to your default proxy settings). If the Fiddler proxy is still present in the **Manual proxy**, remove it and disable the network proxy.
 
 
