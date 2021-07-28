@@ -17,7 +17,7 @@ res_type: kb
 
 #### Description
 
-By design, when the Fiddler Everywhere application is closed, it will restore the default operating system proxy settings. However, on rare occasions, the application might end unexpectedly due to multiple reasons (software crash, OS interruption, hardware failure, etc.). When this happens, it is possible that the Fiddler proxy won't be reset, which would lead to lost Internet connectivity. The article explains how to check and remove leaked proxy settings and effectively restore lost Internet connectivity after the Fiddler Everywhere application is stopped.\
+By design, when the Fiddler Everywhere application is closed, it will restore the default operating system proxy settings. However, on rare occasions, the application might end unexpectedly due to multiple reasons (software crash, OS interruption, hardware failure, etc.). When this happens, it is possible that the Fiddler proxy won't be reset, which would lead to lost Internet connectivity. The article explains how to check and remove leaked proxy settings and effectively restore lost Internet connectivity after the Fiddler Everywhere application is stopped.
 
 ## Windows Solution
 
