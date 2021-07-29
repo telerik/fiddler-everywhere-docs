@@ -23,7 +23,7 @@ This article explains how to identify and remove leaked proxy settings so you ca
 
 ## Windows Solution
 
-To check & remove leaked proxy and restore the Internet connectivity on Windows 10, follow these steps:
+To check for a leaked proxy and restore the Internet connectivity on Windows 10:
 
 - [Disable the Live Traffic capturing]({%slug web-sessions-list%}#live-traffic-toolbar) and exit the Fiddler Everywhere application.
 - Open the Windows 10 **Proxy Settings** (type **Proxy Settings** in the **Start** menu).
@@ -43,4 +43,3 @@ To check & remove leaked proxy and restore the Internet connectivity on macOS, f
 - [Disable the Live Traffic capturing]({%slug web-sessions-list%}#live-traffic-toolbar) and exit the Fiddler Everywhere application.
 - In Ubuntu, go to **Settings** > **Network**
 - Verify that the **Network Proxy** option is set to **Off** (or to your default proxy settings). If the Fiddler proxy is still present in the **Manual proxy**, remove it and disable the network proxy.
-
