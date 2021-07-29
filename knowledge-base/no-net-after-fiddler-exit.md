@@ -25,7 +25,7 @@ This article explains how to identify and remove leaked proxy settings so you ca
 
 To check for a leaked proxy and restore the Internet connectivity on Windows 10:
 
-- [Disable the Live Traffic capturing]({%slug web-sessions-list%}#live-traffic-toolbar) and exit the Fiddler Everywhere application.
+1. In Fiddler Everywhere, [disable the Live Traffic capturing]({%slug web-sessions-list%}#live-traffic-toolbar), and then close the application.
 - Open the Windows 10 **Proxy Settings** (type **Proxy Settings** in the **Start** menu).
 - Go to **Manual proxy setup** and verify that the Fiddler proxy IP and Port are removed. By default, when your system is not using other proxies, the **Use a proxy server** should be turned off with both **Address** and **Port** fields emptied.
 
