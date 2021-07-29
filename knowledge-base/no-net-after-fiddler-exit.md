@@ -1,6 +1,6 @@
 ---
 title: No Internet after closing Fiddler Everywhere
-description: Check for leaked proxy and restoring the Internet connectivity after Fiddler Everywhere exits.
+description: How to check for a leaked proxy and restore the Internet connectivity after Fiddler Everywhere stops unexpectedly.
 type: how-to
 slug: fiddler-restore-internet
 publish: true
