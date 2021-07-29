@@ -17,7 +17,9 @@ res_type: kb
 
 #### Description
 
-By design, when the Fiddler Everywhere application is closed, it will restore the default operating system proxy settings. However, on rare occasions, the application might end unexpectedly due to multiple reasons (software crash, OS interruption, hardware failure, etc.). When this happens, it is possible that the Fiddler proxy won't be reset, which would lead to lost Internet connectivity. The article explains how to check and remove leaked proxy settings and effectively restore lost Internet connectivity after the Fiddler Everywhere application is stopped.
+By design, when you close the Fiddler Everywhere application, it restores the default operating system proxy settings. However, on rare occasions, the application might end unexpectedly due to various reasons (software crash, OS interruption, hardware failure, etc.). If this happens, Fiddler may fail to restore the default proxy settings and you may loose Internet connectivity. 
+
+This article explains how to identify and remove leaked proxy settings so you can restore lost Internet connectivity after Fiddler Everywhere stops unexpectedly.
 
 ## Windows Solution
 
@@ -41,5 +43,4 @@ To check & remove leaked proxy and restore the Internet connectivity on macOS, f
 - [Disable the Live Traffic capturing]({%slug web-sessions-list%}#live-traffic-toolbar) and exit the Fiddler Everywhere application.
 - In Ubuntu, go to **Settings** > **Network**
 - Verify that the **Network Proxy** option is set to **Off** (or to your default proxy settings). If the Fiddler proxy is still present in the **Manual proxy**, remove it and disable the network proxy.
-
 
