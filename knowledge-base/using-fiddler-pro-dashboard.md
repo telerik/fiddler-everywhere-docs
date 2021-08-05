@@ -17,7 +17,7 @@ res_type: kb
 
 #### Description
 
-The Fiddler dashboard site provides means for managing subscription plans, payments, and the activation of account seats for Fiddler Everywhere and Fiddler Jam. This KB article demonstrates the functionalities accessible from [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com) and the steps needed to activate and manage your subscriptions.
+The [Fiddler dashboard site](https://dashboard.getfiddler.com) provides means for managing subscription plans, payments, and the activation of account seats for Fiddler Everywhere and Fiddler Jam. This KB article demonstrates the functionalities accessible from [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com) and the steps needed to activate and manage your subscriptions.
 
 
 ## Fiddler Everywhere Dashboard
@@ -38,23 +38,17 @@ New users can purchase the Fiddler Everywhere Pro subscription plan as described
 1. Open the Fiddler Everywhere client, click on the **Buy Now** button on the landing page. As a result, you will land on the [Fiddler Dashboard](https://dashboard.getfiddler.com) page.
 
     >tip You can use the **Start Free Trial** button to activate the 30-days trial. Note that this step is available only for new users. If you are an existing user with an expired trial, go to the next step.
-
 1. Alternatively, directly open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com).
-
 1. Navigate [to the Plans page](https://dashboard.getfiddler.com/plans), and select the desired Fiddler product.
-
 1. Press **Purchase Plan** to proceed to the order details page. The order details page presents you with the option to choose between annual vs. monthly payments, adding additional subscription seats (by default, each plan activates a single seat), and adding promotional coupons. 
-
-1. Press **Next** to proceed to the payment details page. On the payment details page, you have the option to add a new payment method or to use a saved card.
-
-1. Press **Pay** button to finalize the order.
-
-1. Restart your Fiddler Everywhere client to fully activate the purchased subscription plan.
+1. Press **Next** to proceed to the payment details page. On the payment details page, you can add a new payment method or use a saved card.
+1. Press the **Pay** button to finalize the order.
+1. Restart your Fiddler Everywhere client to activate the purchased subscription plan fully.
 
 
 ## Manage Subscriptions
 
-Only the account owners can manage subscriptions (add/remove seats, change plans, etc.). To manage the active subscription for any Fiddler products:
+Only the account owners can manage subscriptions (add/remove seats, change plans, etc.). To address the active subscription for any Fiddler products:
 
 Open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where you will land on the main dashboard page after a successful login.
 
@@ -69,11 +63,14 @@ Open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where
     - Assign, unassign, and edit seats.
     - Buy additional seats.
 
+    
+
 ## Invoice Information
 
-You can access and download all previously issue invoices through the [**Invoices**](https://dashboard.getfiddler.be/invoices) section.
+You can access and download all previously issued invoices through the [**Invoices**](https://dashboard.getfiddler.com/invoices) section. Each listed invoice has a unique ID that acts as a quick link to the Stripe details page, where you can download the Stripe invoice and receipt.
 
+![Invoice list in the Dashboard site](../images/dash/dash-invoice-list.png)
 
 ## Payment Methods
 
-Set your payment method by adding credit card details through the [**Saved Cards**](https://dashboard.getfiddler.com/cards) section. Use the green switch to set a default card. The default card will be used for ongoing payments.``
+Set your preferred payment method by adding a credit card through the [**Saved Cards**](https://dashboard.getfiddler.com/cards) section. Use the green toggle switch to set a default card. The default card will be used for ongoing payments and is mandatory for accounts with an active subscription. You can add as many cards as you want, and all cards can be deleted except for the default card.

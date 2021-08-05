@@ -9,7 +9,7 @@ previous_url: /user-interface/settings/https,/user-guide/settings/https/https-de
 
 # Configuration
 
-In this article we'll discuss about how to configure Fiddler Everywhere in your system. 
+In this article we'll discuss about how to configure the HTTPS capturing in Fiddler Everywhere for the supported operating systems. 
 
 By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate through the __HTTPS__ sub-menu in __Settings__.
 
@@ -19,29 +19,21 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 ## Configure on macOS
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
-
 1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button. 
-
 1. A keychain user and password box appears. Enter your __machine administrative credentials__.
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-mac-keychain.png)
-
 1. Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
-    
 1. Click the __Save__ button to save the changes.
 
 ## Configure on Windows
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
-
-1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button. 
-
-  Trust certificate popup appears to confirm and add the certificate. 
+1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button. Trust certificate popup appears to confirm and add the certificate. 
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-cert-win.png)
 
-Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
-    
+    Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
 1. Click the __Save__ button to save the changes.
 
 ## Configure on Linux
@@ -49,11 +41,8 @@ Select the __Capture HTTPS traffic__ checkbox to enable HTTPS traffic capturing.
 Many Linux distributions are using different security features and different ways of adding a root certificate. For such cases, Fiddler Everywhere provides means to export the trusted root certificate so that you can manually import it in your Linux OS. Use the __Export Root Certificate to Desktop and Trust Certificate__ option as follows:
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
-
 1. Go to __Settings > HTTPS__ and expand the __Advanced Settings__ sub-menu.
-
 1. Click the __Export Root Certificate to Desktop__ button.
-
 1. Import and trust the exported certificate. To install the Fiddler Everywhere certificate, you need to follow some additional steps on Linux:
 
     - Create a directory and copy the certificate (exported in the previous steps). The last command will start the tool to upgrade the certificates. 
@@ -76,10 +65,7 @@ Many Linux distributions are using different security features and different way
     - The certificates are being updated
 
     ![Add Fiddler certificate](../images/configuration/cert_ubunto_004.png)
-
-
 1. The __Capture HTTPS traffic__ checkbox is now active. Check the box to enable capturing HTTPS traffic.
-
 1. Click the __Save__ button to save the changes.
 
     >important Some Linux distributions like Ubuntu will use localized paths (for example, the __Desktop__ folder is renamed with the related word used in the locale language). That might cause for __step 3__ to fail due to a missing folder named __Desktop__ with an error message of type _Could not find a part of the path ..._. Until an out-of-the-box solution is implemented, you can easily workaround this issue by creating a folder called __Desktop__ at your root directory (`mkdir ~/Desktop`) and then export the certificate to the newly-created directory. Once the certificate is installed, you can safely remove the directory.

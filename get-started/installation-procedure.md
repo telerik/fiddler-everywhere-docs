@@ -38,26 +38,22 @@ Other requirements:
 ### macOS
 
 1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
-
-2. Select **Download for OS X** to download the installer.
-
-3. Run the **Fiddler Everywhere** dmg file to start the installation process.
+1. Select **Download for OS X** to download the installer.
+1. Run the **Fiddler Everywhere** dmg file to start the installation process.
+1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-macos) and start capturing.
 
 ### Windows
 
 1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
-
-2. Select **Download for Windows** to download the installer.
-
-3. Run the **Fiddler Everywhere** exe file to start the installation process.
+1. Select **Download for Windows** to download the installer.
+1. Run the **Fiddler Everywhere** exe file to go through the installation process.
+1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-windows) and start capturing.
 
 ### Linux
 
 1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
-
-2. Select **Download for Linux** to download the installer.
-
-3. Install the downloaded package.
+1. Select **Download for Linux** to download the installer.
+1. Install the downloaded package.
 
     On most **Linux** distributions, you need to set the installation file as executable before you can start the installation. You can do this with the command line or with the GUI:
 
@@ -84,6 +80,8 @@ Other requirements:
 
         ![KDE setting executable](../images/installation/exec-kde.jpg)
 
+1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-linux) and start capturing.
+
 ## Create an Account
 
 Signing in is mandatory for both Trial and Pro versions of the Fiddler Everywhere client. You can sign up by [creating a Fiddler account](#create-fiddler-account) or by [using an existing Google account](#use-google-account). Fiddler Everywhere supports Google Authentication and own account system.
@@ -93,29 +91,24 @@ Signing in is mandatory for both Trial and Pro versions of the Fiddler Everywher
 1. Launch the Fiddler Everywhere client. If you don't have an existing Fiddler account, select the **New User? Create Account** button.
 
     ![Login screen](../images/login/login-screen.png)
-
-2. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. The email that you provide in this step will be used by your teammates for sharing sessions, collections, and notifications.
+1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. The email that you provide in this step will be used by your teammates for sharing sessions, collections, and notifications.
 
     ![Create new account screen](../images/login/create-acc-screen.png)
-
-3. Open the confirmation email sent by Fiddler, and follow the instructions to complete the registration.
+1. Open the confirmation email sent by Fiddler, and follow the instructions to complete the registration.
 
 ### Use Google Account
 
 Alternatively, you can directly sign in with an existing Google account.
 
 1. Launch the Fiddler Everywhere client. 
-
-2. Select **Sign in with Google**.
+1. Select **Sign in with Google**.
 
 ## Update
 
 Steps to update Fiddler Everywhere to the latest version:
 
 1. Start __Fiddler Everywhere__.
-
-2. From the main menu, choose **_Help_ > _Check for Update_**. If a newer version is available, a notification will ask for your agreement to download and install it.
-
-3. Fiddler Everywhere will restart and automatically update to the latest version.
+1. From the main menu, choose **_Help_ > _Check for Update_**. If a newer version is available, a notification will ask for your agreement to download and install it.
+1. Fiddler Everywhere will restart and automatically update to the latest version.
 
 >important Once the Fiddler Everywhere client is installed, updated and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).
