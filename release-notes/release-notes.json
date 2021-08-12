@@ -1,5 +1,26 @@
 [
     {
+        "version": "2.0.3",
+        "title": "Fiddler Everywhere v2.0.3",
+        "date": "August 11, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Release notes content is not displayed"
+                    },
+                    {
+                        "title": "Application tooltip on Windows is incorrect"
+                    },
+                    {
+                        "title": "Request numbers are not persisted when exporting HAR file and then importing it again"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.0.2",
         "title": "Fiddler Everywhere v2.0.2",
         "date": "July 26, 2021",
