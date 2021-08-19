@@ -14,7 +14,7 @@ After the initial startup, the Fiddler Everywhere application captures only non-
 
 ## Trust root certificate
 
-The **Trust root certificate** button installs and trusts the Fiddler root certificate. The option is available only on macOS and Windows. On Linux, you have to manually export and trust the root certificate. After you install the certificate, you are ready to [enable the capturing of HTTPS traffic](#capture-https-traffic).
+The **Trust root certificate** button installs and trusts the Fiddler root certificate. The option is available only on macOS and Windows. On Linux, you have to export and trust the root certificate manually. After you install the certificate, you are ready to [enable the capturing of HTTPS traffic](#capture-https-traffic).
 
 ## Capture HTTPS traffic
 

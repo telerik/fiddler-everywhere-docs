@@ -9,9 +9,9 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 # Live Traffic Tab
 
-The **Live Traffic** tab is an essential feature of Fiddler Everywhere. It display a summary of each captured session (in the [**Live Traffic list**](#live-traffic-list)) and provides functionalities to work with these sessions (through the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the interconnected [**Rules tab**]({%slug rules-general%}). The section also enables sessions saving and sharing, editing issued requests, marking, commenting sessions, and applying rules.
+The **Live Traffic** tab is an essential feature of Fiddler Everywhere. It displays a summary of each captured Session (in the [**Live Traffic list**](#live-traffic-list)). It provides functionalities to work with these sessions (through the [**Live Traffic toolbar**](#live-traffic-toolbar), the [**Inspectors**]({%slug inspector-types%}) tabs, and the corresponding [**Rules tab**]({%slug rules-general%}). The section also enables sessions saving and sharing, editing issued requests, marking, commenting sessions, and applying rules.
 
->tip A **Session** (also mentioned as a **web session**) represents a single transaction between a client and a server, sometimes known as for request/response pair. Each session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the session and a Timers object that stores timestamps logged during the Session processing.
+>tip A **Session** (also mentioned as a **web session**) represents a single transaction between a client and a server, sometimes known as for request/response pair. Each Session appears as a single entry in the Live Traffic (refer to the images below). Each Session object has a **Request** and a **Response**, representing what the client sent to the server and what the server returned to the client. The Session object also maintains a set of Flags that record metadata about the session and a Timers object that stores timestamps logged during the Session processing.
 
 ![Live Traffic toolbar and list](../../images/livetraffic/websessions/websessions-list-all.png)
 
@@ -20,7 +20,7 @@ The **Live Traffic** tab is an essential feature of Fiddler Everywhere. It displ
 The Live Traffic toolbar provides various functionalities like streaming mode, decoding content, filtering by different criteria, saving, and sharing sessions.
 
 
-To start capturing traffic, you need to enable **Live Traffic** switch to **Capturing** mode. Use the off switch state to **pause** the traffic capturing (**Paused** mode).
+To start capturing traffic, you need to enable **Live Traffic** by switching to **Capturing** mode. Use the off switch state to **pause** the traffic capturing (**Paused** mode).
 
 The Live Traffic toolbar provides the following functionalities:
 
@@ -41,7 +41,7 @@ By default, Fiddler Everywhere uses **buffering mode**, which means that the res
 
 1. Click the **Stream** button to toggle between the streaming and buffering modes.
 
-    Streaming mode is useful for low-level network timing scenarios (for example, by design, some browsers will parse partially-downloaded HTML. That will start downloading external resources in parallel before the remote server has finished delivering the content).
+    Streaming mode is useful for low-level network timing scenarios (for example, by design, some browsers will parse partially downloaded HTML. That will start downloading external resources in parallel before the remote server has finished delivering the content).
     
     ![Buffering mode vs Streaming Mode](../../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
 
@@ -59,7 +59,7 @@ Use the **Advanced Filters** to apply filters based on the Request and Response 
 
 Currently, the **Advanced Filters** entries are using **AND** logical operator. Each value is complying with the **EXACT** match.
 
->tip Alternatively, you can apply filters through the _more_ option on each Live Traffic column (for example, apply a filter for _Host_ column). The column filtering allows using AND and OR logical operators (for two lines), and multiple comparison rules (for example, like **Is equal to**, **contains**, **ends with**, etc.).
+>tip Alternatively, you can apply filters through the _more_ option on each Live Traffic column (for example, apply a filter for the _Host_ column). The column filtering allows using AND and OR logical operators (for two lines), and multiple comparison rules (for example, like **Is equal to**, **contains**, **ends with**, etc.).
 
 ### Clear All Filters
 
@@ -72,19 +72,19 @@ Use the **Save** button to save sessions for later use or prepare sessions for s
 
 1. Click the **Save** button.
 
-2. A **Save Sessions** prompt windows appear. Enter a valid name and click **Save**.
+2. A **Save Sessions** prompt window appears. Enter a valid name and click **Save**.
 
     ![Save prompt window](../../images/livetraffic/websessions/websessions-toolbar-save-prompt.png)
 
 3. The current entry (of sessions) appears in the **Sessions** list.
 
->important The **Save** button will automatically save all captured traffic. If you want to keep only specific sessions, you can select the wanted sessions and use [the context menu]({%slug web-sessions-list%}#save) for advanced save options.
+>important The **Save** button will automatically save all captured traffic. If you want to keep only specific Sessions, you can select the wanted Sessions and use [the context menu]({%slug web-sessions-list%}#save) for advanced save options.
 
 ### Share
 
-Sharing sessions greatly improves collaboration, and Fiddler Everywhere provides several options to export and share sessions:
+Sharing sessions dramatically improves collaboration, and Fiddler Everywhere provides several options to export and share sessions:
 
-- Sharing through the **Share** button from a saved session entry in [the **Sessions** list]({%slug saved-sessions-tab%}#sharing-sessions)).
+- Sharing through the **Share** button from a saved Session entry in [the **Sessions** list]({%slug saved-sessions-tab%}#sharing-sessions)).
 - Sharing through the **Share** option from [the **Live Traffic** list context menu]({%slug web-sessions-list%}#share).
 - Sharing through the **Share** button from the **Live Traffic** list toolbar (see details below).
 
@@ -103,17 +103,17 @@ The toolbar comes with a **Share** button that will save the currently displayed
 
 ### Remove All
 
-Use the **Remove All** button to remove **all** captured traffic from the **Live Traffic** list. To remove specific selected sessions, use the [context menu]({%slug web-sessions-list%}#remove)
+Use the **Remove All** button to remove **all** captured traffic from the **Live Traffic** list. To remove specifically selected Sessions, use the [context menu]({%slug web-sessions-list%}#remove)
 
 
 ### Search
 
-Use the **Search** text input to search for specific values in the URL and the Headers of all sessions. The search action will immediately filter and show all sessions that are containing the search term.
+Use the **Search** text input to search for specific values in the URL and the Headers of all Sessions. The search action will immediately filter and show all Sessions that are containing the search term.
 
 
 ## Live Traffic List
 
-The Live Traffic list is an essential feature of Fiddler Everywhere - it displays a list of web sessions with a summary of each session that the Fiddler Everywhere client has captured.
+The Live Traffic list is an essential feature of Fiddler Everywhere - it displays a list of web sessions with a summary of each Session that the Fiddler Everywhere client has captured.
 
 ![Live Traffic](../../images/livetraffic/websessions/websessions-list-columns.png)
 
@@ -137,8 +137,8 @@ The **Live Traffic List** uses the icons listed below to provide additional cont
 - ![Aborted icon](../../images/livetraffic/icons/aborted.svg) - The session was aborted by the client, Fiddler, or the Server.
 - ![Error icon](../../images/livetraffic/icons/error.svg) - The response was a server error.
 - ![Unauthorized icon](../../images/livetraffic/icons/unauthorized.svg) - The response returned status code 401 Unauthorized.
-- ![Redirect icon](../../images/livetraffic/icons/redirect.svg) - The response returned status code 300, 301, 302, 303 or 307 redirect.
-- ![WebSocket icon](../../images/livetraffic/icons/websocket.svg) - A tunnel used for WebSocket traffic.
+- ![Redirect icon](../../images/livetraffic/icons/redirect.svg) - The response redirect status code 300, 301, 302, 303 or 307.
+- ![WebSocket icon](../../images/livetraffic/icons/websocket.svg) - A tunnel is used for WebSocket traffic.
 - ![HTTPS tunnel icon](../../images/livetraffic/icons/https-tunnel.svg) - The request used the **HTTP CONNECT** method - establishes a tunnel used for HTTPS traffic.
 - ![RPC tunnel icon](../../images/livetraffic/icons/rpc.svg) - A tunnel used for RPC traffic.
 - ![No Content icon](../../images/livetraffic/icons/no-content.svg) - No content loaded.
@@ -162,23 +162,23 @@ The **Live Traffic List** uses the icons listed below to provide additional cont
 
 Certain key information is displayed in the columns of Live Traffic, including:
 
-- **\#** - An unique identification number generated by Fiddler Everywhere.
+- **\#** - A unique identification number generated by Fiddler Everywhere.
 - **Result** - The HTTP response [status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 - **Protocol** - The protocol type (HTTP or HTTPS) used by the session.
-- **Host** - The hostname and the port of the server to which the request was sent. The column also indicates requests with **CONNECT** method with **Tunnel to** value (learn more about [CONNECT tunnels in Fiddler](https://textslashplain.com/2015/11/19/understanding-connect-tunnels/)).
-- **Path** - The path refers to the exact location of a page, post, file, or other asset. The path resides after the hostname and is separated by “/” (forward slash).
+- **Host** - The hostname and the port of the Server to which the request was sent. The column also indicates requests with **CONNECT** method with **Tunnel to** value (learn more about [CONNECT tunnels in Fiddler](https://textslashplain.com/2015/11/19/understanding-connect-tunnels/)).
+- **Path** - The path refers to the exact location of a page, post, file, or another asset. The path resides after the hostname and is separated by “/” (forward slash).
 - **URL** - The URL contains the protocol, the hostname, the port and the path from the request.
 - **Method** - The HTTP Method used by the made request (GET, POST, PUT, etc.).
 - **Process** - The local OS process from which the traffic originated (for example _chrome:8212_ indicates a Google Chrome browser instance).
-- **Client IP** - Indicates the client IP that sent this request. Mostly useful when multiple computers on a network are pointed to a single Fiddler instance.
+- **Client IP** - Indicates the client IP that sent this request. Mostly applicable when multiple computers on a network are pointed to a single Fiddler instance.
 - **Remote IP** - Indicates the IP address of the server used for this request.
 - **Body Size** - The number of bytes in the response body.
 - **Caching** - Values from the Response's **Expires** and **Cache-Control** headers.
 - **Content-Type** - The **Content-Type** header from the response.
-- **Time** - Indicates the time when the session was executed in **HH:MM:SS:ms** format.
-- **Date** - Indicates the date when the session was executed in **MM:DD:YYYY** format.
-- **Duration** - Indicates the duration in miliseconds that took for the session to complete.
-- **Rules Modified** - Indicates if the session is modified by active rules from the **Rules** tab.
+- **Time** - Indicates when the Session was executed in **HH:MM:SS:ms** format.
+- **Date** - Indicates the date when the Session was executed in **MM:DD:YYYY** format.
+- **Duration** - Indicates the duration in milliseconds that took for the Session to complete.
+- **Rules Modified** - Indicates if the Session is modified by active rules from the **Rules** tab.
 - **Comments** A field for showing the custom comments added by you (or the author of a shared session).
 
 
@@ -216,22 +216,22 @@ The context menu option **Edit in Composer** loads the selected request in a new
 
 The context menu option **Save** provides the means to save selected sessions. The saved sessions will appear in the **Sessions** (the list to the left of the Fiddler Everywhere interface) from where they can be re-opened later, exported, and shared.
 
-- **Selected sessions** - Saves all selected sessions. Keyboard shortcut: **S**.
-- **Unselected sessions** - Saves all unselected sessions. Keyboard shortcut: **Shift** + **Cmd** + **S** (Mac)  **Shift** + **S** (Windows).
+- **Selected sessions** - Saves all chosen Sessions. Keyboard shortcut: **S**.
+- **Unselected sessions** - Saves all unselected Sessions. Keyboard shortcut: **Shift** + **Cmd** + **S** (Mac)  **Shift** + **S** (Windows).
 - **All Sessions** - Saves all captured traffic (Keyboard shortcut: **S**). Keyboard shortcut: **Cmd** + **S** (Mac)  **Ctrl** + **S** (Windows).
 
 All three options will display a save prompt.
 
-1. Select the sessions, open the context menu, and click the **Save** option.
-1. Enter your session name and click **Save**
-1. The saved sessions are immediately loaded in the **Sessions** list.
-1. Double-click the saved session to load it in the **Live Traffic** list.
+1. Select the Sessions, open the context menu, and click the **Save** option.
+1. Enter your Session name and click **Save**
+1. The saved sSssions are immediately loaded in the **Sessions** list.
+1. Double-click the saved Session to load it in the **Live Traffic** list.
 
 >tip Alternatively, you can save all captured traffic [through the **Save** button from the toolbar]({%slug web-sessions-list%}#save)
 
 ### Share
 
-The context menu option **Share** enables the sharing of sessions. Before any session is shared, it is saved as an entry in the **Sessions** list. Then the entry can be shared through email.
+The context menu option **Share** enables the sharing of sessions. Before any session is shared, it is saved as an entry in the **Sessions** list. Then the entry can be transmitte through email.
 
 - **Selected sessions** - Saves and shares all selected sessions.
 - **Unselected sessions** - Saves and shares all unselected sessions.
@@ -248,7 +248,7 @@ All three options will initially display a save prompt and then a share prompt w
 
 ### Export
 
-The context menu option **Export** allows you to export the captured trafcic in different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
+The context menu option **Export** allows you to export the captured trafic in different known formats (like SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript and others).
 
 - **Selected sessions** - Saves and shares all selected sessions.
 - **Unselected sessions** - Saves and shares all unselected sessions.
@@ -267,7 +267,7 @@ Use the **Remove** context menu options to delete sessions from your **Live Traf
 
 Use the **Comment** context menu option to add comments for the associated sessions. 
 
-1. Select the sessions, open the context menu, and click the **Comment** option. Keyboard shortcut: **M**.
+1. Select the sessions, open the context menu, and click the **Comment** option - keyboard shortcut: **M**.
 1. A **Comment** dialog appears. Enter the comment and click **Ok**. 
 1. The text is added to the comment field for the selected sessions.
 
@@ -280,7 +280,7 @@ Use the **Mark** context menu option to apply different colors or to strikeout s
 
 ### Replay
 
-Use the **Replay** context menu option to replay previously captured sessions.  Keyboard shortcut: **R**.
+Use the **Replay** context menu option to replay previously captured sessions - keyboard shortcut: **R**.
 
 ### Select
 
@@ -295,7 +295,7 @@ Use the **Select** context menu option to select sessions directly related to th
 Use the **Copy** context menu option to place session information in the clipboard. The copied information options are:
 
 - **URL** Provides the session URL. Keyboard shortcut:**Cmd** + **U** (Mac), **Ctrl** + **U** (Windows)
-- **FUll Summary** Provides verbose session details. Keyboard shortcut: **Cmd** + **C** (Mac), **Ctrl** + **C** (Windows)
+- **Full Summary** Provides verbose session details. Keyboard shortcut: **Cmd** + **C** (Mac), **Ctrl** + **C** (Windows)
 
 
 _Example for copying URL_
@@ -315,7 +315,7 @@ You can use a captured session entry to mock some server behavior. For similar c
 
 1. Select the desired session entry and make a right-click to open the context menu. From the context menu, select **Add New Rule**.
 
-2. New rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.
+2. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.
 
 
 ## Additional Resources
