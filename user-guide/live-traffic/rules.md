@@ -107,70 +107,70 @@ The **Rule Builder** can add and use single or multiple conditions. The conditio
         </tr>
         <tr>
             <td>Host</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Host</b> column.</td>
         </tr>
         <tr>
             <td>Status</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Result</b> column.</td>
         </tr>
         <tr>
             <td>Method</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Method</b> column.</td>
         </tr>
         <tr>
             <td>Process ID</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Process ID</b> column.</td>
         </tr>
         <tr>
             <td>Client IP</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td> Search for a specific keyword in the <b>Client IP</b> column.</td>
         </tr>
         <tr>
             <td>Remote IP</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Remote IP</b> column.</td>
         </tr>
         <tr>
             <td>Body Size</td>
-            <td>Number modifyers (compares bytes)</td>
+            <td>Number modifiers (compares bytes)</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific value in the <b>Body Size</b> column.</td>
         </tr>
         <tr>
             <td>Duration</td>
-            <td>Number modifyers (compares milliseconds)</td>
+            <td>Number modifiers (compares milliseconds)</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific value in the <b>Duration</b> column.</td>
         </tr>
         <tr>
             <td>Comment</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Comment</b> column.</td>
         </tr>
         <tr>
             <td>Request Body</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Request Body</b> column.</td>
@@ -178,13 +178,13 @@ The **Rule Builder** can add and use single or multiple conditions. The conditio
         <tr>
             <td>Request Header</td>
             <td>Header name</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>The search value </td>
             <td>Search for a specific keyword in the <b>explicitly mentioned Request header</b> column.</td>
         </tr>
         <tr>
             <td>Response Body</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Response body</b>.</td>
@@ -192,14 +192,14 @@ The **Rule Builder** can add and use single or multiple conditions. The conditio
         <tr>
             <td>Response Header</td>
             <td>Header name</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>The search value </td>
             <td>Search for a specific keyword in the <b>explicitly mentioned Response header</b> column.</td>
         </tr>
         <tr>
             <td>Cookie</td>
             <td>Cookie name</td>
-            <td>String modifyers</td>
+            <td>String modifiers</td>
             <td>Search value</td>
             <td>Search for a specific keyword in the <b>explicitly mentioned Cookie</b>.</td>
         </tr>
@@ -236,34 +236,34 @@ When Fiddler Everywhere identifies a request which matches the rule's **Conditio
         <tr>
             <td>Update Request Header</td>
             <td>Header Name</td>
-            <td>Value modifyers</td>
+            <td>Value modifiers</td>
             <td>New value</td>
             <td>Uses the selected value modifyer and the new value to update the request header</td>
         </tr>
         <tr>
             <td>Update Response Header</td>
             <td>Header Name</td>
-            <td>Value modifyers</td>
+            <td>Value modifiers</td>
             <td>New value</td>
             <td>Uses the selected value modifyer and the new value to update the response header</td>
         </tr>
         <tr>
             <td>Update Request Body</td>
-            <td>Value modifyers</td>
+            <td>Value modifiers</td>
             <td>New value</td>
             <td>n/a</td>
             <td>Uses the selected value modifyer and the new value to update the request body</td>
         </tr>
         <tr>
             <td>Update Response Body</td>
-            <td>Value modifyers</td>
+            <td>Value modifiers</td>
             <td>New value</td>
             <td>n/a</td>
             <td>Uses the selected value modifyer and the new value to update the response body</td>
         </tr>
         <tr>
             <td>Update URL</td>
-            <td>Value modifyers</td>
+            <td>Value modifiers</td>
             <td>New value</td>
             <td>n/a</td>
             <td>Uses the selected value modifyer and the new value to update the current URL</td>
@@ -271,21 +271,21 @@ When Fiddler Everywhere identifies a request which matches the rule's **Conditio
         <tr>
             <td>Update Query Params</td>
             <td>Query Parameter Key</td>
-            <td>Value modifyers</td>
+            <td>Value modifiers</td>
             <td>New value</td>
             <td>Uses the selected value modifyer and the new value to update the query parameters</td>
         </tr>
         <tr>
             <td>Update Request Cookies</td>
             <td>Cookie Key</td>
-            <td>Value modifyers</td>
+            <td>Value modifiers</td>
             <td>New value</td>
             <td>Uses the selected value modifyer and the new value to update the cookie value</td>
         </tr>
         <tr>
             <td>Update Response Cookies</td>
             <td>Cookie Key</td>
-            <td>Value modifyers</td>
+            <td>Value modifiers</td>
             <td>New value</td>
             <td>Uses the selected value modifyer and the new value to update the cookie value</td>
         </tr>

@@ -9,7 +9,7 @@ position: 15
 
 # Overview Tab
 
-The **Overview** tab provides an easy way for the user to get structured information and different statistic data for one or more captured sessions. The tab is available for captured sessions in the [**Live Traffic** tab]({%slug web-sessions-list%}) and for all entries in the [**Sessions** list]({%slug saved-sessions-tab%}).
+The **Overview** tab provides an easy way for the user to get structured information and different statistical data for one or more captured sessions. The tab is available for captured sessions in the [**Live Traffic** tab]({%slug web-sessions-list%}) and all entries in the [**Sessions** list]({%slug saved-sessions-tab%}).
 The **Overview** tab has several widgets:
 
 The **Overview** widgets are dynamically changing depending on the number of selected sessions.
@@ -41,7 +41,7 @@ The URL maximum length is 30 symbols. Use the three dots at the end of the wrapp
     **_Tip:_** A value around 21000ms suggests that the target is unreachable, and the Windows OS took 21 seconds to confirm the issue.
 
 - **HTTPS Handshake Time** - The time (in milliseconds) required to finish an HTTPS handshake. 
-    **_Tip:_** While capturing HTTPS traffic, Fiddler Everywhere acts as a man-in-the-middle, which means that you will see what the client and server are using to talk to Fiddler Everywhere. This can be different than what they’d use if the Fiddler Everywhere proxy was not in the middle. To see the CONNECT tunnels without the FIddler Everywhere interference, you have to disable the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}#capture-https-traffic).
+    **_Tip:_** While capturing HTTPS traffic, Fiddler Everywhere acts as a man-in-the-middle, which means that you will see what the client and server are using to talk to Fiddler Everywhere. This can be different than what they’d use if the Fiddler Everywhere proxy were not in the middle. To see the CONNECT tunnels without the Fiddler Everywhere interference, you have to disable the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}#capture-https-traffic).
 
 - **Client Connected** - The time (in milliseconds) between that and the previous event. The timestamp that indicates when the event happened is available in the [Request Details](#request-details) widget.
 
@@ -72,7 +72,7 @@ The URL maximum length is 30 symbols. Use the three dots at the end of the wrapp
 
 
 
-Under the list of session lines, you will find two footers called ** Request** (light blue) and ** Response** (orange) with total timings in milliseconds (**ms**) or in seconds (**s**)  for all listed sessions. So, for example, if five sessions are selected from the Live Traffic list, the displayed time in the **Request** and **Response** footers is the total time taken for all five selected requests/responses.
+Under the list of session lines, you will find two footers called ** Request** (light blue) and ** Response** (orange) with total timings in milliseconds (**ms**) or seconds (**s**)  for all listed sessions. So, for example, if five sessions are selected from the Live Traffic list, the displayed time in the **Request** and **Response** footers is the total time taken for all five selected requests/responses.
 
 ![Timings widget](../../images/overview/overview-timings.png)
 
@@ -125,11 +125,11 @@ The **Statistics** widget contains a table with structured information for multi
 
 - **Handshake Time** - The aggregate HTTPS handshake time for all selected sessions in milliseconds.
 
-- **Requests Per Host** - A list of the hosts and the number of Requests to each of them.
+- **Requests per Host** - A list of the hosts and the number of Requests to each of them.
 
-- **Responses By Code** - A list of the received HTTP response status codes and the number of appearances.
+- **Responses by Code** - A list of the received HTTP response status codes and the number of appearances.
 
-- **Response Size By Type** - A list of the received response types and their aggregate size.
+- **Response Size by Type** - A list of the received response types and their aggregate size.
 
 ## Request Details
 
