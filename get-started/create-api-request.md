@@ -8,7 +8,7 @@ position: 80
 
 # Create API Request
 
-The Fiddler's **Composer** allows you to create requests to APIs. Requests made to local and online APIs will enable you to check and debug various endpoints, inspect and analyze requests and responses, and to retrieve and receive data quickly.
+The **Composer** inside Fiddler Everywhere allows you to create requests to APIs. Requests made to local and online APIs will enable you to check and debug various endpoints, inspect and analyze requests and responses, and to retrieve and receive data quickly.
 
 Create your first API request by following these steps:
 
@@ -16,7 +16,7 @@ Create your first API request by following these steps:
 
 2. (**_Optional_**) If required, enter additional headers, params, and body. For example, common scenarios are to enter an authorization header, a `Content-type` header, or custom body data. 
 
-    >important By default, Fiddler Everywhere client will add `User-Agent` header with value __Fiddler Everywhere__. This header lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent.
+    >important By default, the Fiddler Everywhere client will add a `User-Agent` header with the value __Fiddler Everywhere__. This header lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent.
 
     >tip Use the **Raw** view to inspect in detail the request that will be sent to the server. The view is read-only.
 
