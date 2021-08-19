@@ -8,7 +8,7 @@ position: 60
 
 # Modify Traffic
 
-Editing traffic with Fiddler Everywhere client is one of the easiest and yet most powerful debugging techniques. Instead of trying to test your API or a website through the UI and make multiple clicks, you can reload the desired session in the [**Composer**]({%slug composer-tab%}), make edits to the desired values, and re-execute the request.
+Editing traffic with the Fiddler Everywhere client is one of the easiest and yet most powerful debugging techniques. Instead of testing your API or a website through the UI and making multiple clicks, you can reload the desired session in the [**Composer**]({%slug composer-tab%}), make edits to the desired values, and re-execute the request.
 
 Follow these steps, to load and modify a session through the **Composer**:
 
@@ -22,7 +22,7 @@ Follow these steps, to load and modify a session through the **Composer**:
 
     ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
 
-    >tip To modify a header, select it and change the needed key-value pair. You can add a new header using the top key-value row (which is empty by default and ready to receive new values). Once the modifying or adding new header is done, press the confirmation button (a tick) to the right to apply the changes.
+    >tip To modify a header, select it and change the needed key-value pair. You can add a new header using the top key-value row (which is empty by default and ready to receive new values). Once modifying or adding a new header is done, press the confirmation button (a tick) to the right to apply the changes.
 
 4. Click **Execute**.
 
