@@ -1,6 +1,6 @@
 ---
 title: Fiddler Everywhere Google Login with Brave Browser
-description: An article on how to fix an issue with the Fiddler Everywhere Google authentication and the Brave browser
+description: An article on how to fix an issue with the Fiddler Everywhere Google authentication now working with the Brave browser
 type: how-to
 slug: fiddler-everywhere-brave
 publish: true
@@ -37,3 +37,18 @@ To add an exception filter for the Fiddler Everywhere endpoint, follow these ste
 ## Alternative Solution
 
 If adding an exception filter is a no-go, you could work around the issue by temporarily switching the default browser to another browser (for example, Chrome, Edge, Vivaldi, etc.). Then complete the Google Authentication, and switch back to the default OS browser to Brave.
+
+### Changing the default browser on Windows 10
+
+- Open the **Start** menu and type **Default Apps**.
+- Scroll to the **Web Browser** option and select your preferred web browser through the drop-down.
+
+### Changing the default browser on macOS
+
+- Choose Apple menu > **System Preferences**, then click **General**. 
+- Click the **Default web browser** pop-up menu and select your preferred web browser through the drop-down.
+
+### Changing the default browser on Ubuntu
+
+- Open the **Settings** utility, and move to the **Details** tab, 
+- Click on the **Default Applications** and select your preferred web browser through the drop-down.
