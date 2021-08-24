@@ -34,9 +34,6 @@ To add an exception filter for the Fiddler Everywhere endpoint, follow these ste
 - Exit the page and restart the Brave browser.
 - Start Fiddler Everywhere and use the Google Authentication with Brave as a default OS browser.
 
-_The **Custom Filters** section in Brave_
-![Brave custom adblock filters](../images/kb/brave/brave-custom-filter.png)
-
 ## Alternative Solution
 
 If adding an exception filter is a no-go, you could work around the issue by temporarily switching the default browser to another browser (for example, Chrome, Edge, Vivaldi, etc.). Then complete the Google Authentication, and switch back to the default OS browser to Brave.
