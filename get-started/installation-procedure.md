@@ -21,7 +21,7 @@ Supported operating systems:
 Other requirements:
 
 - 300MB of free disk space
-- Account with administrative rights. Needed for capturing and decoding HTTPS traffic.
+- An account with administrative rights. Needed for capturing and decoding HTTPS traffic.
 - Active internet connection with access to the following URLs:
 
 ```
@@ -55,7 +55,7 @@ Other requirements:
 1. Select **Download for Linux** to download the installer.
 1. Install the downloaded package.
 
-    On most **Linux** distributions, you need to set the installation file as executable before you can start the installation. You can do this with the command line or with the GUI:
+    On most **Linux** distributions, you need to set the installation file as executable before starting the installation. You can do this with the command line or with the GUI:
 
     - **Command-line instructions**
 
@@ -84,17 +84,17 @@ Other requirements:
 
 ## Create an Account
 
-Signing in is mandatory for both Trial and Pro versions of the Fiddler Everywhere client. You can sign up by [creating a Fiddler account](#create-fiddler-account) or by [using an existing Google account](#use-google-account). Fiddler Everywhere supports Google Authentication and own account system.
+Signing in is mandatory for both Trial and Pro versions of the Fiddler Everywhere client. You can sign up by [creating a Fiddler account](#create-fiddler-account) or by [using an existing Google account](#use-google-account). Fiddler Everywhere supports Google Authentication and its own account system.
 
 ### Create Fiddler Account
 
 1. Launch the Fiddler Everywhere client. If you don't have an existing Fiddler account, select the **New User? Create Account** button.
 
     ![Login screen](../images/login/login-screen.png)
-1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. The email that you provide in this step will be used by your teammates for sharing sessions, collections, and notifications.
+1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. Your teammates will use the email that you provide in this step for sharing sessions, collections, and notifications. 
 
     ![Create new account screen](../images/login/create-acc-screen.png)
-1. Open the confirmation email sent by Fiddler, and follow the instructions to complete the registration.
+1. Open the confirmation email sent by Fiddler and follow the instructions to complete the registration.
 
 ### Use Google Account
 

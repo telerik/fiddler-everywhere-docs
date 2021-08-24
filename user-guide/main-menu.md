@@ -9,7 +9,7 @@ position: 10
 
 # Main Menu
 
-The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you can find the [**View**](#view), and [**Help**](#help) submenus plus [Manage Subscriptions options](#manage-subscriptions). To the right, you will find [**Feedback**](#feedback), [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and current user [**Sign Out**](#sign-out) option.
+The main menu in Fiddler Everywhere is placed at the top and consists of several areas that provide multiple functionalities, settings, and information. To the left, you can find the [**View**](#view), and [**Help**](#help) submenus plus [Manage Subscriptions options](#manage-subscriptions). You will discover [**Feedback**](#feedback), [**Links**](#links), [**Notifications**](#notifications), [**Settings**](#settings), and the current user [**Sign Out**](#sign-out) option to the right.
 
 ![Fiddler Everywhere main menu](../images/menu/main-menu-all.png)
 
@@ -40,7 +40,7 @@ The **Help** menu provides several options for a version update and information,
 
 - **Release notes** - Opens a screen that lists the Fiddler Everywhere release notes.
 
-- **Check for Updates** - The **Check For Updates** option contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
+- **Check for Updates** - The **Check for Updates** option contacts a web service to determine whether this is the latest version of Fiddler. If not, you can choose to install the newest version immediately or on Fiddler Everywhere next start.
 
 - **Forums** - The **Forums** option opens a new browser tab with the [Fiddler Everywhere forums portal](https://community.getfiddler.com/support/discussions). Use the forums to search for possible use cases, report issues and bugs, and request features.
 
@@ -94,4 +94,4 @@ The **Settings** button opens a window that allows you to manage core Fiddler Ev
 
 ## Sign Out
 
-The **Sign Out** button allows you to log out of the currently logged user. Click the button to log out and navigate to [an intro page]({%slug installation%}#create-an-account) that provides options to create a new user or use another existing account.
+The **Sign Out** button allows you to log out of the currently logged user. Click the button to log out and navigate to an intro page that provides options for creating a new user or using another existing account. 

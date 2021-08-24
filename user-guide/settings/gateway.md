@@ -8,7 +8,7 @@ position: 30
 
 # Gateway Menu
 
-The __Gateway__ sub-menu provides options to easily configure how Fiddler Everywhere accesses the network. By default, Fiddler Everywhere "chains" to the system's default proxy. These settings allow you to overwrite that behavior.
+The __Gateway__ sub-menu provides options to configure how Fiddler Everywhere accesses the network efficiently. By default, Fiddler Everywhere "chains" to the system's default proxy. These settings allow you to overwrite that behavior.
 
 ![Example manual proxy configuration](../../images/settings/settings-gateway.png)
 
@@ -40,14 +40,13 @@ __Bypass list__
 
 The proxy bypass list supports:
 
-* wildcards;
+- wildcards (for example `*.extranet.example.com;`).
+- the `<local>` special token, which means any host name that does not contain a period.
+- the `<-loopback>` special token, which removes the default bypass for `127.0.0.1` and `localhost` host names.
 
-* the `<local>` special token, which means any host name that does not contain a period;
-
-* the `<-loopback>` special token, which removes the default bypass for `127.0.0.1` and `localhost` host names.
-
+_example for listing multiple bypass entries separted by ;_
 ```
-<local>;*.extranet.example.com;
+*.extranet.example.com;<local>;<-loopback>;
 ```
 
 ## No proxy

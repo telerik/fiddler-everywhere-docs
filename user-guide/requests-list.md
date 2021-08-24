@@ -15,7 +15,7 @@ This article describes how to organize and modify existing requests. To learn mo
 
 ![Requests list](../images/requests/requests-list-all.png)
 
-The **Requests** list is organized in **collections**. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double-click a selected request.
+The **Requests** list is organized into **collections**. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double-click a selected request.
 
 >tip You can [**Rename**](#rename) a collection, [**Delete**](#delete) a collection, or make a [**New Folder**](#new-folder) using the context menu. 
 
@@ -31,7 +31,7 @@ The **Requests menu** contains three buttons situated to the right of the sectio
 
 ## Collection Menu
 
-The **Collection menu** contains several options to manage your currently selected requests collection (folder):
+The **Collection menu** contains several options to manage your currently selected requests collection (folder).
 
 ![Requests collection options](../images/requests/requests-collection-menu.png)
 
@@ -42,7 +42,7 @@ The **Collection menu** contains several options to manage your currently select
 
 ### Share Collection
 
-To share a collection, click the __Share__ icon, then enter the email addresses of the users in the **Share Collection** window.
+To share a collection, click the __Share__ icon, then enter the email addresses of the user(s) in the **Share Collection** window.
 
 ![Share collection popup](../images/requests/share-requests-popup.png)
 
@@ -80,7 +80,7 @@ Each collection has options accessible through a context menu.
 
 ## Requests Context Menu
 
-Each  __requests__ has options to either __Rename__ or __Delete__ through its context menu (or through keyboard shortcuts).
+Each  __request__ has options to either __Rename__ or __Delete__ through its context menu (or through keyboard shortcuts).
 
 ![Requests context menu](../images/requests/requests-context-menu.png)
 
@@ -88,4 +88,4 @@ Each  __requests__ has options to either __Rename__ or __Delete__ through its co
 
 - **Delete**: Deletes the selected request from the collection. _Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows)._ 
 
->tip Each saved request can be updated by inputting the modification (for example, in the Headers) and pressing the __Save__ button. If you want to save a new instance of an already saved request, use the __Save as__ drop-down option (available only for already saved requests).
+>tip Each saved request can be updated by inputting the modification (for example, in the Headers) and pressing the __Save__ button. If you want to save a new instance of an already saved request, use __Save as__ in the drop-down (available only for already saved requests).

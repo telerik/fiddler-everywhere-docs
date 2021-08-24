@@ -8,37 +8,37 @@ position: 50
 
 # Composer
 
-The __Composer__ tab enables you to manually create, edit, send and test HTTP and HTTPS requests. You can make a new request from scratch or edit a request already captured by Fiddler Everywhere. To get started, open the **Composer** tab next to the [**Live Traffic**]({%slug web-sessions-list%}) tab. You can also open a new Composer tab by clicking the **New Request** button in the [**Requests**]({%slug saved-requests-tab%}) tab (the button with the **+** sign). The Composer tab has the Request Composer and the Request Inspector.
+The __Composer__ tab enables you to manually create, edit, send, and test HTTP and HTTPS requests. You can make a new request from scratch or edit a request already captured by Fiddler Everywhere. To get started, open the **Composer** tab next to the [**Live Traffic**]({%slug web-sessions-list%}) tab. You can also open a new Composer tab by clicking the **New Request** button in the [**Requests**]({%slug saved-requests-tab%}) tab (the button with the **+** sign). The Composer tab houses the Request Composer and the Request Inspector.
 
-The __Composer__ contains several major sections used to construct a request, to observe the response, and to save, replay and share previosly composed requests.
+The __Composer__ contains several major sections to construct a request, to observe the response, and to save, replay and share previously composed requests.
 
-1. The top section contains a drop-down for selecting: 
+1. The top section contains a drop-down for: 
     - A [__HTTP Methods__](#http-methods) to specify the request method (for exmaple, GET, POST, etc.)
     - A [__URL field__](#url-field) to enter the endpoint URL.
-    - A drop-down to select the used [__HTTP version__](#http-version-selection). Default version is **HTTP 1.1**.
+    - A drop-down to select the used [__HTTP version__](#http-version-selection). The default version is **HTTP 1.1**.
     - An [__Execute__](#execute-button) button. Action button to execute the composed request.
     - A [__Save__](#save-button) button. To save your composed request in the [**Requests**]({%slug saved-requests-tab%}) list.
 
 1. The mid-section provides options to further modify your request through:
     - [__Headers__](#headers) section. Allows you to add and modify the request's HTTP headers.
     - [__Params__](#params) section. Allows you to add and modify the request's parameters.
-    - [__Raw__](#raw) section. Read-only represenation of the composed request.
+    - [__Raw__](#raw) section. Read-only representation of the composed request.
     - [__Body__](#body) section. Allows you to modify the request's body. Supports different known formats (for example like JSON, form-data, XML, text, etc.)
 
 1. The bottom section is a [__response inspector__](#response-inspector), which shows the response from the executed request.
 
-1. The **Requests** list (to the left) is the place to save composed request for later usage. From the **Requests** list, the saved requests entry can also be easily shared with collaborators.
+1. The **Requests** list (to the left) is the place to save the composed request for later usage. From the **Requests** list, the entry of saved requests can be easily shared with collaborators.
 
 ![Composer User Interface](../images/composer/composer.png)
 
->important Fiddler's Composer is adding by default its `User-Agent` so that it sends HTTPS request correctly. You can remove the default `User-Agent` header but notice that this can break composing a secure request (HTTPS). The default key-value
+>important Fiddler's Composer is adding by default the header `User-Agent` so that it sends HTTPS request correctly. You can remove the default `User-Agent` header but notice that this can break composing a secure request (HTTPS).
 
 ## HTTP Methods
 
 The __Composer__ supports creating a request while using one of the following HTTP methods:
 
 - __GET__ - Requests a representation of the specified resource. Requests using GET should only retrieve data.
-- __PUT__ - replaces all current representations of the target resource with the request payload.
+- __PUT__ - Replaces all current representations of the target resource with the request payload.
 - __POST__ - Used to submit an entity to the specified resource, often causing a change in state or side effects on the server.
 - __DELETE__ - Deletes the specified resource.
 - __HEAD__ - Asks for a response identical to a __GET__ request, but without the response body.
@@ -73,19 +73,19 @@ From the __HTTP Version__ drop-down, you can select the following HTTP versions:
 
 ## Execute Button
 
-Use this button to effectively execute the composed request. After successfull exectuon the [**Response inspector**](#response-inspector) will be populated with the received response content.
+Use this button to effectively execute the composed request. After a successful exection the [**Response inspector**](#response-inspector) will be populated with the received response content.
 
 ![Execute Button](../images/composer/composer-execute-btn.png)
 
 ## Save Button
 
-Use this button to save the composed request in the [**Requests**]({%slug saved-requests-tab%}) list. Notice that if you are editing already saved request entry, then the changes will overwrite the previous version of that entry. To save the edits as an entirely new netry use the drop-down option and select **Save as** (available only for already saved requests).
+Use this button to save the composed request in the [**Requests**]({%slug saved-requests-tab%}) list. Notice that if you are editing an already saved request entry, then the changes will overwrite the previous version of that entry. To save the edits as an entirely new entry use the drop-down option and select **Save as** (available only for already saved requests).
 
 ![Save Button](../images/composer/composer-save-btn.png)
 
 ## Headers, Params, Raw and Body
 
-The middle section is allowing you to further modify your request by adding your custom __Headers__, __Params__, __Body__, and observing the composed request through the __Raw__ view (read-only).
+The middle section allows you to modify your request by adding your custom __Headers__, __Params__, __Body__, and observing the composed request through the __Raw__ view (read-only).
 
 ### Headers
 
@@ -96,21 +96,21 @@ The **Headers** section enables you to add/modify your request headers (for exam
 
 ![Added header](../images/composer/composer-headers-after.png)
 
->important Most of the servers using newer versions of TLS will require a **User-Agent** header to be set. By default, Fiddler Everywhere will a **User-Agent** key set with value **Fiddler Everywhere** and description **_Lets servers and network peers identify the application, operating system, vendor, and version of the requesting user agent_**. The header is non-mandatory, but keep in mind that without valid **User-Agent**, some requests to secure servers might fail.
+>important Most of the servers using newer versions of TLS will require an **User-Agent** header to be set. By default, Fiddler Everywhere will a **User-Agent** key set with value **Fiddler Everywhere** and description **_Lets servers and network peers identify the application, operating system, vendor, and version of the requesting user agent_**. The header is not mandatory, yet keep in mind that without valid a **User-Agent**, some requests to secure servers might fail.
 
 ### Params
 
 The **Params** section enables you to add query parameters to your request URL easily. Adds any key-value pair appended through the  __Params__ view to the request URL. By default a key-value UI is activated (you can change it to raw UI through the drop-down in the top-right corner of the section).
 
 1. Add new query params by entering the params key-value pair and then clicking the **tick**.
-2. The new query params is now added to your API endpoint URL. The params can now be disabled/enabled (using the tick to the left) or completely deleted (using the **Delete** icon to the right).
+2. The new query params are now added to your API endpoint URL. The params can now be disabled/enabled (using the tick to the left) or completely deleted (using the **Delete** icon to the right).
 
 ![Added Params](../images/composer/composer-params-after.png)
 
 
 ### Body
 
-The **Body** section enables you to manually specify the data that should be sent with the request. By default a key-value UI is activated (you can change it to raw UI through the drop-down in the top-right corner of the section).. The **Body** comes with several specific editors as follows:
+The **Body** section enables you to manually specify the data that should be sent with the request. By default, a key-value UI is activated (you can change it to raw UI through the drop-down in the top-right corner of the section). The **Body** comes with several specific editors as follows:
 
 - Text
 - JSON
@@ -135,9 +135,9 @@ With the __Response Inspector__, you can inspect the received response (from the
 
 ## Edit in Composer
 
-A session previosly captured in the [Live Traffic]({%slug web-sessions-list%}) can be loaded in the Composer for applying further modifications.
+A session previously captured in the [Live Traffic]({%slug web-sessions-list%}) can be loaded in the Composer for applying further modifications.
 
-1. Select the desired session entry and make a right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing key **E**.
+1. Select the desired session entry and right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing key **E**.
 
     ![Edit in Composer](../images/composer/edit-in-composer.png)
 
