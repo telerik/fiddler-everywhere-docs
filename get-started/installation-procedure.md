@@ -107,7 +107,8 @@ Signing in is mandatory for both Trial and Pro versions of the Fiddler Everywher
 Alternatively, you can directly sign in with a Google account.
 
 1. Launch the Fiddler Everywhere client. 
-1. Select **Sign in with Google**. New users will be presented with the option to start the trial version through the **Start Free Trial** button or purchase and activate a subscription plan through the **BUY NOW** link.
+1. Select **Sign in with Google** and authenticate on the Google Authentication page. 
+1. After successful signup, the new users will be presented with the option to start the trial version through the **Start Free Trial** button or purchase and activate a subscription plan through the **BUY NOW** link.
 
 ## Update
 
