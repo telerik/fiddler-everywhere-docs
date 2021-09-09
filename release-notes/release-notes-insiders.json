@@ -1,5 +1,28 @@
 [
     {
+        "version": "2.1.0-insiders",
+        "title": "Fiddler Everywhere v2.1.0",
+        "date": "September 09, 2021",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Introduce new simplified sign up flow"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Expired activation links are sent to users in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.0.3-insiders",
         "title": "Fiddler Everywhere v2.0.3",
         "date": "August 11, 2021",
