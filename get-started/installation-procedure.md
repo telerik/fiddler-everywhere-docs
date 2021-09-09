@@ -89,19 +89,26 @@ Signing in is mandatory for both Trial and Pro versions of the Fiddler Everywher
 ### Create Fiddler Account
 
 1. Launch the Fiddler Everywhere client. If you don't have an existing Fiddler account, select the **New User? Create Account** button.
-
-    ![Login screen](../images/login/login-screen.png)
-1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. Your teammates will use the email that you provide in this step for sharing sessions, collections, and notifications. 
+1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. Your teammates will use the email you provide in this step to share sessions, collections, and notifications. 
 
     ![Create new account screen](../images/login/create-acc-screen.png)
-1. Open the confirmation email sent by Fiddler and follow the instructions to complete the registration.
+1. Open the confirmation email sent by Fiddler and verify your registration by entering the unique code.
+
+    ![Enter verification code](../images/login/create-acc-screen-code-confirmation.png)
+1. Fill in the required information and proceed through the **Let's Go** button.
+
+    ![Enter verification code](../images/login/create-acc-screen-basic-info.png)
+1. In the final screen, Fiddler Jam presents the option to start the trial version through the **Start Free Trial** button or purchase and activate a subscription plan through the **BUY NOW** link.
+
+    ![Enter verification code](../images/login/create-acc-screen-free-trial.png)
 
 ### Use Google Account
 
-Alternatively, you can directly sign in with an existing Google account.
+Alternatively, you can directly sign in with a Google account.
 
 1. Launch the Fiddler Everywhere client. 
-1. Select **Sign in with Google**.
+1. Select **Sign in with Google** and authenticate on the Google Authentication page. 
+1. After successful signup, the new users will be presented with the option to start the trial version through the **Start Free Trial** button or purchase and activate a subscription plan through the **BUY NOW** link.
 
 ## Update
 
