@@ -1,7 +1,7 @@
 ---
 title: Composer
+description: Compose, modify, execute, test and manage requests through the Composer tab in Fiddler Everywhere.
 slug: composer-tab
-tags: create API request, Fiddler's Composer, headers, body, GET, HTTP request methods, HTTP response
 publish: true
 position: 50
 ---

@@ -59,7 +59,7 @@ Use the **Advanced Filters** to apply filters based on the Request and Response 
 
 Currently, the **Advanced Filters** entries are using **AND** logical operator. Each value is complying with the **EXACT** match.
 
->tip Alternatively, you can apply filters through the _more_ option on each Live Traffic column (for example, apply a filter for the _Host_ column). The column filtering allows using AND and OR logical operators (for two lines), and multiple comparison rules (for example, like **Is equal to**, **contains**, **ends with**, etc.).
+>tip Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The column filtering allows using AND and OR logical operators (for two lines) and multiple comparison rules (for example, like **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
 
 ### Clear All Filters
 
