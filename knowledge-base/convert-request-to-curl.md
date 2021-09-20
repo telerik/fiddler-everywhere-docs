@@ -1,5 +1,5 @@
 ---
-title: Convert Fiddler Everywhere request to cURL 
+title: Convert composed Fiddler Everywhere requests to cURL 
 description: Learn how to convert composed requests to curl through the Fiddler Everywhere application.
 type: how-to
 slug: how-to-convert-request-to-curl
