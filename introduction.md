@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Fiddler Everywhere is a high performance, cross-platform web debugging proxy for any browser, system or platform
+description: "Try now the Fiddler Everywhere cross-platform web-debugging proxy and use it for any browser, system or platform to ensure high performance of your processes."
 slug: introduction
 publish: true
 position: 0
@@ -9,89 +9,71 @@ previous_url: /license
 
 # Welcome to Fiddler Everywhere!
 
-[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool that logs all HTTP(S) traffic between your computer and the Internet. It inspects and edits traffic, issue requests, and fiddle with incoming and outgoing data.
-
-**HTTP(S) traffic Inspection and Analysis**
-
-Fiddler Everywhere logs all HTTP(S) traffic between your computer and the Internet. With Fiddler Everywhere you can capture traffic from virtually any application that supports a system proxy.
-
-**Request and Response Mocking**
-
-Fiddler support mocking or modifying request and responses on any application. It’s a quick and easy way to change HTTP(S) requests and responses without changing the code.
-
-**API Composing**
-
-Use Fiddler's API Composer to test APIs by creating and sending requests. This feature is useful while developing new APIs or when testing existing APIs.
+Progress® Telerik® Fiddler™ Everywhere is a web-debugging tool that inspects, edits, and logs all HTTP(S) traffic, and issue requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high performance, cross-platform proxy for any browser, system, or platform.
 
 ![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png)
 
 ## Key Features
 
-- Compatible with macOS, Windows, and Linux.
-- Inspect web traffic (HTTP and HTTPS).
-- Decrypt secure traffic (HTTPS).
-- Save, share, and receive captured traffic with collaborators.
-- Mock requests and responses.
-- Modify requests and responses.
-- Compose new and edit existing API requests.
-- Save and share composed API requests.
-- Extended sharing and collaboration options.
-- Modern intuitive UI with multiple themes.
+Fiddler Everywhere delivers a range of handy and user-friendly features whose number and further development are not limited by the list in this section&mdash;the Fiddler team constantly invests efforts to improve the performance and add more value to the existing web-debugging tool, and build on top of its available features.
 
-The **Fiddler Everywhere** features are subject to some pre-defined limitations. Refer to the table below for details about the **Fiddler Everywhere Pro** subscription plan.
+### HTTP(S) Traffic Inspection and Analysis
 
-| __Features__ |  __Pro__ |
-|---|---|
-| Capture and Inspect Traffic |  **Unlimited** |
-| Creating Composer Requests | **Unlimited** |
-| Using rules |  **Unlimited** |
-| Sharing  rules | **Unlimited** |
-| Creating Saved Sessions entries * |  **Unlimited** |
-| Sharing Saved Sessions |  **Unlimited***  |
-| Shared Session Size |  Max **50 MB** |
-| Email Support | **Unlimited*** |
+Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. You can also decrypt secure (HTTPS) traffic and save, receive, and share captured traffic with collaborators. [Read more about...]
 
-*subject to fair usage policy. Learn more about the support offered [here]({%slug support-page%}).
+### Request and Response Mocking
 
->tip A **Session** in Fiddler Everywhere is a term that describes an entry that holds single or multiple requests and responses (captured traffic). Saved session entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as **SAZ** archive or other known formats.
+Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without the need to update the code. [Read more about...]
 
-#### Trial version
+### API Composing
 
-To try Fiddler Everywhere for 30 days, press the **Upgrade** button within the UI and press **TRY PRO FOR 30 DAYS**. An **Upgrade Successful** prompt window confirms your trial clock has started. No credit card is required to start your trial and the trial is a fully functioning version of the [Fiddler Everywhere Pro plan](#key-features).
+Fiddler Everywhere comes with an API Composer, which allows you to test APIs by creating and sending requests as well as save and share composed APIs. You can use the API composing feature both when developing new APIs and when testing existing APIs.
 
+### Platform-Agnostic Integration
 
-#### Fiddler Everywhere Dashboard
+Fiddler provides platform-agnostic compatibility that enables you to run it on macOS, Windows, and Linux system-operating machines.
 
-You can find more information on managing your plans and subscriptions through the Fiddler Everywhere dashboard panel [here]({%slug fiddler-dashboard%}).
+### Styling Options
 
-## Release history
+Fiddler Everywhere delivers a modern, intuitive UI and a set of popular themes, including Bootstrap and Material, all of which can be easily customized with the Progress ThemeBuilder online utility. [Read more about modifying the appearance of the Fiddler web-debugging tool...]
 
-To learn more about the release history, visit [Release History Page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history)
+## Trial Version and Commercial License
 
-## Installation
+Fiddler Everywhere offers a 30-day trial with a full-featured version of the tool&mdash;no restrictions! What’s more, you are eligible for complete technical support during your trial period in case you have any questions. To sign up for a free 30 day trial, go [here](https://www.telerik.com/download/fiddler-everywhere). In addition, [the Fiddler Everywhere dashboard panel]({%slug fiddler-dashboard%}) provides information and options for managing your subscription plans.
 
-Download the [latest Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
-To learn how to install Fiddler Everywhere, visit the [Installation]({% slug installation %}) section.
+To use Fiddler Everywhere commercially, you need to purchase a license. The terms of use are fully described in the [Fiddler Everywhere License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere).
 
-## Documentation
+The Fiddler Everywhere commercial package is subject to some pre-defined limitations, which are listed in the following table.  
 
-[Official Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/introduction?_ga=2.206480400.2086505781.1591948423-772467175.1590489532)
+|Features |Pro
+|:---     |:---
+| Capturing and inspecting traffic  |Unlimited
+| Creating API Composer requests    |Unlimited
+| Using rules                       |Unlimited
+| Sharing  rules                    |Unlimited
+| Creating saved sessions entries ([subject to fair usage policy]({% slug support-page %})) |Unlimited
+| Sharing saved sessions            |Unlimited
+| Shared session size               |Max 50 MB
+| Email support                     |Unlimited
 
-We believe documentation is best when the content is a product of collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better, and we encourage you to help us with this task in the way that you choose:
+>tip A Fiddler session is an entry which holds single or multiple requests and responses (captured traffic). Saved session entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as an `.saz` archive or other known formats.
 
-- Send Feedback
-    Use the __Was this article helpful?__ functionality to provide feedback and ideas on ways we can improve the documentation. Alternatively, you can request a feature or report a bug using the [Fiddler Everywhere Feedback Portal](https://feedback.telerik.com/fiddler-everywhere).
+## Support Options
 
-- Create an Issue
-    If you find an issue with our docs that needs addressing, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/fiddler-everywhere-docs). When creating an issue, please provide a descriptive title, be as specific as possible, and link it to the documentation article. If you can give a link to the closest anchor to the issue, that is even better.
+For any questions about the use of Fiddler Everywhere, there are [several support options available](https://www.telerik.com/support/kendo-ui-for-angular):
 
-- Send a Pull Request
-    Creating an issue is excellent, yet what we love are pull requests. Therefore, if you find a problem in the docs, or even feel like generating new content, we’d be happy to have your contributions! 
+* Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Fiddler support system](https://www.telerik.com/account/support-tickets).
+* [Fiddler forums](https://www.telerik.com/forums/fiddler) are part of the free support you can get from the community and from the Fiddler Everywhere team on all kinds of general issues.
+* [Fiddler feedback portal](https://feedback.telerik.com/fiddler-everywhere) provides information on the features in discussion and you can also request a feature or report a bug there.
+* Of course, the Fiddler team is active on [StackOverflow](https://stackoverflow.com/questions/tagged/fiddler) as well and you can find a wealth of questions and answers there.
+* The [official Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/introduction?_ga=2.206480400.2086505781.1591948423-772467175.1590489532) is public and available for all users. If you want to share your feedback on a specific article, fill in the **Was this article helpful?** form at the end and tell us more about whether the content was useful for you to successfully achieve what you wanted. For detailed information about how to create an issue or a Pull Request on the Fiddler Everywhere documentation, go to the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing).
+* For any features that have already been released, visit the [Fiddler Everywhere Release History page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history).
+* Need something unique that is tailor-made for your project? Progress offers its [Progress Services](https://www.progress.com/services) group that can work with you to create any customized solution that you might need.
 
-    To do this, you must fork our documentation and submit a pull request. Then, you may contribute an update exactly where you found the error. After that, our technical writing team will need to approve your change request. Please use only standard markdown. For more detailed instructions, please follow the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing) published in GitHub. You can directly initiate a pull request by using the __Improve this article__ functionality.
+## Suggested Links
 
-
-## License
-
-Licensing agreement and detailed information about the different licenses and which one you should acquire is available in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere) section.
-
+* [Getting Started with Kendo UI for Angular (Online Guide)]({% slug getting_started %})
+* [Getting Started with Kendo UI for Angular (Video Tutorial)](https://www.telerik.com/campaigns/kendo-ui/using-kendo-ui-with-angular-video-tutorial)
+* [Virtual Classroom (Training Courses for Registered Users)]({% slug virtualclass_kendoangular %})
+* [Before You Start: All Things Angular (Telerik Blog Post)](https://www.telerik.com/blogs/all-things-angular)
+* [Getting Started with Fiddler Everywhere]({% slug  %})
