@@ -18,7 +18,7 @@ res_type: kb
 
 #### Description
 
-Test if **Fiddler Everywhere** is correctly configured to capture HTTPS traffic on macOS. 
+Test if **Fiddler Everywhere** is correctly configured to capture HTTPS traffic on macOS.
 
 
 ## Troubleshooting macOS Capturing
@@ -27,7 +27,7 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
 
 1. Open Fiddler Everywhere and ensure that it is configured to capture HTTPS traffic (The root certificate is installed and trusted and **Settings > HTTPS > Capture HTTPS traffic** is checked).
 
-1. Open a terminal and enter the following command: 
+1. Open a terminal and enter the following command:
 
     ```Shell
     curl -v --url https://www.example.com/ -x 127.0.0.1:8866
@@ -46,12 +46,12 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
     > Host: www.example.com:443
     > User-Agent: curl/7.54.0
     > Proxy-Connection: Keep-Alive
-    > 
+    >
     < HTTP/1.1 200 Connection Established
     < FiddlerGateway: Direct
     < StartTime: 12:06:48.719
     < Connection: close
-    < 
+    <
     * Proxy replied OK to CONNECT request
     * ALPN, offering h2
     * ALPN, offering http/1.1
@@ -76,7 +76,7 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
     > GET / HTTP/1.1
     > Host: www.example.com
     > User-Agent: curl/7.54.0
-    > 
+    >
     < HTTP/1.1 200 OK
     < Age: 596717
     < Cache-Control: max-age=604800
@@ -101,12 +101,12 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
 
     - https://www.example.com (notice this request is using **HTTPS** and not HTTP)
 
-    - https://www.google.com 
+    - https://www.google.com
 
- 
-1. After opening each of the above URLs, check the Live Traffic list and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic - [use the Clear All Filters option]({%slug web-sessions-list%}#clear-all-filters) to remove any preset filters. 
 
-If the issue persist or unsure, for example, there are too many captured sessions, and you cannot find the three URLs above, save the captured sessions (_File > Save Archive > All Sessions)_, and post them in [the support channels]({%slug support-page%}). 
+1. After opening each of the above URLs, check the Live Traffic list and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic - [use the Clear All Filters option]({%slug web-sessions-list%}#clear-all-filters) to remove any preset filters.
+
+If the issue persist or unsure, for example, there are too many captured sessions, and you cannot find the three URLs above, save the captured sessions (_File > Save Archive > All Sessions)_, and post them in [the support channels]({% slug introduction %}#support-options). 
 
 
 ## See Also

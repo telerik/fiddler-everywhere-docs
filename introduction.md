@@ -51,7 +51,7 @@ The Fiddler Everywhere commercial package is subject to some pre-defined limitat
 | Creating API Composer requests    |Unlimited
 | Using rules                       |Unlimited
 | Sharing  rules                    |Unlimited
-| Creating saved sessions entries ([subject to fair usage policy]({% slug support-page %})) |Unlimited
+| Creating saved sessions entries ([subject to fair usage policy](https://github.com/telerik/fiddler-everywhere-docs/blob/master/support.md#what-is-the-fair-usage-policy)) |Unlimited
 | Sharing saved sessions            |Unlimited
 | Shared session size               |Max 50 MB
 | Email support                     |Unlimited
@@ -60,9 +60,9 @@ The Fiddler Everywhere commercial package is subject to some pre-defined limitat
 
 ## Support Options
 
-For any questions about the use of Fiddler Everywhere, there are [several support options available](https://www.telerik.com/support/kendo-ui-for-angular):
+For any questions about the use of Fiddler Everywhere, there are [several support options available](https://www.telerik.com/support/fiddler-everywhere):
 
-* Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Fiddler support system](https://www.telerik.com/account/support-tickets).
+* Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Fiddler support system](https://www.telerik.com/account/support-tickets). For more details on the available support options with regard to the subscription plans, refer to the [GitHub article on Fiddler Everywhere support](https://github.com/telerik/fiddler-everywhere-docs/blob/master/support.md).  
 * [Fiddler forums](https://www.telerik.com/forums/fiddler) are part of the free support you can get from the community and from the Fiddler Everywhere team on all kinds of general issues.
 * [Fiddler feedback portal](https://feedback.telerik.com/fiddler-everywhere) provides information on the features in discussion and you can also request a feature or report a bug there.
 * Of course, the Fiddler team is active on [StackOverflow](https://stackoverflow.com/questions/tagged/fiddler) as well and you can find a wealth of questions and answers there.
@@ -70,10 +70,11 @@ For any questions about the use of Fiddler Everywhere, there are [several suppor
 * For any features that have already been released, visit the [Fiddler Everywhere Release History page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history).
 * Need something unique that is tailor-made for your project? Progress offers its [Progress Services](https://www.progress.com/services) group that can work with you to create any customized solution that you might need.
 
+
+
 ## Suggested Links
 
-* [Getting Started with Kendo UI for Angular (Online Guide)]({% slug getting_started %})
-* [Getting Started with Kendo UI for Angular (Video Tutorial)](https://www.telerik.com/campaigns/kendo-ui/using-kendo-ui-with-angular-video-tutorial)
-* [Virtual Classroom (Training Courses for Registered Users)]({% slug virtualclass_kendoangular %})
-* [Before You Start: All Things Angular (Telerik Blog Post)](https://www.telerik.com/blogs/all-things-angular)
-* [Getting Started with Fiddler Everywhere]({% slug  %})
+* [Getting Started with Fiddler Everywhere (Online Guide)]({% slug getting_started %})
+* [Getting Started with Fiddler Everywhere (Video Tutorials)](https://www.telerik.com/videos/fiddler/tag/fiddler-everywhere)
+* [Getting Started with Fiddler Everywhere (Webinars on Demand)](https://www.telerik.com/webinars/fiddler-everywhere)
+* [Before You Start: All Things Fiddler (Telerik Blog Post)](https://www.telerik.com/blogs/fiddler)

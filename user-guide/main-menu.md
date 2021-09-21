@@ -18,17 +18,17 @@ The main menu in Fiddler Everywhere is placed at the top and consists of several
 
 The **View** menu provides options to change the overall Fiddler Everywhere UI size using zoom in and zoom out.
 
-- **Preferences** option to load the Fiddler Everywhere settings window. Keyboard shortcut: __Cmd__ (Mac), __Ctrl and ,__ (Windows). 
+- **Preferences** option to load the Fiddler Everywhere settings window. Keyboard shortcut: __Cmd__ (Mac), __Ctrl and ,__ (Windows).
 
-- **Actual Size** option. Keyboard shortcut: __Cmd and 0__ (Mac), __Ctrl and 0__ (Windows). 
+- **Actual Size** option. Keyboard shortcut: __Cmd and 0__ (Mac), __Ctrl and 0__ (Windows).
 
-- **Zoom In** option. Keyboard shortcut: __Cmd and +__ (Mac), __Ctrl and +__ (Windows). 
+- **Zoom In** option. Keyboard shortcut: __Cmd and +__ (Mac), __Ctrl and +__ (Windows).
 
-- **Zoom Out** option. Keyboard shortcut: __Cmd and -__ (Mac), __Ctrl and -__ (Windows). 
+- **Zoom Out** option. Keyboard shortcut: __Cmd and -__ (Mac), __Ctrl and -__ (Windows).
 
-- **Select Previous Tab** option. Keyboard shortcut: __Ctrl, Shift and Tab__ (Mac), __Ctrl, Shift and Tab__ (Windows). 
+- **Select Previous Tab** option. Keyboard shortcut: __Ctrl, Shift and Tab__ (Mac), __Ctrl, Shift and Tab__ (Windows).
 
-- **Select Next Tab** option. Keyboard shortcut: __Ctrl and Tab__ (Mac), __Ctrl and Tab__ (Windows). 
+- **Select Next Tab** option. Keyboard shortcut: __Ctrl and Tab__ (Mac), __Ctrl and Tab__ (Windows).
 
 ![View menu with zoom options](../images/menu/main-menu-view.png)
 
@@ -74,7 +74,7 @@ The **Links** menu provides several useful fast links.
 
 - A **Forums** link to the Fiddler Everywhere community forums at https://community.getfiddler.com/support/discussions
 - A **Documentation** link to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/
-- A **Contact Support** link (available for both the PRO and Trial versions) for posting a support ticket to the Fiddler Everywhere support team. Learn more about Fiddler Everywhere support [here]({%slug support-page%}).
+- A **Contact Support** link (available for both the PRO and Trial versions) for posting a support ticket to the Fiddler Everywhere support team. Learn more about Fiddler Everywhere support [here]({% slug introduction %}#support-options).
 
 ## Notifications
 
@@ -94,4 +94,4 @@ The **Settings** button opens a window that allows you to manage core Fiddler Ev
 
 ## Sign Out
 
-The **Sign Out** button allows you to log out of the currently logged user. Click the button to log out and navigate to an intro page that provides options for creating a new user or using another existing account. 
+The **Sign Out** button allows you to log out of the currently logged user. Click the button to log out and navigate to an intro page that provides options for creating a new user or using another existing account.
