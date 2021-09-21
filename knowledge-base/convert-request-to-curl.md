@@ -19,7 +19,7 @@ res_type: kb
 
 #### Description
 
-Many developers, support engineers, and end-users are familiar with the [cURL](https://curl.se/) as a fast tool for executing and managing requests. In this article, we are going to demonstrate how to easily convert a request generated in the [Composer]({%slug composer-tab%}) to a curl script.
+Many developers, support engineers, and end-users are familiar with the [cURL](https://curl.se/) as a fast tool for executing and managing requests. This article demonstrates how to easily convert a request generated in the [Composer]({%slug composer-tab%}) to a curl script.
 
 ## Convert Composed Request to cURL 
 
@@ -29,7 +29,7 @@ The [Composer]({%slug composer-tab%}) provides means to create and execute your 
 - Open the [Live Traffic list]({%slug web-sessions-list%}) and select the generated session (from the executed request above). 
 Open the context menu (right-click) with the session selected and use the **Export > Selected Sessions** option.
 - From the drop-down menu, choose **cURL Script** and press **Next**.
-- Choose a name (by default, the file name is the current date) and extension (by default, the extension is BAT) for the file and press **Save**.
+- Choose a name and extension for the file. Press **Save**. By default, the file name is the current date and the extension is BAT.
 
 By default, Fiddler Everywhere saves the outputted cURL script as [a BAT file](https://fileinfo.com/extension/bat), appropriate for Windows usage. Linux and macOS users might want to change the default extension with the proper format for the OS (for example, to *.sh for shell script).
 
@@ -41,7 +41,9 @@ curl -k -i --raw -o 0.dat "http://httpbin.org/get?theAnswer=42" -H "User-Agent: 
 ```
 
 - The **-k** flag allows insecure server connections when using SSL. Fiddler Everywhere adds the flag to ensure that the cURL script can be executed even with the Fiddler proxy (and its certificate) in place.
-- The **-o 0.dat** is used by Fiddler Everywhere internally to generated different DAT files for each selected session. 
+- Fiddler Everywhere internally uses the **-o <x>.dat** to generate different DAT files for each selected session.
 - Fiddler Everywhere adds the **User-Agent** header automatically for all requests made through the Composer.
+
+
 
 You are free to modify, remove and change the generated flags and parameters as per your technical requirements.
