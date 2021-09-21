@@ -1,5 +1,5 @@
 ---
-title: Convert composed Fiddler Everywhere requests to cURL 
+title: Converting composed Fiddler Everywhere requests to cURL 
 description: Learn how to convert composed requests to curl through the Fiddler Everywhere application.
 type: how-to
 slug: how-to-convert-request-to-curl
@@ -21,7 +21,9 @@ res_type: kb
 
 Many developers, support engineers, and end-users are familiar with the [cURL](https://curl.se/) as a fast tool for executing and managing requests. This article demonstrates how to easily convert a request generated in the [Composer]({%slug composer-tab%}) to a curl script.
 
-## Convert Composed Request to cURL 
+
+## Converting Composed Request to cURL 
+
 
 The [Composer]({%slug composer-tab%}) provides means to create and execute your requests. Each **executed** request is added in the [Live Traffic list]({%slug web-sessions-list%}) as a new session entry. To convert a request created in the Composer, execute the following steps:
 
@@ -33,7 +35,8 @@ Open the context menu (right-click) with the session selected and use the **Expo
 
 By default, Fiddler Everywhere saves the outputted cURL script as [a BAT file](https://fileinfo.com/extension/bat), appropriate for Windows usage. Linux and macOS users might want to change the default extension with the proper format for the OS (for example, to *.sh for shell script).
 
-## Fiddler-geneated cURL
+## Fiddler-Generated cURL
+
 
 A cURL output generated from Fiddler Everywhere looks similar to the sample below:
 ```cURL
