@@ -11,7 +11,7 @@ previous_url: /license
 
 Progress® Telerik® Fiddler™ Everywhere is a web-debugging tool that inspects, edits, and logs all HTTP(S) traffic, and issue requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high performance, cross-platform proxy for any browser, system, or platform.
 
-![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png)
+![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png )
 
 ## Key Features
 
@@ -19,23 +19,27 @@ Fiddler Everywhere delivers a range of handy and user-friendly features whose nu
 
 ### HTTP(S) Traffic Inspection and Analysis
 
-Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. You can also decrypt secure (HTTPS) traffic and save, receive, and share captured traffic with collaborators. [Read more about...]
+Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. You can also decrypt secure (HTTPS) traffic and save, receive, and share captured traffic with collaborators. [Read more about capturing, inspecting, and modifying traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %})
 
 ### Request and Response Mocking
 
-Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without the need to update the code. [Read more about...]
+Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without the need to update the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
 
 ### API Composing
 
-Fiddler Everywhere comes with an API Composer, which allows you to test APIs by creating and sending requests as well as save and share composed APIs. You can use the API composing feature both when developing new APIs and when testing existing APIs.
+Fiddler Everywhere comes with an API Composer, which allows you to test APIs by creating and sending requests as well as save and share composed APIs. You can use the API composing feature both when developing new APIs and when testing existing APIs. [Read more about creating and organizing API requests with Fiddler Everywhere...]({% slug composer-get-started %})
 
 ### Platform-Agnostic Integration
 
-Fiddler provides platform-agnostic compatibility that enables you to run it on macOS, Windows, and Linux system-operating machines.
+Fiddler Everywhere provides platform-agnostic compatibility that enables you to install, configure, and run the web-debugging tool on Windows, macOS, and Linux system-operating machines. Read more in the dedicated step-by-step guides:
 
-### Styling Options
+* [Fiddler Everywhere Quickstart for Windows]({% slug ... %})
+* [Fiddler Everywhere Quickstart for macOS]({% slug ... %})
+* [Fiddler Everywhere Quickstart for Linux]({% slug ... %})
 
-Fiddler Everywhere delivers a modern, intuitive UI and a set of popular themes, including Bootstrap and Material, all of which can be easily customized with the Progress ThemeBuilder online utility. [Read more about modifying the appearance of the Fiddler web-debugging tool...]
+### Styling Settings  
+
+Fiddler Everywhere delivers a modern, intuitive UI and a set of popular themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
 
 ## Trial Version and Commercial License
 
@@ -43,7 +47,7 @@ Fiddler Everywhere offers a 30-day trial with a full-featured version of the too
 
 To use Fiddler Everywhere commercially, you need to purchase a license. The terms of use are fully described in the [Fiddler Everywhere License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere).
 
-The Fiddler Everywhere commercial package is subject to some pre-defined limitations, which are listed in the following table.  
+The Fiddler Everywhere commercial plan is subject to some pre-defined limitations, which are listed in the following table.  
 
 |Features |Pro
 |:---     |:---
@@ -62,7 +66,7 @@ The Fiddler Everywhere commercial package is subject to some pre-defined limitat
 
 ## Support Options
 
-Generally, Fiddler Everywhere provides a full-scale support for its paid subscription and trial users, and also maintains additional support channels where you can ask questions, submit feature requests, report bugs, and more.
+Fiddler Everywhere provides a full-scale support for its paid subscription and trial users, and also maintains additional support channels where you can ask questions, submit feature requests, report bugs, and more.
 
 ### Paid Subscription and Trial Users Support  
 
@@ -91,6 +95,8 @@ If you are not a license holder or a trial user, you can use [a number of availa
 ## Suggested Links
 
 * [Before You Start: All Things Fiddler (Telerik Blog Post)](https://www.telerik.com/blogs/fiddler)
-* [Getting Started with Fiddler Everywhere (Online Guide)]({% slug ... %})
 * [Getting Started with Fiddler Everywhere (Video Tutorials)](https://www.telerik.com/videos/fiddler/tag/fiddler-everywhere)
 * [Getting Started with Fiddler Everywhere (Webinars on Demand)](https://www.telerik.com/webinars/fiddler-everywhere)
+* [Quickstart on Windows (Step-by-Step Guide)]({% slug ... %})
+* [Quickstart on macOS (Step-by-Step Guide)]({% slug ... %})
+* [Quickstart on Linux (Step-by-Step Guide)]({% slug ... %})
