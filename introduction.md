@@ -51,7 +51,7 @@ The Fiddler Everywhere commercial package is subject to some pre-defined limitat
 | Creating API Composer requests    |Unlimited
 | Using rules                       |Unlimited
 | Sharing  rules                    |Unlimited
-| Creating saved sessions entries ([subject to fair usage policy](https://github.com/telerik/fiddler-everywhere-docs/blob/master/support.md#what-is-the-fair-usage-policy)) |Unlimited
+| Creating saved sessions entries ([subject to fair usage policy]({% slug support-page %}#what-is-the-fair-usage-policy)) |Unlimited
 | Sharing saved sessions            |Unlimited
 | Shared session size               |Max 50 MB
 | Email support                     |Unlimited
@@ -62,7 +62,7 @@ The Fiddler Everywhere commercial package is subject to some pre-defined limitat
 
 For any questions about the use of Fiddler Everywhere, there are [several support options available](https://www.telerik.com/support/fiddler-everywhere):
 
-* Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Fiddler support system](https://www.telerik.com/account/support-tickets). For more details on the available support options with regard to the subscription plans, refer to the [GitHub article on Fiddler Everywhere support](https://github.com/telerik/fiddler-everywhere-docs/blob/master/support.md).  
+* Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Fiddler support system](https://www.telerik.com/account/support-tickets). For more details on the available support options with regard to the subscription plans, refer to the [GitHub article on Fiddler Everywhere support]({% slug support-page %}).  
 * [Fiddler forums](https://www.telerik.com/forums/fiddler) are part of the free support you can get from the community and from the Fiddler Everywhere team on all kinds of general issues.
 * [Fiddler feedback portal](https://feedback.telerik.com/fiddler-everywhere) provides information on the features in discussion and you can also request a feature or report a bug there.
 * Of course, the Fiddler team is active on [StackOverflow](https://stackoverflow.com/questions/tagged/fiddler) as well and you can find a wealth of questions and answers there.
