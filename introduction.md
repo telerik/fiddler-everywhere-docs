@@ -17,9 +17,13 @@ Progress® Telerik® Fiddler™ Everywhere is a web-debugging tool that inspects
 
 Fiddler Everywhere delivers a range of handy and user-friendly features whose number and further development are not limited by the list in this section&mdash;the Fiddler team constantly invests efforts to improve the performance and add more value to the existing web-debugging tool, and build on top of its available features.
 
-### HTTP(S) Traffic Inspection and Analysis
+### Traffic Inspection
 
-Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. You can also decrypt secure (HTTPS) traffic and save, receive, and share captured traffic with collaborators. [Read more about capturing, inspecting, and modifying traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %})
+Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %})
+
+### Traffic Analysis
+
+Fiddler Everywhere provides an HTTP(S) traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, and share captured traffic with collaborators. [Read more about inspecting and modifying traffic with Fiddler Everywhere...]({% slug overview-tab %})
 
 ### Request and Response Mocking
 
@@ -47,22 +51,7 @@ Fiddler Everywhere offers a 30-day trial with a full-featured version of the too
 
 To use Fiddler Everywhere commercially, you need to purchase a license. The terms of use are fully described in the [Fiddler Everywhere License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere).
 
-The Fiddler Everywhere commercial plan is subject to some pre-defined limitations, which are listed in the following table.  
-
-|Features |Pro
-|:---     |:---
-| Capturing and inspecting traffic  |Unlimited
-| Creating API Composer requests    |Unlimited
-| Using rules                       |Unlimited
-| Sharing  rules                    |Unlimited
-| Creating saved sessions<sup>1</sup> entries ([subject to fair usage policy](#paid-subscription-and-trial-users-support)) |Unlimited
-| Sharing saved sessions            |Unlimited
-| Shared session size               |Max 50 MB
-| Email support                     |Unlimited
-
-<p style="font-size: 13px">
-1&mdash;A Fiddler session is an entry which holds single or multiple requests and responses (captured traffic). Saved session entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as an `.saz` archive or other known formats.
-</p>
+For more information about the available subscription plans, go to the [Fiddler Everywhere purchase page](https://www.telerik.com/purchase/fiddler).
 
 ## Support Options
 
@@ -84,9 +73,8 @@ Support services for paid subscription or trial users provide the following supp
 
 If you are not a license holder or a trial user, you can use [a number of available support options](https://www.telerik.com/support/fiddler-everywhere):
 
-* [Fiddler forums](https://www.telerik.com/forums/fiddler) are part of the free support you can get from the community and from the Fiddler Everywhere team on all kinds of general issues.
-* [Fiddler feedback portal](https://feedback.telerik.com/fiddler-everywhere) provides information on the features in discussion and you can also request a feature or report a bug there.
-* Of course, the Fiddler team is active on [StackOverflow](https://stackoverflow.com/questions/tagged/fiddler) as well and you can find a wealth of questions and answers there.
+* [Fiddler discussions](https://community.getfiddler.com/support/discussions) are part of the free support you can get from the community and from the Fiddler Everywhere team on all kinds of general issues. You can also receive information on the features in discussion, request a feature, or report a bug there.
+* Of course, the Fiddler team is active on [StackOverflow](https://stackoverflow.com/questions/tagged/fiddler-everywhere) as well and you can find a wealth of questions and answers there.
 * The [official Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/introduction?_ga=2.206480400.2086505781.1591948423-772467175.1590489532) is public and available for all users. If you want to share your feedback on a specific article, fill in the **Was this article helpful?** form at the end and tell us more about whether the content was useful for you to successfully achieve what you wanted. For detailed information about how to create an issue or a Pull Request on the Fiddler Everywhere documentation, go to the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing).
 * For any features that have already been released, visit the [Fiddler Everywhere Release History page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history).
 * If you still have a question unanswered, check out the [Fiddler Everywhere frequently asked questions section](https://www.telerik.com/fiddler/fiddler-everywhere/faq).
