@@ -4,7 +4,7 @@ description: "Try now the Fiddler Everywhere cross-platform web-debugging proxy 
 slug: introduction
 publish: true
 position: 0
-previous_url: /license
+previous_url: /license, /support
 ---
 
 # Welcome to Fiddler Everywhere!
