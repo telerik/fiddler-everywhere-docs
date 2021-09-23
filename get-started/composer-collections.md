@@ -1,21 +1,22 @@
 ---
-title: Organize Requests
-description: Create and share collections of Composer's requests
+title: Organizing Requests
+description: "Create and share API request collections when using the Telerik Fiddler Everywhere web-debugging http-proxy client."
 slug: composer-collections-get-started
 publish: true
 position: 90
 ---
 
-# Organize Requests into Collections
+# Organizing API Requests into Collections
 
-With the Fiddler Everywhere client, you can save and organize multiple composed requests through the [**Requests**]({%slug saved-requests-tab%}) list. Multiple requests (or folders containing requests) can be arranged in collections where they can be reloaded and executed promptly. The **Requests** list is located to the left (below the **Sessions** list) and can hold multiple collections.
+The Fiddler Everywhere client provides options for saving and organizing multiple requests, which are composed by using the API Composer, through its [**Requests**]({%slug saved-requests-tab%}) list.
 
+**Requests** enables you to arrange multiple requests or request folders in collections which can be promptly reloaded and executed.
 
 ![Requests lists](../images/requests/requests-list-all.png)
 
-Create your first collection of composed requests by following these steps:
+To create a collection of composed requests:
 
-1. Create your new API request by clicking the **"+"** button in the collections. This action will open a new **Composer** tab with *Untitled* as the default name.
+1. Create a new API request by clicking the **"+"** button in the collections. This action will open a new **Composer** tab with *Untitled* as the default name.
 
 2. After the request is composed, press **Save**;. Alternatively, choose **Save as** to prevent overwriting an existing entry.
 
@@ -26,11 +27,11 @@ Create your first collection of composed requests by following these steps:
 3. Press **Save** to close the dialog window and add the request to the collection.
 
     ![Requests lists](../images/requests/requests-created-collection.png)
-    
+
 >tip For the detailed description of the Requests tab, click [here]({%slug saved-requests-tab%})
 
 ## Additional Resources
- 
+
 - [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
 - [Create an API request through the Composer]({%slug composer-get-started%})
 - [Modify traffic]({%slug modify-traffic-get-started%})

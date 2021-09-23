@@ -1,12 +1,12 @@
 ---
-title: Mock Server Response
+title: Mocking Server Responses
 description: Learn how to use the Rules tab to mock different server behavior.
 slug: rulesbuilder-get-started
 publish: true
 position: 70
 ---
 
-# Mocking Server Response
+# Mocking Server Responses
 
 One of the most powerful features of the Fiddler Everywhere client is the **Rules** tab - a tool for mocking server responses and simulating various real-life scenarios. With Rule Builder, you can create **rules**, to automatically trigger a specific request (covering the criteria set in the rule). Mocking a server response is as easy as enabling the **Rules** tab, setting a rule, and executing the request (that will trigger the rule).
 
@@ -14,7 +14,7 @@ One of the most powerful features of the Fiddler Everywhere client is the **Rule
 
 To create and test your first rule, follow these steps:
 
-1. Select the **Rules** tab and click the **Add New Rule** button. This will open the [**Rule Builder**]({%slug rules-general%}#rule-builder). 
+1. Select the **Rules** tab and click the **Add New Rule** button. This will open the [**Rule Builder**]({%slug rules-general%}#rule-builder).
 1. Enter a descriptive rule name. The rule name will later appear in the [**Rules Queue**]({%slug rules-general%}#rules-queue).
 1. Add a [condition or a set of conditions]({%slug rules-general%}#conditions) to match sessions.
 1. Add an [action or a set of actions]({%slug rules-general%}#actions) to modify the matched sessions.
