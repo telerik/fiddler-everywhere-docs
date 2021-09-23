@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: "Try now the Fiddler Everywhere cross-platform web-debugging proxy and use it for any browser, system or platform to ensure high performance of your processes."
+description: "Try now the Fiddler Everywhere cross-platform, web-debugging, HTTP-request proxy and use it for any browser, system or platform to ensure high performance of your processes."
 slug: introduction
 publish: true
 position: 0
@@ -9,7 +9,7 @@ previous_url: /license, /support
 
 # Welcome to Fiddler Everywhere!
 
-Progress® Telerik® Fiddler™ Everywhere is a web-debugging tool that inspects, edits, and logs all HTTP(S) traffic, and issue requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high performance, cross-platform proxy for any browser, system, or platform.
+Progress® Telerik® Fiddler™ Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTP(S) traffic, and issue requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high performance, cross-platform proxy for any browser, system, or platform.
 
 ![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png )
 
