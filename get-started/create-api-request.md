@@ -1,38 +1,40 @@
 ---
-title: Creating Requests
-description: Using the Fiddler's Composer to createa and test API requests
+title: Creating API Requests
+description: "Create and test API requests with the API Composer feature of the Telerik Fiddler Everywhere web-debugging HTTP client proxy."
 slug: composer-get-started
 publish: true
 position: 80
 ---
 
-# Creating Requests
+# Creating API Requests
 
-The **Composer** inside Fiddler Everywhere allows you to create requests to APIs. Requests made to local and online APIs will enable you to check and debug various endpoints, inspect and analyze requests and responses, and to retrieve and receive data quickly.
+The **Composer** inside Fiddler Everywhere allows you to create requests to APIs.
 
-Create your first API request by following these steps:
+Requests that are made to local and online APIs enable you to check and debug various endpoints, inspect and analyze requests and responses, and retrieve and receive data quickly.
 
-1. Select an appropriate **HTTP method** and enter the endpoint URL. The Composer supports **GET**, **POST**, **PUT**, **DELETE**, **TRACE**, **SEARCH** and **PROPFIND** methods.The **Composer** allows you also to change the version of the HTTP protocol through a drop-down menu to the left of the **Execute** button.
+To create an API request:
 
-2. (**_Optional_**) If required, enter additional headers, params, and body. For example, common scenarios are to enter an authorization header, a `Content-type` header, or custom body data.
+1. Select an appropriate **HTTP method** and enter the endpoint URL. The Composer supports the **GET**, **POST**, **PUT**, **DELETE**, **TRACE**, **SEARCH** and **PROPFIND** methods and also allows you to change the version of the HTTP protocol with the drop-down menu to the left of the **Execute** button.
 
-    >important By default, the Fiddler Everywhere client will add a `User-Agent` header with the value __Fiddler Everywhere__. This header lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent.
+2. (Optional) If required, enter additional headers, parameters, and body. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data.
 
-    >tip Use the **Raw** view to inspect in detail the request that will be sent to the server. The view is read-only.
+    >important By default, the Fiddler Everywhere client will add a **User-Agent** header with the __Fiddler Everywhere__ value. This header lets servers and network peers identify the application, the operating system, the vendor, and/or the version of the requesting user agent.
 
-3. Click **Execute** to send the composed API request.
+    >tip To inspect the request that will be sent to the server in detail, use the read-only **Raw** view.
 
-4. Inspect the result in the Composer's **Response inspector**. Like the inspectors for the **Live Traffic** tab, the **Response** inspector for the Composer provides multiple views (for example, *Headers*, *Raw*, *JSON*, etc.).
+3. To send the composed API request, click **Execute**.
 
-5. (**_Optional_**) You can save the request by clicking the **Save** button (to the right of **Execute**). Saved requests are loaded in a collection in the **Requests list** and can be reused or shared with collaborators.
+4. Inspect the result in the **Response inspector** tab of the Composer. Like the inspectors for the **Live Traffic** tab, the **Response** inspector provides multiple views such as **Headers**, **Raw**, **JSON**, and so on.
+
+5. (Optional) You can save the request by clicking the **Save** button located to the right of **Execute**. Saved requests are loaded as a collection in the **Requests list** and can be reused or shared with collaborators.
 
 ![Creating API request](../images/composer/create-api-request.png)
 
 ## Additional Resources
 
-- [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
-- [Create an API request through the Composer]({%slug composer-get-started%})
-- [Modify traffic]({%slug modify-traffic-get-started%})
-- [Mock server response]({%slug rulesbuilder-get-started%})
-- [Organize requests]({%slug composer-collections-get-started%})
-- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).
+- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
+- [Creating Requests with the API Composer]({%slug composer-get-started%})
+- [Modifying Traffic]({%slug modify-traffic-get-started%})
+- [Mocking Server Responses]({%slug rulesbuilder-get-started%})
+- [Organizing API Requests in Collections]({%slug composer-collections-get-started%})
+- [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).

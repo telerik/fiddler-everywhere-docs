@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: Fiddler Everywhere configuration steps for installing and trusting the Fiddler root certificate on different operating systems
+description: "Install and trust the root certificate on different operating systems while configuring the Fiddler Everywhere web-debugging tool."
 slug: configuration-get-started
 publish: true
 position: 30
@@ -9,7 +9,7 @@ previous_url: /user-interface/settings/https,/user-guide/settings/https/https-de
 
 # Configuration
 
-In this article we'll discuss how to configure the HTTPS capturing in Fiddler Everywhere for the supported operating systems. 
+This article explains how to configure the HTTPS capturing in Fiddler Everywhere for the supported operating systems.
 
 By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**) only and needs an account with administrative rights to capture secure traffic (**HTTPS**). The Fiddler Everywhere client acts as a man-in-the-middle (against the HTTPS traffic). To enable capturing and decrypting HTTPS traffic, you will need to explicitly install a root trust certificate through the __HTTPS__ sub-menu in __Settings__.
 
@@ -19,7 +19,7 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 ## Configure on macOS
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
-1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button. 
+1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button.
 1. A keychain user and password box appear. Enter your __machine administrative credentials__.
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-mac-keychain.png)
@@ -29,7 +29,7 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 ## Configure on Windows
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.
-1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button. Trust certificate popup appears to confirm and add the certificate. 
+1. Go to __Settings > HTTPS__ and click the __Trust Root Certificate__ button. Trust certificate popup appears to confirm and add the certificate.
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-cert-win.png)
 
@@ -45,7 +45,7 @@ Many Linux distributions are using different security features and different way
 1. Click the __Export Root Certificate to Desktop__ button.
 1. Import and trust the exported certificate. To install the Fiddler Everywhere certificate, you need to follow some additional steps on Linux:
 
-    - Create a directory and copy the certificate (exported in the previous steps). The last command will start the tool to upgrade the certificates. 
+    - Create a directory and copy the certificate (exported in the previous steps). The last command will start the tool to upgrade the certificates.
 
         ```shell
         $ sudo mkdir /usr/share/ca-certificates/extra

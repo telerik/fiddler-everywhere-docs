@@ -1,6 +1,6 @@
 ---
 title: Mocking Server Responses
-description: Learn how to use the Rules tab to mock different server behavior.
+description: "Mock various server behavior by using the Rules tab of the Fiddler Everywhere web-debugging http-proxy tool."
 slug: rulesbuilder-get-started
 publish: true
 position: 70
@@ -8,28 +8,27 @@ position: 70
 
 # Mocking Server Responses
 
-One of the most powerful features of the Fiddler Everywhere client is the **Rules** tab - a tool for mocking server responses and simulating various real-life scenarios. With Rule Builder, you can create **rules**, to automatically trigger a specific request (covering the criteria set in the rule). Mocking a server response is as easy as enabling the **Rules** tab, setting a rule, and executing the request (that will trigger the rule).
+Fiddler Everywhere provides a **Rules** tab tool, which is a powerful feature that enables you to mock server responses and simulate various real-life scenarios.
 
-## Creating a Rule
+You can use the **Rule Builder** to create rules and automatically trigger a specific request, which meets the criteria set in the rule. To mock a server response, enable the **Rules** tab, set a rule, and execute the request that will trigger that rule.
 
-To create and test your first rule, follow these steps:
+To create and test a rule:
 
-1. Select the **Rules** tab and click the **Add New Rule** button. This will open the [**Rule Builder**]({%slug rules-general%}#rule-builder).
+1. Select the **Rules** tab and click the **Add New Rule** button. As a result, the [**Rule Builder**]({%slug rules-general%}#rule-builder) will be opened.
 1. Enter a descriptive rule name. The rule name will later appear in the [**Rules Queue**]({%slug rules-general%}#rules-queue).
 1. Add a [condition or a set of conditions]({%slug rules-general%}#conditions) to match sessions.
 1. Add an [action or a set of actions]({%slug rules-general%}#actions) to modify the matched sessions.
-1. Press **Save** to save and add the created rule in the **Rules Queue**.
-1. Switch the [ **Live traffic** to **Capturing** mode.]({%slug capture-traffic-get-started%}).
-    - If testing with **Live Traffic**, make sure to enable the main **Rules** toggle.  Then open the application (for example, the Chrome browser) and execute a request that matches the set conditions. The rule is immediately applied to the ongoing captured traffic.
-    - If testing with saved sessions, select the rule and use the **Execute** button. The rule is immediately applied to the loaded saved sessions.
+1. Click **Save** to save and add the created rule in the **Rules Queue**.
+1. Switch the [**Live traffic** to **Capturing** mode]({%slug capture-traffic-get-started%}).
+    - If you test with **Live Traffic**, make sure that you enable the toggle of the main **Rules**. Open the application in the browser and execute a request that matches the set conditions. The rule is immediately applied to the ongoing captured traffic.
+    - If you test with saved sessions, select the rule and use the **Execute** button. The rule is immediately applied to the loaded saved sessions.
 
 ![Rules Tab](../images/livetraffic/rb/rules-all.png)
 
-
 ## Additional Resources
 
-- [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
-- [Create an API request through the Composer]({%slug composer-get-started%})
-- [Modify traffic]({%slug modify-traffic-get-started%})
-- [Organize requests]({%slug composer-collections-get-started%})
-- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).
+- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
+- [Creating Requests with the API Composer]({%slug composer-get-started%})
+- [Modifying Traffic]({%slug modify-traffic-get-started%})
+- [Organizing Requests into Collections]({%slug composer-collections-get-started%})
+- [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).

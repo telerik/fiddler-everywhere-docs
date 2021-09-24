@@ -1,5 +1,5 @@
 ---
-title: Organizing Requests
+title: Organizing API Requests
 description: "Create and share API request collections when using the Telerik Fiddler Everywhere web-debugging http-proxy client."
 slug: composer-collections-get-started
 publish: true
@@ -8,9 +8,9 @@ position: 90
 
 # Organizing API Requests into Collections
 
-The Fiddler Everywhere client provides options for saving and organizing multiple requests, which are composed by using the API Composer, through its [**Requests**]({%slug saved-requests-tab%}) list.
+The Fiddler Everywhere client provides options for saving and organizing multiple requests, composed by the API Composer, through its [**Requests**]({%slug saved-requests-tab%}) list.
 
-**Requests** enables you to arrange multiple requests or request folders in collections which can be promptly reloaded and executed.
+**Requests** enables you to arrange multiple requests or request folders in collections that can be promptly reloaded and executed.
 
 ![Requests lists](../images/requests/requests-list-all.png)
 
