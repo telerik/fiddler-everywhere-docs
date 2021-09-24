@@ -16,24 +16,24 @@ The Fiddler Everywhere client provides options for saving and organizing multipl
 
 To create a collection of composed requests:
 
-1. Create a new API request by clicking the **"+"** button in the collections. This action will open a new **Composer** tab with *Untitled* as the default name.
+1. Create a new API request by clicking the **"+"** button in the collections. As a result, a new **Composer** tab opens. By default, its name is **Untitled**.
 
-2. After the request is composed, press **Save**;. Alternatively, choose **Save as** to prevent overwriting an existing entry.
+2. After the request is composed, click **Save**. Alternatively, to prevent overwriting an existing entry, choose **Save as**.
 
-3. Enter a request name and select the collection (folder) in which the request will be saved. Alternatively, you can create a new collection by pressing the folder icon to the right.
+3. Enter a request name and select the collection (folder) in which the request will be saved. Alternatively, you can create a new collection by clicking the folder icon to the right.
 
     ![Requests lists](../images/requests/requests-enter-name-and-folder.png)
 
-3. Press **Save** to close the dialog window and add the request to the collection.
+3. Click **Save** to close the dialog and add the request to the collection.
 
     ![Requests lists](../images/requests/requests-created-collection.png)
 
->tip For the detailed description of the Requests tab, click [here]({%slug saved-requests-tab%})
+For detailed description of the **Requests** tab, refer to the article on [saved requests lists]({%slug saved-requests-tab%})
 
 ## Additional Resources
 
-- [Inspect captured traffic]({%slug inspecting-traffic-get-started%}).
-- [Create an API request through the Composer]({%slug composer-get-started%})
-- [Modify traffic]({%slug modify-traffic-get-started%})
-- [Mock server response]({%slug rulesbuilder-get-started%})
-- [Share captured traffic with collaborators]({%slug collaboration-get-started%}).
+- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
+- [Creating Requests with the API Composer]({%slug composer-get-started%})
+- [Modifying Traffic]({%slug modify-traffic-get-started%})
+- [Mocking Server Responses]({%slug rulesbuilder-get-started%})
+- [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).
