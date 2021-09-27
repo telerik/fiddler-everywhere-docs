@@ -198,7 +198,16 @@ Use the **Filter** submenu to apply filters for the currently selected column on
 
 ![Filter context submenu](../../images/livetraffic/columns/dots-filter.png)
 
-Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, all columns are visible. Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
+Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
+- **URL**
+- **Result**
+- **Method**
+- **Process**
+- **Remote IP**
+- **Body Size**
+- **Comments**
+
+Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
 
 ![Columns context submenu](../../images/livetraffic/columns/dots-columns.png)
 
