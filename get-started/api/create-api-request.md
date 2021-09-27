@@ -3,7 +3,8 @@ title: Creating API Requests
 description: "Create and test API requests with the API Composer feature of the Telerik Fiddler Everywhere web-debugging HTTP client proxy."
 slug: composer-get-started
 publish: true
-position: 80
+position: 10
+previous_url: /get-started/create-api-request
 ---
 
 # Creating API Requests
@@ -14,7 +15,7 @@ Requests that are made to local and online APIs enable you to check and debug va
 
 To create an API request:
 
-1. Select an appropriate **HTTP method** and enter the endpoint URL. The Composer supports the **GET**, **POST**, **PUT**, **DELETE**, **TRACE**, **SEARCH** and **PROPFIND** methods and also allows you to change the version of the HTTP protocol with the drop-down menu to the left of the **Execute** button.
+1. Select an appropriate **HTTP method** and enter the endpoint URL. The Composer supports the **GET**, **POST**, **PUT**, **DELETE**, **TRACE**, **SEARCH**, and **PROPFIND** methods and also allows you to change the version of the HTTP protocol with the drop-down menu to the left of the **Execute** button.
 
 2. (Optional) If required, enter additional headers, parameters, and body. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data.
 
@@ -32,9 +33,8 @@ To create an API request:
 
 ## Additional Resources
 
-- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
-- [Creating Requests with the API Composer]({%slug composer-get-started%})
-- [Modifying Traffic]({%slug modify-traffic-get-started%})
-- [Mocking Server Responses]({%slug rulesbuilder-get-started%})
 - [Organizing API Requests in Collections]({%slug composer-collections-get-started%})
+- [Mocking Server Responses]({%slug rulesbuilder-get-started%})
+- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
+- [Modifying Traffic]({%slug modify-traffic-get-started%})
 - [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).

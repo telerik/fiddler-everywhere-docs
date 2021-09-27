@@ -1,12 +1,13 @@
 ---
-title: Organizing API Requests
-description: "Create and share API request collections when using the Telerik Fiddler Everywhere web-debugging http-proxy client."
+title: Grouping API Requests in Collections
+description: "Create and share API request collections when using the Telerik Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: composer-collections-get-started
 publish: true
-position: 90
+position: 20
+previous_url: /get-started/composer-collections
 ---
 
-# Organizing API Requests into Collections
+# Grouping API Requests in Collections
 
 The Fiddler Everywhere client provides options for saving and organizing multiple requests, composed by the API Composer, through its [**Requests**]({%slug saved-requests-tab%}) list.
 
@@ -14,9 +15,9 @@ The Fiddler Everywhere client provides options for saving and organizing multipl
 
 ![Requests lists](../images/requests/requests-list-all.png)
 
-To create a collection of composed requests:
+To create a collection of composed API requests:
 
-1. Create a new API request by clicking the **"+"** button in the collections. As a result, a new **Composer** tab opens. By default, its name is **Untitled**.
+1. Create a new API request by clicking the **+** button in the collections. As a result, a new **Composer** tab will open. By default, its name is **Untitled**.
 
 2. After the request is composed, click **Save**. Alternatively, to prevent overwriting an existing entry, choose **Save as**.
 
@@ -32,8 +33,8 @@ For detailed description of the **Requests** tab, refer to the article on [saved
 
 ## Additional Resources
 
-- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
 - [Creating Requests with the API Composer]({%slug composer-get-started%})
-- [Modifying Traffic]({%slug modify-traffic-get-started%})
 - [Mocking Server Responses]({%slug rulesbuilder-get-started%})
+- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
+- [Modifying Traffic]({%slug modify-traffic-get-started%})
 - [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).
