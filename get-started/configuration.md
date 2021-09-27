@@ -15,7 +15,6 @@ By default, the Fiddler Everywhere client intercepts insecure traffic (**HTTP**)
 
 ![default https settings](../images/settings/settings-trust-root-certificate.png)
 
-
 ## Configure on macOS
 
 1. Start Fiddler Everywhere on the device that will capture the traffic.

@@ -29,7 +29,7 @@ Other requirements:
     https://*.amazonaws.com/
 ```
 
->tip Fiddler Everywhere version 1.1.0 and above supports predefined OS proxy settings (for direct internet access). If your system is accessing the internet through a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
+>tip Fiddler Everywhere v.1.1.0 and above supports predefined OS proxy settings for direct internet access. If your system is accesses the Internet through a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
 
 ## Install Fiddler Everywhere
 
@@ -39,7 +39,7 @@ Other requirements:
 
 1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
 1. Select **Download for OS X** to download the installer.
-1. Run the **Fiddler Everywhere** dmg file to start the installation process.
+1. Run the **Fiddler Everywhere** `dmg` file to start the installation process.
 1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-macos) and start capturing.
 
 ### Windows
@@ -55,67 +55,68 @@ Other requirements:
 1. Select **Download for Linux** to download the installer.
 1. Install the downloaded package.
 
-    On most **Linux** distributions, you need to set the installation file as executable before starting the installation. You can do this with the command line or with the GUI:
+    On most Linux distributions, you need to set the installation file as executable before starting the installation. To achieve this, either use the command line or the GUI of the desired distribution:
 
-    - **Command-line instructions**
+    - Setting the installation plan as executable through the command-line.
 
-        - Open a terminal
-        - Navigate to the folder where the installation file resides.
-        - Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
-        - Enter your username and password (if prompted) and press **Enter**.
+        1. Open a terminal.
+        1. Navigate to the folder where the installation file resides.
+        1. Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
+        1. If prompted, enter your username and password. Press the **Enter** key.
 
-    - **GUI Instructions**
+    - Setting the installation plan as executable through the GUI.
 
-        Alternatively, many Linux distributions provide options to set the file's executable rights through the used GUI.
+        * For the Gnome distribution
 
-        **Gnome**
+          ![Gnome setting executable](../images/installation/exec-gnome.jpg)
 
-        ![Gnome setting executable](../images/installation/exec-gnome.jpg)
+        * For the Cinnamon distribution
 
-        **Cinnamon**
+          ![Cinnamon setting executable](../images/installation/exec-cinnamon.jpg)
 
-        ![Cinnamon setting executable](../images/installation/exec-cinnamon.jpg)
+        * For the KDI distribution
 
-        **KDE**
-
-        ![KDE setting executable](../images/installation/exec-kde.jpg)
+          ![KDE setting executable](../images/installation/exec-kde.jpg)
 
 1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-linux) and start capturing.
 
-## Create an Account
+## Creating an Account
 
-Signing in is mandatory for both Trial and Pro versions of the Fiddler Everywhere client. You can sign up by [creating a Fiddler account](#create-fiddler-account) or by [using an existing Google account](#use-google-account). Fiddler Everywhere supports Google Authentication and its own account system.
+Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can either [create a Fiddler account](#creating-a-fiddler-account) or [use an existing Google account](#using-a-google-account).
 
-### Create Fiddler Account
+### Creating a Fiddler Account
 
-1. Launch the Fiddler Everywhere client. If you don't have an existing Fiddler account, select the **New User? Create Account** button.
-1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. Your teammates will use the email you provide in this step to share sessions, collections, and notifications. 
+1. Launch the Fiddler Everywhere client. Select the **New User? Create Account** button.
+1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. The email you provide here will be later on used by your collaborators for sharing sessions, collections, and notifications.
 
     ![Create new account screen](../images/login/create-acc-screen.png)
-1. Open the confirmation email sent by Fiddler and verify your registration by entering the unique code.
+
+1. Open the confirmation email and verify your Fiddler registration by entering the unique code.
 
     ![Enter verification code](../images/login/create-acc-screen-code-confirmation.png)
+
 1. Fill in the required information and proceed through the **Let's Go** button.
 
     ![Enter verification code](../images/login/create-acc-screen-basic-info.png)
-1. In the final screen, Fiddler Jam presents the option to start the trial version through the **Start Free Trial** button or purchase and activate a subscription plan through the **BUY NOW** link.
+
+1. On the next screen, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
     ![Enter verification code](../images/login/create-acc-screen-free-trial.png)
 
-### Use Google Account
+### Using a Google Account
 
-Alternatively, you can directly sign in with a Google account.
+Alternatively, you can directly sign in with an existing Google account.
 
-1. Launch the Fiddler Everywhere client. 
-1. Select **Sign in with Google** and authenticate on the Google Authentication page. 
-1. After successful signup, the new users will be presented with the option to start the trial version through the **Start Free Trial** button or purchase and activate a subscription plan through the **BUY NOW** link.
+1. Launch the Fiddler Everywhere client.
+1. Select **Sign in with Google** and authenticate on the Google Authentication page.
+1. After you successfully sign up, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
 ## Update
 
-Steps to update Fiddler Everywhere to the latest version:
+To update Fiddler Everywhere to its latest version:
 
-1. Start __Fiddler Everywhere__.
-1. From the main menu, choose **_Help_ > _Check for Update_**. If a newer version is available, a notification will ask for your agreement to download and install it.
+1. Start Fiddler Everywhere.
+1. From the main menu, choose **Help** > **Check for Update**. If a newer version is available, a notification will ask for your agreement to download and install it.
 1. Fiddler Everywhere will restart and automatically update to the latest version.
 
->important Once the Fiddler Everywhere client is installed, updated and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).
+>important Once the Fiddler Everywhere client is installed, updated, and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).

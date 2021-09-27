@@ -11,7 +11,7 @@ previous_url: /get-started/inspect-traffic
 
 When the traffic is already captured, you can start analyzing the data.
 
-To extract information about the captured sessions, go to the [**Live Traffic**]({%slug web-sessions-list%}) tab where each request/response entry (session) is listed in a row with multiple column fields in the __sessions list__. There you can extract useful data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, the used HTTP method (GET or POST), and more.
+To extract information about the captured sessions, go to the [**Live Traffic**]({%slug web-sessions-list%}) tab where each request/response entry (session) is listed in a row with multiple column fields in the **sessions list**. There you can extract useful data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, the used HTTP method (GET or POST), and more.
 
 To open structured information about the session timings, sizes, request, and response details in the [**Overview** tab]({%slug overview-tab%}), single-click a session or select multiple sessions.
 

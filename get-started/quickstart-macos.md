@@ -8,9 +8,12 @@ position: 10
 
 # First Steps with Fiddler Everywhere on macOS
 
-This article lists the system requirements and describe the steps to install Fiddler Everywhere on macOS.
+This tutorial describes how to install and start using Fiddler Everywhere on macOS.
 
-At the end of this article you will be able to install and configure Fiddler Everywhere on macOS, capture, inspect, and modify HTTP and HTTPS traffic, share the sessions with collaborators, create API requests with the API Composer, and mock server requests.
+* First, you will go through the installation and configuration steps.
+* Next, you'll create a Fiddler account so that you can move on to effectively using the web-debugging tool.
+* Then, you will learn how to capture, inspect, and modify traffic as well as share the sessions with collaborators.
+* Finally, you will deep-dive into the HTTP proxy client and create API requests with the API Composer and mock server responses.
 
 ## Prerequisites
 
