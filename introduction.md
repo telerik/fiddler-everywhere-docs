@@ -37,13 +37,20 @@ Fiddler Everywhere comes with an API Composer, which allows you to test APIs by 
 
 Fiddler Everywhere provides platform-agnostic compatibility that enables you to install, configure, and run the web-debugging tool on Windows, macOS, and Linux system-operating machines. Read more in the dedicated step-by-step guides:
 
-* [Fiddler Everywhere Quickstart for Windows]({% slug ... %})
-* [Fiddler Everywhere Quickstart for macOS]({% slug ... %})
-* [Fiddler Everywhere Quickstart for Linux]({% slug ... %})
+* [Get Started with Fiddler Everywhere on Windows]({% slug ... %})
+* [Get Started with Fiddler Everywhere on macOS]({% slug ... %})
+* [Get Started with Fiddler Everywhere on Linux]({% slug ... %})
 
 ### Styling Settings  
 
 Fiddler Everywhere delivers a modern, intuitive UI and a set of popular themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
+
+## Fiddler Everywhere on Mobile
+
+Fiddler Everywhere enables you to also capture and inspect traffic on devices running on iOS and Android.
+
+* [Capturing and inspecting traffic on iOS]({% slug capture-mobile-ios-traffic %})
+* [Capturing and inspecting traffic on Android]({% slug capture-mobile-android-traffic %})
 
 ## Trial Version and Commercial License
 
