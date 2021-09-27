@@ -27,8 +27,8 @@ To create and test a rule:
 
 ## Additional Resources
 
-- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
 - [Creating Requests with the API Composer]({%slug composer-get-started%})
+- [Grouping Requests in Collections]({%slug composer-collections-get-started%})
+- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
-- [Organizing Requests into Collections]({%slug composer-collections-get-started%})
 - [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).

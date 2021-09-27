@@ -33,7 +33,7 @@ To create an API request:
 
 ## Additional Resources
 
-- [Organizing API Requests in Collections]({%slug composer-collections-get-started%})
+- [Grouping Requests in Collections]({%slug composer-collections-get-started%})
 - [Mocking Server Responses]({%slug rulesbuilder-get-started%})
 - [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
