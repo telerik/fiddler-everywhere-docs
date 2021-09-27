@@ -12,6 +12,12 @@ navigation:
     get-started/mobile-traffic:
         title: Mobile Traffic
         position: 110
+    get-started/traffic:
+        title: Traffic Inspection and Analysis
+        position: 10
+    get-started/traffic:
+        title: API Composing
+        position: 30
     user-guide:
         title: User Interface
         position: 20

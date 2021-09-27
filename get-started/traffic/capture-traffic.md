@@ -1,9 +1,10 @@
 ---
 title: Capturing Traffic
-description: "Capture HTTP and HTTPS live traffic with the cross-platform, web-debugging, http-proxy Telerik Fiddler Everywhere tool."
+description: "Capture HTTP and HTTPS live traffic with the cross-platform, web-debugging, HTTP-proxy Telerik Fiddler Everywhere tool."
 slug: capture-traffic-get-started
 publish: true
-position: 40
+position: 10
+previous_url: /get-started/capture-traffic
 ---
 
 # Capturing Traffic
@@ -25,8 +26,6 @@ To capture traffic with Fiddler Everywhere:
 ## Additional Resources
 
 - [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
-- [Creating Requests through the API Composer]({%slug composer-get-started%})
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
-- [Mocking Server Responses]({%slug rulesbuilder-get-started%})
-- [Organizing API Requests into Collections]({%slug composer-collections-get-started%})
-- [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).
+- [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
+- [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})

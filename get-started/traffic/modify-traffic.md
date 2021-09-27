@@ -3,7 +3,8 @@ title: Modifying Traffic
 description: "Modify the headers and bodies of captured sessions when working with the Telerik Fiddler Everywhere web-debugging HTTP client proxy."
 slug: modify-traffic-get-started
 publish: true
-position: 60
+position: 30
+previous_url: /get-started/modify-traffic
 ---
 
 # Modifying Traffic
@@ -32,6 +33,5 @@ This approach enables you to modify an existing request in the same way your app
 
 ## Additional Resources
 
-- [Creating Requests with the API Composer]({%slug composer-get-started%})
-- [Mocking Server Responses]({%slug rulesbuilder-get-started%})
-- [Sharing Session Snapshots with Collaborators]({%slug collaboration-get-started%})
+- [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
+- [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})

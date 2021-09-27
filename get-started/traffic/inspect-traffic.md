@@ -3,7 +3,8 @@ title: Inspecting Traffic
 description: "Use the Inspectors tab to inspect the headers and bodies of the captured session when working with Telerik Fiddler Everywhere web-debugging HTTP client proxy."
 slug: inspecting-traffic-get-started
 publish: true
-position: 50
+position: 20
+previous_url: /get-started/inspect-traffic
 ---
 
 # Inspecting Traffic
@@ -26,8 +27,6 @@ Inspecting sessions is often done with teammates or external collaborators. **Sh
 
 ## Additional Resources
 
-- [Creating Requests with the API Composer]({%slug composer-get-started%})
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
-- [Mocking Server Responses]({%slug rulesbuilder-get-started%})
-- [Organizing API Requests into Collections]({%slug composer-collections-get-started%})
-- [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).
+- [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
+- [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})
