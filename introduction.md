@@ -37,9 +37,9 @@ Fiddler Everywhere comes with an API Composer, which allows you to test APIs by 
 
 Fiddler Everywhere provides platform-agnostic compatibility that enables you to install, configure, and run the web-debugging tool on Windows, macOS, and Linux system-operating machines. Read more in the dedicated step-by-step guides:
 
-* [Get Started with Fiddler Everywhere on Windows]({% slug ... %})
-* [Get Started with Fiddler Everywhere on macOS]({% slug ... %})
-* [Get Started with Fiddler Everywhere on Linux]({% slug ... %})
+* [Get Started with Fiddler Everywhere on Windows]({% slug first_steps_windows %})
+* [Get Started with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
+* [Get Started with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
 
 ### Styling Settings  
 

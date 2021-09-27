@@ -1,9 +1,8 @@
 ---
-title: Installation
-description: Basic requirements and installation procedure for Fiddler Everywhere
-previous_url: /getting-started/installation, /installation/installation-procedure
-slug: installation
-position: 10
+title: First Steps on macOS
+description: "Install and configure Fiddler Everywhere on macOS and learn how to capture, inspect, and modify the HTTPS traffic, create API requests, mock server responses, and collaborate to analyze data more effectively."
+slug: first_steps_macos
+position: 2
 ---
 
 # First Steps with Fiddler Everywhere on macOS

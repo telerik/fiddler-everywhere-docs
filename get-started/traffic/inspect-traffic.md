@@ -1,6 +1,6 @@
 ---
 title: Inspecting Traffic
-description: "Use the Inspectors tab to inspect the headers and bodies of the captured session when working with Telerik Fiddler Everywhere web-debugging HTTP client proxy."
+description: "Inspect the headers and bodies of the captured session through the Inspectors tab when working with Telerik Fiddler Everywhere web-debugging HTTP client proxy."
 slug: inspecting-traffic-get-started
 publish: true
 position: 20

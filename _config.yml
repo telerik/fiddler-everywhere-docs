@@ -9,15 +9,12 @@ navigation:
     get-started:
         title: Get Started
         position: 10
-    get-started/mobile-traffic:
-        title: Mobile Traffic
-        position: 110
     get-started/traffic:
         title: Traffic Inspection and Analysis
-        position: 10
+        position: 20
     get-started/api:
         title: API Composing
-        position: 30
+        position: 50
     user-guide:
         title: User Interface
         position: 20

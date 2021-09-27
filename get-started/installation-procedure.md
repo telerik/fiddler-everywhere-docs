@@ -1,12 +1,12 @@
 ---
-title: Installation
-description: Basic requirements and installation procedure for Fiddler Everywhere
+title: Installation & Update
+description: "..."
 previous_url: /getting-started/installation, /installation/installation-procedure
 slug: installation
 position: 10
 ---
 
-# Installation
+# Installation and Update
 
 Fiddler Everywhere is a cross-platform web debugging proxy available for Windows, macOS, and Linux. This article lists the system requirements and describe the steps to install Fiddler Everywhere on all supported operating systems.
 

@@ -3,7 +3,7 @@ title: Collaboration
 description: "Share and investigate network issues with your team by using the built-in collaboration functionalities of the Fiddler Everywhere web-debugging tool."
 slug: collaboration-get-started
 publish: true
-position: 40
+position: 30
 ---
 
 # Collaboration

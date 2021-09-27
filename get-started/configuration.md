@@ -1,13 +1,13 @@
 ---
-title: Configuration
+title: Installation & Configuration
 description: "Install and trust the root certificate on different operating systems while configuring the Fiddler Everywhere web-debugging tool."
 slug: configuration-get-started
 publish: true
-position: 30
+position: 10
 previous_url: /user-interface/settings/https,/user-guide/settings/https/https-decryption
 ---
 
-# Configuration
+# Installation and Configuration
 
 This article explains how to configure the HTTPS capturing in Fiddler Everywhere for the supported operating systems.
 

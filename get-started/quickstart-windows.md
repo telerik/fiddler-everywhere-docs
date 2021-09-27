@@ -1,9 +1,8 @@
 ---
 title: First Steps on Windows
 description: "Install and configure Fiddler Everywhere on Windows and learn how to capture, inspect, and modify the HTTPS traffic, create API requests, mock server responses, and collaborate to analyze data more effectively."
-previous_url: /getting-started/installation, /installation/installation-procedure
-slug: installation
-position: 10
+slug: first_steps_windows
+position: 1
 ---
 
 # First Steps with Fiddler Everywhere on Windows
@@ -47,12 +46,18 @@ In this step you'll register by creating your personal Fiddler Everywhere accoun
 1. Fill in the required information and proceed through the **Let's Go** button.
 1. On the next screen, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link. For the purposes of this tutorial, you'll become a trial user by selecting the **Start Free Trial** option. You are all set to start using the full-scale functionalities Fiddler Everywhere delivers.
 
+## Trusting the Root Certificate
+
+To be able to handle HTTPS traffic, you'll have to enter your keychain credentials and trust the root certificate.
+
+1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Click the **Trust Root Certificate** button&mdash;in the popup that appears, confirm your choice and add the certificate.
+1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
+
 ## Fiddling with the Traffic
 
 Let's begin by capturing some HTTPS traffic then inspecting and modifying a session.
 
-1. Start Fiddler Everywhere on the device that will capture the traffic&mdash;go to **Settings** > **HTTPS** and click the **Trust Root Certificate** button. In the popup that appears, confirm your choice and add the certificate.
-1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**. Switch **Live Traffic** to **Capturing** and the **Live Traffic** list will immediately start capturing and displaying your incoming and outgoing traffic.
+1. Switch **Live Traffic** to **Capturing** and the **Live Traffic** list will immediately start capturing and displaying your incoming and outgoing traffic.
 1. Now you'll extract a captured session&mdash;go to the **Live Traffic** tab and select a request/response entry from under the **sessions list**. ....
 1. Let's modify that session! Right-click the session of your request to open the context menu of the entry. From there, select **Edit in Composer**. When the session opens in a new window, modify its headers&mdash;or example, change ... to ...
 
