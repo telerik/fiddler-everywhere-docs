@@ -1,122 +1,63 @@
 ---
 title: Installation & Update
-description: "..."
-previous_url: /getting-started/installation, /installation/installation-procedure
+description: "Learn more about how to install Fiddler Everywhere and its root certificate, and check out the available options for logging into the tool and updating it."
+previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration 
 slug: installation
 position: 10
 ---
 
 # Installation and Update
 
-Fiddler Everywhere is a cross-platform web debugging proxy available for Windows, macOS, and Linux. This article lists the system requirements and describe the steps to install Fiddler Everywhere on all supported operating systems.
+This article provides additional information related to the installation of Fiddler Everywhere and of its root certificate as well as lists the available options for logging into the tool and updating it.
 
-## System Requirements
+The step-by-step tutorials for getting up and running with Fiddler Everywhere are:
 
-Supported operating systems:
+* [First Steps with Fiddler Everywhere on Windows]({% slug first_steps_windows %})
+* [First Steps with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
+* [First Steps with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
 
-- macOS High Sierra (10.13+) x64
-- Windows 7 x64, Windows 8 x64, or Windows 10 x64 (all Windows versions require the installation of [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/install/windows#additional-deps))
-- Ubuntu 18+ x64
+## Installing Fiddler Everywhere
 
-Other requirements:
+As Fiddler Everywhere is a cross-platform web-debugging proxy, which is available for Windows, macOS, and Linux, you need to follow the respective approach for installing the tool.
 
-- 300MB of free disk space
-- An account with administrative rights. Needed for capturing and decoding HTTPS traffic.
-- Active internet connection with access to the following URLs:
+The installation options of Fiddler Everywhere for each platform are part of the getting started step-by-step tutorials:
 
-```
-    https://*.getfiddler.com/
-    https://*.amazonaws.com/
-```
+* [First Steps on Windows (Installing Fiddler Everywhere on Your Machine)]({% slug first_steps_windows %}#installing-fiddler-everywhere-on-your-machine)
+* [First Steps on macOS (Installing Fiddler Everywhere on Your Machine)]({% slug first_steps_macos %}#installing-fiddler-everywhere-on-your-machine)
+* [First Steps on Linux (Installing Fiddler Everywhere on Your Machine)]({% slug first_steps_linux %}#installing-fiddler-everywhere-on-your-machine)
 
->tip Fiddler Everywhere v.1.1.0 and above supports predefined OS proxy settings for direct internet access. If your system is accesses the Internet through a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
+## Logging In with Your Account
 
-## Install Fiddler Everywhere
+Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can either create a Fiddler account or use an existing Google account.
 
->important After the installation, Fiddler Everywhere allows you to track only non-secure HTTP traffic. To enable capturing and decoding of HTTPS traffic, you need to install a trusted certificate, as shown in the [article on configuration]({%slug configuration-get-started%}).
+The following getting started step-by-step tutorials provide detailed instructions on creating a new Fiddler account:
 
-### macOS
+* [First Steps on Windows (Creating Your Fiddler Account)]({% slug first_steps_windows %}#creating-your-fiddler-account)
+* [First Steps on macOS (Creating Your Fiddler Account)]({% slug first_steps_macos %}#creating-your-fiddler-account)
+* [First Steps on Linux (Creating Your Fiddler Account)]({% slug first_steps_linux %}#creating-your-fiddler-account)
 
-1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
-1. Select **Download for OS X** to download the installer.
-1. Run the **Fiddler Everywhere** `dmg` file to start the installation process.
-1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-macos) and start capturing.
-
-### Windows
-
-1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
-1. Select **Download for Windows** to download the installer.
-1. Run the **Fiddler Everywhere** exe file to go through the installation process.
-1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-windows) and start capturing.
-
-### Linux
-
-1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
-1. Select **Download for Linux** to download the installer.
-1. Install the downloaded package.
-
-    On most Linux distributions, you need to set the installation file as executable before starting the installation. To achieve this, either use the command line or the GUI of the desired distribution:
-
-    - Setting the installation plan as executable through the command-line.
-
-        1. Open a terminal.
-        1. Navigate to the folder where the installation file resides.
-        1. Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
-        1. If prompted, enter your username and password. Press the **Enter** key.
-
-    - Setting the installation plan as executable through the GUI.
-
-        * For the Gnome distribution
-
-          ![Gnome setting executable](../images/installation/exec-gnome.jpg)
-
-        * For the Cinnamon distribution
-
-          ![Cinnamon setting executable](../images/installation/exec-cinnamon.jpg)
-
-        * For the KDI distribution
-
-          ![KDE setting executable](../images/installation/exec-kde.jpg)
-
-1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-linux) and start capturing.
-
-## Creating an Account
-
-Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can either [create a Fiddler account](#creating-a-fiddler-account) or [use an existing Google account](#using-a-google-account).
-
-### Creating a Fiddler Account
-
-1. Launch the Fiddler Everywhere client. Select the **New User? Create Account** button.
-1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. The email you provide here will be later on used by your collaborators for sharing sessions, collections, and notifications.
-
-    ![Create new account screen](../images/login/create-acc-screen.png)
-
-1. Open the confirmation email and verify your Fiddler registration by entering the unique code.
-
-    ![Enter verification code](../images/login/create-acc-screen-code-confirmation.png)
-
-1. Fill in the required information and proceed through the **Let's Go** button.
-
-    ![Enter verification code](../images/login/create-acc-screen-basic-info.png)
-
-1. On the next screen, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
-
-    ![Enter verification code](../images/login/create-acc-screen-free-trial.png)
-
-### Using a Google Account
-
-Alternatively, you can directly sign in with an existing Google account.
+However, if you want to directly sign in with your Google account, perform the following steps:
 
 1. Launch the Fiddler Everywhere client.
 1. Select **Sign in with Google** and authenticate on the Google Authentication page.
 1. After you successfully sign up, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
-## Update
+## Installing the Root Certificate
+
+By default, the Fiddler Everywhere client intercepts insecure (HTTP) traffic only and requires an account with administrative rights to capture secure (HTTPS) traffic. To enable the capturing and decrypting of HTTPS traffic, you need to explicitly install a root trust certificate.
+
+The following getting started step-by-step tutorials provide detailed instructions on trusting the root certificate:
+
+* [First Steps on Windows (Trusting the Root Certificate)]({% slug first_steps_windows %}#trusting-the-root-certificate)
+* [First Steps on macOS (Trusting the Root Certificate)]({% slug first_steps_macos %}#trusting-the-root-certificate)
+* [First Steps on Linux (Trusting the Root Certificate)]({% slug first_steps_linux %}#trusting-the-root-certificate)
+
+## Updating Fiddler Everywhere
+
+Fiddler Everywhere versions 1.1.0 and later support predefined OS proxy settings for direct Internet access. If your system accesses the Internet through a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
 
 To update Fiddler Everywhere to its latest version:
 
 1. Start Fiddler Everywhere.
-1. From the main menu, choose **Help** > **Check for Update**. If a newer version is available, a notification will ask for your agreement to download and install it.
+1. From the main menu, choose **Help** > **Check for Update**. If a later version is available, a notification will ask you to confirm that you want to download and install it.
 1. Fiddler Everywhere will restart and automatically update to the latest version.
-
->important Once the Fiddler Everywhere client is installed, updated, and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).

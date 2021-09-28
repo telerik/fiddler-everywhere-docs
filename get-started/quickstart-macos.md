@@ -26,54 +26,70 @@ This tutorial describes how to install and start using Fiddler Everywhere on mac
         https://*.amazonaws.com/
     ```
 
->tip Fiddler Everywhere v.1.1.0 and above supports predefined OS proxy settings for direct internet access. If your system is accesses the Internet through a predefined proxy, make sure you have the latest version of Fiddler Everywhere.
+## Installing Fiddler Everywhere on Your Machine
 
-## Installation
-
->important After the installation, Fiddler Everywhere allows you to track only non-secure HTTP traffic. To enable capturing and decoding of HTTPS traffic, you need to install a trusted certificate, as shown in the [article on configuration]({%slug configuration-get-started%}).
+You'll first have to install the latest version of Fiddler Everywhere on your machine.
 
 1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
 1. Select **Download for OS X** to download the installer.
 1. Run the **Fiddler Everywhere** `dmg` file to start the installation process.
-1. [Complete the HTTPS setup]({%slug configuration-get-started%}#configure-on-macos) and start capturing.
 
-## Creating an Account
+## Trusting the Root Certificate
 
-Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can either [create a Fiddler account](#create-fiddler-account) or [use an existing Google account](#use-google-account).
+Now you can track non-secure HTTP traffic with Fiddler Everywhere. To be able to handle HTTPS traffic, however, you'll have to install a trust certificate.
 
-### Creating a Fiddler Account
+1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Click the **Trust Root Certificate** button.
+1. In the window that appears, enter your machine administrative credentials.
+
+    ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-mac-keychain.png)
+
+1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
+
+## Creating Your Fiddler Account
+
+In this step you'll register by creating your personal Fiddler Everywhere account and become a trial user.   
 
 1. Launch the Fiddler Everywhere client. Select the **New User? Create Account** button.
 1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. The email you provide here will be later on used by your collaborators for sharing sessions, collections, and notifications.
-
-    ![Create new account screen](../images/login/create-acc-screen.png)
-
 1. Open the confirmation email and verify your Fiddler registration by entering the unique code.
-
-    ![Enter verification code](../images/login/create-acc-screen-code-confirmation.png)
-
 1. Fill in the required information and proceed through the **Let's Go** button.
+1. On the next screen, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link. For the purposes of this tutorial, you'll become a trial user by selecting the **Start Free Trial** option. You are all set to start using the full-scale functionalities Fiddler Everywhere delivers.
 
-    ![Enter verification code](../images/login/create-acc-screen-basic-info.png)
+## Fiddling with the Traffic
 
-1. On the next screen, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
+Let's now continue with capturing and inspecting some HTTPS traffic and, then, with modifying a captured session.
 
-    ![Enter verification code](../images/login/create-acc-screen-free-trial.png)
+1. Switch **Live Traffic** to **Capturing** and the **Live Traffic** list will immediately start capturing and displaying your incoming and outgoing traffic.
+1. Now you'll extract a captured session&mdash;go to the **Live Traffic** tab and select a request/response entry from under the **sessions list**. ....
+1. Let's modify that session! Right-click the session of your request to open the context menu of the entry. From there, select **Edit in Composer**. When the session opens in a new window, modify its headers&mdash;or example, change ... to ...
 
-### Using a Google Account
+## Sharing the Captured Session
 
-Alternatively, you can directly sign in with an existing Google account.
+After all that traffic information has been captured, inspected, and modified, it's time to share it with your collaborators and analyze it more effectively.
 
-1. Launch the Fiddler Everywhere client.
-1. Select **Sign in with Google** and authenticate on the Google Authentication page.
-1. After you successfully sign up, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
+1. Go to ...
+1.
+1.
 
-## Update
+Here you go! Let's move on to the API Composer feature and create some API requests.
 
-Steps to update Fiddler Everywhere to the latest version:
+## Creating API Requests
 
-1. Start __Fiddler Everywhere__.
-1. From the main menu, choose **_Help_ > _Check for Update_**. If a newer version is available, a notification will ask for your agreement to download and install it.
-1. Fiddler Everywhere will restart and automatically update to the latest version.
+1. Go to the **Composer** tab. Select an **HTTP method** and enter the endpoint URL, for example,..... Let's enter an additional header, for example, ... Click **Execute** to send the composed API request.
+1. Go to the **Response inspector** tab to inspect the result&mdash;the optional header is now visible...
+1. Click **Save** to save the API request. It will be loaded in the **Requests** list.
 
->important Once the Fiddler Everywhere client is installed, updated and started with user account, you can review its [default configuration]({%slug configuration-get-started%}).
+## Grouping the Requests in a Collection
+
+In this step, you'll take a set of composed requests and organize them so that they are displayed as a collection.  
+
+1. Create a new API request by clicking the **+** button. When the new **Composer** tab opens, add a name for it, for example, **My grouped requests**, and click **Save**.
+1. Select the collection in which the request will be saved. Click **Save** to close the dialog and add the request to the collection.
+
+## Mocking a Server Response
+
+To mock a server response, you'll need to implement a rule which will set a condition for a selected session.
+
+1. Go to the ... tab and...
+
+That was it! Now you are ready to dive more deeply into Fiddler Everywhere and take full advantage of its slick functionalities!

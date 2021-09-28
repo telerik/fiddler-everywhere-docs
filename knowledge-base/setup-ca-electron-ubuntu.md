@@ -18,7 +18,7 @@ res_type: kb
 
 #### Description
 
-Electron-based applications (like MSTeams) use Electron CA management, so the folder where the Fiddler Everywhere trust certificate must be installed is in **~/.pki/nssdb**. To capture HTTPS traffic, you need to move the certificate to that folder and then use the **certutil** tool to install and trust it. 
+Electron-based applications (like MSTeams) use Electron CA management, so the folder where the Fiddler Everywhere trust certificate must be installed is in **~/.pki/nssdb**. To capture HTTPS traffic, you need to move the certificate to that folder and then use the **certutil** tool to install and trust it.
 
 ## Solution
 
@@ -32,6 +32,6 @@ Electron-based applications (like MSTeams) use Electron CA management, so the fo
     certutil -A -n "ROOT-CA" -t "TCu,Cu,Tu" -i /usr/share/ca-certificates/extra/FiddlerRootCertificate.crt -d sql:/home/${USER}/.pki/nssdb
     ```
 
-    The above command assumes that you already have the root certificate installed at **/usr/share/ca-certificates/extra**. If that is not the case, install and trust as shown in [the configuration article]({%slug configuration-get-started%}#configure-on-linux) (so that you could capture HTTPS traffic from other applications and not only from electron applications).
+    The above command assumes that you already have the root certificate installed at **/usr/share/ca-certificates/extra**. If that is not the case, install and trust as shown in [the configuration article]({%slug first_steps_linux%}#trusting-the-root-certificate) (so that you could capture HTTPS traffic from other applications and not only from electron applications).
 
 3. Restart Fiddler Everywhere and start capturing HTTPS traffic from MSTeams (or other electron-based applications).

@@ -9,13 +9,13 @@ previous_url: /get-started/capture-traffic
 
 # Capturing Traffic
 
-Once Fiddler Everywhere is [installed]({%slug installation%}) and [configured]({%slug configuration-get-started%}), you can utilize the web-traffic capturing of the proxy client.
+Once Fiddler Everywhere is installed and its root certificate trusted, you can utilize the web-traffic capturing of the proxy client.
 
 The client logs all HTTP and HTTPS traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;Google Chrome, Firefox, Microsoft Teams, Outlook, and more. You can use the captured traffic to debug issues and identify performance bottlenecks, or share it with your teammates.
 
 To capture traffic with Fiddler Everywhere:
 
-1. Start Fiddler Everywhere. Make sure that it is [properly configured]({%slug configuration-get-started%}).
+1. Start Fiddler Everywhere. Make sure that it is properly configured as described in the First Steps tutorials.
 
 2. Switch **Live Traffic** to **Capturing**. Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug web-sessions-list%}).
 
