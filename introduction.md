@@ -33,7 +33,7 @@ Fiddler supports the mocking and modification of requests and responses on any a
 
 Fiddler Everywhere comes with an API Composer, which allows you to test APIs by creating and sending requests as well as save and share composed APIs. You can use the API composing feature both when developing new APIs and when testing existing APIs. [Read more about creating and organizing API requests with Fiddler Everywhere...]({% slug composer-get-started %})
 
-### Cross-Platform Performance
+### Cross-Platform Support
 
 Fiddler Everywhere provides platform-agnostic compatibility that enables you to install, configure, and run the web-debugging tool on Windows, macOS, and Linux system-operating machines. Read more in the dedicated step-by-step guides:
 
@@ -41,16 +41,16 @@ Fiddler Everywhere provides platform-agnostic compatibility that enables you to 
 * [Get Started with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
 * [Get Started with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
 
-### Styling Settings  
-
-Fiddler Everywhere delivers a modern, intuitive UI and a set of popular themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
-
-## Fiddler Everywhere on Mobile
+### Fiddler Everywhere on Mobile
 
 Fiddler Everywhere enables you to also capture and inspect traffic on devices running on iOS and Android.
 
 * [Capturing and inspecting traffic on iOS]({% slug capture-mobile-ios-traffic %})
 * [Capturing and inspecting traffic on Android]({% slug capture-mobile-android-traffic %})
+
+### Styling Options  
+
+Fiddler Everywhere delivers a modern, intuitive UI and a set of popular themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
 
 ## Trial Version and Commercial License
 
