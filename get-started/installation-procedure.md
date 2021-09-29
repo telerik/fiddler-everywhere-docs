@@ -1,7 +1,7 @@
 ---
 title: Installation & Update
 description: "Learn more about how to install Fiddler Everywhere and its root certificate, and check out the available options for logging into the tool and updating it."
-previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration 
+previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration
 slug: installation
 position: 10
 ---
@@ -30,13 +30,13 @@ The installation options of Fiddler Everywhere for each platform are part of the
 
 Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can either create a Fiddler account or use an existing Google account.
 
-The following getting started step-by-step tutorials provide detailed instructions on creating a new Fiddler account:
+To crate a Fiddler account, refer to the following getting started step-by-step tutorials, which provide detailed instructions on the topic:
 
 * [First Steps on Windows (Creating Your Fiddler Account)]({% slug first_steps_windows %}#creating-your-fiddler-account)
 * [First Steps on macOS (Creating Your Fiddler Account)]({% slug first_steps_macos %}#creating-your-fiddler-account)
 * [First Steps on Linux (Creating Your Fiddler Account)]({% slug first_steps_linux %}#creating-your-fiddler-account)
 
-However, if you want to directly sign in with your Google account, perform the following steps:
+To directly sign in with your Google account, perform the following steps:
 
 1. Launch the Fiddler Everywhere client.
 1. Select **Sign in with Google** and authenticate on the Google Authentication page.
@@ -51,6 +51,14 @@ The following getting started step-by-step tutorials provide detailed instructio
 * [First Steps on Windows (Trusting the Root Certificate)]({% slug first_steps_windows %}#trusting-the-root-certificate)
 * [First Steps on macOS (Trusting the Root Certificate)]({% slug first_steps_macos %}#trusting-the-root-certificate)
 * [First Steps on Linux (Trusting the Root Certificate)]({% slug first_steps_linux %}#trusting-the-root-certificate)
+
+For more information on handling various issues that may occur when installing the Fiddler Everywhere root certificate, refer to the Knowledge Base articles. Some of the most common scenarios are:
+
+* [Troubleshooting macOS Trust Certificate Issues]({% slug troubleshoot-certificate-error %})
+* [Manually Installing the Root Certificate on Windows]({% slug how-to-install-fiddler-root-certificate-on-windows %})
+* [Installing the Root Certificate on Linux in Firefox]({% slug how-to-install-fiddler-root-certificate-in-firefox-on-linux %})
+* [Configuring Fiddler Everywhere on Fedora, CentOS, or RedHat]({% slug fiddler-fedora-centos %})
+* [Configuring Java Applications alongside Fiddler Everywhere]({% slug configure-java-fiddler-everywhere %})
 
 ## Updating Fiddler Everywhere
 

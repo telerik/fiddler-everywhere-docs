@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot macOS Trust Certificate Issues
-description: An article on how to troubleshoot an issue related to Fiddler's root trust certificate and the related error "Fiddler root certificate NOT trusted successfully".
+description: "Learn how to troubleshoot issues related to the trusting of the root certificate of Fiddler Everywhere and fix the "Fiddler root certificate NOT trusted successfully" error."
 type: how-to
 slug: troubleshoot-certificate-error
 publish: true
 res_type: kb
 ---
 
-#### Environment
+### Environment
 
 |   |   |
 |---|---|
@@ -16,17 +16,18 @@ res_type: kb
 | Supported OS | macOS |
 | OS tool | Keychain Access |
 
-#### Description
+### Description
 
-To capture secure traffic (HTTPS), Fiddler Everywhere needs to install and enable a root trust certificate in macOS's Keychain Access application. On some occasions, this process might fail, leading to an error in the Fiddler Everywhere client, which states **_"Fiddler root certificate NOT trusted successfully"_**. This article explains how to troubleshoot the certificate installation on macOS through custom bash scripts and terminal commands.
+To capture secure (HTTPS) traffic on macOS, Fiddler Everywhere requires you to install and enable a root trust certificate in the macOS Keychain Access application. This process might fail and lead to a `"Fiddler root certificate NOT trusted successfully"` error.
 
-## Test Certificate Import
+### Solution
 
-To test importing the Fiddler Root certificate with a Bash script, execute the following steps:
+Test the import of the Fiddler Everywhere root certificate on macOS by using custom bash scripts and terminal commands.
 
-1. Create a Bash file, for example, **_import.sh_**.
+1. Create a Bash file, for example, `import.sh`.
 
-2. Save the following script in the above file:
+1. Save the following script in `import.sh`:
+
     ```Bash
     login_keychains_paths=$(security list-keychains | grep -e "\Wlogin.keychain\W");
 
@@ -44,43 +45,47 @@ To test importing the Fiddler Root certificate with a Bash script, execute the f
     fi
     ```
 
-3. Make the **_import.sh_** file executable.
+1. Make the `import.sh` file executable.
+
     ```Bash
     chmod +x import.sh
     ```
-- Execute the created file in your Bash shell.
+
+1. Execute the created file in your Bash shell.
+
     ```Bash
     ./import.sh
     ```
 
-    After successful execution, you will be prompted for your macOS username and password. Enter the credentials, and the generated trust certificate will be added in the Keychain Access application (under **_login > Certificates_** as **DO_NOT_TRUST_FiddlerRoot**).
+1. After successfully executing the file, you will be prompted for your macOS username and password. Enter the credentials, and the generated trust certificate will be added in the Keychain Access application in **login** > **Certificates** as **DO_NOT_TRUST_FiddlerRoot**.
 
-4. Test that the certificate generated from Fiddler is successfully **installed and trusted** by running the following command in your Bash shell:
+1. Test that the certificate generated from Fiddler is successfully installed and trusted by running the following command in your Bash shell:
 
     ```Bash
     security trust-settings-export /tmp/trustSettings.xml
     ```
-    
-    When successful, the command will output a success message:
+
+    As a result, the command outputs a success message:
+
     ```Bash
     ...Trust Settings exported successfully.
     ```
 
-5. Confirm that the **DO_NOT_TRUST_FiddlerRoot** is present in the Keychain Access application (under **_login > Certificates_**). Double-click  the certificate, scroll to the bottom and note the SHA-1 value. Open the exported settings file from **_ /tmp/trustSettings.xml_** and check that the SHA-1 value is present there. For example, the certificate from your Keychain Access application (see the screenshot) will be identical to the SHA1
+1. Go to **login** > **Certificates** and confirm that the **DO_NOT_TRUST_FiddlerRoot** is present in the Keychain Access application. Double-click  the certificate, scroll to the bottom and note the `SHA-1` value. Open the exported settings file from `/tmp/trustSettings.xml` and check that the `SHA-1` value is present there. For example, the certificate from your Keychain Access application will be identical to the `SHA-1`.
 
-    _The SHA1 key in trustSettings.xml file will also be present in the Keychain Access_
+    The `SHA-1` key in the `trustSettings.xml` file will also be present in the Keychain Access application.
+
     ```XML
     <key>68E0B8FE34DF4A756B664E300B067CA9A1B9DE8</key>
     ```
 
     ![Check SHA1 signature](../images/kb/mac-certificate/certificate-sha-check.png)
 
-    >tip You can safely delete the **_/tmp/trustSettings.xml_** file after the troubleshooting. It is only needed to check that the SHA-1 key is properly exported.
-
+1. (Optional) Delete the `/tmp/trustSettings.xml` file after troubleshooting the issue as it is only needed to check that the `SHA-1` key is properly exported.
 
 ## See Also
 
-*   [Troubleshoot HTTPS capturing on macOS]({%slug troubleshoot-capturing-traffic%})
-*   [Troubleshoot Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
-*	[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
-*	[How-To Reset Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)
+* [Troubleshoot HTTPS capturing on macOS]({%slug troubleshoot-capturing-traffic%})
+* [Troubleshoot Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
+*	[Installing Fiddler Everywhere on macOS]({% slug first_steps_macos %})
+*	[Resetting Fiddler Everywhere to Its Default Settings]({% slug how-to-reset-fiddler-everywhere-settings-to-default %})

@@ -1,6 +1,6 @@
 ---
-title: How-To Reset Fiddler Everywhere Settings to Default
-description: To troubleshoot common issues, reset the Fiddler Everywhere settings to default values
+title: Resetting Fiddler Everywhere Settings to Default
+description: "Reset the Fiddler Everywhere settings to their default values to troubleshoot common issues."
 type: how-to
 page_title: Configure Fiddler Everywhere Default Settings
 slug: how-to-reset-fiddler-everywhere-settings-to-default
@@ -8,35 +8,33 @@ ticketid: 1388381
 res_type: kb
 ---
 
-#### Environment
+### Environment
 
 |   |   |
 |---|---|
 | Product   |
 | Product Version | 1.0.0 and above  |
 
-#### Description
+### Description
 
-To troubleshoot common issues, resetting the Fiddler Everywhere settings to default values will help.
+When you have to troubleshoot common issues, you may need to reset the Fiddler Everywhere settings to their default values to facilitate the process.
 
-# Resetting Fiddler Everywhere Settings
+### Solution
 
 The following screenshots represent the Fiddler Everywhere Default Settings.
 
-## HTTPS Settings
+* Resetting the HTTPS settings&mdash;The default settings will reset Fiddler to its initial state, which means that the secure traffic won't be captured until **Capture HTTPS** is checked.
 
-![default https settings](../images/kb/default-settings/default-https-settings.png)
+  ![default https settings](../images/kb/default-settings/default-https-settings.png)
 
->important The default settings are resetting Fiddler to its initial state, thus meaning that the secure traffic won't be captured (until the **Capture HTTPS** is checked)
+* Connection settings
 
-## Connection Settings
+  ![default Connection settings](../images/kb/default-settings/default-connection-settings.png)
 
-![default Connection settings](../images/kb/default-settings/default-connection-settings.png)
+* Gateway settings
 
-## Gateway Settings
+  ![default Gateway settings](../images/kb/default-settings/default-gateway-settings.png)
 
-![default Gateway settings](../images/kb/default-settings/default-gateway-settings.png)
+* Composer settings
 
-## Composer Settings
-
-![default Composer settings](../images/kb/default-settings/default-composer-settings.png)
+  ![default Composer settings](../images/kb/default-settings/default-composer-settings.png)
