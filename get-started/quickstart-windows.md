@@ -1,6 +1,6 @@
 ---
 title: First Steps on Windows
-description: "Install and configure Fiddler Everywhere on Windows and learn how to capture, inspect, and modify the HTTPS traffic, create API requests, mock server responses, and collaborate to analyze data more effectively."
+description: "Install and configure Fiddler Everywhere on Windows and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
 slug: first_steps_windows
 position: 1
 ---
@@ -11,8 +11,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 
 * First, you will go through the installation and configuration steps.
 * Next, you'll create a Fiddler account so that you can move on to effectively using the web-debugging tool.
-* Then, you will learn how to capture, inspect, and modify traffic as well as share the sessions with collaborators.
-* Finally, you will deep-dive into the HTTP proxy client and create API requests with the API Composer and mock server responses.
+* Finally, you will learn how to capture, inspect, and modify traffic.
 
 ## Prerequisites
 
