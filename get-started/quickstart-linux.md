@@ -11,7 +11,8 @@ This tutorial describes how to install and start using Fiddler Everywhere on Lin
 
 * First, you will go through the installation and configuration steps.
 * Next, you'll create a Fiddler account so that you can move on to effectively using the web-debugging tool.
-* Finally, you will learn how to capture, inspect, and modify traffic.
+* Then, you will switch the default Light theme with the Dark one.
+* Finally, you will see how to capture, inspect, and modify traffic.
 
 ## Prerequisites
 
@@ -102,6 +103,10 @@ As the Linux distributions use different security features and approaches for tr
       ![Add Fiddler certificate](../images/configuration/cert_ubunto_004.png)
 
 1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
+
+## Styling the Tool
+
+Now let's add more elegance to Fiddler Everywhere and change its default Light theme with the Dark one&mdash;just go to the **Themes** menu, select the Dark theme, and click **Save**. That's it!
 
 ## Fiddling with the Traffic
 
