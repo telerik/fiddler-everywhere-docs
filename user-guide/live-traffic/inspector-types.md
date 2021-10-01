@@ -1,6 +1,6 @@
 ---
 title: Inspectors
-description: "Learn how to use the Inspector tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
+description: "Learn how to use the Inspector tab and utilize the data from the inspector types in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: inspector-types
 publish: true
 position: 20
@@ -9,7 +9,7 @@ previous_url: /user-guide/live-traffic/inspectors/request-inspector
 
 # Inspectors Tab
 
-The Fiddler Everywhere **Inspectors** tab renders the **Request** and the **Response** inspectors, which display the request and the response information for the sessions that are selected from the **Live Traffic** list.
+The Fiddler Everywhere **Inspectors** tab renders the **Request** and the **Response** sections, which display the request and the response information for the sessions that are selected from the **Live Traffic** list.
 
 The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide a number of features among which:
 
@@ -27,12 +27,12 @@ To switch the loaded name of the inspector, click the desired inspector name&mda
 
 The **Inspectors** provide the following types of inspecting tools that enable you to inspect different parts of the requests and responses:
 
-* [Headers inspector]
-* [Params inspector]
-* [Cookies inspector]
-* [Raw inspector]
-* [Preview inspector]
-* [Body inspector]
+* [Headers inspector](#headers-inspector)
+* [Params inspector](#params-inspector)
+* [Cookies inspector](#cookies-inspector)
+* [Raw inspector](#raw-inspector)
+* [Preview inspector](#preview-inspector)
+* [Body inspector](#body-inspector)
 
 ## Headers Inspector
 
