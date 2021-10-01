@@ -1,6 +1,6 @@
 ---
 title: Themes
-description: "Style the appearance of Fiddler Everywhere by changing the default theme with any of the available themes."
+description: "Style the appearance of Fiddler Everywhere by selecting an available theme of your choice."
 slug: themes-settings-submenu
 publish: true
 position: 60
