@@ -1,5 +1,6 @@
 ---
 title: Main Menu
+description: "Learn how to use the Main Manu tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 previous_url: /user-guide/file-menu
 slug: file-menu
 tags: main menu, Fiddler's menu, Fiddler Everywhere file menu, Fiddler Everywhere help menu

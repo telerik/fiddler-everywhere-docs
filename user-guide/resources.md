@@ -1,5 +1,6 @@
 ---
 title: Welcome Page
+description: "Learn how to use the Welcome page in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: my-resources-section
 tags: Fiddler resources, Fiddler Everywhere interactive tutorials, Fiddler Everywhere blogs, Fiddler Everywhere webinars
 publish: true

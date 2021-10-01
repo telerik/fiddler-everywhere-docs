@@ -1,5 +1,6 @@
 ---
 title: Composer
+description: "Learn how to use the Composer tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: composer-tab
 tags: create API request, Fiddler's Composer, headers, body, GET, HTTP request methods, HTTP response
 publish: true
@@ -12,7 +13,7 @@ The __Composer__ tab enables you to manually create, edit, send, and test HTTP a
 
 The __Composer__ contains several major sections to construct a request, to observe the response, and to save, replay and share previously composed requests.
 
-1. The top section contains a drop-down for: 
+1. The top section contains a drop-down for:
     - A [__HTTP Methods__](#http-methods) to specify the request method (for exmaple, GET, POST, etc.)
     - A [__URL field__](#url-field) to enter the endpoint URL.
     - A drop-down to select the used [__HTTP version__](#http-version-selection). The default version is **HTTP 1.1**.
@@ -144,6 +145,3 @@ A session previously captured in the [Live Traffic]({%slug web-sessions-list%}) 
 2. The session opens in a new Composer window and then you can change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
 
     ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
-
-
-   

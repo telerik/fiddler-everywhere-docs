@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Basic UI instructions for working with the Overview tab in the Fiddler Everywhere application
+description: "Learn how to use the Overview tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: overview-tab
 publish: true
 position: 15
@@ -25,22 +25,22 @@ The **Overview** widgets are dynamically changing depending on the number of sel
 
 ## Timings
 
-The **Timings** widget provides a visual representation of the time needed to execute a single session or select multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart of the request and response timings. 
+The **Timings** widget provides a visual representation of the time needed to execute a single session or select multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart of the request and response timings.
 
 The URL maximum length is 30 symbols. Use the three dots at the end of the wrapped URL to visualize a tooltip with the entire session URL. The timings chart splits into two main parts - the blue section of the chart shows timings related to the Request, and the orange section of the charts shows timings related to the Response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
 
 **_Tracked Request Timings_**
 
-- **Gateway Determination Time** - The time (in milliseconds) required to determine the gateway. 
+- **Gateway Determination Time** - The time (in milliseconds) required to determine the gateway.
     **_Tip:_** All values over 1000ms are unusual and suggest an issue.
 
-- **DNS Time** - The time (in milliseconds) required for a DNS lookup. 
+- **DNS Time** - The time (in milliseconds) required for a DNS lookup.
     **_Tip:_** Average DNS lookup times are between 20 and 120ms.
 
-- **TCP Connect Time** - The time (in milliseconds) required to establish a TCP/IP connection. 
+- **TCP Connect Time** - The time (in milliseconds) required to establish a TCP/IP connection.
     **_Tip:_** A value around 21000ms suggests that the target is unreachable, and the Windows OS took 21 seconds to confirm the issue.
 
-- **HTTPS Handshake Time** - The time (in milliseconds) required to finish an HTTPS handshake. 
+- **HTTPS Handshake Time** - The time (in milliseconds) required to finish an HTTPS handshake.
     **_Tip:_** While capturing HTTPS traffic, Fiddler Everywhere acts as a man-in-the-middle, which means that you will see what the client and server are using to talk to Fiddler Everywhere. This can be different than what they’d use if the Fiddler Everywhere proxy were not in the middle. To see the CONNECT tunnels without the Fiddler Everywhere interference, you have to disable the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}#capture-https-traffic).
 
 - **Client Connected** - The time (in milliseconds) between that and the previous event. The timestamp that indicates when the event happened is available in the [Request Details](#request-details) widget.
@@ -79,13 +79,13 @@ Under the list of session lines, you will find two footers called ** Request** (
 
 ## Sizes
 
-The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart that shows sizes of the headers and body of Request and Response, each included in a single chart. 
+The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each session is listed on a separate line and is presented with a URL (corresponds to the URL column in [the Live Traffic list]({%slug web-sessions-list%}#live-traffic-list)) and a chart that shows sizes of the headers and body of Request and Response, each included in a single chart.
 
 The URL maximum length is 30 symbols. Use the three dots at the end of the wrapped URL to visualize a tooltip with the entire session URL.
 
 **_Tracked session sizes_**
 
-- **Request Headers** - The size of all request headers in bytes or kilobytes. 
+- **Request Headers** - The size of all request headers in bytes or kilobytes.
 
 - **Request Body** - The size of all request bodies in bytes or kilobytes.
 
@@ -133,13 +133,13 @@ The **Statistics** widget contains a table with structured information for multi
 
 ## Request Details
 
-The Request Details widget contains a table with the following information. 
+The Request Details widget contains a table with the following information.
 
 - **URL** - The URL address of the selected session.
 
 - **Method** - The HTTP request method
 
-- **Client IP** - Indicates the client IP that sent this Request. 
+- **Client IP** - Indicates the client IP that sent this Request.
     **_Tip:_** Most of the time, the IP will show the loopback address (`0.0.0.0`), but it will be different if multiple computers on the network are pointed to a single Fiddler Everywhere instance.
 
 - **Remote IP** - Indicates the IP address of the server used for this Request.

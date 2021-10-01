@@ -1,6 +1,6 @@
 ---
 title: Live Traffic
-description: UI instructions for working with the Live Traffic tab in the Fiddler Everywhere application
+description: "Learn how to use the Live Traffic tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: web-sessions-list
 publish: true
 position: 10
@@ -42,14 +42,14 @@ By default, Fiddler Everywhere uses **buffering mode**, which means that the res
 1. Click the **Stream** button to toggle between the streaming and buffering modes.
 
     Streaming mode is useful for low-level network timing scenarios (for example, by design, some browsers will parse partially downloaded HTML. That will start downloading external resources in parallel before the remote server has finished delivering the content).
-    
+
     ![Buffering mode vs Streaming Mode](../../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
 
     Streaming mode is also useful Ifs where a site delivers audio or video streams. These kinds of never-ending streams can't be buffered by Fiddler Everywhere.
 
 ### Advanced Filters
 
-Use the **Advanced Filters** to apply filters based on the Request and Response headers. Only sessions that are covering the filter criteria will appear in the Live Traffic list. 
+Use the **Advanced Filters** to apply filters based on the Request and Response headers. Only sessions that are covering the filter criteria will appear in the Live Traffic list.
 
 1. Click the filter button to open the advanced filters popup windows.
 
@@ -192,7 +192,7 @@ Create a custom sorting order by clicking the desired column. For example, click
 
 ### Filter Options
 
-Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter** and **Columns** submenus. 
+Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter** and **Columns** submenus.
 
 Use the **Filter** submenu to apply filters for the currently selected column only (for example, filter all the traffic by _host_ name or by a specific _status code_). Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or use the global [**Clear All Filters** button](#clear-all-filters).
 
@@ -257,7 +257,7 @@ The context menu option **Export** allows you to export the captured trafic in d
 
 ### Remove
 
-Use the **Remove** context menu options to delete sessions from your **Live Traffic** list. 
+Use the **Remove** context menu options to delete sessions from your **Live Traffic** list.
 
 - **Selected sessions** - Removes all selected sessions. Keyboard shortcut: **Cmd** + **Back** (Mac), **Del** (Windows).
 - **Unselected sessions** - Removes all unselected sessions. Keyboard shortcut: **Shift** + **Cmd** + **Back** (Mac), **Shift** + **Del** (Windows).
@@ -265,10 +265,10 @@ Use the **Remove** context menu options to delete sessions from your **Live Traf
 
 ### Comment
 
-Use the **Comment** context menu option to add comments for the associated sessions. 
+Use the **Comment** context menu option to add comments for the associated sessions.
 
 1. Select the sessions, open the context menu, and click the **Comment** option - keyboard shortcut: **M**.
-1. A **Comment** dialog appears. Enter the comment and click **Ok**. 
+1. A **Comment** dialog appears. Enter the comment and click **Ok**.
 1. The text is added to the comment field for the selected sessions.
 
 ### Mark

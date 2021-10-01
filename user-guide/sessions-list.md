@@ -1,5 +1,6 @@
 ---
 title: Sessions List
+description: "Learn how to use the Sessions list tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-sessions-tab
 tags: Fiddler sessions, saved sessions, sessions list, Fiddler sessions tab
 publish: true
@@ -15,7 +16,7 @@ Fiddler Everywhere provides the option to save. modify, inspect and share previo
 
 ## Working with Saved Sessions
 
-Previously saved sessions can be selected, inspected, modified, and shared with collaborators. The saved session entries can be saved locally or in the cloud. Sharing a session with a collaborator is done automatically through uploading the saved session entry to the cloud. 
+Previously saved sessions can be selected, inspected, modified, and shared with collaborators. The saved session entries can be saved locally or in the cloud. Sharing a session with a collaborator is done automatically through uploading the saved session entry to the cloud.
 
 A list of some simple actions that can be applied to a saved session entry:
 
@@ -61,7 +62,7 @@ To share captured traffic with other collaborators, you must first save the sess
 The UI option appears only if the session entry is stored in the cloud and shared. Click the **Manage Users** to prompt a window to appear that allows you to manage the list of users that have access to the shared session.
 
 ![Manage Users](../images/sessions/sessions-shared-manage-users.png)
- 
+
 
 ## Delete
 
@@ -96,13 +97,13 @@ This option removes the session from the **Sessions** list. Keyboard shortcut: *
 
 ### Manage Users
 
-This option allows you to manage the users with which the session is being shared. Active only for the session owner. 
+This option allows you to manage the users with which the session is being shared. Active only for the session owner.
 
 >important The option is available only for session entries **stored in the cloud**.
 
 ### Save In The Cloud
 
-This option allows you to manage the users with which the session is being shared. Active only for the session owner. 
+This option allows you to manage the users with which the session is being shared. Active only for the session owner.
 
 >important The option is available only for session entries that are **locally stored**.
 
@@ -117,4 +118,3 @@ The **Import Session** option provides option to load sessions saved in various 
 The **Shared Session** button loads a window with the account history of previously shared session entries. Deleted session entries can be restored from here while using the **Download** option.
 
 ![Saved sessions import](../images/sessions/saved-sessions-shared-list.png)
-

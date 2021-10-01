@@ -1,5 +1,6 @@
 ---
 title: Requests List
+description: "Learn how to use the Requests list tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-requests-tab
 tags: Fiddler Evwerywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
 publish: true
@@ -17,7 +18,7 @@ This article describes how to organize and modify existing requests. To learn mo
 
 The **Requests** list is organized into **collections**. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double-click a selected request.
 
->tip You can [**Rename**](#rename) a collection, [**Delete**](#delete) a collection, or make a [**New Folder**](#new-folder) using the context menu. 
+>tip You can [**Rename**](#rename) a collection, [**Delete**](#delete) a collection, or make a [**New Folder**](#new-folder) using the context menu.
 
 ## Requests Menu
 
@@ -49,11 +50,11 @@ To share a collection, click the __Share__ icon, then enter the email addresses 
 - You can share a collection only if you are the collection owner.
 - You can share only collection folders on the root level of the **Requests** list. You cannot share individual sub-folders.  
 
-### Delete 
+### Delete
 
 The delete option will remove a selected collection or a specific request from the **Requests** list.
 
-Follow these steps to delete a collection: 
+Follow these steps to delete a collection:
 
 1. Click the **delete** icon of the folder.
 1. Click __Delete__ in the prompt window to confirm the deletion.
@@ -62,9 +63,9 @@ Follow these steps to delete a collection:
 
 >tip You can also delete a specific sub-folder or a particular request using the **delete** option for the selected entry.
 
-## Collection Context Menu 
+## Collection Context Menu
 
-Each collection has options accessible through a context menu. 
+Each collection has options accessible through a context menu.
 
 ![Requests Collection Context Menu](../images/requests/requests-collection-context.png)
 
@@ -84,8 +85,8 @@ Each  __request__ has options to either __Rename__ or __Delete__ through its con
 
 ![Requests context menu](../images/requests/requests-context-menu.png)
 
-- **Rename**: Renames the selected request. _Keyboard shortcut: __F2__ (Mac), __F2__ (Windows)._ 
+- **Rename**: Renames the selected request. _Keyboard shortcut: __F2__ (Mac), __F2__ (Windows)._
 
-- **Delete**: Deletes the selected request from the collection. _Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows)._ 
+- **Delete**: Deletes the selected request from the collection. _Keyboard shortcut: __CMD + Back__ (Mac), __Del__ (Windows)._
 
 >tip Each saved request can be updated by inputting the modification (for example, in the Headers) and pressing the __Save__ button. If you want to save a new instance of an already saved request, use __Save as__ in the drop-down (available only for already saved requests).

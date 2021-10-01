@@ -1,6 +1,6 @@
 ---
 title: Rules
-description: UI instructions for working with the Rules tab in the Fiddler Everywhere application
+description: "Learn how to use the Rules tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: rules-general
 publish: true
 position: 30
@@ -56,7 +56,7 @@ The main toolbar of the **Rules** comes with the following functionalities:
 
 ## Rule Builder
 
-The **Rule Builder** interface enables creating and editing rules. For each new rule, you need to enter a **condition** (previously known as **match rule**) and an **action** (previously known as **action string**), and Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed. 
+The **Rule Builder** interface enables creating and editing rules. For each new rule, you need to enter a **condition** (previously known as **match rule**) and an **action** (previously known as **action string**), and Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
 
 ![Rule Builder Conditions](../../images/livetraffic/rb/rules-re-conditions.png)
 
