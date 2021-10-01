@@ -19,7 +19,7 @@ To capture traffic with Fiddler Everywhere:
 
 2. Switch **Live Traffic** to **Capturing**. Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug web-sessions-list%}).
 
-    ![Enabling Live Traffic](../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
+    ![Enabling Live Traffic](../../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
 
 >tip When you switch **Live Traffic** to **Capturing**, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request and **Live Traffic** will be populated. The **Result** field for that arbitrary web address will return **200** which means that your first request is successfully captured with Fiddler Everywhere.
 

@@ -21,7 +21,6 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 - Make sure you have 300MB+ free disk space.
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
-
     ```
         https://*.getfiddler.com/
         https://*.amazonaws.com/
@@ -61,6 +60,7 @@ Now let's add more elegance to Fiddler Everywhere and change its default Light t
 Let's now continue with capturing and inspecting some HTTPS traffic and, then, with modifying a captured session.
 
 1. Switch **Live Traffic** to **Capturing** and the **Live Traffic** list will immediately start capturing and displaying your incoming and outgoing traffic.
+1. Inspect each session's request and response data through the **Inspectors** and use the **Overview** to extract more details and statistical data.
 1. Now you'll extract a captured session&mdash;go to the **Live Traffic** tab and select a request/response entry from under the **sessions list**. ....
 1. Let's modify that session! Right-click the session of your request to open the context menu of the entry. From there, select **Edit in Composer**. When the session opens in a new window, modify its headers&mdash;or example, change ... to ...
 

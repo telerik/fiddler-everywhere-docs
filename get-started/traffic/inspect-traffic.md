@@ -15,11 +15,11 @@ To extract information about the captured sessions, go to the [**Live Traffic**]
 
 To open structured information about the session timings, sizes, request, and response details in the [**Overview** tab]({%slug overview-tab%}), single-click a session or select multiple sessions.
 
-![Live Traffic and session overview](../images/livetraffic/websessions/websessions-list-all-overview.png)
+![Live Traffic and session overview](../../images/livetraffic/websessions/websessions-list-all-overview.png)
 
 To load [the request and response inspectors]({%slug inspector-types%}), double-click a session. The [**Inspectors** tab]({%slug inspector-types%}) is a powerful tool that allows you to deep-dive in each session so you and your teammates can debug it or find performance bottlenecks.
 
-![Live Traffic and Inspectors](../images/livetraffic/websessions/websessions-list-all.png)
+![Live Traffic and Inspectors](../../images/livetraffic/websessions/websessions-list-all.png)
 
 **Save** a selected session or multiple selected sessions [through the context menu]({%slug web-sessions-list%}#save), or, alternatively, use a keyboard shortcut. Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}) from which they can be reloaded or shared with collaborators.
 

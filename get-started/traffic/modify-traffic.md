@@ -19,11 +19,11 @@ To load and modify a session through the **Composer**:
 
 2. Select the desired session and right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing the **E** key.
 
-    ![Edit in Composer](../images/composer/edit-in-composer.png)
+    ![Edit in Composer](../../images/composer/edit-in-composer.png)
 
 3. The session opens in a new **Composer** window and then you can change the desired values. For example, change the data payload, modify the headers, test the authentication, and so on.
 
-    ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
+    ![Change the loaded request values in new Composer windows](../../images/composer/edit-in-composer-002.png)
 
     >tip To modify a header, select it and change the needed key-value pair. You can add a new header by using the top key-value row. By default, the top key-value row is empty and can receive new values. Once you have modified or added a new header, click the confirmation button (a tick) to the right to apply the changes.
 

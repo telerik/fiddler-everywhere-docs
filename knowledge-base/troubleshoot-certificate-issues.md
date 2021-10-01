@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot macOS Trust Certificate Issues
-description: "Learn how to troubleshoot issues related to the trusting of the root certificate of Fiddler Everywhere and fix the "Fiddler root certificate NOT trusted successfully" error."
+description: "Learn how to troubleshoot issues related to the trusting of the root certificate of Fiddler Everywhere and fix the 'Fiddler root certificate NOT trusted successfully' error."
 type: how-to
 slug: troubleshoot-certificate-error
 publish: true
