@@ -19,10 +19,10 @@ navigation:
         title: User Interface
         position: 20
     user-guide/settings:
-        title: Settings
+        title: Menus
         position: 20
     user-guide/live-traffic:
-        title: Live Traffic
+        title: Live Traffic Tabs
         position: 30
     knowledge-base:
         title: Knowledge Base
