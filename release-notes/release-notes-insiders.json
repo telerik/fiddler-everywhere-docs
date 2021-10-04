@@ -1,5 +1,65 @@
 [
     {
+        "version": "2.1.2-insiders",
+        "title": "Fiddler Everywhere v2.1.2",
+        "date": "October 04, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Rules are crashing and failing to load after specific rule is added"
+                    },
+                    {
+                        "title": "Complete Profile form allows setting mandatory fields with space(s) only"
+                    },
+                    {
+                        "title": "Users with only active JAM license cannot start Fiddler Everywhere trial in the product"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "version": "2.1.1-insiders",
+        "title": "Fiddler Everywhere v2.1.1",
+        "date": "September 20, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Reordering columns in the Live Traffic grid leads to error"
+                    },
+                    {
+                        "title": "Shared rules with response file are not working"
+                    },
+                    {
+                        "title": "Enter key does not submit the Complete Profile form"
+                    },
+                    {
+                        "title": "Unable to use rules with non-English symbols"
+                    },
+                    {
+                        "title": "Background is missing in the page shown after Sign in with Google is clicked"
+                    },
+                    {
+                        "title": "Application becomes unresponsive in some cases after closing My Resources (ApplicationRef.tick error in logs)"
+                    },
+                    {
+                        "title": "Unable to get back columns if you hide all of them"
+                    },
+                    {
+                        "title": "Clicking Terms of service link in EULA leads to blank page and no option to return"
+                    },
+                    {
+                        "title": "Sign in loader is displaced and jumps before disappearing"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.1.0-insiders",
         "title": "Fiddler Everywhere v2.1.0",
         "date": "September 09, 2021",

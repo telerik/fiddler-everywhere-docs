@@ -61,7 +61,11 @@ To set the advanced filters:
 
     ![Advanced filters popup](../../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
 
-Alternatively, you can apply filters through the **more** option on each **Live Traffic** column&mdash;for example, apply a filter for the **Host** column. The column filtering allows you to use the **AND** and **OR** logical operators for two lines, and multiple comparison rules&mdash;for example, **Is equal to**, **contains**, **ends with**, and more.
+
+Currently, the **Advanced Filters** entries are using the **AND** logical operator. Each value is complying with the **EXACT** match.
+
+>tip Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The column filtering allows you to use the AND and OR logical operators (for two lines) and multiple comparison rules (for example, **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
+
 
 ### Clearing All Filters
 
@@ -199,7 +203,18 @@ The **Filter** submenu enables you to apply filters to the currently selected co
 
 ![Filter context submenu](../../images/livetraffic/columns/dots-filter.png)
 
-The **Columns** submenu enables you to select the column which will be visible in the **Live Traffic** list. By default, all columns are visible. For more information on each column type, refer to the [KB article on viewing the web session summary]({%slug how-to-view-web-session-summary%}).
+
+Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
+- **URL**
+- **Result**
+- **Method**
+- **Process**
+- **Remote IP**
+- **Body Size**
+- **Comments**
+
+Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
+
 
 ![Columns context submenu](../../images/livetraffic/columns/dots-columns.png)
 

@@ -2,7 +2,6 @@
 title: Composer Tab
 description: "Learn how to use the Composer tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: composer-tab
-tags: create API request, Fiddler's Composer, headers, body, GET, HTTP request methods, HTTP response
 publish: true
 position: 60
 ---
