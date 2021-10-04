@@ -4,12 +4,12 @@ description: "Learn how to use the Requests list tab in the Fiddler Everywhere w
 slug: saved-requests-tab
 tags: Fiddler Everywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
 publish: true
-position: 60
+position: 70
 ---
 
 # Requests List Section
 
-This article describes how to organize and modify existing requests, which are listed in the **Requests** section.
+The **Requests List** section enables you to organize and modify existing requests, which are listed in it.
 
 For more information about building and sending HTTP and HTTPS requests, refer to the article on the [**Composer** tab]({% slug composer-tab %}).
 

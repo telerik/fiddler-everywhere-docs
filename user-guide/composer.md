@@ -4,7 +4,7 @@ description: "Learn how to use the Composer tab in the Fiddler Everywhere web-de
 slug: composer-tab
 tags: create API request, Fiddler's Composer, headers, body, GET, HTTP request methods, HTTP response
 publish: true
-position: 50
+position: 60
 ---
 
 # Composer Tab
