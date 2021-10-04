@@ -8,7 +8,7 @@ position: 50
 
 # Composer Menu
 
-The __Composer__ sub-menu provides an option for setting the behavior of composed requests, which return a `3xx` (redirects) status code.
+The **Composer** sub-menu provides an option for setting the behavior of composed requests, which return a `3xx` (redirects) status code.
 
 The **Follow Redirects Automatically** checkbox allows you to set a default behavior for requests made by the Composer, which return the `3xx` status codes for indicating redirects. By enabling this option, the **Composer** will display only the response from the last redirect. You will still be able to inspect each redirected response in the **Live Traffic** tab.
 

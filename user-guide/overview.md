@@ -1,9 +1,10 @@
 ---
-title: Overview
+title: Overview Tab
 description: "Learn how to use the Overview tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: overview-tab
 publish: true
-position: 15
+position: 36
+previous_url: /user-guide/live-traffic/overview
 ---
 
 # Overview Tab
@@ -24,7 +25,7 @@ The **Timings** widget provides a visual representation of the time that is need
 
 The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL, click the three dots at the end of the wrapped URL. The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the request, and the orange section of the charts shows timings related to the response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
 
-![Timings widget](../../images/overview/overview-all.png)
+![Timings widget](../images/overview/overview-all.png)
 
 **Tracked Request Timings** provides the following options:
 
@@ -64,7 +65,7 @@ The **Tracked Response Timings** provides the following options:
 
 Under the list of session lines, you will find the **Request** (light blue) and **Response** (orange) footers with total timings in milliseconds (**ms**) or seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the **Live Traffic** list, the displayed time in the **Request** and **Response** footers is the total time taken for all five selected requests or responses.
 
-![Timings widget](../../images/overview/overview-timings.png)
+![Timings widget](../images/overview/overview-timings.png)
 
 ## Sizes
 
@@ -85,7 +86,7 @@ The maximum length of the URL is 30 symbols. To visualize a tooltip with the ent
 
 Under the list of session lines, you will find the **Request Headers** (dark blue), **Request Body** (light blue), **Response Headers** (red), and **Response Body** (orange) footers with the total size in kilobytes (**kB**) or bytes (**B**) for all listed sessions.
 
-![Sizes widget](../../images/overview/overview-sizes.png)
+![Sizes widget](../images/overview/overview-sizes.png)
 
 ## Statistics
 

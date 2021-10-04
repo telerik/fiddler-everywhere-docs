@@ -1,13 +1,13 @@
 ---
-title: Sessions List Section
-description: "Learn how to use the Sessions list tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
+title: Sessions Section
+description: "Learn how to use the Sessions section in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-sessions-tab
 tags: Fiddler sessions, saved sessions, sessions list, Fiddler sessions tab
 publish: true
 position: 40
 ---
 
-# Sessions List Section
+# Sessions Section
 
 Fiddler Everywhere provides the option to save, modify, inspect, and share previously captured traffic.
 
@@ -40,9 +40,7 @@ Fiddler Everywhere provides UI solutions for sharing and collaboration.
 To share a selected session:
 
 1. Select a saved session entry from the **Sessions** list.
-
 2. Click the **Share** button to the right of the entry name.
-
 3. When the **Share Sessions** prompt window appears, enter a valid email (mandatory) and notes (optional). Click **Share**.
 
 ### Sharing Loaded Saved Session
@@ -50,11 +48,9 @@ To share a selected session:
 To share a loaded saved session:
 
 1. Double-click a saved session entry from the **Sessions** list.
-
 2. The session entry opens in a new tab. Click the **Share** button from the toolbar.
 
     ![Sessions list](../images/sessions/saved-sessions-reshare.png)
-
 3. The **Share Sessions** prompt window appears. Enter a valid email (mandatory) and notes (optional). Click **Share**.
 
 ## Managing Users

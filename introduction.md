@@ -59,13 +59,13 @@ Fiddler Everywhere offers a 30-day trial with a full-featured version of the too
 To use Fiddler Everywhere commercially, you need to purchase a license. The terms of use are fully described in the [Fiddler Everywhere License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere).
 
 * For more information about the available subscription plans, go to the [Fiddler Everywhere purchase page](https://www.telerik.com/purchase/fiddler).
-* For more information on the available commercial and free support channels, refer to the article on the [available Fiddler Everywhere support options]({% slug support-page %}).
+* For more information on the available commercial and free support channels, refer to the article on the [available Fiddler Everywhere support options]({%slug support%}).
 
 ## Suggested Links
 
 * [Before You Start: All Things Fiddler (Telerik Blog Post)](https://www.telerik.com/blogs/fiddler)
 * [Getting Started with Fiddler Everywhere (Video Tutorials)](https://www.telerik.com/videos/fiddler/tag/fiddler-everywhere)
 * [Getting Started with Fiddler Everywhere (Webinars on Demand)](https://www.telerik.com/webinars/fiddler-everywhere)
-* [Quickstart on Windows (Step-by-Step Guide)]({% slug ... %})
-* [Quickstart on macOS (Step-by-Step Guide)]({% slug ... %})
-* [Quickstart on Linux (Step-by-Step Guide)]({% slug ... %})
+* [Quickstart on Windows (Step-by-Step Guide)]({% slug first_steps_windows %})
+* [Quickstart on macOS (Step-by-Step Guide)]({% slug first_steps_macos %})
+* [Quickstart on Linux (Step-by-Step Guide)]({% slug first_steps_linux %})

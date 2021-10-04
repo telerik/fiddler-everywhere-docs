@@ -1,19 +1,19 @@
 ---
-title: Requests List Section
-description: "Learn how to use the Requests list tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
+title: Requests Section
+description: "Learn how to use the Requests section in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-requests-tab
 tags: Fiddler Everywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
 publish: true
 position: 70
 ---
 
-# Requests List Section
+# Requests Section
 
-The **Requests List** section enables you to organize and modify existing requests, which are listed in it.
+The **Requests** section enables you to organize and modify existing requests, which are listed in it.
 
 For more information about building and sending HTTP and HTTPS requests, refer to the article on the [**Composer** tab]({% slug composer-tab %}).
 
-When you save a request with the **Composer** tab, the request is added to a collection in the **Requests** list, which provides options for saving, modifying, executing, and sharing previously composed requests. T
+When you save a request with the **Composer** tab, the request is added to a collection in the **Requests** list, which provides options for saving, modifying, executing, and sharing previously composed requests.
 
 The **Requests** list is organized into collections. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double-click a selected request. To rename or delete a collection, or make a new folder, use the [context menu options](#).
 
@@ -27,7 +27,7 @@ The **Requests menu** displays the following buttons:
 - **Shared Collections**&mdash;Controls who has access to the shared collections.
 - **Create New Collection**&mdash;Creates a new collection folder.
 
-![Requests menu options](../images/requests/requests-main-menu.png)
+    ![Requests menu options](../images/requests/requests-main-menu.png)
 
 ## Collection Menu
 
@@ -38,7 +38,7 @@ The **Collection menu** displays options for managing your currently selected re
 - **Share Collection**&mdash;Opens the sharing prompt and provide users with shared access rights.
 - **Delete**&mdash;Deletes the selected collection completely. This action will also remove the collection for everyone with whom you've shared the collection.
 
-![Requests collection options](../images/requests/requests-collection-menu.png)
+    ![Requests collection options](../images/requests/requests-collection-menu.png)
 
 ### Sharing a Collection
 
@@ -47,7 +47,7 @@ To share a collection, click the __Share__ icon. Then, enter the email addresses
 - You can share a collection only if you are the collection owner.
 - You can share only collection folders on the root level of the **Requests** list. You cannot share individual sub-folders.  
 
-![Share collection popup](../images/requests/share-requests-popup.png)
+    ![Share collection popup](../images/requests/share-requests-popup.png)
 
 ### Deleting a Collection
 
@@ -57,8 +57,6 @@ To remove a selected collection or a specific request from the **Requests** list
 1. Click __Delete__ in the prompt window to confirm the deletion.
 
 You can also delete a specific sub-folder or a particular request by using the **delete** option for the selected entry.
-
-![Delete Requests Folder](../images/requests/delete-requests-collection.png)
 
 ## Collections Context Menu
 
@@ -85,4 +83,4 @@ You can update each saved request by inputting the modification (for example, in
 - **Rename**&mdash;Renames the selected request; can be accessed through the keyboard by pressing `F2` (on Mac and Windows).
 - **Delete**&mdash;Deletes the selected request from the collection; can be accessed through the keyboard by pressing `CMD`+`Back` (on Mac), or `Del` (on Windows).
 
-![Requests context menu](../images/requests/requests-context-menu.png)
+    ![Requests context menu](../images/requests/requests-context-menu.png)

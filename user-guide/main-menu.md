@@ -20,15 +20,10 @@ The main menu in Fiddler Everywhere is located at the top and consists of a set 
 The **View** menu provides options for changing the overall Fiddler Everywhere UI size by zooming in or out.
 
 - The **Preferences** option enables you to load the Fiddler Everywhere settings window; can be accessed with the keyboard by pressing __Cmd__ (on Mac), or __Ctrl__ and **,** (on Windows).
-
 - The **Actual Size** option can be accessed with the keyboard by pressing __Cmd__ and __0__ (on Mac), or __Ctrl__ and __0__ (on Windows).
-
 - The **Zoom In** option can be accessed with the keyboard by pressing __Cmd__ and __+__ (on Mac), or __Ctrl__ and __+__ (on Windows).
-
 - The **Zoom Out** option can be accessed with the keyboard by pressing __Cmd__ and __-__ (on Mac), or __Ctrl__ and __-__ (on Windows).
-
 - The **Select Previous Tab** option can be accessed with the keyboard by pressing __Ctrl__, __Shift__ and __Tab__ (on Mac), or __Ctrl__, __Shift__, and __Tab__ (on Windows).
-
 - The **Select Next Tab** option can be accessed with the keyboard by pressing __Ctrl__ and __Tab__ (on Mac), or __Ctrl__ and __Tab__ (on Windows).
 
 ![View menu with zoom options](../images/menu/main-menu-view.png)
@@ -38,19 +33,11 @@ The **View** menu provides options for changing the overall Fiddler Everywhere U
 The **Help** menu provides options for a version update and information, fast access to forums, documentation, and support channel.
 
 - **Release notes**&mdash;Opens a screen that lists the Fiddler Everywhere release notes.
-
 - **Check for Updates**&mdash;Contacts a web service to determine whether this is the latest version of Fiddler Everywhere. If not, you can choose to install the latest version immediately or when next starting Fiddler Everywhere.
-
 - **Forums**&mdash;Opens a new browser tab with the [Fiddler Everywhere **Forums** portal](https://community.getfiddler.com/support/discussions) where you can search for use cases, report issues and bugs, and request features.
-
 - **Documentation**&mdash;Opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
-
 - **Open Application Logs Folder**&mdash;Opens the local folder that contains the Fiddler Everywhere log files. For more information, refer to the article on [using the log files for troubleshooting your local setup]({%slug fiddler-log-files%}).
-
 - **About**&mdash;Opens a dialog window that provides information about the current version and build date of Fiddler Everywhere.
-
-    ![About dialog](../images/menu/menu-help-about.png)
-
 - **Contact Support**&mdash;Available for both the trial and [commercial]({%slug introduction%}#key-features) versions. The support option uses the default email client of the operating system.
 
 ![Help Menu](../images/menu/menu-help-update.png)
@@ -63,23 +50,17 @@ The **Manage Subscriptions** window redirects to the [Fiddler dashboard site]({%
 
 The **Feedback** option enables you to send recommendations and feedback on the Fiddler Everywhere client application.
 
-![Share Feedback popup window](../images/menu/share-feedback.png)
-
 ## Links
 
 The **Links** menu provides the following useful fast links:
 
 * **Forums** links to the Fiddler Everywhere community forums at https://community.getfiddler.com/support/discussions.
 - **Documentation** links to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/.
-- (Available for trial and commercial users only) **Contact Support** links to posting a support ticket to the Fiddler Everywhere support team. For more information, refer to the article on the [support options provided by Fiddler Everywhere]({% slug introduction %}#support-options).
-
-![Useful links for Fiddler Everywhere](../images/menu/menu-all-links.png)
+- **Contact Support** links to posting a support ticket to the Fiddler Everywhere support team. For more information, refer to the article on the [support options provided by Fiddler Everywhere]({% slug introduction %}#support-options).
 
 ## Notifications
 
 The **Notifications** button shows a drop-down list that contains the most recently received notifications. The Fiddler Everywhere application will send and receive notifications upon using collaboration functionalities such as sharing session logs, composer collections, and rulesets.
-
-![Example notifications in Fiddler Everywhere](../images/menu/menu-notifications.png)
 
 ## Settings
 
@@ -92,6 +73,8 @@ For more information, refer to the following documentation articles about each *
 - [**Gateway** menu]({%slug gateway-submenu%})
 - [**Privacy** menu]({%slug privacy-submenu%})
 - [**Composer** menu]({%slug composer-settings-submenu%})
+- [**Rules** menu]({%slug rules-settings-submenu%})
+- [**Themes** menu]({%slug themes-settings-submenu%})
 
 ## Sign Out
 

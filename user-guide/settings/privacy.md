@@ -8,11 +8,11 @@ position: 40
 
 # Privacy Menu
 
-The __Privacy__ sub-menu provides options to stop receiving emails from Progress and its partners as well as to request the deletion of your Fiddler Everywhere associated account.
+The **Privacy** sub-menu provides options to stop receiving emails from Progress and its partners as well as to request the deletion of your Fiddler Everywhere associated account.
 
-* __Unsubscribe__&mdash;To submit a request to unsubscribe from receiving future emails, click the __Unsubscribe__ link. You will be redirected to a unsubscribe page where you can follow the instructions.
-* __Submit "Delete Account" request__&mdash;To submit a request, click the __Submit "Delete Account" request__ link. You will be redirected to a page where you can follow the instructions.
-* __Automatically send data to help us improve the product__&mdash;Your information and usage statistics help us understand product usage better and continue building the product you love. To subscribe or unsubscribe from participating in the usage statistics sharing, check or, respectively, uncheck the __Automatically send data to help us improve the product__ option. Click __Save__ to apply the change.
+- **Unsubscribe**&mdash;To submit a request to unsubscribe from receiving future emails, click the **Unsubscribe** link. You will be redirected to a unsubscribe page where you can follow the instructions.
+- **Submit "Delete Account" request**&mdash;To submit a request, click the **Submit "Delete Account" request** link. You will be redirected to a page where you can follow the instructions.
+- **Automatically send data to help us improve the product**&mdash;Your information and usage statistics help us understand product usage better and continue building the product you love. To subscribe or unsubscribe from participating in the usage statistics sharing, check or, respectively, uncheck the **Automatically send data to help us improve the product** option. Click **Save** to apply the change.
 
 The following figure displays the **Privacy** menu settings.
 

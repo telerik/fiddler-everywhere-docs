@@ -1,10 +1,10 @@
 ---
-title: Inspectors
+title: Inspectors Tab
 description: "Learn how to use the Inspector tab and utilize the data from the inspector types in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: inspector-types
 publish: true
-position: 20
-previous_url: /user-guide/live-traffic/inspectors/request-inspector
+position: 34
+previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide/live-traffic/inspectors
 ---
 
 # Inspectors Tab
@@ -21,7 +21,7 @@ The inspectors are based on the [Monaco editor](https://microsoft.github.io/mona
 
 To load the data of a session in the **Inspectors** section, select a session from the __Live Traffic__ list.
 
-![Inspectors for Traffic Monitoring](../../images/livetraffic/inspectors/inspectors-all.png)
+![Inspectors for Traffic Monitoring](../images/livetraffic/inspectors/inspectors-all.png)
 
 To switch the loaded name of the inspector, click the desired inspector name&mdash;for example, __Image__ or __Raw__.
 
@@ -38,7 +38,7 @@ The **Inspectors** provide the following types of inspecting tools that enable y
 
 The __Headers__ inspector allows you to view the HTTP headers of the request and the response.
 
-![Headers Inspector](../../images/livetraffic/inspectors/inspectors-headers.png)
+![Headers Inspector](../images/livetraffic/inspectors/inspectors-headers.png)
 
 ### Request Headers Inspector
 
@@ -64,13 +64,13 @@ The **Status line** can consist of one or more lines containing name-value pairs
 
 The **Params inspector**, available in the **Request** section only, displays the content from any input endpoints parameters.
 
-![Params Inspector](../../images/livetraffic/inspectors/inspectors-params.png)
+![Params Inspector](../images/livetraffic/inspectors/inspectors-params.png)
 
 ## Cookies Inspector
 
 The **Cookies inspector** displays the contents of any outbound `Cookie` and `Cookie2` request headers and any inbound `Set-Cookie`, `Set-Cookie2`, and `P3P` response headers.
 
-![Cookies Inspector](../../images/livetraffic/inspectors/inspectors-cookies.png)
+![Cookies Inspector](../images/livetraffic/inspectors/inspectors-cookies.png)
 
 ## Raw Inspector
 
@@ -80,21 +80,21 @@ By default, the request or response will be displayed as received, which means t
 
 The following figure displays encoded raw content with the **decode** button inactive.
 
-![Raw Inspector with encoded content](../../images/livetraffic/inspectors/inspectors-raw.png)
+![Raw Inspector with encoded content](../images/livetraffic/inspectors/inspectors-raw.png)
 
 The following figure displays decoded raw content with the **decode** button active.
 
-![Raw Inspector with decoded content](../../images/livetraffic/inspectors/inspectors-raw-decoded.png)
+![Raw Inspector with decoded content](../images/livetraffic/inspectors/inspectors-raw-decoded.png)
 
 ## Preview Inspector
 
 The **Preview Inspector**, available in the **Request** section only, allows you to view the response bodies as an image or an HTML page depending on the response content. The inspector can display most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, TIFF.
 
-![Preview Inspector rendering image](../../images/livetraffic/inspectors/inspectors-image.png)
+![Preview Inspector rendering image](../images/livetraffic/inspectors/inspectors-image.png)
 
 If the content is in HTML format, then the **Preview** inspector allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. To avoid flooding the **Live Traffic** list, the web browser control is configured to prevent additional downloads when rendering the response, which means that most images and styles will not be displayed. Additionally, scripting and navigating are blocked and provide a read-only preview.
 
-![Preview Inspector rendering HTML content](../../images/livetraffic/inspectors/inspectors-web.png)
+![Preview Inspector rendering HTML content](../images/livetraffic/inspectors/inspectors-web.png)
 
 ## Body Inspectors
 
@@ -104,7 +104,7 @@ The **Body** inspectors are suitable for different types of requests and respons
 
 The **Text** inspector allows you to view the request and response bodies as text. It truncates the data it renders at the first null byte it finds, which makes it an inappropriate choice for displaying binary content. Most of the body inspector represents a large text area that displays the body text interpreted by using the detected character set with the headers, the byte-order-marker, or an embedded META tag declaration.
 
-![Text Inspector](../../images/livetraffic/inspectors/inspectors-textview.png)
+![Text Inspector](../images/livetraffic/inspectors/inspectors-textview.png)
 
 ### JSON
 
@@ -112,23 +112,23 @@ The **JSON** inspector interprets the selected request or response body as a Jav
 
 >important If the JSON data is malformed, for example, the name component of a name/value pair is unquoted, the JSON inspector will show a warning in the footer.
 
-![JSON Inspector](../../images/livetraffic/inspectors/inspectors-json.png)
+![JSON Inspector](../images/livetraffic/inspectors/inspectors-json.png)
 
 ### XML
 
 The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. If the body can't be interpreted as XML, the tree view will remain empty. Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after the its name. The inspector provides an __Expand All / Collapse All__ toggle button that will expand or collapse all XML tree nodes.
 
-![XML Inspector](../../images/livetraffic/inspectors/inspectors-xml.png)
+![XML Inspector](../images/livetraffic/inspectors/inspectors-xml.png)
 
 ### Form Data
 
 The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form-data. If a form is found, it is parsed, and the name/value pairs are displayed in the grid view. The inspector works best with application/x-www-form-urlencoded data used by most simple web forms.
 
-![Form Data Inspector](../../images/livetraffic/inspectors/inspectors-webforms.png)
+![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
 
 The **Form Data** inspector provides the following options for copying the parameter content from the context menu:
 
 - **Copy Value**&mdash;Copies only the value of the selected parameter from the key-value pair.
 - **Copy Key/Value**&mdash;Copies the key-value pair of the selected parameter.
 
-![Copying Information from the Form Data Inspector](../../images/livetraffic/inspectors/webforms-copy.png)
+![Copying Information from the Form Data Inspector](../images/livetraffic/inspectors/webforms-copy.png)

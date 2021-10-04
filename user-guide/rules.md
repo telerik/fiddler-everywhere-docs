@@ -17,7 +17,7 @@ The collaboration functionalities allow you to import and export a single rule o
 
 The **Rules** tab is available as of version 2.0.0 and later, while previous versions have the **Auto Responder** tab. The capabilities of the functionalities are different&mdash;the **Rule Builder** can change what the servers will receive in terms of requests and responses and given that such rules are applied. The **Auto Responder** is only capable of mocking a server request or response and of modifying the local request or response. Therefore, not all rules change the server data.
 
-![Rules tab](../../images/livetraffic/rb/rules-all.png)
+![Rules tab](../images/livetraffic/rb/rules-all.png)
 
 The **Rules** tab contains the following sections:
 
@@ -53,13 +53,13 @@ The main toolbar of the **Rules** comes with the following functionalities:
 - **Export**&mdash;Exports all created rules in a FARX file.
 - **Execute**&mdash;Executes the selected rules for the captured traffic or for the loaded, saved sessions.
 
-![Rules tab toolbar](../../images/livetraffic/rb/rules-toolbar.png)
+![Rules tab toolbar](../images/livetraffic/rb/rules-toolbar.png)
 
 ## Rule Builder
 
 The **Rule Builder** interface enables you to create and edit rules. For each new rule, you need to enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
 
-![Rule Builder Conditions](../../images/livetraffic/rb/rules-re-conditions.png)
+![Rule Builder Conditions](../images/livetraffic/rb/rules-re-conditions.png)
 
 ### Adding New Rules
 
@@ -385,7 +385,7 @@ The rule options allow you to further interact with the rule:
 - The **Delete** button deletes the rule from the **Rules Queue**.
 - The **Enable/Disable** toggle explicitly enables or disables the rule execution. It is available only for **Live Traffic** sessions and will be hidden when interacting with saved sessions.
 
-![Rules tab toolbar](../../images/livetraffic/rb/rules-individual-rule.png)
+![Rules tab toolbar](../images/livetraffic/rb/rules-individual-rule.png)
 
 ## Unmatched Requests Passthrough
 
@@ -393,8 +393,8 @@ The settings of the **Rules** feature provide options for executing a number of 
 
 The __Unmatched Requests Passthrough__ option, which is available in **Settings** > **Rules** > **Unmatched Requests**, controls what happens when a session does not match any of the applied rules. When the option is enabled, the unmatched requests are sent to the server, usually without interference from the **Rules** tab. When the option is disabled (the checkbox is unchecked), Fiddler will generate a __404 Not Found__ response for any unconditional requests that are not matching the applied rules.
 
-![Unmatched Requests Passthrough](../../images/livetraffic/rb/rules-unmacthed-setting.png)
+![Unmatched Requests Passthrough](../images/livetraffic/rb/rules-unmacthed-setting.png)
 
 By default, the __Unmatch Requests Passthrough__ option is turned on. Turning it off means that all unmatched requests will start to fail with a __404 (Fiddled)__ response. For example, Fiddler generated a 404 response due to a request that is not matching the applied rules when the __Unmatch Requests Passthrough__ option is turned off.
 
-![Unmatched Request](../../images/livetraffic/rb/autoresponder-umatched-passnot.png)
+![Unmatched Request](../images/livetraffic/rb/autoresponder-umatched-passnot.png)

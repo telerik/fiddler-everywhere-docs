@@ -1,15 +1,15 @@
 ---
-title: Live Traffic
-description: "Learn how to use the Live Traffic tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
+title: Live Traffic Section
+description: "Learn how to use the Live Traffic section in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: web-sessions-list
 publish: true
-position: 10
-previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar
+position: 32
+previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar, /user-guide/live-traffic/live-traffic
 ---
 
-# Live Traffic Tab
+# Live Traffic Section
 
-The **Live Traffic** tab provides the most essential features of Fiddler Everywhere.
+The **Live Traffic** section provides the most essential features of Fiddler Everywhere.
 
 **Live Traffic** displays a summary of each captured session in the **Live Traffic** list. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug rules-general%}) tab. The feature enables the saving and sharing of sessions, editing of issued requests, marking, commenting sessions, and applying rules.
 
@@ -17,15 +17,15 @@ The **Live Traffic** tab provides the most essential features of Fiddler Everywh
 
 A (web) session represents a single transaction between a client and a server, sometimes known as a request/response pair. Each session appears as a single entry in **Live Traffic**. Each session object has a **Request** and a **Response**, representing the data which the client has sent to the server and the data which has been returned by the server to the client. The session object also maintains a set of flags that record metadata about the session, and a timers object that stores timestamps logged during the processing of the session.
 
-![Live Traffic toolbar and list](../../images/livetraffic/websessions/websessions-list-all.png)
+![Live Traffic toolbar and list](../images/livetraffic/websessions/websessions-list-all.png)
 
 ## Live Traffic Toolbar
 
-The toolbar of the **Live Traffic** tab provides various functionalities such as modes for streaming, decoding of content, filtering by various criteria, and saving and sharing of sessions.
+The toolbar of the **Live Traffic** section provides various functionalities such as modes for streaming, decoding of content, filtering by various criteria, and saving and sharing of sessions.
 
 To start capturing traffic, enable **Live Traffic** by switching to the **Capturing** mode. To go into the **Paused** mode, use the **Off** switch state to pause the traffic capturing.
 
-![Live Traffic Toolbar](../../images/livetraffic/websessions/websessions-toolbar-all.png)
+![Live Traffic Toolbar](../images/livetraffic/websessions/websessions-toolbar-all.png)
 
 The **Live Traffic** toolbar provides the following functionalities:
 
@@ -43,7 +43,7 @@ By default, Fiddler Everywhere uses the buffering mode, which means that the res
 
 The streaming mode is useful for low-level network timing scenarios&mdash;for example, by design, some browsers will parse partially downloaded HTML, which will start the download of external resources in parallel before the remote server has finished delivering the content. The streaming mode is also useful if a site delivers audio or video streams as Fiddler Everywhere cannot buffer such constant streams.
 
-![Buffering mode vs Streaming Mode](../../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
+![Buffering mode vs Streaming Mode](../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
 
 To toggle between the buffering and the streaming mode, click the **Stream** button.
 
@@ -56,10 +56,9 @@ The **Advanced Filters** entries use the **AND** logical operator. Each value co
 To set the advanced filters:
 
 1. Click the **Filter** button to open the advanced filters popup windows.
-
 2. The **Advanced Filters** window allows you to set specific criteria that will filter the captured traffic. Set the filter rules and click **Apply**.
 
-    ![Advanced filters popup](../../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
+    ![Advanced filters popup](../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
 
 
 Currently, the **Advanced Filters** entries are using the **AND** logical operator. Each value is complying with the **EXACT** match.
@@ -78,11 +77,7 @@ To save captured sessions, use the **Save** button, which will automatically sav
 To save sessions for later or prepare sessions for sharing:
 
 1. Click the **Save** button. As a result, a **Save Sessions** prompt window appears.
-
-2. Enter a valid name and click **Save**.
-
-    ![Save prompt window](../../images/livetraffic/websessions/websessions-toolbar-save-prompt.png)
-
+2. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
 3. The current entry of sessions appears in the **Sessions** list.
 
 ### Sharing
@@ -96,14 +91,9 @@ Sharing sessions dramatically improves collaboration, and Fiddler Everywhere pro
 To share a session through the toolbar:
 
 1. Click the **Share** button. As a result, the **Save Session** prompt window appears.
-
-2. Save the sessions before they can be shared.
-
-    ![Saving before traffic can be shared](../../images/livetraffic/websessions/websessions-toolbar-share-saveprompt.png)
-
+2. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
 3. In the **Share Sessions** prompt window, enter a valid email and click **Share**. Entering notes is optional.
 
-    ![Share prompt window](../../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
 
 ### Removing All
 
@@ -117,7 +107,7 @@ To search for specific values in the URL and the headers of all sessions, use th
 
 The **Live Traffic** list displays a list of web sessions with a summary of each captured session.
 
-![Live Traffic](../../images/livetraffic/websessions/websessions-list-columns.png)
+![Live Traffic](../images/livetraffic/websessions/websessions-list-columns.png)
 
 Many operations begin by selecting one or more entries in the **Live Traffic** and then activating other features.
 
@@ -134,33 +124,33 @@ The following table displays the icons, which **Live Traffic** supports for its 
 
 |Icon |Functionality
 |:--- |:---
-|![Generic document icon](../../images/livetraffic/icons/generic-document.svg) |A generic successful response.
-|![Uploading icon](../../images/livetraffic/icons/uploading.svg)|An upload of session content is in progress (the request is being sent to the server).
-|![Upload paused icon](../../images/livetraffic/icons/upload-paused.svg)|The upload is paused for a session in progress.
-|![Downloading icon](../../images/livetraffic/icons/downloading.svg)|The download of content for a session is in progress (the response is being read from the server).
-|![Downloading paused icon](../../images/livetraffic/icons/download-paused.svg)|The download is paused for a session in progress.
-|![Aborted icon](../../images/livetraffic/icons/aborted.svg)|The session was aborted by the client, Fiddler, or the server.
-|![Error icon](../../images/livetraffic/icons/error.svg)|The response was a server error.
-|![Unauthorized icon](../../images/livetraffic/icons/unauthorized.svg)|The response returned the 401 Unauthorized status code.
-|![Redirect icon](../../images/livetraffic/icons/redirect.svg)|The response returned a 300, 301, 302, 303, or 307 redirect status code.
-|![WebSocket icon](../../images/livetraffic/icons/websocket.svg)|A tunnel is used for WebSocket traffic.
-|![HTTPS tunnel icon](../../images/livetraffic/icons/https-tunnel.svg)|The request used the **HTTP CONNECT** method|establishes a tunnel used for HTTPS traffic.
-|![RPC tunnel icon](../../images/livetraffic/icons/rpc.svg)|A tunnel used for RPC traffic.
-|![No Content icon](../../images/livetraffic/icons/no-content.svg)|No content loaded.
-|![Not modified icon](../../images/livetraffic/icons/not-modified.svg)|Not modified.
-|![Partial content icon](../../images/livetraffic/icons/partial.svg)|Partial content.
-|![Image icon](../../images/livetraffic/icons/image.svg)|The response was an image.
-|![JavaScript icon](../../images/livetraffic/icons/javascript.svg)|The response was a JavaScript file.
-|![CSS icon](../../images/livetraffic/icons/css.svg)|The response was a CSS file.
-|![HTML icon](../../images/livetraffic/icons/html.svg)|The response was an HTML file.
-|![XML icon](../../images/livetraffic/icons/xml.svg)|The response was an XML file.
-|![Flash icon](../../images/livetraffic/icons/flash.svg)|The response was a Flash file.
-|![Silverlight icon](../../images/livetraffic/icons/silverlight.svg)|The response was a Silverlight file.
-|![Audio icon](../../images/livetraffic/icons/audio.svg)|The response was an audio file.
-|![Video icon](../../images/livetraffic/icons/video.svg)|The response was a video file.
-|![Font icon](../../images/livetraffic/icons/font.svg)|The response was a font file.
-|![JSON icon](../../images/livetraffic/icons/json.svg)|The response was a JSON file.
-|![POST method icon](../../images/livetraffic/icons/post.svg)|The request used the **POST** method.
+|![Generic document icon](../images/livetraffic/icons/generic-document.svg) |A generic successful response.
+|![Uploading icon](../images/livetraffic/icons/uploading.svg)|An upload of session content is in progress (the request is being sent to the server).
+|![Upload paused icon](../images/livetraffic/icons/upload-paused.svg)|The upload is paused for a session in progress.
+|![Downloading icon](../images/livetraffic/icons/downloading.svg)|The download of content for a session is in progress (the response is being read from the server).
+|![Downloading paused icon](../images/livetraffic/icons/download-paused.svg)|The download is paused for a session in progress.
+|![Aborted icon](../images/livetraffic/icons/aborted.svg)|The session was aborted by the client, Fiddler, or the server.
+|![Error icon](../images/livetraffic/icons/error.svg)|The response was a server error.
+|![Unauthorized icon](../images/livetraffic/icons/unauthorized.svg)|The response returned the 401 Unauthorized status code.
+|![Redirect icon](../images/livetraffic/icons/redirect.svg)|The response returned a 300, 301, 302, 303, or 307 redirect status code.
+|![WebSocket icon](../images/livetraffic/icons/websocket.svg)|A tunnel is used for WebSocket traffic.
+|![HTTPS tunnel icon](../images/livetraffic/icons/https-tunnel.svg)|The request used the **HTTP CONNECT** method|establishes a tunnel used for HTTPS traffic.
+|![RPC tunnel icon](../images/livetraffic/icons/rpc.svg)|A tunnel used for RPC traffic.
+|![No Content icon](../images/livetraffic/icons/no-content.svg)|No content loaded.
+|![Not modified icon](../images/livetraffic/icons/not-modified.svg)|Not modified.
+|![Partial content icon](../images/livetraffic/icons/partial.svg)|Partial content.
+|![Image icon](../images/livetraffic/icons/image.svg)|The response was an image.
+|![JavaScript icon](../images/livetraffic/icons/javascript.svg)|The response was a JavaScript file.
+|![CSS icon](../images/livetraffic/icons/css.svg)|The response was a CSS file.
+|![HTML icon](../images/livetraffic/icons/html.svg)|The response was an HTML file.
+|![XML icon](../images/livetraffic/icons/xml.svg)|The response was an XML file.
+|![Flash icon](../images/livetraffic/icons/flash.svg)|The response was a Flash file.
+|![Silverlight icon](../images/livetraffic/icons/silverlight.svg)|The response was a Silverlight file.
+|![Audio icon](../images/livetraffic/icons/audio.svg)|The response was an audio file.
+|![Video icon](../images/livetraffic/icons/video.svg)|The response was a video file.
+|![Font icon](../images/livetraffic/icons/font.svg)|The response was a font file.
+|![JSON icon](../images/livetraffic/icons/json.svg)|The response was a JSON file.
+|![POST method icon](../images/livetraffic/icons/post.svg)|The request used the **POST** method.
 
 ## Columns
 
@@ -201,7 +191,7 @@ Each column comes with a **more** button (three vertical dots), which opens a po
 
 The **Filter** submenu enables you to apply filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or through the global [**Clear All Filters** button](#clear-all-filters).
 
-![Filter context submenu](../../images/livetraffic/columns/dots-filter.png)
+![Filter context submenu](../images/livetraffic/columns/dots-filter.png)
 
 
 Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
@@ -216,13 +206,13 @@ Use the **Columns** submenu to select which column will be visible in the **Live
 Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
 
 
-![Columns context submenu](../../images/livetraffic/columns/dots-columns.png)
+![Columns context submenu](../images/livetraffic/columns/dots-columns.png)
 
 ## Context Menu Options
 
 The context menu for the **Live Traffic** exposes actions that you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press **Control** and mouse-click (macOS).
 
-![Live Traffic context menu](../../images/livetraffic/websessions/websessions-list-context-menu.png)
+![Live Traffic context menu](../images/livetraffic/websessions/websessions-list-context-menu.png)
 
 ### Editing in the Composer
 
@@ -331,5 +321,4 @@ You can use a captured session entry to mock some server behavior. For similar c
 To add a new rule:
 
 1. Select the desired session entry and right-click to open the context menu. Select **Add New Rule**.
-
 2. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.

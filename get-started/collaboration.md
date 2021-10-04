@@ -52,7 +52,7 @@ Add a custom comment to one or more captured sessions to provide additional cont
 1. Select a session from the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list) or load saved sessions from the [**Sessions** list]({%slug saved-sessions-tab%}).
 2. Add a comment by using the **Comment** option from the context menu or press the **M** key while selecting the desired sessions. As a result, the newly added comment will appear in [the **Comments** column]({%slug web-sessions-list%}#live-traffic-list).
 
-![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
+    ![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
 
 ### Notes
 
@@ -62,7 +62,7 @@ Add additional context in the form of a descriptive note while sharing one or mo
 2. In the first dialog window, provide a name for the shared sessions.
 3. In the second dialog window, provide the additional information in the **Add a note** field. As a result, the note will be rendered as context in the email received by the collaborators.
 
-![Add a note in share prompt window](../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
+    ![Add a note in share prompt window](../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
 
 ## Notifications for Shared Content
 
