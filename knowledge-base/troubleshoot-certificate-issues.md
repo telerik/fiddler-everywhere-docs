@@ -7,7 +7,7 @@ publish: true
 res_type: kb
 ---
 
-### Environment
+## Environment
 
 |   |   |
 |---|---|
@@ -16,11 +16,11 @@ res_type: kb
 | Supported OS | macOS |
 | OS tool | Keychain Access |
 
-### Description
+## Description
 
-To capture secure (HTTPS) traffic on macOS, Fiddler Everywhere requires you to install and enable a root trust certificate in the macOS Keychain Access application. This process might fail and lead to a `"Fiddler root certificate NOT trusted successfully"` error.
+To capture secure (HTTPS) traffic on macOS, Fiddler Everywhere requires the installation of a root trust certificate in the macOS Keychain Access application. This process failed and I'd like to know how can I handle the `"Fiddler root certificate NOT trusted successfully"` error?
 
-### Solution
+## Solution
 
 Test the import of the Fiddler Everywhere root certificate on macOS by using custom bash scripts and terminal commands.
 
@@ -82,10 +82,3 @@ Test the import of the Fiddler Everywhere root certificate on macOS by using cus
     ![Check SHA1 signature](../images/kb/mac-certificate/certificate-sha-check.png)
 
 1. (Optional) Delete the `/tmp/trustSettings.xml` file after troubleshooting the issue as it is only needed to check that the `SHA-1` key is properly exported.
-
-## See Also
-
-* [Troubleshoot HTTPS capturing on macOS]({%slug troubleshoot-capturing-traffic%})
-* [Troubleshoot Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
-*	[Installing Fiddler Everywhere on macOS]({% slug first_steps_macos %})
-*	[Resetting Fiddler Everywhere to Its Default Settings]({% slug how-to-reset-fiddler-everywhere-settings-to-default %})

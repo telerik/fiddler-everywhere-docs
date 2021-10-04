@@ -7,7 +7,7 @@ publish: true
 res_type: kb
 ---
 
-#### Environment
+## Environment
 
 |   |   |
 |---|---|
@@ -16,22 +16,29 @@ res_type: kb
 | Operating System | macOS, Windows, Linux  |
 | 3rd-party tools | macOS Terminal, iTerm2, Command Prompt, Bash |
 
-#### Description
+## Description
 
-The article explains how to set the Fiddler Everywhere proxy for commonly used command-line tools like the default [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows), and other terminal applications.
+How can I set the Fiddler Everywhere proxy for commonly used command-line tools like the default [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows), and other terminal applications?
 
+## Solution
 
-## Set Fiddler Proxy (terminal app)
+To achieve the desired scenario, perform the steps in the following sections.
 
-Terminal applications on macOS like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests thought 3rd-party tools like CURL. However, in the common case, these terminals won't use the system proxy. For Fiddler Everywhere to capture traffic that passes through them, they need to set the Fiddler Everywhere proxy explicitly. To achieve that, you can use the **export** command (macOS and Linux) or the **set** command (for Windows).
+### Setting the Fiddler Proxy
 
-- Setting proxy settings on **macOS** and **Linux**
+Terminal applications on macOS like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests thought third-party tools like CURL. However, in the common case, these terminals won't use the system proxy.
+
+For Fiddler Everywhere to capture traffic that passes through them, they need to set the Fiddler Everywhere proxy explicitly. To achieve that, you can use the `export` command (for macOS and Linux) or the `set` command (for Windows). The `export` command will generate a variable that will be included in a child process environment. It does not affect other already-existing settings.
+
+The following example demonstrates how to define the proxy settings on macOS and Linux.
+
 ```bash
 export http_proxy=127.0.0.1:8866
 export https_proxy=127.0.0.1:8866
 ```
 
-- Setting proxy settings on **Windows**
+The following example demonstrates how to define the proxy settings on Windows.
+
 ```bash
 set http_proxy=127.0.0.1:8866
 set https_proxy=127.0.0.1:8866
@@ -39,26 +46,27 @@ set https_proxy=127.0.0.1:8866
 
 Once the Fiddler Everywhere proxy is set, you can immediately capture traffic through the terminal application.
 
-_Example for requesting while using_ **_curl_** _through iTerm2 and intercepting the traffic in Fiddler Everywhere_
+The following example demonstrates how to request while using cURL through iTerm2 and intercept the traffic in Fiddler Everywhere.
+
 ```Bash
 curl https://docs.telerik.com/fiddler-everywhere --
 ```
 
 ![Result from curl request in Fiddler Everywhere](../images/kb/macos-terminal/curl-traffic.png)
 
->tip The **export** command makes a variable that will be included in a child process environment. It does not affect other already-existing settings.
+### Resetting the Fiddler Proxy
 
-## Reset Fiddler Proxy (terminal app)
+Once debugging with Fiddler Everywhere is done, reset the current environment proxy by removing the Fiddler Everywhere proxy variables. To achieve that, you can use the `unset` command on macOS and Linux. On Windows, you need to set an empty string.
 
-Once our debugging with Fiddler Everywhere is done, reset the current environment's proxy by merely removing the Fiddler Everywhere proxy variables. To achieve that, you can use the **unset** command on macOS and Linux. On Windows, you need to set an empty string.
+The following example demonstrates how to unset the proxy on macOS and Linux.
 
-- Unsetting the proxy on **macOS** and **Linux**
 ```bash
 unset http_proxy
 unset https_proxy
 ```
 
-- Unsetting the proxy on **Windows**
+The following example demonstrates how to unset the proxy on Windows.
+
 ```bash
 set http_proxy=
 set https_proxy=

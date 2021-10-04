@@ -8,7 +8,7 @@ res_type: kb
 ---
 
 
-### Environment
+## Environment
 
 |   |   |
 |---|---|
@@ -16,11 +16,11 @@ res_type: kb
 | Product Version | 1.0.0 and above  |
 | OS | Linux |
 
-### Description
+## Description
 
 How can I install the root certificate for Fiddler Everywhere on Linux in Firefox?
 
-### Solution
+## Solution
 
 1. Open Firefox.
 1. Go to **Preferences** > **Privacy & Security**.
