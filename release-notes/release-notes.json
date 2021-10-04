@@ -8,13 +8,13 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Rules are crashing and failing to load after specific rule is added"
+                        "title": "Rules are crashing and failing to load after a specific rule is added"
                     },
                     {
                         "title": "Complete Profile form allows setting mandatory fields with space(s) only"
                     },
                     {
-                        "title": "Users with only active JAM license cannot start Fiddler Everywhere trial in the product"
+                        "title": "Users with active Fiddler Jam license cannot start Fiddler Everywhere trial in the product"
                     }
                 ]
             }
