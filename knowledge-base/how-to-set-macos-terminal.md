@@ -1,6 +1,6 @@
 ---
-title: How to set the Fiddler proxy for terminal apps
-description: An article on how to set the Fiddler Everywhere proxy for terminals
+title: Setting Fiddler for Terminal Applications
+description: "Learn how to set the Fiddler Everywhere web-debugging client for terminals."
 type: how-to
 slug: fiddler-macos-terminal
 publish: true
@@ -18,7 +18,7 @@ res_type: kb
 
 #### Description
 
-The article explains how to set the Fiddler Everywhere proxy for commonly used command-line tools like the default [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows), and other terminal applications. 
+The article explains how to set the Fiddler Everywhere proxy for commonly used command-line tools like the default [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows), and other terminal applications.
 
 
 ## Set Fiddler Proxy (terminal app)
@@ -63,4 +63,3 @@ unset https_proxy
 set http_proxy=
 set https_proxy=
 ```
-

@@ -1,6 +1,6 @@
 ---
-title: Fiddler Rules tab Predefined Actions
-description: Fiddler Everywhere comes with multiple predefined Rules actions that allow you to mock different HTTP responses out of the box.
+title: Using the Predefined Actions of the Rules Tab
+description: "Learn how to use the predefined actions of he Rules tab for mocking different HTTP responses when working with the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: fiddler-ar-actions
 publish: true
@@ -134,7 +134,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Content-Type: text/html
     Content-Length: 520
 
-    Fiddler: HTTP/401 Digest Server Auth Required. 
+    Fiddler: HTTP/401 Digest Server Auth Required.
     ```
 
 1. **403_AuthDeny.dat**
@@ -157,7 +157,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Content-Type: text/html
     Content-Length: 520
 
-    Fiddler: HTTP/404 Not Found 
+    Fiddler: HTTP/404 Not Found
     ```
 
 1. **407_ProxyAuthBasic.dat**
@@ -182,7 +182,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Content-Type: text/html
     Content-Length: 520
 
-    Fiddler: HTTP/502 unreachable server. 
+    Fiddler: HTTP/502 unreachable server.
     ```
 
 ## Custom Response File

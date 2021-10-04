@@ -1,6 +1,6 @@
 ---
-title: Fiddler Dashboard Site
-description: An article on how to use the Fiddler dashboard site for managing plans and subscriptions for Fiddler products
+title: Using the Dashboard Site
+description: "Learn how to use the dashboard site for managing plans and subscriptions for the Fiddler products."
 type: how-to
 slug: fiddler-dashboard
 publish: true
@@ -40,7 +40,7 @@ New users can purchase the Fiddler Everywhere Pro subscription plan as described
     >tip You can use the **Start Free Trial** button to activate the 30-days trial. Note that this step is available only for new users. If you are an existing user with an expired trial, go to the next step.
 1. Alternatively, directly open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com).
 1. Navigate [to the Plans page](https://dashboard.getfiddler.com/plans), and select the desired Fiddler product.
-1. Press **Purchase Plan** to proceed to the order details page. The order details page presents you with the option to choose between annual vs. monthly payments, adding additional subscription seats (by default, each plan activates a single seat), and adding promotional coupons. 
+1. Press **Purchase Plan** to proceed to the order details page. The order details page presents you with the option to choose between annual vs. monthly payments, adding additional subscription seats (by default, each plan activates a single seat), and adding promotional coupons.
 1. Press **Next** to proceed to the payment details page. On the payment details page, you can add a new payment method or use a saved card.
 1. Press the **Pay** button to finalize the order.
 1. Restart your Fiddler Everywhere client to activate the purchased subscription plan fully.
@@ -63,7 +63,7 @@ Open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com), where
     - Assign, unassign, and edit seats.
     - Buy additional seats.
 
-    
+
 
 ## Invoice Information
 

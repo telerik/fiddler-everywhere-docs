@@ -1,6 +1,6 @@
 ---
-title: How to Capture Traffic from Node.js libraries
-description: Configuring the Fiddler proxy alongside Node.js and capturing HTTPS traffic
+title: Capturing Traffic from Node.js Libraries
+description: "Learn how to configure the Fiddler Everywhere web-debugging proxy alongside Node.js and capturing HTTPS traffic."
 type: how-to
 slug: fiddler-nodejs-traffic
 publish: true
@@ -27,10 +27,10 @@ Many developers are using Fiddler Everywhere to capture traffic from **Node.js**
 
 ## Setting Proxy Globally
 
-This scenario is useful for libraries like [request](https://www.npmjs.com/package/request) that reuse the proxy settings in the environment variables. With Node.js, you can set the proxy directly in the terminal. 
+This scenario is useful for libraries like [request](https://www.npmjs.com/package/request) that reuse the proxy settings in the environment variables. With Node.js, you can set the proxy directly in the terminal.
 
 ```Console
-set https_proxy=http://127.0.0.1:8866 
+set https_proxy=http://127.0.0.1:8866
 set http_proxy=http://127.0.0.1:8866
 set NODE_TLS_REJECT_UNAUTHORIZED=0
 ```

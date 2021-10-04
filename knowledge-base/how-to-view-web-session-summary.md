@@ -1,6 +1,6 @@
 ---
-title: How to View Web Session Summary
-description: An article on how to capture and inspect web traffic using Fiddler Everywhere
+title: Viewing Web Session Summaries
+description: "Learn how to capture and inspect web traffic by using the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: how-to-view-web-session-summary
 publish: true

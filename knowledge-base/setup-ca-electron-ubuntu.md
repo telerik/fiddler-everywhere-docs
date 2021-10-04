@@ -1,6 +1,6 @@
 ---
-title: Setup the Fiddler certificate for Electron applications on Ubuntu
-description: Electron applications CA management is different from the operating system CA management used by default by Fiddler. This article explains how to set up the CA for electron applications (like MSTeams) so that they could get the FIddler certificate (for HTTPS capturing).
+title: Setting Up the Root Certificate for Electron Applications on Ubuntu
+description: "Learn how to set up the CA for Electron applications (like MSTeams) so that they can get the certificate for HTTPS capturing of the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: ubuntu-ca-electron
 publish: true
@@ -17,6 +17,8 @@ res_type: kb
 | Operating System | Ubuntu 18.0.4 and above |
 
 #### Description
+
+Electron applications CA management is different from the operating system CA management used by default by Fiddler
 
 Electron-based applications (like MSTeams) use Electron CA management, so the folder where the Fiddler Everywhere trust certificate must be installed is in **~/.pki/nssdb**. To capture HTTPS traffic, you need to move the certificate to that folder and then use the **certutil** tool to install and trust it.
 

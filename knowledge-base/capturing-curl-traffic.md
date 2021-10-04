@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: Capturing cURL Traffic
 description: Learn how to capture cURL traffic using Fiddler Everywhere
+=======
+title: Capturing CURL Traffic
+description: "Learn how to capture CURL traffic by using the Fiddler Everywhere web-debugging client."
+>>>>>>> a50ac91... docs: start reviewing KB
 type: how-to
 slug: how-to-capture-curl-traffic
 publish: true

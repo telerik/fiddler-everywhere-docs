@@ -1,6 +1,6 @@
 ---
-title: Localhost Traffic Capturing 
-description: An article on how to capture and inspect localhost traffic using Fiddler Everywhere
+title: Capturing Localhost Traffic
+description: "Learn how to capture and inspect localhost traffic by using the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: how-to-capture-localhost-traffic
 publish: true
@@ -22,8 +22,8 @@ Traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http:
 
 To solve this issue, use either of the following approaches:
 
-- [Use the machine name](#using-machine-name) instead of **localhost**. 
-- [Use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere. 
+- [Use the machine name](#using-machine-name) instead of **localhost**.
+- [Use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere.
 
 >Both solutions require that Fiddler Everywhere [Capturing]({%slug capture-traffic-get-started%}) is enabled.
 

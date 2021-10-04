@@ -1,6 +1,6 @@
 ---
-title: How to Create Custom Responses
-description: An article on creating manually crafted responses, mock status codes, and use external files with predefined responses.
+title: Creating Custom Responses
+description: "Learn how to create manually crafted responses, mock status codes, and use external files with predefined responses with the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: using-custom-responses
 publish: true
@@ -63,8 +63,8 @@ Using the above action is handy, but you need a better workflow to automate mult
     FiddlerTemplate: True
     Date: Fri, 25 Jan 2013 16:49:29 GMT
     Content-Length: 520
-    
-    Fiddler: HTTP/403 Access Denied. 
+
+    Fiddler: HTTP/403 Access Denied.
     ```
 3. Save the file with **dat** extension . For example save as **_action-403-status.dat_**.
 

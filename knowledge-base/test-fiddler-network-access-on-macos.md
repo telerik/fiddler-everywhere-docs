@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot macOS Proxy Settings and Network Access
-description: Use a custom made Shell script to troubleshoot the network access of Fiddler Everywhere
+title: Troubleshooting macOS Proxy Settings and Network Access
+description: "Learn how to use a custom-made Shell script to troubleshoot the network access of the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: fiddler-test-network-access-macos
 publish: true
@@ -84,7 +84,7 @@ The output from the above commands will vary depending on the OS network setting
 _An example output for the **networksetup -getwebproxy <adapter-name>** command when no proxy is set_
 ```Console
 Enabled: No
-Server: 
+Server:
 Port: 0
 Authenticated Proxy Enabled: 0
 ```
@@ -97,4 +97,4 @@ Port: 8866
 Authenticated Proxy Enabled: 0
 ```
 
->tip On some occasions, there might be more than one active network adapters. Use the command `networksetup -listnetworkserviceorder` to get the names of all active adapters and then use the adapter's name to troubleshoot the Fiddler Everywhere proxy settings. 
+>tip On some occasions, there might be more than one active network adapters. Use the command `networksetup -listnetworkserviceorder` to get the names of all active adapters and then use the adapter's name to troubleshoot the Fiddler Everywhere proxy settings.

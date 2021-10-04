@@ -1,6 +1,6 @@
 ---
-title: How to Install Fiddler Root Certificate on Mac OS
-description: An example on how to install Fiddler root certificate on Mac OS
+title: Installing the Root Certificate on macOS
+description: "Learn how to install the Fiddler Everywhere web-debugging client root certificate on mcOS."
 type: how-to
 slug: how-to-install-fiddler-root-certificate-on-mac-os
 publish: true
@@ -47,5 +47,3 @@ In some cases, the automatic installation and enabling of the trust certificate 
     **Fiddler root certificate is now installed and trusted.**
 
 1. Open **Fiddler Everywhere** and start capturing secure traffic.
-
-

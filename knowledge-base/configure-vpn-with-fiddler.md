@@ -1,6 +1,6 @@
 ---
 title: Configuring Fiddler Everywhere alongside Cisco AnyConnect
-description: An article explaining how to use Cisco AnyConnect alongside Fiddler Everywhere
+description: "Learn how to use Cisco AnyConnect alongside the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: configure-vpn-fiddler
 publish: true
@@ -48,7 +48,7 @@ The article covers the specific configuration needed to use Fiddler Everywhere w
 
 >important Due to some architectural differences in how VPN is set on macOS, you will need to strictly follow the order of
 
-## Reusing VPN 
+## Reusing VPN
 
 To prevent Cisco AnyConnect from using cached proxy information, you must first stop the Cisco VPN software and then close Fiddler Everywhere (or pause Capturing mode). The workflow for Cisco AnyConnect alongside Fiddler Everywhere is as follows:
 

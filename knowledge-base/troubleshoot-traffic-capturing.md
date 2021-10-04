@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot HTTPS capturing on macOS
-description: An article with troubleshooting tips for traffic capturing with Fiddler Everywhere on macOS
+title: Troubleshooting HTTPS Capturing on macOS
+description: "Learn how to troubleshoot traffic capturing on macOS with the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: troubleshoot-capturing-traffic
 publish: true
@@ -106,7 +106,7 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
 
 1. After opening each of the above URLs, check the Live Traffic list and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic - [use the Clear All Filters option]({%slug web-sessions-list%}#clear-all-filters) to remove any preset filters.
 
-If the issue persist or unsure, for example, there are too many captured sessions, and you cannot find the three URLs above, save the captured sessions (_File > Save Archive > All Sessions)_, and post them in [the support channels]({% slug introduction %}#support-options). 
+If the issue persist or unsure, for example, there are too many captured sessions, and you cannot find the three URLs above, save the captured sessions (_File > Save Archive > All Sessions)_, and post them in [the support channels]({% slug introduction %}#support-options).
 
 
 ## See Also

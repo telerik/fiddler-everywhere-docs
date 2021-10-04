@@ -1,6 +1,6 @@
 ---
-title: How to Capture and Inspect Web Traffic
-description: An article on how to capture and inspect web traffic using Fiddler Everywhere
+title: Capturing and Inspecting Web Traffic
+description: "Learn how to capture and inspect web traffic by using the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: how-to-capture-and-inspect-web-traffic
 publish: true

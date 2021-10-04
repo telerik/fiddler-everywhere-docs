@@ -1,6 +1,6 @@
 ---
-title: Redirecting traffic from one server to another through the Rules tab
-description: An article on how to create match rules and actions to redirect traffic while using regex variables
+title: Redirecting Traffic between Servers through the Rules Tab
+description: "Learn how to create match rules and actions to redirect traffic while using regex variables in the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: rulesbuilder-redirect-traffic
 publish: true
@@ -40,7 +40,7 @@ Match: regex:(.*)docs.telerik.com/(.*)
 Action: http://localhost:4000/$2
 ```
 
-In the above case, two regex variables are automatically created. The second one will have as a value everything that comes after the last slash. 
+In the above case, two regex variables are automatically created. The second one will have as a value everything that comes after the last slash.
 
 As a result, after applying the above rule, this example endpoint
 ```
