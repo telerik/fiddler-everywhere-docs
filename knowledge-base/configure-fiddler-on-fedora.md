@@ -8,7 +8,7 @@ res_type: kb
 ---
 
 
-### Environment
+## Environment
 
 |   |   |
 |---|---|
@@ -17,11 +17,11 @@ res_type: kb
 | 3rd-party tool | [Shared System Certificates storage](https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/) |
 | Supported OS | Fedora, CentOS, RedHat, and others |
 
-### Description
+## Description
 
-The [instructions for installing the trusted root certificate for Fiddler Everywhere on Linux]({%slug first_steps_linux%}#trusting-the-root-certificate) utilize the Debian `dkpg-reconfigure` command. However, some Linux distributions like Fedora, CentOS, and RedHat might lack the `dkpg` library or limit its usage. In this case, you will need to install and trust the Fiddler root certificate while using the `update-ca-trust` command.
+The [instructions for installing the trusted root certificate for Fiddler Everywhere on Linux]({%slug first_steps_linux%}#trusting-the-root-certificate) utilize the Debian `dkpg-reconfigure` command. However, some Linux distributions like Fedora, CentOS, and RedHat might lack the `dkpg` library or limit its usage. How can I install and trust the Fiddler root certificate while using the `update-ca-trust` command?
 
-### Solution
+## Solution
 
 1. Install and open the Fiddler Everywhere application on a shared system certificate storage Linux distribution such as Fedora, CentOS, or RedHat.
 

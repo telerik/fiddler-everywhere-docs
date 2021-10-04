@@ -8,40 +8,40 @@ res_type: kb
 ---
 
 
-### Environment
+## Environment
 
 |   |   |
 |---|---|
 | Product   |
 | Product Version | 1.0.0 and above  |
 
-### Description
+## Description
 
-The Fiddler Everywhere client is an electron application that depends on modifying the local network configuration to capture traffic. On some occasions, you might need to access the generated log files to investigate potential problems that might prevent the client from working correctly.
+The Fiddler Everywhere client is an electron application that depends on modifying the local network configuration to capture traffic. How can I access the generated log files to investigate potential problems that might prevent the client from working correctly?
 
-### Solution
+## Solution
 
-* [Logging files](#loggin-files)
+* [Logging files](#logging-files)
 * [Accessing the logs](#accessing-the-logs)
 * [Managing the destination folder](#managing-the-destination-folders)
 * [Setting the `electron.log` file](#setting-the-electronlog-file)
 * [Setting the `netcore.log` file](#setting-the-netcorelog-file)
 
-#### Logging Files
+### Logging Files
 
 The Fiddler Everywhere application generates the following log files:
-- [`electron.log`](#the-electron-log)&mdash;The file logs the basic operations needed for the electron application to start up properly.
-- [`netcore.log`](#the-netcore-log)&mdash;The file logs the operations done by the Fiddler core logic; for example, applying the proxy settings, trust certificate setup, login process, and more.
+- [`electron.log`](#setting-the-electronlog-file)&mdash;The file logs the basic operations needed for the electron application to start up properly.
+- [`netcore.log`](#setting-the-netcorelog-file)&mdash;The file logs the operations done by the Fiddler core logic; for example, applying the proxy settings, trust certificate setup, login process, and more.
 
 Both log files are useful to investigate cases where the client is not working properly. The location of these files varies depending on the operating system on which Fiddler Everywhere is working.
 
-#### Accessing the Logs
+### Accessing the Logs
 
 Fiddler Everywhere version 1.3.0 and later provides a UI option through **Help** > **Open Application Logs Folder** to automatically open the folder that contains the log files.
 
 ![Fiddler Everywhere log files](../images/kb/logs/log-files.png)
 
-#### Managing the Destination Folder
+### Managing the Destination Folder
 
 Alternatively, you can manually navigate to the folder on your operating system and obtain the Fiddler Everywhere log files. Manual extraction of the logs can be useful in scenarios where your Fiddler Everywhere client is not starting at all, or you can't access the UI.
 
@@ -63,7 +63,7 @@ Alternatively, you can manually navigate to the folder on your operating system 
     ~/.config/Fiddler Everywhere/Logs
     ```
 
-#### Setting the electron.log File
+### Setting the electron.log File
 
 The `electron.log` file will output info, warnings, and errors related to the startup of the application, its connectivity, and the availability of later versions.
 
@@ -98,7 +98,7 @@ The following example demonstrates the content of the `electron.log` file.
 [2020-10-01 23:42:33:622] [info] Application exited with code 0.
 ```
 
-#### Setting the netcore.log File
+### Setting the netcore.log File
 
 The `netcore.log` file will output info, warnings, and errors related to the network operations, the login process, the trust certificate setup, the user quota initialization, and so on.
 

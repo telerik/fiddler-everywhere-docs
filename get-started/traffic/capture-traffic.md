@@ -4,7 +4,7 @@ description: "Capture HTTP and HTTPS live traffic with the cross-platform, web-d
 slug: capture-traffic-get-started
 publish: true
 position: 10
-previous_url: /get-started/capture-traffic
+previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-web-traffic
 ---
 
 # Capturing Traffic

@@ -8,22 +8,24 @@ res_type: kb
 ---
 
 
-### Environment
+## Environment
 
 |   |   |
 |---|---|
 | Product   |
 | Product Version | 1.0.1 and above  |
 
-### Description
+## Description
 
 In the context of an HTTP transaction, __Basic Access Authentication__ is a method for an HTTP user agent (for example, a web browser) to provide a user name and password when making a request. In __Basic HTTP Authentication__, a request contains a header field in the form of `Authorization: Basic <base64 string>` where credentials are the __Base64__ encoding of `username` and `password` joined by a single colon (`:`).
 
-### Solution
+How can I create a request for APIs that require authentication in Fiddler Everywhere?
 
-To [create a request for APIs that require authentication](#create-a-basic-authentication-request) by using the Fiddler Everywhere [Composer]({%slug composer-tab%}) and provide a [complete example](#basic-authentication-request-example) of the procedure, follow the steps described in this article.
+## Solution
 
-#### Creating a Basic Authentication Request
+Create a request for APIs that require authentication by using the [**Composer**]({%slug composer-tab%}) and check the complete example of the suggested approach.
+
+### Creating a Basic Authentication Request
 
 The following steps provide an overview of the procedure for creating a basic authentication request:
 
@@ -35,7 +37,7 @@ The following steps provide an overview of the procedure for creating a basic au
     4.2 In the __Headers__ tab, set the __Key__ to `Authorization` and add the encoded `<username>:<password>` under __Value__.
     4.3 Add a __Description__ for the key. Click the __tick__ to add the `Authorization` key.
 
-#### Basic Authentication Request Example
+### Basic Authentication Request Example
 
 1. In the [**Composer**]({%slug composer-tab%}) tab, set the HTTP/HTTPS method to __GET__ and add [https://httpbin.org/basic-auth/user1/pass1](https://httpbin.org/basic-auth/user1/pass1) in the URL field.
 
