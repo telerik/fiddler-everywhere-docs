@@ -1,5 +1,26 @@
 [
     {
+        "version": "2.1.2",
+        "title": "Fiddler Everywhere v2.1.2",
+        "date": "October 04, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Rules are crashing and failing to load after specific rule is added"
+                    },
+                    {
+                        "title": "Complete Profile form allows setting mandatory fields with space(s) only"
+                    },
+                    {
+                        "title": "Users with only active JAM license cannot start Fiddler Everywhere trial in the product"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.1.1",
         "title": "Fiddler Everywhere v2.1.1",
         "date": "September 20, 2021",
