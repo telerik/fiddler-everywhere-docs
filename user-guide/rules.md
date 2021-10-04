@@ -1,13 +1,13 @@
 ---
-title: Rules
+title: Rules Tab
 description: "Learn how to use the Rules tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: rules-general
 publish: true
 position: 30
-previous_url: /user-guide/live-traffic/autoresponder
+previous_url: /user-guide/live-traffic/autoresponder, /user-guide/live-traffic 
 ---
 
-# Rules
+# Rules Tab
 
 The **Rules** tab is one of the most powerful features of Fiddler Everywhere. It enables you to create __rules__ that will automatically trigger in response to requests. The functionality provides means to easily and quickly test changes to web code without updating the production server, reproducing previously captured bugs (in SAZ files), or running website demos while being entirely offline. The collaboration functionalities allow you to import and export a single rule or rulesets and share rules directly with other Fiddler Everywhere collaborators. Each rule has different order priority and execution weight which can be easily controlled by promoting or demoting a rule.
 

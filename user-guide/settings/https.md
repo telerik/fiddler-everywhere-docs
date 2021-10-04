@@ -1,5 +1,5 @@
 ---
-title: HTTPS
+title: HTTPS 
 description: "Learn how to use the HTTPS menu and use the secure traffic capturing and root certificate options in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: decrypt-https-traffic
 publish: true

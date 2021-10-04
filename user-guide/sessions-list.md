@@ -1,5 +1,5 @@
 ---
-title: Sessions List
+title: Sessions List Section
 description: "Learn how to use the Sessions list tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-sessions-tab
 tags: Fiddler sessions, saved sessions, sessions list, Fiddler sessions tab
@@ -7,9 +7,9 @@ publish: true
 position: 40
 ---
 
-# Sessions List
+# Sessions List Section
 
-Fiddler Everywhere provides the option to save. modify, inspect and share previously captured traffic. Use the **Live Traffic** list's [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options to save sessions to the **Sessions** list.  
+Fiddler Everywhere provides the option to save, modify, inspect and share previously captured traffic. Use the **Live Traffic** list's [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options to save sessions to the **Sessions** list.  
 
 ![Sessions list](../images/sessions/saved-sessions-all.png)
 

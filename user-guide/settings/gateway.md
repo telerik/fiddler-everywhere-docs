@@ -1,5 +1,5 @@
 ---
-title: Gateway
+title: Gateway 
 description: "Learn how to use the Gateway menu and use the options for advanced proxy setup in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: gateway-submenu
 publish: true
@@ -39,6 +39,6 @@ By default, Fiddler Everywhere "chains" to the default proxy of the system. The 
 
 * __No proxy__&mdash;Sends all traffic directly to the root server.
 
-The following figure displays an example for a proxy configuration. 
+The following figure displays an example for a proxy configuration.
 
 ![Example manual proxy configuration](../../images/settings/settings-gateway.png)

@@ -18,6 +18,6 @@ The **Connections** menu exposes options that allow for granular control over pr
 
     A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere]({%slug configure-vpn-fiddler%}). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**.
 
-The following figure displays the startup settings of the **Connections** menu. 
+The following figure displays the startup settings of the **Connections** menu.
 
 ![Act as a system proxy on startup setting](../../images/settings/settings-connections.png)
