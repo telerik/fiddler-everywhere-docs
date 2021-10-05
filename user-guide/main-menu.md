@@ -19,12 +19,12 @@ The main menu in Fiddler Everywhere is located at the top and consists of a set 
 
 The **View** menu provides options for changing the overall Fiddler Everywhere UI size by zooming in or out.
 
-- The **Preferences** option enables you to load the Fiddler Everywhere settings window; can be accessed with the keyboard by pressing __Cmd__ (on Mac), or __Ctrl__ and **,** (on Windows).
-- The **Actual Size** option can be accessed with the keyboard by pressing __Cmd__ and __0__ (on Mac), or __Ctrl__ and __0__ (on Windows).
-- The **Zoom In** option can be accessed with the keyboard by pressing __Cmd__ and __+__ (on Mac), or __Ctrl__ and __+__ (on Windows).
-- The **Zoom Out** option can be accessed with the keyboard by pressing __Cmd__ and __-__ (on Mac), or __Ctrl__ and __-__ (on Windows).
-- The **Select Previous Tab** option can be accessed with the keyboard by pressing __Ctrl__, __Shift__ and __Tab__ (on Mac), or __Ctrl__, __Shift__, and __Tab__ (on Windows).
-- The **Select Next Tab** option can be accessed with the keyboard by pressing __Ctrl__ and __Tab__ (on Mac), or __Ctrl__ and __Tab__ (on Windows).
+- The **Preferences** option enables you to load the Fiddler Everywhere settings window; can be accessed with the keyboard by pressing `Cmd` (on Mac), or `Ctrl` and `,` (on Windows).
+- The **Actual Size** option can be accessed with the keyboard by pressing `Cmd` and `0` (on Mac), or `Ctrl` and `0` (on Windows).
+- The **Zoom In** option can be accessed with the keyboard by pressing `Cmd` and `+` (on Mac), or `Ctrl` and `+` (on Windows).
+- The **Zoom Out** option can be accessed with the keyboard by pressing `Cmd` and `-` (on Mac), or `Ctrl` and `-` (on Windows).
+- The **Select Previous Tab** option can be accessed with the keyboard by pressing `Ctrl`, `Shift` and `Tab` (on Mac), or `Ctrl`, `Shift`, and `Tab` (on Windows).
+- The **Select Next Tab** option can be accessed with the keyboard by pressing `Ctrl` and `Tab` (on Mac), or `Ctrl` and `Tab` (on Windows).
 
 ![View menu with zoom options](../images/menu/main-menu-view.png)
 

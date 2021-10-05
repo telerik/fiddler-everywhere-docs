@@ -11,7 +11,7 @@ previous_url: /get-started/inspect-traffic
 
 When the traffic is already captured, you can start analyzing the data.
 
-To extract information about the captured sessions, go to the [**Live Traffic**]({%slug web-sessions-list%}) tab where each request/response entry (session) is listed in a row with multiple column fields in the **sessions list**. There you can extract useful data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, the used HTTP method (GET or POST), and more.
+To extract information about the captured sessions, go to the [**Live Traffic**]({%slug web-sessions-list%}) tab where each request/response entry (session) is listed in a row with multiple column fields in the **Sessions** list. There you can extract useful data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, the used HTTP method (GET or POST), and more.
 
 To open structured information about the session timings, sizes, request, and response details in the [**Overview** tab]({%slug overview-tab%}), single-click a session or select multiple sessions.
 
@@ -21,9 +21,9 @@ To load [the request and response inspectors]({%slug inspector-types%}), double-
 
 ![Live Traffic and Inspectors](../../images/livetraffic/websessions/websessions-list-all.png)
 
-**Save** a selected session or multiple selected sessions [through the context menu]({%slug web-sessions-list%}#save), or, alternatively, use a keyboard shortcut. Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}) from which they can be reloaded or shared with collaborators.
+To save a selected session or multiple selected sessions, use the [context menu]({%slug web-sessions-list%}#save), or, alternatively, use a keyboard shortcut. Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}) from which they can be reloaded or shared with collaborators.
 
-Inspecting sessions is often done with teammates or external collaborators. **Share** a selected session or multiple selected sessions directly from the [__Live Traffic__ list]({%slug web-sessions-list%}#share) or by using the [__Sessions__ list]({%slug saved-sessions-tab%}).
+Inspecting sessions is often done with teammates or external collaborators. Share a selected session or multiple selected sessions directly from the [__Live Traffic__ list]({%slug web-sessions-list%}#share) or by using the [__Sessions__ list]({%slug saved-sessions-tab%}).
 
 ## Additional Resources
 

@@ -38,7 +38,7 @@ To add an exception filter for the Fiddler Everywhere endpoint:
 
 1. Start Fiddler Everywhere and use the Google authentication with Brave as a default OS browser.
 
-### Alternative Solution
+## Alternative Solution
 
 If adding an exception filter is a no-go, you can work around the issue by temporarily switching the default browser to another browser (for example, Chrome, Edge, Vivaldi, and so on), completing the Google authentication, and switching back the default OS browser to Brave.
 

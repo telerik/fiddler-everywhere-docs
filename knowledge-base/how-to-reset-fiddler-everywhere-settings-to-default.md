@@ -17,24 +17,24 @@ res_type: kb
 
 ## Description
 
-When you have to troubleshoot common issues, you may need to reset the Fiddler Everywhere settings to their default values to facilitate the process.
+When I troubleshoot common issues, I need to reset the Fiddler Everywhere settings to their default values to facilitate the process. How can I do this?
 
 ## Solution
 
-The following screenshots represent the Fiddler Everywhere Default Settings.
+The following screenshots represent the default Fiddler Everywhere settings.
 
-* Resetting the **HTTPS** settings&mdash;The default settings will reset Fiddler to its initial state, which means that the secure traffic won't be captured until **Capture HTTPS** is checked.
+* Default **HTTPS** settings&mdash;The default settings will reset Fiddler to its initial state, which means that the secure traffic won't be captured until **Capture HTTPS** is checked.
 
   ![default https settings](../images/kb/default-settings/default-https-settings.png)
 
-* **Connection** settings
+* Default **Connection** settings
 
   ![default Connection settings](../images/kb/default-settings/default-connection-settings.png)
 
-* **Gateway** settings
+* Default **Gateway** settings
 
   ![default Gateway settings](../images/kb/default-settings/default-gateway-settings.png)
 
-* **Composer** settings
+* Default **Composer** settings
 
   ![default Composer settings](../images/kb/default-settings/default-composer-settings.png)
