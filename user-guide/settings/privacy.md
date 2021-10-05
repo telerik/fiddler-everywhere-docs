@@ -1,6 +1,6 @@
 ---
-title: Privacy
-description: Privacy settings the in Fiddler Everywhere application
+title: Privacy 
+description: "Learn how to use the Privacy menu settings in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: privacy-submenu
 publish: true
 position: 40
@@ -8,18 +8,12 @@ position: 40
 
 # Privacy Menu
 
-The __Privacy__ sub-menu contains options to opt-out of receiving emails from Progress and its partners and the opportunity to request the deletion of your Fiddler Everywhere associated account.
+The **Privacy** sub-menu provides options to stop receiving emails from Progress and its partners as well as to request the deletion of your Fiddler Everywhere associated account.
+
+- **Unsubscribe**&mdash;To submit a request to unsubscribe from receiving future emails, click the **Unsubscribe** link. You will be redirected to a unsubscribe page where you can follow the instructions.
+- **Submit "Delete Account" request**&mdash;To submit a request, click the **Submit "Delete Account" request** link. You will be redirected to a page where you can follow the instructions.
+- **Automatically send data to help us improve the product**&mdash;Your information and usage statistics help us understand product usage better and continue building the product you love. To subscribe or unsubscribe from participating in the usage statistics sharing, check or, respectively, uncheck the **Automatically send data to help us improve the product** option. Click **Save** to apply the change.
+
+The following figure displays the **Privacy** menu settings.
 
 ![Privacy settings](../../images/settings/settings-privacy.png)
-
-## Unsubscribe from emails
-
-To submit a request to unsubscribe from receiving future emails, click the __Unsubscribe__ link. You will be redirected to a unsubscribe page where you should follow the given instructions.
-
-## Delete your Fiddler Account
-
-To submit a request, click the __Submit "Delete Account" request__ link. You will be redirected to a page where you should follow the given instructions.
-
-## Automatically send data to help us improve the product
-
-Your information and usage statistics help us understand product usage better and continue building the product you love. To subscribe or unsubscribe from participating in the usage statistics sharing, check/uncheck the __Automatically send data to help us improve the product__ option depending on whether you want to send usage statistics. Once the choice is made, click __Save__ to apply the change.

@@ -9,25 +9,25 @@ navigation:
     get-started:
         title: Get Started
         position: 10
-    get-started/mobile-traffic:
-        title: Mobile Traffic
-        position: 110
+    get-started/traffic:
+        title: Traffic Inspection and Analysis
+        position: 20
+    get-started/api:
+        title: API Composing
+        position: 50
     user-guide:
-        title: User Guide
+        title: User Interface
         position: 20
     user-guide/settings:
         title: Settings
         position: 20
-    user-guide/live-traffic:
-        title: Live Traffic
-        position: 30
     knowledge-base:
         title: Knowledge Base
         position: 90
 
 ## Product title
 product: "Progress Telerik Fiddler Everywhere"
-platform: fiddler-everywhere 
+platform: fiddler-everywhere
 
 ## An experimental property to resolve the SEO vs STA panels conflicts discussed in the following issue: https://github.com/telerik/docs-seed/issues/159
 ## Use only with docs-seed branch #fiddler-page-title
@@ -79,12 +79,12 @@ footer:
     "Forums": https://community.getfiddler.com/support/discussions
     "Blogs": https://www.telerik.com/blogs/tag/fiddler
     "Feedback Portal": https://feedback.telerik.com/fiddler-everywhere
-  
-footer_social: 
+
+footer_social:
     facebook: https://www.facebook.com/Telerik/
     youtube: https://www.youtube.com/user/TelerikInc
-    linkedin: https://www.linkedin.com/showcase/telerik/ 
-    twitter: https://twitter.com/TelerikFiddler/ 
+    linkedin: https://www.linkedin.com/showcase/telerik/
+    twitter: https://twitter.com/TelerikFiddler/
 
 # Assets pipeline configuration
 assets:

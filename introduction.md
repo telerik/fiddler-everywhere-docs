@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Fiddler Everywhere is a high performance, cross-platform web debugging proxy for any browser, system or platform
+description: "Try now the Fiddler Everywhere cross-platform, web-debugging, HTTP-request proxy and use it for any browser, system or platform to ensure high performance of your processes."
 slug: introduction
 publish: true
 position: 0
@@ -9,89 +9,63 @@ previous_url: /license
 
 # Welcome to Fiddler Everywhere!
 
-[**Fiddler Everywhere**](https://www.telerik.com/fiddler-everywhere) is a high performance, cross-platform web debugging proxy for any browser, system or platform. It is a web debugging tool that logs all HTTP(S) traffic between your computer and the Internet. It inspects and edits traffic, issue requests, and fiddle with incoming and outgoing data.
+Progress® Telerik® Fiddler™ Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTP(S) traffic, and issue requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high performance, cross-platform proxy for any browser, system, or platform.
 
-**HTTP(S) traffic Inspection and Analysis**
-
-Fiddler Everywhere logs all HTTP(S) traffic between your computer and the Internet. With Fiddler Everywhere you can capture traffic from virtually any application that supports a system proxy.
-
-**Request and Response Mocking**
-
-Fiddler support mocking or modifying request and responses on any application. It’s a quick and easy way to change HTTP(S) requests and responses without changing the code.
-
-**API Composing**
-
-Use Fiddler's API Composer to test APIs by creating and sending requests. This feature is useful while developing new APIs or when testing existing APIs.
-
-![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png)
+![Fiddler Everywhere main screen](./images/menu/fiddler-main-screen.png )
 
 ## Key Features
 
-- Compatible with macOS, Windows, and Linux.
-- Inspect web traffic (HTTP and HTTPS).
-- Decrypt secure traffic (HTTPS).
-- Save, share, and receive captured traffic with collaborators.
-- Mock requests and responses.
-- Modify requests and responses.
-- Compose new and edit existing API requests.
-- Save and share composed API requests.
-- Extended sharing and collaboration options.
-- Modern intuitive UI with multiple themes.
+Fiddler Everywhere delivers a range of handy and user-friendly features whose number and further development are not limited by the list in this section&mdash;the Fiddler team constantly invests efforts to improve the performance and add more value to the existing web-debugging tool, and build on top of its available features.
 
-The **Fiddler Everywhere** features are subject to some pre-defined limitations. Refer to the table below for details about the **Fiddler Everywhere Pro** subscription plan.
+### Traffic Inspection
 
-| __Features__ |  __Pro__ |
-|---|---|
-| Capture and Inspect Traffic |  **Unlimited** |
-| Creating Composer Requests | **Unlimited** |
-| Using rules |  **Unlimited** |
-| Sharing  rules | **Unlimited** |
-| Creating Saved Sessions entries * |  **Unlimited** |
-| Sharing Saved Sessions |  **Unlimited***  |
-| Shared Session Size |  Max **50 MB** |
-| Email Support | **Unlimited*** |
+Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %})
 
-*subject to fair usage policy. Learn more about the support offered [here]({%slug support-page%}).
+### Traffic Analysis
 
->tip A **Session** in Fiddler Everywhere is a term that describes an entry that holds single or multiple requests and responses (captured traffic). Saved session entries are listed in [the **Sessions** list]({%slug saved-sessions-tab%}) and can also be exported as **SAZ** archive or other known formats.
+Fiddler Everywhere provides an HTTP(S) traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, and share captured traffic with collaborators. [Read more about inspecting and modifying traffic with Fiddler Everywhere...]({% slug overview-tab %})
 
-#### Trial version
+### Request and Response Mocking
 
-To try Fiddler Everywhere for 30 days, press the **Upgrade** button within the UI and press **TRY PRO FOR 30 DAYS**. An **Upgrade Successful** prompt window confirms your trial clock has started. No credit card is required to start your trial and the trial is a fully functioning version of the [Fiddler Everywhere Pro plan](#key-features).
+Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without the need to update the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
 
+### API Composing
 
-#### Fiddler Everywhere Dashboard
+Fiddler Everywhere comes with an API Composer, which allows you to test APIs by creating and sending requests as well as save and share composed APIs. You can use the API composing feature both when developing new APIs and when testing existing APIs. [Read more about creating and organizing API requests with Fiddler Everywhere...]({% slug composer-get-started %})
 
-You can find more information on managing your plans and subscriptions through the Fiddler Everywhere dashboard panel [here]({%slug fiddler-dashboard%}).
+### Cross-Platform Support
 
-## Release history
+Fiddler Everywhere provides platform-agnostic compatibility that enables you to install, configure, and run the web-debugging tool on Windows, macOS, and Linux system-operating machines. Read more in the dedicated step-by-step guides:
 
-To learn more about the release history, visit [Release History Page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history)
+* [Get Started with Fiddler Everywhere on Windows]({% slug first_steps_windows %})
+* [Get Started with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
+* [Get Started with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
 
-## Installation
+### Fiddler Everywhere on Mobile
 
-Download the [latest Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
-To learn how to install Fiddler Everywhere, visit the [Installation]({% slug installation %}) section.
+Fiddler Everywhere enables you to also capture and inspect traffic on devices running on iOS and Android.
 
-## Documentation
+* [Capturing and inspecting traffic on iOS]({% slug capture-mobile-ios-traffic %})
+* [Capturing and inspecting traffic on Android]({% slug capture-mobile-android-traffic %})
 
-[Official Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/introduction?_ga=2.206480400.2086505781.1591948423-772467175.1590489532)
+### Styling Options  
 
-We believe documentation is best when the content is a product of collaboration between the builders and consumers of that product. Everybody can play a role in making our documentation better, and we encourage you to help us with this task in the way that you choose:
+Fiddler Everywhere delivers a modern, intuitive UI and a set of popular themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
 
-- Send Feedback
-    Use the __Was this article helpful?__ functionality to provide feedback and ideas on ways we can improve the documentation. Alternatively, you can request a feature or report a bug using the [Fiddler Everywhere Feedback Portal](https://feedback.telerik.com/fiddler-everywhere).
+## Trial Version and Commercial License
 
-- Create an Issue
-    If you find an issue with our docs that needs addressing, the best way to let us know is by creating an issue in our [Github repository](https://github.com/telerik/fiddler-everywhere-docs). When creating an issue, please provide a descriptive title, be as specific as possible, and link it to the documentation article. If you can give a link to the closest anchor to the issue, that is even better.
+Fiddler Everywhere offers a 30-day trial with a full-featured version of the tool&mdash;no restrictions! What’s more, you are eligible for complete technical support during your trial period in case you have any questions. To sign up for a free 30 day trial, go [here](https://www.telerik.com/download/fiddler-everywhere). In addition, [the Fiddler Everywhere dashboard panel]({%slug fiddler-dashboard%}) provides information and options for managing your subscription plans.
 
-- Send a Pull Request
-    Creating an issue is excellent, yet what we love are pull requests. Therefore, if you find a problem in the docs, or even feel like generating new content, we’d be happy to have your contributions! 
+To use Fiddler Everywhere commercially, you need to purchase a license. The terms of use are fully described in the [Fiddler Everywhere License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere).
 
-    To do this, you must fork our documentation and submit a pull request. Then, you may contribute an update exactly where you found the error. After that, our technical writing team will need to approve your change request. Please use only standard markdown. For more detailed instructions, please follow the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing) published in GitHub. You can directly initiate a pull request by using the __Improve this article__ functionality.
+* For more information about the available subscription plans, go to the [Fiddler Everywhere purchase page](https://www.telerik.com/purchase/fiddler).
+* For more information on the available commercial and free support channels, refer to the article on the [available Fiddler Everywhere support options]({%slug support%}).
 
+## Suggested Links
 
-## License
-
-Licensing agreement and detailed information about the different licenses and which one you should acquire is available in the [Licensing](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere) section.
-
+* [Before You Start: All Things Fiddler (Telerik Blog Post)](https://www.telerik.com/blogs/fiddler)
+* [Getting Started with Fiddler Everywhere (Video Tutorials)](https://www.telerik.com/videos/fiddler/tag/fiddler-everywhere)
+* [Getting Started with Fiddler Everywhere (Webinars on Demand)](https://www.telerik.com/webinars/fiddler-everywhere)
+* [Quickstart on Windows (Step-by-Step Guide)]({% slug first_steps_windows %})
+* [Quickstart on macOS (Step-by-Step Guide)]({% slug first_steps_macos %})
+* [Quickstart on Linux (Step-by-Step Guide)]({% slug first_steps_linux %})
