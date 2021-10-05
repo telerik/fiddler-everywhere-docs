@@ -38,14 +38,14 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
         3.3 Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
         3.4 If prompted, enter your username and password. Press the **Enter** key.
     - Setting the installation plan as executable through the GUI.
-        * For the Gnome distribution
+        For the Gnome distribution
 
           ![Gnome setting executable](../images/installation/exec-gnome.jpg)
-        * For the Cinnamon distribution
+        For the Cinnamon distribution
 
           ![Cinnamon setting executable](../images/installation/exec-cinnamon.jpg)
 
-        * For the KDI distribution
+        For the KDI distribution
 
           ![KDE setting executable](../images/installation/exec-kde.jpg)
 
