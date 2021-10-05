@@ -1,5 +1,5 @@
 ---
-title: Gateway 
+title: Gateway
 description: "Learn how to use the Gateway menu and use the options for advanced proxy setup in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: gateway-submenu
 publish: true
@@ -15,11 +15,11 @@ By default, Fiddler Everywhere "chains" to the default proxy of the system. The 
 - (Recommended) **Use system proxy**&mdash;The default selection. Fiddler uses the OS system proxy. Some browsers and many applications use the system proxy by default and are notified when it changes.
 - **Manual proxy configuration**&mdash;Specifies the upstream proxy string (first textbox) and proxy bypass list (second textbox).
     - **Proxy string**&mdash;To manually set the gateway proxy, enter the proxy string.
-        - You can enter the proxy configuration string directly.
+        To enter the proxy configuration string directly, use the following line.
         ```curl
         proxyserver:8080
         ```
-        - You can enter the proxy in the protocol-specific form.
+        To enter the proxy in the protocol-specific form, use the following line.
         ```curl
         http=httpproxy:8080;https=httpsproxy:8080
         ```

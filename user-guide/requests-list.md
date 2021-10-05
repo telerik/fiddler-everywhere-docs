@@ -15,7 +15,7 @@ For more information about building and sending HTTP and HTTPS requests, refer t
 
 When you save a request with the **Composer** tab, the request is added to a collection in the **Requests** list, which provides options for saving, modifying, executing, and sharing previously composed requests.
 
-The **Requests** list is organized into collections. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double-click a selected request. To rename or delete a collection, or make a new folder, use the [context menu options](#).
+The **Requests** list is organized into collections. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double-click a selected request. To rename or delete a collection, or make a new folder, use the [context menu options](#requests-context-menu).
 
 ![Requests list](../images/requests/requests-list-all.png)
 

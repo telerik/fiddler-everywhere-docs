@@ -22,8 +22,8 @@ Amazon Web Services (AWS) is a popular tool that provides multiple options for c
 
 ## Solution
 
-* [Configuring the AWS CLI](#configuring-the-aws-cli-alongside-fiddler-everywhere)
-* [Configuring the AWS CLI](#resetting-the-aws-cli-to-default-settings)
+* [Configuring the AWS CLI alongside Fiddler Everywhere](#configuring-the-aws-cli-alongside-fiddler-everywhere)
+* [Resetting the AWS CLI to default settings](#resetting-the-aws-cli-to-default-settings)
 
 ### Configuring the AWS CLI alongside Fiddler Everywhere
 

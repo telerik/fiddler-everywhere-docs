@@ -21,10 +21,10 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 - Make sure you have 300MB+ free disk space.
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
-    ```
-        https://*.getfiddler.com/
-        https://*.amazonaws.com/
-    ```
+```curl
+  https://*.getfiddler.com/
+  https://*.amazonaws.com/
+```
 
 ## Installing Fiddler Everywhere on Your Machine
 

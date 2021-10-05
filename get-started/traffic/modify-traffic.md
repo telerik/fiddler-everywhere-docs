@@ -15,7 +15,7 @@ Instead of testing your API or a website through the UI and making multiple clic
 
 To load and modify a session through the **Composer**:
 
-1. Set **Live Traffic** to **Capturing** and make the request. As a result, the session is captured and displayed in the **Live Traffic list**.
+1. Set **Live Traffic** to **Capturing** and make the request. As a result, the session is captured and displayed in the **Live Traffic** list.
 1. Select the desired session and right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing the **E** key.
 
     ![Edit in Composer](../../images/composer/edit-in-composer.png)
@@ -26,7 +26,7 @@ To load and modify a session through the **Composer**:
     >tip To modify a header, select it and change the needed key-value pair. You can add a new header by using the top key-value row. By default, the top key-value row is empty and can receive new values. Once you have modified or added a new header, click the confirmation button (a tick) to the right to apply the changes.
 1. Click **Execute**.
 
-This approach enables you to modify an existing request in the same way your application does it. In the [**Live Traffic list**]({slug web-sessions-list}#live-traffic-list), you can find the newly executed request and the response from the server.
+This approach enables you to modify an existing request in the same way your application does it. In the [**Live Traffic** list]({slug web-sessions-list}#live-traffic-list), you can find the newly executed request and the response from the server.
 
 ## Additional Resources
 

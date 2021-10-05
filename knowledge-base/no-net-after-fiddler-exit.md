@@ -1,5 +1,5 @@
 ---
-title: No Internet Connectivity is Available after Closing Fiddler Everywhere
+title: No Internet Connectivity Is Available after Closing Fiddler Everywhere
 description: "Check for a leaked proxy and restore the Internet connectivity after the Fiddler Everywhere web-debugging client stops unexpectedly."
 type: how-to
 slug: fiddler-restore-internet
@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-By design, when the Fiddler Everywhere application is closed, it restores the default operating system proxy settings. However, on rare occasions, the application ends unexpectedly due to various reasons such as a software crash, OS interruption, hardware failure, and so on. In these case how can I restore the default proxy settings and avoid losing the Internet connectivity?
+By design, when the Fiddler Everywhere application is closed, it restores the default operating system proxy settings. However, on rare occasions, the application ends unexpectedly due to various reasons such as a software crash, OS interruption, hardware failure, and so on. In this case, how can I restore the default proxy settings and avoid losing the Internet connectivity?
 
 ## Solution
 
