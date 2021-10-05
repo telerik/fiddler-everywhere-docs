@@ -38,7 +38,7 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 
 In this step you'll register by creating your personal Fiddler Everywhere account and become a trial user.   
 
-1. Launch the Fiddler Everywhere client. Select the **New User? Create Account** button.
+1. Launch the Fiddler Everywhere client. Select the **New User? Sign up** button.
 1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. The email you provide here will be later on used by your collaborators for sharing sessions, collections, and notifications.
 1. Open the confirmation email and verify your Fiddler registration by entering the unique code.
 1. Fill in the required information and proceed through the **Let's Go** button.
@@ -57,12 +57,23 @@ Now let's add more elegance to Fiddler Everywhere and change its default Light t
 
 ## Fiddling with the Traffic
 
-Let's now continue with capturing and inspecting some HTTPS traffic and, then, with modifying a captured session.
+Let's now continue with capturing and inspecting some HTTPS traffic:
 
-1. Switch **Live Traffic** to **Capturing** and the **Live Traffic** list will immediately start capturing and displaying your incoming and outgoing traffic.
-1. Inspect each session's request and response data through the **Inspectors** and use the **Overview** to extract more details and statistical data.
-1. Now you'll extract a captured session&mdash;go to the **Live Traffic** tab and select a request/response entry from under the **sessions list**. ....
-1. Let's modify that session! Right-click the session of your request to open the context menu of the entry. From there, select **Edit in Composer**. When the session opens in a new window, modify its headers&mdash;or example, change ... to ...
+1. Inspect each session's request and response data through the **Inspectors** tab.
+1. Extract more details and statistical data by using the **Overview** tab.
+
+Now you'll extract a captured session:
+
+1. Go to the **Live Traffic** tab and select a request/response entry from under the **sessions list**.
+1. Double-click to open the **Inspectors** tab and inspect the detailed session request/response data.
+1. Switch to the **Overview** tab to observe technical and statistical data.
+
+Let's modify that session!
+
+1. Right-click the session of your request to open the context menu of the entry. From there, select **Edit in Composer**.
+1. When the session opens in a new **Composer** window, modify its headers. For example, add new HTTP header with the `isTest` key and the `true` value.
+1. Click the **tick** to add the new HTTP header.
+1. Click the **Execute** button to replay the modified request.
 
 That was it! Now you are ready to dive more deeply into Fiddler Everywhere and take full advantage of its slick functionalities!
 

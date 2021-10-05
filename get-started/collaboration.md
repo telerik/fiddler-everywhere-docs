@@ -21,7 +21,7 @@ In Fiddler Everywhere you can save, and later on view and share captured network
 To save a session:
 
  1. [Capture the traffic]({%slug capture-traffic-get-started%}).
- 2. Use any of the available approaches to save a captured session:
+ 1. Use any of the available approaches to save a captured session:
     - The **Save**  option of the [**Live Traffic** toolbar]({%slug web-sessions-list%}#live-traffic-toolbar).
     - The **Save** option from the context menu of the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list).
     - The [context menu]({%slug web-sessions-list%}#context-menu-options), which allows you to export the captured traffic in various formats such as `SAZ`, `HTTPArchive`, `WCAT`, `MeddlerScript`, `cURLScript`, and others.
@@ -31,7 +31,7 @@ To save a session:
 To share a session with a collaborator:
 
  1. [Capture the traffic]({%slug capture-traffic-get-started%}) that you want to share with your collaborators. Alternatively, select a saved session from the [**Sessions** list]({%slug saved-sessions-tab%}).
- 2. Use any of the supported approaches to share a captured session:
+ 1. Use any of the supported approaches to share a captured session:
     - The **Share** option of the [**Live Traffic** toolbar]({%slug web-sessions-list%}#live-traffic-toolbar)&mdash;Click **Share** to prompt two consecutive windows for entering the information related to saving and sharing.
     - The **Share** option from the context menu of the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list)&mdash;Click **Share** to prompt two consecutive windows for entering the information related to saving and sharing.
     - The **Share** button of the [**Sessions** list]({%slug saved-sessions-tab%})&mdash;The list contains your previously saved sessions or sessions that were shared with you. Click the **Share** button to prompt a window for entering the information related to sharing.
@@ -50,7 +50,7 @@ Some network sessions may lack important details that are not captured in the te
 Add a custom comment to one or more captured sessions to provide additional context.
 
 1. Select a session from the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list) or load saved sessions from the [**Sessions** list]({%slug saved-sessions-tab%}).
-2. Add a comment by using the **Comment** option from the context menu or press the **M** key while selecting the desired sessions. As a result, the newly added comment will appear in [the **Comments** column]({%slug web-sessions-list%}#live-traffic-list).
+1. Add a comment by using the **Comment** option from the context menu or press the **M** key while selecting the desired sessions. As a result, the newly added comment will appear in [the **Comments** column]({%slug web-sessions-list%}#live-traffic-list).
 
     ![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
 
@@ -59,8 +59,8 @@ Add a custom comment to one or more captured sessions to provide additional cont
 Add additional context in the form of a descriptive note while sharing one or more session.
 
 1. Use the **Share** option from the [**Live Traffic toolbar**]({%slug web-sessions-list%}#live-traffic-toolbar) or the **Share** button in the [**Sessions** list]({%slug saved-sessions-tab%}).
-2. In the first dialog window, provide a name for the shared sessions.
-3. In the second dialog window, provide the additional information in the **Add a note** field. As a result, the note will be rendered as context in the email received by the collaborators.
+1. In the first dialog window, provide a name for the shared sessions.
+1. In the second dialog window, provide the additional information in the **Add a note** field. As a result, the note will be rendered as context in the email received by the collaborators.
 
     ![Add a note in share prompt window](../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
 

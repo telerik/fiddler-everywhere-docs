@@ -16,7 +16,6 @@ The client logs all HTTP and HTTPS traffic between your computer and the Interne
 To capture traffic with Fiddler Everywhere:
 
 1. Start Fiddler Everywhere. Make sure that it is properly configured as described in the First Steps tutorials.
-
 2. Switch **Live Traffic** to **Capturing**. Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug web-sessions-list%}).
 
     ![Enabling Live Traffic](../../images/livetraffic/websessions/websessions-live-traffic-capturing.png)

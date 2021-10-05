@@ -122,35 +122,34 @@ The **Live Traffic List** uses icons to provide additional context for each reco
 
 The following table displays the icons, which **Live Traffic** supports for its list:
 
-|Icon |Functionality
-|:--- |:---
-|![Generic document icon](../images/livetraffic/icons/generic-document.svg) |A generic successful response.
-|![Uploading icon](../images/livetraffic/icons/uploading.svg)|An upload of session content is in progress (the request is being sent to the server).
-|![Upload paused icon](../images/livetraffic/icons/upload-paused.svg)|The upload is paused for a session in progress.
-|![Downloading icon](../images/livetraffic/icons/downloading.svg)|The download of content for a session is in progress (the response is being read from the server).
-|![Downloading paused icon](../images/livetraffic/icons/download-paused.svg)|The download is paused for a session in progress.
-|![Aborted icon](../images/livetraffic/icons/aborted.svg)|The session was aborted by the client, Fiddler, or the server.
-|![Error icon](../images/livetraffic/icons/error.svg)|The response was a server error.
-|![Unauthorized icon](../images/livetraffic/icons/unauthorized.svg)|The response returned the 401 Unauthorized status code.
-|![Redirect icon](../images/livetraffic/icons/redirect.svg)|The response returned a 300, 301, 302, 303, or 307 redirect status code.
-|![WebSocket icon](../images/livetraffic/icons/websocket.svg)|A tunnel is used for WebSocket traffic.
-|![HTTPS tunnel icon](../images/livetraffic/icons/https-tunnel.svg)|The request used the **HTTP CONNECT** method|establishes a tunnel used for HTTPS traffic.
-|![RPC tunnel icon](../images/livetraffic/icons/rpc.svg)|A tunnel used for RPC traffic.
-|![No Content icon](../images/livetraffic/icons/no-content.svg)|No content loaded.
-|![Not modified icon](../images/livetraffic/icons/not-modified.svg)|Not modified.
-|![Partial content icon](../images/livetraffic/icons/partial.svg)|Partial content.
-|![Image icon](../images/livetraffic/icons/image.svg)|The response was an image.
-|![JavaScript icon](../images/livetraffic/icons/javascript.svg)|The response was a JavaScript file.
-|![CSS icon](../images/livetraffic/icons/css.svg)|The response was a CSS file.
-|![HTML icon](../images/livetraffic/icons/html.svg)|The response was an HTML file.
-|![XML icon](../images/livetraffic/icons/xml.svg)|The response was an XML file.
-|![Flash icon](../images/livetraffic/icons/flash.svg)|The response was a Flash file.
-|![Silverlight icon](../images/livetraffic/icons/silverlight.svg)|The response was a Silverlight file.
-|![Audio icon](../images/livetraffic/icons/audio.svg)|The response was an audio file.
-|![Video icon](../images/livetraffic/icons/video.svg)|The response was a video file.
-|![Font icon](../images/livetraffic/icons/font.svg)|The response was a font file.
-|![JSON icon](../images/livetraffic/icons/json.svg)|The response was a JSON file.
-|![POST method icon](../images/livetraffic/icons/post.svg)|The request used the **POST** method.
+- ![Generic document icon](../images/livetraffic/icons/generic-document.svg) - Represents a generic successful response.
+- ![Uploading icon](../images/livetraffic/icons/uploading.svg) - Uploading content for a session in progress (the request is being sent to the server).
+- ![Upload paused icon](../images/livetraffic/icons/upload-paused.svg) - Uploading paused for session in progress.
+- ![Downloading icon](../images/livetraffic/icons/downloading.svg) - Downloading content for session in progress (the response is being read from the server).
+- ![Downloading paused icon](../images/livetraffic/icons/download-paused.svg) - Downloading paused for session in progress.
+- ![Aborted icon](../images/livetraffic/icons/aborted.svg) - The session was aborted by the client, Fiddler, or the Server.
+- ![Error icon](../images/livetraffic/icons/error.svg) - The response was a server error.
+- ![Unauthorized icon](../images/livetraffic/icons/unauthorized.svg) - The response returned status code 401 Unauthorized.
+- ![Redirect icon](../images/livetraffic/icons/redirect.svg) - The response redirect status code 300, 301, 302, 303 or 307.
+- ![WebSocket icon](../images/livetraffic/icons/websocket.svg) - A tunnel is used for WebSocket traffic.
+- ![HTTPS tunnel icon](../images/livetraffic/icons/https-tunnel.svg) - The request used the **HTTP CONNECT** method - establishes a tunnel used for HTTPS traffic.
+- ![RPC tunnel icon](../images/livetraffic/icons/rpc.svg) - A tunnel used for RPC traffic.
+- ![No Content icon](../images/livetraffic/icons/no-content.svg) - No content loaded.
+- ![Not modified icon](../images/livetraffic/icons/not-modified.svg) - Not modified.
+- ![Partial content icon](../images/livetraffic/icons/partial.svg) - Partial content.
+- ![Image icon](../images/livetraffic/icons/image.svg) - The response was an image.
+- ![JavaScript icon](../images/livetraffic/icons/javascript.svg) - The response was a JavaScript file.
+- ![CSS icon](../images/livetraffic/icons/css.svg) - The response was a CSS file.
+- ![HTML icon](../images/livetraffic/icons/html.svg) - The response was an HTML file.
+- ![Flash icon](../images/livetraffic/icons/flash.svg) - The response was a Flash file.
+- ![XML icon](../images/livetraffic/icons/xml.svg) - The response was an XML file.
+- ![Silverlight icon](../images/livetraffic/icons/silverlight.svg) - The response was a Silverlight file.
+- ![Audio icon](../images/livetraffic/icons/audio.svg) - The response was an audio file.
+- ![Video icon](../images/livetraffic/icons/video.svg) - The response was a video file.
+- ![Font icon](../images/livetraffic/icons/font.svg) - The response was a font file.
+- ![JSON icon](../images/livetraffic/icons/json.svg) - The response was a JSON file.
+- ![POST method icon](../images/livetraffic/icons/post.svg) - The request used the POST method.
+
 
 ## Columns
 
