@@ -8,7 +8,7 @@ res_type: kb
 ---
 
 
-#### Environment
+## Environment
 
 |   |   |
 |---|---|
@@ -16,16 +16,15 @@ res_type: kb
 | Product Version | 1.0.0 and above  |
 | Operating System | macOS |
 
-#### Description
+## Description
 
-Test if **Fiddler Everywhere** is correctly configured to capture HTTPS traffic on macOS.
+How can I troubleshoot traffic capturing on macOS?
 
+## Solution
 
-## Troubleshooting macOS Capturing
+Test if Fiddler Everywhere is correctly configured to capture HTTPS traffic on macOS by executing a cURL command in the macOS terminal and checking the output in the terminal and inside Fiddler Everywhere:
 
-The user can execute a simple **cURL** command in the **macOS** terminal and check the output in the terminal and inside Fiddler Everywhere:
-
-1. Open Fiddler Everywhere and ensure that it is configured to capture HTTPS traffic (The root certificate is installed and trusted and **Settings > HTTPS > Capture HTTPS traffic** is checked).
+1. Open Fiddler Everywhere and ensure that the root certificate is installed and trusted, and **Settings** > **HTTPS** > **Capture HTTPS traffic** is checked.
 
 1. Open a terminal and enter the following command:
 
@@ -35,7 +34,7 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
 
     The `-x` option sets the Fiddler Everywhere proxy. The `-v` option provides verbose logs. Optionally, you can use the `-k` option to disable SSL verification.
 
-1. Check the command output. There will be a line related to the Server certificate, and under it, the certificate will list Fiddler's URL (http://www.fiddler2.com)
+1. Check the command output for a line related to the server certificate. Under it, the certificate will list the Fiddler URL (http://www.fiddler2.com).
 
     ```Console
     *   Trying 127.0.0.1...
@@ -91,28 +90,27 @@ The user can execute a simple **cURL** command in the **macOS** terminal and che
     < Content-Length: 1256
     ```
 
-1. Check the Fiddler Everywhere application window. A new session will be visible in the Live Traffic tab, and the protocol will be **HTTPS**. There will be no Tunnel to indicate in the Host column. If the above is correct, the Fiddler Everywhere is configured to capture HTTPS traffic.
+1. Check the Fiddler Everywhere application window. A new session will be visible in the **Live Traffic** tab, the protocol will be **HTTPS**, and no **Tunnel** to indicate in the **Host** column will be available. If this is correct, then Fiddler Everywhere is configured to capture HTTPS traffic.
 
     ![Fiddler showing HTTPS traffic](../images/kb/troubleshoot/curl-request-fiddler.png)
 
-1. After the above steps, the user should try turning the Live Traffic to **Capturing** mode and open the Chrome browser. Use the incognito mode to make sure no credentials or cookies are cashed. Then open each of these URLs and see if they are captured inside Fiddler Everywhere:
+1. Turn the **Live Traffic** to its **Capturing** mode and open the Chrome browser. Use the incognito mode to make sure no credentials or cookies are cached. Then open each of these URLs and see if they are captured inside Fiddler Everywhere:
 
-    - http://httpbin.org (notice this requst is using **HTTP**)
+    - http://httpbin.org (note that this request uses **HTTP**)
 
-    - https://www.example.com (notice this request is using **HTTPS** and not HTTP)
+    - https://www.example.com (note that this request uses **HTTPS**)
 
     - https://www.google.com
 
 
-1. After opening each of the above URLs, check the Live Traffic list and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic - [use the Clear All Filters option]({%slug web-sessions-list%}#clear-all-filters) to remove any preset filters.
+1. After opening each of the above URLs, check the **Live Traffic** list and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic&mdash;to remove any preset filters, [use the **Clear All Filters** option]({%slug web-sessions-list%}#clear-all-filters).
 
-If the issue persist or unsure, for example, there are too many captured sessions, and you cannot find the three URLs above, save the captured sessions (_File > Save Archive > All Sessions)_, and post them in [the support channels]({% slug introduction %}#support-options).
-
+If the issue persists or, for example, there are too many captured sessions and you cannot find the three URLs above, save the captured sessions by going to **File** > **Save Archive** > **All Sessions** and post them in [the support channels]({% slug support %}).
 
 ## See Also
 
-*   [Troubleshoot Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
-*   [Access and Inspect Fiddler Everywhere log files]({%slug fiddler-log-files%})
-*   [Troubleshoot macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
-*	[How-To Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
-*	[How-To Reset Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)
+* [Troubleshooting Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
+* [Accessing and Inspecting Fiddler Everywhere Log Files]({%slug fiddler-log-files%})
+* [Troubleshooting macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
+*	[Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
+*	[Resetting Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)

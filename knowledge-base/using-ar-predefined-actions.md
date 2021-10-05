@@ -8,7 +8,7 @@ res_type: kb
 ---
 
 
-#### Environment
+## Environment
 
 |   |   |
 |---|---|
@@ -16,54 +16,58 @@ res_type: kb
 | Product Version | 1.5.0 and above  |
 | Operating System | macOS, Windows, and Linux |
 
-#### Description
+## Description
 
-The [Rules tab]({%slug rules-general%}) is one of the most powerful debugging functionalities that Fiddler Everywhere provides. The main idea behind the Rules tab is to provide a set of rules (based on match rules and actions) that quickly mock a server response and behavior without going through the trouble of modifying the server. Within seconds, you can execute many complex and different rules and test your site against multiple scenarios.
+The [**Rules** tab]({%slug rules-general%}) is a powerful debugging functionality in Fiddler Everywhere. How can I use each of the predefined actions in the **Actions** drop-down as DAT files and customize a rule by adding a [**Custom response file**](#custom-response-file) or a [**Manual Response**](#custom-manual-response)?
 
-This article lists in detail each of the predefined actions available in the **Actions** drop-down as DAT files. It also explain how to customize a rule by adding a [Custom response file](#custom-response-file) or a [Manual Response](#custom-manual-response).
+## Solution
 
->important All three response modification actions are **final**. Final actions will immediately stop any other consecutive actions and rules from execution.
+The main idea behind the **Rules** tab is to provide a set of rules based on match rules and actions, which quickly mock a server response and behavior without the need to modify the server. Within seconds, you can execute many complex and different rules, and test your site against multiple scenarios.
 
-## Predefined Actions in Rule Builder
+>important All response modification actions are final. Final actions will immediately stop any other consecutive actions and rules from execution.
 
-The Actions drop-down menu provides several options named *XXX.dat* where *XXX* is a descriptive name of the response. The content of each predefined DAT file is listed below.
+### Using the Predefined Actions in Rule Builder
 
-1. **200_FiddlerGif.dat**
+The **Actions** drop-down menu provides several options named **XXX.dat** where **XXX** is a descriptive name of the response.
 
-```HTTP
-HTTP/1.1 200 OK
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-FiddlerTemplate: True
-Content-Length: 308
-Content-Type: image/gif
+The content of each predefined DAT file is as follows:
 
-GIF89a# #encoded string for a sample GIF follows here
-```
+* `200_FiddlerGif.dat`
 
-1. **200_SimpleHTML.dat**
+    ```HTTP
+    HTTP/1.1 200 OK
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    FiddlerTemplate: True
+    Content-Length: 308
+    Content-Type: image/gif
 
-```HTTP
-HTTP/1.1 200 OK
-FiddlerTemplate: True
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-Content-Length: 51
+    GIF89a# #encoded string for a sample GIF follows here
+    ```
 
-This is a simple Fiddler-returned <B>HTML</B> page.
-```
+* `200_SimpleHTML.dat`
 
-1. **200_TransPixel.dat**
+    ```HTTP
+    HTTP/1.1 200 OK
+    FiddlerTemplate: True
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    Content-Length: 51
 
-```HTTP
-HTTP/1.1 200 OK
-Date: Fri, 25 Jan 2013 16:49:29 GMT
-FiddlerTemplate: True
-Content-Type: image/gif
-Content-Length: 49
+    This is a simple Fiddler-returned <B>HTML</B> page.
+    ```
 
-GIF89a #encoded string for a transparent GIF follows here
-```
+* `200_TransPixel.dat`
 
-1. **204_NoContent.dat**
+    ```HTTP
+    HTTP/1.1 200 OK
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    FiddlerTemplate: True
+    Content-Type: image/gif
+    Content-Length: 49
+
+    GIF89a #encoded string for a transparent GIF follows here
+    ```
+
+* `204_NoContent.dat`
 
     ```HTTP
     HTTP/1.1 204 No Content
@@ -72,7 +76,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Content-Length: 0
     ```
 
-1. **302_Redirect.dat**
+* `302_Redirect.dat`
 
     ```HTTP
     HTTP/1.1 302 Redirect
@@ -82,7 +86,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Content-Length: 0
     ```
 
-1. **303_RedirectWithGet.dat**
+* `303_RedirectWithGet.dat`
 
     ```HTTP
     HTTP/1.1 303 Redirect Using GET
@@ -92,7 +96,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Content-Length: 0
     ```
 
-1. **304_NotModified.dat**
+* `304_NotModified.dat`
 
     ```HTTP
     HTTP/1.1 304 Not Modified
@@ -101,7 +105,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Content-Length: 0
     ```
 
-1. **307_RedirectWithMethod.dat**
+* `307_RedirectWithMethod.dat`
 
     ```HTTP
     HTTP/1.1 307 Redirect using same Method
@@ -111,7 +115,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Content-Length: 0
     ```
 
-1. **401_AuthBasic.dat**
+* `401_AuthBasic.dat`
 
     ```HTTP
     HTTP/1.1 401 Authentication Required
@@ -124,7 +128,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Fiddler: HTTP/401 Basic Server Auth Required.    
     ```
 
-1. **401_AuthDigest.dat**
+* `401_AuthDigest.dat`
 
     ```HTTP
     HTTP/1.1 401 Authentication Required
@@ -137,7 +141,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Fiddler: HTTP/401 Digest Server Auth Required.
     ```
 
-1. **403_AuthDeny.dat**
+* `403_AuthDeny.dat`
 
     ```HTTP
     HTTP/1.1 403 Access Denied
@@ -148,7 +152,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Fiddler: HTTP/403 Access Denied.   
     ```
 
-1. **404_Plain.dat**
+* `404_Plain.dat`
 
     ```HTTP
     HTTP/1.1 404 Not Found
@@ -160,7 +164,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Fiddler: HTTP/404 Not Found
     ```
 
-1. **407_ProxyAuthBasic.dat**
+* `407_ProxyAuthBasic.dat`
 
     ```HTTP
     HTTP/1.1 407 Proxy Auth Required
@@ -173,7 +177,7 @@ GIF89a #encoded string for a transparent GIF follows here
     Fiddler: HTTP/407 Proxy Auth Required.
     ```
 
-1. **502_Unreachable.dat**
+* `502_Unreachable.dat`
 
     ```HTTP
     HTTP/1.1 502 Unreachable Server
@@ -185,22 +189,22 @@ GIF89a #encoded string for a transparent GIF follows here
     Fiddler: HTTP/502 unreachable server.
     ```
 
-## Custom Response File
+### Using the Custom Response File
 
-The Rule Builder **Actions** drop-down provides an option to load your own custom DAT file with an entirely custom HTTP response:
+The **Actions** drop-down of the **Rule Builder** provides an option to load your own custom DAT file with an entirely custom HTTP response:
 
-1. Scroll the drop-down Actions menu and select **Response file**.
-1. In the file selection window, load the DAT file with the curtom HTTP Response.
-1. Press **Save** to create/update the rule.
+1. Scroll the drop-down **Actions** menu and select **Response file**.
+1. In the file selection window, load the DAT file with the custom HTTP response.
+1. Click **Save** to create or update the rule.
 
 ![Response file](../images/kb/dat-files/kb-rules-response-file.png)
 
-## Custom Manual Response
+### Using the Custom Manual Response
 
-Another option that the Rule Builder provides is to create the mocked custom HTTP response manually:
+Another option that the **Rule Builder** provides is to create the mocked custom HTTP response manually:
 
-1. Scroll the drop-down Actions menu and select **Manual Response**.
-1. Write the custom HTTP Response in the text field.
-1. Press **Save** to create/update the rule.
+1. Scroll the drop-down **Actions** menu and select **Manual Response**.
+1. Write the custom HTTP response in the text field.
+1. Click **Save** to create or update the rule.
 
 ![Response file](../images/kb/dat-files/kb-rules-response-manul.png)

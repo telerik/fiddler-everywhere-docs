@@ -8,7 +8,7 @@ res_type: kb
 ---
 
 
-#### Environment
+## Environment
 
 |   |   |
 |---|---|
@@ -16,43 +16,43 @@ res_type: kb
 | Fiddler Everywhere |  1.0.0 and above  |
 | Brave Browser | all versions |
 
-#### Description
+## Description
 
-Fiddler Everywhere provides an option to use a unique Fiddler account or Google Authentication. When using the Google Authentication option with the Brave browser (set as default OS browser), the fallback might fail silently due to the default adblock filters applied by the Brave configuration. The issue prevents Fiddler Everywhere users from using Google Authentication with Brave set as the default OS browser.
+Fiddler Everywhere provides an option to use a unique Fiddler account or Google authentication. When using the Google authentication option with the Brave browser when set as the default OS browser, the fallback might fail silently due to the default adblock filters applied by the Brave configuration. How can I use Google authentication with Brave set as the default OS browser?
 
 ## Solution
 
-The user can configure a custom adblock filter in the Brave browser configuration. Use a filter exception to bypass the Fiddler endpoint and, as a result, complete the Google Authentication process successfully.
+You can configure a custom adblock filter in the Brave browser configuration. Use a filter exception to bypass the Fiddler endpoint and, as a result, complete the Google authentication process successfully.
 
-To add an exception filter for the Fiddler Everywhere endpoint, follow these steps:
+To add an exception filter for the Fiddler Everywhere endpoint:
 
-- Open the Brave browser and in type **brave://adblock** in the address field. Brave opens the **Additional filters** configuration page.
+1. Open the Brave browser and in type `brave://adblock` in the address field. Brave opens the **Additional filters** configuration page.
 
-- Scroll down to the **Custom Filters** option. Type the following exception rule on a new line:
+1. Scroll down to the **Custom Filters** option. Type the following exception rule on a new line:
 
     ```Shell
     @@||localhost^$domain=getfiddler.com
     ```
 
-- Exit the page and restart the Brave browser.
+1. Exit the page and restart Brave.
 
-- Start Fiddler Everywhere and use the Google Authentication with Brave as a default OS browser.
+1. Start Fiddler Everywhere and use the Google authentication with Brave as a default OS browser.
 
-## Alternative Solution
+### Alternative Solution
 
-If adding an exception filter is a no-go, you could work around the issue by temporarily switching the default browser to another browser (for example, Chrome, Edge, Vivaldi, etc.). Then complete the Google Authentication, and switch back to the default OS browser to Brave.
+If adding an exception filter is a no-go, you can work around the issue by temporarily switching the default browser to another browser (for example, Chrome, Edge, Vivaldi, and so on), completing the Google authentication, and switching back the default OS browser to Brave.
 
-### Changing the default browser on Windows 10
+To change the default browser on Windows 10:
 
-- Open the **Start** menu and type **Default Apps**.
-- Scroll to the **Web Browser** option and select your preferred web browser through the drop-down.
+1. Open the **Start** menu and type **Default Apps**.
+1. Scroll to the **Web Browser** option and select your preferred web browser through the drop-down.
 
-### Changing the default browser on macOS
+To change the default browser on macOS:
 
-- Choose Apple menu > **System Preferences**, then click **General**.
-- Click the **Default web browser** pop-up menu and select your preferred web browser through the drop-down.
+1. Choose **Apple menu** > **System Preferences**. Click **General**.
+1. Click the **Default web browser** pop-up menu and select your preferred web browser through the drop-down.
 
-### Changing the default browser on Ubuntu
+To change the default browser on Ubuntu:
 
-- Open the **Settings** utility, and move to the **Details** tab,
-- Click on the **Default Applications** and select your preferred web browser through the drop-down.
+1. Open the **Settings** utility and move to the **Details** tab.
+1. Click the **Default Applications** and select your preferred web browser through the drop-down.
