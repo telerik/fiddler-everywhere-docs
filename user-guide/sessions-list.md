@@ -89,7 +89,9 @@ The **Delete** option removes the session from the **Sessions** list; can be acc
 
 ### Managing Users
 
-The **Manage Users** option ![manage users icon](../images/sessions/svg-icons/user-friends.svg) allows you to manage the users with which the session is being shared. The feature is available only for session entries that are stored in the cloud and is active only for the session owner.
+The **Manage Users** option allows you to manage the users with which the session is being shared. The feature is available only for session entries that are stored in the cloud and is active only for the session owner.
+
+![manage users icon](../images/sessions/svg-icons/user-friends.svg) - Manage users icon.
 
 ### Saving in The Cloud
 
@@ -98,7 +100,9 @@ The **Save in the Cloud** option allows you to manage the users with which the s
 
 ### Encrypting 
 
-The **Set Password** option allows you to enable encryption and set a password for the selected session entry. Only users with the knowledge of the password will be able to open the password-protected session. Password-protected session are listed in the **Session** list with a lock icon ![lock icon](../images/sessions/svg-icons/lock.svg). For entries that are already password-protected, the context menu provides the options **Change Password** and **Remove Password**.
+The **Set Password** option allows you to enable encryption and set a password for the selected session entry. Only users with the knowledge of the password will be able to open the password-protected session. Password-protected session are listed in the **Session** list with a lock icon. For entries that are already password-protected, the context menu provides the options **Change Password** and **Remove Password**.
+
+![lock icon](../images/sessions/svg-icons/lock.svg) - Password-protected session icon.
 
 
 ## Importing Sessions
