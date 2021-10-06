@@ -72,13 +72,29 @@ footer:
 -
   title: "Getting Started"
   links:
+    "First Steps on Windows": https://docs.telerik.com/fiddler-everywhere/get-started/quickstart-windows
+    "First Steps on macOS": https://docs.telerik.com/fiddler-everywhere/get-started/quickstart-macos
+    "First Steps on Linux": https://docs.telerik.com/fiddler-everywhere/get-started/quickstart-linux
     "Download Now": https://www.telerik.com/download/fiddler-everywhere
+    "License": https://www.telerik.com/purchase/license-agreement/fiddler-everywhere
+-
+  title: "Support Resources"
+  links:
+    "All Things Fiddler": https://www.telerik.com/blogs/fiddler
+    "Fiddler Videos": https://www.telerik.com/videos/fiddler/tag/fiddler-everywhere
+    "Fiddler Webinars": https://www.telerik.com/webinars/fiddler-everywhere
+    "What's New": https://www.telerik.com/support/whats-new/fiddler-everywhere
+    "Roadmap": https://www.telerik.com/support/whats-new/fiddler-everywhere/roadmap
+    "Release History": https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history
 -
   title: "Community"
   links:
-    "Forums": https://community.getfiddler.com/support/discussions
-    "Blogs": https://www.telerik.com/blogs/tag/fiddler
     "Feedback Portal": https://feedback.telerik.com/fiddler-everywhere
+    "Fiddler Forums": https://community.getfiddler.com/support/discussions
+    "Fiddler Blogs": https://www.telerik.com/blogs/tag/fiddler
+    "FAQ": https://www.telerik.com/fiddler/fiddler-everywhere/faq 
+    
+
 
 footer_social:
     facebook: https://www.facebook.com/Telerik/

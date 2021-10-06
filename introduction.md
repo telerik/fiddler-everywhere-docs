@@ -45,8 +45,8 @@ Fiddler Everywhere provides platform-agnostic compatibility that enables you to 
 
 Fiddler Everywhere enables you to also capture and inspect traffic on devices running on iOS and Android.
 
-* [Capturing and inspecting traffic on iOS]({% slug capture-mobile-ios-traffic %})
-* [Capturing and inspecting traffic on Android]({% slug capture-mobile-android-traffic %})
+* [Capturing and Inspecting Traffic on iOS]({% slug capture-mobile-ios-traffic %})
+* [Capturing and Inspecting Traffic on Android]({% slug capture-mobile-android-traffic %})
 
 ### Styling Options  
 
