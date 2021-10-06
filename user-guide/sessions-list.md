@@ -9,7 +9,7 @@ position: 40
 
 # Sessions Section
 
-Fiddler Everywhere provides the option to save, modify, inspect, and share previously captured traffic.
+Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic.
 
 To save sessions to the **Sessions** list, use the [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options of the **Live Traffic** list.  
 
@@ -23,15 +23,15 @@ You can apply a number of actions to a saved session entry:
 
 - To select a saved session entry from the **Sessions** list, single-click it.
 - To load the [context menu](#sessions-context-menu) of a selected session entry, right-click it. The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
-- To open a saved session entry from the **Sessions** list in a new tab, double-click it.
+- To encrypt and protect your session, set a password. The context menu provides options for setting, changing, and removing passwords for the saved session entry.
+- To open a saved session entry from the **Sessions** list in a new tab, double-click it. For encrypted sessions, only users with knowledge of the password will be able to open the session entry.
 - Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 - Use the UI buttons at the very top to [**Import**](#import-sessions) sessions archives or to access previously [**Shared Sessions**](#shared-sessions-list) entries.
 
-![Sessions list](../images/sessions/saved-sessions-open.png)
 
 ## Sharing Sessions
 
-To share captured traffic with other collaborators, first save the session in the cloud. Note that sessions held locally will be transferred to the cloud if you use the share functionalities.
+To share captured traffic with other collaborators, first save the session in the cloud. Note that sessions held locally will be transferred to the cloud if you use the share functionalities. For encrypted sessions, only users with knowledge of the password will be able to open the session entry.
 
 Fiddler Everywhere provides UI solutions for sharing and collaboration.
 
@@ -40,24 +40,22 @@ Fiddler Everywhere provides UI solutions for sharing and collaboration.
 To share a selected session:
 
 1. Select a saved session entry from the **Sessions** list.
-2. Click the **Share** button to the right of the entry name.
-3. When the **Share Sessions** prompt window appears, enter a valid email (mandatory) and notes (optional). Click **Share**.
+1. Click the **Share** button to the right of the entry name.
+1. When the **Share Sessions** prompt window appears, enter a valid email (mandatory) and notes (optional). Click **Share**.
 
 ### Sharing Loaded Saved Session
 
 To share a loaded saved session:
 
 1. Double-click a saved session entry from the **Sessions** list.
-2. The session entry opens in a new tab. Click the **Share** button from the toolbar.
-
+1. The session entry opens in a new tab. Click the **Share** button from the toolbar.
     ![Sessions list](../images/sessions/saved-sessions-reshare.png)
-3. The **Share Sessions** prompt window appears. Enter a valid email (mandatory) and notes (optional). Click **Share**.
+1. The **Share Sessions** prompt window appears. Enter a valid email (mandatory) and notes (optional). Click **Share**.
 
 ## Managing Users
 
 The **Manage Users** option appears only if the session entry is stored in the cloud and shared. Click **Manage Users** to prompt a window to appear that allows you to manage the list of users that have access to the shared session.
 
-![Manage Users](../images/sessions/sessions-shared-manage-users.png)
 
 ## Deleting
 
@@ -91,11 +89,17 @@ The **Delete** option removes the session from the **Sessions** list; can be acc
 
 ### Managing Users
 
-The **Manage Users** option allows you to manage the users with which the session is being shared. The feature is available only for session entries that are stored in the cloud and is active only for the session owner.
+The **Manage Users** option ![manage users icon](../images/sessions/svg-icons/user-friends.svg) allows you to manage the users with which the session is being shared. The feature is available only for session entries that are stored in the cloud and is active only for the session owner.
 
 ### Saving in The Cloud
 
 The **Save in the Cloud** option allows you to manage the users with which the session is being shared. The feature is available only for session entries that are locally stored and is active only for the session owner.
+
+
+### Encrypting 
+
+The **Set Password** option allows you to enable encryption and set a password for the selected session entry. Only users with the knowledge of the password will be able to open the password-protected session. Password-protected session are listed in the **Session** list with a lock icon ![lock icon](../images/sessions/svg-icons/lock.svg). For entries that are already password-protected, the context menu provides the options **Change Password** and **Remove Password**.
+
 
 ## Importing Sessions
 
