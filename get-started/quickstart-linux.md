@@ -33,15 +33,10 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 1. Select **Download for Linux** to download the installer.
 1. Install the downloaded package. On most Linux distributions, you need to set the installation file as executable before starting the installation. To achieve this, either use the command line or the GUI of the desired distribution:
     - Setting the installation plan as executable through the command-line:
-
-        3.1 Open a terminal.
-
-        3.2 Navigate to the folder where the installation file resides.
-
-        3.3 Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
-
-        3.4 If prompted, enter your username and password. Press the **Enter** key.
-
+        1. Open a terminal.
+        1. Navigate to the folder where the installation file resides.
+        1. Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
+        1. If prompted, enter your username and password. Press the **Enter** key.
     - Setting the installation plan as executable through the GUI.
 
         For the Gnome distribution
@@ -77,8 +72,7 @@ As the Linux distributions use different security features and approaches for tr
 1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and click  the **Export Root Certificate to Desktop** button.
 1. To import and trust the exported certificate, perform the following steps.
     >important (For localized Linux distributions only) Some Linux distributions, such as Ubuntu, use localized paths&mdash;for example, the name of the **Desktop** folder is translated into the locale language. As this may cause an error, specifically create a folder named **Desktop** in your root `mkdir ~/Desktop` directory. Then, export the certificate to the newly created directory. Once the certificate is installed, you can safely remove that directory.
-
-    2.1 Create a directory and copy the exported certificate by running the following commands.
+    1. Create a directory and copy the exported certificate by running the following commands.
       ```shell
       $ sudo mkdir /usr/share/ca-certificates/extra
       $ sudo cp ~/Desktop/FiddlerRootCertificate.crt /usr/share/ca-certificates/extra
@@ -86,19 +80,16 @@ As the Linux distributions use different security features and approaches for tr
       // Starts the tool and upgrades the certificates.
       $ sudo dpkg-reconfigure ca-certificates
       ```
-
-    2.2 From the prompt, select **Yes** to install new certificates.
+    1. From the prompt, select **Yes** to install new certificates.
 
       ![Add new certificate](../images/configuration/cert_ubunto_002.png)
 
-    2.3 Choose the `FiddlerRootCertificate.crt` file and click **OK**.
+    1. Choose the `FiddlerRootCertificate.crt` file and click **OK**.
 
       ![Add Fiddler certificate](../images/configuration/cert_ubunto_003.png)
-
-    2.4 The certificates are now updated.
+    1. The certificates are now updated.
 
       ![Add Fiddler certificate](../images/configuration/cert_ubunto_004.png)
-
 1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
 
 ## Styling the Tool
