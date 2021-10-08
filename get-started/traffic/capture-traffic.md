@@ -13,10 +13,10 @@ Fiddler Everywhere provides out-of-the-box automatic capture though the [preconf
 
 | Feature | Preconfigured Browser Capturing | System Capturing |
 |:-----------------|:--------------------------------|:-----------------|
-| Additional Configuration Needed | No configuration needed  | Yes - trusting the root certificate and enabling HTTPS capturing in Fiddler Everwehere|
-| Modifies System Proxy | No - automatic configuration for the new browser instance | Yes - When **Live Traffic** toggle is enabled, it sets the Fiddler Everywhere proxy in the manual proxy settings |
-| Explicit Adding of the Trust Certificate | No - automatic configuration for the new browser instance | Yes - in the operating system keychain |
-| Capture Browser Traffic | Yes - All Chromium browsers | Yes - All browsers (including Firefox and Safari) |
+| Additional Configuration Needed | No configuration needed!  | Yes. Trust the root certificate and enable HTTPS capturing. |
+| Modifies System Proxy | No! Automatic configuration for Google Chrome. | Yes. Modifies the system proxy. |
+| Explicit Adding of the Trust Certificate | No! Automatic configuration for Google Chrome. | Yes. Adds the certificate in the OS keychain. |
+| Capture Browser Traffic | Support for all Chromium browsers | Support for aAll browsers (including Firefox and Safari) |
 | Capture Other Applications Traffic |  No | Yes (virtually any that uses system proxy) |
 
 
@@ -36,6 +36,10 @@ Fiddler Everywhere provides out-of-the-box automatic capture though the [preconf
 
 That's it! Fiddler Everywhere will start immediatly to capture all the traffic generated from the preconfigured browser. 
 
+### Change The Preconfigured Browser
+
+Use the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}) to assign a path to a third-party Chromium browsers or to change the default path to the Google Chrome browser. 
+
 ## System Capturing
 
 Once Fiddler Everywhere is installed, and its root certificate trusted, you can utilize the web-traffic capturing of the proxy client.
@@ -48,7 +52,7 @@ To capture traffic with Fiddler Everywhere:
 
 1. Switch **Live Traffic** to **Capturing**. Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug saved-sessions-tab%}).
 
-    ![Enabling Live Traffic](../../images/livetraffic/websessions/websessions-live-traffic-capturing.png)
+    ![Enabling Live Traffic](../../images/get-started/get-started-toggle.png)
 
 >tip When you switch **Live Traffic** to **Capturing**, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request, and **Live Traffic** will be populated. The **Result** field for that arbitrary web address will return **200**, which means that your first request is successfully captured with Fiddler Everywhere.
 
