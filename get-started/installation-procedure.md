@@ -39,18 +39,30 @@ To crate a Fiddler account, refer to the following getting started step-by-step 
 To directly sign in with your Google account, perform the following steps:
 
 1. Launch the Fiddler Everywhere client.
+
 1. Select **Sign in with Google** and authenticate on the Google Authentication page.
+
 1. After you successfully sign up, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
-## Installing the Root Certificate
+## Preconfigured Browser Capturing
 
-By default, the Fiddler Everywhere client intercepts insecure (HTTP) traffic only and requires an account with administrative rights to capture secure (HTTPS) traffic. To enable the capturing and decrypting of HTTPS traffic, you need to explicitly install a root trust certificate.
+Fiddler Everywhere provides precofigured browser capturing option. With this feature there is no need to modify the operating system proxy settings or to explicitly install and trust the Fiddler root certificate.
+
+
+The following getting started step-by-step tutorials provide detailed instructions on using the preconfigured option:
+* [First Steps on Windows (Preconfigured Browser Capturing)]({% slug first_steps_windows %}#start-preconfigured-browser-capturing)
+* [First Steps on macOS (Preconfigured Browser Capturing)]({% slug first_steps_macos %}#start-preconfigured-browser-capturing)
+* [First Steps on Linux (Preconfigured Browser Capturing)]({% slug first_steps_linux %}#start-preconfigured-browser-capturing)
+
+## Configuring System Capturing
+
+By default, the Fiddler Everywhere client intercepts insecure (HTTP) traffic only and requires an account with administrative rights to capture secure (HTTPS) traffic. To enable the capturing and decrypting of HTTPS traffic, you need to explicitly install a root trust certificate, and to enable HTTPS capturing.
 
 The following getting started step-by-step tutorials provide detailed instructions on trusting the root certificate:
 
-* [First Steps on Windows (Trusting the Root Certificate)]({% slug first_steps_windows %}#trusting-the-root-certificate)
-* [First Steps on macOS (Trusting the Root Certificate)]({% slug first_steps_macos %}#trusting-the-root-certificate)
-* [First Steps on Linux (Trusting the Root Certificate)]({% slug first_steps_linux %}#trusting-the-root-certificate)
+* [First Steps on Windows (Trusting the Root Certificate)]({% slug first_steps_windows %}#start-system-capturing)
+* [First Steps on macOS (Trusting the Root Certificate)]({% slug first_steps_macos %}#start-system-capturing)
+* [First Steps on Linux (Trusting the Root Certificate)]({% slug first_steps_linux %}#start-system-capturing)
 
 For more information on handling various issues that may occur when installing the Fiddler Everywhere root certificate, refer to the Knowledge Base articles. Some of the most common scenarios are:
 
@@ -67,5 +79,7 @@ Fiddler Everywhere versions 1.1.0 and later support predefined OS proxy settings
 To update Fiddler Everywhere to its latest version:
 
 1. Start Fiddler Everywhere.
+
 1. From the main menu, choose **Help** > **Check for Update**. If a later version is available, a notification will ask you to confirm that you want to download and install it.
+
 1. Fiddler Everywhere will restart and automatically update to the latest version.
