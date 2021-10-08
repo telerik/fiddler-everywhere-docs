@@ -33,8 +33,8 @@ Fiddler Everywhere provides out-of-the-box automatic capture though the [preconf
 
 1. Enter the URL in the newly opened Chrome window.
 
-That's it! Fiddler Everywhere will start immediatly to capture all the traffic generated from the preconfigured browser. 
 
+That's it! Fiddler Everywhere will start immediatly to capture all the traffic generated from the preconfigured browser. 
 
 ## System Capturing
 
