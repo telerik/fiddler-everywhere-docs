@@ -6,6 +6,7 @@
 .editorconfig
 .jekyll-metadata
 .ruby-version
+.vscode/
 /_assets/
 /_build/
 /_buildApi/

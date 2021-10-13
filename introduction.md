@@ -25,8 +25,7 @@ Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer a
 
 ### Preconfigured Browser Capturing
 
-Fiddler Everywhere provides preconfigured options for automatic browser HTTP(S) capturing without the need to modify the operating system proxy. [Read more about the preconfigured browser capturing...]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing
-)
+Fiddler Everywhere provides preconfigured options for automatic sandboxed browser HTTP(S) capturing without the need to modify the operating system proxy. [Read more about the preconfigured browser capturing...]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing)
 
 
 ### Traffic Analysis
