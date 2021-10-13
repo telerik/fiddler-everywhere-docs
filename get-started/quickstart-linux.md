@@ -36,11 +36,15 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 1. Install the downloaded package. On most Linux distributions, you need to set the installation file as executable before starting the installation. To achieve this, either use the command line or the GUI of the desired distribution:
 
     - Setting the installation plan as executable through the command-line:
+
         1. Open a terminal.
+
         1. Navigate to the folder where the installation file resides.
+
         1. Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
+
         1. If prompted, enter your username and password. Press the **Enter** key.
-        
+
     - Setting the installation plan as executable through the GUI.
 
         For the Gnome distribution
