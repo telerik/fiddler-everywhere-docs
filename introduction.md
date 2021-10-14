@@ -25,7 +25,7 @@ Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer a
 
 ### Preconfigured Browser Capturing
 
-Fiddler Everywhere provides preconfigured options for automatic sandboxed browser HTTP(S) capturing without the need to modify the operating system proxy. [Read more about the preconfigured browser capturing...]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing)
+Fiddler Everywhere provides preconfigured options for automatic, sandboxed, browser HTTP(S) capturing without the need to modify the operating system proxy. [Read more about the preconfigured Fiddler Everywhere browser capturing...]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing)
 
 
 ### Traffic Analysis
@@ -45,7 +45,7 @@ Fiddler Everywhere comes with an API Composer, which allows you to test APIs by 
 
 ### Secure Collaboration
 
-Fiddler Everywhere provides a secure method for saving and sharing network debugging logs with your teams for analysis, communication, and resolution. [Read more about the collaboration options...]({% slug collaboration-get-started %})
+Fiddler Everywhere provides a secure method for saving and sharing network debugging logs with your teams for analysis, communication, and resolution. [Read more about the Fiddler Everywhere collaboration options...]({% slug collaboration-get-started %})
 
 
 ### Cross-Platform Support

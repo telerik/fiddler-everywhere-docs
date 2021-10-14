@@ -56,21 +56,23 @@ In this step you'll register by creating your personal Fiddler Everywhere accoun
 Now let's add more elegance to Fiddler Everywhere and change its default Light theme with the Dark one&mdash;just go to the **Themes** menu, select the Dark theme, and click **Save**. That's it!
 
 
-## Start System Capturing
+## Capturing Secure Traffic
 
-Fiddler Everywhere can capture all HTTP(S) traffic between your computer and the Internet from virtually any application that supports a system proxy, however, by default, you can only track non-secure HTTP system traffic with Fiddler Everywhere. To handle HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
+Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports a system proxy.
 
-1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. 
+However, by default, you can only track non-secure HTTP system traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
 
-1. Click the **Trust Root Certificate** button&mdash; confirm your choice and add the certificate in the popup that appears.
+1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**.
 
-1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
+1. Click the **Trust Root Certificate** button. Confirm your choice and add the certificate in the popup that appears.
 
-1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing system HTTP(S) traffic.
+1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
+
+1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
 
 That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
 
->tip You could skip the system capturing configuration and directly use [the preconfigured browser capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing). The alternative is helpful in cases where the captured traffic is generated only from a browser, when you lack administrative right to install certificates and modify the system proxy, or in cases where third-party VPN and security tools are colliding with the Fiddler Everywhere proxy.
+>tip Fiddler Everywhere provides the [preconfigured browser-capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing), which enables you to skip the system capturing configuration from this step. The predefined browser-capturing option comes in handy when you generate captured traffic only from a browser, or lack administrative right to install certificates and to modify the system proxy, or when third-party VPNs and security tools are colliding with the Fiddler Everywhere proxy.
 
 ## Fiddling with the Traffic
 

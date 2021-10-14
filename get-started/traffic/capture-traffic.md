@@ -9,19 +9,20 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Traffic
 
-Fiddler Everywhere provides out-of-the-box automatic capture though the [system capturing](@system-capturing) options and [preconfigured browser capturing](#preconfigured-browser-capturing). The following table depicts the major differences between the two functionalities.
+Out of the box, Fiddler Everywhere provides an automatic capturing functionality though the [system capturing options](#system-capturing) and the [preconfigured browser capturing feature](#preconfigured-browser-capturing).
 
+The following table demonstrates the major differences between the two functionalities.
 
-| Feature | System Capturing | Preconfigured Browser Capturing  |
-|:-----------------|:--------------------------------|:-----------------|
-| Additional Configuration Needed  | Trust the root certificate and enable HTTPS capturing | No configuration needed |
-| Modifies System Proxy |  Modifies the system proxy | Automatic configuration for Google Chrome |
-| Explicit Adding of the Trust Certificate |  Adds the certificate in the OS keychain | Automatic configuration for Google Chrome |
-| Capture Browser Traffic | Support for all browsers  | Support for all Chromium browsers | 
-| Capture Other Applications Traffic | Yes (virtually any that uses system proxy) | No | 
-| Required administrative access | OS admin rights for installing and trusting a root certificate and for modifying the system proxy | User rights for starting a Chromium browser with custom parameters |
-| Works with VPN tooling | Cisco VPN support | Multiple VPN tooling support out-of-the-box |
-| Captured output | Captures all traffic (that goes through the system proxy) | Captures only the traffic from the preconfigured browser instance | 
+| Feature          |System Capturing |Preconfigured Browser Capturing  
+|:-----------------|:----------------|:-----------------
+| Additional configuration       | Requires trusting of the root certificate for enabling HTTPS capturing. | No additional configuration is needed.
+| Modification of the system proxy | Requires modification of the system proxy. | Automatically configures the system proxy for Google Chrome.
+| Explicit addition of the trust certificate | Requires you to add the certificate in the OS keychain. | Automatically configures the trust certificate for Google Chrome.
+| Capturing of browser traffic   | Supports all browsers.  | Support for all Chromium browsers.
+| Capturing of other applications traffic | Yes. Supports traffic capturing on virtually any application that uses the system proxy. | No.
+| Required administrative access | Requires OS admin rights for installing and trusting a root certificate and for modifying the system proxy.  | Requires user rights for starting a Chromium browser with custom parameters.
+| Working with VPN tooling       | Requires Cisco VPN support. | Provides multiple VPN tooling support out-of-the-box.
+| Captured output                | Captures all traffic that goes through the system proxy. | Captures only the traffic from the preconfigured browser instance.
 
 
 ## System Capturing
@@ -41,32 +42,25 @@ To capture system traffic with Fiddler Everywhere:
 >tip When you switch **Live Traffic** to **Capturing**, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request, and **Live Traffic** will be populated. The **Result** field for that arbitrary web address will return **200**, which means that your first request is successfully captured with Fiddler Everywhere.
 
 
-
 ## Preconfigured Browser Capturing
 
-The preconfigured browser capturing is a feature that allows you to capture traffic from a specific browser instance (supported only with Chromium browsers). The feature is useful when you need to capture browser traffic, but your environment doesn't allow you to change the system proxy or to install & trust root certificates. It also solves the compatibility issues with some VPN and third-party security tools modifying the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
+The preconfigured browser capturing is a feature that allows you to capture traffic from a specific browser instance. Currently, Fiddler Everywhere supports preconfigured browser capturing only for Chromium browsers.
+
+The feature is useful when you need to capture browser traffic but your environment doesn't allow you to change the system proxy or to install and trust root certificates. It also solves the compatibility issues with some VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
 To start the preconfigured browser capturing with Fiddler Everywhere:
 
-1. Install Google Chrome (or other Chromium browsers).
+1. Install Google Chrome or other Chromium browser.
 
 1. Start Fiddler Everywhere. No additional configuration is needed. To prevent polluting the **Live Traffic** list, you can disable the **Live Traffic** toggle.
 
-1. Click on **Open Browser** from the **Live Traffic** toolbar.
+1. Click **Open Browser** from the **Live Traffic** toolbar.
 
   ![the "Open Browser" option for opening preconfigured browser for automatic capture](../../images/get-started/get-started-open-browser.png)
 
-1. Enter the URL in the newly opened Chrome window.
+1. Enter the URL in the newly opened Chrome window. Fiddler Everywhere immediately starts capturing all the traffic generated from the preconfigured browser.
 
-
-That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from the preconfigured browser.
-
-
-### Change The Preconfigured Browser
-
-
-Use the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}) to assign a path to third-party Chromium browsers (like Edge, Brave, Vivaldi, etc.) or to change the default path to the Google Chrome browser. 
-
+To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}) either assign a path to third-party Chromium browsers, like Edge, Brave, and Vivaldi, or change the default path to the Google Chrome browser.
 
 ## Additional Resources
 
