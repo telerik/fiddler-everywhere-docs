@@ -4,7 +4,7 @@ description: "Inspect the headers and bodies of the captured session through the
 slug: inspecting-traffic-get-started
 publish: true
 position: 20
-previous_url: /get-started/inspect-traffic
+previous_url: /get-started/inspect-traffic, /get-started/traffic/inspect-traffic
 ---
 
 # Inspecting Traffic

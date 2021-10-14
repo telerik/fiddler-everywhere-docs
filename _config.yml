@@ -9,21 +9,21 @@ navigation:
     get-started:
         title: Get Started
         position: 10
-    get-started/traffic:
-        title: Traffic Inspection and Analysis
-        position: 20
-    get-started/api:
+    traffic:
+        title: Traffic Inspection & Analysis
+        position: 30
+    api:
         title: API Composing
-        position: 50
+        position: 60
     user-guide:
         title: User Interface
-        position: 20
+        position: 70
     user-guide/settings:
         title: Settings
         position: 20
     knowledge-base:
         title: Knowledge Base
-        position: 90
+        position: 100
 
 ## Product title
 product: "Progress Telerik Fiddler Everywhere"
@@ -92,8 +92,8 @@ footer:
     "Feedback Portal": https://feedback.telerik.com/fiddler-everywhere
     "Fiddler Forums": https://community.getfiddler.com/support/discussions
     "Fiddler Blogs": https://www.telerik.com/blogs/tag/fiddler
-    "FAQ": https://www.telerik.com/fiddler/fiddler-everywhere/faq 
-    
+    "FAQ": https://www.telerik.com/fiddler/fiddler-everywhere/faq
+
 
 
 footer_social:

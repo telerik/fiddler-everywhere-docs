@@ -3,7 +3,8 @@ title: Mocking Server Responses
 description: "Mock various server behavior by using the Rules tab of the Fiddler Everywhere web-debugging http-proxy tool."
 slug: rulesbuilder-get-started
 publish: true
-position: 40
+position: 50
+previous_url: /get-started/mock-server-response
 ---
 
 # Mocking Server Responses

@@ -4,7 +4,7 @@ description: "Create and share API request collections when using the Telerik Fi
 slug: composer-collections-get-started
 publish: true
 position: 20
-previous_url: /get-started/composer-collections
+previous_url: /get-started/composer-collections, /get-started/api/composer-collections
 ---
 
 # Grouping API Requests in Collections

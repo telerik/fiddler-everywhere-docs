@@ -1,9 +1,9 @@
 ---
 title: Installation & Update
 description: "Learn more about how to install Fiddler Everywhere and its root certificate, and check out the available options for logging into the tool and updating it."
-previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration
+previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration, get-started/installation-procedure
 slug: installation
-position: 10
+position: 20
 ---
 
 # Installation and Update

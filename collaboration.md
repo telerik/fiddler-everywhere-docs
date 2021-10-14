@@ -3,7 +3,8 @@ title: Collaboration
 description: "Share and investigate network issues with your team by using the built-in collaboration functionalities of the Fiddler Everywhere web-debugging tool."
 slug: collaboration-get-started
 publish: true
-position: 30
+position: 40
+previous_url: /get-started/collaboration
 ---
 
 # Collaboration
@@ -21,7 +22,7 @@ In Fiddler Everywhere, you can save, and later on, view and share captured netwo
 To save a session:
 
  1. [Capture the traffic]({%slug capture-traffic-get-started%}).
- 
+
  1. Use any of the available approaches to save a captured session:
     - The **Save**  option of the [**Live Traffic** toolbar]({%slug web-sessions-list%}#live-traffic-toolbar).
     - The **Save** option from the context menu of the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list).
