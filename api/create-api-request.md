@@ -29,7 +29,7 @@ To create an API request:
 
 1. (Optional) You can save the request by clicking the **Save** button located to the right of **Execute**. Saved requests are loaded as a collection in the **Requests list** and can be reused or shared with collaborators.
 
-![Creating API request](../../images/composer/create-api-request.png)
+![Creating API request](../images/composer/create-api-request.png)
 
 ## Additional Resources
 

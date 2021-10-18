@@ -56,7 +56,7 @@ Add a custom comment to one or more captured sessions to provide additional cont
 
 1. Add a comment by using the **Comment** option from the context menu or press the **M** key while selecting the desired sessions. As a result, the newly added comment will appear in [the **Comments** column]({%slug web-sessions-list%}#live-traffic-list).
 
-    ![Add a comment for selected sessions](../images/livetraffic/websessions/add-session-comment.png)
+    ![Add a comment for selected sessions](./images/livetraffic/websessions/add-session-comment.png)
 
 ### Notes
 
@@ -68,7 +68,7 @@ Add additional context in the form of a descriptive note while sharing one or mo
 
 1. In the second dialog window, provide the additional information in the **Add a note** field. As a result, the note will be rendered as context in the email received by the collaborators.
 
-    ![Add a note in share prompt window](../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
+    ![Add a note in share prompt window](./images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
 
 ## Notifications for Shared Content
 
@@ -76,4 +76,4 @@ The Fiddler Everywhere client informs the collaborators about shared sessions in
 - Collaborators receive an email with an invitation to open the shared session. If the session creator has added a note, the email will display the note as well.
 - All listed collaborators receive a notification within the Fiddler Everywhere client. To open the shared session in a separate tab, click the notification.
 
-    ![Notification for received content](../images/settings/notifications-for-shared-content.png)
+    ![Notification for received content](./images/settings/notifications-for-shared-content.png)

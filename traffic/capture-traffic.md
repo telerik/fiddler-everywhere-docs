@@ -37,7 +37,7 @@ To capture system traffic with Fiddler Everywhere:
 
 1. Switch **Live Traffic** to **Capturing**. Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug saved-sessions-tab%}).
 
-    ![Enabling Live Traffic](../../images/get-started/get-started-toggle.png)
+    ![Enabling Live Traffic](../images/get-started/get-started-toggle.png)
 
 >tip When you switch **Live Traffic** to **Capturing**, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request, and **Live Traffic** will be populated. The **Result** field for that arbitrary web address will return **200**, which means that your first request is successfully captured with Fiddler Everywhere.
 
@@ -56,7 +56,7 @@ To start the preconfigured browser capturing with Fiddler Everywhere:
 
 1. Click **Open Browser** from the **Live Traffic** toolbar.
 
-  ![the "Open Browser" option for opening preconfigured browser for automatic capture](../../images/get-started/get-started-open-browser.png)
+  ![the "Open Browser" option for opening preconfigured browser for automatic capture](../images/get-started/get-started-open-browser.png)
 
 1. Enter the URL in the newly opened Chrome window. Fiddler Everywhere immediately starts capturing all the traffic generated from the preconfigured browser.
 

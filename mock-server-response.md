@@ -25,7 +25,7 @@ To create and test a rule:
     - If you test with **Live Traffic**, make sure that you enable the toggle of the main **Rules**. Open the application in the browser and execute a request that matches the set conditions. The rule is immediately applied to the ongoing captured traffic.
     - If you test with saved sessions, select the rule and use the **Execute** button. The rule is immediately applied to the loaded saved sessions.
 
-![Rules Tab](../images/livetraffic/rb/rules-all.png)
+![Rules Tab](./images/livetraffic/rb/rules-all.png)
 
 ## Additional Resources
 

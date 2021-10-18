@@ -13,7 +13,7 @@ The Fiddler Everywhere client provides options for saving and organizing multipl
 
 **Requests** enables you to arrange multiple requests or request folders in collections that can be promptly reloaded and executed.
 
-![Requests lists](../../images/requests/requests-list-all.png)
+![Requests lists](../images/requests/requests-list-all.png)
 
 To create a collection of composed API requests:
 
@@ -23,11 +23,11 @@ To create a collection of composed API requests:
 
 1. Enter a request name and select the collection (folder) in which the request will be saved. Alternatively, you can create a new collection by clicking the folder icon to the right.
 
-    ![Requests lists](../../images/requests/requests-enter-name-and-folder.png)
+    ![Requests lists](../images/requests/requests-enter-name-and-folder.png)
 
 1. Click **Save** to close the dialog and add the request to the collection.
 
-    ![Requests lists](../../images/requests/requests-created-collection.png)
+    ![Requests lists](../images/requests/requests-created-collection.png)
 
 For detailed description of the **Requests** tab, refer to the article on [saved requests lists]({%slug saved-requests-tab%})
 
