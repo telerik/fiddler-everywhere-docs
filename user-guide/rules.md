@@ -93,151 +93,152 @@ The **Rule Builder** can add and use single or multiple conditions. The conditio
        <col span="1" style="width: 14%;">
        <col span="1" style="width: 44%;">
     </colgroup>
+    <thead>
+        <tr>
+            <th>Condition Value</th>
+            <th>Field Options</th>
+            <th>Field Options</th>
+            <th>Usage Description</th>
+        </tr>
+    </thead>
     <tbody>
         <tr>
-            <td>Condition Value</td>
-            <td>Field Options</td>
-            <td>Field Options</td>
-            <td>Field Options</td>
-            <td>Usage Description</td>
-        </tr>
-        <tr>
-            <td>Protocol</td>
+            <td><b>Protocol</b></td>
             <td>HTTP or HTTPS</td>
             <td>n/a</td>
             <td>n/a</td>
             <td>Differentiate the traffic based on the used protocol (HTTP vs HTTPS).</td>
         </tr>
         <tr>
-            <td>Host</td>
+            <td><b>Host</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Host</b> column.</td>
         </tr>
         <tr>
-            <td>Status</td>
+            <td><b>Status</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Result</b> column.</td>
         </tr>
         <tr>
-            <td>Method</td>
+            <td><b>Method</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Method</b> column.</td>
         </tr>
         <tr>
-            <td>Process ID</td>
+            <td><b>Process ID</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Process ID</b> column.</td>
         </tr>
         <tr>
-            <td>Client IP</td>
+            <td><b>Client IP</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Client IP</b> column.</td>
         </tr>
         <tr>
-            <td>Remote IP</td>
+            <td><b>Remote IP</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Remote IP</b> column.</td>
         </tr>
         <tr>
-            <td>Body Size</td>
+            <td><b>Body Size</b></td>
             <td>Number modifiers (compares bytes)</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific value in the <b>Body Size</b> column.</td>
         </tr>
         <tr>
-            <td>Duration</td>
+            <td><b>Duration</b></td>
             <td>Number modifiers (compares milliseconds)</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific value in the <b>Duration</b> column.</td>
         </tr>
         <tr>
-            <td>Comment</td>
+            <td><b>Comment</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Comment</b> column.</td>
         </tr>
         <tr>
-            <td>Request Body</td>
+            <td><b>Request Body</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Request Body</b> column.</td>
         </tr>
         <tr>
-            <td>Request Header</td>
+            <td><b>Request Header</b></td>
             <td>Header name</td>
             <td>String modifiers</td>
             <td>The search value </td>
             <td>Search for a specific keyword in the <b>explicitly mentioned Request header</b> column.</td>
         </tr>
         <tr>
-            <td>Response Body</td>
+            <td><b>Response Body</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
             <td>Search for a specific keyword in the <b>Response body</b>.</td>
         </tr>
         <tr>
-            <td>Response Header</td>
+            <td><b>Response Header</b></td>
             <td>Header name</td>
             <td>String modifiers</td>
             <td>The search value </td>
             <td>Search for a specific keyword in the <b>explicitly mentioned Response header</b> column.</td>
         </tr>
         <tr>
-            <td>Cookie</td>
+            <td><b>Cookie</b></td>
             <td>Cookie name</td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>Search for a specific keyword in the <b>explicitly mentioned Cookie</b>.</td>
         </tr>
         <tr>
-            <td>Magic String</td>
+            <td><b>Magic String</b></td>
             <td>The "magic string" content</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Uses [the legacy Fiddler Classic string literals and regular expressions](https://docs.telerik.com/fiddler/knowledge-base/autoresponder#matching-rules)</b>.</td>
+            <td>Uses <a href="https://docs.telerik.com/fiddler/knowledge-base/autoresponder#matching-rules">the legacy Fiddler Classic string literals and regular expressions</a>.</td>
         </tr>
     </tbody>
 </table>
 
 ### Actions
 
-When Fiddler Everywhere identifies a request which matches the **Conditions** of the rule, it automatically maps it to the **Action** set in the ruleset.
+When Fiddler Everywhere identifies a request which matches the **Conditions** of the rule, it automatically maps it to the **Action** set in the rule.
 
 Apart from returning files or predefined responses, a rule can perform the following specific actions:
 
 <table style="width: 100%">
     <colgroup>
-       <col span="1" style="width: 12%;">
-       <col span="1" style="width: 12%;">
-       <col span="1" style="width: 12%;">
-       <col span="1" style="width: 12%;">
-       <col span="1" style="width: 40%;">
-       <col span="1" style="width: 12%;">
+       <col span="1" style="width: 16%;">
+       <col span="1" style="width: 13%;">
+       <col span="1" style="width: 13%;">
+       <col span="1" style="width: 10%;">
+       <col span="1" style="width: 38%;">
+       <col span="1" style="width: 10%;">
     </colgroup>
     <thead>
         <tr>
             <th>Action name</th>
-            <th>1st value</th>
-            <th>2nd value</th>
+            <th>Field Options</th>
+            <th>Field Options</th>
             <th>Preview box</th>
-            <th>Description</th>
+            <th>Usage Description</th>
             <th>Action type</th>
         </tr>
     </thead>
@@ -316,7 +317,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
         </tr>
         <tr>
             <td><b>Predefined Response</b></td>
-            <td>Drop-down with <a href="https://docs.telerik.com/fiddler/knowledge-base/using-ar-predefined-actions">predefined responses</a></td>
+            <td>Drop-down with <a href="https://docs.telerik.com/fiddler-everywhere/knowledge-base/using-ar-predefined-actions">predefined responses</a></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the selected predefined response.</td>
@@ -385,10 +386,12 @@ Apart from returning files or predefined responses, a rule can perform the follo
 
 Depending on its behavior, rule actions can be divided into final and non-final. Here are some of the highlights when working with both final and non-final actions.
 
-1. **Final actions** will immediately stop any other demoted actions and rules from execution.
+1. **Final actions** will immediately prevent any other actions lower on the list for the specific rule from executing. They will also prevent any rules with lower priority that match the request from executing any actions.
 1. **Final actions** are valid only when the rule is matched during the HTTP request.
-1. If the **condition** depends on the HTTP response, the final action won't execute. In such case, any consequential final action (with the condition that depends on the HTTP response) will execute.
-1. Non-final actions are not blocking and will allow the demoted rules and actions to execute. 
+1. If a session is matched with conditions that depend on its response (for example, response body contains "html"), then any final actions in any rule that matched the session will be ignored. This is because final actions replace the response and we don't want to replace a response that was already received and matched conditions in a rule.
+1. **Non-final actions** will allow other actions from the same rule or other rules with lower priority, that match the session, to execute.
+
+
 
 ## Rules Queue
 
