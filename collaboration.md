@@ -28,6 +28,8 @@ To save a session:
     - The **Save** option from the context menu of the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list).
     - The [context menu]({%slug web-sessions-list%}#context-menu-options), which allows you to export the captured traffic in various formats such as `SAZ`, `HTTPArchive`, `WCAT`, `MeddlerScript`, `cURLScript`, and others.
 
+Optionally, you can protect the saved session by enabling encryption and setting a password. Only users with the knowledge of the password will be able to open the password-protected session. Password-protected sessions are listed in the **Session** list with a lock icon. [Read more about encrypting saved entries...]({% slug saved-sessions-tab %}#encryptiing)
+
 ### Sharing Sessions
 
 To share a session with a collaborator:
@@ -39,6 +41,8 @@ To share a session with a collaborator:
     - The **Share** option from the context menu of the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list)&mdash;Click **Share** to prompt two consecutive windows for entering the information related to saving and sharing.
     - The **Share** button of the [**Sessions** list]({%slug saved-sessions-tab%})&mdash;The list contains your previously saved sessions or sessions that were shared with you. Click the **Share** button to prompt a window for entering the information related to sharing.
     - The [context menu]({%slug web-sessions-list%}#context-menu-options) allows you to export various formats such as `SAZ`, `HTTPArchive`, `WCAT`, `MeddlerScript`, `cURLScript`, and others.
+
+When the shared session is password-protected only users with the knowledge of the password will be able to open the password-protected session.
 
 ### Deleting Shared Sessions
 
