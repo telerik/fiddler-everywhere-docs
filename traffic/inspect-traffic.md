@@ -4,7 +4,7 @@ description: "Inspect the headers and bodies of the captured session through the
 slug: inspecting-traffic-get-started
 publish: true
 position: 20
-previous_url: /get-started/inspect-traffic
+previous_url: /get-started/inspect-traffic, /get-started/traffic/inspect-traffic
 ---
 
 # Inspecting Traffic
@@ -15,11 +15,11 @@ To extract information about the captured sessions, go to the [**Live Traffic**]
 
 To open structured information about the session timings, sizes, request, and response details in the [**Overview** tab]({%slug overview-tab%}), single-click a session or select multiple sessions.
 
-![Live Traffic and session overview](../../images/livetraffic/websessions/websessions-list-all-overview.png)
+![Live Traffic and session overview](../images/livetraffic/websessions/websessions-list-all-overview.png)
 
 To load [the request and response inspectors]({%slug inspector-types%}), double-click a session. The [**Inspectors** tab]({%slug inspector-types%}) is a powerful tool that allows you to deep-dive in each session so you and your teammates can debug it or find performance bottlenecks.
 
-![Live Traffic and Inspectors](../../images/livetraffic/websessions/websessions-list-all.png)
+![Live Traffic and Inspectors](../images/livetraffic/websessions/websessions-list-all.png)
 
 To save a selected session or multiple selected sessions, use the [context menu]({%slug web-sessions-list%}#save), or, alternatively, use a keyboard shortcut. Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}) from which they can be reloaded or shared with collaborators.
 

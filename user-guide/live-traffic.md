@@ -77,8 +77,10 @@ To save captured sessions, use the **Save** button, which will automatically sav
 To save sessions for later or prepare sessions for sharing:
 
 1. Click the **Save** button. As a result, a **Save Sessions** prompt window appears.
-2. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
-3. The current entry of sessions appears in the **Sessions** list.
+1. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
+1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password will be able to open the entry.
+1. Click **Save**. The saved session immediately loads in the **Sessions** list.
+1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
 ### Sharing
 
@@ -91,8 +93,8 @@ Sharing sessions dramatically improves collaboration, and Fiddler Everywhere pro
 To share a session through the toolbar:
 
 1. Click the **Share** button. As a result, the **Save Session** prompt window appears.
-2. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
-3. In the **Share Sessions** prompt window, enter a valid email and click **Share**. Entering notes is optional.
+1. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
+1. In the **Share Sessions** prompt window, enter a valid email and click **Share**. Entering notes is optional.
 
 
 ### Removing All
@@ -228,9 +230,10 @@ To save selected sessions, use the **Save** context menu option. The saved sessi
 All options will display a **Save** prompt window. To save the desired sessions:
 
 1. Select the sessions, open the context menu, and click the **Save** option.
-1. Enter your session name and click **Save**
-1. The saved sessions are immediately loaded in the **Sessions** list.
-1. Double-click the saved session to load it in the **Live Traffic** list.
+1. Enter your session name and choose the folder that will store the entry.
+1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password will be able to open the entry.
+1. Click **Save**. The saved session immediately loads in the **Sessions** list.
+1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
 Alternatively, you can save all captured traffic [through the **Save** button from the toolbar]({%slug web-sessions-list%}#save).
 
@@ -246,7 +249,7 @@ All options will initially display a **Save** and then a **Share** prompt window
 
 1. Select the sessions, open the context menu, and click the **Share** option.
 1. The selected sessions are being saved. Enter your session name and click **Save and proceed**.
-1. The **Share** prompt window appears. Enter a valid email and, optionally, add notes. Once ready, click **Share**.
+1. The **Share** prompt window appears. Enter a valid email and, optionally, add notes. Once ready, click **Share**. Note that when sharing an encrypted session, the recipient will need the password to access it.
 
 Alternatively, you can share captured traffic [through the **Share** button from the toolbar]({%slug web-sessions-list%}#share).
 

@@ -5,7 +5,7 @@ type: how-to
 slug: capture-mobile-android-traffic
 publish: true
 position: 50
-previous_url: /knowledge-base/configure-android, /get-started/mobile-traffic/configure-android
+previous_url: /knowledge-base/configure-android, /get-started/mobile-traffic/configure-android, /get-started/traffic/configure-android
 ---
 
 # Capturing and Inspecting Android Traffic
@@ -55,7 +55,7 @@ The following steps are applicable for real devices and emulators (also known as
     1. Select **Edit** and expand **Advanced Settings**. For previous Android versions you might have to touch and hold the name of the connected network, then tap **Modify**, and expand **Advanced Settings**.
 
     1. On **Proxy**, select **Manual proxy**.
-    
+
        - (Real devices only) Enter the IP address of the computer on which Fiddler Everywhere runs&mdash;for example, 192.168.0.101.
 
        - (Android emulators only) Enter the IP address of the emulator gateway. In most cases, the IP of the Android emulator gateway is 10.0.2.
@@ -117,7 +117,7 @@ You can monitor traffic from applications that are in active development, which 
             android:networkSecurityConfig="@xml/network_security_config">
             ...
     ```
-    
+
 1. Rebuild the application. Now you can start monitoring its HTTP/HTTPS traffic.
 
 ## Additional Resources

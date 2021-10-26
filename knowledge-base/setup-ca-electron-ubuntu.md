@@ -29,7 +29,7 @@ Electron applications CA management is different from the operating system CA ma
 
 2. Install and trust the certificate with the following command, which assumes that the certificate is already available in `/usr/share/ca-certificates/extra`.
 
-    If not, install and trust the certificate as shown in [the configuration article]({%slug first_steps_linux%}#trusting-the-root-certificate), so that you can capture HTTPS traffic from other applications and not only from electron applications.
+    If not, install and trust the certificate as shown in [the configuration article]({%slug first_steps_linux%}#start-system-capturing), so that you can capture HTTPS traffic from other applications and not only from electron applications.
     ```Shell
     certutil -A -n "ROOT-CA" -t "TCu,Cu,Tu" -i /usr/share/ca-certificates/extra/FiddlerRootCertificate.crt -d sql:/home/${USER}/.pki/nssdb
     ```
