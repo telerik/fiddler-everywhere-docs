@@ -1,5 +1,40 @@
 [
     {
+        "version": "2.2.0",
+        "title": "Fiddler Everywhere v2.2.0",
+        "date": "October 26, 2021",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Remember Fiddler Everywhere's window size and location and restore it on startup"
+                    },
+                    {
+                        "title": "Preconfigured browser capturing - capture HTTPS without trusting root certificate and without setting system proxy"
+                    },
+                    {
+                        "title": "Encrypt saved sessions with password - password protect sessions when saving them locally or in the cloud"
+                    },
+                    {
+                        "title": "Show notifications for user license changes"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Unable to trust root certificate on macOS in some cases"
+                    },
+                    {
+                        "title": "Del button deletes the whole request instead of last letter when renaming"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.1.2",
         "title": "Fiddler Everywhere v2.1.2",
         "date": "October 04, 2021",
