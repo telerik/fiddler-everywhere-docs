@@ -10,7 +10,7 @@ position: 20
 
 This article provides additional information related to the installation of Fiddler Everywhere and of its root certificate as well as lists the available options for logging into the tool and updating it.
 
-The step-by-step tutorials for getting up and running with Fiddler Everywhere are:
+To get up and running with Fiddler Everywhere, refer to the step-by-step tutorials:
 
 * [First Steps with Fiddler Everywhere on Windows]({% slug first_steps_windows %})
 * [First Steps with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
@@ -22,9 +22,9 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy, which is availabl
 
 The installation options of Fiddler Everywhere for each platform are part of the getting started step-by-step tutorials:
 
-* [First Steps on Windows (Installing Fiddler Everywhere on Your Machine)]({% slug first_steps_windows %}#installing-fiddler-everywhere-on-your-machine)
-* [First Steps on macOS (Installing Fiddler Everywhere on Your Machine)]({% slug first_steps_macos %}#installing-fiddler-everywhere-on-your-machine)
-* [First Steps on Linux (Installing Fiddler Everywhere on Your Machine)]({% slug first_steps_linux %}#installing-fiddler-everywhere-on-your-machine)
+* [Installing Fiddler Everywhere on Windows]({% slug first_steps_windows %}#installing-fiddler-everywhere-on-your-machine)
+* [Installing Fiddler Everywhere on macOS]({% slug first_steps_macos %}#installing-fiddler-everywhere-on-your-machine)
+* [Installing Fiddler Everywhere on Linux]({% slug first_steps_linux %}#installing-fiddler-everywhere-on-your-machine)
 
 ## Logging In with Your Account
 
@@ -32,9 +32,9 @@ Signing in is mandatory for both commercial and trial Fiddler Everywhere users. 
 
 To crate a Fiddler account, refer to the following getting started step-by-step tutorials, which provide detailed instructions on the topic:
 
-* [First Steps on Windows (Creating Your Fiddler Account)]({% slug first_steps_windows %}#creating-your-fiddler-account)
-* [First Steps on macOS (Creating Your Fiddler Account)]({% slug first_steps_macos %}#creating-your-fiddler-account)
-* [First Steps on Linux (Creating Your Fiddler Account)]({% slug first_steps_linux %}#creating-your-fiddler-account)
+* [Creating Your Fiddler Account on Windows]({% slug first_steps_windows %}#creating-your-fiddler-account)
+* [Creating Your Fiddler Account on macOS]({% slug first_steps_macos %}#creating-your-fiddler-account)
+* [Creating Your Fiddler Account on Linux]({% slug first_steps_linux %}#creating-your-fiddler-account)
 
 To directly sign in with your Google account, perform the following steps:
 
@@ -46,23 +46,19 @@ To directly sign in with your Google account, perform the following steps:
 
 ## Preconfigured Browser Capturing
 
-Fiddler Everywhere provides precofigured browser capturing option. With this feature there is no need to modify the operating system proxy settings or to explicitly install and trust the Fiddler root certificate.
+Fiddler Everywhere provides preconfigured browser capturing option. With this feature you don't need to modify the operating system proxy settings or to explicitly install and trust the Fiddler root certificate.
 
-
-The following getting started step-by-step tutorials provide detailed instructions on using the preconfigured option:
-* [First Steps on Windows (Preconfigured Browser Capturing)]({% slug first_steps_windows %}#start-preconfigured-browser-capturing)
-* [First Steps on macOS (Preconfigured Browser Capturing)]({% slug first_steps_macos %}#start-preconfigured-browser-capturing)
-* [First Steps on Linux (Preconfigured Browser Capturing)]({% slug first_steps_linux %}#start-preconfigured-browser-capturing)
+For detailed instructions on using the preconfigured option, refer to the article on handling traffic with the [preconfigured browser capturing]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing).
 
 ## Configuring System Capturing
 
 By default, the Fiddler Everywhere client intercepts insecure (HTTP) traffic only and requires an account with administrative rights to capture secure (HTTPS) traffic. To enable the capturing and decrypting of HTTPS traffic, you need to explicitly install a root trust certificate, and to enable HTTPS capturing.
 
-The following getting started step-by-step tutorials provide detailed instructions on trusting the root certificate:
+To trust the root certificate, refer to the following getting started step-by-step tutorials, which provide detailed instructions on the topic:
 
-* [First Steps on Windows (Trusting the Root Certificate)]({% slug first_steps_windows %}#start-system-capturing)
-* [First Steps on macOS (Trusting the Root Certificate)]({% slug first_steps_macos %}#start-system-capturing)
-* [First Steps on Linux (Trusting the Root Certificate)]({% slug first_steps_linux %}#start-system-capturing)
+* [Capturing Secure Traffic on Windows]({% slug first_steps_windows %}#capturing-secure-traffic)
+* [Capturing Secure Traffic on macOS]({% slug first_steps_macos %}#capturing-secure-traffic)
+* [Capturing Secure Traffic on Linux]({% slug first_steps_linux %}#capturing-secure-traffic)
 
 For more information on handling various issues that may occur when installing the Fiddler Everywhere root certificate, refer to the Knowledge Base articles. Some of the most common scenarios are:
 
