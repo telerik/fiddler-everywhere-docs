@@ -19,7 +19,7 @@ res_type: kb
 
 ## Description
 
-The [**Rules Tab**]({%slug rules-general%}) provides means to mock client & server behavior by modifying HTTP requests and responses. Each rule you create has a **match** pattern and an **action** that should be applied when there is a match. In some cases, you might find that some promoted rules are blocking other rules or that some rules are never effectively executed. The most likely reason is that some actions are **final**, while others are **non-final**. In this article, we will briefly demonstrate how final and non-final actions can be used alongside and what considerations one should have when dealing with them.
+The [**Rules Tab**]({%slug rules-general%}) provides means to mock client & server behavior by modifying HTTP requests and responses. Each rule you create has a **match** pattern and an **action** that should be applied when there is a match. In some cases, you might find that some promoted rules are blocking other rules or that some rules are never effectively executed. The most likely reason is that some actions are **final**, while others are **non-final**. This article will briefly demonstrate how final and non-final actions can be used alongside and what considerations one should have when dealing with them.
 
 [Learn more about the difference between final and non-final actions here...]({%slug rules-general%}#final-and-non-final-actions)
 
@@ -34,11 +34,11 @@ As you might expect, when only non-final actions are executed, all rules (matchi
 
 ### Final Actions Only
 
-When there are one or more rules with final actions, the execution of actions will immediately stop after the most promoted final action takes place. No other actions and demoted rules will be executed after the rule that contains the final action.
+When there are one or more rules with final actions, the execution of actions will immediately stop after the most promoted rule that contains a final action takes place. No other demoted rules will be executed after that.
 
 ### Mix of final and Non-Final Actions
 
-When there are one or more rules with final and non-final actions, the execution of actions will immediately stop after the most promoted final action occurs. No other actions and demoted rules will be executed after the rule that contains the final action. Note that each rule has its priority in the Rules list and can be demoted and promoted, which will change the order of execution. Final rules won't block non-final rules with higher priority. For a better illustration of this scenario, refer to the below case:
+When there are one or more rules with final actions, the execution of actions will immediately stop after the most promoted rule that contains a final action takes place. No other demoted rules will be executed after that. Note that each rule has its priority in the Rules list and can be demoted and promoted, which will change the order of execution. Final rules won't block non-final rules with higher priority. For a better illustration of this scenario, refer to the below case:
 
 - We have a rule with final action (for example, the **Close Gracefully** final action).
     ![a rule with a final action](../images/kb/final-actions/rule-only-final.png)
