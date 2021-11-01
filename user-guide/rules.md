@@ -384,14 +384,17 @@ Apart from returning files or predefined responses, a rule can perform the follo
 
 ### Final and Non-Final Actions
 
-Depending on its behavior, rule actions can be divided into **final** and **non-final**. Here are some of the highlights when working with both final and non-final actions.
+Depending on their behavior, rule actions can be divided into **final** and **non-final**.
 
-1. **Final actions** will immediately prevent any other actions lower on the list for the specific rule from executing. They will also prevent any rules with lower priority that match the request from executing any actions.
-1. **Final actions** are valid only when the rule is matched during the HTTP request.
-1. If a session is matched with conditions that depend on its response (for example, response body contains "html"), then any final actions in any rule that matched the session will be ignored. This is because final actions replace the response and we don't want to replace a response that was already received and matched conditions in a rule.
-1. **Non-final actions** will allow other actions from the same rule or other rules with lower priority, that match the session, to execute.
+When you work with final and non-final actions, take into consideration the following insights:
 
+* Final actions immediately prevent any other action from executing if this action comes lower on the list for the specific rule. Final actions also prevent any rule with lower priority, which matches the request, from executing any actions.
 
+* Final actions are valid only when the rule is matched during the HTTP request.
+
+* If a session is matched with conditions that depend on its response (for example, a response body contains "html"), then any final action in any rule that matched the session will be ignored. The reason for this behavior is that final actions replace the response and, by design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
+
+* Non-final actions will allow other actions from the same rule or other rules with lower priority, which match the session, to execute.
 
 ## Rules Queue
 
