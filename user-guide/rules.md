@@ -382,9 +382,9 @@ Apart from returning files or predefined responses, a rule can perform the follo
     </tbody>
 </table>
 
-#### Final and Non-Final Actions
+### Final and Non-Final Actions
 
-Depending on its behavior, rule actions can be divided into final and non-final. Here are some of the highlights when working with both final and non-final actions.
+Depending on its behavior, rule actions can be divided into **final** and **non-final**. Here are some of the highlights when working with both final and non-final actions.
 
 1. **Final actions** will immediately prevent any other actions lower on the list for the specific rule from executing. They will also prevent any rules with lower priority that match the request from executing any actions.
 1. **Final actions** are valid only when the rule is matched during the HTTP request.
