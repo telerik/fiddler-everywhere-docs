@@ -63,10 +63,15 @@ The  **URL field** is the place where you enter an endpoint URL for the composed
 ## HTTP Version
 
 The **HTTP Version** drop-down list renders the following HTTP versions:
+
 - **HTTP 2.0** (beta version support)
+
 - **HTTP 1.2**
+
 - **HTTP 1.1**
+
 - **HTTP 1.0**
+
 - **HTTP 0.9**
 
   ![HTTP Versions drop-down](../images/composer/composer-http-version.png)
@@ -94,6 +99,7 @@ The **Headers** section enables you to add or modify your request headers&mdash;
 To change it to raw UI through the drop-down in the top-right corner of the section:
 
 1. Add a new header by entering the header key-value pair. Click the **tick**.
+
 2. The new header is now part of your request headers. The header can now be disabled or enabled by using the tick to the left, or completely deleted by using the **Delete** icon to the right.
 
   ![Added header](../images/composer/composer-headers-after.png)
@@ -108,6 +114,7 @@ The **Params** section enables you to add query parameters to your request URL a
 You can change it to raw UI through the drop-down in the top-right corner of the section:
 
 1. Add new query parameters by entering the params key-value pair. Click the **tick**.
+
 2. The new query parameters are now added to your API endpoint URL. The params can now be disabled or enabled by using the tick to the left, or completely deleted by using the **Delete** icon to the right.
 
   ![Added Params](../images/composer/composer-params-after.png)
