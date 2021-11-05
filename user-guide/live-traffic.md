@@ -29,13 +29,15 @@ To start capturing traffic, enable **Live Traffic** by switching to the **Captur
 
 The **Live Traffic** toolbar provides the following functionalities:
 
-- [Streaming](#streaming)
-- [Advanced filters](#advanced-filters)
-- [Clearing all filters](#clearing-all-filters)
-- [Saving](#saving)
-- [Sharing](#sharing)
-- [Removing all](#removing-all)
-- [Searching](#searching)
+- [Streaming](#streaming) (**Stream**)
+- [Advanced filters](#advanced-filters) (**Advanced Filters**)
+- [Clearing all filters](#clearing-all-filters) (**Clear All Filters**)
+- [Saving](#saving) (**Save**)
+- [Sharing](#sharing) (**Share**)
+- [Removing all](#removing-all) (**Remove All**)
+- [Searching](#searching) (**Search**)
+- [Preconfigured Browser Capturing](#preconfigured-browser-capturing) (**Open Browser**)
+
 
 ### Streaming
 
@@ -49,21 +51,27 @@ To toggle between the buffering and the streaming mode, click the **Stream** but
 
 ### Advanced Filters
 
-To apply filters based on the **Request** and **Response** headers, use the **Advanced Filters**. Only sessions that are covering the filter criteria will appear in the **Live Traffic** list.
+Use the **Advanced Filters** to apply filters based on the **Request** and **Response** headers. Only sessions that cover the filter criteria will appear in the **Live Traffic** list.
 
-The **Advanced Filters** entries use the **AND** logical operator. Each value complies with the **EXACT** match.
+The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
 
-To set the advanced filters:
+Set the advanced filters as follows:
 
-1. Click the **Filter** button to open the advanced filters popup windows.
-2. The **Advanced Filters** window allows you to set specific criteria that will filter the captured traffic. Set the filter rules and click **Apply**.
+1. Click the **Advanced Filters** button to open the advanced filters popup window.
 
-    ![Advanced filters popup](../images/livetraffic/websessions/websessions-toolbar-filter-popup.png)
+1. The **Advanced Filters** window allows you to set specific criteria to filter the captured traffic.
+
+1. Set the **When** rule based on one of the following statements:
+    - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
+    - **Any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
+    - **None of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
+
+1. Add one or more conditions based on the HTTP Request and Response headers and provide logical operators.
+
+1. Click **Apply** to close the **Advanced Filters** and activate the newly created filter.    
 
 
-Currently, the **Advanced Filters** entries are using the **AND** logical operator. Each value is complying with the **EXACT** match.
-
->tip Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The column filtering allows you to use the AND and OR logical operators (for two lines) and multiple comparison rules (for example, **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
+>tip Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The column filtering allows you to use the AND and OR logical operators (for two lines) and multiple logical operators (for example, **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
 
 
 ### Clearing All Filters
@@ -104,6 +112,10 @@ To remove all captured sessions, use the **Remove All** button, which will autom
 ### Searching
 
 To search for specific values in the URL and the headers of all sessions, use the **Search** text input. The search action will immediately filter and show all sessions, which contain the search terms.
+
+### Preconfigured Browser Capturing
+
+Use the **Open Browser** button to capture traffic from a specific browser instance without the need to modify the system proxy settings. [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
 
 ## Live Traffic List
 
