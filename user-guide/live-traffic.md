@@ -63,12 +63,15 @@ Set the advanced filters as follows:
 
 1. Set the **When** rule based on one of the following statements:
     - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
-    - **Any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
-    - **None of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
+    - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
+    - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
 
 1. Add one or more conditions based on the HTTP Request and Response headers and provide logical operators.
 
 1. Click **Apply** to close the **Advanced Filters** and activate the newly created filter.    
+
+![Advanced Filters](../images/livetraffic/websessions/websessions-toolbar-advanced-filters.png)
+
 
 
 >tip Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The column filtering allows you to use the AND and OR logical operators (for two lines) and multiple logical operators (for example, **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
@@ -85,9 +88,13 @@ To save captured sessions, use the **Save** button, which will automatically sav
 To save sessions for later or prepare sessions for sharing:
 
 1. Click the **Save** button. As a result, a **Save Sessions** prompt window appears.
+
 1. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
+
 1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password will be able to open the entry.
+
 1. Click **Save**. The saved session immediately loads in the **Sessions** list.
+
 1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
 ### Sharing
@@ -95,13 +102,17 @@ To save sessions for later or prepare sessions for sharing:
 Sharing sessions dramatically improves collaboration, and Fiddler Everywhere provides the following options to export and share sessions:
 
 - Sharing through the **Share** button from a saved session entry in [the **Sessions** list]({%slug saved-sessions-tab%}#sharing-sessions)).
+
 - Sharing through the **Share** option from [the **Live Traffic** list context menu]({%slug web-sessions-list%}#share).
+
 - Sharing through the **Share** button from the **Live Traffic** list toolbar. The **Live Traffic** toolbar comes with a **Share** button that will save in a file the currently displayed sessions, captured from **Live Traffic**, and then will share them through an explicitly provided email.
 
 To share a session through the toolbar:
 
 1. Click the **Share** button. As a result, the **Save Session** prompt window appears.
+
 1. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
+
 1. In the **Share Sessions** prompt window, enter a valid email and click **Share**. Entering notes is optional.
 
 
@@ -126,6 +137,7 @@ The **Live Traffic** list displays a list of web sessions with a summary of each
 Many operations begin by selecting one or more entries in the **Live Traffic** and then activating other features.
 
 - To select more than one session, hold the **Ctrl** (**Command** on Mac) or **Shift** keys while clicking the desired rows.
+
 - Double-click or press **Enter** (**Return** on Mac) to activate the default inspectors for a single selected session.
 
 When the **Inspectors** are activated, they will automatically decide which inspector type is best suited to display the request and response of the selected session.
@@ -208,6 +220,7 @@ The **Filter** submenu enables you to apply filters to the currently selected co
 
 
 Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
+
 - **URL**
 - **Result**
 - **Method**
@@ -236,15 +249,21 @@ The **Edit in Composer** context menu option loads the selected request in a new
 To save selected sessions, use the **Save** context menu option. The saved sessions will appear in the **Sessions** list to the left of the Fiddler Everywhere interface and from there you can later re-open, export, and share them.
 
 - **Selected sessions**&mdash;Saves all chosen sessions; can be accessed with the keyboard by pressing `S`.
+
 - **Unselected sessions**&mdash;Saves all unselected Sessions; can be accessed with the keyboard by pressing `Shift` +`Cmd` +`S` (on Mac), or `Shift`+`S` (on Windows).
+
 - **All Sessions**&mdash;Saves all captured traffic; can be accessed with the keyboard by pressing `Cmd`+`S` (on Mac), or `Ctrl`+`S` (on Windows).
 
 All options will display a **Save** prompt window. To save the desired sessions:
 
 1. Select the sessions, open the context menu, and click the **Save** option.
+
 1. Enter your session name and choose the folder that will store the entry.
+
 1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password will be able to open the entry.
+
 1. Click **Save**. The saved session immediately loads in the **Sessions** list.
+
 1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
 Alternatively, you can save all captured traffic [through the **Save** button from the toolbar]({%slug web-sessions-list%}#save).
@@ -254,13 +273,17 @@ Alternatively, you can save all captured traffic [through the **Save** button fr
 The **Share** context menu option enables the sharing of sessions. Before any session is shared, it is saved as an entry in the **Sessions** list. Then, the entry can be transmitted through the email.
 
 - **Selected sessions**&mdash;Saves and shares all selected sessions.
+
 - **Unselected sessions**&mdash;Saves and shares all unselected sessions.
+
 - **All Sessions**&mdash;Saves and shares all captured traffic.
 
 All options will initially display a **Save** and then a **Share** prompt window.
 
 1. Select the sessions, open the context menu, and click the **Share** option.
+
 1. The selected sessions are being saved. Enter your session name and click **Save and proceed**.
+
 1. The **Share** prompt window appears. Enter a valid email and, optionally, add notes. Once ready, click **Share**. Note that when sharing an encrypted session, the recipient will need the password to access it.
 
 Alternatively, you can share captured traffic [through the **Share** button from the toolbar]({%slug web-sessions-list%}#share).
@@ -270,7 +293,9 @@ Alternatively, you can share captured traffic [through the **Share** button from
 The **Export** context menu option allows you to export the captured traffic in various formats such as SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
 
 - **Selected sessions**&mdash;Saves and shares all selected sessions.
+
 - **Unselected sessions**&mdash;Saves and shares all unselected sessions.
+
 - **All Sessions**&mdash;Saves and shares all captured traffic.
 
 ### Removing
@@ -278,7 +303,9 @@ The **Export** context menu option allows you to export the captured traffic in 
 To delete sessions from your **Live Traffic** list, use the **Remove** context menu options.
 
 - **Selected sessions**&mdash;Removes all selected sessions; can be accessed with the keyboard by pressing `Cmd`+`Back` (on Mac), `Del` (on Windows).
+
 - **Unselected sessions**&mdash;Removes all unselected sessions; can be accessed with the keyboard by pressing `Shift`+`Cmd`+`Back` (on Mac), or `Shift`+`Del` (on Windows).
+
 - **All Sessions**&mdash;Removes all captured traffic; can be accessed with the keyboard by pressing `Cmd`+`X` (on Mac), or `Ctrl`+`X` (on Windows).
 
 ### Commenting
@@ -286,7 +313,9 @@ To delete sessions from your **Live Traffic** list, use the **Remove** context m
 To add comments for desired sessions, use the **Comment** context menu option.
 
 1. Select the sessions, open the context menu, and click the **Comment** option, which can be accessed with the keyboard by pressing `M`.
+
 1. A **Comment** dialog appears. Enter the comment and click **Ok**.
+
 1. The text is added to the comment field for the selected sessions.
 
 ### Marking
@@ -294,6 +323,7 @@ To add comments for desired sessions, use the **Comment** context menu option.
 To apply colors or to strike out selected sessions, use the **Mark** context menu option.
 
 1. Select the sessions, open the context menu, and click the **Mark** option.
+
 1. Click the preferred marking style to apply it.
 
 ### Replaying
@@ -305,7 +335,9 @@ To replay previously captured sessions, use the **Replay** context menu option, 
 To select sessions directly related to the currently selected session, use the **Select** context menu option. You choose **parent**, **children**, and **duplicate** sessions.
 
 - **Parent request** selects the session that is a parent of the currently selected session; can be accessed with the keyboard by pressing `P`.
+
 - **Children requests** selects the sessions that are children of the currently selected session; can be accessed with the keyboard by pressing `C`.
+
 - **Duplicate request** selects the session that is identical to the currently selected session; can be accessed with the keyboard by pressing `D`.
 
 ### Copying
@@ -313,6 +345,7 @@ To select sessions directly related to the currently selected session, use the *
 To place session information in the clipboard, use the **Copy** context menu option, which supports the following options:
 
 - **URL** provides the session URL; can be accessed with the keyboard by pressing `Cmd`+`U` (on Mac), or `Ctrl`+`U` (on Windows).
+
 - **Full Summary** provides verbose session details; can be accessed with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
 
 The following example demonstrates how to copy a URL.
@@ -335,4 +368,5 @@ You can use a captured session entry to mock some server behavior. For similar c
 To add a new rule:
 
 1. Select the desired session entry and right-click to open the context menu. Select **Add New Rule**.
+
 2. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.
