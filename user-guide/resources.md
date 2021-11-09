@@ -15,12 +15,18 @@ The page contains information about the current release of Fiddler Everywhere, l
 
 The screen will appear on consecutive startups unless you explicitly disable it by selecting the **Don't show this window on startup** checkbox. To show the welcome page, select the **My Resources** option within the application located on the bottom-left side.
 
+- **Getting Started helpers**&mdash;Provides interactive helper for enabling secure traffic system capturing and leads to different articles from the official Fiddler Everywhere documentation.
+
 - **Documentation**&mdash;Leads to the [official documentation of Fiddler Everywhere](https://docs.telerik.com/fiddler-everywhere/introduction?utm_medium=product&utm_source=doc&utm_campaign=fe_product_gettingstarted).
+
 - **Blogs**&mdash;Leads to the [official blog of Fiddler Everywhere](https://www.telerik.com/blogs/fiddler?utm_medium=product&utm_source=blogs&utm_campaign=fe_product_gettingstarted).
+
 - **Videos**&mdash;Leads to the [official YouTube video library for Fiddler Everywhere](https://www.youtube.com/playlist?list=PLvmaC-XMqeBYviLOpMOZ38Dsjpp6Qr4Y6&utm_medium=product&utm_source=videos&utm_campaign=fe_product_gettingstarted).
+
 - **Webinars**&mdash;Leads to a web page that hosts recordings of [past Fiddler Everywhere webinars](https://www.telerik.com/webinars/fiddler?utm_medium=product&utm_source=webinar&utm_campaign=fe_product_gettingstarted).
-- **In-app tutorials**&mdash;The welcome page contains in-app step-by-step tutorials explaining the core features of Fiddler Everywhere.
+
+- **In-app tutorials**&mdash;The welcome page contains different in-app step-by-step tutorials explaining the core features of Fiddler Everywhere.
 
 The following figure demonstrates the resources from the **Welcome Page**.
 
-![My Resources option at the bottom-left](../images/resources/my-resources-main-page.png)
+![My Resources option at the bottom-left](../images/resources/my-resources.png)
