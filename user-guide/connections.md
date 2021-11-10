@@ -14,9 +14,11 @@ The **Connections** section is located at the bottom-right corner of the Fiddler
 
 The section will popup on mouse interaction and will list the following information:
 
-- **Network Connection***&mdash;Shows the state of the network that provides the internet connectivity.
+- **Network Connection**&mdash;Shows the state of the network that provides the internet connectivity.
 
-- A list of the active network adapters on the machine that hosts Fiddler Everywhere. Each entry is listed by its IPv6 address and by its IPv4 address.
+- **Host**&mdash;Outputs the hostname of the machine that Fiddler Everywhere runs on.
+
+- A list of the active network adapters on the machine that hosts Fiddler Everywhere. Each entry is listed by its **IPv6 address** and by its **IPv4 address**.
 
 The following figure demonstrates the **Connections** section.
 
