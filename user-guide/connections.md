@@ -16,7 +16,7 @@ The section pops up on mouse interaction and lists the following information:
 
 - **Network Connection***&mdash;Shows the state of the network that provides the Internet connectivity.
 
-- **Host**&mdash;Outputs the hostname of the machine that Fiddler Everywhere runs on.
+- **Host**&mdash;Outputs the machine's hostname that Fiddler Everywhere runs on.
 
 - A list of the active network adapters on the machine that hosts Fiddler Everywhere. Each entry is listed by its IPv6 and IPv4 addresses.
 
