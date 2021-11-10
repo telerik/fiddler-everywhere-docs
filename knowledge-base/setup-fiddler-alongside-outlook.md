@@ -12,12 +12,12 @@ res_type: kb
 |   |   |
 |---|---|
 | Fiddler Everywhere | 1.0.0 and above |
-| 3rd-party application | Outlook |
+| 3rd-party application | Microsoft Outlook, Office365 |
 | Operating System | Windows, macOS |
 
 ## Description
 
-Some third-party applications like **Microsoft Outlook ** are not working seamlessly alongside MITM proxies like Fiddler Everywhere.  How can I handle this issue?
+Some third-party applications like **Microsoft Outlook** are not working seamlessly alongside MITM proxies like Fiddler Everywhere.  How can I handle this issue?
 
 ## Solution
 
