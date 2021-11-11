@@ -314,7 +314,7 @@ To add comments on single or multiple sessions, use the **Comment** context menu
 
 1. The text is added to the comment field for the selected sessions.
 
-Saved & shared sessions will contain the added comments.
+Saved and shared sessions will contain the added comments.
 
 ### Marking
 
@@ -324,7 +324,7 @@ To apply colors or to strike out single or multiple sessions use the **Mark** co
 
 1. Click the preferred marking style to apply it.
 
-Saved & shared sessions will contain the custom marking.
+Saved and shared sessions will contain the custom marking.
 
 ### Replaying
 
