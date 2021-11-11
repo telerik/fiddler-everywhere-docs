@@ -17,13 +17,13 @@ res_type: kb
 
 ## Description
 
-Some third-party applications like **Microsoft Outlook** are not working seamlessly alongside MITM proxies like Fiddler Everywhere.  How can I handle this issue?
+Some third-party applications like Microsoft Outlook are not working seamlessly alongside MITM proxies like Fiddler Everywhere.  How can I handle this issue?
 
 ## Solution
 
-In some cases, the third-party implementation restricts the application usage when the traffic goes through the MITM proxy. In other cases, the applications are not handling well dynamic change of the system proxy. The desktop application **Outlook** is one example of an application that might stop working when Fiddler Everywhere acts as a system proxy. To resolve issues with Outlook not working when Fiddler is turned on, follow these steps:
+In some cases, the proxy usage in third-party applications is restricted when the traffic goes through the MITM proxy. In other cases, the applications are not handling well the dynamic change of the system proxy. The desktop application Microsofot Outlook is one example of an application that might stop working when Fiddler Everywhere acts as a system proxy. To resolve issues with Outlook not working when Fiddler is turned on, follow these steps:
 
-- Exit the **Microsoft Outlook** application. Make sure it is not running in the background. 
+- Close Microsoft Outlook. Make sure it is not running in the background. 
 
 - Start Fiddler Everywhere and go to **Settings** > **Connections**.
 
