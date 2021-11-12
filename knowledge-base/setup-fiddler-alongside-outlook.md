@@ -30,8 +30,10 @@ In some cases, the proxy usage in third-party applications is restricted when th
 - In the **Bypass Fiddler for URLs that start with:** field, enter the following addresses and click **Save**.
 
     ```curl
-    *office.com;*office365.com;*live.com;*outlook.com;autodiscover.progress.com
+    *office.com;*office365.com;*live.com;*outlook.com;autodiscover.yourcompany.com
     ```
+
+    Note that the last entry is a company-specific Officce365 endpoint and will differ for different Office365 users.
 
     ![bypassing Outlook endpoints in Fiddler](../images/kb/outlook-bypass.png)
 
