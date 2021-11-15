@@ -4,7 +4,7 @@
         "items": [
             {
                 "title": "Introducing Preconfigured Browser Capturing in Fiddler Everywhere",
-                "description": "Check out the Preconfigured Browser Capturing option in Fiddler Everywhere - you can now capture HTTP(S) traffic without the need to trust Fiddler's root certificate and change the system proxy.",
+                "description": "One can now capture HTTP(S) traffic without the need to trust Fiddler's root certificate and change the system proxy.",
                 "url": "https://www.telerik.com/blogs/introducing-preconfigured-browser-capturing-fiddler-everywhere"
             },
             {
