@@ -1,5 +1,25 @@
 [
     {
+        "version": "2.2.0",
+        "items": [
+            {
+                "title": "Introducing Preconfigured Browser Capturing in Fiddler Everywhere",
+                "description": "One can now capture HTTP(S) traffic without the need to trust Fiddler's root certificate and change the system proxy.",
+                "url": "https://www.telerik.com/blogs/introducing-preconfigured-browser-capturing-fiddler-everywhere"
+            },
+            {
+                "title": "Introducing the New Rule Builder",
+                "description": "Build your own Rules out of the box, mark sessions, test web changes quickly, and make the process of debugging and development easier using the new Rule Builder in Fiddler Everywhere.",
+                "url": "https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere"
+            },
+            {
+                "title": "Fiddler Everywhere 2.0 Is Here!",
+                "description": "Fiddler Everywhere 2.0 is here and it comes with UI enhancements and new, more powerful features! Plus take a sneak peek of what else we are preparing to introduce next in Fiddler Everywhere in 2021.",
+                "url": "https://www.telerik.com/blogs/new-release-fiddler-everywhere-2.0"
+            }
+        ]
+    },
+    {
         "version": "2.0.2",
         "items": [
             {

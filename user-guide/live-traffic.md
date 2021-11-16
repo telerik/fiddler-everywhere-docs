@@ -222,17 +222,23 @@ The **Filter** submenu enables you to apply filters to the currently selected co
 Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
 
 - **URL**
+
 - **Result**
+
 - **Method**
+
 - **Process**
+
 - **Remote IP**
+
 - **Body Size**
+
 - **Comments**
 
 Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
 
-
 ![Columns context submenu](../images/livetraffic/columns/dots-columns.png)
+
 
 ## Context Menu Options
 
@@ -243,6 +249,7 @@ The context menu for the **Live Traffic** exposes actions that you can apply for
 ### Editing in the Composer
 
 The **Edit in Composer** context menu option loads the selected request in a new composer window where it can be edited, saved for later usage and sharing, and reissued.
+
 
 ### Saving
 
@@ -268,6 +275,7 @@ All options will display a **Save** prompt window. To save the desired sessions:
 
 Alternatively, you can save all captured traffic [through the **Save** button from the toolbar]({%slug web-sessions-list%}#save).
 
+
 ### Sharing
 
 The **Share** context menu option enables the sharing of sessions. Before any session is shared, it is saved as an entry in the **Sessions** list. Then, the entry can be transmitted through the email.
@@ -288,6 +296,7 @@ All options will initially display a **Save** and then a **Share** prompt window
 
 Alternatively, you can share captured traffic [through the **Share** button from the toolbar]({%slug web-sessions-list%}#share).
 
+
 ### Exporting
 
 The **Export** context menu option allows you to export the captured traffic in various formats such as SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
@@ -297,6 +306,7 @@ The **Export** context menu option allows you to export the captured traffic in 
 - **Unselected sessions**&mdash;Saves and shares all unselected sessions.
 
 - **All Sessions**&mdash;Saves and shares all captured traffic.
+
 
 ### Removing
 
@@ -308,9 +318,10 @@ To delete sessions from your **Live Traffic** list, use the **Remove** context m
 
 - **All Sessions**&mdash;Removes all captured traffic; can be accessed with the keyboard by pressing `Cmd`+`X` (on Mac), or `Ctrl`+`X` (on Windows).
 
+
 ### Commenting
 
-To add comments for desired sessions, use the **Comment** context menu option.
+To add comments on single or multiple sessions, use the **Comment** context menu option.
 
 1. Select the sessions, open the context menu, and click the **Comment** option, which can be accessed with the keyboard by pressing `M`.
 
@@ -318,13 +329,17 @@ To add comments for desired sessions, use the **Comment** context menu option.
 
 1. The text is added to the comment field for the selected sessions.
 
+Saved and shared sessions will contain the added comments.
+
 ### Marking
 
-To apply colors or to strike out selected sessions, use the **Mark** context menu option.
+To apply colors or to strike out single or multiple sessions use the **Mark** context menu option.
 
 1. Select the sessions, open the context menu, and click the **Mark** option.
 
 1. Click the preferred marking style to apply it.
+
+Saved and shared sessions will contain the custom marking.
 
 ### Replaying
 
@@ -369,4 +384,5 @@ To add a new rule:
 
 1. Select the desired session entry and right-click to open the context menu. Select **Add New Rule**.
 
-2. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.
+1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.
+
