@@ -18,7 +18,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 
 - Install Windows 7 x64, Windows 8 x64, or Windows 10 x64.
 - Install [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/install/windows#additional-deps).
-- Make sure you have 300MB+ free disk space.
+- Make sure you have 400MB+ free disk space.
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
 ```curl
@@ -62,25 +62,19 @@ Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer 
 
 However, by default, you can only track non-secure HTTP system traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
 
+1. Start Fiddler Everywhere.
 
-### Enabling HTTPS capture
+1. Open the [**Welcome page**]({% slug my-resources-section %}). Alternatively, follow the link **Enable HTTPS now** from the inline notification in the Fiddler UI.
 
-1. Start Fiddler Everywhere and choose one of the following methods: 
+  >tip You can also control the trust certificate settings manually. [Learn more about the advanced trust certificate options here...](#)
 
-  _Enable HTTPS Capturing through the Welcome screen_
-  
-  1. Open the [**Welcome page**]({% slug my-resources-section %}). Alternatively, follow the link **Enable HTTPS now** from the inline notification in the Fiddler UI.
-  1. Click the **Enable HTTPS Capture** button. 
-  1. Click the **Trust and Enable HTTPS** button.
-  1. Confirm the certificate installation in the OS popup.
-  1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
+1. Click the **Enable HTTPS Capture** button. 
 
-  _Enable HTTPS Capturing through the Settings section_
+1. Click the **Trust and Enable HTTPS** button.
 
-  1. Go to **Settings** > **HTTPS**.
-  1. Click the **Trust Root Certificate** button. Confirm your choice and add the certificate in the popup that appears.
-  1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
-  1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
+1. Confirm the certificate installation in the OS popup.
+
+1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
 
 That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
 
@@ -96,7 +90,7 @@ Let's now continue with capturing and inspecting some HTTPS traffic:
 
 Now you'll extract a captured session:
 
-1. Go to the **Live Traffic** tab and select a request/response entry from under the **sessions list**.
+1. Go to the **Live Traffic** tab and select a request/response entry from the **sessions list**.
 
 1. Double-click to open the **Inspectors** tab and inspect the detailed session request/response data.
 
@@ -106,7 +100,7 @@ Let's modify that session!
 
 1. Right-click the session of your request to open the context menu of the entry. From there, select **Edit in Composer**.
 
-1. When the session opens in a new **Composer** window, modify its headers. For example, add new HTTP header with the `isTest` key and the `true` value.
+1. When the session opens in a new **Composer** window, modify its headers. For example, add a new HTTP header with the `isTest` key and the `true` value.
 
 1. Click the **tick** to add the new HTTP header.
 
