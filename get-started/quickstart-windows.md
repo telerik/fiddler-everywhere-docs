@@ -68,6 +68,7 @@ However, by default, you can only track non-secure HTTP system traffic with Fidd
 1. Start Fiddler Everywhere and choose one of the following methods: 
 
   _Enable HTTPS Capturing through the Welcome screen_
+  
   1. Open the [**Welcome page**]({% slug my-resources-section %}). Alternatively, follow the link **Enable HTTPS now** from the inline notification in the Fiddler UI.
   1. Click the **Enable HTTPS Capture** button. 
   1. Click the **Trust and Enable HTTPS** button.
@@ -75,6 +76,7 @@ However, by default, you can only track non-secure HTTP system traffic with Fidd
   1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
 
   _Enable HTTPS Capturing through the Settings section_
+
   1. Go to **Settings** > **HTTPS**.
   1. Click the **Trust Root Certificate** button. Confirm your choice and add the certificate in the popup that appears.
   1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
