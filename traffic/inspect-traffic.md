@@ -11,13 +11,20 @@ previous_url: /get-started/inspect-traffic, /get-started/traffic/inspect-traffic
 
 When the traffic is already captured, you can start analyzing the data.
 
-To extract information about the captured sessions, go to the [**Live Traffic**]({%slug web-sessions-list%}) tab where each request/response entry (session) is listed in a row with multiple column fields in the **Sessions** list. There you can extract useful data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, the used HTTP method (GET or POST), and more.
+To extract information about the captured sessions, go to the [**Live Traffic**]({%slug web-sessions-list%}) tab where each request/response entry (session) is listed in a row with multiple columns fields in the **Sessions** list. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, the used HTTP method (GET or POST), and more.
 
 To open structured information about the session timings, sizes, request, and response details in the [**Overview** tab]({%slug overview-tab%}), single-click a session or select multiple sessions.
 
 ![Live Traffic and session overview](../images/livetraffic/websessions/websessions-list-all-overview.png)
 
 To load [the request and response inspectors]({%slug inspector-types%}), double-click a session. The [**Inspectors** tab]({%slug inspector-types%}) is a powerful tool that allows you to deep-dive in each session so you and your teammates can debug it or find performance bottlenecks.
+
+
+The following rules are applied when you are selecting and changing sessions and using the **Inspectors** tab:
+
+- **Double-click** on a session to activate the default Inspectors for a selected session. Fiddler Everywhere will automatically decide which inspector is best suited to display the selected session's request and response when the inspectors are activated.
+
+- **Single-click** on a session to activate the last shown Inspectors. This is useful when you want to inspect specific inspectors for many sessions, and you don't need Fiddler Everywhere to load the best inspector based on the requests/response data.
 
 ![Live Traffic and Inspectors](../images/livetraffic/websessions/websessions-list-all.png)
 
