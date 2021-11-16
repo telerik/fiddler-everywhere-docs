@@ -17,7 +17,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Lin
 ## Prerequisites
 
 - Install Ubuntu 18+ x64.
-- Provide 300MB of free disk space.
+- Provide 400MB of free disk space.
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active internet connection with access to the following URLs:
 ```curl
