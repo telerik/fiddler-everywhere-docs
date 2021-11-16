@@ -62,33 +62,23 @@ Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer 
 
 However, by default, you can only track non-secure HTTP system traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
 
-### Enabling HTTPS capture (Quickstart)
 
-1. Start Fiddler Everywhere
+### Enabling HTTPS capture
 
-1. Open the [**Welcome page**]({% slug my-resources-section %}). Alternatively, follow the link **Enable HTTPS now** from the inline notification in the Fiddler UI.
+1. Start Fiddler Everywhere and choose one of the following methods: 
 
-1. Click the **Enable HTTPS Capture** button. 
+  _Enable HTTPS Capturing through the Welcome screen_
+  1. Open the [**Welcome page**]({% slug my-resources-section %}). Alternatively, follow the link **Enable HTTPS now** from the inline notification in the Fiddler UI.
+  1. Click the **Enable HTTPS Capture** button. 
+  1. Click the **Trust and Enable HTTPS** button.
+  1. Confirm the certificate installation in the OS popup.
+  1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
 
-1. Click the **Trust and Enable HTTPS** button.
-
-1. Confirm the certificate installation in the OS popup.
-
-
-That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
-
-
-### Enabling HTTPS capture through the Settings section
-
-Alternatively, you could use the **Settings** section to install and trust the Fiddler root certificate.
-
-1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**.
-
-1. Click the **Trust Root Certificate** button. Confirm your choice and add the certificate in the popup that appears.
-
-1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
-
-1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
+  _Enable HTTPS Capturing through the Settings section_
+  1. Go to **Settings** > **HTTPS**.
+  1. Click the **Trust Root Certificate** button. Confirm your choice and add the certificate in the popup that appears.
+  1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
+  1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
 
 That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
 
