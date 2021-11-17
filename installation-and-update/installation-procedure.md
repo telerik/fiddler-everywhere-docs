@@ -8,7 +8,9 @@ position: 10
 
 # Login and Update
 
-This article provides additional information related to the installation of Fiddler Everywhere and its root certificate and lists the available options for logging into the tool and updating it.
+This article provides additional information related to the installation of Fiddler Everywhere and lists the available options for logging into the tool and updating it.
+
+## Getting Started Guides
 
 To get up and running with Fiddler Everywhere, refer to the step-by-step tutorials:
 
@@ -30,11 +32,15 @@ The installation options of Fiddler Everywhere for each platform are part of the
 
 Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can create a Fiddler account or use an existing Google account.
 
+### Creating a Fiddler Account
+
 To create a Fiddler account, refer to the following getting started step-by-step tutorials, which provide detailed instructions on the topic:
 
 * [Creating Your Fiddler Account on Windows]({% slug first_steps_windows %}#creating-your-fiddler-account)
 * [Creating Your Fiddler Account on macOS]({% slug first_steps_macos %}#creating-your-fiddler-account)
 * [Creating Your Fiddler Account on Linux]({% slug first_steps_linux %}#creating-your-fiddler-account)
+
+### Using Your Google Account
 
 To directly sign in with your Google account, perform the following steps:
 

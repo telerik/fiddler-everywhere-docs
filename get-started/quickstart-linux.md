@@ -25,7 +25,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Lin
   https://*.amazonaws.com/
 ```
 
-## Installing Fiddler Everywhere on Your Machine
+## Step 1: Install Fiddler Everywhere on Your Machine
 
 You'll first have to install the latest version of Fiddler Everywhere on your machine.
 
@@ -59,7 +59,7 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 
           ![KDE setting executable](../images/installation/exec-kde.jpg)
 
-## Creating Your Fiddler Account
+## Step 2: Create Your Fiddler Account
 
 In this step you'll register by creating your personal Fiddler Everywhere account and become a trial user.   
 
@@ -73,12 +73,12 @@ In this step you'll register by creating your personal Fiddler Everywhere accoun
 
 1. On the next screen, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link. For the purposes of this tutorial, you'll become a trial user by selecting the **Start Free Trial** option. You are all set to start using the full-scale functionalities Fiddler Everywhere delivers.
 
-## Styling the Tool
+## Step 3: Style the Tool
 
 Now let's add more elegance to Fiddler Everywhere and change its default Light theme with the Dark one&mdash;just go to the **Themes** menu, select the Dark theme, and click **Save**. That's it!
 
 
-## Capturing Secure Traffic
+## Step 4: Capture Secure Traffic
 
 Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports a system proxy.
 
@@ -116,13 +116,13 @@ As the Linux distributions use different security features and approaches for tr
 
 1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
 
-1. Back in the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
+1. Back on the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
 
 That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
 
->tip Fiddler Everywhere provides the [preconfigured browser-capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing), which enables you to skip the system capturing configuration from this step. The predefined browser-capturing option comes in handy when you generate captured traffic only from a browser, or lack administrative right to install certificates and to modify the system proxy, or when third-party VPNs and security tools are colliding with the Fiddler Everywhere proxy.
+>tip Fiddler Everywhere provides the [preconfigured browser-capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing), which enables you to skip the system capturing configuration from this step. The predefined browser-capturing option comes in handy when you generate captured traffic only from a browser, or lack administrative rights to install certificates and to modify the system proxy, or when third-party VPNs and security tools are colliding with the Fiddler Everywhere proxy.
 
-## Fiddling with the Traffic
+## Step 5: Fiddle with the Traffic
 
 Let's now continue with capturing and inspecting some HTTPS traffic:
 
