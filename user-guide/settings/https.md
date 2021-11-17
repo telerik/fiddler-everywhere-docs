@@ -27,6 +27,6 @@ The following figure displays the default settings of the **HTTPS** menu.
 
 ## Inline Notifications
 
-Until the root certificate is trusted, an inline notification will warn you that HTTPS capture is disabled. This notification will hide if you use the [preconfigured browser-capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) and will re-appear once you close the active preconfigured browser instance.
+Until the root certificate is trusted, an inline notification will warn you that the [system HTTPS capture]({%slug capture-traffic-get-started%}#system-capturing) is disabled. This notification will hide if you use the [preconfigured browser-capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) and will re-appear once you close the active preconfigured browser instance.
 
 ![inline notification](../../images/get-started/notification.png) 
