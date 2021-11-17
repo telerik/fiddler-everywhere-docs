@@ -9,6 +9,9 @@ navigation:
     get-started:
         title: Get Started
         position: 10
+    installation-and-update:
+        title: Installation & Update
+        position: 20    
     traffic:
         title: Traffic Inspection & Analysis
         position: 30
