@@ -24,3 +24,9 @@ To enable the capturing and decrypting of HTTPS traffic, you need to install the
 The following figure displays the default settings of the **HTTPS** menu.  
 
 ![default https settings](../../images/settings/settings-https.png)
+
+## Inline Notifications
+
+Until the root certificate is trusted, an inline notification will warn you that HTTPS capture is disabled. This notification will hide if you use the [preconfigured browser-capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) and will re-appear once you close the active preconfigured browser instance.
+
+![inline notification](../images/get-started/notification.png) 
