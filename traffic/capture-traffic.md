@@ -35,7 +35,7 @@ The client logs all HTTP and HTTPS traffic between your computer and the Interne
 
 To capture system traffic with Fiddler Everywhere:
 
-1. Start Fiddler Everywhere. Ensure the proper configuration as described in the [First Steps tutorials for Windows]({% slug first_steps_windows %}), [macOS]({% slug first_steps_macos }), or [Linux]({% slug first_steps_linux %}).
+1. Start Fiddler Everywhere. Ensure the proper configuration as described in the [First Steps tutorials for Windows]({%slug first_steps_windows%}), [macOS]({%slug first_steps_macos%}), or [Linux]({%slug first_steps_linux%}).
 
 1. Switch **Live Traffic** to **Capturing**. Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug saved-sessions-tab%}) tab.
 
