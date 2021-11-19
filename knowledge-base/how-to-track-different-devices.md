@@ -22,9 +22,9 @@ Fiddler Everywhere can simultaneously capture traffic from multiple remote compu
 
 **Prerequisites**
 
-- The Fiddler host and the remote computer should both be on the same network and they should "see" each other (no firewall restrictions).
+- The Fiddler host and the remote computer should both be on the same network, and they should "see" each other (no firewall restrictions).
 
-To capture traffic from a remote computer follow this steps:
+To capture traffic from a remote computer, follow this steps:
 
 1. Start Fiddler Everywhere on the host computer and enable **Live Traffic** (system capture). 
 
@@ -38,13 +38,13 @@ To capture traffic from a remote computer follow this steps:
 
     ![Filtering by Client IP](../images/kb/client-ip/filter-by-client-ip.png)
 
-## Solution (for mobibe devices)
+## Solution (for mobile devices)
 
 **Prerequisites**
 
-- The Fiddler host and the remote mobile device should both be on the same network and they should "see" each other (no firewall restrictions).
+- The Fiddler host and the remote mobile device should both be on the same network, and they should "see" each other (no firewall restrictions).
 
-To capture traffic from a remote mobile device follow this steps:
+To capture traffic from a remote mobile device, follow this steps:
 
 1. Start Fiddler Everywhere on the host computer and enable **Live Traffic** (system capture). 
 
@@ -52,7 +52,7 @@ To capture traffic from a remote mobile device follow this steps:
 
 1. Go to **Settings**  > **Connections** and ensure **Allow remote computers to connect** is checked.
 
-1. Follow the specific insturctions for the different mobile operating systems as described here:
+1. Follow the specific instructions for the different mobile operating systems as described here:
 
     - [Instructions for Android]({%slug capture-mobile-android-traffic%}#configuring-the-android-device)
 
