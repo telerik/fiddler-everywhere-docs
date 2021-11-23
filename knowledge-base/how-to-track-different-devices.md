@@ -20,7 +20,6 @@ Fiddler Everywhere can simultaneously capture traffic from multiple remote compu
 
 ## Solution (for remote computers)
 
-**Prerequisites**
 
 Before you start, verify that the host and the remote computer are on the same network, and they "see" each other (no firewall restrictions).
 
