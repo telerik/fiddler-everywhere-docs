@@ -24,7 +24,7 @@ Fiddler Everywhere can simultaneously capture traffic from multiple remote compu
 
 Before you start, verify that the host and the remote computer are on the same network, and they "see" each other (no firewall restrictions).
 
-To capture traffic from a remote computer, follow this steps:
+To capture traffic from a remote computer:
 
 1. Start Fiddler Everywhere on the host computer and enable **Live Traffic** (system capture). 
 
