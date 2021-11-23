@@ -1,5 +1,5 @@
 ---
-title: Capture traffic from multiple devices
+title: Capture traffic from Multiple Devices
 description: "Learn how to capture traffic from multiple devices and how to differentiate the traffic based on the device IP."
 type: how-to
 slug: fiddler-multiple-devices
@@ -18,7 +18,7 @@ res_type: kb
 
 Fiddler Everywhere can simultaneously capture traffic from multiple remote computers and devices (like Android and iOS smartphones).  What is the needed configuration, and how can I differentiate the traffic from each individual device?
 
-## Solution (for remote computers)
+## Solution (for Remote Computers)
 
 
 Before you start, verify that the host and the remote computer are on the same network, and they "see" each other (no firewall restrictions).
@@ -37,9 +37,8 @@ To capture traffic from a remote computer:
 
     ![Filtering by Client IP](../images/kb/client-ip/filter-by-client-ip.png)
 
-## Solution (for mobile devices)
+## Solution (for Mobile Devices)
 
-**Prerequisites**
 
 - The Fiddler host and the remote mobile device should both be on the same network, and they should "see" each other (no firewall restrictions).
 
