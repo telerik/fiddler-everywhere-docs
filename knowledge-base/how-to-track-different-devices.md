@@ -16,7 +16,7 @@ res_type: kb
 
 ## Description
 
-Fiddler Everywhere can simultaneously capture traffic from multiple remote computers and devices (like Android and iOS smartphones).  What configuration is needed for this to happen, and how can we differentiate the traffic from each different device?
+Fiddler Everywhere can simultaneously capture traffic from multiple remote computers and devices (like Android and iOS smartphones).  What is the needed configuration, and how can I differentiate the traffic from each individual device?
 
 ## Solution (for remote computers)
 
