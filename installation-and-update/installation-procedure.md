@@ -10,13 +10,17 @@ position: 10
 
 This article provides additional information related to the installation of Fiddler Everywhere and lists the available options for logging into the tool and updating it.
 
+
 ## Getting Started Guides
 
 To get up and running with Fiddler Everywhere, refer to the step-by-step tutorials:
 
 * [First Steps with Fiddler Everywhere on Windows]({% slug first_steps_windows %})
+
 * [First Steps with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
+
 * [First Steps with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
+
 
 ## Installing Fiddler Everywhere
 
@@ -25,20 +29,27 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 The installation options of Fiddler Everywhere for each platform are part of the getting started step-by-step tutorials:
 
 * [Installing Fiddler Everywhere on Windows]({% slug first_steps_windows %}#installing-fiddler-everywhere-on-your-machine)
+
 * [Installing Fiddler Everywhere on macOS]({% slug first_steps_macos %}#installing-fiddler-everywhere-on-your-machine)
+
 * [Installing Fiddler Everywhere on Linux]({% slug first_steps_linux %}#installing-fiddler-everywhere-on-your-machine)
+
 
 ## Logging In with Your Account
 
 Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can create a Fiddler account or use an existing Google account.
+
 
 ### Creating a Fiddler Account
 
 To create a Fiddler account, refer to the following getting started step-by-step tutorials, which provide detailed instructions on the topic:
 
 * [Creating Your Fiddler Account on Windows]({% slug first_steps_windows %}#creating-your-fiddler-account)
+
 * [Creating Your Fiddler Account on macOS]({% slug first_steps_macos %}#creating-your-fiddler-account)
+
 * [Creating Your Fiddler Account on Linux]({% slug first_steps_linux %}#creating-your-fiddler-account)
+
 
 ### Using Your Google Account
 
@@ -49,6 +60,12 @@ To directly sign in with your Google account, perform the following steps:
 1. Select **Sign in with Google** and authenticate on the Google Authentication page.
 
 1. After you successfully sign up, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
+
+
+### Using SSO Login
+
+[Fiddler Everywhere Enterprise](https://www.telerik.com/purchase/fiddler) supports SSO login. Please get in touch with our [support]({%slug support%}) for detailed instructions on configuring your company-specific SSO.
+
 
 ## Updating Fiddler Everywhere
 
