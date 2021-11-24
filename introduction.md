@@ -20,7 +20,7 @@ Fiddler Everywhere delivers a range of handy and user-friendly features whose nu
 
 ### System Traffic Capturing
 
-Fiddler Everywhere inspects and logs all HTTP(S) traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %}#system-capturing)
+Fiddler Everywhere inspects and logs all HTTP(S) and WebSocket traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %}#system-capturing)
 
 
 ### Preconfigured Browser Capturing
@@ -30,7 +30,7 @@ Fiddler Everywhere provides preconfigured options for automatic, sandboxed, brow
 
 ### Traffic Analysis
 
-Fiddler Everywhere provides an HTTP(S) traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, and share captured traffic with collaborators. [Read more about inspecting and modifying traffic with Fiddler Everywhere...]({% slug overview-tab %})
+Fiddler Everywhere provides an HTTP(S) and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, and share captured traffic with collaborators. [Read more about inspecting and modifying traffic with Fiddler Everywhere...]({% slug overview-tab %})
 
 
 ### Request and Response Mocking
