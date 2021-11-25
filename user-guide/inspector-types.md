@@ -140,24 +140,24 @@ The **Form Data** inspector provides the following options for copying the param
 
 The **WebSocket Inspectors** provide the following types of inspecting tools that enable you to inspect different parts of the WebSocket connection:
 
-* [Handshake inspector](#handshake-inspector)
-* [Messages inspector](#messages-inspector)
+- [Handshake inspector](#handshake-inspector)
+- [Messages inspector](#messages-inspector)
 
 ### Handshake Inspector
 
 Similarly to an HTTP(S) request and response, the **Handshake Inspector** for the WebSocket API provides the following types of inspecting tools that enable you to examine different parts of the WebSocket requests and responses:
 
-* [Headers inspector](#headers-inspector)
+- [Headers inspector](#headers-inspector)
 
-* [Params inspector](#params-inspector)
+- [Params inspector](#params-inspector)
 
-* [Cookies inspector](#cookies-inspector)
+- [Cookies inspector](#cookies-inspector)
 
-* [Raw inspector](#raw-inspector)
+- [Raw inspector](#raw-inspector)
 
-* [Preview inspector](#preview-inspector)
+- [Preview inspector](#preview-inspector)
 
-* [Body inspector](#body-inspector)
+- [Body inspector](#body-inspector)
 
 ![WebSocket Handshake Inspector](../images/livetraffic/inspectors/websocket-handshake.png)
 
@@ -166,12 +166,9 @@ Similarly to an HTTP(S) request and response, the **Handshake Inspector** for th
 
 The **Messages Inspector** renders a list of the WebSocket messages sent from the client or received from the server. The list is constantly populated with new upcoming messages until the two-way communication is disconnected. Each received WebSocket message can be inspected separately through the [**Metadata inspector**](#metadata-inspector) and through the [**Message Inspector**](#message-inspector).
 
-
-![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-message.png)
-
 The list of messages is rendered as a grid with multiple columns:
 
-- **ID**&mdashNumber indicating the consecutive number of the message.
+- **ID**&mdash;Number indicating the consecutive number of the message.
 
 - **Sender**&mdash;Inidicates whether the **Client** or **Server** sent the message.
 
@@ -183,6 +180,8 @@ The list of messages is rendered as a grid with multiple columns:
 
 - **Message Preview**&mdash;The string representation of the message sent/received.
 
+
+![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
 
 #### Metadata inspector
 
