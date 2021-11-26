@@ -17,7 +17,7 @@ The **Composer** tab houses the **Request Composer** and the **Request Inspector
 The top section contains a toolbar with the following functionalities:
   - The [**HTTP Methods**](#http-methods) is a drop-down where you can specify the request method&mdas;for example, GET, POST, and so on.
   - The [**URL field**](#url-field) enables you to enter the endpoint URL.
-  - The [**HTTP version**](#http-version-selection) is a drop-down where you can select the used HTTP version. By default, the version is **HTTP 1.1**.
+  - The [**HTTP version**](#http-version-selection) is a drop-down where you can select the HTTP version. By default, the selected version is **HTTP 1.1**.
   - The [**Execute**](#execute-button) button is an action button for executing the composed request.
   - The [**Save**](#save-button) button enables you to save your composed request in the [**Requests**]({%slug saved-requests-tab%}) list.
 

@@ -56,25 +56,25 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
     >important (For localized Linux distributions only) Some Linux distributions, such as Ubuntu, use localized paths&mdash;for example, the name of the **Desktop** folder is translated into the locale language. This may cause an error, specifically create a folder named **Desktop** in your root `mkdir ~/Desktop` directory. Then, export the certificate to the newly-created directory. Once the certificate is installed, you can safely remove that directory.
 
     1. Create a directory and copy the exported certificate by running the following commands.
-    ```shell
-    $ sudo mkdir /usr/share/ca-certificates/extra
-    $ sudo cp ~/Desktop/FiddlerRootCertificate.crt /usr/share/ca-certificates/extra
+        ```shell
+        $ sudo mkdir /usr/share/ca-certificates/extra
+        $ sudo cp ~/Desktop/FiddlerRootCertificate.crt /usr/share/ca-certificates/extra
 
-    // Starts the tool and upgrades the certificates.
-    $ sudo dpkg-reconfigure ca-certificates
-    ```
+        // Starts the tool and upgrades the certificates.
+        $ sudo dpkg-reconfigure ca-certificates
+        ```
 
     1. From the prompt, select **Yes** to install new certificates.
 
-    ![Add new certificate](../images/configuration/cert_ubunto_002.png)
+        ![Add new certificate](../images/configuration/cert_ubunto_002.png)
 
     1. Choose the `FiddlerRootCertificate.crt` file and click **OK**.
 
-    ![Add Fiddler certificate](../images/configuration/cert_ubunto_003.png)
+        ![Add Fiddler certificate](../images/configuration/cert_ubunto_003.png)
 
     1. The certificates are now updated.
 
-    ![Add Fiddler certificate](../images/configuration/cert_ubunto_004.png)
+        ![Add Fiddler certificate](../images/configuration/cert_ubunto_004.png)
 
 1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
 

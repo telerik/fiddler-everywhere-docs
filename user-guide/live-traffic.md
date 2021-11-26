@@ -149,7 +149,6 @@ The **Live Traffic List** uses icons to provide additional context for each reco
 The following table displays the icons, which **Live Traffic** supports for its list:
 
 
-
 <table style="width: 80%; border-collapse: collapse;">
     <colgroup>
        <col span="1" style="width: 10%;">
@@ -315,12 +314,16 @@ The following table lists the **Live Traffic** columns and the key information t
             <td>The URL contains the protocol, the hostname, the port, and the path from the request.</td>
         </tr>
         <tr>
+            <td><b>HTTP Version</b></td>
+            <td>The protocol version used for communication between the client and the server (<b>HTTP/1.1</b>, <b>HTTP/2</b>, <b>HTTP/2 + HTTP/1.1</b>, and <b>HTTP/1.1 + HTTP/2</b></td>
+        </tr>
+        <tr>
             <td><b>Method</b></td>
-            <td>The HTTP method used by the request that was made (<b>GET</b>, <b>POST</b>, <b>PUT</b>, and so on).</td>
+            <td>The HTTP method used by the request that was made (<b>GET</b>, <b>POST</b>, <b>PUT</b>, and so on)</td>
         </tr>
         <tr>
             <td><b>Process</b></td>
-            <td>The local OS process from which the traffic originated&mdash;for example, <code>chrome:8212</code> indicates a Google Chrome browser instance.</td>
+            <td>The local OS process from which the traffic originated&mdash;for example, `chrome:8212` indicates a Google Chrome browser instance.</td>
         </tr>
         <tr>
             <td><b>Client IP</b></td>
@@ -355,7 +358,7 @@ The following table lists the **Live Traffic** columns and the key information t
             <td>Indicates the duration (in milliseconds) that took for the session to complete.</td>
         </tr>
         <tr>
-            <td><b>Rules Modifie</b></td>
+            <td><b>Rules Modified</b></td>
             <td>Indicates if the session is modified by active rules from the <b>Rules</b> tab.</td>
         </tr>
         <tr>
@@ -364,6 +367,7 @@ The following table lists the **Live Traffic** columns and the key information t
         </tr>
      </tbody>
 </table>
+
 
 ## Traffic Sorting and Filtering
 

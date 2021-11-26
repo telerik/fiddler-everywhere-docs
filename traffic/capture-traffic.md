@@ -64,6 +64,20 @@ To start the preconfigured browser capturing with Fiddler Everywhere:
 
 To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}) either assign a path to third-party Chromium browsers, like Edge, Brave, and Vivaldi, or change the default path to the Google Chrome browser.
 
+
+## HTTP Version Specifics
+
+Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. Note the following specifics when handling HTTP/2 requests.
+
+- By default, the HTTP/2 support in Fiddler Everywhere is disabled and needs to be [explicitly enabled through the **Connections** menu]({%slug connections-submenu%}).
+
+- With the **Enable HTTP/2 support (BETA)** option, the communication between a client and server use HTTP/2 (given that both support and allow HTTP/2 version). When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1.
+
+- Fiddler Everywhere won't guarantee that all requests are going through HTTP/2. If the client is supporting a lower HTTP version, then Fiddler will communicate with the client's version. If the client works with HTTP/2, but the server won't accept it, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1.
+
+- Some browsers can share a single HTTP/2 session to a website in several different tabs. That could lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, you should restart the browser.
+
+
 ## Additional Resources
 
 - [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).

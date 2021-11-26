@@ -11,11 +11,13 @@ previous_url: /get-started/create-api-request, /get-started/api/create-api-reque
 
 The **Composer** inside Fiddler Everywhere allows you to create requests to APIs.
 
-Requests that are made to local and online APIs enable you to check and debug various endpoints, inspect and analyze requests and responses, and retrieve and receive data quickly.
+Requests made to local and online APIs enable you to check and debug various endpoints, inspect and analyze requests and responses, and retrieve and receive data quickly.
 
 To create an API request:
 
-1. Select an appropriate **HTTP method** and enter the endpoint URL. The Composer supports the **GET**, **POST**, **PUT**, **DELETE**, **TRACE**, **SEARCH**, and **PROPFIND** methods and also allows you to change the version of the HTTP protocol with the drop-down menu to the left of the **Execute** button.
+1. Select an appropriate **HTTP method** and enter the endpoint URL. The Composer supports the **GET**, **POST**, **PUT**, **DELETE**, **TRACE**, **SEARCH**, and **PROPFIND** methods.
+
+1. Select the HTTP protocol version with the drop-down menu to the left of the **Execute** button. The supported versions are HTTP/0.9, HTTP/1, HTTP1.1 (default option), and HTTP/2.
 
 1. (Optional) If required, enter additional headers, parameters, and body. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data.
 

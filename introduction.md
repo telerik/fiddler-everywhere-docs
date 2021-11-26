@@ -33,6 +33,11 @@ Fiddler Everywhere provides preconfigured options for automatic, sandboxed, brow
 Fiddler Everywhere provides an HTTP(S) and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, and share captured traffic with collaborators. [Read more about inspecting and modifying traffic with Fiddler Everywhere...]({% slug overview-tab %})
 
 
+### Modern HTTP version support
+
+Fiddler Everywhere supports the widely used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. [Read more about enabling HTTP/2 capture with Fiddler Everywhere...]({% slug connections-submenu %})
+
+
 ### Request and Response Mocking
 
 Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without the need to update the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
