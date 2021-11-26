@@ -140,12 +140,12 @@ The **Form Data** inspector provides the following options for copying the param
 
 The **WebSocket Inspectors** provide the following types of inspecting tools that enable you to inspect different parts of the WebSocket connection:
 
-- [Handshake inspector](#handshake-inspector)
-- [Messages inspector](#messages-inspector)
+- [Handshake tab](#handshake-tab)
+- [Messages tab](#messages-tab)
 
-### Handshake Inspector
+### Handshake Tab
 
-Similarly to an HTTP(S) request and response, the **Handshake Inspector** for the WebSocket API provides the following types of inspecting tools that enable you to examine different parts of the WebSocket requests and responses:
+Similarly to an HTTP(S) request and response, the **Handshake tab** for the WebSocket API provides the following types of inspecting tools that enable you to examine different parts of the WebSocket requests and responses:
 
 - [Headers inspector](#headers-inspector)
 
@@ -162,9 +162,9 @@ Similarly to an HTTP(S) request and response, the **Handshake Inspector** for th
 ![WebSocket Handshake Inspector](../images/livetraffic/inspectors/websocket-handshake.png)
 
 
-### Messages Inspector
+### Messages Tab
 
-The **Messages Inspector** renders a list of the WebSocket messages sent from the client or received from the server. The list is constantly populated with new upcoming messages until the two-way communication is disconnected. Each received WebSocket message can be inspected separately through the [**Metadata inspector**](#metadata-inspector) and through the [**Message Inspector**](#message-inspector).
+The **Messages tab** renders a list of the WebSocket messages sent from the client or received from the server. The list is constantly populated with new upcoming messages until the two-way communication is disconnected. Each received WebSocket message can be inspected separately through the [**Metadata inspector**](#metadata-inspector) and through the [**Message Inspector**](#message-inspector).
 
 The list of messages is rendered as a grid with multiple columns:
 
