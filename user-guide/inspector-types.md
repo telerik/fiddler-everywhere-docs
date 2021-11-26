@@ -181,13 +181,21 @@ The list of messages is rendered as a grid with multiple columns:
 - **Message Preview**&mdash;The string representation of the message sent/received.
 
 
-![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
-
 #### Metadata inspector
 
 The **Metadata inspector** contains timestamps and masking information about the selected WebSocket message.
+
+- **DoneRead**&mdash;Timestamp that indicates when the Client/Server finished processing the message.
+
+- **BeginSend**&mdash;Timestamp that indicates when the Client/Server sent the message.
+
+- **DoneSend**&mdash;Timestamp that indicates when the Client/Server finished sending the message.
+
+- **Data masked by key**&mdash;The key that masked the message.
 
 
 #### Message Inspector
 
 The **Message Inspector** contains the non-masked message content in plain text or JSON (depending on the message format).
+
+![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
