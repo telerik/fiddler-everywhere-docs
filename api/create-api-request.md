@@ -9,7 +9,7 @@ previous_url: /get-started/create-api-request, /get-started/api/create-api-reque
 
 # Creating API Requests
 
-The **Composer** inside Fiddler Everywhere allows you to create requests to APIs.
+The **Composer** inside Fiddler Everywhere allows you to create requests to REST and SOAP API endpoints.
 
 Requests made to local and online APIs enable you to check and debug various endpoints, inspect and analyze requests and responses, and retrieve and receive data quickly.
 
@@ -40,3 +40,4 @@ To create an API request:
 - [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
 - [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).
+- [Compose SOAP Requests]({%slug fiddler-composer-soap%})
