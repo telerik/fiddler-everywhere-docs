@@ -52,6 +52,15 @@ The column inicates the hostname and the port of the server to which the request
 
 The column contains the URL path, file, and query string from the request.
 
+### HTTP Version
+
+The column indicates the version of the HTTP protocol used by the session. 
+
+- __HTTP/1.1__&mdash;Both the client and the server are communicating in HTTP/1.1.
+- __HTTP/2__&mdash;Both the client and the server are communicating in HTTP/2. 
+- __HTTP/2 + HTTP/1.1__&mdash;The client uses HTTP/2 but the server response is HTTP/1.1.
+- __HTTP/1.1 + HTTP/2__&mdash;The client uses HTTP/1.1 but the server response is HTTP/2.
+
 ### Method
 
 The column indicates the HTTP method used by the request (__GET__, __POST__, and so on). The HTTP methods are used to set the desired action that needs to be applied to a given resource.
