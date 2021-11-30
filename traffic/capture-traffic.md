@@ -22,14 +22,14 @@ The following table demonstrates the major differences between the two functiona
 | Explicit installation of the trust root certificate | Requires you to add the certificate in the OS keychain. | No certificate configuration needed - automatically configures the trust certificate for Google Chrome.
 | Capturing of browser traffic   | Supports all browsers.  | Support for all Chromium browsers.
 | Capturing of other applications traffic | Yes. Supports traffic capturing on virtually any application that uses the system proxy. | No.
-| Required administrative access | Requires OS admin rights for installing and trusting a root certificate and for modifying the system proxy.  | Requires user rights for starting a Chromium browser with custom parameters.
+| Required administrative access | Requires OS admin rights for installing and trusting a root certificate and modifying the system proxy.  | Requires user rights for starting a Chromium browser with custom parameters.
 | Working with VPN tooling       | Requires Cisco VPN support. | Provides multiple VPN tooling support out-of-the-box.
 | Captured output                | Captures all traffic that goes through the system proxy. | Captures only the traffic from the preconfigured browser instance.
 
 
 ## System Capturing
 
-Once [Fiddler Everywhere is installed]({%slug installation%}), and its [root certificate trusted]({%slug trust-certificate%}), you can utilize the web-traffic capturing of the proxy client.
+Once [Fiddler Everywhere is installed]({%slug installation%}), and it's [root certificate trusted]({%slug trust-certificate%}), you can utilize the web-traffic capturing of the proxy client.
 
 The client logs all HTTP and HTTPS traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;Google Chrome, Firefox, Microsoft Teams, Outlook, and more. You can use the captured traffic to debug issues, identify performance bottlenecks, or share it with your teammates.
 
@@ -62,7 +62,7 @@ To start the preconfigured browser capturing with Fiddler Everywhere:
 
 1. Enter the URL in the newly opened Chrome window. Fiddler Everywhere immediately starts capturing all the traffic generated from the preconfigured browser.
 
-To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}) either assign a path to third-party Chromium browsers, like Edge, Brave, and Vivaldi, or change the default path to the Google Chrome browser.
+To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}) either assign a path to third-party Chromium browsers, like Edge, Brave, and Vivaldi or change the default path to the Google Chrome browser.
 
 
 ## HTTP Version Specifics
@@ -71,11 +71,11 @@ Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. N
 
 - By default, the HTTP/2 support in Fiddler Everywhere is disabled and needs to be [explicitly enabled through the **Connections** menu]({%slug connections-submenu%}).
 
-- With the **Enable HTTP/2 support (BETA)** option, the communication between a client and server use HTTP/2 (given that both support and allow HTTP/2 version). When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1.
+- With the **Enable HTTP/2 support (BETA)** option, the connection between a client and a server will default to HTTP/2 if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1.
 
-- Fiddler Everywhere won't guarantee that all requests are going through HTTP/2. If the client is supporting a lower HTTP version, then Fiddler will communicate with the client's version. If the client works with HTTP/2, but the server won't accept it, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1.
+- Even with HTTP/2 support enabled, Fiddler Everywhere cannot guarantee that all requests will use HTTP/2. If a client only supports HTTP/1.1 or lower, Fiddler will only communicate using the client's version. If the client works with HTTP/2, but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when communicating with the server.
 
-- Some browsers can share a single HTTP/2 session to a website in several different tabs. That could lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, you should restart the browser.
+- Some browsers will share a single HTTP/2 connection to a website between several different tabs and keep a connection open for some time even after a tab is closed. That could lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, you should restart the browser.
 
 
 ## Additional Resources
