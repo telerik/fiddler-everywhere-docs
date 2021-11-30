@@ -148,33 +148,129 @@ The **Live Traffic List** uses icons to provide additional context for each reco
 
 The following table displays the icons, which **Live Traffic** supports for its list:
 
-- ![Generic document icon](../images/livetraffic/icons/generic-document.svg) - Represents a generic successful response.
-- ![Uploading icon](../images/livetraffic/icons/uploading.svg) - Uploading content for a session in progress (the request is being sent to the server).
-- ![Upload paused icon](../images/livetraffic/icons/upload-paused.svg) - Uploading paused for session in progress.
-- ![Downloading icon](../images/livetraffic/icons/downloading.svg) - Downloading content for session in progress (the response is being read from the server).
-- ![Downloading paused icon](../images/livetraffic/icons/download-paused.svg) - Downloading paused for session in progress.
-- ![Aborted icon](../images/livetraffic/icons/aborted.svg) - The session was aborted by the client, Fiddler, or the Server.
-- ![Error icon](../images/livetraffic/icons/error.svg) - The response was a server error.
-- ![Unauthorized icon](../images/livetraffic/icons/unauthorized.svg) - The response returned status code 401 Unauthorized.
-- ![Redirect icon](../images/livetraffic/icons/redirect.svg) - The response redirect status code 300, 301, 302, 303 or 307.
-- ![WebSocket icon](../images/livetraffic/icons/websocket.svg) - A tunnel is used for WebSocket traffic.
-- ![HTTPS tunnel icon](../images/livetraffic/icons/https-tunnel.svg) - The request used the **HTTP CONNECT** method - establishes a tunnel used for HTTPS traffic.
-- ![RPC tunnel icon](../images/livetraffic/icons/rpc.svg) - A tunnel used for RPC traffic.
-- ![No Content icon](../images/livetraffic/icons/no-content.svg) - No content loaded.
-- ![Not modified icon](../images/livetraffic/icons/not-modified.svg) - Not modified.
-- ![Partial content icon](../images/livetraffic/icons/partial.svg) - Partial content.
-- ![Image icon](../images/livetraffic/icons/image.svg) - The response was an image.
-- ![JavaScript icon](../images/livetraffic/icons/javascript.svg) - The response was a JavaScript file.
-- ![CSS icon](../images/livetraffic/icons/css.svg) - The response was a CSS file.
-- ![HTML icon](../images/livetraffic/icons/html.svg) - The response was an HTML file.
-- ![Flash icon](../images/livetraffic/icons/flash.svg) - The response was a Flash file.
-- ![XML icon](../images/livetraffic/icons/xml.svg) - The response was an XML file.
-- ![Silverlight icon](../images/livetraffic/icons/silverlight.svg) - The response was a Silverlight file.
-- ![Audio icon](../images/livetraffic/icons/audio.svg) - The response was an audio file.
-- ![Video icon](../images/livetraffic/icons/video.svg) - The response was a video file.
-- ![Font icon](../images/livetraffic/icons/font.svg) - The response was a font file.
-- ![JSON icon](../images/livetraffic/icons/json.svg) - The response was a JSON file.
-- ![POST method icon](../images/livetraffic/icons/post.svg) - The request used the POST method.
+
+<table style="width: 80%; border-collapse: collapse;">
+    <colgroup>
+       <col span="1" style="width: 10%;">
+       <col span="1" style="width: 90%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Column name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/generic-document.svg"/></td>
+            <td>Represents a generic successful response.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/uploading.svg"/></td>
+            <td>Uploading content for a session in progress (the request is being sent to the server).</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/upload-paused.svg"/></td>
+            <td>Uploading paused for session in progress.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/downloading.svg"/></td>
+            <td>Downloading content for session in progress (the response is being read from the server).</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/download-paused.svg"/></td>
+            <td>Downloading paused for session in progress.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/aborted.svg"/></td>
+            <td>The session was aborted by the client, Fiddler, or the Server.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/error.svg"/></td>
+            <td>The response was a server error.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/unauthorized.svg"/></td>
+            <td>The response returned status code 401 Unauthorized.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/redirect.svg"/></td>
+            <td>The response redirect status code 300, 301, 302, 303 or 307.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/websocket.svg"/></td>
+            <td>A tunnel is used for WebSocket traffic.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/https-tunnel.svg"/></td>
+            <td>The request used the <b>HTTP CONNECT</b> method - establishes a tunnel used for HTTPS traffic.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/rpc.svg"/></td>
+            <td>A tunnel used for RPC traffic.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/no-content.svg"/></td>
+            <td>No content loaded.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/not-modified.svg"/></td>
+            <td>Not modified.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/partial.svg"/></td>
+            <td>Partial content.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/image.svg"/></td>
+            <td>The response was an image.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/javascript.svg"/></td>
+            <td>The response was a JavaScript file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/css.svg"/></td>
+            <td>The response was a CSS file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/html.svg"/></td>
+            <td>The response was an HTML file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/flash.svg"/></td>
+            <td>The response was a Flash file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/xml.svg"/></td>
+            <td>The response was an XML file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/silverlight.svg"/></td>
+            <td>The response was a Silverlight file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/audio.svg"/></td>
+            <td>The response was an audio file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/video.svg"/></td>
+            <td>The response was a video file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/font.svg"/></td>
+            <td>The response was a font file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/json.svg"/></td>
+            <td>The response was a JSON file.</td>
+        </tr>
+        <tr>
+            <td><img style="padding: 0px; margin: 0px; border: none; width: 30px; height: 30px"  src="../images/livetraffic/icons/post.svg"/></td>
+            <td>The request used the POST method.</td>
+        </tr>
+    </tbody>
+</table>
 
 
 ## Columns
@@ -188,14 +284,14 @@ The following table lists the **Live Traffic** columns and the key information t
     </colgroup>
     <thead>
         <tr>
-            <th>Column Name</th>
-            <th>Value Description</th>
+            <th>Column name</th>
+            <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><b>#</b></td>
-            <td>A unique identification number generated by Fiddler Everywhere.</td>
+            <td>A unique identification number generated by Fiddler Everywhere. The column also contains <a href="#list-icons">an icon</a> that represents the session type.</td>
         </tr>
         <tr>
             <td><b>Result</b></td>
@@ -211,7 +307,7 @@ The following table lists the **Live Traffic** columns and the key information t
         </tr>
         <tr>
             <td><b>Path</b></td>
-            <td>The path refers to the exact location of a page, post, file, or another asset. The path resides after the hostname and is separated by a forward slash (/)</td>
+            <td>The path refers to the exact location of a page, post, file, or another asset. The path resides after the hostname and is separated by a forward slash (<code>/</code>).</td>
         </tr>
         <tr>
             <td><b>URL</b></td>
@@ -251,11 +347,11 @@ The following table lists the **Live Traffic** columns and the key information t
         </tr>
         <tr>
             <td><b>Time</b></td>
-            <td>Indicates when the session was executed in an `HH:MM:SS:ms` format.</td>
+            <td>Indicates when the session was executed in an <code>HH:MM:SS:ms</code> format.</td>
         </tr>
         <tr>
             <td><b>Date</b></td>
-            <td>Indicates the date when the session was executed in a `MM:DD:YYYY` format.</td>
+            <td>Indicates the date when the session was executed in a <code>MM:DD:YYYY</code> format.</td>
         </tr>
         <tr>
             <td><b>Duration</b></td>
@@ -269,7 +365,7 @@ The following table lists the **Live Traffic** columns and the key information t
             <td><b>Comments</b></td>
             <td>Shows the custom comments added by you or the author of a shared session.</td>
         </tr>
-    </tbody>
+     </tbody>
 </table>
 
 
