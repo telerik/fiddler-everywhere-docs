@@ -1,5 +1,85 @@
 [
     {
+        "version": "3.0.0",
+        "title": "Fiddler Everywhere v3.0.0",
+        "date": "November 30, 2021",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "HTTP/2 Support (currently in Beta, should be enabled in Settings)"
+                    },
+                    {
+                        "title": "Inspection of WebSocket communication"
+                    },
+                    {
+                        "title": "Revamp Advanced filters with a better UI and ability to create more complex filters"
+                    },
+                    {
+                        "title": "Update My Resources dialog for improved Getting Started experience configurations info"
+                    },
+                    {
+                        "title": "[BREAKING CHANGE] Set the minimum supported macOS version to Mojave"
+                    },
+                    {
+                        "title": "[BREAKING CHANGE] Single-click selection of the sessions now persists the currently selected Inspectors tab. Double-click will select the most appropriate one"
+                    },
+                    {
+                        "title": "Prevent leak of proxy settings when the application is closed or due to unexpected circumstances (like crash for some reason) "
+                    },
+                    {
+                        "title": "Improve performance of marking multiple sessions simultaneously"
+                    },
+                    {
+                        "title": "Add a new HTTP Version column in the session lists (including Live Traffic)"
+                    },
+                    {
+                        "title": "Add a system tray icon with indication if the application is capturing traffic at the moment"
+                    },
+                    {
+                        "title": "Add support for decode of Bzip2 content encoding"
+                    },
+                    {
+                        "title": "Updated the application build dependencies to use .NET 6.0 and Electron 15.0"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "The application cannot start when electron-settings.json file is invalid. Now, the app will recreate the file if such situation happens."
+                    },
+                    {
+                        "title": "Matching by Request/Response headers is case-sensitive in the Rule Builder. Now it is changed to case-insensitive matching."
+                    },
+                    {
+                        "title": "\"Cannot read property 'split' of undefined\" error is shown when trying to sign in and there's no access to AWS. The message  now indicates what could be the problem."
+                    },
+                    {
+                        "title": "The description of Composer's Content-Type header does not indicate what happens if you modify the value. Now, the description explains what needs to be done if you want to use a custom value."
+                    },
+                    {
+                        "title": "Setting the Composer's Content-Type to 'application/xml' and switching to enter Body focuses the Text editor. Now, it will focus the XML editor instead."
+                    },
+                    {
+                        "title": "Matching session based on the Remote IP or Client IP does not work for saved/shared sessions."
+                    },
+                    {
+                        "title": "Incorrect strip of Authorization Header if it happens to contain the letters NTLM"
+                    },
+                    {
+                        "title": "Check for updates fails in some rare circumstances"
+                    },
+                    {
+                        "title": "Time of notifications is in UTC time instead of local one"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "2.2.0",
         "title": "Fiddler Everywhere v2.2.0",
         "date": "October 26, 2021",
