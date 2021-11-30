@@ -38,11 +38,6 @@ Fiddler Everywhere provides an HTTP(S) and WebSocket traffic-analyzing functiona
 Fiddler Everywhere supports the widely used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. [Read more about enabling HTTP/2 capture with Fiddler Everywhere...]({% slug connections-submenu %})
 
 
-### Modern HTTP version support
-
-Fiddler Everywhere supports the widely used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. [Read more about enabling HTTP/2 capture with Fiddler Everywhere...]({% slug connections-submenu %})
-
-
 ### Request and Response Mocking
 
 Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without the need to update the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
@@ -50,7 +45,7 @@ Fiddler supports the mocking and modification of requests and responses on any a
 
 ### API Composing
 
-Fiddler Everywhere comes with an API Composer, which allows you to test APIs by creating and sending requests as well as save and share composed APIs. You can use the API composing feature both when developing new APIs and when testing existing APIs. [Read more about creating and organizing API requests with Fiddler Everywhere...]({% slug composer-get-started %})
+Fiddler Everywhere comes with an API Composer, which allows you to test REST and SOAP APIs by creating and sending requests as well as save and share composed APIs. You can use the API composing feature both when developing new APIs and when testing existing APIs. [Read more about creating and organizing API requests with Fiddler Everywhere...]({% slug composer-get-started %})
 
 
 ### Secure Collaboration

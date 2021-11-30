@@ -18,7 +18,8 @@ The **Connections** menu exposes options that allow for granular control over pr
 - **Allow remote computers to connect**&mdash;Controls whether inbound connections to Fiddler Everywhere are allowed. Enable this option to capture traffic from remote devices.
 
 - **Enable HTTP/2 support (BETA)**&mdash;Enables capture of traffic through the HTTP/2 protocol. 
-    >important With the **Enable HTTP/2 support (BETA)** option, the communication between a client and server remains HTTP/2 (given that both support and allow HTTP/2 version). When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1. [Read more about the HTTP/2 support in Fiddler Everywhere...]({%slug capture-traffic-get-started%}#http-version-specifics)
+
+    >important With the **Enable HTTP/2 support (BETA)** option, the connection between a client and a server will default to HTTP/2, if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1. [Read more about the HTTP/2 support in Fiddler Everywhere...]({%slug capture-traffic-get-started%}#http-version-specifics)
 
 - **Bypass Fiddler for URLs that starts with:**&mdash;Allows you to add addresses that the Fiddler Everywhere proxy will explicitly bypass.
     A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere]({%slug configure-vpn-fiddler%}). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**.
