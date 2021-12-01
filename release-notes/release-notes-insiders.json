@@ -8,7 +8,7 @@
                 "type": "New",
                 "entries": [
                     {
-                        "title": "HTTP/2 Support (currently in Beta, you need to enable it in Settings) "
+                        "title": "HTTP/2 Support (currently in Beta, you need to enable it in Settings)"
                     },
                     {
                         "title": "Inspection of WebSocket communication"
@@ -41,7 +41,7 @@
                         "title": "Added support for decoding of Bzip2 content encoding"
                     },
                     {
-                        "title": "Updated the application build dependencies to use .NET 6.0 and Electron 15.0. "
+                        "title": "Updated the application build dependencies to use .NET 6.0 and Electron 15.0"
                     }
                 ]
             },
