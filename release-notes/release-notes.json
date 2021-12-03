@@ -1,5 +1,35 @@
 [
     {
+        "version": "3.0.1",
+        "title": "Fiddler Everywhere v3.0.1",
+        "date": "December 03, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "The app freezes after inspecting requests with form-data body"
+                    },
+                    {
+                        "title": "Screen for inability to merge accounts has incorrect content"
+                    },
+                    {
+                        "title": "Unable to use the application when quota exceeded dialog is shown"
+                    },
+                    {
+                        "title": "The app freezes when there's a filter on 'Rules modified' column and app is restarted"
+                    },
+                    {
+                        "title": "Shared Rulesets might not be editable by the owner"
+                    },
+                    {
+                        "title": "Tab selection and grid within the Inspectors are missing when the session does not have data for the currently selected inspector"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.0.0",
         "title": "Fiddler Everywhere v3.0.0",
         "date": "November 30, 2021",
