@@ -56,7 +56,7 @@ const fiddlerProxy = {
     hostname: "127.0.0.1",
     port: 8866,
 };
-const setFiddlerPorxy = () => {
+const setFiddlerProxy = () => {
     var proxyUrl = url.format(fiddlerProxy);
     env.http_proxy = proxyUrl;
     env.https_proxy = proxyUrl;
@@ -69,7 +69,7 @@ const removeFiddlerProxy = () => {
     env.NODE_TLS_REJECT_UNAUTHORIZED = "";
 };
 
-setFiddlerPorxy();
+setFiddlerProxy();
 
 // Make requests with libraries that reuse the global proxy settings.
 
