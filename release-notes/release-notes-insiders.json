@@ -1,5 +1,65 @@
 [
     {
+        "version": "3.0.2-insiders",
+        "title": "Fiddler Everywhere v3.0.2",
+        "date": "January 19, 2021",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Traffic to localhost is not captured from the preconfigured browser process"
+                    },
+                    {
+                        "title": "In some cases, opened tabs are not persisted after switching users"
+                    },
+                    {
+                        "title": "In some cases, WebSocket messages are ordered incorrectly"
+                    },
+                    {
+                        "title": "In some cases, the app is stuck on a loading tab after a shared session is edited"
+                    },
+                    {
+                        "title": "\"User has logged in, but we couldn't finalize the login process. Error is: Cannot read properties of undefined (reading 'toLowerCase')\" error is logged in some cases"
+                    },
+                    {
+                        "title": "\"Cannot read properties of undefined (reading 'webContents')\" error is logged in some cases"
+                    },
+                    {
+                        "title": "\"Cannot read properties of undefined (reading 'show')\" error is logged in some cases"
+                    },
+                    {
+                        "title": "\"Cannot read properties of undefined (reading 'type')\" error is logged in some cases"
+                    },
+                    {
+                        "title": "Export ruleset does not add the extension .farx on Linux"
+                    },
+                    {
+                        "title": "The URL in the notification for inability to access Cognito is not a clickable link"
+                    },
+                    {
+                        "title": "Warnings and errors are logged in multiple log files in some cases"
+                    },
+                    {
+                        "title": "Indication for applied filters in the inspectors with grids (like Headers, Form-Data) is not visible"
+                    },
+                    {
+                        "title": "Incorrect notification is shown when user tries to share session over 50MB"
+                    },
+                    {
+                        "title": "cURL export of POST request with form-data does not work"
+                    },
+                    {
+                        "title": "cURL export creates .bat file on macOS and Linux instead of .sh"
+                    },
+                    {
+                        "title": "'Unexpected error' notification is shown when trying to inspect а session with invalid form-data body"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.0.1-insiders",
         "title": "Fiddler Everywhere v3.0.1",
         "date": "December 03, 2021",
