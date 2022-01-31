@@ -5,7 +5,7 @@ type: how-to
 slug: capture-mobile-ios-traffic
 publish: true
 position: 40
-previous_url: /knowledge-base/configure-ios, get-started/mobile-traffic/configure-ios, /get-started/traffic/configure-ios
+previous_url: /knowledge-base/configure-ios, /get-started/mobile-traffic/configure-ios, /get-started/traffic/configure-ios
 ---
 
 # Capturing and Inspecting iOS Traffic
