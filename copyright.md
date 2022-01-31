@@ -1,13 +1,3 @@
----
-title: Copyright
-page_title: Copyright
-description: Copyright
-slug: license-copyright
-tags: copyright
-published: True
-position: 90
----
-
 # Copyright
  
 __© {{ site.time | date: '%Y' }} Progress Software Corporation and/or one of its subsidiaries or affiliates. All rights reserved.__
