@@ -82,7 +82,7 @@ To use Fiddler Everywhere commercially, you need to purchase a license. The term
 
 * For more information about the available subscription plans, go to the [Fiddler Everywhere purchase page](https://www.telerik.com/purchase/fiddler).
 * For more information on the available commercial and free support channels, refer to the article on the [available Fiddler Everywhere support options]({%slug support%}).
-* For more information about advanced features like [policy-driven installation](#installation-options), bulk licensing, and SSO login options refer to the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license.
+* For comparison of the different features included in the plans, like [policy-driven installation](#installation-options), bulk licensing, and SSO login options refer to the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license.
 
 
 ### Installation Options
@@ -92,8 +92,8 @@ Activate the [**Fiddler Everywhere Pro**](https://www.telerik.com/purchase/fiddl
  - The installation can be executed only locally (on the machine that will run Fiddler Everywhere).
 
 Activate the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license to enable the **policy-driven installation** with the following options:
-- The executable installation file can be distributed from your source.
-- The installation can be executed remotely to multiple licensed end users.
+- The executable installation file can be distributed from your source (shared internal location, OS image, etc.).
+- The installation can be executed remotely to multiple licensed end users (via policy, script, etc.).
 
 Contact our support team for more details on enabling the policy-driven installation alongside your specific company configuration.
 
