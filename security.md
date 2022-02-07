@@ -25,3 +25,50 @@ When installing and enabling the Fiddler Everywhere, consider the following secu
 - Fiddler Everywhere generates a unique trust certificate. Avoid sharing this certificate with untrusted third parties as it might pose a security threat.
 
 - In its initial state, Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic can still expose sensitive information like visited URLs, internal API endpoints, etc.
+
+
+## Saving and Sharing Captured Traffic Securely
+
+### Saving Traffic
+
+Once Fiddler Everywhere captures the traffic, you have the option to [**save**]({%slug web-sessions-list%}#saving) the sessions for later usage. Consider the following security highlights before saving sessions.
+
+- All saved sessions are stored locally on the Fiddler Everywhere host machine as SAZ files (Fiddler Sessions Archive ZIP). The absolute path is different and depends on the used OS and the unique ID of the currently logged user:
+
+    * Windows path 
+
+        ```curl
+        C:\Users\<currently-logged-user>\.fiddler\<unique-fiddler-user-GUID>\Snapshots
+        ```
+
+    * macOS path
+
+        ```curl
+        ~\.fiddler\<unique-fiddler-user-GUID>\Snapshots
+        ```
+
+    * Linux path
+
+        ```curl
+        ~\.fiddler\<unique-fiddler-user-GUID>\Snapshots
+        ```
+
+- The **.fiddler** folder will continue to exist even when the Fiddler Everywhere application is uninstalled. Any previously saved sessions will be available on the host machine until they are explicitly removed. Explicitly removing the **.fiddler** folder permanently removes all previously saved sessions (the SAZ files in the Snapshots GUID folders) so consider keeping them in the cloud as a backup option before clearing the folder.
+
+- Other users can open any unprotected SAZ file at any time - all they need is access to the SAZ file. Consider using **password protection** for your captured traffic to encrypt the locally saved SAZ files and prevent unauthorized access to sensitive data. Fiddler Everywhere provides several options to add password protection for your sessions:
+
+    * [Learn how to set a password during the session's save...]({%slug web-sessions-list%}#saving)
+
+    * [Learn how to set a password for already saved sessions...]({%slug saved-sessions-tab%}#encrypting)
+
+Sessions saved in the cloud will continue to exist locally through the **.fiddler** folder until they are explicitly removed. Removing the SAZ files from the **./fiddler** folder will remove their presence in the Fiddler Everywhere UI. 
+
+- The only way to recover a deleted session from the Sessions list or a SAZ file that was explicitly deleted from the **.fiddler** folder is to download their cloud copy. Always consider using the Fiddler Everywhere cloud save as a backup option.
+
+### Sharing Traffic
+
+Fiddler Everywhere comes with [collaboration in mind]({%slug collaboration-get-started%}), and provides sharing functionalities. Consider the following security highlights before sharing sessions.
+
+- Before sharing, a session is saved. Thus the [saving-related security highlights](#saving-traffic) must be considered.
+
+- Sharing an unprotected session might expose your sensitive data to unauthorized third parties. Always consider adding a password-protection to your sessions before sharing them.
