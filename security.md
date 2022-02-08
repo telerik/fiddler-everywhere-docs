@@ -15,8 +15,7 @@ The Fiddler Everywhere application acts as a MITM proxy that uses its unique cer
 
 Fiddler Everywhere is an HTTP/HTTPS proxy that runs on your Windows, Linux, or Mac computer. It stands between your client application (for example, a browser or other application that sends HTTP/HTTPS requests) and the server (that receives the HTTP/HTTPS requests). The HTTP/HTTPS responses are returned to the Fiddler Everywhere proxy, passing the traffic back to the client application.
 
-This type of proxy configuration is a MITM proxy (coming from man-in-the-middle, meddler-int-the-middle, etc.). It uses the MITM-attack approach to intercept communication between the client and the server. All modern applications use additional security layers like [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) to protect the user's data and prevent MITM attacks. This way, even if a third party executes a MITM attack, it will capture encrypted content protected by a cryptographic algorithm.
-
+This type of proxy configuration is a MITM proxy (coming from man-in-the-middle, meddler-int-the-middle, etc.). It uses the MITM-attack approach to intercept communication between the client and the server.
 
 ### Fiddler as HTTP Proxy
 
@@ -37,9 +36,11 @@ Fiddler Everywhere will automatically chain to other system proxies and effectiv
 
 ### Fiddler as HTTPS Proxy
 
-To capture secure traffic over HTTPS, you need to explicitly elevate the trust by [installing and enabling the Fiddler's root trust certificate]({%slug trust-certificate%}). By explicitly adding the Fiddler Everywhere certificate in the Trusted Certificate Authority manager of the used operating system, you allow the man-in-the-middle attack to intercept the encoded TLS data. This practically means that we can now decode the otherwise encoded HTTPS traffic.
+All modern applications use additional security layers like [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) to protect the user's data and prevent third parties from capturing the traffic. To capture secure traffic over HTTPS with Fiddler Everywhere, you need to explicitly elevate the trust by [installing and enabling the Fiddler's root trust certificate]({%slug trust-certificate%}). By adding the Fiddler Everywhere certificate in the Trusted Certificate Authority manager of the used operating system, you allow the man-in-the-middle attack to intercept the encoded TLS data. This practically means that we can now decode the otherwise encoded HTTPS traffic.
 
 ![Fiddler Everywhere as HTTPS proxy](./images/security/fe-proxy-https.png)
+
+The above demonstrates how Fiddler Everywhere acts as if it is the client when speaking to the server, and the other way around - it acts as if it is the server when communicating with the client applications.
 
 ## Fiddler Everywhere Security Highlights
 
@@ -49,13 +50,15 @@ While using Fiddler Everywhere, consider the following security indicators and h
 
 - Fiddler Everywhere generates a unique root trust certificate. Avoid sharing this certificate with untrusted third parties as it might pose a security threat.
 
+- When HTTPS capturing is enabled, the captured data will contain readable information that is usually encrypted. Share that data with trusted parties only and carefully consider what the requests and responses might contain.
+
 - Only the user that has access to the Fiddler Everywhere application and to the Fiddler's saved sessions will have access to the captured data. The Fiddler Everywhere team doesn't have access to that information and can access it or restore it in any way.
 
 - Consider using password protection to prevent unauthorized access to your saved sessions.
 
 - Fiddler Everywhere will not store your data in the cloud if you do not use sharing or cloud capabilities. Everything is stored locally once you sign in (where we verify your credentials in the cloud). The only way to get something in the cloud is to explicitly upload saved **Sessions** collections, **Requests** collections, or **rules** or share them with collaborators. The data these cloud saves contain won't be accessible by third parties or the Fiddler team.
 
-- Sessions uploaded to the Fiddler cloud are encrypted by default. These sessions (and the information they contain) can't be accessed by the Fiddler team or other third parties unless the owner explicitly shares them.
+- Sessions uploaded to the Fiddler cloud space are encrypted by default. These sessions (and the information they contain) can't be accessed by the Fiddler team or other third parties unless the owner explicitly shares them.
 
 
 ## Fiddler Everywhere Application Analytics
