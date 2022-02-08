@@ -17,13 +17,31 @@ Fiddler Everywhere is an HTTP/HTTPS proxy that runs on your Windows, Linux, or M
 
 This type of proxy configuration is a MITM proxy (coming from man-in-the-middle, meddler-int-the-middle, etc.). It uses the MITM-attack approach to intercept communication between the client and the server. All modern applications use additional security layers like [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) to protect the user's data and prevent MITM attacks. This way, even if a third party executes a MITM attack, it will capture encrypted content protected by a cryptographic algorithm.
 
-The above explains why Fiddler Everywhere can capture only non-secure HTTP after the initial application installation. To enable capturing of secure traffic over HTTPS, you need to explicitly elevate the trust by [installing and enabling the Fiddler's root trust certificate]({%slug trust-certificate%}).
+
+### Fiddler as HTTP Proxy
+
+By default, Fiddler Everywhere captures only non-secure HTTP traffic. The proxy may process this web traffic before forwarding it upstream through the [Rules tab]({%slug rules-general%}).
 
 ![Fiddler Everywhere as MITM proxy](./images/security/fe-proxy-requests-responses.png)
 
+1. The client application (e.g., browser, Android app, or any other application that uses the system proxy and makes HTTP requests) connects to the Fiddler Everywhere proxy and makes a request.
+2. The Fiddler Everywhere proxy forwards the request to the upstream server. Any active Fiddler Everywhere rules (modifying the requests) are applied here.
+3. The server sends the response to the Fiddler Everywhere proxy.
+4. The Fiddler Everywhere proxy forwards the response to the client application. Any active Fiddler Everywhere rules (modifying the responses) are applied here.
+
+### Fiddler as Chained Proxy
+
+Fiddler Everywhere will automatically chain to other system proxies and effectively works as an upstream proxy.
+
+![Fiddler Everywhere as chained proxy](./images/security/fe-proxy-chained.png)
+
+### Fiddler as HTTPS Proxy
+
+To capture secure traffic over HTTPS, you need to explicitly elevate the trust by [installing and enabling the Fiddler's root trust certificate]({%slug trust-certificate%}). By explicitly adding the Fiddler Everywhere certificate in the Trusted Certificate Authority manager of the used operating system, you allow the man-in-the-middle attack to intercept the encoded TLS data. This practically means that we can now decode the otherwise encoded HTTPS traffic.
+
+![Fiddler Everywhere as HTTPS proxy](./images/security/fe-proxy-https.png)
 
 ## Fiddler Everywhere Security Highlights
-
 
 While using Fiddler Everywhere, consider the following security indicators and highlights:
 
