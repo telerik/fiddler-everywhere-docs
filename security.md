@@ -10,7 +10,8 @@ position: 75
 
 The Fiddler Everywhere application acts as a MITM proxy that uses its unique certificate. It will capture incoming and ongoing internet activities, and you need to be careful not to share any sensitive data as it might pose a threat to you or your company. This article highlights the primary security concerns and provides technical information about how Fiddler Everywhere acts as a MITM and what you should consider when handling the Fiddler root trust certificate and captured data.
 
-## Fiddler Everywhere Security Highlights
+
+## How Does Fiddler Everywhere Work
 
 Fiddler Everywhere is an HTTP/HTTPS proxy that runs on your Windows, Linux, or Mac computer. It stands between your client application (for example, a browser or other application that sends HTTP/HTTPS requests) and the server (that receives the HTTP/HTTPS requests). The HTTP/HTTPS responses are returned to the Fiddler Everywhere proxy, passing the traffic back to the client application.
 
@@ -18,7 +19,13 @@ This type of proxy configuration is a MITM proxy (coming from man-in-the-middle,
 
 The above explains why Fiddler Everywhere can capture only non-secure HTTP after the initial application installation. To enable capturing of secure traffic over HTTPS, you need to explicitly elevate the trust by [installing and enabling the Fiddler's root trust certificate]({%slug trust-certificate%}).
 
-When installing and enabling the Fiddler Everywhere, consider the following security indicators and highlights:
+![Fiddler Everywhere as MITM proxy](./images/security/fe-proxy-requests-responses.png)
+
+
+## Fiddler Everywhere Security Highlights
+
+
+While using Fiddler Everywhere, consider the following security indicators and highlights:
 
 - In its initial state, Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic can still expose sensitive information like visited URLs, internal API endpoints, etc.
 
