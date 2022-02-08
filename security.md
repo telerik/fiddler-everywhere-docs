@@ -20,11 +20,22 @@ The above explains why Fiddler Everywhere can capture only non-secure HTTP after
 
 When installing and enabling the Fiddler Everywhere, consider the following security indicators and highlights:
 
+- In its initial state, Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic can still expose sensitive information like visited URLs, internal API endpoints, etc.
+
+- Fiddler Everywhere generates a unique root trust certificate. Avoid sharing this certificate with untrusted third parties as it might pose a security threat.
+
 - Only the user that has access to the Fiddler Everywhere application and to the Fiddler's saved sessions will have access to the captured data. The Fiddler Everywhere team doesn't have access to that information and can access it or restore it in any way.
 
-- Fiddler Everywhere generates a unique trust certificate. Avoid sharing this certificate with untrusted third parties as it might pose a security threat.
+- Consider using password protection to prevent unauthorized access to your saved sessions.
 
-- In its initial state, Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic can still expose sensitive information like visited URLs, internal API endpoints, etc.
+- Fiddler Everywhere will not store your data in the cloud if you do not use sharing or cloud capabilities. Everything is stored locally once you sign in (where we verify your credentials in the cloud). The only way to get something in the cloud is to explicitly upload saved **Sessions** collections, **Requests** collections, or **rules** or share them with collaborators. The data these cloud saves contain won't be accessible by third parties or the Fiddler team.
+
+- Sessions uploaded to the Fiddler cloud are encrypted by default. These sessions (and the information they contain) can't be accessed by the Fiddler team or other third parties unless the owner explicitly shares them.
+
+
+## Fiddler Everywhere Application Analytics
+
+By default, the Fiddler Everywhere application comes with an integrated Analytics solution that collects application usage data to improve product stability, UI, and UX. The collected information is stored on an external server, and it does not contain any data related to the captured traffic and the data that the sessions include. You can opt-out from the analytics data collection through **Settings > Privacy > Automatically send data to help us improve the product** option.
 
 
 ## Saving and Sharing Captured Traffic Securely
@@ -63,7 +74,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [**save**](
 
 Sessions saved in the cloud will continue to exist locally through the **.fiddler** folder until they are explicitly removed. Removing the SAZ files from the **./fiddler** folder will remove their presence in the Fiddler Everywhere UI. 
 
-- The only way to recover a deleted session from the Sessions list or a SAZ file that was explicitly deleted from the **.fiddler** folder is to download their cloud copy. Always consider using the Fiddler Everywhere cloud save as a backup option.
+- The only way to recover a deleted session from the Sessions list or a deleted SAZ file from the **.fiddler** folder is to download their cloud copy. Consider using the Fiddler Everywhere cloud save as a backup option.
 
 ### Sharing Traffic
 
