@@ -2,7 +2,7 @@
 title: Security
 description: "Learn more about the Fiddler Everywhere security highlights and check out the related technical information about sharing and capturing functionalities."
 slug: fe-security
-publish: true
+publish: false
 position: 75
 ---
 
