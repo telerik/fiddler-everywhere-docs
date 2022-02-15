@@ -379,6 +379,14 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Uses the <a href="https://docs.telerik.com/fiddler/knowledge-base/autoresponder#matching-rules">legacy Fiddler Classic string literals and regular expressions.</a></td>
             <td>Final</td>
         </tr>
+        <tr>
+            <td><b>Comment</b></td>
+            <td>String modifiers</td>
+            <td>New value</td>
+            <td>n/a</td>
+            <td>Action to modify, add, or remove a session comment</td>
+            <td>Non-final</td>
+        </tr>
     </tbody>
 </table>
 
