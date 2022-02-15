@@ -384,7 +384,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>String modifiers</td>
             <td>New value</td>
             <td>n/a</td>
-            <td>n/a</td>
+            <td>Action to modify, add, or remove a session comment</td>
             <td>Non-final</td>
         </tr>
     </tbody>
