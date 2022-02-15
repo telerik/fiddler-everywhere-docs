@@ -8,7 +8,7 @@ position: 75
 
 # Fiddler Everywhere Security
 
-The Fiddler Everywhere application acts as a MITM proxy that uses a unique certificate per machine. It will capture incoming and ongoing internet activities for all applications using the system HTTP/HTTPS proxies. This article highlights the primary security concerns and provides technical information about how Fiddler Everywhere acts as a MITM and what you should consider when handling the Fiddler root trust certificate and captured data.
+The Fiddler Everywhere application acts as a MITM proxy that uses a unique certificate per machine. It will capture all applications' incoming and ongoing internet activities using system HTTP/HTTPS proxies. This article highlights the primary security concerns and provides technical information about how Fiddler Everywhere acts as a MITM and what you should consider when handling the Fiddler root trust certificate and captured data.
 
 
 ## How Does Fiddler Everywhere Work
@@ -51,19 +51,19 @@ While using Fiddler Everywhere, consider the following security indicators and h
 
 - With the initial state for [the system capturing option]({%slug capture-traffic-get-started%}#system-capturing), Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic is not encrypted and can expose sensitive information like visited URLs, internal API endpoints, etc.
 
-- With the initial state for [the preconfigured browser capturing option]({%slug capture-traffic-get-started%}#browser-capturing), Fiddler Everywhere will capture both non-secure HTTP and secure HTTPS traffic. The HTTPS traffic will be encrypted by the Fiddler Everywhere application.
+- With the initial state for [the preconfigured browser capturing option]({%slug capture-traffic-get-started%}#browser-capturing), Fiddler Everywhere will capture both non-secure HTTP and secure HTTPS traffic. The Fiddler Everywhere application will encrypt the HTTPS traffic.
 
-- Fiddler Everywhere generates a unique root certificate. Avoid sharing this certificate with anyone as it might pose a great security threat (for example, anyone with access to that certificate can decode your secure traffic).
+- Fiddler Everywhere generates a unique root certificate. Avoid sharing this certificate with anyone as it might pose a significant security threat (for example, anyone with access to that certificate can decode your secure traffic).
 
-- When HTTPS capturing is enabled, the captured data will contain readable information that is usually encrypted. Share that data with trusted parties only and carefully consider what the requests and responses might contain.
+- When HTTPS capturing is enabled, the captured data will contain readable information that is usually encrypted. Share that data with trusted parties only and carefully consider what the requests and responses contain.
 
-- All users that have access to the Fiddler Everywhere application or to the Fiddler's saved sessions will also have access to the captured data.
+- All users who have access to the Fiddler Everywhere application or the Fiddler's saved sessions can also access the captured data.
 
-- Consider using password protection to prevent unauthorized access to saved sessions stored locally or in the cloud. All saved sessions are stored as SAZ files and using the password protection option adds a 256-bit AES encryption. Unprotected saves can be opened with anyone with access to the SAZ file.
+- Consider using password protection to prevent unauthorized access to saved sessions stored locally or in the cloud. All saved sessions are held as SAZ files, and using the password protection option adds a 256-bit AES encryption. Unprotected saves can be opened with anyone with access to the SAZ file.
 
-- Fiddler Everywhere will not store your data in the cloud if you do not use sharing or cloud capabilities. Everything is stored locally once you sign in (where we verify your credentials in the cloud). The only way to get something in the cloud is to explicitly upload saved **Sessions** collections, **Requests** collections, or **rules** or share them with collaborators. The data these cloud saves contain won't be accessible by third parties or the Fiddler team.
+- Fiddler Everywhere will not store your data in the cloud if you do not use sharing or cloud capabilities. Everything is stored locally once you sign in (where we verify your credentials in the cloud). The only way to get something in the cloud is to explicitly upload saved **Sessions** collections, **Requests** collections, or **rules** or share them with collaborators.
 
-- Sessions uploaded to the Fiddler cloud space are encrypted when they have password-protection enabled. Unencrypted sessions are stored in the cloud az fiddler archive clouds.
+- Sessions uploaded to the Fiddler cloud space are encrypted when password-protection is enabled. Unencrypted sessions are stored in the cloud az fiddler archive clouds.
 
 
 ## Fiddler Everywhere Application Analytics
@@ -97,7 +97,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [**save**](
         ~\.fiddler\<unique-fiddler-user-GUID>\Snapshots
         ```
 
-- The **.fiddler** folder will continue to exist even when the Fiddler Everywhere application is uninstalled. Any previously saved sessions will be available on the host machine until they are explicitly removed. Explicitly removing the **.fiddler** folder permanently removes all previously saved sessions (the SAZ files in the Snapshots GUID folders) so consider keeping them in the cloud as a backup option before clearing the folder.
+- The **.fiddler** folder will continue to exist even when the Fiddler Everywhere application is uninstalled. Any previously saved sessions will be available on the host machine until they are explicitly removed. Explicitly removing the **.fiddler** folder removes all previously saved sessions (the SAZ files in the Snapshots GUID folders) permanently. Consider keeping them in the Fiddler cloud as a backup option before clearing the folder.
 
 - Other users can open any unprotected SAZ file at any time - all they need is access to the SAZ file. Consider using **password protection** for your captured traffic to add 256-bit AES encryption to the saved SAZ files and prevent unauthorized access to sensitive data. Fiddler Everywhere provides several options to add password protection for your sessions:
 
@@ -109,7 +109,7 @@ Sessions saved in the cloud will continue to exist locally through the **.fiddle
 
 - The only way to recover a deleted session from the Sessions list or a deleted SAZ file from the **.fiddler** folder is to download their cloud copy. Consider using the Fiddler Everywhere cloud save as a backup option.
 
-- Sessions are stored in Fiddler Everywhere cloud space as a SAZ files. Consider protecting your sensetive data by adding a password protection for all cloud saves which effectively adds a 256-bit AES encryption.
+- Sessions are stored in Fiddler Everywhere cloud space as SAZ files. Consider protecting your sensitive data by adding password protection for all cloud saves, which effectively adds a 256-bit AES encryption.
 
 ### Sharing Traffic
 
