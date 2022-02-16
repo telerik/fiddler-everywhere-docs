@@ -8,15 +8,11 @@ position: 75
 
 # Fiddler Everywhere Security
 
-The Fiddler Everywhere application acts as a MITM (man-in-the-middle, meddler-in-the-middle) proxy that uses a unique certificate per machine. It will capture all incoming and ongoing internet activities of the application by using system HTTP/HTTPS proxies.
-
-This article highlights the primary security concerns and provides technical information about how Fiddler Everywhere acts as a MITM and what you need to consider when handling the Fiddler root trust certificate and captured data.
+The Fiddler Everywhere application acts as a MITM (man-in-the-middle, meddler-in-the-middle) proxy that uses a unique certificate per machine. It will capture all incoming and ongoing internet activities of the application by using system HTTP/HTTPS proxies. This article highlights the primary security concerns and provides technical information about how Fiddler Everywhere acts as a MITM and what you need to consider when handling the Fiddler root trust certificate and captured data.
 
 ## How Fiddler Everywhere Works
 
-Fiddler Everywhere is an HTTP/HTTPS proxy that runs on your Windows, Linux, or macOS operating systems. It stands between your client application (for example, a browser or other application that sends HTTP/HTTPS requests) and the server (that receives the HTTP/HTTPS requests). The HTTP/HTTPS responses are returned to the Fiddler Everywhere proxy, passing the traffic back to the client application.
-
-This type of proxy configuration is a MITM proxy. It uses the MITM-attack approach to intercept communication between the client and the server.
+Fiddler Everywhere is an HTTP/HTTPS proxy that runs on your Windows, Linux, or macOS operating systems. It stands between your client application (for example, a browser or other application that sends HTTP/HTTPS requests) and the server (that receives the HTTP/HTTPS requests). The HTTP/HTTPS responses are returned to the Fiddler Everywhere proxy, passing the traffic back to the client application. This type of proxy configuration is a MITM proxy. It uses the MITM-attack approach to intercept communication between the client and the server.
 
 ### Fiddler as an HTTP Proxy
 
