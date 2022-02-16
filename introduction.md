@@ -72,14 +72,31 @@ Fiddler Everywhere enables you to also capture and inspect traffic on devices ru
 
 Fiddler Everywhere delivers a modern, intuitive UI and a set of popular themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
 
-## Trial Version and Commercial License
+## Trial Version 
 
 Fiddler Everywhere offers a 30-day trial with a full-featured version of the tool&mdash;no restrictions! What’s more, you are eligible for complete technical support during your trial period in case you have any questions. To sign up for a free 30-day trial, go [here](https://www.telerik.com/download/fiddler-everywhere). In addition, [the Fiddler Everywhere dashboard panel]({%slug fiddler-dashboard%}) provides information and options for managing your subscription plans.
+
+## Commercial Licenses
 
 To use Fiddler Everywhere commercially, you need to purchase a license. The terms of use are fully described in the [Fiddler Everywhere License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere).
 
 * For more information about the available subscription plans, go to the [Fiddler Everywhere purchase page](https://www.telerik.com/purchase/fiddler).
 * For more information on the available commercial and free support channels, refer to the article on the [available Fiddler Everywhere support options]({%slug support%}).
+* For comparison of the different features included in the plans, like [policy-driven installation](#installation-options), bulk licensing, and SSO login options refer to the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license.
+
+
+### Installation Options
+
+Activate the [**Fiddler Everywhere Pro**](https://www.telerik.com/purchase/fiddler) license for **standard installation** with the following options:
+ - The executable installation file must be downloaded from the official Fiddler Everywhere download page at [https://www.telerik.com/download/fiddler-everywhere](https://www.telerik.com/download/fiddler-everywhere). 
+ - The installation can be executed only locally (on the machine that will run Fiddler Everywhere).
+
+Activate the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license to enable the **policy-driven installation** with the following options:
+- The executable installation file can be distributed from your source (shared internal location, OS image, etc.).
+- The installation can be executed remotely to multiple licensed end users (via policy, script, etc.).
+
+Contact our support team for more details on enabling the policy-driven installation alongside your specific company configuration.
+
 
 ## Suggested Links
 

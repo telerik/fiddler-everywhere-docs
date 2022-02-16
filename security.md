@@ -85,7 +85,6 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 - All saved sessions are stored locally on the Fiddler Everywhere host machine as SAZ files (Fiddler Sessions Archive ZIP). The absolute path is different and depends on the used OS and the unique ID of the currently logged user:
 
     * Windows path
-
         ```curl
         C:\Users\<currently-logged-user>\.fiddler\<unique-fiddler-user-GUID>\Snapshots
         ```
@@ -132,3 +131,4 @@ Fiddler Everywhere comes with [collaboration in mind]({%slug collaboration-get-s
 - [Fiddler Everywhere Official Product Page](https://www.telerik.com/fiddler/fiddler-everywhere)
 - [Fiddler Everywhere End User License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere)
 - [Fiddler Everywhere Official Download Llink](https://www.telerik.com/download/fiddler-everywhere)
+
