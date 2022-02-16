@@ -8,15 +8,15 @@ position: 75
 
 # Fiddler Everywhere Security
 
-The Fiddler Everywhere application acts as an MITM (man-in-the-middle, meddler-in-the-middle) proxy that uses a unique certificate per machine. It will capture all incoming and ongoing internet activities of the application by using system HTTP/HTTPS proxies.
+The Fiddler Everywhere application acts as a MITM (man-in-the-middle, meddler-in-the-middle) proxy that uses a unique certificate per machine. It will capture all incoming and ongoing internet activities of the application by using system HTTP/HTTPS proxies.
 
-This article highlights the primary security concerns and provides technical information about how Fiddler Everywhere acts as an MITM and what you need to consider when handling the Fiddler root trust certificate and captured data.
+This article highlights the primary security concerns and provides technical information about how Fiddler Everywhere acts as a MITM and what you need to consider when handling the Fiddler root trust certificate and captured data.
 
 ## How Fiddler Everywhere Works
 
 Fiddler Everywhere is an HTTP/HTTPS proxy that runs on your Windows, Linux, or macOS operating systems. It stands between your client application (for example, a browser or other application that sends HTTP/HTTPS requests) and the server (that receives the HTTP/HTTPS requests). The HTTP/HTTPS responses are returned to the Fiddler Everywhere proxy, passing the traffic back to the client application.
 
-This type of proxy configuration is an MITM proxy. It uses the MITM-attack approach to intercept communication between the client and the server.
+This type of proxy configuration is a MITM proxy. It uses the MITM-attack approach to intercept communication between the client and the server.
 
 ### Fiddler as an HTTP Proxy
 
@@ -46,7 +46,7 @@ All modern applications use additional security layers like [TLS](https://en.wik
 
 To capture secure traffic over HTTPS with Fiddler Everywhere, you need to explicitly elevate the trust by [installing and enabling the Fiddler root trust certificate]({%slug trust-certificate%}). By adding the Fiddler Everywhere certificate in the Trusted Certificate Authority manager of the used operating system, you allow the man-in-the-middle approach to intercept the encoded TLS data. This practically means that the Fiddler Everywhere application can now decode the otherwise encoded HTTPS traffic.
 
-The following image demonstrates how Fiddler Everywhere acts as if it is the client when speaking to the server, and the other way around&mdash;it acts as if it is the server when communicating with the client applications.
+The following image demonstrates how Fiddler Everywhere acts as if it is the client when speaking to the server, and the other way around&mdash;it works as if it is the server when communicating with the client applications.
 
 ![Fiddler Everywhere as HTTPS proxy](./images/security/fe-proxy-https.png)
 
@@ -60,7 +60,7 @@ While using Fiddler Everywhere, consider the following security indicators and h
 
 - Fiddler Everywhere generates a unique root certificate. Avoid sharing this certificate with anyone as it might pose a significant security threat (for example, anyone with access to that certificate can decode your secure traffic).
 
-- When HTTPS capturing is enabled, the captured data will contain readable information that is usually encrypted. Share that data with trusted parties only and carefully consider what the requests and responses contain.
+- When HTTPS capturing is enabled, the captured data will contain readable information that is usually encrypted. Share that data with trusted parties only and carefully consider what the requests and responses include.
 
 - All users who have access to the Fiddler Everywhere application or saved sessions can also access the captured data.
 
@@ -72,7 +72,7 @@ While using Fiddler Everywhere, consider the following security indicators and h
 
 ## Application Analytics
 
-By default, the Fiddler Everywhere application comes with an integrated Analytics solution that collects application usage data to improve product stability, UI, and UX. The collected information is stored on an external server, and it does not contain any data related to the captured traffic and the data that the sessions include. You can opt out from the analytics data collection by navigating to **Settings** > **Privacy** > **Automatically send data to help us improve the product**.
+By default, the Fiddler Everywhere application comes with an integrated Analytics solution that collects application usage data to improve product stability, UI, and UX. The collected information is stored on an external server, and it does not contain any data related to the captured traffic and the data that the sessions include. You can opt-out from the analytics data collection by navigating to **Settings** > **Privacy** > **Automatically send data to help us improve the product**.
 
 ## Using Captured Traffic Securely
 
@@ -105,7 +105,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
 - Other users can open any unprotected SAZ file at any time by getting access to the SAZ file. Consider using password protection for your captured traffic to add 256-bit AES encryption to the saved SAZ files and prevent unauthorized access to sensitive data.
 
-  Fiddler Everywhere provides he following options to add password protection for your sessions:
+  Fiddler Everywhere provides the following options to add password protection for your sessions:
 
     * [Setting a password when saving the session]({%slug web-sessions-list%}#saving)
 
@@ -121,7 +121,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
 Fiddler Everywhere comes with [collaboration in mind]({%slug collaboration-get-started%}) and provides sharing functionalities. Consider the following security highlights when sharing sessions:
 
-- Before sharing, a session is saved. Thus, you have to consider the [saving-related security highlights](#saving-traffic).
+- Before sharing, a session is saved. Therefore, you should consider the [saving-related security highlights](#saving-traffic).
 
 - Sharing an unprotected session might expose your sensitive data to unauthorized third parties. Always consider adding a password-protection to your sessions before sharing them.
 
