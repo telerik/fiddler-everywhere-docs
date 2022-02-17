@@ -32,12 +32,11 @@ The **Live Traffic** toolbar provides the following functionalities:
 - [Streaming](#streaming) (**Stream**)
 - [Advanced filters](#advanced-filters) (**Advanced Filters**)
 - [Clearing all filters](#clearing-all-filters) (**Clear All Filters**)
+- [Removing all](#removing-all) (**Remove All**)
+- [Preconfigured Browser Capturing](#preconfigured-browser-capturing) (**Open Browser**)
 - [Saving](#saving) (**Save**)
 - [Sharing](#sharing) (**Share**)
-- [Removing all](#removing-all) (**Remove All**)
 - [Searching](#searching) (**Search**)
-- [Preconfigured Browser Capturing](#preconfigured-browser-capturing) (**Open Browser**)
-
 
 ### Streaming
 
@@ -81,6 +80,16 @@ Set the advanced filters as follows:
 
 To reset all the filters applied through the advanced filters feature or to each column, use **Clear All Filters**.
 
+
+### Removing All
+
+To remove all captured sessions, use the **Remove All** button, which will automatically remove all captured traffic from the **Live Traffic** list. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
+
+
+### Preconfigured Browser Capturing
+
+Use the **Open Browser** button to capture traffic from a specific browser instance without the need to modify the system proxy settings. [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
+
 ### Saving
 
 To save captured sessions, use the **Save** button, which will automatically save all captured traffic. To save only specific sessions, select the desired ones and use the advanced saving options from [the context menu]({%slug web-sessions-list%}#save).
@@ -115,18 +124,9 @@ To share a session through the toolbar:
 
 1. In the **Share Sessions** prompt window, enter a valid email and click **Share**. Entering notes is optional.
 
-
-### Removing All
-
-To remove all captured sessions, use the **Remove All** button, which will automatically remove all captured traffic from the **Live Traffic** list. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
-
 ### Searching
 
 To search for specific values in the URL and the headers of all sessions, use the **Search** text input. The search action will immediately filter and show all sessions, which contain the search terms.
-
-### Preconfigured Browser Capturing
-
-Use the **Open Browser** button to capture traffic from a specific browser instance without the need to modify the system proxy settings. [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
 
 ## Live Traffic List
 
