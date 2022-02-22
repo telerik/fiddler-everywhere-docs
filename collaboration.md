@@ -68,7 +68,9 @@ Add additional context in the form of a descriptive note while sharing one or mo
 
 1. Use the **Share** option from the [**Live Traffic toolbar**]({%slug web-sessions-list%}#live-traffic-toolbar) or the **Share** button in the [**Sessions** list]({%slug saved-sessions-tab%}).
 
-1. In the first dialog window, provide a name for the shared sessions.
+1. In the first dialog window, provide a name for the shared sessions, set password protection, and choose local destionation folder.
+
+    ![](./images/livetraffic/websessions/websessions-toolbar-share-prompt-001.png)
 
 1. In the second dialog window, provide the additional information in the **Add a note** field. As a result, the note will be rendered as context in the email received by the collaborators.
 
