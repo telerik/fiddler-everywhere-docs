@@ -222,7 +222,7 @@ For more information, refer to the following list.
 
 ### Actions
 
-When Fiddler Everywhere identifies a request which matches the [**conditions**](#conditions) of the rule, it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive).
+When Fiddler Everywhere identifies a request which matches the [**conditions**](#conditions) of the rule, it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive). Note that multiple actions will be executed in their numbered order, and action with final action type will prevent the execution of all subsequent actions.
 
 Apart from returning files or predefined responses, a rule can perform the following specific actions:
 
