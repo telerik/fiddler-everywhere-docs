@@ -83,7 +83,9 @@ When creating new rules, take into consideration the following tips:
 
 ### Conditions
 
-The **Rule Builder** can add and use single or multiple conditions. The conditions are logical structures with different statements whose number can be between two and four. For more information, refer to the following list.
+The **Rule Builder** can add and use single or multiple **conditions** needed to trigger different [**actions**](#actions). The conditions are logical structures with different statements whose numbers can vary between two and four. A statement field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive).
+
+For more information, refer to the following list. 
 
 <table style="width: 100%">
     <colgroup>
@@ -96,6 +98,7 @@ The **Rule Builder** can add and use single or multiple conditions. The conditio
     <thead>
         <tr>
             <th>Condition Value</th>
+            <th>Field Options</th>
             <th>Field Options</th>
             <th>Field Options</th>
             <th>Usage Description</th>
@@ -219,7 +222,7 @@ The **Rule Builder** can add and use single or multiple conditions. The conditio
 
 ### Actions
 
-When Fiddler Everywhere identifies a request which matches the **Conditions** of the rule, it automatically maps it to the **Action** set in the rule.
+When Fiddler Everywhere identifies a request which matches the [**conditions**](#conditions) of the rule, it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive).
 
 Apart from returning files or predefined responses, a rule can perform the following specific actions:
 
