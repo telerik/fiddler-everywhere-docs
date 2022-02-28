@@ -9,7 +9,7 @@ position: 70
 
 # Requests Section
 
-The **Requests** section enables you to organize and modify existing requests, which are listed in it.
+The **Requests**section in Fiddler Everywhere enables you to organize and modify existing requests, which are listed in it. The section is part of a collapsable panel that you can hide/show to optimize your working space.
 
 For more information about building and sending HTTP and HTTPS requests, refer to the article on the [**Composer** tab]({% slug composer-tab %}).
 

@@ -11,7 +11,7 @@ previous_url: /get-started/composer-collections, /get-started/api/composer-colle
 
 The Fiddler Everywhere client provides options for saving and organizing multiple requests, composed by the API Composer, through its [**Requests**]({%slug saved-requests-tab%}) list.
 
-**Requests** enables you to arrange multiple requests or request folders in collections that can be promptly reloaded and executed.
+**Requests** enables you to arrange multiple requests or request folders in collections that can be promptly reloaded and executed. The **Requests** section is part of a collapsable panel that you can hide/show to optimize your working space.
 
 ![Requests lists](../images/requests/requests-list-all.png)
 

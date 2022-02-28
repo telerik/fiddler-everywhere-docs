@@ -9,7 +9,7 @@ position: 40
 
 # Sessions Section
 
-Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic.
+The **Sessions** section in Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsable panel that you can hide/show to optimize your working space.
 
 To save sessions to the **Sessions** list, use the [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options of the **Live Traffic** list.  
 

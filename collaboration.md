@@ -17,6 +17,10 @@ As compared with previous Fiddler Everywhere versions where collaboration was li
 
 In Fiddler Everywhere, you can save, and later on, view and share captured network sessions with your team, as well as invite other team members to collaborate. For additional security, you can enable encryption and protect all saved sessions with password protection.
 
+
+The [**Sessions** section]({%slug saved-sessions-tab%}) is the place where you can organize captured traffic in folders, share them with collaborators, and create cloud backups. The section is part of a collapsable panel that you can hide/show to optimize your working space.
+
+
 ### Saving Sessions
 
 To save a session:
@@ -24,11 +28,12 @@ To save a session:
  1. [Capture the traffic]({%slug capture-traffic-get-started%}).
 
  1. Use any of the available approaches to save a captured session:
-    - The **Save**  option of the [**Live Traffic** toolbar]({%slug web-sessions-list%}#live-traffic-toolbar).
-    - The **Save** option from the context menu of the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list).
+    - The **Save**  option of the [**Live Traffic** toolbar]({%slug web-sessions-list%}#live-traffic-toolbar). The option allows you to save and organize sessions in the [**Sessions** section]({%slug saved-sessions-tab%}).
+    - The **Save** option from the context menu of the [**Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list). The option allows you to save and organize sessions in the [**Sessions** section]({%slug saved-sessions-tab%}).
     - The [context menu]({%slug web-sessions-list%}#context-menu-options), which allows you to export the captured traffic in various formats such as `SAZ`, `HTTPArchive`, `WCAT`, `MeddlerScript`, `cURLScript`, and others.
 
 Optionally, you can protect the saved session by enabling encryption and setting a password. Only users with the knowledge of the password will be able to open the password-protected session. Password-protected sessions are listed in the **Session** list with a lock icon. [Read more about encrypting saved entries...]({% slug saved-sessions-tab %}#encrypting)
+
 
 ### Sharing Sessions
 
