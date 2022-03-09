@@ -82,19 +82,19 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
     * Windows path
         ```curl
-        C:\Users\<currently-logged-user>\.fiddler\<unique-fiddler-user-GUID>\Snapshots
+        C:/Users/<currently-logged-user>/.fiddler/<unique-fiddler-user-GUID>/Snapshots
         ```
 
     * macOS path
 
         ```curl
-        ~\.fiddler\<unique-fiddler-user-GUID>\Snapshots
+        ~/.fiddler/<unique-fiddler-user-GUID>/Snapshots
         ```
 
     * Linux path
 
         ```curl
-        ~\.fiddler\<unique-fiddler-user-GUID>\Snapshots
+        ~/.fiddler/<unique-fiddler-user-GUID>/Snapshots
         ```
 
 - The `fiddler` folder will continue to exist even when the Fiddler Everywhere application is uninstalled. Any previously saved sessions will be available on the host machine until they are explicitly removed. Explicitly removing the `.fiddler` folder removes all previously saved sessions (the SAZ files in the Snapshots `GUID` folders) permanently. Consider keeping them in the Fiddler cloud as a backup option before clearing the folder.
