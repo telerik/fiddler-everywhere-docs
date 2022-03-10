@@ -82,7 +82,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
     * Windows path
         ```curl
-        C:/Users/<currently-logged-user>/.fiddler/<unique-fiddler-user-GUID>/Snapshots
+        C:\Users\<currently-logged-user>\.fiddler\<unique-fiddler-user-GUID>\Snapshots
         ```
 
     * macOS path
