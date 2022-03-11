@@ -80,10 +80,11 @@ When creating new rules, take into consideration the following tips:
 - Rules are applied in their order of appearance in the **Rules Queue**. To demote a rule in the queue, use the **Down Arrow**; to promote a rule on the queue, use the **Up Arrow**.
 - You can export the current queue of rules [through the **Export** button]({%slug rules-general%}#export-rules) from the **Rules Queue** toolbar.
 - To queue rules based on previously captured traffic, import a `.FARX` file [through the **Import** button]({%slug rules-general%}#import-rules).
+- Each condition and action value corresponding to data from the **Live Traffic** capturing can be auto-completed. This way, you can create rules based on captured sessions on the fly.
 
 ### Conditions
 
-The **Rule Builder** can add and use single or multiple **conditions** needed to trigger different [**actions**](#actions). The conditions are logical structures with different statements whose numbers can vary between two and four. A statement field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive).
+The **Rule Builder** can add and use single or multiple **conditions** needed to trigger different [**actions**](#actions). The conditions are logical structures with different statements whose numbers can vary between two and four. A statement field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions.
 
 For more information, refer to the following list. 
 
@@ -222,7 +223,7 @@ For more information, refer to the following list.
 
 ### Actions
 
-When Fiddler Everywhere identifies a request which matches the [**conditions**](#conditions) of the rule, it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive). Note that multiple actions will be executed in their numbered order, and action with final action type will prevent the execution of all subsequent actions.
+When Fiddler Everywhere identifies a request which matches the [**conditions**](#conditions) of the rule, it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with final action type will prevent the execution of all subsequent actions.
 
 Apart from returning files or predefined responses, a rule can perform the following specific actions:
 

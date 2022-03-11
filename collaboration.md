@@ -75,8 +75,8 @@ Add additional context in the form of a descriptive note while sharing one or mo
 
 1. In the first dialog window, provide a name for the shared sessions, set password protection, and choose local destionation folder.
 
-    ![](./images/livetraffic/websessions/websessions-toolbar-share-prompt-001.png)
-
+    ![Share prompt](./images/livetraffic/websessions/websessions-toolbar-share-prompt-001.png)
+    
 1. In the second dialog window, provide the additional information in the **Add a note** field. As a result, the note will be rendered as context in the email received by the collaborators.
 
     ![Add a note in share prompt window](./images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
