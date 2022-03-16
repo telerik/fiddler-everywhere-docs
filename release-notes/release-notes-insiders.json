@@ -1,5 +1,91 @@
 [
     {
+        "version": "3.1.0-insiders",
+        "title": "Fiddler Everywhere v3.1.0",
+        "date": "March 16, 2021",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Support sensitive and insensitive matching in Advanced Filters and Rule Builder"
+                    },
+                    {
+                        "title": "Add autocomplete in the Advanced Filters and Rule Builder based on sessions in current tab"
+                    },
+                    {
+                        "title": "Add new action in the Rule Builder - \"comment\""
+                    },
+                    {
+                        "title": "Add option to collapse/expand the left panel (Sessions and Requests)"
+                    },
+                    {
+                        "title": "Remove all toast notifications on sign in/out"
+                    },
+                    {
+                        "title": "Reorder buttons in Live Traffic, so most used ones are always visible"
+                    },
+                    {
+                        "title": "Update Angular and Monaco editor to latest version"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Traffic to localhost is not captured from the preconfigured browser process"
+                    },
+                    {
+                        "title": "UI glitch in Requests tree on the left when the application is zoomed"
+                    },
+                    {
+                        "title": "The app crashes if advanced filter for Remote IP is added"
+                    },
+                    {
+                        "title": "In some cases, opened tabs are not persisted after switching users"
+                    },
+                    {
+                        "title": "In some cases, WebSocket messages are ordered incorrectly"
+                    },
+                    {
+                        "title": "In some cases, the app is stuck on a loading tab after a shared session is edited"
+                    },
+                    {
+                        "title": "\"User has logged in, but we couldn't finalize the login process. Error is: Cannot read properties of undefined (reading 'toLowerCase')\" error is logged in some cases"
+                    },
+                    {
+                        "title": "\"Cannot read properties of undefined\" error is logged in some cases"
+                    },
+                    {
+                        "title": "Export ruleset does not add the extension .farx on Linux"
+                    },
+                    {
+                        "title": "The URL in the notification for inability to access Cognito is not a clickable link"
+                    },
+                    {
+                        "title": "Warnings and errors are logged in multiple log files in some cases"
+                    },
+                    {
+                        "title": "Indication for applied filters in the inspectors with grids (like Headers, Form-Data) is not visible"
+                    },
+                    {
+                        "title": "Incorrect notification is shown when user tries to share session over 50MB"
+                    },
+                    {
+                        "title": "cURL export of POST request with form-data does not work"
+                    },
+                    {
+                        "title": "cURL export creates .bat file on macOS and Linux instead of .sh"
+                    },
+                    {
+                        "title": "'Unexpected error' notification is shown when trying to inspect а session with invalid form-data body"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.0.1-insiders",
         "title": "Fiddler Everywhere v3.0.1",
         "date": "December 03, 2021",
