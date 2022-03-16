@@ -55,13 +55,7 @@
                         "title": "\"User has logged in, but we couldn't finalize the login process. Error is: Cannot read properties of undefined (reading 'toLowerCase')\" error is logged in some cases"
                     },
                     {
-                        "title": "\"Cannot read properties of undefined (reading 'webContents')\" error is logged in some cases"
-                    },
-                    {
-                        "title": "\"Cannot read properties of undefined (reading 'show')\" error is logged in some cases"
-                    },
-                    {
-                        "title": "\"Cannot read properties of undefined (reading 'type')\" error is logged in some cases"
+                        "title": "\"Cannot read properties of undefined\" error is logged in some cases"
                     },
                     {
                         "title": "Export ruleset does not add the extension .farx on Linux"
