@@ -71,9 +71,10 @@ Set the advanced filters as follows:
 
 ![Advanced Filters](../images/livetraffic/websessions/websessions-toolbar-advanced-filters.png)
 
+>tip All condition values connected to a **Live Traffic** columns can be auto-completed, and the auto-completion suggestions are based on the captured data. Additionally, a counter will show the number of matches (from the currently captured sessions) after adding a condition.
 
+Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The column filtering allows you to use the AND and OR logical operators (for two lines) and multiple logical operators (for example, **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
 
->tip Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The column filtering allows you to use the AND and OR logical operators (for two lines) and multiple logical operators (for example, **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
 
 
 ### Clearing All Filters
@@ -89,6 +90,8 @@ To remove all captured sessions, use the **Remove All** button, which will autom
 ### Preconfigured Browser Capturing
 
 Use the **Open Browser** button to capture traffic from a specific browser instance without the need to modify the system proxy settings. [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
+
+![Use the Open Browser button to staert preconfigfured browser instance](../images/get-started/get-started-open-browser.png)
 
 ### Saving
 

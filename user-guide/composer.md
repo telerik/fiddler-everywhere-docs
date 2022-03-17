@@ -34,7 +34,7 @@ In the **Requests** list to the left you can save the composed request for later
 
 By default, the **Composer** automatically adds headers like `User-Agent`, `Host`, and `Content-Length` so that the HTTPS request is sent correctly. You can remove the default `User-Agent` header but note that this may break the composition of a secure (HTTPS) request.
 
-![Composer User Interface](../images/composer/composer.png)
+![Composer User Interface](../images/composer/create-api-request.png)
 
 ## HTTP Methods
 
