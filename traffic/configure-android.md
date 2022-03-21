@@ -69,11 +69,7 @@ The following steps apply to real Android devices with access to the Internet th
 
             1. In the prompt windows, enter a descriptive certificate name and select **VPN and apps** as credentials use.
 
-            ![Android save and install CA](../images/android/android_emulator_cert_os_popup.png)
-
-    1. Verify that the Fiddler Everywhere certificate is installed as a user certificate.
-
-        ![Certificate installation verification](../images/android/android_emulator_cert_verification.png)  
+    1. Verify that the Fiddler Everywhere certificate is installed as a user certificate in **Android OS > Settings > Security > Encryption & Credentials > User and Credentials** section.
 
 With the above setup, you are ready to capture traffic from your Android mobile browser. Test your configuration as follows:
 
@@ -116,13 +112,9 @@ The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler E
 
         1. Save and install the certificate (**Android 11 and above**):
 
-            1. In the prompt windows, enter a descriptive certificate name and select **VPN and apps** ain the **Credentials use** field
+            1. In the prompt windows, enter a descriptive certificate name and select **VPN and apps** in the **Credentials use** field
 
-            ![Android save and install CA](../images/android/android_emulator_cert_os_popup.png)
-
-    1. Verify that the Fiddler Everywhere certificate is installed as a user certificate.
-
-        ![Certificate installation verification](../images/android/android_emulator_cert_verification.png)    
+    1. Verify that the Fiddler Everywhere certificate is installed as a user certificate in **Android OS > Settings > Security > Encryption & Credentials > User and Credentials** section.
 
 
 With the above setup, you are ready to capture traffic from your Android mobile browser. Test your configuration as follows:
