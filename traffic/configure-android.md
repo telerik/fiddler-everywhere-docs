@@ -38,7 +38,7 @@ Ensure that the machine on which Fiddler Everywhere and the Android device run i
 
 The following steps apply to real devices and emulators (also known as AVDs) with some minor differences as described below.
 
-1. (Android emulators only) Check the IP address of the Android emulator.
+1. (**Android emulators only**) Check the IP address of the Android emulator.
 
     1. Open the connected Wi-Fi, tap **Settings**, and expand **Advanced Settings**.
 
@@ -52,9 +52,9 @@ The following steps apply to real devices and emulators (also known as AVDs) wit
 
     1. On **Proxy**, select **Manual proxy**.
 
-       - (Real devices only) Enter the IP address of the host computer on which Fiddler Everywhere runs&mdash;for example, **192.168.100.101**.
+       - (**Real devices only**) Enter the IP address of the host computer on which Fiddler Everywhere runs&mdash;for example, **192.168.100.101**.
 
-       (Android emulators only) Enter the emulator alias IP address for the loopback address. For the state Android emulators, the address is **10.0.2.2**.
+       - (**Android emulators only**) Enter the emulator alias IP address for the loopback address. For the state Android emulators, the address is **10.0.2.2**.
       
     1. Enter the proxy port. Use the port configured in the Fiddler Everywhere application. The default port is **8866**.
 
