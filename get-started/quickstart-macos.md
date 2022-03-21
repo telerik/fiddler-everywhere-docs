@@ -63,7 +63,7 @@ However, by default, you can only track non-secure HTTP system traffic with Fidd
 
 1. Open the [**Welcome** page]({% slug my-resources-section %}) and click the **Enable HTTPS Capture** button. Alternatively, follow the link **Enable HTTPS now** from the inline notification in the Fiddler UI.
 
-  >tip You can also control the trust certificate settings manually. [Learn more about the advanced trust certificate options]({%slug trust-certificate %})
+  >tip You can also control the trust certificate settings manually. [Learn more about the advanced trust certificate options]({%slug trust-certificate%})
 
 1. Click the **Trust and Enable HTTPS** button.
 
