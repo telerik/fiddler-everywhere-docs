@@ -1,0 +1,37 @@
+---
+title: Logging In with Google on Microsoft Edge
+description: "Learn how to fix issues with the Google authentication on the Microsoft Edge when working with the Fiddler Everywhere web-debugging client."
+type: how-to
+slug: fiddler-everywhere-microsoft-edge
+publish: true
+res_type: kb
+---
+
+## Environment
+
+|   |   |
+|---|---|
+| Product  | Version |
+| Fiddler Everywhere |  1.0.0 and above  |
+| Microsoft Edge | all versions |
+
+## Description
+
+Fiddler Everywhere provides an option to use a unique Fiddler account or Google authentication. When using the Google authentication option when Microsoft Edge is set as the default OS browser, the callback may fail silently and Fiddler Everywhere never finishes authenticating the user.
+
+This is due to a Microsoft Edge default setting that automatically redirects localhost HTTP traffic to HTTPS. This is known as [HSTS](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) and has a detrimental effect on the authentication flow of Fiddler Everywhere.
+
+## Solution
+
+To resolve this, you can remove `localhost` from the list of addresses that Microsoft Edge enforces HSTS on. As a result, the callback is successful and Fiddler Everywhere finishes authenticating.
+
+Take the following steps:
+
+1. Open the Microsoft Edge and enter `edge://net-internals/#hsts` in the address field. Edge will open a special **net-internals** configuration page.
+2. Locate the "Delete domain security policies" section.
+3. Enter `localhost` into the box, then click the **Delete** button.
+4. Start Fiddler Everywhere and use the Google authentication option again.
+
+Here is a screenshot of the setting and what to do:
+
+![](../images/kb/edge/edge-hsts-setting.png)
