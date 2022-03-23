@@ -1,5 +1,5 @@
 ---
-title: Logging In with Google on Browser Edge
+title: Logging In with Google on Chrome
 description: "Learn how to fix issues with the Google authentication on the Chrome browser when working with the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: fiddler-everywhere-chrome-hsts
