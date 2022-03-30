@@ -105,8 +105,9 @@ To change it to raw UI through the drop-down in the top-right corner of the sect
 
   ![Added header](../images/composer/composer-headers-after.png)
 
->important Most of the servers using newer versions of TLS will require you to set an **User-Agent** header. By default, Fiddler Everywhere will a **User-Agent** key set with the **Fiddler Everywhere** value and the **Lets servers and network peers identify the application, operating system, vendor, and version of the requesting user agent** description. The header is not mandatory, yet keep in mind that without a valid **User-Agent**, some requests for securing servers might fail.
+Most of the servers using newer versions of TLS will require you to set an **User-Agent** header. By default, Fiddler Everywhere will a **User-Agent** key set with the **Fiddler Everywhere** value and the **Lets servers and network peers identify the application, operating system, vendor, and version of the requesting user agent** description. The header is not mandatory, yet keep in mind that without a valid **User-Agent**, some requests for securing servers might fail.
 
+>tip The request execution includes only checked headers. Unchecked headers won't be included in the request execution but are saved as part of the composed request (so you can activate them at a later time).
 
 ### Params
 
