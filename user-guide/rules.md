@@ -419,7 +419,7 @@ When using a rule from the **Rules Queue**, take into consideration the followin
 - You can explicitly apply a rule for captured traffic by using the **Play** button (executes the rule on current sessions).
 - By default, the [**Unmatched Requests Passthrough**](#unmatched-requests-passthrough) is turned off, and it won't block a request even if the rule condition is not satisfied.
 - The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use **Demote** and **Promote** buttons to change a rule position (and priority) in the queue.
-- Note that some rules might trigger [a final action](#final-and-non-final-actions), which will stop executing any other rules with lower priority.
+- Some rules might trigger [a final action](#final-and-non-final-actions), which will stop executing any other rules with lower priority.
 
 ### Rules Priority
 
