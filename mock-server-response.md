@@ -27,6 +27,8 @@ To create and test a rule:
 
 ![Rules Tab](./images/livetraffic/rb/rules-all.png)
 
+The **Rules** tab can be a powerful ally in testing various complex scenarios without meddling with the server. You can share, import, and export created rules with collaborators to further ease your support, development, and QA processes.
+
 ## Additional Resources
 
 - [Creating Requests with the API Composer]({%slug composer-get-started%})

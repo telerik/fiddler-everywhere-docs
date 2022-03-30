@@ -19,13 +19,13 @@ To create an API request:
 
 1. Select the HTTP protocol version with the drop-down menu to the left of the **Execute** button. The supported versions are HTTP/0.9, HTTP/1, HTTP1.1 (default option), and HTTP/2.
 
-1. (Optional) If required, enter additional headers, parameters, and body. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data.
+1. (Optional) If required, enter additional headers, parameters, and body. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data. Note that the request execution includes only checked headers.
 
     >important By default, the Fiddler Everywhere client will add a **User-Agent** header with the __Fiddler Everywhere__ value. This header lets servers and network peers identify the application, the operating system, the vendor, and/or the version of the requesting user agent.
 
     >tip To inspect the request that will be sent to the server in detail, use the read-only **Raw** view.
 
-1. To send the composed API request, click **Execute**.
+1. To send the composed API request, click **Execute**. 
 
 1. Inspect the result in the **Response inspector** tab of the Composer. Like the inspectors for the **Live Traffic** tab, the **Response** inspector provides multiple views such as **Headers**, **Raw**, **JSON**, and so on.
 
