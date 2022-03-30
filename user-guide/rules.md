@@ -57,7 +57,7 @@ The main toolbar of the **Rules** comes with the following functionalities:
 
 ## Rule Builder
 
-The **Rule Builder** interface enables you to create and edit rules. For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
+The **Rule Builder** interface enables you to create (throught the **Add New Rule** button) and edit rules (through the **Edit** button of a selected rule). For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
 
 ![Rule Builder Conditions](../images/livetraffic/rb/rules-re-conditions.png)
 
@@ -75,10 +75,10 @@ To add a new rule:
 1. Add one or more actions. See the [actions section](#actions) for more details.
 1. Click **Save** to close the **Rule Editor** and add the newly created rule to the **Rules Queue**.
 
-When creating new rules, take into consideration the following tips:
+When creating a rule, take into consideration the following tips:
 
 - Rules are applied in their order of appearance in the **Rules Queue**. To demote a rule in the queue, use the **Down Arrow**; to promote a rule on the queue, use the **Up Arrow**.
-- You can export the current queue of rules [through the **Export** button]({%slug rules-general%}#export-rules) from the **Rules Queue** toolbar.
+- You can export selected rules from the queue through the **Export** button from the [**Rules toolbar**](#rules-toolbar).
 - To queue rules based on previously captured traffic, import a `.FARX` file [through the **Import** button]({%slug rules-general%}#import-rules).
 - Each condition and action value corresponding to data from the **Live Traffic** capturing can be auto-completed. This way, you can create rules based on captured sessions on the fly.
 
@@ -411,6 +411,15 @@ When you work with final and non-final actions, take into consideration the foll
 ## Rules Queue
 
 The **Rules Queue**, also the __Queue Viewer__ or __Queue Rules Viewer__, is a queue of the created rules. The **Rules Queue** allows you to enable or disable, promote or denote, edit, export, import, share, and immediately execute the listed rules.
+
+When using a rule from the **Rules Queue**, take into consideration the following tips:
+
+- The **Rules** tab must be enabled for any rule from the queue to be executed.
+- Only **enabled** rules from the queue will be applied on ongoing Live traffic capture.
+- You can explicitly apply a rule for captured traffic by using the **Play** button (executes the rule on current sessions).
+- By default, the [**Unmatched Requests Passthrough**](#unmatched-requests-passthrough) is turned off, and it won't block a request even if the rule condition is not satisfied.
+- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use **Demote** and **Promote** buttons to change a rule position (and priority) in the queue.
+- Note that some rules might trigger [a final action](#final-and-non-final-actions), which will stop executing any other rules with lower priority.
 
 ### Rules Priority
 
