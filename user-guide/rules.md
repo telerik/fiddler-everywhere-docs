@@ -49,8 +49,8 @@ The main toolbar of the **Rules** comes with the following functionalities:
 - **Add New Rule**&mdash;Opens the **Rule Builder** window to create a new rule.
 - **Shared Ruleset**&mdash;Opens a list of the shared rulesets.
 - **Share**&mdash;Opens the **Share** windows where you can enter a collaborator email to share all created rules.
-- **Import**&mdash;Prompts a window for importing a FARX file.
-- **Export**&mdash;Exports all created rules in a FARX file.
+- **Import**&mdash;Prompts a window for importing rules from a FARX file.
+- **Export**&mdash;Exports all selected rules in a FARX file.
 - **Execute**&mdash;Executes the selected rules for the captured traffic or the loaded, saved sessions.
 
 ![Rules tab toolbar](../images/livetraffic/rb/rules-toolbar.png)
