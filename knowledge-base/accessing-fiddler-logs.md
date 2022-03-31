@@ -22,8 +22,8 @@ The Fiddler Everywhere client is an electron application that depends on modifyi
 ## Solution
 
 * [Logging files](#logging-files)
-* [Accessing the logs](#accessing-the-logs)
-* [Managing the destination folder](#managing-the-destination-folders)
+* [Accessing the logs](#accessing-the-logs-through-the-ui)
+* [Managing the destination folder](#aAccessing-the-logs-manually)
 * [Setting the `electron.log` file](#setting-the-electronlog-file)
 * [Setting the `netcore.log` file](#setting-the-netcorelog-file)
 
@@ -35,13 +35,13 @@ The Fiddler Everywhere application generates the following log files:
 
 Both log files are useful to investigate cases where the client is not working properly. The location of these files varies depending on the operating system on which Fiddler Everywhere is working.
 
-### Accessing the Logs
+### Accessing the Logs through the UI
 
 Fiddler Everywhere version 1.3.0 and later provides a UI option through **Help** > **Open Application Logs Folder** to automatically open the folder that contains the log files.
 
 ![Fiddler Everywhere log files](../images/kb/logs/log-files.png)
 
-### Managing the Destination Folder
+### Accessing the Logs Manually
 
 Alternatively, you can manually navigate to the folder on your operating system and obtain the Fiddler Everywhere log files. Manual extraction of the logs can be useful in scenarios where your Fiddler Everywhere client is not starting at all, or you can't access the UI.
 
