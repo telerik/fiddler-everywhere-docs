@@ -1,8 +1,32 @@
 [
     {
+        "version": "3.1.1-insiders",
+        "title": "Fiddler Everywhere v3.1.1",
+        "date": "April 05, 2022",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Composer's unchecked headers are removed after execution of request"
+                    },
+                    {
+                        "title": "Right click in the Inspectors' tables adds the row to the current selection"
+                    },
+                    {
+                        "title": "Incorrect message is shown when password does not meet requirements"
+                    },
+                    {
+                        "title": "Export button in Rules does not respect selection"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.1.0-insiders",
         "title": "Fiddler Everywhere v3.1.0",
-        "date": "March 16, 2021",
+        "date": "March 16, 2022",
         "items": [
             {
                 "type": "New",
