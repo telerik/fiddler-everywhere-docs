@@ -18,14 +18,14 @@ res_type: kb
 ## Description
 
 
-When the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) is enabled, Fiddler Everywhere sets itself as a system proxy. That means that all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy will be captured and output as session entries in the [**Live Traffic list**]({%slug web-sessions-list%#live-traffic-list). Modern applications are often generating hundreds and even thousands of requests, which might pollute your list with a lot of unwanted information. This article reveals some of the options you can use to filter the captured traffic.
+When the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) is enabled, Fiddler Everywhere sets itself as a system proxy. That means that all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy will be captured and output as session entries in the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list). Modern applications are often generating hundreds and even thousands of requests, which might pollute your list with a lot of unwanted information. This article reveals some of the options you can use to filter the captured traffic.
 
 
 ## Solution
 
 ### Column Filters
 
-Each column from the [**Live Traffic list**]({%slug web-sessions-list%#live-traffic-list) has its own [filtering menu]([%slug web-sessions-list%]#filtering-options). Each filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, etc.) to combine with the filter value (string, number, booleand depwending on the column type). You can apply up-to two filter conditions per each column filter.
+Each column from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) has its own [filtering menu]({%slug web-sessions-list%}#filtering-options). Each filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, etc.) to combine with the filter value (string, number, booleand depwending on the column type). You can apply up-to two filter conditions per each column filter.
 
 Below, you will find some column filters examples and a short description of their use.
 
