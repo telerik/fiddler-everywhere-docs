@@ -37,3 +37,4 @@ Inspecting sessions is often done with teammates or external collaborators. Shar
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
 - [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
 - [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})
+- [Filtering Traffic]({%slug how-to-filter-traffic%})
