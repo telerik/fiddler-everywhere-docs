@@ -120,6 +120,8 @@ The **Statistics** widget contains a table with structured information for multi
 
 - **Response Size by Type**&mdash;A list of the received response types and their aggregate size.
 
+![Response Details](../images/overview/overview-statisticsl.png)
+
 ## Request Details
 
 The **Request Details** widget contains a table with the following information:
@@ -142,6 +144,8 @@ The **Request Details** widget contains a table with the following information:
 
 - **Timings** &mdash;A list by execution order with timestamps for each triggered request event.
 
+![Response Details](../images/overview/overview-request-details.png)
+
 ## Response Details
 
 The **Response Details** widget contains a table with the following information:
@@ -153,3 +157,15 @@ The **Response Details** widget contains a table with the following information:
     - **Headers**&mdash;The size of the response headers in bytes.
 
 - **Timings**&mdash;A list by execution order with timestamps or times (in milliseconds) for each triggered response event.
+
+![Response Details](../images/overview/overview-response-details.png)
+
+## Session Details
+
+- **Duration** - The total time spent for the Session in milliseconds (Client Done Response - Client Begin Request).
+
+- **TCP Connect Time** - The number of milliseconds spent waiting for the server to establish a TCP/IP connection.
+
+- **HTTPS Handshake Time**  - The number of milliseconds elapsed while performing the HTTPS handshake with the server.
+
+![Session Details](../images/overview/overview-session-details.png)
