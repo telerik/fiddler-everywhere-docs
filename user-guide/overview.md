@@ -122,6 +122,7 @@ The **Statistics** widget contains a table with structured information for multi
 
 ![Response Details](../images/overview/overview-statisticsl.png)
 
+
 ## Request Details
 
 The **Request Details** widget contains a table with the following information:
