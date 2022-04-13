@@ -25,8 +25,6 @@ The **Timings** widget provides a visual representation of the time that is need
 
 The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL, click the three dots at the end of the wrapped URL. The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the request, and the orange section of the charts shows timings related to the response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
 
-![Timings widget](../images/overview/overview-all.png)
-
 **Tracked Request Timings** provides the following options:
 
 - **Gateway Determination Time**&mdash;The time (in milliseconds) required to determine the gateway. All values over 1000ms are unusual and suggest an issue.
