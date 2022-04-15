@@ -23,7 +23,9 @@ The **Overview** tab provides options for getting structured information and sta
 
 The **Timings** widget provides a visual representation of the time needed to execute a single session or select multiple sessions. Each Session is listed on a separate line and is presented with a URL that corresponds to the URL column in [the **Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list) and a chart of the request and response timings.
 
-The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL, click the three dots at the end of the wrapped URL. The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the Request, and the orange section of the charts shows timings related to the Response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
+The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
+
+The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the Request, and the orange section of the charts shows timings related to the Response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
 
 **Tracked Request Timings** provides the following options:
 
@@ -69,7 +71,7 @@ Under the list of session lines, you will find the **Request** (light blue) and 
 
 The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and is presented with a URL, which corresponds to the URL column in [the **Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list), and a chart that shows the sizes of the headers and the body of the Request and Response, each included in a single chart.
 
-The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL, click the three dots at the end of the wrapped URL.
+The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
 **Tracked session sizes** Provides the following options:
 
