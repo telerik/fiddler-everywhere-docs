@@ -72,6 +72,9 @@ To add a new rule:
     - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
     - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
 1. Add one or more conditions. See the [conditions section](#conditions) for more details.
+1. Set how many times the [actions](#actions) will be triggered when the conditions are met:
+    - **Any number of times** - The action executes each time the conditions are met.
+    - **Specific number of times** - The action executes **n**-times (user specifies **n** which can be a numerical value between 1 and 65535).
 1. Add one or more actions. See the [actions section](#actions) for more details.
 1. Click **Save** to close the **Rule Editor** and add the newly created rule to the **Rules Queue**.
 

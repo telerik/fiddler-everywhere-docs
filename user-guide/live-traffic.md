@@ -57,16 +57,12 @@ The **Advanced Filters** entry uses several different logical constructions to c
 Set the advanced filters as follows:
 
 1. Click the **Advanced Filters** button to open the advanced filters popup window.
-
 1. The **Advanced Filters** window allows you to set specific criteria to filter the captured traffic.
-
 1. Set the **When** rule based on one of the following statements:
     - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
     - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
     - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
-
 1. Add one or more conditions based on the HTTP Request and Response headers and provide logical operators.
-
 1. Click **Apply** to close the **Advanced Filters** and activate the newly created filter.    
 
 ![Advanced Filters](../images/livetraffic/websessions/websessions-toolbar-advanced-filters.png)
