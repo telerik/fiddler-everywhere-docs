@@ -21,7 +21,7 @@ The Fiddler Everywhere client captures HTTPS traffic and obtains information abo
 
 ## Solution
 
-Fiddler Everywhere version 3.2.0 and above contain [indicators]({%slug web-sessions-list%}#certificate-indicators) and notifications that show if a server certificate is valid, expiring, or causes errors.
+Fiddler Everywhere version 3.2.0 and above contain [indicators and notifications]({%slug web-sessions-list%}#certificate-indicators) that show if a server certificate is valid, expiring, or causes errors.
 
 
 ### Extracting Certificate Details

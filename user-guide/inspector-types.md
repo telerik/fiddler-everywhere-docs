@@ -136,6 +136,15 @@ The **Form Data** inspector provides the following options for copying the param
 ![Copying Information from the Form Data Inspector](../images/livetraffic/inspectors/webforms-copy.png)
 
 
+### Certificate Details
+
+The Response Inspectors in Fiddler Everywhere version 3.2.0 and above contain [indicators and notifications]({%slug web-sessions-list%}#certificate-indicators) that show if a server certificate is valid, expiring, or causes errors. 
+
+![Certificate note](../images/livetraffic/certs/certficate-valid-note.png)
+
+[Learn more on how to inspect and use the certificate details with Fiddler Everywhere here...]({%slug fe-cert-details%})
+
+
 ## WebSocket Inspectors
 
 The **WebSocket Inspectors** provide the following types of inspecting tools that enable you to inspect different parts of the WebSocket connection:
