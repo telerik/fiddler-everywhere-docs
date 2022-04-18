@@ -23,7 +23,9 @@ The **Overview** tab provides options for getting structured information and sta
 
 The **Timings** widget provides a visual representation of the time needed to execute a single session or select multiple sessions. Each Session is listed on a separate line and is presented with a URL that corresponds to the URL column in [the **Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list) and a chart of the request and response timings.
 
-The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL, click the three dots at the end of the wrapped URL. The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the Request, and the orange section of the charts shows timings related to the Response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
+The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
+
+The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the Request, and the orange section of the charts shows timings related to the Response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
 
 **Tracked Request Timings** provides the following options:
 
@@ -49,7 +51,7 @@ The maximum length of the URL is 30 symbols. To visualize a tooltip with the ent
 
 - **Server Got Request**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 
-The **Tracked Response Timings** provides the following options:
+The **Tracked Response Timings** provide the following options:
 
 - **Server Begin Response**&mdash;The time (in milliseconds) between the current and the previous response event. The timestamp that indicates when the event happened is available in the [**Request Details**](#response-details) widget.
 
@@ -61,7 +63,7 @@ The **Tracked Response Timings** provides the following options:
 
 - **Client Done Response** &mdash;The time (in milliseconds) between the current and the previous response event. The timestamp that indicates when the event happened is available in the [**Request Details**](#response-details) widget.
 
-Under the list of session lines, you will find the **Request** (light blue) and **Response** (orange) footers with total timings in milliseconds (**ms**) or seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the **Live Traffic** list, the displayed time in the **Request** and **Response** footers is the total time taken for all five selected requests or responses.
+Under the list of session lines, you will find the **Request** (light blue) and **Response** (orange) footers with total timings in milliseconds (**ms**) or seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the **Live Traffic** list, the displayed time in the **Request** and **Response** footers is the total time for all five selected requests or responses.
 
 ![Timings widget](../images/overview/overview-timings.png)
 
@@ -69,7 +71,7 @@ Under the list of session lines, you will find the **Request** (light blue) and 
 
 The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and is presented with a URL, which corresponds to the URL column in [the **Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list), and a chart that shows the sizes of the headers and the body of the Request and Response, each included in a single chart.
 
-The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL, click the three dots at the end of the wrapped URL.
+The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
 **Tracked session sizes** Provides the following options:
 
@@ -131,7 +133,7 @@ The **Request Details** widget contains a table with the following information:
 
 - **Client IP**&mdash;Indicates the client IP that sent this Request. The IP will often show the loopback address (`0.0.0.0`), but it will be different if multiple computers on the network are pointed to a single Fiddler Everywhere instance.
 
-- **Remote IP**&mdash;Indicates the IP address of the server used for this Request.
+**Remote IP**&mdash;Indicates the server's IP address used for this Request.
 
 - **Protocol**&mdash;The protocol type (HTTP or HTTPS) used by the Session.
 
