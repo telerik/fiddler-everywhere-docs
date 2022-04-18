@@ -85,3 +85,5 @@ Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. N
 - [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
 - [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})
 - [Filtering Traffic]({%slug how-to-filter-traffic%})
+- [Live Traffic Section in details]({%slug web-sessions-list%})
+- [Inspectring Server Certificates]({%slug fe-cert-details%})

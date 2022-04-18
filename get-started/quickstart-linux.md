@@ -152,6 +152,10 @@ That was it! Now you are ready to dive more deeply into Fiddler Everywhere and t
 
 ## Next Steps
 
+* [Configuring Fiddler Everywhere on Fedora, CentOS, or RedHat]({%slug fiddler-fedora-centos%})
+* [Configuring Fiddler Everywhere on XFCE]({%slug fiddler-xfce%})
+* [Creating PEM certificate]({%slug how-to-create-pem%})
+* [Setting Up the Root Certificate for Electron Applications on Ubuntu]({%slug ubuntu-ca-electron%})
 * [Sharing captured sessions with collaborators]({% slug collaboration-get-started %})
 * [Creating API requests]({% slug composer-get-started %})
 * [Grouping the API requests in collections]({% slug composer-collections-get-started %})

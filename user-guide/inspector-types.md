@@ -9,7 +9,7 @@ previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide
 
 # Inspectors Tab
 
-The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the HTTP(S) sessions that are selected from the **Live Traffic** list. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), a special [**WebSocket inspectors**](#websocket-inspectors) tan renders, which display the connection handshake details, messages, and each message content and metadata.
+The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the HTTP(S) sessions that are selected from the **Live Traffic** list. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), a special [**WebSocket inspectors**](#websocket-inspectors) tan renders, which display the connection handshake details, messages, and each message content and metadata.  For secure connections, Fiddler Everywhere can also show detailed [server certificate information](#server-certificate-details).
 
 The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide a number of features among which:
 
@@ -199,3 +199,11 @@ The **Metadata inspector** contains timestamps and masking information about the
 The **Message Inspector** contains the non-masked message content in plain text or JSON (depending on the message format).
 
 ![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
+
+## Server Certificate Details
+
+The Response Inspectors in Fiddler Everywhere version 3.2.0 and above contain [indicators and notifications]({%slug web-sessions-list%}#certificate-indicators) that show if a server certificate is valid, expiring, or causes errors. 
+
+![Certificate note](../images/livetraffic/certs/certficate-valid-note.png)
+
+[Learn more on how to inspect and use the certificate details with Fiddler Everywhere here...]({%slug fe-cert-details%})

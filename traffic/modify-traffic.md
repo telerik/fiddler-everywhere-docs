@@ -33,5 +33,7 @@ This approach enables you to modify an existing request in the same way your app
 
 ## Additional Resources
 
+- [Compose Request with Basic Authentication]({%slug basic-authentication-with-fiddler-everywhere%})
+- [Compose SOAP Request]({%slug fiddler-composer-soap%})
 - [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
 - [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})

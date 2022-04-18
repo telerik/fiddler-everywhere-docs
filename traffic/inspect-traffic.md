@@ -38,3 +38,5 @@ Inspecting sessions is often done with teammates or external collaborators. Shar
 - [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
 - [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})
 - [Filtering Traffic]({%slug how-to-filter-traffic%})
+- [Live Traffic Section in details]({%slug web-sessions-list%})
+- [Inspectring Server Certificates]({%slug fe-cert-details%})
