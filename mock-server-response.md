@@ -36,3 +36,7 @@ The **Rules** tab can be a powerful ally in testing various complex scenarios wi
 - [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
 - [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).
+- [Using Predefined Actions]({%slug fiddler-ar-actions%})
+- [Understanding Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
+- [Creating Manual HTTP Responses]({%slug using-custom-responses%})
+
