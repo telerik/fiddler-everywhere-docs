@@ -28,7 +28,7 @@ To compare traffic through the **Live Traffic** list:
     ![Compare Sessions tab](../images/livetraffic/compare/compare-tab-001.png)
 
 
-Fiddler Everywhere loads both sessions side-by-side with the session with a lower ID to the left and the session with the higher ID to the right. The differences are highlighted in the session inspectors with a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session.
+Fiddler Everywhere loads both sessions side-by-side with the session with a lower ID to the left (primary session) and the session with the higher ID to the right (secondary session). The differences are highlighted in the session inspectors with a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session.
 
 ## Additional Resources
 
