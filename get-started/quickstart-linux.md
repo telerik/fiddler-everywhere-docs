@@ -152,6 +152,7 @@ That was it! Now you are ready to dive more deeply into Fiddler Everywhere and t
 
 ## Next Steps
 
+* [Learn more about the capturing options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
 * [Configuring Fiddler Everywhere on Fedora, CentOS, or RedHat]({%slug fiddler-fedora-centos%})
 * [Configuring Fiddler Everywhere on XFCE]({%slug fiddler-xfce%})
 * [Creating PEM certificate]({%slug how-to-create-pem%})

@@ -428,6 +428,19 @@ Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-w
 
 The context menu for the **Live Traffic** exposes actions that you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press **Control** and mouse-click (macOS).
 
+- [Editing in the Composer](#editing-in-the-composer) (**Edit in Composer**)
+- [Saving](#saving) (**Save**)
+- [Sharing](#sharing) (**Share**)
+- [Exporting](#exporting) (**Export**)
+- [Removing](#removing) (**Remove**)
+- [Commenting](#commenting) (**Comment**)
+- [Marking](#marking) (**Mark**)
+- [Replaying](#replaying) (**Replay**)
+- [Selecting](#selecting) (**Select**)
+- [Copying](#copying) (**Copy**)
+- [Comparing](#comparing) (**Compare**)
+- [Adding New Rules](#adding-new-rules) (**Add New Rule**)
+
 ![Live Traffic context menu](../images/livetraffic/websessions/websessions-list-context-menu.png)
 
 ### Editing in the Composer
@@ -559,6 +572,12 @@ The following example demonstrates how to the full information.
 #   RESULT  PROTOCOL    HOST    URL METHOD  BODY    CACHING CONTENT-TYPE    PROCESS COMMENTS
 277 200 HTTP    0.0.0.0:4000    /fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png   GET 207,094 private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate   image/png; charset=utf-8        
 ```
+
+### Comparing
+
+Select two sessions and use the **Compare** context menu option to load the **Compare Sessions** tab. This feature allows you to compare precisely two sessions, and the option will be inactive if more than two sessions are selected.
+
+[Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%})
 
 ### Adding New Rules
 
