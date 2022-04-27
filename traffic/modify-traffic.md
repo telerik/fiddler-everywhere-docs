@@ -17,7 +17,7 @@ To load and modify a session through the **Composer**:
 
 1. Set **Live Traffic** to **Capturing** and make the request. As a result, the session is captured and displayed in the **Live Traffic** list.
 
-1. Select the desired session and right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing the **E** key.
+1. Select the desired session and right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing the `E` key.
 
     ![Edit in Composer](../images/composer/edit-in-composer.png)
 
@@ -33,7 +33,7 @@ This approach enables you to modify an existing request in the same way your app
 
 ## Additional Resources
 
-- [Compose Request with Basic Authentication]({%slug basic-authentication-with-fiddler-everywhere%})
-- [Compose SOAP Request]({%slug fiddler-composer-soap%})
+- [Composing Requests with Basic Authentication]({%slug basic-authentication-with-fiddler-everywhere%})
+- [Composing SOAP Requests]({%slug fiddler-composer-soap%})
 - [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
 - [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})
