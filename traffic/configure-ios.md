@@ -79,4 +79,4 @@ The later versions of the iOS simulators, which are accessible through XCode, us
 
 Now you can immediately monitor HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere.
 
->tip Once you're done debugging, remove the WiFi proxy from your iOS device.
+>tip When you've finished debugging, remove the WiFi proxy from your iOS device.
