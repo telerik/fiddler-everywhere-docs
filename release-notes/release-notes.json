@@ -1,5 +1,55 @@
 [
     {
+        "version": "3.2.0",
+        "title": "Fiddler Everywhere v3.2.0",
+        "date": "April 28, 2022",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "[Beta Feature] Compare Traffic - option to compare sessions from the same tab. Select two sessions and choose \"Compare\" from the context menu"
+                    },
+                    {
+                        "title": "Add server certificate validation and information in the live sessions list and response inspectors. Click the certificate label in the response inspector to see detailed information about it"
+                    },
+                    {
+                        "title": "The certificate validation will show warnings for server certificates that will expire soon"
+                    },
+                    {
+                        "title": "Allow matching a rule only for a specific number of times. After the match count is reached, the rule is automatically disabled"
+                    },
+                    {
+                        "title": "Show a tooltip with the full URL or path when you hover over it in the session inspectors and composer collections tree"
+                    },
+                    {
+                        "title": "Improve the overview tab with session duration and size totals"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Improve app performance when importing multiple session archives at once"
+                    },
+                    {
+                        "title": "Double clicking a session in the sessions list will not automatically select the best inspectors in some cases"
+                    },
+                    {
+                        "title": "Sometimes the login page will not show an error notification if login fails"
+                    },
+                    {
+                        "title": "Fix session capturing with some specific proxy configurations using NTLM authentication"
+                    },
+                    {
+                        "title": "Adding a new rule action will not automatically select it"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.1.1",
         "title": "Fiddler Everywhere v3.1.1",
         "date": "April 05, 2022",
