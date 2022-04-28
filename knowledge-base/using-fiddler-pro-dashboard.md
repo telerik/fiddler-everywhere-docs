@@ -39,7 +39,7 @@ New users can purchase the Fiddler Everywhere Pro subscription plan in the follo
 
 1. Open the Fiddler Everywhere client and click the **Buy Now** button on the landing page. As a result, the [Fiddler Dashboard](https://dashboard.getfiddler.com) page will be opened. Alternatively, directly open [https://dashboard.getfiddler.com](https://dashboard.getfiddler.com).
 
-    New users only can opt for the **Start Free Trial** button and activate a 30-day trial. However, if you are an existing user with an expired trial, go to the next step.
+    New users only can opt for the **Start Free Trial** button and activate a trial. However, if you are an existing user with an expired trial, go to the next step.
 
 1. Navigate [to the **Plans** page](https://dashboard.getfiddler.com/plans) and select the desired Fiddler product.
 1. Click **Purchase Plan** to proceed to the **Order Details** page. The **Order Details** page presents you with the option to choose between annual vs. monthly payments, adding additional subscription seats, and adding promotional coupons. By default, each plan activates a single seat.
