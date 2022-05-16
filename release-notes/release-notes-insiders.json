@@ -5,19 +5,14 @@
         "date": "May 16, 2022",
         "items": [
             {
-                "type": "New",
+                "type": "Fixed",
                 "entries": [
                     {
                         "title": "Show the full session URL in the request inspectors badges instead of just the path"
                     },
                     {
                         "title": "Improve scrolling performance of sessions grid"
-                    }
-                ]
-            },
-            {
-                "type": "Fixed",
-                "entries": [
+                    },
                     {
                         "title": "Small UI glitches in the rules editor and advanced filters dialog"
                     },
