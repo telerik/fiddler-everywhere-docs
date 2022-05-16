@@ -1,5 +1,40 @@
 [
     {
+        "version": "3.2.1-insiders",
+        "title": "Fiddler Everywhere v3.2.1",
+        "date": "May 16, 2022",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Show the full session URL in the request inspectors badges instead of just the path"
+                    },
+                    {
+                        "title": "Improve scrolling performance of sessions grid"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Small UI glitches in the rules editor and advanced filters dialog"
+                    },
+                    {
+                        "title": "Possible app exception when saving or exporting sessions while also capturing new sessions"
+                    },
+                    {
+                        "title": "Composer tutorial sometimes not starting at the correct element"
+                    },
+                    {
+                        "title": "Disappearing toolbar buttons when resizing the application window in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.2.0-insiders",
         "title": "Fiddler Everywhere v3.2.0",
         "date": "April 28, 2022",
