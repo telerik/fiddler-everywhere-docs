@@ -10,15 +10,18 @@ position: 35
 
 >tip The **Compare Sessions (BETA)** feature is under active development and subject to additional changes and improvements in future releases.
 
+
+## Comparing Sessions
+
 Fiddler Everywhere provides a comparing option for detailed differentiation of two captured sessions.
 
-To compare traffic through the **Live Traffic** list:
+To compare sessions from the **Live Traffic** list:
 
 1. Set **Live Traffic** to **Capturing** and make the requests. As a result, the sessions are captured and displayed in the **Live Traffic** list.
 
 1. Select two sessions that you want to compare.
 
-1. Select the **Compare** option from the context menu and choose the **Compare in Fiddler Everywhere** nested option.
+1. Select the **Compare** option from the context menu and choose the **Compare in Fiddler Everywhere** nested option. Note that the **Compare** option is active only when **two** sessions are selected.
     
     ![Compare through the context menu](../images//livetraffic/compare/compare-context-menu.png)
 
@@ -27,7 +30,20 @@ To compare traffic through the **Live Traffic** list:
     ![Compare Sessions tab](../images/livetraffic/compare/compare-tab-001.png)
 
 
-Fiddler Everywhere loads both sessions side-by-side with the session with a lower ID to the left (primary session) and the session with the higher ID to the right (secondary session). The differences are highlighted in the session inspectors by a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session.
+Fiddler Everywhere loads both sessions side-by-side with the session with a lower ID to the left (named **Group 1**) and the session with the higher ID to the right (named **Group 2**). The differences are highlighted in the session inspectors by a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session. Additional sessions can be added to both groups allowing simultaneously to compare multiple sessions.
+
+
+## Adding Sessions to the Compare Groups
+
+You can add more sessions to the compare groups through the context menu.
+
+1. Set **Live Traffic** to **Capturing** and make the requests. As a result, the sessions are captured and displayed in the **Live Traffic** list.
+
+1. Select one or more sessions that you want to compare.
+
+1. Select the **Add to compare group** option from the context menu and select the compare group where the session should be added.
+
+    ![Add to compare group](../images/livetraffic/compare/compare-context-menu-add-to-group.png)
 
 ## Additional Resources
 

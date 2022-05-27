@@ -37,6 +37,7 @@ The **Live Traffic** toolbar provides the following functionalities:
 - [Saving](#saving) (**Save**)
 - [Sharing](#sharing) (**Share**)
 - [Searching](#searching) (**Search**)
+- [Toggling Layout](#toggling-layout)(**Toggle Layout Change**)
 
 ### Streaming
 
@@ -126,6 +127,19 @@ To share a session through the toolbar:
 ### Searching
 
 To search for specific values in the URL and the headers of all sessions, use the **Search** text input. The search action will immediately filter and show all sessions, which contain the search terms.
+
+
+### Toggling Layout
+
+The last icon on the right side of the toolbar presents an option to restructure the foremost Fiddler Everywhere layout structure for the [**Live Traffic List**](#live-traffic-list) and the [**Inspectors**]({%slug inspector-types%}). The layout change option is available for the **Live traffic** tab, comparison tabs, and saved sessions tabs. The layout options are as follows:
+
+- (Default layout) **Live Traffic List** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
+- (Alternative layout) **Live Traffic List** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
+
+
+>tip You can collpase the side-panels ([**Sessions**]({%slug saved-sessions-tab%}) and [**Requests**]({%slug saved-requests-tab%})) and toggle the main layout to optimize your working space.
+
+![Fiddler Everywhere with collapsed side panels and toggled layout](../images/livetraffic/websessions/websessions-list-all-toggled.png)
 
 ## Live Traffic List
 
@@ -398,31 +412,26 @@ To create a custom sorting order, click the desired column. For example, click t
 
 Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter** and **Columns** submenus.
 
-The **Filter** submenu enables you to apply filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or through the global [**Clear All Filters** button](#clear-all-filters).
+The **Filter** submenu enables you to apply filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or through the global [**Clear All Filters** button](##clearing-all-filters).
 
 ![Filter context submenu](../images/livetraffic/columns/dots-filter.png)
-
 
 Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
 
 - **URL**
-
 - **Result**
-
 - **Method**
-
 - **Process**
-
 - **Remote IP**
-
 - **Body Size**
-
 - **Comments**
 
 Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
 
 ![Columns context submenu](../images/livetraffic/columns/dots-columns.png)
 
+
+To create more complex filtering rules, use the [**Advanced Filters**](#advanced-filters)
 
 ## Context Menu Options
 
@@ -575,7 +584,7 @@ The following example demonstrates how to the full information.
 
 ### Comparing
 
-Select two sessions and use the **Compare** context menu option to load the **Compare Sessions** tab. This feature allows you to compare precisely two sessions, and the option will be inactive if more than two sessions are selected.
+Select two sessions or group more sessions and use the **Compare** context menu option to load the **Compare Sessions** tab.
 
 [Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%})
 
