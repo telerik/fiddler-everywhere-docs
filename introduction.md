@@ -68,9 +68,11 @@ Fiddler Everywhere enables you to also capture and inspect traffic on devices ru
 * [Capturing and Inspecting Traffic on iOS]({% slug capture-mobile-ios-traffic %})
 * [Capturing and Inspecting Traffic on Android]({% slug capture-mobile-android-traffic %})
 
-### Styling Options and MOdern Layout
+### Styling Options and Modern Layout
 
-Fiddler Everywhere delivers a modern, intuitive UI with collpasible panels, [layout reorganization options]({%slug web-sessions-list%}#toggling-layout) and a set of popular light and dark themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
+
+Fiddler Everywhere delivers a modern, intuitive UI with collapsible panels, [layout reorganization options]({%slug web-sessions-list%}#toggling-layout), and a set of popular light and dark themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
+
 
 ## Trial Version 
 
