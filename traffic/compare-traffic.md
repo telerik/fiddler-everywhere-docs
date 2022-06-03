@@ -18,15 +18,10 @@ Fiddler Everywhere provides a comparing option for detailed differentiation of t
 To compare sessions from the **Live Traffic** list:
 
 1. Set **Live Traffic** to **Capturing** and make the requests. As a result, the sessions are captured and displayed in the **Live Traffic** list.
-
 1. Select two sessions that you want to compare.
-
 1. Select the **Compare** option from the context menu and choose the **Compare in Fiddler Everywhere** nested option. Note that the **Compare** option is active only when **two** sessions are selected.
-    
-    ![Compare through the context menu](../images//livetraffic/compare/compare-context-menu.png)
-
+    ![Compare through the context menu](../images/livetraffic/compare/compare-context-menu.png)
 1. Inspect both sessions in a new **Compare Sessions (BETA**) tab.
-
     ![Compare Sessions tab](../images/livetraffic/compare/compare-tab-001.png)
 
 
@@ -38,12 +33,21 @@ Fiddler Everywhere loads both sessions side-by-side with the session with a lowe
 You can add more sessions to the compare groups through the context menu.
 
 1. Set **Live Traffic** to **Capturing** and make the requests. As a result, the sessions are captured and displayed in the **Live Traffic** list.
-
 1. Select one or more sessions that you want to compare.
-
 1. Select the **Add to compare group** option from the context menu and select the compare group where the session should be added.
-
     ![Add to compare group](../images/livetraffic/compare/compare-context-menu-add-to-group.png)
+
+
+## Comparing Options
+
+The **Compare Sessions (BETA)** tab provides the following options to customize your comparing criteria.
+
+- **Match sessions by**&mdash;Highlights unmatched sessions with default criteria set to match by **URL**. The possible match options are as follows:
+    - **URL** match to highlight sessions with different URLs.
+    - **ID** match where ID is the Fiddler Everywhere unique identificator for each captured session.
+    - **Full** will match only when both session's responses and requests are identical. This is usually possible only when used alongside **ignore Headers** and all time-related headers are stripped off.
+
+**Ignore Headers**&mdash;You can use the popup to create an ignore list of specific requests and response headers from the matching.
 
 ## Additional Resources
 

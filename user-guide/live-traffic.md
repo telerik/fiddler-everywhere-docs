@@ -51,9 +51,7 @@ To toggle between the buffering and the streaming mode, click the **Stream** but
 
 ### Advanced Filters
 
-Use the **Advanced Filters** to apply filters based on the **Request** and **Response** headers. Only sessions that cover the filter criteria will appear in the **Live Traffic** list.
-
-The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
+Use the **Advanced Filters** to apply filters based on the **Request** and **Response** headers. Only sessions that cover the filter criteria will appear in the **Live Traffic** list. The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
 
 Set the advanced filters as follows:
 
@@ -63,6 +61,7 @@ Set the advanced filters as follows:
     - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
     - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
     - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
+    >tip Learn more about the available [**match conditions**]({%slug rules-general%}#conditions), which apply for both in the advanced filters and rule creation.
 1. Add one or more conditions based on the HTTP Request and Response headers and provide logical operators.
 1. Click **Apply** to close the **Advanced Filters** and activate the newly created filter.    
 
@@ -430,8 +429,7 @@ Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-w
 
 ![Columns context submenu](../images/livetraffic/columns/dots-columns.png)
 
-
-To create more complex filtering rules, use the [**Advanced Filters**](#advanced-filters)
+To apply more complex filtering rules, use the [**Advanced Filters**](#advanced-filters).
 
 ## Context Menu Options
 
@@ -448,6 +446,7 @@ The context menu for the **Live Traffic** exposes actions that you can apply for
 - [Selecting](#selecting) (**Select**)
 - [Copying](#copying) (**Copy**)
 - [Comparing](#comparing) (**Compare**)
+- [Adding Sessions to Compare Groups](#adding-sessions-to-compare-groups) (**Add to compare group**)
 - [Adding New Rules](#adding-new-rules) (**Add New Rule**)
 
 ![Live Traffic context menu](../images/livetraffic/websessions/websessions-list-context-menu.png)
@@ -587,6 +586,13 @@ The following example demonstrates how to the full information.
 Select two sessions or group more sessions and use the **Compare** context menu option to load the **Compare Sessions** tab.
 
 [Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%})
+
+### Adding Sessions to Compare Groups
+
+Add sessions to compare groups through the **Add to compare groups**. This functionality allows you to add and inspect more sessions in the **Compare Sessions** tab.
+
+[Learn more on how to work with compare groups here...]({%slug fe-compare-sessions%}#adding-sessions-to-the-compare-groups)
+
 
 ### Adding New Rules
 
