@@ -17,14 +17,14 @@ res_type: kb
 
 ## Description
 
-The Java Virtual Machine (JVM) has its own proxy configuration settings. How can I export the Fiddler trust certificate for handling HTTPS traffic and set up the JVM to respect the Fiddler proxy?
+The Java Virtual Machine (JVM) has its proxy configuration settings. How can I export the Fiddler trust certificate for handling HTTPS traffic and set up the JVM to respect the Fiddler proxy?
 
 ## Solution
 
-1. [Export the Fiddler Everywhere root certificate]({%slug decrypt-https-traffic%}#export-root-certificate).
+1. [Export the Fiddler Everywhere root certificate]({%slug decrypt-https-traffic%}).
 1. Create a JVM keystore by using the exported certificate and [the keytool application](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html). Note that you will need admin access rights to use the keytool application.
 
-  The following command prompts you to create a password and then outputs `FiddlerKeystoreFile` in the pre-set export path.
+  The following command prompts you to create a password and outputs `FiddlerKeystoreFile` in the pre-set export path.
 
     ```Java
     %JAVA_HOME%\bin\keytool.exe -import -file <path-to-exported-certificate>\FiddlerRootCertificate.crt -keystore <your-export-path>\FiddlerKeystoreFile -alias Fiddler
