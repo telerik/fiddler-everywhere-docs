@@ -45,19 +45,21 @@ To configure real iOS devices to work alongside a Fiddler Everywhere host, refer
 
 1. Scroll to the bottom and choose **Configure Proxy** > **Manual**.
 
-1. In the **Server** field, type your IP address&mdash;for example, 192.168.0.101.
+1. In the **Server** field, type your Fiddler Everywhere host IP address&mdash;for example, 192.168.0.101.
 
 1. Type the Fiddler Everywhere listening port (8866 by default) in the **Port** field. Tap **Save**.
 
     >tip With the current setup, you can capture non-secure HTTP traffic. However, if you try to open any HTTPS website, you'll get the "This site's security certificate is not trusted!" error. To fix this issue, trust the Fiddler root certificate.
 
-1. Open a browser on the iOS device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere.
+1. Open a browser on the iOS device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere. The address is accessible only when the Fiddler Everywhere host has the Capturing mode turned on.
 
 1. Click the Fiddler root certificate link to download it.
 
 1. On your iOS device, open **General** and install the certificate through **Profile Downloaded**. Note that this option will appear only after the certificate is downloaded.
 
 1. (For iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **DO_NOT_TRUST_FiddlerRoot** certificate. Note that you will see the **DO_NOT_TRUST_FiddlerRoot** certificate only after completing the previous step.
+
+The last step is crucial, and HTTPS browsing will fail if the certificate is not fully trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
 
 
 ## Configure the iOS Simulator
