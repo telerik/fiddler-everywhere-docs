@@ -17,21 +17,21 @@ To save sessions to the **Sessions** list, use the [**Save**]({%slug web-session
 
 ## Working with Saved Sessions
 
-You can select, inspect, modify, and share with collaborators previously saved sessions. The saved session entries can be saved locally or in the cloud. Sharing a session with a collaborator is done automatically when you upload the saved session entry to the cloud.
+You can select, inspect, modify, and share with collaborators previously saved sessions. The saved session entries can be saved locally or in the cloud. Sharing a session with a collaborator is automatically done when you upload the saved session entry to the cloud.
 
-You can apply a number of actions to a saved session entry:
+You can apply several actions to a saved session entry:
 
 - To select a saved session entry from the **Sessions** list, single-click it.
 - To load the [context menu](#sessions-context-menu) of a selected session entry, right-click it. The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
 - To encrypt and protect your session, set a password. The context menu provides options for setting, changing, and removing passwords for the saved session entry.
-- To open a saved session entry from the **Sessions** list in a new tab, double-click it. For encrypted sessions, only users with knowledge of the password will be able to open the session entry.
+- To open a saved session entry from the **Sessions** list in a new tab, double-click it. For encrypted sessions, only users with knowledge of the password can open the session entry.
 - Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 - Use the UI buttons at the very top to [**Import**](#import-sessions) sessions archives or to access previously [**Shared Sessions**](#shared-sessions-list) entries.
 
 
 ## Sharing Sessions
 
-To share captured traffic with other collaborators, first save the session in the cloud. Note that sessions held locally will be transferred to the cloud if you use the share functionalities. For encrypted sessions, only users with knowledge of the password will be able to open the session entry.
+To share captured traffic with other collaborators, first, save the session in the cloud. Note that sessions held locally will be transferred to the cloud if you use the share functionalities. For encrypted sessions, only users with knowledge of the password can open the session entry.
 
 Fiddler Everywhere provides UI solutions for sharing and collaboration.
 
@@ -43,9 +43,9 @@ To share a selected session:
 1. Click the **Share** button to the right of the entry name.
 1. When the **Share Sessions** prompt window appears, enter a valid email (mandatory) and notes (optional). Click **Share**.
 
-### Sharing Loaded Saved Session
+### Sharing Saved Session
 
-To share a loaded saved session:
+To share a saved session:
 
 1. Double-click a saved session entry from the **Sessions** list.
 1. The session entry opens in a new tab. Click the **Share** button from the toolbar.
@@ -63,44 +63,52 @@ The **Delete** button located to the right of the selected entry removes the cho
 
 ## Sessions Context Menu
 
-Each session provides commands that can be accessed through its context menu, or with keyboard shortcuts.
+Each session provides commands that can be accessed through its context menu or keyboard shortcuts.
 
-![Saved sessions context menu](../images/sessions/sessions-shared-context.png)
+![Saved sessions context menu](../images/sessions/compare/sessions-snapshots-compare-context-menu.png)
 
 ### Opening
 
-The **Open** option will load the selected session in the **Live Traffic** list; can be accessed with the keyboard by pressing `Cmd`+`Enter` (on Mac), or `Enter` (on Windows).
+The **Open** option will load the selected session in the **Live Traffic** list; It can be accessed with the keyboard by pressing `Cmd`+`Enter` (on Mac) or `Enter` (on Windows).
 
 ### Exporting
 
-The **Export** option prompts the **Export** windows. The session can be exported to various file formats such as SAZ, HTTPArchive, WCATScript, cURL Script, RAW, and more; can be accessed with the keyboard by pressing `Cmd`+`E` (on Mac), or `Ctrl`+`E` (on Windows).
+The **Export** option prompts the **Export** windows. The session can be exported to various file formats such as SAZ, HTTPArchive, WCATScript, cURL Script, RAW, and more; It can be accessed with the keyboard by pressing `Cmd`+`E` (on Mac), or `Ctrl`+`E` (on Windows).
 
 ### Renaming
 
-The **Rename** option allows you to rename the selected session. Available only to the session owner; can be accessed with the keyboard by pressing `F2` (on Mac), or `F2` (on Windows).
+The **Rename** option allows you to rename the selected session. Available only to the session owner; It can be accessed with the keyboard by pressing `F2` (on Mac) or `F2` (on Windows).
 
-### Sharing
-
-The **Share** option prompts a window to appear that allows you to add the emails of the users with whom you want to share the session with. The sharing option is available only to the session owner; can be accessed with the keyboard by pressing `Cmd`+`Shift`+`=` (on Mac), or `Ctrl`+`Shift`+`=` (on Windows).
 
 ### Deleting
 
-The **Delete** option removes the session from the **Sessions** list; can be accessed with the keyboard by pressing `Cmd`+`Back` (on Mac), or `Del` (on Windows).
+The **Delete** option removes the session from the **Sessions** list; It can be accessed with the keyboard by pressing `Cmd`+`Back` (on Mac) or `Del` (on Windows).
+
+### Sharing
+
+The **Share** option prompts a window to appear that allows you to add the emails of the users with whom you want to share the session. The sharing option is available only to the session owner; It can be accessed with the keyboard by pressing `Cmd`+`Shift`+`=` (on Mac) or `Ctrl`+`Shift`+`=` (on Windows).
+
 
 ### Managing Users
 
-The **Manage Users** option allows you to manage the users with which the session is being shared. The feature is available only for session entries that are stored in the cloud and is active only for the session owner.
+The **Manage Users** option allows you to manage the users with which the session is being shared. The feature is available only for session entries that are [saved in the cloud](#saving-in-the-cloud) and is active only for the session owner.
 
 ![manage users icon](../images/sessions/svg-icons/user-friends.svg) - Manage users icon.
 
+
+### Comparing 
+
+The **Compare** option allows you to select and inspect two saved sessions through the **Compare Sessions (BETA)** section. [Learn more on how to compare saved sessions here...]({%slug fe-compare-sessions%}#comparing-saved-sessions)
+
+
 ### Saving in The Cloud
 
-The **Save in the Cloud** option allows you to manage the users with which the session is being shared. The feature is available only for session entries that are locally stored and is active only for the session owner.
+The **Save in the Cloud** option allows you to manage the users with which the session is being shared. The feature is available only for session entries that are locally stored and are active only for the session owner.
 
 
 ### Encrypting 
 
-The **Set Password** option allows you to enable encryption and set a password for the selected session entry. Only users with the knowledge of the password will be able to open the password-protected session. Password-protected session are listed in the **Session** list with a lock icon. For entries that are already password-protected, the context menu provides the options **Change Password** and **Remove Password**.
+The **Set Password** option allows you to enable encryption and set a password for the selected session entry. Only users with the knowledge of the password will be able to open the password-protected session. Password-protected sessions are listed in the **Session** list with a lock icon. For entries that are already password-protected, the context menu provides the options **Change Password** and **Remove Password**.
 
 ![lock icon](../images/sessions/svg-icons/lock.svg) - Password-protected session icon.
 
@@ -113,6 +121,6 @@ The **Set Password** option allows you to enable encryption and set a password f
 
 ## Shared Sessions List
 
-The **Shared Session** button loads a window with the account history of previously shared session entries. Deleted session entries can be restored from here while using the **Download** option.
+The **Shared Session** button loads a window with the account history of previously shared session entries. Deleted session entries can be restored using the **Download** option.
 
 ![Saved sessions import](../images/sessions/saved-sessions-shared-list.png)

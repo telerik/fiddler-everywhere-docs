@@ -11,7 +11,7 @@ previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide
 
 The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the HTTP(S) sessions that are selected from the **Live Traffic** list. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), a special [**WebSocket inspectors**](#websocket-inspectors) tan renders, which display the connection handshake details, messages, and each message content and metadata.  For secure connections, Fiddler Everywhere can also show detailed [server certificate information](#server-certificate-details).
 
-The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide a number of features among which:
+The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide several features among which:
 
 - Great performance for loading large chunks of data.
 - Line IDs to quickly identify and mark a specific portion of the request or response.
@@ -80,7 +80,7 @@ The **Raw Inspector** allows you to view the complete request and response, incl
 
 By default, the request or response will be displayed as received, which means that encoded or compressed content will be in a non-human readable format and received as is. The **Raw Inspector** comes with a special **decode** button (located in the inspector toolbar), decoding encoded content.
 
-The following figure displays encoded raw content with the **decode** button inactive.
+The following figure displays the inactive encoded raw content with the **decode** button.
 
 ![Raw Inspector with encoded content](../images/livetraffic/inspectors/inspectors-raw.png)
 
@@ -90,7 +90,7 @@ The following figure displays decoded raw content with the **decode** button act
 
 ### Preview Inspector
 
-The **Preview Inspector**, available in the **Request** section only, allows you to view the response bodies as an image or an HTML page depending on the response content. The inspector can display the most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, TIFF.
+The **Preview Inspector**, available in the **Request** section only, allows you to view the response bodies as an image or an HTML page, depending on the response content. The inspector can display the most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, and TIFF.
 
 ![Preview Inspector rendering image](../images/livetraffic/inspectors/inspectors-image.png)
 
@@ -118,7 +118,7 @@ The **JSON** inspector interprets the selected request or response body as a Jav
 
 #### XML
 
-The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. If the body can't be interpreted as XML, the tree view will remain empty. Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an __Expand All / Collapse All__ toggle button to expand or collapse all XML tree nodes.
+The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML. Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an __Expand All / Collapse All__ toggle button to expand or collapse all XML tree nodes.
 
 ![XML Inspector](../images/livetraffic/inspectors/inspectors-xml.png)
 
@@ -138,10 +138,12 @@ The **Form Data** inspector provides the following options for copying the param
 
 ## WebSocket Inspectors
 
-The **WebSocket Inspectors** provide the following types of inspecting tools that enable you to inspect different parts of the WebSocket connection:
+The **WebSocket Inspectors** provide the following types of inspecting tools that enable you to examine different parts of a WebSocket connection:
 
 - [Handshake tab](#handshake-tab)
 - [Messages tab](#messages-tab)
+
+![Capturing Websocket traffic](../images/livetraffic/inspectors/websocket-inspectors.png)
 
 ### Handshake Tab
 
@@ -172,7 +174,12 @@ The list of messages is rendered as a grid with multiple columns:
 
 - **Sender**&mdash;Inidicates whether the **Client** or **Server** sent the message.
 
-- **Type**&mdash;Inidicates the type of the message. Te supported values are **Text**, **Binary**, [**Ping**](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.2), or [**Pong**](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.3).
+- **Type**&mdash;Inidicates the type of the message. Te supported values are as follows:
+    * **Text**&mdash;message with text payload.
+    * **Binary**&mdash;message with binary payload.
+    * **Cont.**&mdash;represents a continuation message from a fragmented message. Use the **Unfragment all messages** button to unfragment messages of type **Cont.** and remove them from the **Messages** list.
+    * [**Ping**](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.2).
+    * [**Pong**](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.3).
 
 - **Size**&mdash;The length of the message in bytes.
 
@@ -180,6 +187,18 @@ The list of messages is rendered as a grid with multiple columns:
 
 - **Message Preview**&mdash;The string representation of the message sent/received.
 
+
+#### Messages Toolbar
+
+The top-right corner of the **Messages tab** contains a toolbar with the following functionalities:
+
+- **Search bar** for comprehensive search capabilities within the Websocket messages
+
+- **Unfragment all messages** button to combine all continuation type messages with their original message and remove them from the **Messages** list.
+
+- **Copy all content to clipboard** button that immediately puts all captured messages into the operating system clipboard.
+
+![Messages toolbar](../images/livetraffic/inspectors/websocket-toolbar.png)
 
 #### Metadata inspector
 
@@ -199,6 +218,8 @@ The **Metadata inspector** contains timestamps and masking information about the
 The **Message Inspector** contains the non-masked message content in plain text or JSON (depending on the message format).
 
 ![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
+
+
 
 ## Server Certificate Details
 

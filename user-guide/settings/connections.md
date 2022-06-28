@@ -24,6 +24,8 @@ The **Connections** menu exposes options that allow for granular control over pr
 - **Bypass Fiddler for URLs that starts with:**&mdash;Allows you to add addresses that the Fiddler Everywhere proxy will explicitly bypass.
     A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere]({%slug configure-vpn-fiddler%}). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**.
 
+    >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they won't trust the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) might misbehave or not work.
+
 The following figure displays the startup settings of the **Connections** menu.
 
 ![Act as a system proxy on startup setting](../../images/settings/settings-connections.png)

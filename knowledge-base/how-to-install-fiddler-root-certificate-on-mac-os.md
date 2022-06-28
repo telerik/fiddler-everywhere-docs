@@ -28,9 +28,9 @@ If the automatic installation and enabling of the trust certificate do not work,
 
 1. Open Fiddler Everywhere and go to **Settings** > **HTTPS_** and expand the **Advanced Settings** menu.
 
-1. Click **Export root certificate to Desktop**. As a result, the `FiddlerRootCertificate.crt` file will be created in the **Desktop** folder.
+1. Use the **Export root certificate(DER/Binary format)** option from the drop-down menu. As a result, the `FiddlerRootCertificate.crt` file will be created in the **Desktop** folder.
 
-1. Go to the **Desktop** folder and click `FiddlerRootCertificate.crt`. The Keychain Access application will start and will open the **Certificates** section.
+1. Go to the **Desktop** folder and click `FiddlerRootCertificate.crt`. The Keychain Access application starts and opens the **Certificates** section.
 
 1. Double-click the **DO_NOT_TRUST_FiddlerRoot** certificate to open it.
 

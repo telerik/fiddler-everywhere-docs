@@ -124,6 +124,20 @@ For more information, refer to the following list.
             <td>Search for a specific keyword in the <b>Host</b> column.</td>
         </tr>
         <tr>
+            <td><b>Path</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Search for a specific keyword in the <b>path</b> column.</td>
+        </tr>
+        <tr>
+            <td><b>URL</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Search for a specific keyword in the <b>URL</b> column.</td>
+        </tr>
+        <tr>
             <td><b>Status</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
@@ -213,6 +227,13 @@ For more information, refer to the following list.
             <td>String modifiers</td>
             <td>Search value</td>
             <td>Search for a specific keyword in the <b>explicitly mentioned Cookie</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Certificate Information</b></td>
+            <td>Field name</td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>Search for a specific keyword in the <b>explicitly mentioned certificate field</b>.</td>
         </tr>
         <tr>
             <td><b>Magic String</b></td>

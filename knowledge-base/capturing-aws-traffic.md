@@ -31,14 +31,9 @@ To capture traffic generated from AWS CLI commands, you need to configure the Fi
 
 1. Open the terminal application where the AWS CLI commands will run. Set the terminal application to use the Fiddler Everywhere proxy, as described in [this KB article]({%slug fiddler-macos-terminal%}).
 
-2. Open Fiddler Everywhere and export the `FiddlerRootCertificate.crt` file through **Settings** > **HTTPS** > **Advanced Settings** > **Export root certificate to Desktop**.
+1. Open Fiddler Everywhere and export the `FiddlerRootCertificate.crt` file through **Settings** > **HTTPS** > **Advanced Settings** > **Export root certificate(PEM/ASCII format)** (note that this is **not** the default option from the drop-down menu). The certificate is exrpoted to **~/Desktop** as file with name **FiddlerRootCertificate.pem**.
 
-3. Use the [OpenSSL toolkit](https://www.openssl.org/) to generate `FiddlerRootCertificate.pem` from the exported `FiddlerRootCertificate.crt`. The `~/Desktop/FiddlerRootCertificate.crt` sample path might differ on your side, depending on the used operating system.
-    ```Shell
-    openssl x509 -inform DER -in ~/Desktop/FiddlerRootCertificate.crt -out ~/Desktop/FiddlerRootCertificate.pem
-    ```
-
-4. Use the generated PEM file to set the `AWS_CA_BUNDLE` environment variable. The `AWS_CA_BUNDLE` specifies the path to a certificate bundle to use for HTTPS certificate validation. If defined, this environment variable overrides the value for the profile setting `ca_bundle`.
+1. Use the exported PEM file to set the `AWS_CA_BUNDLE` environment variable. The `AWS_CA_BUNDLE` specifies the path to a certificate bundle to use for HTTPS certificate validation. If defined, this environment variable overrides the value for the profile setting `ca_bundle`.
     ```Shell
     export AWS_CA_BUNDLE=~/Desktop/FiddlerRootCertificate.pem
     ```

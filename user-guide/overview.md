@@ -21,11 +21,11 @@ The **Overview** tab provides options for getting structured information and sta
 
 ## Timings
 
-The **Timings** widget provides a visual representation of the time needed to execute a single session or select multiple sessions. Each Session is listed on a separate line and is presented with a URL that corresponds to the URL column in [the **Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list) and a chart of the request and response timings.
+The **Timings** widget visually represents the time needed to execute a single session or select multiple sessions. Each Session is listed on a separate line and is presented with a URL that corresponds to the URL column in [the **Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list) and a chart of the request and response timings.
 
 The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
-The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the Request, and the orange section of the charts shows timings related to the Response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
+The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the Request, and the orange section of the chart shows timings related to the Response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
 
 **Tracked Request Timings** provides the following options:
 
@@ -35,7 +35,7 @@ The **Timings** chart splits into two main parts&mdash;the blue section of the c
 
 - **TCP Connect Time**&mdash;The time (in milliseconds) required to establish a TCP/IP connection. A value around 21000ms suggests that the target is unreachable, and the Windows OS took 21 seconds to confirm the issue.
 
-- **HTTPS Handshake Time**&mdash;The time (in milliseconds) required to finish an HTTPS handshake. While capturing HTTPS traffic, you will see what the client and the server are using to communicate with Fiddler Everywhere. This can be different from what they would use if the Fiddler Everywhere proxy were not in the middle. To see the CONNECT tunnels without the Fiddler Everywhere interference, disable the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}#capture-https-traffic).
+- **HTTPS Handshake Time**&mdash;The time (in milliseconds) required to finish an HTTPS handshake. While capturing HTTPS traffic, you will see what the client and the server are using to communicate with Fiddler Everywhere. This can be different from what they would use if the Fiddler Everywhere proxy were not in the middle. To see the CONNECT tunnels without the Fiddler Everywhere interference, disable the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}).
 
 - **Client Connected**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 

@@ -37,6 +37,7 @@ The **Live Traffic** toolbar provides the following functionalities:
 - [Saving](#saving) (**Save**)
 - [Sharing](#sharing) (**Share**)
 - [Searching](#searching) (**Search**)
+- [Toggling Layout](#toggling-layout)(**Toggle Layout Change**)
 
 ### Streaming
 
@@ -50,9 +51,7 @@ To toggle between the buffering and the streaming mode, click the **Stream** but
 
 ### Advanced Filters
 
-Use the **Advanced Filters** to apply filters based on the **Request** and **Response** headers. Only sessions that cover the filter criteria will appear in the **Live Traffic** list.
-
-The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
+Use the **Advanced Filters** to apply filters based on the **Request** and **Response** headers. Only sessions that cover the filter criteria will appear in the **Live Traffic** list. The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
 
 Set the advanced filters as follows:
 
@@ -62,6 +61,7 @@ Set the advanced filters as follows:
     - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
     - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
     - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
+    >tip Learn more about the available [**match conditions**]({%slug rules-general%}#conditions), which apply for both in the advanced filters and rule creation.
 1. Add one or more conditions based on the HTTP Request and Response headers and provide logical operators.
 1. Click **Apply** to close the **Advanced Filters** and activate the newly created filter.    
 
@@ -126,6 +126,19 @@ To share a session through the toolbar:
 ### Searching
 
 To search for specific values in the URL and the headers of all sessions, use the **Search** text input. The search action will immediately filter and show all sessions, which contain the search terms.
+
+
+### Toggling Layout
+
+The last icon on the right side of the toolbar presents an option to restructure the foremost Fiddler Everywhere layout structure for the [**Live Traffic List**](#live-traffic-list) and the [**Inspectors**]({%slug inspector-types%}). The layout change option is available for the **Live traffic** tab, comparison tabs, and saved sessions tabs. The layout options are as follows:
+
+- (Default layout) **Live Traffic List** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
+- (Alternative layout) **Live Traffic List** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
+
+
+>tip You can collpase the side-panels ([**Sessions**]({%slug saved-sessions-tab%}) and [**Requests**]({%slug saved-requests-tab%})) and toggle the main layout to optimize your working space.
+
+![Fiddler Everywhere with collapsed side panels and toggled layout](../images/livetraffic/websessions/websessions-list-all-toggled.png)
 
 ## Live Traffic List
 
@@ -398,31 +411,25 @@ To create a custom sorting order, click the desired column. For example, click t
 
 Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter** and **Columns** submenus.
 
-The **Filter** submenu enables you to apply filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or through the global [**Clear All Filters** button](#clear-all-filters).
+The **Filter** submenu enables you to apply filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or through the global [**Clear All Filters** button](##clearing-all-filters).
 
 ![Filter context submenu](../images/livetraffic/columns/dots-filter.png)
-
 
 Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
 
 - **URL**
-
 - **Result**
-
 - **Method**
-
 - **Process**
-
 - **Remote IP**
-
 - **Body Size**
-
 - **Comments**
 
 Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
 
 ![Columns context submenu](../images/livetraffic/columns/dots-columns.png)
 
+To apply more complex filtering rules, use the [**Advanced Filters**](#advanced-filters).
 
 ## Context Menu Options
 
@@ -439,6 +446,7 @@ The context menu for the **Live Traffic** exposes actions that you can apply for
 - [Selecting](#selecting) (**Select**)
 - [Copying](#copying) (**Copy**)
 - [Comparing](#comparing) (**Compare**)
+- [Adding Sessions to Compare Groups](#adding-sessions-to-compare-groups) (**Add to compare group**)
 - [Adding New Rules](#adding-new-rules) (**Add New Rule**)
 
 ![Live Traffic context menu](../images/livetraffic/websessions/websessions-list-context-menu.png)
@@ -575,9 +583,16 @@ The following example demonstrates how to the full information.
 
 ### Comparing
 
-Select two sessions and use the **Compare** context menu option to load the **Compare Sessions** tab. This feature allows you to compare precisely two sessions, and the option will be inactive if more than two sessions are selected.
+Select two sessions or group more sessions and use the **Compare** context menu option to load the **Compare Sessions** tab.
 
 [Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%})
+
+### Adding Sessions to Compare Groups
+
+Add sessions to compare groups through the **Add to compare groups**. This functionality allows you to add and inspect more sessions in the **Compare Sessions** tab.
+
+[Learn more on how to work with compare groups here...]({%slug fe-compare-sessions%}#adding-sessions-to-the-compare-groups)
+
 
 ### Adding New Rules
 
