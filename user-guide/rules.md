@@ -485,3 +485,11 @@ The __Unmatched Requests Passthrough__ option, available in **Settings** > **Rul
 By default, the __Unmatch Requests Passthrough__ option is turned on. Turning it off means that all unmatched requests will start to fail with a __404 (Fiddled)__ response. For example, Fiddler generated a 404 response due to a request not matching the applied rules when the __Unmatch Requests Passthrough__ option is turned off.
 
 ![Unmatched Request](../images/livetraffic/rb/autoresponder-umatched-passnot.png)
+
+
+## Additional Resources
+
+- [Mocking Servers with Fiddler Everywhere]({%slug rulesbuilder-get-started%})
+- [Using Predefined Actions]({%slug fiddler-ar-actions%})
+- [Understanding Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
+- [Creating Manual HTTP Responses]({%slug using-custom-responses%})
