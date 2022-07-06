@@ -1,5 +1,58 @@
 [
     {
+        "version": "3.3.0-insiders",
+        "title": "Fiddler Everywhere v3.3.0",
+        "date": "July 6, 2022",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add new horizontal layout - use the new button at the toolbar in Live Traffic tab to switch between vertical and horizontal layout"
+                    },
+                    {
+                        "title": "[Beta Feature] Compare Traffic - option to compare multiple sessions in groups, including comparison of two saved/shared sessions"
+                    },
+                    {
+                        "title": "Add new match conditions in Rule Builder and Advanced Filters for server certificate properties"
+                    },
+                    {
+                        "title": "Option to export Fiddler root certificate in different formats - Binary, ASCII, PKCS 12"
+                    },
+                    {
+                        "title": "Add an option to combine fragmented WebSocket messages into a single one"
+                    },
+                    {
+                        "title": "Improve modification of request/response body in Rule Builder with bigger area and multiple formats for text highlighting"
+                    },
+                    {
+                        "title": "Add *.apple.com, *.itunes.com and *.mzstatic.com servers to the default bypass list on macOS as they use certificate pinning and cannot be decoded"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Switch between tabs might be slow when inspector shows huge data"
+                    },
+                    {
+                        "title": "Missing progress indicator during session export"
+                    },
+                    {
+                        "title": "Dialog for unsaved changes appears in some cases when app is on sign in screen and user tries to close the app"
+                    },
+                    {
+                        "title": "Saved sessions tutorial step appears on wrong place when left panel is collapsed"
+                    },
+                    {
+                        "title": "Some certificate extension names are not displayed on macOS"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.2.1-insiders",
         "title": "Fiddler Everywhere v3.2.1",
         "date": "May 16, 2022",
