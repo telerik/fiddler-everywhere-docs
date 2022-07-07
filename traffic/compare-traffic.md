@@ -71,10 +71,9 @@ The **Compare Sessions (BETA)** tab provides the following options to customize 
 
 - **Match sessions by**&mdash;Highlights unmatched sessions with default criteria set to match by **URL**. The possible match options are as follows:
     - **URL** match to highlight sessions with different URLs.
-    - **ID** match where ID is the Fiddler Everywhere unique identificator for each captured session.
-    - **Full** will match only when both session's responses and requests are identical. This is usually possible only when used alongside **ignore Headers** and all time-related headers are stripped off.
+    - **Order** match session by their order in ther ID column. The ID is the Fiddler Everywhere unique identificator for each captured session.
 
-    ![Match sessions options](../images/livetraffic/compare/compare-options-match-sessions.png)
+    ![Match sessions popup](../images/livetraffic/compare/compare-options-match-sessions.png)
 
 - **Ignore Headers**&mdash;You can use the popup to create an ignore list of specific requests and response headers from the matching.
     
