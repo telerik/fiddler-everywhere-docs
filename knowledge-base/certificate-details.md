@@ -42,7 +42,7 @@ Each session that successfully establishes secure connections over HTTPS stores 
     * **Validity Period**&mdash;Contains **Issued on** and **Expires on** date fields.
     * **Public Key**&mdash;Contains information about the used **Algorithm**, **Key Size**, **Exponent**, and **Modulus**.
     * **Miscellaneous**&mdash;Different miscellaneous data like **Signature Algorithm**, **Serial Number**, and **Version**.
-    * **Fingerprints**&mdash;Lists the **SHA-256** and ****SHA-1 fingerprints**.
+    * **Fingerprints**&mdash;Lists the **SHA-256** and **SHA-1 fingerprints**.
     * **Extensions**&mdash;Addition information about the certificate ppolicies, constraints, usag, distribution points, etc.
 
 
