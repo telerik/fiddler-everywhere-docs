@@ -192,13 +192,10 @@ The list of messages is rendered as a grid with multiple columns:
 
 The top-right corner of the **Messages tab** contains a toolbar with the following functionalities:
 
-- **Search bar** for comprehensive search capabilities within the Websocket messages
-
 - **Unfragment all messages** button to combine all continuation type messages with their original message and remove them from the **Messages** list.
 
 - **Copy all content to clipboard** button that immediately puts all captured messages into the operating system clipboard.
 
-![Messages toolbar](../images/livetraffic/inspectors/websocket-toolbar.png)
 
 #### Metadata inspector
 
