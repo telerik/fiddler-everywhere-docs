@@ -23,6 +23,7 @@ The Fiddler Everywhere client captures HTTPS traffic and obtains information abo
 
 Fiddler Everywhere version 3.2.0 and above contain [indicators and notifications]({%slug web-sessions-list%}#certificate-indicators) that show if a server certificate is valid, expiring, or causes errors.
 
+Note that certificate information is available only for Live traffic and is not available for saved sessions from the [**Sessions** section]({%slug saved-sessions-tab%}) or for SAZ and other imported files.
 
 ### Extracting Certificate Details
 
@@ -41,7 +42,7 @@ Each session that successfully establishes secure connections over HTTPS stores 
     * **Validity Period**&mdash;Contains **Issued on** and **Expires on** date fields.
     * **Public Key**&mdash;Contains information about the used **Algorithm**, **Key Size**, **Exponent**, and **Modulus**.
     * **Miscellaneous**&mdash;Different miscellaneous data like **Signature Algorithm**, **Serial Number**, and **Version**.
-    * **Fingerprints**&mdash;Lists the **SHA-256** and **SHA-1 fingerprints.
+    * **Fingerprints**&mdash;Lists the **SHA-256** and ****SHA-1 fingerprints**.
     * **Extensions**&mdash;Addition information about the certificate ppolicies, constraints, usag, distribution points, etc.
 
 
