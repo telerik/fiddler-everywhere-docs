@@ -1,5 +1,32 @@
 [
     {
+        "version": "3.3.1-insiders",
+        "title": "Fiddler Everywhere v3.3.1",
+        "date": "July 21, 2022",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Unmatched Requests Passthrough setting is not persisted after a change"
+                    },
+                    {
+                        "title": "Fails to capture traffic in some cases when local machine date format is not English"
+                    },
+                    {
+                        "title": "Opening HAR files with HTTP 3 sessions fails"
+                    },
+                    {
+                        "title": "Compare tab is not visible by default"
+                    },
+                    {
+                        "title": "Composer fails to show response when it is a redirect to a specific URL"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.3.0-insiders",
         "title": "Fiddler Everywhere v3.3.0",
         "date": "July 6, 2022",
