@@ -11,16 +11,16 @@
                         "title": "Unmatched Requests Passthrough setting is not persisted after a change"
                     },
                     {
-                        "title": "Fails to capture traffic in some cases when local machine date format is not English"
+                        "title": "Fails to capture traffic in some cases when the local machine date format is not in English"
                     },
                     {
-                        "title": "Opening HAR files with HTTP 3 sessions fails"
+                        "title": "Opening HAR files with HTTP/3 sessions fails"
                     },
                     {
                         "title": "Compare tab is not visible by default"
                     },
                     {
-                        "title": "Composer fails to show response when it is a redirect to a specific URL"
+                        "title": "Composer fails to show the response when the result is a redirect to a specific URL"
                     }
                 ]
             }
