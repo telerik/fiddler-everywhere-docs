@@ -52,11 +52,11 @@ With Fiddler Everywhere, you can compare previously saved sessions from the [**S
 
 1. Select the **Compare** option from the context menu.
 
-    ![Compare context menu in Sessions section](../images//sessions/compare/sessions-snapshots-compare-context-menu.png)
+    ![Compare context menu in Sessions section](../images/sessions/compare/sessions-snapshots-compare-context-menu.png)
 
-1. Specify the primary and the secondary snapshots you would like to compare. Optionally, choose a [matching option](#comparing-options).
+1. Specify the primary and the secondary sessions you would like to compare. Optionally, choose a [matching option](#comparing-options).
 
-    ![Choose snapshots for comparision](../images//sessions/compare/sessions-snapshots-compare-prompt.png)
+    ![Choose sessions for comparision](../images/sessions/compare/sessions-snapshots-compare-prompt.png)
 
 1. Inspect both sessions in a new **Compare Sessions (BETA**) tab.
 
