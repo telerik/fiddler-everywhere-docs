@@ -25,13 +25,16 @@ Can I use NordVPN alongside Fiddler Everywhere, and what configuration settings 
 You can use the NordVPN and Fiddler Everywhere applications simultaneously, benefiting from all that virtual private networks offer, including testing and investigating possible network, page, and server issues from different world regions. Follow these steps to test your configuration:
 
 
-**Fiddler Everywhere configuration**
 - Start the Fiddler Everywhere application and ensure that you have gone through [the HTTPS capturing configuration setup]({%slug installation%}).
+
 - Enable the **Live Traffic** toggle to start network capturing.
 
-**NordVPN configuration**
 - Start the NordVPN application.
+
 - Go to **Settings > Advanced** and ensure that **Invisibility on LAN** is turned on. This will allow you to see and capture traffic from other devices on the local network.
-![Invisibility mode OFF](../images/kb/nordvpn/nordvpn-invis-off.png)
+
+    ![Invisibility mode OFF](../images/kb/nordvpn/nordvpn-invis-off.png)
+
 - Connect to a selected VPN. At some point, NordVPn will detect and warn you about the existence of the Fiddler Root Certificate. Confirm that you recognize the certificate by using the **Trust** option.
-![Providing complete trust for the Fiddler CA](../images/kb/nordvpn/nordvpn-trust-fe.png)
+
+    ![Providing complete trust for the Fiddler CA](../images/kb/nordvpn/nordvpn-trust-fe.png)
