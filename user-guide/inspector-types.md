@@ -11,7 +11,7 @@ previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide
 
 The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the HTTP(S) sessions that are selected from the **Live Traffic** list. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), a special [**WebSocket inspectors**](#websocket-inspectors) tan renders, which display the connection handshake details, messages, and each message content and metadata.  For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
 
-The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide several features among which:
+The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide several features, among which:
 
 - Great performance for loading large chunks of data.
 - Line IDs to quickly identify and mark a specific portion of the request or response.
@@ -54,7 +54,7 @@ The **Request line** can consist of one or more rows containing name-value pairs
 
 #### Response Headers
 
-Like the HTTP request, every HTTP response begins with plain text headers that describe the result from the request. The first line of the response (the **Status line**) contains the following values:
+Like the HTTP request, every HTTP response begins with plain text headers that describe the result of the request. The first line of the response (the **Status line**) contains the following values:
 
 * The HTTP version&mdash;For example, `HTTP/1.1`.
 * The response status code&mdash;For example, `200`.
@@ -192,6 +192,8 @@ The list of messages is rendered as a grid with multiple columns:
 
 The top-right corner of the **Messages tab** contains a toolbar with the following functionalities:
 
+- **Search** field to filter received WebSocket messages.
+
 - **Unfragment all messages** button to combine all continuation type messages with their original message and remove them from the **Messages** list.
 
 - **Copy all content to clipboard** button that immediately puts all captured messages into the operating system clipboard.
@@ -212,7 +214,7 @@ The **Metadata inspector** contains timestamps and masking information about the
 
 #### Message Inspector
 
-The **Message Inspector** contains the non-masked message content in plain text or JSON (depending on the message format).
+The **Message Inspector** contains the non-masked message content in plain text or JSON (depending on the message format). The inspector has a toolbar that allows you to word-wrap the message content and highlight content through a search term.
 
 ![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
 
