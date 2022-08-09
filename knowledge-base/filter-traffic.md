@@ -17,17 +17,20 @@ res_type: kb
 
 ## Description
 
-
 When the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) is enabled, Fiddler Everywhere sets itself as a system proxy. That means that all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy will be captured and output as session entries in the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list). 
 
-Modern applications are often generating hundreds and even thousands of requests, which might pollute your list with a lot of unwanted information. This article reveals some of the options you can use to filter the captured traffic.
+Modern applications are often generating hundreds and even thousands of requests, which might pollute your list with a lot of unwanted information. This article reveals some of the options you can use to filter the captured traffic or to lower the amount of traffic that is captured.
 
+- [Filter the traffic through column filters](#column-filters)
+- [Filter the traffic through advanced filters](#advanced-filters)
+- [Turn off the global capturing and use a single browser instance](#using-predefined-browser-capturing)
+- [Bypass requests to specific domains from using the Fiddler proxy](#bypassing-the-proxy)
 
 ## Column Filters
 
-Each column from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) has its own [filtering menu]({%slug web-sessions-list%}#filtering-options). Each filter condition contains different logical operations, for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on. Each condition combines with the filter value which, depending on the column type, can be a string, number, or boolean. You can apply up to two filter conditions per each column filter.
+Each column from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) has its own [filtering menu]({%slug web-sessions-list%}#filtering-options). Each filter condition contains different logical operations, for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on. Each condition combines with the filter value, which, depending on the column type, can be a string, number, or boolean. You can apply up to two filter conditions per column filter.
 
-Below, you will find column filters examples and a short description of their use.
+Below, you will find column filter examples and a short description of their use.
 
 ### Filtering by the URL Column
 
@@ -45,14 +48,14 @@ To filter traffic from a specific application, use the **Process** column.
 
 ### Filtering by the Client IP Column
 
-When Fiddler Everywhere captures traffic only from the host machine, the **Client IP** column will always have an identical value which usually is a localhost address such as `:ffff:127.0.0.1`. However, that is not the case when Fiddler captures traffic from multiple hosts, that is, through **Allow remote computers to connect** and when the remote machines are set to follow the Fiddler proxy. Here is where filtering by the **Client IP** column is beneficial because it allows you to filter the traffic that comes from a specific IP.
+When Fiddler Everywhere captures traffic only from the host machine, the **Client IP** column will always have an identical value, usually a localhost address such as `:ffff:127.0.0.1`. However, that is not the case when Fiddler captures traffic from multiple hosts, that is, through **Allow remote computers to connect** and when the remote machines are set to follow the Fiddler proxy. Here is where filtering by the **Client IP** column is beneficial because it allows you to filter the traffic that comes from a specific IP.
 
 ![Filter by Client IP](../images/kb/filters/fcolumn-client-ip.png)
 
 
 ### Filtering by the Remote IP Column
 
-When you filter by a domain name or a specific API endpoint, you can still observe some sessions which contain the filter term and which come from third parties like Google Analytics, click trackers, and so on. You can further restrict the output by explicitly filtering by the **Remote IP** column, which indicates the server IP address that is used for this request.
+When you filter by a domain name or a specific API endpoint, you can still observe some sessions which contain the filter term and which come from third parties like Google Analytics, click trackers, and so on. You can further restrict the output by explicitly filtering by the **Remote IP** column, which indicates the server IP address used for this request.
 
 ![Filter by Remote IP](../images/kb/filters/fcolumn-remote-ip.png)
 
@@ -64,10 +67,11 @@ The **Advanced Filters** toolbar option enables you to apply complex filtering s
 
 The following example demonstrates five filter conditions that match 18 sessions in the current **Live Traffic** tab. The filter is applied when all conditions are satisfied, and each condition does the following:
 - The first condition (`URL` > `contains` > `fiddler-everywhere`) will match when the URL address contains the `fiddler-everywhere` term.
-- The second condition (`Client IP` > `is equal to` > `:ffff:127.0.0.1`) will match only the localhost IP address. The `:ffff:` is a subnet prefix for IPv4 (32 bit) addresses that are placed inside an IPv6 (128 bit) space.
-- The third condition (`Remote IP` > `is equal to` > `::1`) will match only when the request comes from the localhost. The `::1` is the loopback address in IPv6. This specific condition is useful when testing HTTP/HTTPS sessions from a localhost development environment, but it can also be applied to any real-life IP server address.
-- The fourth condition (`Response Body` > `Regular Expression` > `filter|column|ip|url`) will match only a session where the Response Body contains any terms set through the regular expression. The used regex can be interpreted as `regexp/filter|column|ip|url`.
-- The fifth condition (`Process` > `Contains` > `brave`) will match only requests coming from a client application in which the local OS process name contains `brave`.
+- The second condition (`Client IP` > `is equal to` > `:ffff:127.0.0.1`) will match only the localhost IP address. The `:ffff:` is a subnet prefix for IPv4 (32 bit) addresses placed inside an IPv6 (128 bit) space.
+- The third condition (`Status Code` > `is equal to` > `200`) will match only when the status code of the response is 200.
+- The fourth condition (`Response Body` > `Regular Expression` > `filter|ip|url`) will match only a session where the Response Body contains any terms set through the regular expression. The regex can be interpreted as `regexp/filter|ip|url`.
+- The fifth condition (`Process` > `Contains` > `chrome`) will match only requests coming from a client application in which the local OS process name contains `chrome`.
+- The sixth condition (`Remote IP` > `is equal to` > `::1`) will match only when the request comes from the localhost. The `::1` is the loopback address in IPv6. This specific condition is useful when testing HTTP/HTTPS sessions from a localhost development environment, but it can also be applied to any real-life IP server address.
 
 ![Multiple advanced filter conditions](../images/kb/filters/adv-filters.png)
 
@@ -77,4 +81,4 @@ The [predefined browser capturing]({%slug capture-traffic-get-started%}#preconfi
 
 ## Bypassing the Proxy
 
-While bypassing the proxy is not technically related to filtering, requests to specific domains may not be going through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** tab. You can set a list of domains to bypass (not available for processes) through the [**Connections** menu]({%slug connections-submenu%}).
+While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** tab. You can set a list of domains to bypass (not available for processes) through the [**Connections** menu]({%slug connections-submenu%}).
