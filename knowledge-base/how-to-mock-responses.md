@@ -82,10 +82,20 @@ The **Rules Builder** provides more actions for even more sophisticated modifica
 
 #### Update Response Body
 
-The **Update Response Body** action allows you to modify the Response body (while preserving the Response headers and cookies) by setting a new value (**Set Value**), by replacing a specific value (**Find and Replace** or **Regular Expression**), or by explicitly deleting the Response body (**Remove**). The example below demonstrates the usage of **Set Value** alongside a JSON Response inspector.
+The **Update Response Body** action allows you to modify the Response body (while preserving the Response headers and cookies).
 
+The example below demonstrates the usage of **Set Value** with **JSON** Response inspector:
 ![ Update Response Body with Set Value](../images/kb/dat-files/kb-rules-response-body-set-value.png)
 
+##### Method
+The **Method** subaction supports the following options:
+- **Set Value** - setting a new value**
+- **Find and Replace** - replacing a specific value**
+- **Regular Expression** - replacing values with Regex**
+- **Remove** - explicitly deleting the Response body**
+ 
+
+##### Set Value
 The **Set Value** subaction supports the following format editors:
  - Plain text
  - JSON
@@ -96,15 +106,33 @@ The **Set Value** subaction supports the following format editors:
 
 
 #### Update Response Header
+This action allows you to modify a Response header (while preserving the Response body and cookies).
 
-The **Update Response Body** action allows you to modify a Response header (while preserving the Response body and cookies) by setting a new value (**Set Value**, **Add if not present**, **Append to value**, **Regular Expression**), by replacing a specific value (**Find and Replace** or **Regular Expression**), or by explicitly deleting the Response body (**Remove**). The example below demonstrates the usage of **Append to value**.
-
+The example below demonstrates the usage of **Append to value**:
 ![Update Response header with Append to value](../images//kb/dat-files/kb-rules-response-header-append.png)
+
+##### Method
+The **Method** subaction supports the following options:
+- **Set Value** - setting a new value**
+- **Append if not present** - setting a new value only if it doesn't already exist
+- **Append to value** - adding to an existing value
+- **Find and Replace** - replacing a specific value
+- **Regular Expression** - replacing values with Regex
+- **Remove** - explicitly deleting the Response body
 
 
 #### Update Response Cookies
 
-The **Update Response Cookies** action allows you to modify Response cookies (while preserving the Response body and headers) by setting new value (**Set Value**, **Add if not present**, **Append to value**, **Regular Expression**), by replacing a specific value (**Find and Replace** or **Regular Expression**), or by explicitly deleting the Response body (**Remove**).
+The **Update Response Cookies** action allows you to modify Response cookies (while preserving the Response body and headers).
+
+##### Method
+The **Method** subaction supports the following options:
+- **Set Value** - setting a new value
+- **Add if not present** - setting a new value only if it doesn't already exist
+- **Append to value** - adding to an existing value
+- **Find and Replace** - replacing a specific value
+- **Regular Expression** - replacing values with Regex
+- **Remove** - explicitly deleting the Response body
 
 
 >tip The specified Response actions are also available as Request counterparts (**Update Request Headers**, **Update Request Body**, and **Update Request Cookies**).
