@@ -32,8 +32,7 @@ When executing each rule or running a rule on previously saved sessions, **Rules
 **Live Traffic** and **Rules** stick to the following basic guidelines:
 
 - The **Rules** main toggle is available only for the **Live Traffic** section.
-- The **Unmatched Requests Passthrough** is applicable only for ongoing capture through the **Live Traffic** section.
--  If the **Rules** toggle is **ON**, and a selected rule toggle is **ON**, the rule executes for all inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
+- If the **Rules** toggle is **ON**, and a selected rule toggle is **ON**, the rule executes for all inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
 - If the **Rules** toggle is **ON**, and a selected rule toggle is **OFF**, the rule won't execute for all of the inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
 
 **Saved Sessions** and **Rules** stick to the following basic guidelines:
@@ -441,7 +440,6 @@ When using a rule from the **Rules Queue**, take into consideration the followin
 - The **Rules** tab must be enabled for any rule from the queue to be executed.
 - Only **enabled** rules from the queue will be applied on ongoing Live traffic capture.
 - You can explicitly apply a rule for captured traffic by using the **Play** button (executes the rule on current sessions).
-- By default, the [**Unmatched Requests Passthrough**](#unmatched-requests-passthrough) is turned off, and it won't block a request even if the rule condition is not satisfied.
 - The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use **Demote** and **Promote** buttons to change a rule position (and priority) in the queue.
 - Some rules might trigger [a final action](#final-and-non-final-actions), which will stop executing any other rules with lower priority.
 
@@ -473,18 +471,6 @@ The rule options allow you to further interact with the rule:
 - The **Enable/Disable** toggle explicitly enables or disables the rule execution. It is available only for **Live Traffic** sessions and hidden when interacting with saved sessions.
 
 ![Rules tab toolbar](../images/livetraffic/rb/rules-individual-rule.png)
-
-## Unmatched Requests Passthrough
-
-The settings of the **Rules** feature provide options for executing several operations.
-
-The __Unmatched Requests Passthrough__ option, available in **Settings** > **Rules** > **Unmatched Requests**, controls what happens when a session does not match any of the applied rules. The unmatched requests are sent to the server when the option is enabled, usually without interference from the **Rules** tab. When the option is disabled (the checkbox is unchecked), Fiddler will generate a __404 Not Found__ response for any unconditional requests that are not matching the applied rules.
-
-![Unmatched Requests Passthrough](../images/livetraffic/rb/rules-unmacthed-setting.png)
-
-By default, the __Unmatch Requests Passthrough__ option is turned on. Turning it off means that all unmatched requests will start to fail with a __404 (Fiddled)__ response. For example, Fiddler generated a 404 response due to a request not matching the applied rules when the __Unmatch Requests Passthrough__ option is turned off.
-
-![Unmatched Request](../images/livetraffic/rb/autoresponder-umatched-passnot.png)
 
 
 ## Additional Resources
