@@ -57,4 +57,4 @@ Fiddler Everywhere comes with the powerful [**Rules** tab]({%slug rules-general%
         ```
     ![](../images/livetraffic/rb/unmatched-non-pass-except.png)
 
-    When active, the above rule will return 404 for all URLs except the ones that contain **example.com**.
+    When active, the above rule will return the manual response for all URLs except the ones that contain **example.com**.
