@@ -15,7 +15,7 @@ The **Rules** functionality provides options for testing changes to web code wit
 
 The collaboration functionalities allow you to import and export a single rule or set of rules and share rules directly with other Fiddler Everywhere collaborators. Each rule has a different order priority and execution weight which can be easily controlled by promoting or demoting a rule.
 
-The **Rules** tab is available as of version 2.0.0 and later, while previous versions have the **Auto Responder** tab. The capabilities of the functionalities are different&mdash;the **Rule Builder** can change what the servers will receive in terms of requests and responses and given that such rules are applied. The **Auto Responder** is only capable of mocking a server request or response and modifying the local request or response. Therefore, not all rules change the server data.
+The **Rules** tab is available after version 2.0.0 and later, while previous versions had the a**Auto Responder** tab. The capabilities of the functionalities are different&mdash;the **Rule Builder** can change what the servers will receive in terms of requests and responses, given that such rules are applied. The **Auto Responder** is only capable of mocking a server request or response and modifying the local request or response. Therefore, not all rules change the server data.
 
 ![Rules tab](../images/livetraffic/rb/rules-all.png)
 
@@ -34,11 +34,13 @@ When executing each rule or running a rule on previously saved sessions, **Rules
 - The **Rules** main toggle is available only for the **Live Traffic** section.
 - If the **Rules** toggle is **ON**, and a selected rule toggle is **ON**, the rule executes for all inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
 - If the **Rules** toggle is **ON**, and a selected rule toggle is **OFF**, the rule won't execute for all of the inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
+- All HTTP/HTTPS requests that are not matching any of the active rules, will be executed as is without interference from the **Rules** tab. 
+- The application setting **Unmatched Requests Passthrough** was deprecated in version 3.4.0. [Learn how to create it manually through a custom rule...]({%slug rules-unmatched-requests-passthrough%})
 
 **Saved Sessions** and **Rules** stick to the following basic guidelines:
 
 - The **Rules** main toggle is not available for saved sessions (from the **Sessions** list). The toggle will be hidden when a saved session is loaded.
-- **Execute** from the primary **Rules** toolbar will execute all currently selected rules. The result applies for all sessions that are matching the conditions of the rule. If multiple rules are selected, they will be executed in the order of appearance in the **Rules Queue**&mdash;this means that a rule can be overwritten by another rule that comes later in the queue. Some rules are also final, which means that no other rules in the queue will be executed after a final rule
+- **Execute** from the primary **Rules** toolbar will execute all currently selected rules. The result applies to all sessions that match the conditions of the rule. If multiple rules are selected, they will be executed in the order of appearance in the **Rules Queue**&mdash;this means that a rule can be overwritten by another rule that comes later in the queue. Some rules are also final, which means that no other rules in the queue will be executed after a final rule
 - The **Execute** button from a selected rule toolbar will only execute the currently selected rule.
 
 ## Rules Toolbar
@@ -56,7 +58,7 @@ The main toolbar of the **Rules** comes with the following functionalities:
 
 ## Rule Builder
 
-The **Rule Builder** interface enables you to create (throught the **Add New Rule** button) and edit rules (through the **Edit** button of a selected rule). For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
+The **Rule Builder** interface enables you to create (through the **Add New Rule** button) and edit rules (through the **Edit** button of a selected rule). For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
 
 ![Rule Builder Conditions](../images/livetraffic/rb/rules-re-conditions.png)
 
@@ -73,7 +75,7 @@ To add a new rule:
 1. Add one or more conditions. See the [conditions section](#conditions) for more details.
 1. Set how many times the [actions](#actions) will be triggered when the conditions are met:
     - **Any number of times** - The action executes each time the conditions are met.
-    - **Specific number of times** - The action executes **n**-times (user specifies **n** which can be a numerical value between 1 and 65535).
+    - **Specific number of times** - The action executes **n**-times (user specifies **n**, which can be a numerical value between 1 and 65535).
 1. Add one or more actions. See the [actions section](#actions) for more details.
 1. Click **Save** to close the **Rule Editor** and add the newly created rule to the **Rules Queue**.
 
@@ -82,7 +84,7 @@ When creating a rule, take into consideration the following tips:
 - Rules are applied in their order of appearance in the **Rules Queue**. To demote a rule in the queue, use the **Down Arrow**; to promote a rule on the queue, use the **Up Arrow**.
 - You can export selected rules from the queue through the **Export** button from the [**Rules toolbar**](#rules-toolbar).
 - To queue rules based on previously captured traffic, import a `.FARX` file [through the **Import** button]({%slug rules-general%}#import-rules).
-- Each condition and action value corresponding to data from the **Live Traffic** capturing can be auto-completed. This way, you can create rules based on captured sessions on the fly.
+- Each condition and action value corresponding to the **Live Traffic** capturing data can be auto-completed. This way, you can create rules based on captured sessions on the fly.
 
 ### Conditions
 
@@ -246,7 +248,7 @@ For more information, refer to the following list.
 
 ### Actions
 
-When Fiddler Everywhere identifies a request which matches the [**conditions**](#conditions) of the rule, it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with final action type will prevent the execution of all subsequent actions.
+When Fiddler Everywhere identifies a request which matches the [**conditions**](#conditions) of the rule, it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions.
 
 Apart from returning files or predefined responses, a rule can perform the following specific actions:
 
@@ -419,7 +421,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
 
 ### Final and Non-Final Actions
 
-Depending on their behavior, rule actions can be divided into **final** and **non-final**.
+Rule actions can be divided into **final** and **non-final**depending on their behavior.
 
 When you work with final and non-final actions, take into consideration the following insights:
 
@@ -427,13 +429,13 @@ When you work with final and non-final actions, take into consideration the foll
 
 * Final actions are valid only when the rule is matched during the HTTP request.
 
-* If a session is matched with conditions that depend on its response (for example, a response body contains "html"), then any final action in any rule that matched the session will be ignored. The reason for this behavior is that final actions replace the response and, by design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
+* If a session is matched with conditions that depend on its response (for example, a response body contains "HTML"), then any final action in any rule that matches the session will be ignored. The reason for this behavior is that final actions replace the response, and, by design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
 
-* Non-final actions will allow other actions from the same rule or other rules with lower priority, which match the session, to execute.
+* Non-final actions will allow other actions from the same rule or different rules with lower priority, which match the session, to execute.
 
 ## Rules Queue
 
-The **Rules Queue**, also the __Queue Viewer__ or __Queue Rules Viewer__, is a queue of the created rules. The **Rules Queue** allows you to enable or disable, promote or denote, edit, export, import, share, and immediately execute the listed rules.
+The **Rules Queue**, also the __Queue Viewer__ or __Queue Rules Viewer__, is a queue of the created rules. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
 
 When using a rule from the **Rules Queue**, take into consideration the following tips:
 
@@ -445,15 +447,15 @@ When using a rule from the **Rules Queue**, take into consideration the followin
 
 ### Rules Priority
 
-By default, the **Rules Queue** will list all created and imported rules based on their priority. Rules will be executed in the order of their appearance, starting from the first one. When selecting specific rules and using the explicit **Execute** button, they will run in the order they appear in the queue.
+By default, the **Rules Queue** will list all created and imported rules based on their priority. Rules will be executed according to their appearance, starting from the first. When selecting specific rules and using the explicit **Execute** button, they will run in the order they appear in the queue.
 
 ### Automatic Rules Execution for Live Traffic
 
-To activate all enabled rules (a rule with an active toggle), use the **Rules** toggle from the main toolbar. You have to turn the __Live Traffic__ switch to **Capturing** mode.
+To activate all enabled rules (a rule with an active toggle), use the **Rules** toggle from the main toolbar. You must turn the __Live Traffic__ switch to **Capturing** mode.
 
 ### Explicit Rules Execution
 
-To explicitly execute rules on captured sessions, use the **Execute** button from the main toolbar. The **Execute** functionality is available for both the **Live Traffic** and saved sessions.
+Using the **Execute** button from the main toolbar, explicitly execute rules on captured sessions. The **Execute** functionality is available for both the **Live Traffic** and saved sessions.
 
 ### Rule Options
 
@@ -479,3 +481,4 @@ The rule options allow you to further interact with the rule:
 - [Using Predefined Actions]({%slug fiddler-ar-actions%})
 - [Understanding Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Creating Manual HTTP Responses]({%slug using-custom-responses%})
+- [Creating Unmatched Requests Passthrough Rule]({%slug rules-unmatched-requests-passthrough%})
