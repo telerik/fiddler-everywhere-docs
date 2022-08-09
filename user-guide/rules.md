@@ -9,7 +9,7 @@ previous_url: /user-guide/live-traffic/autoresponder, /user-guide/live-traffic/r
 
 # Rules Tab
 
-The **Rules** tab enables you to create rules that will automatically trigger in response to requests.
+The **Rules** tab enables you to create rules (including **[custom ones]({%slug using-custom-responses%})**) that will automatically trigger in response to requests.
 
 The **Rules** functionality provides options for testing changes to web code without updating the production server, reproducing previously captured bugs in SAZ files, and running website demos while you are offline.
 
