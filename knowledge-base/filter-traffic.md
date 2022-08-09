@@ -65,6 +65,20 @@ When you filter by a domain name or a specific API endpoint, you can still obser
 
 The **Advanced Filters** toolbar option enables you to apply complex filtering solutions such as creating multiple filtering conditions and combining them with logical operations when all, any, or none conditions are met, using regular expressions, and tracking in real-time if the filters match captured sessions.
 
+Set the advanced filters as follows:
+
+1. Click the **Advanced Filters** button to open the advanced filters popup window.
+1. The **Advanced Filters** window allows you to set specific criteria to filter the captured traffic.
+1. Set the **When** rule based on one of the following statements:
+    - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
+    - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
+    - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
+    >tip Learn more about the available [**match conditions**]({%slug rules-general%}#conditions), which apply for both in the advanced filters and rule creation.
+1. Add one or more match conditions based on the HTTP Request and Response headers and provide logical operators.
+1. Click **Apply** to close the **Advanced Filters** and apply immediatly the newly created filter.   
+
+>tip All condition values connected to a **Live Traffic** column can be auto-completed, and the auto-completion suggestions are based on the captured data. Additionally, after adding a condition, a counter will show the number of matches (from the currently captured sessions).
+
 The following example demonstrates five filter conditions that match 18 sessions in the current **Live Traffic** tab. The filter is applied when all conditions are satisfied, and each condition does the following:
 - The first condition (`URL` > `contains` > `fiddler-everywhere`) will match when the URL address contains the `fiddler-everywhere` term.
 - The second condition (`Client IP` > `is equal to` > `:ffff:127.0.0.1`) will match only the localhost IP address. The `:ffff:` is a subnet prefix for IPv4 (32 bit) addresses placed inside an IPv6 (128 bit) space.

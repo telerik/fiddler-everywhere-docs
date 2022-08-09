@@ -51,31 +51,16 @@ To toggle between the buffering and the streaming mode, click the **Stream** but
 
 ### Advanced Filters
 
-Use the **Advanced Filters** to apply filters based on the **Request** and **Response** headers. Only sessions that cover the filter criteria will appear in the **Live Traffic** list. The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
-
-Set the advanced filters as follows:
-
-1. Click the **Advanced Filters** button to open the advanced filters popup window.
-1. The **Advanced Filters** window allows you to set specific criteria to filter the captured traffic.
-1. Set the **When** rule based on one of the following statements:
-    - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
-    - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
-    - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
-    >tip Learn more about the available [**match conditions**]({%slug rules-general%}#conditions), which apply for both in the advanced filters and rule creation.
-1. Add one or more match conditions based on the HTTP Request and Response headers and provide logical operators.
-1. Click **Apply** to close the **Advanced Filters** and activate the newly created filter.    
+Use the **Advanced Filters** to apply complex filters on your captured sessions in the **Live Traffic** list. The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
 
 ![Advanced Filters](../images/kb/filters/adv-filters.png)
 
->tip All condition values connected to a **Live Traffic** column can be auto-completed, and the auto-completion suggestions are based on the captured data. Additionally, after adding a condition, a counter will show the number of matches (from the currently captured sessions).
-
-Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The [column filtering]({%slug how-to-filter-traffic%}#column-filters) allows you to use the AND and OR logical operators (for two lines) and multiple logical operators (for example, **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
-
+[Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
 
 
 ### Clearing All Filters
 
-To reset all the filters applied through the advanced filters feature or to each column, use **Clear All Filters**.
+To reset all the applied filters (including [**Advanced Filters**]({%slug how-to-filter-traffic%}#advanced-filters) or [**Column Filters**](column-filters)) , use **Clear All Filters**.
 
 
 ### Removing All
@@ -415,6 +400,8 @@ The **Filter** submenu enables you to apply filters to the currently selected co
 
 ![Filter context submenu](../images/livetraffic/columns/dots-filter.png)
 
+>tip [Apply complex filters by using the **Advanced Filters**](#advanced-filters) or [learn more about the **Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters)
+
 Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
 
 - **URL**
@@ -429,7 +416,6 @@ Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-w
 
 ![Columns context submenu](../images/livetraffic/columns/dots-columns.png)
 
-To apply more complex filtering rules, use the [**Advanced Filters**](#advanced-filters).
 
 ## Context Menu Options
 
