@@ -30,7 +30,7 @@ Fiddler Everywhere provides preconfigured options for automatic, sandboxed, brow
 
 ### Traffic Analysis
 
-Fiddler Everywhere provides an HTTP(S) and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, and share captured traffic with collaborators. [Read more about inspecting and modifying traffic with Fiddler Everywhere...]({% slug overview-tab %})
+Fiddler Everywhere provides an HTTP(S) and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, compare, and share captured traffic with collaborators. Read more about [inspecting]({%slug inspecting-traffic-get-started%}) and [modifying]({%slug modify-traffic-get-started%}) traffic with Fiddler Everywhere...
 
 
 ### Modern HTTP version support

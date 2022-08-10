@@ -134,6 +134,7 @@ The **Body** delivers the following specific editors:
 - HTML&mdash;suitable for a HTML-formatted input
 - Form-Data&mdash;suitable for inputting key-value pairs formatted as [**multipart/form-data**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
 - x-www-form-urlencoded&mdash;&mdash;suitable for inputting key-value pairs formatted as [**application/x-www-form-urlencoded**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
+- JavaScript&mdash;suitable for JavaScript/TypeScript code. Support the MIME types as described [here](https://mimesniff.spec.whatwg.org/#javascript-mime-type).
 
 ### Raw
 

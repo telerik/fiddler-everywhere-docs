@@ -1,6 +1,6 @@
 ---
 title: Comparing Traffic
-description: "Compare two captured sessions when working with the Telerik Fiddler Everywhere web-debugging HTTP client proxy."
+description: "Compare two or more captured sessions when working with the Fiddler Everywhere web-debugging HTTPS client proxy."
 slug: fe-compare-sessions
 publish: true
 position: 35
@@ -23,7 +23,7 @@ Fiddler Everywhere provides a comparing option for detailed differentiation of t
 
     ![Compare through the context menu](../images/livetraffic/compare/compare-context-menu.png)
 
-1. Inspect both sessions in a new **Compare Sessions (BETA**) tab.
+1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
 
     ![Compare Sessions tab](../images/livetraffic/compare/compare-tab-001.png)
 
@@ -58,7 +58,7 @@ With Fiddler Everywhere, you can compare previously saved sessions from the [**S
 
     ![Choose sessions for comparision](../images/sessions/compare/sessions-snapshots-compare-prompt.png)
 
-1. Inspect both sessions in a new **Compare Sessions (BETA**) tab.
+1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
 
 
 ## Compare Sessions (BETA) Section

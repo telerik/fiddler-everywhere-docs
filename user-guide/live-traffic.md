@@ -569,9 +569,9 @@ The following example demonstrates how to the full information.
 
 ### Comparing
 
-Select two sessions or group more sessions and use the **Compare** context menu option to load the **Compare Sessions** tab.
+Select two sessions and use the **Compare** context menu option to load the **Compare Sessions** tab.
 
-[Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%})
+[Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%}#comparing-live Traffic Sessions)
 
 ### Adding Sessions to Compare Groups
 
