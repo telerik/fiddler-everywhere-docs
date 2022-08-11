@@ -130,13 +130,6 @@ The **Form Data** inspector, available in the **Request** section only, parses t
 
 ![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
 
-The **Form Data** inspector provides the following options for copying the parameter content from the context menu:
-
-- **Copy Value**&mdash;Copies only the value of the selected parameter from the key-value pair.
-- **Copy Key/Value**&mdash;Copies the key-value pair of the selected parameter.
-
-![Copying Information from the Form Data Inspector](../images/livetraffic/inspectors/webforms-copy.png)
-
 
 #### JavaScript
 
@@ -244,6 +237,19 @@ The **Message Inspector** contains the non-masked message content in plain text 
 ![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
 
 
+
+## Inspector's Context Menu
+
+All inspectors provide further interaction options through a context menu. The context menu options vary depending on the inspectors' type (refer to the list below).
+
+- **Copy**&mdash;Basic copy operation for selected content. Available in most inspectors.
+- **Copy Value**&mdash;An option to copy only the value (from a key-value pair). Available in **Headers** inspector.
+- **Copy Key/Value**&mdash;An option to copy the key-value pair. Available in **Headers** inspector.
+- **Copy KResponse Cookie Value**&mdash;An option to copy the value of a selected cookie. Available in **Cookies** inspector.
+- **Decode Value**&mdash;An option that allows you to decode selected value. The decode option support out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
+- **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option support out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and in all **Body** inspectors (**Text, JSON, XML, JavaScript**).
+
+[Decode functionality from the context menu](../images/livetraffic/inspectors/decode-original-base64.png)
 
 ## Server Certificate Details
 
