@@ -245,7 +245,7 @@ All inspectors provide further interaction options through a context menu. The c
 - **Copy**&mdash;Basic copy operation for selected content. Available in most inspectors.
 - **Copy Value**&mdash;An option to copy only the value (from a key-value pair). Available in **Headers** inspector.
 - **Copy Key/Value**&mdash;An option to copy the key-value pair. Available in **Headers** inspector.
-- **Copy KResponse Cookie Value**&mdash;An option to copy the value of a selected cookie. Available in **Cookies** inspector.
+- **Copy Response Cookie Value**&mdash;An option to copy the value of a selected cookie. Available in **Cookies** inspector.
 - **Decode Value**&mdash;An option that allows you to decode selected value. The decode option support out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
 - **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option support out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and in all **Body** inspectors (**Text, JSON, XML, JavaScript**).
 
