@@ -1,6 +1,6 @@
 ---
 title: Viewing Live Traffic Columns Summaries
-description: "Learn how to capture and inspect web traffic by using the Fiddler Everywhere web-debugging client."
+description: "Learn details about each column in the Fiddler Everywhere's Live Traffic list."
 type: how-to
 slug: how-to-view-web-session-summary
 publish: true
