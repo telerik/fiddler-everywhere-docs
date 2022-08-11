@@ -20,12 +20,12 @@ Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered 
 
 ## Solution
 
-This section lists the available **Live Traffic** columns and the type of information their data provides.
+This section lists the available **Live Traffic** columns and the type of information that they provide. Each colum can be explictly shown/hide through the **more** option (three vertical dots next to the column name). The column names are also identical to the filters in the [**Advanced Filters**]({%slug how-to-filter-traffic%}#advanced-filters) section.
+
 
 ### ID(#)
 
 An auto-generated identification number for the currently listed sessions.
-
 
 ### Protocol
 

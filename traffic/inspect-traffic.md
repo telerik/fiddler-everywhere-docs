@@ -39,3 +39,4 @@ The inspection of sessions often happens with teammates or external collaborator
 - [Filtering Traffic]({%slug how-to-filter-traffic%})
 - [Live Traffic Section in details]({%slug web-sessions-list%})
 - [Inspecting Server Certificates]({%slug fe-cert-details%})
+- [Inspector's UI in details]({%slug inspector-types%})
