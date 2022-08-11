@@ -95,4 +95,4 @@ The [predefined browser capturing]({%slug capture-traffic-get-started%}#preconfi
 
 ## Bypassing the Proxy
 
-While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** tab. You can set a list of domains to bypass (not available for processes) through the [**Connections** menu]({%slug connections-submenu%}).
+While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** tab. You can set a list of domains to bypass through the [**Connections** menu]({%slug connections-submenu%}) or, alternatively, you can add URL to the bypass list while using the context menu.

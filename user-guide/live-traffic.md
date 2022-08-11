@@ -434,6 +434,7 @@ The context menu for the **Live Traffic** exposes actions that you can apply for
 - [Comparing](#comparing) (**Compare**)
 - [Adding Sessions to Compare Groups](#adding-sessions-to-compare-groups) (**Add to compare group**)
 - [Adding New Rules](#adding-new-rules) (**Add New Rule**)
+- [Bypassing the Proxy](#bypassing-the-proxy) (**Bypass**)
 
 ![Live Traffic context menu](../images/livetraffic/websessions/websessions-list-context-menu.png)
 
@@ -590,3 +591,22 @@ To add a new rule:
 
 1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.
 
+### Bypassing the Proxy
+
+The **Bypass** option allows you to quickly add domains that the Fiddler Everywhere proxy will explicitly bypass. To add a domain to the bypass list:
+
+1. Select the desired session entry.
+
+1. Right-click to open the context menu
+
+1. Select **Bypass > Add <domain-name> to the bypass list**.
+
+Consider the following rules when bypassing a domain:
+
+- All domains added through **Bypass** option are part of the operating system bypass list until the [Fiddler Everywhere proxy captures system traffic]({%slug capture-traffic-get-started%}#system-capturing).
+- All domains added through **Bypass** option will be explicitly bypassed when the [Fiddler Everywhere proxy uses preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- You can remove an added domain from the bypass list through [**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
+- You can manually add more domains to the bypass list through [**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
+- Toggling off the [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}#system-capturing) removes Fiddler Everywhere as a system proxy and effectively clears the operating system bypass list set by Fiddler Everywhere. Note that Fiddler Everywhere bypass list ([**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
+- Closing the Fiddler Everywhere application resets the system proxy and effectively clears the operating system bypass list set by Fiddler Everywhere. Note that Fiddler Everywhere bypass list ([**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
+- The **Bypass** option is inactive and not applicable for H[TTP CONNECT tunnels](https://textslashplain.com/2015/11/19/understanding-connect-tunnels/), and localhost addresses (e.g., localhost, 127.0.01, ::1).
