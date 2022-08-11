@@ -32,7 +32,7 @@
                         "title": "Automatically select JSON body inspector when the Content-Type contains json"
                     },
                     {
-                        "title": "Remove \"Unmatched Requests Passthrough\" option as it has multiple issues and causes confusion. Same experience can be achieved with simple rules."
+                        "title": "Remove \"Unmatched Requests Passthrough\" option as it has multiple issues and causes confusion. Same behavior can be achieved with simple rules."
                     },
                     {
                         "title": "Add new match conditions for Advanced Filters and Rules - HTTP Version, Caching, Content-Type, Request Time, Request Date, Rules Modified"
