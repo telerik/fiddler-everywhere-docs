@@ -1,5 +1,5 @@
 ---
-title: Viewing Web Session Summaries
+title: Viewing Live Traffic Columns Summaries
 description: "Learn how to capture and inspect web traffic by using the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: how-to-view-web-session-summary
@@ -26,23 +26,12 @@ This section lists the available **Live Traffic** columns and the type of inform
 
 An auto-generated identification number for the currently listed sessions.
 
-### Result
-
-Indicates the HTTP status codes of the response. A server issues the status codes in response to a client's request in the form of a three-digit number. The first digit of the status code specifies one of five standard classes of responses.
-
-- __1xx__ informational response&mdash;The request was received, a continuing process.
-- __2xx__ successful&mdash;The request was successfully received, understood, and accepted.
-- __3xx__ redirection&mdash;Further action needs to be taken to complete the request.
-- __4xx__ client error&mdash;The request contains bad syntax or cannot be fulfilled.
-- __5xx__ server error&mdash;The server failed to fulfill a valid request.
-
-The full list of all response status code is available in the [HTTP/1.1 status code definition article](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
 
 ### Protocol
 
 Indicates the used protocol, which can be __HTTP__ (Hypertext Transfer Protocol) or __HTTPS__ (secure HTTP). The __HTTPS__ is HTTP but with an added secure layer, which is usually TLS (or SSL). The secure layer encrypts the standard HTTP requests and responses, making them far more reliable than the plain-text HTTP.
 
-Fiddler can decode the encrypted content, but you have to install a trust root certificate to enable this scenario. Once you install it and the HTTPS capturing is enabled, Fiddler is effectively a "man-in-the-middle" and can decode encrypted sessions by switching on the __Decode__ button.
+Fiddler can decode the encrypted content, but you have to install a trust root certificate to enable this scenario. Once you install it and the HTTPS capturing is enabled, Fiddler is effectively a "man-in-the-middle" and can decode encrypted sessions by toggling  **Click to show decoded body / Click to show origina body** button.
 
 ### Host
 
@@ -61,6 +50,18 @@ The column indicates the version of the HTTP protocol used by the session.
 - __HTTP/2 + HTTP/1.1__&mdash;The client uses HTTP/2 but the server response is HTTP/1.1.
 - __HTTP/1.1 + HTTP/2__&mdash;The client uses HTTP/1.1 but the server response is HTTP/2.
 
+### Status Code
+
+Indicates the HTTP status codes of the response. A server issues the status codes in response to a client's request in the form of a three-digit number. The first digit of the status code specifies one of five standard classes of responses.
+
+- __1xx__ informational response&mdash;The request was received, a continuing process.
+- __2xx__ successful&mdash;The request was successfully received, understood, and accepted.
+- __3xx__ redirection&mdash;Further action needs to be taken to complete the request.
+- __4xx__ client error&mdash;The request contains bad syntax or cannot be fulfilled.
+- __5xx__ server error&mdash;The server failed to fulfill a valid request.
+
+The full list of all response status code is available in the [HTTP/1.1 status code definition article](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
+
 ### Method
 
 The column indicates the HTTP method used by the request (__GET__, __POST__, and so on). The HTTP methods are used to set the desired action that needs to be applied to a given resource.
@@ -75,7 +76,30 @@ The column indicates the HTTP method used by the request (__GET__, __POST__, and
 - __TRACE__&mdash;The TRACE method performs a message loop-back test along the path to the target resource.
 - __PATCH__&mdash;The PATCH method is used to apply partial modifications to a resource.
 
-### Body
+
+### Client IP
+
+Indicates the client IP that sent this Request. The IP will often show the loopback address (`0.0.0.0`), but it will be different if multiple computers on the network are pointed to a single Fiddler Everywhere instance.
+
+
+### Remote IP
+
+Indicates the server's IP address used for this Request.
+
+### Process
+
+__Process__ is the local OS process from which the traffic has originated.
+
+The following example lists sample __Process__ values.
+
+```
+Process: chrome:54000
+Process: outlook: 12564
+Process: teams:18352
+```
+
+
+### Body Size
 
 The column shows the number of bytes in the response body.
 
@@ -109,17 +133,19 @@ The __Content-Type__ header is an indication of the media type of the resource. 
 
 You can use different `media-type` values to set the type of the passed resource explicitly. For more information, refer to the [common `media-types`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) variants.
 
-### Process
+### Request Time
 
-__Process__ is the local OS process from which the traffic has originated.
+Renders the time when the request was issued in format HH:MM:SS:ms.
 
-The following example lists sample __Process__ values.
+### Request Date
 
-```
-Process: chrome:54000
-Process: outlook: 12564
-Process: teams:18352
-```
+Renders the date when the request was issued in format MM:DD:YYYY.
+
+### Duration
+
+Marks the duration of the session (from **ClientConnected** to **ServerGotResponse** events) in milisseconds.
+
+### Rules Modified
 
 ### Comments
 
