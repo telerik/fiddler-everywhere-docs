@@ -13,7 +13,7 @@ previous_url: /knowledge-base/redirecting-with-autoresponder
 
 |   |   |
 |---|---|
-| Product   |
+| Product   | Fiddler Everywhere |
 | Product Version | 1.0.0 and above  |
 
 ## Description

@@ -9,13 +9,13 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 # Live Traffic Section
 
-The **Live Traffic** section provides the most essential features of Fiddler Everywhere.
+The **Live Traffic** section provides essential features of Fiddler Everywhere.
 
-**Live Traffic** displays a summary of each captured session in the **Live Traffic** list. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug rules-general%}) tab. The feature enables the saving and sharing of sessions, editing of issued requests, marking, commenting sessions, and applying rules.
+**Live Traffic** displays a summary of each captured session in the **Live Traffic** list. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug rules-general%}) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
 
 ## Defining a Session
 
-A (web) session represents a single transaction between a client and a server, sometimes known as a request/response pair. Each session appears as a single entry in **Live Traffic**. Each session object has a **Request** and a **Response**, representing the data which the client has sent to the server and the data which has been returned by the server to the client. The session object also maintains a set of flags that record metadata about the session, and a timers object that stores timestamps logged during the processing of the session.
+A (web) session represents a single transaction between a client and a server, sometimes known as a request/response pair. Each session appears as a single entry in **Live Traffic**. Each session object has a **Request** and a **Response**, representing the data that the client has sent to the server and the data that the server has returned to the client. The session object also maintains a set of flags that record metadata about the session and a timers object that stores timestamps logged during the processing of the session.
 
 ![Live Traffic toolbar and list](../images/livetraffic/websessions/websessions-list-all.png)
 
@@ -43,51 +43,36 @@ The **Live Traffic** toolbar provides the following functionalities:
 
 By default, Fiddler Everywhere uses the buffering mode, which means that the responses are fully collected before any part is sent to the client. Buffering alters the responses&mdash;for example, an image won't begin to download until the containing page download is complete. With the streaming mode, the server responses are immediately returned to the client as it is downloaded. In the streaming mode, tampering with the response body is not possible.
 
-The streaming mode is useful for low-level network timing scenarios&mdash;for example, by design, some browsers will parse partially downloaded HTML, which will start the download of external resources in parallel before the remote server has finished delivering the content. The streaming mode is also useful if a site delivers audio or video streams as Fiddler Everywhere cannot buffer such constant streams.
+The streaming mode is helpful for low-level network timing scenarios&mdash;for example, by design, some browsers will parse partially downloaded HTML, which will start the download of external resources in parallel before the remote server has finished delivering the content. The streaming mode is also useful if a site offers audio or video streams, as Fiddler Everywhere cannot buffer such constant streams.
 
-![Buffering mode vs Streaming Mode](../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
+![Buffering mode vs. Streaming Mode](../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
 
 To toggle between the buffering and the streaming mode, click the **Stream** button.
 
 ### Advanced Filters
 
-Use the **Advanced Filters** to apply filters based on the **Request** and **Response** headers. Only sessions that cover the filter criteria will appear in the **Live Traffic** list. The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
+Use the **Advanced Filters** to apply complex filters on your captured sessions in the **Live Traffic** list. The **Advanced Filters** entry uses several different logical constructions to create a matching condition.
 
-Set the advanced filters as follows:
+![Advanced Filters](../images/kb/filters/adv-filters.png)
 
-1. Click the **Advanced Filters** button to open the advanced filters popup window.
-1. The **Advanced Filters** window allows you to set specific criteria to filter the captured traffic.
-1. Set the **When** rule based on one of the following statements:
-    - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
-    - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
-    - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
-    >tip Learn more about the available [**match conditions**]({%slug rules-general%}#conditions), which apply for both in the advanced filters and rule creation.
-1. Add one or more conditions based on the HTTP Request and Response headers and provide logical operators.
-1. Click **Apply** to close the **Advanced Filters** and activate the newly created filter.    
-
-![Advanced Filters](../images/livetraffic/websessions/websessions-toolbar-advanced-filters.png)
-
->tip All condition values connected to a **Live Traffic** columns can be auto-completed, and the auto-completion suggestions are based on the captured data. Additionally, a counter will show the number of matches (from the currently captured sessions) after adding a condition.
-
-Alternatively, you can apply filters through the **more** option (three vertical dots) on each Live Traffic column (for example, apply a filter for the _Host_ column ). The column filtering allows you to use the AND and OR logical operators (for two lines) and multiple logical operators (for example, **Is equal to**, **contains**, **ends with**, etc.). Learn more about [individual column sorting and filtering options](#sort-and-filter-traffic).
-
+[Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
 
 
 ### Clearing All Filters
 
-To reset all the filters applied through the advanced filters feature or to each column, use **Clear All Filters**.
+To reset all the applied filters (including [**Advanced Filters**]({%slug how-to-filter-traffic%}#advanced-filters) or [**Column Filters**](column-filters)) , use **Clear All Filters**.
 
 
 ### Removing All
 
-To remove all captured sessions, use the **Remove All** button, which will automatically remove all captured traffic from the **Live Traffic** list. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
+To remove all captured sessions, use the **Remove All** button, which automatically removes all captured traffic from the **Live Traffic** list. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
 
 
 ### Preconfigured Browser Capturing
 
 Use the **Open Browser** button to capture traffic from a specific browser instance without the need to modify the system proxy settings. [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
 
-![Use the Open Browser button to staert preconfigfured browser instance](../images/get-started/get-started-open-browser.png)
+![Use the Open Browser button to start preconfigured browser instance](../images/get-started/get-started-open-browser.png)
 
 ### Saving
 
@@ -99,7 +84,7 @@ To save sessions for later or prepare sessions for sharing:
 
 1. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
 
-1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password will be able to open the entry.
+1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password can open the entry.
 
 1. Click **Save**. The saved session immediately loads in the **Sessions** list.
 
@@ -107,7 +92,7 @@ To save sessions for later or prepare sessions for sharing:
 
 ### Sharing
 
-Sharing sessions dramatically improves collaboration, and Fiddler Everywhere provides the following options to export and share sessions:
+Sharing sessions dramatically improve collaboration, and Fiddler Everywhere provides the following options to export and share sessions:
 
 - Sharing through the **Share** button from a saved session entry in [the **Sessions** list]({%slug saved-sessions-tab%}#sharing-sessions)).
 
@@ -125,7 +110,7 @@ To share a session through the toolbar:
 
 ### Searching
 
-To search for specific values in the URL and the headers of all sessions, use the **Search** text input. The search action will immediately filter and show all sessions, which contain the search terms.
+To search for specific values in the URL and the headers of all sessions, use the **Search** text input. The search action will immediately filter and show all sessions containing the search terms.
 
 
 ### Toggling Layout
@@ -146,7 +131,7 @@ The **Live Traffic** list displays a list of web sessions with a summary of each
 
 ![Live Traffic](../images/livetraffic/websessions/websessions-list-columns.png)
 
-Many operations begin by selecting one or more entries in the **Live Traffic** and then activating other features.
+Many operations begin by selecting one or more entries in the **Live Traffic** and activating other features.
 
 - To select more than one session, hold the **Ctrl** (**Command** on Mac) or **Shift** keys while clicking the desired rows.
 
@@ -158,7 +143,7 @@ When the **Inspectors** are activated, they will automatically decide which insp
 
 The **Live Traffic List** uses icons to provide additional context for each recorded session. To trigger an explanatory tooltip, hover over a **Live Traffic** list entry icon.
 
-The following table displays the icons, which **Live Traffic** supports for its list:
+The following table displays the icons which **Live Traffic** supports for its list:
 
 
 <table style="width: 80%; border-collapse: collapse;">
@@ -296,7 +281,7 @@ Each [list icon](#list-icons) can contain an additional triangle warning that in
 
     ![Certificate error note](../images/livetraffic/certs/certficate-error-note.png)
 
-- Absence of the triangle warning means that there are no issues with the server certificate. You can still expand and inspect the used certificate in detail through the Response inspector notification. 
+- Absence of the triangle warning means no issues with the server certificate. You can still expand and inspect the used certificate in detail through the Response inspector notification. 
 
     ![Valid Certificate details](../images/livetraffic/certs/certficate-valid-note.png)
 
@@ -324,16 +309,12 @@ The following table lists the **Live Traffic** columns and the key information t
             <td>A unique identification number generated by Fiddler Everywhere. The column also contains <a href="#list-icons">an icon</a> that represents the session type and might contain <a href="#certificate-indicators">certificate expiration indicator.</a></td>
         </tr>
         <tr>
-            <td><b>Result</b></td>
-            <td>The HTTP response <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">status code</a></td>
-        </tr>
-        <tr>
             <td><b>Protocol</b></td>
             <td>The protocol type (HTTP or HTTPS) used by the session.</td>
         </tr>
         <tr>
             <td><b>Host</b></td>
-            <td>The hostname and the port of the server to which the request was sent. The column also indicates requests with <b>CONNECT</b> method with the <b>Tunnel to</b> value (<a href="https://textslashplain.com/2015/11/19/understanding-connect-tunnels/">CONNECT tunnels in Fiddler</a>).</td>
+            <td>The hostname and the server's port to which the request was sent. The column also indicates requests with <b>CONNECT</b> method with the <b>Tunnel to</b> value (<a href="https://textslashplain.com/2015/11/19/understanding-connect-tunnels/">CONNECT tunnels in Fiddler</a>).</td>
         </tr>
         <tr>
             <td><b>Path</b></td>
@@ -346,6 +327,10 @@ The following table lists the **Live Traffic** columns and the key information t
         <tr>
             <td><b>HTTP Version</b></td>
             <td>The protocol version used for communication between the client and the server (<b>HTTP/1.1</b>, <b>HTTP/2</b>, <b>HTTP/2 + HTTP/1.1</b>, and <b>HTTP/1.1 + HTTP/2</b></td>
+        </tr>
+        <tr>
+            <td><b>Status Code</b></td>
+            <td>The HTTP response <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">status code</a></td>
         </tr>
         <tr>
             <td><b>Method</b></td>
@@ -376,11 +361,11 @@ The following table lists the **Live Traffic** columns and the key information t
             <td>The <b>Content-Type</b> header from the response.</td>
         </tr>
         <tr>
-            <td><b>Time</b></td>
+            <td><b>Request Time</b></td>
             <td>Indicates when the session was executed in an <code>HH:MM:SS:ms</code> format.</td>
         </tr>
         <tr>
-            <td><b>Date</b></td>
+            <td><b>Request Date</b></td>
             <td>Indicates the date when the session was executed in a <code>MM:DD:YYYY</code> format.</td>
         </tr>
         <tr>
@@ -401,7 +386,7 @@ The following table lists the **Live Traffic** columns and the key information t
 
 ## Traffic Sorting and Filtering
 
-By default, the captured traffic is sorted in the order sessions appear during the traffic capturing, that is, sorted by the unique identification number column, and no active filters are applied. You can use the built-in [sorting](#sorting-options) and [filtering](#filtering-options) options to optimize the outcome.
+By default, the captured traffic is sorted in the order sessions appear during the traffic capturing, sorted by the unique identification number column, and no active filters are applied. You can use the built-in [sorting](#sorting-options) and [filtering](#filtering-options) options to optimize the outcome.
 
 ### Sorting Options
 
@@ -411,9 +396,11 @@ To create a custom sorting order, click the desired column. For example, click t
 
 Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter** and **Columns** submenus.
 
-The **Filter** submenu enables you to apply filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or through the global [**Clear All Filters** button](##clearing-all-filters).
+The **Filter** submenu enables you to apply filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or the global [**Clear All Filters** button](##clearing-all-filters).
 
 ![Filter context submenu](../images/livetraffic/columns/dots-filter.png)
+
+>tip [Apply complex filters by using the **Advanced Filters**](#advanced-filters) or [learn more about the **Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters)
 
 Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
 
@@ -429,7 +416,6 @@ Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-w
 
 ![Columns context submenu](../images/livetraffic/columns/dots-columns.png)
 
-To apply more complex filtering rules, use the [**Advanced Filters**](#advanced-filters).
 
 ## Context Menu Options
 
@@ -448,6 +434,7 @@ The context menu for the **Live Traffic** exposes actions that you can apply for
 - [Comparing](#comparing) (**Compare**)
 - [Adding Sessions to Compare Groups](#adding-sessions-to-compare-groups) (**Add to compare group**)
 - [Adding New Rules](#adding-new-rules) (**Add New Rule**)
+- [Bypassing the Proxy](#bypassing-the-proxy) (**Bypass**)
 
 ![Live Traffic context menu](../images/livetraffic/websessions/websessions-list-context-menu.png)
 
@@ -538,7 +525,7 @@ Saved and shared sessions will contain the added comments.
 
 ### Marking
 
-To apply colors or to strike out single or multiple sessions use the **Mark** context menu option.
+To apply colors or to strike out single or multiple sessions, use the **Mark** context menu option.
 
 1. Select the sessions, open the context menu, and click the **Mark** option.
 
@@ -583,9 +570,9 @@ The following example demonstrates how to the full information.
 
 ### Comparing
 
-Select two sessions or group more sessions and use the **Compare** context menu option to load the **Compare Sessions** tab.
+Select two sessions and use the **Compare** context menu option to load the **Compare Sessions** tab.
 
-[Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%})
+[Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%}#comparing-live Traffic Sessions)
 
 ### Adding Sessions to Compare Groups
 
@@ -604,3 +591,22 @@ To add a new rule:
 
 1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.
 
+### Bypassing the Proxy
+
+The **Bypass** option allows you to quickly add domains that the Fiddler Everywhere proxy will explicitly bypass. To add a domain to the bypass list:
+
+1. Select the desired session entry.
+
+1. Right-click to open the context menu
+
+1. Select **Bypass > Add <domain-name> to the bypass list**.
+
+Consider the following rules when bypassing a domain:
+
+- All domains added through **Bypass** option are part of the operating system bypass list until the [Fiddler Everywhere proxy captures system traffic]({%slug capture-traffic-get-started%}#system-capturing).
+- All domains added through **Bypass** option will be explicitly bypassed when the [Fiddler Everywhere proxy uses preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- You can remove an added domain from the bypass list through [**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
+- You can manually add more domains to the bypass list through [**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
+- Toggling off the [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}#system-capturing) removes Fiddler Everywhere as a system proxy and effectively clears the operating system bypass list set by Fiddler Everywhere. Note that Fiddler Everywhere bypass list ([**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
+- Closing the Fiddler Everywhere application resets the system proxy and effectively clears the operating system bypass list set by Fiddler Everywhere. Note that Fiddler Everywhere bypass list ([**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
+- The **Bypass** option is inactive and not applicable for H[TTP CONNECT tunnels](https://textslashplain.com/2015/11/19/understanding-connect-tunnels/), and localhost addresses (e.g., localhost, 127.0.01, ::1).

@@ -48,7 +48,7 @@ Alternatively, you can manually navigate to the folder on your operating system 
 * The log files on macOS are available in the following folder:
 
     ```Console
-    ~/Library/Application Support/Fiddler Everywhere/Logs
+    ~/Users/<CURRENT-USER-HERE>/Library/Application Support/Fiddler Everywhere/Logs
     ```
 
 * The log files on Windows are available in the following folder:
