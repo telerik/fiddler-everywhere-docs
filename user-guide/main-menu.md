@@ -53,7 +53,7 @@ The **Help** menu provides options for a version update and information, and fas
 - **Forums**&mdash;Opens a new browser tab with the [Fiddler Everywhere **Forums** portal](https://community.getfiddler.com/support/discussions), where you can search for use cases, report issues and bugs, and request features.
 - **Documentation**&mdash;Opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
 - **Open Application Logs Folder**&mdash;Opens the local folder that contains the Fiddler Everywhere log files. For more information, refer to the article on [using the log files for troubleshooting your local setup]({%slug fiddler-log-files%}).
-- **About**&mdash;Opens a dialog window that provides information about the current version and build date of Fiddler Everywhere.
+- **About**&mdash;Opens a dialog window that provides information about the current version and build date of Fiddler Everywhere. On macOS, the dialog also contains information about the type of the build (Apple Silicon(arm64) for [Mac computers with Silicon chips](https://support.apple.com/en-us/HT211814) versus Intel(x64) for Mac computers with Intel chips).
 - **Contact Support**&mdash;Available for both the trial and [commercial]({%slug introduction%}#key-features) versions. The support option uses the default email client of the operating system.
 
 ![Help Menu](../images/menu/menu-help-update.png)
