@@ -9,7 +9,7 @@ previous_url: /user-guide/live-traffic/autoresponder, /user-guide/live-traffic/r
 
 # Rules Tab
 
-The **Rules** tab enables you to create rules that will automatically trigger in response to requests.
+The **Rules** tab enables you to create rules (including **[custom ones]({%slug using-custom-responses%})**) that will automatically trigger in response to requests.
 
 The **Rules** functionality provides options for testing changes to web code without updating the production server, reproducing previously captured bugs in SAZ files, and running website demos while you are offline.
 
@@ -482,3 +482,4 @@ The rule options allow you to further interact with the rule:
 - [Understanding Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Creating Manual HTTP Responses]({%slug using-custom-responses%})
 - [Creating Unmatched Requests Passthrough Rule]({%slug rules-unmatched-requests-passthrough%})
+
