@@ -102,15 +102,21 @@ If the content is in HTML format, then the **Preview** inspector allows you to v
 
 ### Body Inspectors
 
-The **Body** inspectors are suitable for different types of requests and responses. Fiddler Everywhere automatically tries to load the most appropriate body inspector, depending on the content.
+The **Body** inspectors are suitable for different types of requests and responses. Fiddler Everywhere automatically tries to load the most appropriate body inspector, depending on the received content type. Fiddler Everywhere provides the following body inspectors:
 
-#### Text
+- [Text](#text-body-inspector)
+- [JSON](#json-body-inspector)
+- [XML](#xml-body-inspector)
+- [Form-Data](#form-data-body-inspector)
+- [JavaScript](#javascript-body-inspector)
+
+### Text Body Inspector
 
 The **Text** inspector allows you to view the request and response bodies as text. It truncates the data it renders at the first null byte it finds, making it inappropriate for displaying binary content. Most body inspectors represent a large text area that reveals the body text interpreted using the detected character set with the headers, the byte-order-marker, or an embedded META tag declaration.
 
 ![Text Inspector](../images/livetraffic/inspectors/inspectors-textview.png)
 
-#### JSON
+### JSON Body Inspector
 
 The **JSON** inspector interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object nodes. The tree view will remain empty if the body can't be interpreted as JSON. The JSON inspector can render the data even if the request or response is compressed or has HTTP chunked encoding. The JSON inspector provides an __Expand All / Collapse All__ toggle button to expand or collapse all JSON tree nodes.
 
@@ -118,22 +124,22 @@ The **JSON** inspector interprets the selected request or response body as a Jav
 
 ![JSON Inspector](../images/livetraffic/inspectors/inspectors-json.png)
 
-#### XML
+### XML Body Inspector
 
-The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML. Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an __Expand All / Collapse All__ toggle button to expand or collapse all XML tree nodes.
+The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an __Expand All / Collapse All__ toggle button to expand or collapse all XML tree nodes.
 
 ![XML Inspector](../images/livetraffic/inspectors/inspectors-xml.png)
 
-#### Form Data
+### Form Data Body Inspector
 
 The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form-data. If a form is found, it is parsed, and the name/value pairs are displayed in the grid view. The inspector works best with application/x-www-form-urlencoded data used by most simple web forms.
 
 ![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
 
 
-#### JavaScript
+### JavaScript Body Inspector
 
-The **JavaScript** inspector interprets and formats the selected request or response body as a JavaScript code. The inspector will recognize and properly format the following MIME types:
+The **JavaScript** inspector interprets and formats the selected request or response body as a JavaScript/TypeScript code. The inspector will recognize and properly format the following MIME types:
 
 ```
 application/ecmascript
