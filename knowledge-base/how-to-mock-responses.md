@@ -89,10 +89,10 @@ The example below demonstrates the usage of **Set Value** with **JSON** Response
 
 ##### Method
 The **Method** subaction supports the following options:
-- **Set Value** - setting a new value**
-- **Find and Replace** - replacing a specific value**
-- **Regular Expression** - replacing values with Regex**
-- **Remove** - explicitly deleting the Response body**
+- **Set Value** - setting a new value
+- **Find and Replace** - replacing a specific value
+- **Regular Expression** - replacing values with Regex
+- **Remove** - explicitly deleting the Response body
  
 
 ##### Set Value
@@ -113,7 +113,7 @@ The example below demonstrates the usage of **Append to value**:
 
 ##### Method
 The **Method** subaction supports the following options:
-- **Set Value** - setting a new value**
+- **Set Value** - setting a new value
 - **Append if not present** - setting a new value only if it doesn't already exist
 - **Append to value** - adding to an existing value
 - **Find and Replace** - replacing a specific value
