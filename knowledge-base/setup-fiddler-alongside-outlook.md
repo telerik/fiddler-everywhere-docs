@@ -1,6 +1,6 @@
 ---
-title: Setting Up Fiddler Everywhere alongside Outlook
-description: "Learn how to configure your proxy settings to bypass specific Microsoft endpoints so that you could use MS products like Outlook alongside Fiddler Everywhere."
+title: Setting Up Fiddler Everywhere alongside Office365 and Outlook
+description: "Learn how to configure your proxy settings to bypass specific Microsoft endpoints so that you could use Microsoft Office 365 applications alongside Fiddler Everywhere."
 type: how-to
 slug: fiddler-and-outlook
 publish: true
@@ -12,18 +12,18 @@ res_type: kb
 |   |   |
 |---|---|
 | Fiddler Everywhere | 1.0.0 and above |
-| 3rd-party application | Microsoft Outlook, Office365 |
+| 3rd-party application | Office 365 applications, Microsoft Outlook |
 | Operating System | Windows, macOS |
 
 ## Description
 
-Some third-party applications like Microsoft Outlook are not working seamlessly alongside MITM proxies like Fiddler Everywhere.  How can I handle this issue?
+Some third-party applications like Microsoft Outlook and Office 365 tools are not working seamlessly alongside MITM proxies like Fiddler Everywhere.  How can I handle this issue?
 
 ## Solution
 
 In some cases, the proxy usage in third-party applications is restricted when the traffic goes through the MITM proxy. In other cases, the applications are not handling well the dynamic change of the system proxy. The desktop application Microsofot Outlook is one example of an application that might stop working when Fiddler Everywhere acts as a system proxy. To resolve issues with Outlook not working when Fiddler is turned on, follow these steps:
 
-- Close Microsoft Outlook. Make sure it is not running in the background. 
+- Close the Office 365 application (for example, **Microsoft Outlook**). Make sure it is not running in the background. 
 
 - Start Fiddler Everywhere and go to **Settings** > **Connections**.
 
@@ -33,13 +33,13 @@ In some cases, the proxy usage in third-party applications is restricted when th
     *office.com;*office365.com;*live.com;*outlook.com;autodiscover.yourcompany.com
     ```
 
-    Note that the last entry is a company-specific Officce365 endpoint and will differ for different Office365 users.
+    Note that the last entry is a company-specific Office 365 endpoint and will differ for different Office365 users.
 
     ![bypassing Outlook endpoints in Fiddler](../images/kb/outlook-bypass.png)
 
 - Start the **Live traffic** capturing in Fiddler Everywhere.
 
-- Restart the **Microsoft Outlook** application.
+- Restart the Office 365 application application.
 
 That's it! After the above, the traffic generated from Outlook will bypass the Fiddler proxy.
 
