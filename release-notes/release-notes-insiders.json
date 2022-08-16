@@ -1,5 +1,58 @@
 [
     {
+        "version": "3.4.0-insiders",
+        "title": "Fiddler Everywhere v3.4.0",
+        "date": "August 11, 2022",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Automatically apply system theme - dark or light"
+                    },
+                    {
+                        "title": "Add context menu option to decode selected string from multiple formats - Base64, Escape sequences, Encoded URLs, Hex, Encoded HTML"
+                    },
+                    {
+                        "title": "Skip decryption for domains added to bypass list - this makes it easy to ignore domains working with certificate pinning"
+                    },
+                    {
+                        "title": "Add context menu option to easily add domains to bypass list"
+                    },
+                    {
+                        "title": "Allow using the app without network connectivity for some time"
+                    },
+                    {
+                        "title": "Add JavaScript body inspector"
+                    },
+                    {
+                        "title": "Add new buttons to make it easier to compare multiple selected sessions"
+                    },
+                    {
+                        "title": "Automatically select JSON body inspector when the Content-Type contains json"
+                    },
+                    {
+                        "title": "Remove \"Unmatched Requests Passthrough\" option as it has multiple issues and causes confusion. Same behavior can be achieved with simple rules."
+                    },
+                    {
+                        "title": "Add new match conditions for Advanced Filters and Rules - HTTP Version, Caching, Content-Type, Request Time, Request Date, Rules Modified"
+                    },
+                    {
+                        "title": "Add quick search for WebSocket messages"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "There's no progress indicator for the password related actions of saved sessions"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.3.1-insiders",
         "title": "Fiddler Everywhere v3.3.1",
         "date": "July 21, 2022",

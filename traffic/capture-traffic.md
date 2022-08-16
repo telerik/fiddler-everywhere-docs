@@ -13,7 +13,7 @@ Out of the box, Fiddler Everywhere provides an automatic capturing functionality
 
 ## System Capturing vs. Preconfigured Browser Capturing
 
-The following table demonstrates the major differences between the two functionalities.
+The following table demonstrates the significant differences between the two functionalities.
 
 | Feature          |System Capturing |Preconfigured Browser Capturing  
 |:-----------------|:----------------|:-----------------
@@ -21,7 +21,7 @@ The following table demonstrates the major differences between the two functiona
 | Modification of the system proxy | Requires modification of the system proxy. | Automatically configures the system proxy for Google Chrome.
 | Explicit installation of the trust root certificate | Requires you to add the certificate in the OS keychain. | No certificate configuration needed - automatically configures the trust certificate for Google Chrome.
 | Capturing of browser traffic   | Supports all browsers.  | Support for all Chromium browsers.
-| Capturing of other applications traffic | Yes. Supports traffic capturing on virtually any application that uses the system proxy. | No.
+| Capturing of other applications traffic | Yes. It supports traffic capturing on virtually any application that uses the system proxy. | No.
 | Required administrative access | Requires OS admin rights for installing and trusting a root certificate and modifying the system proxy.  | Requires user rights for starting a Chromium browser with custom parameters.
 | Working with VPN tooling       | Requires Cisco VPN support. | Provides multiple VPN tooling support out-of-the-box.
 | Captured output                | Captures all traffic that goes through the system proxy. | Captures only the traffic from the preconfigured browser instance.
@@ -48,7 +48,7 @@ To capture system traffic with Fiddler Everywhere:
 
 The preconfigured browser capturing is a feature that allows you to capture traffic from a specific browser instance. Currently, Fiddler Everywhere supports preconfigured browser capturing only for Chromium browsers.
 
-The feature is useful when you need to capture browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves the compatibility issues with some VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent the capturing of other system traffic.
+The feature is useful when you need to capture browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves the compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
 To start the preconfigured browser capturing with Fiddler Everywhere:
 
@@ -73,7 +73,7 @@ Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. N
 
 - With the **Enable HTTP/2 support (BETA)** option, the connection between a client and a server will default to HTTP/2 if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1.
 
-- Even with HTTP/2 support enabled, Fiddler Everywhere cannot guarantee that all requests will use HTTP/2. If a client only supports HTTP/1.1 or lower, Fiddler will only communicate using the client's version. If the client works with HTTP/2, but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when communicating with the server.
+- Even with HTTP/2 support enabled, Fiddler Everywhere cannot guarantee that all requests will use HTTP/2. If a client only supports HTTP/1.1 or lower, Fiddler will only communicate using the client's version. If the client works with HTTP/2 but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when communicating with the server.
 
 - Some browsers will share a single HTTP/2 connection to a website between several different tabs and keep a connection open for some time even after a tab is closed. That could lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, you should restart the browser.
 

@@ -1,6 +1,6 @@
 ---
 title: Comparing Traffic
-description: "Compare two captured sessions when working with the Telerik Fiddler Everywhere web-debugging HTTP client proxy."
+description: "Compare two or more captured sessions when working with the Fiddler Everywhere web-debugging HTTPS client proxy."
 slug: fe-compare-sessions
 publish: true
 position: 35
@@ -23,7 +23,7 @@ Fiddler Everywhere provides a comparing option for detailed differentiation of t
 
     ![Compare through the context menu](../images/livetraffic/compare/compare-context-menu.png)
 
-1. Inspect both sessions in a new **Compare Sessions (BETA**) tab.
+1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
 
     ![Compare Sessions tab](../images/livetraffic/compare/compare-tab-001.png)
 
@@ -58,7 +58,7 @@ With Fiddler Everywhere, you can compare previously saved sessions from the [**S
 
     ![Choose sessions for comparision](../images/sessions/compare/sessions-snapshots-compare-prompt.png)
 
-1. Inspect both sessions in a new **Compare Sessions (BETA**) tab.
+1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
 
 
 ## Compare Sessions (BETA) Section
@@ -71,7 +71,7 @@ The **Compare Sessions (BETA)** tab provides the following options to customize 
 
 - **Match sessions by**&mdash;Highlights unmatched sessions with default criteria set to match by **URL**. The possible match options are as follows:
     - **URL** match to highlight sessions with different URLs.
-    - **Order** match session by their order in ther ID column. The ID is the Fiddler Everywhere unique identificator for each captured session.
+    - **Order** match session by their order in their ID column. The ID is the Fiddler Everywhere unique identification for each captured session.
 
     ![Match sessions popup](../images/livetraffic/compare/compare-options-match-sessions.png)
 
@@ -81,8 +81,9 @@ The **Compare Sessions (BETA)** tab provides the following options to customize 
 
 ## Additional Resources
 
-* [Capturing Options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
-- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
+- [Capturing Options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
+- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%})
+- [Filtering Output Traffic]({%slug how-to-filter-traffic%})
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
 - [Composing Requests with Basic Authentication]({%slug basic-authentication-with-fiddler-everywhere%})
 - [Composing SOAP Requests]({%slug fiddler-composer-soap%})
