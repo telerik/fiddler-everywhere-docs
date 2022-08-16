@@ -5,6 +5,7 @@ type: how-to
 slug: fiddler-and-outlook
 publish: true
 res_type: kb
+previous_url: /knowledge-base/setup-fiddler-alongside-outlook
 ---
 
 ## Environment
@@ -12,7 +13,7 @@ res_type: kb
 |   |   |
 |---|---|
 | Fiddler Everywhere | 1.0.0 and above |
-| 3rd-party application | Office 365 applications, Microsoft Outlook |
+| 3rd-party application | Office 365 applications, Microsoft Outlook, MS Teams |
 | Operating System | Windows, macOS |
 
 ## Description
