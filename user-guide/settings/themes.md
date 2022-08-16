@@ -10,13 +10,14 @@ position: 70
 
 The **Themes** menu contains a set of UI themes, which you can apply to the Fiddler Everywhere application.
 
-by default, Fiddler Everywhere renders its Light theme. To change it, select a new theme from the menu, and click **Save**.
+by default, Fiddler Everywhere renders its **Default Light** theme. To change it, select a new theme from the menu, and click **Save**.
 
 The available themes are:
 
-- (Default) Light
+- Auto (changes the appearance based on your operating system theme)
+- Default Light
 - Light Blue
-- Dark
+- Default Dark
 - Dark Blue
 
 ![Theme settings](../../images/settings/settings-themes.png)
