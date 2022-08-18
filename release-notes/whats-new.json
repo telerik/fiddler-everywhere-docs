@@ -1,5 +1,20 @@
 [
     {
+        "version": "3.4.0",
+        "items": [
+            {
+                "title": "Fiddler Everywhere 3.4 Is Here!",
+                "description": "Fiddler Everywhere 3.4 release comes with a new Apple Silicon build, an improved user login experience and Extended Offline Support, and many new highly requested features!",
+                "url": "https://www.telerik.com/blogs/new-release-fiddler-everywhere-3.4"
+            },
+            {
+                "title": "How To Evaluate Then Improve a Website’s Network Performance",
+                "description": "Not sure where to start when it comes to improving your website’s performance? Learn tested techniques listed in this blog, complete with video.",
+                "url": "https://www.telerik.com/blogs/how-to-evaluate-improve-website-performance"
+            }
+        ]
+    },
+    {
         "version": "3.2.0",
         "items": [
             {
