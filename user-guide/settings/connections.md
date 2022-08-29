@@ -33,7 +33,7 @@ The **Connections** menu exposes options that allow for granular control over pr
     - Capturing traffic from iOS device with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
     - Expicit browser manual proxy settigns (to Fiddler's proxy address:port) with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF**
 
-    >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they won't trust the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) might misbehave or not work.
+    >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they won't trust third-party certificates like the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) might misbehave or not work.
 
 The following figure displays the startup settings of the **Connections** menu.
 
