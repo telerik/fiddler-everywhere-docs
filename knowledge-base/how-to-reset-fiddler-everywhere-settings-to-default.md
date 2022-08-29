@@ -42,10 +42,6 @@ The following screenshots represent the default Fiddler Everywhere settings.
 
   ![default Composer settings](../images/kb/default-settings/default-composer-settings.png)
 
-* Default **Rules** settings&mdash;New sessions that are not matching the active rules won't be blocked from execution.
-
-  ![default Rules settings](../images/kb/default-settings/default-rules-settings.png)
-
 * Default **Browsers** settings&mdash;Fiddler Everywhere tries to detect the default path to the Google Chrome installation folder (to be used with the [Open Browser]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) functionality)
 
   ![default Browsers settings](../images/kb/default-settings/default-browsers-settings.png)

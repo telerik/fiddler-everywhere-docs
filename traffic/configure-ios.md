@@ -82,3 +82,24 @@ The later versions of the iOS simulators, accessible through XCode, use the OS s
 Now you can immediately monitor HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere.
 
 >tip When you've finished debugging, remove the WiFi proxy from your iOS device.
+
+## Bypass the Apple Endpoints
+
+Some Apple services like the Apple Application store and iTunes use certificate pinning as an additional layer of security. That means these services won't trust third-party certificates like the one Fiddler Everywhere installs and operates as a MITM proxy. The above causes several significant effects:  
+- The SSL handshake fails, resulting in no HTTPS traffic being captured from these services.
+- The services will fail if the Fiddler Everywhere proxy is set as the proxy for the active internet connection.
+
+To prevent the Apple services from losing connectivity, the Fiddler Everywhere application automatically adds the following endpoints to the macOS proxy bypass list:
+
+```
+*.apple.com, *.itunes.com, *mzstatic.com
+```
+
+However, this is not the case for the other operating systems where these services are not commonly used. If you would like to continue using Apple services like iTunes, or AppStore on other operating system, ensure to add the above endpoints manually as follows:
+
+- Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
+- In the **Bypass Fiddler for URLS that starts with:** field, add the following endpoints:
+```
+*.apple.com, *.itunes.com, *mzstatic.com
+```
+- Click **Save** to persist the change.
