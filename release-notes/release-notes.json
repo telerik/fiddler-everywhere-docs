@@ -1,4 +1,33 @@
 [
+     {
+        "version": "3.4.1",
+        "title": "Fiddler Everywhere v3.4.1",
+        "date": "August 31, 2022",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Inform macOS users for the new Apple Silicon build"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Applying body formatting in inspectors body view is delayed"
+                    },
+                    {
+                        "title": "Notification for app update takes a lot of time to show"
+                    },
+                    {
+                        "title": "Remove 'Detected unusual line terminators' notification from inspectors"
+                    }
+                ]
+            }
+        ]
+    },
     {
         "version": "3.4.0",
         "title": "Fiddler Everywhere v3.4.0",
