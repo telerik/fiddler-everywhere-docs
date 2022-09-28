@@ -62,7 +62,7 @@ To capture that traffic with Fiddler Everywhere, use any of the following approa
 * Replace `localhost` with the `localhost.fiddler` alias to hit `localhost` in the `Host` header:
 
     ```Shell
-    http://ipv4.fiddler:8081/mytestpage.aspx
+    http://localhost.fiddler:8081/mytestpage.aspx
     ```
 
 ### Filtering Localhost Traffic
