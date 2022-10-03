@@ -8,6 +8,9 @@ res_type: kb
 ---
 
 
+>important The latest versions of Fiddler Everywhere are now using the Telerik.com site as an administrative panel for licensing and seats. The [Fiddler dashboard site](https://dashboard.getfiddler.com) is obsolete and should not be used. Please refer to the migration guideline if you want information on migrating your active subscription to https://www.telerik.com. 
+
+
 ## Environment
 
 |   |   |
