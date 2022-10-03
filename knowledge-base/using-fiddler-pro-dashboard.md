@@ -3,7 +3,7 @@ title: Using the Dashboard Site
 description: "Learn how to use the dashboard site for managing plans and subscriptions for the Fiddler products."
 type: how-to
 slug: fiddler-dashboard
-publish: true
+publish: false
 res_type: kb
 ---
 

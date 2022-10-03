@@ -12,7 +12,7 @@ Fiddler Everywhere provides a full-scale support for its paid subscription and t
 
 ## Paid Subscription and Trial Users Support  
 
-Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the actual developers who built the tool. Use the **Help > Contact Support** option within the Fiddler Everywhere application to submit a support ticket.
+Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the actual developers who built the tool. Use the **Help > Contact Support** option within the Fiddler Everywhere application to open the [support center](https://www.telerik.com/account/support-center) and submit a support ticket.
 
 The subscription plan includes unlimited access to the Fiddler's dedicated support services. However, to keep providing an industry-leading support experience, we have instituted a fair usage policy for support services. Practically, this means that if customer activity exceeds at least ten times the average, it may be reviewed by a Fiddler support manager at any time to assess whether the number of support requests is excessive and the user is in violation of the fair usage policy.
 
@@ -28,7 +28,7 @@ Support services for paid subscription or trial users provide the following supp
 
 If you are not a license holder or a trial user, you can use [a number of available support options](https://www.telerik.com/support/fiddler-everywhere):
 
-* [Fiddler discussions](https://community.getfiddler.com/support/discussions) are part of the free support you can get from the community and from the Fiddler Everywhere team on all kinds of general issues. You can also receive information on the features in discussion, request a feature, or report a bug there.
+* [Fiddler discussions](https://www.telerik.com/forums/fiddler) are part of the free support you can get from the community and from the Fiddler Everywhere team on all kinds of general issues. You can also receive information on the features in discussion, request a feature, or report a bug there.
 
 * Of course, the Fiddler team is active on [StackOverflow](https://stackoverflow.com/questions/tagged/fiddler-everywhere) as well and you can find a wealth of questions and answers there.
 
