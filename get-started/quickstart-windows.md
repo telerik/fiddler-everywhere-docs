@@ -22,6 +22,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
 ```curl
+  https://*.telerik.com/
   https://*.getfiddler.com/
   https://*.amazonaws.com/
 ```
