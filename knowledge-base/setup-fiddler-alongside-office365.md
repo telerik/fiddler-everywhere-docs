@@ -1,6 +1,6 @@
 ---
 title: Setting Up Fiddler Everywhere alongside Office365 and Outlook
-description: "Learn how to configure your proxy settings to bypass specific Microsoft endpoints so that you could use Microsoft Office 365 applications alongside Fiddler Everywhere."
+description: "Learn how to configure your proxy settings to bypass specific Microsoft endpoints so that you can use Microsoft Office 365 applications alongside Fiddler Everywhere."
 type: how-to
 slug: fiddler-and-outlook
 publish: true

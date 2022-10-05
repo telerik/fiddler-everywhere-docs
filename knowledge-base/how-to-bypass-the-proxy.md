@@ -39,7 +39,7 @@ All the described issues above have a common solution - bypassing Fiddler so tha
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
 
 - In the **Bypass Fiddler for URLS that starts with:** field, add the endpoints that you would like to bypass, separated by a comma:
-    _Example for bypassing the Apple endpoints (for services that are using certificate pinning)_
+    _Example for bypassing the Apple endpoints (for system services that are using certificate pinning)_
     ```
     *.apple.com, *.itunes.com, *mzstatic.com
     ```

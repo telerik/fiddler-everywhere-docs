@@ -37,7 +37,7 @@ The installation options of Fiddler Everywhere for each platform are part of the
 
 ## Logging In with Your Account
 
-Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can create a Fiddler account or use an existing Google account.
+Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can use a Telerik account or use an existing Google account.
 
 
 ### Creating a Fiddler Account
@@ -57,7 +57,9 @@ To directly sign in with your Google account, perform the following steps:
 
 1. Launch the Fiddler Everywhere client.
 
-1. Select **Sign in with Google** and authenticate on the Google Authentication page.
+1. Followm the **Sign in** link. You will land on the unified Telerik login form.
+
+1. From the unified Telerik login form, select **Sign in with Google** and authenticate on the Google Authentication page.
 
 1. After you successfully sign up, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 

@@ -75,7 +75,7 @@ Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. N
 
 - Even with HTTP/2 support enabled, Fiddler Everywhere cannot guarantee that all requests will use HTTP/2. If a client only supports HTTP/1.1 or lower, Fiddler will only communicate using the client's version. If the client works with HTTP/2 but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when communicating with the server.
 
-- Some browsers will share a single HTTP/2 connection to a website between several different tabs and keep a connection open for some time even after a tab is closed. That could lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
+- Some browsers will share a single HTTP/2 connection to a website between several different tabs and keep a connection open for some time even after a tab is closed. That can lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
 
 
 ## Additional Resources
