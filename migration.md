@@ -13,13 +13,13 @@ position: 100
 |   |   |
 |---|---|
 | Product | Fiddler Everywhere, Fiddler Jam, Fiddler Dashboard, Fiddler Jam Portal |
-| Admin Panel "My Account" section | https://www.telerik.com/account/ |
-| Admin Panel "Your License" section | https://www.telerik.com/account/your-licenses |
+| Unified Telerik **My Account** section | https://www.telerik.com/account/ |
+| Unified Telerik **Your License** section | https://www.telerik.com/account/your-licenses |
 
 ## Description
 
 
-Until recently, the Fiddler Everywhere license and seats were managed in a dedicated system known as Fiddler Dashboard. However, as Fiddler Everywhere is part of the extensive portfolio of products developed by Progress, the team decided to integrate the license and seat management at the [unified Telerik system for subscription management](https://www.telerik.com/account/). This way, our clients will benefit from using a single account and have a single entry point for managing all active product licenses. This article explains how to migrate your existing Fiddler subscription plan from the obsolete system to the unified Telerik system.
+Until recently, the Fiddler Everywhere license and seats were managed in a dedicated system known as Fiddler Dashboard. However, Fiddler Everywhere is part of an extensive portfolio of products developed by Progress, so the Fiddler team decided to improve the overall user experience by integrating the license and seat management at the [unified Telerik system for subscription management](https://www.telerik.com/account/). This way, you will benefit from using a single account and have a single entry point for managing all active product licenses. This article explains how to migrate your existing Fiddler subscription plan from the obsolete system to the new unified Telerik system.
 
 
 ## Migrating Fiddler Everywhere License

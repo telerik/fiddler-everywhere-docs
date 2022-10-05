@@ -40,7 +40,7 @@ To capture traffic from a remote computer:
 ## Solution (for Mobile Devices)
 
 
-- The Fiddler host and the remote mobile device should both be on the same network, and they should "see" each other (no firewall restrictions).
+- The Fiddler host and the remote mobile device must both be on the same network, and they must "see" each other (no firewall restrictions).
 
 To capture traffic from a remote mobile device, follow this steps:
 

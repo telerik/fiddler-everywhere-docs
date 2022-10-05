@@ -2,7 +2,7 @@
 
 ---
 title: Bypassing the Fiddler Everywhere proxy
-description: "Learn how to set a list of endpoints that should bypass the Fiddler Everywhere proxy and directly use the upstream proxy."
+description: "Learn how to set a list of endpoints that must bypass the Fiddler Everywhere proxy and directly use the upstream proxy."
 type: how-to
 slug: fiddler-bypass-list
 publish: true
