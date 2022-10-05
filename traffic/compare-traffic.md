@@ -39,7 +39,7 @@ You can add and compare more sessions by adding them to the comparison groups.
 
 1. Select one or more sessions that you want to compare.
 
-1. Select the **Add to compare group** option from the context menu and select the compare group where the session should be added.
+1. Select the **Add to compare group** option from the context menu and select the compare group to add the session.
 
     ![Add to compare group](../images/livetraffic/compare/compare-context-menu-add-to-group.png)
 

@@ -2,7 +2,7 @@
 title: Migrating Licenses and Seats
 description: "Learn how to migrate your Fiddler Everywhere seats and licenses from the obsolete Fiddler dashboard site to the Telerik administrative panel."
 type: how-to
-slug: fiddler-telerik-licenses
+slug: migrate-fiddler-licenses
 publish: false
 position: 100
 ---
@@ -24,9 +24,9 @@ Until recently, the Fiddler Everywhere license and seats were managed in a dedic
 
 ## Migrating Fiddler Everywhere License
 
-The license owner can migrate the active Fiddler Everywhere subscription and all assigned seats by executing the following steps:
+The license owner can migrate the active Fiddler Everywhere subscription and all assigned seats through the following steps:
 
-1. Open the **latest** version of the Fiddler Everywhere application. Alternatively, open the login page from the Fiddler Dashboard site at https://dashboard.getfiddler.com/login 
+1. Open [the **latest** version of the Fiddler Everywhere application](https://www.telerik.com/download/fiddler-everywhere). Alternatively, open the login page from the Fiddler Dashboard site at https://dashboard.getfiddler.com/login 
 
 1. Follow the **Sign In** link. You will land on the new login form that prompts you to enter your Fiddler Everywhere email.
 
@@ -36,18 +36,18 @@ The license owner can migrate the active Fiddler Everywhere subscription and all
 
 1. Enter the Fiddler Everywhere license owner email.
 
-    * In case the email exists as an active Telerik account, it will prompt for your Telerik credentials. Upon successful login, you can start managing your migrated license at https://www.telerik.com/account/your-licenses and using the Fiddler Everywhere (if your email is also assigned as a seat).
+    * If the email already exist as an active Telerik account, it will prompt for your Telerik credentials. Upon successful login, you can start managing your migrated license at https://www.telerik.com/account/your-licenses and use the Fiddler Everywhere application (if your email is also assigned as a seat).
 
-    * In case the email does **not** exist as an active Telerik account, you will be prompted to input a password and account information. 
+    * If the email does **not** exist as an active Telerik account, you will be prompted to create an accont by inputing a password and account information. 
 
         ![Creating new Telerik account](./images/migrate/migration_steps_login_003_create_account.png)
 
-        Confirm and finalize your Telerik account creation through the received activation link. Once the activation is completed, you can start managing your migrated license at https://www.telerik.com/account/your-licenses and using the Fiddler Everywhere (if your email is also assigned as a seat).
+        Confirm and finalize your Telerik account creation through the received activation link. Once the activation is completed, you can manage your migrated license at https://www.telerik.com/account/your-licenses and use the Fiddler Everywhere application (if your email is also assigned as a seat).
 
 
 ## Migrating Fiddler Everywhere Assigned Seats
 
-All assigned seats are automatically migrated to the new Telerik administrative panel after the license owner completes the migration. Seats that are not migrated will be presented with an informative banner within the application.
+After the license owner completes the migration all assigned seats are automatically migrated to the new Telerik administrative panel. Seats that are not migrated will be presented with an informative banner within the application.
 
 ![migration in-app banner](./images/migrate/migration_banner.png)
 

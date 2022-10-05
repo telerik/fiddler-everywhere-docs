@@ -117,7 +117,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
 Fiddler Everywhere comes with [collaboration in mind]({%slug collaboration-get-started%}) and provides sharing functionalities. Consider the following security highlights when sharing sessions:
 
-- Before sharing, a session is saved. Therefore, you should consider the [saving-related security highlights](#saving-traffic).
+- Before sharing, a session is saved. Therefore, you consider the [saving-related security highlights](#saving-traffic).
 
 - Sharing an unprotected session might expose your sensitive data to unauthorized third parties. Always consider adding a password-protection to your sessions before sharing them.
 

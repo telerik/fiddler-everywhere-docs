@@ -64,7 +64,7 @@ To directly sign in with your Google account, perform the following steps:
 
 ### Using SSO Login
 
-[Fiddler Everywhere Enterprise](https://www.telerik.com/purchase/fiddler) supports SSO login. Please get in touch with our [support]({%slug support%}) for detailed instructions on configuring your company-specific SSO.
+[Fiddler Everywhere Enterprise](https://www.telerik.com/purchase/fiddler) supports SSO login. Get in touch with our [support]({%slug support%}) for detailed instructions on configuring your company-specific SSO.
 
 
 ## Updating Fiddler Everywhere
