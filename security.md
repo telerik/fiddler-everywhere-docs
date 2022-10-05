@@ -64,7 +64,7 @@ While using Fiddler Everywhere, consider the following security indicators and h
 
 - Fiddler Everywhere will not store your data in the cloud if you do not use sharing or cloud capabilities. Everything is stored locally once you sign in (where your credentials are verified in the cloud). The only way to get something in the cloud is to explicitly upload saved **Sessions** collections, **Requests** collections, or **rules**, or share them with collaborators.
 
-- Sessions uploaded to the Fiddler cloud space are encrypted when password-protection is enabled. Unencrypted sessions are stored in the cloud as Fiddler archive clouds.
+- Sessions uploaded to the Fiddler cloud space are encrypted when password-protection is enabled. Unencrypted sessions are stored in the cloud as Fiddler archives.
 
 ## Application Analytics
 

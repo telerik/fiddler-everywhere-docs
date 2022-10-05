@@ -94,6 +94,6 @@ For more information, refer to the following documentation articles about each *
 
 The last section of the main menu provides account-specific options and information. Immediately visible are the first and the last name of logged Fiddler Everywhere user (as specified during the registration).
 
-- **Manage Account**&mdash;Direct link to the [**Account Overview**](https://wwwuat.telerik.com/account/) section at the https://www.telerik.com site.
-- **Manage Subscription**&mdash;Direct link to the [**Your Licenses**](https://wwwuat.telerik.com/account/your-licenses) section at the https://www.telerik.com site.
+- **Manage Account**&mdash;Direct link to the [**Account Overview**](https://www.telerik.com/account/) section at the https://www.telerik.com site.
+- **Manage Subscription**&mdash;Direct link to the [**Your Licenses**](https://www.telerik.com/account/your-licenses) section at the https://www.telerik.com site.
 - **Sign Out**&mdash;Allows you to log out of the currently logged user from the Fiddler Everywhere application and the https://www.telerik.com site.
