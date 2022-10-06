@@ -28,13 +28,11 @@ The license owner can migrate the active Fiddler Everywhere subscription and all
 
 1. Open [the **latest** version of the Fiddler Everywhere application](https://www.telerik.com/download/fiddler-everywhere). Alternatively, open the login page from the Fiddler Dashboard site at https://dashboard.getfiddler.com/login 
 
-1. Follow the **Sign In** link. You will land on the new login form that prompts you to enter your Fiddler Everywhere email.  You can create new Telerik account or, alternatively, use the Google authetication through the **Sign in with Google** link.
-
-    ![Sign in or create account form](./images/migrate/migration_steps_signin_or_create_001.png)
-
-    >important Sign in with your existing or create a new Telerik account with the **same** email you registered with your original Fiddler account.
+1. Follow the **Sign In** link. You will land on the new login form that prompts you to enter your Fiddler Everywhere email.
 
 1. Enter the Fiddler Everywhere license owner email.
+
+    >important Sign in with your existing or create a new Telerik account with the **same** email you registered with your original Fiddler account.
 
     * If the email exists as an active Telerik account&mdash;Enter your Telerik credentials. Upon successful login, you can start managing your migrated license at https://www.telerik.com/account/your-licenses and use the Fiddler Everywhere application (in case your owner email is also an assigned seat).
 
@@ -56,9 +54,7 @@ Each account with active seat must migrate to the new Telerik login system throu
 
 1. Open the **latest** version of the Fiddler Everywhere application.
 
-1. Follow the **Sign In** link. You will land on the new login form that prompts you to enter your Fiddler Everywhere email. You can create new Telerik account or, alternatively, use the Google authetication through the **Sign in with Google** link.
-
-    ![Sign in or create account form](./images/migrate/migration_steps_signin_or_create_001.png)
+1. Follow the **Sign In** link. You will land on the new login form that prompts you to enter your Fiddler Everywhere email.
 
 1. Enter the email for the Fiddler Everywhere account with activated seat.
 
