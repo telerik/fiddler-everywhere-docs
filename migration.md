@@ -52,13 +52,7 @@ Each account with active licensed seat must migrate to the new Telerik login sys
 
 The license owner can migrate the active Fiddler product subscription and all assigned seats through the following steps:
 
-1. Open the licensed product login forms.
-
-    * (Fiddler Everywhere) Open the latest version of the Fiddler Everywhere application to migrate a Fiddler Everywhere license.
-    
-    * (Fiddler Jam) Open the [Fiddler Jam portal](https://jam.getfiddler.com) to migrate a Fiddlerm Jam license. 
-
-    * (Fiddler Everywhere & Fiddler Jam) Open the login page from the [Fiddler Dashboard site](https://dashboard.getfiddler.com/login) to migrate all product licenses.
+1. Open the login page from the [Fiddler Dashboard site](https://dashboard.getfiddler.com/login) to migrate all product licenses.
 
 1. Follow the **Sign In** link.
 
@@ -69,7 +63,15 @@ The license owner can migrate the active Fiddler product subscription and all as
     * If the email exists as an active Telerik account&mdash;Sign in with your Telerik account. Upon successful login, you can start managing your migrated license at https://www.telerik.com/account/your-licenses and use the Fiddler Everywhere application (in case your owner email is also an assigned seat).
 
     * If the email does **not** exist as an active Telerik account&mdash;A login form prompts you to create an account by inputting a password and account information. 
-    
+
         Confirm and finalize your Telerik account creation through the received email activation link. Once the activation completes, you can manage your migrated license at https://www.telerik.com/account/your-licenses and use the Fiddler Everywhere application (if your email is also an assigned seat).
 
+
+1. Back in Fiddler Dashboard site, follow the **Migrate Your Subscription** popup windows to land at the migration page on Telerik.com
+
+    ![Migrate in Dashboard](./images/migrate/license_migration_dash_001.png)
+
+1.
+
+1.
 
