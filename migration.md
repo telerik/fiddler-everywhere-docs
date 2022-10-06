@@ -15,22 +15,29 @@ position: 100
 | Product | Fiddler Everywhere, Fiddler Jam, Fiddler Dashboard, Fiddler Jam Portal |
 | Unified Telerik **My Account** section | https://www.telerik.com/account/ |
 | Unified Telerik **Your License** section | https://www.telerik.com/account/your-licenses |
+| Fiddler Dashboard (obsolete) | https://dashboard.getfiddler.com |
 
 ## Description
 
 
-Until recently, the Fiddler Everywhere license and seats were managed in a dedicated system known as Fiddler Dashboard. However, Fiddler Everywhere is part of an extensive portfolio of products developed by Progress. TTo provide a better experience and access to all Progress Telerik products and services, Fiddler is migrating to the [unified Telerik system for account and subscription management](https://www.telerik.com/account/. This way, you will benefit from using a single account and have a single entry point for managing all active product licenses. This article explains how to migrate your existing Fiddler subscription plan from the obsolete system to the new unified Telerik system.
+Until recently, the Fiddler Everywhere license and seats were managed in a dedicated system known as Fiddler Dashboard. However, Fiddler products are now part of an extensive portfolio of products developed by Progress. To provide a better experience and access to all Progress Telerik products and services, Fiddler is migrating to the [unified Telerik system for account and subscription management](https://www.telerik.com/account/. This way, you will benefit from using a single account and have a single entry point for managing all active product licenses. This article explains how to migrate your existing Fiddler licenses and seats from the obsolete system to the unified Telerik system.
 
 
 ## Migrating Fiddler Licenses
 
-The license owner can migrate the active Fiddler Everywhere subscription and all assigned seats through the following steps:
+The license owner can migrate the active Fiddler produc subscription and all assigned seats through the following steps:
 
-1. Open [the **latest** version of the Fiddler Everywhere application](https://www.telerik.com/download/fiddler-everywhere). Alternatively, open the login page from the Fiddler Dashboard site at https://dashboard.getfiddler.com/login 
+1. Open the licensed product login forms.
 
-1. Follow the **Sign In** link. You will land on the new login form that prompts you to enter your Fiddler Everywhere email.
+    * (Fiddler Everywhere) Open the latest version of the Fiddler Everywhere application to migrate a Fiddler Everywhere license.
+    
+    * (Fiddler Jam) Open the [Fiddler Jam portal](https://jam.getfiddler.com) to migrate a Fiddlerm Jam license. 
 
-1. Enter the Fiddler Everywhere license owner email.
+    * (Fiddler Everywhere & Fiddler Jam) Open the login page from the [Fiddler Dashboard site](https://dashboard.getfiddler.com/login) to migrate all productgs licenses.
+
+1. Follow the **Sign In** link.
+
+1. Enter the Fiddler license owner email.
 
     >important Sign in with your existing or create a new Telerik account with the **same** email you registered with your original Fiddler account.
 
@@ -52,11 +59,15 @@ After the [account owner completes the license migration](#migrating-fiddler-lic
 
 Each account with an active seat must migrate to the new Telerik login system through the following steps:
 
-1. Open the **latest** version of the Fiddler Everywhere application.
+1. Open the application with active seat.
 
-1. Follow the **Sign In** link. You will land on the new login form that prompts you to enter your Fiddler Everywhere email.
+    * (Fiddler Everywhere) Open the latest version of the Fiddler Everywhere application.
+    
+    * (Fiddler Jam) Open the [Fiddler Jam portal](https://jam.getfiddler.com). 
 
-1. Enter the email for the Fiddler Everywhere account with the activated seat.
+1. Follow the **Sign In** link.
+
+1. Enter the email for the Fiddler account with the activated seat.
 
     >important Sign in with your existing or create a new Telerik account with the **same** email you registered with your original Fiddler account.
 
@@ -66,4 +77,4 @@ Each account with an active seat must migrate to the new Telerik login system th
 
         ![Creating new Telerik account](./images/migrate/migration_steps_login_003_create_account.png)
 
-        Confirm and finalize your Telerik account creation through the received email activation link. Once the activation completes, you can immediately start using the Fiddler Everywhere application.
+        Confirm and finalize your Telerik account creation through the received email activation link. Once the activation completes, you can immediately start using the Fiddler application.
