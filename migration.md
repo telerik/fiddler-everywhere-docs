@@ -50,13 +50,13 @@ After the [account owner completes the license migration](#migrating-fiddler-lic
 ![Migration in-app banner](./images/migrate/migration_banner.png)
 
 
-Each account with active seat must migrate to the new Telerik login system through the following steps:
+Each account with an active seat must migrate to the new Telerik login system through the following steps:
 
 1. Open the **latest** version of the Fiddler Everywhere application.
 
 1. Follow the **Sign In** link. You will land on the new login form that prompts you to enter your Fiddler Everywhere email.
 
-1. Enter the email for the Fiddler Everywhere account with activated seat.
+1. Enter the email for the Fiddler Everywhere account with the activated seat.
 
     >important Sign in with your existing or create a new Telerik account with the **same** email you registered with your original Fiddler account.
 
@@ -66,4 +66,4 @@ Each account with active seat must migrate to the new Telerik login system throu
 
         ![Creating new Telerik account](./images/migrate/migration_steps_login_003_create_account.png)
 
-        Confirm and finalize your Telerik account creation through the received email activation link. Once the activation is completed, you can start using the Fiddler Everywhere application immediately.
+        Confirm and finalize your Telerik account creation through the received email activation link. Once the activation completes, you can immediately start using the Fiddler Everywhere application.
