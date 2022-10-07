@@ -1,27 +1,18 @@
 ---
-title: Migrating Licenses and Seats
-description: "Learn how to migrate your Fiddler licenses and seats from the obsolete Fiddler dashboard site to the Telerik administrative panel."
+title: Migrating Subscriptions and Seats
+description: "Learn how to migrate your Fiddler subscriptions and seats from the obsolete Fiddler dashboard site to the Telerik administrative panel."
 type: how-to
-slug: migrate-fiddler-licenses
+slug: migrate-fiddler-subscriptions
 publish: false
 position: 100
 ---
 
 
-## Environment
-
-|   |   |
-|---|---|
-| Product | Fiddler Everywhere, Fiddler Dashboard, Fiddler Jam Portal |
-| Unified Telerik **My Account** section | https://www.telerik.com/account/ |
-| Unified Telerik **Your License** section | https://www.telerik.com/account/your-licenses |
-| Fiddler Jam Portal | https://jam.getfiddler.com |
-| Fiddler Dashboard (obsolete) | https://dashboard.getfiddler.com |
 
 ## Description
 
 
-Fiddler products are now part of an extensive portfolio of products developed by Progress Telerik. This article explains how to migrate your existing Fiddler licenses and seats from the obsolete dashboard system to the new unified Telerik system.
+Fiddler products are now part of an extensive portfolio of products developed by Progress Telerik. This article explains how to migrate your existing Fiddler subscriptions and seats from the obsolete dashboard system to the new unified Telerik system.
 
 
 ## Migrating Fiddler Licensed Seats
@@ -56,7 +47,7 @@ The license owner can migrate the active Fiddler product subscriptions and all a
 
 1. Follow the **Sign In** link.
 
-1. Enter the Fiddler license owner's email.
+1. Enter the Fiddler subscription owner's email.
 
     >important Sign in with your existing or create a new Telerik account with the **same** email you registered with your original Fiddler account.
 
@@ -64,7 +55,7 @@ The license owner can migrate the active Fiddler product subscriptions and all a
 
     * If the email does **not** exist as an active Telerik account&mdash;A login form prompts you to create an account by inputting a password and account information. 
 
-        Confirm and finalize your Telerik account creation through the received email activation link. Once the activation completes, you can manage your migrated license at https://www.telerik.com/account/your-licenses and use the Fiddler Everywhere application (if your email is also an assigned seat).
+        Confirm and finalize your Telerik account creation through the received email activation link. Once the activation completes, you can manage your migrated subscriptions at https://www.telerik.com/account/your-licenses and use the Fiddler Everywhere application (if your email is also an assigned seat).
 
 
 1. Back in the Fiddler Dashboard site, follow the **Migrate Your Subscription** popup windows to land at the migration page on Telerik.com
@@ -83,10 +74,21 @@ The license owner can migrate the active Fiddler product subscriptions and all a
 
     ![Select a payment method](./images/migrate/license_migration_dash_005.png)
 
-1. Confirm your license migration by following the **Migrate License** link.
+1. Confirm your subscription migration by following the **Migrate License** link.
 
     ![Confirm migration](./images/migrate/license_migration_dash_006.png)
 
-A success message is displayed to confirm the successful license migration to the new unified Telerik system.
+A success message is displayed to confirm the successful subscription migration to the new unified Telerik system.
 
  ![Confirm migration](./images/migrate/license_migration_dash_007.png)
+
+
+## Additional Resources
+
+Explore and learn more about the unified Telerik system through the following resources:
+
+- [Account Overview](https://wwwuat.telerik.com/account/)
+- [Your Account FAQ](https://www.telerik.com/account/faqs)
+- [Your Licenses (available only for license owners)](https://www.telerik.com/account/your-licenses)
+- [Purchasing & Licensing FAQs](https://www.telerik.com/purchase/faq/licensing-purchasing)
+- [Support Center](https://wwwuat.telerik.com/account/support-center)
