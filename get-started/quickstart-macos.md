@@ -41,7 +41,7 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 
 In this step you'll register by creating your unified Telerik account and become a trial user.   
 
-1. Launch the Fiddler Everywhere application. Follow the **Sign in** link.
+1. Launch the Fiddler Everywhere application. Follow the **Sign in or create an account** link.
 
 1. On the **Enter Your Email to Sign in or Create an Account** screen, enter the requested information. The email you provide here will be later on used by your collaborators for sharing sessions, collections, and notifications.
 
