@@ -40,6 +40,8 @@ When you clear a column filter, it automatically deletes its condition from the 
 
 The **Filters** toolbar option enables you to apply complex filtering solutions, such as creating multiple filtering conditions, combining them with logical operations, saving filters for later reuse, and more. An active [column filter](#column-filter) automatically adds as a condition in your active filter (or in the **Default** filter if no saved filters are active).
 
+![Filters toolbar option](../images/kb/filters/traffic-filters.png)
+
 ### Using Filters
 
 Create and apply a filter through the **Filters** toolbar option as follows:
@@ -66,7 +68,7 @@ Create and apply a filter through the **Filters** toolbar option as follows:
 
 1. Click **Apply** to close the **Filters** editor and immediately apply the newly created filter.   
 
->tip All condition values connected to a **Live Traffic** column can be auto-completed, and the auto-completion suggestions are based on the captured data. Additionally, after adding a condition, a counter will show the number of matches (from the currently captured sessions).
+All condition values connected to a **Live Traffic** column are auto-completed with the auto-completion suggestions based on the captured data. Additionally, after adding a condition, a counter will show the number of matches (from the currently captured sessions).
 
 
 ## Using Predefined Browser Capturing
