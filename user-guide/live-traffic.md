@@ -29,7 +29,7 @@ To start capturing traffic, enable **Live Traffic** by switching to the **Captur
 
 The **Live Traffic** toolbar provides the following functionalities:
 
-- [Filters](#advanced-filters) (**Advanced Filters**)
+- [Filtering](#filtering) (**Filters**)
 - [Preconfigured Browser Capturing](#preconfigured-browser-capturing) (**Open Browser**)
 - [Removing all](#removing-all) (**Remove All**)
 - [Searching](#searching) (**Search**)
@@ -38,23 +38,15 @@ The **Live Traffic** toolbar provides the following functionalities:
 - [Managing Columns](#managing-columns) (**Columns**)
 - [Toggling Layout](#toggling-layout)(**Toggle Layout Change**)
 
-### Streaming
 
-By default, Fiddler Everywhere uses the buffering mode, which means that the responses are fully collected before any part is sent to the client. Buffering alters the responses&mdash;for example, an image won't begin to download until the containing page download is complete. With the streaming mode, the server responses are immediately returned to the client as it is downloaded. In the streaming mode, tampering with the response body is not possible.
-
-The streaming mode is helpful for low-level network timing scenarios&mdash;for example, by design, some browsers will parse partially downloaded HTML, which will start the download of external resources in parallel before the remote server has finished delivering the content. The streaming mode is also useful if a site offers audio or video streams, as Fiddler Everywhere cannot buffer such constant streams.
-
-![Buffering mode vs. Streaming Mode](../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
-
-To toggle between the buffering and the streaming mode, click the **Stream** button.
-
-### Filters
+### Filtering
 
 Use the **Filters** to apply complex filters on your captured sessions in the **Live Traffic** list. The **Filters** entry uses several different logical constructions to create a matching condition.
 
-![Advanced Filters](../images/kb/filters/adv-filters.png)
+![Traffic Filters](../images/kb/filters/traffic-filters.png)
 
 [Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
+
 
 ### Preconfigured Browser Capturing
 
@@ -393,27 +385,13 @@ To create a custom sorting order, click the desired column. For example, click t
 
 ### Filtering Options
 
-Each column comes with a **more** button (three vertical dots), which opens a popup with additional **Filter** and **Columns** submenus.
+Each column comes with a **filter** button, which popups an additional **Filter** menu.
 
-The **Filter** submenu enables you to apply filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can clear active filters through the **Filter** popup (for the filtered column) or the global [**Clear All Filters** button](##clearing-all-filters).
+The column **Filter** menu enables you to add filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
-![Filter context submenu](../images/livetraffic/columns/dots-filter.png)
+![column fulter menu](../images/livetraffic/columns/dots-filters.png)
 
->tip [Apply complex filters by using the **Advanced Filters**](#advanced-filters) or [learn more about the **Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters)
-
-Use the **Columns** submenu to select which column will be visible in the **Live Traffic** list. By default, the following columns are visible:
-
-- **URL**
-- **Result**
-- **Method**
-- **Process**
-- **Remote IP**
-- **Body Size**
-- **Comments**
-
-Refer to the [KB article "How to View Web Session Summary"]({%slug how-to-view-web-session-summary%}) for detailed information about each column type.
-
-![Columns context submenu](../images/livetraffic/columns/dots-columns.png)
+>tip [Apply complex filters by using the **Filters**](#filtering) toolbar option or [learn more about the **Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters)
 
 
 ## Context Menu Options
