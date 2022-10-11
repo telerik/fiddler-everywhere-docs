@@ -1,6 +1,6 @@
 ---
 title: Filtering Traffic
-description: "Learn how to filter the traffic to minimize the output in Live Traffic when working with Telerik Fiddler Everywhere."
+description: "Learn how to filter the captured traffic to minimize the output in Live Traffic when working with the Fiddler Everywhere application."
 type: how-to
 slug: how-to-filter-traffic
 publish: true
@@ -21,12 +21,12 @@ Fiddler Everywhere sets itself as the operating system proxy once the [system ca
 
 Modern applications often generate hundreds or even thousands of requests, which might pollute your session list with lots of unwanted information. This article reveals some of the options you can use to filter the captured traffic or lower the amount of captured traffic.
 
-- [Filtering through column filters](#column-filter)
+- [Filtering through column filters](#column-filters)
 - [Filtering through Filters toolbar option](#filters)
 - [Turn off the global capturing and use a single browser instance](#using-predefined-browser-capturing)
 - [Bypass requests to specific domains from using the Fiddler proxy](#bypassing-the-proxy)
 
-## Column Filter
+## Column Filters
 
 Each column from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) has its own [filtering submenu]({%slug web-sessions-list%}#filtering-options). A filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on). Each logical operation combines with the filter value, which depends on the column type and can be a string, number, boolean, or predefined value. 
 
@@ -38,7 +38,7 @@ When you clear a column filter, it automatically deletes its condition from the 
 
 ## Filters
 
-The **Filters** toolbar option enables you to apply complex filtering solutions, such as creating multiple filtering conditions, combining them with logical operations, saving filters for later reuse, and more. An active [column filter](#column-filter) automatically adds as a condition in your active filter (or in the **Default** filter if no saved filters are active).
+The **Filters** toolbar option enables you to apply complex filtering solutions, such as creating multiple filtering conditions, combining them with logical operations, saving filters for later reuse, and more. An active [column filter](#column-filters) automatically adds as a condition in your active filter (or in the **Default** filter if no saved filters are active).
 
 ![Filters toolbar option](../images/kb/filters/traffic-filters.png)
 
@@ -48,7 +48,7 @@ Create and apply a filter through the **Filters** toolbar option as follows:
 
 1. Click the **Filters** button to open the filters editor window.
 
-1. (Optional) Add a filter name. 
+1. (**Optional**) Add a filter name. 
 
     >tip Adding a name will allow you to save and easily reuse a filter at a later point.
 
@@ -62,7 +62,7 @@ Create and apply a filter through the **Filters** toolbar option as follows:
 
 1. Add one or more match conditions based on the HTTP headers, HTTP bodies, or other specific Fiddler's columns data.
 
-1. (Optional) Save the filter.
+1. (**Optional**) Save the filter.
 
     >tip Saved filters can be easily activated and deactivated, simplifying and improving their usage. You can also duplicate, edit or remove a saved filter through the **Filters** editor.
 

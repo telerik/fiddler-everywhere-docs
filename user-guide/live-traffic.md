@@ -29,23 +29,21 @@ To start capturing traffic, enable **Live Traffic** by switching to the **Captur
 
 The **Live Traffic** toolbar provides the following functionalities:
 
-- [Filtering](#filtering) (**Filters**)
+- [Filtering Traffic](#filtering-traffic) (**Filters**)
 - [Preconfigured Browser Capturing](#preconfigured-browser-capturing) (**Open Browser**)
-- [Removing all](#removing-all) (**Remove All**)
+- [Removing All Sessions](#removing-all-sessions) (**Remove All**)
 - [Searching](#searching) (**Search**)
-- [Saving](#saving) (**Save**)
-- [Sharing](#sharing) (**Share**)
+- [Saving Sessions](#saving-sessions) (**Save**)
+- [Sharing Sessions](#sharing-sessions) (**Share**)
 - [Managing Columns](#managing-columns) (**Columns**)
 - [Toggling Layout](#toggling-layout)(**Toggle Layout Change**)
 
 
-### Filtering
+### Filtering Traffic
 
-Use the **Filters** to apply complex filters on your captured sessions in the **Live Traffic** list. The **Filters** entry uses several different logical constructions to create a matching condition.
+Use the filtering options (the [**Filters** toolbar option]({%slug how-to-filter-traffic%}#filters) and the [column filters]({%slug how-to-filter-traffic%}#column-filters)) to create and apply complex filters on your captured sessions in the **Live Traffic** list. [Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
 
 ![Traffic Filters](../images/kb/filters/traffic-filters.png)
-
-[Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
 
 
 ### Preconfigured Browser Capturing
@@ -55,16 +53,17 @@ Use the **Open Browser** button to capture traffic from a specific browser insta
 ![Use the Open Browser button to start preconfigured browser instance](../images/get-started/get-started-open-browser.png)
 
 
-### Removing All
+### Removing All Sessions
 
-To remove all captured sessions, use the **Remove All** button, which automatically removes all captured traffic from the **Live Traffic** list. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
+Use the **Remove All** button to automatically remove all captured traffic from the **Live Traffic** list. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
 
 
 ### Searching
 
 To search for specific values in the URL and the headers of all sessions, use the **Search** text input. The search action will immediately filter and show all sessions containing the search terms.
 
-### Saving
+
+### Saving Sessions
 
 To save captured sessions, use the **Save** button, which will automatically save all captured traffic. To save only specific sessions, select the desired ones and use the advanced saving options from [the context menu]({%slug web-sessions-list%}#save).
 
@@ -80,7 +79,8 @@ To save sessions for later or prepare sessions for sharing:
 
 1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
-### Sharing
+
+### Sharing Sessions
 
 Sharing sessions dramatically improve collaboration, and Fiddler Everywhere provides the following options to export and share sessions:
 
@@ -101,7 +101,7 @@ To share a session through the toolbar:
 
 ### Managing Columns
 
-
+Use the **Columns** option to manage which columns to show up in the [Live Traffic list](#live-traffic-list). [Learn more about each column present in the Live Traffic list here...](#columns)
 
 
 ### Toggling Layout
@@ -115,6 +115,7 @@ The last icon on the right side of the toolbar presents an option to restructure
 >tip You can collpase the side-panels ([**Sessions**]({%slug saved-sessions-tab%}) and [**Requests**]({%slug saved-requests-tab%})) and toggle the main layout to optimize your working space.
 
 ![Fiddler Everywhere with collapsed side panels and toggled layout](../images/livetraffic/websessions/websessions-list-all-toggled.png)
+
 
 ## Live Traffic List
 
@@ -387,7 +388,7 @@ To create a custom sorting order, click the desired column. For example, click t
 
 Each column comes with a **filter** button, which popups an additional **Filter** menu.
 
-The column **Filter** menu enables you to add filters to the currently selected column only&mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
+The column **Filter** menu enables you to easily add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
 ![column fulter menu](../images/livetraffic/columns/dots-filters.png)
 
@@ -518,32 +519,28 @@ To replay previously captured sessions, use the **Replay** context menu option, 
 
 To select sessions directly related to the currently selected session, use the **Select** context menu option. You choose **parent**, **children**, and **duplicate** sessions.
 
-- **Parent request** selects the session that is a parent of the currently selected session; can be accessed with the keyboard by pressing `P`.
+- **Parent request**&mdash;selects the session that is a parent of the currently selected session; can be accessed with the keyboard by pressing `P`.
 
-- **Children requests** selects the sessions that are children of the currently selected session; can be accessed with the keyboard by pressing `C`.
+- **Children requests**&mdash;selects the sessions that are children of the currently selected session; can be accessed with the keyboard by pressing `C`.
 
-- **Duplicate request** selects the session that is identical to the currently selected session; can be accessed with the keyboard by pressing `D`.
+- **Duplicate request**&mdash;selects the session that is identical to the currently selected session; can be accessed with the keyboard by pressing `D`.
 
 ### Copying
 
 To place session information in the clipboard, use the **Copy** context menu option, which supports the following options:
 
-- **URL** provides the session URL; can be accessed with the keyboard by pressing `Cmd`+`U` (on Mac), or `Ctrl`+`U` (on Windows).
+- **URL**&mdash;provides the session URL; can be accessed with the keyboard by pressing `Cmd`+`U` (on Mac), or `Ctrl`+`U` (on Windows).
 
-- **Full Summary** provides verbose session details; can be accessed with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
+- **Full Summary**&mdash;provides verbose session details; can be accessed with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
 
-The following example demonstrates how to copy a URL.
+- **Copy as Powershell**&mdash;converts the request as a Powershell code and puts it in the system clipboard.
 
-```
-http://0.0.0.0:4000/fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png
-```
+- **Copy as Fetch**&mdash;converts the request as a Fetch code and puts it in the system clipboard.
 
-The following example demonstrates how to the full information.
+- **Copy as Curl**&mdash;converts the request as a Curl command and puts it in the system clipboard.
 
-```
-#   RESULT  PROTOCOL    HOST    URL METHOD  BODY    CACHING CONTENT-TYPE    PROCESS COMMENTS
-277 200 HTTP    0.0.0.0:4000    /fiddler-everywhere/images/livetraffic/websessions/websessions-list-share-options.png   GET 207,094 private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate   image/png; charset=utf-8        
-```
+- **Copy as Python (requests)**&mdash;converts the request as a Python code and puts it in the system clipboard.
+
 
 ### Comparing
 
