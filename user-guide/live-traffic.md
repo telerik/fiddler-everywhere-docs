@@ -41,16 +41,19 @@ The **Live Traffic** toolbar provides the following functionalities:
 
 ### Filtering Traffic
 
-Use the filtering options (the [**Filters** toolbar option]({%slug how-to-filter-traffic%}#filters) and the [column filters]({%slug how-to-filter-traffic%}#column-filters)) to create and apply complex filters on your captured sessions in the **Live Traffic** list. [Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
+Use the filtering options (the [**Filters** toolbar option]({%slug how-to-filter-traffic%}#filters) and the [column filters]({%slug how-to-filter-traffic%}#column-filters)) to create and apply complex filters on your captured sessions in the **Live Traffic** list. 
 
-![Traffic Filters](../images/kb/filters/traffic-filters.png)
+[Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
 
 
 ### Preconfigured Browser Capturing
 
-Use the **Open Browser** button to capture traffic from a specific browser instance without the need to modify the system proxy settings. [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
+Use the **Open Browser** button to capture traffic from a specific browser instance without the need to modify the system proxy settings. 
 
 ![Use the Open Browser button to start preconfigured browser instance](../images/get-started/get-started-open-browser.png)
+
+[Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
+
 
 
 ### Removing All Sessions
@@ -101,7 +104,9 @@ To share a session through the toolbar:
 
 ### Managing Columns
 
-Use the **Columns** option to manage which columns to show up in the [Live Traffic list](#live-traffic-list). [Learn more about each column present in the Live Traffic list here...](#columns)
+Use the **Columns** option to manage which columns to show up in the [Live Traffic list](#live-traffic-list). 
+
+[Learn more about each column present in the Live Traffic list here...](#columns)
 
 
 ### Toggling Layout
@@ -140,12 +145,12 @@ The following table displays the icons which **Live Traffic** supports for its l
 
 <table style="width: 80%; border-collapse: collapse;">
     <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 90%;">
+       <col span="1" style="width: 12%;">
+       <col span="1" style="width: 88%;">
     </colgroup>
     <thead>
         <tr>
-            <th>Column name</th>
+            <th>Icon Name</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -392,7 +397,7 @@ The column **Filter** menu enables you to easily add filters for the currently s
 
 ![column fulter menu](../images/livetraffic/columns/dots-filters.png)
 
->tip [Apply complex filters by using the **Filters**](#filtering) toolbar option or [learn more about the **Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters)
+>tip Apply complex filters by using the [**Filters** toolbar option](#filtering) or learn more about the [**Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters)
 
 
 ## Context Menu Options
@@ -579,8 +584,8 @@ Consider the following rules when bypassing a domain:
 
 - All domains added through **Bypass** option are part of the operating system bypass list until the [Fiddler Everywhere proxy captures system traffic]({%slug capture-traffic-get-started%}#system-capturing).
 - All domains added through **Bypass** option will be explicitly bypassed when the [Fiddler Everywhere proxy uses preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
-- You can remove an added domain from the bypass list through [**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
-- You can manually add more domains to the bypass list through [**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
-- Toggling off the [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}#system-capturing) removes Fiddler Everywhere as a system proxy and effectively clears the operating system bypass list set by Fiddler Everywhere. Note that Fiddler Everywhere bypass list ([**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
-- Closing the Fiddler Everywhere application resets the system proxy and effectively clears the operating system bypass list set by Fiddler Everywhere. Note that Fiddler Everywhere bypass list ([**Settings > Connections > Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
-- The **Bypass** option is inactive and not applicable for H[TTP CONNECT tunnels](https://textslashplain.com/2015/11/19/understanding-connect-tunnels/), and localhost addresses (e.g., localhost, 127.0.01, ::1).
+- You can remove an added domain from the bypass list through [**Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
+- You can manually add more domains to the bypass list through [**Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
+- Toggling off the [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}#system-capturing) removes Fiddler Everywhere as a system proxy and effectively clears the operating system bypass list set by Fiddler Everywhere. Note that Fiddler Everywhere bypass list ([**Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- Closing the Fiddler Everywhere application resets the system proxy and effectively clears the operating system bypass list set by Fiddler Everywhere. Note that Fiddler Everywhere bypass list ([**Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- The **Bypass** option is inactive and not applicable for [HTTP CONNECT tunnels](https://textslashplain.com/2015/11/19/understanding-connect-tunnels/), and localhost addresses (e.g., localhost, 127.0.01, ::1).
