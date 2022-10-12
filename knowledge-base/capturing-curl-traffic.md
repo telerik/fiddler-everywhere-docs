@@ -1,6 +1,6 @@
 ---
 title: Capturing cURL Traffic
-description: "Learn how to capture cURL traffic by using the Fiddler Everywhere web-debugging tool."
+description: "Learn how to capture cURL traffic while using the Fiddler Everywhere web-debugging tool."
 type: how-to
 slug: how-to-capture-curl-traffic
 publish: true
@@ -13,13 +13,13 @@ res_type: kb
 |---|---|
 | Product   |
 | Product Version | 1.0.0 and above  |
-| 3rd-party tool | [curl](https://curl.se/docs/manpage.html) |
+| 3rd-party tool | [Curl](https://curl.se/docs/manpage.html) |
 | Supported OS | macOS, Linux, Windows |
 
 
 ## Description
 
-Some third-party tools like [curl](https://curl.se/docs/manpage.html) don't use the OS system proxy by default. How can I intercept the traffic generated from similar applications?
+Some third-party tools like [Curl](https://curl.se/docs/manpage.html) don't use the OS system proxy by default. How can I intercept the traffic generated from Curl or similar applications?
 
 ## Solution
 

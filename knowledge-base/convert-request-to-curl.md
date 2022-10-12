@@ -24,6 +24,11 @@ Many developers, support engineers, and end-users are familiar with the [cURL](h
 
 ## Solution
 
+Fiddler Everywhere version 4.0.0 and above provides an automated export as Curl script through the [Live Traffic list context menu]({%slug web-sessions-list%}).
+
+
+## Solution (Obsolete)
+
 The [**Composer**]({%slug composer-tab%}) provides options for creating and executing your requests. Each executed request is added to the [**Live Traffic** list]({%slug web-sessions-list%}) as a new session entry.
 
 To convert a request created in the **Composer**:

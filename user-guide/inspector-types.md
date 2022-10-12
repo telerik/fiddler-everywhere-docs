@@ -260,7 +260,7 @@ All inspectors provide further interaction options through a context menu. The c
 ![Decode functionality from the context menu](../images/livetraffic/inspectors/decode-original-base64.png)
 
 
-### Inspector's Toolbar
+## Inspector's Toolbar
 
 Each inspector has a toolbar that provides a different set of functionalities and data as follows:
 
@@ -280,7 +280,7 @@ Each inspector has a toolbar that provides a different set of functionalities an
 
 - **Toogle Word Wrap**&mdash;Toogle the option to transfer a word for which there is insufficient space from the end of one line of text to the beginning of the next.
 
-- **Copy all content to clipboard**&mdash;Copies the inspector content in the system clipboard.
+- **Copy all content to clipboard**&mdash;Copies the inspector's content into the system clipboard.
 
 ![Inspectors toolbar](../images/livetraffic/inspectors/inspectors-toolbar.png)
 

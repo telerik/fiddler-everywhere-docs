@@ -16,11 +16,11 @@ res_type: kb
 
 ## Description
 
-Traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http://127.0.0.1) is not captured when using some browsers like Google Chrome or Firefox even though the **Capturing** mode of Fiddler Everywhere is turned on. How can I handle this issue?
+While testing my application the traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http://127.0.0.1) is not captured by [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}). How can I handle this issue?
 
 ## Solution
 
-Utilize either of the following approaches:
+You can utilize either of the following approaches:
 
 - [Use the machine name](#using-the-machine-name) instead of `localhost`.
 - [Use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere.
