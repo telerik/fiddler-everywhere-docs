@@ -61,6 +61,7 @@ The following steps apply to real Android devices with access to the Internet th
         - Save and install the certificate (**Android 10 and below**):
 
             - In the prompt window, enter a descriptive certificate name and tap **Save**.
+            
             - Install the downloaded Fiddler certificate in the device certificate storage. The settings location depends on the Android version but is usually located under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
         - Save and install the certificate (**Android 11 and above**):

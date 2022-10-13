@@ -9,9 +9,9 @@ position: 100
 
 
 
-## Migrating Fiddler Accounts and Licenses
+## Migrating Fiddler Accounts and Subscriptions
 
-Fiddler products are now part of an extensive portfolio of products developed by Progress Telerik. This article explains how to migrate your existing Fiddler accounts and licenses to the new unified Telerik system.
+Fiddler products are now part of an extensive portfolio of products developed by Progress Telerik. This article explains how to migrate your existing Fiddler accounts and subscriptions to the new unified Telerik system.
 
 
 ## Account Migration
@@ -28,20 +28,20 @@ Each Fiddler account must migrate to the new Telerik login system through the fo
 
 1. Follow the **Sign In** link.
 
-1. Enter your Fiddler account email.
+1. Enter your Fiddler account email or sign in with Google. 
 
-    >important To migrate successfully, create a new Telerik account with the **same** email address used with your original Fiddler account.
+    >important To migrate successfully, create a new Telerik account (or use Google authentication) with the **same** email address used with your original Fiddler account.
 
 1. Enter a password and account information in the account creation form.
 
 1. Confirm and finalize your Telerik account creation through the received email activation link. 
 
-Once the activation completes, you can immediately continue using the Fiddler application.
+Once the activation completes, You can immediately sign in and continue using your Fiddler product.
 
 
-## License Migration
+## Subscription Migration
 
-A license holder can migrate an active Fiddler product subscription through the following steps:
+A license holder has an additional step and must migrate the active Fiddler product subscription to the Telerik system. The subscription migration can be done through the following steps:
 
 1. [Migrate your existing Fiddler account](#account-migration)
 
@@ -57,15 +57,15 @@ A license holder can migrate an active Fiddler product subscription through the 
 
 1. Confirm your subscription migration by following the **Migrate License** link.
 
-A success message confirms the successful subscription migration to the new unified Telerik system.
+A success message confirms the successful subscription migration to the new unified Telerik system. We will permanently remove your old payment methods from the old dashboard system, and all future subscription renewals will be charged through the payment method set in the Telerik system.
 
 
 ## Additional Resources
 
 Explore and learn more about the unified Telerik system through the following resources:
 
-- [Account Overview](https://wwwuat.telerik.com/account/)
+- [Account Overview](https://www.telerik.com/account/)
 - [Your Account FAQ](https://www.telerik.com/account/faqs)
-- [Your Licenses (available only for license owners)](https://www.telerik.com/account/your-licenses)
+- [Your Licenses)](https://www.telerik.com/account/your-licenses)
 - [Purchasing & Licensing FAQs](https://www.telerik.com/purchase/faq/licensing-purchasing)
-- [Support Center](https://wwwuat.telerik.com/account/support-center)
+- [Support Center](https://www.telerik.com/account/support-center)
