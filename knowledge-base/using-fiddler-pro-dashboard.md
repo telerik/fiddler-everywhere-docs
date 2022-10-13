@@ -8,7 +8,7 @@ res_type: kb
 ---
 
 
->important The latest version of the Fiddler Everywhere application is now using the unified Telerik system for subscription management and the [Fiddler dashboard site](https://dashboard.getfiddler.com) is now obsolete. Refer to the migration guidelines for instructions on how to migrate your active subscription to https://www.telerik.com. 
+>important The latest version of the Fiddler Everywhere application is now using the unified Telerik system for subscription management and the [Fiddler dashboard site](https://dashboard.getfiddler.com) is now obsolete. Refer to [**the migration guidelines**]({%slug migrate-fiddler-subscriptions%}) for detailed instructions on how to migrate your active subscription to https://www.telerik.com. 
 
 
 ## Environment
