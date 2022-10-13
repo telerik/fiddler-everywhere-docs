@@ -26,15 +26,17 @@ To capture and inspect traffic on iOS devices or simulators, perform the followi
 
 - Use an iOS device or an iOS simulator within the same local network as the Fiddler Everywhere host.
 
-## Configure Fiddler Everywhere
+## Configuring Fiddler Everywhere
 
 1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**.
 
-1. Check the IP address of the machine where Fiddler Everywhere is running. To obtain the IP address, for example, **ipconfig** on Windows or **ifconfig** on Linux, you can use the built-in OS tools or the Fiddler Everywhere popup status on the bottom-right part of the client. For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere machine is 192.168.0.101.
+1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the host IP address. Alternatively, you can obtain the IP address while using  **ipconfig**/ **ifconfig** (depending on the OS).  For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere machine is 192.168.0.101.
+
+1. Enable [system capturing]({%slug capture-traffic-get-started%}#system-capturing).
 
 1. Proceed with the iOS configuration. Note that [real iOS devices](#configure-the-ios-device) have different configuration than [iOS simulators](#configure-the-ios-simulator).
 
-## Configure the iOS Device
+## Configuring the iOS Device
 
 To configure real iOS devices to work alongside a Fiddler Everywhere host, refer to the following steps. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configure-the-ios-simulator). Real iOS devices and iOS simulators must be on the same network and be discoverable.
 
@@ -45,13 +47,15 @@ To configure real iOS devices to work alongside a Fiddler Everywhere host, refer
 
 1. Scroll to the bottom and choose **Configure Proxy** > **Manual**.
 
-1. In the **Server** field, type your Fiddler Everywhere host IP address&mdash;for example, 192.168.0.101.
+     - Enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.148.39**.
 
-1. Type the Fiddler Everywhere listening port (8866 by default) in the **Port** field. Tap **Save**.
+     - Enter the Fiddler Everywhere proxy port. By default, the port is **8866**.
 
     >tip With the current setup, you can capture non-secure HTTP traffic. However, if you try to open any HTTPS website, you'll get the "This site's security certificate is not trusted!" error. To fix this issue, trust the Fiddler root certificate.
 
-1. Open a browser on the iOS device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere. The address is accessible only when the Fiddler Everywhere host has the Capturing mode turned on.
+1. Open a browser on the iOS device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere. 
+
+    >important The echo service address is accessible only when the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) is turned on.
 
 1. Click the Fiddler root certificate link to download it.
 

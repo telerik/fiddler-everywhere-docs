@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product   |
+| Product   | Fiddler Everywhere |
 | Product Version | 1.0.0 and above  |
 | Operating System | macOS, Windows, Linux  |
 | 3rd-party tools | macOS Terminal, iTerm2, Command Prompt, Bash |
