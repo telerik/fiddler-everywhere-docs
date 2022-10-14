@@ -38,3 +38,14 @@ The **Connections** menu exposes options that allow for granular control over pr
 The following figure displays the startup settings of the **Connections** menu.
 
 ![Act as a system proxy on startup setting](../../images/settings/settings-connections.png)
+
+
+### Streaming
+
+By default, Fiddler Everywhere uses the buffering mode, which means that the responses are fully collected before any part is sent to the client. Buffering alters the responses&mdash;for example, an image won't begin to download until the containing page download is complete. With the streaming mode, the server responses are immediately returned to the client as it is downloaded. In the streaming mode, tampering with the response body is not possible.
+
+The streaming mode is helpful for low-level network timing scenarios&mdash;for example, by design, some browsers will parse partially downloaded HTML, which will start the download of external resources in parallel before the remote server has finished delivering the content. The streaming mode is also useful if a site offers audio or video streams, as Fiddler Everywhere cannot buffer such constant streams.
+
+![Buffering mode vs. Streaming Mode](../../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
+
+To toggle between the buffering and the streaming mode, click the **Stream** button.

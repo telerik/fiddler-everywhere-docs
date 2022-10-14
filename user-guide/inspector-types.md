@@ -80,7 +80,7 @@ The **Cookies inspector** displays the contents of any outbound `Cookie` and `Co
 
 The **Raw Inspector** allows you to view the complete request and response, including headers and bodies, as text. Most of the inspector represents a large text area that displays the body text interpreted using the detected character set with the headers, the byte-order-marker, or an embedded `META` tag declaration.
 
-By default, the request or response will be displayed as received, which means that encoded or compressed content will be in a non-human readable format and received as is. The **Raw Inspector** comes with a special **decode** button (located in the toolbar), decoding encoded content.
+By default, the request or response will be displayed as received, which means that encoded or compressed content will be in a non-human readable format and received as is. The **Raw Inspector** comes with a special **decode** button (located in the [toolbar](#inspectors-toolbar)), decoding encoded content.
 
 The following figure displays the encoded raw content with the **decode** button in an inactive state.
 
@@ -110,34 +110,34 @@ The **Body** inspectors are suitable for different types of requests and respons
 - [Form-Data](#form-data-body-inspector)
 - [JavaScript](#javascript-body-inspector)
 
-### Text Body Inspector
+#### Text Body Inspector
 
 The **Text** inspector allows you to view the request and response bodies as text. It truncates the data it renders at the first null byte it finds, making it inappropriate for displaying binary content. Most body inspectors represent a large text area that reveals the body text interpreted using the detected character set with the headers, the byte-order-marker, or an embedded META tag declaration.
 
 ![Text Inspector](../images/livetraffic/inspectors/inspectors-textview.png)
 
-### JSON Body Inspector
+#### JSON Body Inspector
 
-The **JSON** inspector interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object nodes. The tree view will remain empty if the body can't be interpreted as JSON. The JSON inspector can render the data even if the request or response is compressed or has HTTP chunked encoding. The JSON inspector provides an __Expand All / Collapse All__ toggle button to expand or collapse all JSON tree nodes.
+The **JSON** inspector interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object nodes. The tree view will remain empty if the body can't be interpreted as JSON. The JSON inspector can render the data even if the request or response is compressed or has HTTP chunked encoding.
 
 >important If the JSON data is malformed, for example, the name component of a name/value pair is unquoted, the JSON inspector will show a warning in the footer.
 
 ![JSON Inspector](../images/livetraffic/inspectors/inspectors-json.png)
 
-### XML Body Inspector
+#### XML Body Inspector
 
 The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an __Expand All / Collapse All__ toggle button to expand or collapse all XML tree nodes.
 
 ![XML Inspector](../images/livetraffic/inspectors/inspectors-xml.png)
 
-### Form Data Body Inspector
+#### Form Data Body Inspector
 
 The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form-data. If a form is found, it is parsed, and the name/value pairs are displayed in the grid view. The inspector works best with application/x-www-form-urlencoded data used by most simple web forms.
 
 ![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
 
 
-### JavaScript Body Inspector
+#### JavaScript Body Inspector
 
 The **JavaScript** inspector interprets and formats the selected request or response body as a JavaScript/TypeScript code. The inspector will recognize and properly format the following MIME types:
 
@@ -159,6 +159,8 @@ text/x-javascript
 ```
 
 ![javaScript Inspector](../images/livetraffic/inspectors/inspectors-javascript.png)
+
+
 
 ## WebSocket Inspectors
 
@@ -256,6 +258,32 @@ All inspectors provide further interaction options through a context menu. The c
 - **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option support out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and in all **Body** inspectors (**Text, JSON, XML, JavaScript**).
 
 ![Decode functionality from the context menu](../images/livetraffic/inspectors/decode-original-base64.png)
+
+
+## Inspector's Toolbar
+
+Each inspector has a toolbar that provides a different set of functionalities and data as follows:
+
+- Tooltips that output the request URL, the HTTP version, the HTTP method (for each HTTP Request) or the body size, the HTTP version, and the status code (for each HTTP Response).
+
+- **Expand All / Collapse All**&mdash;Toggle to expand or collapse all the output data. Available for all Body inspectors.
+
+- **Decode / Encode**&mdash;Toggle between compressed/uncompressed or decoded/encoded content. Available only for the Raw inspector.
+
+- **Reformat Text**&mdash;Formats the text with the built-in Monaco editor optimizations. Available only for JSON, XML, and JavaScript inspectors.
+
+- **Save request body to file**&mdash;Exports the body in the format specified as content type. Raw data is exported as DAT files. Available for the Raw and Body Request inspectors.
+
+- **Save response body to file**&mdash;Exports the body in the format specified as content type. Raw data is exported as DAT files. Available for the Raw, and Body Response inspectors.
+
+- **Save image to file**&mdash;Exports the previewed images in the specified image format. Available only for the Preview inspector.
+
+- **Toogle Word Wrap**&mdash;Toogle the option to transfer a word for which there is insufficient space from the end of one line of text to the beginning of the next.
+
+- **Copy all content to clipboard**&mdash;Copies the inspector's content into the system clipboard.
+
+![Inspectors toolbar](../images/livetraffic/inspectors/inspectors-toolbar.png)
+
 
 ## Server Certificate Details
 

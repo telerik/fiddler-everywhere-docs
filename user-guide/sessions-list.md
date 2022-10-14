@@ -21,10 +21,10 @@ You can select, inspect, modify, and share with collaborators previously saved s
 
 You can apply several actions to a saved session entry:
 
-- To select a saved session entry from the **Sessions** list, single-click it.
-- To load the [context menu](#sessions-context-menu) of a selected session entry, right-click it. The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
-- To encrypt and protect your session, set a password. The context menu provides options for setting, changing, and removing passwords for the saved session entry.
-- To open a saved session entry from the **Sessions** list in a new tab, double-click it. For encrypted sessions, only users with knowledge of the password can open the session entry.
+- Use single-click to select a saved session entry from the **Sessions** list.
+- Use right-click to load the [context menu](#sessions-context-menu) of a selected session entry. The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
+- Set a passwrod to encrypt and protect your session. The context menu provides options for setting, changing, and removing passwords for the saved session entry.
+- Use double-click to open a saved session entry from the **Sessions** list in a new tab. For encrypted sessions, only users with knowledge of the password can open the session entry.
 - Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 - Use the UI buttons at the very top to [**Import**](#import-sessions) sessions archives or to access previously [**Shared Sessions**](#shared-sessions-list) entries.
 
@@ -65,7 +65,7 @@ The **Delete** button located to the right of the selected entry removes the cho
 
 Each session provides commands that can be accessed through its context menu or keyboard shortcuts.
 
-![Saved sessions context menu](../images/sessions/compare/sessions-snapshots-compare-context-menu.png)
+![Saved sessions context menu](../images/sessions/sessions-snapshots-context-menu.png)
 
 ### Opening
 

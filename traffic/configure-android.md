@@ -30,8 +30,9 @@ Ensure that the machine on which Fiddler Everywhere and the Android device run i
 
 1. Enable the remote connections in Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**.
 
-1. Check the IP address of the host machine where Fiddler Everywhere is running. For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere host machine is **192.168.148.39**. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the Fiddler Everywhere host IP address. Alternatively, you can use **ipconfig** on Windows or **ifconfig** on Linux.
+1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the host IP address. Alternatively, you can obtain the IP address while using  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere host machine is **192.168.148.39**. 
 
+1. Enable [system capturing]({%slug capture-traffic-get-started%}#system-capturing).
 
 ## Configuring the Android Device
 
@@ -45,19 +46,22 @@ The following steps apply to real Android devices with access to the Internet th
 
     1. On **Proxy**, select **Manual proxy**.
 
-     - Enter the IP address of the host computer on which Fiddler Everywhere runs&mdash;for example, **192.168.148.39**.
-     - Enter the proxy port. Use the port configured in the Fiddler Everywhere application (configurable through **Settings > Connections > Fiddler listens on port...** ). The default port is **8866**.
+     - Enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.148.39**.
 
+     - Enter the Fiddler Everywhere proxy port. By default, the port is **8866**.
 
 1. Install the root certificate of Fiddler Everywhere on the Android device.
 
     1. Open a mobile browser on the Android device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere.
+
+        >important The echo service address is accessible only when the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) is turned on.
 
     1. Tap the option to download the certificate. Then save and install as follows:
 
         - Save and install the certificate (**Android 10 and below**):
 
             - In the prompt window, enter a descriptive certificate name and tap **Save**.
+            
             - Install the downloaded Fiddler certificate in the device certificate storage. The settings location depends on the Android version but is usually located under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
         - Save and install the certificate (**Android 11 and above**):
