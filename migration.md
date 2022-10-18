@@ -41,6 +41,8 @@ Once the activation completes, You can immediately sign in and continue using yo
 
 ## Subscription Migration
 
+>note The following steps are directed only at **license holders**.
+
 A license holder has an additional step and must migrate the active Fiddler product subscription to the Telerik system. The subscription migration can be done through the following steps:
 
 1. [Migrate your existing Fiddler account](#account-migration)
@@ -55,7 +57,7 @@ A license holder has an additional step and must migrate the active Fiddler prod
 
 1. Select a payment method to use for your subscription renewals.
 
-1. Confirm your subscription migration by following the **Migrate License** link.
+1. Confirm your subscription migration by following the **Migrate Subscription** link.
 
 A success message confirms the successful subscription migration to the new unified Telerik system. We will permanently remove your old payment methods from the old dashboard system, and all future subscription renewals will be charged through the payment method set in the Telerik system.
 
