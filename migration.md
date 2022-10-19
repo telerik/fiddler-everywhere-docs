@@ -13,7 +13,7 @@ position: 100
 
 The Fiddler products are now part of an extensive portfolio of products developed by Progress Telerik. This article explains how to migrate your existing Fiddler accounts and subscriptions to the new unified Telerik system.
 
-Your Fiddler account presents one of the following roles:
+Depending on the license status, your Fiddler account presents one of the following roles:
 
 * License holder&mdash;This is the user who owns and manages the Fiddler subscriptions. The license holder can edit or update subscriptions and access billing details and invoices. The license holder can also access the product if they have an assigned Fiddler seat (licensed developer).
 
