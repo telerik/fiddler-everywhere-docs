@@ -11,12 +11,19 @@ position: 100
 
 ## Migrating Fiddler Accounts and Subscriptions
 
-Fiddler products are now part of an extensive portfolio of products developed by Progress Telerik. This article explains how to migrate your existing Fiddler accounts and subscriptions to the new unified Telerik system.
+The Fiddler products are now part of an extensive portfolio of products developed by Progress Telerik. This article explains how to migrate your existing Fiddler accounts and subscriptions to the new unified Telerik system.
+
+Roles:
+* License holder&mdash;This is the user who owns and manages the Fiddler subscription. The license holder can edit, update subscriptions, and access billing details and invoices. The license holder can also access the product if they have an assigned Fiddler seat.
+* Licensed developer&mdash;This user has an assigned seat to a Fiddler subscription and has access to the respective Fiddler product.
+
 
 
 ## Account Migration
 
-Each Fiddler account must migrate to the new Telerik login system through the following steps:
+>note The following steps are directed at all users – **license holders** and **licensed developers**.
+
+Each Fiddler account must migrate to the Telerik system and create a Telerik account through the following steps:
 
 1. Open the preferred Fiddler application.
 
@@ -26,15 +33,17 @@ Each Fiddler account must migrate to the new Telerik login system through the fo
 
     * (for Fiddler license holders) Open the [Fiddler Dashboard site](https://dashboard.getfiddler.com/login).
 
-1. Follow the **Sign In** link.
+1. Follow the **Sign In or Create a New Account** link.
 
-1. Enter your Fiddler account email or sign in with Google. 
+1. Enter your Fiddler account email or sign in with Google.
 
-    >important To migrate successfully, create a new Telerik account (or use Google authentication) with the **same** email address used with your original Fiddler account.
+    >important To migrate successfully, create a new Telerik account (or use Google authentication) with the **same** email address used with your original Fiddler account. If you use a different email, the system will perceive you as a new user and you will not see your previous Fiddler data.
 
 1. Enter a password and account information in the account creation form.
 
-1. Confirm and finalize your Telerik account creation through the received email activation link. 
+1. After confirmation, you will receive an email with an account activation link.
+
+1. Open the activation link to finalize your Telerik account creation 
 
 Once the activation completes, You can immediately sign in and continue using your Fiddler product.
 
@@ -43,23 +52,24 @@ Once the activation completes, You can immediately sign in and continue using yo
 
 >note The following steps are directed only at **license holders**.
 
-A license holder has an additional step and must migrate the active Fiddler product subscription to the Telerik system. The subscription migration can be done through the following steps:
+A license holder must migrate the active Fiddler product subscription to the Telerik system. The subscription migration can be done through the following steps:
 
-1. [Migrate your existing Fiddler account](#account-migration)
+1. [Create your Telerik account](#account-migration)
 
-    >important To migrate successfully, create a new Telerik account with the **same** email address used with your original Fiddler account.
+    >important Create a Telerik account with the **same** email address used with your original Fiddler account in order to see the same data in the Telerik system.
 
-1. Go back to the [Fiddler Dashboard site](https://dashboard.getfiddler.com), and follow the **Migrate Your Subscription** popup window to land at the migration page on Telerik.com.
+1. Go to the [Fiddler Dashboard site](https://dashboard.getfiddler.com), and follow the **Migrate Your Subscription** popup window, which will redirect you to the migration page on Telerik.com.
 
 1. Choose the subscription from the migration page and follow the **Migrate Subscription** link.
 
-1. Add one or more payment methods.
+1. Add one or more payment methods by entering credit card details.
 
 1. Select a payment method to use for your subscription renewals.
 
 1. Confirm your subscription migration by following the **Migrate Subscription** link.
 
-A success message confirms the successful subscription migration to the new unified Telerik system. We will permanently remove your old payment methods from the old dashboard system, and all future subscription renewals will be charged through the payment method set in the Telerik system.
+
+After a successful migration, you will see a message confirming the operation, and your payment details will be deleted from the old Fiddler system. From that moment on, all future subscription renewals will be charged through the Telerik system only (processed by Cybersource) using the selected payment method.
 
 
 ## Additional Resources
