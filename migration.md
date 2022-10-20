@@ -15,9 +15,9 @@ The Fiddler products are now part of an extensive portfolio of products develope
 
 Depending on the license status, your Fiddler account presents one of the following roles:
 
-* License holder&mdash;This is the user who owns and manages the Fiddler subscriptions. The license holder can edit or update subscriptions and access billing details and invoices. The license holder can also access the product if they have an assigned Fiddler seat (licensed developer).
+* **License holder**&mdash;This is the user who owns and manages the Fiddler subscriptions. The license holder can edit or update subscriptions and access billing details and invoices. The license holder can also access the product if they have an assigned Fiddler seat (licensed developer).
 
-* Licensed developer&mdash;This user has an assigned seat to a Fiddler subscription and has access to the respective Fiddler product.
+* **Licensed developer**&mdash;This user has an assigned seat to a Fiddler subscription and has access to the respective Fiddler product.
 
 
 
@@ -39,7 +39,7 @@ Each Fiddler account must migrate to the Telerik system and create a Telerik acc
 
 1. Enter your Fiddler account email or sign in with Google.
 
-    >important To migrate successfully, create a new Telerik account (or use Google authentication) with the **same** email address used with your original Fiddler account. If you use a different email, the system will perceive you as a new user and you will not see your previous Fiddler data.
+    >important To migrate successfully, create a new Telerik account (or use Google authentication) with the **same** email address used with your original Fiddler account. If you use a different email, the system will perceive you as a new user and you will not see your previous Fiddler subscription and data.
 
 1. Enter a password and account information in the account creation form.
 
@@ -47,7 +47,7 @@ Each Fiddler account must migrate to the Telerik system and create a Telerik acc
 
 1. Open the activation link to finalize your Telerik account creation 
 
-Once the activation completes, You can immediately sign in and continue using your Fiddler product.
+1. Once the activation completes, you can immediately sign in and continue using your Fiddler product.
 
 
 ## Subscription Migration
@@ -58,7 +58,7 @@ A license holder must migrate the active Fiddler product subscription to the Tel
 
 1. [Create your Telerik account](#account-migration)
 
-    >important Create a Telerik account with the **same** email address used with your original Fiddler account in order to see the same data in the Telerik system.
+    >important To migrate successfully, create a new Telerik account (or use Google authentication) with the **same** email address used with your original Fiddler account. If you use a different email, the system will perceive you as a new user and you will not see your previous Fiddler subscription and data.
 
 1. Go to the [Fiddler Dashboard site](https://dashboard.getfiddler.com), and follow the **Migrate Your Subscription** popup window, which will redirect you to the migration page on Telerik.com.
 
