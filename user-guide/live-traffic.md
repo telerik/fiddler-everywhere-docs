@@ -21,7 +21,7 @@ A (web) session represents a single transaction between a client and a server, s
 
 ## Live Traffic Toolbar
 
-The toolbar of the **Live Traffic** section provides various functionalities such as modes for streaming, decoding of content, filtering by various criteria, and saving and sharing of sessions.
+The toolbar of the **Live Traffic** section provides various functionalities such as filtering by various criteria, using preconfigured browser instance, searching, saving and sharing of sessions, and managing the user interface.
 
 To start capturing traffic, enable **Live Traffic** by switching to the **Capturing** mode. To go into the **Paused** mode, use the **Off** switch state to pause the traffic capturing.
 
