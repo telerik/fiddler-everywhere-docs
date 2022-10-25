@@ -23,4 +23,4 @@ The section pops up on mouse interaction and lists the following information:
 
 The following figure demonstrates the **Connections** section.
 
-![My Resources option at the bottom-left](../images/resources/connections.png)
+![Connections option at the bottom-left](../images/resources/connections.png)
