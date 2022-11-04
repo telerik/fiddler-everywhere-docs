@@ -40,9 +40,11 @@ The **HTTP(S) Inspectors** provide the following types of inspecting tools that 
 
 ### Headers Inspector
 
-The __Headers__ inspector allows you to view the HTTP headers of the request and the response.
+The **Headers** inspector allows you to view the HTTP headers of the request and the response.
 
 ![Headers Inspector](../images/livetraffic/inspectors/inspectors-headers.png)
+
+>tip Fiddler Everywhere supports HTTP/2 and shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received.
 
 #### Request Headers Inspector
 

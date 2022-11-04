@@ -71,6 +71,13 @@ Create and apply a filter through the **Filters** toolbar option as follows:
 All condition values connected to a **Live Traffic** column are auto-completed with the auto-completion suggestions based on the captured data. Additionally, after adding a condition, a counter will show the number of matches (from the currently captured sessions).
 
 
+### Filters Menu
+
+The **Filters** option provides a drop-down menu to manage your active and saved filters. Through the drop-down, you can easily apply a saved filter, change an active filter, disable an active filter, save a new filter, or clear an unsaved column filter (the **Clear** option is available only when no other saved filters are activated).
+
+![Filters menu](../images/kb/filters/filters-menu.png)
+
+
 ## Using Predefined Browser Capturing
 
 The [predefined browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) opens a separate instance of your default Chromium browser and captures traffic from that instance only. Using this option while **Live Traffic** system capturing is paused will ensure that only traffic from the browser instance is output in the **Live Traffic** list. All additional columns and advanced filters are still applicable. 

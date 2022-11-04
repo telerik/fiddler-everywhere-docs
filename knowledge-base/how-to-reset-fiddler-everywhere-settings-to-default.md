@@ -26,7 +26,7 @@ The following screenshots represent the default Fiddler Everywhere settings.
 
   ![default https settings](../images/kb/default-settings/default-https-settings.png)
 
-* Default **Connection** settings&mdash;Acts as a system proxy on application startup. Remote connections and HTTP2 support are disabled.
+* Default **Connection** settings&mdash;Acts as a system proxy on application startup. Remote connections and HTTP/2 support are disabled.
 
   ![default Connection settings](../images/kb/default-settings/default-connection-settings.png)
 

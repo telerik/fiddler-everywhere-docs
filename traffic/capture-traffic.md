@@ -77,6 +77,9 @@ Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. N
 
 - Some browsers will share a single HTTP/2 connection to a website between several different tabs and keep a connection open for some time even after a tab is closed. That can lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
 
+- Fiddler shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received. Some client applications are further modifying the order of the pseudo-headers, which might cause different behavior for some corner cases.
+
+
 
 ## Additional Resources
 
