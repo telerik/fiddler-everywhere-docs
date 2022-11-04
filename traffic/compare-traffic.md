@@ -79,6 +79,18 @@ The **Compare Sessions (BETA)** tab provides the following options to customize 
     
     ![Ignore Headers popup](../images/livetraffic/compare/compare-options-ignore-headers-popup.png)
 
+
+### Context Menu
+
+You can manage all sessions added in the **Compare Sessions (BETA)** tab through the context menu.
+
+- **Delete Selected Sessions**&mdash;Removes the selected sessions from the compare group.
+
+- **Reveal in the Original List**&mdash;Open the **Live Traffic** tab and focuses the selected session.
+
+![Compared Sessions context menu](../images/livetraffic/compare/compare-list-context-menu.png)
+
+
 ## Additional Resources
 
 - [Capturing Options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
