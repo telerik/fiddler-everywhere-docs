@@ -3,9 +3,12 @@ title: Using the Dashboard Site
 description: "Learn how to use the dashboard site for managing plans and subscriptions for the Fiddler products."
 type: how-to
 slug: fiddler-dashboard
-publish: true
+publish: false
 res_type: kb
 ---
+
+
+>important The latest version of the Fiddler Everywhere application is now using the unified Telerik system for subscription management and the [Fiddler dashboard site](https://dashboard.getfiddler.com) is now obsolete. Refer to [**the migration guidelines**]({%slug migrate-fiddler-subscriptions%}) for detailed instructions on how to migrate your active subscription to https://www.telerik.com. 
 
 
 ## Environment
@@ -21,7 +24,7 @@ The [Fiddler dashboard site](https://dashboard.getfiddler.com) provides means fo
 
 ## Solution
 
-The [Fiddler dashboard site]https://dashboard.getfiddler.com) is where you can purchase and manage subscription plans, check and download your invoices, and maintain the payment methods. The site requires you to log in with a Fiddler or social media account.
+The [Fiddler dashboard site]https://dashboard.getfiddler.com) is where you can purchase and manage subscription plans, check and download your invoices, and maintain payment methods. The site requires you to log in with a Fiddler or social media account.
 
 ### Dashboard Main Sections
 
@@ -45,7 +48,7 @@ New users can purchase the Fiddler Everywhere Pro subscription plan in the follo
 1. Click **Purchase Plan** to proceed to the **Order Details** page. The **Order Details** page presents you with the option to choose between annual vs. monthly payments, adding additional subscription seats, and adding promotional coupons. By default, each plan activates a single seat.
 1. Click **Next** to proceed to the **Payment Details** page. There you can add a new payment method or use a saved card.
 1. Click the **Pay** button to finalize the order.
-1. Restart your Fiddler Everywhere client to fully activate the purchased subscription plan.
+1. Restart your Fiddler Everywhere client to activate the purchased subscription plan fully.
 
 ### Managing Subscriptions
 
@@ -75,7 +78,7 @@ You can upgrade your monthly subscription plan to annual in the following way:
 
 ### Invoice Information
 
-You can access and download all previously issued invoices through the [**Invoices**](https://dashboard.getfiddler.com/invoices) section. Each listed invoice has a unique ID that is a quick link to the **Stripe Details** page, where you can download the Stripe invoice and receipt.
+You can access and download all previously issued invoices through the [**Invoices**](https://dashboard.getfiddler.com/invoices) section. Each listed invoice has a unique ID and a quick link to the **Stripe Details** page, where you can download the Stripe invoice and receipt.
 
 ![Invoice list in the Dashboard site](../images/dash/dash-invoice-list.png)
 

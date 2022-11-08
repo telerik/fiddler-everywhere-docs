@@ -21,7 +21,7 @@ Fiddler Everywhere provides options for modifying the current response (HTML, JS
 
 ## Solution
 
-To achieve this scenario, use the **Manual Response** or the **Response File** actions of the [**Rules**]({%slug rules-general%}) tab.
+To achieve this scenario, you can use the **Manual Response** or the **Response File** actions of the [**Rules**]({%slug rules-general%}) tab.
 
 ### Manual Response
 
@@ -52,7 +52,7 @@ To achieve this scenario, use the **Manual Response** or the **Response File** a
 
 ### Automating Multiple Mock Responses
 
-You may need a better workflow to automate multiple mock responses. For this reason, Fiddler Everywhere provides the functionality to provide a file with the mocked response content through the **Response file** Action. The files that will contain the custom response need to be in DAT format.
+In some scenarios, you may need a better workflow to automate multiple mock responses. For this reason, Fiddler Everywhere provides the functionality to provide a file with the mocked response content through the **Response file** Action. The files that will contain the custom response need to be in DAT format.
 
 A DAT file is a generic data file created by a specific application. It may contain data in binary or text format. Text-based DAT files can be viewed in a text editor.
 

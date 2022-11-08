@@ -22,7 +22,7 @@ The **View** menu provides options for changing the overall Fiddler Everywhere U
 
 ### View (Windows)
 
-- The **Preferences** option enables you to load the Fiddler Everywhere settings window. Access it with the keyboard by pressing `Cmd` (on Mac), or `Ctrl` and `,` (on Windows).
+- The **Preferences** option lets you load the Fiddler Everywhere settings window. Access it with the keyboard by pressing `Cmd` (on Mac), or `Ctrl` and `,` (on Windows).
 - The **Actual Size** option can be accessed with the keyboard by pressing `Cmd` and `0` (on Mac), or `Ctrl` and `0` (on Windows).
 - The **Zoom In** option can be accessed with the keyboard by pressing `Cmd` and `+` (on Mac), or `Ctrl` and `+` (on Windows).
 - The **Zoom Out** option can be accessed with the keyboard by pressing `Cmd` and `-` (on Mac), or `Ctrl` and `-` (on Windows).
@@ -34,7 +34,7 @@ The **View** menu provides options for changing the overall Fiddler Everywhere U
 ### View (macOS)
 
 - The **Minimize** option to collapse the Fiddler Everywhere application in the macOS toolbar fully. It can be accessed by pressing `Cmd` and `M`.
-- The **Toogle Full Screen** option to fully expand the Fiddler Everywhere application on the whole screen. It can be accessed by pressing `Opt` and `F`.
+- The **Toggle Full Screen** option to fully expand the Fiddler Everywhere application on the whole screen. It can be accessed by pressing `Opt` and `F`.
 - The **Zoom** option to zoom the Fiddler Everywhere application.
 - The **Actual Size** option can be accessed with the keyboard by pressing `Cmd` and `0` (on Mac), or `Ctrl` and `0` (on Windows).
 - The **Zoom In** option can be accessed with the keyboard by pressing `Cmd` and `+` (on Mac), or `Ctrl` and `+` (on Windows).
@@ -54,13 +54,10 @@ The **Help** menu provides options for a version update and information, and fas
 - **Documentation**&mdash;Opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
 - **Open Application Logs Folder**&mdash;Opens the local folder that contains the Fiddler Everywhere log files. For more information, refer to the article on [using the log files for troubleshooting your local setup]({%slug fiddler-log-files%}).
 - **About**&mdash;Opens a dialog window that provides information about the current version and build date of Fiddler Everywhere. On macOS, the dialog also contains information about the type of the build (Apple Silicon(arm64) for [Mac computers with Silicon chips](https://support.apple.com/en-us/HT211814) versus Intel(x64) for Mac computers with Intel chips).
-- **Contact Support**&mdash;Available for both the trial and [commercial]({%slug introduction%}#key-features) versions. The support option uses the default email client of the operating system.
+- **Contact Support**&mdash;Available for both the trial and [commercial]({%slug introduction%}#key-features) versions. The support option loads the official support center at https://www.telerik.com/account/support-center
 
 ![Help Menu](../images/menu/menu-help-update.png)
 
-## Manage Subscriptions
-
-The **Manage Subscriptions** window redirects to the [Fiddler dashboard site]({%slug fiddler-dashboard%}) located at https://dashboard.getfiddler.com where account owners can manage their subscription plans, add and remove seats, update payment details, and more. Users that are not account owners will be able to see their subscription status.
 
 ## Feedback
 
@@ -70,19 +67,19 @@ The **Feedback** option lets you send recommendations and feedback on the Fiddle
 
 The **Links** menu provides the following useful fast links:
 
-* **Forums** links to the Fiddler Everywhere community forums at https://community.getfiddler.com/support/discussions.
-- **Documentation** links to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/.
-- **Contact Support** links to posting a support ticket to the Fiddler Everywhere support team. For more information, refer to the article on the [support options provided by Fiddler Everywhere]({% slug introduction %}#support-options).
+- **Forums** link to the Fiddler Everywhere community forums at https://www.telerik.com/forums/fiddler.
+- **Documentation** link to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/.
+- **Contact Support** link to the official [support center](https://www.telerik.com/account/support-center) from where all licensed and trial users can post a ticket. For more information, refer to the article on the [support options provided by Fiddler Everywhere]({%slug support%}).
 
 ## Notifications
 
-The **Notifications** button shows a drop-down list that contains the most recently received notifications. The Fiddler Everywhere application will send and receive notifications upon using collaboration functionalities such as sharing session logs, composer collections, and rulesets.
+The **Notifications** button shows a drop-down list that contains the most recently received notifications. The Fiddler Everywhere application will send messages upon collaboration functionalities such as sharing session logs, composer collections, and rulesets.
 
 ## Settings
 
 The **Settings** button opens a window that allows you to manage core Fiddler Everywhere functionalities like secure traffic enablement, remote connections, bypassing addresses, privacy, and more.
 
-Refer to the following documentation articles about each **Settings** window section for more information.
+For more information, refer to the following documentation articles about each **Settings** window section.
 
 - [**HTTPS** menu]({%slug decrypt-https-traffic%})
 - [**Connections** menu]({%slug connections-submenu%})
@@ -92,6 +89,11 @@ Refer to the following documentation articles about each **Settings** window sec
 - [**Rules** menu]({%slug rules-settings-submenu%})
 - [**Themes** menu]({%slug themes-settings-submenu%})
 
-## Sign Out
 
-The **Sign Out** button allows you to log out of the currently logged user and navigate to an introduction page that provides options for creating a new user or using another account.
+## My Account
+
+The last section of the main menu provides account-specific options and information. Immediately visible are the first and the last name of logged Fiddler Everywhere user (as specified during the registration).
+
+- **Manage Account**&mdash;Direct link to the [**Account Overview**](https://www.telerik.com/account/) section at the https://www.telerik.com site.
+- **Manage Subscription**&mdash;Direct link to the [**Your Licenses**](https://www.telerik.com/account/your-licenses) section at the https://www.telerik.com site.
+- **Sign Out**&mdash;Allows you to log out of the currently logged user from the Fiddler Everywhere application and the https://www.telerik.com site.

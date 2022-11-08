@@ -9,7 +9,7 @@ previous_url: /user-guide/settings/connections/allow-remote-connections
 
 # Connections Menu
 
-The **Connections** menu exposes options that allow for granular control over proxy settings and remote connection.
+The **Connections** menu exposes options allowing granular control over proxy settings and remote connection.
 
 - **Fiddler listens on port**&mdash;Defines the port that Fiddler Everywhere uses to listen for web traffic. The default port is **8866**.
 
@@ -35,6 +35,17 @@ The **Connections** menu exposes options that allow for granular control over pr
 
     >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they won't trust third-party certificates like the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) might misbehave or not work.
 
-The following figure displays the startup settings of the **Connections** menu.
+The following figure displays the default settings of the **Connections** menu.
 
 ![Act as a system proxy on startup setting](../../images/settings/settings-connections.png)
+
+
+### Streaming
+
+By default, Fiddler Everywhere uses the buffering mode, which means that the responses are fully collected before any part is sent to the client. Buffering alters the responses&mdash;for example, an image won't begin to download until the containing page download is complete. With the streaming mode, the server responses are immediately returned to the client as it is downloaded. In streaming mode, tampering with the response body is not possible.
+
+The streaming mode is helpful for low-level network timing scenarios&mdash;for example, by design, some browsers will parse partially downloaded HTML, which will start the download of external resources in parallel before the remote server has finished delivering the content. The streaming mode is also helpful if a site offers audio or video streams, as Fiddler Everywhere cannot buffer such constant streams.
+
+![Buffering mode vs. Streaming Mode](../../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
+
+To toggle between the buffering and the streaming mode, click the **Stream** button.

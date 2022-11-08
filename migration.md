@@ -11,6 +11,7 @@ position: 100
 
 ## Migrating Fiddler Accounts and Subscriptions
 
+
 The Fiddler products are now part of an extensive portfolio of products developed by Progress Telerik. This article explains how to migrate your existing Fiddler accounts and subscriptions to the new unified Telerik system.
 
 Depending on the license status, your Fiddler account presents one of the following roles:
@@ -69,7 +70,6 @@ A license holder must migrate the active Fiddler product subscription to the Tel
 1. Select a payment method to use for your subscription renewals.
 
 1. Confirm your subscription migration by following the **Migrate Subscription** link.
-
 
 After a successful migration, you will see a message confirming the operation, and your payment details will be deleted from the old Fiddler system. From that moment on, all future subscription renewals will be charged through the Telerik system only (processed by Cybersource) using the selected payment method.
 

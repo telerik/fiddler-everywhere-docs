@@ -1,6 +1,6 @@
 ---
 title: Bypassing the Fiddler Everywhere proxy
-description: "Learn how to set a list of endpoints that should bypass the Fiddler Everywhere proxy and directly use the upstream proxy."
+description: "Learn how to set a list of endpoints that must bypass the Fiddler Everywhere proxy and directly use the upstream proxy."
 type: how-to
 slug: fiddler-bypass-list
 publish: true
@@ -36,14 +36,31 @@ res_type: kb
 All the described issues above have a common solution - bypassing Fiddler so that the specific application endpoints use the default connection directly. As a result, any request to these endpoints will go straight through the upstream proxy, effectively bypassing Fiddler, and they won't use the Fiddler Everywhere certificate. The immediate effect is that Fiddler Everywhere won't capture traffic from the bypassed endpoints. Still, at the same time, the bypassed services will continue to work while using the default internet connection.
 
 
+### Proxy Bypass List
+
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
 
 - In the **Bypass Fiddler for URLS that starts with:** field, add the endpoints that you would like to bypass, separated by a comma:
-    _Example for bypassing the Apple endpoints (for services that are using certificate pinning)_
+    _Example for bypassing the Apple endpoints (for system services that are using certificate pinning)_
     ```
     *.apple.com, *.itunes.com, *mzstatic.com
     ```
     ![Example bypass list](../images//kb//bypass/bypass-endpoints.png)
 
 - Click **Save** to persist the change.
+
+
+### Add to Bypass List
+
+You can add domains to the bypass list on-the-fly while you are actively capturing.
+
+- Open Fiddler Everywhere and start capturing traffic.
+
+- Select a session that uses the domain which you would like to bypass.
+
+- With the session selected, open the context menu and choose **Bypass > Add <domain-name-here> to bypass list**.
+
+![Add to bypass list](../images/kb/bypass/add-to-bypass.png)
+
+
 

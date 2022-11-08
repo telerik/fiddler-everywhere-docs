@@ -16,12 +16,13 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 
 ## Prerequisites
 
-- Install Windows 7 x64, Windows 8 x64, or Windows 10 x64.
+- Install  Windows 8 x64, Windows 10 x64. or Windows 11 x64.
 - Install [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/install/windows#additional-deps).
 - Make sure you have 400MB+ free disk space.
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
 ```curl
+  https://*.telerik.com/
   https://*.getfiddler.com/
   https://*.amazonaws.com/
 ```
@@ -36,17 +37,18 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 
 1. Run the **Fiddler Everywhere** exe file to go through the installation process.
 
+
 ## Step 2: Create Your Fiddler Account
 
-In this step you'll register by creating your personal Fiddler Everywhere account and become a trial user.   
+In this step you'll register by creating your unified Telerik account and become a trial user.   
 
-1. Launch the Fiddler Everywhere client. Select the **New User? Sign up** button.
+1. Launch the Fiddler Everywhere application. Follow the **Sign in or create an account** link.
 
-1. On the **Create Account** screen, enter the requested information and accept the terms of the agreement. The email you provide here will be later on used by your collaborators for sharing sessions, collections, and notifications.
+1. On the **Enter Your Email to Sign in or Create an Account** screen, enter the requested information. The email you provide here will be later on used by your collaborators for sharing sessions, collections, and notifications.
 
-1. Open the confirmation email and verify your Fiddler registration by entering the unique code.
+1. Check your inbox and open the confirmation email to complete your account activation.
 
-1. Fill in the required information and proceed through the **Let's Go** button.
+1. Return back to the Fiddler Everywhere application and accept the license agreement.
 
 1. On the next screen, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link. For the purposes of this tutorial, you'll become a trial user by selecting the **Start Free Trial** option. You are all set to start using the full-scale functionalities Fiddler Everywhere delivers.
 

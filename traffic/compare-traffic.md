@@ -39,7 +39,7 @@ You can add and compare more sessions by adding them to the comparison groups.
 
 1. Select one or more sessions that you want to compare.
 
-1. Select the **Add to compare group** option from the context menu and select the compare group where the session should be added.
+1. Select the **Add to compare group** option from the context menu and select the compare group to add the session.
 
     ![Add to compare group](../images/livetraffic/compare/compare-context-menu-add-to-group.png)
 
@@ -78,6 +78,18 @@ The **Compare Sessions (BETA)** tab provides the following options to customize 
 - **Ignore Headers**&mdash;You can use the popup to create an ignore list of specific requests and response headers from the matching.
     
     ![Ignore Headers popup](../images/livetraffic/compare/compare-options-ignore-headers-popup.png)
+
+
+### Context Menu
+
+You can manage all sessions added in the **Compare Sessions (BETA)** tab through the context menu.
+
+- **Delete Selected Sessions**&mdash;Removes the selected sessions from the compare group.
+
+- **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** tab, or in the opened saved session tab).
+
+![Compared Sessions context menu](../images/livetraffic/compare/compare-list-context-menu.png)
+
 
 ## Additional Resources
 
