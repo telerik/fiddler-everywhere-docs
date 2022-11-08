@@ -1,5 +1,79 @@
 [
-     {
+    {
+        "version": "4.0.0",
+        "title": "Fiddler Everywhere v4.0.0",
+        "date": "November 08, 2022",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Improve Filters - column and advanced filters are merged, and filtering experience is more consistent"
+                    },
+                    {
+                        "title": "Add option to Save Filters - you can set match conditions and save them to re-use filters"
+                    },
+                    {
+                        "title": "Improve the buttons in the session list toolbar - expose most used buttons and hide the rest in a new dropdown"
+                    },
+                    {
+                        "title": "Add option to copy requests as code - select PowerShell, fetch, cURL or Python script format from the sessions list context menu"
+                    },
+                    {
+                        "title": "Add option to save the Request/Response body as a file - the option is available for the Raw, Preview and Body inspectors"
+                    },
+                    {
+                        "title": "Improve Compare Traffic option - difference in the URL protocol will be displayed as difference instead of a missing match"
+                    },
+                    {
+                        "title": "Improve Compare Traffic option - selecting a row with missing match will show its data in the inspectors"
+                    },
+                    {
+                        "title": "Add \"Reveal in the list\" option in the Compare Sessions tab in which will allow getting back to the original location of the session"
+                    },
+                    {
+                        "title": "Improve HTTP/2 support and make the option for enabling HTTP/2 more visible"
+                    },
+                    {
+                        "title": "Show the HTTP/2 request pseudo headers as part of the Headers section"
+                    },
+                    {
+                        "title": "New login system and user flow - use the unified Telerik system"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Context menu hides when app is resized"
+                    },
+                    {
+                        "title": "Decoding window not decoding base64 for Unicode characters with more than 1 byte"
+                    },
+                    {
+                        "title": "The two groups in the Compare sessions tab grid are desynced when scrolled"
+                    },
+                    {
+                        "title": "Multiple selection is not possible in the Compare sessions tab"
+                    },
+                    {
+                        "title": "What's New dialog hides behind the Welcome screen"
+                    },
+                    {
+                        "title": "Unable to open some websites using HTTP/1.1 when the stream responses option is on"
+                    },
+                    {
+                        "title": "Incorrect data shown in Request Body inspector when switching between different Body inspectors"
+                    },
+                    {
+                        "title": "Live Traffic capturing toggle not working on macOS Ventura"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "3.4.1",
         "title": "Fiddler Everywhere v3.4.1",
         "date": "August 31, 2022",
