@@ -52,9 +52,6 @@
                         "title": "Decoding window not decoding base64 for Unicode characters with more than 1 byte"
                     },
                     {
-                        "title": "Fiddler Everywhere Certificate name appears as null during installation on Android"
-                    },
-                    {
                         "title": "The two groups in the Compare sessions tab grid are desynced when scrolled"
                     },
                     {
@@ -68,6 +65,9 @@
                     },
                     {
                         "title": "Incorrect data shown in Request Body inspector when switching between different Body inspectors"
+                    },
+                    {
+                        "title": "Live Traffic capturing toggle not working on macOS Ventura"
                     }
                 ]
             }
