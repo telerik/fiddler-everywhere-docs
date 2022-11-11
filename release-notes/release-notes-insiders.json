@@ -1,5 +1,32 @@
 [
     {
+        "version": "4.0.1-insiders",
+        "title": "Fiddler Everywhere v4.0.1",
+        "date": "November 11, 2022",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Reauthenticate window sometimes appears after an error during sign in or during application startup"
+                    },
+                    {
+                        "title": "Wrong time units visible in Overview Timings panel header"
+                    },
+                    {
+                        "title": "Default session list columns do not reset on user request"
+                    },
+                    {
+                        "title": "Errors might appear when app starts without internet connectivity"
+                    },
+                    {
+                        "title": "Position of some inspector tutorial hints is wrong"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.0.0-insiders",
         "title": "Fiddler Everywhere v4.0.0",
         "date": "November 08, 2022",
