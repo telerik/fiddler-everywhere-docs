@@ -21,6 +21,8 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
     >important With the **Enable HTTP/2 support (BETA)** option, the connection between a client and a server will default to HTTP/2, if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1. [Read more about the HTTP/2 support in Fiddler Everywhere...]({%slug capture-traffic-get-started%}#http-version-specifics)
 
+- **Enable Streaming Mode**&mdash;With ***Streaming mode** enabled, the response is immediately returned to the client as they are downloaded. Modifying the Response body (through the **Rules**) is possible only when **Streaming mode** is disabled.
+
 - **Bypass Fiddler for URLs that starts with:**&mdash;Allows you to manually add addresses that the Fiddler Everywhere proxy will explicitly bypass.
     A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere]({%slug configure-vpn-fiddler%}). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**. You can also quickly add domains while selecting a session from the Live Traffic list and using the [context menu]({%slug web-sessions-list%}#bypassing-the-proxy).
 
@@ -40,7 +42,7 @@ The following figure displays the default settings of the **Connections** menu.
 ![Act as a system proxy on startup setting](../../images/settings/settings-connections.png)
 
 
-### Streaming
+### Streaming Mode
 
 By default, Fiddler Everywhere uses the buffering mode, which means that the responses are fully collected before any part is sent to the client. Buffering alters the responses&mdash;for example, an image won't begin to download until the containing page download is complete. With the streaming mode, the server responses are immediately returned to the client as it is downloaded. In streaming mode, tampering with the response body is not possible.
 
