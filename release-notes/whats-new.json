@@ -1,5 +1,20 @@
 [
     {
+        "version": "4.0.0",
+        "items": [
+            {
+                "title": "Fiddler Everywhere 4.0 Is Here!",
+                "description": "Fiddler Everywhere 4.0 is here with a new filtering experience, including ability to save filters, copy requests as different formats and save body to a file.",
+                "url": "https://www.telerik.com/blogs/fiddler-everywhere-4.0-here-new-filtering-experience-debugging"
+            },
+            {
+                "title": "How To Evaluate Then Improve a Website’s Network Performance",
+                "description": "Not sure where to start when it comes to improving your website’s performance? Learn tested techniques listed in this blog, complete with video.",
+                "url": "https://www.telerik.com/blogs/how-to-evaluate-improve-website-performance"
+            }
+        ]
+    },
+    {
         "version": "3.4.0",
         "items": [
             {
