@@ -55,9 +55,9 @@ To create a Fiddler account, refer to the following getting started step-by-step
 
 To directly sign in with your Google account, perform the following steps:
 
-1. Launch the Fiddler Everywhere client.
+1. Launch the Fiddler Everywhere application.
 
-1. Followm the **Sign in** link. You will land on the unified Telerik login form.
+1. Follow the **Sign in or create an account** link. You will land on the unified Telerik login form.
 
 1. From the unified Telerik login form, select **Sign in with Google** and authenticate on the Google Authentication page.
 
@@ -66,7 +66,7 @@ To directly sign in with your Google account, perform the following steps:
 
 ### Using SSO Login
 
-[Fiddler Everywhere Enterprise](https://www.telerik.com/purchase/fiddler) supports SSO login. Get in touch with our [support]({%slug support%}) for detailed instructions on configuring your company-specific SSO.
+The [Fiddler Everywhere Enterprise subscription plan](https://www.telerik.com/purchase/fiddler) supports SSO login. Get in touch with our [support]({%slug support%}) for detailed instructions on configuring your company-specific SSO.
 
 
 ## Updating Fiddler Everywhere

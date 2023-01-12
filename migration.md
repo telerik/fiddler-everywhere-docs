@@ -20,7 +20,7 @@ Depending on the license status, your Fiddler account presents one of the follow
 
 * **Licensed developer**&mdash;This user has an assigned seat to a Fiddler subscription and has access to the respective Fiddler product.
 
-
+>tip [Learn more on why Fiddler products moved to Telerik.com and what improvements you can expect...](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).
 
 ## Account Migration
 
@@ -83,3 +83,4 @@ Explore and learn more about the unified Telerik system through the following re
 - [Your Licenses](https://www.telerik.com/account/your-licenses)
 - [Purchasing & Licensing FAQs](https://www.telerik.com/purchase/faq/licensing-purchasing)
 - [Support Center](https://www.telerik.com/account/support-center)
+- [Learn more on Fiddler's moving to Telerik.com](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).
