@@ -30,7 +30,7 @@ Each Fiddler account must migrate to the Telerik system and create a Telerik acc
 
 1. Open the preferred Fiddler application.
 
-    * (for Fiddler Everywhere users) Open [the latest version of the Fiddler Everywhere application](https://www.telerik.com/download/fiddler-everywhere).
+    * (for Fiddler Everywhere users) Install and open the latest version of the [Fiddler Everywhere application](https://www.telerik.com/download/fiddler-everywhere).
     
     * (for Fiddler Jam portal users) Open the [Fiddler Jam portal](https://jam.getfiddler.com). 
 
@@ -67,7 +67,9 @@ A license holder must migrate the active Fiddler product subscription to the Tel
 
 1. Add one or more payment methods by entering credit card details.
 
-1. Select a payment method to use for your subscription renewals.
+1. Select your prefered payment method to use for your subscription renewals.
+
+    >important By default, none of the added payment methods are selected. You must explicitly choose a preferred payment method and confirm your choice through the **Select** button.
 
 1. Confirm your subscription migration by following the **Migrate Subscription** link.
 
@@ -83,4 +85,4 @@ Explore and learn more about the unified Telerik system through the following re
 - [Your Licenses](https://www.telerik.com/account/your-licenses)
 - [Purchasing & Licensing FAQs](https://www.telerik.com/purchase/faq/licensing-purchasing)
 - [Support Center](https://www.telerik.com/account/support-center)
-- [Learn more on Fiddler's moving to Telerik.com](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).
+- [Learn more on Fiddler's moving to Telerik](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).
