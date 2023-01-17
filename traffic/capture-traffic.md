@@ -86,9 +86,9 @@ Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. N
 - Fiddler shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received. Some client applications are further modifying the order of the pseudo-headers, which might cause different behavior for some corner cases.
 
 
-## Direct Capturing
+## Explicit Capturing
 
-The **Fiddler Everywhere** application works as a proxy from the moment it starts, and by default, its proxy address is 127.0.0.1:8866. Any application explicitly directed to go through the Fiddler Everywhere proxy address will have its HTTP/HTTPS/WebSocket traffic immediately captured, even if the [system capturing](#system-capturing) is turned off.
+The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is 127.0.0.1:8866. Any application explicitly directed to go through the Fiddler Everywhere proxy address will have its HTTP/HTTPS/WebSocket traffic immediately captured, even if the [system capturing](#system-capturing) is turned off.
 
 Example for explicitly making a curl request that goes through the Fiddler Everywhere proxy:
 
