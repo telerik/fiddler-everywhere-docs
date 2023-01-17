@@ -63,18 +63,29 @@ A license holder must migrate the active Fiddler product subscription to the Tel
 
 1. Go to the [Fiddler Dashboard site](https://dashboard.getfiddler.com), and follow the **Migrate Your Subscription** popup window, which will redirect you to the migration page on Telerik.com.
 
+    ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-005.png)
+
 1. Choose the subscription from the migration page and follow the **Migrate Subscription** link.
 
-1. Add one or more payment methods by entering credit card details.
+    ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-006.png)
+
+1. Add one or more payment methods by entering credit card details. Note that a charge of 1 USD will be used for verification payment (the amount will be returned immediatly).
+
+    ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-008.png)
 
 1. Select your prefered payment method to use for your subscription renewals.
+
+    ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-011.png)
 
     >important By default, none of the added payment methods are selected. You must explicitly choose a preferred payment method and confirm your choice through the **Select** button.
 
 1. Confirm your subscription migration by following the **Migrate Subscription** link.
 
+    ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-012.png)
+
 After a successful migration, you will see a message confirming the operation, and your payment details will be deleted from the old Fiddler system. From that moment on, all future subscription renewals will be charged through the Telerik system only (processed by Cybersource) using the selected payment method.
 
+![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-013.png)
 
 ## Additional Resources
 
