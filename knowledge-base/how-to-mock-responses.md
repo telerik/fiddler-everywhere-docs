@@ -136,3 +136,8 @@ The **Method** subaction supports the following options:
 
 
 >tip The specified Response actions are also available as Request counterparts (**Update Request Headers**, **Update Request Body**, and **Update Request Cookies**).
+
+
+## Contact us
+
+If you have more questions or need assistance configuring specific rules with Fiddler Everywhere, you can reach out to our support team through the **Help** > ***Contact Support** option.

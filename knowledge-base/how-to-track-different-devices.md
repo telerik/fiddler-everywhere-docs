@@ -31,14 +31,14 @@ To capture traffic from a remote computer:
 
 1. Go to **Settings**  > **Connections** and ensure **Allow remote computers to connect** is checked.
 
-1. On the remote computer, set the proxy settings to the machine name of the Fiddler host at port 8866.
+1. On the remote computer, set manual OS proxy settings to the Fiddler address (IP:port). As an IP use the the local IP of the Fiddler host machine. By default, the Fiddler proxy port is **8866**.
 
 1. In Fiddler Everywhere, filter the traffic through the **Client IP** column while using the local address of the connected remote computer.
 
     ![Filtering by Client IP](../images/kb/client-ip/filter-by-client-ip.png)
 
-## Solution (for Mobile Devices)
 
+## Solution (for Mobile Devices)
 
 - The Fiddler host and the remote mobile device must both be on the same network, and they must "see" each other (no firewall restrictions).
 

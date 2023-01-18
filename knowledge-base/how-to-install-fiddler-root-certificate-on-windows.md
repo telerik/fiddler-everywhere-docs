@@ -47,3 +47,7 @@ If the automatic installation and enabling of the trust certificate do not work,
 
 
 If you are still unable to capture HTTPS traffic after the steps above, consider troubleshooting your configuration by looking up for possible errors logged in [the Fiddler log files]({%slug fiddler-log-files%}) or contacting the Fiddler Everywhere support (through the **Help > Contact Support** option).
+
+## Contact us
+
+In case you have more questions or need assistance configuring the root certificate on WIndows, then you can reach out to our support team through the **Help** > ***Contact Support** option.

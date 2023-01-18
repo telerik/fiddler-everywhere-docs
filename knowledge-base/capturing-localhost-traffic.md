@@ -75,3 +75,5 @@ While using one of the above solutions to capture localhost requests, the traffi
 ## Additional Resources
 
 * [Learn how to direct localhost requests from the mobile application through the Fiddler proxy... ]({%slug fiddler-localhost-android%})
+
+If you have more questions or need assistance capturing localhost traffic with Fiddler Everywhere, you can reach out to our support team through the **Help** > ***Contact Support** option.
