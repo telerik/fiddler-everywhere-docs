@@ -32,7 +32,7 @@ The **Live Traffic** toolbar provides the following functionalities:
 - [Filtering Traffic](#filtering-traffic) (**Filters**)
 - [Preconfigured Browser Capturing](#preconfigured-browser-capturing) (**Open Browser**)
 - [Removing All Sessions](#removing-all-sessions) (**Remove All**)
-- [Searching](#searching) (**Search**)
+- [Searching](#searching) (**Quick Search**)
 - [Saving Sessions](#saving-sessions) (**Save**)
 - [Sharing Sessions](#sharing-sessions) (**Share**)
 - [Managing Columns](#managing-columns) (**Columns**)
@@ -63,8 +63,10 @@ Use the **Remove All** button to automatically remove all captured traffic from 
 
 ### Searching
 
-To search for specific values in the URL and the headers of all sessions, use the **Search** text input. The search action will immediately filter and show all sessions containing the search terms.
+To search for specific values in the URL and the headers of all sessions, use the **Quick Search** text input. The search action immediately filters all sessions containing the search terms and highlights the matched data. If a match is in a hidden column (for example, due to an applied filter), an warning icon shows next to the search box, which helps you show the column(s) quickly.
 
+
+![Quick Search option to highlight & filter sessions based on a match](../images/livetraffic/websessions/websessions-quick-search.png)
 
 ### Saving Sessions
 
