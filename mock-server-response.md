@@ -39,4 +39,4 @@ The **Rules** tab can be a powerful ally in testing various complex scenarios wi
 - [Using Predefined Actions]({%slug fiddler-ar-actions%})
 - [Understanding Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Creating Manual HTTP Responses]({%slug using-custom-responses%})
-
+- [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)

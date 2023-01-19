@@ -9,7 +9,9 @@ previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic
 
 # Modifying Traffic
 
-Fiddler Everywhere provides a powerful debugging technique for editing the captured traffic.
+Fiddler Everywhere provides a powerful debugging techniques for editing and mocking the captured traffic.
+
+## Composing Requests
 
 Instead of testing your API or a website through the UI and making multiple clicks, you can reload the desired session in the [**Composer**]({%slug composer-tab%}) tab, make edits to the desired values, and re-execute the request.
 
@@ -30,6 +32,16 @@ To load and modify a session through the **Composer**:
 1. Click **Execute**.
 
 This approach enables you to modify an existing request in the same way your application does it. In the [**Live Traffic** list]({% slug web-sessions-list %}#live-traffic-list), you can find the newly executed request and the response from the server.
+
+## Using Rules
+
+One of the most powerful features in Fiddler Everywhere resides in the Rules tab. You can create your own rules that change HTTP Requests & Responses on-the-fly based on different criteria. The rules can combine multiple criteria and apply single or multiple actions, allowing you to mock real-life scenarios with few clicks. Learn more about the Rules tab capabiliees in the following article:
+
+- [Mocking Server Responses]({%slug rulesbuilder-get-started%})
+- [The Rules tab UI in details]({%slug rules-general%})
+- [Explaining final and non-final actions in the Rules tab]({%slug fiddler-rules-actions%})
+- [Using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
+- [Redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
 
 ## Additional Resources
 

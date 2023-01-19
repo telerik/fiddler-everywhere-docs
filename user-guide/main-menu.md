@@ -84,9 +84,11 @@ For more information, refer to the following documentation articles about each *
 - [**HTTPS** menu]({%slug decrypt-https-traffic%})
 - [**Connections** menu]({%slug connections-submenu%})
 - [**Gateway** menu]({%slug gateway-submenu%})
+- [**Live Traffic**]({%slug live-traffic-submenu%})
 - [**Privacy** menu]({%slug privacy-submenu%})
 - [**Composer** menu]({%slug composer-settings-submenu%})
 - [**Rules** menu]({%slug rules-settings-submenu%})
+- [**Browsers** menu]({%slug browsers-settings-submenu%})
 - [**Themes** menu]({%slug themes-settings-submenu%})
 
 

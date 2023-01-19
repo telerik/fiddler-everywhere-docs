@@ -63,8 +63,6 @@ A license holder must migrate the active Fiddler product subscription to the Tel
 
 1. Go to the [Fiddler Dashboard site](https://dashboard.getfiddler.com), and follow the **Migrate Your Subscription** popup window, which will redirect you to the migration page on Telerik.com.
 
-    ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-005.png)
-
 1. Choose the subscription from the migration page and follow the **Migrate Subscription** link.
 
     ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-006.png)
