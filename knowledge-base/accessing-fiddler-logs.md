@@ -25,8 +25,9 @@ The Fiddler Everywhere client is an electron application that depends on modifyi
 * [Logging files](#logging-files)
 * [Accessing the logs](#accessing-the-logs-through-the-ui)
 * [Managing the destination folder](#accessing-the-logs-manually)
-* [Setting the `electron.log` file](#setting-the-electronlog-file)
-* [Setting the `netcore.log` file](#setting-the-netcorelog-file)
+* [Enable verbose logging](#enabling-verbose-logging)
+* [Using the `electron.log` file](#using-the-electronlog-file)
+* [Using the `netcore.log` file](#using-the-netcorelog-file)
 
 ### Logging Files
 
@@ -64,7 +65,15 @@ Alternatively, you can manually navigate to the folder on your operating system 
     ~/.config/Fiddler Everywhere/Logs
     ```
 
-### Setting the electron.log File
+### Enabling Verbose Logs
+
+The verbose logging adds additional information about accessing the network adapters and the operating system proxy. Use that information to debug possible issues with setting Fiddler as a system proxy. To enable verbose logs, open the `electron-settings.json` file (located in `~/.fiddler/Settings`) and the following key pair:
+
+```JSON
+“verboseLogging": true
+```
+
+### Using the electron.log File
 
 The `electron.log` file will output info, warnings, and errors related to the startup of the application, its connectivity, and the availability of later versions.
 
@@ -99,7 +108,7 @@ The following example demonstrates the content of the `electron.log` file.
 [2020-10-01 23:42:33:622] [info] Application exited with code 0.
 ```
 
-### Setting the netcore.log File
+### Using the netcore.log File
 
 The `netcore.log` file will output info, warnings, and errors related to the network operations, the login process, the trust certificate setup, the user quota initialization, and so on.
 
