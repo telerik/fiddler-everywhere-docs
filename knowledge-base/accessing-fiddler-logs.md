@@ -70,7 +70,7 @@ Alternatively, you can manually navigate to the folder on your operating system 
 The verbose logging adds additional information about accessing the network adapters and the operating system proxy. Use that information to debug possible issues with setting Fiddler as a system proxy. To enable verbose logs, open the `electron-settings.json` file (located in `~/.fiddler/Settings`) and the following key pair:
 
 ```JSON
-“verboseLogging": true
+"verboseLogging": true
 ```
 
 ### Using the electron.log File
