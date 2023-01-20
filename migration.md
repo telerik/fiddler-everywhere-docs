@@ -67,11 +67,11 @@ A license holder must migrate the active Fiddler product subscription to the Tel
 
     ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-006.png)
 
-1. Add one or more payment methods by entering credit card details. Note that a charge of 1 USD will be used for verification payment (the amount will be returned immediatly).
+1. Add one or more payment methods by entering credit card details. Note that a charge of 1 USD will be used for verification payment (the amount will be returned immediately). The method populates your payment list, from which you can select one for recurring payments. 
 
     ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-008.png)
 
-1. Select your prefered payment method to use for your subscription renewals.
+1. Select your prefered payment method (from the list of added payment methods) to use for your subscription renewals and recurring payments.
 
     ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-011.png)
 
@@ -81,7 +81,7 @@ A license holder must migrate the active Fiddler product subscription to the Tel
 
     ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-012.png)
 
-After a successful migration, you will see a message confirming the operation, and your payment details will be deleted from the old Fiddler system. From that moment on, all future subscription renewals will be charged through the Telerik system only (processed by Cybersource) using the selected payment method.
+After a successful migration, you will see a message confirming the operation, and your payment details will be deleted from the old Fiddler system. From that moment on, all future subscription renewals will be charged through the Telerik system only (processed by Cybersource) using the selected payment method. Note that if you migration is not succesfull, you will see an error or warning message instead of the sdcreen depiected below - in such case, please contact us through [the Support Center](https://www.telerik.com/account/support-center/contact-us/licensing-support).
 
 ![Migrate subscription link on Telerik](./images/migrate/fe-updated-migration-013.png)
 
