@@ -1,11 +1,12 @@
 ---
-title: Accessing and Inspecting Applicaiton Log Files
+title: Accessing and Inspecting Application Log Files
 description: "Learn how to access and inspect the Fiddler Everywhere application log files."
 type: how-to
 slug: fiddler-log-files
 publish: true
 res_type: kb
 ---
+
 
 
 ## Environment

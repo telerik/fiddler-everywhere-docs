@@ -1,5 +1,5 @@
 ---
-title: Handling Basic Authentication Requests
+title: Composing Basic Authentication Requests
 description: "Learn what the steps for the basic authentication with Fiddler Everywhere are."
 type: how-to
 slug: basic-authentication-with-fiddler-everywhere
