@@ -1,0 +1,24 @@
+---
+title: Capturing Git Traffic
+description: "Learn how to capture Git traffic while using the Fiddler Everywhere web-debugging tool."
+type: how-to
+slug: how-to-capture-git-traffic
+publish: true
+res_type: kb
+---
+
+
+## Environment
+
+|   |   |
+|---|---|
+| Product version | Fiddler Everywhere 1.0.0 and above  |
+| 3rd-party tools | [GIT](https://git-scm.com/), [GitHub](https://github.com/) |
+| Supported OS | macOS, Linux, Windows |
+
+
+## Description
+
+
+
+## Solution
