@@ -1,6 +1,6 @@
 ---
 title: Capturing Git Traffic
-description: "Learn how to capture Git traffic while using the Fiddler Everywhere web-debugging tool."
+description: "Learn how to capture Gittraffic while using the Fiddler Everywhere web-debugging tool."
 type: how-to
 slug: how-to-capture-git-traffic
 publish: true
@@ -19,6 +19,7 @@ res_type: kb
 
 ## Description
 
+I want to capture the traffic generated from the Git source control while making pull & push requests and cloning repositories. How to configure Git to go through the Fiddler Everywhere proxy?
 
 
 ## Solution
