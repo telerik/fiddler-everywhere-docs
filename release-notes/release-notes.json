@@ -1,5 +1,82 @@
 [
     {
+        "version": "4.1.0",
+        "title": "Fiddler Everywhere v4.1.0",
+        "date": "January 24, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Quick search improvements - it will search in all columns and highlight the matched data"
+                    },
+                    {
+                        "title": "Option to limit the Sessions List Length in the Live Traffic grid"
+                    },
+                    {
+                        "title": "Introduce a Timeline in the Overview inspector"
+                    },
+                    {
+                        "title": "Add a HEX body inspector"
+                    },
+                    {
+                        "title": "Add sorting for saved and shared sessions alphabetically"
+                    },
+                    {
+                        "title": "Update Sign in screen with more information for the possible steps"
+                    },
+                    {
+                        "title": "Show information in the application when there's a failed renewal payment"
+                    },
+                    {
+                        "title": "Add verbose logs for operations related to network adapters"
+                    },
+                    {
+                        "title": "Update several internal dependencies to latest versions"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "In some cases, fetch requests copied from the application lead to error for increase of max listeners"
+                    },
+                    {
+                        "title": "Copy as Powershell/Fetch/cURL/Python must be disabled on multiple connect sessions selected"
+                    },
+                    {
+                        "title": "Maximize/restore icon is incorrect on Windows and Linux"
+                    },
+                    {
+                        "title": "Auto theme is not applied on preview when change from dark theme to auto"
+                    },
+                    {
+                        "title": "Pseudo-headers are not shown in saved sessions"
+                    },
+                    {
+                        "title": "It is not possible to use pseudo-headers in Rules and Filters"
+                    },
+                    {
+                        "title": "Missing notification when copy URL/Full summary of any session"
+                    },
+                    {
+                        "title": "Start/pause capturing from the tray icon is not working after logout/login"
+                    },
+                    {
+                        "title": "Composer's body key-value pairs are always included in the request even when they are unchecked"
+                    },
+                    {
+                        "title": "Stop sending Connection: Close header in the response of a CONNECT request"
+                    },
+                    {
+                        "title": "Wrong trial length is shown in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.0.1",
         "title": "Fiddler Everywhere v4.0.1",
         "date": "November 11, 2022",
