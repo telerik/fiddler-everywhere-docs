@@ -46,26 +46,6 @@ The **Headers** inspector allows you to view the HTTP headers of the request and
 
 >tip Fiddler Everywhere supports HTTP/2 and shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received.
 
-#### Request Headers Inspector
-
-Every HTTP(S) request begins with plain text headers that describe what the client requests as a resource or operation. The first line of the request (the **Request line**) contains the following values:
-
-* The HTTP method&mdash;For example, __GET__.
-* The URL path which is being requested&mdash;For example, `/index.html`.
-* The HTTP version&mdash;For example, `HTTP/1.2`.
-
-The **Request line** can consist of one or more rows containing name-value pairs of metadata about the request and the client, such as the `User-Agent` and `Accept-Language`.
-
-#### Response Headers
-
-Like the HTTP request, every HTTP response begins with plain text headers describing the request's result. The first line of the response (the **Status line**) contains the following values:
-
-* The HTTP version&mdash;For example, `HTTP/1.1`.
-* The response status code&mdash;For example, `200`.
-* The response status text&mdash;For example, `OK`.
-
-The **Status line** can consist of one or more lines containing name-value pairs of metadata about the response and the server, such as the length of the response file, the content type, and how the response can be cached.
-
 ### Params Inspector
 
 The **Params inspector**, available in the **Request** section only, displays the content from any input endpoints parameters.
@@ -92,6 +72,31 @@ The following figure displays decoded raw content with the **decode** button in 
 
 ![Raw Inspector with decoded content](../images/livetraffic/inspectors/inspectors-raw-decoded.png)
 
+
+#### Request Raw Inspector Details
+
+Every HTTP(S) request begins with plain text headers that describe what the client requests as a resource or operation. The first line of the request (the **Request line**) contains the following values:
+
+* The HTTP method&mdash;For example, __GET__.
+* The URL path which is being requested&mdash;For example, `/index.html`.
+* The HTTP version&mdash;For example, `HTTP/1.2`.
+
+The **Request line** can consist of one or more headers listed in rows that contains name-value pairs of metadata about the request and the client, such as the `User-Agent` and `Accept-Language`.
+
+The **Request body** (if such exist) appears at the bottom and is separated by an empty line from the last header.
+
+#### Response Raw Inspector Details
+
+Like the HTTP request, every HTTP response begins with plain text headers describing the request's result. The first line of the response (the **Status line**) contains the following values:
+
+* The HTTP version&mdash;For example, `HTTP/1.1`.
+* The response status code&mdash;For example, `200`.
+* The response status text&mdash;For example, `OK`.
+
+The **Status line** can consist of one or more headers listed in rows that contain name-value pairs of metadata about the response and the server, such as the length of the response file, the content type, and how the response can be cached.
+
+The **Response body** (if such exist) appears at the bottom and is separated by an empty line from the last header.
+
 ### Preview Inspector
 
 The **Preview Inspector**, available in the **Request** section only, allows you to view the response bodies as an image or an HTML page, depending on the response content. The inspector can display the most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, and TIFF.
@@ -108,6 +113,7 @@ The **Body** inspectors are suitable for different types of requests and respons
 
 - [Text](#text-body-inspector)
 - [JSON](#json-body-inspector)
+- [HEX](#hex-body-inspector)
 - [XML](#xml-body-inspector)
 - [Form-Data](#form-data-body-inspector)
 - [JavaScript](#javascript-body-inspector)
@@ -125,6 +131,15 @@ The **JSON** inspector interprets the selected request or response body as a Jav
 >important If the JSON data is malformed, for example, the name component of a name/value pair is unquoted, the JSON inspector will show a warning in the footer.
 
 ![JSON Inspector](../images/livetraffic/inspectors/inspectors-json.png)
+
+
+#### HEX Body Inspector
+
+The **HEX** inspector loads a hex representation of the HTTP request/response bodies. The hex data can help identify hidden information in the requests/responses and find special characters (for example, CRLF, Tab, etc.). The HEX inspector's primary goal is to help people analyze bodies with binary data while providing performance optimization for working with larger files.
+
+The **HEX** inspector consists of an offset column, a hex view column, and a text view column.
+
+![HEX Inspector](../images/livetraffic/inspectors/inspectors-hex.png)
 
 #### XML Body Inspector
 
@@ -242,10 +257,9 @@ The **Metadata inspector** contains timestamps and masking information about the
 
 #### Message Inspector
 
-The **Message Inspector** contains the non-masked message content in plain text or JSON (depending on the message format). The inspector has a toolbar that allows you to word-wrap the message content and highlight content through a search term.
+The **Message Inspector** contains the non-masked message content visualized in [Text](#text-body-inspector), [JSON](#json-body-inspector), or [HEX](#hex-body-inspector) body inspector. The inspector has a toolbar that allows you to word-wrap the message content and highlight content through a search term.
 
 ![WebSocket Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
-
 
 
 ## Inspector's Context Menu

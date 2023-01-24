@@ -23,8 +23,9 @@ The following table demonstrates the significant differences between the two fun
 | Capturing of browser traffic   | Supports all browsers.  | Support for all Chromium browsers.
 | Capturing of other applications traffic | Yes. It supports traffic capturing on virtually any application that uses the system proxy. | No.
 | Required administrative access | Requires OS admin rights for installing and trusting a root certificate and modifying the system proxy.  | Requires user rights for starting a Chromium browser with custom parameters.
-| Working with VPN tooling       | Requires Cisco VPN support. | Provides multiple VPN tooling support out-of-the-box.
+| Working with VPN tooling       | Supports only some VPN tools | Provides multiple VPN tooling support out-of-the-box.
 | Captured output                | Captures all traffic that goes through the system proxy. | Captures only the traffic from the preconfigured browser instance.
+! Supported protocols | HTTP, HTTPS, WebSocket | HTTP, HTTPS, WebSocket |
 
 
 ## System Capturing
@@ -42,6 +43,11 @@ To capture system traffic with Fiddler Everywhere:
     ![Enabling Live Traffic](../images/get-started/get-started-toggle.png)
 
 >tip When you switch **Live Traffic** to **Capturing**, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request, and **Live Traffic** will be populated. The **Result** field for that arbitrary web address will return **200**, which means that your first request is successfully captured with Fiddler Everywhere.
+
+
+### Disabling the Automatic System Capturing
+
+By default, the Fiddler Everywhere application starts with the **Live Traffic** toggle switched to **Capturing** (which means it will immediately change the system proxy and start capturing). You can change that behavior by unchecking the [**Settings > Connections > Act as system proxy on startup**]({%slug connections-submenu%}) option.
 
 
 ## Preconfigured Browser Capturing
@@ -79,6 +85,16 @@ Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. N
 
 - Fiddler shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received. Some client applications are further modifying the order of the pseudo-headers, which might cause different behavior for some corner cases.
 
+
+## Explicit Capturing
+
+The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is 127.0.0.1:8866. Any application explicitly directed to go through the Fiddler Everywhere proxy address will have its HTTP/HTTPS/WebSocket traffic immediately captured, even if the [system capturing](#system-capturing) is turned off.
+
+Example for explicitly making a curl request that goes through the Fiddler Everywhere proxy:
+
+```curl
+curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
+```
 
 
 ## Additional Resources

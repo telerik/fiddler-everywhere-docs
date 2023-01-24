@@ -15,6 +15,8 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
 - **Act as a system proxy on startup**&mdash;Controls whether Fiddler Everywhere will be registered as the system proxy during startup. Some browsers and many applications use the system proxy by default and are notified when it changes.
 
+   >tip By default, with **Act as a system proxy on startup** enabled, Fiddler Everywhere will always start up with the Live Traffic toggle enabled and will immediately start capturing the ongoing HTTP traffic. Disable this option if you would like to change this behavior and control when Fiddler Everywhere should start acting as a system proxy.
+
 - **Allow remote computers to connect**&mdash;Controls whether inbound connections to Fiddler Everywhere are allowed. Enable this option to capture traffic from remote devices.
 
 - **Enable HTTP/2 support (BETA)**&mdash;Enables capture of traffic through the HTTP/2 protocol. 

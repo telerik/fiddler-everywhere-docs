@@ -84,9 +84,11 @@ For more information, refer to the following documentation articles about each *
 - [**HTTPS** menu]({%slug decrypt-https-traffic%})
 - [**Connections** menu]({%slug connections-submenu%})
 - [**Gateway** menu]({%slug gateway-submenu%})
+- [**Live Traffic**]({%slug live-traffic-submenu%})
 - [**Privacy** menu]({%slug privacy-submenu%})
 - [**Composer** menu]({%slug composer-settings-submenu%})
 - [**Rules** menu]({%slug rules-settings-submenu%})
+- [**Browsers** menu]({%slug browsers-settings-submenu%})
 - [**Themes** menu]({%slug themes-settings-submenu%})
 
 
@@ -96,4 +98,6 @@ The last section of the main menu provides account-specific options and informat
 
 - **Manage Account**&mdash;Direct link to the [**Account Overview**](https://www.telerik.com/account/) section at the https://www.telerik.com site.
 - **Manage Subscription**&mdash;Direct link to the [**Your Licenses**](https://www.telerik.com/account/your-licenses) section at the https://www.telerik.com site.
+- **Request SSO**&mdash;Direct link to the [Telerik SSO configuration form](https://www.telerik.com/account/support-center/contact-us/licensing-support?sa=6&LP=fiddler). The SSO option is available only under the Enterprise subscription.
+- **Old Invoices**&mdash;Direct link to the obsolete Fiddler dashboard site that loads invoices issued before the migration to Telerik unified system.
 - **Sign Out**&mdash;Allows you to log out of the currently logged user from the Fiddler Everywhere application and the https://www.telerik.com site.

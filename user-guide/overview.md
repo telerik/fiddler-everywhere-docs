@@ -29,7 +29,7 @@ The **Timings** chart splits into two main parts&mdash;the blue section of the c
 
 **Tracked Request Timings** provides the following options:
 
-- **Gateway Determination Time**&mdash;The time (in milliseconds) required to determine the gateway. All values over 1000ms are unusual and suggest an issue.
+- **Determine Gateway**&mdash;The time (in milliseconds) required to determine the gateway. All values over 1000ms are unusual and suggest an issue.
 
 - **DNS Time**&mdash;The time (in milliseconds) required for a DNS lookup. Average DNS lookup times are between 20 and 120ms.
 
@@ -37,7 +37,7 @@ The **Timings** chart splits into two main parts&mdash;the blue section of the c
 
 - **HTTPS Handshake Time**&mdash;The time (in milliseconds) required to finish an HTTPS handshake. While capturing HTTPS traffic, you will see what the client and the server are using to communicate with Fiddler Everywhere. This can be different from what they would use if the Fiddler Everywhere proxy were not in the middle. To see the CONNECT tunnels without the Fiddler Everywhere interference, disable the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}).
 
-- **Client Connected**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
+- **Client Connected**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget. This timing appears only in the **Request Details** and **Response Details** sections.
 
 - **Client Begin Request**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 
@@ -45,7 +45,7 @@ The **Timings** chart splits into two main parts&mdash;the blue section of the c
 
 - **Client Done Request**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 
-- **Server Connected**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
+- **Server Connected**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget. This timing appears only in the **Request Details** and **Response Details** sections.
 
 - **Fiddler Begin Request**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 

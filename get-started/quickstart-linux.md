@@ -23,7 +23,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Lin
 ```curl
   https://*.telerik.com/
   https://*.getfiddler.com/
-  https://*.amazonaws.com/
+  https://fiddler-backend-production.s3-accelerate.amazonaws.com
 ```
 
 ## Step 1: Install Fiddler Everywhere on Your Machine
