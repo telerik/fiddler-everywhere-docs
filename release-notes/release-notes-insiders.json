@@ -1,5 +1,43 @@
 [
     {
+        "version": "4.1.1-insiders",
+        "title": "Fiddler Everywhere v4.1.1",
+        "date": "February 2, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add a notification when importing and exporting rules"
+                    },
+                    {
+                        "title": "Improve the scroll performance in the sessions grid with lots of sessions"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "The host header is ordered incorrectly when looking at the Raw Request Inspector"
+                    },
+                    {
+                        "title": "Unable to start the app from a WSL2 terminal"
+                    },
+                    {
+                        "title": "Menu items are sometimes doubled in the sessions toolbar dropdown menu"
+                    },
+                    {
+                        "title": "Shortcut labels are not visible in some context menus in the sessions grid"
+                    },
+                    {
+                        "title": "In very rare cases the app might hang when opening the overview inspector, toggling live traffic capturing, or deleting a rule"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.1.0-insiders",
         "title": "Fiddler Everywhere v4.1.0",
         "date": "January 24, 2023",
