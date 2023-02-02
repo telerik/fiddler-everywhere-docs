@@ -28,7 +28,7 @@
                         "title": "Menu items are sometimes doubled in the sessions toolbar dropdown menu"
                     },
                     {
-                        "title": "Shourtcut labels are not visible in some context menus in the sessions grid"
+                        "title": "Shortcut labels are not visible in some context menus in the sessions grid"
                     },
                     {
                         "title": "In very rare cases the app might hang when opening the overview inspector, toggling live traffic capturing, or deleting a rule"
