@@ -15,7 +15,7 @@ This article describes how to use Fiddler Everywhere to capture and inspect traf
 To capture and inspect traffic on iOS devices or simulators, perform the following steps:
 
 1. [Provide the prerequisites](#prerequisites).
-1. [Configure Fiddler Everywhere](#Configuring-fiddler-everywhere).
+1. [Configure Fiddler Everywhere](#configuring-fiddler-everywhere).
 1. [Configure the iOS device](#configuring-the-ios-device).
 1. [Configure the iOS simulator](#configuring-the-ios-simulator).
 1. [Inspect the traffic](#inspecting-the-browser-traffic).
