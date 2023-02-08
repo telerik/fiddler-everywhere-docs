@@ -24,21 +24,32 @@ I want to capture the traffic generated from the Git source control while making
 
 ## Solution
 
-
+```
 // set the Fiddler Everywhere proxy address
 git config --global http.proxy http://127.0.0.1:8866 
+```
 
+Export the Fiddler Everywhere root CA as PEM and specify it with either `http.sslCAInfo` or `http.sslCAPath`.
+```
 // export the Fiddler CA as PEM and set it through sslCAInfo
 git config --global http.sslcainfo %DESKTOP%\FiddlerRootCertificate.pem
+```
 
+Alternatively, you can disable the SSL/TLS verification by setting `http.sslVerify` to `false`. 
+```
 // or disable SSL/TLS verification (insecure)
 git -c http.sslVerify=false clone https://github.com/telerik/fiddler-everywhere-docs
+```
 
 =======================
 
+```
 // checking current Git configuration
 git config --get-regexp http.* 
+```
 
+```
 // reset git proxy settings
 git config --global --unset http.proxy http://127.0.0.1:8866
 git config --global --unset http.sslcainfo
+```
