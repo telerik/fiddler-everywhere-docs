@@ -47,9 +47,9 @@ To configure real iOS devices to work alongside a Fiddler Everywhere host, refer
 
 1. Scroll to the bottom and choose **Configure Proxy** > **Manual**.
 
-     - Enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.0.101** (for demo purposes we assume that is the IP of the host machine where FIddler Everywhere runs).
+     - In the **SERVER** field, enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.0.101** (for demo purposes we assume that is the IP of the host machine where FIddler Everywhere runs).
 
-     - Enter the Fiddler Everywhere proxy port. By default, the port is **8866**.
+     - In the **PORT** field, enter the Fiddler Everywhere proxy port. By default, the port is **8866**.
 
     >tip With the current setup, you can capture non-secure HTTP traffic. However, if you try to open any HTTPS website, you'll get the "This site's security certificate is not trusted!" error. To fix this issue, trust the Fiddler root certificate.
 
@@ -63,7 +63,7 @@ To configure real iOS devices to work alongside a Fiddler Everywhere host, refer
 
 1. (For iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **DO_NOT_TRUST_FiddlerRoot** certificate. Note that you will see the **DO_NOT_TRUST_FiddlerRoot** certificate only after completing the previous step.
 
-The last step is crucial, and HTTPS browsing will fail if the certificate is not fully trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
+>importatnt The last step is crucial, and HTTPS browsing will fail if the certificate is not fully trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
 
 
 ## Configuring the iOS Simulator
