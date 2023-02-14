@@ -15,10 +15,10 @@ This article describes how to use Fiddler Everywhere to capture and inspect traf
 To capture and inspect traffic on Android devices, perform the following steps:
 
 1. [Provide the prerequisites](#prerequisites).
-1. [Configure Fiddler Everywhere](#configuring-fiddler-everywhere).
-1. [Configure the Android device](#configuring-the-android-device).
-1. [Inspect the browser traffic](#inspecting-the-browser-traffic).
-1. [Inspect the Android application traffic](#inspecting-the-android-application-traffic).
+1. [Configure Fiddler Everywhere](#configuring-fiddler-everywhere-host).
+1. [Configure the Android device](#configuring-android-devices).
+1. [Inspect the browser traffic](#inspecting-browser-traffic).
+1. [Inspect the Android application traffic](#inspecting-android-application-traffic).
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ To capture and inspect traffic on Android devices, perform the following steps:
 
 - Connect an Android device to the same network or use an Android emulator on the Fiddler Everywhere host machine. Ensure that the machine on which Fiddler Everywhere and the Android device run is discoverable on the same network.
 
-## Configuring Fiddler Everywhere
+## Configuring Fiddler Everywhere Host
 
 1. Enable the remote connections in Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**.
 
@@ -34,7 +34,7 @@ To capture and inspect traffic on Android devices, perform the following steps:
 
 1. Enable [system capturing]({%slug capture-traffic-get-started%}#system-capturing).
 
-## Configuring the Android Device
+## Configuring Android Devices
 
 The following steps apply to real Android devices with access to the Internet through the same network as the Fiddler Everywhere host machine.
 

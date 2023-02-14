@@ -15,10 +15,10 @@ This article describes how to use Fiddler Everywhere to capture and inspect traf
 To capture and inspect traffic on iOS devices or simulators, perform the following steps:
 
 1. [Provide the prerequisites](#prerequisites).
-1. [Configure Fiddler Everywhere](#configuring-fiddler-everywhere).
-1. [Configure the iOS device](#configuring-the-ios-device).
-1. [Configure the iOS simulator](#configuring-the-ios-simulator).
-1. [Inspect the traffic](#inspecting-the-browser-traffic).
+1. [Configure Fiddler Everywhere](#configuring-fiddler-everywhere-host).
+1. [Configure the iOS device](#configuring-ios-devices).
+1. [Configure the iOS simulator](#configuring-ios-simulator).
+1. [Inspect the traffic](#inspecting-traffic).
 
 ## Prerequisites
 
@@ -26,17 +26,14 @@ To capture and inspect traffic on iOS devices or simulators, perform the followi
 
 - Use an iOS device or an iOS simulator within the same local network as the Fiddler Everywhere host.
 
-## Configuring Fiddler Everywhere
+## Configuring Fiddler Everywhere Host
 
 1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**.
 
 1. Check the local IP address of the host where the Fiddler Everywhere application runs. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the host IP address. Alternatively, you can obtain the IP address while using  **ipconfig**/ **ifconfig** (depending on the OS).  For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere machine is **192.168.0.101**.
 
-1. Enable [system capturing]({%slug capture-traffic-get-started%}#system-capturing) by turning on the **Live Traffic** toggle.
 
-1. Proceed with the iOS configuration. Note that [real iOS devices](#configure-the-ios-device) have different configuration than [iOS simulators](#configure-the-ios-simulator).
-
-## Configuring the iOS Device
+## Configuring iOS Devices
 
 To configure real iOS devices to work alongside a Fiddler Everywhere host, refer to the following steps. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configure-the-ios-simulator). Real iOS devices and iOS simulators must be on the same local network and be discoverable.
 
@@ -47,24 +44,22 @@ To configure real iOS devices to work alongside a Fiddler Everywhere host, refer
 
 1. Scroll to the bottom and choose **Configure Proxy** > **Manual**.
 
-     - Enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.0.101** (for demo purposes we assume that is the IP of the host machine where FIddler Everywhere runs).
+     - In the **SERVER** field, enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.0.101** (for demo purposes we assume that is the IP of the host machine where FIddler Everywhere runs).
 
-     - Enter the Fiddler Everywhere proxy port. By default, the port is **8866**.
+     - In the **PORT** field, enter the Fiddler Everywhere proxy port. By default, the port is **8866**.
 
     >tip With the current setup, you can capture non-secure HTTP traffic. However, if you try to open any HTTPS website, you'll get the "This site's security certificate is not trusted!" error. To fix this issue, trust the Fiddler root certificate.
 
-1. Open a browser on the iOS device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere. 
+1. Open a browser on the iOS device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere. Follow the Fiddler root certificate link to **download** the Fiddler certificate.
 
-1. Follow the Fiddler root certificate link to download the Fiddler certificate.
+1. On your iOS device, open **General** > **Profile Downloaded** and install the downloaded Fiddler certificate.
 
-1. On your iOS device, open **General** and install the certificate through **Profile Downloaded**. Note that this option will appear only after the certificate is downloaded.
+1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **DO_NOT_TRUST_FiddlerRoot** certificate.
 
-1. (For iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **DO_NOT_TRUST_FiddlerRoot** certificate. Note that you will see the **DO_NOT_TRUST_FiddlerRoot** certificate only after completing the previous step.
-
-The last step is crucial, and HTTPS browsing will fail if the certificate is not fully trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
+>important The last step is crucial, and HTTPS browsing will fail if the certificate is not fully trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
 
 
-## Configuring the iOS Simulator
+## Configuring iOS Simulator
 
 The later versions of the iOS simulators, accessible through XCode, use the OS system proxy by default. However, due to [a security limitation](https://developer.apple.com/forums/thread/124056), the iOS simulator won't access the folders containing the trust certificates. To capture HTTPS traffic, you must manually export the Fiddler Everywhere certificate and install it on your iOS simulator.
 
@@ -77,9 +72,9 @@ The later versions of the iOS simulators, accessible through XCode, use the OS s
 
 1. Drag and drop the exported certificate in the simulator.
 
-1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **DO_NOT_TRUST_FiddlerRoot** certificate. Note that you will see the **DO_NOT_TRUST_FiddlerRoot** certificate only after completing the previous step.
+1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **DO_NOT_TRUST_FiddlerRoot** certificate.
 
-## Inspecting the Traffic
+## Inspecting Traffic
 
 Now you can immediately monitor HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere.
 
