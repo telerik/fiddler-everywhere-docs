@@ -1,5 +1,20 @@
 [
     {
+        "version": "4.1.2",
+        "title": "Fiddler Everywhere v4.1.2",
+        "date": "February 14, 2023",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Performance is degraded in some occasions on macOS when importing several files"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.1.1",
         "title": "Fiddler Everywhere v4.1.1",
         "date": "February 2, 2023",
