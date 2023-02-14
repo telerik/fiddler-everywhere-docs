@@ -55,8 +55,6 @@ To configure real iOS devices to work alongside a Fiddler Everywhere host, refer
 
 1. Open a browser on the iOS device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere. 
 
-    >important The echo service address is accessible only when the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) is turned on.
-
 1. Follow the Fiddler root certificate link to download the Fiddler certificate.
 
 1. On your iOS device, open **General** and install the certificate through **Profile Downloaded**. Note that this option will appear only after the certificate is downloaded.

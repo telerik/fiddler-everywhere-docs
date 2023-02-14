@@ -54,8 +54,6 @@ The following steps apply to real Android devices with access to the Internet th
 
     1. Open a mobile browser on the Android device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere.
 
-        >important The echo service address is accessible only when the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) is turned on.
-
     1. Tap the option to download the certificate. Then save and install as follows:
 
         - Save and install the certificate (**Android 10 and below**):
