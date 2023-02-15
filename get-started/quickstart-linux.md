@@ -91,7 +91,7 @@ As the Linux distributions use different security features and approaches for tr
 
 >important The approach for trusting the Fiddler root certificate in this tutorial assumes that your Linux distribution uses the `dkpg-reconfigure` command. If this is not the case, refer to the article on [configuring the Fiddler certificate on Fedora, CentOS, and RedHat]({%slug fiddler-fedora-centos%}).  
 
-1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and export the certificate through the **Export root certificate(DER/Binary format)** button. The certificate is exrpoted to **~/Desktop** as file with name **FiddlerRootCertificate.crt**.
+1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and export the certificate through the **Export root certificate(DER/Binary format)** button. The certificate is exported to **~/Desktop** as file with name **FiddlerRootCertificate.crt**.
 
 1. To import and trust the exported certificate, perform the following steps.
     >important (For localized Linux distributions only) Some Linux distributions, such as Ubuntu, use localized paths&mdash;for example, the name of the **Desktop** folder is translated into the locale language. As this may cause an error, create a folder named **Desktop** in your root `mkdir ~/Desktop` directory. Then, export the certificate to the newly-created directory. Once the certificate is installed, you can safely remove that directory.
