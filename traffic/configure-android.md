@@ -32,7 +32,7 @@ To capture and inspect traffic on Android devices, perform the following steps:
 
 1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the host IP address. Alternatively, you can obtain the IP address while using terminal command like  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere host machine is **192.168.100.50**. 
 
-1. Enable [system capturing]({%slug capture-traffic-get-started%}#system-capturing).
+1. Ensure that Fiddler root certificate is installed and the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}) is enabled.
 
 ## Configuring Android Devices
 
