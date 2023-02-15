@@ -39,6 +39,17 @@ I want to capture the traffic generated from the Git source control while making
 
 With the above, you can now clone, pull, push, or use any other Git network operations and investigate the captured traffic with Fiddler Everywhere.
 
+Setting `http.sslVerify` to false may help you quickly get going if your workplace employs man-in-the-middle HTTPS proxying. Longer term, you could get the root CA that they are applying to the certificate chain and specify it with either http.sslCAInfo or http.sslCAPath.
+
+
+```JS
+http.sslCAInfo <path-to-CA-file>
+// File containing the certificates to verify the peer with when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_CAINFO environment variable.
+
+http.sslCAPath <path-to-folder-containing-CAs>
+// Path containing files with the CA certificates to verify the peer with when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_CAPATH environment variable
+```
+
 ## Checking Git Proxy Configuration
 
 Check the current Git proxy configuration through the following command:
