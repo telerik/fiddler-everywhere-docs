@@ -1,6 +1,6 @@
 ---
 title: Capturing Git Traffic
-description: "Learn how to capture Git HTTPS traffic while using the Fiddler Everywhere web-debugging tool."
+description: "Learn how to capture Git HTTPS traffic while using the Fiddler Everywhere proxy application."
 type: how-to
 slug: how-to-capture-git-traffic
 publish: true
@@ -32,22 +32,21 @@ I want to capture the traffic generated from the Git source control while making
     git config --global http.proxy http://127.0.0.1:8866 
     ```
 
-1. Disable the SSL/TLS verification by setting `http.sslVerify` to `false`. Note that this will make your connection insecure.
+1. Disable the SSL/TLS verification by setting `http.sslVerify` to `false`. 
+
     ```
     git config --global http.sslVerify false
     ```
 
-With the above, you can now clone, pull, push, or use any other Git network operations and investigate the captured traffic with Fiddler Everywhere.
-
-Setting `http.sslVerify` to false may help you quickly get going if your workplace employs man-in-the-middle HTTPS proxying. Longer term, you could get the root CA that they are applying to the certificate chain and specify it with either http.sslCAInfo or http.sslCAPath.
+Setting `http.sslVerify` to `false` can help you quickly setup your environment alongside a man-in-the-middle HTTPS proxy. However, its usage is insecure as it will disable the validation of all self-signed certificates. Alternatively, you could install the Fiddler root CA to the certificate chain and specify it with either `http.sslCAInfo` or `http.sslCAPath`.
 
 
 ```JS
 http.sslCAInfo <path-to-CA-file>
-// File containing the certificates to verify the peer with when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_CAINFO environment variable.
+// File containing the certificates to verify the peer when fetching or pushing over HTTPS. The `GIT_SSL_CAINFO` environment variable can override it.
 
 http.sslCAPath <path-to-folder-containing-CAs>
-// Path containing files with the CA certificates to verify the peer with when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_CAPATH environment variable
+// Path containing files with the CA certificates to verify the peer when fetching or pushing over HTTPS. Can be overridden by the `GIT_SSL_CAPATH` environment variable
 ```
 
 ## Checking Git Proxy Configuration
