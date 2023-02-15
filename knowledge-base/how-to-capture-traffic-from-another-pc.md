@@ -45,6 +45,8 @@ The requirement for using the same network is actually not a must. However, most
 
     ![Host local IP address](../images/kb/host-ip.png)
 
+1. Ensure that Fiddler root certificate is installed and the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}) is enabled.    
+
 ## Configuring Fiddler Everywhere (Target)
 
 1. On the target machine, go to the operating system proxy settings.
