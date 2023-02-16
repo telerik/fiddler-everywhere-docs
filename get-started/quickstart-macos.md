@@ -16,7 +16,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on mac
 
 ## Prerequisites
 
-- Install macOS 10.15+ x64.
+- Install macOS version 11 or above.
 - Provide 400MB of free disk space.
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active internet connection with access to the following URLs:

@@ -15,7 +15,7 @@ res_type: kb
 |---|---|
 | Product   | [Fiddler Everywhere](https://www.telerik.com/fiddler/fiddler-everywhere) |
 | Product Version |  1.0.0 and above  |
-| Operating System| macOS 10.15+ x64 |
+| Operating System| macOS version 11 or above |
 
 ## Description
 
