@@ -25,7 +25,7 @@ The Fiddler Everywhere client is an electron application that depends on modifyi
 * [Logging files](#logging-files)
 * [Accessing the logs](#accessing-the-logs-through-the-ui)
 * [Managing the destination folder](#accessing-the-logs-manually)
-* [Enable verbose logging](#enabling-verbose-logging)
+* [Enable verbose logging](#enabling-verbose-logs)
 * [Using the `electron.log` file](#using-the-electronlog-file)
 * [Using the `netcore.log` file](#using-the-netcorelog-file)
 
