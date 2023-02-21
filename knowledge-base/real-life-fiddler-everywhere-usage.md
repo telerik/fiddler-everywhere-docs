@@ -7,19 +7,8 @@ publish: false
 res_type: kb
 ---
 
-## Environment
 
-|   |   |
-|---|---|
-| Product   |
-| Product Version | 1.0.0 and above  |
-| Operating System | macOS, Windows, Linux |
-
-## Description
-
-Apart from the technicality, what are the real-life examples where Fiddler can help?
-
-## Solution
+## Fiddler Everywhere Use Cases
 
 Fiddler Everywhere is far from being just another proxy tool. The latest version provides a comprehensive mechanism for inspecting the captured data, extracting statistical data, collaboration functionalities, mocking abilities, organized collections, and many more. Below we will cover some practical examples of how you can use and combine the tool's different features to your advantage during everyday work.
 
@@ -99,9 +88,11 @@ Technically, Fiddler Everywhere allows you to capture HTTP/HTTPS traffic, make m
 
 Let's assume that our page loads unexpectedly slowly for some reason, and we want to investigate what's causing the issue. Our demonstration uses the Fiddler Everywhere documentation landing page, as in the example in the previous section. To simulate the unexpected slow loading of resources, we will create a rule that mocks unexpected behavour byt the Cloudfront CDN (similar to the prevoius example).
 
-1. Create a rule that delays the Cloudfront CDN by 2.5 seconds. 
+1. Create a rule that delays the Cloudfront CDN by 5 seconds (5000 miliseconds).
 
     ![Delay Cloudfront CDN](../images/kb/real-life-cases/fe-rule-delay-cdn.png)
+
+    >tip Note taht the demo rules wil lbe applied for all endpoints that containst the **Cloudfront** keyword. At the same time, it won't be applied for any CONNECT tunnel which willprevent the doubling
 
 1. Ensure that both the **Rules** tab and the rule itself are active.
 
@@ -114,7 +105,7 @@ Let's assume that our page loads unexpectedly slowly for some reason, and we wan
 As a result, the login page will load with unwanted delay. In a real-life scenario, we can track which request/response has a longer duration (through the **Duration** column in the **Live Traffic** list of captured sessions) and then observe the **Overview** for clues.
 
 
-The above screenshots depict how we can extract information from the **Overview** tab. Our rule delayed the CDN loading by 5000 milliseconds. In the **Overview** tab and specifically in **Statistics** > **Request Details**, we can examine the **Times** values. The investigation shows the delay between the **Client Done Request** and **Fiddler Begin Request** events.
+The above screenshots depict how we can extract information from the **Overview** tab. Our rule delayed the CDN loading by 5000 milliseconds. In the **Overview** tab and specifically in **Statistics** > **Request Details**, we can examine the **Times** values. The investigation shows the delay between the **Client Connected** and **Server Connected** events.
 
 Voila - the reason for the delay is the MITM proxy (expected as we delayed the request on purpose through our own rule). In real life, this would be the place to observe if a request or response causes the delay and if the delay is caused by the client application, the server, or a third party.
 
