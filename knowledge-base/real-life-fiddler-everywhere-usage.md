@@ -21,24 +21,29 @@ Apart from the technicality, what are the real-life examples where Fiddler can h
 
 ## Solution
 
-Fiddler Everywhere is far just from being another proxy tool. The latest version provides a comprehensive mechanism for inspecting the captured data, extracting statistical data, collaboration functionalities, mocking abilities, organized collections, and many more. Below we will cover some practical examples of how you can use and combine the tool's different features to your advantage during everyday work.
+Fiddler Everywhere is far from being just another proxy tool. The latest version provides a comprehensive mechanism for inspecting the captured data, extracting statistical data, collaboration functionalities, mocking abilities, organized collections, and many more. Below we will cover some practical examples of how you can use and combine the tool's different features to your advantage during everyday work.
 
-Fiddler Everywhere can help multiple different personas. A **quality engineer** can brute-force test other cases - for example, different rules for testing failing CSS, network delays, failed access to endpoints, and so on. A **technical support engineer** can reproduce client scenarios - for example, the client shares that he is under a restricted corporate network that has no direct access to AWS or other endpoints. A **developer** can receive pre-recorded sessions that demonstrate the above scenarios and helps them in debugging and implementing the proper solution. A **web developer** can use Fiddler Everywhere to optimize their site by testing and improving the implementations related to font loading, CDN fallbacks, third-party library, resource usage, testing different UI designs on the fly, and so on. A **security officer** can use Fiddler Everywhere to examine the generated traffic for possible leaks of sensitive data, test GDPR policies, and catch unwanted requests (e.g., by malware or third-party actors). An **end-user** can use Fiddler Everywhere to capture specific issue that he faces with an app and share it with the application creators for further investigation.
+Fiddler Everywhere can help multiple different personas. A **quality engineer** can brute-force test other cases - for example, different rules for testing failing CSS, network delays, failed access to endpoints, and so on. A **technical support engineer** can reproduce client scenarios - for example, the client shares that he is under a restricted corporate network that has no direct access to AWS or other endpoints. A **developer** can receive pre-recorded sessions that demonstrate the above scenarios and helps them in debugging and implementing the proper solution. A **web developer** can use Fiddler Everywhere to optimize their site by testing and improving the implementations related to font loading, CDN fallbacks, third-party library, resource usage, testing different UI designs on the fly, and so on. A **security officer** can use Fiddler Everywhere to examine the generated traffic for possible leaks of sensitive data, test GDPR policies, and catch unwanted requests (e.g., by malware or third-party actors). An **end-user** can use Fiddler Everywhere to capture specific issue that he faces with an app and share it with the application creators for further investigation. And, of course, being a man-in-the-middle proxy, Fiddler can also be used to mock hacking scenarios and test how different hacking approach would affect your applications & servers.
 
 The discussed case above barely scratches the surface - there is an ocean of possibilities of what you can do and achieve with Fiddler Everywhere.
 
 ## Real-Life Examples
 
-The main functionality of Fiddler Everywhere is as follows:
+The main functionalities of the Fiddler Everywhere application are as follows:
 
- - Capture the HTTP/HTTPS traffic 
- - Present the captured data statistically through the **Overview** tab and technically through the **HTTP Request and Response inspectors**. 
- - Mock custom server and client app behavior through the **Rules** tab.
- - Compose API requests through the **Composer**.
- - Inspect different sessions side-by-side through the **Compare** tab.
- - Preserve captured sessions, compose requests, create rules for later usage and share them with collaborators.
+ - Capture the HTTP/HTTPS traffic. Fiddler can be set as a system proxy (in that mode it will capture all traffic that goes through the OS proxy), a preconfigured browser proxy (works on a specific browser instance), or as an explicit proxy (configure a specific applicaiton to explicitlyt go through the Fiddler Everywhere proxy address). 
 
-The listed above functionalities can be used for solving a multitude of real-life scenarios handled daily by developers, quality assurance engineers, support personas, or anyone that virtually has to work with network data. 
+ - Present the captured data statistically through the **Overview** tab and technically through the various **HTTP(S) Request and Response inspectors**. 
+
+ - Mock custom server and client app behavior through the **Rules** tab. This is one of the most advanced features that will allow you to test different scenarios, mock request/response data on-the-fly without the need to actually modofiy the appplication or server, test possible hacking cases, etc.
+
+ - Compose API requests through the **Composer**. A core feature that allows you to create your own requests with custom request headers and bodies.
+
+ - Inspect different sessions side-by-side through the **Compare** tab. The comparision is handy for testing what might cause a specific issue to appear on different requests. Combined with the colaboration and import functionalities, the comparision can solve multiple QA and supprt cases.
+
+ - Preserve captured sessions, compose requests, create rules for later usage and share them with collaborators. The Fiddler Everywhere applicaiton provides multiple options for saving snapshots (of captured sessions), request collections, and rules. You can save the data locally, or use the cloud option. Sharing is even easier as you have built-in sharing possibilities to erach other Fiddler users, but you also have the option to export the snapshots in different known formats.
+
+The listed above functionalities can be used for solving a multitude of real-life scenarios handled daily by developers, quality assurance engineers, support personas, or anyone that virtually needs to work with network data. 
 
 ### Capturing, Inspecting, Testing, and Mocking
 
@@ -90,27 +95,30 @@ https://www.youtube.com/watch?v=CE_J4knF2ho
 ### Using Statistical Data and Timings
 
 
-Technically, Fiddler Everywhere allows you to capture HTTP/HTTPS traffic, make modifications, mock server behavior, compose requests, and so on. All these features generate a **lot** of HTTP session data that was initially available only in its raw form through the Fiddler's Request and Response inspectors. The community requested a more elaborate and structured way to access some of the data, and the Fiddler team delivered! We will talk a bit about the exciting tab called **Overview**.
+Technically, Fiddler Everywhere allows you to capture HTTP/HTTPS traffic, make modifications, mock server behavior, compose requests, and much more. All these features generate a **lot** of HTTP session data that was initially available only in its raw form through the Fiddler's Request and Response inspectors. The community requested a more elaborate and structured way to access some of the data, and the Fiddler team delivered! We will talk a bit about the exciting tab called **Overview**.
 
 Let's assume that our page loads unexpectedly slowly for some reason, and we want to investigate what's causing the issue. Our demonstration uses the Fiddler Everywhere documentation landing page, as in the example in the previous section. To simulate the unexpected slow loading of resources, we will create a rule that mocks unexpected behavour byt the Cloudfront CDN (similar to the prevoius example).
 
-1. Create a rule that delays the Cloudfront CDN by 2.5 seconds. Ensure that the rule is active. 
+1. Create a rule that delays the Cloudfront CDN by 2.5 seconds. 
 
     ![Delay Cloudfront CDN](../images/kb/real-life-cases/fe-rule-delay-cdn.png)
 
-1. When ready, turn off Live Traffic capturing, clean all plreviously captured traffic, and use the **Open Browser** option with [https://docs.telerik.com/fiddler-everywhere](https://docs.telerik.com/fiddler-everywhere).
+1. Ensure that both the **Rules** tab and the rule itself are active.
+
+    ![Active Rules tab and rule](../images/kb/real-life-cases/fe-rule-delay-cdn-active-rule.png)
+
+1. When ready, turn off Live Traffic capturing, clean all previously captured traffic, and use [the **Open Browser** option](https://docs.telerik.com/fiddler-everywhere/traffic/capture-traffic#preconfigured-browser-capturing) with the following URL: [https://docs.telerik.com/fiddler-everywhere](https://docs.telerik.com/fiddler-everywhere).
 
 >tip The **Open Browser** option uses a preconfigured browser instance that goes through the Fiddler proxy. This is very convinient for testing a specific site without having to capture all the system traffic (which can be a lot and can polute your Live Traffic list). Opening a preconfigured browser instance will also spare you the need to explicitly clear the cache from your browser. 
   
 As a result, the login page will load with unwanted delay. In a real-life scenario, we can track which request/response has a longer duration (through the **Duration** column in the **Live Traffic** list of captured sessions) and then observe the **Overview** for clues.
 
-![Overview for delayed CDN](../images/kb/real-life-cases/fe-rule-delay-cdn-overview.png)
 
-The above screenshots depict how we can extract information from the **Overview** tab. Our rule delayed the CDN loading by 2500 milliseconds. In the **Overview** tab and specifically in **Statistics** > **Request Details**, we can examine the **Times** values. The investigation shows the delay between the **Client Done Request** and **Fiddler Begin Request** events. 
-
-![Searching for clues in Overview](../images/kb/real-life-cases/fe-rule-delay-cdn-timings.png)
+The above screenshots depict how we can extract information from the **Overview** tab. Our rule delayed the CDN loading by 5000 milliseconds. In the **Overview** tab and specifically in **Statistics** > **Request Details**, we can examine the **Times** values. The investigation shows the delay between the **Client Done Request** and **Fiddler Begin Request** events.
 
 Voila - the reason for the delay is the MITM proxy (expected as we delayed the request on purpose through our own rule). In real life, this would be the place to observe if a request or response causes the delay and if the delay is caused by the client application, the server, or a third party.
+
+![Overview for delayed CDN](../images/kb/real-life-cases/fe-rule-delay-cdn-overview.png)
 
 Interested in learning more? Checkout the following articles about the Overview tab and its capabilities:
 
