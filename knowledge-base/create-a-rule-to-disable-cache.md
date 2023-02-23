@@ -22,7 +22,7 @@ I want to always get the latest content from the server. How to prevent the serv
 
 You can use the **Rules** tab to create and apply a rule for all traffic that goes through the proxy. 
 
-- Create a condtition that matches all captured traffic (for demonstartion purposes we are using regular expression).
+- Create a condtition that matches all captured trafficc. For demonstartion purposes we are using regular expression `.*` which matches every string.
 
     ![Matching all traffic through ReGex](../images/kb/custom-rules/disable-caching-rule-condition.png)
 
@@ -31,10 +31,10 @@ You can use the **Rules** tab to create and apply a rule for all traffic that go
     | Fiddler Action | Headers | Value | Action |
     |---|---|---|---|
     | **Update Request Header** | `If-Modified-Since` | any | Remove |
-    | **Update Request Header** | `Pragma` | `no-cache` | Add if not present |
+    | **Update Request Header** | `Pragma` | `no-cache` | Set Value |
     | **Update Request Header** | `Cache-Control` | `no-cache, no-store, must-revalidate` | Set Value |
-    | **Update Response Header** | `Expires, Last-Modified, ETag` | any | Remove |
-    | **Update Response Header** | `Expires` | `0` | Add if not present |
+    | **Update Response Header** | `Expires, Last-Modified, ETag`| any | Remove |
+    | **Update Response Header** | `Expires` | `0` | Set Value |
     | **Update Response Header** | `Cache-Control` | `no-cache, no-store, must-revalidate` | Set Value |
 
 
