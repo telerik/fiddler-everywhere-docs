@@ -59,7 +59,7 @@ You can add domains or specific URLs to the bypass list on-the-fly while you are
 
 - Select a session that uses the domain/URL you want to bypass.
 
-- With the session selected, open the context menu and choose **Bypass > Add <*.domain> to Bypass List** or **Bypass > Add <specific-URL> to Bypass List**.
+- With the session selected, open the context menu and choose **Bypass > Add <*.domain> to Bypass List** or **Bypass > Add <full.domain> to Bypass List**.
 
 ![Add domain or specific URL to the bypass list](../images/kb/bypass/add-to-bypass.png)
 

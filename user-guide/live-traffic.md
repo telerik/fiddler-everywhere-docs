@@ -580,9 +580,9 @@ The **Bypass** option lets you quickly add domains or specific URLs that the Fid
 
 1. Right-click to open the context menu. Then choose one of the following bypass options:
 
- - Select **Bypass > Add <domain-name> to the bypass list** to add a domain and its subdomains to the bypass list. Adds a wildcard entry in the form ***.domain.xxx**.
+ - Select **Bypass > Add <*.domain.xxx> to the bypass list** to add the root domain and its subdomains to the bypass list. Adds a wildcard entry in the form ***.domain.xxx**.
 
- - Select **Bypass > Add <host-URL-address> to the bypass list** to add a specific URL to the bypass list. Adds the host URL address.
+ - Select **Bypass > Add <subdomain.domain.xxx> to the bypass list** to add a specific domain address to the bypass list.
 
 Consider the following rules when bypassing a domain:
 
