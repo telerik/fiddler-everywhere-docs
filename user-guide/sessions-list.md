@@ -73,7 +73,7 @@ The **Open** option will load the selected session in the **Live Traffic** list;
 
 ### Exporting
 
-The **Export** option prompts the **Export** windows. The session can be exported to various file formats such as SAZ, HTTPArchive, WCATScript, cURL Script, RAW, and more; It can be accessed with the keyboard by pressing `Cmd`+`E` (on Mac), or `Ctrl`+`E` (on Windows).
+The **Export** option prompts the **Export** windows. The session can be exported to various file formats such as SAZ (Fiddler Archive), HTTPArchive, WCATScript, cURL Script, RAW, and more; It can be accessed with the keyboard by pressing `Cmd`+`E` (on Mac), or `Ctrl`+`E` (on Windows).
 
 ### Renaming
 
