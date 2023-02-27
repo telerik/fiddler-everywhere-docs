@@ -41,6 +41,7 @@ All the described issues above have a common solution - bypassing Fiddler so tha
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
 
 - In the **Bypass Fiddler for URLS that starts with:** field, add the endpoints that you would like to bypass, separated by a comma:
+
     _Example for bypassing the Apple endpoints (for system services that are using certificate pinning)_
     ```
     *.apple.com, *.itunes.com, *mzstatic.com
@@ -50,17 +51,27 @@ All the described issues above have a common solution - bypassing Fiddler so tha
 - Click **Save** to persist the change.
 
 
-### Add to Bypass List
+### Adding to Bypass List
 
-You can add domains to the bypass list on-the-fly while you are actively capturing.
+You can add domains or specific URLs to the bypass list on-the-fly while you are actively capturing.
 
 - Open Fiddler Everywhere and start capturing traffic.
 
-- Select a session that uses the domain which you would like to bypass.
+- Select a session that uses the domain/URL you want to bypass.
 
-- With the session selected, open the context menu and choose **Bypass > Add <domain-name-here> to bypass list**.
+- With the session selected, open the context menu and choose **Bypass > Add <*.domain> to Bypass List** or **Bypass > Add <specific-URL> to Bypass List**.
 
-![Add to bypass list](../images/kb/bypass/add-to-bypass.png)
+![Add domain or specific URL to the bypass list](../images/kb/bypass/add-to-bypass.png)
+
+
+### Resetting the Bypass List
+
+- Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
+
+- Delete the endpoints that you no longer want to bypass the Fiddler proxy from the **Bypass Fiddler for URLS that starts with:** field.
+
+- Click **Save** to persist the change.
+
 
 
 

@@ -13,7 +13,9 @@ The **Gateway** sub-menu provides options for configuring the way Fiddler Everyw
 By default, Fiddler Everywhere "chains" to the default proxy of the system. The **Gateway** settings allow you to override that behavior.
 
 - (Recommended) **Use system proxy**&mdash;The default selection. Fiddler uses the OS system proxy. Some browsers and many applications use the system proxy by default and are notified when it changes.
+
 - **Manual proxy configuration**&mdash;Specifies the upstream proxy string (first textbox) and proxy bypass list (second textbox).
+
     - **Proxy string**&mdash;To manually set the gateway proxy, enter the proxy string.
         To enter the proxy configuration string directly, use the following line.
         ```curl
@@ -23,6 +25,7 @@ By default, Fiddler Everywhere "chains" to the default proxy of the system. The 
         ```curl
         http=httpproxy:8080;https=httpsproxy:8080
         ```
+
     - **Bypass list**&mdash;The proxy bypass list supports the following values:
         - Wildcards. For example, `*.extranet.example.com;`.
         - The `<local>` special token, which means any host name that does not contain a period.
@@ -30,6 +33,7 @@ By default, Fiddler Everywhere "chains" to the default proxy of the system. The 
         ```curl
         *.extranet.example.com;<local>;<-loopback>;
         ```
+
 - **No proxy**&mdash;Sends all traffic directly to the root server.
 
 The following figure displays an example for a proxy configuration.
