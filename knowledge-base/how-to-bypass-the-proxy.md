@@ -53,13 +53,13 @@ All the described issues above have a common solution - bypassing Fiddler so tha
 
 ### Adding to Bypass List
 
-You can add domains or specific URLs to the bypass list on-the-fly while you are actively capturing.
+You can add a root domain or specific subdomain address to the bypass list on-the-fly while actively capturing.
 
 - Open Fiddler Everywhere and start capturing traffic.
 
 - Select a session that uses the domain/URL you want to bypass.
 
-- With the session selected, open the context menu and choose **Bypass > Add <*.domain> to Bypass List** or **Bypass > Add <full.domain> to Bypass List**.
+- With the session selected, open the context menu and choose **Bypass > Add <*.domain.xxx> to Bypass List** or **Bypass > Add <subdomain.domain.xxx> to Bypass List**.
 
 ![Add domain or specific URL to the bypass list](../images/kb/bypass/add-to-bypass.png)
 

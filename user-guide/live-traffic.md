@@ -574,7 +574,7 @@ To add a new rule:
 
 ### Bypassing the Proxy
 
-The **Bypass** option lets you quickly add domains or specific URLs that the Fiddler Everywhere proxy will explicitly bypass. To add an endpoint to the bypass list:
+The **Bypass** option lets you quickly add a root domain or specific subdomain address to the bypass list on-the-fly while actively capturing. that the Fiddler Everywhere proxy will explicitly bypass. To add an endpoint to the bypass list:
 
 1. Select the desired session entry.
 
