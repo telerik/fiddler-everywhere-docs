@@ -21,9 +21,9 @@ What is a SAZ file? How do Fiddler Everywhere stores capture traffic?
 
 ## SAZ File
 
-The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddler format used to store HTTP(S), WebSocket, and GRPC traffic. Also known as **Fiddler Archive** or **Fiddler Session Archive**, it is officially supported by Fiddler Everywhere, Fiddler Classic, Fiddler Cap, and FiddlerCore. The SAZ format uses ZIP compression and, as such, can be opened by most of the popular archiving tools. The format is backward and forward-compatible, but newer versions of the SAZ format contain more information than older ones.
+The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddler format used to store HTTP(S), WebSocket, and GRPC traffic. Also known as **Fiddler Archive** or **Fiddler Session Archive**, it is officially supported by Fiddler Everywhere, Fiddler Classic, Fiddler Cap, and FiddlerCore. The SAZ format uses ZIP compression and, as such, can be opened by most of the popular archiving tools. The format is backward and forward-compatible, with newer versions of the SAZ format containing more information about the session snapshots.
 
->tip Some archiving tools like 7-Zip are recognizing SAZ files by default, while for others, you can need to change the file extension to ZIP.
+>tip Some archiving tools like 7-Zip recognize SAZ files by default, while for others, you need to change the file extension to ZIP.
 
 Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains the following:
 
@@ -31,7 +31,8 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
 
     * **sessid#_c.txt**&mdash;The file contains the raw client HTTP(S) request.
 
-        ```
+        _An example for raw client request file_
+        ```txt
         GET https://expired.badssl.com/ HTTP/1.1
         Host: expired.badssl.com
         Connection: keep-alive
@@ -50,8 +51,9 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
         Accept-Language: en-US,en;q=0.9,bg-US;q=0.8,bg;q=0.7
         ```
 
-    * **sessid#_s.txt**&mdash;The file contains the raw server HTTP(S) request.
+    * **sessid#_s.txt**&mdash;The file contains the raw server HTTP(S) response.
 
+        _An example for raw server response file_
         ```xml
         HTTP/1.1 502 Bad Gateway
         Content-Length: 82269
@@ -88,9 +90,9 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
 
 ## Using SAZ with Fiddler Everywhere
 
-The Fiddler Everywhere uses SAZ behind-the-scenes for each session that is explicitly saved locally or in the cloud. The application also provides options to manually export and import captured and saved traffic through the UI. 
+The Fiddler Everywhere uses SAZ behind the scenes for each session explicitly saved locally or in the cloud. The application also provides options to manually export and import captured and saved traffic through the UI. 
 
->tip The Fiddler Everywhere application can be set as the default application for opening SAZ files through the opering system default applications settings.
+>tip The Fiddler Everywhere application can be set as the default application for opening SAZ files through the operating system's settings.
 
  SAZ files use the following UI options:
 
@@ -102,9 +104,9 @@ The Fiddler Everywhere uses SAZ behind-the-scenes for each session that is expli
 
     ![Export SAZ from Lthe saved Sessions list](../images/kb/saz/saz-export-saved-sessions.png)
 
-- Use the **Import** option from the **Sessions** list's context menu and then locate the *.saz file from the OS file system.   
+- Use the **Import** option from the **Sessions** list's context menu and locate the *.saz file from the OS file system.   
 
-All session saved in the local storage is also available as a SAZ file in the application folders. You can manually access and backup your locally saved from the following path:
+All session snapshots saved in the local storage are also available as SAZ files in the `.fiddler` folder. You can manually access and backup your locally saved from the following paths:
 
 * Windows path
     ```curl
