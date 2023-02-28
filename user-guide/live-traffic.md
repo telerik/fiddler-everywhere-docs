@@ -70,19 +70,21 @@ To search for specific values in the URL and the headers of all sessions, use th
 
 ### Saving Sessions
 
-To save captured sessions, use the **Save** button, which will automatically save all captured traffic. To save only specific sessions, select the desired ones and use the advanced saving options from [the context menu]({%slug web-sessions-list%}#save).
+To save captured sessions, use the main menu's **Save** button, which will automatically save all captured traffic. To save only specific sessions, select the desired ones and use the advanced saving options from [the context menu]({%slug web-sessions-list%}#save).
 
 To save sessions for later or prepare sessions for sharing:
 
 1. Click the **Save** button. As a result, a **Save Sessions** prompt window appears.
 
-1. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
+1. Enter a session name in the **Give your session a name** field.
 
-1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password can open the entry.
+1. Choose whether to store the session in the **Local Storage** or in the **Cloud Storage**.
+
+1. (Optional) Choose a folder (within the Fiddler UI) to store the session.
+
+1. (Optional) Use the **password protection** switch to enable encryption and set a password.
 
 1. Click **Save**. The saved session immediately loads in the **Sessions** list.
-
-1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
 
 ### Sharing Sessions
@@ -476,7 +478,7 @@ Alternatively, you can share captured traffic [through the **Share** button from
 
 ### Exporting
 
-The **Export** context menu option allows you to export the captured traffic in various formats such as SAZ, HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
+The **Export** context menu option allows you to export the captured traffic in various formats such as SAZ (Fiddler Archive), HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
 
 - **Selected sessions**&mdash;Saves and shares all selected sessions.
 
