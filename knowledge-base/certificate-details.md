@@ -73,7 +73,7 @@ If you change the certificate error handling (by enabling **HTTPS** > **Ignore s
 
 ### Certificate Details in SAZ files
 
-Fiddler Everywhere version 4.3.0 extended the SAZ format, the native format used for saving captured session snapshots (local saves, cloud saved, or manual SAZ exports). Consider the following when working with saved sessions snapshots and certificate details: 
+Fiddler Everywhere version 4.2.0 extended the SAZ format, the native format used for saving captured session snapshots (local saves, cloud saved, or manual SAZ exports). Consider the following when working with saved sessions snapshots and certificate details: 
 
 - (Fiddler Everywhere version 4.2.0 and above) All sessions saved locally or through the cloud option will contain the certificate details (that were valid when the capturing took place).
 - (Fiddler Everywhere version 4.2.0 and above) All sessions exported in SAZ format will contain the certificate details (that were valid when the capturing took place).
