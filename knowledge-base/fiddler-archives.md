@@ -22,9 +22,9 @@ What is a SAZ file? How do Fiddler Everywhere stores capture traffic?
 
 ## SAZ File
 
-The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddler format used to store HTTP(S), WebSocket, and GRPC traffic. Also known as **Fiddler Archive** or **Fiddler Session Archive**, it is officially supported by Fiddler Everywhere, Fiddler Classic, FiddlerCap, and FiddlerCore. The SAZ format uses ZIP compression and, as such, can be opened by most of the popular archiving tools. The format is backward compatible, with newer versions of the SAZ format containing more information about the session snapshots.
+The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddler format used to store HTTP(S), WebSocket, and GRPC traffic. Also known as **Fiddler Archive** or **Fiddler Session Archive**, the format is officially supported by Fiddler Everywhere, Fiddler Classic, FiddlerCap, and FiddlerCore. The SAZ format uses ZIP compression and, as such, can be opened by most of the popular archiving tools. The format is backward compatible with newer versions of the SAZ format containing more information about the session snapshots.
 
->tip Some archiving tools like 7-Zip recognize SAZ files by default, while for others, you need to change the file extension to ZIP.
+>tip Some archiving tools like 7-Zip recognize SAZ files by default, while others need to change the file extension to ZIP.
 
 Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains the following:
 
@@ -87,13 +87,13 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
 
     * **sessid#_g.txt**&mdash;(Optional) The file contains GRPC messages.
 
-* **[Content_Types.xml]**&mdash;A metadata file that specifies a few MIME types so the archive can be read by System.IO.Packaging or other clients that support the Open Packaging Conventions.
+* **[Content_Types.xml]**&mdash;A metadata file that specifies a few MIME types, so the archive is compatible with `System.IO.Packaging` or other clients that support the Open Packaging Conventions.
 
 ## Using SAZ with Fiddler Everywhere
 
 The Fiddler Everywhere uses SAZ behind the scenes for each session explicitly saved locally or in the cloud. The application also provides options to manually export and import captured and saved traffic through the UI. 
 
->tip The Fiddler Everywhere application can be set as the default application for opening SAZ files through the operating system's settings.
+>tip You can set the Fiddler Everywhere application as the default application for opening SAZ files through the operating system's settings (for example, on Windows 11 through **Settings > Apps > Default Apps**).
 
  SAZ files use the following UI options:
 
@@ -128,4 +128,4 @@ All session snapshots saved in the local storage are also available as SAZ files
     ~/.fiddler/<unique-fiddler-user-GUID>/Snapshots
     ```
 
->important Deleting SAZ files from the above destinations is irreversible and might result in data loss. Consider backing up data (manually or through the cloud save options) if you plan to delete the `.fiddler` folder or any of its subfolders.
+>important Deleting any SAZ files from the above local folders is irreversible and might result in data loss. Consider backing up data (manually or through the cloud save options) if you plan to delete the `.fiddler` folder or any of its subfolders.
