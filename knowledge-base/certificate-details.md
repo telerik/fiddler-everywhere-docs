@@ -1,6 +1,6 @@
 ---
 title: Inspecting Server Certificate
-description: "Learn how to inspect server certificate details and catch potential certificate-related issues."
+description: "Learn how to inspect server certificate details and catch potential certificate-related issues with Fiddler Everywhere MITM proxy."
 type: how-to
 slug: fe-cert-details
 publish: true
@@ -70,3 +70,28 @@ If you change the certificate error handling (by enabling **HTTPS** > **Ignore s
 ![Certificate error ignored](../images/livetraffic/certs/certficate-error-ignored.png)
 
 >tip A typical use case for the **Ignore server certificate errors** option will be certificate validation errors on macOS while trying to access `*.icloud.com` domains. Use the option to ignore the validation error and continue the debugging process.
+
+### Certificate Details in SAZ files
+
+Fiddler Everywhere version 4.2.0 extended the SAZ format, the native format used for saving captured session snapshots (local saves, cloud saved, or manual SAZ exports). Consider the following when working with saved sessions snapshots and certificate details: 
+
+- (Fiddler Everywhere version 4.2.0 and above) All sessions saved locally or through the cloud option will contain the certificate details (that were valid when the capturing took place).
+- (Fiddler Everywhere version 4.2.0 and above) All sessions exported in SAZ format will contain the certificate details (that were valid when the capturing took place).
+- (Fiddler Everywhere version 4.1.2 and below) All sessions saved locally or through the cloud option won't contain the certificate details.
+- (Fiddler Everywhere version 4.1.2 and below) All sessions exported in SAZ format won't contain the certificate details.
+
+#### Deep-Dive with the SAZ format and the Certificate Details
+
+The SAZ file (translates as **Session Archive ZIP** but is also known as **Fiddler Session Archive** or just as **Fiddler Archive**) in its nature is an archive that contains a snapshot of all saved sessions where each session is represented with three different text files.
+
+Inside a SAZ file, you will find:
+
+- [Content_Types.xml] file&mdash;A metadata file that specifies a few MIME types so the archive can be read by System.IO.Packaging or other clients that support the Open Packaging Conventions.
+- a **raw** folder&mdash;Contains the files that represent each captured session. Inside the **raw** folder, you can find three or four files for each session.
+
+    * **sessid#_c.txt**&mdash;File that contains the raw client request.
+    * **sessid#_s.txt**&mdash;File that contains the raw server request.
+    * **sessid#_m.xml**&mdash;File containing metadata including session flags, socket reuse information, etc.
+    * (optional) sessid#_w.txt&mdash;File that contains WebSocket messages.
+
+With version 4.2.0 and above, the XML file (**sessid#_m.xml**) now contains an element called **CertificateChainInfo**, which allows you to load and inspect client and server certificate details for each saved sessions. The updated SAZ format is backward-compatible with older versions of Fiddler Everywhere and Fiddler Classic.
