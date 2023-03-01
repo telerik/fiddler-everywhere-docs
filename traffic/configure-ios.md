@@ -99,7 +99,7 @@ However, this is not the case for the other operating systems where these servic
 
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
 
-- In the **Bypass Fiddler for URLS that starts with:** field, add the following endpoints:
+- In the **Bypass Fiddler for URLS that starts with:** field, add the following Apple root domains:
 
     ```
     *.apple.com, *.itunes.com, *mzstatic.com
