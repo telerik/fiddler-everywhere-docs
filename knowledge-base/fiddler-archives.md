@@ -113,7 +113,7 @@ All session snapshots saved in the local storage are also available as SAZ files
 
 * Windows path
     ```curl
-    C:\Users\<currently-logged-user>\.fiddler\<unique-fiddler-user-GUID>\Snapshots
+    %userprofile%\.fiddler\<unique-fiddler-user-GUID>\Snapshots
     ```
 
 * macOS path
