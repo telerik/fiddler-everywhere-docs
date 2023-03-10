@@ -50,6 +50,19 @@ The column indicates the version of the HTTP protocol used by the session.
 - __HTTP/2 + HTTP/1.1__&mdash;The client uses HTTP/2 but the server response is HTTP/1.1.
 - __HTTP/1.1 + HTTP/2__&mdash;The client uses HTTP/1.1 but the server response is HTTP/2.
 
+
+### TLS Version
+
+The column indicates the version of the TLS protocol used by the session. Suppose the established connection between the client and Fiddler uses a different TLS version than the one between Fiddler and the server. In that case, you will see a double value depicting the TLS-specific version for each connection stage.[Learn more about the TLS version specific with Fiddler here...]({%slug fe-security%}#tls-version-specifics)
+
+- **SSL 2.0**&mdash;
+- **SSL 3.0**&mdash; 
+- **TLS 1.0**&mdash;
+- **TLS 1.1**&mdash; 
+- **TLS 1.2**&mdash;
+- **TLS 1.3**&mdash; 
+- Double combination of all listed values (for example **TLS 1.3 + TLS 1.2**) for scenarios when the TLS version differs for the request and response. 
+
 ### Status Code
 
 Indicates the HTTP status codes of the response. A server issues the status codes in response to a client's request in the form of a three-digit number. The first digit of the status code specifies one of five standard classes of responses.
