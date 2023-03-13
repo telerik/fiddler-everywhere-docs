@@ -28,10 +28,17 @@ In conclusion, TLS 1.3 provides better handshake performance, improved latency, 
 
 By default, Fiddler Everywhere works a local forward proxy and that captures non-secure HTTP traffic. To enable capturing and decrypting of HTTPS traffic, you need to go a step further and allow Fiddler to act as a man-in-the-middle by explicitly[ installing and trusting its root CA, and enabling HTTPS capturing](https://docs.telerik.com/fiddler-everywhere/installation-and-update/trust-certificate-configuration).
 
-<!-- TODO: add graphics depicting how FE works as a HTTPS proxy including detailed steps client-FE and FE-server -->
+![Fiddler as HTTPS proxy](../images/kb/tls/fe-tls-proxy-steps.png)
+
 
 ## TLS 1.3 Support in Fiddler Everywhere
 
-Fiddler Everywhere 4.2.0 officially introduced support for **TLS 1.3**. By default, Fiddler will accept inbound connections using any protocol version (SSL2, SSL3, TLS1.0, TLS1.1, TLS1.2, and now TLS 1.3). However, there is specific behavour when the proxy stands in the middle and if the client and server are supporting different TLS versions.
+Fiddler Everywhere 4.2.0 officially introduced support for **TLS 1.3**.  Note that Fiddler Everywhere will accept inbound connections using any protocol version including obsolete ones (All supported versions are SSL2, SSL3, TLS1.0, TLS1.1, TLS1.2, and now TLS 1.3). However, there is specific behavour when the proxy stands in the middle and if the client and server are supporting different TLS versions.
 
-Fiddler Everywhere will act as a server for the client (that sends the HTTPS request) and as a client to the server (that receives the HTTPS request and returns the HTTPS response). It is important to note that Fiddler will negotiate the TLS connections with the client and the server separately. When Fiddler proxy establishes the HTTPS connection, it will use the client's TLS version. Then Fiddler sends the list of the supported TLS versions to the server. If the server supports the client's TLS version, it will select it for the connection. However, if the server negotiates a lower TLS version, Fiddler will successfully establish the connection (with the server) while using a lower TLS version.
+Fiddler Everywhere acts as a server for the client (that sends the HTTPS request) and as a client to the server (that receives the HTTPS request and returns the HTTPS response). It is important to note that Fiddler will negotiate the TLS connections with the client and the server separately. When the Fiddler proxy establishes the TCP connection, it uses the client's TLS version. Then Fiddler negotiates the TLS version with the server. If the server supports the client's TLS version, it will select it for the connection. The latest version of Fiddler Everywhere will always try to use TLS 1.3 as default TLS version.
+
+If the server does not support TLS 1.3, Fiddler will negotiate different version (through the Fiddler-Server TLS handshake as depicted in steps 7 and 8) and will establish the connection while using a lower TLS version. In that case, the connections between the client and Fiddler, and between Fiddler and the server will use different TLS versions.
+
+The above behavour leads to a major implication - Fiddler can unexpectedly "fix" your application while it fails in real-life! Let's demonstrate the above while using the BadSSL endpoint.
+
+[](../images/temp/fe-tls-versions-difference.png)
