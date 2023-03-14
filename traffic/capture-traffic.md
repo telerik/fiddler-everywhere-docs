@@ -9,7 +9,9 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Traffic
 
-Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system capturing options](#system-capturing) and the [preconfigured browser capturing feature](#preconfigured-browser-capturing).
+Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system capturing options](#system-capturing) and the [preconfigured browser capturing feature](#preconfigured-browser-capturing). AAdditionally, upon startup, Fiddler Everywhere will capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
+
+Fiddler Everywhere acts as a local forward proxy and can capture HTTP(S), WebScoket, and GRPC traffic.
 
 ## System Capturing vs. Preconfigured Browser Capturing
 
@@ -73,7 +75,7 @@ To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug br
 
 ## HTTP Version Specifics
 
-Fiddler Everywhere 3.0 and above support HTTP/2 traffic capture and composing. Note the following specifics when handling HTTP/2 requests.
+Fiddler Everywhere supports HTTP/2 traffic capture and composing. Note the following specifics when handling HTTP/2 requests.
 
 - By default, the HTTP/2 support in Fiddler Everywhere is disabled and needs to be [explicitly enabled through the **Connections** menu]({%slug connections-submenu%}).
 
