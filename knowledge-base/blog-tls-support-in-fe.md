@@ -7,9 +7,6 @@ publish: false
 res_type: kb
 ---
 
-
-# TLS Support in Fiddler Everywhere
-
 ## Brief Story of HTTPS and TLS
 
 Almost all modern-day web pages, plus many desktop and mobile applications, use [the HTTPS protocol](https://en.wikipedia.org/wiki/HTTPS) to secure communication from the client to the server and vice-versa. The **S** in HTTPS stands for **Secure** and implies that the data is transferred not in plain text but in encrypted form. The encryption in HTTPS is achieved by using a cryptographic protocol named Transport Layer Security (**TLS**) or, formerly, Secure Sockets Layer (**SSL**). The idea is to prevent an intermediate from sniffing the ongoing packets and obtaining sensitive data (like usernames, passwords, financial data, personal content, etc.) - cryptographic encryption ensures that all data is unreadable for third parties.
