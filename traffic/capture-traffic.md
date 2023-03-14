@@ -9,9 +9,9 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Traffic
 
-Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system capturing options](#system-capturing) and the [preconfigured browser capturing feature](#preconfigured-browser-capturing). AAdditionally, upon startup, Fiddler Everywhere will capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
+Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system capturing options](#system-capturing) and the [preconfigured browser capturing feature](#preconfigured-browser-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
 
-Fiddler Everywhere acts as a local forward proxy and can capture HTTP(S), WebScoket, and GRPC traffic.
+Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebScoket, and GRPC traffic.
 
 ## System Capturing vs. Preconfigured Browser Capturing
 
@@ -21,7 +21,7 @@ The following table demonstrates the significant differences between the two fun
 |:-----------------|:----------------|:-----------------
 | Additional configuration       | Requires trusting of the root certificate for enabling HTTPS capturing. | No additional configuration is needed.
 | Modification of the system proxy | Requires modification of the system proxy. | Automatically configures the system proxy for Google Chrome.
-| Explicit installation of the trust root certificate | Requires you to add the certificate in the OS keychain. | No certificate configuration needed - automatically configures the trust certificate for Google Chrome.
+| Explicit installation of the trust root certificate | Requires you to add the certificate to the OS keychain. | No certificate configuration needed - automatically configures the trust certificate for Google Chrome.
 | Capturing of browser traffic   | Supports all browsers.  | Support for all Chromium browsers.
 | Capturing of other applications traffic | Yes. It supports traffic capturing on virtually any application that uses the system proxy. | No.
 | Required administrative access | Requires OS admin rights for installing and trusting a root certificate and modifying the system proxy.  | Requires user rights for starting a Chromium browser with custom parameters.
@@ -56,7 +56,7 @@ By default, the Fiddler Everywhere application starts with the **Live Traffic** 
 
 The preconfigured browser capturing is a feature that allows you to capture traffic from a specific browser instance. Currently, Fiddler Everywhere supports preconfigured browser capturing only for Chromium browsers.
 
-The feature is useful when you need to capture browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves the compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
+The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
 To start the preconfigured browser capturing with Fiddler Everywhere:
 
@@ -70,7 +70,7 @@ To start the preconfigured browser capturing with Fiddler Everywhere:
 
 1. Enter the URL in the newly opened Chrome window. Fiddler Everywhere immediately starts capturing all the traffic generated from the preconfigured browser.
 
-To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}) either assign a path to third-party Chromium browsers, like Edge, Brave, and Vivaldi or change the default path to the Google Chrome browser.
+To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}), either assign a path to third-party Chromium browsers, like Edge, Brave and Vivaldi or change the default path to the Google Chrome browser.
 
 ## Explicit Capturing
 
@@ -92,22 +92,26 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. N
 
 - Even with HTTP/2 support enabled, Fiddler Everywhere cannot guarantee that all requests will use HTTP/2. If a client only supports HTTP/1.1 or lower, Fiddler will only communicate using the client's version. If the client works with HTTP/2 but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when гит сcommunicating with the server.
 
-- Some browsers will share a single HTTP/2 connection to a website between several different tabs and keep a connection open for some time even after a tab is closed. That can lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
+- Some browsers will share a single HTTP/2 connection to a website between several tabs and keep a connection open even after a tab is closed. That can lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
 
-- Fiddler shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received. Some client applications are further modifying the order of the pseudo-headers, which might cause different behavior for some corner cases.
+- Fiddler shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received. Some client applications are further modifying the pseudo-header order, which might cause different behavior for some corner cases.
 
 
 ## WebSocket Capturing
 
 
-The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer 7 and depend on TCP at OSI layer 4. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
+The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer seven and depend on TCP at OSI layer four. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
 
 Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-type%}#messages-tab).
 
+
 ## GRPC Capturing
 
-The [GRPC](https://en.wikipedia.org/wiki/GRPC) stands for Google Remote Procedure Call and, while originally created by Google, it is now a open source framework. The GRPC utilizes multiple technologies including HTTP/2 which makes it incompatible with HTTP/1.1 and older versions. Similar ot other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of GRPC are it's performance, added security, and possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
+The [GRPC](https://en.wikipedia.org/wiki/GRPC) stands for Google Remote Procedure Call, and while created by Google, it is now an open-source framework. The GRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of GRPC are its performance, added security, and the possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
 
+Fiddler Everywhere supports GRPC capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The Fiddler application provides dedicated [GRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the GRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-type%}#messages-tab).
+
+>important To capture GRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support (BETA)**. This requirement comes from prerequisites of the GRPC framework, which utilizes their HTTP/2 protocol.
 
 
 ## Additional Resources

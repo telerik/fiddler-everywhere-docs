@@ -31,17 +31,37 @@ This section demonstrates the basic approach for each of the mentioned scenarios
 
 This scenario is useful for libraries like [request](https://www.npmjs.com/package/request) that reuse the proxy settings in the environment variables. With Node.js, you can set the proxy directly in the terminal.
 
-```Console
-set https_proxy=http://127.0.0.1:8866
+The following example demonstrates how to define the proxy settings on **macOS** and **Linux**.
+
+```bash
+export http_proxy=http://127.0.0.1:8866
+export https_proxy=http://127.0.0.1:8866
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+```
+
+The following example demonstrates how to define the proxy settings on **Windows**.
+
+```bash
 set http_proxy=http://127.0.0.1:8866
+set https_proxy=http://127.0.0.1:8866
 set NODE_TLS_REJECT_UNAUTHORIZED=0
 ```
 
 Once the above settings are applied, you can now call modules like [request](https://www.npmjs.com/package/request) and make the HTTP request. The request will be captured by Fiddler Everywhere. Once the capturing is over, you can revert the global proxy settings as follows:
 
-```Console
-set https_proxy=
+The following example demonstrates how to unset the proxy on **macOS** and **Linux**.
+
+```bash
+unset http_proxy
+unset https_proxy
+unset NODE_TLS_REJECT_UNAUTHORIZED
+```
+
+The following example demonstrates how to unset the proxy on **Windows**.
+
+```bash
 set http_proxy=
+set https_proxy=
 set NODE_TLS_REJECT_UNAUTHORIZED=
 ```
 

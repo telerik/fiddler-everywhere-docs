@@ -244,7 +244,7 @@ The top-right corner of the **Messages tab** contains a toolbar with the followi
 
 #### Metadata inspector
 
-The **Metadata inspector** is WebSocket specific and contains timestamps and masking information about the selected WebSocket message.
+The **Metadata inspector** (available only for WebSocket traffic) contains timestamps and masking information about the selected WebSocket message.
 
 - **DoneRead**&mdash;Indicates when the Client/Server finished processing the message.
 
