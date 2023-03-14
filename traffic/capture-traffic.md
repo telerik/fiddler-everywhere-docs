@@ -99,11 +99,15 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. N
 
 ## WebSocket Capturing
 
-Fiddler Everywhere supports WebSocket capturing. The WebSocket protocol provides full-duplex communication channels over a TCP connection. 
 
-WebSocket is distinct from HTTP. Both protocols are located at layer 7 in the OSI model and depend on TCP at layer 4. Although they are different, RFC 6455 states that WebSocket "is designed to work over HTTP ports 443 and 80 as well as to support HTTP proxies and intermediaries", thus making it compatible with HTTP. To achieve compatibility, the WebSocket handshake uses the HTTP Upgrade header[3] to change from the HTTP protocol to the WebSocket protocol
+The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer 7 and depend on TCP at OSI layer 4. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
+
+Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-type%}#messages-tab).
 
 ## GRPC Capturing
+
+The [GRPC](https://en.wikipedia.org/wiki/GRPC) stands for Google Remote Procedure Call and, while originally created by Google, it is now a open source framework. The GRPC utilizes multiple technologies including HTTP/2 which makes it incompatible with HTTP/1.1 and older versions. Similar ot other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of GRPC are it's performance, added security, and possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
+
 
 
 ## Additional Resources
