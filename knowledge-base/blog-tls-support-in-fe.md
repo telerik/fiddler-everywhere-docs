@@ -56,7 +56,7 @@ The above behavior leads to a significant implication - Fiddler can unexpectedly
 
 As a result, when Fiddler Everywhere stands in the middle, it will establish a TLS 1.3 handshake with the client. Then it will try to negotiate a TLS 1.3 handshake with the BadSSL server. However, the server will downgrade the TLS version to TLS 1.1 (as it explicitly supports that version). In Fiddler Everywhere, you will notice different badges that inform you of the TLS versions used for the HTTP Request and HTTP Response.
 
-[Fiddler Everywhere as intermediate initiates different TLS handshakes with the client and the server](../images/temp/fe-tls-versions-difference.png)
+![Fiddler Everywhere as intermediate initiates different TLS handshakes with the client and the server](../images/temp/fe-tls-versions-difference.png)
 
 The direct implication is that you will be able to successfully load the BadSSL page because, as an intermediate, the Fiddler proxy successfully negotiated the TLS version with each of the parties (client and server). 
 
