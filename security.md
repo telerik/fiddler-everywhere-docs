@@ -6,7 +6,6 @@ publish: true
 position: 75
 ---
 
-# Fiddler Everywhere Security
 
 The Fiddler Everywhere application acts as a MITM (man-in-the-middle, meddler-in-the-middle) proxy that uses a unique certificate per machine. It will capture all incoming and ongoing internet activities of the application by using system HTTP/HTTPS proxies. This article highlights the primary security concerns and provides technical information about how Fiddler Everywhere acts as a MITM and what you need to consider when handling the Fiddler root trust certificate and captured data.
 

@@ -49,7 +49,7 @@ The above behavior leads to a significant implication - Fiddler can unexpectedly
 
 - Execute a request to the BadSSL endpoint below. The endpoint targets a server that will explicitly negotiate TLS 1.1.
     ```
-    http://tls-v1-1.badssl.com:1011
+    https://tls-v1-1.badssl.com:1011/
     ```
 
     >important By default, Windows 10 does not support TLS 1.3. To test TLS 1.3, you must execute the request from a compatible OS (Windows 11, the latest macOS, or Ubuntu) and a client supporting TLS 1.3.
