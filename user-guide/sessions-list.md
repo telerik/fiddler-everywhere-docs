@@ -23,7 +23,7 @@ You can apply several actions to a saved session entry:
 
 - Use single-click to select a saved session entry from the **Sessions** list.
 - Use right-click to load the [context menu](#sessions-context-menu) of a selected session entry. The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
-- Set a passwrod to encrypt and protect your session. The context menu provides options for setting, changing, and removing passwords for the saved session entry.
+- Set a password to encrypt and protect your session. The context menu provides options for setting, changing, and removing passwords for the saved session entry.
 - Use double-click to open a saved session entry from the **Sessions** list in a new tab. For encrypted sessions, only users with knowledge of the password can open the session entry.
 - Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 - Use the UI buttons at the very top to [**Import**](#import-sessions) sessions archives or to access previously [**Shared Sessions**](#shared-sessions-list) entries.

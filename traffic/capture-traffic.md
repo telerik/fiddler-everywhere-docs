@@ -107,7 +107,7 @@ Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system
 
 ## GRPC Capturing
 
-The [GRPC](https://en.wikipedia.org/wiki/GRPC) stands for Google Remote Procedure Call, and while created by Google, it is now an open-source framework. The GRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of GRPC are its performance, added security, and the possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
+The [GRPC](https://grpc.io/) stands for Google Remote Procedure Call, and while created by Google, it is now an open-source framework. The GRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of GRPC are its performance, added security, and the possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
 
 Fiddler Everywhere supports GRPC capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The Fiddler application provides dedicated [GRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the GRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-type%}#messages-tab).
 
@@ -117,9 +117,9 @@ Fiddler Everywhere supports GRPC capturing out-of-the-box (through a system, pre
 ## Additional Resources
 
 - [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
-- [Modifying Traffic]({%slug modify-traffic-get-started%})
-- [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
-- [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})
-- [Filtering Traffic]({%slug how-to-filter-traffic%})
-- [Live Traffic Section in Details]({%slug web-sessions-list%})
-- [Inspecting Server Certificates]({%slug fe-cert-details%})
+- [Modifying Traffic]({%slug modify-traffic-get-started%}).
+- [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%}).
+- [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%}).
+- [Filtering Traffic]({%slug how-to-filter-traffic%}).
+- [Live Traffic Section in Details]({%slug web-sessions-list%}).
+- [Inspecting Server Certificates]({%slug fe-cert-details%}).

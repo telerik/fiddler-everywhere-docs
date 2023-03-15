@@ -236,6 +236,10 @@ The following table displays the icons which **Live Traffic** supports for its l
             <td>The response was an HTML file.</td>
         </tr>
         <tr>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/grpc-light.svg"/></td>
+            <td>A tunnel is used for GRPC traffic.</td>
+        </tr>
+        <tr>
             <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/flash.svg"/></td>
             <td>The response was a Flash file.</td>
         </tr>

@@ -18,10 +18,13 @@ res_type: kb
 
 ## Description
 
-My client application and/or server are utilizing the GRPC framework. Can I capture and inspect GRPC traffic with Fiddler Everywhere?
+My client application is utilizing the GRPC framework. What is exactly GRPC?  Can I capture and inspect GRPC traffic with Fiddler Everywhere?
 
 
 ## Capturing GRPC in Fiddler Everywhere
+
+
+[GRPC](https://grpc.io/) is an open-source, cross-platform Remote- Procedure Call (RPC) framework. One of its common usages is to connect services in and across servers with pluggable support for tracing, load balancing, and authentication. Fiddler Everywhere captures GRPC traffic out-of-the-box through [all capturing modes]({%slug apture-traffic-get-started%}) with the clarification that as GRPC is utilizing HTTP/2, you need to ensure that HTTP/2 capturing is enabled in Fiddler Everywhere.
 
 To capture GRPC traffic with Fiddler Everywhere, the following conditions must be satisfied:
 

@@ -9,7 +9,7 @@ previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide
 
 # Inspectors Tab
 
-The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the selected HTTP(S) sessions from the **Live Traffic** list. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API), a special [**WebSocket inspectors**](#websocket-and-grpc-inspectors) tan renders, which display the connection handshake details, messages, and each message content and metadata. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
+The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the selected HTTP(S) sessions from the **Live Traffic** list. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the GRPC framework](https://grpc.io/), a dedicated [**WebSocket and GRPC inspectors**](#websocket-and-grpc-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
 
 The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide several features, among which:
 
@@ -21,7 +21,7 @@ The inspectors are based on the [Monaco editor](https://microsoft.github.io/mona
 - A **Raw** inspector that shows the received HTTP requests/responses as is. It also allows you to encode bodies received in unreadable decoded form.
 - A **Copy all content to clipboard** option (in the toolbar at the top-right corner) to extract information efficiently.
 
-To load the data of a session in the **Inspectors** section, select an HTTP(S) or WebSocket session from the __Live Traffic__ list.
+To load the data of a session in the **Inspectors** section, select an HTTP(S), WebSocket or GRPC session from the __Live Traffic__ list.
 
 ![Inspectors for Traffic Monitoring](../images/livetraffic/inspectors/inspectors-all.png)
 
