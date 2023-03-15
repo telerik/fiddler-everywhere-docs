@@ -24,11 +24,11 @@ How can I set the Fiddler Everywhere proxy for commonly used command-line tools 
 
 ### Setting the Fiddler Proxy Explicitly
 
-Terminals and shell applications like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests thought third-party tools like CURL. However, in the common case, these tools won't use the system proxy.
+Terminals and shell applications like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests through third-party tools like CURL. However, in the typical case, these tools won't use the system proxy.
 
-For Fiddler Everywhere to capture traffic that passes through them, they need to set the Fiddler Everywhere proxy explicitly. To achieve that, you can use the `export` command (for macOS and Linux) or the `set` command (for Windows). The `export` command will generate a variable that will be included in a child process environment. It does not affect other already-existing settings.
+For Fiddler Everywhere to capture traffic that passes through them, they need to explicitly set the Fiddler Everywhere proxy. You can use the `export` command (for macOS and Linux) or the `set` command (for Windows) to achieve that. The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
 
-The following example demonstrates how to define the proxy settings on **macOS** and **Linux**.
+The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**.
 
 ```bash
 export http_proxy=http://127.0.0.1:8866
@@ -36,7 +36,7 @@ export https_proxy=http://127.0.0.1:8866
 export NODE_TLS_REJECT_UNAUTHORIZED=0
 ```
 
-The following example demonstrates how to define the proxy settings on **Windows**.
+The following example demonstrates how to define the proxy settings through environmental variables on **Windows**.
 
 ```bash
 set http_proxy=http://127.0.0.1:8866
@@ -56,7 +56,7 @@ curl https://docs.telerik.com/fiddler-everywhere --
 
 ### Resetting the Fiddler Proxy
 
-Once debugging with Fiddler Everywhere is done, reset the current environment proxy by removing the Fiddler Everywhere proxy variables. To achieve that, you can use the `unset` command on macOS and Linux. On Windows, you need to set an empty string.
+Once debugging with Fiddler Everywhere, reset the current environment proxy by removing the Fiddler Everywhere proxy variables. You can use the `unset` command on macOS and Linux to achieve that. On Windows, you need to set an empty string.
 
 The following example demonstrates how to unset the proxy on **macOS** and **Linux**.
 

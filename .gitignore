@@ -19,6 +19,7 @@
 /favicon.ico
 /fonts/
 /styles/
+/_tools/
 Dockerfile
 Gemfile
 Gemfile.lock
