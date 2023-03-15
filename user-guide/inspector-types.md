@@ -52,6 +52,10 @@ The **Params inspector**, available in the **Request** section only, displays th
 
 ![Params Inspector](../images/livetraffic/inspectors/inspectors-params.png)
 
+### Trailers Inspector
+
+The **Params inspector** is a GRPC-specific inspector that helps inspect GRPC server trailers headers. [Learn more about GRPC capturing here...]({%slug capture-grpc-traffic%}).
+
 ### Cookies Inspector
 
 The **Cookies inspector** displays the contents of any outbound `Cookie` and `Cookie2` request headers and any inbound `Set-Cookie`, `Set-Cookie2`, and `P3P` response headers.
@@ -111,12 +115,12 @@ If the content is in HTML format, then the **Preview** inspector allows you to v
 
 The **Body** inspectors are suitable for different requests and responses. Depending on the received content type, Fiddler Everywhere automatically tries to load the most appropriate body inspector. Fiddler Everywhere provides the following body inspectors:
 
-- [Text](#text-body-inspector)
-- [JSON](#json-body-inspector)
-- [HEX](#hex-body-inspector)
-- [XML](#xml-body-inspector)
-- [Form-Data](#form-data-body-inspector)
-- [JavaScript](#javascript-body-inspector)
+- **Text**
+- **JSON**
+- **HEX**
+- **XML**
+- **Form-Data**
+- **JavaScript**
 
 #### Text Body Inspector
 
@@ -178,7 +182,6 @@ text/x-javascript
 ![javaScript Inspector](../images/livetraffic/inspectors/inspectors-javascript.png)
 
 
-
 ## WebSocket and GRPC Inspectors
 
 The **WebSocket Inspector** and the **GRPC Inspector** share identical user interfaces. The inspectors provide the following types of inspecting tools that enable you to examine different parts of a WebSocket or GRPC connection:
@@ -217,7 +220,7 @@ The list of messages is rendered as a grid with multiple columns:
 
 - **Sender**&mdash;Inidicates whether the **Client** or **Server** sent the message.
 
-- **Type**&mdash;(WebSocket only)Indicates the type of the message. The supported values are as follows:
+- **Type (WebSocket only)**&mdash;Indicates the type of the message. The supported values are as follows:
     * **Text**&mdash;message with text payload.
     * **Binary**&mdash;message with binary payload.
     * **Cont.**&mdash;represents a continuation message from a fragmented message. Use the **Unfragment all messages** button to unfragmented messages of type **Cont.** and remove them from the **Messages** list.
@@ -226,7 +229,7 @@ The list of messages is rendered as a grid with multiple columns:
 
 - **Size**&mdash;The length of the message in bytes.
 
-- **Time**&mdash;Renders the date and the time when the message is received.
+- **Time (WebSocket only)**&mdash;Renders the date and the time when the message is received.
 
 - **Message**&mdash;The string representation of the message sent/received.
 
@@ -235,9 +238,9 @@ The list of messages is rendered as a grid with multiple columns:
 
 The top-right corner of the **Messages tab** contains a toolbar with the following functionalities:
 
-- **Search** field to filter received WebSocket messages.
+- **Search (WebSocket only)** field to filter received WebSocket messages.
 
-- **Unfragment all messages** button to combine all continuation type messages with their original message and remove them from the **Messages** list.
+- **Unfragment all messages (WebSocket only)** button to combine all continuation type messages with their original message and remove them from the **Messages** list.
 
 - **Copy all content to clipboard** button that immediately puts all captured messages into the operating system clipboard.
 
@@ -257,7 +260,7 @@ The **Metadata inspector** (available only for WebSocket traffic) contains times
 
 #### Message Inspector
 
-The **Message Inspector** contains the non-masked message content visualized in [Text](#text-body-inspector), [JSON](#json-body-inspector), or [HEX](#hex-body-inspector) body inspector. The inspector has a toolbar that allows you to word-wrap the message content and highlight content through a search term.
+The **Message Inspector** contains the non-masked message content visualized in [Text](#text-body-inspector), [JSON](#json-body-inspector) (WebSocket only), or [HEX](#hex-body-inspector) body inspector. The inspector has a toolbar that allows you to word-wrap the message content and highlight content through a search term.
 
 ![WebSocket and GRPC Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
 
