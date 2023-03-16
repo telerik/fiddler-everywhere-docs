@@ -71,10 +71,19 @@ Double-click on a GRPC session to automatically open [the **Messages** tab]({%sl
 
 ![GRPC traffic and related Fiddler's inspectors](../images/kb/grpc/grpc-traffic-inspection.png)
 
-The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) GRPC messages. Fiddler Everywhere shows the size and the original content of each message. Use the context menu to copy the message, the whole row, or to decode the message quickly.
+The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) GRPC messages. Fiddler Everywhere shows the size and the original content of each message. Use the context menu to copy the message or the whole row message quickly.
 
 ![GRPC message context menu to copy or decode the received data](../images/kb/grpc/grpc-traffic-message-context-menu.png)
 
-Selecting a specific message allows you to inspect the message in detail through the **Message** inspector. You can examine the context as text or use the HEX inspector, which consists of an offset column, a hex view column, and a text view column (decoded interpretation).
+It is important to note that the GRPC uses [Protobuf format](https://protobuf.dev/overview/) which is in unreadable form. That means that the **Decode value** context menu option can't be used for proper decoding of any GRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file which can't be extraced over the GRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that has access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
+
+```js
+// [message_object_name] is the name of the message object in the .proto file. If the message is inside a package in the .proto file, use package_name.message_object_name.
+// [.proto_file_path] is the path to the .proto file where the message is defined.
+// [binary_message_file_path] is the path to the file you want to decode.
+protoc --decode [message_object_name] [.proto_file_path] < [binary_message_file_path]
+```
+
+Selecting a specific message allows you to inspect the message in detail through the **Message** inspector. You can examine the context as text or use the HEX inspector, which consists of an offset column, a hex view column, and a text view column.
 
 ![GRPC message tab and inspecting through the HEX inspector](../images/kb/grpc/grpc-traffic-message-hex.png)
