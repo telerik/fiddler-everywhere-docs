@@ -34,7 +34,7 @@ The above depicts how Fiddler Everywhere acts as a server for the client (that s
 
 ## TLS 1.3 Support in Fiddler Everywhere
 
-Fiddler Everywhere 4.2.0 officially introduced support for **TLS 1.3**. Note that Fiddler Everywhere will accept inbound connections using any protocol version, including obsolete ones (All supported versions are **SSL 2.0**, **SSL 3.0**, **TLS 1.0**, **TLS 1.1**, **TLS 1.2**, and now **TLS 1.3**). However, there is specific behavior when the proxy stands in the middle and if the client and server are negotiating different TLS versions.
+Fiddler Everywhere 4.2.0 officially introduced support for **TLS 1.3**. Note that Fiddler Everywhere will accept inbound connections using any protocol version, including obsolete ones, but only if the host operating system or client app allow them. (All supported versions are **SSL 2.0**, **SSL 3.0**, **TLS 1.0**, **TLS 1.1**, **TLS 1.2**, and now **TLS 1.3**). However, there is specific behavior when the proxy stands in the middle and if the client and server are negotiating different TLS versions.
 
 Suppose the server does not support TLS 1.3. In that case, Fiddler will negotiate a different version (through the Fiddler-Server TLS handshake in steps 7 and 8 depicted above ) and establish the connection using a lower TLS version. In that case, the connections between the client and Fiddler and between Fiddler and the server will use different TLS versions.
 
