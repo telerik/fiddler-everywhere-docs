@@ -15,7 +15,7 @@ There is widespread support for TLS versions **TLS 1.2** (in use since 2008) and
 
 If you are writing an application today and wondering which TLS version you should use - go for TLS 1.3! The latest version of TLS has significant improvements such as:
 
-- Fasted and simpler TLS handshake&mdash;In older TLS versions, the TLS handshake was carried in plain text, introducing additional steps for encryption and description. With version 1.3, the server certificate encryption applies by default, which lowered the number of packets needed for a successful handshake from 5-7 to 0-3.
+- Fasted and simpler TLS handshake&mdash;In older TLS versions, the TLS handshake was carried in plain text, introducing additional steps for encryption and decryption. With version 1.3, the server certificate encryption applies by default, which lowered the number of packets needed for a successful handshake from 5-7 to 0-3.
 
 - Better latency with Zero Round-Trip Time (0-RTT) key exchanges&mdash;The TLS 1.3 specification allows the client to send application data to the server immediately after the ClientHello message, with zero round-trip time and refers to that data as 0-RTT data. TLS 0-RTT (also known as “TLS early data”) is a method of lowering the time to first byte on a TLS connection. TLS 1.3 only requires 1-RTT (a single round trip) of the protocol, where TLS 1.2 and below required two.
 
