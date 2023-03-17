@@ -49,7 +49,7 @@ The above behavior leads to a significant implication - Fiddler can unexpectedly
     https://tls-v1-1.badssl.com:1011/
     ```
 
-    >important By default, Windows 10 does not support TLS 1.3. To test TLS 1.3, you must execute the request from a compatible OS (Windows 11, the latest macOS, or Ubuntu) and a client supporting TLS 1.3.
+    >important By default, Windows 10 does not allow an app acting as a server or proxy (like Fiddler Everywhere) to support TLS 1.3. To test TLS 1.3, you must execute the request from a compatible OS (Windows 11, the latest macOS, or Ubuntu) and a client supporting TLS 1.3.
 
 As a result, when Fiddler Everywhere stands in the middle, it will establish a TLS 1.3 handshake with the client. Then it will try to negotiate a TLS 1.3 handshake with the BadSSL server. However, the server will downgrade the TLS version to TLS 1.1 (as it explicitly supports that version). In Fiddler Everywhere, you will notice different badges that inform you of the TLS versions used for the HTTP Request and HTTP Response.
 
