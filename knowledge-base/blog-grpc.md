@@ -35,3 +35,14 @@ The next step is to tell your GRPC client application to respect the Fiddler's p
 
 ## GRPC Inspection
 
+Upon capturing a GRPC session, Fiddler Everywhere shows opened and closed GRPC channels in the Live Traffic list. A green badge in the ID column (by default, the first column on the left) indicates an active GRPC channel, while a red bad indicates that the GRPC channel is closed. 
+
+![Captured GRPC sessions in the Live Traffic list of Fiddler](../images/temp/fe-grpc-sessions.png)
+
+You can select a session with a single click to observe the **Handshake** tab and its details. The **Handshake** tab contains information about the used HTTP headers and the specific traliers. The server sends trailers to the client after processing the request. A typical scenario is for trailers to contain information common to all service methods.
+
+![Inspecting GRPC session through the Handshake tab](../images/temp/fe-grpc-handshake-tab.png)
+
+You can open the **Messages** tab by double-clicking on the selected session (or manually selecting the tab) and inspect each streamed message in the GRPC channel. Each GRPC message uses [the Protobuf format](https://protobuf.dev/overview/), which is in unreadable form and received as binary. Fiddler Everywhere provides instruments to partially decode text content that is part of the Protobug message, but not that this will be a mutated content of the Protobuf message. Only the creator & owner of the .proto scheme can fully decode a Protobuf message.
+
+![Inspecting GRPC session through the Messages tab](../images/temp/fe-grpc-messages-tab.png)
