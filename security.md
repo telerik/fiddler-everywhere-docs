@@ -63,7 +63,7 @@ As a result, a connection that will usually fail due to an unsupported version o
 ![Fiddler shows the TLS change in the inspectors](./images/security/tls-versions_13_11_inspectors.png)
 
 
->tip TLS is the cryptographic protocol that provides end-to-end security in HTTPS. It evolved from SSL 3.0, and currently, [TLS 1.2](https://www.ietf.org/rfc/rfc5246.txt) and [TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446) are the most commonly used TLS versions, while versions like SSL 2.0, SSL 3.0, TLS 1.0, and TLS 1.1 are considered insecure. Fiddler Everywhere supports [all listed versions]({%slug how-to-view-web-session-summary%}#tls-version), including TLS 1.3, introduced with version 4.2.0.
+>tip TLS is the cryptographic protocol that provides end-to-end security in HTTPS. It evolved from SSL 3.0, and currently, [TLS 1.2](https://www.ietf.org/rfc/rfc5246.txt) and [TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446) are the most commonly used TLS versions, while versions like SSL 2.0, SSL 3.0, TLS 1.0, and TLS 1.1 are considered insecure and might be disabled on an operating system or application (e.g. browser) level. Fiddler Everywhere supports [all listed versions]({%slug how-to-view-web-session-summary%}#tls-version), including TLS 1.3, introduced with version 4.2.0.
 
 ## Security Highlights
 
