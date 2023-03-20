@@ -34,7 +34,6 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
 
 2. Configure the client using the gRPC framework to go through the Fiddler proxy. The execution of this step differs depending on the client's application. Here are some setup guidelines for different clients:
 
-    - **Chromium Browsers**&mdash;Most modern-day browsers respect the system proxy by default. To capture gRPC from a Chromium browser, use [system capturing or preconfigured browser capturing]({%slug capture-traffic-get-started%}).
 
 
     - **Safari**&mdash;Respects the system proxy settings. To capture gRPC from Safari, use [system capturing]({%slug capture-traffic-get-started%}#system-capturing).
