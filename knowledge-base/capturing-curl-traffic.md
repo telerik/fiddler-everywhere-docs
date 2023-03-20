@@ -30,4 +30,4 @@ When executing a request that needs to be captured by Fiddler through cURL, use 
 curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
 ```
 
-Alternatively, you can [set the proxy settings for your terminal application]({%slug fiddler-macos-terminal%}), which runs the cURL application, to use the Fiddler Everywhere proxy.
+Alternatively, you can [set the proxy settings for your terminal application]({%slug fiddler-terminal-explicit%}), which runs the cURL application, to use the Fiddler Everywhere proxy.
