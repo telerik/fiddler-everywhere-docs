@@ -36,7 +36,6 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
 
 
 
-    - **Safari**&mdash;Respects the system proxy settings. To capture gRPC from Safari, use [system capturing]({%slug capture-traffic-get-started%}#system-capturing).
 
     - **Terminals and shell applications**&mdash;A terminal and shells can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug fiddler-terminal-explicit%})
 
