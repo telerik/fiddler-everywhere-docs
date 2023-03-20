@@ -105,7 +105,7 @@ The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-
 Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab).
 
 
-## GRPC Capturing
+## gRPC Capturing
 
 The [GRPC](https://grpc.io/) stands for Google Remote Procedure Call, and while created by Google, it is now an open-source framework. The GRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of GRPC are its performance, added security, and the possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
 
