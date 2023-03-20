@@ -109,7 +109,7 @@ Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system
 
 [gRPC](https://grpc.io/) stands for Google Remote Procedure Call, and while created by Google, it is now an open-source framework. gRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of gRPC are its performance, added security, and the possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
 
-Fiddler Everywhere supports GRPC capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The Fiddler application provides dedicated [GRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the GRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
+Fiddler Everywhere supports gRPC capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The Fiddler application provides dedicated [gRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
 
 >important To capture GRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support (BETA)**. This requirement comes from prerequisites of the GRPC framework, which utilizes their HTTP/2 protocol.
 
