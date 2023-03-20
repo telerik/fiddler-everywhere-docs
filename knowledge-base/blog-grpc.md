@@ -31,7 +31,7 @@ After the Fiddler's team recently introduced the support for HTTP/2 and TLS 1.3,
 
 That's all you need from Fiddler Everywhere's side! 
 
-The next step is to tell your gRPC client application to respect the Fiddler's proxy for its HTTP and HTTPS requests. The specific proxy configuration entirely depends on the used client's application technology (for example, different approaches if it is a browser, a Python app, a GO app, a Java app, and so on). [Learn more on how to set Fiddler Everywhere as a proxy for your technology here ...](https://docs.telerik.com/fiddler-everywhere/knowledge-base/capturing-grpc-traffic)
+The next step is to tell your gRPC client application to respect the Fiddler's proxy for its HTTP and HTTPS requests. The specific proxy configuration entirely depends on the used client's application technology (for example, different approaches if it is a Python app, a GO app, a Java app, and so on). [Learn more on how to set Fiddler Everywhere as a proxy for your technology here ...](https://docs.telerik.com/fiddler-everywhere/knowledge-base/capturing-grpc-traffic)
 
 ## gRPC Inspection
 
