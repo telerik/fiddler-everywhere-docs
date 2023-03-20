@@ -111,7 +111,7 @@ Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system
 
 Fiddler Everywhere supports gRPC capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The Fiddler application provides dedicated [gRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
 
->important To capture GRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support (BETA)**. This requirement comes from prerequisites of the GRPC framework, which utilizes their HTTP/2 protocol.
+>important To capture gRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support (BETA)**. This requirement comes from prerequisites of the gRPC framework, which utilizes their HTTP/2 protocol.
 
 
 ## Additional Resources
