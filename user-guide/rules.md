@@ -411,11 +411,11 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Final</td>
         </tr>
         <tr>
-            <td><b>Do Not Capture</b></td>
+            <td><b>Do Not Show</b></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>When the <b>Do not capture</b> action is applied, no other actions will be executed.</td>
+            <td>Hides the matched session for appearing in Fiddler. When the <b>Do Not Show</b> action is applied, no other actions will be executed.</td>
             <td>Final</td>
         </tr>
         <tr>
@@ -457,6 +457,14 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>Action to modify, add, or remove a session comment</td>
             <td>Non-final</td>
+        </tr>
+        <tr>
+            <td><b>Do Not Decrypt</b></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Skips decryption for matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version and Remote IP</b> can be used. The rule works only for newly established connections.</td>
+            <td>Final </td>
         </tr>
     </tbody>
 </table>

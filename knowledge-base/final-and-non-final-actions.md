@@ -35,7 +35,7 @@ When only non-final actions are executed, all matching rules have their actions 
 
 ### Final Actions Only
 
-When one or more rules include final actions, the execution of the actions immediately stops after the most promoted rule that contains a final action takes place. No other demoted rules will be executed after that.
+When one or more rules include final actions, the execution of the actions immediately stops after the most promoted rule that contains a final action takes place. No other demoted rules will be executed after that. For example,  **Do Not Show** and **Do Not Decrypt** are final actions.
 
 ### Mix of Final and Non-Final Actions
 
