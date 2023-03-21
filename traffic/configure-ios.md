@@ -85,7 +85,7 @@ Now you can immediately monitor HTTP/HTTPS traffic from your iOS device. For exa
 
 Some Apple services like the Apple Application store and iTunes use certificate pinning as an additional layer of security. That means these services won't trust third-party certificates like the one Fiddler Everywhere installs and operates as a MITM proxy. The above causes several significant effects:  
 
-- The SSL handshake fails, resulting in no HTTPS traffic being captured from these services.
+- The TLS handshake fails, resulting in no HTTPS traffic being captured from these services.
 
 - The services will fail if the Fiddler Everywhere proxy is set as the proxy for the active internet connection.
 

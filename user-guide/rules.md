@@ -122,119 +122,161 @@ For more information, refer to the following list.
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Host</b> column.</td>
+            <td>Matches a specific keyword in the <b>Host</b> column.</td>
         </tr>
         <tr>
             <td><b>Path</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>path</b> column.</td>
+            <td>Matches a specific keyword in the <b>path</b> column.</td>
         </tr>
         <tr>
             <td><b>URL</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>URL</b> column.</td>
+            <td>Matches a specific keyword in the <b>URL</b> column.</td>
         </tr>
         <tr>
-            <td><b>Status</b></td>
+            <td><b>Status Code</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Result</b> column.</td>
+            <td>Matches a specific keyword in the <b>Result</b> column.</td>
         </tr>
         <tr>
             <td><b>Method</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Method</b> column.</td>
+            <td>Matches sessions using specific HTTP <b>Method</b>.</td>
         </tr>
         <tr>
-            <td><b>Process ID</b></td>
+            <td><b>Process</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Process ID</b> column.</td>
+            <td>Matches a specific <b>Process ID</b>.</td>
         </tr>
         <tr>
             <td><b>Client IP</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Client IP</b> column.</td>
+            <td>Matches session with specific <b>Client IP</b>.</td>
         </tr>
         <tr>
             <td><b>Remote IP</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Remote IP</b> column.</td>
+            <td>Matches session with specific <b>Remote IP</b>.</td>
         </tr>
         <tr>
             <td><b>Body Size</b></td>
             <td>Number modifiers (compares bytes)</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific value in the <b>Body Size</b> column.</td>
+            <td>Matches session with specific <b>Body Size</b>.</td>
         </tr>
         <tr>
             <td><b>Duration</b></td>
             <td>Number modifiers (compares milliseconds)</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific value in the <b>Duration</b> column.</td>
+            <td>Matches sessions with specific <b>Duration</b>.</td>
         </tr>
         <tr>
             <td><b>Comment</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Comment</b> column.</td>
+            <td>Matches sessions with specific <b>Comment</b> column.</td>
         </tr>
         <tr>
             <td><b>Request Body</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Request Body</b> column.</td>
+            <td>Matches sessions with specific keyword in the <b>Request Body</b> column.</td>
         </tr>
         <tr>
             <td><b>Request Header</b></td>
             <td>Header name</td>
             <td>String modifiers</td>
             <td>The search value </td>
-            <td>Search for a specific keyword in the <b>explicitly mentioned Request header</b> column.</td>
+            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Request header</b> column.</td>
         </tr>
         <tr>
             <td><b>Response Body</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Search for a specific keyword in the <b>Response body</b>.</td>
+            <td>Matches sessions with specific keyword in the <b>Response body</b>.</td>
         </tr>
         <tr>
             <td><b>Response Header</b></td>
             <td>Header name</td>
             <td>String modifiers</td>
             <td>The search value </td>
-            <td>Search for a specific keyword in the <b>explicitly mentioned Response header</b> column.</td>
+            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Response header</b> column.</td>
         </tr>
         <tr>
             <td><b>Cookie</b></td>
             <td>Cookie name</td>
             <td>String modifiers</td>
             <td>Search value</td>
-            <td>Search for a specific keyword in the <b>explicitly mentioned Cookie</b>.</td>
+            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Cookie</b>.</td>
         </tr>
         <tr>
             <td><b>Certificate Information</b></td>
             <td>Field name</td>
             <td>String modifiers</td>
             <td>Search value</td>
-            <td>Search for a specific keyword in the <b>explicitly mentioned certificate field</b>.</td>
+            <td>Matches sessions with specific keyword in the <b>explicitly mentioned certificate field</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Caching</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches sessions with specific keyword in the <b>HTTP Headers related to content caching</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Content-Type</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches sessions with specific keyword in the <b>Content-Type</b> column.</td>
+        </tr>   
+        <tr>
+            <td><b>Request Time</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches specific date string in the <b>Request Time</b> column.</td>
+        </tr>  
+        <tr>
+            <td><b>Request Date</b></td>
+            <td>Date modifiers</td>
+            <td>Date form</td>
+            <td>n/a</td>
+            <td>Matches session executed on a specific date.</td>
+        </tr>
+        <tr>
+            <td><b>Rules Modified</b></td>
+            <td>Boolean</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Matches sessions modified by a rule.</td>
+        </tr>  
+        <tr>
+            <td><b>TLS Version</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches traffic based on the used <b>TLS Version</b>.</td>
         </tr>
         <tr>
             <td><b>Magic String</b></td>

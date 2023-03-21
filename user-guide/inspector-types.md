@@ -281,9 +281,11 @@ All inspectors provide further interaction options through a context menu. The c
 
 ## Inspector's Toolbar
 
-Each inspector has a toolbar that provides a different set of functionalities and data as follows:
+Each inspector has a toolbar that provides a different set of functionalities and information as follows:
 
-- Tooltips that output the request URL, the HTTP version, the HTTP method (for each HTTP Request) or the body size, the HTTP version, and the status code (for each HTTP Response).
+- [**Server Certificate Details**](#server-certificate-details)
+
+- **Badges** that output the request URL (Request inspector only), the TLS version, the HTTP version, the HTTP method (Request inspector only), Body size, and the status code (Response inspector only).
 
 - **Expand All / Collapse All**&mdash;Toggle to expand or collapse all the output data. Available for all Body inspectors.
 

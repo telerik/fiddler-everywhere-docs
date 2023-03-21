@@ -331,7 +331,11 @@ The following table lists the **Live Traffic** columns and the key information t
         </tr>
         <tr>
             <td><b>HTTP Version</b></td>
-            <td>The protocol version used for communication between the client and the server (<b>HTTP/1.1</b>, <b>HTTP/2</b>, <b>HTTP/2 + HTTP/1.1</b>, and <b>HTTP/1.1 + HTTP/2</b></td>
+            <td>The protocol version used for communication between the client and the server (<b>HTTP/1.1</b>, <b>HTTP/2</b>, <b>HTTP/2 + HTTP/1.1</b>, and <b>HTTP/1.1 + HTTP/2</b>)</td>
+        </tr>
+        <tr>
+            <td><b>TLS Version</b></td>
+            <td>The TLS version used for communication between the client and Fiddler, and between Fiddler and the server. The possible values are <b>SSL 2.0</b>, <b>SSL 3.0</b>, <b>TLS 1.0</b>, <b>TLS 1.1</b>, <b>TLS 1.2</b>, <b>TLS 1.3</b>, and combination of all listed in scenarios when the TLS version differs for the request and response. <a href="">https://docs.telerik.com/fiddler-everywhere/security#tls-version-specifics</a>Learn more about the TLS version specifics in Fiddler Everywhere here...</td>
         </tr>
         <tr>
             <td><b>Status Code</b></td>
