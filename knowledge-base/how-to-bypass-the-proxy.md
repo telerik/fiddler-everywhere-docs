@@ -1,6 +1,6 @@
 ---
 title: Bypassing the Fiddler Everywhere proxy
-description: "Learn how to set a list of endpoints that must bypass the Fiddler Everywhere proxy and directly use the upstream proxy."
+description: "Learn how to bypass the Fiddler Everywhere proxy or skip decryption for particular endpoints."
 type: how-to
 slug: fiddler-bypass-list
 publish: true
@@ -28,13 +28,19 @@ res_type: kb
 
 **Q:** I am using a service that pollutes my Fiddler Everywhere captured traffic. How to prevent this traffic from being caught from Fiddler Everywhere in the first place?
 
-
+**Q:** Can I skip decryption for particular endpoints?
 
 ## Solution
 
 
-All the described issues above have a common solution - bypassing Fiddler so that the specific application endpoints use the default connection directly. As a result, any request to these endpoints will go straight through the upstream proxy, effectively bypassing Fiddler, and they won't use the Fiddler Everywhere certificate. The immediate effect is that Fiddler Everywhere won't capture traffic from the bypassed endpoints. Still, at the same time, the bypassed services will continue to work while using the default internet connection.
+All the described issues above have a common solution - [bypassing Fiddler](#bypassing-fiddler) so that the specific application endpoints use the default connection directly. As a result, any request to these endpoints will go straight through the upstream proxy, effectively bypassing Fiddler, and they won't use the Fiddler Everywhere certificate. The immediate effect is that Fiddler Everywhere won't capture traffic from the bypassed endpoints. Still, at the same time, the bypassed services will continue to work while using the default internet connection.
 
+Fiddler also allows decrypting only some endpoints while explicitly [skipping decryption](#skipping-decryption) for others. This is possible through the **Rules** tab and the action called **Do Not Decrypt**.
+
+Lastly, you might want to temporarily filter the captured traffic while preserving all captured sessions. For that, you can use the [built-in filters]({%slug how-to-filter-traffic%}) or the **Do Not Show** rule action.
+
+
+## Bypassing Fiddler
 
 ### Proxy Bypass List
 
@@ -73,5 +79,19 @@ You can add a root domain or specific subdomain address to the bypass list on-th
 - Click **Save** to persist the change.
 
 
+## Skipping Decryption through Rules
 
+An action called **Do Not Decrypt** is available in the **Rules Builder**. Only the CONNECT tunnel session will appear for the matched sessions when the action is active. You can see the Fiddler message that no further sessions will be decrypted inside the CONNECT tunnel session's response. Only match conditions for **Host**, **URL**, **Process**, **Client IP**, **HTTP Version**, and **Remote IP** can be used.
+
+Toggling a **Do Not Decrypt** rule on and off will not modify existing connections. The rule works only for newly established connections.
+
+### Creating a Rule to Skip Decryption
+
+- Open Fiddler Everywhere and go to the **Rules** tab.
+
+- Use **Add Rule** to open the **Rules Builder**.
+
+- Set your match condition. The action applies when the matching condition is for **Host**, **URL**, **Process**, **Client IP**, **HTTP Version**, or **Remote IP**.
+
+![Example rule taht uses the "Do Not Decrypt" action](../images/kb/bypass/donotdecrypt.png)
 
