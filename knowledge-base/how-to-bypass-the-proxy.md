@@ -28,7 +28,7 @@ res_type: kb
 
 **Q:** I am using a service that pollutes my Fiddler Everywhere captured traffic. How to prevent this traffic from being caught from Fiddler Everywhere in the first place?
 
-**Q:** Can I skip decryption for particular endpoints?
+**Q:** Instead of entirely bypassing the proxy, can I just skip decryption for particular endpoints?
 
 ## Solution
 
@@ -37,7 +37,7 @@ All the described issues above have a common solution - [bypassing Fiddler](#byp
 
 Fiddler also allows decrypting only some endpoints while explicitly [skipping decryption](#skipping-decryption) for others. This is possible through the **Rules** tab and the action called **Do Not Decrypt**.
 
-Lastly, you might want to temporarily filter the captured traffic while preserving all captured sessions. For that, you can use the [built-in filters]({%slug how-to-filter-traffic%}) or the **Do Not Show** rule action.
+Lastly, you might want to filter the captured traffic while preserving all captured sessions temporarily. For that, you can use the [built-in filters]({%slug how-to-filter-traffic%}) or the **Do Not Show** rule action.
 
 
 ## Bypassing Fiddler
@@ -81,7 +81,7 @@ You can add a root domain or specific subdomain address to the bypass list on-th
 
 ## Skipping Decryption through Rules
 
-An action called **Do Not Decrypt** is available in the **Rules Builder**. Only the CONNECT tunnel session will appear for the matched sessions when the action is active. You can see the Fiddler message that no further sessions will be decrypted inside the CONNECT tunnel session's response. Only match conditions for **Host**, **URL**, **Process**, **Client IP**, **HTTP Version**, and **Remote IP** can be used.
+An action called **Do Not Decrypt** is available in the **Rules Builder**. Only the CONNECT tunnel session will appear for the matched sessions when the action is active. You can see the Fiddler message that no further sessions will be decrypted inside the CONNECT tunnel session's response. Only conditions matching **Host**, **URL**, **Process**, **Client IP**, **HTTP Version**, and **Remote IP** can be used alongside the **Do Not Decrypt** action.
 
 Toggling a **Do Not Decrypt** rule on and off will not modify existing connections. The rule works only for newly established connections.
 
@@ -91,7 +91,15 @@ Toggling a **Do Not Decrypt** rule on and off will not modify existing connectio
 
 - Use **Add Rule** to open the **Rules Builder**.
 
-- Set your match condition. The action applies when the matching condition is for **Host**, **URL**, **Process**, **Client IP**, **HTTP Version**, or **Remote IP**.
+- Set your match condition through **Add Condition**. The action applies when the matching condition is for **Host**, **URL**, **Process**, **Client IP**, **HTTP Version**, or **Remote IP**.
 
-![Example rule taht uses the "Do Not Decrypt" action](../images/kb/bypass/donotdecrypt.png)
+- Create new action through **Add Action**. Select the **Do Not Decrypt** action.
+
+    >important The **Do not decrypt** action is **final**, which means that no further actions will be executed once the action is applied. [Learn more about final and non-final actions here...]({%slug fiddler-rules-actions%})
+
+    ![Example rule taht uses the "Do Not Decrypt" action](../images/kb/bypass/donotdecrypt.png)
+
+- Save and enable the rule when needed.
+
+
 
