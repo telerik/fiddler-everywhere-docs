@@ -71,6 +71,26 @@ If you change the certificate error handling (by enabling **HTTPS** > **Ignore s
 
 >tip A typical use case for the **Ignore server certificate errors** option will be certificate validation errors on macOS while trying to access `*.icloud.com` domains. Use the option to ignore the validation error and continue the debugging process.
 
+
+
+### Ignoring Sever Certificate Errors
+
+Fiddler Everywhere provides a way to quickly go around any certificate-related error through the **Settings** > **HTTPS** > **Ignore server certificate errors (unsafe)** option.
+
+When the **Ignore server certificate errors** checkbox is active, but no endpoints are added, all certificate errors from all servers will be ignored. 
+
+>important The **Ignore server certificate errors** option is considered **unsafe** and should be used cautiously! It sets if Fiddler Everywhere should warn you when an HTTPS server has presented a certificate that did not validate. You should not check this box when surfing the Internet due to the possibility of [spoofing attack](https://en.wikipedia.org/wiki/Spoofing_attack).
+
+To minimize the security risk of automatically ignoring all server certificates, Fiddler Everywhere allows adding specific endpoints to the list of trusted servers. You can add custom endpoints to the list as follows: 
+
+- Upon opening a page that returns a server certificate error, a custom Fiddler page will present the possibility of automatically adding the endpoint to the list of "trusted" servers. Works only when **Ignore server certificate errors** is inactive or active but not with an empty list.
+
+    ![When Fiddler works, a page with expired certificate loads the Fiddler's insecure warning](../images/livetraffic/certs/browser-fiddler-insecure-page.png)
+
+- Tick the **Settings** > **HTTPS** > **Ignore server certificate errors (unsafe)** checkbox and add one or multiple endpoints separated by a semicolon.
+
+    ![Add servers to the ignore list through the Fiddler's settings](../images/livetraffic/certs/ignore-certificate-errors-settings.png)
+
 ### Certificate Details in SAZ files
 
 Fiddler Everywhere version 4.2.0 extended the SAZ format, the native format used for saving captured session snapshots (local saves, cloud saved, or manual SAZ exports). Consider the following when working with saved sessions snapshots and certificate details: 
