@@ -90,6 +90,8 @@ Fiddler Everywhere allows adding specific endpoints to the list of trusted serve
 
     ![Add servers to the ignore list through the Fiddler's settings](../images/livetraffic/certs/ignore-certificate-errors-settings.png)
 
+>important Adding new endpoints to the ignore list works only for newly established connections. You might need to restart your client app (e.g., the browser) to force close an existing TCP connection.
+
 
 ### Certificate Details in SAZ files
 
