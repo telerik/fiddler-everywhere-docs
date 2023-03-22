@@ -90,6 +90,7 @@ To minimize the security risk of automatically ignoring all server certificates,
 - Tick the **Settings** > **HTTPS** > **Ignore server certificate errors (unsafe)** checkbox and add one or multiple endpoints separated by a semicolon.
 
     ![Add servers to the ignore list through the Fiddler's settings](../images/livetraffic/certs/ignore-certificate-errors-settings.png)
+    
 
 ### Certificate Details in SAZ files
 
