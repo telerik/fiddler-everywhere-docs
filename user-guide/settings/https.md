@@ -20,10 +20,9 @@ To enable the capturing and decrypting of HTTPS traffic, you need to install the
 
     * The **Ignore server certificate errors** checkbox is active (with a tick), but the ignore list is left blank&mdash;Fiddler will automatically ignore all server certificate errors. 
 
-    * The **Ignore server certificate errors** checkbox is active (with a tick), and the ignore list is populated with specific endpoints&mdash;Fiddler will ignore only server certificate errors for the listed endpoints.
+    * The **Ignore server certificate errors** checkbox is active (with a tick), and the ignore list is populated with specific endpoints&mdash;Fiddler will ignore only server certificate errors for the listed endpoints. Note that adding endpoints to the ignore list will work only for new connections.
 
     * The **Ignore server certificate errors** checkbox is inactive (no tick)&mdash;Fiddler won't ignore server certificate errors, and upon hitting one, will present a special Fiddler's page that informs the user about the insecure connection. The custom Fiddler's page also provides a quick link to add the specific endpoint to the ignore list.
-
 
 - **Advanced Settings**&mdash;A drop-down menu that provides the following additional options related to the Fiddler root certificate:
     - **Export root certificate**&mdash;A drop-down menu to select a format and export the Fiddler root certificate to the operating system **Desktop** folder. Some operating systems might not have a default folder named **Desktop**. In such cases, you must create this folder (`~/Desktop` for macOS and Linux distributions) to export the certificate successfully. Fiddler Everywhere provides options to export the following formats:
