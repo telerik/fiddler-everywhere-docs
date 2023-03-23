@@ -31,6 +31,7 @@ The **Live Traffic** toolbar provides the following functionalities:
 
 - [Filtering Traffic](#filtering-traffic) (**Filters**)
 - [Preconfigured Browser Capturing](#preconfigured-browser-capturing) (**Open Browser**)
+- [Preconfigured Terminal Capturing](#preconfigured-terminal-capturing) (**>_Terminal**)
 - [Removing All Sessions](#removing-all-sessions) (**Remove All**)
 - [Searching](#searching) (**Quick Search**)
 - [Saving Sessions](#saving-sessions) (**Save**)
@@ -54,6 +55,14 @@ Use the **Open Browser** button to capture traffic from a specific browser insta
 
 [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
 
+
+### Preconfigured Terminal Capturing
+
+Use the **>_ Terminal** button to capture traffic from a specific terminal instance without modifying the system proxy settings.
+
+![Use the Terminal button to start preconfigured terminal instane](../images/get-started/get-started-terminal.png)
+
+[Learn more about the preconfigured terminal capturing...]({%slug fiddler-terminal-explicit%})
 
 
 ### Removing All Sessions

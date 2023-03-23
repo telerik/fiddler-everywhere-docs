@@ -1,11 +1,10 @@
 ---
-title: Setting Fiddler for Terminal Applications
-description: "Learn how to set the Fiddler Everywhere web-debugging client for terminals."
-type: how-to
+title: Capturing Traffic for Terminal Applications
+description: "Learn how to capture HTTP(S) traffic from terminals and shell applications while using the Fiddler Everywhere proxy."
 slug: fiddler-terminal-explicit
 publish: true
 res_type: kb
-previous_url: fiddler-macos-terminal
+previous_url: fiddler-macos-terminal, how-to-set-macos-terminal
 ---
 
 ## Environment
@@ -22,9 +21,15 @@ previous_url: fiddler-macos-terminal
 How can I set the Fiddler Everywhere proxy for commonly used command-line tools like the default [macOS Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows), [Bash](https://www.gnu.org/software/bash/) and other terminals or shell applications?
 
 
-### Setting the Fiddler Proxy Explicitly
+## Capturing Traffic from Preconfigured Terminal
 
-Terminals and shell applications like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests through third-party tools like CURL. However, in the typical case, these tools won't use the system proxy.
+Fiddler Everywhere now comes with an option to automatically start a preconfigured terminal instance through the **>_ Terminal** button in the **Live Traffic** toolbar.
+
+![Use the Terminal button to start preconfigured terminal instane](../images/get-started/get-started-terminal.png)
+
+## Setting the Fiddler Proxy Explicitly
+
+Terminals and shell applications like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests through third-party tools like CURL. However, in the typical case, the standalone instances of these tools won't use the system proxy. With Fiddler Everywhere, you van [use a preconfigured terminakl instance](#capturing-traffic-from-preconfigured-terminal), or alternatively, you can set a your terminal to use the Fiddler proxy explicitly.
 
 For Fiddler Everywhere to capture traffic that passes through them, they need to explicitly set the Fiddler Everywhere proxy. You can use the `export` command (for macOS and Linux) or the `set` command (for Windows) to achieve that. The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
 
