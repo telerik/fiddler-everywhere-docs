@@ -20,7 +20,7 @@ While testing my application the traffic sent to [http://localhost](http://local
 
 ## Solution
 
-You can utilize either of the following approaches:
+Some frameworks (like .NET) are not proxying the localhost traffic. To solve that issue, you can utilize either of the following approaches:
 
 - [Use the machine name](#using-the-machine-name) instead of `localhost`.
 - [Use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere.

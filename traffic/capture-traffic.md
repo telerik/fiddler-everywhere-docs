@@ -9,7 +9,7 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Traffic
 
-Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system capturing options](#system-capturing) and the [preconfigured browser capturing feature](#preconfigured-browser-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
+Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system capturing options](#system-capturing), the [preconfigured browser capturing feature](#preconfigured-browser-capturing), and the [preconfigured terminal capturing](#preconfigured-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
 
 Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebScoket, and GRPC traffic.
 
@@ -71,6 +71,16 @@ To start the preconfigured browser capturing with Fiddler Everywhere:
 1. Enter the URL in the newly opened Chrome window. Fiddler Everywhere immediately starts capturing all the traffic generated from the preconfigured browser.
 
 To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}), either assign a path to third-party Chromium browsers, like Edge, Brave and Vivaldi or change the default path to the Google Chrome browser.
+
+
+## Preconfigured Terminal Capturing
+
+Similarly to the preconfigured browser capturing option, Fiddler lets you use a preconfigured terminal instance to capture traffic from your preferred terminal on-the-fly. The option is accessible through the **>_ Terminal** button and enables you to capture and inspect traffic from **NodeJS** libraries and **curl** quickly.
+
+![Use the Terminal button to capture traffic from NodeJS or other terminal application](../images/get-started/get-started-terminal.png)
+
+[Learn more on how to capture traffic from a preconfigured terminal here...]({%slug fiddler-terminal-explicit%}#capturing-traffic-from-preconfigured-terminal)
+
 
 ## Explicit Capturing
 
