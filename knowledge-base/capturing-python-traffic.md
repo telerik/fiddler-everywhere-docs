@@ -24,7 +24,7 @@ How can I capture traffic from Python applications?
 
 ## Setting Fiddler Proxy through Environment Variables
 
-For Fiddler Everywhere to capture traffic from a Python application, the application must be set to respect the Fiddler Everywhere proxy. You can achieve that by setting the environment variables `http_proxy` and `https_proxy`. The `export` command (for macOS and Linux) or the `set` command (for Windows). The `export` command will generate an environment variable that will be included in a child process environment. It does not affect other already-existing settings.
+For Fiddler Everywhere to capture traffic from a Python application, the application must be set to respect the Fiddler Everywhere proxy. You can achieve that by setting the environment variables `http_proxy` and `https_proxy`. The `export` command (for macOS and Linux) or the `set` command (for Windows). The `export` command will generate an environment variable in a child process environment. It does not affect other already-existing settings.
 
 The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings > HTTPS > Advanced > Export Root Certificate (PEM/ASCII)**.
 
