@@ -25,7 +25,12 @@ Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, and gRPC traffic be
 
 ### Preconfigured Browser Capturing
 
-Fiddler Everywhere provides preconfigured options for automatic, sandboxed, browser HTTP(S) capturing without the need to modify the operating system proxy. [Read more about the preconfigured Fiddler Everywhere browser capturing...]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing)
+Fiddler Everywhere provides an option for automatic, sandboxed, browser HTTP(S) capturing without the need to modify the operating system proxy. [Read more about the preconfigured Fiddler Everywhere browser capturing...]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing)
+
+
+### Preconfigured Terminal Capturing
+
+Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's preconfigured terminal capturing...]({%slug fiddler-terminal-explicit%}#capturing-traffic-from-preconfigured-terminal)
 
 
 ### Traffic Analysis
@@ -33,9 +38,13 @@ Fiddler Everywhere provides preconfigured options for automatic, sandboxed, brow
 Fiddler Everywhere provides an HTTP(S) and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, compare, and share captured traffic with collaborators. Read more about [inspecting]({%slug inspecting-traffic-get-started%}) and [modifying]({%slug modify-traffic-get-started%}) traffic with Fiddler Everywhere...
 
 
-### Modern HTTP version support
+### Modern HTTP and TLS version support
 
-Fiddler Everywhere supports the widely used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. [Read more about enabling HTTP/2 capture with Fiddler Everywhere...]({% slug connections-submenu %})
+Fiddler Everywhere supports the widely used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. Regarding secure protocols, Fiddler supports obsolete and modern SSL and TLS versions, including TLS 1.2 and TLS 1.3.
+
+[Learn more about enabling HTTP/2 capture with Fiddler Everywhere here...]({%slug connections-submenu%})
+
+[Learn more about the TLS support here...]({%slug fe-security%}#tls-version-specifics)
 
 
 ### Request and Response Mocking
