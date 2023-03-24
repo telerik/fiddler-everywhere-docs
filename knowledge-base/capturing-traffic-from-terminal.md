@@ -30,24 +30,24 @@ Fiddler Everywhere can automatically start a preconfigured terminal instance thr
 You can set your preferred terminal application through **Settings > Terminal > Default Terminal**. The following options are available:
 
 - **Command Prompt**&mdash;Available only on Windows.
-- **Windows PowerShell**&mdash;Available only on Windows.
-- **PowerShell**&mdash;Available only on Windows.
+- **Windows PowerShell**&mdash;Available only on Windows. Specfies the Windows PowerShell built on .NET Framework 4.5 and older versions.
+- **PowerShell**&mdash;Available only on Windows. Specfies the PowerShell built on .NET Core or the new .NET.
 - **Terminal application**&mdash;Available on macOS and Linux. This option will use the default shell environment, for example, **bash**, **zsh**, or **sh**.
 
-The Fiddler's preconfigured terminal instance automatically proxies all requests made by **curl** or **NodeJS** libraries (like **https**, **request**, **axios**, etc.).
+The Fiddler's preconfigured terminal instance automatically proxies all requests made by **curl** or **Node.js** libraries (like **https**, **request**, **axios**, etc.) and all applications, which respect the **http_proxy** and **https_proxy** environment variables. Node.js and curl are configured to trust the Fiddler CA.
 
-![Example request made through the NodeJS HTTPS library and proxied through Fiddler's preconfigured instance](../images/kb/macos-terminal/nodejs-preconfigured-terminal-traffic.png)
+![Example request made through the Node.js HTTPS library and proxied through Fiddler's preconfigured instance](../images/kb/macos-terminal/nodejs-preconfigured-terminal-traffic.png)
 
 ### Localhost Traffic through a Preconfigured Terminal
 
 Some frameworks, like the .NET Framework, are hardcoded not to send requests for localhost through any proxies, and as a proxy, Fiddler will not receive such traffic.
 
-Because PowerShell uses the .NET framework, the localhost traffic won't be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases]({%slug how-to-capture-localhost-traffic%}) or adding a dot to the end of the localhost address (for example, **localhost.:8080**).
+Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell which uses .NET Core), the localhost traffic won't be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases]({%slug how-to-capture-localhost-traffic%}) or adding a dot to the end of the localhost address (for example, **localhost.:8080**).
 
 
 ### NET Traffic through a Preconfigured Terminal
 
-Capturing traffic from **curl** or **NodeJS** libraries does not require explicitly installing and trusting the Fiddler root CA (certificate authority) on the Fiddler host. However, this is a mandatory requirement for a NET application that executes HTTPS requests.
+Capturing traffic from **curl** or **Node.js** libraries does not require explicitly installing and trusting the Fiddler root CA (certificate authority) on the Fiddler host. However, this is a mandatory requirement for a NET application that executes HTTPS requests.
 
 [Learn how to install and trust the Fiddler root CA here...]({%slug trust-certificate%})
 
@@ -84,7 +84,7 @@ curl https://docs.telerik.com/fiddler-everywhere --
 
 ### Setting the Fiddler Root Certificate
 
-Apart from setting the environment variables http_proxy and https_proxy, you can manually export and point your terminal application to explicitly use the Fiddler root certificate authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you could use variables like **SSL_CERT_FILE** and **REQUESTS_CA_BUNDLE** for [configuring the Fiddler's CA within a Python application]({%slug fiddler-python-traffic%}).
+Apart from setting the environment variables **http_proxy** and **https_proxy**, you can manually export and point your terminal application to explicitly use the Fiddler root certificate authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you could use variables like **SSL_CERT_FILE** and **REQUESTS_CA_BUNDLE** for [configuring the Fiddler's CA within a Python application]({%slug fiddler-python-traffic%}).
 
 
 ### Resetting the Fiddler Proxy

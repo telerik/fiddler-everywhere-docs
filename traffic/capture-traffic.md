@@ -75,9 +75,9 @@ To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug br
 
 ## Preconfigured Terminal Capturing
 
-Similarly to the preconfigured browser capturing option, Fiddler lets you use a preconfigured terminal instance to capture traffic from your preferred terminal on-the-fly. The option is accessible through the **>_ Terminal** button and enables you to capture and inspect traffic from **NodeJS** libraries and **curl** quickly.
+Similarly to the preconfigured browser capturing option, Fiddler lets you use a preconfigured terminal instance to capture traffic from your preferred terminal on-the-fly. The option is accessible through the **>_ Terminal** button and enables you to capture and inspect traffic from **Node.js** libraries and **curl** quickly.
 
-![Use the Terminal button to capture traffic from NodeJS or other terminal application](../images/get-started/get-started-terminal.png)
+![Use the Terminal button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
 [Learn more on how to capture traffic from a preconfigured terminal here...]({%slug fiddler-terminal-explicit%}#capturing-traffic-from-preconfigured-terminal)
 
