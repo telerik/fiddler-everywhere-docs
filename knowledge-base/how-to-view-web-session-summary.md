@@ -165,3 +165,7 @@ Marks the duration of the session (from **ClientConnected** to **ServerGotRespon
 __Comments__ is the field for showing the custom comment.
 
 This column will have a value only if the comment was previously added, for example, when looking into a list of [shared sessions]({%slug saved-sessions-tab%}) with already added comments, or when you explicitly add a comment through [__Comment__ in the context menu]({%slug web-sessions-list%}#comment).
+
+## Custom Columns
+
+Fiddler Everywhere enables you to [create custom columns]({%slug web-sessions-list%}#creating-custom-columns). These columns will display information from a pre-selected HTTP Request or Response.

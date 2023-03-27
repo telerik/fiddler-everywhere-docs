@@ -40,3 +40,4 @@ The inspection of sessions often happens with teammates or external collaborator
 - [Live Traffic Section in details]({%slug web-sessions-list%})
 - [Inspecting Server Certificates]({%slug fe-cert-details%})
 - [Inspector's UI in details]({%slug inspector-types%})
+- [Live Traffic Columns in details]({%slug how-to-view-web-session-summary%})

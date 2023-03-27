@@ -117,7 +117,7 @@ To share a session through the toolbar:
 
 ### Managing Columns
 
-Use the **Columns** option to manage which columns to show up in the [Live Traffic list](#live-traffic-list). 
+Use the **Columns** menu to manage which columns to show up in the [Live Traffic list](#live-traffic-list). You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
 
 [Learn more about each column present in the Live Traffic list here...](#columns)
 
@@ -304,7 +304,8 @@ Each [list icon](#list-icons) can contain an additional triangle warning that in
 
 ## Columns
 
-The following table lists the **Live Traffic** columns and the information they display. Apart from just being a descriptive tag, each column name can be applied as a matching condition filter (for example, you can create a filter that matches TLS Version column values and apply actions applicable only for a session with TLS 1.3).
+The following table lists the **Live Traffic** columns and the information they display. Apart from just being a descriptive tag, each column name can be applied as a matching condition filter (for example, you can create a filter that matches TLS Version column values and apply actions applicable only for a session with TLS 1.3). In addition to the predefined columns listed below, Fiddler Everywhere allows you to cr[eate your own custom columns](#creating-custom-columns).
+
 
 <table style=" width: 100%">
     <colgroup>
@@ -402,6 +403,33 @@ The following table lists the **Live Traffic** columns and the information they 
 </table>
 
 
+### Creating Custom Columns
+
+Add, edit, or remove a custom column to the columns list. Afterward, these columns can be hidden or shown similarly to the Fiddler's predefined columns. 
+
+**Add a custom column** through one of these actions:
+
+- Open the [**Columns** menu](#managing-columns) and the click on the **Add Custom Column** item. This action opens the custom column dialog, where you can enter a header and column names. The value will appear in the session grid if the header is present in the captured session. Otherwise, the column stays empty.
+
+    ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create.png)
+
+- Open the **Headers** inspector in HTTP request/response, right-click on a selected header to load the context menu, and choose  **Add as a column**.
+    ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create-through-header.png)
+
+
+After the successful creation, the new column is immediately available in the **Live Traffic** section.
+
+![Created custom column](../images/livetraffic/columns/custom-column-create-001.png)
+
+![Created custom column](../images/livetraffic/columns/custom-column-created.png)
+
+**Edit a custom column** through the [**Columns** menu](#managing-columns) and click the edit icon. **Remove a custom column** through the [**Columns** menu](#managing-columns) and click on the remove icon (a deletion confirmation displays).
+
+### Reset Columns
+
+To reset all columns to their default Fiddler's state, open the [**Columns** menu](#managing-columns) and use the **Reset** option at the bottom. This action resets all columns (shows the default selection) but won't remove any custom-made columns (it will only hide them).
+
+
 ## Traffic Sorting and Filtering
 
 By default, the captured traffic is sorted in the order sessions appear during the traffic capturing, sorted by the unique identification number column, and no active filters are applied. You can use the built-in [sorting](#sorting-options) and [filtering](#filtering-options) options to optimize the outcome.
@@ -416,7 +444,7 @@ Each column has a **filter** button, which popups an additional **Filter** menu 
 
 The column **Filter** menu lets you easily add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
-![column fulter menu](../images/livetraffic/columns/dots-filters.png)
+![column filter menu](../images/livetraffic/columns/dots-filters.png)
 
 >tip Apply complex filters by using the [**Filters** toolbar option](#filtering) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters).
 
