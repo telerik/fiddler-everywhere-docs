@@ -23,7 +23,7 @@ A (web) session represents a single transaction between a client and a server, s
 
 The toolbar of the **Live Traffic** section provides various functionalities such as filtering by multiple criteria, using preconfigured browser instances, searching, saving, and sharing sessions, and managing the user interface.
 
-To start capturing traffic, enable **Live Traffic** by switching to the **Capturing** mode. To go into the **Paused** mode, use the **Off** switch state to pause the traffic capturing.
+Enable **Live Traffic** by switching to the **Capturing** mode to start capturing system traffic. To go into the **Paused** mode, use the **Off** switch state to pause the traffic capturing.
 
 ![Live Traffic Toolbar](../images/livetraffic/websessions/websessions-toolbar-all.png)
 
@@ -31,6 +31,7 @@ The **Live Traffic** toolbar provides the following functionalities:
 
 - [Filtering Traffic](#filtering-traffic) (**Filters**)
 - [Preconfigured Browser Capturing](#preconfigured-browser-capturing) (**Open Browser**)
+- [Preconfigured Terminal Capturing](#preconfigured-terminal-capturing) (**>_Terminal**)
 - [Removing All Sessions](#removing-all-sessions) (**Remove All**)
 - [Searching](#searching) (**Quick Search**)
 - [Saving Sessions](#saving-sessions) (**Save**)
@@ -55,6 +56,14 @@ Use the **Open Browser** button to capture traffic from a specific browser insta
 [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
 
 
+### Preconfigured Terminal Capturing
+
+Use the **>_ Terminal** button to capture traffic from a specific terminal instance without modifying the system proxy settings.
+
+![Use the Terminal button to start preconfigured terminal instane](../images/get-started/get-started-terminal.png)
+
+[Learn more about the preconfigured terminal capturing...]({%slug fiddler-terminal-explicit%})
+
 
 ### Removing All Sessions
 
@@ -70,7 +79,7 @@ To search for specific values in the URL and the headers of all sessions, use th
 
 ### Saving Sessions
 
-To save captured sessions, use the main menu's **Save** button, which will automatically save all captured traffic. To save only specific sessions, select the desired ones and use the advanced saving options from [the context menu]({%slug web-sessions-list%}#save).
+To save captured sessions, use the main menu's **Save** button, automatically saving all captured traffic. To save only specific sessions, select the desired ones and use the advanced saving options from [the context menu]({%slug web-sessions-list%}#save).
 
 To save sessions for later or prepare sessions for sharing:
 
@@ -121,7 +130,7 @@ The last icon on the right side of the toolbar presents an option to restructure
 - (Alternative layout) **Live Traffic List** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
 
 
->tip You can collapse the side-panels ([**Sessions**]({%slug saved-sessions-tab%}) and [**Requests**]({%slug saved-requests-tab%})) and toggle the main layout to optimize your working space.
+>tip You can collapse the side panels ([**Sessions**]({%slug saved-sessions-tab%}) and [**Requests**]({%slug saved-requests-tab%})) and toggle the main layout to optimize your working space.
 
 ![Fiddler Everywhere with collapsed side panels and toggled layout](../images/livetraffic/websessions/websessions-list-all-toggled.png)
 
@@ -169,15 +178,15 @@ The following table displays the icons which **Live Traffic** supports for its l
         </tr>
         <tr>
             <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/upload-paused.svg"/></td>
-            <td>Uploading paused for session in progress.</td>
+            <td>Uploading paused for the session in progress.</td>
         </tr>
         <tr>
             <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/downloading.svg"/></td>
-            <td>Downloading content for session in progress (the response is being read from the server).</td>
+            <td>Downloading content for the session in progress (the response is being read from the server).</td>
         </tr>
         <tr>
             <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/download-paused.svg"/></td>
-            <td>Downloading paused for session in progress.</td>
+            <td>Downloading paused for the session in progress.</td>
         </tr>
         <tr>
             <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/aborted.svg"/></td>
@@ -335,7 +344,7 @@ The following table lists the **Live Traffic** columns and the key information t
         </tr>
         <tr>
             <td><b>TLS Version</b></td>
-            <td>The TLS version used for communication between the client and Fiddler, and between Fiddler and the server. The possible values are <b>SSL 2.0</b>, <b>SSL 3.0</b>, <b>TLS 1.0</b>, <b>TLS 1.1</b>, <b>TLS 1.2</b>, <b>TLS 1.3</b>, and combination of all listed in scenarios when the TLS version differs for the request and response. <a href="">https://docs.telerik.com/fiddler-everywhere/security#tls-version-specifics</a>Learn more about the TLS version specifics in Fiddler Everywhere here...</td>
+            <td>The TLS version used for communication between the client and Fiddler and between Fiddler and the server. The possible values are <b>SSL 2.0</b>, <b>SSL 3.0</b>, <b>TLS 1.0</b>, <b>TLS 1.1</b>, <b>TLS 1.2</b>, <b>TLS 1.3</b>, and combination of all listed in scenarios when the TLS version differs for the request and response. <a href="">https://docs.telerik.com/fiddler-everywhere/security#tls-version-specifics</a>Learn more about the TLS version specifics in Fiddler Everywhere here...</td>
         </tr>
         <tr>
             <td><b>Status Code</b></td>
@@ -405,7 +414,7 @@ To create a custom sorting order, click the desired column. For example, click t
 
 Each column has a **filter** button, which popups an additional **Filter** menu.
 
-The column **Filter** menu enables you to easily add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
+The column **Filter** menu lets you easily add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
 ![column fulter menu](../images/livetraffic/columns/dots-filters.png)
 

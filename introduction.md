@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: "Try now the Fiddler Everywhere cross-platform, web-debugging, HTTP-request proxy and use it for any browser, system or platform to ensure high performance of your processes."
+description: "Try now the Fiddler Everywhere cross-platform, web-debugging, HTTP-request proxy and use it for any browser, system, or platform to ensure high performance of your processes."
 slug: introduction
 publish: true
 position: 0
@@ -9,23 +9,28 @@ previous_url: /license
 
 # Welcome to Fiddler Everywhere!
 
-Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTP(S) traffic, and issue requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high-performance, cross-platform proxy for any browser, system, or platform.
+Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTP(S) traffic, issues requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high-performance, cross-platform proxy for any browser, system, or platform.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vSLrxVkTnX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Key Features
 
-Fiddler Everywhere delivers a range of handy and user-friendly features whose number and further development are not limited by the list in this section&mdash;the Fiddler team constantly invests efforts to improve the performance and add more value to the existing web-debugging tool and build on top of its available features.
+Fiddler Everywhere delivers a range of handy and user-friendly features whose number and further development are not limited by the list in this section&mdash;the Fiddler team constantly invests efforts to improve the performance and add more value to the existing web-debugging proxy tool and build on top of its available features.
 
 
 ### System Traffic Capturing
 
-Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, and gRPC traffic between your computer and the Internet, and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %}#system-capturing)
+Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, and gRPC traffic between your computer and the Internet and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %}#system-capturing)
 
 
 ### Preconfigured Browser Capturing
 
-Fiddler Everywhere provides preconfigured options for automatic, sandboxed, browser HTTP(S) capturing without the need to modify the operating system proxy. [Read more about the preconfigured Fiddler Everywhere browser capturing...]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing)
+Fiddler Everywhere provides an option for automatic, sandboxed browser HTTP(S) capturing without modifying the operating system proxy. [Read more about the preconfigured Fiddler Everywhere browser capturing...]({% slug capture-traffic-get-started %}#preconfigured-browser-capturing)
+
+
+### Preconfigured Terminal Capturing
+
+Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's preconfigured terminal capturing...]({%slug fiddler-terminal-explicit%}#capturing-traffic-from-preconfigured-terminal)
 
 
 ### Traffic Analysis
@@ -33,19 +38,23 @@ Fiddler Everywhere provides preconfigured options for automatic, sandboxed, brow
 Fiddler Everywhere provides an HTTP(S) and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, compare, and share captured traffic with collaborators. Read more about [inspecting]({%slug inspecting-traffic-get-started%}) and [modifying]({%slug modify-traffic-get-started%}) traffic with Fiddler Everywhere...
 
 
-### Modern HTTP version support
+### Modern HTTP and TLS version support
 
-Fiddler Everywhere supports the widely used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. [Read more about enabling HTTP/2 capture with Fiddler Everywhere...]({% slug connections-submenu %})
+Fiddler Everywhere supports the widely used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. Regarding secure protocols, Fiddler supports obsolete and modern SSL and TLS versions, including TLS 1.2 and TLS 1.3.
+
+[Learn more about enabling HTTP/2 capture with Fiddler Everywhere here...]({%slug connections-submenu%})
+
+[Learn more about the TLS support here...]({%slug fe-security%}#tls-version-specifics)
 
 
 ### Request and Response Mocking
 
-Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without the need to update the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
+Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without updating the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
 
 
 ### API Composing
 
-Fiddler Everywhere comes with an API Composer, which allows you to test REST and SOAP APIs by creating and sending requests as well as save and share composed APIs. You can use the API composing feature both when developing new APIs and when testing existing APIs. [Read more about creating and organizing API requests with Fiddler Everywhere...]({% slug composer-get-started %})
+Fiddler Everywhere comes with an API Composer, which allows you to test REST and SOAP APIs by creating and sending requests and saving and sharing composed APIs. You can use the API composing feature when developing new APIs and testing existing ones. [Read more about creating and organizing API requests with Fiddler Everywhere...]({% slug composer-get-started %})
 
 
 ### Secure Collaboration
@@ -76,7 +85,7 @@ Fiddler Everywhere delivers a modern, intuitive UI with collapsible panels, [lay
 
 ## Trial Version 
 
-Fiddler Everywhere offers a trial with a full-featured version of the tool&mdash;no restrictions! What’s more, you are eligible for complete technical support during your trial period in case you have any questions. To sign up for a free trial, go [here](https://www.telerik.com/download/fiddler-everywhere). The trial version activates only once per each unique machine.
+Fiddler Everywhere offers a trial with a full-featured version of the tool&mdash;no restrictions! Moreover, you are eligible for complete technical support during your trial period if you have any questions. To sign up for a free trial, go [here](https://www.telerik.com/download/fiddler-everywhere). The trial version activates only once per each unique machine.
 
 ## Commercial Licenses
 
@@ -84,14 +93,14 @@ To use Fiddler Everywhere commercially, you need to purchase a license. The term
 
 * For more information about the available subscription plans, go to the [Fiddler Everywhere purchase page](https://www.telerik.com/purchase/fiddler).
 * For more information on the available commercial and free support channels, refer to the article on the [available Fiddler Everywhere support options]({%slug support%}).
-* For comparison of the different features included in the plans, like [policy-driven installation](#installation-options), bulk licensing, and SSO login options refer to the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license.
+* For a comparison of the different features included in the plans, like [policy-driven installation](#installation-options), bulk licensing, and SSO login options, refer to the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license.
 
 
 ### Installation Options
 
 Activate the [**Fiddler Everywhere Pro**](https://www.telerik.com/purchase/fiddler) license for **standard installation** with the following options:
  - The executable installation file must be downloaded from the official Fiddler Everywhere download page at [https://www.telerik.com/download/fiddler-everywhere](https://www.telerik.com/download/fiddler-everywhere). 
- - The installation can be executed only locally (on the machine that will run Fiddler Everywhere).
+ - The installation can be executed locally (on the machine running Fiddler Everywhere).
 
 Activate the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license to enable the **policy-driven installation** with the following options:
 - The executable installation file can be distributed from your source (shared internal location, OS image, etc.).

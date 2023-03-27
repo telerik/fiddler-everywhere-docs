@@ -1,6 +1,6 @@
 ---
 title: Capturing Traffic from Node.js Libraries
-description: "Learn how to configure the Fiddler Everywhere web-debugging proxy alongside Node.js and capturing HTTPS traffic."
+description: "Learn how to configure the Fiddler Everywhere local proxy alongside Node.js and capture HTTPS traffic."
 type: how-to
 slug: fiddler-nodejs-traffic
 publish: true
@@ -19,17 +19,23 @@ res_type: kb
 
 ## Description
 
-Many developers use Fiddler Everywhere to capture traffic from Node.js libraries that make HTTP and HTTPS requests. How can I proxy these requests so that I can capture and analyze them with Fiddler Everywhere?
+Many developers use Fiddler Everywhere to capture traffic from Node.js libraries that make HTTP and HTTPS requests. How can I proxy these requests to capture and analyze them with Fiddler Everywhere?
 
 ## Solution
 
-Some Node.js modules, such as [`request`](https://www.npmjs.com/package/request), are reading the proxy information from the Windows environment variable ([global proxy settings](#setting-the proxy-globally)). Others like the state [`HTTP` module](https://nodejs.org/api/http.html) do not respect the global proxy configuration of Node.js and you need to [proxy their requests explicitly](#setting-the proxy-explicitly).
+Some Node.js modules, such as [`request`](https://www.npmjs.com/package/request), are reading the proxy information from the Windows environment variable ([global proxy settings](#setting-the proxy-globally)). Others, like the state [`HTTP` module](https://nodejs.org/api/http.html), do not respect the global proxy configuration of Node.js, and you need to [proxy their requests explicitly](#setting-the proxy-explicitly).
 
-This section demonstrates the basic approach for each of the mentioned scenarios.
+This section demonstrates the primary approach for each of the mentioned scenarios.
 
-### Setting the Proxy Globally
 
-This scenario is useful for libraries like [request](https://www.npmjs.com/package/request) that reuse the proxy settings in the environment variables. With Node.js, you can set the proxy directly in the terminal.
+## Using the Fiddler's Preconfigured Terminal
+
+Fiddler Everywhere allows quickly opening a preconfigured terminal that automatically uses Fiddler as HTTP(S) proxy for NodeJS. [Learn more about the Fiddler's preconfigured terminal here...]({%slug fiddler-terminal-explicit%}#capturin-traffic-from-preconfigured-terminal)
+
+
+## Setting the Proxy Globally
+
+This scenario is helpful for libraries like [request](https://www.npmjs.com/package/request) that reuse the proxy settings in the environment variables. With Node.js, you can set the proxy directly in the terminal.
 
 The following example demonstrates how to define the proxy settings on **macOS** and **Linux**.
 
@@ -80,7 +86,7 @@ const setFiddlerProxy = () => {
     var proxyUrl = url.format(fiddlerProxy);
     env.http_proxy = proxyUrl;
     env.https_proxy = proxyUrl;
-    // Use this only for debugging purposes as it introduces a security issue
+    // Use this only for debugging purposes, as it introduces a security issue
     env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 };
 const removeFiddlerProxy = () => {
@@ -96,9 +102,9 @@ setFiddlerProxy();
 removeFiddlerProxy();
 ```
 
-### Setting the Proxy Explicitly
+## Setting the Proxy Explicitly
 
-The [global proxy settings](#settingproxy-globally) won't work for modules like the [`HTTP` module](https://nodejs.org/api/http.html) where you need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to set the proxy through the code explicitly.
+The [global proxy settings](#settingproxy-globally) won't work for modules like the [`HTTP` module](https://nodejs.org/api/http.html), where you need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to explicitly set the proxy through the code.
 
 The following example demonstrates the `fiddler-everywhere-test.js` file.
 
@@ -114,7 +120,7 @@ const fiddlerEverywhereProxy = {
     port: 8866,
 };
 
-// Use this only for debugging purposes as it introduces a security issue.
+// Use this only for debugging as it introduces a security issue.
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 const setFiddlerProxy = (options) => {
@@ -154,6 +160,6 @@ As a result, Fiddler Everywhere will capture the request and the response.
 
 ![Successfully captured NodeJS traffic](../images/kb/nodejs/success-capture-nodejs.png)
 
-### Setting Fiddler Everywhere alongside the Node Proxy
+## Setting Fiddler Everywhere alongside the Node Proxy
 
-After setting the proxy, either globally or explicitly, for your Node.js process, Fiddler Everywhere will immediately start capturing all of the traffic that goes through the Node proxy. You can turn off the **Live Traffic** switch to capture only the process from your Node.js libraries. Turning on the **Live Traffic** switch will set Fiddler as a system proxy and the **Live Traffic** will start capturing traffic for all applications that use the OS system proxy.
+After setting the proxy, either globally or explicitly, for your Node.js process, Fiddler Everywhere will immediately start capturing all of the traffic that goes through the Node proxy. You can turn off the **Live Traffic** switch to capture only the process from your Node.js libraries. Turning on the **Live Traffic** switch will set Fiddler as a system proxy, and the **Live Traffic** will start capturing traffic for all applications that use the OS system proxy.
