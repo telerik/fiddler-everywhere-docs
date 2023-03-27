@@ -304,7 +304,7 @@ Each [list icon](#list-icons) can contain an additional triangle warning that in
 
 ## Columns
 
-The following table lists the **Live Traffic** columns and the key information they display.
+The following table lists the **Live Traffic** columns and the information they display. Apart from just being a descriptive tag, each column name can be applied as a matching condition filter (for example, you can create a filter that matches TLS Version column values and apply actions applicable only for a session with TLS 1.3).
 
 <table style=" width: 100%">
     <colgroup>
@@ -412,13 +412,13 @@ To create a custom sorting order, click the desired column. For example, click t
 
 ### Filtering Options
 
-Each column has a **filter** button, which popups an additional **Filter** menu.
+Each column has a **filter** button, which popups an additional **Filter** menu to create.
 
 The column **Filter** menu lets you easily add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
 ![column fulter menu](../images/livetraffic/columns/dots-filters.png)
 
->tip Apply complex filters by using the [**Filters** toolbar option](#filtering) or learn more about the [**Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters)
+>tip Apply complex filters by using the [**Filters** toolbar option](#filtering) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters).
 
 
 ## Context Menu Options

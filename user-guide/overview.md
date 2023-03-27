@@ -137,7 +137,7 @@ The **Request Details** widget contains a table with the following information:
 
 - **Protocol**&mdash;The protocol type (HTTP or HTTPS) used by the Session.
 
-- **SSL Version**&mdash;The version of the used cryptographic protocols (TSL or SSL).
+- **TLS Version**&mdash;The version of the used cryptographic protocols (TSL or SSL).
 
 - **Sizes** displays the following options:
     - **Body**&mdash;The size of the request body in bytes.
@@ -153,17 +153,24 @@ The **Response Details** widget contains a table with the following information:
 
 - **Status**&mdash;The HTTP response status code and status message.
 
+- **TLS Version**&mdash;The version of the used cryptographic protocols (TSL or SSL).
+
 - **Sizes**
     - **Body**&mdash;The size of the response body in bytes.
     - **Headers**&mdash;The size of the response headers in bytes.
+    - **Total**&mdash;The total size of the response in bytes.
 
-- **Timings**&mdash;A list by execution order with timestamps or times (in milliseconds) for each triggered response event.
+- **Times**&mdash;A list by execution order with timestamps or times (in milliseconds) for each triggered response event.
 
 ![Response Details](../images/overview/overview-response-details.png)
 
 ## Session Details
 
 - **Duration** - The total time spent for the Session in milliseconds (Client Done Response - Client Begin Request).
+
+- **Gateway Determination Time**&mdash;The time (in milliseconds) required to determine which gatawey should handle the request.
+
+- **DNS Time**&mdash;The time (in milliseconds) required for a DNS lookup. Average DNS lookup times are between 20 and 120ms.
 
 - **TCP Connect Time** - The number of milliseconds spent waiting for the server to establish a TCP/IP connection.
 
