@@ -38,6 +38,8 @@ The Fiddler's preconfigured terminal instance automatically proxies all requests
 
 ![Example request made through the Node.js HTTPS library and proxied through Fiddler's preconfigured instance](../images/kb/macos-terminal/nodejs-preconfigured-terminal-traffic.png)
 
+>tip Only the terminal instance opened by Fiddler will respect the proxy settings, so there is no need to reset the proxy to use other terminal instances. Note that if you close the Fiddler Everywhere application and leave the preconfigured terminal open, you will lose internet connectivity only for that terminal instance.
+
 ### Localhost Traffic through a Preconfigured Terminal
 
 Some frameworks, like the .NET Framework, are hardcoded not to send requests for localhost through any proxies, and as a proxy, Fiddler will not receive such traffic.
@@ -55,9 +57,11 @@ Capturing traffic from **curl** or **Node.js** libraries does not require explic
 
 ## Setting the Fiddler Proxy Explicitly
 
-Terminals and shell applications like the [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)), [iTerm2](https://www.iterm2.com/), Command Prompt (Windows) are capable of executing HTTP and HTTPS requests through third-party tools like CURL. However, in the typical case, the standalone instances of these tools won't use the system proxy. With Fiddler Everywhere, you can [use a preconfigured terminal instance](#capturing-traffic-from-preconfigured-terminal) or set your terminal to use the Fiddler proxy explicitly, as shown below.
+As an alternative to [the preconfigured terminal option](#capturing-traffic-from-preconfigured-terminal) described above, you can also explcitly configure your terminal and shell applications to respect the Fiddler proxy nad trust the Fiddler CA. One way to achive that is to use the `export` command (for macOS and Linux) or the `set` command (for Windows) alongside the `http_proxy` and `https_proxy` variables. The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
 
-You can use the `export` command (for macOS and Linux) or the `set` command (for Windows). The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
+
+>tip [The preconfigured terminal option](#capturing-traffic-from-preconfigured-terminal) allows you to quickly use a terminal alongside the Fiddler's proxy without having to worry about forgetting to unset the proxy address (so that you can continue using the terminal/shell application once Fiddler is turned off). In most cases, the preconfigured terminal should be your preferred choice as it sets the proxy only per the current session, which makes it considerably more comfortable for testing and debugging.
+
 
 The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**.
 
