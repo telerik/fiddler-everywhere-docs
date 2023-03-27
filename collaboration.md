@@ -37,6 +37,7 @@ To save a session:
 
 Optionally, you can protect the saved session by enabling encryption and setting a password. Only users with the knowledge of the password can open the password-protected session. Password-protected sessions are listed in the **Session** list with a lock icon. [Read more about encrypting saved entries...]({% slug saved-sessions-tab %}#encrypting)
 
+>tip All saved sessions, including local saves, cloud saves from the [**Sessions** list]({%slug ved-sessions-tab%}), or manual exports are stored as [SAZ files]({%slug fiddler-saz-format%}). Always consider protecting your saved session with a password that adds additional 256-bit AES encryption to the generated SAZ file. [Learn more about the security aspects to consider when keeping traffic here ...]({%slug fe-security%}#saving-traffic)
 
 ### Sharing Sessions
 
@@ -95,3 +96,4 @@ The Fiddler Everywhere client informs the collaborators about shared sessions in
 - All listed collaborators receive a notification within the Fiddler Everywhere client. To open the shared session in a separate tab, click the notification.
 
     ![Notification for received content](./images/settings/notifications-for-shared-content.png)
+

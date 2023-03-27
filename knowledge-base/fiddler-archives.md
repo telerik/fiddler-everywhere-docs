@@ -89,6 +89,8 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
 
 * **[Content_Types.xml]**&mdash;A metadata file that specifies a few MIME types, so the archive is compatible with `System.IO.Packaging` or other clients that support the Open Packaging Conventions.
 
+>tip Newer versions of Fiddler Everywhere constantly bring added value to the information obtained from each session. New features like the **TLS Version** column introduced in version 4.2.0 also add information for each captured session in the produced SAZ files. Note that SAZ files and sessions saved with older versions of Fiddler won't contain the new data (like the **TLS Version**).
+
 ## Using SAZ with Fiddler Everywhere
 
 The Fiddler Everywhere uses SAZ behind the scenes for each session explicitly saved locally or in the cloud. The application also provides options to manually export and import captured and saved traffic through the UI. 
