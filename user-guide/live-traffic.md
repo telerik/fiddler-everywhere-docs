@@ -119,6 +119,8 @@ To share a session through the toolbar:
 
 Use the **Columns** menu to manage which columns to show up in the [Live Traffic list](#live-traffic-list). You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
 
+![Manage columns from the Fiddler's UI](../images/livetraffic/columns/managing-columns.png)
+
 [Learn more about each column present in the Live Traffic list here...](#columns)
 
 
@@ -409,19 +411,22 @@ Add, edit, or remove a custom column to the columns list. Afterward, these colum
 
 **Add a custom column** through one of these actions:
 
-- Open the [**Columns** menu](#managing-columns) and the click on the **Add Custom Column** item. This action opens the custom column dialog, where you can enter a header and column names. The value will appear in the session grid if the header is present in the captured session. Otherwise, the column stays empty.
+- Open the [**Columns** menu](#managing-columns) and the click on the **Add Custom Column** item. 
+
+    ![Created custom column](../images/livetraffic/columns/custom-column-created.png)
+
+- In the prompted custom column dialog, specify an HTTP Header (it's value will populate the column data) and assign a column name. The header's value will appear in the session grid if the header is present in the captured session. Otherwise, the column stays empty.
 
     ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create.png)
 
 - Open the **Headers** inspector in HTTP request/response, right-click on a selected header to load the context menu, and choose  **Add as a column**.
-    ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create-through-header.png)
 
+    ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create-through-header.png)
 
 After the successful creation, the new column is immediately available in the **Live Traffic** section.
 
-![Created custom column](../images/livetraffic/columns/custom-column-create-001.png)
+![Created custom column](../images/livetraffic/columns/custom-column-created-001.png)
 
-![Created custom column](../images/livetraffic/columns/custom-column-created.png)
 
 **Edit a custom column** through the [**Columns** menu](#managing-columns) and click the edit icon. **Remove a custom column** through the [**Columns** menu](#managing-columns) and click on the remove icon (a deletion confirmation displays).
 
