@@ -9,7 +9,7 @@ previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic
 
 # Modifying Traffic
 
-Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic is a crutial part of the Fiddler [Composer](#composing-requests) and [Rules](#using-rules) tabs.
+Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic is a crucial part of the Fiddler [Composer](#composing-requests) and [Rules](#using-rules) tabs.
 
 
 ## Composing Requests
@@ -24,7 +24,7 @@ To load and modify captured session through the **Composer**:
 
     ![Edit in Composer](../images/composer/edit-in-composer.png)
 
-1. The session opens in a new **Composer** window and then you can change the desired values. For example, change the data payload, modify the headers, test the authentication, and so on.
+1. The session opens in a new **Composer** window, and then you can change the desired values. For example, change the data payload, modify the headers, test the authentication, etc.
 
     ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)
 

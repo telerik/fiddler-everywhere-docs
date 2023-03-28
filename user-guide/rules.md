@@ -11,11 +11,11 @@ previous_url: /user-guide/live-traffic/autoresponder, /user-guide/live-traffic/r
 
 The **Rules** tab enables you to create rules (including **[custom ones]({%slug using-custom-responses%})**) that will automatically trigger in response to requests.
 
-The **Rules** functionality provides options for testing different scenarios while sparing your the efforts to change the client application or production server. YOu can use it to mock behavior, test new functionalities, reproduce previously captured bugs (from saved sessions, SAZ files, and other HTTP Session formats), and running website demos while you are offline.
+The **Rules** functionality provides options for testing different scenarios while sparing you with the efforts to change the client application or production server. YOu can use it to mock behavior, test new functionalities, reproduce previously captured bugs (from saved sessions, SAZ files, and other HTTP Session formats), and run website demos while you are offline.
 
-The collaboration functionalities allow you to import and export a single rule or group of rules and share them directly with other Fiddler Everywhere collaborators. Each rule has a different order priority and execution weight which can be easily controlled by promoting or demoting a rule.
+The collaboration functionalities allow you to import and export a single rule or group of rules and share them directly with other Fiddler Everywhere collaborators. Each rule has a different order priority and execution weight, easily controlled by promoting or demoting a rule.
 
-The **Rules** tab comes with improved the UI capabilities by providing more convinient options to create matching conditions and actions. Now you can quickly organize rules into different groups to ease their future usage and to share them easily with collaborators.
+The **Rules** tab has improved UI capabilities by providing more convenient options to create matching conditions and actions. Now you can quickly organize rules into different groups to ease their future usage and to share them easily with collaborators.
 
 ![Rules tab](../images/livetraffic/rb/rules-all.png)
 
@@ -41,7 +41,7 @@ When executing a rule for ongoing HTTP(S) traffic or running a rule on previousl
 
 **Saved Sessions** and **Rules** stick to the following basic guidelines:
 
-- The **Rules** main toggle is not available for saved sessions (from the **Sessions** list). The toggle will be hidden when a saved session is loaded.
+- The **Rules** main toggle is unavailable for saved sessions (from the **Sessions** list). The toggle will be hidden when a saved session is loaded.
 - **Execute** from the primary **Rules** toolbar will execute all currently selected rules. The result applies to all sessions that match the conditions of the rule. If multiple rules are selected, they will be executed in the order of appearance in the **Rules Queue**&mdash;this means that a rule can be overwritten by another rule that comes later in the queue. Some rules are also final, which means that no other rules in the queue will be executed after a final rule
 - The **Execute** button from a selected rule toolbar will only execute the currently selected rule.
 
@@ -60,7 +60,7 @@ The main toolbar of the **Rules** comes with the following functionalities:
 
 ## Rule Builder
 
-The **Rule Builder** interface enables you to create (through the **Add New Rule** button) and edit rules (through the **Edit** button of a selected rule). For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
+The **Rule Builder** interface enables you to create (through the **Add New Rule** button) and edit rules (through a selected rule's **Edit** button). For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
 
 ![Rule Builder Conditions](../images/livetraffic/rb/rules-re-conditions.png)
 
@@ -117,7 +117,7 @@ For more information, refer to the following list.
             <td>HTTP or HTTPS</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Differentiate the traffic based on the used protocol (HTTP vs HTTPS).</td>
+            <td>Differentiate the traffic based on the used protocol (HTTP vs. HTTPS).</td>
         </tr>
         <tr>
             <td><b>Host</b></td>
@@ -292,7 +292,7 @@ For more information, refer to the following list.
 
 ### Actions
 
-When Fiddler Everywhere identifies a request which matches the [**conditions**](#conditions) of the rule, it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions.
+When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions.
 
 Apart from returning files or predefined responses, a rule can perform the following specific actions:
 
@@ -465,7 +465,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Skips decryption for matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version and Remote IP</b> can be used. The rule works only for newly established connections.</td>
+            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version, and Remote IP</b> can be used. The rule works only for newly established connections.</td>
             <td>Final </td>
         </tr>
     </tbody>
@@ -473,7 +473,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
 
 ### Final and Non-Final Actions
 
-Rule actions can be divided into **final** and **non-final**depending on their behavior.
+Rule actions can be divided into **final** and **non-final** depending on their behavior.
 
 When you work with final and non-final actions, take into consideration the following insights:
 
@@ -481,13 +481,13 @@ When you work with final and non-final actions, take into consideration the foll
 
 * Final actions are valid only when the rule is matched during the HTTP request.
 
-* If a session is matched with conditions that depend on its response (for example, a response body contains "HTML"), then any final action in any rule that matches the session will be ignored. The reason for this behavior is that final actions replace the response, and, by design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
+* If a session is matched with conditions that depend on its response (for example, a response body contains "HTML"), then any final action in any rule that matches the session will be ignored. The reason for this behavior is that final actions replace the response. By design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
 
 * Non-final actions will allow other actions from the same rule or different rules with lower priority, which match the session, to execute.
 
 ## Rules Queue
 
-The **Rules Queue** is a visual tree that list all active rules & groups in priority queue. It is important to note that each active rule or group has higher execution priority then other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
+The **Rules Queue** is a visual tree that lists all active rules & groups in a priority queue. It is important to note that each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
 
 To use a rule (or a group of rules) from the **Rules Queue**, take into consideration the following tips:
 
@@ -497,7 +497,7 @@ To use a rule (or a group of rules) from the **Rules Queue**, take into consider
 
 - You can explicitly trigger a rule for already captured (including saved) traffic through the **Execute** button (executes the rule on current sessions).
 
-- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use **Demote** and **Promote** buttons to change a rule position (and priority) in the queue.
+- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's rule position (and priority).
 
 - Some rule actions might trigger [a final action](#final-and-non-final-actions), which stops the execution of all other actions and rules with lower priority.
 
@@ -507,7 +507,7 @@ By default, the **Rules Queue** will list all created and imported rules based o
 
 ### Explicit Rules Execution
 
-Using the **Execute** button from the main toolbar, explicitly executes all ative rules on captured sessions. The **Execute** functionality is available for both the **Live Traffic** and saved sessions.
+The **Execute** button from the main toolbar explicitly executes all active rules on captured sessions. The **Execute** functionality is available for both the **Live Traffic** and saved sessions.
 
 ### Rule Options
 
@@ -529,9 +529,9 @@ The rule options allow you to further interact with the rule:
 
 ### Group Options
 
-You can organise multiple rules in groups. Each group consist of the following:
+You can organize multiple rules in groups. Each group consists of the following:
 - Group name.
-- Indication that shows the number of active rules and total rules (contained within the group).
+- Indication that shows the number of active and total rules (contained within the group).
 - Toolbar with group options.
 - Queue with all contained rules or subgroups.
 
@@ -544,7 +544,7 @@ The group options allow you to further interact with the group's rules:
 - The **Add Group** button automatically creates a subgroup within the selected group.
 - The **Add Rule** button opens the **Rules Builder** and places the new rule within the selected group.
 - The **Duplicate** button creates a duplicate copy of the selected group.
-- The **Delete** button deletes the group and all contained rules from the **Rules Queue**.
+- The **Delete** button deletes the group, and all contained rules from the **Rules Queue**.
 
 ![Group options](../images/livetraffic/rb/rules-group-options.png)
 
