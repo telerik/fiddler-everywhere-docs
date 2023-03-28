@@ -1,6 +1,6 @@
 ---
 title: Using the Predefined Actions of the Rules Tab
-description: "Learn how to use the predefined actions of he Rules tab for mocking different HTTP responses when working with the Fiddler Everywhere web-debugging client."
+description: "Learn how to use the predefined actions of the Rules tab for mocking different HTTP responses when working with the Fiddler Everywhere web-debugging proxy."
 type: how-to
 slug: fiddler-ar-actions
 publish: true
@@ -29,6 +29,8 @@ The main idea behind the **Rules** tab is to provide a set of rules based on mat
 ### Using the Predefined Actions in Rule Builder
 
 The **Actions** drop-down menu provides several options named **XXX.dat** where **XXX** is a descriptive name of the response.
+
+![Example for predefined response 200 OK from Fiddler](../images/kb/dat-files/kb-rules-fiddlergif-200.png)
 
 The content of each predefined DAT file is as follows:
 

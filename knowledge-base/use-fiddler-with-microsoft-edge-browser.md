@@ -1,6 +1,6 @@
 ---
-title: Logging In with Google on Microsoft Edge
-description: "Learn how to fix issues with the Google authentication on the Microsoft Edge when working with the Fiddler Everywhere web-debugging client."
+title: Resolving HSTS while using Google Auth with Microsoft Edge
+description: "Learn how to fix HSTS issues with the Google authentication on the Microsoft Edge when working with the Fiddler Everywhere local proxy."
 type: how-to
 slug: fiddler-everywhere-microsoft-edge
 publish: true

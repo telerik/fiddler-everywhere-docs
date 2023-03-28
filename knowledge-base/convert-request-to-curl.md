@@ -24,7 +24,15 @@ Many developers, support engineers, and end-users are familiar with the [cURL](h
 
 ## Solution
 
-Fiddler Everywhere version 4.0.0 and above provides an automated export as Curl script through the [Live Traffic list context menu]({%slug web-sessions-list%}).
+Fiddler Everywhere version 4.0.0 and above provides an automated export as cURL script through the [Live Traffic list context menu]({%slug web-sessions-list%}#context-menu-options).
+
+To export a session as cURL:
+
+- Select the captured session.
+
+- Open the context menu and choose **Copy > Copy as cURL**
+
+![Copy as Curl](../images/kb/copy-as-curl.png)
 
 
 ## Solution (Obsolete)
