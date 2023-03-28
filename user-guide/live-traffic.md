@@ -616,13 +616,13 @@ Add sessions to compare groups through the **Add to compare groups**. This funct
 
 ### Adding New Rules
 
-You can use a captured session entry to mock some server behavior. For similar cases, you can use the session URL alongside the [**Rules** tab]({%slug rules-general%}). Creating rules allows you to test complex scenarios and various mock responses.
+You can use a captured session entry to quicly mock client or server behavior. For similar cases, you can use the session URL alongside the [**Rules** tab]({%slug rules-general%}). Creating rules allows you to test complex scenarios and various mock responses.
 
 To add a new rule:
 
 1. Select the desired session entry and right-click to open the context menu. Select **Add New Rule**.
 
-1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Return manually crafted response** action option.
+1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Manual Response** action option.
 
 ### Bypassing the Proxy
 
