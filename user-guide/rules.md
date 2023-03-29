@@ -500,11 +500,11 @@ To use a rule (or a group of rules) from the **Rules Queue**, take into consider
 
 - The **Execute** button is not affected by the active state of groups/rules. Actions from any selected rule or group of rules will be triggered when the **Execute** button is used.
 
-- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's rule position (and priority). Alternatively, you can drag'n'drop rules to change their position in the queue. 
+- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's rule position (and priority). Alternatively, you can drag and drop rules to change their position in the queue. 
 
-- The groups in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's group position (and priority). Alternatively, you can drag'n'drop groups to change their position in the queue.
+- The groups in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's group position (and priority). Alternatively, you can drag and drop groups to change their position in the queue.
 
-- You can use drag-drop rules in and out of groups and subgroups. Note that this might change the execution priority when multiple rules are executed simuntenisoly.
+- You can use drag and drop rules in and out of groups and subgroups. Note that this might change the execution priority when multiple rules are executed simultaneously.
 
 - Some rule actions might trigger [a final action](#final-and-non-final-actions), which stops the execution of all other actions and rules with lower priority.
 
