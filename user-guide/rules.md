@@ -23,7 +23,7 @@ The **Rules** tab contains the following sections:
 
 - **Rules Toolbar**&mdash;Provides options for rule creation, group creation, sharing, manual import or export, and manual execution.
 - **Rule Builder**&mdash;Creates new rules and edits existing ones.
-- **Rules Queue**&mdash;A queue of rules and groups executed in the order of appearance from top to bottom. Each rule/group in the queue has its toolbar with different functionalities.
+- **Rules Queue**&mdash;A queue of rules and groups applied in the order of appearance from top to bottom. Each rule/group in the queue has its toolbar with different functionalities.
 
 ## Built-In Logic
 
@@ -32,17 +32,18 @@ When executing a rule for ongoing HTTP(S) traffic or running a rule on previousl
 **Live Traffic** and **Rules** stick to the following basic guidelines:
 
 - The **Rules** main toggle is available only for the **Live Traffic** section.
-- If the **Rules** toggle is **ON**, and a selected rule toggle is **ON**, the rule executes for all inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
-- If the **Rules** toggle is **ON**, and a selected rule toggle is **OFF**, the rule won't execute for all of the inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
-- If the **Rules** toggle is **ON**, and a selected group toggle is **OFF**, the rules contained within the group won't execute. 
-- If the **Rules** toggle is **ON**, and a selected group toggle is **ON**, only the active rules within the group will execute. 
-- All HTTP/HTTPS requests that are not matching any of the active rules, will be executed as is without interference from the **Rules** tab. 
-- The application setting **Unmatched Requests Passthrough** was deprecated in version 3.4.0. [Learn how to create it manually through a custom rule...]({%slug rules-unmatched-requests-passthrough%})
+- If the **Rules** toggle is **ON**, and a selected rule toggle is **ON**, the rule is active for all inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
+- If the **Rules** toggle is **ON**, and a selected rule toggle is **OFF**, the rule is inactive for any of the inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
+- If the **Rules** toggle is **ON**, and a selected group toggle is **OFF**, the rules contained within the group are active. 
+- If the **Rules** toggle is **ON**, and a selected group toggle is **ON**, only the active rules within the group are active. 
+- The **Execute** button (a green play arrow) will explicitly execute all **selected** rules, no matter if they are active or inactive. The explicitly executed rules apply only to already captured traffic. The rules (that are trigged through **Execute**) won't be used for newly incoming traffic.
+- All HTTP/HTTPS requests that are not matching any of the active rules will be executed as is without interference from the **Rules** tab. 
+- The application setting **Unmatched Requests Passthrough** was deprecated in version 3.4.0. [Learn how to create it manually through a custom rule...]({%slug rules-unmatched-requests-passthrough%}).
 
 **Saved Sessions** and **Rules** stick to the following basic guidelines:
 
 - The **Rules** main toggle is unavailable for saved sessions (from the **Sessions** list). The toggle will be hidden when a saved session is loaded.
-- **Execute** from the primary **Rules** toolbar will execute all currently selected rules. The result applies to all sessions that match the conditions of the rule. If multiple rules are selected, they will be executed in the order of appearance in the **Rules Queue**&mdash;this means that a rule can be overwritten by another rule that comes later in the queue. Some rules are also final, which means that no other rules in the queue will be executed after a final rule
+- The **Execute** button from the primary **Rules** toolbar will execute all currently selected rules. The result applies to all sessions that match the conditions of the rule. If multiple rules are selected, they will be executed in the order of appearance in the **Rules Queue**&mdash;this means that a rule can be overwritten by another rule that comes later in the queue. Some rules are also final, which means that no other rules in the queue will be executed after a final rule
 - The **Execute** button from a selected rule toolbar will only execute the currently selected rule.
 
 ## Rules Toolbar
@@ -54,13 +55,13 @@ The main toolbar of the **Rules** comes with the following functionalities:
 - **Share**&mdash;Opens the **Share** windows where you can enter a collaborator email to share all created rules.
 - **Import**&mdash;Prompts a window for importing rules from a FARX file.
 - **Export**&mdash;Exports all selected rules in a FARX file.
-- **Execute**&mdash;Executes the selected rules for the captured traffic or the loaded, saved sessions.
+- **Execute**&mdash;Executes the selected rules for the captured traffic or the loaded, saved sessions. Not applicable for new incoming traffic.
 
 ![Rules tab toolbar](../images/livetraffic/rb/rules-toolbar.png)
 
 ## Rule Builder
 
-The **Rule Builder** interface enables you to create (through the **Add New Rule** button) and edit rules (through a selected rule's **Edit** button). For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and if the rule is executed.
+The **Rule Builder** interface enables you to create (through the **Add New Rule** button) and edit rules (through a selected rule's **Edit** button). For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and when the rule is active.
 
 ![Rule Builder Conditions](../images/livetraffic/rb/rules-re-conditions.png)
 
@@ -68,7 +69,7 @@ The **Rule Builder** interface enables you to create (through the **Add New Rule
 
 To add a new rule:
 
-1. Click the **Add New Rule** button from the main toolbar.
+1. Click the main toolbar's **Add New Rule** button.
 1. Add a new name for your rule in the **Rule Name** text field.
 1. Set the **When** rule based on one of the following statements:
     - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
@@ -497,7 +498,13 @@ To use a rule (or a group of rules) from the **Rules Queue**, take into consider
 
 - You can explicitly trigger a rule for already captured (including saved) traffic through the **Execute** button (executes the rule on current sessions).
 
-- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's rule position (and priority).
+- The **Execute** button is not affected by the active state of groups/rules. Actions from any selected rule or group of rules will be triggered when the **Execute** button is used.
+
+- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's rule position (and priority). Alternatively, you can drag'n'drop rules to change their position in the queue. 
+
+- The groups in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's group position (and priority). Alternatively, you can drag'n'drop groups to change their position in the queue.
+
+- You can use drag-drop rules in and out of groups and subgroups. Note that this might change the execution priority when multiple rules are executed simuntenisoly.
 
 - Some rule actions might trigger [a final action](#final-and-non-final-actions), which stops the execution of all other actions and rules with lower priority.
 
