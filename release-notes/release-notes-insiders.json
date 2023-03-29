@@ -1,5 +1,61 @@
 [
     {
+        "version": "4.2.0-insiders",
+        "title": "Fiddler Everywhere v4.2.0",
+        "date": "March 29, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add rules grouping in Rules tab"
+                    },
+                    {
+                        "title": "Add support for TLS 1.3"
+                    },
+                    {
+                        "title": "Capture gRPC traffic [in beta] - enable HTTP/2 support to capture gRPC"
+                    },
+                    {
+                        "title": "Add option to capture traffic through custom terminal - all cURL and Node.js requests executed in the started terminal will be automatically captured by Fiddler Everywhere"
+                    },
+                    {
+                        "title": "Add option to create custom session list columns from request or response headers"
+                    },
+                    {
+                        "title": "Add a new rule action - \"Do not decrypt\" - that helps you bypass requests for specific processes or requests to specific hosts or apps that use certificate pinning"
+                    },
+                    {
+                        "title": "Show certificate information for saved sessions - the saved sessions will show you the state of the certificate when the traffic was captured with Fiddler Everywhere"
+                    },
+                    {
+                        "title": "Improve handling of invalid server certificates - we show a custom Fiddler page when the connection is insecure, where the user has the option to ignore the error for this domain"
+                    },
+                    {
+                        "title": "Improve performance of HEX inspector"
+                    },
+                    {
+                        "title": "Update third-party dependencies"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Unable to load some pages when HTTP/2 is used"
+                    },
+                    {
+                        "title": "Memory leak when using the application for longer time"
+                    },
+                    {
+                        "title": "Truncate display of very large body contents in inspectors that can make the app unresponsive"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.1.2-insiders",
         "title": "Fiddler Everywhere v4.1.2",
         "date": "February 14, 2023",
