@@ -1,4 +1,19 @@
 [
+     {
+        "version": "4.2.0",
+        "items": [
+            {
+                "title": "Fiddler Everywhere 4.2 Is Here!",
+                "description": "Fiddler Everywhere 4.2 is here with Rules grouping, support for TLS 1.3, ability to capture gRPC traffic and many more improvements.",
+                "url": "https://www.telerik.com/blogs/rules-grouping-more-new-fiddler-everywhere-4-2"
+            },
+            {
+                "title": "How To Evaluate Then Improve a Website’s Network Performance",
+                "description": "Not sure where to start when it comes to improving your website’s performance? Learn tested techniques listed in this blog, complete with video.",
+                "url": "https://www.telerik.com/blogs/how-to-evaluate-improve-website-performance"
+            }
+        ]
+    },
     {
         "version": "4.1.0",
         "items": [
