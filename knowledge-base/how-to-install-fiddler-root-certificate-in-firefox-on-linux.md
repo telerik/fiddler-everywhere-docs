@@ -1,6 +1,6 @@
 ---
-title: Installing the Root Certificate on Linux in Firefox
-description: "Learn how to install the root certificate for Fiddler Everywhere on Linux in Firefox."
+title: Installing the Fiddler Root CA in Firefox
+description: "Learn how to manually install the root certificate for Fiddler Everywhere  in Firefox."
 type: how-to
 slug: how-to-install-fiddler-root-certificate-in-firefox-on-linux
 publish: true
@@ -14,13 +14,15 @@ res_type: kb
 |---|---|
 | Product   |
 | Product Version | 1.0.0 and above  |
-| OS | Linux |
+| OS | Linux, macOS, Windows |
 
 ## Description
 
-How can I install the root certificate for Fiddler Everywhere on Linux in Firefox?
+How can I manually install the Fiddler's root certificate authority in Firefox?
 
 ## Solution
+
+1. Export the Fiddler CA to your **Desktop** folder through the options in **Settings > HTTPS > Advanced**.
 
 1. Open Firefox.
 
@@ -28,7 +30,7 @@ How can I install the root certificate for Fiddler Everywhere on Linux in Firefo
 
 1. Click the **View Certificates** button.
 
-1. Click the **Import...** button and choose the `FiddlerRootCertificate.crt` file from your **Desktop**.
+1. Click the **Import...** button and choose the `FiddlerRootCertificate.crt` file from your **Desktop** folder.
 
 1. Select the **Trust this CA to identify websites.** checkbox and click **OK**.
 

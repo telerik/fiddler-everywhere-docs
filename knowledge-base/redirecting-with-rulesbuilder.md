@@ -1,6 +1,6 @@
 ---
 title: Redirecting Traffic between Servers through the Rules Tab
-description: "Learn how to create match rules and actions to redirect traffic while using regex variables in the Fiddler Everywhere web-debugging client."
+description: "Create match rules and actions to redirect traffic while using regex variables with the Fiddler Everywhere local proxy."
 type: how-to
 slug: rulesbuilder-redirect-traffic
 publish: true
@@ -22,7 +22,7 @@ How can I use the [**Rules**]({%slug rules-general%}) tab for redirecting traffi
 
 ## Solution
 
-To accomplish this scenario, use a basic redirect or a rule, which utilizes regex and regex variables.
+To accomplish this scenario, we can use a basic redirect or a rule, which utilizes regex and regex variables.
 
 ### Using a Basic Redirect
 
