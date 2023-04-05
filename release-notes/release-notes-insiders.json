@@ -1,5 +1,26 @@
 [
     {
+        "version": "4.2.1-insiders",
+        "title": "Fiddler Everywhere v4.2.1",
+        "date": "April 5, 2023",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Issue with TLS handshake on macOS with some older servers"
+                    },
+                    {
+                        "title": "Issue when entering the name for a custom session list column"
+                    },
+                    {
+                        "title": "Incorrect colors for some icons in the app top toolbar and custom filters menu"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.2.0-insiders",
         "title": "Fiddler Everywhere v4.2.0",
         "date": "March 29, 2023",
