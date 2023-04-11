@@ -1,5 +1,5 @@
 ---
-title: Fiddler Everywhere - Preconfigured Terminal Instance
+title: Fiddler Everywhere as a Sandboxed Proxy
 description: "Capture HTTPS traffic from the Fiddler's preconfigured terminal instance while using sandboxed proxy environment."
 type: how-to
 slug: fiddler-preconfigured-terminal
@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-# Fiddler Everywhere as a Sandboxed Proxy
 
 Fiddler Everywhere evolved from the concept of being just a web-debugging tool that acts as a system proxy. Nowadays, the term proxy tool is way too narrow to describe the many possibilities that Fiddler opens - a correct depiction is one of a Swiss-knife proxy tool for meddling with HTTP(S) traffic daily. The complexity of Fiddler's functionalities implies that there is a learning curve to using Fiddler to its full potential. However, the team behind Fiddler Everywhere works in the opposite direction. It aims to make the tool easier to use and more intuitive (apart from being a cross-platform tool, the UI is the other distinction with the old Fiddler Classic, which, let's face it, is hard to use with not so-modern user interface). 
 
@@ -40,15 +39,10 @@ The option opens the preferred terminal on your OS (you can set up the preferred
 
 Once the terminal instance starts, its environment variables are updated to use Fiddler Everywhere as an HTTP and HTTPS proxy. Node.js will use [global-agent](https://www.npmjs.com/package/global-agent), the **Fetch** API will be patched to use Fiddler's proxy, and cURL requests will be executed with the **-k** flag (which disables attempts to verify self-signed certificates against a certificate authority). Note that Fiddler Everywhere won't change any global variables, so any other terminal instance won't go through the proxy (unless explicitly set). The preconfigured terminal instance will have network connectivity as long as Fiddler Everywhere works.
 
-### Windows PowerShell Specifics
 
-By default, most terminals won't differentiate localhost traffic, so in most cases, you will capture localhost traffic out of the box.
+>important (**Windows Powershell** specifics) By default, most terminals won't differentiate localhost traffic, so in most cases, you will capture localhost traffic out of the box. However, this is not true for Windows PowerShell because it is built upon .NET. The .NET Framework is hardcoded **not** to send localhost requests through any proxies, and as a forward proxy, Fiddler will not receive such traffic. As **Windows PowerShell** uses the .NET Framework (not to be confused with **PowerShell**, which uses .NET Core), the localhost traffic is not automatically sent through the proxy. To workaround the issue, use [the Fiddler's aliases](https://docs.telerik.com/fiddler-everywhere/knowledge-base/capturing-localhost-traffic) or add a dot to the end of the localhost address (for example, `localhost.:8080`).
 
-However, this is not true for Windows PowerShell because it is built upon .NET. The .NET Framework is hardcoded **not** to send localhost requests through any proxies, and as a forward proxy, Fiddler will not receive such traffic. As **Windows PowerShell** uses the .NET Framework (not to be confused with **PowerShell**, which uses .NET Core), the localhost traffic is not automatically sent through the proxy. To workaround the issue, use [the Fiddler's aliases](https://docs.telerik.com/fiddler-everywhere/knowledge-base/capturing-localhost-traffic) or add a dot to the end of the localhost address (for example, `localhost.:8080`).
-
-### NET Specifics
-
-To capture traffic from cURL or Node.js libraries, you don't need to explicitly install and trust the Fiddler root CA (certificate authority) on the Fiddler host. However, this is a mandatory requirement for a .NET application that executes HTTPS requests (as a .NET application will utilize the system keychain). If you haven't already installed and trusted the Fiddler root CA learn how to do it [here](https://docs.telerik.com/fiddler-everywhere/installation-and-update/trust-certificate-configuration).
+>important (**.NET** specifics) To capture traffic from cURL or Node.js libraries, you don't need to explicitly install and trust the Fiddler root CA (certificate authority) on the Fiddler host. However, this is a mandatory requirement for a .NET application that executes HTTPS requests (as a .NET application will utilize the system keychain). If you haven't already installed and trusted the Fiddler root CA learn how to do it [here](https://docs.telerik.com/fiddler-everywhere/installation-and-update/trust-certificate-configuration).
 
 ## Quick Demos with Node.js, Fetch, and cURL
 
