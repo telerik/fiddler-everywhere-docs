@@ -58,7 +58,7 @@ The preconfigured browser capturing is a feature that allows you to capture traf
 
 The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
-[Learn more on how to capture traffic from a preconfigured browser here...]({%slug iddler-browser-preconfigured%})
+[Learn more on how to capture traffic from a preconfigured browser here...]({%slug fiddler-browser-preconfigured%})
 
 ## Preconfigured Terminal Capturing
 
@@ -73,11 +73,7 @@ Similarly to the preconfigured browser capturing option, Fiddler lets you use a 
 
 The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is 127.0.0.1:8866. Any application explicitly directed to go through the Fiddler Everywhere proxy address will have its HTTP/HTTPS/WebSocket traffic immediately captured, even if the [system capturing](#system-capturing) is turned off.
 
-Example for explicitly making a curl request that goes through the Fiddler Everywhere proxy:
-
-```curl
-curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
-```
+[Learn more on how to explicitly capture traffic from a specific applications here...]({%slug fiddler-explicit-capturing%})
 
 ## HTTP Version Specifics
 

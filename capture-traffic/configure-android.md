@@ -1,5 +1,5 @@
 ---
-title: Capturing and Inspecting Android Traffic
+title: Capturing Android Traffic
 description: "Capture and inspect traffic from Android devices while using the Fiddler Everywhere web-debugging HTTP-proxy tool."
 type: how-to
 slug: capture-mobile-android-traffic
@@ -152,5 +152,6 @@ Most production-ready applications explicitly restrict user-installed certificat
 
 ## Additional Resources
 
+* [Learn more about the different capturing modes in Fiddler Everywhere here...]({%slug capture-traffic-get-started%})
 * [Directing Localhost Requests from Mobile Application through the Fiddler Proxy]({%slug fiddler-localhost-android%})
 * [Debugging Mobile Applications with Fiddler Everywhere (Webinar)](https://www.telerik.com/webinars/fiddler/how-to-debug-ios-and-android-mobile-apps-with-fiddler)
