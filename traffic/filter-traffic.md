@@ -4,18 +4,10 @@ description: "Learn how to filter the captured traffic to minimize the output in
 type: how-to
 slug: how-to-filter-traffic
 publish: true
-res_type: kb
+position: 50
 ---
 
-## Environment
-
-|   |   |
-|---|---|
-| Product   |
-| Product Version | Fiddler Everywhere 1.0.0 and above  |
-
-
-## Description
+# Filtering Traffic
 
 Fiddler Everywhere sets itself as the operating system proxy once the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) activates. The application captures and outputs all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy. The [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) displays the traffic as session entries.
 

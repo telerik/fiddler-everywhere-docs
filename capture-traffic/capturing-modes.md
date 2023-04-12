@@ -1,13 +1,13 @@
 ---
-title: Capturing Traffic
-description: "Capture HTTP and HTTPS live traffic with the cross-platform, web-debugging, HTTP-proxy Telerik Fiddler Everywhere tool."
+title: Capturing Modes
+description: "Lear about the different capture modes to intercept HTTP(S) live traffic with the cross-platform Fiddler Everywhere proxy tool."
 slug: capture-traffic-get-started
 publish: true
 position: 10
-previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-web-traffic, /get-started/traffic/capture-traffic
+previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-web-traffic, /get-started/traffic/capture-traffic, /traffic/capture-traffic
 ---
 
-# Capturing Traffic
+# Capturing Modes
 
 Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system capturing options](#system-capturing), the [preconfigured browser capturing feature](#preconfigured-browser-capturing), and the [preconfigured terminal capturing](#preconfigured-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
 
@@ -58,20 +58,7 @@ The preconfigured browser capturing is a feature that allows you to capture traf
 
 The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
-To start the preconfigured browser capturing with Fiddler Everywhere:
-
-1. Install Google Chrome or other Chromium browsers.
-
-1. Start Fiddler Everywhere. No additional configuration is needed. To prevent polluting the **Live Traffic** list, you can disable the **Live Traffic** toggle.
-
-1. Click **Open Browser** from the **Live Traffic** toolbar.
-
-  ![the "Open Browser" option for opening the preconfigured browser for automatic capture](../images/get-started/get-started-open-browser.png)
-
-1. Enter the URL in the newly opened Chrome window. Fiddler Everywhere immediately starts capturing all the traffic generated from the preconfigured browser.
-
-To change the preconfigured browser, from the [**Browsers** sub-menu]({% slug browsers-settings-submenu %}), either assign a path to third-party Chromium browsers, like Edge, Brave and Vivaldi or change the default path to the Google Chrome browser.
-
+[Learn more on how to capture traffic from a preconfigured browser here...]({%slug iddler-browser-preconfigured%})
 
 ## Preconfigured Terminal Capturing
 
@@ -79,7 +66,7 @@ Similarly to the preconfigured browser capturing option, Fiddler lets you use a 
 
 ![Use the Terminal button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
-[Learn more on how to capture traffic from a preconfigured terminal here...]({%slug fiddler-terminal-explicit%}#capturing-traffic-from-preconfigured-terminal)
+[Learn more on how to capture traffic from a preconfigured terminal here...]({%slug fiddler-terminal-explicit%})
 
 
 ## Explicit Capturing

@@ -44,7 +44,7 @@ Fiddler Everywhere supports the widely used versions of the HTTP protocol, inclu
 
 [Learn more about enabling HTTP/2 capture with Fiddler Everywhere here...]({%slug connections-submenu%})
 
-[Learn more about the TLS support here...]({%slug fe-security%}#tls-version-specifics)
+[Learn more about the TLS support here...]({%slug fe-tls-version-specifics%})
 
 
 ### Request and Response Mocking

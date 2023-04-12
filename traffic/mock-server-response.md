@@ -3,8 +3,8 @@ title: Mocking Server Responses
 description: "Mock client and server behavior while using the Rules tab of the Fiddler Everywhere web-debugging proxy tool."
 slug: rulesbuilder-get-started
 publish: true
-position: 50
-previous_url: /get-started/mock-server-response
+position: 40
+previous_url: /get-started/mock-server-response, /mock-server-responses
 ---
 
 # Mocking Server Responses
@@ -31,7 +31,7 @@ To create and test a rule:
 
     - If you test with saved sessions&mdash;Select the rule and use the **Execute** button (green play arrow). The rule is immediately applied to the preloaded saved sessions.
 
-![Example of active Rules tab with several rules and groups](./images/livetraffic/rb/rules-all-enabled.png)
+![Example of active Rules tab with several rules and groups](../images/livetraffic/rb/rules-all-enabled.png)
 
 The **Rules** tab can be a powerful ally in testing various complex scenarios without meddling with the server. You can share, import, and export created rules with collaborators further to ease your support, development, and QA processes.
 

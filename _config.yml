@@ -11,7 +11,10 @@ navigation:
         position: 10
     installation-and-update:
         title: Installation & Update
-        position: 20    
+        position: 20
+    capture-traffic:
+        title: Capturing Traffic
+        position: 25    
     traffic:
         title: Traffic Inspection & Analysis
         position: 30
@@ -24,6 +27,9 @@ navigation:
     user-guide/settings:
         title: Settings
         position: 20
+    security:
+        title: Security
+        position: 80
     knowledge-base:
         title: Knowledge Base
         position: 100

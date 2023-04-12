@@ -34,9 +34,6 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
 
 2. Configure the client using the gRPC framework to go through the Fiddler proxy. The execution of this step differs depending on the client's application. Here are some setup guidelines for different clients:
 
-
-
-
     - **Terminals and shell applications**&mdash;A terminal and shells can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug fiddler-terminal-explicit%})
 
     - **Bash**&mdash;A bash application can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from Bash here...]({%slug fiddler-terminal-explicit%})

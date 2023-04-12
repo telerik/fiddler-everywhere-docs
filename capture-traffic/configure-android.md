@@ -4,8 +4,8 @@ description: "Capture and inspect traffic from Android devices while using the F
 type: how-to
 slug: capture-mobile-android-traffic
 publish: true
-position: 50
-previous_url: /knowledge-base/configure-android, /get-started/mobile-traffic/configure-android, /get-started/traffic/configure-android
+position: 30
+previous_url: /knowledge-base/configure-android, /get-started/mobile-traffic/configure-android, /get-started/traffic/configure-android, /traffic/configure-android
 ---
 
 # Capturing and Inspecting Android Traffic

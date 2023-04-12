@@ -53,7 +53,7 @@ The column indicates the version of the HTTP protocol used by the session.
 
 ### TLS Version
 
-The column indicates the version of the TLS protocol used by the session. Suppose the established connection between the client and Fiddler uses a different TLS version than the one between Fiddler and the server. In that case, you will see a double value depicting the TLS-specific version for each connection stage.[Learn more about the TLS version specific with Fiddler here...]({%slug fe-security%}#tls-version-specifics)
+The column indicates the version of the TLS protocol used by the session. Suppose the established connection between the client and Fiddler uses a different TLS version than the one between Fiddler and the server. In that case, you will see a double value depicting the TLS-specific version for each connection stage.[Learn more about the TLS version specific with Fiddler here...]({%slug fe-tls-version-specifics%})
 
 - **SSL 2.0**
 - **SSL 3.0**
