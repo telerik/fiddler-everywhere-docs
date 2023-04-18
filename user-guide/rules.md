@@ -478,13 +478,18 @@ Rule actions can be divided into **final** and **non-final** depending on their 
 
 When you work with final and non-final actions, take into consideration the following insights:
 
-* Final actions immediately prevent any other action from executing if this action comes lower on the list for the specific rule. Final actions also prevent any rule with lower priority, which matches the request, from executing any actions.
+* Actions execute only for matched sessions (based on the match conditions).
 
-* Final actions are valid only when the rule is matched during the HTTP request.
+* Actions are executed in the order of their apperiance in the created rule.
+
+* Rules are executed in the order of their appriance in the **Rules** list. 
+
+* Final actions effectively block all other final actions from any other active rule. 
 
 * If a session is matched with conditions that depend on its response (for example, a response body contains "HTML"), then any final action in any rule that matches the session will be ignored. The reason for this behavior is that final actions replace the response. By design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
 
-* Non-final actions will allow other actions from the same rule or different rules with lower priority, which match the session, to execute.
+* Non-final actions always execute.
+
 
 ## Rules Queue
 
