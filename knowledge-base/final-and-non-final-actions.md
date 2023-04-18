@@ -75,3 +75,4 @@ In the above scenario, the order of execution will be as follows:
 
 - [Modifying Server Responses]({% slug rulesbuilder-get-started %})
 - [Using the Rules Tab]({%slug rules-general%})
+- [Predefined Actions]({%slug fiddler-ar-actions%})

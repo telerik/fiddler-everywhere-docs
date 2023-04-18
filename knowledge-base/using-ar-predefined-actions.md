@@ -24,7 +24,7 @@ The [**Rules** tab]({%slug rules-general%}) is a powerful debugging functionalit
 
 The main idea behind the **Rules** tab is to provide a set of rules based on match rules and actions, which quickly mock a server response and behavior without the need to modify the server. Within seconds, you can execute many complex and different rules, and test your site against multiple scenarios.
 
->important All response modification actions are final. Final actions will immediately stop any other consecutive actions and rules from execution.
+>important All response modification actions are final. Final actions will immediately stop any other consecutive final actions from execution.
 
 ### Using the Predefined Actions in Rule Builder
 
