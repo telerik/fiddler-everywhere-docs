@@ -27,26 +27,20 @@ The [**Rules** tab]({%slug rules-general%}) provides means to mock client and se
 
 It is important to note that [some actions are **final**, while others are **non-final**]({%slug rules-general%}#final-and-non-final-actions). A **final** action executes only once and will effectively prevent any other consecutive **final** actions from being executed. When an active rule or set of active rules contains several final actions, only the top-most (in order of appearance) final action runs, while all other demoted final actions are ignored.
 
-The final actions in Fiddler Everywhere are **Manual Presponse**, **Predefined Response**, **Response File**, **Magic String**, **Graceful Close**, **Non-Graceful Close,**Do Not Show**, and **Do Not Decrypt**.
+The final actions in Fiddler Everywhere are **Manual Presponse**, **Predefined Response**, **Response File**, **Magic String**, **Graceful Close**, **Non-Graceful Close**, **Do Not Show**, and **Do Not Decrypt**.
 
 The following examples demonstrate what will happen when you combine final and non-final actions in one or multiple rules.
 
-### Non-Final Actions Only
+- **Non-Final Actions Only**&mdash;When only non-final actions are executed, all matching rules have their actions performed and applied.
 
-When only non-final actions are executed, all matching rules have their actions performed and applied.
+- **Final Actions Only**&mdash;When one or more rules include multiple final actions, the execution of other final actions is ignored after the most promoted rule that contains a final action takes place. No other demoted actions will be executed after that. 
 
-### Final Actions Only
-
-When one or more rules include multiple final actions, the execution of other final actions is ignored after the most promoted rule that contains a final action takes place. No other demoted actions will be executed after that. 
-
-### Mix of Final and Non-Final Actions
-
-When one or more rules include both final and non-final actions, the execution of the final actions immediately stops after the most promoted final action takes place. The non-final actions from all rules will be executed in their order of appearance.
+- **Mix of Final and Non-Final Actions**&mdash;When one or more rules include both final and non-final actions, the execution of the final actions immediately stops after the most promoted final action takes place. The non-final actions from all rules will be executed in their order of appearance.
 
 
 ## Actions Priority
 
-It is important to note that each action has its priority in the rule, and each rule has its priority in the **Rules** queue. The **actions** are executed by order of appearance in the rule where the top actions are executed first. The **rules** are triggered in the order of appearance in the **Rules** queue. Each rule can be demoted or promoted through the user interface. 
+It is important to note that each action has its priority in the rule, and each rule has its priority in the [**Rules Queue**]({%slug rules-general%}#rules-queue). The **actions** are executed by order of appearance in the rule where the top actions are executed first. The **rules** are triggered in the order of appearance in the [**Rules Queue**]({%slug rules-general%}#rules-queue). Each rule can be demoted or promoted through the user interface. 
 
 For a better illustration of this scenario, refer to the following cases:
 
@@ -54,11 +48,11 @@ For a better illustration of this scenario, refer to the following cases:
 
     ![a rule with a final and non-final actions](../images/kb/final-actions/final-non-final.png)
 
-- You have another rule called _Mixed Final and Non-Final acti0ons_ that contains another final action (**Predefined Response**) and non-final actions (**Update Reques Headers**, and **Update Response Headers**).
+- You have another rule called _Mixed Final and Non-Final actions_ that contains another final action (**Predefined Response**) and non-final actions (**Update Reques Headers**, and **Update Response Headers**).
 
     ![second rule with a final and non-final actions](../images/kb/final-actions/final-non-final-demoted.png)   
 
-- The first rule (_Final (Manual Response)_) has higher priority than the second rule. Note that only these two rules are active (the other ones are inactive, meaning their priority in the queue does not matter).
+- The first rule (the one called _Final (Manual Response)_) has higher priority than the second rule. Note that only these two rules are active. Becasue the other rules are inactive, their priority in the queue does not matter.
 
     ![rules order in the Rules list](../images/kb/final-actions/rules-priority.png)
 
