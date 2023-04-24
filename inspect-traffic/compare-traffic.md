@@ -4,6 +4,7 @@ description: "Compare two or more captured sessions when working with the Fiddle
 slug: fe-compare-sessions
 publish: true
 position: 20
+previous_url: /traffic/compare-traffic
 ---
 
 # Comparing Traffic

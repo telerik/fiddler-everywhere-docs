@@ -6,20 +6,20 @@ exclude: [README.md, Gemfile, Gemfile.lock]
 exclude_navigation: ["knowledge-base/*"]
 ## List your directory names and order here, like this:
 navigation:
-    get-started:
-        title: Get Started
-        position: 10
-    installation-and-update:
-        title: Installation & Update
+    installation-and-setup:
+        title: Installation & Setup
         position: 20
     capture-traffic:
-        title: Capturing Traffic
+        title: Capture Traffic
         position: 25    
+    inspect-traffic:
+        title: Inspect Traffic
+        position: 30    
     traffic:
-        title: Traffic Inspection & Analysis
-        position: 30
+        title: Modify & Filter Traffic
+        position: 40
     api:
-        title: API Composing
+        title: Compose API Requests
         position: 60
     user-guide:
         title: User Interface

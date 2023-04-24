@@ -1,13 +1,14 @@
 ---
-title: First Steps on Windows
-description: "Install and configure Fiddler Everywhere on Windows and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
-slug: first_steps_windows
-position: 1
+title: First Steps on macOS
+description: "Install and configure Fiddler Everywhere on macOS and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
+slug: first_steps_macos
+position: 2
+previous_url: /get-started/quickstart-macos
 ---
 
-# First Steps with Fiddler Everywhere on Windows
+# First Steps with Fiddler Everywhere on macOS
 
-This tutorial describes how to install and start using Fiddler Everywhere on Windows.
+This tutorial describes how to install and start using Fiddler Everywhere on macOS.
 
 * First, you will go through the installation and configuration steps.
 * Next, you'll create a Fiddler account so that you can move on to effectively using the web-debugging tool.
@@ -16,11 +17,10 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 
 ## Prerequisites
 
-- Install  Windows 8 x64, Windows 10 x64. or Windows 11 x64.
-- Install [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/install/windows#additional-deps).
-- Make sure you have 400MB+ free disk space.
+- Install macOS version 11 or above.
+- Provide 400MB of free disk space.
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
-- Provide an active Internet connection with access to the following URLs:
+- Provide an active internet connection with access to the following URLs:
 ```curl
   https://*.telerik.com/
   https://*.getfiddler.com/
@@ -34,9 +34,9 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 
 1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
 
-1. Select **Download for Windows** to download the installer.
+1. Select **Download for OS X** to download the installer.
 
-1. Run the **Fiddler Everywhere** exe file to go through the installation process.
+1. Run the **Fiddler Everywhere** `dmg` file to start the installation process.
 
 
 ## Step 2: Create Your Fiddler Account
@@ -58,7 +58,6 @@ In this step you'll register by creating your unified Telerik account and become
 
 Now let's add more elegance to Fiddler Everywhere and change its default Light theme with the Dark one&mdash;just go to the **Themes** menu, select the Dark theme, and click **Save**. That's it!
 
-
 ## Step 4: Capture Secure Traffic
 
 Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports a system proxy.
@@ -73,7 +72,9 @@ However, by default, you can only track non-secure HTTP system traffic with Fidd
 
 1. Click the **Trust and Enable HTTPS** button.
 
-1. Confirm the certificate installation in the OS popup.
+1. In the window that appears, enter your machine administrative credentials and confirm the certificate installation.
+
+    ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-https-mac-keychain.png)
 
 1. Back on the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
 
@@ -91,7 +92,7 @@ Let's now continue with capturing and inspecting some HTTPS traffic:
 
 Now you'll extract a captured session:
 
-1. Go to the **Live Traffic** tab and select a request/response entry from the **sessions list**.
+1. Go to the **Live Traffic** tab and select a request/response entry from under the **sessions list**.
 
 1. Double-click to open the **Inspectors** tab and inspect the detailed session request/response data.
 
@@ -101,7 +102,7 @@ Let's modify that session!
 
 1. Right-click the session of your request to open the context menu of the entry. From there, select **Edit in Composer**.
 
-1. When the session opens in a new **Composer** window, modify its headers. For example, add a new HTTP header with the `isTest` key and the `true` value.
+1. When the session opens in a new **Composer** window, modify its headers. For example, add new HTTP header with the `isTest` key and the `true` value.
 
 1. Click the **tick** to add the new HTTP header.
 

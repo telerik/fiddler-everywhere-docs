@@ -4,6 +4,7 @@ description: "Learn more about how to install Fiddler Everywhere, check out the 
 previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration, get-started/installation-procedure, /installation-procedure
 slug: installation
 position: 10
+previous_url: /installation-and-update/installation-procedure
 ---
 
 # Login and Update
