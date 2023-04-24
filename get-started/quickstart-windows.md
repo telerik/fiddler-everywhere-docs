@@ -17,7 +17,6 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 ## Prerequisites
 
 - Install  Windows 8 x64, Windows 10 x64. or Windows 11 x64.
-- Install [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/install/windows#additional-deps).
 - Make sure you have 400MB+ free disk space.
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
