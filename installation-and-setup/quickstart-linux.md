@@ -83,11 +83,11 @@ In this step you'll register by creating your unified Telerik account and become
 Now let's add more elegance to Fiddler Everywhere and change its default Light theme with the Dark one&mdash;just go to the **Themes** menu, select the Dark theme, and click **Save**. That's it!
 
 
-## Step 4: Capture Secure Traffic
+## Step 4: Install Fiddler Certificate Authority
 
 Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports a system proxy.
 
-However, you can only track non-secure HTTP system traffic with Fiddler Everywhere by default. Therefore, to capture HTTPS system traffic, you'll have to install and trust the Fiddler root certificate. As the Linux distributions use different security features and approaches for trusting a root certificate, Fiddler Everywhere enables you to export the certificate and manually import it into your Linux OS.
+However, you can only track non-secure HTTP system traffic with Fiddler Everywhere by default. Therefore, to capture HTTPS system traffic, you'll have to install and trust the Fiddler root CA (certificate authority). As the Linux distributions use different security features and approaches for trusting a root certificate, Fiddler Everywhere enables you to export the certificate and manually import it into your Linux OS.
 
 >important The approach for trusting the Fiddler root certificate in the tutorial below assumes that your Linux distribution uses the `dkpg-reconfigure` command. If this is not the case, refer to the article on [configuring the Fiddler certificate on Fedora, CentOS, and RedHat]({%slug fiddler-fedora-centos%}).  
 

@@ -39,7 +39,6 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 
 1. Run the **Fiddler Everywhere** exe file to go through the installation process.
 
-
 ## Step 2: Create Your Fiddler Account
 
 In this step you'll register by creating your unified Telerik account and become a trial user.   
@@ -60,11 +59,11 @@ In this step you'll register by creating your unified Telerik account and become
 Now let's add more elegance to Fiddler Everywhere and change its default Light theme with the Dark one&mdash;just go to the **Themes** menu, select the Dark theme, and click **Save**. That's it!
 
 
-## Step 4: Capture Secure Traffic
+## Step 4: Install Fiddler Certificate Authority
 
 Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports a system proxy.
 
-However, by default, you can only track non-secure HTTP system traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
+However, by default, you can only track non-secure HTTP system traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root CA (certificate authority).
 
 * [Install and trust the Fiddler Everywhere CA on Windows through the instructions here...]({%slug trust-certificate%}#install--trust-the-root-certificate-authority-settings)
 

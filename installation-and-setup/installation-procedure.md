@@ -13,19 +13,17 @@ This article provides additional information related to the installation of Fidd
 
 
 
-
-
 ## Installing Fiddler Everywhere
 
 As Fiddler Everywhere is a cross-platform web-debugging proxy available for Windows, macOS, and Linux, you need to follow the respective approach for installing the tool:
 
 The installation options of Fiddler Everywhere for each platform are part of the getting started step-by-step tutorials:
 
-* [Installing Fiddler Everywhere on Windows]({% slug first_steps_windows %}#installing-fiddler-everywhere-on-your-machine)
+* [Installing Fiddler Everywhere on Windows]({% slug first_steps_windows %}#step-1-install-fiddler-everywhere-on-your-machine)
 
-* [Installing Fiddler Everywhere on macOS]({% slug first_steps_macos %}#installing-fiddler-everywhere-on-your-machine)
+* [Installing Fiddler Everywhere on macOS]({% slug first_steps_macos %}#step-1-installing-fiddler-everywhere-on-your-machine)
 
-* [Installing Fiddler Everywhere on Linux]({% slug first_steps_linux %}#installing-fiddler-everywhere-on-your-machine)
+* [Installing Fiddler Everywhere on Linux]({% slug first_steps_linux %}#step-1-installing-fiddler-everywhere-on-your-machine)
 
 
 ## Logging In with Your Account
