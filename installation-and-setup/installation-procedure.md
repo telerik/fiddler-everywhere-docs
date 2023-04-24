@@ -1,5 +1,5 @@
 ---
-title: Login & Update
+title: Installation, Login & Update
 description: "Learn more about how to install Fiddler Everywhere, check out the available options for logging into the tool and updating it."
 previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration, get-started/installation-procedure, /installation-procedure
 slug: installation
@@ -7,20 +7,12 @@ position: 10
 previous_url: /installation-and-update/installation-procedure
 ---
 
-# Login and Update
+# Installation, Login & Update
 
 This article provides additional information related to the installation of Fiddler Everywhere and lists the available options for logging into the tool and updating it.
 
 
-## Getting Started Guides
 
-To get up and running with Fiddler Everywhere, refer to the step-by-step tutorials:
-
-* [First Steps with Fiddler Everywhere on Windows]({% slug first_steps_windows %})
-
-* [First Steps with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
-
-* [First Steps with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
 
 
 ## Installing Fiddler Everywhere
@@ -81,3 +73,11 @@ To update Fiddler Everywhere to its latest version:
 1. From the main menu, choose **Help** > **Check for Update**. If a later version is available, a notification will ask you to confirm that you want to download and install it.
 
 1. Fiddler Everywhere will restart and automatically update to the latest version.
+
+## Next Steps
+
+* [First Steps with Fiddler Everywhere on Windows]({% slug first_steps_windows %})
+* [First Steps with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
+* [First Steps with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
+* [Learn about Fiddler's capturing modes]({%slug capture-traffic-get-started%})
+* [Learn about how to inspect captured HTTPS traffic]({%slug inspecting-traffic-get-started%})

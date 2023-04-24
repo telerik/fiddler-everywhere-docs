@@ -8,10 +8,13 @@ exclude_navigation: ["knowledge-base/*"]
 navigation:
     installation-and-setup:
         title: Installation & Setup
-        position: 20
+        position: 10
     capture-traffic:
         title: Capture Traffic
-        position: 25    
+        position: 20
+    capture-traffic/remote-devices:
+        title: Settings
+        position: 45    
     inspect-traffic:
         title: Inspect Traffic
         position: 30    
@@ -20,6 +23,9 @@ navigation:
         position: 40
     api:
         title: Compose API Requests
+        position: 50
+    collaboration:
+        title: Collaboration
         position: 60
     user-guide:
         title: User Interface

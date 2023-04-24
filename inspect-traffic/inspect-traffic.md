@@ -11,11 +11,20 @@ previous_url: /get-started/inspect-traffic, /get-started/traffic/inspect-traffic
 
 When the traffic is already captured, you can start analyzing the data.
 
-To extract information about the captured sessions, go to the [**Live Traffic**]({%slug web-sessions-list%}) tab, where each request/response entry (session) is listed in a row with multiple columns fields in the **Sessions** list. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, and the HTTP method (GET or POST), and more. The output traffic can be [filtered]({%slug how-to-filter-traffic%}), [exported]({%slug web-sessions-list%}#exporting), [commented on]({%slug web-sessions-list%}#commenting), and [shared]({%slug collaboration-get-started%}) for further and detailed inspection.
+To extract information about the captured sessions, go to the [**Live Traffic**]({%slug web-sessions-list%}) tab, where each request/response entry (session) is listed in a row with multiple columns fields in the **Sessions** list. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, and the HTTP method (GET or POST), and more. The output traffic can be [filtered]({%slug how-to-filter-traffic%}), [compared]({%slug fe-compare-sessions%}), [modified]({%slug modify-traffic-get-started%}), [exported]({%slug web-sessions-list%}#exporting), [commented on]({%slug web-sessions-list%}#commenting), and [shared]({%slug collaboration-get-started%}) for further analysis and detailed inspection.
 
-To open the structured information about the session timings, sizes, requests, and response details in the [**Overview** tab]({%slug overview-tab%}), single-click a session or select multiple sessions.
+The main instruments for immediate analysis of the captured HTTP(S) traffic are the [**Overview**]({%slug overview-tab%}) and the [**Inspectors**]({%slug inspector-types%}) tabs.
+
+## Overview Statistical Data
+
+Use the [**Overview** tab]({%slug overview-tab%}) to load structured information about the session timings, sizes, requests, and response details for single or multiple HTTP(S) sessions.
+
+- Single-click a session or select multiple sessions and select the [**Overview**]({%slug overview-tab%}) tab.
 
 ![Live Traffic and session overview](../images/livetraffic/websessions/websessions-list-all-overview.png)
+
+
+## Inspect HTTPS Requests and Responses
 
 To load [the request and response inspectors]({%slug inspector-types%}), double-click a session. The [**Inspectors** tab]({%slug inspector-types%}) is a powerful tool that allows you to deep-dive in each session so you and your teammates can debug it or find performance bottlenecks.
 

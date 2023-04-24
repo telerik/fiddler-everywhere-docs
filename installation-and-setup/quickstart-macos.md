@@ -2,7 +2,7 @@
 title: First Steps on macOS
 description: "Install and configure Fiddler Everywhere on macOS and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
 slug: first_steps_macos
-position: 2
+position: 30
 previous_url: /get-started/quickstart-macos
 ---
 
@@ -84,35 +84,15 @@ That's it! Fiddler Everywhere will start immediately to capture all the traffic 
 
 ## Step 5: Fiddle with the Traffic
 
-Let's now continue with capturing and inspecting some HTTPS traffic:
+That was it! Now you are ready to dive more deeply into Fiddler Everywhere and take full advantage of its slick functionalities! Now that Fiddler Everywhere is ready you can proceed with capturing, inspecting, modifying and composing HTTP(S) traffic:
 
-1. Inspect each session's request and response data through the **Inspectors** tab.
-
-1. Extract more details and statistical data by using the **Overview** tab.
-
-Now you'll extract a captured session:
-
-1. Go to the **Live Traffic** tab and select a request/response entry from under the **sessions list**.
-
-1. Double-click to open the **Inspectors** tab and inspect the detailed session request/response data.
-
-1. Switch to the **Overview** tab to observe technical and statistical data.
-
-Let's modify that session!
-
-1. Right-click the session of your request to open the context menu of the entry. From there, select **Edit in Composer**.
-
-1. When the session opens in a new **Composer** window, modify its headers. For example, add new HTTP header with the `isTest` key and the `true` value.
-
-1. Click the **tick** to add the new HTTP header.
-
-1. Click the **Execute** button to replay the modified request.
-
-That was it! Now you are ready to dive more deeply into Fiddler Everywhere and take full advantage of its slick functionalities!
+* [**Capture** HTTP(S) traffic through the capturing mode that suits you best]({%slug capture-traffic-get-started%})
+* [**Extract** various information from a captured session]({%slug inspecting-traffic-get-started%})
+* [**Modify** traffic and accomplish client and server mocking on the fly]({%slug rulesbuilder-get-started%})
+* [**Compose** custom API requests]({%slug composer-get-started%})
 
 ## Next Steps
 
-* [Learn more about the capturing options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
 * [Sharing captured sessions with collaborators]({% slug collaboration-get-started %})
 * [Creating API requests]({% slug composer-get-started %})
 * [Grouping the API requests in collections]({% slug composer-collections-get-started %})
