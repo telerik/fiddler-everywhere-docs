@@ -10,16 +10,6 @@ previous_url: /installation-and-update/trust-certificate-configuration
 
 This article provides additional information about the options for installing the Fiddler Everywhere root trust certificate in your operating system. The proper certificate enablement is a crucial step when using Fiddler to [capture secure system traffic]({%slug capture-traffic-get-started%}#system-capturing). Note that the certificate installation is not mandatory if you choose the [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) option.
 
-
-## Install & Trust the Root Certificate (Quickstart)
-
-The quickstart certificate installation options of Fiddler Everywhere for each platform are part of the getting started step-by-step tutorials:
-
-* [Installing the Fiddler Everywhere root certificate on Windows]({% slug first_steps_windows %}#capturing-secure-traffic)
-* [Installing the Fiddler Everywhere root certificate on macOS]({% slug first_steps_macos %}#capturing-secure-traffic)
-* [Installing the Fiddler Everywhere root certificate on Linux]({% slug first_steps_linux %}#capturing-secure-traffic)
-
-
 ## Install & Trust the Root Certificate (Settings)
 
 Fiddler Everywhere provides the option to manually go through the certificate installation and enable the HTTPS system traffic capture.

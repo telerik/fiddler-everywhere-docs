@@ -8,7 +8,7 @@ previous_url: /knowledge-base/how-to-capture-traffic-from-another-pc
 ---
 
 
-# Capturing Traffic from Remote Devices
+# Capturing Traffic from Remote Windows Devices
 
 The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any device (like a computer, smartphone, smart tv, etc.) on the same network as the Fiddler Everywhere host. Before configuring the proxy on the client machine and the host, you must consider the following prerequisites:
 
@@ -27,7 +27,7 @@ The requirement for using the same network is actually not a must. However, most
 
 1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**.
 
-1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the host IP address. Alternatively, you can obtain the host IP address while using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
+1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the host IP address. Alternatively, you can obtain the host IP address while using a terminal command like **ipconfig**.
 
     ![Host local IP address](../images/kb/host-ip.png)
 
@@ -35,11 +35,9 @@ The requirement for using the same network is actually not a must. However, most
 
 ## Configuring Fiddler Everywhere (Target)
 
-1. On the target machine, go to the operating system proxy settings.
+1. Go to the Windows OS proxy settings on the target machine. On Windows 11, these are located under **Settings > Network & Internet > Proxy** (or open the start button, type **Proxy Settings**, and press **Enter**.)
 
-    >tip The proxy settings location of the target machine will differ depending on the used OS (it could be macOS, Windows, Ubuntu, [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), etc.).
-
-1. Open the manual proxy settings:
+1. Open the **Manual proxy setup** window:
 
     - Enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.148.39** (demo IP only).
 

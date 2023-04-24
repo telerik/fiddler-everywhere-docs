@@ -87,41 +87,11 @@ Now let's add more elegance to Fiddler Everywhere and change its default Light t
 
 Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports a system proxy.
 
-However, you can only track non-secure HTTP system traffic with Fiddler Everywhere by default. Therefore, to capture HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
+However, you can only track non-secure HTTP system traffic with Fiddler Everywhere by default. Therefore, to capture HTTPS system traffic, you'll have to install and trust the Fiddler root certificate. As the Linux distributions use different security features and approaches for trusting a root certificate, Fiddler Everywhere enables you to export the certificate and manually import it into your Linux OS.
 
-As the Linux distributions use different security features and approaches for trusting a root certificate, Fiddler Everywhere enables you to export the certificate and manually import it into your Linux OS.
+>important The approach for trusting the Fiddler root certificate in the tutorial below assumes that your Linux distribution uses the `dkpg-reconfigure` command. If this is not the case, refer to the article on [configuring the Fiddler certificate on Fedora, CentOS, and RedHat]({%slug fiddler-fedora-centos%}).  
 
->important The approach for trusting the Fiddler root certificate in this tutorial assumes that your Linux distribution uses the `dkpg-reconfigure` command. If this is not the case, refer to the article on [configuring the Fiddler certificate on Fedora, CentOS, and RedHat]({%slug fiddler-fedora-centos%}).  
-
-1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and export the certificate through the **Export root certificate(DER/Binary format)** button. The certificate is exported to **~/Desktop** as file with name **FiddlerRootCertificate.crt**.
-
-1. To import and trust the exported certificate, perform the following steps.
-    >important (For localized Linux distributions only) Some Linux distributions, such as Ubuntu, use localized paths&mdash;for example, the name of the **Desktop** folder is translated into the locale language. As this may cause an error, create a folder named **Desktop** in your root `mkdir ~/Desktop` directory. Then, export the certificate to the newly-created directory. Once the certificate is installed, you can safely remove that directory.
-
-    1. Create a directory and copy the exported certificate by running the following commands.
-      ```shell
-      $ sudo mkdir /usr/share/ca-certificates/extra
-      $ sudo cp ~/Desktop/FiddlerRootCertificate.crt /usr/share/ca-certificates/extra
-
-      // Starts the tool and upgrades the certificates.
-      $ sudo dpkg-reconfigure ca-certificates
-      ```
-
-    1. From the prompt, select **Yes** to install new certificates.
-
-      ![Add new certificate](../images/configuration/cert_ubunto_002.png)
-
-    1. Choose the `FiddlerRootCertificate.crt` file and click **OK**.
-
-      ![Add Fiddler certificate](../images/configuration/cert_ubunto_003.png)
-
-    1. The certificates are now updated.
-
-      ![Add Fiddler certificate](../images/configuration/cert_ubunto_004.png)
-
-1. Enable the capturing of the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
-
-1. Back on the foremost Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
+* [Install and trust the Fiddler Everywhere CA on Linux through the instructions here...]({%slug trust-certificate%}#install--trust-the-root-certificate-settings)
 
 That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
 
@@ -129,7 +99,7 @@ That's it! Fiddler Everywhere will start immediately to capture all the traffic 
 
 ## Step 5: Fiddle with the Traffic
 
-That was it! Now you are ready to dive more deeply into Fiddler Everywhere and take full advantage of its slick functionalities! Now that Fiddler Everywhere is ready you can proceed with capturing, inspecting, modifying and composing HTTP(S) traffic:
+That was it! Now you are ready to dive more deeply into Fiddler Everywhere and take full advantage of its slick functionalities! Now that Fiddler Everywhere is ready, you can proceed with capturing, inspecting, modifying, and composing HTTP(S) traffic:
 
 * [**Capture** HTTP(S) traffic through the capturing mode that suits you best]({%slug capture-traffic-get-started%})
 * [**Extract** various information from a captured session]({%slug inspecting-traffic-get-started%})
