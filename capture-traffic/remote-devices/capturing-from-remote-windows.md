@@ -2,7 +2,7 @@
 title: Capturing Traffic from Remote Devices
 description: "Capture HTTP(S) traffic from other computers, smartphones, tablets, and smart devices on your network."
 type: how-to
-slug: fiddler-capture-other-computers
+slug: fiddler-capture-windows-computers
 publish: true
 previous_url: /knowledge-base/how-to-capture-traffic-from-another-pc
 ---
