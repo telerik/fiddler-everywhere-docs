@@ -1,6 +1,6 @@
 ---
 title: Redirecting Traffic between Servers through the Rules Tab
-description: "Create match rules and actions to redirect traffic while using regex variables with the Fiddler Everywhere local proxy."
+description: "Create match rules and actions to redirect traffic while using regex variables with the Fiddler Everywhere forward proxy."
 type: how-to
 slug: rulesbuilder-redirect-traffic
 publish: true

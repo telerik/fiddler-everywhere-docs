@@ -91,7 +91,7 @@ However, you can only track non-secure HTTP system traffic with Fiddler Everywhe
 
 >important The approach for trusting the Fiddler root certificate in the tutorial below assumes that your Linux distribution uses the `dkpg-reconfigure` command. If this is not the case, refer to the article on [configuring the Fiddler certificate on Fedora, CentOS, and RedHat]({%slug fiddler-fedora-centos%}).  
 
-* [Install and trust the Fiddler Everywhere CA on Linux through the instructions here...]({%slug trust-certificate%}#install--trust-the-root-certificate-settings)
+* [Install and trust the Fiddler Everywhere CA on Linux through the instructions here...]({%slug trust-certificate%}#install--trust-the-root-certificate-authority-settings)
 
 That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
 

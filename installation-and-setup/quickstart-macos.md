@@ -64,7 +64,7 @@ Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer 
 
 However, by default, you can only track non-secure HTTP system traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
 
-* [Install and trust the Fiddler Everywhere CA on macOS through the instructions here...]({%slug trust-certificate%}#install--trust-the-root-certificate-settings)
+* [Install and trust the Fiddler Everywhere CA on macOS through the instructions here...]({%slug trust-certificate%}#install--trust-the-root-certificate-authority-settings)
 
 That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
 

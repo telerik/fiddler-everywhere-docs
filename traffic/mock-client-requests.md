@@ -3,15 +3,13 @@ title: Mocking Server Responses
 description: "Mock client and server behavior while using the Rules tab of the Fiddler Everywhere web-debugging proxy tool."
 slug: rulesbuilder-get-started
 publish: true
-position: 20
-previous_url: /get-started/mock-server-response, /mock-server-responses
+position: 30
 ---
 
-# Mocking Server Responses
+# Mocking Client Requests
 
-One of the most powerful features in Fiddler Everywhere is the [**Rules** tab]({%slug rules-general%}) that enables you to mock client requests and server responses and simulate various real-life scenarios. The **Rules** tab consist of a visual tree (referred to as the [**Rules Queue**]({%slug rules-general%}#rules-queue)) that holds your created rules or group of rules, **rule switches** that activate or deactivate a rule (or group of rules), and a [**Rule Builder**]({%slug rules-general%}#rules-builder) that shapes new rule by adding a matching condition and desired action. You can activate and execute multiple rules, change their execution priority, and apply different actions based on matching conditions. This article demonstrates how you can mock server behavior without changing anything on the remote server.
 
-Use the **Rule Builder** to create rules and automatically trigger a specific action that meets the matching criteria set in the rule. To mock a server response, enable the **Rules** tab, set a rule, and execute the request that will trigger that rule.
+Use the **Rule Builder** to create rules and automatically trigger a specific action that meets the matching criteria set in the rule. To mock a client request, enable the **Rules** tab, set a rule, and execute the request that will trigger that rule.
 
 To create and test a rule:
 
@@ -21,7 +19,7 @@ To create and test a rule:
 
 1. Add a [condition or a set of conditions]({%slug rules-general%}#conditions) to match sessions.
 
-1. Add an [action or a set of actions]({%slug rules-general%}#actions) to modify the matched session's responses (or requests).
+1. Add an [action or a set of actions]({%slug rules-general%}#actions) to modify the matched session's requests.
 
 1. Click **Save** to save and add the created rule in the [**Rules Queue**]({%slug rules-general%}#rules-queue).
 
@@ -41,7 +39,7 @@ The **Rules** tab can be a powerful ally in testing various complex scenarios wi
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
 - [Using Predefined Actions]({%slug fiddler-ar-actions%})
 - [Understanding Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
-- [Creating Custom HTTP Responses]({%slug using-custom-responses%})
+- [Creating Manual HTTP Responses]({%slug using-custom-responses%})
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)
 - [Creating Requests with the API Composer]({%slug composer-get-started%})
 - [Grouping Requests in Collections]({%slug composer-collections-get-started%})

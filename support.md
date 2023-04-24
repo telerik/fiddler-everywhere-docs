@@ -45,3 +45,4 @@ If you are not a license holder or a trial user, you can use [several available 
 ## Suggested Links
 
 * [Trial Version and Commercial License]({% slug introduction %}#trial-version-and-commercial-license)
+* [Accessing Fiddler Everywhere application logs folder] ({%slug fiddler-log-files%})

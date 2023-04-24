@@ -1,29 +1,18 @@
 ---
 title: Creating Custom Responses
-description: "Learn how to create manually crafted responses, mock status codes, and use external files with predefined responses with the Fiddler Everywhere web-debugging client."
-type: how-to
+description: "Create manually crafted HTTP responses, mock status codes, and use external files with predefined responses with the Fiddler Everywhere forward proxy tool."
 slug: using-custom-responses
 publish: true
-res_type: kb
+position: 40
+previous_url: /knowledge-base/how-to-mock-responses
 ---
 
 
-## Environment
+# Creating Custom Responses
 
-|   |   |
-|---|---|
-| Product   |
-| Product Version | 1.0.0 and above  |
 
-## Description
-
-Fiddler Everywhere provides options for modifying the current response (HTML, JS, JSON) previously returned by the server. How can I manually simulate and test user conditions to ensure the client-side experience doesn't suffer due to unexpected issues?
-
-## Solution
-
-To achieve this scenario, you can use the **Manual Response** or the **Response File** actions of the [**Rules**]({%slug rules-general%}) tab.
-
-### Manual Response
+With Fiddler Everywhere, you can create a custom HTTP Response (with custom HTTP headers and body) while using the **Manual Response** or the **Response File** actions of the [**Rules**]({%slug rules-general%}) tab.
+## Manual Response
 
 1. Open the [**Rules**]({%slug rules-general%}) tab.
 
@@ -50,9 +39,9 @@ To achieve this scenario, you can use the **Manual Response** or the **Response 
 
     ![Unreachable rule applied in Chrome](../images/kb/dat-files/kb-rules-chrome-result.png)
 
-### Automating Multiple Mock Responses
+## Automating Multiple Mock Responses
 
-In some scenarios, you may need a better workflow to automate multiple mock responses. For this reason, Fiddler Everywhere provides the functionality to provide a file with the mocked response content through the **Response file** Action. The files that will contain the custom response need to be in DAT format.
+You may need a better workflow to automate multiple mock responses in some scenarios. For this reason, Fiddler Everywhere allows passing a file with the mocked response content through the **Response file** Action. The files containing the custom response need to be in DAT format.
 
 A DAT file is a generic data file created by a specific application. It may contain data in binary or text format. Text-based DAT files can be viewed in a text editor.
 
@@ -71,23 +60,23 @@ A DAT file is a generic data file created by a specific application. It may cont
 
 3. Save the file with the `dat` extension. For example, `action-403-status.dat`.
 
-4. Add the **Action** in the rule through **Response file**. In the popup window, choose the newly created `action-403-status.dat` DAT file.
+4. Add the **Action** in the rule through **Response file**. Choose the newly created `action-403-status.dat` DAT file in the popup window.
 
-5. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations! You have just mocked a 403 status code response while using a DAT file!
+5. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations! You just mocked a 403 status code response using a DAT file!
 
 ### Other Response Modification Actions
 
-The **Rules Builder** provides more actions for even more sophisticated modification of your HTTP responses. Use the **Update Response Headers**, **Update Response Body**, and **Update Response Cookies**. Each Action provides different subactions to optimize further and ease your mocking process.
+The **Rules Builder** provides more actions for even more sophisticated modification of your HTTP responses. Use the **Update Response Headers**, **Update Response Body**, and **Update Response Cookies**. Each action provides different subactions to optimize further and ease your mocking process.
 
 
-#### Update Response Body
+### Update Response Body
 
 The **Update Response Body** action allows you to modify the Response body (while preserving the Response headers and cookies).
 
 The example below demonstrates the usage of **Set Value** with **JSON** Response inspector:
 ![ Update Response Body with Set Value](../images/kb/dat-files/kb-rules-response-body-set-value.png)
 
-##### Method
+#### Method
 The **Method** subaction supports the following options:
 - **Set Value** - setting a new value
 - **Find and Replace** - replacing a specific value
@@ -95,7 +84,7 @@ The **Method** subaction supports the following options:
 - **Remove** - explicitly deleting the Response body
  
 
-##### Set Value
+#### Set Value
 The **Set Value** subaction supports the following format editors:
  - Plain text
  - JSON
@@ -105,13 +94,13 @@ The **Set Value** subaction supports the following format editors:
  - JavaScript/TypeScript
 
 
-#### Update Response Header
+### Update Response Header
 This action allows you to modify a Response header (while preserving the Response body and cookies).
 
 The example below demonstrates the usage of **Append to value**:
 ![Update Response header with Append to value](../images//kb/dat-files/kb-rules-response-header-append.png)
 
-##### Method
+#### Method
 The **Method** subaction supports the following options:
 - **Set Value** - setting a new value
 - **Append if not present** - setting a new value only if it doesn't already exist
@@ -121,11 +110,11 @@ The **Method** subaction supports the following options:
 - **Remove** - explicitly deleting the Response body
 
 
-#### Update Response Cookies
+### Update Response Cookies
 
 The **Update Response Cookies** action allows you to modify Response cookies (while preserving the Response body and headers).
 
-##### Method
+#### Method
 The **Method** subaction supports the following options:
 - **Set Value** - setting a new value
 - **Add if not present** - setting a new value only if it doesn't already exist
@@ -140,4 +129,4 @@ The **Method** subaction supports the following options:
 
 ## Contact us
 
-If you have more questions or need assistance configuring specific rules with Fiddler Everywhere, you can reach out to our support team through the **Help** > ***Contact Support** option.
+If you have more questions or need assistance configuring specific rules with Fiddler Everywhere, contact our support team through the **Help** > ***Contact Support** option.

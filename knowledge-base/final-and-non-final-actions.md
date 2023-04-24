@@ -1,6 +1,6 @@
 ---
-title: Using Final and Non-Final Actions in Rules Tab
-description: "Learn how to understand and use the final and non-final actions when creating and executing a rule in Fiddler Everywhere."
+title: Final and Non-Final Actions
+description: "Use final and non-final actions when creating and executing a rule in Fiddler Everywhere."
 type: how-to
 slug: fiddler-rules-actions
 publish: true
