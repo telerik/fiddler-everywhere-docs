@@ -9,28 +9,28 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Modes
 
-Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system capturing options](#system-capturing), the [preconfigured browser capturing feature](#preconfigured-browser-capturing), and the [preconfigured terminal capturing](#preconfigured-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
+Out of the box, Fiddler Everywhere provides an automatic capturing functionality through the [system proxy](#system-proxy), the [preconfigured browser](#preconfigured-browser-capturing), and the [preconfigured terminal](#preconfigured-terminal-capturing) options. Upon startup, Fiddler Everywhere can also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP(S) proxy](#explicit-capturing).
 
-Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebScoket, and GRPC traffic.
+Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebSocket, and gRPC traffic.
 
-## System Capturing vs. Preconfigured Browser Capturing
+## Capturing Mode Comparision
 
 The following table demonstrates the significant differences between the two functionalities.
 
-| Feature          |System Capturing |Preconfigured Browser Capturing  
-|:-----------------|:----------------|:-----------------
-| Additional configuration       | Requires trusting of the root certificate for enabling HTTPS capturing. | No additional configuration is needed.
-| Modification of the system proxy | Requires modification of the system proxy. | Automatically configures the system proxy for Google Chrome.
-| Explicit installation of the trust root certificate | Requires you to add the certificate to the OS keychain. | No certificate configuration needed - automatically configures the trust certificate for Google Chrome.
-| Capturing of browser traffic   | Supports all browsers.  | Support for all Chromium browsers.
-| Capturing of other applications traffic | Yes. It supports traffic capturing on virtually any application that uses the system proxy. | No.
-| Required administrative access | Requires OS admin rights for installing and trusting a root certificate and modifying the system proxy.  | Requires user rights for starting a Chromium browser with custom parameters.
-| Working with VPN tooling       | Supports only some VPN tools | Provides multiple VPN tooling support out-of-the-box.
-| Captured output                | Captures all traffic that goes through the system proxy. | Captures only the traffic from the preconfigured browser instance.
-! Supported protocols | HTTP, HTTPS, WebSocket | HTTP, HTTPS, WebSocket |
+| Feature          | System Proxy | Preconfigured Browser  | Preconfigured Terminal | Explicit Proxy
+|:-----------------|:----------------|:-----------------|:-----------------|:-----------------
+| Additional configuration       | Requires trusting of the root CA for enabling HTTPS capturing. | No additional configuration is needed. | No additional configuration is needed.  | Requires trusting of the root CA for enabling HTTPS capturing. 
+| Modification of the system proxy | Requires modification of the system proxy. | Automatically configures the Fiddler proxy for preconfigured Chromium browser. | Automatically configures the Fiddler proxy for preconfigured terminal instance. | Requires manual configuration of the client.
+| Explicit installation of the trust root certificate | Requires you to add the CA to the OS keychain. | No certificate configuration needed - automatically configures the root CA for the browser instance. | No certificate configuration needed - automatically configures the root CA for the terminal instance. | Requires you to add the CA manually as required by the client app.
+| Capturing of browser traffic   | Supports all browsers.  | Support for all Chromium browsers. | n/a | Yes, if the client application is a browser.
+| Capturing of other applications traffic | Yes. It supports traffic capturing on virtually any application that uses the system proxy. | n/a | n/a | Yes. You can capture traffic from any application that can be manually configured to respect the Fiddler's proxy.
+| Required administrative access | Requires OS admin rights for installing and trusting a root certificate and modifying the system proxy.  | Requires user rights for starting a browser intance with custom parameters. | Requires user rights for starting a terminal intance with custom parameters. | Depends on the client application configuration. 
+| Working with VPN tooling       | Supports only some VPN tools | Provides multiple VPN tooling support out-of-the-box. | Provides multiple VPN tooling support out-of-the-box. | Depends on the client application configuration. 
+| Captured output                | Captures all traffic that goes through the system proxy. | Captures only the traffic from the preconfigured browser instance. | Captures only the traffic from the preconfigured terminal instance. | Captures only the traffic from the specific client applications.
+! Supported protocols | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC |
 
 
-## System Capturing
+## System Proxy
 
 Once [Fiddler Everywhere is installed]({%slug installation%}), and it's [root certificate trusted]({%slug trust-certificate%}), you can utilize the web-traffic capturing of the proxy client.
 
@@ -47,7 +47,7 @@ To capture system traffic with Fiddler Everywhere:
 >tip When you switch **Live Traffic** to **Capturing**, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request, and **Live Traffic** will be populated. The **Result** field for that arbitrary web address will return **200**, which means that your first request is successfully captured with Fiddler Everywhere.
 
 
-### Disabling the Automatic System Capturing
+### Disabling the Automatic System Proxy Configuration
 
 By default, the Fiddler Everywhere application starts with the **Live Traffic** toggle switched to **Capturing** (which means it will immediately change the system proxy and start capturing). You can change that behavior by unchecking the [**Settings > Connections > Act as system proxy on startup**]({%slug connections-submenu%}) option.
 

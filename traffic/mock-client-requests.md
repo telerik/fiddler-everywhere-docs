@@ -1,7 +1,7 @@
 ---
 title: Mocking Server Responses
 description: "Mock client and server behavior while using the Rules tab of the Fiddler Everywhere web-debugging proxy tool."
-slug: rulesbuilder-get-started
+slug: mock-clients-requests
 publish: true
 position: 30
 ---
