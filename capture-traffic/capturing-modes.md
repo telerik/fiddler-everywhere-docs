@@ -15,19 +15,21 @@ Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebSocket, an
 
 ## Capturing Mode Comparision
 
-The following table demonstrates the significant differences between the two functionalities.
+The table below demonstrates the major differences between the different capturing modes.
 
-| Feature          | System Proxy | Preconfigured Browser  | Preconfigured Terminal | Explicit Proxy
+| Feature          | **System Proxy** | **Preconfigured Browser**  | **Preconfigured Terminal** | **Explicit Proxy**
 |:-----------------|:----------------|:-----------------|:-----------------|:-----------------
 | Additional configuration       | Requires trusting of the root CA for enabling HTTPS capturing. | No additional configuration is needed. | No additional configuration is needed.  | Requires trusting of the root CA for enabling HTTPS capturing. 
 | Modification of the system proxy | Requires modification of the system proxy. | Automatically configures the Fiddler proxy for preconfigured Chromium browser. | Automatically configures the Fiddler proxy for preconfigured terminal instance. | Requires manual configuration of the client.
-| Explicit installation of the trust root certificate | Requires you to add the CA to the OS keychain. | No certificate configuration needed - automatically configures the root CA for the browser instance. | No certificate configuration needed - automatically configures the root CA for the terminal instance. | Requires you to add the CA manually as required by the client app.
+| Explicit installation of the trust root certificate | Requires you to add the CA to the OS keychain. | No certificate configuration is needed- automatically configuring the browser instance's root CA. | No certificate configuration needed - automatically configures the root CA for the terminal instance. | Requires you to add the CA manually as required by the client app.
 | Capturing of browser traffic   | Supports all browsers.  | Support for all Chromium browsers. | n/a | Yes, if the client application is a browser.
 | Capturing of other applications traffic | Yes. It supports traffic capturing on virtually any application that uses the system proxy. | n/a | n/a | Yes. You can capture traffic from any application that can be manually configured to respect the Fiddler's proxy.
-| Required administrative access | Requires OS admin rights for installing and trusting a root certificate and modifying the system proxy.  | Requires user rights for starting a browser intance with custom parameters. | Requires user rights for starting a terminal intance with custom parameters. | Depends on the client application configuration. 
+| Required administrative access | Requires OS admin rights for installing and trusting a root certificate and modifying the system proxy.  | Requires user rights for starting a browser instance with custom parameters. | Requires user rights for starting a terminal instance with custom parameters. | Depends on the client application configuration. 
 | Working with VPN tooling       | Supports only some VPN tools | Provides multiple VPN tooling support out-of-the-box. | Provides multiple VPN tooling support out-of-the-box. | Depends on the client application configuration. 
 | Captured output                | Captures all traffic that goes through the system proxy. | Captures only the traffic from the preconfigured browser instance. | Captures only the traffic from the preconfigured terminal instance. | Captures only the traffic from the specific client applications.
-! Supported protocols | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC |
+| Supported protocols | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC |
+| Main Benefits | Automatically captures all HTTP(S) traffic that respect the system proxy. | Sandboxed capturing only from a specific browser instance.  | Sandboxed capturing only from a specific terminal instance.  | Sandboxed capturing only from a specific set of applications.
+
 
 
 ## System Proxy
