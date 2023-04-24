@@ -13,6 +13,8 @@ One of the most powerful features in Fiddler Everywhere is the [**Rules** tab]({
 
 Use the **Rule Builder** to create rules and automatically trigger a specific action that meets the matching criteria set in the rule. To mock a server response, enable the **Rules** tab, set a rule, and execute the request that will trigger that rule.
 
+>tip The term **client** applies to the end-user application that triggers the HTTP(S) request. The term **server** applies to any server application that responds with an HTTP(S) response to the client's request. 
+
 To create and test a rule:
 
 1. Select the **Rules** tab and click the **Add Rule** button. As a result, the [**Rule Builder**]({%slug rules-general%}#rule-builder) opens.
