@@ -46,9 +46,6 @@ The **System Proxy** sets Fiddler as a proxy within the operating system proxy s
 
 [Learn more about the **System Proxy** capturing mode here...]({%slug fiddler-system-traffic%}).
 
->tip When you switch the **System Proxy** toggle ON, open a browser and type an arbitrary web address like [https://example.com](https://example.com) 
-. As a result, Fiddler Everywhere intercepts the HTTP request, and **Live Traffic** grid populates with newly captured HTTP(S) sessions.
-
 
 ## Preconfigured Browser
 
