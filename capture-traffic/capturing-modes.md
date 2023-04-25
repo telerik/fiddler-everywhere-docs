@@ -34,50 +34,51 @@ The table below demonstrates the major differences between the different capturi
 
 ## System Proxy
 
-Once [Fiddler Everywhere is installed]({%slug installation%}), and it's [root certificate trusted]({%slug trust-certificate%}), you can utilize the web-traffic capturing of the proxy client.
+The **System Proxy** sets Fiddler as a proxy within the operating system proxy settings.
 
-The client logs all HTTP and HTTPS traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;Google Chrome, Firefox, Microsoft Teams, Outlook, and more. You can use the captured traffic to debug issues, identify performance bottlenecks, or share it with your teammates.
+1. Start the Fiddler Everywhere application.
 
-To capture system traffic with Fiddler Everywhere:
+1. [Install and trust the Fiddler Everywhere root CA (certificate authority)](#trusting-root-certificate-authority).
 
-1. Start Fiddler Everywhere. Ensure the proper configuration as described in the [First Steps tutorials for Windows]({%slug first_steps_windows%}), [macOS]({%slug first_steps_macos%}), or [Linux]({%slug first_steps_linux%}).
+    >tip Fiddler Everywhere is a forward HTTP proxy. As such, it automatically captures non-secure HTTP traffic. However, it must act as an intermediate TLS proxy to capture and decrypt HTTPS traffic. For this to happen, Fiddler Everywhere must install its root CA (certificate authority) in the operating system keychain.
 
-1. Switch **Live Traffic** to **Capturing**. Your incoming and outgoing traffic will be immediately captured and displayed in the [Live Traffic]({%slug saved-sessions-tab%}) tab.
+1. Switch the **System Proxy** toggle ON. 
 
-    ![Enabling Live Traffic](../images/get-started/get-started-toggle.png)
+[Learn more about the **System Proxy** capturing mode here...]({%slug fiddler-system-traffic%}).
 
->tip When you switch **Live Traffic** to **Capturing**, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request, and **Live Traffic** will be populated. The **Result** field for that arbitrary web address will return **200**, which means that your first request is successfully captured with Fiddler Everywhere.
-
-
-### Disabling the Automatic System Proxy Configuration
-
-By default, the Fiddler Everywhere application starts with the **Live Traffic** toggle switched to **Capturing** (which means it will immediately change the system proxy and start capturing). You can change that behavior by unchecking the [**Settings > Connections > Act as system proxy on startup**]({%slug connections-submenu%}) option.
+>tip When you switch the **System Proxy** toggle ON, open a browser and type an arbitrary web address like [https://example.com](https://example.com) 
+. As a result, Fiddler Everywhere intercepts the HTTP request, and **Live Traffic** grid populates with newly captured HTTP(S) sessions.
 
 
-## Preconfigured Browser Capturing
+## Preconfigured Browser
 
-The preconfigured browser capturing is a feature that allows you to capture traffic from a specific browser instance. Currently, Fiddler Everywhere supports preconfigured browser capturing only for Chromium browsers.
+The preconfigured browser capturing is a feature that allows you to capture traffic only from a specific browser instance. Currently, Fiddler Everywhere supports preconfigured browser capturing only for Chromium-based browsers.
 
 The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
-[Learn more on how to capture traffic from a preconfigured browser here...]({%slug fiddler-browser-preconfigured%})
+[Learn more about the **Browser** capturing mode here...]({%slug fiddler-browser-preconfigured%})
 
-## Preconfigured Terminal Capturing
 
-Similarly to the preconfigured browser capturing option, Fiddler lets you use a preconfigured terminal instance to capture traffic from your preferred terminal on-the-fly. The option is accessible through the **>_ Terminal** button and enables you to capture and inspect traffic from **Node.js** libraries and **curl** quickly.
+## Preconfigured Terminal
 
-![Use the Terminal button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
+Similarly to the preconfigured browser capturing mode, Fiddler lets you use a preconfigured terminal instance to capture traffic from your preferred terminal on-the-fly. The terminal capturing mode is accessible through the **Terminal** button and enables you to capture and inspect traffic from **Node.js** libraries and **curl** quickly.
 
-[Learn more on how to capture traffic from a preconfigured terminal here...]({%slug fiddler-terminal-explicit%})
+[Learn more about the **Terminal** capturing mode here...]({%slug fiddler-terminal-explicit%})
 
 
 ## Explicit Capturing
 
-The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is 127.0.0.1:8866. Any application explicitly directed to go through the Fiddler Everywhere proxy address will have its HTTP/HTTPS/WebSocket traffic immediately captured, even if the [system capturing](#system-capturing) is turned off.
+The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is 127.0.0.1:8866. Any application explicitly directed to go through the Fiddler Everywhere proxy address will have its HTTP/HTTPS/WebSocket traffic immediately captured, even if the [system capturing](#system-proxy) is turned off.
 
 [Learn more on how to explicitly capture traffic from a specific applications here...]({%slug fiddler-explicit-capturing%})
 
-## HTTP Version Specifics
+
+## Protocol Specifics
+
+Fiddler Everywhere supports HTTP/1.x and HTTP/2 as transport protocols and can capture WebSocket and gRPC traffic.
+
+
+### HTTP Version Specifics
 
 Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. Note the following specifics when handling HTTP/2 requests.
 
@@ -92,7 +93,7 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. N
 - Fiddler shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received. Some client applications are further modifying the pseudo-header order, which might cause different behavior for some corner cases.
 
 
-## WebSocket Capturing
+### WebSocket Capturing
 
 
 The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer seven and depend on TCP at OSI layer four. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
@@ -100,7 +101,7 @@ The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-
 Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system, preconfigured browser, or explicit capturing modes). The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab).
 
 
-## gRPC Capturing
+### gRPC Capturing
 
 [gRPC](https://grpc.io/) stands for Google Remote Procedure Call, and while created by Google, it is now an open-source framework. gRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of gRPC are its performance, added security, and the possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
 
