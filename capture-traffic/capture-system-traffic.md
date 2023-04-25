@@ -4,16 +4,15 @@ description: "Learn how to capture HTTP(S) traffic from any application that res
 slug: fiddler-system-traffic
 publish: true
 position: 15
+previous_url: /installation-and-update/trust-certificate-configuration
 ---
 
 
 # Fiddler as a System Proxy
 
-One of the main [**capturing modes**]({%slug capture-traffic-get-started%}) in Fiddler Everywhere allows you to capture all HTTP(S) traffic that goes through the operating system. This feature is available through the **System Proxy** option.
+One of the main [**capturing modes**]({%slug capture-traffic-get-started%}) in Fiddler Everywhere allows you to capture all HTTP(S) traffic that goes through the operating system. This feature is available through the **System Proxy** option. While using **System Proxy**, Fiddler Everywhere acts as pre-set operating system manual proxy that captures all HTTP(S) traffic between your computer and the internet.
 
-While using **System Proxy**, Fiddler Everywhere acts as a forward proxy that captures all HTTP and HTTPS traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that respects the operating system proxy settings. You can use the captured traffic for various tasks such as debugging, mocking client & server behavior, identifying performance bottlenecks, and sharing with collaborators.
-
-When **System Proxy** is switched ON, behind the scenes, Fiddler Everywhere modifies the operating system proxy settings by setting the Fiddler address and port as HTTP and HTTPS proxy (the default address is `http://127.0.0.1:8866`). For that to happen, the Fiddler application must be installed with administrative rights (that allow it to set or unset the system proxy settings). In case, the operating system alredy uses another proxy, Fiddler will try to automatically chain the proxies.
+With **System Proxy** switched ON, behind the scenes, Fiddler Everywhere modifies the operating system proxy settings by setting the Fiddler address and port as HTTP and HTTPS proxy (the default address is `http://127.0.0.1:8866`). For that to happen, the Fiddler application must be installed with administrative rights (that allow it to set or unset the system proxy settings). In case, the operating system alredy uses another proxy, Fiddler will try to automatically chain the proxies.
 
 Almost all modern-day applications use secure connections through HTTPS, which also means that Fiddler needs administrative rights to install and trust the Fiddler root CA as a user-installed certificate authority in the operating system certificate manager. Trusting the Fiddler root CA enables Fiddler Everywhere to decrypt the otherwise encrypted HTTPS traffic while successfully establishing a TLS handshake. When Fiddler captures system traffic, it will act as an intermediate between the client application on one side and the server on the other hand. 
 
