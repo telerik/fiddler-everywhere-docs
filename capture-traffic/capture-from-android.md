@@ -1,5 +1,5 @@
 ---
-title: Capturing Android Traffic
+title: Capture Android Traffic
 description: "Capture and inspect traffic from Android devices while using the Fiddler Everywhere web-debugging HTTP-proxy tool."
 type: how-to
 slug: capture-mobile-android-traffic
@@ -8,7 +8,7 @@ position: 30
 previous_url: /knowledge-base/configure-android, /get-started/mobile-traffic/configure-android, /get-started/traffic/configure-android, /traffic/configure-android
 ---
 
-# Capturing and Inspecting Android Traffic
+# Capturing Android Traffic
 
 This article describes how to use Fiddler Everywhere to capture and inspect traffic that comes from Android devices and emulators.
 

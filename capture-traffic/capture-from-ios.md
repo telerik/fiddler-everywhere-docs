@@ -1,5 +1,5 @@
 ---
-title: Capturing iOS Traffic
+title: Capture iOS Traffic
 description: "Capture and inspect traffic from iOS devices and simulators while using the Fiddler Everywhere web-debugging HTTP-proxy tool."
 type: how-to
 slug: capture-mobile-ios-traffic
@@ -8,7 +8,7 @@ position: 40
 previous_url: /knowledge-base/configure-ios, /get-started/mobile-traffic/configure-ios, /get-started/traffic/configure-ios, /traffic/configure-ios
 ---
 
-# Capturing and Inspecting iOS Traffic
+# Capturing iOS Traffic
 
 This article describes how to use Fiddler Everywhere to capture and inspect traffic from iOS devices and simulators.
 

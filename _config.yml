@@ -13,7 +13,7 @@ navigation:
         title: Capture Traffic
         position: 20
     capture-traffic/remote-devices:
-        title: Capturing Remote Traffic
+        title: Capture Remote Traffic
         position: 45    
     inspect-traffic:
         title: Inspect Traffic

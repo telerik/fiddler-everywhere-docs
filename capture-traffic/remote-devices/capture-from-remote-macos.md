@@ -1,5 +1,5 @@
 ---
-title: Capturing Traffic from macOS Devices
+title: Capture Traffic from remote macOS Devices
 description: "Capture HTTP(S) traffic from other computers, smartphones, tablets, and smart devices on your network."
 type: how-to
 slug: fiddler-capture-macos-computers

@@ -1,5 +1,5 @@
 ---
-title: Capturing Browser Traffic
+title: Capture from Preconfigured Browser
 description: "Learn how to capture HTTP(S) traffic from preconfigired browser instances."
 slug: fiddler-browser-preconfigured
 publish: true

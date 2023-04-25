@@ -1,5 +1,5 @@
 ---
-title: Capturing Traffic from Windows Devices
+title: Capture Traffic from Remote Windows Devices
 description: "Capture HTTP(S) traffic from other computers, smartphones, tablets, and smart devices on your network."
 type: how-to
 slug: fiddler-capture-windows-computers

@@ -1,5 +1,5 @@
 ---
-title: Capturing Terminal Traffic
+title: Capture from Preconfigured Terminal
 description: "Learn how to capture HTTP(S) traffic from terminals and shell applications while using the Fiddler Everywhere proxy."
 slug: fiddler-terminal-explicit
 publish: true
