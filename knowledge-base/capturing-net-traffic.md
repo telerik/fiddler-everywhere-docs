@@ -100,7 +100,7 @@ objRequest.Proxy= new WebProxy("127.0.0.1", 8866);
 
 #### Localhost Traffic
 
-NET might bypass the Fiddler Everywhere proxy for URLs containing **localhost**regardless of other settings. So, rather than using localhost, change your code to refer to a machine name, or use [Fiddler Everywhere alliases]({%slug how-to-capture-localhost-traffic%}#using-aliases).
+NET might bypass the Fiddler Everywhere proxy for URLs containing **localhost** regardless of other settings. So, rather than using localhost, change your code to refer to a machine name, or use [Fiddler Everywhere alliases]({%slug how-to-capture-localhost-traffic%}#using-aliases).
 
 This URL **won't** appear in Fiddler:
 ```
