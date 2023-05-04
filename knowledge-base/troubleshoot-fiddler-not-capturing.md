@@ -80,7 +80,7 @@ Failure to set/unset the Fiddler Everywhere proxy while toggling the system capt
 1. Start the VPN client and connect to the VPN network.
 1. Start the system capturing mode (by toggling the **Live Traffic** switch).
 
-
+Alternatively, if the above is not applicable, you can use other [capturing modes]({%slug capture-traffic-get-started%}) that Fiddler Everywhere provides.
 
 ### Capture Not Working alongside Security Tools
 
@@ -92,7 +92,7 @@ Failure to set/unset the Fiddler Everywhere proxy while toggling the system capt
 
 **Solution**: Many modern-day tools automatically strip applications of administrative rights. Some security tools and administrators apply zero-trust policies, often automatically blocklisting all newly installed software. To resolve similar issues, contact your system administrator or explicitly allowlist Fiddler Everywhere to run with administrative rights on the preferred port (by default, port 8866) and to be able to set/unset the operating system proxy settings.
 
-
+Alternatively, if the above is not applicable, you can try to use other [capturing modes]({%slug capture-traffic-get-started%}) that Fiddler Everywhere provides.
 
 ### Capture Not Working Alongside Another Preset Proxy
 
@@ -124,9 +124,11 @@ Alternatively, if none of the above is applicable, you can use other [capturing 
 
 **Result**: No HTTP(S) traffic appears in the Live Traffic grid.
 
-**Solution**: By design, Fiddler Everywhere will respect all other proxies, including preset system proxies (including manual proxies or automatically configured), and will automatically chain to them. When Fiddler Everywhere is unset as a proxy, it will revert the system proxy settings to their default. However, that is not the case for all proxy tools out in the wild - some tools might neglect pre-existing proxy settings and try to replace them. When a third-party tool removes Fiddler Everywhere as an intermediate proxy, that will immediately cause the Fiddler application not to capture HTTP(S) traffic.
+**Solution**: By design, Fiddler Everywhere will respect all other proxies, including preset system proxies (including manual proxies or automatically configured), and will automatically chain to them. When Fiddler Everywhere is unset as a proxy, it will revert the system proxy settings to their default. However, that is not the case for all proxy tools out in the wild - some tools might neglect pre-existing proxy settings and try to replace them (instead of chaining to them). When a third-party tool removes Fiddler Everywhere as an intermediate proxy, that will immediately cause the Fiddler application not to capture HTTP(S) traffic.
 
 To resolve the issue, ensure the third-party proxy tool is not explicitly configured to overwrite pre-existing proxy configurations. Alternatively, if the solution is not applicable, you can use other [capturing modes]({%slug capture-traffic-get-started%}) that Fiddler Everywhere provides.
+
+
 
 ## Independent Browser Instance Capture Not Working
 
@@ -136,7 +138,6 @@ To resolve the issue, ensure the third-party proxy tool is not explicitly config
 
 **Result**: No HTTP(S) traffic appears in the Live Traffic grid.
 
-**Troubleshoting approach**:
 
 
 ## Terminal Instance Capturing Not Working
@@ -147,7 +148,7 @@ To resolve the issue, ensure the third-party proxy tool is not explicitly config
 
 **Result**: An HTTP(S) request made through the terminal instance does not appear in the Live Traffic grid.
 
-**Troubleshoting approach**:
+
 
 
 ## Captures Only HTTP Traffic (Fails to Capture HTTPS)
