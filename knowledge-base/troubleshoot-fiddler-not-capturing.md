@@ -28,7 +28,7 @@ Once Fiddler Everywhere is up and running, you might find it cannot capture HTTP
 - The system capturing mode is turned ON (by toggling the **Live Traffic** switch).
 - No active filters or rules are hiding the traffic.
 
-**Result**: No HTTP(S) traffic appears, and then the Live Traffic grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.” (same is valid for search)"**_.
+**Result**: No HTTP(S) traffic appears, and then the Live Traffic grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.”**_.
 
 Multiple different reasons might prevent Fiddler Everywhere from acting as a system proxy. Below we are covering some of the most common scenarios:
 
@@ -45,7 +45,7 @@ Multiple different reasons might prevent Fiddler Everywhere from acting as a sys
 - The Fiddler Everywhere application is up and running.
 - The system capturing mode is turned ON (by toggling the **Live Traffic** switch).
 
-**Result**: The operating system proxy settings remain unchanged. No HTTP(S) traffic appears in the Live Traffic grid. The grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.” (same is valid for search)"**_.
+**Result**: The operating system proxy settings remain unchanged. No HTTP(S) traffic appears in the Live Traffic grid. The grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.”**_.
 
 **Troubleshooting approach**: Fiddler Everywhere requires administrative rights to modify the operating system proxy settings. If the currently logged user does not have rights to change the proxy settings and Fiddler Everywhere was not installed with such rights, it will fail to set and unset the OS proxy settings. You can confirm that scenario through the following steps:
 
@@ -66,7 +66,7 @@ To solve the above, reinstall Fiddler Everywhere with administrative rights or c
 - The Fiddler Everywhere application is up and running.
 - The system capturing mode is turned ON (by toggling the **Live Traffic** switch).
 
-**Result**: No HTTP(S) traffic appears in the Live Traffic grid. The grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.” (same is valid for search)"**_.
+**Result**: No HTTP(S) traffic appears in the Live Traffic grid. The grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.”**_.
 
 **Troubleshooting approach**: Fiddler Everywhere is incompatible with some third-party VPN tools. In case your VPN prevents Fiddler Everywhere from capturing HTTP(S) traffic, then you can bypass the VPN endpoints through the following steps:
 
@@ -87,7 +87,7 @@ Alternatively, if the above is not applicable, you can use other [capturing mode
 - The Fiddler Everywhere application is up and running.
 - The system capturing mode is turned ON (by toggling the **Live Traffic** switch).
 
-**Result**: No HTTP(S) traffic appears in the Live Traffic grid. The grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.” (same is valid for search)"**_.
+**Result**: No HTTP(S) traffic appears in the Live Traffic grid. The grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.”**_.
 
 **Troubleshooting approach**: Many modern-day tools automatically strip applications of administrative rights. Some security tools and administrators apply zero-trust policies, often automatically blocklisting all newly installed software. To resolve similar issues, contact your system administrator or explicitly allowlist Fiddler Everywhere to run with administrative rights on the preferred port (by default, port 8866) and to be able to set/unset the operating system proxy settings. Additionally, ensure that your system covers [the requirements for running Fiddler Everywhere]({%slug first_steps_windows%}#prerequisites).
 
@@ -100,7 +100,7 @@ Alternatively, if the above is not applicable, you can try to use other [capturi
 - The Fiddler Everywhere application is up and running.
 - The system capturing mode is turned ON (by toggling the **Live Traffic** switch).
 
-**Result**: No HTTP(S) traffic appears in the Live Traffic grid. The grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.” (same is valid for search)"**_.
+**Result**: No HTTP(S) traffic appears in the Live Traffic grid. The grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information.”**_.
 
 **Troubleshooting approach**: Some systems use complex proxy configurations through remote servers and/or scripts like PAC (automatic proxy configurations). These configurations might prevent Fiddler Everywhere from successfully chaining to the default proxy. This, in terms results in Fiddler Everywhere not intercepting the system traffic. 
 
