@@ -1,0 +1,10 @@
+VPN
+TLS
+blocklist
+blocklisting
+allowlist
+allowlisting
+sandboxed
+preconfigured
+MITM
+decrypt
