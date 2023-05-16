@@ -123,10 +123,10 @@ Voila - the reason for the delay is the MITM proxy (expected as we delayed the r
 
 ![Overview for delayed CDN](../images/kb/real-life-cases/fe-rule-delay-cdn-overview.png)
 
-Interested in learning more? Checkout the following articles about the Overview tab and its capabilities:
+Interested in learning more about the **Overview** tab? Checkout the following articles about the Overview tab and its capabilities:
 
-https://docs.telerik.com/fiddler-everywhere/user-guide/overview
-https://www.telerik.com/blogs/what-you-can-uncover-new-overview-tab-fiddler-everywhere-2-0
+- [https://docs.telerik.com/fiddler-everywhere/user-guide/overview](https://docs.telerik.com/fiddler-everywhere/user-guide/overview)
+- [https://www.telerik.com/blogs/what-you-can-uncover-new-overview-tab-fiddler-everywhere-2-0](https://www.telerik.com/blogs/what-you-can-uncover-new-overview-tab-fiddler-everywhere-2-0)
 
 ## The Conclusion
 
