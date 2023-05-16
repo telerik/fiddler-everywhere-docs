@@ -28,7 +28,19 @@ res_type: kb
 
 ## Using the Fiddler's Terminal
 
-The Fiddler Everywhere application allows starting a dedicated preconfigured terminal that automatically proxies HTTPS requests through the Fiddler proxy. The preconfigured terminal supports capturing from Python applications without any additional configuration - Fiddler Everywhere sets everything.
+The Fiddler Everywhere application allows starting a dedicated preconfigured terminal that automatically proxies HTTPS requests through the Fiddler proxy. The preconfigured terminal supports capturing from Python applications without additional configuration - Fiddler Everywhere sets everything. 
+
+>important FIddler Everywhere preconfigured terminal supports Python version 3 and above, which was first introduced in 2009. Older versions of Python are unsupported.
+
+Steps needed to capture HTTPS traffic from a Python application:
+
+1. Start the Fiddler Everywhere application.
+
+1. Stop the system capturing.
+
+1. Click **Open Terminal** to start dedicated terminal instance.
+
+1. Run the Python app within the dedicated terminal instance.
 
 [Learn more about the **Open Browser** option in Fiddler Everywhere here...]({%slug fiddler-terminal-explicit%})
 
