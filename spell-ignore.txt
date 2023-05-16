@@ -1,8 +1,11 @@
 TLS
 MITM
 preconfigured
+VPN
 blocklist
 blocklisting
 allowlist
 allowlisting
 PEM
+sandboxed
+decrypt
