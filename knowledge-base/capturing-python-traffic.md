@@ -36,8 +36,6 @@ Steps needed to capture HTTPS traffic from a Python application:
 
 1. Start the Fiddler Everywhere application.
 
-1. Stop the system capturing.
-
 1. Click **Open Terminal** to start dedicated terminal instance.
 
 1. Run the Python app within the dedicated terminal instance.
