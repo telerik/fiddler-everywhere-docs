@@ -7,9 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
-# Troubleshoot Fiddler Everywhere Not Capturing Traffic
-
 You can encounter a situation where Fiddler Everywhere is active but unable to capture HTTP(S) traffic despite the following observations being true:
 
 - The Fiddler Everywhere application is launched and running.
