@@ -15,19 +15,19 @@ res_type: kb
 | Supported OS | Windows, macOS, Linux |
 
 
-## System Capture Not Working
+# System Capture Not Working
 
-Once Fiddler Everywhere is up and running, you might find it can't capture HTTP(S) traffic. This article lists possible reasons for this behavior and guides possible solutions.
+You can encounter a situation where Fiddler Everywhere is active but unable to capture HTTP(S) traffic despite the following observations being true:
 
-#### Observations
+- The Fiddler Everywhere application is launched and running.
+- The Fiddler root CA (certificate authority) is properly installed.
+- The system capturing mode is enabled by toggling the Live Traffic switch.
+- No active filters or rules obstruct the traffic.
+- The **Live Traffic** grid displays the message _"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information."_.
 
-- The Fiddler Everywhere application is up and running.
-- The Fiddler root CA is installed.
-- The system capturing mode is turned ON (by toggling the **Live Traffic** switch).
-- No active filters or rules are hiding the traffic.
-- The Live Traffic grid shows _**"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information." **_.
+In such cases, it is recommended to refer to the troubleshooting guides below for further assistance in resolving the configuration issue. The guides provide detailed information and guidance to help you identify and resolve any underlying problems affecting the traffic capture functionality of Fiddler Everywhere.
 
-#### Troubleshooting and Solutions  
+## Troubleshooting and Solutions  
 
 Various reasons can result in Fiddler Everywhere not acting as a system proxy. Below, we list some of the most common scenarios, alongside troubleshooting instructions and possible solutions:
 
@@ -43,11 +43,11 @@ Various reasons can result in Fiddler Everywhere not acting as a system proxy. B
 
 
 
-### Lack of Administrative Rights
+## Lack of Administrative Rights
 
 Fiddler Everywhere requires administrative rights to set and unset the operating system proxy settings.
 
-#### Troubleshooting approach
+### Troubleshooting approach
 
 Troubleshoot the lack of administrative rights through the following steps:
 
@@ -61,17 +61,17 @@ Troubleshoot the lack of administrative rights through the following steps:
 
 Failure to set/unset the Fiddler Everywhere proxy while toggling the system capturing indicates that Fiddler Everywhere lacks administrative rights to work correctly.
 
-#### Solution
+### Solution
 
 To solve the above, reinstall Fiddler Everywhere with administrative rights or consult your system administrator.
 
 
 
-### Capture Not Working alongside VPN
+## Capture Not Working alongside VPN
 
 Some third-party VPN tools make additional network modifications which can result in Fiddler Everywhere not working correctly as an intermediate proxy. 
 
-#### Troubleshooting approach
+### Troubleshooting approach
 
 1. Test and verify if Fiddler Everywhere captures HTTP(S) traffic while your VPN application is disconnected.
 
@@ -79,7 +79,7 @@ Some third-party VPN tools make additional network modifications which can resul
 
 If Fiddler successfully captures traffic after the first step but fails to do so after the second, then that confirms that your issue is related to the VPN tooling.
 
-#### Solution - Bypass the VPN servers
+### Solution - Bypass the VPN servers
 
 You can instruct Fiddler Everywhere to bypass the VPN server endpoints through the following steps explicitly:
 
@@ -97,7 +97,7 @@ You can instruct Fiddler Everywhere to bypass the VPN server endpoints through t
 
 1. [Start the system capturing mode]({%slug capture-traffic-get-started%}#system-capturing).
 
-#### Solution - Using Alternative Capturing Modes
+### Solution - Using Alternative Capturing Modes
 
 The system capturing mode can set and unset the operating system proxy, which may result in configuration conflicts with the VPN tooling. To avoid such conflicts, consider the alternative capturing modes provided below as substitutes for the system capturing mode.
 
@@ -105,11 +105,11 @@ The system capturing mode can set and unset the operating system proxy, which ma
 
 - The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
 
-### Capture Not Working alongside Security Tools
+## Capture Not Working alongside Security Tools
 
 In modern-day environments, it is common for security tools to remove administrative rights from applications automatically. Additionally, administrators may enforce zero-trust policies, often automatically blocklisting all newly installed software like Fiddler Everywhere.
 
-#### Troubleshooting approach
+### Troubleshooting approach
 
 To effectively troubleshoot this scenario, it is advisable to thoroughly audit the security tooling and administrative policies implemented on your machine by your company. Take into consideration the following components and procedures that may be impacting the currently logged-in user:
 
@@ -121,11 +121,9 @@ To effectively troubleshoot this scenario, it is advisable to thoroughly audit t
 - Restricted file system read/write rights.
 - Limited access to third-party endpoints.
 
-
-
 The existence of any of the above can prevent Fiddler Everywhere from running correctly.
 
-#### Solution - Elevate Fiddler's Application
+### Solution - Elevate Fiddler's Application
 
 Contact your system administrator and ask them to:
 
@@ -134,7 +132,7 @@ Contact your system administrator and ask them to:
 - Open the preferred proxy port (by default, port 8866).
 - Verify that the host machine covers [the requirements for running Fiddler Everywhere]({%slug first_steps_windows%}#prerequisites).
 
-#### Solution - Using Alternative Capturing Modes
+### Solution - Using Alternative Capturing Modes
 
 The system capturing mode can set and unset the operating system proxy, which may result in configuration conflicts with security tooling and administrative policies. To avoid such conflicts, consider the alternative capturing modes provided below as substitutes for the system capturing mode.
 
@@ -143,15 +141,15 @@ The system capturing mode can set and unset the operating system proxy, which ma
 - The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
 
 
-### Capture Not Working Alongside Another Preset Proxy
+## Capture Not Working Alongside Another Preset Proxy
 
 Some systems use complex proxy configurations through remote servers and scripts like PAC (automatic proxy configurations). These configurations can prevent Fiddler Everywhere from successfully chaining to the upstream proxy. This, in terms results in Fiddler Everywhere not intercepting the system traffic. 
 
-#### Troubleshooting approach
+### Troubleshooting approach
 
 Test if Fiddler Everywhere can capture traffic when the upstream proxy is removed from the OS proxy settings.
 
-#### Solution - Reconfigure the Upstream Proxy
+### Solution - Reconfigure the Upstream Proxy
 
 To resolve the issue, please consider applying the following solutions:
 
@@ -164,8 +162,7 @@ To resolve the issue, please consider applying the following solutions:
 - Reach out to your network administrators and request their assistance verifying that the default upstream proxy can be successfully chained to the Fiddler Everywhere proxy.
 
 
-#### Solution - Using Alternative Capturing Modes
-
+### Solution - Using Alternative Capturing Modes
 
 The system capturing mode can set and unset the operating system proxy, which may result in configuration conflicts with third-party upstream proxies. To avoid such conflicts, consider the alternative capturing modes provided below as substitutes for the system capturing mode.
 
@@ -174,15 +171,14 @@ The system capturing mode can set and unset the operating system proxy, which ma
 - The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
 
 
-
-### Capture Not Working Alongside Third-Party Proxy Tools
+## Capture Not Working Alongside Third-Party Proxy Tools
 
 As part of its design, Fiddler Everywhere is built to respect other upstream proxies, including system proxies that are manually configured or automatically set. It automatically chains to these proxies, ensuring seamless integration. Additionally, when Fiddler Everywhere is unset as a proxy, it will revert the system proxy settings to their default state.
 
 However, it's important to note that not all third-party proxy tools follow the same behavior. Some tools may disregard preexisting proxy settings and attempt to replace them instead of chaining to them. If a third-party tool removes Fiddler Everywhere as an intermediate proxy, it will immediately interrupt Fiddler's ability to capture HTTP(S) traffic.
 
 
-#### Troubleshooting approach
+### Troubleshooting approach
 
 To troubleshoot if a third-party proxy tool is interfering with Fiddler's proxy, please follow these steps:
 
@@ -197,19 +193,19 @@ To troubleshoot if a third-party proxy tool is interfering with Fiddler's proxy,
 If Fiddler Everywhere ceases to capture traffic at this point, the third-party tool is not correctly chaining the proxy configuration and instead overwriting it.
 
 
-#### Solution - Reconfigure the Third-Party Proxy Application
+### Solution - Reconfigure the Third-Party Proxy Application
 
 - Check the third-party tool documentation for configuration options related to chaining to upstream proxies.
 
-#### Solution - Set Fiddler as Gateway
+### Solution - Set Fiddler as Gateway
 
 - Use the third-party tool settings to set the Fiddler's proxy address (**127.0.0.1:8866**) as the default gateway.
 
-#### Solution - Change Proxy Startup Order
+### Solution - Change Proxy Startup Order
 
 - Run the third-party proxy tool **before** enabling Fiddler's system capture. This way, you will allow Fiddler Everywhere to chain the upstream proxy.
 
-#### Solution - Using Alternative Capturing Modes
+### Solution - Using Alternative Capturing Modes
 
 The system capturing set and unset the operating system proxy, which can cause a configuration conflict with third-party proxy applications. You can substitute the system capturing mode with the listed alternative capturing modes.
 
@@ -218,6 +214,6 @@ The system capturing set and unset the operating system proxy, which can cause a
 - The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
 
 
-### Capture Not Working - All Other Scenarios
+## Capture Not Working - All Other Scenarios
 
 If you cannot resolve your issue, then please do not hesitate to contact us. Our support engineers and developers can provide technical support through [the Telerik Support Center](https://www.telerik.com/account/support-center).
