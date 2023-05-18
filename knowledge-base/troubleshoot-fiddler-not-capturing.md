@@ -7,15 +7,8 @@ publish: true
 res_type: kb
 ---
 
-## Environment
 
-|   |   |
-|---|---|
-| Product  | All versions of Fiddler Everywhere  |
-| Supported OS | Windows, macOS, Linux |
-
-
-# System Capture Not Working
+# Troubleshoot Fiddler Everywhere Not Capturing Traffic
 
 You can encounter a situation where Fiddler Everywhere is active but unable to capture HTTP(S) traffic despite the following observations being true:
 
@@ -33,13 +26,13 @@ Various reasons can result in Fiddler Everywhere not acting as a system proxy. B
 
  - [Lack of administrative rights](#lack-of-administrative-rights) to set and unset the system proxy.
 
- - [Incompatibility with VPN tools](#capture-not-working-alongside-vpn).
+ - [Incompatibility with VPN tools](#incompatibility-with-vpn-tools).
 
- - [Incompatibility with security tools](#capture-not-working-alongside-security-tools) (firewalls, antivirus, zero-trust tooling, security policies).
+ - [Incompatibility with security tools](#incompatibility-with-security-tools) (firewalls, antivirus, zero-trust tooling, security policies).
 
- - [Incompatibility with other preset system proxies](#capture-not-working-alongside-another-preset-proxy).
+ - [Incompatibility with other preset system proxies](#incompatibility-with-other-preset-system-proxies).
 
- - [Incompatibility with third-party proxy tools](#capture-not-working-alongside-third-party-proxy-tools).
+ - [Incompatibility with third-party proxy tools](#incompatibility-with-third-party-proxy-tools).
 
 
 
@@ -67,7 +60,7 @@ To solve the above, reinstall Fiddler Everywhere with administrative rights or c
 
 
 
-## Capture Not Working alongside VPN
+## Incompatibility with VPN tools
 
 Some third-party VPN tools make additional network modifications which can result in Fiddler Everywhere not working correctly as an intermediate proxy. 
 
@@ -105,7 +98,7 @@ The system capturing mode can set and unset the operating system proxy, which ma
 
 - The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
 
-## Capture Not Working alongside Security Tools
+## Incompatibility with security tools
 
 In modern-day environments, it is common for security tools to remove administrative rights from applications automatically. Additionally, administrators may enforce zero-trust policies, often automatically blocklisting all newly installed software like Fiddler Everywhere.
 
@@ -141,7 +134,7 @@ The system capturing mode can set and unset the operating system proxy, which ma
 - The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
 
 
-## Capture Not Working Alongside Another Preset Proxy
+## Incompatibility with other preset system proxies
 
 Some systems use complex proxy configurations through remote servers and scripts like PAC (automatic proxy configurations). These configurations can prevent Fiddler Everywhere from successfully chaining to the upstream proxy. This, in terms results in Fiddler Everywhere not intercepting the system traffic. 
 
@@ -171,7 +164,7 @@ The system capturing mode can set and unset the operating system proxy, which ma
 - The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
 
 
-## Capture Not Working Alongside Third-Party Proxy Tools
+## Incompatibility with third-party proxy tools
 
 As part of its design, Fiddler Everywhere is built to respect other upstream proxies, including system proxies that are manually configured or automatically set. It automatically chains to these proxies, ensuring seamless integration. Additionally, when Fiddler Everywhere is unset as a proxy, it will revert the system proxy settings to their default state.
 
