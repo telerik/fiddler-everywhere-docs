@@ -1,5 +1,43 @@
 [
     {
+        "version": "4.3.0",
+        "title": "Fiddler Everywhere v4.3.0",
+        "date": "May 23, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add support for Python requests in the Terminal process option"
+                    },
+                    {
+                        "title": "Add a proxy troubleshooting link when no traffic can be captured"
+                    },
+                    {
+                        "title": "Allow setting filter on custom columns"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "App remains on white screen in some cases"
+                    },
+                    {
+                        "title": "TLS version is not copied when \"Copy Full Summary\" is used"
+                    },
+                    {
+                        "title": "Password dialog for saved sessions hangs in some cases"
+                    },
+                    {
+                        "title": "Write permissions for cloud resources were lost in some cases after subscription updates"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.2.1",
         "title": "Fiddler Everywhere v4.2.1",
         "date": "April 6, 2023",
