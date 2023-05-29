@@ -56,10 +56,10 @@ Failure to set/unset the Fiddler Everywhere proxy while toggling the system capt
 To solve the above, reinstall Fiddler Everywhere with administrative rights or consult your system administrator.
 
 
-
 ## Incompatibility with VPN tools
 
 Some third-party VPN tools make additional network modifications which can result in Fiddler Everywhere not working correctly as an intermediate proxy. 
+
 
 ### Troubleshooting approach
 
@@ -139,6 +139,7 @@ Some systems use complex proxy configurations through remote servers and scripts
 
 Test if Fiddler Everywhere can capture traffic when the upstream proxy is removed from the OS proxy settings.
 
+
 ### Solution - Reconfigure the Upstream Proxy
 
 To resolve the issue, please consider applying the following solutions:
@@ -149,10 +150,12 @@ To resolve the issue, please consider applying the following solutions:
 
 - Ensure that the PAC script or alternative proxy script is correctly formatted and properly set up.
 
+
 - Reach out to your network administrators and request their assistance verifying that the default upstream proxy can be successfully chained to the Fiddler Everywhere proxy.
 
 
 ### Solution - Using Alternative Capturing Modes
+
 
 The system capturing mode can set and unset the operating system proxy, which may result in configuration conflicts with third-party upstream proxies. To avoid such conflicts, consider the alternative capturing modes provided below as substitutes for the system capturing mode.
 
@@ -177,6 +180,7 @@ To troubleshoot if a third-party proxy tool is interfering with Fiddler's proxy,
 - Enable the system capturing mode.
 
 - Confirm that system capturing mode functions correctly by capturing a page like https://example.com.
+
 
 - Start the third-party proxy tool and activate its system capturing mode.
 

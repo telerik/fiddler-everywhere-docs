@@ -19,12 +19,35 @@ res_type: kb
 
 ## Description
 
-How can I capture traffic from Python applications?
+**Q:** How can I capture traffic from Python applications?
+
+**Q:** When Fiddler Everywhere acts as a system proxy, I can't use python's pip library (or other Python library that makes HTTPS requests).
+
+**Q.** My python library fails with `CERTIFICATE_VERIFY_FAILED` when Fiddler is an intermediate proxy.
 
 
-## Setting Fiddler Proxy through Environment Variables
+## Using the Fiddler's Terminal
 
-For Fiddler Everywhere to capture traffic from a Python application, the application must be set to respect the Fiddler Everywhere proxy. You can achieve that by setting the environment variables `http_proxy` and `https_proxy`. The `export` command (for macOS and Linux) or the `set` command (for Windows). The `export` command will generate an environment variable in a child process environment. It does not affect other already-existing settings.
+The Fiddler Everywhere application allows starting a dedicated preconfigured terminal that automatically proxies HTTPS requests through the Fiddler proxy. The preconfigured terminal supports capturing from Python applications without additional configuration - Fiddler Everywhere sets everything. 
+
+>important FIddler Everywhere preconfigured terminal supports Python version 3 and above, which was first introduced in 2009. Older versions of Python are unsupported.
+
+Steps needed to capture HTTPS traffic from a Python application:
+
+1. Start the Fiddler Everywhere application.
+
+1. Click **Open Terminal** to start dedicated terminal instance.
+
+1. Run the Python app within the dedicated terminal instance.
+
+[Learn more about the **Open Browser** option in Fiddler Everywhere here...]({%slug fiddler-terminal-explicit%})
+
+
+## Setting Fiddler Proxy and CA through Environment Variables
+
+As an alternative to the preconfigured terminal, you can configure your python applications to go through the Fiddler Everywhere proxy explicitly.
+
+For Fiddler Everywhere to capture traffic from a Python application, the application must be configured to respect the Fiddler Everywhere proxy. You can achieve that by setting the environment variables `http_proxy` and `https_proxy`. The `export` command (for macOS and Linux) or the `set` command (for Windows). The `export` command will generate an environment variable in a child process environment. It does not affect other already-existing settings.
 
 The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings > HTTPS > Advanced > Export Root Certificate (PEM/ASCII)**.
 
@@ -65,10 +88,9 @@ set http_proxy=
 set https_proxy=
 ```
 
-
 ## Setting Fiddler Proxy through Python Code
 
-You can set the Fiddler proxy explicitly through the Python application's codebase.
+You can set the Fiddler proxy explicitly through the Python application's code base.
 
 ```py
 import requests
