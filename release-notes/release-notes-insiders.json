@@ -1,5 +1,40 @@
 [
     {
+        "version": "4.3.1-insiders",
+        "title": "Fiddler Everywhere v4.3.1",
+        "date": "June 8, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add option for  installation per machine on Windows"
+                    },
+                    {
+                        "title": "Add Offline support on Windows - use the application in an isolated environment with limited or no internet access. Contact telerik-sales@progress.com to learn more."
+                    },
+                    {
+                        "title": "Set HEX inspector as default when viewing gRPC messages"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Copy as cURL does not work when the URL contains % symbol"
+                    },
+                    {
+                        "title": "Checkbox for accepting EULA is not well visible with the dark theme"
+                    },
+                    {
+                        "title": "Quick search does not work properly in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.3.0-insiders",
         "title": "Fiddler Everywhere v4.3.0",
         "date": "May 23, 2023",
@@ -36,7 +71,7 @@
                 ]
             }
         ]
-    },    
+    },
     {
         "version": "4.2.1-insiders",
         "title": "Fiddler Everywhere v4.2.1",
