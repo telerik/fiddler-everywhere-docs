@@ -38,6 +38,8 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 1. Run the **Fiddler Everywhere** exe file to go through the installation process.
 
 
+>tip Fiddler Everywhere for Windows offers you the flexibility to select the installation scope based on your preferences. You can opt for a per user installation, limiting access to the currently logged-in user, or choose a per machine installation, allowing all users on the host machine to utilize Fiddler Everywhere. Note that simultaneous execution of multiple instances of Fiddler Everywhere on the same host machine is not supported.
+
 ## Step 2: Create Your Fiddler Account
 
 In this step you'll register by creating your unified Telerik account and become a trial user.   
