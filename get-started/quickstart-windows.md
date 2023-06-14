@@ -37,6 +37,9 @@ You'll first have to install the latest version of Fiddler Everywhere on your ma
 
 1. Run the **Fiddler Everywhere** exe file to go through the installation process.
 
+Fiddler Everywhere for Windows offers you the flexibility to select the installation scope based on your preferences. You can opt for a **per user** installation, limiting access to the currently logged-in user, or choose a **per machine** installation, allowing all users on the host machine to utilize Fiddler Everywhere. Note that simultaneous execution of multiple instances of Fiddler Everywhere on the same host machine is not supported.
+
+When Fiddler Everywhere is installed per machine, each individual user should log into Fiddler Everywhere with their own credentials and the generated data won't be accessible from the other users.
 
 ## Step 2: Create Your Fiddler Account
 
