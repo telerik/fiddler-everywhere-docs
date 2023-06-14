@@ -110,4 +110,4 @@ However, this is not the case for the other operating systems where these servic
 
 ## Contact us
 
-Suppose you have more questions or need assistance configuring your iOS device alongside Fiddler Everywhere, then you can reach out to our support team through the **Help** > ***Contact Support** option.
+Suppose you have more questions or need assistance configuring your iOS device alongside Fiddler Everywhere, then you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.

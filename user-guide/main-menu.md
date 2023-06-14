@@ -54,7 +54,7 @@ The **Help** menu provides options for a version update and information, and fas
 - **Documentation**&mdash;Opens a new browser tab with the [Fiddler Everywhere documentation website](https://docs.telerik.com/fiddler-everywhere/).
 - **Open Application Logs Folder**&mdash;Opens the local folder that contains the Fiddler Everywhere log files. For more information, refer to the article on [using the log files for troubleshooting your local setup]({%slug fiddler-log-files%}).
 - **About**&mdash;Opens a dialog window that provides information about the current version and build date of Fiddler Everywhere. On macOS, the dialog also contains information about the type of the build (Apple Silicon(arm64) for [Mac computers with Silicon chips](https://support.apple.com/en-us/HT211814) versus Intel(x64) for Mac computers with Intel chips).
-- **Contact Support**&mdash;Available for both the trial and [commercial]({%slug introduction%}#key-features) versions. The support option loads the official support center at https://www.telerik.com/account/support-center
+
 
 ![Help Menu](../images/menu/menu-help-update.png)
 
@@ -63,13 +63,16 @@ The **Help** menu provides options for a version update and information, and fas
 
 The **Feedback** option lets you send recommendations and feedback on the Fiddler Everywhere client application.
 
+## Contact Support
+
+The **Contact Support** option is available for both the trial and [commercial]({%slug introduction%}#key-features) versions. The support option loads [the official Telerik support center](https://www.telerik.com/account/support-center).
+
 ## Links
 
 The **Links** menu provides the following useful fast links:
 
 - **Forums** link to the Fiddler Everywhere community forums at https://www.telerik.com/forums/fiddler.
 - **Documentation** link to the Fiddler Everywhere official documentation at https://docs.telerik.com/fiddler-everywhere/.
-- **Contact Support** link to the official [support center](https://www.telerik.com/account/support-center) from where all licensed and trial users can post a ticket. For more information, refer to the article on the [support options provided by Fiddler Everywhere]({%slug support%}).
 
 ## Notifications
 
