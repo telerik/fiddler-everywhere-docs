@@ -85,6 +85,9 @@ While using Fiddler Everywhere, consider the following security indicators and h
 
 - Sessions uploaded to the Fiddler cloud space are encrypted when password protection is enabled. Unencrypted sessions are stored in the cloud as [Fiddler archives]({%slug fiddler-saz-format%}).
 
+- Fiddler Everywhere can be installed per machine on Windows OS (macOS and Linux installation is only per user). In that case,  each individual Fiddler user logs into the application with their own credentials and the generated data is be accessible from the other users.
+
+
 ## Application Analytics
 
 By default, the Fiddler Everywhere application comes with an integrated Analytics solution that collects application usage data to improve product stability, UI, and UX. The collected information is stored on an external server and does not contain any data related to the captured traffic and the data that the sessions include. You can opt out from the analytics data collection by navigating to **Settings** > **Privacy** > **Automatically send data to help us improve the product**.
