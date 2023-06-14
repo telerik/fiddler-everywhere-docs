@@ -592,7 +592,9 @@ To place session information in the clipboard, use the **Copy** context menu opt
 
 - **Full Summary**&mdash;provides verbose session details; can be accessed with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
 
-- **Copy as Powershell**&mdash;converts the request as a Powershell code and puts it in the system clipboard.
+- **Copy as Powershell**&mdash;converts the request as a **Windows PowerShell** code and puts it in the system clipboard.
+
+    >important The **Copy as PowerShell** feature generates Windows PowerShell code, not PowerShell (NetCore). These two PS variations utilize different APIs for HTTP requests (WebRequest vs. HttpClient), making the generated code compatible only with Windows PowerShell.
 
 - **Copy as Fetch**&mdash;converts the request as a Fetch code and puts it in the system clipboard.
 
