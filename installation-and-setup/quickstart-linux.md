@@ -11,7 +11,7 @@ previous_url: /get-started/quickstart-linux
 This tutorial describes how to install and start using Fiddler Everywhere on Linux.
 
 * First, you will go through the installation and configuration steps.
-* Next, you'll create a Fiddler account so that you can move on to effectively using the web-debugging tool.
+* Next, you'll create a Fiddler account so that you can move on to using the web-debugging tool.
 * Then, you will switch the default Light theme with the Dark one.
 * Finally, you will see how to capture, inspect, and modify traffic.
 
@@ -94,7 +94,7 @@ That's it! Fiddler Everywhere will immediately capture all the traffic generated
 
 ### Capture System Traffic
 
-You can set Fiddler Everywhere as a system proxy and capture the HTTPS traffic of all applications that respect the operating system proxy settings. However, by default, you can only track non-secure HTTP **system** traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
+You can set Fiddler Everywhere as a system proxy and capture the HTTPS traffic of all applications that respect the operating system proxy settings. However, by default, you can only track non-secure HTTP **system** traffic with Fiddler Everywhere. Thus, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
 
 
 1. Start Fiddler Everywhere.

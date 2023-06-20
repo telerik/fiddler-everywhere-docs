@@ -8,3 +8,8 @@ sandboxed
 preconfigured
 MITM
 decrypt
+XFCE
+RedHat
+PEM
+x64
+400MB
