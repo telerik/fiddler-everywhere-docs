@@ -13,12 +13,12 @@ This article provides additional information related to the installation of Fidd
 
 ## Logging In with Your Account
 
-Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can use a Telerik account or use an existing Google account.
+Signing in is mandatory for both commercial and trial Fiddler Everywhere users. To sign up to Fiddler Everywhere, you can use a [Telerik account](https://www.telerik.com/account/) or use an existing Google account.
 
 
 ### Creating a Fiddler Everywhere Account
 
-To create a Fiddler account, refer to the following getting started step-by-step tutorials, which provide detailed instructions on the topic:
+To create a Fiddler Everywhere account through the unified Telerik system, refer to the following getting started step-by-step tutorials, which provide detailed instructions on the topic:
 
 * [Creating Your Fiddler Account on Windows]({% slug first_steps_windows %}#creating-your-fiddler-account)
 
@@ -47,7 +47,7 @@ The [Fiddler Everywhere Enterprise subscription plan](https://www.telerik.com/pu
 
 ## Updating Fiddler Everywhere
 
-Fiddler Everywhere support predefined OS proxy settings for direct Internet access. If your system accesses the Internet through a predefined proxy, ensure you have installed the latest version of Fiddler Everywhere.
+The Fiddler team supports officially only the latest version of the Fiddler Everywhere application.
 
 To update Fiddler Everywhere to its latest version:
 

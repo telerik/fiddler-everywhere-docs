@@ -32,61 +32,67 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 
 You'll first have to install the latest version of Fiddler Everywhere on your machine.
 
-1. Navigate to the [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) download page.
-
-1. Select **Download for Windows** to download the installer.
-
-1. Run the **Fiddler Everywhere** exe file to go through the installation process.
+1. Download and install the latest version of [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 
 Fiddler Everywhere for Windows offers you the flexibility to select the installation scope based on your preferences. You can opt for a **per user** installation, limiting access to the currently logged-in user, or choose a **per machine** installation, allowing all users on the host machine to utilize Fiddler Everywhere. Note that simultaneous execution of multiple instances of Fiddler Everywhere on the same host machine is not supported.
 
 When Fiddler Everywhere is installed per machine, each individual user should log into Fiddler Everywhere with their own credentials and the generated data won't be accessible from the other users.
 
+
 ## Step 2: Create Your Fiddler Account
 
-In this step you'll register by creating your unified Telerik account and become a trial user.   
+In this step, you'll register by creating your unified Telerik account.   
 
 1. Launch the Fiddler Everywhere application. Follow the **Sign in or create an account** link.
 
-1. On the **Enter Your Email to Sign in or Create an Account** screen, enter the requested information. The email you provide here will be later on used by your collaborators for sharing sessions, collections, and notifications.
+1. Enter the requested information on the **Enter Your Email to Sign in or Create an Account** screen. Your collaborators will later use the email you provide here to share sessions, collections, and notifications.
 
-1. Check your inbox and open the confirmation email to complete your account activation.
+1. Check your inbox, open the confirmation email, and complete your account activation.
 
-1. Return back to the Fiddler Everywhere application and accept the license agreement.
+1. Return the Fiddler Everywhere application and accept the license agreement.
 
-1. On the next screen, choose whether you want to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link. For the purposes of this tutorial, you'll become a trial user by selecting the **Start Free Trial** option. You are all set to start using the full-scale functionalities Fiddler Everywhere delivers.
-
-
-## Step 3: Style the Tool
-
-Now let's add more elegance to Fiddler Everywhere and change its default Light theme with the Dark one&mdash;just go to the **Themes** menu, select the Dark theme, and click **Save**. That's it!
+1. On the next screen, choose whether to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
 
-## Step 4: Capture Secure Traffic
+## Step 3: Capture HTTPS Traffic
 
 Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports a system proxy.
 
-However, by default, you can only track non-secure HTTP system traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
+### Capture Browser Traffic
+
+With Fiddler Everywhere, you can immediatelly capture traffic from a independent browser instance.
 
 1. Start Fiddler Everywhere.
 
-1. Open the [**Welcome** page]({% slug my-resources-section %}) and click the **Enable HTTPS Capture** button. Alternatively, follow the link **Enable HTTPS now** from the inline notification in the Fiddler UI.
+1. Open the **Home** tab.
 
-  >tip You can also control the trust certificate settings manually. [Learn more about the advanced trust certificate options]({%slug trust-certificate%})
+1. Click the **Browser** button.
 
-1. Click the **Trust and Enable HTTPS** button.
+That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from the newly opened browser instance.
 
-1. Confirm the certificate installation in the OS popup.
+>tip The independent browser capturing works only with Chromium-based browsers. To capture traffic from other browsers and applications, use the **System Proxy** mode or other capturing modes.
 
-1. Back on the main Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
+### Capture System Traffic
+
+You can set Fiddler Everywher as a system proxy and capture the HTTPS traffic of all applications that respect the operating system proxy settings. However, by default, you can only track non-secure HTTP **system** traffic with Fiddler Everywhere. Therefore, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
+
+1. Start Fiddler Everywhere.
+
+1. Open the **Home** tab.
+
+1. Click the **System Proxy** from the **Capture and Inspect Traffic** section.
+
+1. Follow the tutorial steps to successfully install the Fiddler Certificate authority and enable it as a system proxy.
 
 That's it! Fiddler Everywhere will start immediately to capture all the traffic generated from any application that uses the operating system proxy settings.
 
->tip Fiddler Everywhere provides the [preconfigured browser-capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing), which enables you to skip the system capturing configuration from this step. The predefined browser-capturing option comes in handy when you generate captured traffic only from a browser, or lack administrative right to install certificates and to modify the system proxy, or when third-party VPNs and security tools are colliding with the Fiddler Everywhere proxy.
+>tip Once the Fiddler Everywhere CA (certificate authority) is installed succesfully, you can directly load the **Live Traffic** tab and set/unset the system proxy manually.
 
 ## Step 5: Fiddle with the Traffic
 
 Let's now continue with capturing and inspecting some HTTPS traffic:
+
+1. Open the **Live Traffic** tab.
 
 1. Inspect each session's request and response data through the **Inspectors** tab.
 
