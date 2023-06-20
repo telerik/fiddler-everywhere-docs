@@ -3,6 +3,8 @@ title: Trust Root Certificate
 description: "Learn more about how to install and trust the root certificate in your operating system and how it relates to enabling the HTTPS capturing of system traffic."
 slug: trust-certificate
 position: 20
+previous_url: /installation-and-update/trust-certificate-configuration
+publish: false
 ---
 
 # Trust Root Certificate

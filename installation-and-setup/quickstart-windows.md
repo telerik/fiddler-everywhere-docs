@@ -3,6 +3,7 @@ title: First Steps on Windows
 description: "Install and configure Fiddler Everywhere on Windows and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
 slug: first_steps_windows
 position: 1
+previous_url: /get-started/quickstart-windows
 ---
 
 # First Steps with Fiddler Everywhere on Windows

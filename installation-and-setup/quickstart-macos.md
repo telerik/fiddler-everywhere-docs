@@ -3,6 +3,7 @@ title: First Steps on macOS
 description: "Install and configure Fiddler Everywhere on macOS and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
 slug: first_steps_macos
 position: 2
+previous_url: /get-started/quickstart-macos
 ---
 
 # First Steps with Fiddler Everywhere on macOS
