@@ -86,7 +86,7 @@ That's it! Fiddler Everywhere will immediately capture all the traffic generated
 
 >tip: The Fiddler CA is installed in the OS certificate  manager once. After the Fiddler Everywhere CA installs successfully, you can directly load the **Live Traffic** tab and manually set/unset the system proxy.
 
-## Step 5: Fiddle with the Traffic
+## Step 4: Fiddle with the Traffic
 
 Let's now continue with capturing and inspecting some HTTPS traffic:
 
