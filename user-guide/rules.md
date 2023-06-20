@@ -4,7 +4,7 @@ description: "Learn how to use the Rules tab in the Fiddler Everywhere web-debug
 slug: rules-general
 publish: true
 position: 50
-previous_url: /user-guide/live-traffic/autoresponder, /user-guide/live-traffic/rules, user-guide/live-traffic/rules-builder
+previous_url: /user-guide/live-traffic/autoresponder, /user-guide/live-traffic/rules
 ---
 
 # Rules Tab
