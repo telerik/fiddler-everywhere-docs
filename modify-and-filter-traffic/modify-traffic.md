@@ -4,7 +4,7 @@ description: "Modify the headers and bodies of captured sessions when working wi
 slug: modify-traffic-get-started
 publish: true
 position: 30
-previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic
+previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic, /traffic/modify-traffic
 ---
 
 # Modifying Traffic

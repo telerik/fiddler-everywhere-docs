@@ -20,3 +20,8 @@ PKCS
 DER
 FiddlerRootCertificate.crt
 SSO
+RPC
+microservices
+microservice
+TCP
+OSI

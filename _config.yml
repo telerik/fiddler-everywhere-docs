@@ -11,10 +11,16 @@ navigation:
         position: 10
     installation-and-setup:
         title: Installation & Setup
-        position: 20    
-    traffic:
-        title: Traffic Inspection & Analysis
+        position: 20
+    capture-traffic:
+        title: Capture Traffic
         position: 30
+    inspect-traffic:
+        title: Inspect Traffic
+        position: 40
+    modify-and-filter-traffic:
+        title: Modify & Filter Traffic
+        position: 50
     api:
         title: API Composing
         position: 60
