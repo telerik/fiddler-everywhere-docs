@@ -81,9 +81,15 @@ You can set Fiddler Everywhere as a system proxy and capture the HTTPS traffic o
 
 1. Follow the tutorial steps to successfully install the Fiddler Everywhere CA (certificate authority) and enable it as a system proxy.
 
+  1. Click **Set System Proxy** to enable Fiddler Everywhere as a system proxy.
+
+  1. Click **Trust and Enable HTTPS** to install the Fiddler Everywhere CA (certificate authority) in the Windows certificate manager. This steps enables capturing and decrypting HTTPS traffic.
+
+  1. Click **Open Live Traffic** to navigate to the **Live Traffic grid**.
+
 That's it! Fiddler Everywhere will immediately capture all the traffic generated from any application that uses the operating system proxy settings.
 
->tip: The Fiddler CA is installed in the OS certificate  manager once. After the Fiddler Everywhere CA installs successfully, you can directly load the **Live Traffic** tab and manually set/unset the system proxy.
+>tip: The Fiddler CA is installed in the OS certificate manager once. After the Fiddler Everywhere CA installs successfully, you can directly navigate to the **Live Traffic** tab and manually set/unset the system proxy.
 
 
 ## Step 4: Fiddle with the Traffic

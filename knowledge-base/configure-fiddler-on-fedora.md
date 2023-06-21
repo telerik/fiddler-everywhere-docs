@@ -19,7 +19,7 @@ res_type: kb
 
 ## Description
 
-The [instructions for installing the trusted root certificate for Fiddler Everywhere on Linux]({%slug first_steps_linux%}#start-system-capturing) utilize the Debian `dkpg-reconfigure` command. However, some Linux distributions like Fedora, CentOS, and RedHat might lack the `dkpg` library or limit its usage. How can I install and trust the Fiddler root certificate using the `update-ca-trust` command?
+The [instructions for installing the trusted root certificate for Fiddler Everywhere on Linux]({%slug first_steps_linux%}#start-system-capturing) use the Debian `dpkg-reconfigure` command. However, some Linux distributions like Fedora, CentOS, and RedHat can lack the `dpkg` library or limit its usage. How can I install and trust the Fiddler root certificate using the `update-ca-trust` command?
 
 ## Solution
 

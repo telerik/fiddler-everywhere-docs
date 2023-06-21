@@ -13,11 +13,11 @@ This article provides additional information about the options for installing th
 
 ## Install & Trust the Root Certificate (Quickstart)
 
-The quickstart certificate installation options of Fiddler Everywhere for each platform are part of the getting started step-by-step tutorials:
+The quick start certificate installation options of Fiddler Everywhere for each platform are part of the getting started step-by-step tutorials:
 
-* [Installing the Fiddler Everywhere root certificate on Windows]({% slug first_steps_windows %}#capturing-secure-traffic)
-* [Installing the Fiddler Everywhere root certificate on macOS]({% slug first_steps_macos %}#capturing-secure-traffic)
-* [Installing the Fiddler Everywhere root certificate on Linux]({% slug first_steps_linux %}#capturing-secure-traffic)
+* [Installing the Fiddler Everywhere root certificate on Windows]({% slug first_steps_windows %}#capturing-system-traffic)
+* [Installing the Fiddler Everywhere root certificate on macOS]({% slug first_steps_macos %}#capturing-system-traffic)
+* [Installing the Fiddler Everywhere root certificate on Linux]({% slug first_steps_linux %}#capturing-system-traffic)
 
 
 ## Install & Trust the Root Certificate (Settings)
@@ -54,6 +54,7 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and use the **Export root certificate(DER/Binary format)** from the drop-down menu. The certificate is exported to **~/Desktop** as file with name **FiddlerRootCertificate.crt**.
 
 1. To import and trust the exported certificate, perform the following steps.
+
     >important (For localized Linux distributions only) Some Linux distributions, such as Ubuntu, use localized paths&mdash;for example, the name of the **Desktop** folder translates into the locale language. To resolve this issue, create a folder named **Desktop** in your root through `mkdir ~/Desktop`. Then, export the certificate to the newly-created directory. Once the certificate is installed, you can safely remove that directory.
 
     1. Create a directory and copy the exported certificate by running the following commands.
@@ -64,6 +65,8 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
         // Starts the tool and upgrades the certificates.
         $ sudo dpkg-reconfigure ca-certificates
         ```
+
+        >tip In case your Linux distribution does not use the `dpkg` library, then refer to your OS documentation for alternative ways to handle the CA installation or use our dedicated [Fedora, CentOS, RedHat]({%slug iddler-fedora-centos%}) and [XFCE]({%slug fiddler-xfce%}) instructions.
 
     1. From the prompt, select **Yes** to install new certificates.
 
@@ -88,13 +91,13 @@ Fiddler Everywhere enables you to control the certificate installation and HTTPS
 
 ## Manually Export and Install the Trust Certificate
 
-Sometimes the automatic installation of the trust certificate might fail due to security restrictions, compatibility issues, limited read/write rights, corporate policies, etc. In that case, the Fiddler Everywhere application presents an error message that notifies the user that the certificate installation has failed. You can export the Fiddler certificate and install it to solve similar issues manually.
+The automatic installation of the trust certificate can fail due to security restrictions, compatibility issues, limited read/write rights, corporate policies, etc. In that case, the Fiddler Everywhere application presents an error message that notifies the user that the certificate installation has failed. You can export the Fiddler certificate and install it to solve similar issues manually.
 
 1. Start Fiddler Everywhere and go to **Settings** > **HTTPS** > **Advanced Settings**.
 
-1. Choose the appropriate certificate format (**DER/Binary**, **PEM/ASCII**, and **PKCS 12**) and click the **Export Root Certificate** button. The export option will export the certificate to a root folder called **Desktop**, so ensure that such a folder exists in your file system.
+1. Choose the proper certificate format (**DER/Binary**, **PEM/ASCII**, and **PKCS 12**) and click the **Export Root Certificate** button. The export option will export the certificate to a root folder called **Desktop**, so ensure that such a folder exists in your file system.
 
-1. Add the exported certificate to the desired certificate manager (e.g., on [Linux]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%}), [macOS]({%slug how-to-install-fiddler-root-certificate-on-mac-os%}), custom application, etc.).
+1. Add the exported certificate to the desired certificate manager (for example, on [Linux]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%}), [macOS]({%slug how-to-install-fiddler-root-certificate-on-mac-os%}), custom application, etc.).
 
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
 

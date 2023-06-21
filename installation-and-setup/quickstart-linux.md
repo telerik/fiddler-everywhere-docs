@@ -101,11 +101,21 @@ You can set Fiddler Everywhere as a system proxy and capture the HTTPS traffic o
 
 1. Click the **System Proxy** from the **Capture and Inspect Traffic** section.
 
-1. Follow the tutorial steps to successfully install the Fiddler Everywhere CA (certificate authority) and enable it as a system proxy. The Linux distributions use different security features and approach for trusting a root certificate. Fiddler Everywhere lets you export and manually import the certificate into your Linux OS.
+1. Follow the tutorial steps to successfully install the Fiddler Everywhere CA (certificate authority) and enable it as a system proxy.
 
->important The approach for trusting the Fiddler root certificate in this tutorial assumes that your Linux distribution uses the `dkpg-reconfigure` command. If this is not the case, refer to the article on [configuring the Fiddler certificate on Fedora, CentOS, and RedHat]({%slug fiddler-fedora-centos%}).  
+  1. Click **Set System Proxy** to enable Fiddler Everywhere as a system proxy.
+
+  1. Follow the instructions in  **Trust Fiddler CA and enable HTTPS** to install the Fiddler Everywhere CA (certificate authority) in your Linux certificate manager. 
+
+    >tip There are various Linux distributions and theu use various approaches to handle the installation and storing of certificate authorities. [Learn more about the manual CA installation on Linux here...]({%slug trust-certificate%}#for-linux)
+  
+  1. Once the Fiddler CA is successfully installed, confirm by checking the **I have successfully trusted the Fiddler Certificate Authority** checkbox and then press **Next**.
+
+  1. Click **Open Live Traffic** to navigate to the **Live Traffic grid**.
 
 That's it! Fiddler Everywhere will immediately capture all the traffic generated from any application that uses the operating system proxy settings.
+
+>tip: The Fiddler CA is installed in the OS certificate manager once. After the Fiddler Everywhere CA installs successfully, you can directly navigate to the **Live Traffic** tab and manually set/unset the system proxy.
 
 
 ## Step 4: Fiddle with the Traffic
