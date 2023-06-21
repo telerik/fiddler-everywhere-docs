@@ -13,3 +13,4 @@ RedHat
 PEM
 x64
 400MB
+KDI

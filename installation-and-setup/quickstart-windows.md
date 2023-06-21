@@ -12,7 +12,6 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 
 * First, you will go through the installation and configuration steps.
 * Next, you'll create a Fiddler account so that you can move on to using the web-debugging tool.
-* Then, you will switch the default Light theme with the Dark one.
 * Finally, you will see how to capture, inspect, and modify traffic.
 
 ## Prerequisites
@@ -86,49 +85,56 @@ That's it! Fiddler Everywhere will immediately capture all the traffic generated
 
 >tip: The Fiddler CA is installed in the OS certificate  manager once. After the Fiddler Everywhere CA installs successfully, you can directly load the **Live Traffic** tab and manually set/unset the system proxy.
 
+
 ## Step 4: Fiddle with the Traffic
 
-Let's now continue with capturing and inspecting some HTTPS traffic:
+Let's continue with capturing and inspecting HTTPS traffic:
 
 1. Open the **Live Traffic** pane.
 
-1. Inspect a selected session's request and response data through the **Inspectors** tab.
+2. Use the **Inspectors** tab to analyze the request and response data of a selected session.
 
-1. Extract technical details and statistical data using the **Overview** tab.
+3. Use the **Overview** tab to extract technical details and statistical data.
 
-Now you'll extract a captured session:
+Now let's go ahead with extracting a captured session:
 
 1. Open the **Live Traffic** pane.
 
-1. Focus the **Live Traffic** tab and select a request/response entry from the **Live Traffic grid**.
+1. Switch to the **Live Traffic tab** and select a request/response entry from the **Live Traffic grid**.
 
-1. Double-click to open the **Inspectors** tab and inspect the detailed session request/response data.
+1. Double-click on the entry to open the **Inspectors** tab and explore the detailed session request/response data.
 
-1. (Optional) Switch to the **Overview** tab and inspect the technical and statistical data.
+1. Switch to the **Overview** tab to examine the technical and statistical information.
 
-Let's modify that session!
+1. Save a session or a snapshot of multiple sessions through the **Save** option in the context menu.
 
-1. Right-click on a captured session from the **Live Traffic grid**. Select **Edit in Composer** from the context menu.
+1. Share a session or a snapshot of multiple sessions through the **Share** option in the context menu.
 
-1. Modify its headers When the session opens in a new **Composer** window. For example, add a new HTTP header with the `isTest` key and the `true` value.
+>tip Save and share options include adding password-protection to protect sensitive data. 
 
-1. Click the **tick** to save the new HTTP header.
+Let's move on to modifying a session:
+
+1. Right-click on a captured session in the **Live Traffic grid** and select **Edit in Composer** from the context menu.
+
+1. Once the session opens in a new **Composer** window, modify its headers as needed. For example, you can add a new HTTP header with the `isTest` key and the value `true`.
+
+1. Save the new HTTP header by clicking the tick icon.
 
 1. Click the **Execute** button to replay the modified request.
 
-That was it! Now you are ready to dive more deeply into Fiddler Everywhere and take full advantage of its slick functionalities!
+Now, let's discuss mocking traffic:
 
-What about mocking traffic, one might ask?
+1. Right-click on a captured session in the **Live Traffic grid** and select **Add New Rule** from the context menu.
 
-1. Right-click on a captured session from the **Live Traffic grid**. Select **Add New Rule** from the context menu.
-
-1. Use the **Rules Builder** to create your mock behavior. Add different matching conditions, and apply various actions. Once ready - save the new rule.
+1. Use the **Rules Builder** to create the desired mock behavior. You can add various matching conditions and apply different actions. Once you're ready, save the new rule.
 
 1. Enable the **Rules** tab and toggle on the rules you want to execute.
 
-1. Select the captured session. Click on the **Replay > Reissue Requests** from the context menu.
+1. Select the captured session and click on **Replay > Reissue Requests** in the context menu to replay the requests according to the applied rules.
 
->tip The **Rules** tab is one of the most advanced features in Fiddler Everywhere. You can create and execute complex rules on your incoming traffic to mock actual client and server behavior without actually touching the client and server applications.
+>tip The **Rules** tab is one of the most advanced features in Fiddler Everywhere. You can create and execute complex rules on your incoming traffic to mock client and server behavior without touching the client and server applications.
+
+That's it! Now you're equipped to delve deeper into Fiddler Everywhere and make the most of its powerful functionalities.
 
 ## Next Steps
 
