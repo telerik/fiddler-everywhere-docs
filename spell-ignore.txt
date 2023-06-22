@@ -25,3 +25,11 @@ microservices
 microservice
 TCP
 OSI
+ipconfig
+ifconfig
+loopback
+AVDs
+AVD
+VPNs
+VPN
+discoverable

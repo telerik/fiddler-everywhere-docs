@@ -45,7 +45,7 @@ To configure real iOS devices to work alongside a Fiddler Everywhere host, refer
 
 1. Scroll to the bottom and choose **Configure Proxy** > **Manual**.
 
-     - In the **SERVER** field, enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.0.101** (for demo purposes we assume that is the IP of the host machine where FIddler Everywhere runs).
+     - In the **SERVER** field, enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.0.101** (for demo purposes, we assume this is the IP of the host that runs Fiddler).
 
      - In the **PORT** field, enter the Fiddler Everywhere proxy port. By default, the port is **8866**.
 
@@ -55,9 +55,9 @@ To configure real iOS devices to work alongside a Fiddler Everywhere host, refer
 
 1. On your iOS device, open **General** > **Profile Downloaded** and install the downloaded Fiddler certificate.
 
-1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **DO_NOT_TRUST_FiddlerRoot** certificate.
+1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority** certificate.
 
->important The last step is crucial, and HTTPS browsing will fail if the certificate is not fully trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
+>important The last step is crucial, and HTTPS browsing will fail if the certificate is not trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
 
 
 ## Configuring iOS Simulator
@@ -73,7 +73,7 @@ The later versions of the iOS simulators, accessible through XCode, use the OS s
 
 1. Drag and drop the exported certificate in the simulator.
 
-1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **DO_NOT_TRUST_FiddlerRoot** certificate.
+1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the certificate named **Fiddler Root Certificate Authority**.
 
 ## Inspecting Traffic
 
@@ -83,7 +83,7 @@ Now you can immediately monitor HTTP/HTTPS traffic from your iOS device. For exa
 
 ## Bypass the Apple Endpoints
 
-Some Apple services like the Apple Application store and iTunes use certificate pinning as an additional layer of security. That means these services won't trust third-party certificates like the one Fiddler Everywhere installs and operates as a MITM proxy. The above causes several significant effects:  
+Some Apple services like the Apple Application store and iTunes use certificate pinning as an additional layer of security. That means these services won't trust third-party certificates like the one Fiddler Everywhere installs and operates as a MITM proxy. The above causes significant effects:  
 
 - The TLS handshake fails, resulting in no HTTPS traffic being captured from these services.
 
@@ -99,7 +99,7 @@ However, this is not the case for the other operating systems where these servic
 
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
 
-- In the **Bypass Fiddler for URLS that starts with:** field, add the following Apple root domains:
+- In the **Bypass Fiddler for URLs that starts with:** field, add the following Apple root domains:
 
     ```
     *.apple.com, *.itunes.com, *mzstatic.com
@@ -110,4 +110,4 @@ However, this is not the case for the other operating systems where these servic
 
 ## Contact us
 
-Suppose you have more questions or need assistance configuring your iOS device alongside Fiddler Everywhere, then you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.
+If you have more questions or need help configuring your iOS device alongside Fiddler Everywhere, then you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.

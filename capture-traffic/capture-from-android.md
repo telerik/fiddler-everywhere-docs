@@ -40,7 +40,7 @@ The following steps apply to real Android devices with access to the Internet th
 
 1. Set the Fiddler Everywhere proxy on the Android device or emulator.
 
-    1. Open **Settings** > active Wi-Fi connection > **Proxy**.
+    1. Open **Settings** > active WiFi connection > **Proxy**.
 
     1. From the **Proxy** option, select **Manual proxy**.
 
@@ -71,11 +71,11 @@ With the above setup, you are ready to capture traffic from your Android mobile 
 
 ## Configuring the Android Emulator
 
-The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler Everywhere as a proxy by directly configuring the Android operating system (like an actual device). The crucial difference is that the Fiddler Everywhere proxy address will be the loopback address of the emulator. Check the emulator documentation for the IP address used as a loopback address. In most cases, the loopback alias of the Android emulator is of the **10.0.2.2**. Note that some third-party emulators are using different alias for the loopback address.
+The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler Everywhere as a proxy by directly configuring the Android operating system (like real device). The crucial difference is that the Fiddler Everywhere proxy address will be the loopback address of the emulator. Check the emulator documentation for the IP address used as a loopback address. In most cases, the loopback alias of the Android emulator is of the **10.0.2.2**. Note that some third-party emulators are using different alias for the loopback address.
 
-1. Start the emulator, open the simulated Wi-Fi, tap **Settings**, and expand **Advanced Settings**.
+1. Start the emulator, open the simulated WiFi, tap **Settings**, and expand **Advanced Settings**.
 
-1. Select **Edit** and expand **Advanced Settings**. For some older Android versions, you might have to touch and hold the name of the connected network, then tap **Modify**, and expand **Advanced Settings**.
+1. Select **Edit** and expand **Advanced Settings**. For some older Android versions, you have to touch and hold the name of the connected network, then tap **Modify**, and expand **Advanced Settings**.
 
 1. Open **Proxy**, and then select **Manual proxy**.
 
@@ -109,11 +109,11 @@ Now you can immediately monitor HTTP/HTTPS traffic from mobile browsers. For exa
 
 To differentiate the traffic that comes from the mobile device from the one that is being captured from the Fiddler Everywhere host machine, you can apply a **Client IP** column filter (for example, while using the mobile device IP) or a **Process** column filter (while using the device process name).
 
->important When you've finished debugging, remove the Wi-Fi proxy from your Android device to regain connectivity.
+>important When you've finished debugging, remove the WiFi proxy from your Android device to regain connectivity.
 
 ## Inspecting Android Application Traffic
 
-Most production-ready applications explicitly restrict user-installed certificates' usage, which means that Fiddler Everywhere won't be able to complete the TLS handshake and decrypt their HTTPS traffic. However, you can monitor traffic from applications in active development, which means that you have access to the codebase of that application. 
+Most production-ready applications explicitly restrict user-installed certificates' usage, which means that Fiddler Everywhere won't complete the TLS handshake and decrypt their HTTPS traffic. However, you can monitor traffic from applications in active development, which means that you have access to the code of that application. 
 
 1. (For Android API 24 and later) Add the following code to the `Android/src/main/res/xml/network_security_config.xml` file:
 
@@ -152,5 +152,10 @@ Most production-ready applications explicitly restrict user-installed certificat
 
 ## Additional Resources
 
-* [Directing Localhost Requests from Mobile Application through the Fiddler Proxy]({%slug fiddler-localhost-android%})
+* [Directing localhost Requests from Mobile Application through the Fiddler Proxy]({%slug fiddler-localhost-android%})
 * [Debugging Mobile Applications with Fiddler Everywhere (Webinar)](https://www.telerik.com/webinars/fiddler/how-to-debug-ios-and-android-mobile-apps-with-fiddler)
+
+
+## Contact us
+
+If you have more questions or need help configuring your iOS device alongside Fiddler Everywhere, then you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.
