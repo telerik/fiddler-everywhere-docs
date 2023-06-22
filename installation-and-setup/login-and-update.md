@@ -2,7 +2,7 @@
 title: Login & Update
 description: "Learn more about how to install Fiddler Everywhere, check out the available options for logging into the tool and updating it."
 previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration, get-started/installation-procedure, /installation-procedure, /installation-and-update/installation-procedure
-slug: installation
+slug: login-and-update
 position: 10
 ---
 

@@ -13,15 +13,9 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
 - **Fiddler listens on port**&mdash;Defines the port that Fiddler Everywhere uses to listen for web traffic. The default port is **8866**.
 
-- **Act as a system proxy on startup**&mdash;Controls whether Fiddler Everywhere will be registered as the system proxy during startup. Some browsers and many applications use the system proxy by default and are notified when it changes.
-
-   >tip By default, with **Act as a system proxy on startup** enabled, Fiddler Everywhere will always start up with the Live Traffic toggle enabled and will immediately start capturing the ongoing HTTP traffic. Disable this option if you would like to change this behavior and control when Fiddler Everywhere should start acting as a system proxy.
-
 - **Allow remote computers to connect**&mdash;Controls whether inbound connections to Fiddler Everywhere are allowed. Enable this option to capture traffic from remote devices.
 
 - **Enable HTTP/2 support (BETA)**&mdash;Enables capture of traffic through the HTTP/2 protocol. 
-
-    >important With the **Enable HTTP/2 support (BETA)** option, the connection between a client and a server will default to HTTP/2, if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1. [Read more about the HTTP/2 support in Fiddler Everywhere...]({%slug capture-traffic-get-started%}#http-version-specifics)
 
 - **Enable Streaming Mode**&mdash;With **Streaming mode** enabled, the response is immediately returned to the client as they are downloaded. Modifying the Response body (through the **Rules**) is possible only when **Streaming mode** is disabled.
 
@@ -31,17 +25,14 @@ The **Connections** menu exposes options allowing granular control over proxy se
     Bypassing in Fiddler works in the following cases:
 
     - [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **ON**
-    - Both [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) and [Preconfigured Browser Capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) are **ON**
-    - [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF** and [Preconfigured Browser Capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) **ON**
+    - Both [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) and [Independent Browser Capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) are **ON**
+    - [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF** and [Independent Browser Capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) **ON**
     - Capturing traffic from Android device with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
     - Capturing traffic from iOS device with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
-    - Expicit browser manual proxy settigns (to Fiddler's proxy address:port) with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF**
+    - Explicit browser manual proxy settings (to Fiddler's proxy address:port) with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF**
 
     >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they won't trust third-party certificates like the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) might misbehave or not work.
 
-The following figure displays the default settings of the **Connections** menu.
-
-![Act as a system proxy on startup setting](../../images/settings/settings-connections.png)
 
 
 ### Streaming Mode

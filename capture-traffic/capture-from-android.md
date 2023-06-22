@@ -1,6 +1,6 @@
 ---
-title: Capturing and Inspecting Android Traffic
-description: "Capture and inspect traffic from Android devices while using the Fiddler Everywhere web-debugging HTTP-proxy tool."
+title: Capturing Android Traffic
+description: "Capture HTTPS traffic from Android devices while using the Fiddler Everywhere web-debugging proxy tool."
 type: how-to
 slug: capture-mobile-android-traffic
 publish: true
@@ -8,17 +8,17 @@ position: 50
 previous_url: /knowledge-base/configure-android, /get-started/mobile-traffic/configure-android, /get-started/traffic/configure-android, /traffic/configure-android
 ---
 
-# Capturing and Inspecting Android Traffic
+# Capturing Android Traffic
 
-This article describes how to use Fiddler Everywhere to capture and inspect traffic that comes from Android devices and emulators.
+This article describes how to use Fiddler Everywhere to capture HTTPS traffic that comes from Android devices and emulators.
 
 To capture and inspect traffic on Android devices, perform the following steps:
 
 1. [Provide the prerequisites](#prerequisites).
 1. [Configure Fiddler Everywhere](#configuring-fiddler-everywhere-host).
 1. [Configure the Android device](#configuring-android-devices).
-1. [Inspect the browser traffic](#inspecting-browser-traffic).
-1. [Inspect the Android application traffic](#inspecting-android-application-traffic).
+1. [Capture browser traffic](#capture-browser-traffic).
+1. [Capture the Android application traffic](#capture-android-application-traffic).
 
 ## Prerequisites
 
@@ -103,17 +103,17 @@ With the above setup, you are ready to capture traffic from your Android mobile 
 - Back in the Fiddler Everywhere application, observe the HTTP/HTTPS traffic being captured.
 
 
-## Inspecting Browser Traffic
+## Capture Browser Traffic
 
-Now you can immediately monitor HTTP/HTTPS traffic from mobile browsers. For example, open a Chrome browser on your Android device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere. 
+Now you can immediately capture HTTP/HTTPS traffic from mobile browsers. For example, open a Chrome browser on your Android device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere. 
 
 To differentiate the traffic that comes from the mobile device from the one that is being captured from the Fiddler Everywhere host machine, you can apply a **Client IP** column filter (for example, while using the mobile device IP) or a **Process** column filter (while using the device process name).
 
 >important When you've finished debugging, remove the WiFi proxy from your Android device to regain connectivity.
 
-## Inspecting Android Application Traffic
+## Capture Android Application Traffic
 
-Most production-ready applications explicitly restrict user-installed certificates' usage, which means that Fiddler Everywhere won't complete the TLS handshake and decrypt their HTTPS traffic. However, you can monitor traffic from applications in active development, which means that you have access to the code of that application. 
+Most production-ready applications explicitly restrict user-installed certificates' usage, which means that Fiddler Everywhere won't complete the TLS handshake and decrypt their HTTPS traffic. However, you can capture traffic from applications in active development, which means that you have access to the code of that application. 
 
 1. (For Android API 24 and later) Add the following code to the `Android/src/main/res/xml/network_security_config.xml` file:
 

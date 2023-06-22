@@ -1,6 +1,6 @@
 ---
-title: Capturing and Inspecting iOS Traffic
-description: "Capture and inspect traffic from iOS devices and simulators while using the Fiddler Everywhere web-debugging HTTP-proxy tool."
+title: Capturing iOS Traffic
+description: "Capture HTTPS traffic from iOS devices and simulators while using the Fiddler Everywhere web-debugging proxy tool."
 type: how-to
 slug: capture-mobile-ios-traffic
 publish: true
@@ -8,17 +8,17 @@ position: 40
 previous_url: /knowledge-base/configure-ios, /get-started/mobile-traffic/configure-ios, /get-started/traffic/configure-ios, /traffic/configure-ios
 ---
 
-# Capturing and Inspecting iOS Traffic
+# Capturing iOS Traffic
 
-This article describes how to use Fiddler Everywhere to capture and inspect traffic from iOS devices and simulators.
+This article describes how to use Fiddler Everywhere to capture HTTPS traffic from iOS devices and simulators.
 
-To capture and inspect traffic on iOS devices or simulators, perform the following steps:
+To capture HTTPS traffic on iOS devices or simulators, perform the following steps:
 
 1. [Provide the prerequisites](#prerequisites).
 1. [Configure Fiddler Everywhere](#configuring-fiddler-everywhere-host).
 1. [Configure the iOS device](#configuring-ios-devices).
 1. [Configure the iOS simulator](#configuring-ios-simulator).
-1. [Inspect the traffic](#inspecting-traffic).
+1. [Capture mobile traffic](#capture-traffic).
 
 ## Prerequisites
 
@@ -75,11 +75,13 @@ The later versions of the iOS simulators, accessible through XCode, use the OS s
 
 1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the certificate named **Fiddler Root Certificate Authority**.
 
-## Inspecting Traffic
+## Capture Traffic
 
-Now you can immediately monitor HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere.
+Now you can immediately capture and inspect HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere.
 
 >tip When you've finished debugging, remove the WiFi proxy from your iOS device.
+
+[Learn more about inspecting the captured HTTPS sessions here...]({%slug inspecting-traffic-get-started%})
 
 ## Bypass the Apple Endpoints
 

@@ -3,15 +3,16 @@ title: Capturing Traffic
 description: "Capture HTTP and HTTPS live traffic with the cross-platform, web-debugging, HTTP-proxy Telerik Fiddler Everywhere tool."
 slug: capture-traffic-get-started
 publish: true
-position: 10
+position: 5
 previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-web-traffic, /get-started/traffic/capture-traffic, /traffic/capture-traffic
 ---
 
 # Capturing Traffic
 
-Fiddler Everywhere supports capturing modes such as automatic [system capturing](#system-capturing), the [independent browser capturing](#independent-browser-capturing), and the [independent terminal capturing](#independent-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
 
 Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebScoket, and gRPC traffic.
+
+The application supports capturing modes such as automatic [system capturing](#system-capturing), the [independent browser capturing](#independent-browser-capturing), and the [independent terminal capturing](#independent-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
 
 ## Capturing Modes Comparison
 
@@ -32,7 +33,7 @@ The following table demonstrates the significant differences between the two fun
 
 ## System Capturing
 
-Once [Fiddler Everywhere is installed]({%slug installation%}), and it's [root certificate trusted]({%slug trust-certificate%}), you can use the web-traffic capturing of the proxy client.
+Once [Fiddler Everywhere is installed]({%slug login-and-update%}), and it's [root certificate trusted]({%slug trust-certificate%}), you can use the web-traffic capturing of the proxy client.
 
 The client logs all HTTP and HTTPS traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;Google Chrome, Firefox, Microsoft Teams, Outlook, and more. You can use the captured traffic to debug issues, identify performance bottlenecks, or share it with your teammates.
 
