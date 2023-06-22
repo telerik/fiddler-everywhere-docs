@@ -48,6 +48,7 @@ The Fiddler's terminal instance automatically proxies all requests made by **cur
 
 ## Terminal Traffic Specifics
 
+While using the terminal capturing mode, you must consider the technical specific listed below.
 
 ### Localhost Traffic through the Fiddler's Terminal
 
