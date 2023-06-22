@@ -33,3 +33,6 @@ AVD
 VPNs
 VPN
 discoverable
+iTerm2
+SSL_CERT_FILE
+http_proxy

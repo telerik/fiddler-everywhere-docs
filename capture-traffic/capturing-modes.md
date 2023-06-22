@@ -35,7 +35,7 @@ The following table demonstrates the significant differences between the two fun
 
 Once [Fiddler Everywhere is installed]({%slug login-and-update%}), and it's [root certificate trusted]({%slug trust-certificate%}), you can use the web-traffic capturing of the proxy client.
 
-The client logs all HTTP and HTTPS traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;Google Chrome, Firefox, Microsoft Teams, Outlook, and more. You can use the captured traffic to debug issues, identify performance bottlenecks, or share it with your teammates.
+The client logs all HTTP, HTTPS,  WebSocket, and gRPC traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;browsers, desktop applications, CLI tools, and others. You can use the captured traffic to debug issues, identify performance bottlenecks, or share it with your teammates.
 
 To capture system traffic with Fiddler Everywhere:
 
@@ -43,7 +43,7 @@ To capture system traffic with Fiddler Everywhere:
 
 1. Enable system capturing as described in the [First Steps tutorials for Windows]({%slug first_steps_windows%}#capture-system-traffic), [macOS]({%slug first_steps_macos%}#capture-system-traffic), or [Linux]({%slug first_steps_linux%}#capture-system-traffic).
 
->tip When the switch **System Proxy** is toggle on, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request, and **Live Traffic** grid will be populated.
+[Learn more about the system capturing mode here...]({%slug capture-system-traffc%})
 
 
 ## Independent Browser Capturing
@@ -73,7 +73,7 @@ Similarly to the independent browser capturing option, Fiddler lets you use a in
 
 ![Use the Terminal button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
-[Learn more on how to capture traffic from an independent terminal here...]({%slug fiddler-terminal-explicit%}#capturing-traffic-from-independent-terminal)
+[Learn more on how to capture traffic from an independent terminal here...]({%slug fiddler-terminal-explicit%}#capturing-from-terminal)
 
 
 ## Explicit Capturing

@@ -28,7 +28,7 @@ Some Node.js modules, such as [`request`](https://www.npmjs.com/package/request)
 This section demonstrates the primary approach for each of the mentioned scenarios.
 
 
-## Using the Fiddler's Preconfigured Terminal
+## Using the Fiddler's Terminal
 
 Fiddler Everywhere allows quickly opening a preconfigured terminal that automatically uses Fiddler as HTTP(S) proxy for NodeJS. [Learn more about the Fiddler's preconfigured terminal here...]({%slug fiddler-terminal-explicit%}#capturin-traffic-from-preconfigured-terminal)
 
