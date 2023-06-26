@@ -2,7 +2,7 @@
 title: Capturing Traffic from Terminal Applications
 description: "Capture HTTPS, WebSocket and gRPC traffic from terminals and shell applications while using the Fiddler Everywhere proxy application."
 slug: fiddler-terminal-explicit
-publish: true
+position: 20
 previous_url: fiddler-macos-terminal, how-to-set-macos-terminal, /knowledge-base/capturing-traffic-from-terminal
 ---
 
@@ -10,7 +10,7 @@ previous_url: fiddler-macos-terminal, how-to-set-macos-terminal, /knowledge-base
 
 ## Capturing Terminal Traffic
 
-The terminal capturing mode in Fiddler Everywhere allows you to set the Fiddler's proxy on a dedicated terminal instance. The terminal capturing mode enables you to use the proxy in a sandboxed environment without changing the global OS proxy settings. Simultaneously, using a sandboxed proxy provides better control of the captured traffic.
+The **terminal capturing mode** in Fiddler Everywhere allows you to set the Fiddler's proxy on a dedicated terminal instance. The terminal capturing mode enables you to use the proxy in a sandboxed environment without changing the global OS proxy settings. Simultaneously, using a sandboxed proxy provides better control of the captured traffic.
 
 To capture terminal traffic with Fiddler Everywhere:
 
@@ -28,11 +28,12 @@ OR
 
 1. Click on the **>_ Terminal** button to load independent terminal instance.
 
+    ![Use the "Terminal" button to start terminal instance](../images/get-started/get-started-terminal.png)
+
 1. Load your application within the terminal instance.
 
 As a result, Fiddler Everywhere opens a dedicated terminal instance and starts capturing the ongoing HTTPS traffic immediately. It is important to note that Fiddler will capture the traffic generated from the terminal and from any child process that originates (starts) from the very same terminal instance. The terminal instance will loose connectivity if Fiddler Everywhere application is closed.
 
-![Use the "Terminal" button to start terminal instance](../images/get-started/get-started-terminal.png)
 
 ## Choosing Default Terminal
 

@@ -48,30 +48,15 @@ To capture system traffic with Fiddler Everywhere:
 
 ## Independent Browser Capturing
 
-The independent browser capturing is a feature that allows you to capture traffic from a specific browser instance. Currently, Fiddler Everywhere supports independent browser capturing only for Chromium browsers.
+The independent browser capturing is a feature that allows you to capture traffic from a sandboxed browser instance. Currently, Fiddler Everywhere supports independent browser capturing only for Chromium browsers.
 
-The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
-
-To start the independent browser capturing with Fiddler Everywhere:
-
-1. Install Google Chrome or other Chromium browsers.
-
-1. Start Fiddler Everywhere. No additional configuration is needed. To prevent polluting the **Live Traffic** grid, you can toggle off the **System Proxy** switch.
-
-1. Click **Browser** from the **Live Traffic** toolbar.
-
-  ![the "Open Browser" option for opening the independent browser for automatic capture](../images/get-started/get-started-open-browser.png)
-
-1. Enter the URL in the newly opened Chrome window. Fiddler Everywhere immediately starts capturing all the traffic generated from the independent browser.
-
-You can change the independent browser, from the **Settings > Browsers** sub-menu, by specifying a path to third-party Chromium browsers, like Edge, Brave and Vivaldi.
-
+[Learn more on how to capture traffic from an independent browser instance here...]({%slug capture-browser-traffic%}#capturing-from-terminal)
 
 ## Independent Terminal Capturing
 
 Similarly to the independent browser capturing option, Fiddler lets you use a independent terminal instance to capture traffic from your preferred terminal on-the-fly. The option is accessible through the **>_ Terminal** button and enables you to capture and inspect traffic from **Node.js** libraries and **curl** quickly.
 
-![Use the Terminal button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
+![Use the "Terminal" button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
 [Learn more on how to capture traffic from an independent terminal here...]({%slug fiddler-terminal-explicit%}#capturing-from-terminal)
 

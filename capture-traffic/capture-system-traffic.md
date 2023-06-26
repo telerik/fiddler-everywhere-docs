@@ -3,12 +3,12 @@ title: Capturing System Traffic
 description: "Capture HTTPS traffic that goes through the operating system proxy."
 slug: capture-system-traffc
 publish: true
-position: 5
+position: 10
 previous_url: /user-guide/live-traffic
 ---
 
 
-This article describes how to use Fiddler's system capturing mode where the term **system traffic** refers to all HTTP, HTTPS, WebSocket, and gRPC traffic that is directed to go through the operating system proxy. settings.
+This article describes how to use Fiddler's **system capturing mode** where the term "system traffic" refers to all HTTP, HTTPS, WebSocket, and gRPC traffic that is directed to go through the operating system proxy settings.
 
 ## Capturing System Traffic
 

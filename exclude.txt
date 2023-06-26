@@ -9,3 +9,4 @@ README.md
 .contentignore
 exclude_files.txt
 exclude_dirs.txt
+CODEOWNERS
