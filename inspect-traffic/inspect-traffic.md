@@ -13,30 +13,43 @@ When the traffic is already captured, you can start inspecting its HTTP requests
 
 ## Inspecting HTTPS Traffic
 
-The core function of Fiddler Everywhere is to capture HTTPS requests and responses and to visualize its content through a cognitive UI. The list of captured sessions
+The core function of Fiddler Everywhere is to capture HTTPS requests and responses and to visualize its content through a cognitive UI. The ongoing HTTP sessions are listed in the **Live Traffic grid** which contains multiple columns.
 
->tip A session in the context of Fiddler, means the combination of the HTTP Request sent from the client to the server and the HTTP Response sent from the server to the client. As Fiddler acts as an intermediate TLS proxy, that can also result in different behavior compared to when the connection is made without a proxy in the middle. [Learn more about how Fiddler Everywhere works as a TLS proxy here ...]({%slug fe-security%}#fiddler-as-an-https-proxy)
+![Live Traffic grid in Fiddler Everywhere](../images/inspect-traffic/live-traffic-grid.png)
 
+>tip A session in the context of Fiddler, means the combination of the **HTTP Request** sent from the client to the server and the **HTTP Response** sent from the server to the client. As Fiddler acts as an intermediate TLS proxy that stands in the middle between client and server, that can also result in different behavior compared to a connection without a proxy. [Learn more about how Fiddler Everywhere works as a intermediate TLS proxy here ...]({%slug fe-security%}#fiddler-as-an-https-proxy)
+
+To inspect the HTTP Request and Response headers and bodies, follow these steps:
+
+
+1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
+
+1. Double-click on a captured session.
+
+The session content is immediately loaded in the Fiddler's **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use single-click on a session to preserve the last shown inspector.
+
+![Inspectors in Fiddler Everywhere](../images/inspect-traffic/live-traffic-double-click-inspector.png)
+
+[Deep-dive into the Fiddler's inspectors tab here ...]({%slug inspector-types%})
 
 ## Overview Traffic Statistics
 
-
-
 To extract information about the captured sessions, go to the **Live Traffic** tab, where each request/response entry (session) is listed in a row with multiple columns fields in the **Sessions** list. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, and the HTTP method (GET or POST), and more. The output traffic can be [filtered]({%slug how-to-filter-traffic%}), [exported]({%slug web-sessions-list%}#exporting), [commented on]({%slug web-sessions-list%}#commenting), and [shared]({%slug collaboration-get-started%}) for further and detailed inspection.
 
-To open the structured information about the session timings, sizes, requests, and response details in the [**Overview** tab]({%slug overview-tab%}), single-click a session or select multiple sessions.
+To open the structured information about the session in the [**Overview** tab]({%slug overview-tab%}), follow these steps:
 
+1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
-To load [the request and response inspectors]({%slug inspector-types%}), double-click a session. The [**Inspectors** tab]({%slug inspector-types%}) is a powerful tool that allows you to deep-dive in each session so you and your teammates can debug it or find performance bottlenecks.
+1. Select a session, and switch to the **Overview** tab.
 
-The following rules are applied when you are selecting and changing sessions and using the **Inspectors** tab:
+![Sessions's overview in Fiddler Everywhere](../images/inspect-traffic/live-traffic-oveerview.png)
 
-- Double-click a session to activate the default Inspectors for a selected session. Fiddler Everywhere will automatically decide which inspector is best suited to display the request and response of the chosen session when the inspectors are activated.
+[Deep-dive into the Fiddler's Overview tab here ...]({%slug overview-tab%})
 
-- Single-click a session to activate the last shown Inspectors. This is useful when you want to inspect specific inspectors for many sessions, and you don't need Fiddler Everywhere to load the best inspector based on the requests or response data.
-
-![Live Traffic and Inspectors](../images/livetraffic/websessions/websessions-list-all.png)
+## Sessions List
 
 To save a selected session or multiple selected sessions, use the [context menu]({%slug web-sessions-list%}#save) or use a keyboard shortcut. Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}) from which they can be reloaded or shared with collaborators.
 
 The inspection of sessions often happens with teammates or external collaborators. Share a selected session or multiple selected sessions directly from the [__Live Traffic__ list]({%slug web-sessions-list%}#share) or by using the [__Sessions__ list]({%slug saved-sessions-tab%}).
+
+[Deep-dive into the Fiddler's Sessions list here ...]({%slug saved-sessions-tab%})

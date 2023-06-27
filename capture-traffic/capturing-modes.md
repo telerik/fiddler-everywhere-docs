@@ -1,13 +1,11 @@
 ---
-title: Capturing Traffic
-description: "Capture HTTP and HTTPS live traffic with the cross-platform, web-debugging, HTTP-proxy Telerik Fiddler Everywhere tool."
+title: Capturing Modes
+description: "Capturing modes in Fiddler Everywhere as forward HTTPS proxy."
 slug: capture-traffic-get-started
 publish: true
 position: 5
 previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-web-traffic, /get-started/traffic/capture-traffic, /traffic/capture-traffic
 ---
-
-# Capturing Traffic
 
 
 Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebScoket, and gRPC traffic.
@@ -102,13 +100,3 @@ Fiddler Everywhere supports gRPC capturing out-of-the-box (through a system, ind
 
 >important To capture gRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support (BETA)**. This requirement comes from prerequisites of the gRPC framework, which utilizes their HTTP/2 protocol.
 
-
-## Additional Resources
-
-- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
-- [Modifying Traffic]({%slug modify-traffic-get-started%}).
-- [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%}).
-- [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%}).
-- [Filtering Traffic]({%slug how-to-filter-traffic%}).
-- [Live Traffic Section in Details]({%slug web-sessions-list%}).
-- [Inspecting Server Certificates]({%slug fe-cert-details%}).
