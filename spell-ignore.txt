@@ -1,5 +1,6 @@
 VPN
 TLS
+SSL
 blocklist
 blocklisting
 allowlist
@@ -36,3 +37,10 @@ discoverable
 iTerm2
 SSL_CERT_FILE
 Localhost
+formatter
+formatters
+params
+unfragment
+Params
+Unfragment
+cryptographic

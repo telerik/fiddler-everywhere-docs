@@ -1,31 +1,31 @@
 ---
-title: Inspectors Tab
-description: "Learn how to use the Inspector tab and utilize the data from the inspector types in the Fiddler Everywhere web-debugging HTTP-proxy client."
+title: Inspectors Insights
+description: "Using the `Inspectors` tab in the Fiddler Everywhere web-debugging proxy application."
 slug: inspector-types
 publish: true
-position: 34
-previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide/live-traffic/inspectors
+position: 10
+previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide/live-traffic/inspectors, /user-guide/inspector-types
 ---
 
 # Inspectors Tab
 
-The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the selected HTTP(S) sessions from the **Live Traffic** list. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the GRPC framework](https://grpc.io/), a dedicated [**WebSocket and GRPC inspectors**](#websocket-and-grpc-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
+The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the selected HTTP(S) sessions from the **Live Traffic** grid. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the gRPC framework](https://gRPC.io/), a dedicated [**WebSocket and gRPC inspectors**](#websocket-and-gRPC-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
 
-The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide several features, among which:
+The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide multiple perks, among which:
 
 - Great performance for loading large chunks of data.
-- Line IDs to quickly identify and mark a specific portion of the request or response.
+- Line IDs to quickly find and mark a specific portion of the request or response.
 - Powerful search functionality that supports strings and regular expressions.
 - Automatic context styling that highlights the content based on its type&mdash;for example, image renderers, HTML and XML formatters, JSON formatter, JavaScript, and more.
 - A **Preview** inspector type that recognizes and visualizes multiple formats.
 - A **Raw** inspector that shows the received HTTP requests/responses as is. It also allows you to encode bodies received in unreadable decoded form.
-- A **Copy all content to clipboard** option (in the toolbar at the top-right corner) to extract information efficiently.
+- A **Copy all content to clipboard** option (in the toolbar at the top-right corner) that allows you to extract information efficiently.
 
-To load the data of a session in the **Inspectors** section, select an HTTP(S), WebSocket or GRPC session from the __Live Traffic__ list.
+To load the data of a session in the **Inspectors** section, double-click an HTTP(S), WebSocket or gRPC session from the __Live Traffic__ grid.
 
-![Inspectors for Traffic Monitoring](../images/livetraffic/inspectors/inspectors-all.png)
+![Inspectors for Traffic Monitoring](../images/inspect-traffic/inspectors-all.png)
 
-To switch the loaded name of the inspector, click the desired inspector name&mdash;for example, __Image__ or __Raw__.
+To switch the loaded name of the inspector, single-click the desired inspector name&mdash;for example, __Image__ or __Raw__.
 
 ## HTTP(S) Inspectors
 
@@ -44,7 +44,7 @@ The **Headers** inspector allows you to view the HTTP headers of the request and
 
 ![Headers Inspector](../images/livetraffic/inspectors/inspectors-headers.png)
 
->tip Fiddler Everywhere supports HTTP/2 and shows the HTTP/2 pseudo-headers in their original order precisely as they are sent/received.
+>tip Fiddler Everywhere supports HTTP/2 and shows the HTTP/2 pseudo-headers in their original order as they are sent/received.
 
 ### Params Inspector
 
@@ -54,7 +54,7 @@ The **Params inspector**, available in the **Request** section only, displays th
 
 ### Trailers Inspector
 
-The **Params inspector** is a GRPC-specific inspector that helps inspect GRPC server trailers headers. [Learn more about GRPC capturing here...]({%slug capture-grpc-traffic%}).
+The **Params inspector** is a gRPC-specific inspector that helps inspect gRPC server trailers headers. [Learn more about gRPC capturing here...]({%slug capture-gRPC-traffic%}).
 
 ### Cookies Inspector
 
@@ -107,7 +107,7 @@ The **Preview Inspector**, available in the **Request** section only, allows you
 
 ![Preview Inspector rendering image](../images/livetraffic/inspectors/inspectors-image.png)
 
-If the content is in HTML format, then the **Preview** inspector allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the **Live Traffic** list), which means that most images and styles will not be displayed. Additionally, scripting and navigating are blocked and provide a read-only preview.
+If the content is in HTML format, then the **Preview** inspector allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the **Live Traffic** grid), which means that most images and styles will not be displayed. Additionally, scripting and navigating are blocked and provide a read-only preview.
 
 ![Preview Inspector rendering HTML content](../images/livetraffic/inspectors/inspectors-web.png)
 
@@ -147,13 +147,13 @@ The **HEX** inspector consists of an offset column, a hex view column, and a tex
 
 #### XML Body Inspector
 
-The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an __Expand All / Collapse All__ toggle button to expand or collapse all XML tree nodes.
+The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an **Expand All / Collapse All** toggle button to expand or collapse all XML tree nodes.
 
 ![XML Inspector](../images/livetraffic/inspectors/inspectors-xml.png)
 
 #### Form Data Body Inspector
 
-The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form-data. The parsed name/value pairs are displayed in the grid view if a form is found. The inspector works best with **application/x-www-form-urlencoded** data used by most simple web forms.
+The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form-data. The parsed name/value pairs are displayed in the grid view if a form is found. The inspector works best with `application/x-www-form-urlencoded` data used by most simple web forms.
 
 ![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
 
@@ -179,21 +179,21 @@ text/x-ecmascript
 text/x-javascript
 ```
 
-![javaScript Inspector](../images/livetraffic/inspectors/inspectors-javascript.png)
+![JavaScript Inspector](../images/livetraffic/inspectors/inspectors-javascript.png)
 
 
-## WebSocket and GRPC Inspectors
+## WebSocket and gRPC Inspectors
 
-The **WebSocket Inspector** and the **GRPC Inspector** share identical user interfaces. The inspectors provide the following types of inspecting tools that enable you to examine different parts of a WebSocket or GRPC connection:
+The **WebSocket Inspector** and the **gRPC Inspector** share identical user interfaces. The inspectors provide the following types of inspecting tools that enable you to examine different parts of a WebSocket or gRPC connection:
 
 - [Handshake tab](#handshake-tab)
 - [Messages tab](#messages-tab)
 
-![Capturing Websocket or GRPC traffic](../images/livetraffic/inspectors/websocket-inspectors.png)
+![Capturing WebSocket or gRPC traffic](../images/livetraffic/inspectors/websocket-inspectors.png)
 
 ### Handshake Tab
 
-Similarly to an HTTP(S) request and response, the **Handshake tab** for the WebSocket and GRPC APIs provide the following types of inspecting tools that enable you to examine different parts of the WebSocket requests and responses:
+Similarly to an HTTP(S) request and response, the **Handshake tab** for the WebSocket and gRPC APIs provide the following types of inspecting tools that enable you to examine different parts of the WebSocket requests and responses:
 
 - [Headers inspector](#headers-inspector)
 
@@ -207,12 +207,12 @@ Similarly to an HTTP(S) request and response, the **Handshake tab** for the WebS
 
 - [Body inspector](#body-inspectors)
 
-![WebSocket and GRPC Handshake Inspector](../images/livetraffic/inspectors/websocket-handshake.png)
+![WebSocket and gRPC Handshake Inspector](../images/livetraffic/inspectors/websocket-handshake.png)
 
 
 ### Messages Tab
 
-The **Messages tab** renders a list of the WebSocket or GRPC messages sent from the client or received from the server. The list is constantly populated with new upcoming messages until the two-way communication is disconnected. Each received WebSocket message can be inspected separately through the [**Metadata inspector**](#metadata-inspector) and through the [**Message Inspector**](#message-inspector).
+The **Messages tab** renders a list of the WebSocket or gRPC messages sent from the client or received from the server. The list is constantly populated with new upcoming messages until the two-way communication is disconnected. Each received WebSocket message can be inspected separately through the [**Metadata inspector**](#metadata-inspector) and through the [**Message Inspector**](#message-inspector).
 
 The list of messages is rendered as a grid with multiple columns:
 
@@ -262,7 +262,7 @@ The **Metadata inspector** (available only for WebSocket traffic) contains times
 
 The **Message Inspector** contains the non-masked message content visualized in [Text](#text-body-inspector), [JSON](#json-body-inspector) (WebSocket only), or [HEX](#hex-body-inspector) body inspector. The inspector has a toolbar that allows you to word-wrap the message content and highlight content through a search term.
 
-![WebSocket and GRPC Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
+![WebSocket and gRPC Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
 
 
 ## Inspector's Context Menu
@@ -299,7 +299,7 @@ Each inspector has a toolbar that provides a different set of functionalities an
 
 - **Save image to file**&mdash;Exports the previewed images in the specified image format. Available only for the Preview inspector.
 
-- **Toogle Word Wrap**&mdash;Toogle the option to transfer a word for which there is insufficient space from the end of one line of text to the beginning of the next.
+- **Toggle Word Wrap**&mdash;Toogle the option to transfer a word with insufficient space from the end of one line of text to the beginning of the next.
 
 - **Copy all content to clipboard**&mdash;Copies the inspector's content into the system clipboard.
 
@@ -308,7 +308,7 @@ Each inspector has a toolbar that provides a different set of functionalities an
 
 ## Server Certificate Details
 
-The Response Inspectors for ongoing capture (Live Traffic list) in Fiddler Everywhere contain [indicators and notifications]({%slug web-sessions-list%}#certificate-indicators) that show if a server certificate is valid, expiring, or causes errors. 
+The Response Inspectors for ongoing capture (the sessions in the Live Traffic grid) in Fiddler Everywhere contain indicators and notifications that show if a server certificate is valid, expiring, or causes errors. 
 
 ![Certificate note](../images/livetraffic/certs/certficate-valid-note.png)
 

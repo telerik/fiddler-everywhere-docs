@@ -1,17 +1,15 @@
 ---
-title: Overview Tab
-description: "Learn how to use the Overview tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
+title: Overview Insights
+description: "Using the `Overview` tab in the Fiddler Everywhere web-debugging HTTP-proxy application."
 slug: overview-tab
 publish: true
-position: 36
-previous_url: /user-guide/live-traffic/overview
+position: 20
+previous_url: /user-guide/live-traffic/overview, /user-guide/overview
 ---
 
 # Overview Tab
 
-The **Overview** tab provides options for getting structured information and statistical data for captured sessions. It is located in the [**Live Traffic** tab]({%slug web-sessions-list%}) and all entries are available in the [**Sessions** list]({%slug saved-sessions-tab%}).
-
-**Overview** contains a set of widgets, which are dynamically changing depending on the number of selected sessions:
+The **Overview** tab provides options for getting structured information and statistical data for captured sessions. The **Overview** contains a set of widgets, which are dynamically changing depending on the number of selected sessions:
 
 - [Timings](#timings)&mdash;Available for selecting both a single session and a selection of multiple sessions.
 - [Sizes](#sizes)&mdash;Available for selecting both a single session and a selection of multiple sessions.
@@ -21,7 +19,7 @@ The **Overview** tab provides options for getting structured information and sta
 
 ## Timings
 
-The **Timings** widget visually represents the time needed to execute a single session or select multiple sessions. Each Session is listed on a separate line and is presented with a URL that corresponds to the URL column in [the **Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list) and a chart of the request and response timings.
+The **Timings** widget visually represents the time needed to execute a single session or select multiple sessions. Each HTTP session is listed on a separate line and is presented with a URL that corresponds to the URL column in the **Live Traffic** grid and a chart of the request and response timings.
 
 The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
@@ -29,13 +27,13 @@ The **Timings** chart splits into two main parts&mdash;the blue section of the c
 
 **Tracked Request Timings** provides the following options:
 
-- **Determine Gateway**&mdash;The time (in milliseconds) required to determine the gateway. All values over 1000ms are unusual and suggest an issue.
+- **Determine Gateway**&mdash;The time (in milliseconds) required to determine the gateway. All values over 1000 milliseconds are unusual and suggest an issue.
 
-- **DNS Time**&mdash;The time (in milliseconds) required for a DNS lookup. Average DNS lookup times are between 20 and 120ms.
+- **DNS Time**&mdash;The time (in milliseconds) required for a DNS lookup. Average DNS lookup times are between 20 and 120 milliseconds.
 
-- **TCP Connect Time**&mdash;The time (in milliseconds) required to establish a TCP/IP connection. A value around 21000ms suggests that the target is unreachable, and the Windows OS took 21 seconds to confirm the issue.
+- **TCP Connect Time**&mdash;The time (in milliseconds) required to set up a TCP/IP connection. A value around 21000 milliseconds means the target is unreachable, and the Windows OS took 21 seconds to confirm the issue.
 
-- **HTTPS Handshake Time**&mdash;The time (in milliseconds) required to finish an HTTPS handshake. While capturing HTTPS traffic, you will see what the client and the server are using to communicate with Fiddler Everywhere. This can be different from what they would use if the Fiddler Everywhere proxy were not in the middle. To see the CONNECT tunnels without the Fiddler Everywhere interference, disable the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}).
+- **HTTPS Handshake Time**&mdash;The time (in milliseconds) required to finish an HTTPS handshake. While capturing HTTPS traffic, you will see what the client and the server are using to communicate with Fiddler Everywhere. This can be different from what they will use if Fiddler Everywhere is not set as intermediate proxy. To see the CONNECT tunnels without the Fiddler Everywhere interference, disable the **Settings > HTTPS > Capture HTTPS traffic** option.
 
 - **Client Connected**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget. This timing appears only in the **Request Details** and **Response Details** sections.
 
@@ -63,13 +61,13 @@ The **Tracked Response Timings** provide the following options:
 
 - **Client Done Response** &mdash;The time (in milliseconds) between the current and the previous response event. The timestamp that indicates when the event happened is available in the [**Request Details**](#response-details) widget.
 
-Under the list of session lines, you will find the **Request** (light blue) and **Response** (orange) footers with total timings in milliseconds (**ms**) or seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the **Live Traffic** list, the displayed time in the **Request** and **Response** footers is the total time for all five selected requests or responses.
+Under the list of session lines, you will find the **Request** (light blue) and **Response** (orange) footers with total timings in milliseconds (**ms**) or seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the **Live Traffic** grid, the displayed time in the **Request** and **Response** footers is the total time for all five selected requests or responses.
 
 ![Timings widget](../images/overview/overview-timings.png)
 
 ## Sizes
 
-The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and is presented with a URL, which corresponds to the URL column in [the **Live Traffic** list]({%slug web-sessions-list%}#live-traffic-list), and a chart that shows the sizes of the headers and the body of the Request and Response, each included in a single chart.
+The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and is presented with a URL, which corresponds to the URL column in the **Live Traffic** grid, and a chart that shows the sizes of the headers and the body of the Request and Response, each included in a single chart.
 
 The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
@@ -102,9 +100,9 @@ The **Statistics** widget contains a table with structured information for multi
 
 - **Body Received**&mdash;The size of the received response bodies in bytes.
 
-- **Started At**&mdash;The date and time when the earliest client request is established. Corresponds to the **Client Begin Request** request timing.
+- **Started At**&mdash;The date and time when the earliest client request is established. Corresponds to the **Client Begin Request** timing.
 
-- **Completed At**&mdash;The date and time when the latest client response finishes. Corresponds to the **Client Done Response** response timing.
+- **Completed At**&mdash;The date and time when the latest client response finishes. Corresponds to the **Client Done Response** timing.
 
 - **Aggregate Duration**&mdash;The total aggregate duration for all selected sessions in milliseconds.
 
@@ -137,7 +135,7 @@ The **Request Details** widget contains a table with the following information:
 
 - **Protocol**&mdash;The protocol type (HTTP or HTTPS) used by the Session.
 
-- **TLS Version**&mdash;The version of the used cryptographic protocols (TSL or SSL).
+- **TLS Version**&mdash;The version of the used cryptographic protocols (TLS or SSL).
 
 - **Sizes** displays the following options:
     - **Body**&mdash;The size of the request body in bytes.
@@ -153,7 +151,7 @@ The **Response Details** widget contains a table with the following information:
 
 - **Status**&mdash;The HTTP response status code and status message.
 
-- **TLS Version**&mdash;The version of the used cryptographic protocols (TSL or SSL).
+- **TLS Version**&mdash;The version of the used cryptographic protocols (TLS or SSL).
 
 - **Sizes**
     - **Body**&mdash;The size of the response body in bytes.
@@ -166,13 +164,13 @@ The **Response Details** widget contains a table with the following information:
 
 ## Session Details
 
-- **Duration** - The total time spent for the Session in milliseconds (Client Done Response - Client Begin Request).
+- **Duration** - The total time spent for the Session in milliseconds (**Client Done Response** - **Client Begin Request**).
 
-- **Gateway Determination Time**&mdash;The time (in milliseconds) required to determine which gatawey should handle the request.
+- **Gateway Determination Time**&mdash;The time (in milliseconds) required to determine which getaway must handle the request.
 
-- **DNS Time**&mdash;The time (in milliseconds) required for a DNS lookup. Average DNS lookup times are between 20 and 120ms.
+- **DNS Time**&mdash;The time (in milliseconds) required for a DNS lookup. Average DNS lookup times are between 20 and 120 milliseconds.
 
-- **TCP Connect Time** - The number of milliseconds spent waiting for the server to establish a TCP/IP connection.
+- **TCP Connect Time** - The number of milliseconds spent waiting for the server to set up a TCP/IP connection.
 
 - **HTTPS Handshake Time**  - The number of milliseconds elapsed while performing the HTTPS handshake with the server.
 

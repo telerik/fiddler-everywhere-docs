@@ -1,6 +1,6 @@
 ---
 title: Comparing Traffic
-description: "Compare two or more captured sessions when working with the Fiddler Everywhere web-debugging HTTPS client proxy."
+description: "Compare two or more captured HTTP sessions with the Fiddler Everywhere web-debugging HTTPS proxy application."
 slug: fe-compare-sessions
 publish: true
 position: 40
@@ -14,9 +14,9 @@ previous_url: /traffic/compare-traffic
 
 ## Comparing Live Traffic Sessions
 
-Fiddler Everywhere provides a comparing option for detailed differentiation of two or more captured sessions from the [**Live Traffic**]({%slug web-sessions-list%}) list.
+Fiddler Everywhere provides a comparing option for detailed differentiation of two or more captured sessions from the **Live Traffic** grid.
 
-1. Set **Live Traffic** to **Capturing** and make the requests. As a result, the sessions are captured and displayed in the **Live Traffic** list.
+1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
 1. Select two sessions that you want to compare.
 
@@ -36,7 +36,8 @@ Fiddler Everywhere loads both sessions side-by-side with the session with a lowe
 
 You can add and compare more sessions by adding them to the comparison groups.
 
-1. Set **Live Traffic** to **Capturing** and make the requests. As a result, the sessions are captured and displayed in the **Live Traffic** list.
+
+1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
 1. Select one or more sessions that you want to compare.
 
@@ -47,17 +48,17 @@ You can add and compare more sessions by adding them to the comparison groups.
 
 ## Comparing Saved Sessions
 
-With Fiddler Everywhere, you can compare previously saved sessions from the [**Sessions**]({%slug saved-sessions-tab%}) section.
+With Fiddler Everywhere, you can compare previously saved sessions from the **Sessions** list.
 
-1. Select a saved entry from the [**Sessions**]({%slug saved-sessions-tab%}) section that you would like to compare.
+1. Select a saved entry from the **Sessions** list that you want to compare.
 
 1. Select the **Compare** option from the context menu.
 
     ![Compare context menu in Sessions section](../images/sessions/compare/sessions-snapshots-compare-context-menu.png)
 
-1. Specify the primary and the secondary sessions you would like to compare. Optionally, choose a [matching option](#comparing-options).
+1. Specify the primary and the secondary sessions you want to compare. Optionally, choose a [matching option](#comparing-options).
 
-    ![Choose sessions for comparision](../images/sessions/compare/sessions-snapshots-compare-prompt.png)
+    ![Choose sessions for comparison](../images/sessions/compare/sessions-snapshots-compare-prompt.png)
 
 1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
 
@@ -90,15 +91,3 @@ You can manage all sessions added in the **Compare Sessions (BETA)** tab through
 - **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** tab, or in the opened saved session tab).
 
 ![Compared Sessions context menu](../images/livetraffic/compare/compare-list-context-menu.png)
-
-
-## Additional Resources
-
-- [Capturing Options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
-- [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%})
-- [Filtering Output Traffic]({%slug how-to-filter-traffic%})
-- [Modifying Traffic]({%slug modify-traffic-get-started%})
-- [Composing Requests with Basic Authentication]({%slug basic-authentication-with-fiddler-everywhere%})
-- [Composing SOAP Requests]({%slug fiddler-composer-soap%})
-- [Capturing and Inspecting iOS Traffic]({%slug capture-mobile-ios-traffic%})
-- [Capturing and Inspecting Android Traffic]({%slug capture-mobile-android-traffic%})
