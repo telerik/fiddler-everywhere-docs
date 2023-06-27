@@ -54,7 +54,7 @@ The **Params inspector**, available in the **Request** section only, displays th
 
 ### Trailers Inspector
 
-The **Params inspector** is a gRPC-specific inspector that helps inspect gRPC server trailers headers. [Learn more about gRPC capturing here...]({%slug capture-gRPC-traffic%}).
+The **Params inspector** is a gRPC-specific inspector that helps inspect gRPC server trailers headers. [Learn more about gRPC capturing here...]({%slug capture-grpc-traffic%}).
 
 ### Cookies Inspector
 
