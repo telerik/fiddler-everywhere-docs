@@ -7,9 +7,9 @@ position: 10
 previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide/live-traffic/inspectors, /user-guide/inspector-types
 ---
 
-# Inspectors Tab
+# Inspectors Insights
 
-The Fiddler Everywhere [**HTTP(S) Inspectors**](#http\(s\)-inspectors) tab renders the **Request** and the **Response** sections, which display the request and the response information for the selected HTTP(S) sessions from the **Live Traffic** grid. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the gRPC framework](https://gRPC.io/), a dedicated [**WebSocket and gRPC inspectors**](#websocket-and-gRPC-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
+The Fiddler Everywhere **Inspectors** tab renders the HTTP **Request** and the **Response** sections, which display the information for the selected HTTP(S) sessions from the **Live Traffic** grid. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the gRPC framework](https://gRPC.io/), a dedicated [**WebSocket and gRPC inspectors**](#websocket-and-gRPC-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
 
 The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide multiple perks, among which:
 

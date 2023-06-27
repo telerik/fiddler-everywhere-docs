@@ -9,7 +9,9 @@ previous_url: /user-guide/live-traffic/overview, /user-guide/overview
 
 # Overview Tab
 
-The **Overview** tab provides options for getting structured information and statistical data for captured sessions. The **Overview** contains a set of widgets, which are dynamically changing depending on the number of selected sessions:
+The **Overview** tab provides options for getting structured information and statistical data for captured sessions. The section allows you to deep-dive, compare and analyze the timings, sizes and other contextual data for one or more HTTP sessions.
+
+The **Overview** tab contains a set of widgets, which are dynamically changing depending on the number of selected sessions:
 
 - [Timings](#timings)&mdash;Available for selecting both a single session and a selection of multiple sessions.
 - [Sizes](#sizes)&mdash;Available for selecting both a single session and a selection of multiple sessions.
