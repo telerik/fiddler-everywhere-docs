@@ -3,7 +3,7 @@ title: Comparing Traffic
 description: "Compare two or more captured sessions when working with the Fiddler Everywhere web-debugging HTTPS client proxy."
 slug: fe-compare-sessions
 publish: true
-position: 35
+position: 40
 previous_url: /traffic/compare-traffic
 ---
 
