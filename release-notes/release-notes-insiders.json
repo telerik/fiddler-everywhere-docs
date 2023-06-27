@@ -1,5 +1,49 @@
 [
     {
+        "version": "4.3.2-insiders",
+        "title": "Fiddler Everywhere v4.3.2",
+        "date": "June 27, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Show warning when the user is unable to set the system proxy"
+                    },
+                    {
+                        "title": "Update Sign In screen"
+                    },
+                    {
+                        "title": "Disregard the system automatic proxy settings if they are invalid"
+                    },
+                    {
+                        "title": "Update gRPC tooltips"
+                    },
+                    {
+                        "title": "Notify users earlier if they are unable to use cloud resources in Offline Mode"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Deleting one session from the Live Traffic grid sometimes triggers an 'Unexpected Error' message"
+                    },
+                    {
+                        "title": "Bypass hosts on macOS are not parsed correctly if they are empty"
+                    },
+                    {
+                        "title": "Notification for exported certificate does not indicate the location of export"
+                    },
+                    {
+                        "title": "Selection of requests in the grid causes the app to freeze in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.3.1-insiders",
         "title": "Fiddler Everywhere v4.3.1",
         "date": "June 8, 2023",
