@@ -1,6 +1,6 @@
 [
     {
-        "version": "4.3.2-insiders",
+        "version": "4.3.2",
         "title": "Fiddler Everywhere v4.3.2",
         "date": "June 27, 2023",
         "items": [
@@ -14,7 +14,7 @@
                         "title": "Update Sign In screen"
                     },
                     {
-                        "title": "Disregard current proxy settings if they are invalid"
+                        "title": "Disregard the system automatic proxy settings if they are invalid"
                     },
                     {
                         "title": "Update gRPC tooltips"
@@ -28,7 +28,7 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Deleting one session from the Live Traffic grid causes Unexpected Error to the Certificate badge"
+                        "title": "Deleting one session from the Live Traffic grid sometimes triggers an 'Unexpected Error' message"
                     },
                     {
                         "title": "Bypass hosts on macOS are not parsed correctly if they are empty"
