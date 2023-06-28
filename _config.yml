@@ -22,7 +22,7 @@ navigation:
         title: Modify & Filter Traffic
         position: 50
     api:
-        title: API Composing
+        title: Compose API Requests
         position: 60
     user-guide:
         title: User Interface
