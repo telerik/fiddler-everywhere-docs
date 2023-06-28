@@ -34,5 +34,5 @@ You can manually enable and disable the system proxy capturing mode.
 
 1. Toggle the **System Proxy** switch ON or OFF to enable and disable the system capturing mode.
 
->important Fiddler Everywhere needs to install its root CA to the operating system certificate manager to capture secure traffic. You can do that by [following the get started steps tutorials](#capturing-system-traffic) or by manually installing the Fiddler root CA through **Settings > HTTPS > Trust Root Certificate** and then by enabling **Settings > HTTPS > Capture HTTPS Traffic**.
+Fiddler Everywhere persists the state of the **System Proxy** switch, and will start with system capturing enabled or disabled based on that styate
 
