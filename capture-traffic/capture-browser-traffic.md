@@ -1,13 +1,13 @@
 ---
 title: Capturing from Independent Browser
-description: "Capture browser HTTPS traffic with Fiddler Everywhere and the independentr browser capturing mode."
+description: "Capture browser HTTPS traffic with Fiddler Everywhere and the independent browser capturing mode."
 slug: capture-browser-traffic
 position: 15
 ---
 
 # Independent Browser Capturing Mode
 
-This article describes how to use Fiddler's **independent browser capturing mode** where the term "browser traffic" refers to all HTTPS traffic that is directed to go through a sandboxed browser instance started from Fiddler Everywhere. Compared to the system capturing mode, the independent browser capturing mode has the following advantages:
+This article describes how to use Fiddler's **independent browser capturing mode** where "browser traffic" refers to all HTTPS traffic directed to go through a sandboxed browser instance started from Fiddler Everywhere. Compared to the system capturing mode, the independent browser capturing mode has the following advantages:
 
 - No need to set/unset the operating system proxy.
 
@@ -15,7 +15,7 @@ This article describes how to use Fiddler's **independent browser capturing mode
 
 - You will capture only specific HTTPS traffic generated from the independent browser instance.
 
-The feature is useful when you must capture browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
+The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
 
 ## Capturing Browser Traffic
@@ -34,9 +34,11 @@ OR
 
 1. Open the **Live Traffic** pane.
 
-1. Click on the **Browser** button to load independent terminal instance.
+1. Click the **Browser** button to load an independent terminal instance.
 
-As a result, Fiddler Everywhere starts independent browser instance preconfigured to respect the Fiddler proxy and to trust its root CA. You can type arbitrary URL and the HTTPS traffic generated from its requests and response will immediately show up in Fiddler's Live Traffic grid.
+    [Use the "Browser" button to capture traffic from independent browser instance](../images/get-started/get-started-open-browser.png)
+
+As a result, Fiddler Everywhere starts an independent browser instance preconfigured to respect the Fiddler proxy and to trust its root CA. You can type an arbitrary URL, and the HTTPS traffic generated from its requests and response will immediately appear in Fiddler's Live Traffic grid.
 
 ## Choosing Default Browser
 
@@ -44,4 +46,4 @@ The independent browser capturing mode supports Chromium-based browsers like Goo
 
 ## Capturing from Other Browsers
 
-While the independent browser capturing works only with Chromium-based browsers, Fiddler can capture traffic from virtually any browser application that respects the Fiddler proxy. To capture traffic from browsers like Safari, Mozilla Firefox, or even from Chromium browsers (that are not started as independent instances from within Fiddler Everywhere) then you can use the Fiddler's [system capturing mode]({%slug capture-system-traffc%}) or the explicit capturing mode.
+While the independent browser capturing works only with Chromium-based browsers, Fiddler can capture traffic from virtually any browser application that respects the Fiddler proxy. To capture traffic from browsers like Safari, Mozilla Firefox, or even from Chromium browsers (that are not started as independent instances from within Fiddler Everywhere) then, you can use the Fiddler's [system capturing mode]({%slug capture-system-traffc%}) or the explicit capturing mode.
