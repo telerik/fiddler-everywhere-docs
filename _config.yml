@@ -30,9 +30,12 @@ navigation:
     user-guide/settings:
         title: Settings
         position: 20
+    security:
+        title: Security
+        position: 80
     knowledge-base:
         title: Knowledge Base
-        position: 100
+        position: 1000
 
 ## Product title
 product: "Progress Telerik Fiddler Everywhere"
