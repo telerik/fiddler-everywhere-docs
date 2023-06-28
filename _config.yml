@@ -21,7 +21,7 @@ navigation:
     modify-and-filter-traffic:
         title: Modify & Filter Traffic
         position: 50
-    api:
+    compose-api-requests:
         title: Compose API Requests
         position: 60
     user-guide:
