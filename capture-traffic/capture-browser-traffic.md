@@ -1,10 +1,11 @@
 ---
-title: Capturing System Traffic
+title: Capturing from Independent Browser
 description: "Capture browser HTTPS traffic with Fiddler Everywhere and the independentr browser capturing mode."
 slug: capture-browser-traffic
 position: 15
 ---
 
+# Independent Browser Capturing Mode
 
 This article describes how to use Fiddler's **independent browser capturing mode** where the term "browser traffic" refers to all HTTPS traffic that is directed to go through a sandboxed browser instance started from Fiddler Everywhere. Compared to the system capturing mode, the independent browser capturing mode has the following advantages:
 

@@ -7,14 +7,13 @@ position: 10
 previous_url: /user-guide/live-traffic
 ---
 
+# System Capturing Mode
 
 This article describes how to use Fiddler's **system capturing mode** where the term "system traffic" refers to all HTTP, HTTPS, WebSocket, and gRPC traffic that is directed to go through the operating system proxy settings.
 
 ## Capturing System Traffic
 
-Once [Fiddler Everywhere is installed]({%slug login-and-update%}), and it's [root certificate trusted]({%slug trust-certificate%}), you can use the web-traffic capturing of the proxy client.
-
-The client logs all HTTP and HTTPS traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;Google Chrome, Firefox, various desktop application, CLI applications, and virtually any other application that respect the OS proxy settings. You can use the captured traffic to debug issues, mock HTTP requests and responses, identify performance bottlenecks, share it with collaborators, and more.
+Once [Fiddler Everywhere is installed]({%slug login-and-update%}), and it's [root certificate trusted]({%slug trust-certificate%}), you can use the web-traffic capturing of the proxy tool. Fiddler logs all HTTP and HTTPS traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from any application that supports a proxy&mdash;Google Chrome, Firefox, various desktop application, CLI applications, and virtually any other application that respect the OS proxy settings. You can use the captured traffic to debug issues, mock HTTP requests and responses, identify performance bottlenecks, share it with collaborators, and more.
 
 To capture system traffic with Fiddler Everywhere:
 

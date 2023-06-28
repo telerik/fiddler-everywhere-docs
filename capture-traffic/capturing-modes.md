@@ -7,6 +7,7 @@ position: 5
 previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-web-traffic, /get-started/traffic/capture-traffic, /traffic/capture-traffic
 ---
 
+# Capturing Modes
 
 Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebScoket, and gRPC traffic.
 
