@@ -24,15 +24,18 @@ navigation:
     compose-api-requests:
         title: Compose API Requests
         position: 60
+    collaboration:
+        title: Collaboration
+        position: 70
     user-guide:
         title: User Interface
-        position: 70
+        position: 80
     user-guide/settings:
         title: Settings
-        position: 20
+        position: 1
     security:
         title: Security
-        position: 80
+        position: 100
     knowledge-base:
         title: Knowledge Base
         position: 1000
