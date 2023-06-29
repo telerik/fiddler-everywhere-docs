@@ -3,13 +3,13 @@ title: Sessions Section
 description: "Learn how to use the Sessions section in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-sessions-tab
 tags: Fiddler sessions, saved sessions, sessions list, Fiddler sessions tab
-publish: true
+publish: false
 position: 40
 ---
 
 # Sessions Section
 
-The **Sessions** list in Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsable panel that you can hide/show to optimize your working space. 
+The **Sessions** list in Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel (in the **Live Traffic** pane) that you can hide/show to optimize your working space. 
 
 To save sessions to the **Sessions** list, use the [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options of the **Live Traffic** list.  All saved entries are automatically sorted in alphabetical order.
 
@@ -18,7 +18,7 @@ To save sessions to the **Sessions** list, use the [**Save**]({%slug web-session
 
 You can select, inspect, modify, and share with collaborators previously saved sessions. The saved session entries can be saved locally or in the cloud. Sharing a session with a collaborator is automatically done when you upload the saved session entry to the cloud.
 
-You can apply several actions to a saved session entry:
+You can apply the following actions to a saved session entry:
 
 - Use single-click to select a saved session entry from the **Sessions** list.
 - Use right-click to load the [context menu](#sessions-context-menu) of a selected session entry. The context menu provides multiple options for managing, exporting, and modifying the saved session entry.

@@ -2,7 +2,7 @@
 title: Rules Tab
 description: "Learn how to use the Rules tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: rules-general
-publish: true
+publish: false
 position: 50
 previous_url: /user-guide/live-traffic/autoresponder, /user-guide/live-traffic/rules, /user-guide/live-traffic/rules-builder
 ---

@@ -13,9 +13,9 @@ With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, 
 
 - [Saving session's snapshots](#saving-sessions-snapshots)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the **Sessions** list.
 
-- Saving API requests&mdash;Options to save single or multiple composed API requests as local/cloud collections in the **Requests** list.
+- [Saving API requests collections](#saving-api-requests)&mdash;Options to save single or multiple composed API requests as local/cloud collections in the **Requests** list.
 
-- Saving rules&mdash;Options to save single or multiple rules within the **Rules** tab.
+- [Saving rules](#saving-rules)&mdash;Options to save single or multiple rules within the **Rules** tab.
 
 
 ## Saving Session's Snapshots
@@ -50,6 +50,28 @@ You can select, inspect, modify, and share snapshots of previously saved session
 
     ![Snapshot UI options](../images/collaboration/save-session-ui-buttons.png)
 0
-- Use the UI buttons at the very top to **import** session snapshots or to access previously **shared sessions** snapshots.
+- Use the UI buttons at the top to **import** session snapshots or access previously **shared sessions** snapshots.
 
     ![Sessions list UI options](../images/collaboration/save-sessions-list-button.png)
+
+    
+## Saving API Requests
+
+The **Composer** in Fiddler Everywhere is a powerful tool that allows you to execute custom API requests. You can also store these requests in a collection in the **Requests** list.
+
+To save composed API requests, follow these steps:
+
+- Open the **Requests** pane.
+
+- Compose your API request in the **Composer**.
+
+- Click the **Save** button in the top-right corner of the **Composer**. 
+
+    ![Save an API request collection](../images/collaboration/save-requests-composer.png)
+
+- Input the request name, select the destination collection, and confirm through the **Save** button
+.
+
+## Saving Rules
+
+All rules in Fiddler Everywhere are automatically saved in your **Rules** list immediately after creation through the **Rules Builder**.

@@ -2,7 +2,7 @@
 title: Live Traffic Section
 description: "Learn how to use the Live Traffic section in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: web-sessions-list
-publish: true
+publish: false
 position: 32
 previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar, /user-guide/live-traffic/live-traffic
 ---
