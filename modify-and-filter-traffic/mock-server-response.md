@@ -48,5 +48,5 @@ The **Rules** tab can be a powerful ally in testing various complex scenarios wi
 - [Creating Manual HTTP Responses]({%slug using-custom-responses%})
 - [Composing API Requests with the Composer]({%slug composer-get-started%})
 - [Grouping API Requests in Collections]({%slug composer-collections-get-started%})
-- [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).
+- [Sharing Captured Traffic with Collaborators]({%slug fiddler-sharing%}).
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)

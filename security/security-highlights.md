@@ -79,7 +79,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
 ### Sharing Traffic
 
-Fiddler Everywhere comes with [collaboration in mind]({%slug collaboration-get-started%}) and provides sharing functionalities. Consider the following security highlights when sharing sessions:
+Fiddler Everywhere comes with [collaboration in mind]({%slug fiddler-sharing%}) and provides sharing functionalities. Consider the following security highlights when sharing sessions:
 
 - Before sharing, a session is saved. Thus, you consider the [saving-related security highlights](#saving-traffic).
 

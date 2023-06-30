@@ -143,7 +143,7 @@ That's it! Now you're equipped to delve deeper into Fiddler Everywhere and make 
 ## Next Steps
 
 * [Learn more about the capturing options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
-* [Sharing captured sessions with collaborators]({% slug collaboration-get-started %})
+* [Sharing captured sessions with collaborators]({% slug fiddler-sharing %})
 * [Creating API requests]({% slug composer-get-started %})
 * [Grouping the API requests in collections]({% slug composer-collections-get-started %})
 * [Mocking server responses]({% slug rulesbuilder-get-started %})

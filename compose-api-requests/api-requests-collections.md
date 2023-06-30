@@ -35,4 +35,4 @@ For detailed description of the **Requests** tab, refer to the article on [saved
 - [Mocking Server Responses]({%slug rulesbuilder-get-started%})
 - [Inspecting Captured Traffic]({%slug inspecting-traffic-get-started%}).
 - [Modifying Traffic]({%slug modify-traffic-get-started%})
-- [Sharing Captured Traffic with Collaborators]({%slug collaboration-get-started%}).
+- [Sharing Captured Traffic with Collaborators]({%slug fiddler-sharing%}).

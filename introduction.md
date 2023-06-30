@@ -59,7 +59,7 @@ Fiddler Everywhere comes with an API Composer, which allows you to test REST and
 
 ### Secure Collaboration
 
-Fiddler Everywhere provides a secure method for saving and sharing network debugging logs with your teams for analysis, communication, and resolution. [Read more about the Fiddler Everywhere collaboration options...]({% slug collaboration-get-started %})
+Fiddler Everywhere provides a secure method for saving and sharing network debugging logs with your teams for analysis, communication, and resolution. [Read more about the Fiddler Everywhere collaboration options...]({% slug fiddler-sharing %})
 
 
 ### Cross-Platform Support
