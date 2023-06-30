@@ -87,3 +87,6 @@ With Fiddler Everywhere, you can quickly share a collection of saved API request
 - Use the context menu to share the collection with collaborators.
 
 ![Share API requests](../images/composer/comp-requests-share.png)
+
+
+
