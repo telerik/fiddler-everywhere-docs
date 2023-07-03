@@ -1,7 +1,7 @@
 ---
 title: Saving Data
 description: "Saving snapshots of captured traffic, API requests, and rules with the Fiddler Everywhere web-debugging proxy application."
-slug: fiddler-save
+slug: fiddler-saving
 publish: true
 position: 10
 previous_url: /user-guide/sessions-list
