@@ -140,4 +140,4 @@ The **Method** subaction supports the following options:
 
 ## Contact us
 
-If you have more questions or need assistance configuring specific rules with Fiddler Everywhere, you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.
+If you have more questions or need assistance configuring specific rules with Fiddler Everywhere, you can reach out to our support team through the **Contact Support** option.

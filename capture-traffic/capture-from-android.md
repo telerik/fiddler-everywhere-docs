@@ -158,4 +158,4 @@ Most production-ready applications explicitly restrict user-installed certificat
 
 ## Contact us
 
-If you have more questions or need help configuring your iOS device alongside Fiddler Everywhere, then you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.
+If you have more questions or need help configuring your iOS device alongside Fiddler Everywhere, then you can reach out to our support team through the **Contact Support** option.

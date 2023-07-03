@@ -90,4 +90,4 @@ The above response is [HTTPBin](https://httpbin.org) specific as it was used to 
 
 ## Contact us
 
-Suppose you have more questions or need assistance for testing authentication scenario through Fiddler Everywhere, then you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.
+Suppose you have more questions or need assistance for testing authentication scenario through Fiddler Everywhere, then you can reach out to our support team through the **Contact Support** option.

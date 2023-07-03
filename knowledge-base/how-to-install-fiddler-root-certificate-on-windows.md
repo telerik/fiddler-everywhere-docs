@@ -50,4 +50,4 @@ If you are still unable to capture HTTPS traffic after the steps above, consider
 
 ## Contact us
 
-In case you have more questions or need assistance configuring the root certificate on WIndows, then you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.
+In case you have more questions or need assistance configuring the root certificate on WIndows, then you can reach out to our support team through the **Contact Support** option.
