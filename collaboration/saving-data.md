@@ -1,5 +1,5 @@
 ---
-title: Saving Data with Fiddler Everywhere
+title: Saving Data
 description: "Saving snapshots of captured traffic, API requests, and rules with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-save
 publish: true
@@ -7,7 +7,7 @@ position: 10
 previous_url: /user-guide/sessions-list
 ---
 
-# Saving Data with Fiddler Everywhere
+# Saving Data in Fiddler Everywhere
 
 With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, composed API requests, and rules. It's only natural that the application provides user interface options to save, organize and share the information so it can be quickly reused later. This article covers the saving capabilities of Fiddler Everywhere as follows:
 

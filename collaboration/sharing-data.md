@@ -1,5 +1,5 @@
 ---
-title: Sharing Data with Fiddler Everywhere
+title: Sharing Data
 description: "Sharing snapshots of captured traffic, API requests, and rules with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-sharing
 publish: true

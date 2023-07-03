@@ -75,94 +75,24 @@ In this step, you'll register by creating your unified Telerik account.
 
 ## Step 3: Capture HTTPS Traffic
 
-Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports HTTPS proxies.
+Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports proxies. Use one of Fiddler's capturing modes and start intercepting HTTPS traffic within a few quick steps.
 
-### Capture Browser Traffic
-
-With Fiddler Everywhere, you can immediately capture traffic from an independent browser instance.
-
-1. Start Fiddler Everywhere.
-
-1. Open the **Home** pane.
-
-1. Click the **Browser** button.
-
-That's it! Fiddler Everywhere will immediately capture all the traffic generated from the newly opened browser instance.
-
->tip The independent browser capturing works only with Chromium-based browsers. To capture traffic from other browsers and applications, use the **System Proxy** mode or different capturing modes.
-
-### Capture System Traffic
-
-You can set Fiddler Everywhere as a system proxy and capture the HTTPS traffic of all applications that respect the operating system proxy settings. However, by default, you can only track non-secure HTTP **system** traffic with Fiddler Everywhere. Thus, to enable the capturing of HTTPS system traffic, you'll have to install and trust the Fiddler root certificate.
-
-1. Start Fiddler Everywhere.
-
-1. Open the **Home** pane.
-
-1. Click the **System Proxy** from the **Capture and Inspect Traffic** section.
-
-1. Follow the tutorial steps to successfully install the Fiddler Everywhere CA (certificate authority) and enable it as a system proxy.
-
-  1. Click **Set System Proxy** to enable Fiddler Everywhere as a system proxy.
-
-  1. Follow the instructions in  **Trust Fiddler CA and enable HTTPS** to install the Fiddler Everywhere CA (certificate authority) in your Linux certificate manager. 
-
-    >tip There are various Linux distributions and theu use various approaches to handle the installation and storing of certificate authorities. [Learn more about the manual CA installation on Linux here...]({%slug trust-certificate%}#for-linux)
-  
-  1. Once the Fiddler CA is successfully installed, confirm by checking the **I have successfully trusted the Fiddler Certificate Authority** checkbox and then press **Next**.
-
-  1. Click **Open Live Traffic** to navigate to the **Live Traffic grid**.
-
-That's it! Fiddler Everywhere will immediately capture all the traffic generated from any application that uses the operating system proxy settings.
-
->tip: The Fiddler CA is installed in the OS certificate manager once. After the Fiddler Everywhere CA installs successfully, you can directly navigate to the **Live Traffic** tab and manually set/unset the system proxy.
+[Learn more about the available capturing modes in Fiddler Everywhere here...]({%slug capture-traffic-get-started%})
 
 
 ## Step 4: Fiddle with the Traffic
 
-Let's continue with capturing and inspecting HTTPS traffic:
+You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import *& export, mock and modify HTTPS traffic.
 
-1. Open the **Live Traffic** pane.
+1. Capture HTTPS traffic through the preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
-2. Use the **Inspectors** tab to analyze the request and response data of a selected session.
+1. [Inspect the captured data]({%slug inspecting-traffic-get-started}).
 
-3. Use the **Overview** tab to extract technical details and statistical data.
+1. [Save]({%slug fiddler-saving%}) and [share]({%slug fiddler-sharing%}) the captured HTTPS traffic with collaborators.
 
-Now let's go ahead with extracting a captured session:
+1. [Modify a session through the **Composer**]({%slug composer-get-started%}#edit-captured-api-request)
 
-1. Open the **Live Traffic** pane.
-
-1. Switch to the **Live Traffic tab** and select a request/response entry from the **Live Traffic grid**.
-
-1. Double-click on the entry to open the **Inspectors** tab and explore the detailed session request/response data.
-
-1. Switch to the **Overview** tab to examine the technical and statistical information.
-
-1. Save a session or a snapshot of multiple sessions through the **Save** option in the context menu.
-
-1. Share a session or a snapshot of multiple sessions through the **Share** option in the context menu.
-
->tip Save and share options include adding password-protection to protect sensitive data. 
-
-Let's move on to modifying a session:
-
-1. Right-click on a captured session in the **Live Traffic grid** and select **Edit in Composer** from the context menu.
-
-1. Once the session opens in a new **Composer** window, modify its headers as needed. For example, you can add a new HTTP header with the `isTest` key and the value `true`.
-
-1. Save the new HTTP header by clicking the tick icon.
-
-1. Click the **Execute** button to replay the modified request.
-
-Now, let's discuss mocking traffic:
-
-1. Right-click on a captured session in the **Live Traffic grid** and select **Add New Rule** from the context menu.
-
-1. Use the **Rules Builder** to create the desired mock behavior. You can add various matching conditions and apply different actions. Once you're ready, save the new rule.
-
-1. Enable the **Rules** tab and toggle on the rules you want to execute.
-
-1. Select the captured session and click on **Replay > Reissue Requests** in the context menu to replay the requests according to the applied rules.
+1. [Mock client and server behavior through the **Rules** tab]({%slug rulesbuilder-get-started%})
 
 >tip The **Rules** tab is one of the most advanced features in Fiddler Everywhere. You can create and execute complex rules on your incoming traffic to mock client and server behavior without touching the client and server applications.
 
