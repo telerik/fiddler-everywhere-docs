@@ -37,9 +37,9 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
 
 
 
-    - **Terminals and shell applications**&mdash;A terminal and shells can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug fiddler-terminal-explicit%})
+    - **Terminals and shell applications**&mdash;A terminal and shells can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug capture-terminal-traffic%})
 
-    - **Bash**&mdash;A bash application can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from Bash here...]({%slug fiddler-terminal-explicit%})
+    - **Bash**&mdash;A bash application can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from Bash here...]({%slug capture-terminal-traffic%})
 
     - **Node.js**&mdash;A Node.js application can explicitly be configured to go through the Fiddler proxy. [Learn how to capture traffic from Node.js here...]({%slug fiddler-nodejs-traffic%})
 

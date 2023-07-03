@@ -65,7 +65,7 @@ Similarly to the independent browser capturing option, Fiddler lets you use a de
 
 ![Use the "Terminal" button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
-[Learn more on how to capture traffic from an independent terminal here...]({%slug fiddler-terminal-explicit%}#capturing-from-terminal)
+[Learn more on how to capture traffic from an independent terminal here...]({%slug capture-terminal-traffic%}#capturing-from-terminal)
 
 
 ## Explicit Capturing

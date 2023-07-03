@@ -4,7 +4,7 @@ description: "Create and test API requests with the API Composer feature of the 
 slug: composer-get-started
 publish: true
 position: 10
-previous_url: /get-started/create-api-request, /get-started/api/create-api-request, /api/create-api-request
+previous_url: /get-started/create-api-request, /get-started/api/create-api-request, /api/create-api-request, /user-guide/composer
 ---
 
 # API Requests Composer

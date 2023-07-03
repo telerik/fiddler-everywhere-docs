@@ -62,7 +62,7 @@ Use the **>_ Terminal** button to capture traffic from a specific terminal insta
 
 ![Use the Terminal button to start preconfigured terminal instane](../images/get-started/get-started-terminal.png)
 
-[Learn more about the preconfigured terminal capturing...]({%slug fiddler-terminal-explicit%})
+[Learn more about the preconfigured terminal capturing...]({%slug capture-terminal-traffic%})
 
 
 ### Removing All Sessions

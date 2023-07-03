@@ -30,7 +30,7 @@ Fiddler Everywhere provides an option for automatic, sandboxed browser HTTP(S) c
 
 ### Independent Terminal Capturing
 
-Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's independent terminal capturing...]({%slug fiddler-terminal-explicit%}#capturing-traffic-from-terminal)
+Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's independent terminal capturing...]({%slug capture-terminal-traffic%}#capturing-traffic-from-terminal)
 
 
 ### Traffic Analysis

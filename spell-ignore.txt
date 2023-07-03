@@ -47,3 +47,4 @@ cryptographic
 AES
 SAZ
 BadSSL
+sandboxed
