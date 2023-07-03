@@ -14,7 +14,7 @@ You can encounter a situation where Fiddler Everywhere is active but unable to c
 - The system capturing mode is enabled by toggling the Live Traffic switch.
 - No active filters or rules obstruct the traffic.
 
-In addition to the avbove instead of captured traffic the **Live Traffic** grid displays the message _"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information."_.
+In addition to the avbove instead of captured traffic the sessions grid displays the message _"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information."_.
 
 In such cases, it is recommended to refer to the troubleshooting guides below for further assistance in resolving the configuration issue. The guides provide detailed information and guidance to help you identify and resolve any underlying problems affecting the traffic capture functionality of Fiddler Everywhere.
 

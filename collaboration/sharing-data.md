@@ -11,7 +11,7 @@ previous_url: /collaboration
 
 This article covers the sharing capabilities of Fiddler Everywhere as follows:
 
-- [Sharing session's snapshots](#sharing-sessions-snapshotss)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the **Sessions** list.
+- [Sharing session's snapshots](#sharing-sessions-snapshotss)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Sessions** tree.
 
 - Sharing API request collections&mdash;Options to share API requests collections as local/cloud collections in the **Requests** list.
 
@@ -23,9 +23,9 @@ To share captured traffic with other collaborators, first, you need to [save the
 
 ### Sharing Selected Sessions
 
-To share a selected session from the ongoing capturing in the **Live Traffic** grid:
+To share a selected session from the ongoing capturing in the sessions grid:
 
-1. Select a session or multiple sessions from the **Live Traffic** grid.
+1. Select a session or multiple sessions from the sessions grid.
  
 1. Click the **Share** button from the **more** option. This action loads the **Save Session** prompt window. 
 
@@ -35,9 +35,9 @@ To share a selected session from the ongoing capturing in the **Live Traffic** g
 
 ### Sharing Saved Session Snapshot
 
-To share a saved session snapshot from the **Sessions** list:
+To share a saved session snapshot from the save **Sessions** tree:
 
-1. Double-click a saved session entry from the **Sessions** list.
+1. Double-click a saved session entry from the save **Sessions** tree.
 
 1. The session entry opens in a new tab. Click the **Share** button from the **more** option in the toolbar. This action loads the **Share Sessions** prompt window. 
 
@@ -52,7 +52,7 @@ The **Manage Users** option appears only if the session snapshot is stored in th
 
 ### Deleting Shared Sessions
 
-Fiddler Everywhere provides options for deleting previously shared sessions. To select the sessions you want to delete, go to the **Sessions** list and use the **Delete** button. All users added as collaborators will be notified through the [notification bar](#notifications-for-shared-content)  and with an email message that the shared session is now deleted. To restore deleted sessions, use the **Shared Sessions** option.
+Fiddler Everywhere provides options for deleting previously shared sessions. To select the sessions you want to delete, go to the save **Sessions** tree and use the **Delete** button. All users added as collaborators will be notified through the [notification bar](#notifications-for-shared-content)  and with an email message that the shared session is now deleted. To restore deleted sessions, use the **Shared Sessions** option.
 
 
 ## Sharing Requests Collections
@@ -100,7 +100,7 @@ Some network sessions may lack essential details not captured in the technical d
 
 Add a custom comment to one or more captured sessions to provide additional context.
 
-1. Select a session from the **Live Traffic** grid or load saved sessions from the **Sessions** list.
+1. Select a session from the sessions grid or load saved sessions from the save **Sessions** tree.
 
 1. Add a comment by using the **Comment** option from the context menu or press the **M** key while selecting the desired sessions. As a result, the newly added comment will appear in the **Comments** column.
 

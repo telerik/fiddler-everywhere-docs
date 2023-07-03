@@ -78,7 +78,7 @@ When you clear a column filter, it automatically deletes its condition from the 
 
 ## Using Alternative Capturing Modes
 
-Fiddler Everywhere provides multiple capturing modes, with the system capturing mode being the most "invasive" as it will capture all traffic that goes through the operating system. You can limit the amount of captured traffic by using options like the [independent browser capturing mode]({%slug capture-browser-traffic%}) or the [terminal capturing mode]({%slug capture-terminal-traffic%}). These options ensure that only traffic from the sandboxed instances is output in the **Live Traffic** grid. All additional columns and advanced filters are still applicable. 
+Fiddler Everywhere provides multiple capturing modes, with the system capturing mode being the most "invasive" as it will capture all traffic that goes through the operating system. You can limit the amount of captured traffic by using options like the [independent browser capturing mode]({%slug capture-browser-traffic%}) or the [terminal capturing mode]({%slug capture-terminal-traffic%}). These options ensure that only traffic from the sandboxed instances is output in the sessions grid. All additional columns and advanced filters are still applicable. 
 
 
 ## Bypassing the Proxy
@@ -87,4 +87,4 @@ While bypassing the proxy is not technically related to filtering, requests to s
 
 ## Sorting Options
 
-In addition to filtering, you can create a custom sorting order by clicking on the desired **Live Traffic** grid's column. For example, you can click the **URL** column to sort alphabetically based on the URL or click the **Body Size** column based on the session size in bytes. The default sorting order is based on the unique identification number (order of appearance in the grid).
+In addition to filtering, you can create a custom sorting order by clicking on the desired sessions grid's column. For example, you can click the **URL** column to sort alphabetically based on the URL or click the **Body Size** column based on the session size in bytes. The default sorting order is based on the unique identification number (order of appearance in the grid).

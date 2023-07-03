@@ -9,7 +9,7 @@ previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide
 
 # Inspectors Insights
 
-The Fiddler Everywhere **Inspectors** tab renders the HTTP **Request** and the **Response** sections, which display the information for the selected HTTP(S) sessions from the **Live Traffic** grid. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the gRPC framework](https://gRPC.io/), a dedicated [**WebSocket and gRPC inspectors**](#websocket-and-gRPC-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
+The Fiddler Everywhere **Inspectors** tab renders the HTTP **Request** and the **Response** sections, which display the information for the selected HTTP(S) sessions from the sessions grid. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the gRPC framework](https://gRPC.io/), a dedicated [**WebSocket and gRPC inspectors**](#websocket-and-gRPC-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
 
 The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide multiple perks, among which:
 
@@ -107,7 +107,7 @@ The **Preview Inspector**, available in the **Request** section only, allows you
 
 ![Preview Inspector rendering image](../images/livetraffic/inspectors/inspectors-image.png)
 
-If the content is in HTML format, then the **Preview** inspector allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the **Live Traffic** grid), which means that most images and styles will not be displayed. Additionally, scripting and navigating are blocked and provide a read-only preview.
+If the content is in HTML format, then the **Preview** inspector allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the sessions grid), which means that most images and styles will not be displayed. Additionally, scripting and navigating are blocked and provide a read-only preview.
 
 ![Preview Inspector rendering HTML content](../images/livetraffic/inspectors/inspectors-web.png)
 

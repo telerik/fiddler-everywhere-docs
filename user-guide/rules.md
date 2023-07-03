@@ -42,7 +42,7 @@ When executing a rule for ongoing HTTP(S) traffic or running a rule on previousl
 
 **Saved Sessions** and **Rules** stick to the following basic guidelines:
 
-- The **Rules** main toggle is unavailable for saved sessions (from the **Sessions** list). The toggle will be hidden when a saved session is loaded.
+- The **Rules** main toggle is unavailable for saved sessions (from the save **Sessions** tree). The toggle will be hidden when a saved session is loaded.
 - The **Execute** button from the primary **Rules** toolbar will execute all currently selected rules. The result applies to all sessions that match the conditions of the rule. If multiple rules are selected, they will be executed in the order of appearance in the **Rules Queue**&mdash;this means that a rule can be overwritten by another rule that comes later in the queue. Some rules are also final, which means that no other rules in the queue will be executed after a final rule
 - The **Execute** button from a selected rule toolbar will only execute the currently selected rule.
 

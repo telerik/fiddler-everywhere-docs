@@ -38,7 +38,7 @@ Once the API request executes, you can inspect its HTTP Response in the Composer
 
 1. Start Fiddler Everywhere and open the **Live Traffic** pane.
 
-1. Capture a session (or open a session from the saved **Sessions** list) and use the **Edit in Composer** option from the context menu.
+1. Capture a session (or open a session from the saved save **Sessions** tree) and use the **Edit in Composer** option from the context menu.
 
 As a result the session loads as a HTTP Request in the Fiddler's Composer where you can make atomic modifications to its structure.
 

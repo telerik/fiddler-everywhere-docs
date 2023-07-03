@@ -28,7 +28,7 @@ The session content immediately loads in the Fiddler's **Inspectors**. The appli
 
 ## Overview Traffic Statistics
 
-To extract information about the captured sessions, go to the **Live Traffic** tab, where each request/response entry (session) shows in a row with multiple columns fields in the **Sessions** list. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, and the HTTP method (GET or POST). The output traffic can be filtered, exported, commented on, and shared for further and detailed inspection.
+To extract information about the captured sessions, go to the **Live Traffic** tab, where each request/response entry (session) shows in a row with multiple columns fields in the save **Sessions** tree. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, and the HTTP method (GET or POST). The output traffic can be filtered, exported, commented on, and shared for further and detailed inspection.
 
 To open the structured information about the session in the [**Overview** tab]({%slug overview-tab%}), follow these steps:
 
@@ -42,8 +42,8 @@ To open the structured information about the session in the [**Overview** tab]({
 
 ## Sessions List
 
-To save a selected session or multiple selected sessions, use the **Live Traffic** grid context menu or use a keyboard shortcut. Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}), from which they can be reloaded or shared with collaborators.
+To save a selected session or multiple selected sessions, use the sessions grid context menu or use a keyboard shortcut. Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}), from which they can be reloaded or shared with collaborators.
 
-The inspection of sessions often happens with teammates or external collaborators. Share a selected session or multiple selected sessions directly from the **Live Traffic** grid or by using the [**Sessions** list]({%slug saved-sessions-tab%}).
+The inspection of sessions often happens with teammates or external collaborators. Share a selected session or multiple selected sessions directly from the sessions grid or by using the [save **Sessions** tree]({%slug saved-sessions-tab%}).
 
 [Deep-dive into the Fiddler's Sessions list here ...]({%slug saved-sessions-tab%})

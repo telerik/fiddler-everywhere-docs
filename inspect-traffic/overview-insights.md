@@ -21,7 +21,7 @@ The **Overview** tab contains a set of widgets, which are dynamically changing d
 
 ## Timings
 
-The **Timings** widget visually represents the time needed to execute a single session or select multiple sessions. Each HTTP session is listed on a separate line and is presented with a URL that corresponds to the URL column in the **Live Traffic** grid and a chart of the request and response timings.
+The **Timings** widget visually represents the time needed to execute a single session or select multiple sessions. Each HTTP session is listed on a separate line and is presented with a URL that corresponds to the URL column in the sessions grid and a chart of the request and response timings.
 
 The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
@@ -63,13 +63,13 @@ The **Tracked Response Timings** provide the following options:
 
 - **Client Done Response** &mdash;The time (in milliseconds) between the current and the previous response event. The timestamp that indicates when the event happened is available in the [**Request Details**](#response-details) widget.
 
-Under the list of session lines, you will find the **Request** (light blue) and **Response** (orange) footers with total timings in milliseconds (**ms**) or seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the **Live Traffic** grid, the displayed time in the **Request** and **Response** footers is the total time for all five selected requests or responses.
+Under the list of session lines, you will find the **Request** (light blue) and **Response** (orange) footers with total timings in milliseconds (**ms**) or seconds (**s**)  for all listed sessions. For example, if five sessions are selected from the sessions grid, the displayed time in the **Request** and **Response** footers is the total time for all five selected requests or responses.
 
 ![Timings widget](../images/overview/overview-timings.png)
 
 ## Sizes
 
-The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and is presented with a URL, which corresponds to the URL column in the **Live Traffic** grid, and a chart that shows the sizes of the headers and the body of the Request and Response, each included in a single chart.
+The **Sizes** widget provides a visual representation of the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and is presented with a URL, which corresponds to the URL column in the sessions grid, and a chart that shows the sizes of the headers and the body of the Request and Response, each included in a single chart.
 
 The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 

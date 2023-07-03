@@ -93,14 +93,14 @@ To save sessions for later or prepare sessions for sharing:
 
 1. (Optional) Use the **password protection** switch to enable encryption and set a password.
 
-1. Click **Save**. The saved session immediately loads in the **Sessions** list.
+1. Click **Save**. The saved session immediately loads in the save **Sessions** tree.
 
 
 ### Sharing Sessions
 
 Sharing sessions dramatically improve collaboration, and Fiddler Everywhere provides the following options to export and share sessions:
 
-- Sharing through the **Share** button from a saved session entry in [the **Sessions** list]({%slug saved-sessions-tab%}#sharing-sessions)).
+- Sharing through the **Share** button from a saved session entry in [the save **Sessions** tree]({%slug saved-sessions-tab%}#sharing-sessions)).
 
 - Sharing through the **Share** option from [the **Live Traffic** list context menu]({%slug web-sessions-list%}#share).
 
@@ -482,7 +482,7 @@ The **Edit in Composer** context menu option loads the selected request in a new
 
 ### Saving
 
-To save selected sessions, use the **Save** context menu option. The saved sessions will appear in the **Sessions** list to the left of the Fiddler Everywhere interface, and from there, you can later re-open, export, and share them.
+To save selected sessions, use the **Save** context menu option. The saved sessions will appear in the save **Sessions** tree to the left of the Fiddler Everywhere interface, and from there, you can later re-open, export, and share them.
 
 - **Selected sessions**&mdash;Saves all chosen sessions; can be accessed with the keyboard by pressing `S`.
 
@@ -498,7 +498,7 @@ All options will display a **Save** prompt window. To save the desired sessions:
 
 1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password can open the entry.
 
-1. Click **Save**. The saved session immediately loads in the **Sessions** list.
+1. Click **Save**. The saved session immediately loads in the save **Sessions** tree.
 
 1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
@@ -507,7 +507,7 @@ Alternatively, you can save all captured traffic [through the **Save** button fr
 
 ### Sharing
 
-The **Share** context menu option enables the sharing of sessions. Before any session is shared, it is saved as an entry in the **Sessions** list. Then, the threshold can be transmitted through email.
+The **Share** context menu option enables the sharing of sessions. Before any session is shared, it is saved as an entry in the save **Sessions** tree. Then, the threshold can be transmitted through email.
 
 - **Selected sessions**&mdash;Saves and shares all selected sessions.
 

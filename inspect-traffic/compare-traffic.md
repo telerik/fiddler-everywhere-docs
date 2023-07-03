@@ -14,7 +14,7 @@ previous_url: /traffic/compare-traffic
 
 ## Comparing Live Traffic Sessions
 
-Fiddler Everywhere provides a comparing option for detailed differentiation of two or more captured sessions from the **Live Traffic** grid.
+Fiddler Everywhere provides a comparing option for detailed differentiation of two or more captured sessions from the sessions grid.
 
 1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
@@ -48,9 +48,9 @@ You can add and compare more sessions by adding them to the comparison groups.
 
 ## Comparing Saved Sessions
 
-With Fiddler Everywhere, you can compare previously saved sessions from the **Sessions** list.
+With Fiddler Everywhere, you can compare previously saved sessions from the save **Sessions** tree.
 
-1. Select a saved entry from the **Sessions** list that you want to compare.
+1. Select a saved entry from the save **Sessions** tree that you want to compare.
 
 1. Select the **Compare** option from the context menu.
 

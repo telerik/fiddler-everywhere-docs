@@ -23,7 +23,7 @@ The Fiddler Everywhere client captures HTTPS traffic and obtains information abo
 
 Fiddler Everywhere version 3.2.0 and above contain [indicators and notifications]({%slug web-sessions-list%}#certificate-indicators) that show if a server certificate is valid, expiring, or causes errors.
 
-Note that certificate information is available only for Live traffic and is not available for saved sessions from the [**Sessions** list]({%slug saved-sessions-tab%}) or for SAZ and other imported files.
+Note that certificate information is available only for Live traffic and is not available for saved sessions from the [save **Sessions** tree]({%slug saved-sessions-tab%}) or for SAZ and other imported files.
 
 ### Extracting Certificate Details
 

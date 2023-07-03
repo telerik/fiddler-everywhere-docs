@@ -9,9 +9,9 @@ position: 40
 
 # Sessions Section
 
-The **Sessions** list in Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel (in the **Live Traffic** pane) that you can hide/show to optimize your working space. 
+The save **Sessions** tree in Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel (in the **Live Traffic** pane) that you can hide/show to optimize your working space. 
 
-To save sessions to the **Sessions** list, use the [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options of the **Live Traffic** list.  All saved entries are automatically sorted in alphabetical order.
+To save sessions to the save **Sessions** tree, use the [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options of the **Live Traffic** list.  All saved entries are automatically sorted in alphabetical order.
 
 
 ## Working with Saved Sessions
@@ -20,10 +20,10 @@ You can select, inspect, modify, and share with collaborators previously saved s
 
 You can apply the following actions to a saved session entry:
 
-- Use single-click to select a saved session entry from the **Sessions** list.
+- Use single-click to select a saved session entry from the save **Sessions** tree.
 - Use right-click to load the [context menu](#sessions-context-menu) of a selected session entry. The context menu provides multiple options for managing, exporting, and modifying the saved session entry.
 - Set a password to encrypt and protect your session. The context menu provides options for setting, changing, and removing passwords for the saved session entry.
-- Use double-click to open a saved session entry from the **Sessions** list in a new tab. For encrypted sessions, only users with knowledge of the password can open the session entry.
+- Use double-click to open a saved session entry from the save **Sessions** tree in a new tab. For encrypted sessions, only users with knowledge of the password can open the session entry.
 - Use the UI buttons next to a saved session entry to [**Manage Users**](#manage-users) (cloud session entries only), [**Share**](#sharing-sessions), and [**Delete**](#delete) saved session entries.
 - Use the UI buttons at the very top to [**Import**](#import-sessions) sessions archives or to access previously [**Shared Sessions**](#shared-sessions-list) entries.
 
@@ -38,7 +38,7 @@ Fiddler Everywhere provides UI solutions for sharing and collaboration.
 
 To share a selected session:
 
-1. Select a saved session entry from the **Sessions** list.
+1. Select a saved session entry from the save **Sessions** tree.
 1. Click the **Share** button to the right of the entry name.
 1. When the **Share Sessions** prompt window appears, enter a valid email (mandatory) and notes (optional). Click **Share**.
 
@@ -46,7 +46,7 @@ To share a selected session:
 
 To share a saved session:
 
-1. Double-click a saved session entry from the **Sessions** list.
+1. Double-click a saved session entry from the save **Sessions** tree.
 1. The session entry opens in a new tab. Click the **Share** button from the toolbar.
     ![Sessions list](../images/sessions/saved-sessions-reshare.png)
 1. The **Share Sessions** prompt window appears. Enter a valid email (mandatory) and notes (optional). Click **Share**.
@@ -58,7 +58,7 @@ The **Manage Users** option appears only if the session entry is stored in the c
 
 ## Deleting
 
-The **Delete** button located to the right of the selected entry removes the chosen session entry from the **Sessions** list. The shared session can be recovered from the [**Shared Sessions**](#shared-sessions) list.
+The **Delete** button located to the right of the selected entry removes the chosen session entry from the save **Sessions** tree. The shared session can be recovered from the [**Shared Sessions**](#shared-sessions) list.
 
 ## Sessions Context Menu
 
@@ -81,7 +81,7 @@ The **Rename** option allows you to rename the selected session. Available only 
 
 ### Deleting
 
-The **Delete** option removes the session from the **Sessions** list; It can be accessed with the keyboard by pressing `Cmd`+`Back` (on Mac) or `Del` (on Windows).
+The **Delete** option removes the session from the save **Sessions** tree; It can be accessed with the keyboard by pressing `Cmd`+`Back` (on Mac) or `Del` (on Windows).
 
 ### Sharing
 

@@ -73,7 +73,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
   Sessions saved in the cloud will continue locally through the `.fiddler` folder until explicitly removed. Removing the SAZ files from the `./fiddler` folder will remove their presence in the Fiddler Everywhere UI.
 
-- The only way to recover a deleted session from the **Sessions** list or a deleted SAZ file from the `.fiddler` folder is to download their cloud copy. Consider using the Fiddler Everywhere clouds saving option as a backup option.
+- The only way to recover a deleted session from the save **Sessions** tree or a deleted SAZ file from the `.fiddler` folder is to download their cloud copy. Consider using the Fiddler Everywhere clouds saving option as a backup option.
 
 - Sessions are stored in Fiddler Everywhere cloud space as SAZ files. Consider protecting sensitive data by adding password protection for all cloud saves, which adds 256-bit AES encryption.
 
