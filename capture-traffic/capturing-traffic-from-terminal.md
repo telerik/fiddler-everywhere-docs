@@ -27,7 +27,7 @@ OR
 
 1. Open the **Live Traffic** pane.
 
-1. Click on the **>_ Terminal** button to load independent terminal instance.
+1. Click on the **>_ Terminal** button to load terminal instance.
 
     ![Use the "Terminal" button to start terminal instance](../images/get-started/get-started-terminal.png)
 

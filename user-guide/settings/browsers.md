@@ -4,6 +4,7 @@ description: "Change the preconfigured browser for the automatic preconfigured b
 slug: browsers-settings-submenu
 publish: true
 position: 65
+previous_url: /user-guide/main-menu
 ---
 
 # Browsers Menu

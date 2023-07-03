@@ -11,13 +11,13 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebSocket, and gRPC traffic.
 
-The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [independent terminal capturing](#independent-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
+The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [terminal capturing](#independent-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
 
 ## Capturing Modes Comparison
 
 The following table demonstrates the significant differences between the two functionalities.
 
-| Feature          | System Capturing | Independent Browser Capturing  | Independent Terminal Capturing | Explicit Capturing
+| Feature          | System Capturing | Independent Browser Capturing  | terminal Capturing | Explicit Capturing
 |:-----------------|:----------------|:-----------------|:-----------------|:-----------------
 | Does it need additional configuration?       | Requires installation of the Fiddler CA | No additional configuration needed | No additional configuration needed | Requires installation of the Fiddler CA
 | Does it modifies the system proxy? | Yes - Modifies the OS proxy settings | No - Automatically configures the proxy for the browser instance | No - Automatically configures the proxy for the terminal instance | No - Requires manual setup within the client application
@@ -59,13 +59,13 @@ Independent browser capturing is a feature that allows you to capture traffic fr
 
 [Learn more on how to capture traffic from an independent browser instance here...]({%slug capture-browser-traffic%}#capturing-from-terminal)
 
-## Independent Terminal Capturing
+## Terminal Capturing
 
 Similarly to the independent browser capturing option, Fiddler lets you use a dedicated terminal instance to capture traffic from your preferred terminal on-the-fly. The option is accessible through the **>_ Terminal** button, enabling you to quickly capture and inspect traffic from terminal applications like **Node.js** libraries and **curl**.
 
 ![Use the "Terminal" button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
-[Learn more on how to capture traffic from an independent terminal here...]({%slug capture-terminal-traffic%}#capturing-from-terminal)
+[Learn more on how to capture traffic from an terminal here...]({%slug capture-terminal-traffic%}#capturing-from-terminal)
 
 
 ## Explicit Capturing

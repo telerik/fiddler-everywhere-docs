@@ -56,7 +56,7 @@ Use the **Open Browser** button to capture traffic from a specific browser insta
 [Learn more about the preconfigured browser capturing...]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing)
 
 
-### Preconfigured Terminal Capturing
+### Terminal Capturing
 
 Use the **>_ Terminal** button to capture traffic from a specific terminal instance without modifying the system proxy settings.
 

@@ -28,9 +28,9 @@ Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, and gRPC traffic be
 Fiddler Everywhere provides an option for automatic, sandboxed browser HTTP(S) capturing without modifying the operating system proxy. [Read more about the independent Fiddler Everywhere browser capturing...]({% slug capture-traffic-get-started %}#independent-browser-capturing)
 
 
-### Independent Terminal Capturing
+### Terminal Capturing
 
-Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's independent terminal capturing...]({%slug capture-terminal-traffic%}#capturing-traffic-from-terminal)
+Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's terminal capturing...]({%slug capture-terminal-traffic%}#capturing-traffic-from-terminal)
 
 
 ### Traffic Analysis

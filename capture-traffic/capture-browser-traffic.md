@@ -34,7 +34,7 @@ OR
 
 1. Open the **Live Traffic** pane.
 
-1. Click the **Browser** button to load an independent terminal instance.
+1. Click the **Browser** button to load an terminal instance.
 
 ![Use the "Browser" button to capture traffic from independent browser instance](../images/get-started/get-started-open-browser.png)
 

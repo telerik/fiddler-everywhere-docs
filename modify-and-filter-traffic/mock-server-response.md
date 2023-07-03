@@ -31,7 +31,7 @@ To create and test a rule:
 
 1. Start capturing traffic or replay a specific session that triggers the rule.
 
-    - If you test with system capturing, independent browser, independent terminal, or through explicit proxy&mdash;Ensure that the switch of the main **Rules** tab is toggled ON. Open the application in the browser and execute a request that matches the set conditions. The rule is immediately applied to the ongoing captured traffic.
+    - If you test with system capturing, independent browser, terminal, or through explicit proxy&mdash;Ensure that the switch of the main **Rules** tab is toggled ON. Open the application in the browser and execute a request that matches the set conditions. The rule is immediately applied to the ongoing captured traffic.
 
     - If you test with already saved sessions&mdash;Select the rule and use the **Execute** button (green play arrow). The rule is immediately applied to the preloaded saved sessions.
 
