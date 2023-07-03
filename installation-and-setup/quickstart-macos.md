@@ -61,7 +61,7 @@ You can now take advantage of the Fiddler Everywhere capabilities - capture, ins
 
 1. Capture HTTPS traffic through the preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
-1. [Inspect the captured data]({%slug inspecting-traffic-get-started}).
+1. [Inspect the captured data]({%slug inspecting-traffic-get-started%}).
 
 1. [Save]({%slug fiddler-saving%}) and [share]({%slug fiddler-sharing%}) the captured HTTPS traffic with collaborators.
 

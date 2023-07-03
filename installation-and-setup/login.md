@@ -1,12 +1,13 @@
 ---
-title: Login & Update
+title: Login
 description: "Learn more about how to install Fiddler Everywhere, check out the available options for logging into the tool and updating it."
 previous_url: /getting-started/installation, /installation/installation-procedure, /get-started/configuration, get-started/installation-procedure, /installation-procedure, /installation-and-update/installation-procedure
 slug: login-and-update
 position: 10
+previous_url: /login-and-update
 ---
 
-# Login and Update
+# Login
 
 This article provides additional information related to the installation of Fiddler Everywhere and lists the available options for logging into the tool and updating it.
 
@@ -44,20 +45,6 @@ To directly sign in with your Google account, perform the following steps:
 
 The [Fiddler Everywhere Enterprise subscription plan](https://www.telerik.com/purchase/fiddler) supports SSO login. Get in touch with our [support]({%slug support%}) for detailed instructions on configuring your company-specific SSO.
 
-
-## Updating Fiddler Everywhere
-
-The Fiddler team supports officially only the latest version of the Fiddler Everywhere application.
-
-To update Fiddler Everywhere to its latest version:
-
-1. Start Fiddler Everywhere.
-
-1. From the main menu, choose **Help** > **Check for Update**. If a later version is available, a notification will ask you to confirm that you want to download and install it.
-
-1. Fiddler Everywhere will restart and automatically update to the latest version.
-
-Alternatively, you can download and install the latest version of Fiddler Everywhere from our [official download page](https://www.telerik.com/download/fiddler-everywhere).
 
 
 ## Additional Resources
