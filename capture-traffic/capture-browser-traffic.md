@@ -36,7 +36,7 @@ OR
 
 1. Click the **Browser** button to load an independent terminal instance.
 
-    [Use the "Browser" button to capture traffic from independent browser instance](../images/get-started/get-started-open-browser.png)
+![Use the "Browser" button to capture traffic from independent browser instance](../images/get-started/get-started-open-browser.png)
 
 As a result, Fiddler Everywhere starts an independent browser instance preconfigured to respect the Fiddler proxy and to trust its root CA. You can type an arbitrary URL, and the HTTPS traffic generated from its requests and response will immediately appear in Fiddler's Live Traffic grid.
 

@@ -10,7 +10,7 @@ previous_url: /knowledge-base/configure-android, /get-started/mobile-traffic/con
 
 # Capturing Android Traffic
 
-This article describes how to use Fiddler Everywhere to capture HTTPS traffic that comes from Android devices and emulators.
+This article describes using Fiddler Everywhere to capture HTTPS traffic from Android devices and emulators.
 
 To capture and inspect traffic on Android devices, perform the following steps:
 
@@ -30,9 +30,9 @@ To capture and inspect traffic on Android devices, perform the following steps:
 
 1. Enable the remote connections in Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**.
 
-1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the host IP address. Alternatively, you can obtain the IP address while using terminal command like  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere host machine is **192.168.100.50**. 
+1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({slug connections-section}) to obtain the host IP address. Alternatively, you can get the IP address using a terminal command like  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere host machine is **192.168.100.50**. 
 
-1. Ensure that Fiddler root certificate is installed and the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}) is enabled.
+1. Ensure that the Fiddler root certificate is installed and the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}) is enabled.
 
 ## Configuring Android Devices
 
@@ -56,22 +56,22 @@ The following steps apply to real Android devices with access to the Internet th
 
     1. Tap the option to download the certificate.
             
-    1. Install the downloaded Fiddler certificate in the device certificate storage. The settings location depends on the Android version but is usually located under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
+    1. Install the downloaded Fiddler certificate in the device certificate storage. The settings location depends on the Android version but is usually under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
-    1. Ensure that the Fiddler Everywhere certificate is installed and trusted through  **Settings** > **Security** > **Encryption & Credentials** > **Trusted Credentials** > **User** tab.
+    1. Ensure the Fiddler Everywhere certificate is installed and trusted through the **Settings** > **Security** > **Encryption & Credentials** > **Trusted Credentials** > **User** tab.
 
-With the above setup, you are ready to capture traffic from your Android mobile browser. Test your configuration as follows:
+You can capture traffic from your Android mobile browser with the above setup. Test your configuration as follows:
 
 1. In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked and that **Live Traffic** capturing mode is turned ON.
 
-1. On your emulator, open **Google Chrome** (or any other mobile browser that respect the proxy settings) and type [https://example.com](https://example.com)
+1. On your emulator, open **Google Chrome** (or any other mobile browser that respects the proxy settings) and type [https://example.com](https://example.com)
 
 1. Observe the secure traffic being captured back in Fiddler Everywhere.
 
 
 ## Configuring the Android Emulator
 
-The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler Everywhere as a proxy by directly configuring the Android operating system (like real device). The crucial difference is that the Fiddler Everywhere proxy address will be the loopback address of the emulator. Check the emulator documentation for the IP address used as a loopback address. In most cases, the loopback alias of the Android emulator is of the **10.0.2.2**. Note that some third-party emulators are using different alias for the loopback address.
+The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler Everywhere as a proxy by directly configuring the Android operating system (like the actual device). The crucial difference is that the Fiddler Everywhere proxy address will be the loopback address of the emulator. Check the emulator documentation for the IP address used as a loopback address. In most cases, the loopback alias of the Android emulator is the **10.0.2.2**. Note that some third-party emulators are using different alias for the loopback address.
 
 1. Start the emulator, open the simulated WiFi, tap **Settings**, and expand **Advanced Settings**.
 
@@ -94,13 +94,13 @@ The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler E
     1. Ensure that the Fiddler Everywhere certificate is installed as a user certificate in the **Settings** > **Security** > **Encryption & Credentials** > **User** tab.
 
 
-With the above setup, you are ready to capture traffic from your Android mobile browser. Test your configuration as follows:
+With the above setup, you can capture traffic from your Android mobile browser. Test your configuration as follows:
 
 - In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked.
 
-- On your emulator, open **Google Chrome** (or any other mobile browser that respect the proxy settings) and type [https://example.com](https://example.com).
+- On your emulator, open **Google Chrome** (or any other mobile browser that respects the proxy settings) and type [https://example.com](https://example.com).
 
-- Back in the Fiddler Everywhere application, observe the HTTP/HTTPS traffic being captured.
+- In the Fiddler Everywhere application, observe the HTTP/HTTPS traffic being captured.
 
 
 ## Capture Browser Traffic
@@ -113,7 +113,7 @@ To differentiate the traffic that comes from the mobile device from the one that
 
 ## Capture Android Application Traffic
 
-Most production-ready applications explicitly restrict user-installed certificates' usage, which means that Fiddler Everywhere won't complete the TLS handshake and decrypt their HTTPS traffic. However, you can capture traffic from applications in active development, which means that you have access to the code of that application. 
+Most production-ready applications explicitly restrict user-installed certificates' usage, which means that Fiddler Everywhere won't complete the TLS handshake and decrypt their HTTPS traffic. However, you can capture traffic from applications in active development, which means you have access to the code of that application. 
 
 1. (For Android API 24 and later) Add the following code to the `Android/src/main/res/xml/network_security_config.xml` file:
 
@@ -124,7 +124,7 @@ Most production-ready applications explicitly restrict user-installed certificat
             <trust-anchors>
             <!-- Trust preinstalled CAs -->
             <certificates src="system" />
-            <!-- HERE: Additionaly trus user added CAs -->
+            <!-- HERE: Additionally trus user-added CAs -->
             <certificates src="user"/>
         </trust-anchors>
         </base-config>

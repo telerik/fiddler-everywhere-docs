@@ -9,7 +9,7 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Modes
 
-Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebScoket, and gRPC traffic.
+Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebSocket, and gRPC traffic.
 
 The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [independent terminal capturing](#independent-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
 
@@ -19,7 +19,7 @@ The following table demonstrates the significant differences between the two fun
 
 | Feature          | System Capturing | Independent Browser Capturing  | Independent Terminal Capturing | Explicit Capturing
 |:-----------------|:----------------|:-----------------|:-----------------|:-----------------
-| Does it need additional configuration?       | Requires installation of the Fiddler CA | No additional configuration needed | No additional configuration needed * | Requires installation of the Fiddler CA
+| Does it need additional configuration?       | Requires installation of the Fiddler CA | No additional configuration needed | No additional configuration needed | Requires installation of the Fiddler CA
 | Does it modifies the system proxy? | Yes - Modifies the OS proxy settings | No - Automatically configures the proxy for the browser instance | No - Automatically configures the proxy for the terminal instance | No - Requires manual setup within the client application
 | Does it need installation of the Fiddler CA? | Yes - Automated configuration available | No - Automatically configures the independent browser | No - Automatically configures the terminal. | Yes - Requires manual installation of the Fiddler CA within the app's preferred certificate manager
 | Does it capture browser traffic?   | Supports all browsers  | Support for all Chromium browsers | N/A | Only if the client app is a browser 
