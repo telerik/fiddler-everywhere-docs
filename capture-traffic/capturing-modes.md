@@ -48,7 +48,7 @@ To capture system traffic with Fiddler Everywhere:
 
 ![Use the "System Proxy" switch to toggle on and off the system capturing mode](../images/get-started/get-started-toggle.png)
 
-[Learn more about the system capturing mode here...]({%slug capture-system-traffc%})
+[Learn more about the system capturing mode here...]({%slug capture-system-traffic%})
 
 
 ## Independent Browser Capturing

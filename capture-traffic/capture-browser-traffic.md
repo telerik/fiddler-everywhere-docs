@@ -46,4 +46,4 @@ The independent browser capturing mode supports Chromium-based browsers like Goo
 
 ## Capturing from Other Browsers
 
-While the independent browser capturing works only with Chromium-based browsers, Fiddler can capture traffic from virtually any browser application that respects the Fiddler proxy. To capture traffic from browsers like Safari, Mozilla Firefox, or even from Chromium browsers (that are not started as independent instances from within Fiddler Everywhere) then, you can use the Fiddler's [system capturing mode]({%slug capture-system-traffc%}) or the explicit capturing mode.
+While the independent browser capturing works only with Chromium-based browsers, Fiddler can capture traffic from virtually any browser application that respects the Fiddler proxy. To capture traffic from browsers like Safari, Mozilla Firefox, or even from Chromium browsers (that are not started as independent instances from within Fiddler Everywhere) then, you can use the Fiddler's [system capturing mode]({%slug capture-system-traffic%}) or the explicit capturing mode.

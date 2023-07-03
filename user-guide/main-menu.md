@@ -6,6 +6,7 @@ slug: file-menu
 tags: main menu, Fiddler's menu, Fiddler Everywhere file menu, Fiddler Everywhere help menu
 publish: false
 position: 10
+previous_url: /user-guide/resources
 ---
 
 # Main Menu Tab

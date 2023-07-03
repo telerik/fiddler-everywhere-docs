@@ -1,6 +1,6 @@
 ---
 title: Capturing Traffic from Terminal Applications
-description: "Capture HTTPS, WebSocket and gRPC traffic from terminals and shell applications while using the Fiddler Everywhere proxy application."
+description: "Capture HTTPS, WebSocket, and gRPC traffic from terminals and shell applications while using the Fiddler Everywhere proxy application."
 slug: fiddler-terminal-explicit
 position: 20
 previous_url: fiddler-macos-terminal, how-to-set-macos-terminal, /knowledge-base/capturing-traffic-from-terminal
@@ -8,7 +8,7 @@ previous_url: fiddler-macos-terminal, how-to-set-macos-terminal, /knowledge-base
 
 # Terminal Capturing Mode
 
-The **terminal capturing mode** in Fiddler Everywhere allows you to set the Fiddler's proxy on a dedicated terminal instance. The terminal capturing mode enables you to use the proxy in a sandboxed environment without changing the global OS proxy settings. Simultaneously, using a sandboxed proxy provides better control of the captured traffic.
+The **terminal capturing mode** in Fiddler Everywhere allows you to set the Fiddler's proxy on a dedicated terminal instance. The terminal capturing mode lets you use the proxy in a sandboxed environment without changing the global OS proxy settings. Simultaneously, using a sandboxed proxy provides better control of the captured traffic.
 
 
 ## Capturing Terminal Traffic
@@ -33,7 +33,7 @@ OR
 
 1. Start your application within the terminal instance.
 
-As a result, Fiddler Everywhere opens a dedicated terminal instance and starts capturing the ongoing HTTPS traffic immediately. It is important to note that Fiddler will capture the traffic generated from the terminal and from any child process that originates (starts) from the very same terminal instance. The terminal instance will loose connectivity if Fiddler Everywhere application is closed.
+As a result, Fiddler Everywhere opens a dedicated terminal instance and starts capturing the ongoing HTTPS traffic immediately. It is important to note that Fiddler will capture the traffic generated from the terminal and any child process that originates (starts) from the same terminal instance. The terminal instance will lose connectivity if Fiddler Everywhere application is closed.
 
 
 ## Choosing Default Terminal
@@ -45,18 +45,18 @@ You can set your preferred terminal application through **Settings > Terminal > 
 - **PowerShell**&mdash;Available only on Windows. Specifies the PowerShell built on .NET Core or the new .NET.
 - **Terminal application**&mdash;Available on macOS and Linux. This option will use the default shell environment, for example, **bash**, **zsh**, or **sh**.
 
-The Fiddler's terminal instance automatically proxies all requests made by **curl** or **Node.js** libraries (like **https**, **request**, **axios**, etc.) and all applications, which respect the `http_proxy` and `https_proxy` environment variables. Node.js and curl are configured to trust the Fiddler CA.
+The Fiddler's terminal instance automatically proxies all HTTPS requests made by **curl** or **Node.js** libraries (like **https**, **request**, **axios**, etc.) and all applications which respect the `http_proxy` and `https_proxy` environment variables. Node.js and curl are configured to trust the Fiddler CA.
 
 
 ## Terminal Traffic Specifics
 
-While using the terminal capturing mode, you must consider the technical specific listed below.
+While using the terminal capturing mode, you must consider the technical specifics listed below.
 
 ### Localhost Traffic through the Fiddler's Terminal
 
 Some frameworks, like the .NET Framework, are hardcoded not to send requests for localhost through any proxies, and as a proxy, Fiddler will not receive such traffic.
 
-Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell which uses .NET Core), the localhost traffic won't be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases]({%slug how-to-capture-localhost-traffic%}) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
+Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell, which uses .NET Core), the localhost traffic won't be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases]({%slug how-to-capture-localhost-traffic%}) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
 
 
 ### NET Traffic through a Terminal
@@ -68,11 +68,11 @@ Capturing traffic from **curl** or **Node.js** libraries does not require explic
 
 ## Capturing from Non-Fiddler Terminals
 
->important The [terminal capturing mode](#capturing-terminal-traffic) is the recommended approach because it sets the proxy only per the current session, which makes it considerably more comfortable for testing and debugging. Use the below approach only if you aim to solve specific application requirements (for example, an application that does not respect the terminal proxy implicitly).
+>important The [terminal capturing mode](#capturing-terminal-traffic) is the recommended approach because it sets the proxy only per the current session, which makes it considerably more comfortable for testing and debugging. Use the below method only if you aim to solve specific application requirements (for example, an application that does not respect the terminal proxy implicitly).
 
 ### Setting the Fiddler Proxy Explicitly
 
-As an alternative to [the Fiddler's terminal option](#capturing-terminal-traffic) described above, you can also explicitly configure your terminal and shell applications to respect the Fiddler proxy nad trust the Fiddler root CA. One way to achieve that is to use the `export` command (for macOS and Linux) or the `set` command (for Windows) alongside the `http_proxy` and `https_proxy` variables. The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
+As an alternative to [the Fiddler's terminal option](#capturing-terminal-traffic) described above, you can also explicitly configure your terminal and shell applications to respect the Fiddler proxy and trust the Fiddler root CA. One way to achieve that is to use the `export` command (for macOS and Linux) or the `set` command (for Windows) alongside the `http_proxy` and `https_proxy` variables. The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
 
 The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**.
 
@@ -88,7 +88,7 @@ set http_proxy=http://127.0.0.1:8866
 set https_proxy=http://127.0.0.1:8866
 ```
 
-Once the Fiddler Everywhere proxy is set, you can immediately capture traffic through the terminal application.
+Once the Fiddler Everywhere proxy sets, you can immediately capture traffic through the terminal application.
 
 The following example demonstrates how to request while using cURL through iTerm2 and intercept the traffic in Fiddler Everywhere.
 
