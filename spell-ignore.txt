@@ -51,3 +51,5 @@ sandboxed
 F12 
 NetXML
 LoadTest
+WebRequest
+HttpClient
