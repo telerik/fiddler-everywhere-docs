@@ -1,7 +1,7 @@
 ---
 title: Exporting and Importing Data
 description: "Export and import captured traffic in multiple formats with the Fiddler Everywhere web-debugging proxy application."
-slug: fiddler-sharing
+slug: fiddler-export-and-import
 publish: true
 position: 30
 ---

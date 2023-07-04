@@ -61,7 +61,7 @@ The **Rules** tab can be a powerful ally in testing various complex scenarios wi
 
 ### Additional Rules Resources
 
-- [Explaining final and non-final actions in the Rules tab]({%slug fiddler-rules-actions%})
+- [Understanding the Matching Conditions and Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
 - [Redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
 - [Returning Custom HTTP Responses]({%slug using-custom-responses%})

@@ -1,26 +1,25 @@
 ---
-title: Rules Collections
+title: Rules Queue
 description: "Use the Rules tab to create, store and group multiple rules."
 slug: rulesbuilder-get-started
 publish: true
 position: 20
 ---
 
-# Rules Collections
-
-The **Rules** tab enables you to create rules that will automatically trigger in response to requests.
 
 The **Rules** tab contains the following sections:
 
 - **Rules Toolbar**&mdash;Provides options for rule creation, group creation, sharing, manual import or export, and manual execution.
+
 - [**Rule Builder**]({%slug modify-traffic-get-started%}#using-rules-builder)&mdash;Creates new rules and edits existing ones.
-- **Rules Queue**&mdash;A queue of rules and groups applied in the order of appearance from top to bottom. Each rule/group in the queue has its toolbar with different functionalities.
 
-This article demonstrates how to store, group, prioritize and use your rules through the **Rules Queue**.
+- **Rules Queue**&mdash;A queue of rules and groups applied in the order of appearance from top to bottom. Each rule/group in the queue has its toolbar with different functionalities. The **Rules** tab enables you to create rules and organize multiple rules. Each rule or group of rule can interact and interfere with other active rules.
 
-## Rules Queue
+This article demonstrates how to store, group, rank and use your rules through the **Rules Queue**.
 
-The **Rules Queue** is a visual tree that lists all active rules & groups in a priority queue. It is important to note that each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
+## Organizing Rules in the Queue
+
+The **Rules Queue** is a visual tree that lists all active rules & groups in a priority queue. Note that each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
 
 To use a rule (or a group of rules) from the **Rules Queue**, take into consideration the following tips:
 
@@ -40,17 +39,19 @@ To use a rule (or a group of rules) from the **Rules Queue**, take into consider
 
 - Some rule actions can trigger [a final action]({%slug fiddler-rules-actions%}), which stops the execution of all other actions and rules with lower priority.
 
-### Rules Priority
+
+## Rules Priority
 
 By default, the **Rules Queue** will list all created and imported rules based on their priority. Rules will be executed according to their appearance, starting from the top. When selecting specific rules and using the explicit **Execute** button, they will run in the order they appear in the queue.
 
-### Explicit Rules Execution
+
+## Explicit Rules Execution
 
 The **Execute** button from the main toolbar explicitly executes all active rules on captured sessions. The **Execute** functionality is available for both the **Live Traffic** tab and saved sessions.
 
 ![Rule options](../images/livetraffic/rb/rules-individual-rule.png)
 
-### Group Options
+## Group Options
 
 You can organize multiple rules in groups. Each group consists of the following:
 - Group name.
@@ -76,6 +77,6 @@ The group options allow you to further interact with the group's rules:
 
 - [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
 - [Using Predefined Actions]({%slug fiddler-ar-actions%})
-- [Understanding Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
+- [Understanding the Matching Conditions and Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Creating Manual HTTP Responses]({%slug using-custom-responses%})
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)
