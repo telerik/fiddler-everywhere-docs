@@ -30,7 +30,7 @@ To modify captured session through the **Rules**:
 
 1. Click **Save** to preserve the rule.
 
-Fiddler automatically adds the newly created rule on the top of the [**Rules Queue**]({%slug rules-general%}#rules-queue), giving it immediate execution priority (you can demote or promote each rule in the queue). The rule is also automatically activated (the rule switch is toggled on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
+Fiddler automatically adds the newly created rule on the top of the [**Rules Queue**]({%slug modify-traffic-get-started%}#rules-queue), giving it immediate execution priority (you can demote or promote each rule in the queue). The rule is also automatically activated (the rule switch is toggled on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
 
 
 ## Using Rules Builder

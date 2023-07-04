@@ -18,7 +18,7 @@ previous_url: /knowledge-base/redirecting-with-autoresponder
 
 ## Description
 
-How can I use the [**Rules**]({%slug rules-general%}) tab for redirecting traffic from one server to another?
+How can I use the [**Rules**]({%slug modify-traffic-get-started%}) tab for redirecting traffic from one server to another?
 
 ## Solution
 

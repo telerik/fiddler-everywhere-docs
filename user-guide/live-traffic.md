@@ -11,7 +11,7 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 The **Live Traffic** section provides essential features of Fiddler Everywhere.
 
-**Live Traffic** summarizes each captured session in the **Live Traffic** list. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug rules-general%}) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
+**Live Traffic** summarizes each captured session in the **Live Traffic** list. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug modify-traffic-get-started%}) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
 
 ## Defining a Session
 
@@ -618,7 +618,7 @@ Add sessions to compare groups through the **Add to compare groups**. This funct
 
 ### Adding New Rules
 
-You can use a captured session entry to quickly mock client or server behavior. For similar cases, you can use the session URL alongside the [**Rules** tab]({%slug rules-general%}). Creating rules allows you to test complex scenarios and various mock responses.
+You can use a captured session entry to quickly mock client or server behavior. For similar cases, you can use the session URL alongside the [**Rules** tab]({%slug modify-traffic-get-started%}). Creating rules allows you to test complex scenarios and various mock responses.
 
 To add a new rule:
 

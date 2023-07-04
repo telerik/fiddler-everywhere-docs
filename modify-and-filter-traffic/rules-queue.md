@@ -7,19 +7,10 @@ position: 20
 ---
 
 
-The **Rules** tab contains the following sections:
-
-- **Rules Toolbar**&mdash;Provides options for rule creation, group creation, sharing, manual import or export, and manual execution.
-
-- [**Rule Builder**]({%slug modify-traffic-get-started%}#using-rules-builder)&mdash;Creates new rules and edits existing ones.
-
-- **Rules Queue**&mdash;A queue of rules and groups applied in the order of appearance from top to bottom. Each rule/group in the queue has its toolbar with different functionalities. The **Rules** tab enables you to create rules and organize multiple rules. Each rule or group of rule can interact and interfere with other active rules.
-
-This article demonstrates how to store, group, rank and use your rules through the **Rules Queue**.
 
 ## Organizing Rules in the Queue
 
-The **Rules Queue** is a visual tree that lists all active rules & groups in a priority queue. Note that each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
+All created rules in the **Rules** tab are organized in the **Rules Queue** - a visual tree that lists all active rules & groups in a priority queue. Each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
 
 To use a rule (or a group of rules) from the **Rules Queue**, take into consideration the following tips:
 
