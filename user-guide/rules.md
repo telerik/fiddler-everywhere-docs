@@ -9,9 +9,9 @@ previous_url: /user-guide/live-traffic/autoresponder, /user-guide/live-traffic/r
 
 # Rules Tab
 
-The **Rules** tab enables you to create rules (including **[custom ones]({%slug using-custom-responses%})**) that will automatically trigger in response to requests.
+The **Rules** tab enables you to create rules that will automatically trigger in response to requests.
 
-The **Rules** functionality provides options for testing different scenarios while sparing you with the efforts to change the client application or production server. YOu can use it to mock behavior, test new functionalities, reproduce previously captured bugs (from saved sessions, SAZ files, and other HTTP Session formats), and run website demos while you are offline.
+The **Rules** functionality provides options for testing different scenarios while sparing you with the efforts to change the client application or production server. You can use it to mock behavior, test new functionalities, reproduce previously captured bugs (from saved sessions, SAZ files, and other HTTP Session formats), and run website demos while you are offline.
 
 The collaboration functionalities allow you to import and export a single rule or group of rules and share them directly with other Fiddler Everywhere collaborators. Each rule has a different order priority and execution weight, easily controlled by promoting or demoting a rule.
 
@@ -25,69 +25,6 @@ The **Rules** tab contains the following sections:
 - **Rule Builder**&mdash;Creates new rules and edits existing ones.
 - **Rules Queue**&mdash;A queue of rules and groups applied in the order of appearance from top to bottom. Each rule/group in the queue has its toolbar with different functionalities.
 
-## Built-In Logic
-
-When executing a rule for ongoing HTTP(S) traffic or running a rule on previously saved sessions, **Rules** follows a built-in logic depending on whether the session is actively captured (ongoing **Live Traffic** sessions).
-
-**Live Traffic** and **Rules** stick to the following basic guidelines:
-
-- The **Rules** main toggle is available only for the **Live Traffic** section.
-- If the **Rules** toggle is **ON**, and a selected rule toggle is **ON**, the rule is active for all inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
-- If the **Rules** toggle is **ON**, and a selected rule toggle is **OFF**, the rule is inactive for any of the inbound/outbound captured traffic (the **Live Traffic** section with enabled **Capturing**).
-- If the **Rules** toggle is **ON**, and a selected group toggle is **OFF**, the rules contained within the group are active. 
-- If the **Rules** toggle is **ON**, and a selected group toggle is **ON**, only the active rules within the group are active. 
-- The **Execute** button (a green play arrow) will explicitly execute all **selected** rules, no matter if they are active or inactive. The explicitly executed rules apply only to already captured traffic. The rules (that are trigged through **Execute**) won't be used for newly incoming traffic.
-- All HTTP/HTTPS requests that are not matching any of the active rules will be executed as is without interference from the **Rules** tab. 
-- The application setting **Unmatched Requests Passthrough** was deprecated in version 3.4.0. [Learn how to create it manually through a custom rule...]({%slug rules-unmatched-requests-passthrough%}).
-
-**Saved Sessions** and **Rules** stick to the following basic guidelines:
-
-- The **Rules** main toggle is unavailable for saved sessions (from the save **Sessions** tree). The toggle will be hidden when a saved session is loaded.
-- The **Execute** button from the primary **Rules** toolbar will execute all currently selected rules. The result applies to all sessions that match the conditions of the rule. If multiple rules are selected, they will be executed in the order of appearance in the **Rules Queue**&mdash;this means that a rule can be overwritten by another rule that comes later in the queue. Some rules are also final, which means that no other rules in the queue will be executed after a final rule
-- The **Execute** button from a selected rule toolbar will only execute the currently selected rule.
-
-## Rules Toolbar
-
-The main toolbar of the **Rules** comes with the following functionalities:
-
-- **Add New Rule**&mdash;Opens the **Rule Builder** window to create a new rule.
-- **Shared Ruleset**&mdash;Opens a list of the shared rulesets.
-- **Share**&mdash;Opens the **Share** windows where you can enter a collaborator email to share all created rules.
-- **Import**&mdash;Prompts a window for importing rules from a FARX file.
-- **Export**&mdash;Exports all selected rules in a FARX file.
-- **Execute**&mdash;Executes the selected rules for the captured traffic or the loaded, saved sessions. Not applicable for new incoming traffic.
-
-![Rules tab toolbar](../images/livetraffic/rb/rules-toolbar.png)
-
-## Rule Builder
-
-The **Rule Builder** interface enables you to create (through the **Add New Rule** button) and edit rules (through a selected rule's **Edit** button). For each new rule, you must enter a condition (previously known as a match rule) and an action (previously known as an action string). Fiddler Everywhere will undertake the action if the request URI matches the condition and when the rule is active.
-
-![Rule Builder Conditions](../images/livetraffic/rb/rules-re-conditions.png)
-
-### Adding New Rules
-
-To add a new rule:
-
-1. Click the main toolbar's **Add New Rule** button.
-1. Add a new name for your rule in the **Rule Name** text field.
-1. Set the **When** rule based on one of the following statements:
-    - **all these conditions**&mdash;The rule applies when all conditions are true (logical TRUE).
-    - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
-    - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
-1. Add one or more conditions. See the [conditions section](#conditions) for more details.
-1. Set how many times the [actions](#actions) will be triggered when the conditions are met:
-    - **Any number of times** - The action executes each time the conditions are met.
-    - **Specific number of times** - The action executes **n**-times (user specifies **n**, which can be a numerical value between 1 and 65535).
-1. Add one or more actions. See the [actions section](#actions) for more details.
-1. Click **Save** to close the **Rule Editor** and add the newly created rule to the **Rules Queue**.
-
-When creating a rule, take into consideration the following tips:
-
-- Rules are applied in their order of appearance in the **Rules Queue**. To demote a rule in the queue, use the **Down Arrow**; to promote a rule on the queue, use the **Up Arrow**.
-- You can export selected rules from the queue through the **Export** button from the [**Rules toolbar**](#rules-toolbar).
-- To queue rules based on previously captured traffic, import a `.FARX` file [through the **Import** button]({%slug rules-general%}#import-rules).
-- Each condition and action value corresponding to the **Live Traffic** capturing data can be auto-completed. This way, you can create rules based on captured sessions on the fly.
 
 ### Conditions
 
@@ -486,74 +423,6 @@ When you work with final and non-final actions, take into consideration the foll
 
 * Non-final actions will allow other actions from the same rule or different rules with lower priority, which match the session, to execute.
 
-## Rules Queue
-
-The **Rules Queue** is a visual tree that lists all active rules & groups in a priority queue. It is important to note that each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
-
-To use a rule (or a group of rules) from the **Rules Queue**, take into consideration the following tips:
-
-- The **Rules** tab must be active (switch ON).
-
-- Only **active** rules from the queue will be applied on ongoing Live traffic capture. If the rule is contained within a group, then the group must be active as well.
-
-- You can explicitly trigger a rule for already captured (including saved) traffic through the **Execute** button (executes the rule on current sessions).
-
-- The **Execute** button is not affected by the active state of groups/rules. Actions from any selected rule or group of rules will be triggered when the **Execute** button is used.
-
-- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's rule position (and priority). Alternatively, you can drag and drop rules to change their position in the queue. 
-
-- The groups in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's group position (and priority). Alternatively, you can drag and drop groups to change their position in the queue.
-
-- You can drag and drop rules in and out of groups and subgroups. Note that this might change the execution priority when multiple rules are executed simultaneously.
-
-- Some rule actions might trigger [a final action](#final-and-non-final-actions), which stops the execution of all other actions and rules with lower priority.
-
-### Rules Priority
-
-By default, the **Rules Queue** will list all created and imported rules based on their priority. Rules will be executed according to their appearance, starting from the top. When selecting specific rules and using the explicit **Execute** button, they will run in the order they appear in the queue.
-
-### Explicit Rules Execution
-
-The **Execute** button from the main toolbar explicitly executes all active rules on captured sessions. The **Execute** functionality is available for both the **Live Traffic** and saved sessions.
-
-### Rule Options
-
-Each rule has its panel with the rule name, its toolbar with rule options, a list that previews the set conditions, and a list that previews the set actions.
-
-The rule options allow you to further interact with the rule:
-
-- The **Play** button executes the current rule. The rule will match any loaded sessions.
-- The **Enable/Disable** toggle explicitly enables or disables the rule execution. Available only for **Live Traffic** sessions and hidden when interacting with saved sessions.
-- The **Promote** up arrow promotes the selected rule in the **Rules Queue**.
-- The **Demote** down arrow demotes the selected rule in the **Rules Queue**.
-- The **Edit** button opens the **Rule Builder** to edit the rule.
-- The **Duplicate** button creates a duplicate copy of the selected rule.
-- The **Delete** button deletes the rule from the **Rules Queue**.
-
-
-![Rule options](../images/livetraffic/rb/rules-individual-rule.png)
-
-
-### Group Options
-
-You can organize multiple rules in groups. Each group consists of the following:
-- Group name.
-- Indication that shows the number of active and total rules (contained within the group).
-- Toolbar with group options.
-- Queue with all contained rules or subgroups.
-
-The group options allow you to further interact with the group's rules:
-
-- The **Play** button executes all active rules from the selected group. The rules will match any loaded sessions.
-- The **Enable/Disable** toggle explicitly enables or disables the group execution. Available only for **Live Traffic** sessions and hidden when interacting with saved sessions.
-- The **Promote** up arrow promotes the selected group of rules in the **Rules Queue**.
-- The **Demote** down arrow demotes the selected group of rules in the **Rules Queue**.
-- The **Add Group** button automatically creates a subgroup within the selected group.
-- The **Add Rule** button opens the **Rules Builder** and places the new rule within the selected group.
-- The **Duplicate** button creates a duplicate copy of the selected group.
-- The **Delete** button deletes the group, and all contained rules from the **Rules Queue**.
-
-![Group options](../images/livetraffic/rb/rules-group-options.png)
 
 ## Additional Resources
 

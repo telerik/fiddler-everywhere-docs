@@ -14,9 +14,9 @@ You can encounter a situation where Fiddler Everywhere is active but unable to c
 - The system capturing mode is enabled by toggling the Live Traffic switch.
 - No active filters or rules obstruct the traffic.
 
-In addition to the avbove instead of captured traffic the sessions grid displays the message _"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information."_.
+In addition to the above instead of captured traffic the sessions grid displays the message _"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information."_.
 
-In such cases, it is recommended to refer to the troubleshooting guides below for further assistance in resolving the configuration issue. The guides provide detailed information and guidance to help you identify and resolve any underlying problems affecting the traffic capture functionality of Fiddler Everywhere.
+In such cases, it is recommended to refer to the troubleshooting guides below for further help in resolving the configuration issue. The guides provide detailed information and guidance to help you identify and resolve any underlying problems affecting the traffic capture functionality of Fiddler Everywhere.
 
 ## Troubleshooting and Solutions  
 
@@ -211,4 +211,12 @@ The system capturing set and unset the operating system proxy, which can cause a
 
 ## Capture Not Working - All Other Scenarios
 
-If you cannot resolve your issue, then please do not hesitate to contact us. Our support engineers and developers can provide technical support through [the Telerik Support Center](https://www.telerik.com/account/support-center).
+If you cannot resolve your issue, then please do not hesitate to contact us. Our support engineers and developers can provide technical support through [the Telerik Support Center](https://www.telerik.com/account/support-center). When posting a ticket to our support team, consider providing the following:
+
+- Detailed description of the encountered issue.
+- Technical details about your environment like used operating system, third-party security tools, VPN tools, administrative limitations, etc..
+- Add the [Fiddler Everywhere application log files]({%slug fiddler-log-files%}).
+
+### Testing macOS Network Access
+
+Specific macOS network configurations or administrative limitations can prevent Fiddler from properly recognizing and using the active network adapter. Use the technique described in [this KB article]({%slug fiddler-test-network-access-macos%}) to investigate possible issue related to macOS network access.
