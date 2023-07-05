@@ -40,6 +40,10 @@ In this step, you'll register by creating your unified Telerik account.
 
 1. Launch the Fiddler Everywhere application. Follow the **Sign in or create an account** link.
 
+1. Create an account using email and password or using the **Sign in with Google** option.
+
+  >tip The [Fiddler Everywhere Enterprise subscription plan](https://www.telerik.com/purchase/fiddler) supports SSO login. Get in touch with our [support]({%slug support%}) for detailed instructions on configuring your company-specific SSO.
+
 1. Enter the requested information on the **Enter Your Email to Sign in or Create an Account** screen.
 
 1. Check your inbox, open the confirmation email, and complete your account activation.
@@ -47,15 +51,7 @@ In this step, you'll register by creating your unified Telerik account.
 1. Return the Fiddler Everywhere application and choose whether to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
 
-
-## Step 3: Capture HTTPS Traffic
-
-Fiddler Everywhere can capture all HTTP and HTTPS traffic between your computer and the Internet from virtually any application that supports proxies. Use one of Fiddler's capturing modes and start intercepting HTTPS traffic within a few quick steps.
-
-[Learn more about the available capturing modes in Fiddler Everywhere here...]({%slug capture-traffic-get-started%})
-
-
-## Step 4: Fiddle with the Traffic
+## Step 3: Fiddle with the Traffic
 
 You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import *& export, mock and modify HTTPS traffic.
 

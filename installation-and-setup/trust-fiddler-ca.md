@@ -1,32 +1,34 @@
 ---
-title: Trust Root Certificate
-description: "Learn more about how to install and trust the root certificate in your operating system and how it relates to enabling the HTTPS capturing of system traffic."
+title: Trust Fiddler Certificate Authority
+description: "Learn more about how to install and trust the Fiddler's root CA in your operating system and how it relates to enabling the HTTPS capturing of system traffic."
 slug: trust-certificate
 position: 20
 publish: true
+previous_url: /installation-and-update/trust-certificate-configuration
 ---
 
-# Trust Root Certificate
+# Trust Fiddler's Certificate Authority
 
-This article provides additional information about the options for installing the Fiddler Everywhere root trust certificate in your operating system. The proper certificate enablement is a crucial step when using Fiddler to [capture secure system traffic]({%slug capture-traffic-get-started%}#system-capturing). Note that the certificate installation is not mandatory if you choose the [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) option.
-
-
-## Install & Trust the Root Certificate (Quickstart)
-
-The quick start certificate installation options of Fiddler Everywhere for each platform are part of the getting started step-by-step tutorials:
-
-* [Installing the Fiddler Everywhere root certificate on Windows]({% slug first_steps_windows %}#capturing-system-traffic)
-* [Installing the Fiddler Everywhere root certificate on macOS]({% slug first_steps_macos %}#capturing-system-traffic)
-* [Installing the Fiddler Everywhere root certificate on Linux]({% slug first_steps_linux %}#capturing-system-traffic)
+This article provides additional information about the options for installing the Fiddler Everywhere root trust CA (certificate authority) in your operating system. The proper certificate installation is a crucial step when using Fiddler Everywhere to [capture system  HTTPS traffic]({%slug capture-traffic-get-started%}#system-capturing). Note that the certificate authority installation is not mandatory if you choose the [preconfigured browser capturing]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) option.
 
 
-## Install & Trust the Root Certificate (Settings)
+## Install & Trust the Fiddler's Certificate Authority (Recommended Automated Approach)
 
-Fiddler Everywhere provides the option to manually go through the certificate installation and enable the HTTPS system traffic capture.
+The recommended approach for installing and trusting the Fiddle CA is through the in-app system capturing mode wizards. Follow the articles below for detailed instructions n how to use the built-in wizards to install the Fiddler CA.
 
-As Fiddler Everywhere is a cross-platform web-debugging proxy available for Windows, macOS, and Linux, you need to follow the respective approach for installing the tool.
+* [Installing the Fiddler Everywhere CA on Windows]({% slug first_steps_windows %}#capturing-system-traffic)
+* [Installing the Fiddler Everywhere CA on macOS]({% slug first_steps_macos %}#capturing-system-traffic)
+* [Installing the Fiddler Everywhere CA on Linux]({% slug first_steps_linux %}#capturing-system-traffic)
 
-### For Windows
+
+
+## Install & Trust the Fiddler's Certificate Authority (Manual Approach)
+
+Fiddler Everywhere provides the option to manually go through the certificate installation and enable the HTTPS system traffic capture. In most cases, to capture the operating system HTTPS traffic, you can use the recommended automated installation of the Fiddler CA through our wizards. Use the manual approach only if the automated approach fails and you want to control and track the different steps of the CA installation.
+
+As Fiddler Everywhere is a cross-platform web-debugging proxy available for Windows, macOS, and Linux, you must follow the respective approach for installing the tool.
+
+### Windows
 
 1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**.
 
@@ -37,11 +39,11 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 1. Back on the foremost Fiddler Everywhere screen, enable the **Live Traffic** to toggle to start capturing HTTP and HTTPS system traffic.
 
 
-### For macOS
+### macOS
 
 1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Click the **Trust Root Certificate** button.
 
-1. In the window that appears, enter your machine administrative credentials.
+1. In the window that appears, enter your machine's administrative credentials.
 
     ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-HTTPS-mac-keychain.png)
 
@@ -49,9 +51,9 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 1. Back on the foremost Fiddler Everywhere screen, enable the **Live Traffic** to toggle to start capturing HTTP and HTTPS system traffic.
 
-### For Linux
+### Linux
 
-1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and use the **Export root certificate(DER/Binary format)** from the drop-down menu. The certificate is exported to **~/Desktop** as file with name **FiddlerRootCertificate.crt**.
+1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and use the **Export root certificate(DER/Binary format)** from the drop-down menu. The certificate is exported to **~/Desktop** as a file with the name **FiddlerRootCertificate.crt**.
 
 1. To import and trust the exported certificate, perform the following steps.
 
@@ -82,14 +84,14 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
 
-1. Back in the foremost Fiddler Everywhere screen, enable the **Live Traffic** toggle to start capturing HTTP and HTTPS system traffic.
+1. Back in the foremost Fiddler Everywhere screen, enable the **Live Traffic** toggle to capture HTTP and HTTPS system traffic.
 
 Fiddler Everywhere enables you to control the certificate installation and HTTPS system capture. Use the [**HTTPS** menu]({%slug decrypt-https-traffic%}) for more advanced features and options related to the root trust certificate and the HTTPS system capture.
 
 >tip Fiddler Everywhere provides the [preconfigured browser-capturing option]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing), which enables you to skip the system capturing configuration. The predefined browser-capturing option comes in handy when you generate captured traffic only from a browser, lack administrative rights to install certificates and modify the system proxy, or when third-party VPNs and security tools collide with the Fiddler Everywhere proxy.
 
 
-## Manually Export and Install the Trust Certificate
+## Exporting the Fiddler CA
 
 The automatic installation of the trust certificate can fail due to security restrictions, compatibility issues, limited read/write rights, corporate policies, etc. In that case, the Fiddler Everywhere application presents an error message that notifies the user that the certificate installation has failed. You can export the Fiddler certificate and install it to solve similar issues manually.
 
@@ -101,5 +103,5 @@ The automatic installation of the trust certificate can fail due to security res
 
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
 
-1. Back on the foremost Fiddler Everywhere screen, enable the **Live Traffic** to toggle to start capturing HTTP and HTTPS system traffic.
+1. Back in the **Traffic** pane, enable the **System Proxy** to start capturing HTTP and HTTPS system traffic.
 
