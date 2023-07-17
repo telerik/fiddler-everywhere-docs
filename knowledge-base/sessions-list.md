@@ -3,8 +3,7 @@ title: Sessions Section
 description: "Learn how to use the Sessions section in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-sessions-tab
 tags: Fiddler sessions, saved sessions, sessions list, Fiddler sessions tab
-publish: false
-position: 40
+previous_url: /user-guide/sessions-list
 ---
 
 # Sessions Section

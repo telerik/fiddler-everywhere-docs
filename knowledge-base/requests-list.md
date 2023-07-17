@@ -3,8 +3,7 @@ title: Requests Section
 description: "Learn how to use the Requests section in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-requests-tab
 tags: Fiddler Everywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
-publish: false
-position: 70
+previous_url: /user-guide/requests-list
 ---
 
 # Requests Section
@@ -17,8 +16,6 @@ When you save a request with the **Composer** tab, the request is added to a col
 
 The **Requests** list is organized into collections. Each collection is a folder on the root level of the **Requests** list. A collection can contain saved requests and other subfolders. To reload or start working on the saved requests, expand a collection, and double-click a selected request. To rename or delete a collection, or make a new folder, use the [context menu options](#requests-context-menu).
 
-![Requests list](../images/requests/requests-list-all.png)
-
 ## Requests Menu
 
 The **Requests menu** displays the following buttons:
@@ -26,8 +23,6 @@ The **Requests menu** displays the following buttons:
 - ![Create New Request](../images/requests/create-new-requests-sign.png)&mdash;Opens a new **Composer** tab.
 - **Shared Collections**&mdash;Controls who has access to the shared collections.
 - **Create New Collection**&mdash;Creates a new collection folder.
-
-    ![Requests menu options](../images/requests/requests-main-menu.png)
 
 ## Collection Menu
 
@@ -38,8 +33,6 @@ The **Collection menu** displays options for managing your currently selected re
 - **Share Collection**&mdash;Opens the sharing prompt and provide users with shared access rights.
 - **Delete**&mdash;Deletes the selected collection completely. This action will also remove the collection for everyone with whom you've shared the collection.
 
-    ![Requests collection options](../images/requests/requests-collection-menu.png)
-
 ### Sharing a Collection
 
 To share a collection, click the __Share__ icon. Then, enter the email addresses of the users in the **Share Collection** window.
@@ -47,7 +40,6 @@ To share a collection, click the __Share__ icon. Then, enter the email addresses
 - You can share a collection only if you are the collection owner.
 - You can share only collection folders on the root level of the **Requests** list. You cannot share individual sub-folders.  
 
-    ![Share collection popup](../images/requests/share-requests-popup.png)
 
 ### Deleting a Collection
 
@@ -72,7 +64,6 @@ Each collection provides options that are accessible through a context menu.
 | **Save As Local Collection** |(Available for cloud collections only) Makes a local copy of your cloud saved collection. Useful for testing changes that you don't need to share with the collaborators using the cloud collection.
 | **Duplicate Collection** |(Available for cloud collections only) Makes a local copy of your collection.
 
-![Requests Collection Context Menu](../images/requests/requests-collection-context.png)
 
 ## Requests Context Menu
 
@@ -83,4 +74,3 @@ You can update each saved request by inputting the modification (for example, in
 - **Rename**&mdash;Renames the selected request; can be accessed through the keyboard by pressing `F2` (on Mac and Windows).
 - **Delete**&mdash;Deletes the selected request from the collection; can be accessed through the keyboard by pressing `CMD`+`Back` (on Mac), or `Del` (on Windows).
 
-    ![Requests context menu](../images/requests/requests-context-menu.png)

@@ -2,8 +2,7 @@
 title: Composer Tab
 description: "Learn how to use the Composer tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: composer-tab
-publish: false
-position: 60
+previous_url: /user-guide/composer
 ---
 
 # Composer Tab

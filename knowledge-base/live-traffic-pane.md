@@ -1,23 +1,19 @@
 ---
-title: Live Traffic Section
-description: "Learn how to use the Live Traffic section in the Fiddler Everywhere web-debugging HTTP-proxy client."
+title: Live Traffic Grid
+description: "Learn how to use the user interface from the 'Live Traffic' grid in the Fiddler Everywhere web-debugging proxy application."
 slug: web-sessions-list
-publish: false
-position: 32
-previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar, /user-guide/live-traffic/live-traffic
+previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar, /user-guide/live-traffic/live-traffic, /user-guide/live-traffic
 ---
 
-# Live Traffic Section
+# Live Traffic Grid
 
-The **Live Traffic** section provides essential features of Fiddler Everywhere.
+The **Live Traffic pane** provides essential features of Fiddler Everywhere including the captured traffic visualized within the **Live Traffic grid**.
 
-**Live Traffic** summarizes each captured session in the **Live Traffic** list. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug modify-traffic-get-started%}) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
+Live traffic summarizes each captured session that shows in the **Live Traffic** grid. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug modify-traffic-get-started%}) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
 
 ## Defining a Session
 
 A (web) session represents a single transaction between a client and a server, sometimes known as a request/response pair. Each session appears as a single entry in **Live Traffic**. Each session object has a **Request** and a **Response**, representing the data the client sends to the server and the data the server returns to the client. The session object also maintains a set of flags that record metadata about the session and a timers object that stores timestamps logged during the processing of the session.
-
-![Live Traffic toolbar and list](../images/livetraffic/websessions/websessions-list-all.png)
 
 ## Live Traffic Toolbar
 
@@ -25,11 +21,9 @@ The toolbar of the **Live Traffic** section provides various functionalities suc
 
 Enable **Live Traffic** by switching to the **Capturing** mode to start capturing system traffic. To go into the **Paused** mode, use the **Off** switch state to pause the traffic capturing.
 
-![Live Traffic Toolbar](../images/livetraffic/websessions/websessions-toolbar-all.png)
-
 The **Live Traffic** toolbar provides the following functionalities:
 
-- [Filtering Traffic](#filtering-traffic) (**Filters**)
+- [Filtering Traffic](#filterin-traffic) (**Filters**)
 - [independent Browser Capturing](#independent-browser-capturing) (**Open Browser**)
 - [independent Terminal Capturing](#independent-terminal-capturing) (**>_Terminal**)
 - [Removing All Sessions](#removing-all-sessions) (**Remove All**)
@@ -134,16 +128,13 @@ The last icon on the right side of the toolbar presents an option to restructure
 
 >tip You can collapse the side panels ([**Sessions**]({%slug saved-sessions-tab%}) and [**Requests**]({%slug saved-requests-tab%})) and toggle the main layout to optimize your working space.
 
-![Fiddler Everywhere with collapsed side panels and toggled layout](../images/livetraffic/websessions/websessions-list-all-toggled.png)
+
+## Live Traffic Grid
+
+The **Live Traffic** grid displays all captured web sessions with their technical details strucutred in columns.
 
 
-## Live Traffic List
-
-The **Live Traffic** list displays a list of web sessions with a summary of each captured session.
-
-![Live Traffic](../images/livetraffic/websessions/websessions-list-columns.png)
-
-Many operations begin by selecting one or more entries in the **Live Traffic** and activating other features.
+Many operations begin by selecting one or more entries in the **Live Traffic** grid and activating other features.
 
 - To select more than one session, hold the **Ctrl** (**Command** on Mac) or **Shift** keys while clicking the desired rows.
 
