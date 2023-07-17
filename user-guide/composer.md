@@ -34,7 +34,6 @@ In the **Requests** list to the left you can save the composed request for later
 
 By default, the **Composer** automatically adds headers like `User-Agent`, `Host`, and `Content-Length` so that the HTTPS request is sent correctly. You can remove the default `User-Agent` header but note that this may break the composition of a secure (HTTPS) request.
 
-![Composer User Interface](../images/composer/create-api-request.png)
 
 ## HTTP Methods
 
@@ -147,14 +146,3 @@ The **Raw** view is a raw text representation of the composed request. It is rea
 With the **Response Inspector**, you can inspect the received response from the executed request. The inspector provides a set of views to visualize different parts of the request in specific formats. For detailed information on each inspector type, refer to the article about [the **Inspector** types Fiddler Everywhere provides]({%slug inspector-types%}).
 
   ![Response inspectors](../images/composer/composer-response-inspectors.png)
-
-## Editing in the Composer
-
-You can load a session that was previously captured in the [**Live Traffic**]({%slug web-sessions-list%}) list in the **Composer** and apply further modifications to it:
-
-1. Select the desired session entry and right-click to open the context menu. From the context menu, select **Edit in Composer**. Alternatively, select the session and use the keyboard shortcut by pressing the **E** key.
-
-    ![Edit in Composer](../images/composer/edit-in-composer.png)
-2. The session opens in a new **Composer** window and then you can change the desired values. For example, change the data payload, modify the headers, test the authentication, and so on.
-
-    ![Change the loaded request values in new Composer windows](../images/composer/edit-in-composer-002.png)

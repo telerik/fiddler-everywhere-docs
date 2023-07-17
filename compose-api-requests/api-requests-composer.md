@@ -68,7 +68,6 @@ With Fiddler Everywhere, you can quickly share a collection of saved API request
 - Use the context menu to share the collection with collaborators.
 
 ![Share API requests](../images/composer/comp-requests-share.png)
- **Response inspector** tab. Like the inspectors in the **Live Traffic** pane, the **Response** inspector provides multiple views such as **Headers**, **Raw**, **JSON**, and so on.
 
 ## Save API Request
 
@@ -81,8 +80,6 @@ You can save the API request through the following steps.
 - Click the **Save** button. 
 
 Saved requests are loaded as a collection in the **Requests** list and can be reused or shared with collaborators at any later moment.
-
-![Creating API request](../images/composer/comp-pane-all.png)
 
 
 ## Share Requests Collection

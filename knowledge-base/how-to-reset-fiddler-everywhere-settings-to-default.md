@@ -36,7 +36,7 @@ The following screenshots represent the default Fiddler Everywhere settings.
 
 * Default **Live Traffic** settings&mdash;Keep all sessions in the list
 
-  ![default Gateway settings](../images/settings/settings-live-traffic-default.png)  
+  ![default Gateway settings](../images/settings/settings-live-traffic.png)  
 
 * Default **Privacy** settings 
 
