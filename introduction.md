@@ -20,17 +20,17 @@ Fiddler Everywhere delivers a range of handy and user-friendly features whose nu
 
 ### System Traffic Capturing
 
-Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, and gRPC traffic between your computer and the Internet and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %}#system-capturing)
+Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, and gRPC traffic between your computer and the Internet and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-system-traffic %})
 
 
 ### Independent Browser Capturing
 
-Fiddler Everywhere provides an option for automatic, sandboxed browser HTTP(S) capturing without modifying the operating system proxy. [Read more about the independent Fiddler Everywhere browser capturing...]({% slug capture-traffic-get-started %}#independent-browser-capturing)
+Fiddler Everywhere provides an option for automatic, sandboxed browser HTTP(S) capturing without modifying the operating system proxy. [Read more about the independent Fiddler Everywhere browser capturing...]({% slug capture-browser-traffic %})
 
 
 ### Terminal Capturing
 
-Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's terminal capturing...]({%slug capture-terminal-traffic%}#capturing-traffic-from-terminal)
+Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's terminal capturing...]({%slug capture-terminal-traffic%})
 
 
 ### Traffic Analysis
@@ -44,12 +44,12 @@ Fiddler Everywhere supports the used versions of the HTTP protocol, including th
 
 [Learn more about enabling HTTP/2 capture with Fiddler Everywhere here...]({%slug connections-submenu%})
 
-[Learn more about the TLS support here...]({%slug fe-security%}#tls-version-specifics)
+[Learn more about the TLS support here...]({%slug fe-tls-versions%})
 
 
 ### Request and Response Mocking
 
-Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly and easily change HTTP(S) requests and responses without updating the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
+Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly change HTTP(S) requests and responses without updating the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
 
 
 ### API Composing

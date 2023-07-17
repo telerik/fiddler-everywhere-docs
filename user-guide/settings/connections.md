@@ -20,7 +20,7 @@ The **Connections** menu exposes options allowing granular control over proxy se
 - **Enable Streaming Mode**&mdash;With **Streaming mode** enabled, the response is immediately returned to the client as they are downloaded. Modifying the Response body (through the **Rules**) is possible only when **Streaming mode** is disabled.
 
 - **Bypass Fiddler for URLs that starts with:**&mdash;Allows you to manually add addresses that the Fiddler Everywhere proxy will explicitly bypass.
-    A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere]({%slug configure-vpn-fiddler%}). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**. You can also quickly add domains while selecting a session from the Live Traffic list and using the [context menu]({%slug web-sessions-list%}#bypassing-the-proxy).
+    A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere]({%slug configure-vpn-fiddler%}). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**. You can also quickly add domains while selecting a session from the Live Traffic grid and using the [context menu]({%slug web-sessions-list%}#bypassing-the-proxy).
 
     Bypassing in Fiddler works in the following cases:
 

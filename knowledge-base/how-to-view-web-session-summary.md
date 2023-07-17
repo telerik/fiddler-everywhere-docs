@@ -1,6 +1,6 @@
 ---
 title: Viewing Live Traffic Columns Summaries
-description: "Learn details about each column in the Fiddler Everywhere's Live Traffic list."
+description: "Learn details about each column in the Fiddler Everywhere's Live Traffic grid."
 type: how-to
 slug: how-to-view-web-session-summary
 publish: true

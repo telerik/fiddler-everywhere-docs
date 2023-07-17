@@ -63,9 +63,9 @@ You can now take advantage of the Fiddler Everywhere capabilities - capture, ins
 
 1. [Inspect the captured data]({%slug inspecting-traffic-get-started%}).
 
-1. [Save]({%slug fiddler-saving%}) and [share]({%slug fiddler-sharing%}) the captured HTTPS traffic with collaborators.
+1. [Save]({%slug fiddler-saving%}), [share]({%slug fiddler-sharing%}). or [export]({%slug fiddler-export-and-import%}) the captured HTTPS traffic.
 
-1. [Modify a session through the **Composer**]({%slug composer-get-started%}#edit-captured-api-request)
+1. [Modify a session through the **Composer**]({%slug composer-get-started%})
 
 1. [Mock client and server behavior through the **Rules** tab]({%slug rulesbuilder-get-started%})
 

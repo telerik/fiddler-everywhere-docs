@@ -36,7 +36,7 @@ The **Live Traffic** toolbar provides the following functionalities:
 
 ### Filtering Traffic
 
-Use the filtering options (the [**Filters** toolbar option]({%slug how-to-filter-traffic%}#filters) and the [column filters]({%slug how-to-filter-traffic%}#column-filters)) to create and apply complex filters on your captured sessions in the **Live Traffic** list. 
+Use the filtering options (the [**Filters** toolbar option]({%slug how-to-filter-traffic%}#filters) and the [column filters]({%slug how-to-filter-traffic%}#column-filters)) to create and apply complex filters on your captured sessions in the **Live Traffic** grid. 
 
 [Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
 
@@ -61,7 +61,7 @@ Use the **>_ Terminal** button to capture traffic from a specific terminal insta
 
 ### Removing All Sessions
 
-Use the **Remove All** button to automatically remove all captured traffic from the **Live Traffic** list. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
+Use the **Remove All** button to automatically remove all captured traffic from the **Live Traffic** grid. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
 
 
 ### Searching
@@ -96,9 +96,9 @@ Sharing sessions dramatically improve collaboration, and Fiddler Everywhere prov
 
 - Sharing through the **Share** button from a saved session entry in [the save **Sessions** tree]({%slug saved-sessions-tab%}#sharing-sessions).
 
-- Sharing through the **Share** option from [the **Live Traffic** list context menu]({%slug web-sessions-list%}#share).
+- Sharing through the **Share** option from [the **Live Traffic** grid context menu]({%slug web-sessions-list%}#share).
 
-- Sharing through the **Share** button from the **Live Traffic** list toolbar. The **Live Traffic** toolbar comes with a **Share** button that will save in a file the currently displayed sessions, captured from **Live Traffic**, and then will share them through an explicitly provided email.
+- Sharing through the **Share** button from the **Live Traffic** grid toolbar. The **Live Traffic** toolbar comes with a **Share** button that will save in a file the currently displayed sessions, captured from **Live Traffic**, and then will share them through an explicitly provided email.
 
 To share a session through the toolbar:
 
@@ -111,19 +111,19 @@ To share a session through the toolbar:
 
 ### Managing Columns
 
-Use the **Columns** menu to manage which columns to show up in the [Live Traffic list](#live-traffic-list). You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
+Use the **Columns** menu to manage which columns to show up in the [Live Traffic grid](#live-traffic-list). You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
 
 ![Manage columns from the Fiddler's UI](../images/livetraffic/columns/managing-columns.png)
 
-[Learn more about each column present in the Live Traffic list here...](#columns)
+[Learn more about each column present in the Live Traffic grid here...](#columns)
 
 
 ### Toggling Layout
 
-The last icon on the right side of the toolbar presents an option to restructure the main Fiddler Everywhere layout structure for the [**Live Traffic List**](#live-traffic-list) and the [**Inspectors**]({%slug inspector-types%}). The layout change option is available for the **Live traffic** tab, comparison, and saved sessions tabs. The layout options are as follows:
+The last icon on the right side of the toolbar presents an option to restructure the main Fiddler Everywhere layout structure for the [**Live Traffic grid**](#live-traffic-list) and the [**Inspectors**]({%slug inspector-types%}). The layout change option is available for the **Live traffic** tab, comparison, and saved sessions tabs. The layout options are as follows:
 
-- (Default layout) **Live Traffic List** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
-- (Alternative layout) **Live Traffic List** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
+- (Default layout) **Live Traffic grid** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
+- (Alternative layout) **Live Traffic grid** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
 
 
 >tip You can collapse the side panels ([**Sessions**]({%slug saved-sessions-tab%}) and [**Requests**]({%slug saved-requests-tab%})) and toggle the main layout to optimize your working space.
@@ -144,7 +144,7 @@ When the **Inspectors** are activated, they will automatically decide which insp
 
 ### List Icons
 
-The **Live Traffic List** uses icons to provide additional context for each recorded session. To trigger an explanatory tooltip, hover over a **Live Traffic** list entry icon.
+The **Live Traffic grid** uses icons to provide additional context for each recorded session. To trigger an explanatory tooltip, hover over a **Live Traffic** grid entry icon.
 
 The following table displays the icons which **Live Traffic** supports for its list:
 
@@ -530,7 +530,7 @@ The **Export** context menu option allows you to export the captured traffic in 
 
 ### Removing
 
-To delete sessions from your **Live Traffic** list, use the **Remove** context menu options.
+To delete sessions from your **Live Traffic** grid, use the **Remove** context menu options.
 
 - **Selected sessions**&mdash;Removes all selected sessions; can be accessed with the keyboard by pressing `Cmd`+`Back` (on Mac), `Del` (on Windows).
 

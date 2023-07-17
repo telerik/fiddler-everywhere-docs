@@ -11,7 +11,7 @@ previous_url: /knowledge-base/filter-traffic
 
 # Filtering Traffic
 
-Fiddler Everywhere sets itself as the operating system proxy once the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) activates. The application captures and outputs all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy. The [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) displays the traffic as session entries.
+Fiddler Everywhere sets itself as the operating system proxy once the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) activates. The application captures and outputs all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy. The [**Live Traffic grid**]({%slug web-sessions-list%}#live-traffic-list) displays the traffic as session entries.
 
 Modern applications often generate hundreds or thousands of requests, polluting your session list with unwanted information. This article reveals some options to filter the captured traffic or lower the amount of captured traffic.
 
@@ -66,7 +66,7 @@ The **Filters** option provides a drop-down menu to manage your active and saved
 
 ## Column Filters
 
-Each column from the [**Live Traffic list**]({%slug web-sessions-list%}#live-traffic-list) has its own [filtering submenu]({%slug web-sessions-list%}#filtering-options). A filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on). Each logical operation combines with the filter value, which depends on the column type and can be a string, number, boolean, or predefined value. 
+Each column from the [**Live Traffic grid**]({%slug web-sessions-list%}#live-traffic-list) has its own [filtering submenu]({%slug web-sessions-list%}#filtering-options). A filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on). Each logical operation combines with the filter value, which depends on the column type and can be a string, number, boolean, or predefined value. 
 
 ![column filter menu](../images/livetraffic/columns/dots-filters.png)
 

@@ -24,13 +24,13 @@ The save **Sessions** tree in Fiddler Everywhere lets you store snapshots of pre
 
 Save session snapshots to the save **Sessions** tree as follows:
 
-- Use the **Save** option from the more option within the **Live Traffic** list toolbar.
+- Use the **Save** option from the more option within the **Live Traffic** grid toolbar.
 
     !["Save" in the toolbar](../images/collaboration/save-toolbar.png)
 
 OR
 
-- Use the **Save** option from the **Live Traffic** list context menu
+- Use the **Save** option from the **Live Traffic** grid context menu
 
     !["Save" option from the context menu](../images/collaboration/save-context-menu.png)
 

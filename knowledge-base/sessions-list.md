@@ -10,7 +10,7 @@ previous_url: /user-guide/sessions-list
 
 The save **Sessions** tree in Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel (in the **Live Traffic** pane) that you can hide/show to optimize your working space. 
 
-To save sessions to the save **Sessions** tree, use the [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options of the **Live Traffic** list.  All saved entries are automatically sorted in alphabetical order.
+To save sessions to the save **Sessions** tree, use the [**Save**]({%slug web-sessions-list%}#save) and [**Share**]({%slug web-sessions-list%}#share) options of the **Live Traffic** grid.  All saved entries are automatically sorted in alphabetical order.
 
 
 ## Working with Saved Sessions
@@ -67,7 +67,7 @@ Each session provides commands that can be accessed through its context menu or 
 
 ### Opening
 
-The **Open** option will load the selected session in the **Live Traffic** list; It can be accessed with the keyboard by pressing `Cmd`+`Enter` (on Mac) or `Enter` (on Windows).
+The **Open** option will load the selected session in the **Live Traffic** grid; It can be accessed with the keyboard by pressing `Cmd`+`Enter` (on Mac) or `Enter` (on Windows).
 
 ### Exporting
 

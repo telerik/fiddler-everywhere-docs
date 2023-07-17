@@ -18,7 +18,7 @@ One of the most powerful features in Fiddler Everywhere resides in the **Rules**
 
 To modify captured session through the **Rules**:
 
-1. Start any [capturing mode]({%slug capture-traffic-get-started%}) with Fiddler Everywhere and initiate the request. As a result, the session is captured and displayed in the **Live Traffic** list.
+1. Start any [capturing mode]({%slug capture-traffic-get-started%}) with Fiddler Everywhere and initiate the request. As a result, the session is captured and displayed in the **Live Traffic** grid.
 
 1. Select the desired session and right-click to open the context menu. From the context menu, select **Add New Rule**.
 
