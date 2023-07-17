@@ -82,11 +82,11 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. N
 
 - By default, the HTTP/2 support in Fiddler Everywhere is disabled and needs to be [explicitly enabled through the **Connections** menu]({%slug connections-submenu%}).
 
-- With the **Enable HTTP/2 support (BETA)** option, the connection between a client and a server will default to HTTP/2 if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1.
+- With the **Enable HTTP/2 support** option, the connection between a client and a server will default to HTTP/2 if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1.
 
 - Even with HTTP/2 support enabled, Fiddler Everywhere cannot guarantee that all requests will use HTTP/2. Fiddler will only communicate using the client's version if a client only supports HTTP/1.1 or lower. If the client works with HTTP/2, but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when communicating with the server.
 
-- Some browsers will share a single HTTP/2 connection to a website between tabs and keep a connection open even after a tab is closed. That can lead to unexpected behavior with the beta HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
+- Some browsers will share a single HTTP/2 connection to a website between tabs and keep a connection open even after a tab is closed. That can lead to unexpected behavior with the HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
 
 - Fiddler shows the HTTP/2 pseudo-headers as they are sent/received in their original order. Some client applications further modify the pseudo-header order, which can cause different behavior for some corner cases.
 
@@ -105,5 +105,5 @@ Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system
 
 Fiddler Everywhere supports gRPC capturing out-of-the-box (through a system, independent browser, or explicit capturing modes). The Fiddler application provides dedicated [gRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
 
->important To capture gRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support (BETA)**. This requirement comes from prerequisites of the gRPC framework, which utilizes their HTTP/2 protocol.
+>important To capture gRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support**. This requirement comes from prerequisites of the gRPC framework, which utilizes their HTTP/2 protocol.
 

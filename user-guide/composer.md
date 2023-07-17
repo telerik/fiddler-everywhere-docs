@@ -65,7 +65,7 @@ The  **URL field** is the place where you enter an endpoint URL for the composed
 
 The **HTTP Version** drop-down list renders the following HTTP versions:
 
-- **HTTP 2.0** (beta version support)
+- **HTTP 2.0**
 
 - **HTTP 1.2**
 

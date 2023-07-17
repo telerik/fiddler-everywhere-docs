@@ -15,7 +15,7 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
 - **Allow remote computers to connect**&mdash;Controls whether inbound connections to Fiddler Everywhere are allowed. Enable this option to capture traffic from remote devices.
 
-- **Enable HTTP/2 support (BETA)**&mdash;Enables capture of traffic through the HTTP/2 protocol. 
+- **Enable HTTP/2 support**&mdash;Enables capture of traffic through the HTTP/2 protocol. 
 
 - **Enable Streaming Mode**&mdash;With **Streaming mode** enabled, the response is immediately returned to the client as they are downloaded. Modifying the Response body (through the **Rules**) is possible only when **Streaming mode** is disabled.
 

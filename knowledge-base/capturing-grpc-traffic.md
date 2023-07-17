@@ -30,7 +30,7 @@ Fiddler Everywhere captures gRPC traffic out-of-the-box through [all capturing m
 
 To capture gRPC traffic with Fiddler Everywhere, the following conditions must be satisfied:
 
-1. Enable HTTP/2 capturing in Fiddler Everywhere through **Settings** > **Connections** > **Enable HTTP/2 support (BETA)**.
+1. Enable HTTP/2 capturing in Fiddler Everywhere through **Settings** > **Connections** > **Enable HTTP/2 support**.
 
 2. Configure the client using the gRPC framework to go through the Fiddler proxy. The execution of this step differs depending on the client's application. Here are some setup guidelines for different clients:
 
