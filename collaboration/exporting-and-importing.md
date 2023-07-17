@@ -10,7 +10,7 @@ position: 30
 
 Fiddler Everywhere allows the export and import of captured traffic in various known formats such as SAZ (Fiddler Archive), HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
 
-### Exporting
+## Exporting
 
 The **Export** context menu option allows you to export the captured traffic in various formats.
 

@@ -164,7 +164,7 @@ Marks the duration of the session (from **ClientConnected** to **ServerGotRespon
 
 __Comments__ is the field for showing the custom comment.
 
-This column will have a value only if the comment was previously added, for example, when looking into a list of [shared sessions]({%slug saved-sessions-tab%}) with already added comments, or when you explicitly add a comment through [__Comment__ in the context menu]({%slug web-sessions-list%}#comment).
+This column will have a value only if the comment was previously added, for example, when looking into a list of shared sessions with already added comments, or when you explicitly add a comment through [__Comment__ in the context menu]({%slug web-sessions-list%}#comment).
 
 ## Custom Columns
 

@@ -67,9 +67,9 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
   Fiddler Everywhere provides the following options to add password protection for your sessions:
 
-    * [Setting a password when saving the session]({%slug web-sessions-list%}#saving)
+    * Setting a password when saving the session.
 
-    * [Setting a password for already saved sessions]({%slug saved-sessions-tab%}#encrypting)
+    * Setting a password for already saved sessions.
 
   Sessions saved in the cloud will continue locally through the `.fiddler` folder until explicitly removed. Removing the SAZ files from the `./fiddler` folder will remove their presence in the Fiddler Everywhere UI.
 

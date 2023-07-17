@@ -35,6 +35,6 @@ You can use the NordVPN and Fiddler Everywhere applications simultaneously, bene
 
     ![Invisibility mode OFF](../images/kb/nordvpn/nordvpn-invis-off.png)
 
-- Connect to a selected VPN. At some point, NordVPn will detect and warn you about the existence of the Fiddler Root Certificate. Confirm that you recognize the certificate by using the **Trust** option.
+- Connect to a selected VPN. At some point, NordVPN will detect and warn you about the existence of the Fiddler Root Certificate. Confirm that you recognize the certificate by using the **Trust** option.
 
     ![Providing complete trust for the Fiddler CA](../images/kb/nordvpn/nordvpn-trust-fe.png)

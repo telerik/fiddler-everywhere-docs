@@ -1,5 +1,5 @@
 ---
-title: Saving Traffic
+title: Saving HTTPS Traffic
 description: "Saving snapshots of captured traffic, API requests, and rules with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-saving
 publish: true

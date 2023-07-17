@@ -92,7 +92,7 @@ To save sessions for later or prepare sessions for sharing:
 
 Sharing sessions dramatically improve collaboration, and Fiddler Everywhere provides the following options to export and share sessions:
 
-- Sharing through the **Share** button from a saved session entry in [the save **Sessions** tree]({%slug saved-sessions-tab%}#sharing-sessions).
+- Sharing through the **Share** button from a saved session entry in the save **Sessions** tree.
 
 - Sharing through the **Share** option from [the **Live Traffic** grid context menu]({%slug web-sessions-list%}#share).
 
@@ -124,15 +124,15 @@ The last icon on the right side of the toolbar presents an option to restructure
 - (Alternative layout) **Live Traffic grid** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
 
 
->tip You can collapse the side panels ([**Sessions**]({%slug saved-sessions-tab%}) and [**Requests**]({%slug saved-requests-tab%})) and toggle the main layout to optimize your working space.
+>tip You can collapse the side panels **Sessions** and **Requests** and toggle the main layout to optimize your working space.
 
 
 ## Live Traffic Grid
 
-The **Live Traffic** grid displays all captured web sessions with their technical details strucutred in columns.
+The **Live Traffic** grid displays all captured web sessions with their technical details structured in columns.
 
 
-Many operations begin by selecting one or more entries in the **Live Traffic** grid and activating other features.
+Many operations start by selecting one or more entries in the **Live Traffic** grid and activating other features.
 
 - To select more than one session, hold the **Ctrl** (**Command** on Mac) or **Shift** keys while clicking the desired rows.
 
