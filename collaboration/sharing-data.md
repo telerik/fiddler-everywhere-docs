@@ -1,5 +1,5 @@
 ---
-title: Sharing Data
+title: Sharing Traffic
 description: "Sharing snapshots of captured traffic, API requests, and rules with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-sharing
 publish: true
@@ -7,7 +7,7 @@ position: 20
 previous_url: /collaboration
 ---
 
-# Sharing Data with Fiddler Everywhere
+# Sharing Traffic with Fiddler Everywhere
 
 This article covers the sharing capabilities of Fiddler Everywhere as follows:
 

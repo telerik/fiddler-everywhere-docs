@@ -59,7 +59,7 @@ All condition values connected to a **Live Traffic** column are auto-completed w
 
 ### Filters Menu
 
-The **Filters** option provides a drop-down menu to manage your active and saved filters. Through the drop-down, you can apply a saved filter, change an active filter, disable an active filter, save a new filter, or clear an unsaved column filter (the **Clear** option is available only when no other saved filters are activated).
+The **Filters** option provides a drop-down menu to manage your active and saved filters. Through the drop-down, you can apply a saved filter, change an active filter, turn off an active filter, save a new filter, or clear an unsaved column filter (the **Clear** option is available only when no other saved filters are activated).
 
 ![Filters menu](../images/kb/filters/filters-menu.png)
 
@@ -72,13 +72,13 @@ Each column from the [**Live Traffic grid**]({%slug web-sessions-list%}#live-tra
 
 A column filter adds a condition to your active filter (from the **Filters** toolbar option). If no active filter is present, applying a column filter adds a condition in the **Default** filter (which, in turn, automatically activates).
 
-When you clear a column filter, it automatically deletes its condition from the active filter. The column filter removes its condition from the **Default** filter if no active filter is present.
+When you clear a column filter, it automatically deletes its condition from the active filter. If no active filter exists, the column filter removes its condition from the **Default** filter.
 
 
 
 ## Using Alternative Capturing Modes
 
-Fiddler Everywhere provides multiple capturing modes, with the system capturing mode being the most "invasive" as it will capture all traffic that goes through the operating system. You can limit the amount of captured traffic by using options like the [independent browser capturing mode]({%slug capture-browser-traffic%}) or the [terminal capturing mode]({%slug capture-terminal-traffic%}). These options ensure that only traffic from the sandboxed instances is output in the sessions grid. All additional columns and advanced filters are still applicable. 
+Fiddler Everywhere provides multiple capturing modes, with the system capturing mode being the most "invasive" as it will capture all traffic that goes through the operating system. You can limit the amount of captured traffic by using options like the [independent browser capturing mode]({%slug capture-browser-traffic%}) or the [terminal capturing mode]({%slug capture-terminal-traffic%}). These options ensure only traffic from the sandboxed instances is output in the sessions grid. All additional columns and advanced filters are still applicable. 
 
 
 ## Bypassing the Proxy

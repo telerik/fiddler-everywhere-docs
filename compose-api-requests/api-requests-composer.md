@@ -17,6 +17,8 @@ To compose an API request:
 
 1. Start Fiddler Everywhere and open the **Composer** pane.
 
+1. Use the **+** button to create new Request tab. Alternatively, you can directly use the main **Composer** tab.
+
 1. Select **HTTP method** and enter the endpoint URL.
 
     ![Select HTTP method and enter URL](../images/composer/comp-method-and-url.png)

@@ -7,10 +7,13 @@ position: 1
 previous_url: /get-started/inspect-traffic, /get-started/traffic/inspect-traffic, /traffic/inspect-traffic
 ---
 
+# Inspecting Traffic
+
+The core function of Fiddler Everywhere is to capture HTTPS requests and responses and to visualize its content through a cognitive UI. The application provides means not only to inspect the captured HTTPS data (such as HTTP Requests and Responses) but also to overview complex statistical and analytical data, to compare different sessions, and to save captured traffic for further analysis and collaboration.
 
 ## Inspecting HTTPS Traffic
 
-The core function of Fiddler Everywhere is to capture HTTPS requests and responses and to visualize its content through a cognitive UI. The ongoing HTTP traffic shows in the **Live Traffic grid**, which contains multiple columns.
+The ongoing HTTP traffic shows in the **Live Traffic grid**, which contains multiple columns.
 
 ![Live Traffic grid in Fiddler Everywhere](../images/inspect-traffic/live-traffic-grid.png)
 
@@ -42,8 +45,10 @@ To open the structured information about the session in the [**Overview** tab]({
 
 ## Sessions List
 
-To save a selected session or multiple selected sessions, use the sessions grid context menu or use a keyboard shortcut. Saved sessions are available in the [**Sessions list**]({%slug saved-sessions-tab%}), from which they can be reloaded or shared with collaborators.
+Fiddler Everywhere provides a section called the **Sessions** tree that allows you to create a collection of previously captured HTTPS sessions. 
 
-The inspection of sessions often happens with teammates or external collaborators. Share a selected session or multiple selected sessions directly from the sessions grid or by using the [save **Sessions** tree]({%slug saved-sessions-tab%}).
+![Saved traffic snapshots in the `Sessions` list](../images/inspect-traffic/sessions-list.png)
 
-[Deep-dive into the Fiddler's Sessions list here ...]({%slug saved-sessions-tab%})
+You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share a selected session or multiple sessions directly from the sessions grid or using the save **Sessions** tree.
+
+[Learn more about saving and sharing with the Fiddler's Sessions tree here ...]({%slug fiddler-saving%})

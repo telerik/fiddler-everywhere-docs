@@ -1,6 +1,6 @@
 ---
 title: Modifying Traffic with Rules
-description: "Modify the HTTPS sessions while using the Rules tab in Fiddler Everywhre web-debugging proxy tool."
+description: "Modify the HTTPS sessions while using the Rules tab in Fiddler Everywhere web-debugging proxy tool."
 slug: modify-traffic-get-started
 publish: true
 position: 10
@@ -9,7 +9,7 @@ previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic, 
 
 # Modifying Traffic
 
-Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic through the [Rules](#using-rules) tab is a crucial part of the Fiddler testing and debugging capabilities.
+Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic through the [Rules](#using-rules) tab is crucial to the Fiddler testing and debugging capabilities.
 
 
 ## Creating Rules
@@ -30,7 +30,7 @@ To modify captured session through the **Rules**:
 
 1. Click **Save** to preserve the rule.
 
-Fiddler automatically adds the newly created rule on the top of the [**Rules Queue**]({%slug modify-traffic-get-started%}#rules-queue), giving it immediate execution priority (you can demote or promote each rule in the queue). The rule is also automatically activated (the rule switch is toggled on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
+Fiddler automatically adds the newly created rule on the top of the [**Rules Queue**]({%slug modify-traffic-get-started%}#rules-queue), giving it immediate execution priority (you can demote or promote each rule in the queue). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
 
 
 ## Using Rules Builder
@@ -41,7 +41,7 @@ To create and test a rule through the **Rules Builder**:
 
 1. Select the **Rules** tab and click the **Add Rule** button. As a result, the **Rule Builder**opens.
 
-1. Enter a descriptive rule name, which will later appear in the **Rules Queue**.
+1. Enter a descriptive rule name, which will appear in the **Rules Queue**.
 
 1. Add a condition or a set of conditions to match sessions.
 
@@ -51,17 +51,17 @@ To create and test a rule through the **Rules Builder**:
 
 1. Start capturing traffic or replay a specific session that triggers the rule.
 
-    - If you test with system capturing, independent browser, terminal, or through explicit proxy&mdash;Ensure that the switch of the main **Rules** tab is toggled ON. Open the application in the browser and execute a request that matches the set conditions. The rule is immediately applied to the ongoing captured traffic.
+    - If you test with system capturing, independent browser, terminal, or through explicit proxy&mdash;Ensure that the switch of the main **Rules** tab is toggled ON. Open the application in the browser and execute a request that matches the set conditions. The rule immediately applies to the ongoing captured traffic.
 
-    - If you test with already saved sessions&mdash;Select the rule and use the **Execute** button (green play arrow). The rule is immediately applied to the preloaded saved sessions.
+    - If you test with already saved sessions&mdash;Select the rule and use the **Execute** button (green play arrow). The rule immediately applies to the preloaded saved sessions.
 
 ![Example of active Rules tab with rules and groups](../images/rules/rules-tab-active.png)
 
-The **Rules** tab can be a powerful ally in testing various complex scenarios without meddling with the server. You can share, import, and export created rules with collaborators further to ease your support, development, and QA processes.
+The **Rules** tab can be a powerful ally in testing various complex scenarios without meddling with the server. You can share, import, and export created rules with collaborators to ease your support, development, and QA processes.
 
 ### Additional Rules Resources
 
-- [Understanding the Matching Conditions and Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
+- [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
 - [Redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
 - [Returning Custom HTTP Responses]({%slug using-custom-responses%})

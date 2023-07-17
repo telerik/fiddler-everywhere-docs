@@ -1,16 +1,18 @@
 ---
-title: Rules Queue
-description: "Use the Rules tab to create, store and group multiple rules."
+title: Organizing Rules
+description: "Use the Rules queue to create, store, group, and prioritize the execution of multiple rules."
 slug: rulesbuilder-get-started
 publish: true
 position: 20
 ---
 
 
+# Organizing Rules
 
-## Organizing Rules in the Queue
+All created rules in the **Rules** tab are organized in the **Rules Queue** - a visual tree that lists all active rules & groups in a priority queue. Each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, turn on off, promote, denote, edit, export, import, share, and immediately execute the listed rules.
 
-All created rules in the **Rules** tab are organized in the **Rules Queue** - a visual tree that lists all active rules & groups in a priority queue. Each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, disable, promote, denote, edit, export, import, share, and immediately execute the listed rules.
+
+## Using the Rules Queue
 
 To use a rule (or a group of rules) from the **Rules Queue**, take into consideration the following tips:
 
@@ -59,7 +61,7 @@ The group options allow you to further interact with the group's rules:
 - The **Add Group** button automatically creates a subgroup within the selected group.
 - The **Add Rule** button opens the **Rules Builder** and places the new rule within the selected group.
 - The **Duplicate** button creates a duplicate copy of the selected group.
-- The **Delete** button deletes the group, and all contained rules from the **Rules Queue**.
+- The **Delete** button deletes the group and all contained rules from the **Rules Queue**.
 
 ![Group options](../images/livetraffic/rb/rules-group-options.png)
 
@@ -68,6 +70,6 @@ The group options allow you to further interact with the group's rules:
 
 - [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
 - [Using Predefined Actions]({%slug fiddler-ar-actions%})
-- [Understanding the Matching Conditions and Final vs Non-Final Actions]({%slug fiddler-rules-actions%})
+- [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Creating Manual HTTP Responses]({%slug using-custom-responses%})
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)

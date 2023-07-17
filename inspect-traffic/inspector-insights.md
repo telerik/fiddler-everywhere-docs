@@ -14,11 +14,17 @@ The Fiddler Everywhere **Inspectors** tab renders the HTTP **Request** and the *
 The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide multiple perks, among which:
 
 - Great performance for loading large chunks of data.
+
 - Line IDs to quickly find and mark a specific portion of the request or response.
+
 - Powerful search functionality that supports strings and regular expressions.
+
 - Automatic context styling that highlights the content based on its type&mdash;for example, image renderers, HTML and XML formatters, JSON formatter, JavaScript, and more.
+
 - A **Preview** inspector type that recognizes and visualizes multiple formats.
+
 - A **Raw** inspector that shows the received HTTP requests/responses as is. It also allows you to encode bodies received in unreadable decoded form.
+
 - A **Copy all content to clipboard** option (in the toolbar at the top-right corner) that allows you to extract information efficiently.
 
 To load the data of a session in the **Inspectors** section, double-click an HTTP(S), WebSocket or gRPC session from the __Live Traffic__ grid.

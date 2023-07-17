@@ -1,5 +1,5 @@
 ---
-title: Exporting and Importing Data
+title: Exporting and Importing HTTPS Traffic
 description: "Export and import captured traffic in multiple formats with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-export-and-import
 publish: true
