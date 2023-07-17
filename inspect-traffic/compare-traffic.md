@@ -88,6 +88,6 @@ You can manage all sessions added in the **Compare Sessions (BETA)** tab through
 
 - **Delete Selected Sessions**&mdash;Removes the selected sessions from the compare group.
 
-- **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** tab, or in the opened saved session tab).
+- **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** grid, or in the opened **Sessions** tree tab).
 
 ![Compared Sessions context menu](../images/livetraffic/compare/compare-list-context-menu.png)

@@ -33,12 +33,12 @@ To compose an API request:
 
 1. Click **Execute** to send the composed API request. 
 
-Once the API request executes, you can inspect its HTTP Response in the Composer's **Response inspector** tab. Like the inspectors in the **Live Traffic** pane, the **Response** inspector provides multiple views such as **Headers**, **Raw**, **JSON**, and so on.
+Once the API request executes, you can inspect its HTTP Response in the Composer's **Response inspector** tab. Like the inspectors in the **Traffic** pane, the **Response** inspector provides multiple views such as **Headers**, **Raw**, **JSON**, and so on.
 
 
 ## Edit Captured API Request
 
-1. Start Fiddler Everywhere and open the **Live Traffic** pane.
+1. Start Fiddler Everywhere and open the **Traffic** pane.
 
 1. Capture a session (or open a session from the saved save **Sessions** tree) and use the **Edit in Composer** option from the context menu.
 

@@ -83,7 +83,7 @@ Fiddler Everywhere provides multiple capturing modes, with the system capturing 
 
 ## Bypassing the Proxy
 
-While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** tab. You can set a list of domains or URLs to bypass through the [**Connections** menu]({%slug connections-submenu%}), or you can add a root domain or specific subdomain address to the bypass list while using the **Live Traffic** context menu.
+While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** grid. You can set a list of domains or URLs to bypass through the [**Connections** menu]({%slug connections-submenu%}), or you can add a root domain or specific subdomain address to the bypass list while using the **Live Traffic** context menu.
 
 ## Sorting Options
 

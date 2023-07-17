@@ -25,7 +25,7 @@ OR (applicable when the Fiddler CA is already installed and trusted)
 
 1. Start Fiddler Everywhere.
 
-1. Open the **Live Traffic** pane.
+1. Open the **Traffic** pane.
 
 1. Toggle the **System Proxy** switch to enable system capturing.
 
@@ -40,7 +40,7 @@ You can manually turn on and off the system proxy capturing mode.
 
 1. Start Fiddler Everywhere.
 
-1. Open the **Live Traffic** pane.
+1. Open the **Traffic** pane.
 
 1. Toggle the **System Proxy** switch ON or OFF to enable and disable the system capturing mode.
 

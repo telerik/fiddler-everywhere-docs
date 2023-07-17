@@ -77,7 +77,7 @@ The later versions of the iOS simulators, accessible through XCode, use the OS s
 
 ## Capture Traffic
 
-Now you can immediately capture and inspect HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere.
+Now you can immediately capture and inspect HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** grid.
 
 >tip When you've finished debugging, remove the WiFi proxy from your iOS device.
 

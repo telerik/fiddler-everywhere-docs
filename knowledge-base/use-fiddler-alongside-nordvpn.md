@@ -27,7 +27,7 @@ You can use the NordVPN and Fiddler Everywhere applications simultaneously, bene
 
 - Start the Fiddler Everywhere application.
 
-- Enable the **Live Traffic** toggle to start network capturing.
+- Toggle ON the **System Proxy** switch to start network capturing.
 
 - Start the NordVPN application.
 

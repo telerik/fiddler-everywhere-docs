@@ -77,7 +77,7 @@ In this step, you'll register by creating your unified Telerik account.
 1. Return the Fiddler Everywhere application and choose whether to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
 
-## Step 3: Fiddle with the Traffic
+## Step 3: Interact with the Captured Traffic
 
 You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import *& export, mock and modify HTTPS traffic.
 

@@ -62,7 +62,7 @@ The following steps apply to real Android devices with access to the Internet th
 
 You can capture traffic from your Android mobile browser with the above setup. Test your configuration as follows:
 
-1. In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked and that **Live Traffic** capturing mode is turned ON.
+1. In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked.
 
 1. On your emulator, open **Google Chrome** (or any other mobile browser that respects the proxy settings) and type [https://example.com](https://example.com)
 
@@ -105,7 +105,7 @@ With the above setup, you can capture traffic from your Android mobile browser. 
 
 ## Capture Browser Traffic
 
-Now you can immediately capture HTTP/HTTPS traffic from mobile browsers. For example, open a Chrome browser on your Android device, type an address of your choice, and observe the captured traffic in the **Live Traffic** section of Fiddler Everywhere. 
+Now you can immediately capture HTTP/HTTPS traffic from mobile browsers. For example, open a Chrome browser on your Android device, type an address of your choice, and observe the captured traffic in the **Live Traffic** grid. 
 
 To differentiate the traffic that comes from the mobile device from the one that is being captured from the Fiddler Everywhere host machine, you can apply a **Client IP** column filter (for example, while using the mobile device IP) or a **Process** column filter (while using the device process name).
 

@@ -7,19 +7,17 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 # Live Traffic Grid
 
-The **Live Traffic pane** provides essential features of Fiddler Everywhere including the captured traffic visualized within the **Live Traffic grid**.
+The **Traffic pane** provides essential features of Fiddler Everywhere including the captured traffic visualized within the **Live Traffic grid**.
 
 Live traffic summarizes each captured session that shows in the **Live Traffic** grid. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug modify-traffic-get-started%}) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
 
 ## Defining a Session
 
-A (web) session represents a single transaction between a client and a server, sometimes known as a request/response pair. Each session appears as a single entry in **Live Traffic**. Each session object has a **Request** and a **Response**, representing the data the client sends to the server and the data the server returns to the client. The session object also maintains a set of flags that record metadata about the session and a timers object that stores timestamps logged during the processing of the session.
+A (web) session represents a single transaction between a client and a server, sometimes known as a request/response pair. Each session appears as a single entry in **Live Traffic** grid. Each session object has a **Request** and a **Response**, representing the data the client sends to the server and the data the server returns to the client. The session object also maintains a set of flags that record metadata about the session and a timers object that stores timestamps logged during the processing of the session.
 
 ## Live Traffic Toolbar
 
 The toolbar of the **Live Traffic** section provides various functionalities such as filtering by multiple criteria, using independent browser instances, searching, saving, and sharing sessions, and managing the user interface.
-
-Enable **Live Traffic** by switching to the **Capturing** mode to start capturing system traffic. To go into the **Paused** mode, use the **Off** switch state to pause the traffic capturing.
 
 The **Live Traffic** toolbar provides the following functionalities:
 
@@ -98,7 +96,7 @@ Sharing sessions dramatically improve collaboration, and Fiddler Everywhere prov
 
 - Sharing through the **Share** option from [the **Live Traffic** grid context menu]({%slug web-sessions-list%}#share).
 
-- Sharing through the **Share** button from the **Live Traffic** grid toolbar. The **Live Traffic** toolbar comes with a **Share** button that will save in a file the currently displayed sessions, captured from **Live Traffic**, and then will share them through an explicitly provided email.
+- Sharing through the **Share** button from the **Live Traffic** grid toolbar. The **Live Traffic** toolbar comes with a **Share** button that will save in a file the currently displayed sessions, captured within the **Live Traffic** grid, and then will share them through an explicitly provided email.
 
 To share a session through the toolbar:
 
@@ -146,7 +144,7 @@ When the **Inspectors** are activated, they will automatically decide which insp
 
 The **Live Traffic grid** uses icons to provide additional context for each recorded session. To trigger an explanatory tooltip, hover over a **Live Traffic** grid entry icon.
 
-The following table displays the icons which **Live Traffic** supports for its list:
+The following table displays the icons which **Live Traffic** grid supports for its entries:
 
 
 <table style="width: 80%; border-collapse: collapse;">
@@ -414,7 +412,7 @@ Add, edit, or remove a custom column to the columns list. Afterward, these colum
 
     ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create-through-header.png)
 
-After the successful creation, the new column is immediately available in the **Live Traffic** section.
+After the successful creation, the new column is immediately available in the **Live Traffic** grid.
 
 ![Created custom column](../images/livetraffic/columns/custom-column-created-001.png)
 
@@ -447,7 +445,7 @@ The column **Filter** menu lets you add filters for the currently selected colum
 
 ## Context Menu Options
 
-The context menu for the **Live Traffic** exposes actions you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press **Control** and mouse-click (macOS).
+The context menu for the **Live Traffic** grid exposes actions you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press **Control** and mouse-click (macOS).
 
 - [Editing in the Composer](#editing-in-the-composer) (**Edit in Composer**)
 - [Saving](#saving) (**Save**)

@@ -13,11 +13,7 @@ The core function of Fiddler Everywhere is to capture HTTPS requests and respons
 
 ## Inspecting HTTPS Traffic
 
-The ongoing HTTP traffic shows in the **Live Traffic grid**, which contains multiple columns.
-
-![Live Traffic grid in Fiddler Everywhere](../images/inspect-traffic/live-traffic-grid.png)
-
-To inspect the HTTP Request and Response headers and bodies, follow these steps:
+The ongoing HTTP traffic shows in the **Live Traffic grid**, which contains multiple columns. To inspect the HTTP Request and Response headers and bodies, follow these steps:
 
 1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
@@ -25,13 +21,11 @@ To inspect the HTTP Request and Response headers and bodies, follow these steps:
 
 The session content immediately loads in the Fiddler's **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use a single click on a session to preserve the last shown inspector.
 
-![Inspectors in Fiddler Everywhere](../images/inspect-traffic/live-traffic-double-click-inspector.png)
-
 [Deep-dive into the Fiddler's inspectors tab here ...]({%slug inspector-types%})
 
 ## Overview Traffic Statistics
 
-To extract information about the captured sessions, go to the **Live Traffic** tab, where each request/response entry (session) shows in a row with multiple columns fields in the save **Sessions** tree. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, and the HTTP method (GET or POST). The output traffic can be filtered, exported, commented on, and shared for further and detailed inspection.
+To extract information about the captured sessions, go to the **Live Traffic** grid, where each request/response entry (session) shows in a row with multiple columns fields in the save **Sessions** tree. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, and the HTTP method (GET or POST). The output traffic can be filtered, exported, commented on, and shared for further and detailed inspection.
 
 To open the structured information about the session in the [**Overview** tab]({%slug overview-tab%}), follow these steps:
 
@@ -39,15 +33,23 @@ To open the structured information about the session in the [**Overview** tab]({
 
 1. Select a session, and switch to the **Overview** tab.
 
-![Sessions's overview in Fiddler Everywhere](../images/inspect-traffic/live-traffic-oveerview.png)
-
 [Deep-dive into the Fiddler's Overview tab here ...]({%slug overview-tab%})
+
+## Compare Sessions
+
+You can compare two or more captured sessions for detailed differentiation and side-by-side analysis. Use the **Compare Sessions** tab in Fiddler Everywhere as follows:
+
+1. Select two sessions or more sessions to compare.
+
+1. Use the **Compare** option from the context menu.
+
+Fiddler Everywhere loads the selected sessions side-by-side with the session with a lower ID to the left (called **Group 1**) and a higher ID to the right (called **Group 2**). Each compared session will highlight differences from its counterpart.
+
+[Deep-dive into the Fiddler's `Compare Sessions`` tab here ...]({%slug fe-compare-sessions%})
 
 ## Sessions List
 
-Fiddler Everywhere provides a section called the **Sessions** tree that allows you to create a collection of previously captured HTTPS sessions. 
-
-![Saved traffic snapshots in the `Sessions` list](../images/inspect-traffic/sessions-list.png)
+Fiddler Everywhere provides a section called the **Sessions** tree that allows you to create a collection of previously captured HTTPS sessions.
 
 You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share a selected session or multiple sessions directly from the sessions grid or using the save **Sessions** tree.
 

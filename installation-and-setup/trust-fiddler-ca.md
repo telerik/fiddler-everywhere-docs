@@ -38,7 +38,7 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
 
-1. Back on the foremost Fiddler Everywhere screen, enable the **Live Traffic** to toggle to start capturing HTTP and HTTPS system traffic.
+1. Back on the foremost Fiddler Everywhere screen, toggle ON the **System Proxy** to start capturing HTTP and HTTPS system traffic.
 
 
 ### macOS
@@ -86,7 +86,7 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox and clicking **Save**.
 
-1. Back in the foremost Fiddler Everywhere screen, enable the **Live Traffic** toggle to capture HTTP and HTTPS system traffic.
+1. Back in the foremost Fiddler Everywhere screen, toggle ON the **System Proxy** to capture HTTP and HTTPS system traffic.
 
 Fiddler Everywhere enables you to control the certificate installation and HTTPS system capture. Use the [**HTTPS** menu]({%slug decrypt-https-traffic%}) for more advanced features and options related to the root trust certificate and the HTTPS system capture.
 

@@ -162,4 +162,4 @@ As a result, Fiddler Everywhere will capture the request and the response.
 
 ## Setting Fiddler Everywhere alongside the Node Proxy
 
-After setting the proxy, either globally or explicitly, for your Node.js process, Fiddler Everywhere will immediately start capturing all of the traffic that goes through the Node proxy. You can turn off the **Live Traffic** switch to capture only the process from your Node.js libraries. Turning on the **Live Traffic** switch will set Fiddler as a system proxy, and the **Live Traffic** will start capturing traffic for all applications that use the OS system proxy.
+After setting the proxy, either globally or explicitly, for your Node.js process, Fiddler Everywhere will immediately start capturing all the traffic that goes through the Node proxy. You can turn off the **System Proxy** switch to capture only the process from your Node.js libraries. Turning on the **System Proxy** switch will set Fiddler as a system proxy, and the application will start capturing traffic for all apps that use the OS system proxy.

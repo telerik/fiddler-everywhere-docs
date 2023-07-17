@@ -1,5 +1,5 @@
 ---
-title: Capturing Traffic from Terminal Applications
+title: Capturing Traffic from Terminal
 description: "Capture HTTPS, WebSocket, and gRPC traffic from terminals and shell applications while using the Fiddler Everywhere proxy application."
 slug: capture-terminal-traffic
 position: 20
@@ -25,7 +25,7 @@ OR
 
 1. Start Fiddler Everywhere.
 
-1. Open the **Live Traffic** pane.
+1. Open the **Traffic** pane.
 
 1. Click on the **>_ Terminal** button to load terminal instance.
 

@@ -46,7 +46,7 @@ To achieve this scenario, you can use the **Manual Response** or the **Response 
 
     ![Sample unreachable host rule](../images/kb/dat-files/kb-rules-unreachable.png)
 
-1. Enable the **Rules** tab for **Live Traffic** capturing, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. Congratulations! You have just mocked a 502 status code response!
+1. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. Congratulations! You have just mocked a 502 status code response!
 
     ![Unreachable rule applied in Chrome](../images/kb/dat-files/kb-rules-chrome-result.png)
 

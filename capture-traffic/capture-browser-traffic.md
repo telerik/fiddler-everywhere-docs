@@ -1,5 +1,5 @@
 ---
-title: Capturing from Independent Browser
+title: Capturing from Independent Browser Instance
 description: "Capture browser HTTPS traffic with Fiddler Everywhere and the independent browser capturing mode."
 slug: capture-browser-traffic
 position: 15
@@ -32,7 +32,7 @@ OR
 
 1. Start Fiddler Everywhere.
 
-1. Open the **Live Traffic** pane.
+1. Open the **Traffic** pane.
 
 1. Click the **Browser** button to load an terminal instance.
 

@@ -55,7 +55,7 @@ You can organize multiple rules in groups. Each group consists of the following:
 The group options allow you to further interact with the group's rules:
 
 - The **Play** button executes all active rules from the selected group. The rules will match any loaded sessions.
-- The **Enable/Disable** toggle explicitly enables or disables the group execution. Available only for **Live Traffic** sessions and hidden when interacting with saved sessions.
+- The **Enable/Disable** toggle explicitly enables or disables the group execution. Available only for **Live Traffic** grid's sessions and hidden when interacting with saved sessions.
 - The **Promote** up arrow promotes the selected group of rules in the **Rules Queue**.
 - The **Demote** down arrow demotes the selected group of rules in the **Rules Queue**.
 - The **Add Group** button automatically creates a subgroup within the selected group.
