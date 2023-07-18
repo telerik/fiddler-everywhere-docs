@@ -23,7 +23,7 @@ OR
 
 1. Select the **Rules** tab.
 
-The **Rules** tab loads and you can go ahead with creating, enabling, and prioritizing rules in the rules queue.
+The **Rules** tab loads, and you can create, enable, and prioritize rules in the rules queue.
 
 ## Using Rules Builder
 
