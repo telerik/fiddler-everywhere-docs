@@ -1,5 +1,5 @@
 ---
-title: HTTPS Settings Menu
+title: HTTPS
 description: "Learn how to use the HTTPS settings menu in the Fiddler Everywhere web-debugging proxy tool."
 slug: decrypt-https-traffic
 publish: true

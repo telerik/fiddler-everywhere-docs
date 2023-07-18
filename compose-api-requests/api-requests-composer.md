@@ -1,23 +1,29 @@
 ---
-title: API Requests Composer
-description: "Create and test API requests with the API Composer feature of the Telerik Fiddler Everywhere web-debugging HTTP client proxy."
+title: Composing API Requests
+description: "Create, modify and execute API requests with the Composer feature of the Fiddler web-debugging HTTP proxy application."
 slug: composer-get-started
 publish: true
 position: 10
 previous_url: /get-started/create-api-request, /get-started/api/create-api-request, /api/create-api-request, /user-guide/composer
 ---
 
-# API Requests Composer
+# Composing API Requests 
 
-The **Composer** in Fiddler Everywhere allows you to create requests to REST and SOAP API endpoints. Requests to local and online APIs enable you to check and debug various endpoints, inspect and analyze requests and responses, and quickly retrieve and receive data.
+The **Composer** in Fiddler Everywhere allows you to create requests to REST and SOAP API endpoints. Requests to local and online APIs enable you to check and debug various endpoints, inspect and analyze requests and responses, and quickly retrieve and receive data. To load the **Composer**:
 
-## Compose API Request
+1. Start Fiddler Everywhere and open the **Home** Pane.
 
-To compose an API request:
+1. Follow the **Composer** flow from the **Compose API Request** section.
+
+OR
 
 1. Start Fiddler Everywhere and open the **Composer** pane.
 
-1. Use the **+** button to create new Request tab. Alternatively, you can directly use the main **Composer** tab.
+As a result, Fiddler loads the **Composer** screen where you can compose and execute HTTP requests and organize them in collections through the **Requests** tree.
+
+## Compose API Request
+
+1. Use the **+** button to create new Composer tab. Alternatively, you can directly use the main **Composer** tab.
 
 1. Select **HTTP method** and enter the endpoint URL.
 
