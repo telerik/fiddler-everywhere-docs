@@ -19,7 +19,9 @@ To capture system traffic with Fiddler Everywhere:
 
 1. Start Fiddler Everywhere. 
 
-1. Enable system capturing as described in our getting started tutorials for [Windows]({%slug first_steps_windows%}#capture-system-traffic), [macOS]({%slug first_steps_macos%}#capture-system-traffic), or [Linux]({%slug first_steps_linux%}#capture-system-traffic).
+1. Open the **Home** pane.
+
+1. Click on the **System Proxy** tutorial and follow the instructions.
 
 OR (applicable when the Fiddler CA is already installed and trusted)
 
@@ -31,8 +33,7 @@ OR (applicable when the Fiddler CA is already installed and trusted)
 
 ![Use the "System Proxy" switch to toggle on and off the system capturing mode](../images/get-started/get-started-toggle.png)
 
-> Tip When the switch **System Proxy** is toggled on, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere will immediately intercept the request, and the sessions grid will be populated.
-
+> Tip When the switch **System Proxy** is toggled on, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere intercepts the request, and the Live Traffic grid populates.
 
 ## Enable and Disable System Capturing
 
