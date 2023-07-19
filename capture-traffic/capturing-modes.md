@@ -19,15 +19,18 @@ The following table demonstrates the significant differences between the two fun
 
 | Feature          | System Capturing | Independent Browser Capturing  | Terminal Capturing | Explicit Capturing 
 |:-----------------|:----------------|:-----------------|:-----------------|:-----------------
-| Does it need additional configuration?       | Requires installation of the Fiddler CA | No additional configuration needed | No additional configuration needed | Requires installation of the Fiddler CA 
-| Does it modifies the system proxy? | Yes - Modifies the OS proxy settings | No - Automatically configures the proxy for the browser instance | No - Automatically configures the proxy for the terminal instance | No - Requires manual setup within the client application
-| Does it need installation of the Fiddler CA? | Yes - Automated configuration available | No - Automatically configures the independent browser | No - Automatically configures the terminal. | Yes - Requires manual installation of the Fiddler CA within the app's preferred certificate manager
-| Does it capture browser traffic?   | Supports all browsers  | Support for all Chromium browsers | N/A | Only if the client app is a browser 
-| Does it capture desktop application traffic? | Yes - Captures traffic from any application that respects the system proxy | N/A | Yes (if the application starts through the terminal instance) | Yes 
-| Does it require administrative access? | Requires elevated rights to install and trust the Fiddler CA and to modify the OS proxy  | Requires user rights to start a Chromium browser with custom parameters | Requires user rights to start a terminal with custom parameters | Depends on the client app requirements
-| Is it compatible with VPN?     | limited VPN support | Supports multiple VPN tooling out-of-the-box. | Supports multiple VPN tooling out-of-the-box. | Depends on the client app requirements
-| What does it capture?   | Captures traffic that goes through the system proxy. | Captures traffic from the independent browser instance. | Captures traffic from the terminal and child processes. |  Captures traffic from the client application
-| Which protocols are supported? | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC
+| Needed Configuration       | Requires installation of the Fiddler CA | No additional configuration needed | No additional configuration needed | Requires installation of the Fiddler CA 
+| OS Proxy Modification | Modifies the OS proxy settings | Configures the proxy only within the browser instance | Configures the proxy only for the terminal instance | Requires manual proxy configuration for the client application
+| Fiddler CA Installation | Automated CA installation available | Configures the CA for the browser instance | Configures the CA for the terminal. | Yes - Requires manual installation of the Fiddler CA within the app's preferred certificate manager
+| Browser traffic capturing   | Supports all browsers  | Support for all Chromium browsers | N/A | Only if the client app is a browser 
+| Desktop application traffic capturing | Captures traffic from applications that respects the OS proxy | Browser traffic only | Terminal traffic only | Yes (Desktop apps)
+| Remote Traffic | Supports remote PCs and mobile applications | n/a | n/a | Supports remote PCs and mobile applications
+| Android Traffic | Supports capturing from Android | n/a | n/a | Supports capturing from Android 
+| iOS Traffic | Supports capturing from iOS  | n/a | n/a | Supports capturing from iOS 
+| Administrative access requirements | Requires elevated rights to install and trust the Fiddler CA and to modify the OS proxy  | Requires user rights to start a Chromium browser with custom parameters | Requires user rights to start a terminal with custom parameters | Depends on the client app requirements
+|  VPN compatibility    | Limited VPN support | Supports multiple VPN tooling out-of-the-box | Supports multiple VPN tooling out-of-the-box | Depends on the client app requirement
+| Capturing specifics  | Captures traffic that goes through the system proxy | Captures traffic from the independent browser instance | Captures traffic from the terminal and child processes |  Captures traffic from the client application
+| Supported protocols  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC
 
 
 ## System Capturing
@@ -63,12 +66,12 @@ Similarly to the independent browser capturing option, Fiddler lets you use a de
 
 ![Use the "Terminal" button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
-[Learn more on how to capture traffic from an terminal here...]({%slug capture-terminal-traffic%}#capturing-from-terminal)
+[Learn more on how to capture traffic from a terminal here...]({%slug capture-terminal-traffic%}#capturing-from-terminal)
 
 
 ## Explicit Capturing
 
-The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is `127.0.0.1:8866`. Any application explicitly directed to go through the Fiddler Everywhere proxy address will have its HTTP/HTTPS/WebSocket traffic immediately captured, even if the [system capturing](#system-capturing) is turned off.
+The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is `127.0.0.1:8866`. Any application explicitly directed to go through the Fiddler Everywhere proxy address will immediately capture its HTTP/HTTPS/WebSocket traffic, even if the [system capturing](#system-capturing) is turned off.
 
 Example for explicitly making a curl request that goes through the Fiddler Everywhere proxy:
 
@@ -84,7 +87,7 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. N
 
 - With the **Enable HTTP/2 support** option, the connection between a client and a server will default to HTTP/2 if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1.
 
-- Even with HTTP/2 support enabled, Fiddler Everywhere cannot guarantee that all requests will use HTTP/2. Fiddler will only communicate using the client's version if a client only supports HTTP/1.1 or lower. If the client works with HTTP/2, but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when communicating with the server.
+- Even with HTTP/2 support enabled, Fiddler Everywhere cannot guarantee that all requests will use HTTP/2. Fiddler will only communicate using the client's version if a client only supports HTTP/1.1 or lower. If the client works with HTTP/2 but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when communicating with the server.
 
 - Some browsers will share a single HTTP/2 connection to a website between tabs and keep a connection open even after a tab is closed. That can lead to unexpected behavior with the HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
 
