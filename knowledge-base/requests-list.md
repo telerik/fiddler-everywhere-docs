@@ -8,7 +8,7 @@ previous_url: /user-guide/requests-list
 
 # Requests Section
 
-The **Requests**section in Fiddler Everywhere enables you to organize and modify existing requests, which are listed in it. The section is part of a collapsable panel that you can hide/show to optimize your working space.
+The **Requests**section in Fiddler Everywhere enables you to organize and modify existing requests, which are listed in it. The section is part of a collapsible panel that you can hide/show to optimize your working space.
 
 For more information about building and sending HTTP and HTTPS requests, refer to the article on the [**Composer** tab]({% slug composer-tab %}).
 
@@ -58,8 +58,8 @@ Each collection provides options that are accessible through a context menu.
 | ----------- | ----------- |
 | **New Folder**  | Creates a new folder within the selected collection.
 | **Rename**      | Renames the selected collection. Only the owner can rename the collection; can be accessed through the keyboard by pressing `F2` (on Mac), or `F2` (on Windows).
-| **Delete**      | Deletes the collection from the **Requests** list. This will also delete all the requests in the collection. If the collection is shared, the collection will be removed for everyone; can be accessed through the keyboard by pressing `CMD`+`Back` (on Mac), or `Del` (on Windows).
-| **Share**       | Triggers the **Share Collection** window; can be accessed through the keyboard by pressing `CMD`+`Shift`+`=` (on Mac), or `Ctrl`+`Shift`+`=` (on Windows).
+| **Delete**      | Deletes the collection from the **Requests** list. This will also delete all the requests in the collection. If the collection is shared, the collection will be removed for everyone; can be accessed through the keyboard by pressing `Cmd`+`Back` (on Mac), or `Del` (on Windows).
+| **Share**       | Triggers the **Share Collection** window; can be accessed through the keyboard by pressing `Cmd`+`Shift`+`=` (on Mac), or `Ctrl`+`Shift`+`=` (on Windows).
 | **Manage Users**| Lists the users with shared access rights. You can use this option to remove users.
 | **Save As Local Collection** |(Available for cloud collections only) Makes a local copy of your cloud saved collection. Useful for testing changes that you don't need to share with the collaborators using the cloud collection.
 | **Duplicate Collection** |(Available for cloud collections only) Makes a local copy of your collection.
@@ -72,5 +72,5 @@ Each request provides options for renaming or deleting it through its context me
 You can update each saved request by inputting the modification (for example, in the Headers) and clicking the __Save__ button. To save a new instance of an already saved request, use __Save as__ in the drop-down, which is available for already saved requests only.
 
 - **Rename**&mdash;Renames the selected request; can be accessed through the keyboard by pressing `F2` (on Mac and Windows).
-- **Delete**&mdash;Deletes the selected request from the collection; can be accessed through the keyboard by pressing `CMD`+`Back` (on Mac), or `Del` (on Windows).
+- **Delete**&mdash;Deletes the selected request from the collection; can be accessed through the keyboard by pressing `Cmd`+`Back` (on Mac), or `Del` (on Windows).
 

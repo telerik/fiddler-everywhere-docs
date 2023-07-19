@@ -102,5 +102,5 @@ With Fiddler Everywhere, you can quickly share a collection of saved API request
 
 ![Share API requests](../images/composer/comp-requests-share.png)
 
-
+[Learn more about the Requests collection here...]({%slug composer-collections-get-started%})
 

@@ -57,3 +57,5 @@ NordVPN
 IoT
 IPv4
 IPv6
+WCAT
+HTTPArchive
