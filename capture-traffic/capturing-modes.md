@@ -9,9 +9,9 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Modes
 
-Fiddler Everywhere is a local forward proxy that captures HTTP(S), WebSocket, and gRPC traffic.
+Fiddler Everywhere is a local forward TLS proxy that can capture HTTP(S), WebSocket, and gRPC traffic. The traffic can be generated from locally installed applications, or from remote devices (within the same local network).
 
-The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [terminal capturing](#independent-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing).
+The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [terminal capturing](#independent-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing) which can include [traffic from remote devices](#remote-traffic-capturing).
 
 ## Capturing Modes Comparison
 
@@ -21,7 +21,7 @@ The following table demonstrates the significant differences between the two fun
 |:-----------------|:----------------|:-----------------|:-----------------|:-----------------
 | Needed Configuration       | Requires installation of the Fiddler CA | No additional configuration needed | No additional configuration needed | Requires installation of the Fiddler CA 
 | OS Proxy Modification | Modifies the OS proxy settings | Configures the proxy only within the browser instance | Configures the proxy only for the terminal instance | Requires manual proxy configuration for the client application
-| Fiddler CA Installation | Automated CA installation available | Configures the CA for the browser instance | Configures the CA for the terminal. | Yes - Requires manual installation of the Fiddler CA within the app's preferred certificate manager
+| Fiddler CA Installation | Automated CA installation available | Configures the CA for the browser instance | Configures the CA for the terminal. | Requires manual installation of the Fiddler CA within the app's preferred certificate manager
 | Browser traffic capturing   | Yes  | Yes (Chromium browsers) | n/a | Yes 
 | Application traffic capturing | Yes | Browser traffic only | Terminal traffic only | Yes
 | Remote traffic capturing | Yes  | n/a | n/a | Yes 
@@ -71,13 +71,23 @@ Similarly to the independent browser capturing option, Fiddler lets you use a de
 
 ## Explicit Capturing
 
-The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is `127.0.0.1:8866`. Any application explicitly directed to go through the Fiddler Everywhere proxy address will immediately capture its HTTP/HTTPS/WebSocket traffic, even if the [system capturing](#system-capturing) is turned off.
+The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is `127.0.0.1:8866`. Any application (including apps from remote PCs, mobile devices, et.c) explicitly directed to go through the Fiddler Everywhere proxy address will have its traffic captured, even when the [system capturing](#system-capturing) is turned off.
 
 Example for explicitly making a curl request that goes through the Fiddler Everywhere proxy:
 
 ```curl
 curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
 ```
+
+## Remote Traffic Capturing
+
+You can use Fiddler Everywhere to capture traffic from remote devices on the same local network. That includes remote PCs, gaming consoles, IoT devices, smartphones, tablets, etc. All you need to set the Fiddler proxy address and port as manual proxy on the remote device (similar to the [explicit capturing mode](#explicit-capturing)) and install the Fiddler CA within the remote device certificate manager. Below you will find some detailed guides for different scenarios:
+
+[Learn more on how to capture traffic from an Android device here...]({%slug capture-mobile-android-traffic%})
+
+[Learn more on how to capture traffic from an iOS device here...]({%slug ccapture-mobile-ios-traffic%})
+
+[Learn more on how to capture traffic from generic remote devices here...]({%slug fiddler-capture-other-computers%})
 
 ## HTTP Version Specifics
 

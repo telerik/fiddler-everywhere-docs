@@ -4,7 +4,7 @@ description: "Learn how to use the Connections section in the Fiddler Everywhere
 slug: connections-section
 tags: Fiddler Connections section, Fiddler Everywhere IP addresses, Fiddler Everywhere active network
 publish: true
-position: 90
+previous_url: /user-guide/connections
 ---
 
 # Connections Section
