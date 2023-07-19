@@ -54,6 +54,8 @@ In this step, you'll register by creating your unified Telerik account.
 
 1. Return the Fiddler Everywhere application and choose whether to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
+After successful login into Fiddler Everywhere, you will see your personal and license information within the **Home** pane.
+
 
 ## Step 3: Interact with the Captured Traffic
 

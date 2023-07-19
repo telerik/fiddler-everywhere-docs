@@ -22,14 +22,14 @@ The following table demonstrates the significant differences between the two fun
 | Needed Configuration       | Requires installation of the Fiddler CA | No additional configuration needed | No additional configuration needed | Requires installation of the Fiddler CA 
 | OS Proxy Modification | Modifies the OS proxy settings | Configures the proxy only within the browser instance | Configures the proxy only for the terminal instance | Requires manual proxy configuration for the client application
 | Fiddler CA Installation | Automated CA installation available | Configures the CA for the browser instance | Configures the CA for the terminal. | Yes - Requires manual installation of the Fiddler CA within the app's preferred certificate manager
-| Browser traffic capturing   | Supports all browsers  | Support for all Chromium browsers | N/A | Only if the client app is a browser 
-| Desktop application traffic capturing | Captures traffic from applications that respects the OS proxy | Browser traffic only | Terminal traffic only | Yes (Desktop apps)
-| Remote Traffic | Supports remote PCs and mobile applications | n/a | n/a | Supports remote PCs and mobile applications
-| Android Traffic | Supports capturing from Android | n/a | n/a | Supports capturing from Android 
-| iOS Traffic | Supports capturing from iOS  | n/a | n/a | Supports capturing from iOS 
-| Administrative access requirements | Requires elevated rights to install and trust the Fiddler CA and to modify the OS proxy  | Requires user rights to start a Chromium browser with custom parameters | Requires user rights to start a terminal with custom parameters | Depends on the client app requirements
-|  VPN compatibility    | Limited VPN support | Supports multiple VPN tooling out-of-the-box | Supports multiple VPN tooling out-of-the-box | Depends on the client app requirement
-| Capturing specifics  | Captures traffic that goes through the system proxy | Captures traffic from the independent browser instance | Captures traffic from the terminal and child processes |  Captures traffic from the client application
+| Browser traffic capturing   | Yes  | Yes (Chromium browsers) | n/a | Yes 
+| Application traffic capturing | Yes | Browser traffic only | Terminal traffic only | Yes
+| Remote traffic capturing | Yes  | n/a | n/a | Yes 
+| Android traffic capturing | Yes | n/a | n/a | Yes
+| iOS traffic capturing | Yes  | n/a | n/a | Yes
+| Administrative access requirements | Requires rights to install the Fiddler CA and modify the OS proxy  | Requires rights to start a browser with custom parameters | Requires rights to start a terminal with custom parameters | Depends on the app requirements
+|  VPN compatibility    | Limited VPN support | Yes | Yes | Depends on the app requirement
+| Capturing specifics  | Captures HTTPS from the operating system proxy | Captures HTTPS from the independent browser | Captures HTTPS from a terminal and its child processes |  Captures traffic from the client application
 | Supported protocols  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC
 
 

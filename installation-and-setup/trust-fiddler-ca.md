@@ -9,7 +9,7 @@ previous_url: /installation-and-update/trust-certificate-configuration
 
 # Trust Fiddler's Certificate Authority
 
-This article provides additional information about the options for installing the Fiddler Everywhere root CA (certificate authority) in your operating system. The proper certificate installation is a crucial step when using Fiddler Everywhere to [capture system  HTTPS traffic]({%slug capture-traffic-get-started%}#system-capturing). Note that the certificate authority installation is not mandatory if you choose the [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) option.
+This article provides additional information about the options for installing the Fiddler Everywhere root CA (certificate authority) in your operating system. The proper certificate installation is a crucial step when using Fiddler Everywhere to [capture system  HTTPS traffic]({%slug capture-traffic-get-started%}#system-capturing). Note that the certificate authority installation is not mandatory if you choose to use the [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) or [terminal capturing]({%slug capture-traffic-get-started%}#terminal-capturing) modes.
 
 
 ## Install & Trust the Fiddler's Certificate Authority (Recommended Automated Approach)
@@ -20,7 +20,7 @@ The recommended approach for installing and trusting the Fiddle CA is through th
 * [Installing the Fiddler Everywhere CA on macOS]({% slug first_steps_macos %}#capturing-system-traffic)
 * [Installing the Fiddler Everywhere CA on Linux]({% slug first_steps_linux %}#capturing-system-traffic)
 
-Once Fiddler CA installs successfully, you can capture and analyze HTTPS traffic. The CA install once and remains valid until it is explicitly uninstalled.
+Once Fiddler CA installs successfully, you can capture and analyze HTTPS traffic. The CA install once and remains valid until it is explicitly uninstalled. The CA name as listed within the operating system certificate manager is `Fiddler_Root_Certificate_Authority`.
 
 ## Install & Trust the Fiddler's Certificate Authority (Manual Approach)
 
