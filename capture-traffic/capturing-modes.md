@@ -81,13 +81,14 @@ curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
 
 ## Remote Traffic Capturing
 
-You can use Fiddler Everywhere to capture traffic from remote devices on the same local network. That includes remote PCs, gaming consoles, IoT devices, smartphones, tablets, etc. All you need to set the Fiddler proxy address and port as manual proxy on the remote device (similar to the [explicit capturing mode](#explicit-capturing)) and install the Fiddler CA within the remote device certificate manager. Below you will find some detailed guides for different scenarios:
+Fiddler Everywhere can capture traffic from remote devices on the same local network. That includes remote PCs, gaming consoles, IoT devices, smartphones, tablets, etc. All you need to do is set the Fiddler proxy address and port as a manual proxy on the remote device (similar to the [explicit capturing mode](#explicit-capturing)) and install the Fiddler CA within the remote device certificate manager. Below you will find some detailed guides for different scenarios:
 
 [Learn more on how to capture traffic from an Android device here...]({%slug capture-mobile-android-traffic%})
 
 [Learn more on how to capture traffic from an iOS device here...]({%slug ccapture-mobile-ios-traffic%})
 
 [Learn more on how to capture traffic from generic remote devices here...]({%slug fiddler-capture-other-computers%})
+
 
 ## HTTP Version Specifics
 
