@@ -42,7 +42,7 @@ The requirement for using the same network is actually not a must. However, most
 
 1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**.
 
-1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({slug connections-section}) to get the host IP address. Alternatively, you can get the host IP address while using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
+1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to get the host IP address. Alternatively, you can get the host IP address while using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
 
     ![Host local IP address](../images/kb/host-ip.png)
 
