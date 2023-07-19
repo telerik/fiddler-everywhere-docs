@@ -26,7 +26,7 @@ To capture browser traffic with Fiddler Everywhere:
 
 1. Open the **Home** pane.
 
-1. Click on the **Browser** tutorial, and then click on **Open Browser**
+1. Open the **Browser** tutorial, and then click on **Open Browser**.
 
 OR
 
@@ -34,7 +34,7 @@ OR
 
 1. Open the **Traffic** pane.
 
-1. Click the **Browser** button to load an terminal instance.
+1. Click the **Browser** button to load a terminal instance.
 
 ![Use the "Browser" button to capture traffic from independent browser instance](../images/get-started/get-started-open-browser.png)
 

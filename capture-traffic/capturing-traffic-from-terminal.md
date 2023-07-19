@@ -19,7 +19,7 @@ To capture terminal traffic with Fiddler Everywhere:
 
 1. Open the **Home** pane.
 
-1. Click on the **Terminal** tutorial, and then click on **Open Terminal**
+1. Open the **Terminal** tutorial, and then click on **Open Terminal**.
 
 OR
 
