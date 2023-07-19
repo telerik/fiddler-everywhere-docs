@@ -22,7 +22,7 @@ To capture secure traffic (HTTPS), Fiddler Everywhere needs to install a root tr
 
 ## Solution
 
-It is recommended that you install the Fiddler Everywhere root certificate on macOS automatically. For the step-by-step guide, refer to the [First Steps with Fiddler Everywhere on macOS article]({% slug first_steps_macos %}#start-system-capturing).  
+The recommended approach is to install the Fiddler Everywhere root certificate on macOS automatically. For the step-by-step guide, refer to the [First Steps with Fiddler Everywhere on macOS article]({% slug first_steps_macos %}).  
 
 If the automatic installation and enabling of the trust certificate do not work, you can manually install the trust certificate to your keychain:
 

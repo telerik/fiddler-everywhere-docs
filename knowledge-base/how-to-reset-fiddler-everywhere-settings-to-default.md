@@ -46,7 +46,7 @@ The following screenshots represent the default Fiddler Everywhere settings.
 
   ![default Composer settings](../images/settings/settings-composer.png)
 
-* Default **Browsers** settings&mdash;Fiddler Everywhere tries to detect the default path to the Google Chrome installation folder (to be used with the [Open Browser]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) functionality)
+* Default **Browsers** settings&mdash;Fiddler Everywhere tries to detect the default path to the Google Chrome installation folder (to be used with the [Open Browser]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing) functionality)
 
   ![default Browsers settings](../images/settings/settings-browsers.png)
 

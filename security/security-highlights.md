@@ -13,7 +13,7 @@ While using Fiddler Everywhere, consider the following security indicators and h
 
 - With the initial state for [the system capturing option]({%slug capture-traffic-get-started%}#system-capturing), Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic is not encrypted and can expose sensitive information like visited URLs, internal API endpoints, etc.
 
-- With the initial state for [the preconfigured browser capturing option]({%slug capture-traffic-get-started%}#browser-capturing), Fiddler Everywhere will capture both non-secure HTTP and secure HTTPS traffic. The Fiddler Everywhere application will decrypt the HTTPS traffic.
+- With the initial state for [the independent browser capturing option]({%slug capture-traffic-get-started%}#browser-capturing), Fiddler Everywhere will capture both non-secure HTTP and secure HTTPS traffic. The Fiddler Everywhere application will decrypt the HTTPS traffic.
 
 - Fiddler Everywhere generates a unique root CA (certificate authority). Avoid sharing this certificate with anyone as it can pose a significant security threat (for example, anyone with access to that certificate can decrypt your HTTPS traffic).
 

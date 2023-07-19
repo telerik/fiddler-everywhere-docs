@@ -92,9 +92,9 @@ You can instruct Fiddler Everywhere to bypass the VPN server endpoints through t
 
 The system capturing mode can set and unset the operating system proxy, which may result in configuration conflicts with the VPN tooling. To avoid such conflicts, consider the alternative capturing modes provided below as substitutes for the system capturing mode.
 
-- The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing).
 
-- The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
+- The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-terminal-capturing). 
 
 ## Incompatibility with security tools
 
@@ -127,9 +127,9 @@ Contact your system administrator and ask them to:
 
 The system capturing mode can set and unset the operating system proxy, which may result in configuration conflicts with security tooling and administrative policies. To avoid such conflicts, consider the alternative capturing modes provided below as substitutes for the system capturing mode.
 
-- The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing).
 
-- The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
+- The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-terminal-capturing). 
 
 
 ## Incompatibility with other preset system proxies
@@ -160,9 +160,9 @@ To resolve the issue, please consider applying the following solutions:
 
 The system capturing mode can set and unset the operating system proxy, which may result in configuration conflicts with third-party upstream proxies. To avoid such conflicts, consider the alternative capturing modes provided below as substitutes for the system capturing mode.
 
-- The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing).
 
-- The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
+- The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-terminal-capturing). 
 
 
 ## Incompatibility with third-party proxy tools
@@ -204,9 +204,9 @@ If Fiddler Everywhere ceases to capture traffic at this point, the third-party t
 
 The system capturing set and unset the operating system proxy, which can cause a configuration conflict with third-party proxy applications. You can substitute the system capturing mode with the listed alternative capturing modes.
 
-- The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing).
 
-- The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#preconfigured-terminal-capturing). 
+- The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-terminal-capturing). 
 
 
 ## Capture Not Working - All Other Scenarios
