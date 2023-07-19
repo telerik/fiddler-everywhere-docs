@@ -85,7 +85,7 @@ Fiddler Everywhere can capture traffic from remote devices on the same local net
 
 [Learn more on how to capture traffic from an Android device here...]({%slug capture-mobile-android-traffic%})
 
-[Learn more on how to capture traffic from an iOS device here...]({%slug ccapture-mobile-ios-traffic%})
+[Learn more on how to capture traffic from an iOS device here...]({%slug capture-mobile-ios-traffic%})
 
 [Learn more on how to capture traffic from generic remote devices here...]({%slug fiddler-capture-other-computers%})
 
