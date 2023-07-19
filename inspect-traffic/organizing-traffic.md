@@ -11,17 +11,15 @@ position: 50
 In addition to the core capturing and inspection capabilities, Fiddler Everywhere provides options to save, share and organize already captured sessions. The section that enables you to achieve the above is called the **Sessions** tree. To open the **Sessions** follow these steps:
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Traffic** pane.
-
 1. Expand the **Sessions** tree located to the left.
 
+The **Sessions** tree in Fiddler Everywhere provides the option to save, organize, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel that you can hide/show to optimize your working space.
 
-The **Sessions** tree in Fiddler Everywhere provides the option to save, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel that you can hide/show to optimize your working space.
-
-To save snapshots of captured traffic (single or multiple sessions) to the **Sessions** tree, use the saving and sharing options of the **Live Traffic** grid. All saved entries are automatically sorted in alphabetical order.
 
 ## Saving in Fiddler Everywhere
+
+To save snapshots of captured traffic (single or multiple sessions) to the **Sessions** tree, use the saving and sharing options of the **Live Traffic** grid. All saved entries are automatically sorted in alphabetical order.
 
 Save a snapshot of captured HTTPS traffic through the following steps:
 
@@ -44,15 +42,11 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 
 ## Sharing in Fiddler Everywhere
 
-Save a snapshot of newly captured HTTPS traffic through the following steps:
+Already saved snapshots of captured traffic can be shared directly within the **Sessions** tree.
 
-1. Capture HTTPS traffic through your preferred capturing mode.
+1. Select the saved snapshot from within the **Sessions** tree.
 
-1. Select one or more sessions.
-
-1. Use **Share** option from the context menu.
-
-1. Save the sessions (share sessions will be explicitly stored in the cloud).
+1. Use the context menu or the keyboard shortcuts `Ctrl + Shift + =` (Windows) or `Cmd + Shift + =` (macOS) to invoke the **share** dialog.
 
 1. Complete the share by:
 
@@ -61,11 +55,15 @@ Save a snapshot of newly captured HTTPS traffic through the following steps:
     - (Optional) Adding a descriptive comment.
 
 
-Already saved snapshots of captured traffic can be shared directly within the **Sessions** tree.
+You can share a snapshot of newly captured HTTPS traffic through the following steps:
 
-1. Select the saved snapshot from within the **Sessions** tree.
+1. Capture HTTPS traffic through your [preferred capturing mode]({%slug capture-traffic-get-started%}).
 
-1. Use the context menu or the keyboard shortcuts `Ctrl + Shift + =` (Windows) or `Cmd + Shift + =` (macOS) to invoke the **share** dialog.
+1. Select one or more sessions.
+
+1. Use **Share** option from the context menu.
+
+1. Save the sessions (share sessions will be explicitly stored in the cloud).
 
 1. Complete the share by:
 

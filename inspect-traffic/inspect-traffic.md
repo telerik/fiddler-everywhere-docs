@@ -53,4 +53,4 @@ Fiddler Everywhere provides a section called the **Sessions** tree that allows y
 
 You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share a selected session or multiple sessions directly from the sessions grid or using the save **Sessions** tree.
 
-[Learn more about saving and sharing with the Fiddler's Sessions tree here ...]({%slug fiddler-saving%})
+[Learn more about saving and sharing with the Fiddler's Sessions tree here ...]({%slug fe-organize-sessions%})
