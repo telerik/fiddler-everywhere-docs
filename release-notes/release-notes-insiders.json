@@ -1,5 +1,64 @@
 [
     {
+        "version": "4.4.0-insiders",
+        "title": "Fiddler Everywhere v4.4.0",
+        "date": "July 20, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Introduce a new application layout where Traffic and Composer functionalities are split"
+                    },
+                    {
+                        "title": "Add a Home section in Fiddler Everywhere - include user details and feature wizards for a guided onboarding"
+                    },
+                    {
+                        "title": "Move system proxy toggle in the toolbar below Live Traffic"
+                    },
+                    {
+                        "title": "Add informational dialog when the user enables the system proxy manually"
+                    },
+                    {
+                        "title": "Add a \"+\" button in Composer pane for creating new requests"
+                    },
+                    {
+                        "title": "Rename generated certificate authority to \"Fiddler Everywhere Root Certificate Authority\""
+                    },
+                    {
+                        "title": "Show Fiddler specific home page in the initial tab when opening a preconfigured browser"
+                    },
+                    {
+                        "title": "Add official support for HTTP/2"
+                    },
+                    {
+                        "title": "Allow editing in the Raw tab in Composer requests"
+                    },
+                    {
+                        "title": "Add a separate Cookies tab for Composer requests"
+                    },
+                    {
+                        "title": "Remove the option to act as system proxy by default and keep the user set value for the proxy toggle instead"
+                    },
+                    {
+                        "title": "Prevent Windows restart or shut down when app is running and the system proxy is set"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Fix colors on certificate badge and tooltip for saved sessions"
+                    },
+                    {
+                        "title": "Copy as PowerShell option does not work in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.3.2-insiders",
         "title": "Fiddler Everywhere v4.3.2",
         "date": "June 27, 2023",
