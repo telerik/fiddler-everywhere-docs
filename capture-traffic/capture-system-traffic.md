@@ -33,7 +33,7 @@ OR (applicable when the Fiddler CA is already installed and trusted)
 
 ![Use the "System Proxy" switch to toggle on and off the system capturing mode](../images/get-started/get-started-toggle.png)
 
-> Tip When the switch **System Proxy** is toggled on, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere intercepts the request, and the Live Traffic grid populates.
+> Tip With the switch **System Proxy** toggled on, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere intercepts the request, and the Live Traffic grid populates.
 
 ## Enable and Disable System Capturing
 

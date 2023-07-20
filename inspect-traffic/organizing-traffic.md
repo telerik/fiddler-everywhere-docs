@@ -63,7 +63,7 @@ You can share a snapshot of newly captured HTTPS traffic through the following s
 
 1. Use **Share** option from the context menu.
 
-1. Save the sessions (share sessions will be explicitly stored in the cloud).
+1. Save the sessions (shared sessions are always stored in the cloud).
 
 1. Complete the share by:
 

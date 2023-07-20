@@ -19,7 +19,7 @@ This article covers the sharing capabilities of Fiddler Everywhere as follows:
 
 ## Sharing Session's Snapshots
 
-To share captured traffic with other collaborators, first, you need to [save the session snapshot]({%slug fiddler-saving%}). Note that sessions held locally will be transferred to the cloud if you use the share functionalities. Only users with knowledge of the password can open the session entry for encrypted sessions.
+To share captured traffic with other collaborators, first, you need to [save the session snapshot]({%slug fiddler-saving%}). When sharing is used, Fiddler transfers the saved sessions to the cloud. Only users with knowledge of the password can open the session entry for encrypted sessions.
 
 ### Sharing Selected Sessions
 

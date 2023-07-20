@@ -24,7 +24,7 @@ My client application utilizes the gRPC framework. What exactly is gRPC? Can I c
 ## Capturing gRPC in Fiddler Everywhere
 
 
-[gRPC](https://grpc.io/) is an open-source, cross-platform Remote- Procedure Call (RPC) framework. One of its common usages is to connect services in and across servers with plugable support for tracing, load balancing, and authentication. 
+[gRPC](https://grpc.io/) is an open-source, cross-platform Remote- Procedure Call (RPC) framework. One of its common usages is to connect services in and across servers with pluggable support for tracing, load balancing, and authentication. 
 
 Fiddler Everywhere captures gRPC traffic out-of-the-box through [all capturing modes]({%slug capture-traffic-get-started%}) with the clarification that as gRPC is utilizing HTTP/2, you need to ensure that HTTP/2 capturing is enabled in Fiddler Everywhere. With Fiddler's proxy, you can capture gRPC traffic with all supported streaming modes - unary RPC (no streaming), server-streaming RPC, client-streaming RPC, and bi-directional streaming RPC. [Learn more about the streaming modes in gRPC here...](https://grpc.io/docs/what-is-grpc/core-concepts/#unary-rpc)
 
@@ -37,17 +37,17 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
 
 
 
-    - **Terminals and shell applications**&mdash;A terminal and shells can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug capture-terminal-traffic%})
+    - **Terminals and shell applications**&mdash;A terminal and shells can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug capture-terminal-traffic%})
 
-    - **Bash**&mdash;A bash application can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from Bash here...]({%slug capture-terminal-traffic%})
+    - **Bash**&mdash;A bash application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Bash here...]({%slug capture-terminal-traffic%})
 
-    - **Node.js**&mdash;A Node.js application can explicitly be configured to go through the Fiddler proxy. [Learn how to capture traffic from Node.js here...]({%slug fiddler-nodejs-traffic%})
+    - **Node.js**&mdash;A Node.js application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Node.js here...]({%slug fiddler-nodejs-traffic%})
 
-    - **Python applications**&mdash;Python applications can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from Python applications here...]({%slug fiddler-python-traffic%})
+    - **Python applications**&mdash;Python applications can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Python applications here...]({%slug fiddler-python-traffic%})
 
     - **Java applications**&mdash;A Java application can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from Java applications here...]({%slug configure-java-fiddler-everywhere%})
 
-    - **Other gRPC clients**&mdash; If your gRPC client utilizes a different technology stack, you must find the right method for configuring its proxy settings and set Fiddler's address (by default, http://127.0.0.1:8866) as an HTTP and HTTPS proxy.
+    - **Other gRPC clients**&mdash; If your gRPC client utilizes a different technology stack, you must find the proper method for configuring its proxy settings and set Fiddler's address (by default, http://127.0.0.1:8866) as an HTTP and HTTPS proxy.
 
 3. Start capturing! That's it! Fiddler Everywhere will start capturing gRPC immediately.
 
@@ -68,11 +68,11 @@ Double-click on a gRPC session to automatically open [the **Messages** tab]({%sl
 
 ![gRPC traffic and related Fiddler's inspectors](../images/kb/grpc/grpc-traffic-inspection.png)
 
-The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. Use the context menu to copy the message or the whole row message quickly.
+The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. Use the context menu to copy the whole row message quickly.
 
 ![gRPC message context menu to copy or decode the received data](../images/kb/grpc/grpc-traffic-message-context-menu.png)
 
-It's important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/) which is in unreadable form. That means that the **Decode value** context menu option can't be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file which can't be extracted over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that has access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
+It's important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/), which is in unreadable form. That means that the **Decode value** context menu option can't be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file, which can't be extracted over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that have access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
 
 ```js
 // [message_object_name] is the name of the message object in the .proto file. If the message is inside a package in the .proto file, use package_name.message_object_name.

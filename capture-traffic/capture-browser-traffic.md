@@ -42,7 +42,7 @@ As a result, Fiddler Everywhere starts an independent browser instance preconfig
 
 ## Choosing Default Browser
 
-The independent browser capturing mode supports Chromium-based browsers like Google Chrome, Microsoft Edge, Brave, and Vivaldi. You can set your preferred browser through **Settings > Browsers > Manually choose Path to browser**. By default, Fiddler will try to automatically detect the path to your locally installed Google Chrome browser.
+The independent browser capturing mode supports Chromium-based browsers like Google Chrome, Microsoft Edge, Brave, and Vivaldi. You can set your preferred browser through **Settings > Browsers > Manually choose path to browser**. By default, Fiddler will try to automatically detect the path to your locally installed Google Chrome browser.
 
 ## Capturing from Other Browsers
 

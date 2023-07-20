@@ -1,6 +1,6 @@
 ---
 title: Composing API Requests
-description: "Create, modify and execute API requests with the Composer feature of the Fiddler web-debugging HTTP proxy application."
+description: "Create, modify, and execute API requests with the Composer feature of the Fiddler web-debugging HTTP proxy application."
 slug: composer-get-started
 publish: true
 position: 10
@@ -23,7 +23,7 @@ As a result, Fiddler loads the **Composer** screen where you can compose and exe
 
 ## Compose API Request
 
-1. Use the **+** button to create new Composer tab. Alternatively, you can directly use the main **Composer** tab.
+1. Use the **+** button to create a new **Composer** tab. Alternatively, you can directly use the main **Composer** tab.
 
 1. Select **HTTP method** and enter the endpoint URL.
 
@@ -35,7 +35,7 @@ As a result, Fiddler loads the **Composer** screen where you can compose and exe
 
 1. (Optional) Enter additional headers, parameters, and body if required. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data. Note that the request execution includes only checked headers.
 
-    >important By default, the Fiddler Everywhere client will add a `User-Agent` header with the `Fiddler Everywhere` value. This header lets servers and network peers identify the application, the operating system, the vendor, and/or the version of the requesting user agent.
+    >important By default, the Fiddler Everywhere client will add a `User-Agent` header with the `Fiddler Everywhere` value. This header lets servers and network peers identify the application, the operating system, the vendor, or the version of the requesting user agent.
 
 1. Click **Execute** to send the composed API request. 
 
@@ -48,7 +48,7 @@ Once the API request executes, you can inspect its HTTP Response in the Composer
 
 1. Capture a session (or open a session from the saved save **Sessions** tree) and use the **Edit in Composer** option from the context menu.
 
-As a result the session loads as a HTTP Request in the Fiddler's Composer where you can make atomic modifications to its structure.
+As a result, the session loads as an HTTP Request in the Fiddler's Composer, where you can make atomic modifications to its structure.
 
 ## Save API Request
 

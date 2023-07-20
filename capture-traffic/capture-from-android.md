@@ -89,12 +89,12 @@ The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler E
 
     1. Tap the option to download the certificate. Then save and install as follows:
 
-        1. Install the downloaded Fiddler certificate in the device certificate storage. The settings location depends on the Android version but is usually located under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
+        1. Install the downloaded Fiddler certificate in the device certificate storage. The settings location depends on the Android version but is usually under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
-    1. Ensure that the Fiddler Everywhere certificate is installed as a user certificate in the **Settings** > **Security** > **Encryption & Credentials** > **User** tab.
+    1. Ensure that the Fiddler Everywhere certificate installs as a user certificate in the **Settings** > **Security** > **Encryption & Credentials** > **User** tab.
 
 
-With the above setup, you can capture traffic from your Android mobile browser. Test your configuration as follows:
+You can capture traffic from your Android mobile browser with the above setup. Test your configuration as follows:
 
 - In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked.
 
@@ -158,4 +158,4 @@ Most production-ready applications explicitly restrict user-installed certificat
 
 ## Contact us
 
-If you have more questions or need help configuring your iOS device alongside Fiddler Everywhere, then you can reach out to our support team through the **Contact Support** option.
+If you have more questions or need help configuring your iOS device alongside Fiddler Everywhere, you can contact our support team through the **Contact Support** option.

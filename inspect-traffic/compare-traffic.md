@@ -29,7 +29,7 @@ Fiddler Everywhere provides a comparing option for detailed differentiation of t
     ![Compare Sessions tab](../images/livetraffic/compare/compare-tab-001.png)
 
 
-Fiddler Everywhere loads both sessions side-by-side with the session with a lower ID to the left (named **Group 1**) and the session with the higher ID to the right (named **Group 2**). The differences are highlighted in the session inspectors by a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session. Additional sessions can be added to both groups, simultaneously comparing multiple sessions.
+Fiddler Everywhere loads both sessions side-by-side, with the session with a lower ID to the left (named **Group 1**) and a higher ID to the right (named **Group 2**). The differences are highlighted in the session inspectors by a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session. Additional sessions can be added to both groups, simultaneously comparing multiple sessions.
 
 
 ### Adding Sessions to the Compare Groups
@@ -50,7 +50,7 @@ You can add and compare more sessions by adding them to the comparison groups.
 
 With Fiddler Everywhere, you can compare previously saved sessions from the save **Sessions** tree.
 
-1. Select a saved entry from the save **Sessions** tree that you want to compare.
+1. Select a saved entry from the save **Sessions** tree you want to compare.
 
 1. Select the **Compare** option from the context menu.
 
@@ -88,6 +88,6 @@ You can manage all sessions added in the **Compare Sessions (BETA)** tab through
 
 - **Delete Selected Sessions**&mdash;Removes the selected sessions from the compare group.
 
-- **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** grid, or in the opened **Sessions** tree tab).
+- **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** grid or the opened **Sessions** tree tab).
 
 ![Compared Sessions context menu](../images/livetraffic/compare/compare-list-context-menu.png)

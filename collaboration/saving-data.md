@@ -9,7 +9,7 @@ previous_url: /user-guide/sessions-list
 
 # Saving Traffic in Fiddler Everywhere
 
-With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, composed API requests, and rules. It's only natural that the application provides user interface options to save, organize and share the information so it can be quickly reused later. This article covers the saving capabilities of Fiddler Everywhere as follows:
+With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, composed API requests, and rules. It's only natural that the application provides user interface options to save, organize and share the information so it can be reused later. This article covers the saving capabilities of Fiddler Everywhere as follows:
 
 - [Saving session's snapshots](#saving-sessions-snapshots)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Sessions** tree.
 
@@ -18,7 +18,7 @@ With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, 
 - [Saving rules](#saving-rules)&mdash;Options to save single or multiple rules within the **Rules** tab.
 
 
->tip The save options in Fiddler Everywhere allow you to use local and cloud save, organize your traffic snapshots in collections, and collaborate easily with a few clicks. It is important to note that Fiddler Everywhere also provides straightforward [export/import options]({%slug fiddler-export-and-import%}) which are not interconnected with the application user interface.
+>tip The save options in Fiddler Everywhere allow you to use local and cloud save, organize your traffic snapshots in collections, and collaborate easily with a few clicks. It is important to note that Fiddler Everywhere also provides straightforward [export/import options]({%slug fiddler-export-and-import%}), which are not interconnected with the application user interface.
 
 
 ## Saving Session's Snapshots
@@ -39,7 +39,7 @@ OR
 
 ### Working with Saved Snapshots
 
-You can select, inspect, modify, and share snapshots of previously saved sessions with collaborators. The snapshots can be saved locally or in the cloud. You can apply the following actions to a saved session snapshot:
+You can select, inspect, modify, and share snapshots of previously saved session snapshots with collaborators. The snapshots can be saved locally or in the cloud. You can apply the following actions to a saved session snapshot:
 
 - Single-click to select a session snapshot from the save **Sessions** tree.
 

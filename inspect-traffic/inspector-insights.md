@@ -113,7 +113,7 @@ The **Preview Inspector**, available in the **Request** section only, allows you
 
 ![Preview Inspector rendering image](../images/livetraffic/inspectors/inspectors-image.png)
 
-If the content is in HTML format, then the **Preview** inspector allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the sessions grid), which means that most images and styles will not be displayed. Additionally, scripting and navigating are blocked and provide a read-only preview.
+If the content is in HTML format, then the **Preview** inspector allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the Live Traffic grid), which means that most images and styles will not be displayed. Additionally, scripting and navigating are blocked and provide a read-only preview.
 
 ![Preview Inspector rendering HTML content](../images/livetraffic/inspectors/inspectors-web.png)
 
@@ -159,7 +159,7 @@ The **XML** inspector interprets the selected request or response body as an Ext
 
 #### Form Data Body Inspector
 
-The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form-data. The parsed name/value pairs are displayed in the grid view if a form is found. The inspector works best with `application/x-www-form-urlencoded` data used by most simple web forms.
+The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form data. The parsed name/value pairs are displayed in the grid view if a form is found. The inspector works best with `application/x-www-form-urlencoded` data used by most simple web forms.
 
 ![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
 
