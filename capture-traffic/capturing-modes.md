@@ -9,9 +9,9 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Modes
 
-Fiddler Everywhere is a local forward TLS proxy that can capture HTTP(S), WebSocket, and gRPC traffic. The traffic can be generated from locally installed applications, or from remote devices (within the same local network).
+Fiddler Everywhere is a local forward TLS proxy that can capture HTTP(S), WebSocket, and gRPC traffic. The traffic can be generated from locally installed applications or remote devices (within the same local network).
 
-The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [terminal capturing](#independent-terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing) which can include [traffic from remote devices](#remote-traffic-capturing).
+The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [terminal capturing](#terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing), which can include [traffic from remote devices](#remote-traffic-capturing).
 
 ## Capturing Modes Comparison
 
@@ -71,7 +71,7 @@ Similarly to the independent browser capturing option, Fiddler lets you use a de
 
 ## Explicit Capturing
 
-The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is `127.0.0.1:8866`. Any application (including apps from remote PCs, mobile devices, et.c) explicitly directed to go through the Fiddler Everywhere proxy address will have its traffic captured, even when the [system capturing](#system-capturing) is turned off.
+The **Fiddler Everywhere** application acts as a proxy from the moment it starts, and by default, its proxy address is `127.0.0.1:8866`. Any application (including apps from remote PCs, mobile devices, etc.) explicitly directed to go through the Fiddler Everywhere proxy address will have its traffic captured, even when the [system capturing](#system-capturing) is turned off.
 
 Example for explicitly making a curl request that goes through the Fiddler Everywhere proxy:
 
@@ -121,3 +121,4 @@ Fiddler Everywhere supports gRPC capturing out-of-the-box (through a system, ind
 
 >important To capture gRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support**. This requirement comes from prerequisites of the gRPC framework, which utilizes their HTTP/2 protocol.
 
+[Learn more on how to capture and inspect gRPC traffic with Fiddler Everywhere here...]({%slug capture-grpc-traffic%})

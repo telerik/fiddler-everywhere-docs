@@ -17,8 +17,8 @@ Modern applications often generate hundreds or thousands of requests, polluting 
 
 - [Filtering through Filters toolbar option](#filters)
 - [Filtering through column filters](#column-filters)
-- [Use browser or terminal capturing modes](#using-sandboxed-capturing-modes)
-- [Bypass requests to specific domains from using the Fiddler proxy](#bypassing-the-proxy)
+- [Using browser or terminal capturing modes](#using-alternative-capturing-modes)
+- [Bypassing requests to specific domains](#bypassing-the-proxy)
 
 
 ## Filters
