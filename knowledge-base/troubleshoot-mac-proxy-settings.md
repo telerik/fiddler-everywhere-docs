@@ -37,8 +37,6 @@ To troubleshoot this issue:
 
 Go to the Apple Mac proxy settings in **System Preferences** > **Network** > **Advanced**. Note that each network adapter will have proxy settings. For example, if the Internet is available through an Ethernet port and a WiFi connection, you will see two adapters, each with separate proxy settings.
 
-The default settings of Fiddler Everywhere will **Act as a System Proxy on Startup**. This will turn on **Configure the Proxy Settings Automatically** when Fiddler Everywhere is running and clear the **Configuration** when Fiddler Everywhere is closed.
-
 When Fiddler Everywhere is closed with the default settings, the **System Proxy Settings** will look like the following.
 
 ![mac proxy settings no proxy](../images/kb/mac-proxy-settings/mac-proxy-settings-no-proxy.png)

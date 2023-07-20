@@ -1,3 +1,4 @@
+
 .DS_Store
 .asset-cache/
 .bundle/
@@ -15,11 +16,13 @@
 /_layouts/
 /_plugins/
 /_templates/
+/_tools/
+/_tools/RemoveHtmlExtensionFromApiRefSitemap/
 /docs-watcher/
 /favicon.ico
 /fonts/
 /styles/
-/_tools/
+CODEOWNERS
 Dockerfile
 Gemfile
 Gemfile.lock
@@ -29,6 +32,7 @@ bs-config.js
 build-docs.sh
 copy_content.sh
 copy_local.sh
+exclude.txt
 install-npm.sh
 knowledge-base.html
 modify-config.sh

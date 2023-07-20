@@ -26,7 +26,7 @@ To remove the root certificate, follow the steps in each of the sections below d
 
 1. In your system, open the Keychain Access application. Select the **login** keychain from the list and **All Items** from the category list.
 
-2. Scroll to the **DO_NOT_TRUST_FiddlerRoot** certificate and press **Delete**.
+2. Scroll to the **Fiddler Root Certificate Authority** certificate and press **Delete**.
 
     ![macOS 1st and 2nd Step](../images/kb/remove-manually/keychain-access-login-and-do-not-trust-fiddlerroot-delete.png)
 
@@ -40,10 +40,10 @@ To remove the root certificate, follow the steps in each of the sections below d
 
     ![Manage User Certificates](../images/kb/remove-manually/manage-user-certificate-using-start-menu.png)
 
-2. A window opens where you can see list of **Certificates - Current User**. In the list, expand the **Trusted Root Certification Authorities** item and select **Certificates**. In the list on the right, search for **DO_NOT_TRUST_FiddlerRoot**.
+2. A window opens where you can see list of **Certificates - Current User**. In the list, expand the **Trusted Root Certification Authorities** item and select **Certificates**. In the list on the right, search for **Fiddler Root Certificate Authority**.
 
     ![Certificates - Current User](../images/kb/remove-manually/certificates-current-user-trusted-root-certification.png)
 
-3. Select **DO_NOT_TRUST_FiddlerRoot** and delete the certificate. Click **Yes** in both prompts that will appear. As a result, the certificate will be removed from your system.
+3. Select **Fiddler Root Certificate Authority** and delete the certificate. Click **Yes** in both prompts that will appear. As a result, the certificate will be removed from your system.
 
     ![Delete Fiddler Everywhere](../images/kb/remove-manually/select-do-not-trust-fiddlerroot-and-press-yes.png)

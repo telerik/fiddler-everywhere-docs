@@ -9,24 +9,36 @@ navigation:
     get-started:
         title: Get Started
         position: 10
-    installation-and-update:
-        title: Installation & Update
-        position: 20    
-    traffic:
-        title: Traffic Inspection & Analysis
+    installation-and-setup:
+        title: Installation & Setup
+        position: 20
+    capture-traffic:
+        title: Capture Traffic
         position: 30
-    api:
-        title: API Composing
+    inspect-traffic:
+        title: Inspect Traffic
+        position: 40
+    modify-and-filter-traffic:
+        title: Modify & Filter Traffic
+        position: 50
+    compose-api-requests:
+        title: Compose API Requests
         position: 60
+    collaboration:
+        title: Collaboration
+        position: 70
     user-guide:
         title: User Interface
-        position: 70
+        position: 80
     user-guide/settings:
         title: Settings
-        position: 20
+        position: 1
+    security:
+        title: Security
+        position: 100
     knowledge-base:
         title: Knowledge Base
-        position: 100
+        position: 1000
 
 ## Product title
 product: "Progress Telerik Fiddler Everywhere"

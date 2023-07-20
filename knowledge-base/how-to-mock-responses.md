@@ -21,13 +21,13 @@ Fiddler Everywhere provides options for modifying the current response (HTML, JS
 
 ## Solution
 
-To achieve this scenario, you can use the **Manual Response** or the **Response File** actions of the [**Rules**]({%slug rules-general%}) tab.
+To achieve this scenario, you can use the **Manual Response** or the **Response File** actions of the [**Rules**]({%slug modify-traffic-get-started%}) tab.
 
 ### Manual Response
 
-1. Open the [**Rules**]({%slug rules-general%}) tab.
+1. Open the [**Rules**]({%slug modify-traffic-get-started%}) tab.
 
-1. Create a new rule through the **Add New rule** button. This will open the [**Rule Builder**]({%slug rules-general%}#rule-builder).
+1. Create a new rule through the **Add New rule** button. This will open the [**Rule Builder**]({%slug modify-traffic-get-started%}#rule-builder).
 
 1. Add the match condition as per your requirements.
 
@@ -46,7 +46,7 @@ To achieve this scenario, you can use the **Manual Response** or the **Response 
 
     ![Sample unreachable host rule](../images/kb/dat-files/kb-rules-unreachable.png)
 
-1. Enable the **Rules** tab for **Live Traffic** capturing, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. Congratulations! You have just mocked a 502 status code response!
+1. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. Congratulations! You have just mocked a 502 status code response!
 
     ![Unreachable rule applied in Chrome](../images/kb/dat-files/kb-rules-chrome-result.png)
 
@@ -140,4 +140,4 @@ The **Method** subaction supports the following options:
 
 ## Contact us
 
-If you have more questions or need assistance configuring specific rules with Fiddler Everywhere, you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.
+If you have more questions or need assistance configuring specific rules with Fiddler Everywhere, you can reach out to our support team through the **Contact Support** option.

@@ -28,9 +28,9 @@ Some Node.js modules, such as [`request`](https://www.npmjs.com/package/request)
 This section demonstrates the primary approach for each of the mentioned scenarios.
 
 
-## Using the Fiddler's Preconfigured Terminal
+## Using the Fiddler's Terminal
 
-Fiddler Everywhere allows quickly opening a preconfigured terminal that automatically uses Fiddler as HTTP(S) proxy for NodeJS. [Learn more about the Fiddler's preconfigured terminal here...]({%slug fiddler-terminal-explicit%}#capturin-traffic-from-preconfigured-terminal)
+Fiddler Everywhere allows quickly opening dedicated terminal that automatically uses Fiddler as HTTP(S) proxy for Node.js. [Learn more about the Fiddler's terminal here...]({%slug capture-terminal-traffic%})
 
 
 ## Setting the Proxy Globally
@@ -162,4 +162,4 @@ As a result, Fiddler Everywhere will capture the request and the response.
 
 ## Setting Fiddler Everywhere alongside the Node Proxy
 
-After setting the proxy, either globally or explicitly, for your Node.js process, Fiddler Everywhere will immediately start capturing all of the traffic that goes through the Node proxy. You can turn off the **Live Traffic** switch to capture only the process from your Node.js libraries. Turning on the **Live Traffic** switch will set Fiddler as a system proxy, and the **Live Traffic** will start capturing traffic for all applications that use the OS system proxy.
+After setting the proxy, either globally or explicitly, for your Node.js process, Fiddler Everywhere will immediately start capturing all the traffic that goes through the Node proxy. You can turn off the **System Proxy** switch to capture only the process from your Node.js libraries. Turning on the **System Proxy** switch will set Fiddler as a system proxy, and the application will start capturing traffic for all apps that use the OS system proxy.

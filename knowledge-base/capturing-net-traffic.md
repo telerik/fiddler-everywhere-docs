@@ -22,17 +22,17 @@ res_type: kb
 How to capture HTTPS traffic from my .NET application? Do I need a particular flow or configuration while using Fiddler Everywhere as a proxy? Are there specifics while capturing localhost traffic during .NET application development?
 
 
-## Capturing .NET Traffic through Preconfigured Terminal
+## Capturing .NET Traffic through Terminal
 
-Fiddler Everywhere provides a preconfigured terminal to use as a sandboxed proxy environment. You can start your .NET application through Fiddler's **Terminal** option. This option enables you to capture HTTPS traffic from .NET applications started through the Fiddler's terminal. Using the terminal capturing mode is the recommended approach that lets you quickly capture the .NET application traffic with minimum configuration.
+Fiddler Everywhere provides a preconfigured terminal to use as a sandboxed proxy environment. You can start your .NET application through Fiddler's **Terminal** option. This option enables you to capture HTTPS traffic from .NET applications started through the Fiddler's terminal. Using the terminal capturing mode is the recommended approach that lets you quickly capture the .NET application traffic with least configuration.
 
 - Start the Fiddler Everywhere application.
 
 - Ensure that the [Fiddler root CA is installed]({%slug trust-certificate%}).
 
-- Open new [preconfigured terminal]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing).
+- Open new [Fiddler's terminal]({%slug capture-traffic-get-started%}#terminal-capturing).
 
-- Start your .NET application through the Fiddler's preconfigured terminal.
+- Start your .NET application through the Fiddler's terminal.
 
     > Important Note that Fiddler Everywhere allows you to choose **Windows PowerShell** as a default terminal option. A limitation in  **Windows PowerShell** causes localhost traffic to not go through the proxy. Workaround the issue by [using the Fiddler's aliases]({%slug how-to-capture-localhost-traffic%}#using-aliases) or adding a dot to the end of the localhost address (for example, **localhost.:8080**).
 
@@ -59,7 +59,7 @@ Fiddler captures the HTTPS sessions and displays them in the Live Traffic grid.
 
 ## Manual Configuration
 
-Sometimes, you might need to manually configure your .NET applications to explicitly respect the Fiddler Everywhere proxy. The below sections provide details on how to configure your [NET Framework](#configuring-proxy-in-net-application) or [NETCore applications](#configuring-proxy-in-netcore-application) in case the automatic traffic capturing from [preconfigured terminal](#capturing-net-traffic-through-preconfigured-terminal) or via the [system proxy](#capturing-net-traffic-through-system-capturing) is not applicable.
+Sometimes, you might need to manually configure your .NET applications to explicitly respect the Fiddler Everywhere proxy. The below sections provide details on how to configure your [NET Framework](#configuring-proxy-in-net-application) or [NETCore applications](#configuring-proxy-in-netcore-application) in case the automatic traffic capturing from [preconfigured terminal](#capturing-net-traffic-through-terminal) or via the [system proxy](#capturing-net-traffic-through-system-capturing) is not applicable.
 
 
 ### Configuring Proxy in .NET Application

@@ -57,7 +57,7 @@ Test the import of the Fiddler Everywhere root certificate on macOS by using cus
     ./import.sh
     ```
 
-1. After successfully executing the file, you will be prompted for your macOS username and password. Enter the credentials, and the generated trust certificate will be added in the Keychain Access application in **login** > **Certificates** as **DO_NOT_TRUST_FiddlerRoot**.
+1. After successfully executing the file, you will be prompted for your macOS username and password. Enter the credentials, and the generated trust certificate will be added in the Keychain Access application in **login** > **Certificates** as **Fiddler Root Certificate Authority**.
 
 1. Test that the certificate generated from Fiddler is successfully installed and trusted by running the following command in your Bash shell:
 
@@ -71,7 +71,7 @@ Test the import of the Fiddler Everywhere root certificate on macOS by using cus
     ...Trust Settings exported successfully.
     ```
 
-1. Go to **login** > **Certificates** and confirm that the **DO_NOT_TRUST_FiddlerRoot** is present in the Keychain Access application. Double-click  the certificate, scroll to the bottom and note the `SHA-1` value. Open the exported settings file from `/tmp/trustSettings.xml` and check that the `SHA-1` value is present there. For example, the certificate from your Keychain Access application will be identical to the `SHA-1`.
+1. Go to **login** > **Certificates** and confirm that the **Fiddler Root Certificate Authority** is present in the Keychain Access application. Double-click  the certificate, scroll to the bottom and note the `SHA-1` value. Open the exported settings file from `/tmp/trustSettings.xml` and check that the `SHA-1` value is present there. For example, the certificate from your Keychain Access application will be identical to the `SHA-1`.
 
     The `SHA-1` key in the `trustSettings.xml` file will also be present in the Keychain Access application.
 

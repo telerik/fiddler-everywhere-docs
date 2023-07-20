@@ -1,61 +1,55 @@
 ---
-title: Capture traffic from Multiple Devices
-description: "Learn how to capture traffic from multiple devices and how to differentiate the traffic based on the device IP."
+title: Capture Traffic from Remote Devices
+description: "Learn how to capture traffic from multiple devices and differentiate the traffic based on the device IP."
 type: how-to
 slug: fiddler-multiple-devices
 publish: true
 res_type: kb
+previous_url: /knowledge-base/how-to-track-different-devices
 ---
 
-## Environment
-
-|   |   |
-|---|---|
-| Fiddler Everywhere | 1.0.0 and above |
-| Operating System | Windows, macOS, Linux |
-
-## Description
-
-Fiddler Everywhere can simultaneously capture traffic from multiple remote computers and devices (like Android and iOS smartphones).  What is the needed configuration, and how can I differentiate the traffic from each individual device?
-
-## Solution (for Remote Computers)
 
 
-Before you start, verify that the host and the remote computer are on the same network, and they "see" each other (no firewall restrictions).
+Fiddler Everywhere can simultaneously capture HTTPS traffic from multiple remote computers and devices (like computers on the local network, smartphones, tablets, etc.).
 
-To capture traffic from a remote computer:
-
-1. Start Fiddler Everywhere on the host computer and enable **Live Traffic** (system capture). 
-
-1. Ensure your are [ready to capture system traffic]({%slug capture-traffic-get-started%}#system-capturing).
-
-1. Go to **Settings**  > **Connections** and ensure **Allow remote computers to connect** is checked.
-
-1. On the remote computer, set manual OS proxy settings to the Fiddler address (IP:port). As an IP use the the local IP of the Fiddler host machine. By default, the Fiddler proxy port is **8866**.
-
-1. In Fiddler Everywhere, filter the traffic through the **Client IP** column while using the local address of the connected remote computer.
-
-    ![Filtering by Client IP](../images/kb/client-ip/filter-by-client-ip.png)
+## Capturing from Remote Computers
 
 
-## Solution (for Mobile Devices)
+To capture traffic from a remote computer, execute the following steps.
 
-- The Fiddler host and the remote mobile device must both be on the same network, and they must "see" each other (no firewall restrictions).
+- On the Fiddler host computer:
 
-To capture traffic from a remote mobile device, follow this steps:
+    1. Start Fiddler Everywhere on the host computer. 
 
-1. Start Fiddler Everywhere on the host computer and enable **Live Traffic** (system capture). 
+    1. Go to **Settings**  > **Connections** and enable **Allow remote computers to connect**.
 
-1. Ensure your are [ready to capture system traffic]({%slug capture-traffic-get-started%}#system-capturing).
+    1. Toggle on the **System Proxy** switch to enable the system capturing mode.
 
-1. Go to **Settings**  > **Connections** and ensure **Allow remote computers to connect** is checked.
+    1. (Optional) In Fiddler Everywhere, filter the remote traffic through the **Client IP** column while using the local address of the connected remote computer.
 
-1. Follow the specific instructions for the different mobile operating systems as described here:
+        ![Filtering by Client IP](../images/kb/client-ip/filter-by-client-ip.png)
 
-    - [Instructions for Android]({%slug capture-mobile-android-traffic%}#configuring-the-android-device)
+- On the remote computer:
 
-    - [Instructions for iOS]({%slug capture-mobile-ios-traffic%}#configure-the-ios-device)
+    1. Open the operating system proxy settings.
 
-1. In Fiddler Everywhere, filter the traffic through the **Client IP** column while using the local address of the connected remote mobile device.
+    1. Set manual proxy settings to the Fiddler Everywhere IP address and port. As an IP address, use the local IP of the Fiddler host computer, and the Fiddler proxy port is **8866**. For example, if your Fiddler host local IP address is **192.168.0.1**, then set the manual proxy to **192.168.0.1:8866**.
 
-    ![Filtering by Client IP](../images/kb/client-ip/filter-by-client-ip.png)
+    1. Open a browser and type in the following address:
+
+        ```
+        http://ipv4.fiddler:8866
+        ```
+
+    1. Download, install and trust the Fiddler Everywhere root CA from the loaded page.       
+
+The above configuration lets you capture HTTPS traffic from remote computers within the local network. Note that it will work only for computers that have the proxy port opened and the IP accessible, so in case you are not able to access the Fiddler host consult your network administrator and ask them to provide access to the Fiddler host machine address and port. Capturing traffic from online sources (IP addresses not within the local network) is unsupported.
+
+## Capturing from Mobile Devices
+
+Fiddler Everywhere can capture traffic from mobile devices with Android and iOS operating systems. Use the following links to learn more about the specific configuration for each mobile operating system.
+
+[Capturing from Android devices]({%slug capture-mobile-android-traffic%})
+
+[Capturing from iOS devices]({%slug capture-mobile-ios-traffic%})
+

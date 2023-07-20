@@ -28,7 +28,7 @@ The following screenshots represent the default Fiddler Everywhere settings.
 
 * Default **Connection** settings&mdash;Acts as a system proxy on application startup. Remote connections and HTTP/2 support are disabled.
 
-  ![default Connection settings](../images/settings/settings-connections.pngg)
+  ![default Connection settings](../images/settings/settings-connections.png)
 
 * Default **Gateway** settings&mdash;Use system proxy
 
@@ -36,7 +36,7 @@ The following screenshots represent the default Fiddler Everywhere settings.
 
 * Default **Live Traffic** settings&mdash;Keep all sessions in the list
 
-  ![default Gateway settings](../images/settings/settings-live-traffic-default.png)  
+  ![default Gateway settings](../images/settings/settings-live-traffic.png)  
 
 * Default **Privacy** settings 
 
@@ -46,7 +46,7 @@ The following screenshots represent the default Fiddler Everywhere settings.
 
   ![default Composer settings](../images/settings/settings-composer.png)
 
-* Default **Browsers** settings&mdash;Fiddler Everywhere tries to detect the default path to the Google Chrome installation folder (to be used with the [Open Browser]({%slug capture-traffic-get-started%}#preconfigured-browser-capturing) functionality)
+* Default **Browsers** settings&mdash;Fiddler Everywhere tries to detect the default path to the Google Chrome installation folder (to be used with the [Open Browser]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing) functionality)
 
   ![default Browsers settings](../images/settings/settings-browsers.png)
 

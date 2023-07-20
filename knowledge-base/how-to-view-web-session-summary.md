@@ -1,6 +1,6 @@
 ---
 title: Viewing Live Traffic Columns Summaries
-description: "Learn details about each column in the Fiddler Everywhere's Live Traffic list."
+description: "Learn details about each column in the Fiddler Everywhere's Live Traffic grid."
 type: how-to
 slug: how-to-view-web-session-summary
 publish: true
@@ -16,11 +16,11 @@ res_type: kb
 
 ## Description
 
-Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Where can I find a detailed list of the columns available in **Live Traffic** and the information extracted from the value of each column? How can I use them to identify HTTP-related issues, track, and debug my website performance, and leave custom comments?
+Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered in columns. Where can I find a detailed list of the columns available in **Live Traffic** grid and the information extracted from the value of each column? How can I use them to identify HTTP-related issues, track, and debug my website performance, and leave custom comments?
 
 ## Solution
 
-This section lists the available **Live Traffic** columns and the type of information that they provide. Each colum can be explictly shown/hide through the **more** option (three vertical dots next to the column name). The column names are also identical to the filters in the [**Advanced Filters**]({%slug how-to-filter-traffic%}#advanced-filters) section.
+This section lists the available **Live Traffic** grid and the type of information that they provide. Each colum can be explictly shown/hide through the **more** option (three vertical dots next to the column name). The column names are also identical to the filters in the [**Advanced Filters**]({%slug how-to-filter-traffic%}#advanced-filters) section.
 
 
 ### ID(#)
@@ -164,7 +164,7 @@ Marks the duration of the session (from **ClientConnected** to **ServerGotRespon
 
 __Comments__ is the field for showing the custom comment.
 
-This column will have a value only if the comment was previously added, for example, when looking into a list of [shared sessions]({%slug saved-sessions-tab%}) with already added comments, or when you explicitly add a comment through [__Comment__ in the context menu]({%slug web-sessions-list%}#comment).
+This column will have a value only if the comment was previously added, for example, when looking into a list of shared sessions with already added comments, or when you explicitly add a comment through [__Comment__ in the context menu]({%slug web-sessions-list%}#comment).
 
 ## Custom Columns
 

@@ -30,24 +30,24 @@ Fiddler Everywhere captures gRPC traffic out-of-the-box through [all capturing m
 
 To capture gRPC traffic with Fiddler Everywhere, the following conditions must be satisfied:
 
-1. Enable HTTP/2 capturing in Fiddler Everywhere through **Settings** > **Connections** > **Enable HTTP/2 support (BETA)**.
+1. Enable HTTP/2 capturing in Fiddler Everywhere through **Settings** > **Connections** > **Enable HTTP/2 support**.
 
 2. Configure the client using the gRPC framework to go through the Fiddler proxy. The execution of this step differs depending on the client's application. Here are some setup guidelines for different clients:
 
 
 
 
-    - **Terminals and shell applications**&mdash;A terminal and shells can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug fiddler-terminal-explicit%})
+    - **Terminals and shell applications**&mdash;A terminal and shells can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug capture-terminal-traffic%})
 
-    - **Bash**&mdash;A bash application can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from Bash here...]({%slug fiddler-terminal-explicit%})
+    - **Bash**&mdash;A bash application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Bash here...]({%slug capture-terminal-traffic%})
 
-    - **Node.js**&mdash;A Node.js application can explicitly be configured to go through the Fiddler proxy. [Learn how to capture traffic from Node.js here...]({%slug fiddler-nodejs-traffic%})
+    - **Node.js**&mdash;A Node.js application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Node.js here...]({%slug fiddler-nodejs-traffic%})
 
-    - **Python applications**&mdash;Python applications can be configured to explicitly go through the Fiddler proxy. [Learn how to capture traffic from Python applications here...]({%slug fiddler-python-traffic%})
+    - **Python applications**&mdash;Python applications can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Python applications here...]({%slug fiddler-python-traffic%})
 
     - **Java applications**&mdash;A Java application can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from Java applications here...]({%slug configure-java-fiddler-everywhere%})
 
-    - **Other gRPC clients**&mdash; If your gRPC client utilizes a different technology stack, you must find the appropriate method for configuring its proxy settings and set Fiddler's address (by default, http://127.0.0.1:8866) as an HTTP and HTTPS proxy.
+    - **Other gRPC clients**&mdash; If your gRPC client utilizes a different technology stack, you must find the proper method for configuring its proxy settings and set Fiddler's address (by default, http://127.0.0.1:8866) as an HTTP and HTTPS proxy.
 
 3. Start capturing! That's it! Fiddler Everywhere will start capturing gRPC immediately.
 
@@ -55,7 +55,7 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
 
 Fiddler Everywhere introduces a specific user interface to ease the inspection of gRPC traffic. [The gRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) are pretty similar to the inspectors used for capturing WebSocket traffic with one exception - the new gRPC Response inspector called **Trailer** (part of the **Handshake** tab). 
 
-You can use the **Trailer** inspector to examine the specific trailers the server sends or mock particular gRPC behavior. For example, you can modify (through a rule) the **grpc_status** trailer header and test how your application behaves in unexpected scenarios like unexpected errors in the stream.
+You can use the **Trailer** inspector to examine the specific trailers the server sends or mock particular gRPC behavior. For example, you can modify (through a rule) the `grpc_status` trailer header and test how your application behaves in unexpected scenarios like unexpected errors in the stream.
 
 ![gRPC traffic and the Trailers inspector](../images/kb/grpc/grpc-traffic-trailers.png)
 
@@ -68,11 +68,11 @@ Double-click on a gRPC session to automatically open [the **Messages** tab]({%sl
 
 ![gRPC traffic and related Fiddler's inspectors](../images/kb/grpc/grpc-traffic-inspection.png)
 
-The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. Use the context menu to copy the message or the whole row message quickly.
+The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. Use the context menu to copy the whole row message quickly.
 
 ![gRPC message context menu to copy or decode the received data](../images/kb/grpc/grpc-traffic-message-context-menu.png)
 
-It is important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/) which is in unreadable form. That means that the **Decode value** context menu option can't be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file which can't be extraced over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that has access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
+It's important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/), which is in unreadable form. That means that the **Decode value** context menu option can't be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file, which can't be extracted over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that have access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
 
 ```js
 // [message_object_name] is the name of the message object in the .proto file. If the message is inside a package in the .proto file, use package_name.message_object_name.

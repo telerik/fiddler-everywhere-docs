@@ -67,7 +67,7 @@ To capture that traffic with Fiddler Everywhere, use any of the following approa
 
 ### Filtering Localhost Traffic
 
-While using one of the above solutions to capture localhost requests, the traffic will be captured in the **Live Traffic** list, and the loopback address will be displayed as a host name, usually `127.0.0.1`. To filter by the **Host** column so that only localhost traffic is displayed, enter the loopback address, and not the aliases used in the browsers, as a `host` value.
+While using one of the above solutions to capture localhost requests, the traffic will be captured in the **Live Traffic** grid, and the loopback address will be displayed as a host name, usually `127.0.0.1`. To filter by the **Host** column so that only localhost traffic is displayed, enter the loopback address, and not the aliases used in the browsers, as a `host` value.
 
 ![Example Localhost filtering](../images/kb/localhost-filtering.png)
 
@@ -76,4 +76,4 @@ While using one of the above solutions to capture localhost requests, the traffi
 
 * [Learn how to direct localhost requests from the mobile application through the Fiddler proxy... ]({%slug fiddler-localhost-android%})
 
-If you have more questions or need assistance capturing localhost traffic with Fiddler Everywhere, you can reach out to our support team through the [**Contact Support**]({%slug file-menu%}#contact-support) option.
+If you have more questions or need help capturing localhost traffic with Fiddler Everywhere, you can reach out to our support team through the **Contact Support** option.

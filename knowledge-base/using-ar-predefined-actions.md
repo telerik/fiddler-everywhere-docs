@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-The [**Rules** tab]({%slug rules-general%}) is a powerful debugging functionality in Fiddler Everywhere. How can I use each of the predefined actions in the **Actions** drop-down as DAT files and customize a rule by adding a [**Custom response file**](#custom-response-file) or a [**Manual Response**](#custom-manual-response)?
+The [**Rules** tab]({%slug modify-traffic-get-started%}) is a powerful debugging functionality in Fiddler Everywhere. How can I use each of the predefined actions in the **Actions** drop-down as DAT files and customize a rule by adding a [**Custom response file**](#custom-response-file) or a [**Manual Response**](#custom-manual-response)?
 
 ## Solution
 
