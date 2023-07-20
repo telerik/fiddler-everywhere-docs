@@ -4,7 +4,6 @@ description: "Capture HTTPS traffic that goes through the operating system proxy
 slug: capture-system-traffic
 publish: true
 position: 10
-previous_url: /user-guide/live-traffic
 ---
 
 # System Capturing Mode

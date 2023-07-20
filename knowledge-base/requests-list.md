@@ -3,7 +3,6 @@ title: Requests Section
 description: "Learn how to use the Requests section in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: saved-requests-tab
 tags: Fiddler Everywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
-previous_url: /user-guide/requests-list
 ---
 
 # Requests Section
