@@ -99,7 +99,7 @@ curl https://docs.telerik.com/fiddler-everywhere --
 
 ### Setting the Fiddler Root Certificate
 
-Apart from setting the environment variables `http_proxy` and `https_proxy`, you can manually export and point your terminal application to explicitly use the Fiddler root certificate authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you can use variables like `SSL_CERT_FILE` and `REQUESTS_CA_BUNDLE` for [configuring the Fiddler's CA within a Python application]({%slug fiddler-python-traffic%}).
+Apart from setting the environment variables `http_proxy` and `https_proxy`, you can manually export and point your terminal application to explicitly use the Fiddler_Root_Certificate_Authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you can use variables like `SSL_CERT_FILE` and `REQUESTS_CA_BUNDLE` for [configuring the Fiddler's CA within a Python application]({%slug fiddler-python-traffic%}).
 
 
 ### Resetting the Fiddler Proxy

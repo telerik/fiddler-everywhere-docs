@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-To capture secure traffic (HTTPS), Fiddler Everywhere needs to install a root trust certificate, called `Fiddler Root Certificate Authority`, in the Keychain Access application. How can I install the trust certificate automatically or manually?
+To capture secure traffic (HTTPS), Fiddler Everywhere needs to install a root trust certificate, called `Fiddler_Root_Certificate_Authority`, in the Keychain Access application. How can I install the trust certificate automatically or manually?
 
 ## Solution
 
@@ -32,7 +32,7 @@ If the automatic installation and enabling of the trust certificate do not work,
 
 1. Go to the **Desktop** folder and click `Fiddler_Root_Certificate_Authority.crt`. The Keychain Access application starts and opens the **Certificates** section.
 
-1. Double-click the **Fiddler Root Certificate Authority** certificate to open it.
+1. Double-click the **Fiddler_Root_Certificate_Authority** certificate to open it.
 
 1. Expand the **Trust** section and choose **Always Trust** in the **When using this certificate** drop-down. The **Fiddler root certificate is now installed and trusted.** notification appears.
 

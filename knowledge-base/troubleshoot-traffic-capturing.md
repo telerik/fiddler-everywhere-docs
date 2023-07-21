@@ -70,7 +70,7 @@ Test if Fiddler Everywhere is correctly configured to capture HTTPS traffic on m
     *  start date: Oct  2 00:00:00 2020 GMT
     *  expire date: Oct  9 00:00:00 2022 GMT
     *  subjectAltName: host "www.example.com" matched certs "*.example.com"
-    *  issuer: OU=Created by http://www.fiddler2.com; O=DO_NOT_TRUST_BC; CN=Fiddler Root Certificate Authority
+    *  issuer: OU=Created by http://www.fiddler2.com; O=DO_NOT_TRUST_BC; CN=Fiddler_Root_Certificate_Authority
     *  SSL certificate verify ok.
     > GET / HTTP/1.1
     > Host: www.example.com
