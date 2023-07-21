@@ -31,7 +31,7 @@ Electron applications CA management is different from the operating system CA ma
 
     If not, install and trust the certificate as shown in [the configuration article]({%slug first_steps_linux%}#start-system-capturing), so that you can capture HTTPS traffic from other applications and not only from electron applications.
     ```Shell
-    certutil -A -n "ROOT-CA" -t "TCu,Cu,Tu" -i /usr/share/ca-certificates/extra/FiddlerRootCertificate.crt -d sql:/home/${USER}/.pki/nssdb
+    certutil -A -n "ROOT-CA" -t "TCu,Cu,Tu" -i /usr/share/ca-certificates/extra/Fiddler_Root_Certificate_Authority.crt -d sql:/home/${USER}/.pki/nssdb
     ```
 
 3. Restart Fiddler Everywhere and start capturing HTTPS traffic from MS Teams or other Electron-based applications.

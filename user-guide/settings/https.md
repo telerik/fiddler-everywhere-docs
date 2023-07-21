@@ -26,9 +26,9 @@ To enable the capturing and decrypting of HTTPS traffic, you need to install the
 
 - **Advanced Settings**&mdash;A drop-down menu that provides the following additional options related to the Fiddler root certificate:
     - **Export Root Certificate**&mdash;A drop-down menu to select a format and export the Fiddler root certificate to the operating system **Desktop** folder. Some operating systems might not have a default folder named **Desktop**. In such cases, you must create this folder (`~/Desktop` for macOS and Linux distributions) to export the certificate successfully. Fiddler Everywhere provides options to export the following formats:
-        * **Export Root Certificate(DER/Binary format)**&mdash;Exports the Fiddler Everywhere trust certificate in binary format as `FiddlerRootCertificate.crt`.
-        * **Export Root Certificate(PEM/ASCII format)**&mdash;Exports the Fiddler Everywhere trust certificate in ASCII format as `FiddlerRootCertificate.pem`.
-        * **Export Root Certificate(PKCS 12 format)**&mdash;Exports the Fiddler Everywhere trust certificate in PKCS 12 format as `FiddlerRootCertificate.p12`.
+        * **Export Root Certificate(DER/Binary format)**&mdash;Exports the Fiddler Everywhere trust certificate in binary format as `Fiddler_Root_Certificate_Authority.crt`.
+        * **Export Root Certificate(PEM/ASCII format)**&mdash;Exports the Fiddler Everywhere trust certificate in ASCII format as `Fiddler_Root_Certificate_Authority.pem`.
+        * **Export Root Certificate(PKCS 12 format)**&mdash;Exports the Fiddler Everywhere trust certificate in PKCS 12 format as `Fiddler_Root_Certificate_Authority.p12`.
     - **Reset Root Certificate**&mdash;Click the button to remove the currently trusted root certificate, generate a new one, and trust it.
     - **Remove Root Certificate**&mdash;Click the button to remove the currently trusted root certificate from the OS certificate store. As a result, the capturing of HTTPS traffic will be disabled.
 

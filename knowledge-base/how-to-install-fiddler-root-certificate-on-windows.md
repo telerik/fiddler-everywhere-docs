@@ -25,9 +25,9 @@ You can install the Fiddler Everywhere root certificate on Windows automatically
 
 If the automatic installation and enabling of the trust certificate do not work, you can manually install the trust certificate:
 
-1. Make sure you already have `FiddlerRootCertificate.crt` file on your machine. To export the certificate from Fiddler Everywhere, use the [Export root certificate]({%slug decrypt-https-traffic%}) option.
+1. Make sure you already have `Fiddler_Root_Certificate_Authority.crt` file on your machine. To export the certificate from Fiddler Everywhere, use the [Export root certificate]({%slug decrypt-https-traffic%}) option.
 
-1. Go to the __Desktop__ and double-click the `FiddlerRootCertificate.crt` file.
+1. Go to the __Desktop__ and double-click the `Fiddler_Root_Certificate_Authority.crt` file.
 
 1. Click the __Install Certificate...__ button.
 

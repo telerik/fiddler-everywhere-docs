@@ -36,7 +36,7 @@ Test the import of the Fiddler Everywhere root certificate on macOS by using cus
             echo "No login keychain found.";
             exit 10;
     fi
-    security add-trusted-cert -k login.keychain ~/Desktop/FiddlerRootCertificate.crt;
+    security add-trusted-cert -k login.keychain ~/Desktop/Fiddler_Root_Certificate_Authority.crt;
 
     security_exit_code=$?;
     if [ $security_exit_code -ne 0 ]

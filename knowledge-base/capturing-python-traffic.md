@@ -55,8 +55,8 @@ The following example demonstrates how to define the proxy settings through envi
 ```bash
 export http_proxy=http://127.0.0.1:8866
 export https_proxy=http://127.0.0.1:8866
-export SSL_CERT_FILE=~/Desktop/FiddlerRootCertificate.pem
-export REQUESTS_CA_BUNDLE=~/Desktop/FiddlerRootCertificate.pem
+export SSL_CERT_FILE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
+export REQUESTS_CA_BUNDLE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
 ```
 
 The following example demonstrates how to define the proxy settings through environmental variables on **Windows**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings > HTTPS > Advanced > Export Root Certificate (PEM/ASCII)**.
@@ -64,8 +64,8 @@ The following example demonstrates how to define the proxy settings through envi
 ```bash
 set http_proxy=http://127.0.0.1:8866
 set https_proxy=http://127.0.0.1:8866
-set SSL_CERT_FILE=~/Desktop/FiddlerRootCertificate.pem
-set REQUESTS_CA_BUNDLE=~/Desktop/FiddlerRootCertificate.pem
+set SSL_CERT_FILE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
+set REQUESTS_CA_BUNDLE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
 ```
 
 Once the Fiddler Everywhere proxy is set, you can immediately capture traffic through the Python application.

@@ -27,7 +27,7 @@ The Java Virtual Machine (JVM) has its proxy configuration settings. How can I e
   The following command prompts you to create a password and outputs `FiddlerKeystoreFile` in the pre-set export path.
 
     ```Java
-    %JAVA_HOME%\bin\keytool.exe -import -file <path-to-exported-certificate>\FiddlerRootCertificate.crt -keystore <your-export-path>\FiddlerKeystoreFile -alias Fiddler
+    %JAVA_HOME%\bin\keytool.exe -import -file <path-to-exported-certificate>\Fiddler_Root_Certificate_Authority.crt -keystore <your-export-path>\FiddlerKeystoreFile -alias Fiddler
     ```
 
 1. Configure the java application to use the Fiddler proxy and certificate through `jre`.

@@ -30,7 +30,7 @@ How can I manually install the Fiddler's root certificate authority in Firefox?
 
 1. Click the **View Certificates** button.
 
-1. Click the **Import...** button and choose the `FiddlerRootCertificate.crt` file from your **Desktop** folder.
+1. Click the **Import...** button and choose the `Fiddler_Root_Certificate_Authority.crt` file from your **Desktop** folder.
 
 1. Select the **Trust this CA to identify websites.** checkbox and click **OK**.
 

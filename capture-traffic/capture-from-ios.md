@@ -67,7 +67,7 @@ The later versions of the iOS simulators, accessible through XCode, use the OS s
 
 1. In Fiddler Everywhere, go to **Settings** > **HTTPS** > **Advanced Settings**.
 
-1. Use the **Export root certificate(DER/Binary format)** option from the drop-down menu. As a result, the `FiddlerRootCertificate.crt` file is created in the **Desktop** folder.
+1. Use the **Export root certificate(DER/Binary format)** option from the drop-down menu. As a result, the `Fiddler_Root_Certificate_Authority.crt` file is created in the **Desktop** folder.
 
 1. Start the iOS simulator.
 

@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-Third-party tools (like Docker) and some operating systems (some Linux distributions) accept trust certificates in PEM format. How to convert the exported FiddlerRootCertificate.crt file to PEM format?
+Third-party tools (like Docker) and some operating systems (some Linux distributions) accept trust certificates in PEM format. How to convert the exported Fiddler_Root_Certificate_Authority.crt file to PEM format?
 
 
 ## Converting the Fiddler Certificate to a PEM Certificate
@@ -27,7 +27,7 @@ To create a PEM certificate, export the Fiddler root certificate and convert it 
 
 1. [Download](https://www.openssl.org/source/) and install the OpenSSL tool.
 
-1. Open Fiddler Everywhere and export the `FiddlerRootCertificate.crt` file through **Settings** > **HTTPS** > **Advanced Settings** > and from the drop-down use the **Export root certificate(PEM/ASCII format)**. The certificate is exported to **~/Desktop** as file with name **FiddlerRootCertificate.pem**.
+1. Open Fiddler Everywhere and export the `Fiddler_Root_Certificate_Authority.crt` file through **Settings** > **HTTPS** > **Advanced Settings** > and from the drop-down use the **Export root certificate(PEM/ASCII format)**. The certificate is exported to **~/Desktop** as file with name **Fiddler_Root_Certificate_Authority.pem**.
 
 1. Install and trust the exported PEM in the third-party tool while following the tool's official guidelines. 
 
