@@ -396,7 +396,7 @@ The following table lists the **Live Traffic** columns and the information they 
 
 ### Creating Custom Columns
 
-Add, edit, or remove a custom column to the columns list. Afterward, these columns shows similarly to the Fiddler's predefined columns. 
+Add, edit, or remove a custom column to the columns list. Afterward, the columns are visualized similarly to the Fiddler's predefined columns. 
 
 **Add a custom column** through one of these actions:
 
@@ -418,7 +418,7 @@ After the successful creation, the new column is immediately available in the **
 
 **Edit a custom column** through the [**Columns** menu](#managing-columns) and click the edit icon. **Remove a custom column** through the [**Columns** menu](#managing-columns) and click on the remove icon (a deletion confirmation displays).
 
-**Filter by a custom column** through the filtering button to the left of the column name.
+**Filter by a custom column** through the filtering button to the right of the column name.
 
 
 
