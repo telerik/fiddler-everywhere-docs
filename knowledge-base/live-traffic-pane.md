@@ -396,7 +396,7 @@ The following table lists the **Live Traffic** columns and the information they 
 
 ### Creating Custom Columns
 
-Add, edit, or remove a custom column to the columns list. Afterward, these columns can be hidden or shown similarly to the Fiddler's predefined columns. 
+Add, edit, or remove a custom column to the columns list. Afterward, the columns are visualized similarly to the Fiddler's predefined columns. 
 
 **Add a custom column** through one of these actions:
 
@@ -416,8 +416,11 @@ After the successful creation, the new column is immediately available in the **
 
 ![Created custom column](../images/livetraffic/columns/custom-column-created-001.png)
 
-
 **Edit a custom column** through the [**Columns** menu](#managing-columns) and click the edit icon. **Remove a custom column** through the [**Columns** menu](#managing-columns) and click on the remove icon (a deletion confirmation displays).
+
+**Filter by a custom column** through the filtering button to the right of the column name.
+
+
 
 ### Reset Columns
 
@@ -437,8 +440,6 @@ To create a custom sorting order, click the desired column. For example, click t
 Each column has a **filter** button, which popups an additional **Filter** menu to create.
 
 The column **Filter** menu lets you add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
-
-![column filter menu](../images/livetraffic/columns/dots-filters.png)
 
 >tip Apply complex filters by using the [**Filters** toolbar option](#filtering) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters).
 
