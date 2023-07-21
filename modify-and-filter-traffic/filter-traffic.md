@@ -80,7 +80,7 @@ The **Filters** option provides a drop-down menu to manage your active and saved
 
 ## Column Filters
 
-Each column from the [**Live Traffic grid**]({%slug web-sessions-list%}#live-traffic-list) has its own [filtering submenu]({%slug web-sessions-list%}#filtering-options). A filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on). Each logical operation combines with the filter value, which depends on the column type and can be a string, number, boolean, or predefined value. 
+Each column (including your own [custom columns]({%slug web-sessions-list%}#creating-custom-columns)) from the [**Live Traffic grid**]({%slug web-sessions-list%}#live-traffic-list) has its own [filtering submenu]({%slug web-sessions-list%}#filtering-options). A filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on). Each logical operation combines with the filter value, which depends on the column type and can be a string, number, boolean, or predefined value. 
 
 ![column filter menu](../images/livetraffic/columns/dots-filters.png)
 
