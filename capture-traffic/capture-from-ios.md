@@ -55,7 +55,7 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 
 1. On your iOS device, open **General** > **Profile Downloaded** and install the downloaded Fiddler certificate.
 
-1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority** certificate.
+1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler_Root_Certificate_Authority** certificate.
 
 >important The last step is crucial, and HTTPS browsing will fail if the certificate is not trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
 
@@ -67,13 +67,13 @@ The later versions of the iOS simulators, accessible through XCode, use the OS s
 
 1. In Fiddler Everywhere, go to **Settings** > **HTTPS** > **Advanced Settings**.
 
-1. Use the **Export root certificate(DER/Binary format)** option from the drop-down menu. As a result, the `FiddlerRootCertificate.crt` file is created in the **Desktop** folder.
+1. Use the **Export root certificate(DER/Binary format)** option from the drop-down menu. As a result, the `Fiddler_Root_Certificate_Authority.crt` file is created in the **Desktop** folder.
 
 1. Start the iOS simulator.
 
 1. Drag and drop the exported certificate in the simulator.
 
-1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the certificate named **Fiddler Root Certificate Authority**.
+1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the certificate named **Fiddler_Root_Certificate_Authority**.
 
 ## Capture Traffic
 

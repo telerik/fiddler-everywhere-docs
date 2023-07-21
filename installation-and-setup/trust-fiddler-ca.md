@@ -20,7 +20,7 @@ The recommended approach for installing and trusting the Fiddle CA is through th
 * [Installing the Fiddler Everywhere CA on macOS]({% slug first_steps_macos %}#capturing-system-traffic)
 * [Installing the Fiddler Everywhere CA on Linux]({% slug first_steps_linux %}#capturing-system-traffic)
 
-Once Fiddler CA installs successfully, you can capture and analyze HTTPS traffic. The CA install once and remains valid until it is explicitly uninstalled. The CA name as listed within the operating system certificate manager is `Fiddler_Root_Certificate_Authority`.
+Once Fiddler CA installs successfully, you can capture and analyze HTTPS traffic. The CA install once and remains valid until it is explicitly uninstalled. The CA name as listed within the operating system certificate manager is `Fiddler Root Certificate Authority`.
 
 ## Install & Trust the Fiddler's Certificate Authority (Manual Approach)
 
@@ -55,7 +55,7 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 ### Linux
 
-1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and use the **Export root certificate(DER/Binary format)** from the drop-down menu. The certificate is exported to **~/Desktop** as a file with the name **FiddlerRootCertificate.crt**.
+1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Expand the **Advanced Settings** sub-menu and use the **Export root certificate(DER/Binary format)** from the drop-down menu. The certificate is exported to **~/Desktop** as a file with the name **Fiddler_Root_Certificate_Authority.crt**.
 
 1. To import and trust the exported certificate, perform the following steps.
 
@@ -64,7 +64,7 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
     1. Create a directory and copy the exported certificate by running the following commands.
         ```shell
         $ sudo mkdir /usr/share/ca-certificates/extra
-        $ sudo cp ~/Desktop/FiddlerRootCertificate.crt /usr/share/ca-certificates/extra
+        $ sudo cp ~/Desktop/Fiddler_Root_Certificate_Authority.crt /usr/share/ca-certificates/extra
 
         // Starts the tool and upgrades the certificates.
         $ sudo dpkg-reconfigure ca-certificates
@@ -76,7 +76,7 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
         ![Add new certificate](../images/configuration/cert_ubunto_002.png)
 
-    1. Choose the `FiddlerRootCertificate.crt` file and click **OK**.
+    1. Choose the `Fiddler_Root_Certificate_Authority.crt` file (while using the **Space** bar) and click **OK**.
 
         ![Add Fiddler certificate](../images/configuration/cert_ubunto_003.png)
 
