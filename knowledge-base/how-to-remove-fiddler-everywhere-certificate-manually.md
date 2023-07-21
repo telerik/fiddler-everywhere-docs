@@ -40,7 +40,7 @@ To remove the root certificate, follow the steps in each of the sections below d
 
     ![Manage User Certificates](../images/kb/remove-manually/manage-user-certificate-using-start-menu.png)
 
-2. A window opens where you can see list of **Certificates - Current User**. In the list, expand the **Trusted Root Certification Authorities** item and select **Certificates**. In the list on the right, search for **Fiddler_Root_Certificate_Authority**.
+2. A window opens where you can see list of **Certificates - Current User**. In the list, expand the **Trusted Root Certification Authorities** item and select **Certificates**. In the list on the right, search for **Fiddler Root Certificate Authority**.
 
     ![Certificates - Current User](../images/kb/remove-manually/certificates-current-user-trusted-root-certification.png)
 
