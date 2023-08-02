@@ -19,7 +19,7 @@ res_type: kb
 
 By design, when the Fiddler Everywhere application is closed, it automatically restores the default operating system proxy settings. 
 
-Occasionally, the application or the operating system can crash unexpectedly for various reasons, such as a software bug, OS interruption, hardware failure, etc. As a result, that can result in leaked proxy settings - a case where Fiddler Everywhere application is closed (after reboot) but its proxy IP and port are still present within the operating system's manual proxy configuration. This article explains how to check if your operating system has leaked proxy settings and how to restore them to their original state.
+Occasionally, the application or the operating system can crash unexpectedly for various reasons, such as a software bug, OS interruption, hardware failure, power loss, etc. As a result, that can result in leaked proxy settings - a case where Fiddler Everywhere application is closed (after reboot) but its proxy IP and port are still present within the operating system's manual proxy configuration. This article explains how to check if your operating system has leaked proxy settings and how to restore them to their original state.
 
 
 ## Solution
