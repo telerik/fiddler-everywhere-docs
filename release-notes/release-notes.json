@@ -1,5 +1,46 @@
 [
     {
+        "version": "4.4.1",
+        "title": "Fiddler Everywhere v4.4.1",
+        "date": "August 2, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Make custom columns available for all sessions tabs"
+                    },
+                    {
+                        "title": "Add indication when system proxy has unexpectedly changed"
+                    },
+                    {
+                        "title": "Add new Rules action for updating the response HTTP status code"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Failed to set system proxy on macOS in some cases"
+                    },
+                    {
+                        "title": "Composer raw editor error description popup doesn't show correctly in some cases"
+                    },
+                    {
+                        "title": "Leaked proxy is not cleaned up on Windows machine restart"
+                    },
+                    {
+                        "title": "Application login fails when using certain corporate proxy configurations"
+                    },
+                    {
+                        "title": "Adding a host to the bypass list in live traffic view can sometimes fail if there is a search applied to the sessions list"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.4.0",
         "title": "Fiddler Everywhere v4.4.0",
         "date": "July 20, 2023",
