@@ -4,7 +4,7 @@ description: "Modify the HTTPS sessions while using the Rules tab in Fiddler Eve
 slug: modify-traffic-get-started
 publish: true
 position: 10
-previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic, /traffic/modify-traffic, /user-guide/rules, /get-started/mock-server-response, /mock-server-response, /knowledge-base/autoresponder
+previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic, /traffic/modify-traffic, /user-guide/rules, /get-started/mock-server-response, /mock-server-response, /knowledge-base/autoresponder, /user-guide/live-traffic/rules
 ---
 
 # Modifying Traffic

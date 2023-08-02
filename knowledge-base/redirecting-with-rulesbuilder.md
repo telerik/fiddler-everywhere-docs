@@ -46,9 +46,10 @@ In the previous example, two regex variables are automatically created. The seco
 
 As a result, after applying the above rule, the following example endpoint
 ```
-https://docs.telerik.com/fiddler-everywhere/user-guide/live-traffic/rules-builder
+https://docs.telerik.com/fiddler-everywhere/modify-and-filter-traffic/modify-traffic-with-rules
 ```
 will be redirected to
 ```
-http://localhost:4000/fiddler-everywhere/user-guide/live-traffic/rules-builder
+http://localhost:4000/fiddler-everywhere/modify-and-filter-traffic/modify-traffic-with-rules
 ```
+
