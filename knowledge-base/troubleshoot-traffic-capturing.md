@@ -112,5 +112,4 @@ If the issue persists save the captured sessions by going to **File** > **Save A
 * [Troubleshooting Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
 * [Accessing and Inspecting Fiddler Everywhere Log Files]({%slug fiddler-log-files%})
 * [Troubleshooting macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
-* [Installing Fiddler Everywhere on a Mac](https://docs.telerik.com/fiddler-everywhere/getting-started/installation)
-* [Resetting Fiddler Everywhere Settings to Default](how-to-reset-fiddler-everywhere-settings-to-default)
+* [Resetting Fiddler Everywhere Settings to Default]({%slug how-to-reset-fiddler-everywhere-settings-to-default%})
