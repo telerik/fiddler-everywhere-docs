@@ -168,6 +168,14 @@ As part of its design, Fiddler Everywhere respects other upstream proxies, inclu
 
 However, it's important to note that not all third-party proxy tools follow the same behavior. Some tools may disregard existing proxy settings and try to replace them instead of chaining to them. If a third-party tool removes Fiddler Everywhere as an intermediate proxy, it will immediately interrupt Fiddler's ability to capture HTTP(S) traffic.
 
+When the system capturing mode is enabled, Fiddler detects if a third-party tries to change the OS settings and warns you with the message below.
+
+```
+Your proxy was changed multiple times by other apps. Click here to learn for possible issues. Click to reenable capturing.
+```
+
+You can let Fiddler Everywhere automatically recover its proxy settings by following the `Click to reenable capturing` link or, alternatively, follow the troubleshooting instructions below.
+
 
 ### Troubleshooting approach
 
