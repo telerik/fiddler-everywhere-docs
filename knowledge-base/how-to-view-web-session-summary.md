@@ -101,7 +101,7 @@ Indicates the server's IP address used for this Request.
 
 ### Process
 
-__Process__ is the local OS process from which the traffic has originated.
+__Process__ indicates the local OS process from which the traffic has originated.
 
 The following example lists sample __Process__ values.
 
@@ -118,45 +118,45 @@ The column shows the number of bytes in the response body.
 
 ### Caching
 
-The column displays the values (if any) from the __Cache-Control__ and __Expires__ headers. If both headers are present, the column will display first the values from __Cache-Control__ and then the values for the __Expires__ header, separated by a semicolon.
+The column displays the values (if any) from the `Cache-Control` and `Expires` headers. If both headers are present, the column will display first the values from `Cache-Control` and then the values for the `Expires` header, separated by a semicolon.
 
-The __Cache-Control__ header contains instructions for caching (for both requests and responses).
+The `Cache-Control` header contains instructions for caching (for both requests and responses).
 
-The following example demonstrates a standard __Cache-Control__ header.
+The following example demonstrates a standard `Cache-Control` header.
 
 ```
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 ```
 
-The __Expires__ header contains the date/time after which the response is considered invalid. When the __Expires__ header has an invalid date value (for example, __0__ or __-1__), the expiration date is in the past and the resource is already considered expired.
+The `Expires` header contains the date/time after which the response is considered invalid. When the `Expires` header has an invalid date value (for example, __0__ or __-1__), the end date is in the past and the resource is already considered expired.
 
-The following example demonstrates a standard __Expires__ header.
+The following example demonstrates a standard `Expires` header.
 
 ```
 Expires: Fri, 20 Apr 2020 19:00:00 GMT
 ```
 
-In a scenario where a __Cache-Control__ header with __max-age__ or __s-maxage__ is set, the value from __Expires__ will be ignored.
+In a scenario where a `Cache-Control` header with `max-age` or `s-maxage` is set, the value from `Expires` will be ignored.
 
 ### Content-Type
 
-The __Content-Type__ is the header which originates from the response.
+The `Content-Type` is the header which originates from the response.
 
-The __Content-Type__ header is an indication of the media type of the resource. It is used with requests of the __POST__ and __PUT__ types where the client indicates to the server the type of data that is sent. The __Content-Type__ header supports the __media-type__, __charset__, and __boundary__ directives whose values are separated in the column by a semicolon. An example for a __Content-Type__ header is `Content-Type: application/json;charset=UTF-8`.
+The `Content-Type` header is an indication of the media type of the resource. It is used with requests of the __POST__ and __PUT__ types where the client indicates to the server the type of data that is sent. The `Content-Type` header supports the `media-type`, `charset`, and `boundary` directives whose values are separated in the column by a semicolon. An example for a `Content-Type` header is `Content-Type: application/json;charset=UTF-8`.
 
 You can use different `media-type` values to set the type of the passed resource explicitly. For more information, refer to the [common `media-types`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types) variants.
 
 ### Request Time
 
-Renders the time when the request was issued in format HH:MM:SS:ms.
+Renders the time when the request was issued in format `HH:MM:SS:ms`.
 
 ### Request Date
 
-Renders the date when the request was issued in format MM:DD:YYYY.
+Renders the date when the request was issued in format `MM:DD:YYYY`.
 
 ### Duration
 
-Marks the duration of the session (from **ClientConnected** to **ServerGotResponse** events) in milisseconds.
+Marks the duration of the session (from `ClientConnected` to `ServerGotResponse` events) in milliseconds.
 
 ### Rules Modified
 
@@ -164,7 +164,7 @@ Marks the duration of the session (from **ClientConnected** to **ServerGotRespon
 
 __Comments__ is the field for showing the custom comment.
 
-This column will have a value only if the comment was previously added, for example, when looking into a list of shared sessions with already added comments, or when you explicitly add a comment through [__Comment__ in the context menu]({%slug web-sessions-list%}#comment).
+This column will have a value only if the comment was previously added, for example, when looking into a list of shared sessions with already added comments, or when you explicitly add a comment through __Comment__ in the context menu.
 
 ## Custom Columns
 

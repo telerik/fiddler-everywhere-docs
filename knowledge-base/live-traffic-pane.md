@@ -59,7 +59,7 @@ Use the **>_ Terminal** button to capture traffic from a specific terminal insta
 
 ### Removing All Sessions
 
-Use the **Remove All** button to automatically remove all captured traffic from the **Live Traffic** grid. To remove only specific sessions, select the desired ones and use the remove options from [the context menu]({%slug web-sessions-list%}#remove).
+Use the **Remove All** button to automatically remove all captured traffic from the **Live Traffic** grid. To remove only specific sessions, select the desired ones and use the remove options from the context menu.
 
 
 ### Searching
@@ -71,7 +71,7 @@ To search for specific values in the URL and the headers of all sessions, use th
 
 ### Saving Sessions
 
-To save captured sessions, use the main menu's **Save** button, automatically saving all captured traffic. To save only specific sessions, select the desired ones and use the advanced saving options from [the context menu]({%slug web-sessions-list%}#save).
+To save captured sessions, use the main menu's **Save** button, automatically saving all captured traffic. To save only specific sessions, select the desired ones and use the advanced saving options from the context menu.
 
 To save sessions for later or prepare sessions for sharing:
 
@@ -94,7 +94,7 @@ Sharing sessions dramatically improve collaboration, and Fiddler Everywhere prov
 
 - Sharing through the **Share** button from a saved session entry in the save **Sessions** tree.
 
-- Sharing through the **Share** option from [the **Live Traffic** grid context menu]({%slug web-sessions-list%}#share).
+- Sharing through the **Share** option from the **Live Traffic** grid context menu.
 
 - Sharing through the **Share** button from the **Live Traffic** grid toolbar. The **Live Traffic** toolbar comes with a **Share** button that will save in a file the currently displayed sessions, captured within the **Live Traffic** grid, and then will share them through an explicitly provided email.
 
@@ -109,8 +109,9 @@ To share a session through the toolbar:
 
 ### Managing Columns
 
-Use the **Columns** menu to manage which columns to show up in the [Live Traffic grid](#live-traffic-list). You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
+Use the **Columns** menu to manage which columns to show up in the [Live Traffic grid](#live-traffic-list). 
 
+You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
 ![Manage columns from the Fiddler's UI](../images/livetraffic/columns/managing-columns.png)
 
 [Learn more about each column present in the Live Traffic grid here...](#columns)
@@ -412,7 +413,7 @@ Add, edit, or remove a custom column to the columns list. Afterward, the columns
 
     ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create-through-header.png)
 
-After the successful creation, the new column is immediately available in the **Live Traffic** grid.
+After the successful creation, the new column is immediately available in the **Live Traffic** grid. Adding a new column makes the new column visible in all tabs (both Live Traffic and opened snapshots). Unchecking the column is persisted per tab - it won't apply globally.
 
 ![Created custom column](../images/livetraffic/columns/custom-column-created-001.png)
 
@@ -492,7 +493,7 @@ All options will display a **Save** prompt window. To save the desired sessions:
 
 1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
-Alternatively, you can save all captured traffic [through the **Save** button from the toolbar]({%slug web-sessions-list%}#save).
+Alternatively, you can save all captured traffic through the **Save** button from the toolbar.
 
 
 ### Sharing
@@ -513,7 +514,7 @@ All options will initially display a **Save** and then a **Share** prompt window
 
 1. The **Share** prompt window appears. Enter a valid email and, optionally, add notes. Once ready, click **Share**. Note that when sharing an encrypted session, the recipient will need the password to access it.
 
-Alternatively, you can share captured traffic [through the **Share** button from the toolbar]({%slug web-sessions-list%}#share).
+Alternatively, you can share captured traffic through the **Share** button from the toolbar.
 
 
 ### Exporting
