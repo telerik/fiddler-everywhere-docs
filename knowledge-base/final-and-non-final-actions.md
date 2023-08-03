@@ -391,6 +391,14 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Skips decryption for a matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version, and Remote IP</b> can be used. The rule works only for newly established connections.</td>
             <td>Final </td>
         </tr>
+        <tr>
+            <td><b>Update Status Code</b></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Modifies the status code returned by the server while preserving the other data untouched.</td>
+            <td>Final </td>
+        </tr>
     </tbody>
 </table>
 
