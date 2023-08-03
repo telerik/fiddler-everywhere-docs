@@ -8,11 +8,11 @@ position: 40
 
 # Privacy Menu
 
-The **Privacy** sub-menu provides options to stop receiving emails from Progress and its partners as well as to request the deletion of your Fiddler Everywhere associated account.
+The **Privacy** sub-menu provides options to stop receiving emails from Progress and its partners and request the deletion of your Fiddler Everywhere associated account.
 
-- **Unsubscribe**&mdash;To submit a request to unsubscribe from receiving future emails, click the **Unsubscribe** link. You will be redirected to a unsubscribe page where you can follow the instructions.
-- **Submit "Delete Account" request**&mdash;To submit a request, click the **Submit "Delete Account" request** link. You will be redirected to a page where you can follow the instructions.
-- **Automatically send data to help us improve the product**&mdash;Your information and usage statistics help us understand product usage better and continue building the product you love. To subscribe or unsubscribe from participating in the usage statistics sharing, check or, respectively, uncheck the **Automatically send data to help us improve the product** option. Click **Save** to apply the change.
+- **Unsubscribe from Emails**&mdash;To submit a request to unsubscribe from receiving future emails, click the **Unsubscribe** link. You will be redirected to an unsubscribe page where you can follow the instructions.
+
+- **Delete YOur Fiddler Account**&mdash;To submit a request, follow the **Privacy Center** link. You will be redirected to a page where you can submit a deletion request.
 
 The following figure displays the **Privacy** menu settings.
 
