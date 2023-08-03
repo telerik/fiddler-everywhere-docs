@@ -9,7 +9,7 @@ position: 35
 # Live Traffic Menu
 
 
-The **Live Traffic** sub-menu provides options for limiting the captured traffic visible in the [**Live Traffic** grid]({%slug web-sessions-list%}#live-traffic-list).
+The **Live Traffic** sub-menu provides options for limiting the captured traffic visible in the [**Live Traffic** grid]({%slug web-sessions-list%}#live-traffic-grid).
 
 
 The following options are available as **Sessions List Length**:
