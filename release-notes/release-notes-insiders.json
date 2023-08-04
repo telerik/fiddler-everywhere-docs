@@ -1,5 +1,23 @@
 [
     {
+        "version": "4.4.2-insiders",
+        "title": "Fiddler Everywhere v4.4.2",
+        "date": "August 4, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add privacy policy link in the application Help menu"
+                    },
+                    {
+                        "title": "Update link and description for the privacy policy in the Settings window"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.4.1-insiders",
         "title": "Fiddler Everywhere v4.4.1",
         "date": "August 2, 2023",
