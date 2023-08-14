@@ -65,3 +65,6 @@ JVM
 keystore
 keytool
 keychain
+hotspot
+ISPs
+ISP
