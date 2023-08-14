@@ -12,14 +12,6 @@ previous_url: /knowledge-base/configure-ios, /get-started/mobile-traffic/configu
 
 This article describes using Fiddler Everywhere to capture HTTPS traffic from iOS devices and simulators.
 
-To capture HTTPS traffic on iOS devices or simulators, perform the following steps:
-
-1. [Provide the prerequisites](#prerequisites).
-1. [Configure Fiddler Everywhere](#configuring-fiddler-everywhere-host).
-1. [Configure the iOS device](#configuring-ios-devices).
-1. [Configure the iOS simulator](#configuring-ios-simulator).
-1. [Capture mobile traffic](#capture-traffic).
-
 ## Prerequisites
 
 - Install [the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
@@ -29,7 +21,24 @@ To capture HTTPS traffic on iOS devices or simulators, perform the following ste
 >important It's common for many company networks to be restricted by security tooling or administrative policies. To capture remote traffic, ensure that your system administrators are not limiting the network discovery and usage, or consider using a public hotspot for your Fiddler host and remote device.
 
 
-## Configuring Fiddler Everywhere Host
+## Capturing Remote iOS Traffic (Automated)
+
+Fiddler Everywhere provides an automated guide to configure remote iOS capturing through the following steps:
+
+1. Start Fiddler Everywhere. 
+
+1. Open the **Home** pane.
+
+1. Open the **Remote Devices** screen.
+
+1. Open the **iOS** tutorial and follow the instructions.
+
+The tutorial requires administrative privileges for the current user (on the iOS device) to install Fiddler's CA (certificate authority) and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote iOS device.
+
+
+## Capturing Remote iOS Traffic (Manual Setup)
+
+### Configuring Fiddler Everywhere Host
 
 1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
@@ -39,7 +48,7 @@ To capture HTTPS traffic on iOS devices or simulators, perform the following ste
 
 >tip: If you only need to capture remote traffic, then there is no need to install the Fiddler CA on the Fiddler host machine. You only need to download and install the Fiddler CA on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
-## Configuring iOS Devices
+### Configuring the Fiddler proxy on iOS Device
 
 Refer to the following steps to configure real iOS devices to work alongside a Fiddler Everywhere host. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configure-the-ios-simulator). Real iOS devices and iOS simulators must be discoverable on the same local network.
 
@@ -65,7 +74,7 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 >important The last step is crucial, and HTTPS browsing will fail if the certificate is not trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
 
 
-## Configuring iOS Simulator
+## Configuring the Fiddler proxy on iOS Emulator
 
 The later versions of the iOS simulators, accessible through XCode, use the OS system proxy by default. However, due to [a security limitation](https://developer.apple.com/forums/thread/124056), the iOS simulator won't access the folders containing the trust certificates. To capture HTTPS traffic, you must manually export and install the Fiddler Everywhere certificate on your iOS simulator.
 
@@ -80,7 +89,7 @@ The later versions of the iOS simulators, accessible through XCode, use the OS s
 
 1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the certificate named **Fiddler_Root_Certificate_Authority**.
 
-## Capture Traffic
+## Capture Mobile Traffic
 
 Now you can immediately capture and inspect HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** grid.
 
@@ -102,7 +111,7 @@ To prevent Apple services from losing connectivity, the Fiddler Everywhere appli
 *.apple.com, *.itunes.com, *mzstatic.com
 ```
 
-However, this is not the case for the other operating systems where these services are not commonly used. If you would like to continue using Apple services like iTunes or AppStore on different operating systems, ensure to add the above endpoints manually as follows:
+However, this is not the case for the other operating systems where these services are not commonly used. If you like to continue using Apple services like iTunes or AppStore on different operating systems, ensure to add the above endpoints manually as follows:
 
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
 
