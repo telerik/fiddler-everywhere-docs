@@ -31,7 +31,7 @@ To capture and inspect traffic on Android devices, perform the following steps:
 
 ## Configuring Fiddler Everywhere Host
 
-1. Enable the remote connections in Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**.
+1. Enable the remote connections in Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
 1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to obtain the host IP address. Alternatively, you can get the IP address using a terminal command like  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere host machine is **192.168.100.50**. 
 
@@ -67,7 +67,7 @@ The following steps apply to real Android devices with access to the Internet th
 
 You can capture traffic from your Android mobile browser with the above setup. Test your configuration as follows:
 
-1. In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked.
+1. In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
 1. On your emulator, open **Google Chrome** (or any other mobile browser that respects the proxy settings) and type [https://example.com](https://example.com)
 
@@ -101,7 +101,7 @@ The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler E
 
 You can capture traffic from your Android mobile browser with the above setup. Test your configuration as follows:
 
-- In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked.
+- In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
 - On your emulator, open **Google Chrome** (or any other mobile browser that respects the proxy settings) and type [https://example.com](https://example.com).
 
