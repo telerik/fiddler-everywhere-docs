@@ -44,32 +44,36 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 1. Check the local IP address of the host where the Fiddler Everywhere application runs. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to obtain the host IP address. Alternatively, you can get the IP address while using  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere machine is **192.168.0.101**.
 
-1. Ensure that the [**Capture HTTPS traffic** option]({%slug decrypt-https-traffic%}) is enabled.
-
 >tip: If you only need to capture remote traffic, then there is no need to install the Fiddler CA on the Fiddler host machine. You only need to download and install the Fiddler CA on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
 ### Configuring the Fiddler proxy on iOS Device
 
 Refer to the following steps to configure real iOS devices to work alongside a Fiddler Everywhere host. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configure-the-ios-simulator). Real iOS devices and iOS simulators must be discoverable on the same local network.
 
+1. Install the Fiddler Everywhere root CA (certificate authority) on the iOS device.
 
-1. On your iOS device, go to **Settings** > **WiFi**.
+    1. Open a browser on the iOS device and type the `http://ipv4.fiddler:8866` echo service address of Fiddler Everywhere. Follow the Fiddler root certificate link to **download** the Fiddler CA.
 
-1. Find your current network and click the **i** icon.
+        >tip Instead of the special Fiddler echo service address, you can use the Fiddler host IP as follows: `http://<fiddler-host-IP>:8866`.
 
-1. Scroll to the bottom and choose **Configure Proxy** > **Manual**.
+    1. On your iOS device, open **General** > **Profile Downloaded** and install the downloaded Fiddler CA.
 
-     - In the **SERVER** field, enter the IP address of the Fiddler Everywhere host&mdash;for example, **192.168.0.101** (for demo purposes, we assume this is the IP of the host that runs Fiddler).
+    1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler_Root_Certificate_Authority** CA.
 
-     - Enter the Fiddler Everywhere proxy port in the **PORT** field. By default, the port is **8866**.
+1. Set the Fiddler Everywhere proxy on the iOS device.
 
-    >tip With the current setup, you can capture non-secure HTTP traffic. However, if you try to open any HTTPS website, you'll get the "This site's security certificate is not trusted!" error. To fix this issue, trust the Fiddler root certificate.
+    1. On your iOS device, go to **Settings** > **WiFi**.
 
-1. Open a browser on the iOS device and type the http://ipv4.fiddler:8866 echo service address of Fiddler Everywhere. Follow the Fiddler root certificate link to **download** the Fiddler certificate.
+    1. Find your current network and click the **i** icon.
 
-1. On your iOS device, open **General** > **Profile Downloaded** and install the downloaded Fiddler certificate.
+    1. Scroll to the bottom and choose **Configure Proxy** > **Manual**.
 
-1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler_Root_Certificate_Authority** certificate.
+        - In the **SERVER** field, enter the IP address of the Fiddler Everywhere host&mdash;for example, `192.168.0.101` (for demo purposes, we assume this is the IP of the host that runs Fiddler).
+
+        - Enter the Fiddler Everywhere proxy port in the **PORT** field. By default, the port is `8866`.
+
+        >tip With the current setup, you can capture non-secure HTTP traffic. However, if you try to open any HTTPS website, you'll get the "This site's security certificate is not trusted!" error. To fix this issue, trust the Fiddler root certificate.
+
 
 >important The last step is crucial, and HTTPS browsing will fail if the certificate is not trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
 

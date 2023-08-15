@@ -13,12 +13,11 @@ previous_url: /knowledge-base/how-to-capture-traffic-from-another-pc, /knowledge
 The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install user CA (certificate authority). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android]({%slug capture-mobile-android-traffic%}) or [iOS]({%slug capture-mobile-ios-traffic%}).
 
 
-
 ## Prerequisites
 
 - Install [the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 
-- Use a configurable smart device within the same local network as the Fiddler Everywhere host.
+- Use a configurable device within the same local network as the Fiddler Everywhere host.
 
 >important It's common for many company networks to be restricted by security tooling or administrative policies. To capture remote traffic, ensure that your system administrators do not limit the network discovery and usage, or consider using a public hotspot for your Fiddler host and remote device. The Fiddler Everywhere host and the remote machine must have the Fiddler proxy port opened, which is port **8866** by default.
 
@@ -72,8 +71,6 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 
     ![Host local IP address](../images/kb/host-ip.png)
 
-1. Ensure that the **Settings > HTTPS > Capture HTTPS traffic** option is enabled. 
-
 
 ## Configuring the Fiddler proxy on the Remote Device
 
@@ -83,13 +80,13 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 
 1. Open the manual proxy settings:
 
-    - Enter the IP address of the Fiddler Everywhere host&mdash;for example, `192.168.148.39` (demo IP only).
+    - Enter the IP address of the Fiddler Everywhere host&mdash;for example, `<fiddler-host-IP>` (for example, it could be an IP address like `192.168.100.1`).
 
     - Enter the Fiddler Everywhere proxy port. By default, the port is `8866`.
 
     - Apply and save the above settings.
 
-1. Open a browser on the iOS device and type the `http://192.168.148.39:8866` echo service address of Fiddler Everywhere. 
+1. Open a browser on the remote device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. 
 
 1. Click the Fiddler root certificate link to download it.
 
