@@ -131,6 +131,6 @@ Most developers are testing locally through HTTP, but in some cases, you are exp
 
 As a result, the HTTP request is directed through Fiddler Everywhere and then sent as HTTPS to the secure server. You can immediately inspect, modify, replay, share the client's HTTP request, or track the server behavior on-the-fly.
 
-![Captured request from the client's application](../images/kb/reverse-proxy/reverse-proxy-http-inspection.png)
+![Captured request from the client's application](../images/kb/reverse-proxy/reverse-proxy-https-inspection.png)
 
 >tip: To stop receiving specific certificate errors, use Fiddler's **Ignore server certificate errors (unsafe)** option accessible from **Settings > HTTPS**.
