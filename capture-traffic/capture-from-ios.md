@@ -58,7 +58,9 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 
     1. On your iOS device, open **General** > **Profile Downloaded** and install the downloaded Fiddler CA.
 
-    1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler_Root_Certificate_Authority** CA.
+    1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority** CA.
+
+        >tip The CA name you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed.
 
 1. Set the Fiddler Everywhere proxy on the iOS device.
 
@@ -96,9 +98,11 @@ The later versions of the iOS simulators, accessible through XCode, are using th
 
     1. Click on the **Download Certificate (.CER)** button. Confirm the CA download in the native iOS popup by pressing **Allow**.
 
-    1. In the iOS simulator, go to **Settings** > **General** > **Device Management** and install the certificate named **Fiddler_Root_Certificate_Authority**.
+    1. In the iOS simulator, go to **Settings** > **General** > **Device Management** and install the certificate named **Fiddler Root Certificate Authority**.
 
-    1. In the iOS simulator, go to **Settings** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler_Root_Certificate_Authority**.
+        >tip The CA name you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed.
+
+    1. In the iOS simulator, go to **Settings** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority**.
 
     >tip Due to [a security limitation](https://developer.apple.com/forums/thread/124056), some versions of the iOS simulators won't be able to access the folders containing the trust certificates. To capture HTTPS traffic, you must manually export and install the Fiddler Everywhere certificate on your iOS simulator. You can achieve that by dragging and dropping the exported CRT file (**Settings** > **HTTPS** > **Advanced Settings** > **Export root certificate(DER/Binary format)** ) into the iOS simulator.
 
