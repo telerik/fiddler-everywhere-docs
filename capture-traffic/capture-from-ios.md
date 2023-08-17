@@ -80,18 +80,28 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 
 ## Configuring the Fiddler proxy on iOS Emulator
 
-The later versions of the iOS simulators, accessible through XCode, use the OS system proxy by default. However, due to [a security limitation](https://developer.apple.com/forums/thread/124056), the iOS simulator won't access the folders containing the trust certificates. To capture HTTPS traffic, you must manually export and install the Fiddler Everywhere certificate on your iOS simulator.
+The later versions of the iOS simulators, accessible through XCode, are using the macOS system proxy by default. 
 
+1. In Fiddler Everywhere, open the **Traffic** pane and enable the system capturing mode by toggling ON the **System Proxy** switch.
 
-1. In Fiddler Everywhere, go to **Settings** > **HTTPS** > **Advanced Settings**.
+    >important The iOS simulators are automatically detecting the macOS proxy settings. However, not all simulators are not dynamically detecting changes in the OS proxy settings. This step must execute before the iOS simulator starts!
 
-1. Use the **Export root certificate(DER/Binary format)** option from the drop-down menu. As a result, the `Fiddler_Root_Certificate_Authority.crt` file is created in the **Desktop** folder.
+1. In Fiddler Everywhere, go to **Settings** > **HTTPS** and enable **Capture HTTPS traffic**.
 
-1. Start the iOS simulator.
+1. In Fiddler Everywhere, go to **Settings** > **Connections** and enable **Allow remote devices to connect**.
 
-1. Drag and drop the exported certificate in the simulator.
+1. Start the iOS simulator. Restart the simulator in case it was already started before enabling the Fiddler's system capturing.
 
-1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the certificate named **Fiddler_Root_Certificate_Authority**.
+1. Open a mobile browser in the iOS simulator and type `http://ipv4.fiddler:8866`.
+
+    1. Click on the **Download Certificate (.CER)** button. Confirm the CA download in the native iOS popup by pressing **Allow**.
+
+    1. In the iOS simulator, go to **Settings** > **General** > **Device Management** and install the certificate named **Fiddler_Root_Certificate_Authority**.
+
+    1. In the iOS simulator, go to **Settings** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler_Root_Certificate_Authority**.
+
+    >tip Due to [a security limitation](https://developer.apple.com/forums/thread/124056), some versions of the iOS simulators won't be able to access the folders containing the trust certificates. To capture HTTPS traffic, you must manually export and install the Fiddler Everywhere certificate on your iOS simulator. You can achieve that by dragging and dropping the exported CRT file (**Settings** > **HTTPS** > **Advanced Settings** > **Export root certificate(DER/Binary format)** ) into the iOS simulator.
+
 
 ## Capture Mobile Traffic
 
