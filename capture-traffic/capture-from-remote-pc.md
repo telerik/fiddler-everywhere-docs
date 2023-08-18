@@ -72,7 +72,7 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
     ![Host local IP address](../images/kb/host-ip.png)
 
 
-## Configuring the Fiddler proxy on the Remote Device
+### Configuring the Fiddler proxy on the Remote Device
 
 1. Go to the operating system proxy settings on the target machine.
 
