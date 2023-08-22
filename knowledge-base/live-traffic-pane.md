@@ -2,6 +2,7 @@
 title: Live Traffic Grid
 description: "Learn how to use the user interface from the 'Live Traffic' grid in the Fiddler Everywhere web-debugging proxy application."
 slug: web-sessions-list
+res_type: kb
 previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar, /user-guide/live-traffic/live-traffic, /user-guide/live-traffic
 ---
 
