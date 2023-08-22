@@ -11,7 +11,7 @@ res_type: kb
 ## Capturing HTTPS from Firefox for Android
 
 
-By default, the Android version of Firefox does not respect and trust the Fiddler Everywhere CA (certificate authority). As a result, once the [proxy configuration]({%slug capture-mobile-ios-traffic%}) is in place, you will see a warning in Firefox for Android that prevents any further browsing due to security concerns. To resolve that issue and to be able to capture HTTPS traffic from Firefox for Android, you need to explicitly instruct the mobile browser to trust user-installed CAs through the following steps:
+By default, the Android version of Firefox does not respect and trust the Fiddler Certificate Authority (CA). As a result, once the [proxy configuration]({%slug capture-mobile-ios-traffic%}) is in place, you will see a warning in Firefox for Android that prevents any further browsing due to security concerns. To resolve that issue and to be able to capture HTTPS traffic from Firefox for Android, you need to explicitly instruct the mobile browser to trust user-installed CAs through the following steps:
 
 
 1. On your mobile device, open Firefox for Android and go to **Settings**.
