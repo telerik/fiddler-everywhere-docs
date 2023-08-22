@@ -40,7 +40,7 @@ The tutorial requires administrative privileges for the current user (on the And
 
 ### Configuring Fiddler Everywhere Host
 
-1. Enable the remote connections in Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
+1. Enable the remote connections in Fiddler Everywhere through **Settings** > **Connections** > **Allow remote devices to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
 1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to obtain the host IP address. Alternatively, you can get the IP address using a terminal command like  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere host machine is **192.168.100.50**. 
 
@@ -50,17 +50,19 @@ The tutorial requires administrative privileges for the current user (on the And
 
 The following steps apply to real Android devices with access to the Internet through the same network as the Fiddler Everywhere host machine.
 
-1. Install the Fiddler Everywhere root CA (certificate authority) on the Android device.
+1. Install the Fiddler's Certificate Authority (CA) on the Android device.
 
-    1. Open a mobile browser on the Android device and type the `http://ipv4.fiddler:8866` echo service address of Fiddler Everywhere.
+    1. Open a mobile browser on the Android device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere.
 
         >tip Instead of the special Fiddler echo service address, you can use the Fiddler host IP as follows: `http://<fiddler-host-IP>:8866`.
 
-    1. Tap the option to download the CA.
+    1. Tap the option to download the CA. 
+
+        >important Do not tap the CA directly, as this won't trigger the install. Instead, go ahead with the instructions as described in the next step.
             
     1. Install the downloaded Fiddler CA in the device certificate storage. The settings location depends on the Android version but is usually under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
-    1. Ensure the Fiddler Everywhere CA is installed and trusted through the **Settings** > **Security** > **Encryption & Credentials** > **Trusted Credentials** > **User** tab.
+    1. Ensure the Fiddler CA is installed and trusted through the **Settings** > **Security** > **Encryption & Credentials** > **Trusted Credentials** > **User** tab.
 
 1. Set the Fiddler Everywhere proxy on the Android device or emulator.
 
@@ -71,8 +73,6 @@ The following steps apply to real Android devices with access to the Internet th
      - Enter the IP address of the Fiddler Everywhere host&mdash;for example, `192.168.100.50`.
 
      - Enter the Fiddler Everywhere proxy port. By default, the port is `8866`.
-
-     >important Ensure that all VPNs from the Fiddler host and the Android devices are turned off or bypassed.
 
 
 You can capture traffic from your Android mobile browser with the above setup. Test your configuration as follows:
@@ -109,7 +109,7 @@ The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler E
 
 You can capture traffic from your Android mobile browser with the above setup. Test your configuration as follows:
 
-- In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote computers to connect** is checked. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
+- In Fiddler Everywhere, ensure that **Settings** > **Connections** > **Allow remote devices to connect** is checked. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
 - On your emulator, open **Google Chrome** (or any other mobile browser that respects the proxy settings) and type [https://example.com](https://example.com).
 

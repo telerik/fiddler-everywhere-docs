@@ -10,7 +10,7 @@ previous_url: /knowledge-base/how-to-capture-traffic-from-another-pc, /knowledge
 
 # Capturing Traffic from Remote Devices
 
-The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install user CA (certificate authority). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android]({%slug capture-mobile-android-traffic%}) or [iOS]({%slug capture-mobile-ios-traffic%}).
+The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install Fiddler's Certificate Authority (CA). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android]({%slug capture-mobile-android-traffic%}) or [iOS]({%slug capture-mobile-ios-traffic%}).
 
 
 ## Prerequisites
@@ -36,7 +36,7 @@ Fiddler Everywhere provides an automated guide to configure remote Windows captu
 
 1. Open the **Windows** tutorial and follow the instructions.
 
-The tutorial requires administrative privileges for the current user (on the remote host) to install Fiddler's CA (certificate authority) and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote Windows device.
+The tutorial requires administrative privileges for the current user (on the remote host) to install Fiddler's CA and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote Windows device.
 
 
 ## Capturing Remote macOS Traffic
@@ -51,7 +51,7 @@ Fiddler Everywhere provides an automated guide to configure remote macOS capturi
 
 1. Open the **macOS** tutorial and follow the instructions.
 
-The tutorial requires administrative privileges for the current user (on the remote host) to install Fiddler's CA (certificate authority) and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote macOS device.
+The tutorial requires administrative privileges for the current user (on the remote host) to install Fiddler's CA and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote macOS device.
 
 
 ## Configuring Other Generic Devices (Manual Setup)
@@ -65,7 +65,7 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 
 ### Configuring the Fiddler Everywhere Host
 
-1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
+1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote devices to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
 1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to get the host IP address. Alternatively, you can get the host IP address using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
 
@@ -73,6 +73,13 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 
 
 ### Configuring the Fiddler proxy on the Remote Device
+
+
+1. Open a browser on the remote device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. 
+
+1. Click the Fiddler root certificate link to download it.
+
+1. Open your client's certificate manager (like Keychain App on macOS or Certificate Manager on Windows), install, and trust the downloaded Fiddler CA.
 
 1. Go to the operating system proxy settings on the target machine.
 
@@ -85,9 +92,3 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
     - Enter the Fiddler Everywhere proxy port. By default, the port is `8866`.
 
     - Apply and save the above settings.
-
-1. Open a browser on the remote device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. 
-
-1. Click the Fiddler root certificate link to download it.
-
-1. Open your client's certificate manager (like Keychain App on macOS or Certificate Manager on Windows), install, and trust the downloaded Fiddler CA.

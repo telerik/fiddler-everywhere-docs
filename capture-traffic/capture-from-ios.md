@@ -40,7 +40,7 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 ### Configuring Fiddler Everywhere Host
 
-1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote computers to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
+1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote devices to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
 1. Check the local IP address of the host where the Fiddler Everywhere application runs. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to obtain the host IP address. Alternatively, you can get the IP address while using  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere machine is **192.168.0.101**.
 
@@ -50,7 +50,7 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 Refer to the following steps to configure real iOS devices to work alongside a Fiddler Everywhere host. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configure-the-ios-simulator). Real iOS devices and iOS simulators must be discoverable on the same local network.
 
-1. Install the Fiddler Everywhere root CA (certificate authority) on the iOS device.
+1. Install the Fiddler's Certificate Authority (CA) on the iOS device.
 
     1. Open a browser on the iOS device and type the `http://ipv4.fiddler:8866` echo service address of Fiddler Everywhere. Follow the Fiddler root certificate link to **download** the Fiddler CA.
 
