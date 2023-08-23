@@ -33,7 +33,7 @@ Fiddler Everywhere provides an automated guide to configure remote Android captu
 
 1. Open the **Android** tutorial and follow the instructions.
 
-The tutorial requires administrative privileges for the current user (on the Android device) to install Fiddler's CA (certificate authority) and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote Android device.
+The tutorial requires administrative privileges for the current user (on the Android device) to install Fiddler's Certificate Authority (CA)and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote Android device.
 
 
 ## Capturing Remote Android Traffic (Manual Setup)
@@ -92,7 +92,7 @@ The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler E
 
 1. Open **Proxy**, and then select **Manual proxy**.
 
-    - Enter the emulator loopback address as a proxy address. For the state Android emulators, the address is `10.0.2.2.
+    - Enter the emulator loopback address as a proxy address. For the state Android emulators, the address is `10.0.2.2`.
 
     - Enter the proxy port. Use the port configured in the Fiddler Everywhere application (configurable through **Settings** > **Connections** > **Fiddler listens on port...** ). The default port is `8866`.
 

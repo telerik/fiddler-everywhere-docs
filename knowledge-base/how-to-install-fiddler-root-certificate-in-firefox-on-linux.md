@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-How can I manually install the Fiddler's CA (certificate authority) in Firefox?
+How can I manually install the Fiddler's Certificate Authority (CA)in Firefox?
 
 ## Solution
 

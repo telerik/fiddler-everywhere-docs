@@ -33,7 +33,7 @@ Fiddler Everywhere provides an automated guide to configure remote iOS capturing
 
 1. Open the **iOS** tutorial and follow the instructions.
 
-The tutorial requires administrative privileges for the current user (on the iOS device) to install Fiddler's CA (certificate authority) and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote iOS device.
+The tutorial requires administrative privileges for the current user (on the iOS device) to install Fiddler's Certificate Authority (CA)and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote iOS device.
 
 
 ## Capturing Remote iOS Traffic (Manual Setup)
@@ -52,7 +52,7 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 
 1. Install the Fiddler's Certificate Authority (CA) on the iOS device.
 
-    1. Open a browser on the iOS device and type the `http://ipv4.fiddler:8866` echo service address of Fiddler Everywhere. Follow the Fiddler root certificate link to **download** the Fiddler CA.
+    1. Open a browser on the iOS device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. Follow the Fiddler root certificate link to **download** the Fiddler CA.
 
         >tip Instead of the special Fiddler echo service address, you can use the Fiddler host IP as follows: `http://<fiddler-host-IP>:8866`.
 
@@ -74,15 +74,9 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 
         - Enter the Fiddler Everywhere proxy port in the **PORT** field. By default, the port is `8866`.
 
-        >tip With the current setup, you can capture non-secure HTTP traffic. However, if you try to open any HTTPS website, you'll get the "This site's security certificate is not trusted!" error. To fix this issue, trust the Fiddler root certificate.
-
-
->important The last step is crucial, and HTTPS browsing will fail if the certificate is not trusted! Newer iOS versions will show that the certificate is successfully installed. Still, HTTPS sites will fail to open due to security errors if the certificate is not explicitly enabled/fully trusted.
-
-
 ## Configuring the Fiddler proxy on iOS Emulator
 
-The later versions of the iOS simulators, accessible through XCode, are using the macOS system proxy by default. 
+The later versions of the iOS simulators, accessible through Xcode, are using the macOS system proxy by default. 
 
 1. In Fiddler Everywhere, open the **Traffic** pane and enable the system capturing mode by toggling ON the **System Proxy** switch.
 
