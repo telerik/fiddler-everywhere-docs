@@ -1,5 +1,34 @@
 [
     {
+        "version": "4.5.0",
+        "title": "Fiddler Everywhere v4.5.0",
+        "date": "August 24, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add Remote Device wizards for an easier mobile and remote computers connection to Fiddler Everywhere"
+                    },
+                    {
+                        "title": "Update HTML page for Fiddler echo service and add a new HTML page for testing remote devices connectivity"
+                    },
+                    {
+                        "title": "Automatically disable the option for remote computers to connect after app quit for better security"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Do not require Fiddler Root Certificate to be trusted on the local machine in order to connect and inspect traffic from remote devices"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.4.2",
         "title": "Fiddler Everywhere v4.4.2",
         "date": "August 4, 2023",
