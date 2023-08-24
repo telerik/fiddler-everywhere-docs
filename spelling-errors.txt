@@ -65,3 +65,4 @@ JVM
 keystore
 keytool
 keychain
+hotspot
