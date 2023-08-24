@@ -33,7 +33,7 @@ Fiddler Everywhere provides an automated guide to configure remote iOS capturing
 
 1. Open the **iOS** tutorial and follow the instructions.
 
-The tutorial requires administrative privileges for the current user (on the iOS device) to install Fiddler's Certificate Authority (CA)and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote iOS device.
+The tutorial requires administrative privileges for the current user (on the iOS device) to install Fiddler's Certificate Authority (CA) and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote iOS device.
 
 
 ## Capturing Remote iOS Traffic (Manual Setup)
@@ -54,11 +54,9 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 
     1. Open a browser on the iOS device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. Follow the Fiddler root certificate link to **download** the Fiddler CA.
 
-        >tip Instead of the special Fiddler echo service address, you can use the Fiddler host IP as follows: `http://<fiddler-host-IP>:8866`.
-
     1. On your iOS device, open **General** > **Profile Downloaded** and install the downloaded Fiddler CA.
 
-    1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority** CA.
+    1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority**.
 
         >tip The CA name you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed.
 

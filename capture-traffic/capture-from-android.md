@@ -54,8 +54,6 @@ The following steps apply to real Android devices with access to the Internet th
 
     1. Open a mobile browser on the Android device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere.
 
-        >tip Instead of the special Fiddler echo service address, you can use the Fiddler host IP as follows: `http://<fiddler-host-IP>:8866`.
-
     1. Tap the option to download the CA. 
 
         >important Do not tap the CA directly, as this won't trigger the install. Instead, go ahead with the instructions as described in the next step.
