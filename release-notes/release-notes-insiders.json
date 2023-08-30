@@ -1,5 +1,40 @@
 [
     {
+        "version": "4.6.0-insiders",
+        "title": "Fiddler Everywhere v4.6.0",
+        "date": "August 30, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Show upstream proxy information in the connection popup at the lower right of the application window"
+                    },
+                    {
+                        "title": "Add new vertical Composer layout, which can be switched on/off similar to the session inspectors layout"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Default terminal selection window does not have a default option"
+                    },
+                    {
+                        "title": "Link to account page for users with expired old subscriptions"
+                    },
+                    {
+                        "title": "Application error when trying to share a rule with manual response and no body"
+                    },
+                    {
+                        "title": "Remote Device wizard unable to get the names of the local network adapters in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.5.0-insiders",
         "title": "Fiddler Everywhere v4.5.0",
         "date": "August 23, 2023",
