@@ -12,9 +12,6 @@
                     },
                     {
                         "title": "Add new vertical Composer layout, which can be switched on/off similar to the session inspectors layout"
-                    },
-                    {
-                        "title": "Improve the last step of the remote device connection wizard to better detect if the Fiddler CA has been trusted on the device"
                     }
                 ]
             },
