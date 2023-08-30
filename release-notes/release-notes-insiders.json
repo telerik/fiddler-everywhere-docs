@@ -11,7 +11,7 @@
                         "title": "Show upstream proxy information in the connection popup at the lower right of the application window"
                     },
                     {
-                        "title": "Add new horizontal Composer layout, which can be switched on/off similar to the session inspectors layout"
+                        "title": "Add new vertical Composer layout, which can be switched on/off similar to the session inspectors layout"
                     },
                     {
                         "title": "Improve the last step of the remote device connection wizard to better detect if the Fiddler CA has been trusted on the device"
@@ -22,16 +22,16 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Fix default terminal selection window having no default option"
+                        "title": "Default terminal selection window does not have a default option"
                     },
                     {
-                        "title": "Fix link to account page for users with expired old subscriptions"
+                        "title": "Link to account page for users with expired old subscriptions"
                     },
                     {
-                        "title": "Fix application error when trying to share a rule with manual response and no body"
+                        "title": "Application error when trying to share a rule with manual response and no body"
                     },
                     {
-                        "title": "Fix Remote Device wizard unable to get the names of the local network adapters in some cases"
+                        "title": "Remote Device wizard unable to get the names of the local network adapters in some cases"
                     }
                 ]
             }
