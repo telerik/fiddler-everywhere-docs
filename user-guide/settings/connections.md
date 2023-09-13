@@ -17,7 +17,7 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
 - **Enable Streaming Mode**&mdash;With **Streaming mode** enabled, the response is immediately returned to the client as they are downloaded. Modifying the Response body (through the **Rules**) is possible only when **Streaming mode** is disabled.
 
-- **Allow remote devices to connect**&mdash;Controls whether inbound connections to Fiddler Everywhere are allowed. Enable this option to capture traffic from remote devices. Behind the scenes, the option opens (or closes) the Fiddler Everywhere port on the host machine.
+- **Allow remote devices to connect**&mdash;Controls whether inbound connections to Fiddler Everywhere are allowed. Enable this option to capture traffic from remote devices. Behind the scenes, the option opens (or closes) the Fiddler Everywhere port for inbound connections on the host machine.
 
 - **Keep it ON after app restart**&mdash;With this option enabled, the **Allow remote devices to connect** persists for subsequent times the application starts.
 
