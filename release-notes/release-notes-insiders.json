@@ -1,5 +1,34 @@
 [
     {
+        "version": "4.6.1-insiders",
+        "title": "Fiddler Everywhere v4.6.1",
+        "date": "September 14, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Improve raw and bulk edit operations in Composer"
+                    },
+                    {
+                        "title": "Download shared and updated resources after confirmation by the user"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "App freezes for a short time on macOS when opening certain websites"
+                    },
+                    {
+                        "title": "Performance is slowed down when capturing a high volume of sessions"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.6.0-insiders",
         "title": "Fiddler Everywhere v4.6.0",
         "date": "August 30, 2023",
