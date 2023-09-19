@@ -8,7 +8,7 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Offline support on Windows fails to read the email of some users"
+                        "title": "Offline support on Windows fails to read the email in some cases"
                     },
                     {
                         "title": "Update third party dependencies to mitigate CVE-2023-4863"
