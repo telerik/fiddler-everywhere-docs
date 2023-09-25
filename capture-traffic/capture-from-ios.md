@@ -94,7 +94,7 @@ The later versions of the iOS simulators, accessible through Xcode, are using th
 
         >tip The CA name you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed.
 
-    1. In the iOS simulator, go to **Settings** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority**.
+    1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority**.
 
     >tip Due to [a security limitation](https://developer.apple.com/forums/thread/124056), some versions of the iOS simulators won't be able to access the folders containing the trust certificates. To capture HTTPS traffic, you must manually export and install the Fiddler Everywhere certificate on your iOS simulator. You can achieve that by dragging and dropping the exported CRT file (**Settings** > **HTTPS** > **Advanced Settings** > **Export root certificate(DER/Binary format)** ) into the iOS simulator.
 
