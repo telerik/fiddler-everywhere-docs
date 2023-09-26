@@ -11,11 +11,15 @@ previous_url: /collaboration
 
 This article covers the sharing capabilities of Fiddler Everywhere as follows:
 
-- [Sharing session's snapshots](#sharing-sessions-snapshotss)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Sessions** tree.
+- [Sharing session's snapshots](#sharing-sessions-snapshots)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Sessions** tree.
 
-- Sharing API request collections&mdash;Options to share API requests collections as local/cloud collections in the **Requests** list.
+- [Sharing API request collections](#sharing-requests-collections)&mdash;Options to share API requests collections as local/cloud collections in the **Requests** list.
 
 - [Sharing rules](#sharing-rules)&mdash;Options to share single or multiple rules within the **Rules** tab.
+
+- [Adding Context for Collaborators](#adding-context-for-collaborators)&mdash;Options to add contextual information in the form of comments and notes.
+
+- [Receiving Shared Resources](#receiving-shared-resources)&mdash;Details on how the recipients can access the shared resources.
 
 ## Sharing Session's Snapshots
 
@@ -45,9 +49,11 @@ To share a saved session snapshot from the save **Sessions** tree:
 
 1. Enter a valid email (mandatory) and notes (optional), and then click **Share**.
 
+
+
 ### Managing Users
 
-The **Manage Users** option appears only if the session snapshot is stored in the cloud and shared. Click **Manage Users** to prompt a window that allows you to manage the list of users with access to the shared session.
+The **Manage Users** option appears if the session snapshot is stored in the cloud and shared. Click **Manage Users** to prompt a window that allows you to manage the list of users with access to the shared session.
 
 
 ### Deleting Shared Sessions
@@ -92,7 +98,7 @@ To share a created rule or group of rules, execute the following steps:
     ![Sharing a rule or group of rules](../images/collaboration/share-rules-toolbar.png)
 
 
-## Sharing Context with Collaborators
+## Adding Context for Collaborators
 
 Some network sessions may lack essential details not captured in the technical data. Fiddler Everywhere provides options for you and your collaborators to add context to the captured and shared sessions, comment in the same communication thread, and provide additional information by adding **comments** per session and **notes** per shared entities.
 
@@ -118,10 +124,19 @@ Add additional context in the form of a descriptive note while sharing one or mo
 
     ![Add a note in share prompt window](../images/livetraffic/websessions/websessions-toolbar-share-shareprompt.png)
 
-## Notifications for Shared Content
 
-The Fiddler Everywhere client informs the collaborators about shared sessions in the following ways:
-- Collaborators receive an email with an invitation to open the shared session. If the session creator has added a note, the email will display the note as well.
-- All listed collaborators receive a notification within the Fiddler Everywhere client. To open the shared session in a separate tab, click the notification.
+## Receiving Shared Resources
+
+The Fiddler Everywhere client informs the recipients about shared resources (including shared sessions, requests, and rules) in the following ways:
+
+- Collaborators receive an email with an invitation to open the shared resources. If the session creator has added a note, the email will display the note as well.
+
+- All listed collaborators receive a notification within the Fiddler Everywhere client. To open the shared session:
+
+    * Click on the received notification.
+
+    * Confirm the opening of the resource.
+
+    * The shared resources load in the respective section (for example, a shared session loads in the **Sessions** list, a rule in the **Rules Queue**, and a request in the **Requests** collection). If the shared resource is a snapshot of sessions, its content immediately loads in a new tab.
 
     ![Notification for received content](../images/settings/notifications-for-shared-content.png)
