@@ -50,11 +50,12 @@ Once the API request executes, you can inspect its HTTP Response in the Composer
 
 As a result, the session loads as an HTTP Request in the Fiddler's Composer, where you can make atomic modifications to its structure. The **Composer** has a flexible user interface that allows you to switch between **Structured** and **Raw** content (refer to the screenshots below) and between **Table** or **Bulk** style inspectors.
 
-Example for using the **Structured** mode
-![structured mode in Composer](../images/composer/composer-structured.png)
 
-Example for using the **Raq** mode
-![raw mode in Composer](../images/composer/composer-raw.png)
+Example for using the **Structured** mode
+    ![structured mode in Composer](../images/composer/composer-structured.png)
+
+Example for using the **Raw** mode
+    ![raw mode in Composer](../images/composer/composer-raw.png)
 
 ## Save API Request
 
