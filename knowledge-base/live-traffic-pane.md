@@ -60,7 +60,7 @@ Use the **>_ Terminal** button to capture traffic from a specific terminal insta
 
 ### Removing All Sessions
 
-Use the **Remove All** button to automatically remove all captured traffic from the **Live Traffic** grid. To remove only specific sessions, select the desired ones and use the remove options from the context menu.
+The **Remove All** button deletes all captured traffic from the **Live Traffic** grid. The action requires explicit confirmation. To remove only specific sessions, select the desired ones and use the remove options from the context menu.
 
 
 ### Searching
