@@ -54,7 +54,7 @@ As a result, the session loads as an HTTP Request in the Fiddler's Composer, whe
 Example for using the **Structured** mode
     ![structured mode in Composer](../images/composer/composer-structured.png)
 
-Example for using the **Raw** mode
+* Using the **Raw** mode
     ![raw mode in Composer](../images/composer/composer-raw.png)
 
 ## Save API Request
