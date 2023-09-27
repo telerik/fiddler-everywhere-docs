@@ -8,7 +8,7 @@
                 "type": "New",
                 "entries": [
                     {
-                        "title": "Add option to set custom chromium flags or to start an entirely custom chromium browser instance"
+                        "title": "Add option to persist preconfigured browser data"
                     },
                     {
                         "title": "Add confirmation on Remove all button before clearing the captured sessions in the Live Traffic grid"
