@@ -32,6 +32,8 @@ Various reasons can result in Fiddler Everywhere not acting as a system proxy. B
 
  - [Incompatibility with third-party proxy tools](#incompatibility-with-third-party-proxy-tools).
 
+ - [Limited Internet Connectivity](#limited-internet-connectivity)
+
 
 
 ## Lack of Administrative Rights
@@ -98,19 +100,19 @@ The system capturing mode can set and unset the operating system proxy, which ma
 
 ## Incompatibility with security tools
 
-In modern-day environments, it is common for security tools to remove administrative rights from applications automatically. Additionally, administrators may enforce zero-trust policies, often automatically blocklisting all newly installed software like Fiddler Everywhere.
+In modern-day environments, it's common for security tools to remove administrative rights from applications automatically. Additionally, administrators may enforce zero-trust policies, often automatically blocklisting all newly installed software like Fiddler Everywhere.
 
 ### Troubleshooting approach
 
-To effectively troubleshoot this scenario, it is advisable to thoroughly audit the security tooling and administrative policies implemented on your machine by your company. Take into consideration the following components and procedures that may be impacting the currently logged-in user:
+To troubleshoot this scenario, it's advisable to thoroughly audit the security tooling and administrative policies implemented on your machine by your company. Take into consideration the following components and procedures that may be impacting the currently logged-in user:
 
-- Zero-trust Tooling: Review any zero-trust tooling or security measures that may restrict certain network access or proxy configurations.
-- Antivirus Software: Check if the antivirus software installed on your machine has policies that could potentially interfere with network connections or proxy settings.
+- Zero-trust Tooling: Review any zero-trust tooling or security measures that may restrict network access or proxy configurations.
+- Antivirus Software: Check if the antivirus software installed on your machine has policies that can potentially interfere with network connections or proxy settings.
 - Firewalls: Examine firewall configurations to ensure they are not blocking necessary network connections or proxy usage.
-- Group Network Policies: Evaluate group network policies that might restrict network access, proxy configurations, or specific user privileges.
+- Group Network Policies: Evaluate group network policies that restrict network access, proxy configurations, or specific user privileges.
 - Restricted rights to modify system settings (including the OS network settings).
 - Restricted file system read/write rights.
-- Limited access to third-party endpoints.
+- Limited access to third-party endpoints including access to [the required Fiddler Everywhere endpoints]({%slug first_steps_windows%}#prerequisites).
 
 The existence of any of the above can prevent Fiddler Everywhere from running correctly.
 
@@ -121,7 +123,7 @@ Contact your system administrator and ask them to:
 - Enable Fiddler Everywhere to run with administrative rights.
 - Enable Fiddler Everywhere to set/unset the operating system proxy settings. 
 - Open the preferred proxy port (by default, port 8866).
-- Verify that the host machine covers [the requirements for running Fiddler Everywhere]({%slug first_steps_windows%}#prerequisites).
+- Verify that the host system covers [the requirements for running Fiddler Everywhere]({%slug first_steps_windows%}#prerequisites).
 
 ### Solution - Using Alternative Capturing Modes
 
@@ -215,6 +217,30 @@ The system capturing set and unset the operating system proxy, which can cause a
 - The [dedicated browser capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing).
 
 - The [dedicated terminal capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-terminal-capturing). 
+
+
+## Limited Internet Connectivity
+
+Fiddler Everywhere has a personalized user interface with different authentication options, collaboration functionalities, and cloud saves. These features utilize the following online endpoints, which must be accessible from the machine that hosts Fiddler.
+
+```curl
+  https://*.telerik.com/
+  https://*.getfiddler.com/
+  https://fiddler-backend-production.s3-accelerate.amazonaws.com
+```
+
+In case the above endpoints are inaccessible, then you can experience a login error that contains the following message **_"HTTP failure response for
+https://identity.getfiddler.com/oauth/token:0 Unknown Error"_**.
+
+
+### Solution - Provide Access to the Fiddler's Endpoints
+
+To ensure that Fiddler Everywhere can start, use a network that allows access to the listed API endpoints.
+
+
+### Solution - Use Fiddler's Offline Mode
+
+The [Fiddler Everywhere enterprise tier]() includes the offline mode feature (currently available only for Windows and after covering specific technical requirements). Contact us if you want to learn more about the offline mode and using Fiddler Everywhere without an internet connection.
 
 
 ## Capture Not Working - All Other Scenarios
