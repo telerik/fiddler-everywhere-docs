@@ -48,7 +48,7 @@ Once the API request executes, you can inspect its HTTP Response in the Composer
 
 1. Capture a session (or open a session from the saved save **Sessions** tree) and use the **Edit in Composer** option from the context menu.
 
-As a result, the session loads as an HTTP Request in the Fiddler's Composer, where you can make atomic modifications to its structure. The **Composer** has a flexible user interface that allows you to switch between **Structured** and **Raw** content (refer to the screenshots below) and between **Table** or **Bulk** style inspectors.
+As a result, the session loads as an HTTP request in Fiddler's **Composer**, where you can make atomic modifications to its structure. The **Composer** has a flexible user interface that allows you to switch between **Structured** and **Raw** content (refer to the screenshots below) and between **Table** or **Bulk** style inspectors.
 
 
 * Using the **Structured** mode
