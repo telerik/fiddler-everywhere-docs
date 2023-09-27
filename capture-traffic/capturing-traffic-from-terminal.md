@@ -61,7 +61,7 @@ Because Windows PowerShell uses the .NET Framework (not to be confused with Powe
 
 ### NET Traffic through a Terminal
 
-Capturing traffic from **curl** or **Node.js** libraries does not require explicitly installing and trusting the Fiddler root CA (certificate authority) on the Fiddler host. However, this is a mandatory requirement for a NET application that executes HTTPS requests.
+Capturing traffic from **curl** or **Node.js** libraries does not require explicitly installing and trusting the Fiddler certificate authority on the Fiddler host. However, this is a mandatory requirement for a NET application that executes HTTPS requests.
 
 [Learn how to install and trust the Fiddler root CA here...]({%slug trust-certificate%})
 

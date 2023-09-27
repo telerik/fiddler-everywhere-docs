@@ -57,7 +57,7 @@ The tutorial requires administrative privileges for the current user (on the rem
 
 ## Configuring Other Generic Devices (Manual Setup)
 
-You can manually configure both the Fiddler Everywhere and the remote device. Notice that the instructions below apply only to remote devices that allow configuring manual proxy and installing the Fiddler CA (certificate authority).
+You can manually configure both the Fiddler Everywhere and the remote device. Notice that the instructions below apply only to remote devices that allow configuring manual proxy and installing the Fiddler certificate authority (CA).
 
 1. [Prepare Fiddler Everywhere host for capturing remote traffic](#configuring-the-fiddler-everywhere-host).
 
@@ -77,7 +77,7 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 
 1. Open a browser on the remote device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. 
 
-1. Click the Fiddler root certificate link to download it.
+1. Click the Fiddler CA link to download it.
 
 1. Open your client's certificate manager (like Keychain App on macOS or Certificate Manager on Windows), install, and trust the downloaded Fiddler CA.
 
