@@ -1,5 +1,37 @@
 [
     {
+        "version": "4.7.0-insiders",
+        "title": "Fiddler Everywhere v4.7.0",
+        "date": "September 28, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add option to persist preconfigured browser data"
+                    },
+                    {
+                        "title": "Add confirmation on Remove all button before clearing the captured sessions in the Live Traffic grid"
+                    },
+                    {
+                        "title": "Add option to choose where to install the root certificate authority for Windows"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Unclear error message appears if login endpoints are unreachable"
+                    },
+                    {
+                        "title": "Unable to use vertical scroll of sessions in the Live Traffic grid in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.6.2-insiders",
         "title": "Fiddler Everywhere v4.6.2",
         "date": "September 19, 2023",
