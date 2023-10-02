@@ -1,5 +1,20 @@
 [
     {
+        "version": "4.7.1",
+        "title": "Fiddler Everywhere v4.7.1",
+        "date": "October 02, 2023",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Update third-party dependencies to mitigate CVE-2023-5217"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.7.0",
         "title": "Fiddler Everywhere v4.7.0",
         "date": "September 28, 2023",
@@ -43,7 +58,7 @@
                         "title": "Offline support on Windows fails to read the email in some cases"
                     },
                     {
-                        "title": "Update third party dependencies to mitigate CVE-2023-4863"
+                        "title": "Update third-party dependencies to mitigate CVE-2023-4863"
                     }
                 ]
             }
