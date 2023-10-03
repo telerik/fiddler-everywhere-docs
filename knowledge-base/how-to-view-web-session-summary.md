@@ -31,7 +31,7 @@ An auto-generated identification number for the currently listed sessions.
 
 Indicates the used protocol, which can be __HTTP__ (Hypertext Transfer Protocol) or __HTTPS__ (secure HTTP). The __HTTPS__ is HTTP but with an added secure layer, which is usually TLS (or SSL). The secure layer encrypts the standard HTTP requests and responses, making them far more reliable than the plain-text HTTP.
 
-Fiddler can decode the encrypted content, but you have to install the Fiddler certificate authority to enable this scenario. Once you install it and the HTTPS capturing is enabled, Fiddler is acts as a "man-in-the-middle" and can decode encrypted sessions by toggling  **Click to show decoded body / Click to show original body** button.
+Fiddler can decode the encrypted content, but you have to install the Fiddler certificate authority to enable this scenario. Once you install it and the HTTPS capturing is enabled, Fiddler acts as a "man-in-the-middle" and can decode encrypted sessions by toggling  **Click to show decoded body / Click to show original body** button.
 
 ### Host
 
