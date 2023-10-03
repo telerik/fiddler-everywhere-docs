@@ -33,7 +33,7 @@ Fiddler Everywhere provides an automated guide to configure remote Android captu
 
 1. Open the **Android** tutorial and follow the instructions.
 
-The tutorial requires administrative privileges for the current user (on the Android device) to install Fiddler's Certificate Authority (CA)and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote Android device.
+The tutorial requires administrative privileges for the current user (on the Android device) to install the Fiddler certificate authority (CA) and to set manual proxy. Once the steps are executed, you can immediately capture HTTPS traffic from the remote Android device.
 
 
 ## Capturing Remote Android Traffic (Manual Setup)
@@ -102,7 +102,7 @@ The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler E
 
         1. Install the downloaded Fiddler CA in the device certificate storage. The settings location depends on the Android version but is usually under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
-    1. Ensure that the Fiddler Everywhere certificate installs as a user certificate in the **Settings** > **Security** > **Encryption & Credentials** > **User** tab.
+    1. Ensure that the Fiddler Everywhere CA installs as a user certificate in the **Settings** > **Security** > **Encryption & Credentials** > **User** tab.
 
 
 You can capture traffic from your Android mobile browser with the above setup. Test your configuration as follows:

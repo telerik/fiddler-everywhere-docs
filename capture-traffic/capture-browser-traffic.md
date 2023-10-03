@@ -11,11 +11,11 @@ This article describes how to use Fiddler's **independent browser capturing mode
 
 - No need to set/unset the operating system proxy.
 
-- No need to install and trust the Fiddler root CA.
+- No need to install and trust the Fiddler certificate authority (CA).
 
 - You will capture only specific HTTPS traffic generated from the independent browser instance.
 
-The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust root certificates. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
+The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust third-party CA. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
 
 ## Capturing Browser Traffic
