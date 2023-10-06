@@ -47,7 +47,7 @@ The independent browser capturing mode supports Chromium-based browsers like Goo
 
 ## Persisting Data
 
-The independent browser capturing mode allows you to create a custom directory where the browser data persists. That way, you can reuse the same custom browser instance and easily reuse data like entered URLs, cookies, form data, authentication details, etc.
+The independent browser capturing mode allows you to create a custom directory where the browser data persists. That way, you can reuse the same custom browser instance and easily keep settings and data like entered URLs, cookies, form data, authentication details, etc.
 
 To use a browser instance that persists the input data:
 
