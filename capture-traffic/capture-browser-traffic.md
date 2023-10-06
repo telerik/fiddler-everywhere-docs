@@ -61,7 +61,7 @@ To use a browser instance that persists the input data:
 
 1. Click on **save** to confirm the change.
 
-Once the above change is applied, [the browser capturing mode](#capturing-browser-traffic) will reuse the newly set custom instance.
+Once the above change is applied, [the browser capturing mode](#capturing-browser-traffic) will reuse those settings for the newly started instances.
 
 
 ## Capturing from Other Browsers

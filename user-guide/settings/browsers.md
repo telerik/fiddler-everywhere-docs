@@ -19,7 +19,7 @@ The **Browser Data** sub-menu provides an option for choosing whether the [indep
 
 - The **Use clean instance** option instructs Fiddler to always use a new clean instance for the [**independent browser capturing mode**]({% slug capture-traffic-get-started %}#independent-browser-capturing). No data persists when reusing the capturing mode.
 
-- The **Persist data in a specific directory** option allows you to set a custom directory to persist input data for the [**independent browser capturing mode**]({% slug capture-traffic-get-started %}#independent-browser-capturing). 
+- The **Persist data in a specific directory** option allows you to set a custom directory to persist input data and settings for the [**independent browser capturing mode**]({% slug capture-traffic-get-started %}#independent-browser-capturing). 
 
 The following figure displays the default settings of the **Browsers** menu.
 
