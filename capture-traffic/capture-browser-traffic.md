@@ -44,6 +44,26 @@ As a result, Fiddler Everywhere starts an independent browser instance preconfig
 
 The independent browser capturing mode supports Chromium-based browsers like Google Chrome, Microsoft Edge, Brave, and Vivaldi. You can set your preferred browser through **Settings > Browsers > Manually choose path to browser**. By default, Fiddler will try to automatically detect the path to your locally installed Google Chrome browser.
 
+
+## Persisting Data
+
+The independent browser capturing mode allows you to create a custom directory where the browser data persists. That way, you can reuse the same custom browser instance and easily reuse data like entered URLs, cookies, form data, authentication details, etc.
+
+To use a browser instance that persists the input data:
+
+1. Start Fiddler Everywhere.
+
+1. Go to **Settings > Browsers**
+
+1. From the **Browser Data** section, choose the **Persist data in a specific directory** option.
+
+1. Choose a directory to save the custom browser instance.
+
+1. Click on **save** to confirm the change.
+
+Once the above change is applied, [the browser capturing mode](#capturing-browser-traffic) will reuse the newly set custom instance.
+
+
 ## Capturing from Other Browsers
 
 While the independent browser capturing works only with Chromium-based browsers, Fiddler can capture traffic from virtually any browser application that respects the Fiddler proxy. To capture traffic from browsers like Safari, Mozilla Firefox, or even from Chromium browsers (that are not started as independent instances from within Fiddler Everywhere) then, you can use the Fiddler's [system capturing mode]({%slug capture-system-traffic%}) or the explicit capturing mode.
