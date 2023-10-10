@@ -1,5 +1,37 @@
 [
     {
+        "version": "4.8.0",
+        "title": "Fiddler Everywhere v4.8.0",
+        "date": "October 10, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add option to control zoom level from the application status bar"
+                    },
+                    {
+                        "title": "Fiddler will automatically try to use the Edge browser when the \"Open Browser\" button is clicked, if a Chrome installation is not found"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "In some cases, the \"Save Response body to file\" button is missing"
+                    },
+                    {
+                        "title": "Wrong screen is shown in some cases after completing the \"Filters\" wizard on the home screen"
+                    },
+                    {
+                        "title": "Error is shown when the user login session has expired instead of simply showing the login screen"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.7.1",
         "title": "Fiddler Everywhere v4.7.1",
         "date": "October 02, 2023",
