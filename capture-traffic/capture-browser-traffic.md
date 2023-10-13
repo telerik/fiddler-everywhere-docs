@@ -40,9 +40,14 @@ OR
 
 As a result, Fiddler Everywhere starts an independent browser instance preconfigured to respect the Fiddler proxy and to trust its root CA. You can type an arbitrary URL, and the HTTPS traffic generated from its requests and response will immediately appear in Fiddler's Live Traffic grid.
 
+
+
 ## Choosing Default Browser
 
-The independent browser capturing mode supports Chromium-based browsers like Google Chrome, Microsoft Edge, Brave, and Vivaldi. You can set your preferred browser through **Settings > Browsers > Manually choose path to browser**. By default, Fiddler will try to automatically detect the path to your locally installed Google Chrome browser.
+The independent browser capturing mode supports Chromium-based browsers like Google Chrome, Microsoft Edge, Brave, and Vivaldi. By default, Fiddler Everywhere will automatically detect if your system has installed Google Chrome or Microsoft Edge and will use one of them to start the independent browser instance. The Google Chrome browser will be the default choice of Fiddler if both browsers are available.
+
+You can set your preferred browser through **Settings > Browsers > Manually choose path to browser**. By default, Fiddler will try to automatically detect the path to your locally installed Google Chrome browser, and if not present, it will search for the Microsoft Edge browser.
+
 
 
 ## Persisting Data
