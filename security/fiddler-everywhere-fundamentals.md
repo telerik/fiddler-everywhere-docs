@@ -23,13 +23,11 @@ By default, Fiddler Everywhere captures only non-secure HTTP traffic. As an HTTP
 
 1. The Fiddler Everywhere proxy forwards the response to the client application. Any active Fiddler Everywhere rules (modifying the responses) are applied here.
 
-![Fiddler Everywhere as an MITM proxy](../images/security/fe-proxy-requests-responses.png)
 
 ## Fiddler as a Chained Proxy
 
 By default, Fiddler Everywhere will automatically chain to other system proxies preset on the host machine.
 
-![Fiddler Everywhere as chained proxy](../images/security/fe-proxy-chained.png)
 
 ## Fiddler as an HTTPS Proxy
 
@@ -39,7 +37,7 @@ To capture secure traffic over HTTPS with Fiddler Everywhere, you need to explic
 
 The following image demonstrates how Fiddler Everywhere acts as if the client is speaking to the server, and the other way around&mdash;it works as if the server is communicating with the client applications.
 
-![Fiddler Everywhere as HTTPS proxy](../images/security/fe-proxy-https.png)
+![Fiddler Everywhere as HTTPS proxy](../images/security/fe-tls-proxy.png)
 
 
 ## Additional Resources
