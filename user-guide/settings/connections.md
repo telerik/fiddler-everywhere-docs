@@ -35,7 +35,7 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
     >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they won't trust third-party certificates like the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) might misbehave or not work.
 
-
+![default Connections settings](../../images/settings/settings-connections.png)
 
 ### Streaming Mode
 
