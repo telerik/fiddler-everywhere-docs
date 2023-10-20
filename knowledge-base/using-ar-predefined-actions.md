@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-The [**Rules** tab]({%slug modify-traffic-get-started%}) is a powerful debugging functionality in Fiddler Everywhere. How can I use each of the predefined actions in the **Actions** drop-down as DAT files and customize a rule by adding a [**Custom response file**](#custom-response-file) or a [**Manual Response**](#custom-manual-response)?
+The [**Rules** tab]({%slug modify-traffic-get-started%}) is a powerful debugging functionality in Fiddler Everywhere. How can I use each of the predefined actions in the **Actions** drop-down and customize a rule?
 
 ## Solution
 
@@ -28,13 +28,13 @@ The main idea behind the **Rules** tab is to provide a set of rules based on mat
 
 ### Using the Predefined Actions in Rule Builder
 
-The **Actions** drop-down menu provides several options named **XXX.dat** where **XXX** is a descriptive name of the response.
+The **Actions** drop-down in the **Rules Builder** provides predefined options with a descriptive name of the simulated response.
 
-![Example for predefined response 200 OK from Fiddler](../images/kb/dat-files/kb-rules-fiddlergif-200.png)
+![Example for using the predefined responses](../images/kb/dat-files/predefined-responses.png)
 
-The content of each predefined DAT file is as follows:
+The content of each predefined options is as follows:
 
-* `200_FiddlerGif.dat`
+* `200 OK (Image/gif)`
 
     ```HTTP
     HTTP/1.1 200 OK
@@ -46,7 +46,7 @@ The content of each predefined DAT file is as follows:
     GIF89a# #encoded string for a sample GIF follows here
     ```
 
-* `200_SimpleHTML.dat`
+* `200 OK (HTML)`
 
     ```HTTP
     HTTP/1.1 200 OK
@@ -57,7 +57,7 @@ The content of each predefined DAT file is as follows:
     This is a simple Fiddler-returned <B>HTML</B> page.
     ```
 
-* `200_TransPixel.dat`
+* `200 OK (Pixel)`
 
     ```HTTP
     HTTP/1.1 200 OK
@@ -69,7 +69,7 @@ The content of each predefined DAT file is as follows:
     GIF89a #encoded string for a transparent GIF follows here
     ```
 
-* `204_NoContent.dat`
+* `204 No Content`
 
     ```HTTP
     HTTP/1.1 204 No Content
@@ -78,27 +78,27 @@ The content of each predefined DAT file is as follows:
     Content-Length: 0
     ```
 
-* `302_Redirect.dat`
+* `302 Redirect`
 
     ```HTTP
     HTTP/1.1 302 Redirect
     FiddlerTemplate: True
     Date: Fri, 25 Jan 2013 16:49:29 GMT
-    Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
+    Location: https://www.telerik.com/fiddler/fiddler-everywhere
     Content-Length: 0
     ```
 
-* `303_RedirectWithGet.dat`
+* `303 Redirect (With Get)`
 
     ```HTTP
     HTTP/1.1 303 Redirect Using GET
     FiddlerTemplate: True
     Date: Fri, 25 Jan 2013 16:49:29 GMT
-    Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
+    Location: https://www.telerik.com/fiddler/fiddler-everywhere
     Content-Length: 0
     ```
 
-* `304_NotModified.dat`
+* `304 Not Modified`
 
     ```HTTP
     HTTP/1.1 304 Not Modified
@@ -107,17 +107,17 @@ The content of each predefined DAT file is as follows:
     Content-Length: 0
     ```
 
-* `307_RedirectWithMethod.dat`
+* `307 Redirect (Same Method)`
 
     ```HTTP
     HTTP/1.1 307 Redirect using same Method
     FiddlerTemplate: True
     Date: Fri, 25 Jan 2013 16:49:29 GMT
-    Location: http://www.fiddler2.com/sandbox/FormAndCookie.asp
+    Location: https://www.telerik.com/fiddler/fiddler-everywhere
     Content-Length: 0
     ```
 
-* `401_AuthBasic.dat`
+* `401 Basic Auth`
 
     ```HTTP
     HTTP/1.1 401 Authentication Required
@@ -130,7 +130,7 @@ The content of each predefined DAT file is as follows:
     Fiddler: HTTP/401 Basic Server Auth Required.    
     ```
 
-* `401_AuthDigest.dat`
+* `401 Digest Auth`
 
     ```HTTP
     HTTP/1.1 401 Authentication Required
@@ -143,7 +143,7 @@ The content of each predefined DAT file is as follows:
     Fiddler: HTTP/401 Digest Server Auth Required.
     ```
 
-* `403_AuthDeny.dat`
+* `403 Access Denied`
 
     ```HTTP
     HTTP/1.1 403 Access Denied
@@ -154,7 +154,7 @@ The content of each predefined DAT file is as follows:
     Fiddler: HTTP/403 Access Denied.   
     ```
 
-* `404_Plain.dat`
+* `404 Not Found`
 
     ```HTTP
     HTTP/1.1 404 Not Found
@@ -166,7 +166,7 @@ The content of each predefined DAT file is as follows:
     Fiddler: HTTP/404 Not Found
     ```
 
-* `407_ProxyAuthBasic.dat`
+* `407 Proxy Auth Required`
 
     ```HTTP
     HTTP/1.1 407 Proxy Auth Required
@@ -179,7 +179,7 @@ The content of each predefined DAT file is as follows:
     Fiddler: HTTP/407 Proxy Auth Required.
     ```
 
-* `502_Unreachable.dat`
+* `502 Unreachable Server`
 
     ```HTTP
     HTTP/1.1 502 Unreachable Server
