@@ -72,7 +72,6 @@ Saved requests are loaded as a collection in the **Requests** list and can be re
 ![Creating API request](../images/composer/comp-pane-all.png)
 
 
-
 ## Share Requests Collection
 
 With Fiddler Everywhere, you can quickly share a collection of saved API requests.
@@ -97,18 +96,4 @@ You can save the API request through the following steps.
 
 Saved requests are loaded as a collection in the **Requests** list and can be reused or shared with collaborators at any later moment.
 
-
-## Share Requests Collection
-
-With Fiddler Everywhere, you can quickly share a collection of saved API requests.
-
-- Open the **Request** list.
-
-- Select a collection of saved API requests.
-
-- Use the context menu to share the collection with collaborators.
-
-![Share API requests](../images/composer/comp-requests-share.png)
-
-[Learn more about the Requests collection here...]({%slug composer-collections-get-started%})
 

@@ -10,14 +10,14 @@ res_type: kb
 
 The **Composer** tab enables you to manually create a new HTTP or HTTPS request from scratch and edit an existing captured request, as well as send and test them. This article explains the user interface that creates the Fiddler Everywhere's Composer. [Learn more about how to use the Composer here...]({%slug composer-get-started%})
 
-To get started, open the **Composer** tab from the same pane. Alternatively, you can open a new **Composer** tab by clicking the **New Request** (**+**) button in the [**Requests**]({%slug saved-requests-tab%}) tab or by using the **Edit in Composer** option from the [**Live Traffic** context menu](#editing-in-the-composer).
+To get started, open the **Composer** tab from the same pane. Alternatively, you can open a new **Composer** tab by clicking the **New Request** (**+**) button in the [**Requests**]({%slug saved-requests-tab%}) tab or by using the **Edit in Composer** option from the **Live Traffic** grid's context menu.
 
 The **Composer** tab houses the **Request Composer** and the **Request Inspector**, and contains major sections to construct a request, to observe the response, and to save, replay and share previously composed requests.
 
 The top section contains a toolbar with the following functionalities:
-  - The [**HTTP Methods**](#http-methods) is a drop-down where you can specify the request method&mdas;for example, GET, POST, and so on.
+  - The [**HTTP Methods**](#http-methods) is a drop-down where you can specify the request method&mdash;for example, GET, POST, and so on.
   - The [**URL field**](#url-field) enables you to enter the endpoint URL.
-  - The [**HTTP version**](#http-version-selection) is a drop-down where you can select the HTTP version. By default, the selected version is **HTTP 1.1**.
+  - The [**HTTP version**](#http-version) is a drop-down where you can select the HTTP version. By default, the selected version is **HTTP 1.1**.
   - The [**Execute**](#execute-button) button is an action button for executing the composed request.
   - The [**Save**](#save-button) button enables you to save your composed request in the [**Requests**]({%slug saved-requests-tab%}) list.
 

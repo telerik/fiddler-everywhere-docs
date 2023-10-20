@@ -20,7 +20,7 @@ Fiddler Everywhere provides a comparing option for detailed differentiation of t
 
 1. Select two sessions that you want to compare.
 
-1. Select the **Compare** option from the context menu and choose the **Compare in Fiddler Everywhere** nested option. Note that the **Compare** option is active only when **two** sessions are selected.
+1. Use the **Compare** option from the context menu. Note that the **Compare** option is active only when **two** sessions are selected.
 
     ![Compare through the context menu](../images/livetraffic/compare/compare-context-menu.png)
 

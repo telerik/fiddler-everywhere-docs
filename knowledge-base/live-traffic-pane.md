@@ -450,26 +450,42 @@ The column **Filter** menu lets you add filters for the currently selected colum
 
 The context menu for the **Live Traffic** grid exposes actions you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press **Control** and mouse-click (macOS).
 
-- [Editing in the Composer](#editing-in-the-composer) (**Edit in Composer**)
-- [Saving](#saving) (**Save**)
-- [Sharing](#sharing) (**Share**)
-- [Exporting](#exporting) (**Export**)
-- [Removing](#removing) (**Remove**)
-- [Commenting](#commenting) (**Comment**)
-- [Marking](#marking) (**Mark**)
 - [Replaying](#replaying) (**Replay**)
-- [Selecting](#selecting) (**Select**)
+- [Editing in the Composer](#editing-in-the-composer) (**Edit in Composer**)
+- [Adding New Rules](#adding-new-rules) (**Add New Rule**)
+- [Saving](#saving) (**Save**)
+- [Exporting](#exporting) (**Export**)
+- [Sharing](#sharing) (**Share**)
+- [Removing](#removing) (**Remove**)
+- [Marking](#marking) (**Mark**)
 - [Copying](#copying) (**Copy**)
+- [Selecting](#selecting) (**Select**)
 - [Comparing](#comparing) (**Compare**)
 - [Adding Sessions to Compare Groups](#adding-sessions-to-compare-groups) (**Add to compare group**)
-- [Adding New Rules](#adding-new-rules) (**Add New Rule**)
+- [Commenting](#commenting) (**Comment**)
 - [Bypassing the Proxy](#bypassing-the-proxy) (**Bypass**)
 
 ![Live Traffic context menu](../images/livetraffic/websessions/websessions-list-context-menu.png)
 
+### Replaying
+
+To replay previously captured sessions, use the **Replay** context menu option, which can be accessed with the keyboard by pressing `R`.
+
 ### Editing in the Composer
 
 The **Edit in Composer** context menu option loads the selected request in a new composer window where it can be edited, saved for later usage and sharing, and reissued.
+
+
+### Adding New Rules
+
+You can use a captured session entry to quickly mock client or server behavior. For similar cases, you can use the session URL alongside the [**Rules** tab]({%slug modify-traffic-get-started%}). Creating rules allows you to test complex scenarios and various mock responses.
+
+To add a new rule:
+
+1. Select the desired session entry and right-click to open the context menu. Select **Add New Rule**.
+
+1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Manual Response** action option.
+
 
 
 ### Saving
@@ -497,6 +513,17 @@ All options will display a **Save** prompt window. To save the desired sessions:
 Alternatively, you can save all captured traffic through the **Save** button from the toolbar.
 
 
+### Exporting
+
+The **Export** context menu option allows you to export the captured traffic in various formats such as SAZ (Fiddler Archive), HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
+
+- **Selected sessions**&mdash;Saves and shares all selected sessions.
+
+- **Unselected sessions**&mdash;Saves and shares all unselected sessions.
+
+- **All Sessions**&mdash;Saves and shares all captured traffic.
+
+
 ### Sharing
 
 The **Share** context menu option enables the sharing of sessions. Before any session is shared, it is saved as an entry in the save **Sessions** tree. Then, the threshold can be transmitted through email.
@@ -518,16 +545,6 @@ All options will initially display a **Save** and then a **Share** prompt window
 Alternatively, you can share captured traffic through the **Share** button from the toolbar.
 
 
-### Exporting
-
-The **Export** context menu option allows you to export the captured traffic in various formats such as SAZ (Fiddler Archive), HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
-
-- **Selected sessions**&mdash;Saves and shares all selected sessions.
-
-- **Unselected sessions**&mdash;Saves and shares all unselected sessions.
-
-- **All Sessions**&mdash;Saves and shares all captured traffic.
-
 
 ### Removing
 
@@ -540,31 +557,24 @@ To delete sessions from your **Live Traffic** grid, use the **Remove** context m
 - **All Sessions**&mdash;Removes all captured traffic; can be accessed with the keyboard by pressing `Cmd`+`X` (on Mac), or `Ctrl`+`X` (on Windows).
 
 
-### Commenting
 
-To add comments on single or multiple sessions, use the **Comment** context menu option.
+### Copying
 
-1. Select the sessions, open the context menu, and click the **Comment** option, which can be accessed with the keyboard by pressing `M`.
+To place session information in the clipboard, use the **Copy** context menu option, which supports the following options:
 
-1. A **Comment** dialog appears. Enter the comment and click **Ok**.
+- **Copy URL(s)**&mdash;provides the session URL; can be accessed with the keyboard by pressing `Cmd`+`U` (on Mac), or `Ctrl`+`U` (on Windows).
 
-1. The text is added to the comment field for the selected sessions.
+- **Copy Full Summary (Tab Separated)**&mdash;provides verbose session details; can be accessed with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
 
-Saved and shared sessions will contain the added comments.
+- **Copy as Fetch**&mdash;converts the request as a Fetch code and puts it in the system clipboard.
 
-### Marking
+- **Copy as Curl**&mdash;converts the request as a Curl command and puts it in the system clipboard.
 
-Use the **Mark** context menu option to apply colors or strike out single or multiple sessions.
+- **Copy as PowerShell**&mdash;converts the request as a **Windows PowerShell** code and puts it in the system clipboard.
 
-1. Select the sessions, open the context menu, and click the **Mark** option.
+    >important The **Copy as PowerShell** feature generates Windows PowerShell code, not PowerShell (NetCore). These two PS variations use different APIs for HTTP requests (`WebRequest` vs. `HttpClient`), making the generated code compatible only with Windows PowerShell.
 
-1. Click the preferred marking style to apply it.
-
-Saved and shared sessions will contain the custom marking.
-
-### Replaying
-
-To replay previously captured sessions, use the **Replay** context menu option, which can be accessed with the keyboard by pressing `R`.
+- **Copy as Python (requests)**&mdash;converts the request as a Python code and puts it in the system clipboard.
 
 ### Selecting
 
@@ -576,24 +586,15 @@ To select sessions directly related to the currently selected session, use the *
 
 - **Duplicate request**&mdash;selects the session that is identical to the currently selected session; can be accessed with the keyboard by pressing `D`.
 
-### Copying
+### Marking
 
-To place session information in the clipboard, use the **Copy** context menu option, which supports the following options:
+Use the **Mark** context menu option to apply colors or strike out single or multiple sessions.
 
-- **URL**&mdash;provides the session URL; can be accessed with the keyboard by pressing `Cmd`+`U` (on Mac), or `Ctrl`+`U` (on Windows).
+1. Select the sessions, open the context menu, and click the **Mark** option.
 
-- **Full Summary**&mdash;provides verbose session details; can be accessed with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
+1. Click the preferred marking style to apply it.
 
-- **Copy as Powershell**&mdash;converts the request as a **Windows PowerShell** code and puts it in the system clipboard.
-
-    >important The **Copy as PowerShell** feature generates Windows PowerShell code, not PowerShell (NetCore). These two PS variations use different APIs for HTTP requests (`WebRequest` vs. `HttpClient`), making the generated code compatible only with Windows PowerShell.
-
-- **Copy as Fetch**&mdash;converts the request as a Fetch code and puts it in the system clipboard.
-
-- **Copy as Curl**&mdash;converts the request as a Curl command and puts it in the system clipboard.
-
-- **Copy as Python (requests)**&mdash;converts the request as a Python code and puts it in the system clipboard.
-
+Saved and shared sessions will contain the custom marking.
 
 ### Comparing
 
@@ -608,15 +609,18 @@ Add sessions to compare groups through the **Add to compare groups**. This funct
 [Learn more on how to work with compare groups here...]({%slug fe-compare-sessions%}#adding-sessions-to-the-compare-groups)
 
 
-### Adding New Rules
+### Commenting
 
-You can use a captured session entry to quickly mock client or server behavior. For similar cases, you can use the session URL alongside the [**Rules** tab]({%slug modify-traffic-get-started%}). Creating rules allows you to test complex scenarios and various mock responses.
+To add comments on single or multiple sessions, use the **Comment** context menu option.
 
-To add a new rule:
+1. Select the sessions, open the context menu, and click the **Comment** option, which can be accessed with the keyboard by pressing `M`.
 
-1. Select the desired session entry and right-click to open the context menu. Select **Add New Rule**.
+1. A **Comment** dialog appears. Enter the comment and click **Ok**.
 
-1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Manual Response** action option.
+1. The text is added to the comment field for the selected sessions.
+
+Saved and shared sessions will contain the added comments.
+
 
 ### Bypassing the Proxy
 
