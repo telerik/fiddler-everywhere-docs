@@ -240,7 +240,7 @@ To ensure that Fiddler Everywhere can start, use a network that allows access to
 
 ### Solution - Use Fiddler's Offline Mode
 
-The [Fiddler Everywhere enterprise tier]() includes the offline mode feature (currently available only for Windows and after covering specific technical requirements). Contact us if you want to learn more about the offline mode and using Fiddler Everywhere without an internet connection.
+The [Fiddler Everywhere enterprise tier](https://www.telerik.com/purchase/fiddler) includes the offline mode feature (currently available only for Windows and after covering specific technical requirements). Contact us if you want to learn more about the offline mode and using Fiddler Everywhere without an internet connection.
 
 
 ## Capture Not Working - All Other Scenarios
