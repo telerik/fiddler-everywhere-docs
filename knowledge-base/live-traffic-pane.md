@@ -492,13 +492,7 @@ To add a new rule:
 
 To save selected sessions, use the **Save** context menu option. The saved sessions will appear in the save **Sessions** tree to the left of the Fiddler Everywhere interface, and from there, you can later re-open, export, and share them.
 
-- **Selected sessions**&mdash;Saves all chosen sessions; can be accessed with the keyboard by pressing `S`.
-
-- **Unselected sessions**&mdash;Saves all unselected Sessions; can be accessed with the keyboard by pressing `Shift` +`Cmd` +'S` (on Mac), or `Shift`+`S` (on Windows).
-
-- **All Sessions**&mdash;Saves all captured traffic; can be accessed with the keyboard by pressing `Cmd`+`S` (on Mac), or `Ctrl`+`S` (on Windows).
-
-All options will display a **Save** prompt window. To save the desired sessions:
+The option displays a **Save** prompt window. To save the desired sessions:
 
 1. Select the sessions, open the context menu, and click the **Save** option.
 
@@ -515,26 +509,14 @@ Alternatively, you can save all captured traffic through the **Save** button fro
 
 ### Exporting
 
-The **Export** context menu option allows you to export the captured traffic in various formats such as SAZ (Fiddler Archive), HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
-
-- **Selected sessions**&mdash;Saves and shares all selected sessions.
-
-- **Unselected sessions**&mdash;Saves and shares all unselected sessions.
-
-- **All Sessions**&mdash;Saves and shares all captured traffic.
+The **Export** context menu option allows you to export the selected sessions in various formats such as SAZ (Fiddler Archive), HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
 
 
 ### Sharing
 
-The **Share** context menu option enables the sharing of sessions. Before any session is shared, it is saved as an entry in the save **Sessions** tree. Then, the threshold can be transmitted through email.
+The **Share** context menu option enables the sharing of selected sessions. Before any session is shared, it is saved as an entry in the save **Sessions** tree. Then, the threshold can be transmitted through email.
 
-- **Selected sessions**&mdash;Saves and shares all selected sessions.
-
-- **Unselected sessions**&mdash;Saves and shares all unselected sessions.
-
-- **All Sessions**&mdash;Saves and shares all captured traffic.
-
-All options will initially display a **Save** and then a **Share** prompt window.
+The option initially displays a **Save** and then a **Share** prompt window.
 
 1. Select the sessions, open the context menu, and click the **Share** option.
 
@@ -548,14 +530,7 @@ Alternatively, you can share captured traffic through the **Share** button from 
 
 ### Removing
 
-To delete sessions from your **Live Traffic** grid, use the **Remove** context menu options.
-
-- **Selected sessions**&mdash;Removes all selected sessions; can be accessed with the keyboard by pressing `Cmd`+`Back` (on Mac), `Del` (on Windows).
-
-- **Unselected sessions**&mdash;Removes all unselected sessions; can be accessed with the keyboard by pressing `Shift`+`Cmd`+`Back` (on Mac), or `Shift`+`Del` (on Windows).
-
-- **All Sessions**&mdash;Removes all captured traffic; can be accessed with the keyboard by pressing `Cmd`+`X` (on Mac), or `Ctrl`+`X` (on Windows).
-
+To delete a selected sessions from your **Live Traffic** grid, use the **Remove** context menu options.
 
 
 ### Copying
