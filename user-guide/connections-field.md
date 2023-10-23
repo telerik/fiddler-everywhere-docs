@@ -1,15 +1,15 @@
 ---
-title: Connections Section
-description: "Learn how to use the Connections section in the Fiddler Everywhere web-debugging HTTP-proxy client."
+title: Status Bar
+description: "Learn how to use the status bar in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: connections-section
 tags: Fiddler Connections section, Fiddler Everywhere IP addresses, Fiddler Everywhere active network
 publish: true
 previous_url: /user-guide/connections
 ---
 
-# Connections Section
+# Status Bar
 
-The **Connections** section is located at the bottom-left corner of Fiddler Everywhere and contains information about the state of the connection and the network configuration.
+The **Status Bar** section is located at the bottom-left corner of Fiddler Everywhere and contains information about the state of the connection, the network configuration, and the traffic sources.
 
 The section pops up on mouse interaction and lists the following information:
 
@@ -21,3 +21,8 @@ The section pops up on mouse interaction and lists the following information:
 
 - **Machine IPs**&mdash;A list of the IPv6 and IPv4 addresses of the active network adapters on the machine that hosts Fiddler Everywhere.
 
+![The connection status section](../images/status-bar/connection-details.png)
+
+- **Traffic Sources**&mdash;A list of all available Fiddler Everywhere traffic sources that highlights the active ones.
+
+![The connection status section](../images/status-bar/traffic-sources.png)
