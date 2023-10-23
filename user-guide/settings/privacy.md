@@ -12,7 +12,7 @@ The **Privacy** sub-menu provides options to stop receiving emails from Progress
 
 - **Unsubscribe from Emails**&mdash;To submit a request to unsubscribe from receiving future emails, click the **Unsubscribe** link. You will be redirected to an unsubscribe page where you can follow the instructions.
 
-- **Delete YOur Fiddler Account**&mdash;To submit a request, follow the **Privacy Center** link. You will be redirected to a page where you can submit a deletion request.
+- **Delete Your Fiddler Account**&mdash;To submit a request, follow the **Privacy Center** link. You will be redirected to a page where you can submit a deletion request.
 
 The following figure displays the **Privacy** menu settings.
 

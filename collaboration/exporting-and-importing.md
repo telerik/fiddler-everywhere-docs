@@ -16,13 +16,7 @@ The **Export** context menu option allows you to export the captured traffic in 
 
 - Select one or more sessions from the sessions grid.
 
-- Right-click to invoke the context menu and choose **Export**. Then use one of the following options:
-
-    - **Selected sessions**&mdash;Saves and shares all selected sessions.
-
-    - **Unselected sessions**&mdash;Saves and shares all unselected sessions.
-
-    - **All Sessions**&mdash;Saves and shares all captured traffic.
+- Right-click to invoke the context menu and choose **Export**.
 
 - Use the **Choose Format** to export the desired sessions in the preferred file format.
 

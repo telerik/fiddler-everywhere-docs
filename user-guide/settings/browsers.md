@@ -3,7 +3,7 @@ title: Browsers
 description: "Change the Fiddler's browser instance for the automatic independent browser capturing mode."
 slug: browsers-settings-submenu
 publish: true
-position: 65
+position: 70
 previous_url: /user-guide/main-menu
 ---
 
