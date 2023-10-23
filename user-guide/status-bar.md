@@ -4,7 +4,7 @@ description: "Learn how to use the status bar in the Fiddler Everywhere web-debu
 slug: connections-section
 tags: Fiddler Connections section, Fiddler Everywhere IP addresses, Fiddler Everywhere active network
 publish: true
-previous_url: /user-guide/connections
+previous_url: /user-guide/connections, /user-guide/connections-field
 ---
 
 # Status Bar
