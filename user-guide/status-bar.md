@@ -9,7 +9,7 @@ previous_url: /user-guide/connections, /user-guide/connections-field
 
 # Status Bar
 
-The **Status Bar** section is located at the bottom-left corner of Fiddler Everywhere and contains information about the state of the connection, the network configuration, and the traffic sources.
+The **Status Bar** section is located at the bottom-left corner of Fiddler Everywhere and contains information about the state of the connection, the network configuration, the traffic sources, and session count info.
 
 The section pops up on mouse interaction and lists the following information:
 
@@ -26,3 +26,7 @@ The section pops up on mouse interaction and lists the following information:
 - **Traffic Sources**&mdash;A list of all available Fiddler Everywhere traffic sources that highlights the active ones.
 
 ![The connection status section](../images/status-bar/traffic-sources.png)
+
+- **Sessions Count**&mdash;A popup that shows live counters of captured, visible and selected sessions.
+
+![The sessions count section](../images/status-bar/sessions-count.png)
