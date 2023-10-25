@@ -27,6 +27,6 @@ The section pops up on mouse interaction and lists the following information:
 
 ![The connection status section](../images/status-bar/traffic-sources.png)
 
-- **Sessions Count**&mdash;A popup that shows live counters of captured, visible and selected sessions.
+- **Sessions Count**&mdash;A popup that shows live counters of **total** captured, **visible** (counts only the non-filtered) and **selected** sessions.
 
 ![The sessions count section](../images/status-bar/sessions-count.png)
