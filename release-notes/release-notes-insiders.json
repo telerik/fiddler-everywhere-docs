@@ -29,6 +29,9 @@
                         "title": "Reorder the match conditions and actions lists in the Filters and Rules Editor dialogs"
                     },
                     {
+                        "title": "Reorder context menus items and submenus in the captured sessions list and saved sessions panel"
+                    },
+                    {
                         "title": "Update the predefined response actions in Rules"
                     },
                     {
