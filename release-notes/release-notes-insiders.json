@@ -1,5 +1,58 @@
 [
     {
+        "version": "5.0.0-insiders",
+        "title": "Fiddler Everywhere v5.0.0",
+        "date": "October 26, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Make HTTP/2 enabled by default when capturing sessions"
+                    },
+                    {
+                        "title": "Add information in offline mode if the AD user doesn't match the one logged on the machine"
+                    },
+                    {
+                        "title": "Add automatic login from Fiddler Everywhere to the Telerik website pages"
+                    },
+                    {
+                        "title": "Add information about active traffic sources in the application status bar"
+                    },
+                    {
+                        "title": "Add information about the number of selected sessions from the grid in the application status bar"
+                    },
+                    {
+                        "title": "Update the application tray icon for macOS/Windows"
+                    },
+                    {
+                        "title": "Reorder the match conditions and actions lists in the Filters and Rules Editor dialogs"
+                    },
+                    {
+                        "title": "Update the predefined response actions in Rules"
+                    },
+                    {
+                        "title": "Discontinue support for Windows 7, Windows 8 and Windows 8.1"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "gRPC is not working properly with .NET client"
+                    },
+                    {
+                        "title": "Unable to parse some base64 encoded cookie values in Composer"
+                    },
+                    {
+                        "title": "Unable to send binary request body from Composer in some cases when the request was created from an existing session"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "4.8.0-insiders",
         "title": "Fiddler Everywhere v4.8.0",
         "date": "October 10, 2023",
