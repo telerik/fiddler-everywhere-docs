@@ -17,7 +17,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 ## Prerequisites
 
 - Install Windows 10 x64 or Windows 11 x64.
-  >tip Windows 7 and 8.1 operating systems lack support for TLS 1.3, instead relying solely on the outdated TLS 1.2 protocol, which was declared insecure and reached its end-of-life status in 2023. To enhance security and align with modern practices, Fiddler Everywhere version 5.0.0 discontinues support for these outdated Windows versions. This decision ensures that Fiddler employs only secure TLS versions for in-app operations, such as all interactions with Fiddler cloud servers and account authentication. It's important to note that this change doesn't impact the in-app options for capturing sessions using various TLS versions.
+  >tip To enhance security and align with modern practices, Fiddler Everywhere version 5.0.0 discontinues support for the outdated Windows 7 and 8.1, which reached end-of-life and are no longer supported.
 - Make sure you have 400MB+ free disk space.
 - Create an account with administrative rights, which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
