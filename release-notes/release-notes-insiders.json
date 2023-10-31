@@ -1,5 +1,20 @@
 [
     {
+        "version": "5.0.1-insiders",
+        "title": "Fiddler Everywhere v5.0.1",
+        "date": "October 31, 2023",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Application does not start in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.0.0-insiders",
         "title": "Fiddler Everywhere v5.0.0",
         "date": "October 26, 2023",
