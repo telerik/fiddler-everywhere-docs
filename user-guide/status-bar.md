@@ -13,7 +13,7 @@ The **Status Bar** section is located at the bottom-left corner of Fiddler Every
 
 The section pops up on mouse interaction and lists the following information:
 
-- **Connection Status***&mdash;Shows the state of the network that provides the Internet connectivity.
+- **Connection Status**&mdash;Shows the state of the network that provides the Internet connectivity.
 
 - **Host**&mdash;Outputs the machine's hostname that Fiddler Everywhere runs on.
 
@@ -26,6 +26,10 @@ The section pops up on mouse interaction and lists the following information:
 - **Traffic Sources**&mdash;A list of all available Fiddler Everywhere traffic sources that highlights the active ones.
 
     ![The connection status section](../images/status-bar/traffic-sources.png)
+
+- **Fiddler Port State**&mdash;Indicates if the Fiddler Everywhere proxy port is opened/closed for remote connections. You can control the state through the **Settings > Connections > Allow remote devices to connect** option.
+
+    ![State of the Fiddler port](../images/status-bar/remote-connections-status.png)
 
 - **Rules Count**&mdash;A popup that shows counters of all enabled rules.
 
