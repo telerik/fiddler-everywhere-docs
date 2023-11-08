@@ -8,7 +8,7 @@ position: 10
 
 # Network Capture
 
->note Currently, the **Network Capture** feature is in BETA state and is only available on macOS.
+>important The **Network Capture** feature is a BETA version and is subject to change in the future. Currently, the functionality is available with the macOS version of Fiddler Everywhere.
 
 This article describes using Fiddler's network capturing mode, where "network traffic" refers to all HTTP, HTTPS, WebSocket, and gRPC traffic directed to the active network adapter. The feature requires the installation of a network extension, which requires explicit administrative privileges.
 
@@ -20,9 +20,9 @@ The benefits of the **Network Capture** mode are as follows:
 
 - Captures all HTTP(S) traffic from the active network adapter. 
 
-- No limitations related to frameworks, applications, operating systems, and other configuration specifics that we usually need to handle when using an HTTP(S) proxy.
+- No limitations related to frameworks, applications, operating systems, and other configuration specifics that you usually must handle when using an HTTP(S) proxy.
 
-- Allows you to control the range of IP addresses and processes which must be monitored.
+- Allows you to control the range of IP addresses and processes to monitor.
 
 ## Prerequisites
 
@@ -31,4 +31,8 @@ To use the **Network Capture** mode, you need to meet the following prerequisite
 - Installed latest version of Fiddler Everywhere.
 
 - Administrative privileges to install the network extension on macOS.
+
+## Enabling the Network Capture Mode
+
+
 
