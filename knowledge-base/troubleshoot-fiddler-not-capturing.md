@@ -34,7 +34,7 @@ Various reasons can result in Fiddler Everywhere not acting as a system proxy. B
 
  - [Limited Internet Connectivity](#limited-internet-connectivity)
 
-
+ - [Incompatibility with graphic drivers (White screen or failing startup)](#incompatibility-with-graphics-drivers)
 
 ## Lack of Administrative Rights
 
@@ -241,6 +241,32 @@ To ensure that Fiddler Everywhere can start, use a network that allows access to
 ### Solution - Use Fiddler's Offline Mode
 
 The [Fiddler Everywhere enterprise tier](https://www.telerik.com/purchase/fiddler) includes the offline mode feature (currently available only for Windows and after covering specific technical requirements). Contact us if you want to learn more about the offline mode and using Fiddler Everywhere without an internet connection.
+
+
+## Incompatibility with Graphics Drivers
+
+In some cases, the Fiddler Everywhere application won't start at all, or will start with broken UI (like hanging white screen). One of the most common reasons for that to happen is incompatibility of the installed graphics drivers with the Electron application (the UI of the Fiddler Everywhere). 
+
+
+### Solution - Update the Graphics Driver
+
+The first thing to do is to ensure that your system uses an up-to-date graphics driver. Use the official download sources to obtain the latest version of the driver for your video card.
+
+### Solution - Disable the Hardware Acceleration
+
+The Fiddler Everywhere application provides an option to explicitly turn off the hardware acceleration through a boolean flag called `disableHardwareAcceleration` in the `electron-settings.json` file. This flag turns GPU-accelerated rendering on or off. Fiddler will use a software output device for rendering in the CPU when the hardware acceleration is explicitly disabled.
+
+- Open the following folder 
+  ```bash
+  %userprofile%\.fiddler\Settings\electron-settings.json
+  ```
+
+- Add the bellow key-value pair to disable the hardware acceleration and force software rendering instead.
+    ```JSON
+    "disableHardwareAcceleration" : true
+    ```
+
+[Learn more about disabling the haradware acceleratiopn here...]({%slug troubleshoot-video-incompatibility%})
 
 
 ## Capture Not Working - All Other Scenarios
