@@ -17,14 +17,22 @@ This tutorial describes how to install and start using Fiddler Everywhere on mac
 ## Prerequisites
 
 - Install macOS version 11 or above.
+
 - Provide 400MB of free disk space.
+
 - Create an account with administrative rights which you'll need for capturing and decoding HTTPS traffic.
-- Provide an active internet connection with access to the following URLs:
-```curl
-  https://*.telerik.com/
-  https://*.getfiddler.com/
-  https://fiddler-backend-production.s3-accelerate.amazonaws.com
-```
+
+- Provide an active Internet connection with access to the following URLs:
+
+  ```curl
+    https://*.telerik.com/
+    https://*.getfiddler.com/
+    https://fiddler-backend-production.s3-accelerate.amazonaws.com
+    https://recaptcha.net
+  ```
+
+  >note The Telerik site (where the Fiddler authentication form resides) uses different CDNs to load various components, styles, and cookies related to its user interface. Having limited internet access can cause the site not to load correctly.
+  
 - Ensure that Fiddler Everywhere's proxy port is open and unrestricted by a firewall/security tool. By default, that's **port 8866**, but it can be changed from **Settings > Connections > Fiddler listens on port**.
 
 ## Step 1: Install Fiddler Everywhere on Your Machine
