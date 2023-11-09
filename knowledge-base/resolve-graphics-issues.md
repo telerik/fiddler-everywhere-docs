@@ -27,8 +27,15 @@ One probable reason for the above issues to manifest is incompatibilities betwee
 Alternatively, if the update of the driver does not solve the issue, you can explicitly turn off the hardware acceleration through a boolean flag called `disableHardwareAcceleration` in the `electron-settings.json` file. Fiddler will use a software output device for rendering in the CPU when the hardware acceleration is explicitly disabled.
 
 - Open the following folder 
+
+  _On Windows_
   ```bash
   %userprofile%\.fiddler\Settings\electron-settings.json
+  ```
+
+  _On macOS or Linux_
+  ```bash
+  ~/.fiddler/Settings/electron-settings.json
   ```
 
 - Add the bellow key-value pair to disable the hardware acceleration and force software rendering instead.
