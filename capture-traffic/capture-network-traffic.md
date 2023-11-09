@@ -55,3 +55,5 @@ Currently, the **Network Capture** mode is "hidden" behind a feature toggle, and
 1. Ensure the JSON structure is valid, and then save and exit the file.
 
 With the above change in place, you can now restart the Fiddler Everywhere application. As a result, the **Network Capture** mode is now accessible in the Fiddler's **Live Traffic** menu options.
+
+![the "Network Capture" feature](../images/livetraffic/websessions/websessions-toolbar-network-capture-beta.png)
