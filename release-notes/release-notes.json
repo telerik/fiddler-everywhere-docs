@@ -25,7 +25,7 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Renaming custom columns showing request or response headers in the sessions grid sometimes causes the sessions to become hidden"
+                        "title": "Renaming custom columns showing request or response headers in the sessions grid sometimes causes the header value to become hidden"
                     },
                     {
                         "title": "Application unable to start on specific hardware configurations"
