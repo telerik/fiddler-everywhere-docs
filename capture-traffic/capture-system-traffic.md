@@ -3,7 +3,7 @@ title: Capturing System Traffic
 description: "Capture HTTPS traffic that goes through the operating system proxy."
 slug: capture-system-traffic
 publish: true
-position: 10
+position: 15
 ---
 
 # System Capturing Mode
