@@ -38,13 +38,13 @@ To enable and use the **Network Capture** mode, you need to explicitly activate 
 
 1. Close the Fiddler Everywhere application.
 
-1. Navigate to the following macOS folder
+1. Navigate to the following macOS folder.
 
     ```bash
     ~/.fiddler/Settings
     ```
 
-1. Open the **electron-settings.json** file and add the following object (within the root object)
+1. Open the **electron-settings.json** file and add the following object (within the root object).
 
     ```JSON
     "featureToggles": {
@@ -69,7 +69,7 @@ To use the **Network Capture**, you need to set the IP address explicitly, the T
 
 To start the **Network Capture**, execute the following steps:
 
-1. Click on the **Network Capture** button from the **Live Traffic** menu
+1. Click on the **Network Capture** button from the **Live Traffic** menu.
 
 1. Click on the **Enable Capture** from the **Network Capture Settings (BETA)** screen.
 
@@ -100,7 +100,7 @@ Immediately after pressing **Enable Capture**, you will see the following native
 
 To stop the **Network Capture**, execute the following steps:
 
-1. Click on the **Network Capture** button from the **Live Traffic** menu
+1. Click on the **Network Capture** button from the **Live Traffic** menu.
 
 1. Click on the **Disable Capture** from the **Network Capture Settings (BETA)** screen.
 
@@ -132,18 +132,19 @@ The default capturing rules for ports 80 and 443 use  **IP Address** set as `0.0
 
 ## Removing the macOS Network Extension
 
-Once the Fiddler's network extension installs, you can quickly enable and disable the **Network Capture** more. However, it is important to note that disabling the mode doesn't remove the network extension from your operating system. If you want to entirely remove the network extension from your macOS device, you can proceed with one of options listed below. Note that the removal requires administrative privileges
+Once the Fiddler's network extension installs, you can quickly enable and disable the **Network Capture** more. However, it is important to note that disabling the mode doesn't remove the network extension from your operating system. If you want to entirely remove the network extension from your macOS device, you can proceed with [manually removing the extension](#manual-removal) or by [uninstalling the Fiddler Everywhere application](removal-through-uninstall).
  
 ### Manual removal
+
 You can manually remove the extension through executing the following steps:
 
 1. Open the macOS **System Settings**.
 
 1. Navigate to the **Network** section.
 
-1. Click on **Filters**
+1. Click on **Filters**.
 
-1. Select the Fiddler Everywhere extension
+1. Select the Fiddler Everywhere extension.
 
     - Use the dropdown on the right side to disable the network extension (you can re-enable it at later point).
 
