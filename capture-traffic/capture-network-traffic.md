@@ -151,7 +151,7 @@ You can manually remove the extension through executing the following steps:
 
 ### Removal through Uninstall
 
-Uninstalling the Fiddler Everywhere application will also trigger the deletion of the Fiddler's network extension. To proceed with that option, drag and drop Fiddler Everywhere icon from the macOS **Applicaitons** to the macOS bin.
+Uninstalling the Fiddler Everywhere application also triggers the deletion of the Fiddler's network extension. To proceed with that option, drag and drop Fiddler Everywhere icon from the macOS **Applications** to the macOS bin.
 
 >tip On some macOS systems, the removal of Fiddler Everywhere might initially fail. In such cases, close Fiddler Everywher, ensure no Fiddler processes runs in the background and then re-try the uninstall process.
 
