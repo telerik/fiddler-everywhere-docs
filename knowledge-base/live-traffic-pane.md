@@ -537,19 +537,19 @@ To delete a selected sessions from your **Live Traffic** grid, use the **Remove*
 
 To place session information in the clipboard, use the **Copy** context menu option, which supports the following options:
 
-- **Copy URL(s)**&mdash;provides the session URL; can be accessed with the keyboard by pressing `Cmd`+`U` (on Mac), or `Ctrl`+`U` (on Windows).
+- **Copy URL(s)**&mdash;Places the session URL in the system clipboard; Can be triggered with the keyboard by pressing `Cmd`+`U` (on Mac), or `Ctrl`+`U` (on Windows).
 
-- **Copy Full Summary (Tab Separated)**&mdash;provides verbose session details; can be accessed with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
+- **Copy All Columns (Tab Separated)**&mdash;Places verbose session details (from all visible columns in the Live Traffic grid) in the system clipboard; Can be triggered with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
 
-- **Copy as Fetch**&mdash;converts the request as a Fetch code and puts it in the system clipboard.
+- **Copy as Fetch**&mdash;Converts the request as a Fetch code and puts it in the system clipboard.
 
-- **Copy as Curl**&mdash;converts the request as a Curl command and puts it in the system clipboard.
+- **Copy as cURL**&mdash;Converts the request as a curl command and puts it in the system clipboard.
 
-- **Copy as PowerShell**&mdash;converts the request as a **Windows PowerShell** code and puts it in the system clipboard.
+- **Copy as PowerShell**&mdash;Converts the request as a **Windows PowerShell** code and puts it in the system clipboard.
 
     >important The **Copy as PowerShell** feature generates Windows PowerShell code, not PowerShell (NetCore). These two PS variations use different APIs for HTTP requests (`WebRequest` vs. `HttpClient`), making the generated code compatible only with Windows PowerShell.
 
-- **Copy as Python (requests)**&mdash;converts the request as a Python code and puts it in the system clipboard.
+- **Copy as Python (Requests)**&mdash;Converts the request as a Python code and puts it in the system clipboard.
 
 ### Selecting
 
