@@ -23,8 +23,8 @@ The top section contains a toolbar with the following functionalities:
 
 The mid-section provides options to further modify your request through the following options:
   - The [**Headers**](#headers) section allows you to add and modify the HTTP headers of the request.
+  - The [**Cookies**](#cookies) section allows you to add and modify cookies.
   - The [**Params**](#params) section allows you to add and modify the request parameters.
-  - The [**Raw**](#raw) section is a read-only representation of the composed request.
   - The [**Body**](#body) section allows you to modify the request body and supports various formats such as JSON, form-data, XML, text, and more.
 
 The bottom section is a [**response inspector**](#response-inspector), which shows the response from the executed request.
@@ -103,9 +103,14 @@ To change it to raw UI through the drop-down in the top-right corner of the sect
 
   ![Added header](../images/composer/composer-headers-after.png)
 
-Most of the servers using newer versions of TLS will require you to set an **User-Agent** header. By default, Fiddler Everywhere will a **User-Agent** key set with the **Fiddler Everywhere** value and the **Lets servers and network peers identify the application, operating system, vendor, and version of the requesting user agent** description. The header is not mandatory, yet keep in mind that without a valid **User-Agent**, some requests for securing servers might fail.
+Most of the servers using newer versions of TLS will require you to set `Host` and `User-Agent` headers. By default, Fiddler Everywhere automatically generates a `User-Agent` header set with the **Fiddler Everywhere** value and a `Host` header with the respective host value. Note that each HTTP request must include a `Host` header. The `User-Agent` header is not mandatory, yet keep in mind that some requests for securing servers might fail without a valid ' User-Agent'. Fiddler Everywhere allows you to uncheck the auto-generated headers, but you must manually add your own to compose valid HTTP requests. 
 
 >tip The request execution includes only checked headers. Unchecked headers won't be included in the request execution but are saved as part of the composed request (so you can activate them at a later time).
+
+
+### Cookies
+
+The **Cookies** section enables the creation of key-value pairs usually set through the `Cookie` header. Respectively, changes made in the `Cookie` header are also represented in the **Cookies** table.
 
 ### Params
 
@@ -134,11 +139,7 @@ The **Body** delivers the following specific editors:
 - x-www-form-urlencoded&mdash;&mdash;suitable for inputting key-value pairs formatted as [**application/x-www-form-urlencoded**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
 - JavaScript&mdash;suitable for JavaScript/TypeScript code. Supports the MIME types as described [here](https://mimesniff.spec.whatwg.org/#javascript-mime-type)
 
-### Raw
 
-The **Raw** view is a raw text representation of the composed request. It is read-only and cannot be edited.
-
-  ![Raw view of the written request](../images/composer/composer-raw-view.png)
 
 ## Response Inspector
 

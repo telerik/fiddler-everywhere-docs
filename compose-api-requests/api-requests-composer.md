@@ -35,7 +35,7 @@ As a result, Fiddler loads the **Composer** screen where you can compose and exe
 
 1. (Optional) Enter additional headers, parameters, and body if required. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data. Note that the request execution includes only checked headers.
 
-    >important By default, the Fiddler Everywhere client will add a `User-Agent` header with the `Fiddler Everywhere` value. This header lets servers and network peers identify the application, the operating system, the vendor, or the version of the requesting user agent.
+    >important By default, the Fiddler's Composer auto-generates the required default headers, including the `Host` header and the `User-Agent` header with the value `Fiddler Everywhere`. This `Host` header lets servers and network peers identify the targeted host and port number of the targeted server. The `User-Agent` agent is a characteristic string that enables servers and network peers to identify the application or version of the requesting user agent. Note that while you can uncheck and execute a request without the default headers, an HTTP request without `Host` header will return a server error as it is considered a malformed request.
 
 1. Click **Execute** to send the composed API request. 
 
