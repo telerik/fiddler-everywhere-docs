@@ -121,12 +121,13 @@ If the content is in HTML format, then the **Preview** inspector allows you to v
 
 The **Body** inspectors are suitable for different requests and responses. Depending on the received content type, Fiddler Everywhere automatically tries to load the most appropriate body inspector. Fiddler Everywhere provides the following body inspectors:
 
-- **Text**
-- **JSON**
-- **HEX**
-- **XML**
-- **Form-Data**
-- **JavaScript**
+- [**Text**](#text-body-inspector)
+- [**JSON**](#json-body-inspector)
+- [**HEX**](#hex-body-inspector)
+- [**MessagePack**](#messagepack-body-inspector)
+- [**XML**](#xml-body-inspector)
+- [**Form-Data**](#form-data-body-inspector)
+- [**JavaScript**](#javascript-body-inspector)
 
 #### Text Body Inspector
 
@@ -150,6 +151,13 @@ The **HEX** inspector loads a hex representation of the HTTP request/response bo
 The **HEX** inspector consists of an offset column, a hex view column, and a text view column.
 
 ![HEX Inspector](../images/livetraffic/inspectors/inspectors-hex.png)
+
+
+#### MessagePack Body Inspector
+
+The **MessagePack** inspector interprets the selected request or response body as a [MessagePack](https://msgpack.org/index.html), showing a tree view of the MessagePack object nodes. The **MessagePack** inspector tab is auto-selected and the message contents are decoded for all cases where the `Content-Type` header contains the keywords `messagepack` or `msgpack`, for example like `Content-Type: application/x-msgpack`.
+
+![MessagePack Inspector](../images/livetraffic/inspectors/inspectors-messagepack.png)
 
 #### XML Body Inspector
 
