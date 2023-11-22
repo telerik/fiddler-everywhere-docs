@@ -68,3 +68,4 @@ keychain
 hotspot
 ISPs
 ISP
+MessagePack

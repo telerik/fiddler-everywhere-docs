@@ -27,7 +27,7 @@ The inspectors are based on the [Monaco editor](https://microsoft.github.io/mona
 
 - A **Copy all content to clipboard** option (in the toolbar at the top-right corner) that allows you to extract information efficiently.
 
-To load the data of a session in the **Inspectors** section, double-click an HTTP(S), WebSocket or gRPC session from the __Live Traffic__ grid.
+To load the data of a session in the **Inspectors** section, double-click an HTTP(S), WebSocket, or gRPC session from the __Live Traffic__ grid.
 
 ![Inspectors for Traffic Monitoring](../images/inspect-traffic/inspectors-all.png)
 
@@ -54,13 +54,13 @@ The **Headers** inspector allows you to view the HTTP headers of the request and
 
 ### Params Inspector
 
-The **Params inspector**, available in the **Request** section only, displays the content from any input endpoints parameters.
+The **Params inspector**, available only in the **Request** section, displays the content from any input endpoint parameters.
 
 ![Params Inspector](../images/livetraffic/inspectors/inspectors-params.png)
 
 ### Trailers Inspector
 
-The **Params inspector** is a gRPC-specific inspector that helps inspect gRPC server trailers headers. [Learn more about gRPC capturing here...]({%slug capture-grpc-traffic%}).
+The **Params inspector** is a gRPC-specific inspector that helps inspect gRPC server trailer headers. [Learn more about gRPC capturing here...]({%slug capture-grpc-traffic%}).
 
 ### Cookies Inspector
 
@@ -121,12 +121,13 @@ If the content is in HTML format, then the **Preview** inspector allows you to v
 
 The **Body** inspectors are suitable for different requests and responses. Depending on the received content type, Fiddler Everywhere automatically tries to load the most appropriate body inspector. Fiddler Everywhere provides the following body inspectors:
 
-- **Text**
-- **JSON**
-- **HEX**
-- **XML**
-- **Form-Data**
-- **JavaScript**
+- [**Text**](#text-body-inspector)
+- [**JSON**](#json-body-inspector)
+- [**HEX**](#hex-body-inspector)
+- [**MessagePack**](#messagepack-body-inspector)
+- [**XML**](#xml-body-inspector)
+- [**Form-Data**](#form-data-body-inspector)
+- [**JavaScript**](#javascript-body-inspector)
 
 #### Text Body Inspector
 
@@ -150,6 +151,13 @@ The **HEX** inspector loads a hex representation of the HTTP request/response bo
 The **HEX** inspector consists of an offset column, a hex view column, and a text view column.
 
 ![HEX Inspector](../images/livetraffic/inspectors/inspectors-hex.png)
+
+
+#### MessagePack Body Inspector
+
+The **MessagePack** inspector interprets the selected request or response body as a [MessagePack](https://msgpack.org/index.html), showing a tree view of the MessagePack object nodes. The **MessagePack** inspector tab is auto-selected, and the message contents are decoded for all cases where the `Content-Type` header contains the keywords `messagepack` or `msgpack`, for example, `Content-Type: application/x-msgpack`.
+
+![MessagePack Inspector](../images/livetraffic/inspectors/inspectors-messagepack.png)
 
 #### XML Body Inspector
 
@@ -261,7 +269,7 @@ The **Metadata inspector** (available only for WebSocket traffic) contains times
 
 - **DoneSend**&mdash;Indicates when the Client/Server finished sending the message.
 
-- **Data masked by key**&mdash;The key that masks the message.
+- **Data masked by key**&mdash;The key that conceals the message.
 
 
 #### Message Inspector
@@ -279,8 +287,8 @@ All inspectors provide further interaction options through a context menu. The c
 - **Copy Value**&mdash;An option to copy only the value (from a key-value pair). Available in **Headers** inspector.
 - **Copy Key/Value**&mdash;An option to copy the key-value pair. Available in **Headers** inspector.
 - **Copy Response Cookie Value**&mdash;An option to copy the value of a selected cookie. Available in **Cookies** inspector.
-- **Decode Value**&mdash;An option that allows you to decode selected value. The decode option support out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
-- **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option support out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and all **Body** inspectors (**Text, JSON, XML, JavaScript**).
+- **Decode Value**&mdash;An option that allows you to decode selected value. The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
+- **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and all **Body** inspectors (**Text, JSON, XML, JavaScript**).
     ![Decode functionality from the context menu](../images/livetraffic/inspectors/decode-original-base64.png)
 - **Add as a column**&mdash;An option to create a custom column in the Live Traffic grid while using the selected HTTP Header. Available in **Headers** inspector.
 

@@ -70,6 +70,7 @@ Fiddler Everywhere provides platform-agnostic compatibility that enables you to 
 * [Get Started with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
 * [Get Started with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
 
+
 ### Fiddler Everywhere on Mobile
 
 Fiddler Everywhere enables you to also capture and inspect traffic on devices running on iOS and Android.
@@ -77,8 +78,8 @@ Fiddler Everywhere enables you to also capture and inspect traffic on devices ru
 * [Capturing and Inspecting Traffic on iOS]({% slug capture-mobile-ios-traffic %})
 * [Capturing and Inspecting Traffic on Android]({% slug capture-mobile-android-traffic %})
 
-### Styling Options and Modern Layout
 
+### Styling Options and Modern Layout
 
 Fiddler Everywhere delivers a modern, intuitive UI with collapsible panels, [layout reorganization options]({%slug web-sessions-list%}#toggling-layout), and a set of popular light and dark themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
 
@@ -86,6 +87,7 @@ Fiddler Everywhere delivers a modern, intuitive UI with collapsible panels, [lay
 ## Trial Version 
 
 Fiddler Everywhere offers a trial with a full-featured version of the tool&mdash;no restrictions! Moreover, you are eligible for complete technical support during your trial period if you have any questions. To sign up for a free trial, go [here](https://www.telerik.com/download/fiddler-everywhere). The trial version activates only once per each unique machine.
+
 
 ## Commercial Licenses
 
