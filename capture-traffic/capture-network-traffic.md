@@ -6,15 +6,15 @@ publish: true
 position: 10
 ---
 
-# Network Capture
+# Network Capturing
 
->important The **Network Capture** feature is a BETA version and is subject to change in the future. Currently, the functionality is available only for the **macOS** version of Fiddler Everywhere and works only for IPv4 protocol.
+>important The network capturing mode is feature in BETA state and is subject to change in the future. Currently, the functionality is available only for the **macOS** version of Fiddler Everywhere and works only for IPv4 protocol.
 
-This article describes using Fiddler's network capturing mode, where "network traffic" refers to all HTTP, HTTPS, WebSocket, and gRPC traffic directed to the active network adapter. The feature requires the installation of a network extension, which requires explicit administrative privileges.
+This article describes using Fiddler's **network capturing mode**, where "network traffic" refers to all HTTP, HTTPS, WebSocket, and gRPC traffic directed to the active network adapter. The feature requires the installation of a network extension, which requires explicit administrative privileges.
 
-In nature, the **Network Capture** is a more powerful way to capture network traffic on a lower level than an HTTPS(S) proxy works (which is how Fiddler works in the **System Capturing** mode or all other available capturing modes). 
+In nature, the network capturing mode is a more powerful way to capture network traffic on a lower level than an HTTPS(S) proxy works (which is how Fiddler works in the **System Capturing** mode or all other available capturing modes). 
 
-The benefits of the **Network Capture** mode are as follows:
+The benefits of the network capturing mode are as follows:
 
 - Works on a lower level compared to HTTP(S) proxies.
 
@@ -28,7 +28,7 @@ The benefits of the **Network Capture** mode are as follows:
 
 ### Prerequisites
 
-You must meet the following prerequisites to use the **Network Capture** mode.
+You must meet the following prerequisites to use the network capturing mode.
 
 - Installed the latest version of Fiddler Everywhere.
 
@@ -39,20 +39,22 @@ You must meet the following prerequisites to use the **Network Capture** mode.
 
 The **Network Capture** mode is in Beta state and, currently, has some known limitations as follows:
 
-- The network extension that enables the **Network Capture** mode is available only on the macOS version of Fiddler Everywhere. The development for the counterpart Windows & Linux features is ongoing.
+- The network extension that enables the network capturing mode is available only on the macOS version of Fiddler Everywhere. The development for the counterpart Windows & Linux features is ongoing.
 
-- The **Network Capture** mode captures IPv4 traffic, while IPv6 is not yet supported.
+- The network capturing mode captures IPv4 traffic, while IPv6 is not yet supported.
 
-- The **Network Capture** mode is incompatible with most VPN tools.
+- The  network capturing mode is incompatible with most VPN tools.
+
+    >tip Some VPN tools will automatically close the VPN connection is a third-party network extension is enabled. You can try to workaround that by starting Fiddler Everywhere and enabling the network capturing mode before making a connection to the VPN.
 
 - The **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. Alternatively, you can create a Fiddler rule that executes the **Do Not Decrypt** action on the desired domains.
 
-- The **Network Capture** mode can capture only outbound traffic. Currently, inbound traffic from remote device is not captured. For such cases, use our alternative capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
+- The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote device is not captured. For such cases, use our alternative capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
 
 
-## Using the Network Capture Mode
+## Using the Network Capturing Mode
 
-The **Network Capture** mode is accessible in the Fiddler's **Live Traffic** menu options.
+The network capturing mode is accessible in the Fiddler's **Live Traffic** menu options through the **Network Capture** option.
 
 ![the "Network Capture" feature](../images/livetraffic/websessions/websessions-toolbar-network-capture-beta.png)
 
@@ -63,7 +65,7 @@ To use the **Network Capture**, you need to set the IP address explicitly, the T
 
 ### Start Network Capture
 
-To start the **Network Capture**, execute the following steps:
+To start the network capturing mode, execute the following steps:
 
 1. Click on the **Network Capture (BETA)** button from the **Live Traffic** menu.
 
@@ -71,7 +73,7 @@ To start the **Network Capture**, execute the following steps:
 
 >tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)
 
-If this is the first time you are starting the **Network Capture** mode on your macOS, then you will need to install and allow the usage of the Fiddler's network extension. To do so, proceed with the following steps:
+If this is the first time you are starting the network capturing mode on your macOS, then you will need to install and allow the usage of the Fiddler's network extension. To do so, proceed with the following steps:
 
 Immediately after pressing **Enable Capture**, you will see the following native macOS popup.
 
@@ -94,7 +96,7 @@ Immediately after pressing **Enable Capture**, you will see the following native
 
 ### Stop Network Capture
 
-To stop the **Network Capture**, execute the following steps:
+To stop the network capturing mode, execute the following steps:
 
 1. Click on the **Network Capture** button from the **Live Traffic** menu.
 
@@ -103,7 +105,7 @@ To stop the **Network Capture**, execute the following steps:
 
 ## Modify Network Capture Rules
 
-By default, the **Network Capture** mode has the default active rules to capture traffic from all IP addresses and processes working on ports 80 (HTTP) and 443 (HTTPS). An additional rule also enables the capturing from localhost (`127.0.0.1`) on port 3000 - this rule demonstrates how you can add specific capturing rules within the **Network Capture Settings (BETA)** screen.
+By default, the network capturing mode has the default active rules to capture traffic from all IP addresses and processes working on ports 80 (HTTP) and 443 (HTTPS). An additional rule also enables the capturing from localhost (`127.0.0.1`) on port 3000 - this rule demonstrates how you can add specific capturing rules within the **Network Capture Settings (BETA)** screen.
 
 The **Network Capture Settings (BETA)** screen has a **Basic** view that simplifies the setup of the rules.
 
@@ -144,7 +146,7 @@ If you experience any troubles installing and enabling the Fiddler's network ext
 
 ## Removing the macOS Network Extension
 
-Once the Fiddler's network extension installs, you can enable or disable the **Network Capture** more quickly. However, it's essential to note that disabling the feature doesn't remove the network extension from your operating system. If you want to remove the network extension from your macOS system, you can achieve that by [manually removing the extension](#manual-removal) or by [uninstalling the Fiddler Everywhere application](removal-through-uninstall).
+Once the Fiddler's network extension installs, you can enable or disable the network capturing more quickly. However, it's essential to note that disabling the feature doesn't remove the network extension from your operating system. If you want to remove the network extension from your macOS system, you can achieve that by [manually removing the extension](#manual-removal) or by [uninstalling the Fiddler Everywhere application](removal-through-uninstall).
 
 ### Manual removal
 

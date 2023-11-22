@@ -19,22 +19,23 @@ The following table demonstrates the significant differences between the two fun
 
 | Feature          | System Capturing | Network Capturing | Independent Browser Capturing  | Terminal Capturing | Explicit Capturing 
 |:-----------------|:----------------|:----------------|:-----------------|:-----------------|:-----------------
-| Needed Configuration       | Requires Fiddler CA | Requires Fiddler CA | No additional configuration needed | No additional configuration needed | Requires Fiddler CA 
-| Proxy Modification | Modifies the OS proxy | N/A (Installs Network Extension) | Sets proxy only within the browser instance | Sets proxy only for the terminal instance | Manual proxy configuration 
-| Fiddler CA Installation | Automated & Manual CA installation | Automated & Manual CA installation | Preconfigured CA  | Preconfigured CA  | Manual CA installation
-| Browser traffic capturing   | Yes  | Yes  | Yes (Chromium browsers) | n/a | Yes 
-| Application traffic capturing | Yes | Yes | Browsers only | Terminals only | Yes
-| Remote traffic capturing | Yes  | No  | n/a | n/a | Yes 
-| Android traffic capturing | Yes |  No | n/a | n/a | Yes
-| iOS traffic capturing | Yes | No | n/a | n/a | Yes
-| Requires administrative access? | Yes  | Yes  | Yes - to run a browser with parameters | Yes - to run a terminal with custom parameters | Depends on the app
-| VPN compatibility    | Partial | Partial | Yes | Yes | Depends on the app
-| Capturing specifics  | HTTPS from the system proxy | All HTTPS traffic | HTTPS from the browser | HTTPS from a terminal and its child processes |  HTTPS from the client application
+| Captures browser traffic?   | Yes  | Yes  | Yes (Chromium browsers) | n/a | Yes 
+| Captures application traffic? | Yes | Yes | Browsers only | Terminals only | Yes
+| Captures remote traffic? | Yes  | No  | n/a | n/a | Yes 
+| Captures Android traffic? | Yes |  No | n/a | n/a | Yes
+| Captures iOS traffic? | Yes | No | n/a | n/a | Yes
+| Captures HTTPS from?  | The system proxy | Network adapter | Browser | Terminal and its child processes |  Client application
 | Supported protocols  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC
-| Supports HTTP/2   | Yes | Yes | Yes  | Yes | Yes
-| Supports TLS 1.3  | Yes | Yes | Yes  | Yes | Yes
-| Supports IPv4  | Yes | Yes | Yes  | Yes | Yes
-| Supports IPv6  | Yes | No | Yes  | Yes | Yes
+| Support for HTTP/2   | Yes | Yes | Yes  | Yes | Yes
+| Support for TLS 1.3  | Yes | Yes | Yes  | Yes | Yes
+| Support for IPv4  | Yes | Yes | Yes  | Yes | Yes
+| Support for IPv6  | Yes | No | Yes  | Yes | Yes
+| Supported OS  | Windows, macOS, Linux | macOS | Windows, macOS, Linux  | Windows, macOS, Linux | Windows, macOS, Linux
+| VPN compatibility    | Partial | Partial | Yes | Yes | Depends on the app
+| Proxy Modification | Modifies the OS proxy | N/A (Installs Network Extension) | Sets proxy only within the browser instance | Sets proxy only for the terminal instance | Manual proxy configuration 
+| Needs Configuration | Requires Fiddler CA | Requires Fiddler CA | No additional configuration needed | No additional configuration needed | Requires Fiddler CA 
+| Needs admin privileges? | Yes  | Yes  | Yes - to run a browser with params | Yes - to run a terminal with params | Depends on the app
+| Certificate Authority (CA) | Automated & Manual CA installation | Automated & Manual CA installation | Preconfigured CA  | Preconfigured CA  | Manual CA installation
 
 ## System Capturing
 
