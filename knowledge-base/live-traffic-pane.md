@@ -539,7 +539,7 @@ To place session information in the clipboard, use the **Copy** context menu opt
 
 - **Copy URL(s)**&mdash;Places the session URL in the system clipboard; Can be triggered with the keyboard by pressing `Cmd`+`U` (on Mac), or `Ctrl`+`U` (on Windows).
 
-- **Copy All Columns (Tab Separated)**&mdash;Places verbose session details (from all visible columns in the Live Traffic grid) in the system clipboard; Can be triggered with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
+- **Copy All Columns (Tab Separated)**&mdash;Places verbose session details (from all visible columns in the Live Traffic grid or from saved session snapshots) in the system clipboard; Can be triggered with the keyboard by pressing `Cmd`+`C` (on Mac), or `Ctrl`+`C` (on Windows).
 
 - **Copy as Fetch**&mdash;Converts the request as a Fetch code and puts it in the system clipboard.
 
