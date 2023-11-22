@@ -3,7 +3,7 @@ title: Capturing Network Traffic
 description: "Capture all HTTPS traffic that goes through the active network adapter."
 slug: capture-network-traffic
 publish: true
-position: 10
+position: 15
 ---
 
 # Network Capturing
