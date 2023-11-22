@@ -17,21 +17,24 @@ The application supports capturing modes such as automatic [system capturing](#s
 
 The following table demonstrates the significant differences between the two functionalities.
 
-| Feature          | System Capturing | Independent Browser Capturing  | Terminal Capturing | Explicit Capturing 
-|:-----------------|:----------------|:-----------------|:-----------------|:-----------------
-| Needed Configuration       | Requires installation of the Fiddler CA | No additional configuration needed | No additional configuration needed | Requires installation of the Fiddler CA 
-| OS Proxy Modification | Modifies the OS proxy settings | Configures the proxy only within the browser instance | Configures the proxy only for the terminal instance | Requires manual proxy configuration for the client application
-| Fiddler CA Installation | Automated CA installation available | Configures the CA for the browser instance | Configures the CA for the terminal. | Requires manual installation of the Fiddler CA within the app's preferred certificate manager
-| Browser traffic capturing   | Yes  | Yes (Chromium browsers) | n/a | Yes 
-| Application traffic capturing | Yes | Browser traffic only | Terminal traffic only | Yes
-| Remote traffic capturing | Yes  | n/a | n/a | Yes 
-| Android traffic capturing | Yes | n/a | n/a | Yes
-| iOS traffic capturing | Yes  | n/a | n/a | Yes
-| Administrative access requirements | Requires rights to install the Fiddler CA and modify the OS proxy  | Requires rights to start a browser with custom parameters | Requires rights to start a terminal with custom parameters | Depends on the app requirements
-| VPN compatibility    | Limited VPN support | Yes | Yes | Depends on the app requirement
-| Capturing specifics  | Captures HTTPS from the operating system proxy | Captures HTTPS from the independent browser | Captures HTTPS from a terminal and its child processes |  Captures traffic from the client application
-| Supported protocols  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC
-| Supports HTTP/2   | Yes | Yes  | Yes | Yes
+| Feature          | System Capturing | Network Capturing | Independent Browser Capturing  | Terminal Capturing | Explicit Capturing 
+|:-----------------|:----------------|:----------------|:-----------------|:-----------------|:-----------------
+| Needed Configuration       | Requires Fiddler CA | Requires Fiddler CA | No additional configuration needed | No additional configuration needed | Requires Fiddler CA 
+| Proxy Modification | Modifies the OS proxy | N/A (Installs Network Extension) | Sets proxy only within the browser instance | Sets proxy only for the terminal instance | Manual proxy configuration 
+| Fiddler CA Installation | Automated & Manual CA installation | Automated & Manual CA installation | Preconfigured CA  | Preconfigured CA  | Manual CA installation
+| Browser traffic capturing   | Yes  | Yes  | Yes (Chromium browsers) | n/a | Yes 
+| Application traffic capturing | Yes | Yes | Browsers only | Terminals only | Yes
+| Remote traffic capturing | Yes  | No  | n/a | n/a | Yes 
+| Android traffic capturing | Yes |  No | n/a | n/a | Yes
+| iOS traffic capturing | Yes | No | n/a | n/a | Yes
+| Requires administrative access? | Yes  | Yes  | Yes - to run a browser with parameters | Yes - to run a terminal with custom parameters | Depends on the app
+| VPN compatibility    | Partial | Partial | Yes | Yes | Depends on the app
+| Capturing specifics  | HTTPS from the system proxy | All HTTPS traffic | HTTPS from the browser | HTTPS from a terminal and its child processes |  HTTPS from the client application
+| Supported protocols  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC
+| Supports HTTP/2   | Yes | Yes | Yes  | Yes | Yes
+| Supports TLS 1.3  | Yes | Yes | Yes  | Yes | Yes
+| Supports IPv4  | Yes | Yes | Yes  | Yes | Yes
+| Supports IPv6  | Yes | No | Yes  | Yes | Yes
 
 ## System Capturing
 
@@ -51,6 +54,12 @@ To capture system traffic with Fiddler Everywhere:
 
 [Learn more about the system capturing mode here...]({%slug capture-system-traffic%})
 
+
+## Network Capturing
+
+The Fiddler Everywhere version 5.2.0 introduced the network capturing mode as a BETA feature for macOS. The mode works on a lower level than an HTTP(S) proxy and allows you to capture traffic from all applications that use the active network adapter without changing the system or client proxy. 
+
+[Learn more about the network capturing mode here...]({%slug capture-network-traffic%})
 
 ## Independent Browser Capturing
 

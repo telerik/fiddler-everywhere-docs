@@ -24,7 +24,9 @@ The benefits of the **Network Capture** mode are as follows:
 
 - Allows you to control the IP addresses and processes to monitor seamlessly.
 
-## Prerequisites
+## Prerequisites & Limitations
+
+### Prerequisites
 
 You must meet the following prerequisites to use the **Network Capture** mode.
 
@@ -32,6 +34,20 @@ You must meet the following prerequisites to use the **Network Capture** mode.
 
 - Administrative privileges to install/uninstall the network extension on macOS.
 
+
+### Limitations
+
+The **Network Capture** mode is in Beta state and, currently, has some known limitations as follows:
+
+- The network extension that enables the **Network Capture** mode is available only on the macOS version of Fiddler Everywhere. The development for the counterpart Windows & Linux features is ongoing.
+
+- The **Network Capture** mode captures IPv4 traffic, while IPv6 is not yet supported.
+
+- The **Network Capture** mode is incompatible with most VPN tools.
+
+- The **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. Alternatively, you can create a Fiddler rule that executes the **Do Not Decrypt** action on the desired domains.
+
+- The **Network Capture** mode can capture only outbound traffic. Currently, inbound traffic from remote device is not captured. For such cases, use our alternative capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
 
 
 ## Using the Network Capture Mode
@@ -116,6 +132,14 @@ The default capturing rules for port 80 (HTTP) and 443 (HTTPS) use  **IP Address
 
 In addition, the default rules are also adding a localhost address (**IP Address** set as `127.0.0.0` and **Subnet Mask** set as `8`) that demonstrates how to set localhost capturing on port 3000. 
 
+
+## Troubleshooting the macOS Network Extension
+
+Consider the following tips to troubleshoot the Fiddler's network extension on macOS:
+
+- Ensure that the currently logged use on macOS has administraive privileges that allows him to install and enable network exteions.
+
+If you experience any troubles installing and enabling the Fiddler's network extension for macOS, please reach out to us through [the Telerik Support Center](https://www.telerik.com/account/support-center). 
 
 
 ## Removing the macOS Network Extension
