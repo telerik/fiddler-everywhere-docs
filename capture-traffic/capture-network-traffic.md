@@ -130,7 +130,7 @@ Through the advanced view, you can manually control what traffic to capture thro
 
 The **Subnet Mask** field accepts [a CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) value between 0 and 32. For example, A value of 32 (equal to subnet mask `255.255.255.255`) means that only the host address, as set through the **IP Address** field, will be monitored. Conversely, a value of 0 (equal to subnet mask `0.0.0.0`) means that all IP addresses from the range will be monitored.
 
-The default capturing rules for port 80 (HTTP) and 443 (HTTPS) use  **IP Address** set as `0.0.0.0` and **Subnet Mask** set as *0* (`0.0.0.0`). That entry translates to all available IP addresses because it starts from `0.0.0.0` and adds a mask covering the entire IPV4 range (all 4,294,967,296 available addresses). 
+The default capturing rules for port 80 (HTTP) and 443 (HTTPS) use  **IP Address** set as `0.0.0.0` and **Subnet Mask** set as *0* (`0.0.0.0`). That entry translates to all available IP addresses because it starts from `0.0.0.0` and adds a mask covering the entire IPv4 range (all 4,294,967,296 available addresses). 
 
 In addition, the default rules are also adding a localhost address (**IP Address** set as `127.0.0.0` and **Subnet Mask** set as `8`) that demonstrates how to set localhost capturing on port 3000. 
 
@@ -139,7 +139,7 @@ In addition, the default rules are also adding a localhost address (**IP Address
 
 Consider the following tips to troubleshoot the Fiddler's network extension on macOS:
 
-- Ensure that the currently logged use on macOS has administraive privileges that allows him to install and enable network exteions.
+- Ensure that the currently logged user on macOS has administrative privileges that allows installation and enablement network extensions.
 
 If you experience any troubles installing and enabling the Fiddler's network extension for macOS, please reach out to us through [the Telerik Support Center](https://www.telerik.com/account/support-center). 
 

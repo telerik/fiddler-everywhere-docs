@@ -58,7 +58,7 @@ To capture system traffic with Fiddler Everywhere:
 
 ## Network Capturing
 
-The Fiddler Everywhere version 5.2.0 introduced the network capturing mode as a BETA feature for macOS. The mode works on a lower level than an HTTP(S) proxy and allows you to capture traffic from all applications that use the active network adapter without changing the system or client proxy. 
+The Fiddler Everywhere version 5.2.0 introduced the network capturing mode as a BETA feature for macOS. The mode works on a lower level than an HTTP(S) proxy and allows you to capture TCP traffic from all applications that use the active network adapter without changing the system or client proxy. 
 
 [Learn more about the network capturing mode here...]({%slug capture-network-traffic%})
 
