@@ -18,7 +18,7 @@ The benefits of the network capturing mode are as follows:
 
 - Works on a lower level compared to HTTP(S) proxies.
 
-- Captures all HTTP(S) traffic from the active network adapter. 
+- Captures all outgoing TCP traffic from the active network adapter. 
 
 - No limitations related to frameworks, applications, operating systems, and other configuration specifics that you usually must handle when using an HTTP(S) proxy.
 
