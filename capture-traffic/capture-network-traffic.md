@@ -1,6 +1,6 @@
 ---
 title: Capturing Network Traffic
-description: "Capture all HTTPS traffic that goes through the active network adapter."
+description: "Capture all outgoing TCP traffic"
 slug: capture-network-traffic
 publish: true
 position: 15
