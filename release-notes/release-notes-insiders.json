@@ -8,7 +8,7 @@
                 "type": "New",
                 "entries": [
                     {
-                        "title": "Add network capturing as an alternative to setting a proxy on macOS."
+                        "title": "[Beta feature] Add network capturing as an alternative to setting a proxy on macOS"
                     },
                     {
                         "title": "Allow the Composer UI to hide auto-generated headers, like \"Host\" and \"User-Agent\""
