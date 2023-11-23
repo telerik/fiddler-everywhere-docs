@@ -45,7 +45,7 @@ The **Network Capture** mode is in Beta state and, currently, has some known lim
 
 - The  network capturing mode is incompatible with most VPN tools.
 
-    >tip Some VPN tools will automatically close the VPN connection is a third-party network extension is enabled. You can try to workaround that by starting Fiddler Everywhere and enabling the network capturing mode before making a connection to the VPN.
+    >tip Some VPN tools will automatically close the VPN connection if a third-party network extension is enabled. You can try to workaround that by making the VPN connection before starting Fiddler Everywhere and enabling the network capturing mode.
 
 - The **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. Alternatively, you can create a Fiddler rule that executes the **Do Not Decrypt** action on the desired domains.
 
