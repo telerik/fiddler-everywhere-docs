@@ -141,16 +141,16 @@ In addition, the default rules are also adding a localhost address (**IP Address
 
 Consider the following tips to troubleshoot the Fiddler's network extension on macOS:
 
-- Ensure that the currently logged user on macOS has administrative privileges that allows installation and enablement network extensions.
+- Ensure that the currently logged user on macOS has administrative privileges that allow installation and enablement of network extensions.
 
-If you experience any troubles installing and enabling the Fiddler's network extension for macOS, please contact us through [the Telerik Support Center](https://www.telerik.com/account/support-center). 
+If you experience trouble installing and enabling the Fiddler's network extension for macOS, don't hesitate to contact us through [the Telerik Support Center](https://www.telerik.com/account/support-center). 
 
 
 ## Removing the macOS Network Extension
 
-Once the Fiddler's network extension installs, you can enable or disable the network capturing more quickly. However, it's essential to note that disabling the feature doesn't remove the network extension from your operating system. If you want to remove the network extension from your macOS system, you can achieve that by [manually removing the extension](#manual-removal) or by [uninstalling the Fiddler Everywhere application](removal-through-uninstall).
+Once the Fiddler's network extension installs, you can enable or disable the network capturing more quickly. However, it's essential to note that disabling the feature doesn't remove the network extension from your operating system. Suppose you want to remove the network extension from your macOS system. In that case, you can achieve that by [manually removing the extension](#manual-removal) or by [uninstalling the Fiddler Everywhere application](#removal-through-application-uninstall).
 
-### Manual removal
+### Manual Removal
 
 You can manually remove the extension by executing the following steps:
 
