@@ -119,7 +119,7 @@ Through the advanced view, you can manually control what traffic to capture thro
 
 - **IP Address**&mdash;Sets the value of the IP address or starting address of the IP range (in case the [CIDR-notated](#cidr-notation-for-setting-ip-addresses) subnet mask differs from 32).
 
-- **Subnet Mask**&mdash;Sets the subnet mask, which will determine the range of OP addresses. Accepts [Classless Inter-Domain Routing (CIRD) notation](#cidr-notation-for-setting-ip-addresses).
+- **Subnet Mask**&mdash;Sets the subnet mask, which will determine the range of OP addresses. Accepts [Classless Inter-Domain Routing (CIDR) notation](#cidr-notation-for-setting-ip-addresses).
 
 - **Port****&mdash;Sets the TCP/IP port. By default, most client applications use port 80 for HTTP and port 443 for HTTPS. However, it is common for some applications to use different ports for staging and testing purposes (for example, custom ports for demo applications running on localhost)
 
