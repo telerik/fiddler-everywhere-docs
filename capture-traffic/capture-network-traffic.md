@@ -10,7 +10,7 @@ position: 15
 
 >important The network capturing mode is feature in BETA state and is subject to change in the future. Currently, the functionality is available only for the **macOS** version of Fiddler Everywhere and works only for IPv4 protocol.
 
-This article describes using Fiddler's **network capturing mode**, where "network traffic" refers to all HTTP, HTTPS, WebSocket, and gRPC traffic directed to the active network adapter. The feature requires the installation of a network extension, which requires explicit administrative privileges.
+This article describes using Fiddler's **network capturing mode**, where "network traffic" refers to all outgoing TCP traffic. The feature requires the installation of a network extension, which requires explicit administrative privileges.
 
 In nature, the network capturing mode is a more powerful way to capture network traffic on a lower level than an HTTPS(S) proxy works (which is how Fiddler works in the **System Capturing** mode or all other available capturing modes). 
 
