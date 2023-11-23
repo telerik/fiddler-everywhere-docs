@@ -30,7 +30,9 @@ The benefits of the network capturing mode are as follows:
 
 You must meet the following prerequisites to use the network capturing mode.
 
-- Installed the latest version of Fiddler Everywhere.
+- [Installed the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
+
+- [Installed and trusted Fiddler's Certificate Authority]({%slug trust-certificate%}).
 
 - Administrative privileges to install/uninstall the network extension on macOS.
 
