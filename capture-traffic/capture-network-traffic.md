@@ -8,7 +8,7 @@ position: 15
 
 # Network Capturing
 
->important The network capturing mode is feature in BETA state and is subject to change in the future. Currently, the functionality is available only for the **macOS** version of Fiddler Everywhere and works only for IPv4 protocol.
+>important The network capturing mode is a feature in BETA state and is subject to change in the future. Currently, the functionality is available only for the **macOS** version of Fiddler Everywhere and works only for IPv4 protocol.
 
 This article describes using Fiddler's **network capturing mode**, where "network traffic" refers to all outgoing TCP traffic. The feature requires the installation of a network extension, which requires explicit administrative privileges.
 
@@ -43,13 +43,13 @@ The **Network Capture** mode is in Beta state and, currently, has some known lim
 
 - The network capturing mode captures IPv4 traffic, while IPv6 is not yet supported.
 
-- The  network capturing mode is incompatible with most VPN tools.
+- The network capturing mode is incompatible with most VPN tools.
 
     >tip Some VPN tools will automatically close the VPN connection if a third-party network extension is enabled. You can try to workaround that by making the VPN connection before starting Fiddler Everywhere and enabling the network capturing mode.
 
 - The **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. Alternatively, you can create a Fiddler rule that executes the **Do Not Decrypt** action on the desired domains.
 
-- The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote device is not captured. For such cases, use our alternative capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
+- The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
 
 
 ## Using the Network Capturing Mode
@@ -141,7 +141,7 @@ Consider the following tips to troubleshoot the Fiddler's network extension on m
 
 - Ensure that the currently logged user on macOS has administrative privileges that allows installation and enablement network extensions.
 
-If you experience any troubles installing and enabling the Fiddler's network extension for macOS, please reach out to us through [the Telerik Support Center](https://www.telerik.com/account/support-center). 
+If you experience any troubles installing and enabling the Fiddler's network extension for macOS, please contact us through [the Telerik Support Center](https://www.telerik.com/account/support-center). 
 
 
 ## Removing the macOS Network Extension
@@ -175,7 +175,3 @@ Uninstalling the Fiddler Everywhere application also triggers the deletion of th
 - In the prompted macOS warning, choose **Continue** to confirm the application and extension removal.
 
 On some macOS systems, the removal of Fiddler Everywhere can fail initially. In such cases, close Fiddler Everywhere, ensure no Fiddler processes run in the background, and then re-try the uninstall process.
-
-
-
-
