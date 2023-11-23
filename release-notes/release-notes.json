@@ -1,5 +1,49 @@
 [
     {
+        "version": "5.2.0",
+        "title": "Fiddler Everywhere v5.2.0",
+        "date": "November 23, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "[Beta feature] Add network capturing as an alternative to setting a proxy on macOS"
+                    },
+                    {
+                        "title": "Allow the Composer UI to hide auto-generated headers, like \"Host\" and \"User-Agent\""
+                    },
+                    {
+                        "title": "Update Composer UI for easier editing of headers, cookies, and parameters"
+                    },
+                    {
+                        "title": "Add new inspector for MessagePack responses"
+                    },
+                    {
+                        "title": "Update dropdown lists UI in the rules and advanced filters dialogs"
+                    },
+                    {
+                        "title": "Add traffic source icons in app status bar info popup"
+                    },
+                    {
+                        "title": "\"Copy Full Summary\" action in the session context menu changed to copy only the visible session list columns values to the clipboard"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Application menus not visible during startup when using an offline license"
+                    },
+                    {
+                        "title": "Slow inspectors performance when viewing large JavaScript responses"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.1.0",
         "title": "Fiddler Everywhere v5.1.0",
         "date": "November 9, 2023",
