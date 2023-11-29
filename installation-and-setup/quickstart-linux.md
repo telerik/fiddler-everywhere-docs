@@ -16,7 +16,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Lin
 
 ## Prerequisites
 
-- Install Ubuntu 18+ x64.
+- Install Ubuntu 20+ x64.
 
 - Provide 400MB of free disk space.
 
