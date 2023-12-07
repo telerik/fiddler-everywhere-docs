@@ -1,5 +1,46 @@
 [
     {
+        "version": "5.3.0-insiders",
+        "title": "Fiddler Everywhere v5.3.0",
+        "date": "December 7, 2023",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add support for server-sent events"
+                    },
+                    {
+                        "title": "Make hex inspector the default one for WebSocket messages"
+                    },
+                    {
+                        "title": "Persist the selected view in the Inspectors Body tab"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Update third-party dependencies to mitigate CVE-2023-5997, CVE-2023-6345, CVE-2023-6346, CVE-2023-6347 and CVE-2023-6350"
+                    },
+                    {
+                        "title": "Cookie header is not parsed correctly in the Composer Cookie tab"
+                    },
+                    {
+                        "title": "Renderer process crashes with out of memory exception in some cases"
+                    },
+                    {
+                        "title": "MessagePack inspector shows wrong numbers in some cases"
+                    },
+                    {
+                        "title": "\"View full response\" link is misplaced in the Inspectors"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.2.0-insiders",
         "title": "Fiddler Everywhere v5.2.0",
         "date": "November 23, 2023",
