@@ -20,7 +20,7 @@ Fiddler Everywhere delivers a range of handy and user-friendly features whose nu
 
 ### System Traffic Capturing
 
-Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, and gRPC traffic between your computer and the Internet and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-system-traffic %})
+Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, Server-Sent Events, and gRPC traffic between your computer and the Internet and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-system-traffic %})
 
 
 ### Independent Browser Capturing

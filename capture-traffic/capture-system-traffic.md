@@ -8,7 +8,7 @@ position: 10
 
 # System Capturing Mode
 
-This article describes how to use Fiddler's **system capturing mode**, where "system traffic" refers to all HTTP, HTTPS, WebSocket, and gRPC traffic directed to go through the operating system proxy settings.
+This article describes how to use Fiddler's **system capturing mode**, where "system traffic" refers to all HTTP, HTTPS, WebSocket, Server-Sent Events, and gRPC traffic directed to go through the operating system proxy settings.
 
 ## Capturing System Traffic
 

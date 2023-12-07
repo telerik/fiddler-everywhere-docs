@@ -9,7 +9,7 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Modes
 
-Fiddler Everywhere is a local forward TLS proxy that can capture HTTP(S), WebSocket, and gRPC traffic. The traffic can be generated from locally installed applications or remote devices (within the same local network).
+Fiddler Everywhere is a local forward TLS proxy that can capture HTTP(S), WebSocket, Server-Sent Events (SSE), and gRPC traffic. The traffic can be generated from locally installed applications or remote devices (within the same local network).
 
 The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [terminal capturing](#terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing), which can include [traffic from remote devices](#remote-traffic-capturing).
 
@@ -25,7 +25,7 @@ The following table demonstrates the significant differences between the two fun
 | Captures Android traffic? | Yes |  No | n/a | n/a | Yes
 | Captures iOS traffic? | Yes | No | n/a | n/a | Yes
 | Captures HTTPS from?  | The system proxy | Network adapter | Browser | Terminal and its child processes |  Client application
-| Supported protocols  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket  | HTTP, HTTPS, WebSocket, gRPC | HTTP, HTTPS, WebSocket, gRPC
+| Supported protocols  | HTTP, HTTPS, WebSocket, SSE, gRPC | HTTP, HTTPS, WebSocket, SSE, gRPC | HTTP, HTTPS, WebSocket, SSE | HTTP, HTTPS, WebSocket, SSE, gRPC | HTTP, HTTPS, WebSocket, SSE, gRPC
 | Support for HTTP/2   | Yes | Yes | Yes  | Yes | Yes
 | Support for TLS 1.3  | Yes | Yes | Yes  | Yes | Yes
 | Support for IPv4  | Yes | Yes | Yes  | Yes | Yes
@@ -39,7 +39,7 @@ The following table demonstrates the significant differences between the two fun
 
 ## System Capturing
 
-The client logs all HTTP, HTTPS,  WebSocket, and gRPC traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;browsers, desktop applications, CLI tools, and others. You can use the captured traffic to debug issues, identify performance bottlenecks, or share it with your teammates.
+The client logs all HTTP, HTTPS,  WebSocket, SSE, and gRPC traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;browsers, desktop applications, CLI tools, and others. You can use the captured traffic to debug issues, identify performance bottlenecks, or share it with your teammates.
 
 To capture system traffic with Fiddler Everywhere:
 
@@ -126,6 +126,12 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. N
 The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer seven and depend on TCP at OSI layer four. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
 
 Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system, independent browser, or explicit capturing modes). The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab).
+
+## Server-Sent Events
+
+The [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_eventsp) s a server technology that enables a client application to receive updates from a server through the HTTP protocol. With server-sent events, a server can send new data to the client at any time, by pushing messages.
+
+Fiddler Everywhere supports SSE capturing out-of-the-box (through a system, independent browser, or explicit capturing modes). The Fiddler application provides dedicated SSE inspectors to examine and extract data from the SSE session's handshake, and messages.
 
 
 ## gRPC Capturing
