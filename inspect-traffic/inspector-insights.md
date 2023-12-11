@@ -72,7 +72,7 @@ The **Cookies inspector** displays the contents of any outbound `Cookie` and `Co
 
 The **Raw Inspector** allows you to view the complete request and response, including headers and bodies, as text. Most of the inspector represents a large text area that displays the body text interpreted using the detected character set with the headers, the byte-order-marker, or an embedded `META` tag declaration.
 
-By default, the request or response will be displayed as received, which means that encoded or compressed content will be in a non-human readable format and displayed as is. The **Raw Inspector** comes with a special **decode** button (located in the [toolbar](#inspectors-toolbar)), decoding encoded content.
+By default, the request or response displays as received, which means that encoded or compressed content will be in a non-human readable format and displayed as is. The **Raw Inspector** comes with a special **decode** button (located in the [toolbar](#inspectors-toolbar)), decoding encoded content.
 
 The following figure displays the encoded raw content with the **decode** button in an inactive state.
 
@@ -167,7 +167,7 @@ The **XML** inspector interprets the selected request or response body as an Ext
 
 #### Form Data Body Inspector
 
-The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form data. The parsed name/value pairs are displayed in the grid view if a form is found. The inspector works best with `application/x-www-form-urlencoded` data used by most simple web forms.
+The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form data. If a form is found, the parsed name/value pairs are displayed in the grid view. The inspector works best with `application/x-www-form-urlencoded` data used by most simple web forms.
 
 ![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
 
@@ -230,20 +230,28 @@ The **Messages tab** renders a list of the WebSocket or gRPC messages sent from 
 
 The list of messages is rendered as a grid with multiple columns:
 
-- **ID**&mdash;Number indicating the consecutive number of the message.
+- **#**&mdash;Number indicating the consecutive number of the message.
 
 - **Sender**&mdash;Inidicates whether the **Client** or **Server** sent the message.
 
 - **Type (WebSocket only)**&mdash;Indicates the type of the message. The supported values are as follows:
     * **Text**&mdash;message with text payload.
     * **Binary**&mdash;message with binary payload.
-    * **Cont.**&mdash;represents a continuation message from a fragmented message. Use the **Unfragment all messages** button to unfragmented messages of type **Cont.** and remove them from the **Messages** list.
+    * **Cont.**&mdash;represents a continuation message from a fragmented message. Use the **Unfragment all messages** button to unfragment messages of type **Cont.** and remove them from the **Messages** list.
     * [**Ping**](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.2).
     * [**Pong**](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.3).
 
 - **Size**&mdash;The length of the message in bytes.
 
-- **Time (WebSocket only)**&mdash;Renders the date and the time when the message is received.
+- **Id (SSE only)**&mdash;The ID for the specific SSE message (if such exists).
+
+- **Event (SSE only)**&mdash;The server-sent event name which corresponds to **Type** column in Google Chrome’s DevTools.
+
+- **Data (SSE only)**&mdash;Contains the value of the data property of the message.
+
+- **Raw (SSE only)**&mdash;Contains the whole object sent from the server without any parsing
+
+- **Time (WebSocket & SSE)**&mdash;Renders the date and the time when the message is received.
 
 - **Message**&mdash;The string representation of the message sent/received.
 
@@ -312,7 +320,7 @@ Each inspector has a toolbar that provides a different set of functionalities an
 
 - **Save response body to file**&mdash;Exports the body in the format specified as content type. Raw data is exported as DAT files. Available for the Raw and Body Response inspectors.
 
-- **Save image to file**&mdash;Exports the previewed images in the specified image format. Available only for the Preview inspector.
+- **Save image to file**&mdash;Exports the previewed images in the specified format. Available only for the Preview inspector.
 
 - **Toggle Word Wrap**&mdash;Toogle the option to transfer a word with insufficient space from the end of one line of text to the beginning of the next.
 
