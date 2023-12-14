@@ -12,7 +12,7 @@ res_type: kb
 
 |----------|-------|
 | Product  | Fiddler Everywhere |
-| Version  | 5.0.0 and above] |
+| Version  | 5.0.0 and above |
 
 ## Description
 
