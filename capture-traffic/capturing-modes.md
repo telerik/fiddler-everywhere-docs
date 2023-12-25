@@ -62,6 +62,13 @@ The Fiddler Everywhere version 5.2.0 introduced the network capturing mode as a 
 
 [Learn more about the network capturing mode here...]({%slug capture-network-traffic%})
 
+The network capturing mode in Fiddler has many advantages compared to the traditional HTTPS proxy capturing. The main differences are:
+- You don't need to change or set an HTTPS proxy on your operating system or client applications.
+- You have more control over which network segment or processes to monitor.
+- It brings additional value in overcoming known HTTPS proxy limitations in specific operating systems and clients. 
+
+One of the brightest examples of network capturing benefits is the infamous case [where Safari on macOS ignores the proxy settings for WebSocket traffic](https://discussions.apple.com/thread/253885692?sortBy=best). Because of that known issue, there is no way to debug WebSocket traffic that goes through a proxy (on Safari) while using HTTPS proxy tools. However, with the network capturing mode, you can capture WebSocket and all TCP traffic on a lower level, making the issue obsolete. 
+
 ## Independent Browser Capturing
 
 Independent browser capturing is a feature that allows you to capture traffic from a sandboxed browser instance. Currently, Fiddler Everywhere supports independent browser capturing only for Chromium browsers.
