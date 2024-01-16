@@ -75,6 +75,7 @@ Fiddler automatically adds the newly created rule on the top of the [**Rules Que
 
 - [Advanced Rules Techniques]({%slug rulesbuilder-advanced-techniques%})
 - [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
-- [Using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
-- [Redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
+- [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
+- [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
+- [Example for disabling caching through the Rules tab]({%slug rule-disable-caching%})
 - [Returning Custom HTTP Responses]({%slug using-custom-responses%})
