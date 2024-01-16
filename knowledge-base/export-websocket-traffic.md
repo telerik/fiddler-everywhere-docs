@@ -20,7 +20,7 @@ To export WebSocket traffic using Fiddler Everywhere, use one of the following o
 
 - Save or export the entire WebSocket sessions through the **Save** and **Export** options in the Live Traffic grid context menu. This allows you to preserve the whole WebSocket session and reload it later for further inspection.
 
-- Load the **Messages inspector**, and use the **Copy all content to clipboard** option from the toolbar. This will copy all messages alongside their technical data in plain text format.
+- Load the **Messages inspector**, and use the **Copy all content to clipboard** option from the toolbar icons. This will copy all messages alongside their technical data in plain text format.
 
 - If you want to export a specific message, select it, go to its **Message inspector**, and then use the **Save message content to file** or **Copy all content to clipboard** options.
 
