@@ -16,7 +16,7 @@ res_type: kb
 
 ## Description
 
-Fiddler Everywhere's global search option is designed to search only within the HTTP headers of captured traffic. This is because the application is optimized for performance and user experience. Searching through the potentially large  HTTP body content in each captured session would be inefficient and slow.
+Fiddler Everywhere's global search option is designed to search only within the HTTP headers of captured traffic. This is because the application is optimized for performance and user experience. Searching through the potentially large HTTP body content in each captured session would be inefficient and slow.
 
 However, you can use the filters option in Fiddler Everywhere to create your own filter and search for specific values within the request body, response body, and headers. Filters allow you to quickly narrow down your search results and find the desired information.
 
