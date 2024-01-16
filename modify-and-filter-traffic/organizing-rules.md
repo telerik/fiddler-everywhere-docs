@@ -69,6 +69,7 @@ The group options allow you to further interact with the group's rules:
 ## Additional Resources
 
 - [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
+- [Advanced Rules Techniques]({%slug rulesbuilder-advanced-techniques%})
 - [Using Predefined Actions]({%slug fiddler-ar-actions%})
 - [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Creating Manual HTTP Responses]({%slug using-custom-responses%})

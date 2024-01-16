@@ -28,19 +28,16 @@ To accomplish this scenario, we can use a basic redirect or a rule, which utiliz
 
 To redirect traffic from one server to another, implement a basic redirect rule.
 
-```JS
-Match: https://docs.telerik.com/fiddler-everywhere/introduction
-Action: http://localhost:4000/fiddler-everywhere/introduction
-```
+**Match Condition**: URL > Contains > `https://docs.telerik.com/fiddler-everywhere/introduction`
+**Action**: Update URL > Set Value > `http://localhost:4000/fiddler-everywhere/introduction`
 
 ### Redirecting with Regex
 
-To create more complex redirect rules, use the Fiddler Everywhere regex support for creating **Match** rules and **Actions**.
+To create more complex redirect rules, use the Fiddler Everywhere regex support for creating **Match Conditions** rules and **Actions**.
 
-```JS
-Match: regex:(.*)docs.telerik.com/(.*)
-Action: http://localhost:4000/$2
-```
+**Match Condition**: URL > Regular Expression > `regex:(.*)docs.telerik.com/(.*)`
+**Action**: Update URL > Regular Expression > `http://localhost:4000/$2`
+
 
 In the previous example, two regex variables are automatically created. The second one will have as its value everything that comes after the last slash (`/`).
 

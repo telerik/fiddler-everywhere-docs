@@ -23,7 +23,7 @@ OR
 
 1. Select the **Rules** tab.
 
-The **Rules** tab loads, and you can create, enable, and prioritize rules in the rules queue.
+The **Rules** tab loads, and you can create, enable, and ranks rules in the rules queue.
 
 ## Using Rules Builder
 
@@ -71,8 +71,9 @@ To modify captured session through the **Rules**:
 
 Fiddler automatically adds the newly created rule on the top of the [**Rules Queue**]({%slug modify-traffic-get-started%}#rules-queue), giving it immediate execution priority (you can demote or promote each rule in the queue). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
 
-### Additional Rules Resources
+## Additional Rules Resources
 
+- [Advanced Rules Techniques]({%slug rulesbuilder-advanced-techniques%})
 - [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
 - [Redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
