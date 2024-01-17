@@ -1,6 +1,6 @@
 ---
 title: Create a Rule to Disable Caching
-description: "create a rule in Fiddler Everywhere tO disable caching of pages and resources."
+description: "create a rule in Fiddler Everywhere to disable caching of pages and resources."
 type: how-to
 slug: rule-disable-caching
 res_type: kb
