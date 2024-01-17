@@ -22,7 +22,7 @@ Some WebSocket messages may be fragmented, meaning the entire context is receive
 
 1. Open Fiddler Everywhere, select the WebSocket session and navigate to the **Messages** inspector.
 2. Look for WebSocket messages that are fragmented, which are identified by the **Cont.** type (continuation).
-3. To combine these fragmented messages with their original message and remove them from the Messages list, click the **Unfragment all messages** option on the **Messages** inspector toolbar.
+3. To combine these fragmented messages with their original message, click the **Unfragment all messages** option on the **Messages** inspector toolbar. The initial unfragmented messages will be removed from the Messages list while the combined message will remain.
 4. Once you have unfragmented the messages, you can export the WebSocket message for further inspection.
 
 
