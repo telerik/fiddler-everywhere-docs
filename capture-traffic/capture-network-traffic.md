@@ -1,6 +1,6 @@
 ---
 title: Capturing Network Traffic
-description: "Capture all outgoing TCP traffic"
+description: "Capture all network traffic that goes thorugh the active network adapter and uses the TCP protocol"
 slug: capture-network-traffic
 publish: true
 position: 15
