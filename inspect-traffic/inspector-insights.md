@@ -249,7 +249,7 @@ The list of messages is rendered as a grid with multiple columns:
 
 - **Data (SSE only)**&mdash;Contains the value of the data property of the message.
 
-- **Raw (SSE only)**&mdash;Contains the whole object sent from the server without any parsing
+- **Raw (SSE only)**&mdash;Contains the whole object sent from the server without any parsing.
 
 - **Time (WebSocket & SSE)**&mdash;Renders the date and the time when the message is received.
 
