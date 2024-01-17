@@ -35,8 +35,10 @@ To redirect traffic from one server to another, implement a basic redirect rule.
 
 To create more complex redirect rules, use the Fiddler Everywhere regex support for creating **Match Conditions** rules and **Actions**.
 
-**Match Condition**: URL > Regular Expression > `regex:(.*)docs.telerik.com/(.*)`
-**Action**: Update URL > Regular Expression > `http://localhost:4000/$2`
+**Match Condition**: URL > Regular Expression > `(.*)docs.telerik.com/(.*)`
+**Action**: Update URL > Regular Expression > Find `(.*)docs.telerik.com/(.*)` + Replace `http://localhost:4000/$2`
+
+![Creating a rule that uses regular expression to change an URL](../images/kb/regex/rule-with-regex.png)
 
 
 In the previous example, two regex variables are automatically created. The second one will have as its value everything that comes after the last slash (`/`).
