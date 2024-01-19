@@ -34,17 +34,6 @@ The **Actions** drop-down in the **Rules Builder** provides predefined options w
 
 The content of each predefined options is as follows:
 
-* `200 OK (Image/gif)`
-
-    ```HTTP
-    HTTP/1.1 200 OK
-    Date: Fri, 25 Jan 2013 16:49:29 GMT
-    FiddlerTemplate: True
-    Content-Length: 308
-    Content-Type: image/gif
-
-    GIF89a# #encoded string for a sample GIF follows here
-    ```
 
 * `200 OK (HTML)`
 
@@ -55,6 +44,18 @@ The content of each predefined options is as follows:
     Content-Length: 51
 
     This is a simple Fiddler-returned <B>HTML</B> page.
+    ```
+
+* `200 OK (Image/gif)`
+
+    ```HTTP
+    HTTP/1.1 200 OK
+    Date: Fri, 25 Jan 2013 16:49:29 GMT
+    FiddlerTemplate: True
+    Content-Length: 308
+    Content-Type: image/gif
+
+    GIF89a# #encoded string for a sample GIF follows here
     ```
 
 * `200 OK (Pixel)`
@@ -195,7 +196,7 @@ The content of each predefined options is as follows:
 
 The **Actions** drop-down of the **Rule Builder** provides an option to load your own custom DAT file with an entirely custom HTTP response:
 
-1. Scroll the drop-down **Actions** menu and select **Response file**.
+1. Scroll the drop-down **Actions** menu and select **Return file**.
 1. In the file selection window, load the DAT file with the custom HTTP response.
 1. Click **Save** to create or update the rule.
 
@@ -205,7 +206,7 @@ The **Actions** drop-down of the **Rule Builder** provides an option to load you
 
 Another option that the **Rule Builder** provides is to create the mocked custom HTTP response manually:
 
-1. Scroll the drop-down **Actions** menu and select **Manual Response**.
+1. Scroll the drop-down **Actions** menu and select **Return Manual Response**.
 1. Write the custom HTTP response in the text field.
 1. Click **Save** to create or update the rule.
 

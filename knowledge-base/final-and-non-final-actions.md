@@ -13,7 +13,7 @@ The article lists and explains the supported matching [conditions](#conditions) 
 
 ## Conditions
 
-The **Rule Builder** can add and use single or multiple **conditions** needed to trigger different [**actions**](#actions). The conditions are logical structures with different statements whose numbers can vary between two and four. A statement field that handles text (string modifier) is case-insensitive by default (you can use the `Aa` button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions.
+The **Rule Builder** can add and use single or multiple matching **conditions** needed to trigger different [**actions**](#actions). The conditions are logical structures with different statements whose numbers can vary between two and four. A statement field that handles text (string modifier) is case-insensitive by default (you can use the `Aa` button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions.
 
 For more information, refer to the following list. 
 
@@ -312,6 +312,14 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Non-final</td>
         </tr>
         <tr>
+            <td><b>Set Breakpoint</b></td>
+            <td><b>Before Sending a Request</b> or <b>Before Sending a Response</b></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Pauses the session before the sending request (to the server) or response (to the client). The action works only for newly established connections.</td>
+            <td>Non-final.</td>
+        </tr>
+        <tr>
             <td><b>Predefined Response</b></td>
             <td>Drop-down with <a href="https://docs.telerik.com/fiddler-everywhere/knowledge-base/using-ar-predefined-actions">predefined responses</a></td>
             <td>n/a</td>
@@ -388,7 +396,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version, and Remote IP</b> can be used. The rule works only for newly established connections.</td>
+            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version, and Remote IP</b> can be used. The action works only for newly established connections.</td>
             <td>Final </td>
         </tr>
         <tr>

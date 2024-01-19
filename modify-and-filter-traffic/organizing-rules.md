@@ -69,7 +69,10 @@ The group options allow you to further interact with the group's rules:
 ## Additional Resources
 
 - [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
-- [Using Predefined Actions]({%slug fiddler-ar-actions%})
-- [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
-- [Creating Manual HTTP Responses]({%slug using-custom-responses%})
+- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
+- [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
+- [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
+- [Example for disabling caching through the Rules tab]({%slug rule-disable-caching%})
+- [Example for creating manual HTTP Responses]({%slug using-custom-responses%})
+- [Understanding the matching conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)

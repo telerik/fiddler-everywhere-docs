@@ -3,7 +3,7 @@ title: Filtering Traffic
 description: "Learn how to filter the captured traffic to minimize the output in Live Traffic when working with the Fiddler Everywhere application."
 slug: how-to-filter-traffic
 publish: true
-position: 30
+position: 40
 previous_url: /knowledge-base/filter-traffic
 ---
 
