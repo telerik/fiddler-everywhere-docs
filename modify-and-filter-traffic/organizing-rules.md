@@ -69,7 +69,7 @@ The group options allow you to further interact with the group's rules:
 ## Additional Resources
 
 - [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
-- [Advanced Rules Techniques]({%slug rulesbuilder-advanced-techniques%})
+- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
 - [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
 - [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
 - [Example for disabling caching through the Rules tab]({%slug rule-disable-caching%})

@@ -73,7 +73,7 @@ Fiddler automatically adds the newly created rule on the top of the [**Rules Que
 
 ## Additional Rules Resources
 
-- [Advanced Rules Techniques]({%slug rulesbuilder-advanced-techniques%})
+- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
 - [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
 - [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})

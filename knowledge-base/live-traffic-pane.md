@@ -276,6 +276,11 @@ The following table displays the icons which **Live Traffic** grid supports for 
     </tbody>
 </table>
 
+### Breakpoint Indicators
+
+A paused session or otherwise a session that hit [an active breakpoint]({%slug rulesbuilder-breakpoints%}) will have a special "Paused" icon in the Live Traffic grid.
+
+
 ### Certificate Indicators
 
 Each [list icon](#list-icons) can contain an additional triangle warning that indicates different server certificate issues.
@@ -452,6 +457,7 @@ The context menu for the **Live Traffic** grid exposes actions you can apply for
 
 - [Replaying](#replaying) (**Replay**)
 - [Editing in the Composer](#editing-in-the-composer) (**Edit in Composer**)
+- [Resuming Paused Sessions](#resuming-paused-sessions) (**Resume Paused Sessions**)
 - [Adding New Rules](#adding-new-rules) (**Add New Rule**)
 - [Saving](#saving) (**Save**)
 - [Exporting](#exporting) (**Export**)
@@ -475,6 +481,10 @@ To replay previously captured sessions, use the **Replay** context menu option, 
 
 The **Edit in Composer** context menu option loads the selected request in a new composer window where it can be edited, saved for later usage and sharing, and reissued.
 
+
+### Resuming Paused Sessions
+
+To resume the execution of sessions that hit [active breakpoints]({%slug rulesbuilder-breakpoints%}), use the **Resume Paused Sessions** context menu option, which can be accessed with the keyboard by pressing `F5`.
 
 ### Adding New Rules
 

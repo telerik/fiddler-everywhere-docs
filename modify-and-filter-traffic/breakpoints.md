@@ -1,26 +1,28 @@
 ---
-title: Advanced Rules Techniques
-description: "Using Fiddler's advanced rules techniques like breakpoints."
-slug: rulesbuilder-advanced-techniques
+title: Using Breakpoints to Pause Traffic
+description: "Pausing network traffic through breakpoint actions in Fiddler Everywhere"
+slug: rulesbuilder-breakpoints
 publish: true
 position: 30
 ---
 
 
-# Advanced Rules Techniques
+# Breakpoints in Fiddler Everywhere
 
 The **Rules** functionality in Fiddler Everywhere is a sophisticated tool that lets you virtually play with the ongoing traffic in any way possible. With its help, you can easily adjust the ongoing traffic per your requirements by matching all or specific sessions and consequentially applying specific actions that vary from simply highlighting and commenting entries (for easier inspection and analysis) to changing the content and behavior of HTTP Requests (before they reach the target server) or HTTP Responses (before they reach the client application).
 
-Being able to "hack" an HTTP session on the fly provides almost unlimited testing and development opportunities. This article will demonstrate some more complex actions that can be used while creating a rule.
+Being able to "hack" an HTTP session on the fly provides almost unlimited testing and development opportunities. This article will demonstrate some more complex actions that can be used while using the Fiddler's breakpoints rule action.
 
 
 ## Using Breakpoints
 
 One of the most desired features was the ability to pause the execution of a session before it reaches the server or the client application. Fiddler Everywhere provides that option through the **Set Breakpoint** action and its two sub-actions **Before Sending a Request** and **Before Sending and Response**.
 
-Fiddler Everywhere stands between the client application (that sends a request and receives a response) and a server (that receives a request and returns a response). The breakpoint actions explicitly pause the forwarding of matched requests and responses. You inspect the paused request/response or make complex changes by editing their HTTP Headers and Body through the **Raw** inspector.
+Fiddler Everywhere stands between the client application (that sends a request and receives a response) and a server (that receives a request and returns a response). The breakpoint actions explicitly pause the forwarding of matched requests and responses. You can inspect the paused request/response or make complex changes by editing their HTTP Headers and Body through the **Raw** inspector.
 
 ### Request Breakpoint
+
+Setting a breakpoint for HTTP request will pause the request before it reaches the target server. This allows you to modify and mock different request scenarios on the fly.
 
 To create a rule that sets a breakpoint for HTTP request, do the following:
 
@@ -50,6 +52,8 @@ The following steps demonstrate how the **Before Sending a Request** action work
 
 ### Response Breakpoint
 
+Setting a breakpoint for HTTP response will pause the request before it reaches the client application. This allows you to modify and mock different response scenarios on the fly.
+
 To create a rule that sets a breakpoint for HTTP response, do the following:
 
 1. Select the **Rules** tab and create new rule through the **Add Rule** button.
@@ -74,6 +78,22 @@ The following steps demonstrate how the **Before Sending a Response** action wor
 
 1. Once the inspection or modification of the session is completed, resume the response execution. Only at this point does the response go to the client application. The session will reach the client with its modified data.
 
+### Breakpoint Specifics
+
+The following considerations must be made while working with breakpoints:
+
+- An active rule that sets breakpoints applies only to newly captured traffic.
+- A breakpoint can be set with all matching conditions in the Rules Builder.
+- A session with a hit breakpoint or otherwise paused session will have a "Pause" icon in the Live Traffic grid.
+- A session with a hit breakpoint or otherwise paused session will have a "Paused" pill in the paused Inspector section (Request or Response inspector).
+- You can resume a paused session by clicking the "Paused" pill.
+- You can resume paused sessions through the "Resume Paused Sessions" option in the Live Traffic context menu.
+- A paused HTTP request or response can be edited only through the **Raw** inspector.
+
+While the breakpoints are compelling functionality,  the following limitations must be considered:
+
+- A response breakpoint will pause the forwarding from Fiddler's side. However, some client applications have additional caching or replay mechanisms that automatically replay the request if a response is not received within a specific time.
+- You can't modify requests and responses that use gzipped bodies.
 
 ## Additional Rules Resources
 
