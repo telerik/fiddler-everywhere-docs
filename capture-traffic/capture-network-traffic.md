@@ -127,14 +127,16 @@ Through the advanced view, you can manually control what traffic to capture thro
 
 - **Filter additionally by PID or process name**&mdash;Use this field to add multiple PID (process identifier) or process name values by separating them with a space. If your process name contains more than one word, add quotation marks (for example, "Google Chrome Helper"). You can use the macOS "Activity Monitor" application to determine any active application's specific PID or process name.
 
+    ![FIlter traffic by process ID](../images/network-capture/net-capture-adding-process.png)
+
 
 ### CIDR Notation for Setting Network Addresses
 
 The **Subnet Mask** field accepts [a CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) value between 0 and 32. For example, A value of 32 (equal to subnet mask `255.255.255.255`) means that only the host address, as set through the **IP Address** field, will be monitored. Conversely, a value of 0 (equal to subnet mask `0.0.0.0`) means that all IP addresses from the range will be monitored.
 
-The default capturing rules for port 80 (HTTP) and 443 (HTTPS) use  **IP Address** set as `0.0.0.0` and **Subnet Mask** set as *0* (`0.0.0.0`). That entry translates to all available IP addresses because it starts from `0.0.0.0` and adds a mask covering the entire IPv4 range (all 4,294,967,296 available addresses). 
+The default capturing rules for port 80 (HTTP) and 443 (HTTPS) use  **IP Address** set as `0.0.0.0` and **Subnet Mask** set as `0` (`0.0.0.0`). That entry translates to all available IPv4 addresses because it starts from `0.0.0.0` and adds a mask covering the entire IPv4 range (all 4,294,967,296 available addresses). The default rules also adds the above range as IPv6 entry (**IP Address** set as `::` and **Subnet Mask** set as `0` on ports `80` and `443`).
 
-In addition, the default rules are also adding a localhost address (**IP Address** set as `127.0.0.0` and **Subnet Mask** set as `8`) that demonstrates how to set localhost capturing on port 3000. 
+In addition, the default rules are also adding a localhost IPv4 address (**IP Address** set as `127.0.0.0` and **Subnet Mask** set as `8`, plus localhost IPv6 address through **IP Address** set as `::1` and **Subnet Mask** set as `128` on port `3000`) that demonstrates how to set localhost capturing on port 3000. 
 
 
 ## Troubleshooting the macOS Network Extension
