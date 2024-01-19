@@ -15,7 +15,7 @@ The application supports capturing modes such as automatic [system capturing](#s
 
 ## Capturing Modes Comparison
 
-The following table demonstrates the significant differences between the two functionalities.
+The following table demonstrates the supported functionalities and differences between the Fiddler's capturing modes.
 
 | Feature          | System Capturing | Network Capturing | Independent Browser Capturing  | Terminal Capturing | Explicit Capturing 
 |:-----------------|:----------------|:----------------|:-----------------|:-----------------|:-----------------
@@ -25,7 +25,9 @@ The following table demonstrates the significant differences between the two fun
 | Captures Android traffic? | Yes |  No | n/a | n/a | Yes
 | Captures iOS traffic? | Yes | No | n/a | n/a | Yes
 | Captures HTTPS from?  | The system proxy | Network adapter | Browser | Terminal and its child processes |  Client application
-| Supported protocols  | HTTP, HTTPS, WebSocket, SSE, gRPC | HTTP, HTTPS, WebSocket, SSE, gRPC | HTTP, HTTPS, WebSocket, SSE | HTTP, HTTPS, WebSocket, SSE, gRPC | HTTP, HTTPS, WebSocket, SSE, gRPC
+| Supports modifying traffic (through Rules) ?  | Yes | Yes | Yes  | Yes | Yes
+| Supports breakpoints (through Rules) ? | Yes | Yes | Yes  | Yes | Yes
+| Supported protocols  | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO
 | Support for HTTP/2   | Yes | Yes | Yes  | Yes | Yes
 | Support for TLS 1.3  | Yes | Yes | Yes  | Yes | Yes
 | Support for IPv4  | Yes | Yes | Yes  | Yes | Yes
