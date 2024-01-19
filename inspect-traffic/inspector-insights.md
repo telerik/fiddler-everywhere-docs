@@ -159,6 +159,14 @@ The **MessagePack** inspector interprets the selected request or response body a
 
 ![MessagePack Inspector](../images/livetraffic/inspectors/inspectors-messagepack.png)
 
+
+#### Socket.IO Body Inspector
+
+The **Socket.IO** inspector interprets the selected request or response body as a [Socket.IO] message data, showing a tree view of the Socket.IO object nodes.
+
+![Socket.IO Inspector](../images/livetraffic/inspectors/inspectors-socket.png)
+
+
 #### XML Body Inspector
 
 The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an **Expand All / Collapse All** toggle button to expand or collapse all XML tree nodes.
@@ -196,14 +204,14 @@ text/x-javascript
 ![JavaScript Inspector](../images/livetraffic/inspectors/inspectors-javascript.png)
 
 
-## WebSocket and gRPC Inspectors
+## WebSocket, gRPC, SSE, and Socket.IO Inspectors
 
-The **WebSocket Inspector** and the **gRPC Inspector** share identical user interfaces. The inspectors provide the following types of inspecting tools that enable you to examine different parts of a WebSocket or gRPC connection:
+Fiddler Everywhere provides common user interface to create inspectors for visualizing WebSocket, gRPC, Server-Sent Events, and Socket.IO traffic. The inspectors provide the following types of inspecting tools that enable you to examine different parts of a connection:
 
 - [Handshake tab](#handshake-tab)
 - [Messages tab](#messages-tab)
 
-![Capturing WebSocket or gRPC traffic](../images/livetraffic/inspectors/websocket-inspectors.png)
+![Capturing Socket.IO traffic](../images/livetraffic/inspectors/socketio-inspectors.png)
 
 ### Handshake Tab
 
@@ -243,17 +251,31 @@ The list of messages is rendered as a grid with multiple columns:
 
 - **Size**&mdash;The length of the message in bytes.
 
-- **Id (SSE only)**&mdash;The ID for the specific SSE message (if such exists).
+- **ID (SSE and Socket.IO)**&mdash;The ID for the specific SSE message (if such exists).
+
+- **Sender (gRPC, Socket.IO)**&mdash;Indicates whether the sender is the client or the server application.
 
 - **Event (SSE only)**&mdash;The server-sent event name which corresponds to **Type** column in Google Chrome’s DevTools.
 
-- **Data (SSE only)**&mdash;Contains the value of the data property of the message.
+- **Data (SSE, Socket.IO)**&mdash;Contains the value of the data property of the message.
 
 - **Raw (SSE only)**&mdash;Contains the whole object sent from the server without any parsing.
 
-- **Time (WebSocket & SSE)**&mdash;Renders the date and the time when the message is received.
+- **Time (WebSocket, SSE, Socket.IO)**&mdash;Renders the date and the time when the message is received.
 
 - **Message**&mdash;The string representation of the message sent/received.
+
+- **Packet Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO packet (e.g. Ping, Pong, Upgradew, Message).
+
+- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (e.g. Event).
+
+- **Attachments (Socket.IO only)**&mdash;Lists the included attachments (if present).
+
+- **Namespace (Socket.IO only)**&mdash;Lists the included namespace (if present).
+
+- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (e.g. Event).
+
+- **Ack.ID (Socket.IO only)**&mdash;Indicates the ID of the acknowledgment function (if present).
 
 
 #### Messages Toolbar

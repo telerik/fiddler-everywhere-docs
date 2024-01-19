@@ -134,21 +134,27 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. N
 
 The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer seven and depend on TCP at OSI layer four. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
 
-Fiddler Everywhere supports WebSocket capturing out-of-the-box (through a system, independent browser, or explicit capturing modes). The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab).
+Fiddler Everywhere supports WebSocket capturing out-of-the-box through all capturing modes. The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab).
 
 ## Server-Sent Events
 
-The [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_eventsp) is a server technology that enables a client application to receive updates from a server through the HTTP protocol. With server-sent events, a server can send new data to the client at any time, by pushing messages.
+The [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_eventsp) is a server technology that enables a client application to receive updates from a server through the HTTP protocol. With server-sent events, a server can send new data to the client anytime by pushing messages.
 
-Fiddler Everywhere supports SSE capturing out-of-the-box for HTTP/2 (through a system, independent browser, or explicit capturing modes). The Fiddler application provides dedicated SSE inspectors to examine and extract data from the SSE session's handshake, and messages.
+Fiddler Everywhere supports SSE capturing out-of-the-box for HTTP/2 through all capturing modes. The Fiddler application allows dedicated SSE inspectors to examine and extract data from the SSE session's handshake and messages.
 
 
 ## gRPC Capturing
 
 [gRPC](https://grpc.io/) stands for Google Remote Procedure Call, and while created by Google, now an open-source framework. gRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of gRPC are its performance, added security, and the possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
 
-Fiddler Everywhere supports gRPC capturing out-of-the-box (through a system, independent browser, or explicit capturing modes). The Fiddler application provides dedicated [gRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
+Fiddler Everywhere supports gRPC capturing out-of-the-box through all capturing modes. The Fiddler application provides dedicated [gRPC inspectors]({%slug inspector-types%}#websocket-and-grpc-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
 
 >important To capture gRPC, you must enable HTTP/2 support in Fiddler Everywhere through **Settings > Connections > Enable HTTP/2 support**. This requirement comes from prerequisites of the gRPC framework, which utilizes their HTTP/2 protocol.
 
 [Learn more on how to capture and inspect gRPC traffic with Fiddler Everywhere here...]({%slug capture-grpc-traffic%})
+
+## Socket.IO Capturing
+
+[Socket.IO](https://socket.io) is a technology that provides bidirectional, low-latency and event-based communication between a client application and a server.
+
+Fiddler Everywhere supports Socket.IO capturing out-of-the-box through all capturing modes. The Fiddler application provides dedicated [Socket.IO inspectors]({%slug inspector-types%}#socketio-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
