@@ -162,115 +162,115 @@ The following table displays the icons which **Live Traffic** grid supports for 
     </thead>
     <tbody>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/generic-document.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/generic-document-light.svg"/></td>
             <td>Represents a generic successful response.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/uploading.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/uploading-light.svg"/></td>
             <td>Uploading content for a session in progress (the request is being sent to the server).</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/upload-paused.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/upload-paused-light.svg"/></td>
             <td>Uploading paused for the session in progress.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/downloading.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/downloading-light.svg"/></td>
             <td>Downloading content for the session in progress (the response is being read from the server).</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/download-paused.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/download-paused-light.svg"/></td>
             <td>Downloading paused for the session in progress.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/aborted.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/aborted-light.svg"/></td>
             <td>The session was aborted by the client, Fiddler, or the Server.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/error.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/error-light.svg"/></td>
             <td>The response was a server error.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/unauthorized.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/unauthorized-light.svg"/></td>
             <td>The response returned status code 401 Unauthorized.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/redirect.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/redirect-light.svg"/></td>
             <td>The response redirect status code 300, 301, 302, 303 or 307.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/websocket.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/websocket-light.svg"/></td>
             <td>A tunnel is used for WebSocket traffic.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/https-tunnel.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/https-tunnel-light.svg"/></td>
             <td>The request used the <b>HTTP CONNECT</b> method - establishes a tunnel used for HTTPS traffic.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/rpc.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/rpc-light.svg"/></td>
             <td>A tunnel used for RPC traffic.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/no-content.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/no-content-light.svg"/></td>
             <td>No content loaded.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/not-modified.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/not-modified-light.svg"/></td>
             <td>Not modified.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/partial.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/partial-light.svg"/></td>
             <td>Partial content.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/image.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/image-light.svg"/></td>
             <td>The response was an image.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/javascript.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/javascript-light.svg"/></td>
             <td>The response was a JavaScript file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/css.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/css-light.svg"/></td>
             <td>The response was a CSS file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/html.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/html-light.svg"/></td>
             <td>The response was an HTML file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/grpc.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/grpc-light.svg"/></td>
             <td>A tunnel is used for GRPC traffic.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/flash.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/flash-light.svg"/></td>
             <td>The response was a Flash file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/xml.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/xml-light.svg"/></td>
             <td>The response was an XML file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/silverlight.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/silverlight-light.svg"/></td>
             <td>The response was a Silverlight file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/audio.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/audio-light.svg"/></td>
             <td>The response was an audio file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/video.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/video-light.svg"/></td>
             <td>The response was a video file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/font.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/font-light.svg"/></td>
             <td>The response was a font file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/json.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/json-light.svg"/></td>
             <td>The response was a JSON file.</td>
         </tr>
         <tr>
-            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/post.svg"/></td>
+            <td><img style= "padding: 0px; margin: 0px; border: none; width: 30px; height: 30px" src="../images/livetraffic/icons/post-light.svg"/></td>
             <td>The request used the POST method.</td>
         </tr>
     </tbody>
