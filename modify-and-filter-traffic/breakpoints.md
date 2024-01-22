@@ -85,15 +85,16 @@ The following considerations must be made while working with breakpoints:
 - An active rule that sets breakpoints applies only to newly captured traffic.
 - A breakpoint can be set with all matching conditions in the Rules Builder.
 - A session with a hit breakpoint or otherwise paused session will have a "Pause" icon in the Live Traffic grid.
-- A session with a hit breakpoint or otherwise paused session will have a "Paused" pill in the paused Inspector section (Request or Response inspector).
-- You can resume a paused session by clicking the "Paused" pill.
+- A session with a hit breakpoint or otherwise paused session will have a "Paused" pill button in the paused Inspector section (Request or Response inspector).
+- You can resume a paused session by clicking the "Paused" pill button.
 - You can resume paused sessions through the "Resume Paused Sessions" option in the Live Traffic context menu.
 - A paused HTTP request or response can be edited only through the **Raw** inspector.
 
-While the breakpoints are compelling functionality,  the following limitations must be considered:
+While the breakpoints are compelling functionality,  the following behavior must be considered:
 
-- A response breakpoint will pause the forwarding from Fiddler's side. However, some client applications have additional caching or replay mechanisms that automatically replay the request if a response is not received within a specific time.
-- You can't modify requests and responses that use gzipped bodies.
+- You can replace or modify an HTTP request and response bodies. Still, any HTTP body modification will also automatically modify the original headers that provide encoding details (like `Content-Encoding` and `Transfer-Encoding` ), plus the `Content-Length` header will be updated after the Request/Response is modified. For example, suppose you received an HTTP response with `Content-Encoding` set to `gzip`. In that case, the body modification will remove the encoding, resulting in a changed `Content-Encoding` header received by the client.
+
+- If you add a response breakpoint, Fiddler will pause the forwarding. However, some client applications have caching or replay mechanisms that will automatically resend the request if they don't receive a response within a specific time.
 
 ## Additional Rules Resources
 
