@@ -9,7 +9,7 @@ previous_url: /license
 
 # Welcome to Fiddler Everywhere!
 
-Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTP(S) traffic, issues requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high-performance, cross-platform proxy for any browser, system, or platform.
+Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTPS traffic, issues requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high-performance, cross-platform proxy for any browser, system, or platform.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vSLrxVkTnX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -18,24 +18,24 @@ Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, i
 Fiddler Everywhere delivers a range of handy and user-friendly features whose number and further development are not limited by the list in this section&mdash;the Fiddler team constantly invests efforts to improve the performance and add more value to the existing web-debugging proxy tool and build on top of its available features.
 
 
-### System Traffic Capturing
+### Traffic Capturing
 
-Fiddler Everywhere inspects and logs all HTTP(S), WebSocket, Server-Sent Events, and gRPC traffic between your computer and the Internet and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTP(S) traffic with Fiddler Everywhere...]({% slug capture-system-traffic %})
+Fiddler Everywhere captures and logs all HTTPS, WebSocket, Server-Sent Events, gRPC, and Socket.IO traffic between your computer and the Internet and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTPS traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %})
 
 
 ### Independent Browser Capturing
 
-Fiddler Everywhere provides an option for automatic, sandboxed browser HTTP(S) capturing without modifying the operating system proxy. [Read more about the independent Fiddler Everywhere browser capturing...]({% slug capture-browser-traffic %})
+Fiddler Everywhere provides an option for automatic, sandboxed browser HTTPS capturing without modifying the operating system proxy. [Read more about the independent Fiddler Everywhere browser capturing...]({% slug capture-browser-traffic %})
 
 
 ### Terminal Capturing
 
-Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTP(S) capturing. [Read more about the Fiddler's terminal capturing...]({%slug capture-terminal-traffic%})
+Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTPS capturing. [Read more about the Fiddler's terminal capturing...]({%slug capture-terminal-traffic%})
 
 
 ### Traffic Analysis
 
-Fiddler Everywhere provides an HTTP(S) and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, compare, and share captured traffic with collaborators. Read more about [inspecting]({%slug inspecting-traffic-get-started%}) and [modifying]({%slug modify-traffic-get-started%}) traffic with Fiddler Everywhere...
+Fiddler Everywhere provides an HTTPS and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, compare, and share captured traffic with collaborators. Read more about [inspecting]({%slug inspecting-traffic-get-started%}) and [modifying]({%slug modify-traffic-get-started%}) traffic with Fiddler Everywhere...
 
 
 ### Modern HTTP and TLS version support
@@ -49,7 +49,7 @@ Fiddler Everywhere supports the used versions of the HTTP protocol, including th
 
 ### Request and Response Mocking
 
-Fiddler supports the mocking and modification of requests and responses on any application. In this way, you can quickly change HTTP(S) requests and responses without updating the code. [Read more about mocking requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
+Fiddler supports mocking, modifying, and setting breakpoints on all HTTP requests and responses. With Fiddler's rules, you can quickly change HTTPS requests and responses without updating the code or accessing the server or the client application. [Read more about creating rules for modifying requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
 
 
 ### API Composing
