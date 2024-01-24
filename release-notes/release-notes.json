@@ -1,5 +1,55 @@
 [
     {
+        "version": "5.4.0",
+        "title": "Fiddler Everywhere v5.4.0",
+        "date": "January 24, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add SocketIO decoding for WebSocket sessions"
+                    },
+                    {
+                        "title": "Add session breakpoints that pause the execution of any session before the request or response is sent and allow for making changes to the raw headers and body data manually"
+                    },
+                    {
+                        "title": "Update application font and icons for better readability on displays that use scaling"
+                    },
+                    {
+                        "title": "Remove most of the automatic coloring in the sessions grid and move the coloring logic to rules match conditions. A ruleset that mimics the previous session colors behavior is available on request"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Network capturing sometimes does not show local IPv6 connections on macOS"
+                    },
+                    {
+                        "title": "Multiple cookie headers in Composer requests not handled correctly when updating their cookie values"
+                    },
+                    {
+                        "title": "Adding form data body content in Composer requests sometimes generates wrong request \"Content-Type\" header"
+                    },
+                    {
+                        "title": "Session filters might not work correctly if there are custom columns for both request and response headers using the same header name"
+                    },
+                    {
+                        "title": "Copy as cURL context menu action in sessions grid does not work on some POST requests with form data"
+                    },
+                    {
+                        "title": "Application crash in specific cases when the user's subscription is updated"
+                    },
+                    {
+                        "title": "Apply security fixes for third-party dependencies"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.3.0",
         "title": "Fiddler Everywhere v5.3.0",
         "date": "December 7, 2023",
