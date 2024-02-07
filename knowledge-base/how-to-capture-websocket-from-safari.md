@@ -10,6 +10,7 @@ res_type: kb
 
 ## Environment
 
+|   |   |
 |----------|-------|
 | Product  | Fiddler Everywhere |
 | Version  | 5.2.0 and above |

@@ -1,5 +1,38 @@
 [
     {
+        "version": "5.4.1-insiders",
+        "title": "Fiddler Everywhere v5.4.1",
+        "date": "February 1, 2024",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Improve application startup time"
+                    },
+                    {
+                        "title": "Sharing rules shows a quota exceeded message"
+                    },
+                    {
+                        "title": "XML inspector can freeze the application UI temporary when response is large non-XML data"
+                    },
+                    {
+                        "title": "Preview inspector can freeze the application UI temporary when response is large binary data"
+                    },
+                    {
+                        "title": "Loading indicator stays visible in Comparison tab after session changes have been calculated"
+                    },
+                    {
+                        "title": "Certificate badge text in Composer tab can show wrong information if editing a saved session"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate CVE-2024-0519"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.4.0-insiders",
         "title": "Fiddler Everywhere v5.4.0",
         "date": "January 24, 2024",
