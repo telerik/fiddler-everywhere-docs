@@ -25,3 +25,5 @@ As a result, a connection that will usually fail due to an unsupported version o
 
 
 >tip TLS is the cryptographic protocol that provides end-to-end security in HTTPS. It evolved from SSL 3.0, and currently, [TLS 1.2](https://www.ietf.org/rfc/rfc5246.txt) and [TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446) are the most commonly used TLS versions. In contrast, versions like SSL 2.0, SSL 3.0, TLS 1.0, and TLS 1.1 are considered insecure and can be disabled on an operating system or application (such as browsers) level. Fiddler Everywhere supports [all listed versions]({%slug how-to-view-web-session-summary%}#tls-version), including TLS 1.3, introduced with version 4.2.0.
+
+It's important to note that the used cipher suite shown in the Request bodies of the CONNECT Tunnels is **the cipher suite used by the Fiddler Everywhere proxy**, which is not necessarily the cipher suite that the client would use (if there was no TLS proxy acting as an intermediate).
