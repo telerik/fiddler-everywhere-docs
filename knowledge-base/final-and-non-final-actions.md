@@ -377,7 +377,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server.</td>
+            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server. The option is also reffered as "Accept all CONNECTs"</td>
             <td>Final</td>
         </tr>
         <tr>
