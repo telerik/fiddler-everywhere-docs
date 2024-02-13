@@ -36,11 +36,18 @@ For more information, refer to the following list.
     </thead>
     <tbody>
         <tr>
-            <td><b>Protocol</b></td>
-            <td>HTTP or HTTPS</td>
+            <td><b>All Sessions</b></td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Differentiate the traffic based on the used protocol (HTTP vs. HTTPS).</td>
+            <td>n/a</td>
+            <td>Matches all captured sessions</td>
+        </tr>
+        <tr>
+            <td><b>URL</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches a specific keyword in the <b>URL</b> column.</td>
         </tr>
         <tr>
             <td><b>Host</b></td>
@@ -57,18 +64,11 @@ For more information, refer to the following list.
             <td>Matches a specific keyword in the <b>path</b> column.</td>
         </tr>
         <tr>
-            <td><b>URL</b></td>
-            <td>String modifiers</td>
-            <td>Search value</td>
+            <td><b>Protocol</b></td>
+            <td>HTTP or HTTPS</td>
             <td>n/a</td>
-            <td>Matches a specific keyword in the <b>URL</b> column.</td>
-        </tr>
-        <tr>
-            <td><b>Status Code</b></td>
-            <td>String modifiers</td>
-            <td>Search value</td>
             <td>n/a</td>
-            <td>Matches a specific keyword in the <b>Result</b> column.</td>
+            <td>Differentiate the traffic based on the used protocol (HTTP vs. HTTPS).</td>
         </tr>
         <tr>
             <td><b>Method</b></td>
@@ -78,11 +78,102 @@ For more information, refer to the following list.
             <td>Matches sessions using specific HTTP <b>Method</b>.</td>
         </tr>
         <tr>
-            <td><b>Process</b></td>
+            <td><b>Status Code</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Matches a specific <b>Process ID</b>.</td>
+            <td>Matches a specific keyword in the <b>Result</b> column.</td>
+        </tr>
+        <tr>
+            <td><b>HTTP Version</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches a specific <b>HTTP Version</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Session Type</b></td>
+            <td>Pre-defined types</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Matches a session through its type (e.g., WebSocket, gRPC, Aborted, Tunnels, Images, etc.).</td>
+        </tr>   
+        <tr>
+            <td><b>Request Header</b></td>
+            <td>Header name</td>
+            <td>String modifiers</td>
+            <td>The search value </td>
+            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Request header</b> column.</td>
+        </tr>
+        <tr>
+            <td><b>Response Header</b></td>
+            <td>Header name</td>
+            <td>String modifiers</td>
+            <td>The search value </td>
+            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Response header</b> column.</td>
+        </tr>
+        <tr>
+            <td><b>Request Body</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches sessions with specific keyword in the <b>Request Body</b> column.</td>
+        </tr>
+        <tr>
+            <td><b>Response Body</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches sessions with specific keyword in the <b>Response body</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Request Cookie</b></td>
+            <td>Cookie name</td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Request Cookie</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Response Cookie</b></td>
+            <td>Cookie name</td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Response Cookie</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Request Body Size</b></td>
+            <td>Number modifiers (compares bytes)</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches session with specific <b>Request Body Size</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Response Body Size</b></td>
+            <td>Number modifiers (compares bytes)</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches session with specific <b>Response Body Size</b>.</td>
+        </tr>
+        <tr>
+            <td><b>Request Time</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches specific date string in the <b>Request Time</b> column.</td>
+        </tr>  
+        <tr>
+            <td><b>Request Date</b></td>
+            <td>Date modifiers</td>
+            <td>Date form</td>
+            <td>n/a</td>
+            <td>Matches session executed on a specific date.</td>
+        </tr>
+        <tr>
+            <td><b>Duration</b></td>
+            <td>Number modifiers (compares milliseconds)</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches sessions with specific <b>Duration</b>.</td>
         </tr>
         <tr>
             <td><b>Client IP</b></td>
@@ -99,62 +190,6 @@ For more information, refer to the following list.
             <td>Matches session with specific <b>Remote IP</b>.</td>
         </tr>
         <tr>
-            <td><b>Body Size</b></td>
-            <td>Number modifiers (compares bytes)</td>
-            <td>Search value</td>
-            <td>n/a</td>
-            <td>Matches session with specific <b>Body Size</b>.</td>
-        </tr>
-        <tr>
-            <td><b>Duration</b></td>
-            <td>Number modifiers (compares milliseconds)</td>
-            <td>Search value</td>
-            <td>n/a</td>
-            <td>Matches sessions with specific <b>Duration</b>.</td>
-        </tr>
-        <tr>
-            <td><b>Comment</b></td>
-            <td>String modifiers</td>
-            <td>Search value</td>
-            <td>n/a</td>
-            <td>Matches sessions with specific <b>Comment</b> column.</td>
-        </tr>
-        <tr>
-            <td><b>Request Body</b></td>
-            <td>String modifiers</td>
-            <td>Search value</td>
-            <td>n/a</td>
-            <td>Matches sessions with specific keyword in the <b>Request Body</b> column.</td>
-        </tr>
-        <tr>
-            <td><b>Request Header</b></td>
-            <td>Header name</td>
-            <td>String modifiers</td>
-            <td>The search value </td>
-            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Request header</b> column.</td>
-        </tr>
-        <tr>
-            <td><b>Response Body</b></td>
-            <td>String modifiers</td>
-            <td>Search value</td>
-            <td>n/a</td>
-            <td>Matches sessions with specific keyword in the <b>Response body</b>.</td>
-        </tr>
-        <tr>
-            <td><b>Response Header</b></td>
-            <td>Header name</td>
-            <td>String modifiers</td>
-            <td>The search value </td>
-            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Response header</b> column.</td>
-        </tr>
-        <tr>
-            <td><b>Cookie</b></td>
-            <td>Cookie name</td>
-            <td>String modifiers</td>
-            <td>Search value</td>
-            <td>Matches sessions with specific keyword in the <b>explicitly mentioned Cookie</b>.</td>
-        </tr>
-        <tr>
             <td><b>Certificate Information</b></td>
             <td>Field name</td>
             <td>String modifiers</td>
@@ -162,33 +197,26 @@ For more information, refer to the following list.
             <td>Matches sessions with specific keyword in the <b>explicitly mentioned certificate field</b>.</td>
         </tr>
         <tr>
-            <td><b>Caching</b></td>
+            <td><b>TLS Version</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Matches sessions with specific keyword in the <b>HTTP Headers related to content caching</b>.</td>
+            <td>Matches traffic based on the used <b>TLS Version</b>.</td>
         </tr>
         <tr>
-            <td><b>Content-Type</b></td>
+            <td><b>Process</b></td>
             <td>String modifiers</td>
             <td>Search value</td>
             <td>n/a</td>
-            <td>Matches sessions with specific keyword in the <b>Content-Type</b> column.</td>
-        </tr>   
-        <tr>
-            <td><b>Request Time</b></td>
-            <td>String modifiers</td>
-            <td>Search value</td>
-            <td>n/a</td>
-            <td>Matches specific date string in the <b>Request Time</b> column.</td>
-        </tr>  
-        <tr>
-            <td><b>Request Date</b></td>
-            <td>Date modifiers</td>
-            <td>Date form</td>
-            <td>n/a</td>
-            <td>Matches session executed on a specific date.</td>
+            <td>Matches a specific <b>Process ID</b>.</td>
         </tr>
+        <tr>
+            <td><b>Comment</b></td>
+            <td>String modifiers</td>
+            <td>Search value</td>
+            <td>n/a</td>
+            <td>Matches sessions with specific <b>Comment</b> column.</td>
+        </tr> 
         <tr>
             <td><b>Rules Modified</b></td>
             <td>Boolean</td>
@@ -196,13 +224,6 @@ For more information, refer to the following list.
             <td>n/a</td>
             <td>Matches sessions modified by a rule.</td>
         </tr>  
-        <tr>
-            <td><b>TLS Version</b></td>
-            <td>String modifiers</td>
-            <td>Search value</td>
-            <td>n/a</td>
-            <td>Matches traffic based on the used <b>TLS Version</b>.</td>
-        </tr>
         <tr>
             <td><b>Magic String</b></td>
             <td>The "magic string" content</td>
@@ -248,6 +269,30 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Non-final</td>
         </tr>
         <tr>
+            <td><b>Update URL</b></td>
+            <td>Value modifiers</td>
+            <td>New value</td>
+            <td>n/a</td>
+            <td>Uses the selected value modifier and the new value to update the current URL.</td>
+            <td>Non-final</td>
+        </tr>
+        <tr>
+            <td><b>Update Query String</b></td>
+            <td>Query Parameter Key</td>
+            <td>Value modifiers</td>
+            <td>New value</td>
+            <td>Uses the selected value modifier and the new value to update the query parameters.</td>
+            <td>Non-final</td>
+        </tr>
+        <tr>
+            <td><b>Update Status Code</b></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Modifies the status code returned by the server while preserving the other data untouched.</td>
+            <td>Final </td>
+        </tr>
+        <tr>
             <td><b>Update Request Header</b></td>
             <td>Header Name</td>
             <td>Value modifiers</td>
@@ -280,22 +325,6 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Non-final</td>
         </tr>
         <tr>
-            <td><b>Update URL</b></td>
-            <td>Value modifiers</td>
-            <td>New value</td>
-            <td>n/a</td>
-            <td>Uses the selected value modifier and the new value to update the current URL.</td>
-            <td>Non-final</td>
-        </tr>
-        <tr>
-            <td><b>Update Query Params</b></td>
-            <td>Query Parameter Key</td>
-            <td>Value modifiers</td>
-            <td>New value</td>
-            <td>Uses the selected value modifier and the new value to update the query parameters.</td>
-            <td>Non-final</td>
-        </tr>
-        <tr>
             <td><b>Update Request Cookies</b></td>
             <td>Cookie Key</td>
             <td>Value modifiers</td>
@@ -320,15 +349,15 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Non-final.</td>
         </tr>
         <tr>
-            <td><b>Predefined Response</b></td>
-            <td>Drop-down with <a href="https://docs.telerik.com/fiddler-everywhere/knowledge-base/using-ar-predefined-actions">predefined responses</a></td>
+            <td><b>Return File</b></td>
+            <td>File Picker</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Returns the selected predefined response.</td>
+            <td>Returns the picked response file.</td>
             <td>Final</td>
         </tr>
         <tr>
-            <td><b>Manual Response</b></td>
+            <td><b>Return Manual Response</b></td>
             <td>Text field for creating manual response</td>
             <td>n/a</td>
             <td>n/a</td>
@@ -336,11 +365,19 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Final</td>
         </tr>
         <tr>
-            <td><b>Response File</b></td>
-            <td>File Picker</td>
+            <td><b>Return Predefined Response</b></td>
+            <td>Drop-down with <a href="https://docs.telerik.com/fiddler-everywhere/knowledge-base/using-ar-predefined-actions">predefined responses</a></td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Returns the picked response file.</td>
+            <td>Returns the selected predefined response.</td>
+            <td>Final</td>
+        </tr>
+        <tr>
+            <td><b>Return CONNECT Tunnel</b></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server.</td>
             <td>Final</td>
         </tr>
         <tr>
@@ -352,15 +389,15 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Final</td>
         </tr>
         <tr>
-            <td><b>Delay Request</b></td>
-            <td>Number value (milliseconds)</td>
+            <td><b>Do Not Decrypt</b></td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Delays the request execution with "n" milliseconds.</td>
-            <td>Non-final</td>
+            <td>n/a</td>
+            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version, and Remote IP</b> can be used. The action works only for newly established connections.</td>
+            <td>Final </td>
         </tr>
         <tr>
-            <td><b>Graceful Close</b></td>
+            <td><b>Close Gracefully</b></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
@@ -368,7 +405,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Final</td>
         </tr>
         <tr>
-            <td><b>Non Graceful Close</b></td>
+            <td><b>Close Non Gracefully</b></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
@@ -376,12 +413,12 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Final</td>
         </tr>
         <tr>
-            <td><b>Magic String</b></td>
-            <td>The "magic string" content</td>
+            <td><b>Delay Request</b></td>
+            <td>Number value (milliseconds)</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Uses the <a href="https://docs.telerik.com/fiddler/knowledge-base/autoresponder#matching-rules">legacy Fiddler Classic string literals and regular expressions.</a></td>
-            <td>Final</td>
+            <td>Delays the request execution with "n" milliseconds.</td>
+            <td>Non-final</td>
         </tr>
         <tr>
             <td><b>Comment</b></td>
@@ -392,20 +429,12 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Non-final</td>
         </tr>
         <tr>
-            <td><b>Do Not Decrypt</b></td>
+            <td><b>Magic String</b></td>
+            <td>The "magic string" content</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>n/a</td>
-            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version, and Remote IP</b> can be used. The action works only for newly established connections.</td>
-            <td>Final </td>
-        </tr>
-        <tr>
-            <td><b>Update Status Code</b></td>
-            <td>n/a</td>
-            <td>n/a</td>
-            <td>n/a</td>
-            <td>Modifies the status code returned by the server while preserving the other data untouched.</td>
-            <td>Final </td>
+            <td>Uses the <a href="https://docs.telerik.com/fiddler/knowledge-base/autoresponder#matching-rules">legacy Fiddler Classic string literals and regular expressions.</a></td>
+            <td>Final</td>
         </tr>
     </tbody>
 </table>
