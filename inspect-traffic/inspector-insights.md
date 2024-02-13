@@ -213,6 +213,8 @@ Fiddler Everywhere provides common user interface to create inspectors for visua
 
 ![Capturing Socket.IO traffic](../images/livetraffic/inspectors/socketio-inspectors.png)
 
+Encoded messages from a WebSocket session are automatically decoded (if possible) and presented human readable form in the inspector.
+
 ### Handshake Tab
 
 Similarly to an HTTP(S) request and response, the **Handshake tab** for the WebSocket and gRPC APIs provide the following types of inspecting tools that enable you to examine different parts of the WebSocket requests and responses:
