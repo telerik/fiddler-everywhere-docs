@@ -93,7 +93,7 @@ For more information, refer to the following list.
         </tr>
         <tr>
             <td><b>Session Type</b></td>
-            <td>Pre-defined types</td>
+            <td>Predefined types</td>
             <td>n/a</td>
             <td>n/a</td>
             <td>Matches a session through its type (e.g., WebSocket, gRPC, Aborted, Tunnels, Images, etc.).</td>
@@ -366,7 +366,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
         </tr>
         <tr>
             <td><b>Return Predefined Response</b></td>
-            <td>Drop-down with <a href="https://docs.telerik.com/fiddler-everywhere/knowledge-base/using-ar-predefined-actions">predefined responses</a></td>
+            <td><a href="https://docs.telerik.com/fiddler-everywhere/knowledge-base/using-ar-predefined-actions">Predefined responses</a></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the selected predefined response.</td>
