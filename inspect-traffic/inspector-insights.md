@@ -213,7 +213,7 @@ Fiddler Everywhere provides common user interface to create inspectors for visua
 
 ![Capturing Socket.IO traffic](../images/livetraffic/inspectors/socketio-inspectors.png)
 
-Encoded messages from a WebSocket session are automatically decoded (if possible) and presented human readable form in the inspector.
+Encoded messages from a WebSocket session are automatically decoded (if possible) and presented in human readable form in the inspector.
 
 ### Handshake Tab
 
