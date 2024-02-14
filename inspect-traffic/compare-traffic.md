@@ -72,9 +72,9 @@ The **Compare Sessions (BETA)** section consists of a tab that loads a grid cont
 The **Compare Sessions (BETA)** tab provides the following options to customize your comparing criteria.
 
 - **Match sessions by**&mdash;Highlights unmatched sessions with default criteria set to match by **URL**. The possible match options are as follows:
-    - **URL** match to highlight sessions with different URLs.
+    - **URL** match sessions with different URLs.
     - **Order** match session by their order in their ID column. The ID is the Fiddler Everywhere unique identification for each captured session.
-    - **Path** match to highlight sessions with different paths (but the same host).
+    - **Path** match sessions with the same paths (but different hosts). This match ignores queries and fragments.
 
     ![Match sessions popup](../images/livetraffic/compare/compare-options-match-sessions.png)
 
