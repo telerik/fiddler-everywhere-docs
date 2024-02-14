@@ -18,7 +18,11 @@ With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, 
 - [Saving rules](#saving-rules)&mdash;Options to save single or multiple rules within the **Rules** tab.
 
 
->tip The save options in Fiddler Everywhere allow you to use local and cloud save, organize your traffic snapshots in collections, and collaborate easily with a few clicks. It is important to note that Fiddler Everywhere also provides straightforward [export/import options]({%slug fiddler-export-and-import%}), which are not interconnected with the application user interface.
+The save options in Fiddler Everywhere allow you to use local and cloud save, organize your traffic snapshots in collections, and collaborate easily with a few clicks. It is important to note that Fiddler Everywhere also provides straightforward [export/import options]({%slug fiddler-export-and-import%}), which are not interconnected with the application user interface. The latest version of Fiddler Everywhere supports different languages, and the following symbols are allowed:
+
+ - Letters.
+ - Numbers (0-9).
+ - Dashes (`-`), underscores (`_`), and blank spaces.
 
 
 ## Saving Session's Snapshots
