@@ -1,5 +1,61 @@
 [
     {
+        "version": "5.5.0",
+        "title": "Fiddler Everywhere v5.5.0",
+        "date": "February 15, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add Rule match condition to match all sessions"
+                    },
+                    {
+                        "title": "Add reply with tunnel Rule action to allow creating response Rules for websites that might not resolve with DNS"
+                    },
+                    {
+                        "title": "Add paging to Overview inspector tabs when there are more than 100 selected sessions"
+                    },
+                    {
+                        "title": "Add information about the client TLS version and cipher info in the request info for CONNECT sessions"
+                    },
+                    {
+                        "title": "Add message decoding for GRPC inspectors with automatically downloaded or user-supplied protocol buffers files"
+                    },
+                    {
+                        "title": "Add message decoding for encoded WebSocket sessions"
+                    },
+                    {
+                        "title": "Add option to compare sessions by their path (the URL without the hostname/query/fragment parts)"
+                    },
+                    {
+                        "title": "Allow non-English letters in saved sessions and rulesets names"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Break request Rule action always executed first even when placed after other actions"
+                    },
+                    {
+                        "title": "Update third party dependencies to fix security issues"
+                    },
+                    {
+                        "title": "Certificate expiration warning tooltip shows wrong information for Composer requests"
+                    },
+                    {
+                        "title": "Increased application start timeout"
+                    },
+                    {
+                        "title": "Fix ignore certificate errors not toggled on if host was already in the exceptions list"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.4.1",
         "title": "Fiddler Everywhere v5.4.1",
         "date": "February 1, 2024",
