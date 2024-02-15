@@ -136,6 +136,7 @@ The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-
 
 Fiddler Everywhere supports WebSocket capturing out-of-the-box through all capturing modes. The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-grpc-sse-and-socketio-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab). Encoded WebSocket messages are automatically decoded (if possible) and presented in human readable form in the related WebSocket inspector.
 
+
 ## Server-Sent Events
 
 The [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_eventsp) is a server technology that enables a client application to receive updates from a server through the HTTP protocol. With server-sent events, a server can send new data to the client anytime by pushing messages.

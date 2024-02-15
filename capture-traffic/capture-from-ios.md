@@ -58,7 +58,7 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 
     1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority**.
 
-        >tip The CA name you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed.
+        >tip You can check the installed profiles in **Settings > General > VPN & Device Management**. The Fiddler CA name is **Fiddler Root Certificate Authority**, but you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed. 
 
 1. Set the Fiddler Everywhere proxy on the iOS device.
 

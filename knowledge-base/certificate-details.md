@@ -61,7 +61,7 @@ You can still extract certificate data through the [certificate details window](
 
 ### Certificate Errors
 
-Fiddler Everywhere will automatically respect server certificate errors (with **HTTPS** > **Ignore server certificate errors** disabled by default) and show error indicators. The certificate error indicator is a red triangle on the session's list icon and as a **Certificate Error** note in the Response Inspector. 
+Fiddler Everywhere will automatically detect server certificate errors and show error indicators. The certificate error indicator is a red triangle on the session's list icon and as a **Certificate Error** note in the Response Inspector. 
 
 ![Certificate Error](../images/livetraffic/certs/certficate-error-note.png)
 

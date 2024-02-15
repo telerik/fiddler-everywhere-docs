@@ -16,7 +16,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 
 ## Prerequisites
 
-- Install Windows 10 x64 or Windows 11 x64.
+- Install Windows 10 x64, Windows 11 x64, or Windows Server 2016 or newer versions.
 
   >tip To enhance security and align with modern practices, Fiddler Everywhere version 5.0.0 discontinues support for the outdated Windows 7 and 8.1, which reached end-of-life and are no longer supported.
 
