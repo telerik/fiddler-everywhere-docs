@@ -45,7 +45,7 @@ You can set your preferred terminal application through **Settings > Terminal > 
 - **PowerShell**&mdash;Available only on Windows. Specifies the PowerShell built on .NET Core or the new .NET.
 - **Terminal application**&mdash;Available on macOS and Linux. This option will use the default shell environment, for example, **bash**, **zsh**, or **sh**.
 
-The Fiddler's terminal instance automatically proxies all HTTPS requests made by **curl** or **Node.js** libraries (like **https**, **request**, etc.) and all applications which respect the `http_proxy` and `https_proxy` environment variables.
+The Fiddler's terminal instance automatically proxies all HTTPS requests made by **curl**, **Python** or **Node.js** libraries (like **https**, **request**, etc.) and all applications which respect the `http_proxy` and `https_proxy` environment variables.
 
 
 ## Terminal Traffic Specifics
