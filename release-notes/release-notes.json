@@ -20,7 +20,7 @@
                         "title": "Add information about the client TLS version and cipher info in the request info for CONNECT sessions"
                     },
                     {
-                        "title": "Add message decoding for GRPC inspectors with automatically downloaded or user-supplied protocol buffers files"
+                        "title": "Add message decoding for gRPC inspectors with automatically downloaded or user-supplied protocol buffers files"
                     },
                     {
                         "title": "Add message decoding for encoded WebSocket sessions"
