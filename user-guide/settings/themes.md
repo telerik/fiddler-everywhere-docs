@@ -3,7 +3,7 @@ title: Theme
 description: "Style the appearance of Fiddler Everywhere by selecting an available theme of your choice."
 slug: themes-settings-submenu
 publish: true
-position: 90
+position: 110
 ---
 
 # Theme Menu
