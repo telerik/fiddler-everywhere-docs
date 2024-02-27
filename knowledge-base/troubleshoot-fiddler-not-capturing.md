@@ -266,7 +266,7 @@ The Fiddler Everywhere application provides an option to explicitly turn off the
     "disableHardwareAcceleration" : true
     ```
 
-[Learn more about disabling the haradware acceleratiopn here...]({%slug troubleshoot-video-incompatibility%})
+[Learn more about disabling the hardware acceleration here...]({%slug troubleshoot-video-incompatibility%})
 
 
 ## Capture Not Working - All Other Scenarios

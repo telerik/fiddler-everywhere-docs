@@ -24,7 +24,16 @@ I've installed the latest version of Fiddler Everywhere, but it fails to start, 
 
 One probable reason for the above issues to manifest is incompatibilities between the installed graphics drivers and the Electron framework (which is used to create the UI of the Fiddler Everywhere). To resolve the issue, you can try to update your graphics driver. The issue was previously reported to appear with some NVIDIA video cards (like Quadro) alongside specific driver versions.
 
-Alternatively, if the update of the driver does not solve the issue, you can explicitly turn off the hardware acceleration through a boolean flag called `disableHardwareAcceleration` in the `electron-settings.json` file. Fiddler will use a software output device for rendering in the CPU when the hardware acceleration is explicitly disabled.
+
+### Disabling Hardware Acceleration (Automatically)
+
+
+During the application startup, Fiddler Everywhere automatically tries to detect issues related to compatibility with the graphic drivers. If such an issue is detected, an automated process will show a native dialog with the following content: _“It seems there are problems with the application rendering, which the hardware acceleration might cause. Do you want to disable hardware acceleration for Fiddler Everywhere and try again?_. If you select **“Yes”**, the application restarts immediately in compatibility mode with disabled hardware acceleration.
+
+
+### Disabling Hardware Acceleration (Manually)
+
+You can explicitly turn off the hardware acceleration through a boolean flag called `disableHardwareAcceleration` in the `electron-settings.json` file. Fiddler will use a software output device for rendering in the CPU when the hardware acceleration is explicitly disabled.
 
 - Open the following folder 
 
