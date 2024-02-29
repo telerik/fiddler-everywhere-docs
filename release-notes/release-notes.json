@@ -1,5 +1,46 @@
 [
     {
+        "version": "5.6.0",
+        "title": "Fiddler Everywhere v5.6.0",
+        "date": "February 29, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Allow creating rules from captured CONNECT sessions"
+                    },
+                    {
+                        "title": "Show a dialog to disable hardware video acceleration if there is a problem detected that prevents the app from displaying correctly"
+                    },
+                    {
+                        "title": "Create a public Github repository where users can post issues with Fiddler Everywhere"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Client Cipher and TLS version missing in the info in CONNECT session request body for some sessions"
+                    },
+                    {
+                        "title": "gRPC automatic server reflection was not working in some cases"
+                    },
+                    {
+                        "title": "Shared Composer collections cannot be automatically updated if one user edits a header description"
+                    },
+                    {
+                        "title": "Application might show an error when updating if the update is taking too long - for example while waiting for anti-virus software to scan it"
+                    },
+                    {
+                        "title": "Wrong Host is shown on some CONNECT sessions. In case you had a rule relying on the Host, it might stop working after this change"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.5.0",
         "title": "Fiddler Everywhere v5.5.0",
         "date": "February 15, 2024",
