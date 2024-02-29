@@ -271,7 +271,7 @@ The Fiddler Everywhere application provides an option to explicitly turn off the
 
 ## Capture Not Working - All Other Scenarios
 
-If you cannot resolve your issue, then please do not hesitate to contact us. Our support engineers and developers can provide technical support through [the Telerik Support Center](https://www.telerik.com/account/support-center). When posting a ticket to our support team, consider delivering the following:
+If you cannot resolve your issue, then please do not hesitate to contact us. Our support engineers and developers can provide technical support through [the Telerik Support Center](https://www.telerik.com/account/support-center) and through [the public GitHub bug and feature request tracker](https://www.telerik.com/support/fiddler-everywhere). When posting a ticket to our support team, consider delivering the following:
 
 - Detailed description of the encountered issue. If possible, provide steps and screenshots that depict the issue reproduction.
 - Technical details about your environment, like used operating system, third-party security tools, VPN tools, administrative limitations, etc.
@@ -287,4 +287,4 @@ Specific macOS network configurations or administrative limitations can prevent 
 * [Resetting Fiddler Everywhere Settings to Default]({%slug how-to-reset-fiddler-everywhere-settings-to-default%})
 * [Troubleshooting macOS Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
 * [Troubleshooting macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
-
+* [Fiddler Support Options]({% slug support %})
