@@ -213,7 +213,7 @@ Fiddler Everywhere provides common user interface to create inspectors for visua
 
 ![Capturing Socket.IO traffic](../images/livetraffic/inspectors/socketio-inspectors.png)
 
-Encoded messages from a **WebSocket** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobof files through the **Settings > Protobuf > Decode via .proto file** option.
+Encoded messages from a **gRPC** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobof files through the **Settings > Protobuf > Decode via .proto file** option.
 
 [Learn more about capturing gRPC traffic with Fiddler Everywhere here...]({%slug capture-grpc-traffic%})
 
