@@ -121,3 +121,4 @@ Contact our support team for more details on enabling the policy-driven installa
 * [Quickstart on Linux (Step-by-Step Guide)]({% slug first_steps_linux %})
 * [Fiddler Homepage](https://www.telerik.com/fiddler)
 * [Fiddler Everywhere Product Page](https://www.telerik.com/fiddler/fiddler-everywhere)
+* [Fiddler Support Options]({% slug support %})
