@@ -1,5 +1,43 @@
 [
     {
+        "version": "5.7.0-insiders",
+        "title": "Fiddler Everywhere v5.7.0",
+        "date": "March 11, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add the option to save a new snapshot from selected sessions of existing one"
+                    },
+                    {
+                        "title": "Add the option to duplicate a snapshot"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Unable to capture HTTPS traffic on macOS Sonoma 14.4"
+                    },
+                    {
+                        "title": "In some cases users can turn on both System Proxy and Network Capture"
+                    },
+                    {
+                        "title": "null is shown in some cases in Composer Headers table"
+                    },
+                    {
+                        "title": "Unable to apply filters on custom columns"
+                    },
+                    {
+                        "title": "In rare occasions a race condition could lead to application not showing any traffic and breaking internet connectivity"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.6.0-insiders",
         "title": "Fiddler Everywhere v5.6.0",
         "date": "February 29, 2024",
