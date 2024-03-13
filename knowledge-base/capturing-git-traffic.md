@@ -42,11 +42,11 @@ Setting `http.sslVerify` to `false` can help you quickly setup your environment 
 
 
 ```JS
-http.sslCAInfo <path-to-CA-file>
 // File containing the certificates to verify the peer when fetching or pushing over HTTPS. The `GIT_SSL_CAINFO` environment variable can override it.
+http.sslCAInfo <path-to-CA-file>
 
-http.sslCAPath <path-to-folder-containing-CAs>
 // Path containing files with the CA certificates to verify the peer when fetching or pushing over HTTPS. Can be overridden by the `GIT_SSL_CAPATH` environment variable
+http.sslCAPath <path-to-folder-containing-CAs>
 ```
 
 ## Checking Git Proxy Configuration
