@@ -117,5 +117,5 @@ Fiddler Everywhere can export the CA file in different formats, enabling you to 
 * [Learn how to install the Fiddler CA in Firefox here...]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})
 * [Learn how to install the Fiddler CA in Electron-based applications here...]({%slug ubuntu-ca-electron%})
 * [Learn how to install the Fiddler CA in Python here...]({%slug fiddler-python-traffic%}#setting-fiddler-proxy-and-ca-through-environment-variable)
-* [Learn how to install the Fiddler CA for AWS here...]({%slug fhow-to-capture-aws-traffic%})
+* [Learn how to install the Fiddler CA for AWS here...]({%slug how-to-capture-aws-traffic%})
 
