@@ -18,7 +18,9 @@ res_type: kb
 
 ## Description
 
-Electron applications CA management is different from the operating system CA management used by default by Fiddler. Electron-based applications (like MS Teams) use Electron CA management, so the folder where the Fiddler Everywhere trust certificate must be installed is in `~/.pki/nssdb`. How can I capture HTTPS traffic by moving the certificate to that folder and then use the `certutil` tool to install and trust it?
+**Q** Can I capture and decrypt HTTPS traffic from Electron applications like MS Teams?
+
+Electron applications CA management is different from the operating system CA management used by default by Fiddler. Electron-based applications use Electron CA management, so the folder where the Fiddler Everywhere trust certificate must be installed is in `~/.pki/nssdb`. You can capture and decrypt their HTTPS traffic by moving the certificate authority file to that folder and then use the `certutil` tool to install and trust it.
 
 ## Solution
 
