@@ -1,5 +1,19 @@
 [
-
+    {
+        "version": "5.7.1",
+        "title": "Fiddler Everywhere v5.7.1",
+        "date": "March 14, 2024",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "gRPC capturing hangs when there is a call without request/response parameters"
+                    }
+                ]
+            }
+        ]
+    },
     {
         "version": "5.7.0",
         "title": "Fiddler Everywhere v5.7.0",
