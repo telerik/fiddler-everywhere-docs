@@ -79,21 +79,14 @@ If this is the first time you are starting the network capturing mode on your ma
 
 Immediately after pressing **Enable Capture**, you will see the following native macOS popup.
 
-![Blocked extension popup](../images/network-capture/macos-first-install-unblock-001.png)
-
-1. In the above macOS popup, choose **Open System Settings**. In the opened macOS system settings, scroll down to the message that the Fiddler extension is blocked.
+1. In the macOS popup, choose **Open System Settings**. In the opened macOS system settings, scroll down to the message that the Fiddler extension is blocked.
 
 1. Allow the Fiddler Everywhere extension.
 
-    ![Allowing Fiddler's network extension on macOS](../images/network-capture/macos-first-install-allow-002.png)
 
 1. Enter your credentials to install the extension.
 
-    ![Entering credentials to install the network extension on macOS](../images/network-capture/macos-first-install-allow-003.png)
-
 1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
-
-    ![Confirming the network extension installation](../images/network-capture/macos-first-install-allow-004.png)
 
 
 ### Stop Network Capture
@@ -109,13 +102,7 @@ To stop the network capturing mode, execute the following steps:
 
 By default, the network capturing mode has the default active rules to capture traffic from all IP addresses and processes working on ports 80 (HTTP) and 443 (HTTPS). An additional rule also enables the capturing from localhost (`127.0.0.1`) on port 3000 - this rule demonstrates how you can add specific capturing rules within the **Network Capture Settings (BETA)** screen.
 
-The **Network Capture Settings (BETA)** screen has a **Basic** view that simplifies the setup of the rules.
-
-![Default capturing rules for the network capturing mode (basic view)](../images/network-capture/net-capture-default-rules-basic-view.png)
-
-Alternatively, the **Advanced** view can create more complex capturing rules.
-
-![Default capturing rules for the network capturing mode (advanced )](../images/network-capture/net-capture-default-rules-advanced.png)
+The **Network Capture Settings (BETA)** screen has a **Basic** view that simplifies the setup of the rules. Alternatively, use the **Advanced** view to create more complex capturing rules.
 
 Through the advanced view, you can manually control what traffic to capture through the following options:
 
@@ -126,9 +113,6 @@ Through the advanced view, you can manually control what traffic to capture thro
 - **Port****&mdash;Sets the TCP/IP port. By default, most client applications use port 80 for HTTP and port 443 for HTTPS. However, it is common for some applications to use different ports for staging and testing purposes (for example, custom ports for demo applications running on localhost)
 
 - **Filter additionally by PID or process name**&mdash;Use this field to add multiple PID (process identifier) or process name values by separating them with a space. If your process name contains more than one word, add quotation marks (for example, "Google Chrome Helper"). You can use the macOS "Activity Monitor" application to determine any active application's specific PID or process name.
-
-    ![FIlter traffic by process ID](../images/network-capture/net-capture-adding-process.png)
-
 
 ### CIDR Notation for Setting Network Addresses
 
