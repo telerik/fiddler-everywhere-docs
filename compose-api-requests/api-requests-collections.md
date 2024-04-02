@@ -15,7 +15,7 @@ The Fiddler Everywhere client provides options for saving and organizing multipl
 
 To create a collection of composed API requests:
 
-1. Create a new API request by clicking the **+** button in the collections. As a result, a new **Composer** tab will open. By default, its name is **Untitled**.
+1. Create a new API request by clicking the **+** button in the collections. As a result, a new **Composer** tab will open.
 
 1. After the request is composed, click **Save**. Alternatively, to prevent overwriting an existing entry, choose **Save as**.
 
@@ -25,5 +25,4 @@ To create a collection of composed API requests:
 
 1. Click **Save** to close the dialog and add the request to the collection.
 
-    ![Requests lists](../images/requests/requests-created-collection.png)
 

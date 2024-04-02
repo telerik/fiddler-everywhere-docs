@@ -73,7 +73,7 @@ All condition values connected to a **Live Traffic** column are auto-completed w
 
 ### Filters Menu
 
-The **Filters** option provides a drop-down menu to manage your active and saved filters. Through the drop-down, you can apply a saved filter, change an active filter, turn off an active filter, save a new filter, or clear an unsaved column filter (the **Clear** option is available only when no other saved filters are activated).
+The **Filters** option provides a drop-down menu to manage your active and saved filters. Through the drop-down, you can apply a saved filter, change an active filter, disable an active filter, save a new filter, or clear an unsaved column filter. The **Clear** option is available only when there is an active [column filter](#column-filters).
 
 ![Filters menu](../images/kb/filters/filters-menu.png)
 

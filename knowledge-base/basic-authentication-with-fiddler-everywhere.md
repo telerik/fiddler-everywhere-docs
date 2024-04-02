@@ -55,8 +55,6 @@ The following steps provide an overview of the procedure for creating a basic au
 
       * The values of the `user` and `passwd` variables: `user1` and `pass1`.
 
-  ![Composer URL Field](../images/kb/url-field-of-composer-with-http-method.png)
-
 1. Create a JSON object in the **Body** tab:
 
    The predefined variables for **Basic Authentication** are `user` and `passwd`. Set their values to `user1` and `pass1`, respectively.
@@ -79,13 +77,9 @@ After performing all the above steps, select **Execute** that is located at the 
 
 Clicking the **Execute** button adds two more keys to the **Headers** tab named `Host` and `Content-Length`:
 
-![Added Keys to the Headers Tab](../images/kb/added-keys-to-the-headers-tab.png)
-
 Following the above steps will create **Basic Authentication** with Fiddler Everywhere. To check, go through the **Response Inspector** section of the **Composer**. A successful request will return **status 200** from the server along with the server-specific payload:
 
-![Response Inspector](../images/kb/authentication-to-true-in-response-inspector.png)
-
-The above response is [HTTPBin](https://httpbin.org) specific as it was used to create the **Basic Authentication**.
+![Full API request demonstration the testing a basic authentication request](../images/kb/url-field-of-composer-with-http-method.png)
 
 
 ## Contact us

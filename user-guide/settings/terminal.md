@@ -20,3 +20,6 @@ The available options are as follows:
 The Fiddler's terminal instance automatically proxies all HTTPS requests made by **curl**, **Python** or **Node.js** libraries (like **https**, **request**, etc.) and all applications which respect the `http_proxy` and `https_proxy` environment variables.
 
 ![Terminal settings](../../images/settings/settings-terminals.png)
+
+* [Learn more about the Fiddler's terminal instance here...]({%slug capture-terminal-traffic%})
+* [Learn more about other capturing modes in Fiddler here...]({%slug ccapture-traffic-get-started%})
