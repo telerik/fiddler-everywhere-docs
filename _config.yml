@@ -66,8 +66,8 @@ defaults:
 has_kb_portal: true
 has_api_reference: false
 
-# Feedback Form Google Sheet ID
-ff-sheet-id: 84c25215-7f22-0eb3-160f-78751ef7a337
+# Feedback Form Product code
+productCode: FIDDLEREVERYWHERE
 
 # The google services configuration
 google_analytics: UA-111455-1
