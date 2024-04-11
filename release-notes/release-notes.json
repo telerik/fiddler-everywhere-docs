@@ -1,5 +1,37 @@
 [
     {
+        "version": "5.8.0",
+        "title": "Fiddler Everywhere v5.8.0",
+        "date": "April 11, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Introduce new approach for active/inactive selections and focus state"
+                    },
+                    {
+                        "title": "Update application colors for light and dark theme and remove the light blue and dark blue themes"
+                    },
+                    {
+                        "title": "Update icons and style of the application"
+                    },
+                    {
+                        "title": "Add more options in the grid for gRPC messages and SSE - Copy all and Quick search"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Update third party dependencies to fix security issues"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.7.1",
         "title": "Fiddler Everywhere v5.7.1",
         "date": "March 14, 2024",
