@@ -22,4 +22,4 @@ The Fiddler's terminal instance automatically proxies all HTTPS requests made by
 ![Terminal settings](../../images/settings/settings-terminals.png)
 
 * [Learn more about the Fiddler's terminal instance here...]({%slug capture-terminal-traffic%})
-* [Learn more about other capturing modes in Fiddler here...]({%slug ccapture-traffic-get-started%})
+* [Learn more about other capturing modes in Fiddler here...]({%slug capture-traffic-get-started%})
