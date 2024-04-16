@@ -65,9 +65,8 @@ Double-click on a gRPC session to automatically open [the **Messages** tab]({%sl
 
 ![gRPC traffic and related Fiddler's inspectors](../images/kb/grpc/grpc-traffic-inspection.png)
 
-The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. Use the context menu to copy the whole row message quickly.
+The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. You can use the context menu to copy the whole row message quickly.
 
-![gRPC message context menu to copy or decode the received data](../images/kb/grpc/grpc-traffic-message-context-menu.png)
 
 It's important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/), which is in unreadable form. That means that the **Decode value** context menu option can't be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file, which can't be extracted over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that have access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
 
@@ -79,8 +78,6 @@ protoc --decode [message_object_name] [.proto_file_path] < [binary_message_file_
 ```
 
 Selecting a specific message allows you to inspect the message in detail through the **Message** inspector. You can examine the context as text or use the HEX inspector, which consists of an offset column, a hex view column, and a text view column.
-
-![gRPC message tab and inspecting through the HEX inspector](../images/kb/grpc/grpc-traffic-message-hex.png)
 
 ## Decoding gRPC traffic
 
@@ -100,8 +97,6 @@ The received gRPC messages will be automatically decoded if server reflection is
 
 If you own the Protobuf schema files, you can provide them in Fiddler Everywhere through the **Settings > Protobuf > Decode via .proto file** option. Fiddler Everywhere will try to use the available `.proto` files to decode all received gRPC messages.
 
-![Supplying a .proto file for decoding gRPC messages](../images/grpc/grpc-adding-proto-file.png)
+![Supplying a .proto file for decoding gRPC messages](../images/settings/settings-protobuf.png)
 
 As a result, the gRPC message will have a tooltip indicating that Fiddler used a Protobuf file for its decoding.
-
-![Decoded gRPC message](../images/grpc/grpc-decoded-message-via-proto.png)

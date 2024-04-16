@@ -9,7 +9,7 @@ previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic, 
 
 # Modifying Traffic
 
-Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic through the [Rules](#using-rules) tab is crucial to the Fiddler testing and debugging capabilities.
+Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic through the **Rules** functionality is crucial to the Fiddler testing and debugging capabilities. Using the Fiddler's rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
 
 To open the **Rules** tab.
 
@@ -17,13 +17,17 @@ To open the **Rules** tab.
 
 1. Follow the **Rules** flow from the **Modify and Filter Traffic** section.
 
+    ![Using the Fiddler's rules from the **Home** pane](../images/rules/rules-tutorial-flow.png)
+
 OR
 
 1. Start Fiddler Everywhere and open the **Traffic** Pane.
 
 1. Select the **Rules** tab.
 
-The **Rules** tab loads, and you can create, enable, and ranks rules in the rules queue.
+The **Rules** tab loads, and you can create, enable, organize and ranks rules in the rules queue.
+
+![Example of active Rules tab with rules and groups](../images/rules/rules-tab-active.png)
 
 ## Using Rules Builder
 
@@ -31,7 +35,9 @@ Use the **Rule Builder** to create custom rules from scratch. Each rule can auto
 
 To create and test a rule through the **Rules Builder**:
 
-1. Select the **Rules** tab and click the **Add Rule** button. As a result, the **Rule Builder**opens.
+1. Select the **Rules** tab and click the **Add Rule** button. As a result, the **Rule Builder** opens.
+
+    ![Adding new rule for modifying an HTTPS session through the Rules Builder](../images/rules/rules-builder-new-rule.png)
 
 1. Enter a descriptive rule name, which will appear in the **Rules Queue**.
 
@@ -47,7 +53,6 @@ To create and test a rule through the **Rules Builder**:
 
     - If you test with already saved sessions&mdash;Select the rule and use the **Execute** button (green play arrow). The rule immediately applies to the preloaded saved sessions.
 
-![Example of active Rules tab with rules and groups](../images/rules/rules-tab-active.png)
 
 The **Rules** tab can be a powerful ally in testing various complex scenarios without meddling with the server. You can share, import, and export created rules with collaborators to ease your support, development, and QA processes.
 

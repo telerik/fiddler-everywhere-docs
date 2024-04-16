@@ -21,17 +21,15 @@ OR
 
 As a result, Fiddler loads the **Composer** screen where you can compose and execute HTTP requests and organize them in collections through the **Requests** tree.
 
+![the Composer pane in Fiddler Everywhere](../images/composer/composer-main.png)
+
 ## Compose API Request
 
 1. Use the **+** button to create a new **Composer** tab. Alternatively, you can directly use the main **Composer** tab.
 
 1. Select **HTTP method** and enter the endpoint URL.
 
-    ![Select HTTP method and enter URL](../images/composer/comp-method-and-url.png)
-
 1. Select the HTTP protocol version with the drop-down menu to the left of the **Execute** button.
-
-    ![Select HTTP version](../images/composer/comp-http-version.png)
 
 1. (Optional) Enter additional headers, parameters, and body if required. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data. Note that the request execution includes only checked headers.
 

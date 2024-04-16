@@ -27,7 +27,9 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 
 1. Select one or more sessions.
 
-1. Use the context menu or the keyboard shortcuts `Ctrl + S` (Windows) or `Cmd + S` (macOS) to invoke the **save** dialog.
+1. Use the context menu or the keyboard shortcuts `S` to invoke the **save** dialog.
+
+    ![Save dialog](../images/livetraffic/session-save-prompt.png)
 
 1. Complete the save by:
 
@@ -46,7 +48,7 @@ Already saved snapshots of captured traffic can be shared directly within the **
 
 1. Select the saved snapshot from within the **Sessions** tree.
 
-1. Use the context menu or the keyboard shortcuts `Ctrl + Shift + =` (Windows) or `Cmd + Shift + =` (macOS) to invoke the **share** dialog.
+1. Use the context menu to invoke the **Share** dialog.
 
 1. Complete the share by:
 
