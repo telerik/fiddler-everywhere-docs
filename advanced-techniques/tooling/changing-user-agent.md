@@ -19,9 +19,25 @@ In the below examples, we will create afew different rules named "Change User-Ag
 
 To create a "Set User-Agent Chrome Windows" rule, set the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- The HTTP Request header `user-agent` must be set with a wildcard value `Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36`.
+- The HTTP Request header `user-agent` must be set with a wildcard value 
+
+    ```bash
+    Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36`.
+    ```
+
 - The HTTP Request header `sec-ch-ua-platform` must be set with a wildcard value `"Windows"`.
-- The last `Update Response Body` action must use regular expression to match `(<script(?:(?!src).)*?>)` and update as `$1!function e(t,r){if(navigator.__defineGetter__?navigator.__defineGetter__("userAgent",function(){return r}):Object.defineProperty&&Object.defineProperty(navigator,"userAgent",{get:function(){return r}}),t.navigator.userAgent!==r){var n={get:function(){return r}};try{Object.defineProperty(t.navigator,"userAgent",n)}catch(i){t.navigator=Object.create(navigator,{userAgent:n})}}}(window,"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36");`
+
+- The last `Update Response Body` action must use regular expression to match 
+    
+    ```javascript
+    (<script(?:(?!src).)*?>)
+    ```
+
+    and update as 
+
+    ```javascript
+    $1!function e(t,r){if(navigator.__defineGetter__?navigator.__defineGetter__("userAgent",function(){return r}):Object.defineProperty&&Object.defineProperty(navigator,"userAgent",{get:function(){return r}}),t.navigator.userAgent!==r){var n={get:function(){return r}};try{Object.defineProperty(t.navigator,"userAgent",n)}catch(i){t.navigator=Object.create(navigator,{userAgent:n})}}}(window,"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36");
+    ```
 
 
 An example rule that matches all sessions and explicitly changes the user agent.
@@ -40,9 +56,25 @@ The link below provides a ready-to-use rule for download as a FARX file, which y
 
 To create a "Set User-Agent Chrome Mac" rule, set the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- The HTTP Request header `user-agent` must be set with a wildcard value `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36`.
+- The HTTP Request header `user-agent` must be set with a wildcard value 
+
+    ```bash
+    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    ```
+
 - The HTTP Request header `sec-ch-ua-platform` must be set with a wildcard value `"Mac"`.
-- The last `Update Response Body` action must use regular expression to match `(<script(?:(?!src).)*?>)` and update as `$1!function e(t,r){if(navigator.__defineGetter__?navigator.__defineGetter__("userAgent",function(){return r}):Object.defineProperty&&Object.defineProperty(navigator,"userAgent",{get:function(){return r}}),t.navigator.userAgent!==r){var n={get:function(){return r}};try{Object.defineProperty(t.navigator,"userAgent",n)}catch(i){t.navigator=Object.create(navigator,{userAgent:n})}}}(window,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36");`
+
+- The last `Update Response Body` action must use regular expression to match 
+
+    ```javascript
+    (<script(?:(?!src).)*?>)
+    ```
+
+    and update as 
+
+    ```javascript
+    $1!function e(t,r){if(navigator.__defineGetter__?navigator.__defineGetter__("userAgent",function(){return r}):Object.defineProperty&&Object.defineProperty(navigator,"userAgent",{get:function(){return r}}),t.navigator.userAgent!==r){var n={get:function(){return r}};try{Object.defineProperty(t.navigator,"userAgent",n)}catch(i){t.navigator=Object.create(navigator,{userAgent:n})}}}(window,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36");
+    ```
 
 
 An example rule that matches all sessions and explicitly changes the user agent.
