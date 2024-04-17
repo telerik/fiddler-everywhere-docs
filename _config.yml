@@ -27,9 +27,24 @@ navigation:
     collaboration:
         title: Collaboration
         position: 70
+    advanced-techniques:
+        title: Advanced Techniques
+        position: 80
+    advanced-techniques/tooling:
+        title: Tooling
+        position: 801
+    advanced-techniques/filters:
+        title: Filters
+        position: 802
+    advanced-techniques/mocking:
+        title: Mocking
+        position: 803
+    advanced-techniques/ui-modifications:
+        title: UI Modifications
+        position: 804
     user-guide:
         title: User Interface
-        position: 80
+        position: 90
     user-guide/settings:
         title: Settings
         position: 1
