@@ -11,19 +11,19 @@
                         "title": "Small UI tweaks to the new application design"
                     },
                     {
-                        "title": "Make the splash screen follow the application theme"
+                        "title": "The splash screen does not respect the application theme"
                     },
                     {
-                        "title": "Application not detecting the system theme on some Linux distributions"
+                        "title": "Application does not detect the system theme on some Linux distributions"
                     },
                     {
-                        "title": "Query string Rules action not offering autocomplete suggestions"
+                        "title": "Query string Rules action does not offer autocomplete suggestions"
                     },
                     {
                         "title": "Application fails to display properly if an invalid theme is applied"
                     },
                     {
-                        "title": "Update third party dependencies to fix security issues"
+                        "title": "Update third-party dependencies to mitigate security issues"
                     }
                 ]
             }
