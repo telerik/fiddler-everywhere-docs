@@ -13,10 +13,11 @@ With Fiddler Everywhere, you can create a rule that automatically blocks sending
 
 ## Creating a "Block Cookies" Rule
 
-To create a "Block Cookies" rule, set the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Block Cookies" rule, by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- The HTTP Request header `Cookie` must be removed.
-- The HTTP Response header `Set-Cookie` must be removed.
+- Create a `Update Request Header` action, and remove the all pre-set values for the `Cookie` header.
+- Create a `Update Response Header` action, and remove the all pre-set values for the `Set-Cookie` header.
+
 
 An example rule that matches all sessions and explicitly blocks all cookies.
 
