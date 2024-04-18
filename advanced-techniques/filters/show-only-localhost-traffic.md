@@ -7,7 +7,6 @@ position: 10
 
 # Showing Only Localhost Traffic
 
-
 A typical scenario for many software engineers is to work and test in a local environment. Web applications are often using localhost deployment before testing in production. With Fiddler Everywhere, you can easily create rules that allow you to limit the captured traffic so that you can see and concentrate only on the sessions that matter.
 
 
@@ -21,7 +20,9 @@ Create a "Show Only Localhost Traffic" rule that sets the following matching con
 
 - Match by a `Host` that contains `localhost` and by a `Host` that contains `127.0.0.1`.
 
-- Create a `Do Not Show` action.
+- Create a `Do Not Show` action. 
+
+    >important Note that the`Do Not Show` action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
 
 This is an example rule that hides all sessions except those containing `localhost` and `127.0.0.1` in their hosts.
 
