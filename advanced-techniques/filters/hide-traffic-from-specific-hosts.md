@@ -18,17 +18,17 @@ Create a "SHide Traffic From Specific Hosts" rule that sets the following matchi
 
 - Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a `URL` that uses a regular expression to match addresses that contain `google.com` and  `example.com.`
+- Match by a **URL** that uses a regular expression to match addresses that contain **google.com** and  **example.com.**
 
     ```regex
     google\.com|example\.com
     ```
 
-- Create a `Do Not Show` action.
+- Create a **Do Not Show** action.
 
-    >important Note that the`Do Not Show` action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
+    >important Note that the **Do Not Show** action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
 
-This example rule hides all sessions containing `google.com` or `example.com` in their URLs.
+This example rule hides all sessions containing **google.com** or **example.com** in their URLs.
 
 ![Creating "Hide Traffic From Specific Hosts" rule](../../images/advanced/adv-hide-specific-hosts.png)
 

@@ -19,15 +19,15 @@ Create a "Hide Traffic from Specific Processes" rule that sets the following mat
 
 - Create a matching condition that uses the "When **all these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
 
-- Match by a `Process` that uses a regular expression to match an application with a list of specific process names.
+- Match by a **Process** that uses a regular expression to match an application with a list of specific process names.
 
     ```regex
     com\.apple\.webkit|chrome|msedge
     ```
 
-- Create a `Do Not Show` action.
+- Create a **Do Not Show** action.
 
-    >important Note that the`Do Not Show` action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
+    >important Note that the **Do Not Show** action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
 
 This example rule hides all sessions coming from a Chromium-based browsers likke Microsoft Edge, or Google Chrome.
 

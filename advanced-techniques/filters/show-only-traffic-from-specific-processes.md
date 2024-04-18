@@ -19,7 +19,7 @@ Create a "Show Only Traffic from Specific Processes" rule that sets the followin
 
 - Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
 
-- Match by a `Process` that uses a regular expression to match an application with a list of specific process names.
+- Match by a **Process** that uses a regular expression to match an application with a list of specific process names.
 
     ```regex
     com\.apple\.webkit|chrome|msedge
@@ -27,9 +27,9 @@ Create a "Show Only Traffic from Specific Processes" rule that sets the followin
 
     >tip The above example serves as a basic demonstration that can be easily modified. For example, you can change the negative **none of these conditions** to **any of these conditions**, effectively hiding the traffic for the processes specified in the regular expression (as demonstrated [here]({%slug adv_hide_specific_processes%})). The regular expression is also for demonstration purposes—in real life, you can create your own regex or directly use a string value with **Contains** or another string modifier.
 
-- Create a `Do Not Show` action.
+- Create a **Do Not Show** action.
 
-    >important Note that the`Do Not Show` action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
+    >important Note that the **Do Not Show** action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
 
 This example rule hides all sessions except those coming from a Chromium-based browsers likke Microsoft Edge, or Google Chrome.
 

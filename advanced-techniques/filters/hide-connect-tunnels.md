@@ -20,13 +20,13 @@ Create a "Hide CONNECT Tunnels" rule that sets the following matching conditions
 
 - Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a `Method` that contains `CONNECT` as a string.
+- Match by a **Method** that contains **CONNECT** as a string.
 
-- Create a `Do Not Show` action.
+- Create a **Do Not Show** action.
 
-    > Important Note that the 'Do Not Show` action is final, meaning no other action or active rule placed lower in the rules queue will be executed.
+    > Important Note that the **Do Not Show** action is final, meaning no other action or active rule placed lower in the rules queue will be executed.
 
-This example rule hides all HTTP sessions that use the `CONNECT` method.
+This example rule hides all HTTP sessions that use the **CONNECT** method.
 
 ![Creating "Hide CONNECT Tunnels" rule](../../images/advanced/adv-hide-connect-tunnels.png)
 

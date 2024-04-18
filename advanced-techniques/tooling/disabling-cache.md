@@ -17,14 +17,14 @@ Many client and server applications cache resources to optimize sequential conne
 
 Create a "No Caching" rule, by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a `Update Request Header` action, and remove the all pre-set values for the `If-Modified-Since` header.
-- Create a `Update Request Header` action, and remove the all pre-set values for the`If-None-Match` header.
-- Create a `Update Request Header` action, and update the `Pragma` header with value `no-cache`.
-- Create a `Update Request Header` action, and update the `Cache-control` header with value `no-cache`.
-- Create a `Update Response Header` action, and update the `Expires` header with value `0`.
-- Create a `Update Response Header` action, and remove the all pre-set values for the `Last-Modified` header.
-- Create a `Update Response Header` action, and remove the all pre-set values for the `eTag` header.
-- Create a `Update Response Header` action, and update the `Cache-Control` header with value `no-cache`.
+- Create a **Update Request Header** action, and remove the all pre-set values for the **If-Modified-Since** header.
+- Create a **Update Request Header** action, and remove the all pre-set values for the**If-None-Match** header.
+- Create a **Update Request Header** action, and update the **Pragma** header with value **no-cache**.
+- Create a **Update Request Header** action, and update the **Cache-control** header with value **no-cache**.
+- Create a **Update Response Header** action, and update the **Expires** header with value **0**.
+- Create a **Update Response Header** action, and remove the all pre-set values for the **Last-Modified** header.
+- Create a **Update Response Header** action, and remove the all pre-set values for the **eTag** header.
+- Create a **Update Response Header** action, and update the **Cache-Control** header with value **no-cache**.
 
 An example rule that matches all sessions and explicitly turns off the caching through.
 
