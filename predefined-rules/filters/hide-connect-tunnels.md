@@ -1,5 +1,5 @@
 ---
-title: Hiding CONNECT Tunnels
+title: Hide CONNECT Tunnels
 description: "Hide the proxy CONNECT Tunnels while using Fiddler's rules."
 slug: adv_hide_connect_tunnels
 position: 40

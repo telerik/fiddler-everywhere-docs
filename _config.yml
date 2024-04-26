@@ -32,16 +32,19 @@ navigation:
         position: 80
     predefined-rules/tooling:
         title: Tooling
-        position: 801
+        position: 810
     predefined-rules/filters:
         title: Filters
-        position: 802
+        position: 820
+    predefined-rules/blocking:
+        title: Blocking
+        position: 830
     predefined-rules/mocking:
         title: Mocking
-        position: 803
-    predefined-ruless/ui-modifications:
+        position: 840
+    predefined-rules/ui-modifications:
         title: UI Modifications
-        position: 804
+        position: 850
     user-guide:
         title: User Interface
         position: 90

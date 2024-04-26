@@ -1,5 +1,5 @@
 ---
-title: Showing Only Localhost Traffic
+title: Show Only Localhost Traffic
 description: "Show only localhost traffic while using Fiddler's rules."
 slug: adv_show_only_localhost
 position: 10

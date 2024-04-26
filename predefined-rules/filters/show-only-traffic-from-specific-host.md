@@ -1,5 +1,5 @@
 ---
-title: Showing Traffic Only from Specific Hosts
+title: Show Traffic Only from Specific Hosts
 description: "Show only traffic for specific hosts while using Fiddler's rules."
 slug: adv_show_only_specific_hosts
 position: 20

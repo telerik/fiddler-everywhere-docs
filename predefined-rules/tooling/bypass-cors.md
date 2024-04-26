@@ -1,5 +1,5 @@
 ---
-title: Bypassing CORS
+title: Bypass CORS
 description: "Bypassing the same-origin policy when using cross-origin resource sharing (CORS)."
 slug: adv_bypass_cors
 position: 30

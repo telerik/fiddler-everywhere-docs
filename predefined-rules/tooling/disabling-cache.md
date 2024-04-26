@@ -1,5 +1,5 @@
 ---
-title: Disabling Caching
+title: Disable Caching
 description: "Disabling caching to load latest resources while using Fiddler's rules."
 slug: adv_disable_cache
 position: 10

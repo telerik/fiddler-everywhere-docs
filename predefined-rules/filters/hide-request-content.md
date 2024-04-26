@@ -1,5 +1,5 @@
 ---
-title: Hiding Resource Requests 
+title: Hide Resource Requests 
 description: "Hide various Resource Requests (like images, JavaScript, CSS, etc.,) while using Fiddler's rules."
 slug: adv_hide_resource_content
 position: 50

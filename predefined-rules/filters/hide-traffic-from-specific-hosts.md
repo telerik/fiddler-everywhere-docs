@@ -1,5 +1,5 @@
 ---
-title: Hiding Traffic from Specific Hosts
+title: Hide Traffic from Specific Hosts
 description: "Hide HTTPS traffic for specific hosts while using Fiddler's rules."
 slug: adv_hide_specific_hosts
 position: 25

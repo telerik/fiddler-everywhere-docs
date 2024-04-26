@@ -1,5 +1,5 @@
 ---
-title: Showing Traffic Only from Specific Processes
+title: Show Traffic Only from Specific Processes
 description: "Show only traffic for specific processes and applications while using Fiddler's rules."
 slug: adv_show_only_specific_processes
 position: 30
