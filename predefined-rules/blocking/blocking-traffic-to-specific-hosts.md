@@ -2,27 +2,26 @@
 title: Block Traffic to Specific Hosts
 description: "Blocking HTTPS traffic to specific hosts while using Fiddler's rules."
 slug: adv_block_cookies
-position: 10
+position: 20
 ---
 
 # Blocking Traffic to Specific Hosts
 
 
-
-With Fiddler Everywhere, you can create a rule that automatically blocks traffic to any matched host by forcibly closding the ongoing HTTP connection.
+With Fiddler Everywhere, you can create a rule that automatically blocks traffic to any matched host by forcibly closing the ongoing HTTP connection.
 
 ## Creating a "Block Traffic to Specific Hosts" Rule
 
-Create a "Block Traffic to Specific Hosts" rule, by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Block Traffic to Specific Hosts" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
 - Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a **URL** where the string value defines the targeted hosts. In the example below, we ill use a regular expession that matches hosts like **example.com** and **google.com**
+- Match by a **URL** where the string value defines the targeted hosts. In the example below, we'll use a regular expression that matches hosts like **example.com** and **google.com**
 
 - Create a **Close Non Gracefuly** action.
 
 
-An example rule that matches all sessions where the host is **example.com** or **google.com** and closes the connection.
+This is an example rule that matches all sessions where the host is **example.com** or **google.com** and closes the connection.
 
 ![Creating "Block Traffic to Specific Hosts" rule](../../images/advanced/adv-block-specific-hosts.png)
 
