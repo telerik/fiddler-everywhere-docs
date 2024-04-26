@@ -1,8 +1,8 @@
 ---
-title: Block Traffic to Specific Hosts
+title: Block Specific Hosts
 description: "Blocking HTTPS traffic to specific hosts while using Fiddler's rules."
-slug: adv_block_cookies
-position: 20
+slug: adv_block_traffic_hosts
+position: 10
 ---
 
 # Blocking Traffic to Specific Hosts
@@ -20,10 +20,11 @@ Create a "Block Traffic to Specific Hosts" rule by setting the following actions
 
 - Create a **Close Non Gracefuly** action.
 
-
 This is an example rule that matches all sessions where the host is **example.com** or **google.com** and closes the connection.
 
 ![Creating "Block Traffic to Specific Hosts" rule](../../images/advanced/adv-block-specific-hosts.png)
+
+>tip The blocking actions are not final can be combined with other actions like **Do Not Show** which will effectively block and hide the traffic from the Fiddler's live traffic grid.
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 

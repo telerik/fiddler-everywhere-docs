@@ -36,8 +36,8 @@ navigation:
     predefined-rules/filters:
         title: Filters
         position: 820
-    predefined-rules/blocking:
-        title: Blocking
+    predefined-rules/block-and-allow-lists:
+        title: Block and Allow Lists
         position: 830
     predefined-rules/mocking:
         title: Mocking

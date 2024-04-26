@@ -2,7 +2,7 @@
 title: Block Cookies
 description: "Blocking cookies while using Fiddler's rules."
 slug: adv_block_cookies
-position: 10
+position: 20
 ---
 
 # Blocking Cookies
