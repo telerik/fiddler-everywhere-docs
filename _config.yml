@@ -27,19 +27,19 @@ navigation:
     collaboration:
         title: Collaboration
         position: 70
-    advanced-techniques:
-        title: Advanced Techniques
+    predefined-rules:
+        title: Predefined Rules
         position: 80
-    advanced-techniques/tooling:
+    predefined-rules/tooling:
         title: Tooling
         position: 801
-    advanced-techniques/filters:
+    predefined-rules/filters:
         title: Filters
         position: 802
-    advanced-techniques/mocking:
+    predefined-rules/mocking:
         title: Mocking
         position: 803
-    advanced-techniques/ui-modifications:
+    predefined-ruless/ui-modifications:
         title: UI Modifications
         position: 804
     user-guide:
