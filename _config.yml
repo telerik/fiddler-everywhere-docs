@@ -39,12 +39,15 @@ navigation:
     predefined-rules/block-and-allow-lists:
         title: Block and Allow Lists
         position: 830
+    predefined-rules/mapping:
+        title: Mapping
+        position: 840
     predefined-rules/mocking:
         title: Mocking
-        position: 840
+        position: 850
     predefined-rules/ui-modifications:
         title: UI Modifications
-        position: 850
+        position: 860
     user-guide:
         title: User Interface
         position: 90
