@@ -1,8 +1,8 @@
 ---
-title: Temporary Redirect 307
-description: "BCreating a temporary redirect (HTTP status code 307) while using Fiddler's rules."
-slug: adv_block_traffic_hosts
-position: 10
+title: Create Redirect 307
+description: "Creating a temporary redirect (HTTP status code 307) while using Fiddler's rules."
+slug: adv_temp+redirect_307
+position: 30
 ---
 
 # 307 Internal Redirect
