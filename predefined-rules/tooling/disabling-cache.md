@@ -7,11 +7,7 @@ position: 10
 
 # Disabling Caching
 
-Many client and server applications cache resources to optimize sequential connections. Caching works through specific HTTP Headers that instruct the client or the server to use a local copy of the response. This way, the applications can load their content significantly faster than having to download the actual resources each time they are requested.
-
- Whether you are a tester, quality engineer, or developer, you might often need to clear the cache using the built-in tools (for example, through the "Empty Cache and Hard Reload" feature in Chromium-based browsers) to ensure that you see the latest version of the requested resources. 
- 
- With Fiddler Everywhere, you can create a rule that automatically disables data caching. This allows you to test always against the latest version of your client/server API.
+Many client and server applications cache resources to optimize sequential connections. Caching works through specific HTTP Headers that instruct the client or the server to use a local copy of the response. This way, the applications can load their content significantly faster than having to download the actual resources each time they are requested. Whether you are a tester, quality engineer, or developer, you might often need to clear the cache using the built-in tools (for example, through the "Empty Cache and Hard Reload" feature in Chromium-based browsers) to ensure that you see the latest version of the requested resources. With Fiddler Everywhere, you can create a rule that automatically disables data caching. This allows you to test always against the latest version of your client/server API.
 
 ## Creating a "No Caching" Rule
 

@@ -2,14 +2,12 @@
 title: Create Redirect 307
 description: "Creating a temporary redirect (HTTP status code 307) while using Fiddler's rules."
 slug: adv_temp+redirect_307
-position: 30
+position: 60
 ---
 
 # 307 Internal Redirect
 
-The redirect status codes (3xx) are indicators that a page or resource has been moved (temporarily or permanently) from its original destination. During server updates, redesigns, and other application changes, developers often use the [temporary redirect **307**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/307) also known as internal redirect. The 307 redirect points users to new URLs while using the `location` header, while at the same time indicating (to search engines) that the change is only temporary, which helps in improving the SEO results.
-
-With Fiddler Everywhere, you can easily create a rule that redirects traffic with status code 307.
+The redirect status codes (3xx) are indicators that a page or resource has been moved (temporarily or permanently) from its original destination. During server updates, redesigns, and other application changes, developers often use the [temporary redirect **307**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/307) also known as internal redirect. The 307 redirect points users to new URLs while using the `location` header, while at the same time indicating (to search engines) that the change is only temporary, which helps in improving the SEO results. With Fiddler Everywhere, you can easily create a rule that redirects traffic with status code 307.
 
 ## Creating a "Redirect to URL with 307" Rule
 

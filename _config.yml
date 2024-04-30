@@ -42,8 +42,8 @@ navigation:
     predefined-rules/mapping:
         title: Mapping
         position: 840
-    predefined-rules/mocking:
-        title: Mocking
+    predefined-rules/modifying:
+        title: Modifying
         position: 850
     predefined-rules/ui-modifications:
         title: UI Modifications

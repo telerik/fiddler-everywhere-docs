@@ -7,9 +7,7 @@ position: 20
 
 # Blocking Cookies
 
-An HTTP cookie is a piece of information that the client and the server exchange to store specific data like authorization details, user preferences, analytics, and others. As a developer, you might need to test your client or server application as if the receiving cookies is explicitly blocked. 
-
-With Fiddler Everywhere, you can create a rule that automatically blocks sending and receiving cookies.
+An HTTP cookie is a piece of information that the client and the server exchange to store specific data like authorization details, user preferences, analytics, and others. As a developer, you might need to test your client or server application as if the receiving cookies is explicitly blocked. With Fiddler Everywhere, you can create a rule that automatically blocks sending and receiving cookies.
 
 ## Creating a "Block Cookies" Rule
 

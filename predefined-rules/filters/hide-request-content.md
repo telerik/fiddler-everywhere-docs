@@ -7,9 +7,7 @@ position: 50
 
 # Resource Requests 
 
-In real-life most applications and web sites are executing mutliple different request to using multiple API endpoints. As a result, when capturing all HTTPS traffic, you will quickly notice an overwhelming amount of logged HTTPS sessions requesting different resapurces like PNG images, CSS files, JavaScript modules, SVG icons, font files and more. That can make finding and inspecting a specific session hard as in some cases the number of captured session can be in the number of thousands.
-
-With Fiddler Everywhere, you can easily hide resource requests based on your own matching criteria. This will allow you to see and concentrate only on the sessions that matter.
+In real-life most applications and web sites are executing mutliple different request to using multiple API endpoints. As a result, when capturing all HTTPS traffic, you will quickly notice an overwhelming amount of logged HTTPS sessions requesting different resapurces like PNG images, CSS files, JavaScript modules, SVG icons, font files and more. That can make finding and inspecting a specific session hard as in some cases the number of captured session can be in the number of thousands. With Fiddler Everywhere, you can easily hide resource requests based on your own matching criteria. This will allow you to see and concentrate only on the sessions that matter.
 
 
 ## Creating a "Hide Resource Requests" Rule

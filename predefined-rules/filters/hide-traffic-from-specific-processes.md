@@ -7,9 +7,7 @@ position: 35
 
 # Hiding Traffic from Specific Processes
 
-By default, when Fiddler Everywhere acts as an intermediate proxy, it will capture and show all traffic that goes through the system proxy. That could overwhelm users as the captured traffic could contain thousands of sessions from multiple applications running in the background. Almost every modern-day application makes some request, so you will notice traffic from all sorts of processes and applications like antivirus tools, firewalls, mail and chat clients, IDEs, and even software for maintaining your keyboard's RGB lights can issue an HTTP request.
-
-With Fiddler Everywhere, you can easily create a rule to hide traffic from specific processes and applications.
+By default, when Fiddler Everywhere acts as an intermediate proxy, it will capture and show all traffic that goes through the system proxy. That could overwhelm users as the captured traffic could contain thousands of sessions from multiple applications running in the background. Almost every modern-day application makes some request, so you will notice traffic from all sorts of processes and applications like antivirus tools, firewalls, mail and chat clients, IDEs, and even software for maintaining your keyboard's RGB lights can issue an HTTP request. With Fiddler Everywhere, you can easily create a rule to hide traffic from specific processes and applications.
 
 ## Creating a "Hide Traffic from Specific Processes" Rule
 

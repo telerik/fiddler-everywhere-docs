@@ -7,9 +7,7 @@ position: 40
 
 # CONNECT Tunnels
 
-One of the first things you will notice while capturing HTTPS traffic with Fiddler Everywhere (or with other HTTPS proxies) is the presence of multiple HTTP sessions utilizing the CONNECT method. These are the so-called CONNECT Tunnels that the client applications configured to go through the Fiddler proxy are sending to establish a two-way connection. The CONNECT tunnels are used by the Fiddler proxy so that it knows where the requests should be directed - otherwise, the connection will be encrypted, and Fiddler won't be able to direct the request to its target. While the CONNECT Tunnels are crucial for the proper work of an intermediate HTTPS proxy, they bear little information that can be used for web debugging and could cause an additional distraction while handling large portions of captured traffic.
-
-With Fiddler Everywhere, you can easily hide the CONNECT Tunnels so that you can see and concentrate only on the sessions that matter.
+One of the first things you will notice while capturing HTTPS traffic with Fiddler Everywhere (or with other HTTPS proxies) is the presence of multiple HTTP sessions utilizing the CONNECT method. These are the so-called CONNECT Tunnels that the client applications configured to go through the Fiddler proxy are sending to establish a two-way connection. The CONNECT tunnels are used by the Fiddler proxy so that it knows where the requests should be directed - otherwise, the connection will be encrypted, and Fiddler won't be able to direct the request to its target. While the CONNECT Tunnels are crucial for the proper work of an intermediate HTTPS proxy, they bear little information that can be used for web debugging and could cause an additional distraction while handling large portions of captured traffic. With Fiddler Everywhere, you can easily hide the CONNECT Tunnels so that you can see and concentrate only on the sessions that matter.
 
 
 ## Creating a "Hide CONNECT Tunnels" Rule
