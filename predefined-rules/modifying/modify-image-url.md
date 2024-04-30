@@ -2,7 +2,7 @@
 title: Modify Image Endpoint
 description: "Modify an image API endpoint while using Fiddler's rules."
 slug: adv_modify_image_url
-position: 30
+position: 20
 ---
 
 

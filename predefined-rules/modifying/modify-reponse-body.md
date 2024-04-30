@@ -31,3 +31,24 @@ The link below provides a ready-to-use rule for download as a FARX file, which y
 [A "Insert HTML" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/modify-insert-html)
  
  
+ ## Creating a "Insert HTML (ReGex)" Rule
+
+This rule effectively achives the same output as the above rule but it demonstrates how to use regular expression to parse the response body and modify its content. Create an "Insert HTML (ReGex)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+
+- Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+
+- Match by a **URL** that uses a string value to match the desired URL. For demonstration purposes, we match **example.com**.
+
+- Create an **Update Response Body** action and use the **Regular expession** modifier. For demonstration purposes, we will find the H1 HTML element thorugh the following regular expression `<div[\n\r\s\S]*?<h1>` and then insert our image element through `<div><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Progress_Software_logo.svg"><h1>`.
+
+![Creating "Insert HTML" rule](../../images/advanced/adv-modify-insert-html-regex.png)
+
+Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
+
+![Activating the "Insert HTML" rule](../../images/advanced/adv-modify-insert-html-regex-active.png)
+
+The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+
+[A "Insert HTML" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/modify-insert-html-regex)
+
+>tip You can combine multiple actions in a single rule, which allows you to identify different parts of the same response; note that actions are executed from top to bottom with the top action/rule with higher priority. Any final action will immediately prevent the execution of all other actions and rules that are with lower priority. However, if there are no final actions, then you can execute all actions from top to bottom, which means that the same part of the modification can be overwritten by  actions placed lower in the queue.
