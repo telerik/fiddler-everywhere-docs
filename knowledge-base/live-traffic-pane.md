@@ -67,8 +67,17 @@ The **Remove All** button deletes all captured traffic from the **Live Traffic**
 
 To search for specific values in the URL and the headers of all sessions, use the **Quick Search** text input. The search action immediately filters all sessions containing the search terms and highlights the matched data. If a match is in a hidden column (for example, due to an applied filter), a warning icon shows next to the search box, which helps you show the column(s) quickly.
 
-
 ![Quick Search option to highlight & filter sessions based on a match](../images/livetraffic/websessions/websessions-quick-search.png)
+
+
+### Searching within Request and Response Bodies
+
+Version 5.9.0 of Fiddler Everywhere introduced the option to quickly search within multiple response bodies as a feature requested by the community. Note that in some cases, the Fiddler Everywhere application can search in hundreds or even thousands of sessions that can have large HTTP bodies - the immediate result of a similar search could lead to degradation of the performance (due to the processing time and memory resources needed to complete the search). It's recommended to use the search in bodies feature only with a smaller set of captured sessions.
+
+To enable the feature to search in bodies, toggle the button at the right end of the **Quick Search** input field.
+
+![Quick search option to highlight and filter session based on a matched results from both URLs, and HTTP Bodies](../images/livetraffic/websessions/search-in-bodies.png)
+
 
 ### Saving Sessions
 
