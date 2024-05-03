@@ -15,7 +15,7 @@ The set of predefined rules was conditionally separated into the following group
 
 - Tooling &mdash: A set of rules that enables you to change different behaviors in the client or server. For example:
     * [Bypassing CORS]({%slug adv_bypass_cors%})
-    * [Blocking cookies]({%slug dv_block_cookies%})
+    * [Blocking cookies]({%slug adv_block_cookies%})
     * [Disabling the browser's cache]({%slug adv_disable_cache%})
     * [Changing user-agent]({slug adv_changing_user_agent}).
 
@@ -43,7 +43,7 @@ The set of predefined rules was conditionally separated into the following group
 
 - Modifying &mdash; A set of rules demonstrating how to make custom modifications to sent HTTP requests and received HTTP responses. For example:
     * [Modifying the content of a response body]({%slug adv_modify_response_body%})
-    * [Modifying image URLs]({%slug slug: adv_modify_image_url%})
+    * [Modifying image URLs]({%slug adv_modify_image_url%})
 
 - UI Modifications &mdash; A set of rules demonstrating how to change the Fiddler's UI to fit your needs. For example:
     * [Highlighting long-living sessions]({%slug adv_marking_long_living_sessions%})
