@@ -370,7 +370,7 @@ The following table lists the **Live Traffic** columns and the information they 
             <td>The protocol type (HTTP, gRPC, Socket.IO, etc.,) used by the session.</td>
         </tr>
         <tr>
-            <td><b>Sessions</b></td>
+            <td><b>Session State</b></td>
             <td>Indicates the session type as either <b>opened</b> (active) or <b>closed</b>.</td>
         </tr>        
         <tr>
