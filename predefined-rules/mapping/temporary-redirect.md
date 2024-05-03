@@ -1,7 +1,7 @@
 ---
 title: Create Redirect 307
 description: "Creating a temporary redirect (HTTP status code 307) while using Fiddler's rules."
-slug: adv_temp+redirect_307
+slug: adv_temp_redirect_307
 position: 60
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Modify Response Body
 description: "Modify an HTTP Response by inserting HTML element while using Fiddler's rules."
-slug: adv_modify_image_url
+slug: adv_modify_response_body
 position: 10
 ---
 

@@ -91,6 +91,8 @@ Create a "Map Local (File)" rule by setting the following actions through the [R
 
 ![Creating "Map Local (File)" rule](../../images/advanced/adv-map-local-file.png)
 
+>tip As alternative to manually creating a DAT file that contains a proper response, Fiddler present a set of predefined DAT files available through [the **Return Predefined Response** action]({%slug fiddler-ar-actions%}).
+
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
 ![Activating the "Map Local (File)" rule](../../images/advanced/adv-map-local-file-active.png)
