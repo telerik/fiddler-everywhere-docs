@@ -35,8 +35,4 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Hide Traffic from Specific Processes" rule](../../images/advanced/adv-hide-specific-processes-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
-
-[A "Hide Traffic from Specific Processes" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/filters/hide-specific-processes)
- 
- 
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/hide-specific-processes" target="_blank">"Hide Traffic from Specific Processes"</a> rule as a FARX file, which you can import through the Rules toolbar.

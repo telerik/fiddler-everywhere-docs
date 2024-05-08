@@ -37,13 +37,13 @@ navigation:
         title: Filters
         position: 820
     predefined-rules/block-and-allow-lists:
-        title: Block and Allow Lists
+        title: Block Lists and Allow Lists
         position: 830
     predefined-rules/mapping:
-        title: Mapping
+        title: Map HTTPS Traffic
         position: 840
     predefined-rules/modifying:
-        title: Modifying
+        title: Modify HTTPS Traffic
         position: 850
     predefined-rules/ui-modifications:
         title: UI Modifications

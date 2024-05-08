@@ -9,7 +9,7 @@ position: 1
 
 The **Rules** functionality in Fiddler Everywhere is a powerful tool for tackling various web debugging tasks. The Fiddler team created a set of predefined rules that you can use directly or with minimal adjustments to fit your test cases.
 
->tip A rule in Fiddler contains **a matching condition** (or set of conditions) that determines the target HTTP sessions and **the action** (or set of actions) that applies to them.
+>tip A rule in Fiddler contains a **matching condition** (or set of conditions) that determines the target HTTP sessions and an **action** (or set of actions) that applies to them.
 
 The set of predefined rules was conditionally separated into the following groups:
 
@@ -20,7 +20,7 @@ The set of predefined rules was conditionally separated into the following group
    * [Changing user-agent]({slug adv_changing_user_agent}).
 
 - Filters &mdash; A set of rules demonstrating how to show or hide targeted traffic. For example:
-   * [Showing only Localhost traffic]({%slug adv_show_only_localhost%})
+   * [Showing only localhost traffic]({%slug adv_show_only_localhost%})
    * [Showing only traffic from specific hosts]({%slug adv_show_only_specific_hosts%})
    * [Hiding traffic from specific hosts]({%slug adv_hide_specific_hosts%})
    * [Showing only traffic from specific processes]({%slug adv_show_only_specific_processes%})
@@ -43,14 +43,15 @@ The set of predefined rules was conditionally separated into the following group
 
 - Modifying &mdash; A set of rules demonstrating how to make custom modifications to sent HTTP requests and received HTTP responses. For example:
     * [Modifying the content of a response body]({%slug adv_modify_response_body%})
-    * [Modifying image URLs]({%slug adv_modify_image_url%})
+    * [Modifying image U RLs]({%slug adv_modify_image_url%})
 
 - UI Modifications &mdash; A set of rules demonstrating how to change the Fiddler's UI to fit your needs. For example:
     * [Highlighting long-living sessions]({%slug adv_marking_long_living_sessions%})
-    * [Highlighting sessions that contains JavaScript or JSON]({%slug adv_marking_scripts_jsons%})
+    * [Highlighting sessions that contain JavaScript or JSON]({%slug adv_marking_scripts_jsons%})
     * [Highlighting sessions that contain static resources (like images, text files, etc.,)]({%slug adv_marking_static_resources%})
 
-The predefined sessions are available as FARX files (Fiddler uses the FARX format to export and import a rule or set of rules) in [the public GitHub repository of Fiddler Everywhere](https://github.com/telerik/fiddler-everywhere/rules/).
+The predefined sessions are available as FARX files (Fiddler uses the FARX format to export and import a rule or set of rules) in
+<a href="https://github.com/telerik/fiddler-everywhere/rules/" target="_blank">the public GitHub repository of Fiddler Everywhere</a>.
 
 ## Additional Resources
 

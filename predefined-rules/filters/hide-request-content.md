@@ -33,8 +33,6 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Hide Resource Requests" rule](../../images/advanced/adv-hide-resources-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/hide-resource-requests" target="_blank">"Hide Resource Requests"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "Hide Resource Requests" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/filters/hide-resource-requests)
- 
  

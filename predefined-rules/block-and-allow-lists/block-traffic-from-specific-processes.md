@@ -31,8 +31,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Block Traffic to Specific Processes" rule](../../images/advanced/adv-block-specific-processes-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/block-traffic-to-specific-processes" target="_blank">"Block Traffic to Specific Processes"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "Block Traffic to Specific Processes" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/block-traffic-to-specific-processes)
  
  

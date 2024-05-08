@@ -36,8 +36,6 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Hide Traffic From Specific Hosts" rule](../../images/advanced/adv-hide-specific-host-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/hide-specific-hosts" target="_blank">"Hide Traffic From Specific Hosts"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "Hide Traffic From Specific Hosts" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/filters/hide-specific-hosts)
- 
  
