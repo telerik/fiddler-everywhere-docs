@@ -80,7 +80,7 @@ The output from the above commands will vary depending on the OS network setting
 
 The following example demonstrates a sample output for the `networksetup -getwebproxy <adapter-name>` command when no proxy is set.
 
-```Console
+```Shell
 Enabled: No
 Server:
 Port: 0
@@ -89,7 +89,7 @@ Authenticated Proxy Enabled: 0
 
 The following example demonstrates a sample output for the `networksetup -getwebproxy <adapter-name>` command when the Fiddler Everywhere proxy is successfully set.
 
-```Console
+```Shell
 Enabled: Yes
 Server: 127.0.0.1
 Port: 8866
