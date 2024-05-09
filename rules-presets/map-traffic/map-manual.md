@@ -95,8 +95,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Map Local (Manual)" rule](../../images/advanced/adv-map-local-manual-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-local-manual" target="_blank">"Map Local (Manual)"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "Map Local (Manual)" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/rmap-local-manual)
  
  

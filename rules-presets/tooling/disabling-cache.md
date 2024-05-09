@@ -1,6 +1,6 @@
 ---
 title: Disable Caching
-description: "Disabling caching to load latest resources while using Fiddler's rules."
+description: "Disabling application caching to force load latest resources while using Fiddler's rules."
 slug: adv_disable_cache
 position: 10
 ---
@@ -32,8 +32,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "No Caching" rule](../../images/advanced/adv-tech-no-caching-active-rule.png)
 
-The link below provides a ready-to-use rule for download as a FARX file which you can then import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/no-caching" target="_blank">"No Caching"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "No Caching" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/no-caching)
  
  

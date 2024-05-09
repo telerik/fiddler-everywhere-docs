@@ -28,7 +28,4 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 >tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the Live Traffic grid.
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
-
-[A "Mark Long Living Sessions" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/mark-long-living-sessions)
- 
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/mark-long-living-sessions" target="_blank">"Mark Long Living Sessions"</a> rule as a FARX file, which you can import through the Rules toolbar.

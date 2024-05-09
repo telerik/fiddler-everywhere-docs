@@ -27,25 +27,25 @@ navigation:
     collaboration:
         title: Collaboration
         position: 70
-    predefined-rules:
-        title: Predefined Rules
+    rules-presets:
+        title: Rules Presets
         position: 80
-    predefined-rules/tooling:
+    rules-presets/tooling:
         title: Tooling
         position: 810
-    predefined-rules/filters:
+    rules-presets/filters:
         title: Filters
         position: 820
-    predefined-rules/block-and-allow-lists:
+    rules-presets/block-and-allow-lists:
         title: Block Lists and Allow Lists
         position: 830
-    predefined-rules/mapping:
-        title: Map HTTPS Traffic
+    rules-presets/map-traffic:
+        title: Map Traffic
         position: 840
-    predefined-rules/modifying:
-        title: Modify HTTPS Traffic
+    rules-presets/modify-traffic:
+        title: Modify Traffic
         position: 850
-    predefined-rules/ui-modifications:
+    rules-presets/ui-modifications:
         title: UI Modifications
         position: 860
     user-guide:

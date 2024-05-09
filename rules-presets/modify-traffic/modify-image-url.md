@@ -29,8 +29,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Modify Image Endpoint" rule](../../images/advanced/adv-modify-image-endpoint-local-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/modify-image-endpoint-local" target="_blank">"Modify Image Endpoint"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "Modify Image Endpoint" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/modify-image-endpoint-local)
  
  

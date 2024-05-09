@@ -45,9 +45,8 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 g
 ![Activating the "Set User-Agent Chrome Windows" rule](../../images/advanced/adv-change-ua-chrome-windows-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
 
-[A "Set User-Agent Chrome Windows" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/changing-user-agent-chrome-windows)
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/changing-user-agent-chrome-windows" target="_blank">"Set User-Agent Chrome Windows"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
 ## Creating a "Set User-Agent" Rule for Chrome Browser on macOS
 
@@ -82,9 +81,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 g
 ![Activating the "Set User-Agent Chrome Mac" rule](../../images/advanced/adv-change-ua-chrome-mac-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/changing-user-agent-chrome-macos" target="_blank">"Set User-Agent Chrome Mac"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "Set User-Agent Chrome Mac" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/changing-user-agent-chrome-macos)
- 
  
  

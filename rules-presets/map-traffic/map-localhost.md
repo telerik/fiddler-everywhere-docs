@@ -27,8 +27,5 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Map Remote (localhost)" rule](../../images/advanced/adv-map-remote-localhost-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
-
-[A "Map Remote (localhost)" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/rmap-remote-localhost)
- 
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-remote-localhost" target="_blank">"Map Remote (localhost)"</a> rule as a FARX file, which you can import through the Rules toolbar.
  

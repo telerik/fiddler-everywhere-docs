@@ -30,7 +30,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 >tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the Live Traffic grid.
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/mark-scripts-and-jsons" target="_blank">"Mark Scripts and JSONs"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "Mark Scripts and JSONs" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/mark-scripts-and-jsons)
+
  

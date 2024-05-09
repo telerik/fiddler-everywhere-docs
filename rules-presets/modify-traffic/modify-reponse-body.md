@@ -26,9 +26,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Insert HTML" rule](../../images/advanced/adv-modify-insert-html-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
-
-[A "Insert HTML" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/modify-insert-html)
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/modify-insert-html" target="_blank">"Insert HTML"</a> rule as a FARX file, which you can import through the Rules toolbar.
  
  
  ## Creating a "Insert HTML (ReGex)" Rule
@@ -47,8 +45,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Insert HTML" rule](../../images/advanced/adv-modify-insert-html-regex-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
-
-[A "Insert HTML" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/modify-insert-html-regex)
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/modify-insert-html-regex" target="_blank">"Insert HTML via regex"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
 >tip You can combine multiple actions in a single rule, which allows you to identify different parts of the same response; note that actions are executed from top to bottom with the top action/rule with higher priority. Any final action will immediately prevent the execution of all other actions and rules that are with lower priority. However, if there are no final actions, then you can execute all actions from top to bottom, which means that the same part of the modification can be overwritten by  actions placed lower in the queue.
+

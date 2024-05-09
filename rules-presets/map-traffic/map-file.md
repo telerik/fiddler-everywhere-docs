@@ -97,8 +97,6 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Map Local (File)" rule](../../images/advanced/adv-map-local-file-active.png)
 
-The link below provides a ready-to-use rule for download as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-local-file" target="_blank">"Map Local (File)"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-[A "Map Local (File)" rule as FARX file](https://github.com/telerik/fiddler-everywhere/rules/tooling/map-local-file)
- 
  
