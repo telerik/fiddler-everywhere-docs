@@ -32,8 +32,9 @@ The Fiddler Everywhere client will use the name of the active network adapter (f
 1. Create a Shell file through your preferred IDE. For demonstration purposes, name this file as `test.sh`.
 
 2. In the newly created `test.sh` file, copy and paste the following Shell script.
+
     ```Shell
-    services=$(networksetup -listnetworkserviceorder | sed '1d;s/^([^)]*) \(.*\)$/\1FIDDLER_SEPARATOR/g;s/^.*Device: \([^)]*\))/\1/g;/^$/d' | sed 'N;s/\n//')
+    services=$(networksetup -listnetworkserviceorder | sed '1d;/(\*)/,+2d;s/^([^)]*) \(.*\)$/\1FIDDLER_SEPARATOR/g;s/^.*Device: \([^)]*\))/\1\t/g;/^$/d' | sed 'N;s/\n//')
 
     while read line; do
         sname=$(echo "$line" | awk -F  "FIDDLER_SEPARATOR" '{print $1}')
@@ -43,45 +44,37 @@ The Fiddler Everywhere client will use the name of the active network adapter (f
             rc="$?"
             if [ "$rc" -eq 0 ]; then
                 currentservice="$sname"
-                echo "\"$currentservice\""
+                echo "$currentservice"
                 break
             fi
         fi
     done <<< "$(echo "$services")"
 
     if ! [ -n "$currentservice" ]; then
-        >&2 echo "Can't find current service"
+        >&2 echo "Could not find active network service for which to check the proxy configuration"
+        >&2 echo "$services"
+        >&2 networksetup -listnetworkserviceorder
         exit 1
     fi
+
+
+    networksetup -getproxyautodiscovery "$currentservice"
+    networksetup -getautoproxyurl "$currentservice"
+    networksetup -getproxybypassdomains "$currentservice"
+    networksetup -getwebproxy "$currentservice"
+    networksetup -getsecurewebproxy "$currentservice"
+    networksetup -getsocksfirewallproxy "$currentservice"
     ```
 
 3. Execute the `test.sh` through the terminal.
-    ```Console
+
+    ```Shell
     sh <path-to-script>/test.sh
     ```
 
-4. On success, as an output, you will see the name of the active network adapter (for demonstration purposes, let's assume the result is **Wi-Fi**). If you are not able to get the active network adapter name successfully, then you have system restrictions or wrongful network configuration.
 
-    The following example demonstrates a sample output from executing `test.sh`.
-    ```
-    "Wi-Fi"
-    ```
 
-To use this name for further troubleshooting, refer to the following section.
-
-### Troubleshooting the Proxy Settings
-
-Once you can successfully get the name of the active network adapter, you can use it to access the OS network settings by utilizing the following commands. Note that for demonstration purposes, the assumed adapter name is **Wi-Fi**.
-
-```Console
-networksetup -getproxyautodiscovery "Wi-Fi"
-networksetup -getautoproxyurl "Wi-Fi"
-networksetup -getproxybypassdomains "Wi-Fi"
-networksetup -getwebproxy "Wi-Fi"
-networksetup -getsecurewebproxy "Wi-Fi"
-networksetup -getftpproxy "Wi-Fi"
-networksetup -getsocksfirewallproxy "Wi-Fi"
-```
+Once you can successfully run the above script, you can use its output to troubleshoot possible issues with the active network adapter discovery.
 
 The output from the above commands will vary depending on the OS network settings that are in place. You can use the output to troubleshoot your OS network settings with and without the Fiddler Everywhere capturing mode. For example, when Fiddler Everywhere is properly set to capture traffic and the capturing mode is ON, the **getsecurewebproxy** option will return the Fiddler proxy. By default, the Fiddler proxy is `127.0.0.1:8866`.
 
