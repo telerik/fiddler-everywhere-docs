@@ -1,5 +1,70 @@
 [
     {
+        "version": "5.9.0-insiders",
+        "title": "Fiddler Everywhere v5.9.0",
+        "date": "May 9, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add a search option for request and response body content when searching in sessions and streaming messages"
+                    },
+                    {
+                        "title": "Add a new column in the sessions grid - \"Session State\", indicating whether the session is opened or closed"
+                    },
+                    {
+                        "title": "Rename \"Protocol\" session column to \"Scheme\". Add new \"Protocol\" session column with values to allow filtering streaming sessions"
+                    },
+                    {
+                        "title": "Add automatic Zstandard (zstd) decryption of sessions using such compression"
+                    },
+                    {
+                        "title": "Add user prompt to disable video hardware acceleration in case application UI crashes on startup"
+                    },
+                    {
+                        "title": "Add hint to open messages in streaming sessions (e.g. WebSocket, gRPC) in the response inspector"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Update third party dependencies to fix security issues"
+                    },
+                    {
+                        "title": "Do not capture streaming sessions (e.g. gRPC) if \"Ignore certificate errors\" option is off and there is a problem with the server certificate"
+                    },
+                    {
+                        "title": "Adding a cookie description is not persisted in saved Composer requests"
+                    },
+                    {
+                        "title": "Live sessions tab might show older sessions as new when after lot of sessions have been captured"
+                    },
+                    {
+                        "title": "Performance issues if trying to capture a lot of concurrent sessions "
+                    },
+                    {
+                        "title": "Shared rules can become duplicated when opened by the receiving user"
+                    },
+                    {
+                        "title": "UI fixes related to updated application look"
+                    },
+                    {
+                        "title": "Application crash in some cases when physical network adapters change on macOS"
+                    },
+                    {
+                        "title": "State of word wrap inspectors toggle is not persisted"
+                    },
+                    {
+                        "title": "Update ciphers for encryption of saved, shared and exported .saz file - you need to update passwords to apply the new encryption"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.8.1-insiders",
         "title": "Fiddler Everywhere v5.8.1",
         "date": "April 18, 2024",
