@@ -1,6 +1,6 @@
 ---
 title: Disable Caching
-description: "Disabling application caching to force load latest resources while using Fiddler's rules."
+description: "You can disable application caching to force load the latest resources while using Fiddler's rules."
 slug: adv_disable_cache
 position: 10
 ---
