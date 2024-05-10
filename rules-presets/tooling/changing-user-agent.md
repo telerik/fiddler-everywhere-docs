@@ -5,32 +5,35 @@ slug: adv_changing_user_agent
 position: 40
 ---
 
-# The User-Agent Header
+# Changing the User-Agent Header
 
-The **User-Agent** HTTP Header lets server identify the application, operating system, vendor, and/or version of the client that sends the request. Usually, each application sends its own specific **User-Agent** string value, but in some cases developers might want to quickly test server responses based on multiple different user agents. Additionally, when Fiddler issues a request thorugh its **Composer** it will also automatically set its own **User-Agent** value - the same could also happen while using other third-party proxy tools chained to Fiddler. You can easily create a rule that changes the **User-Agent** for any HTTP request that goes through Fiddler while using the Fiddler's rules.
+The **User-Agent** HTTP Header lets servers identify the application, operating system, vendor, and/or version of the client that sends the request. Usually, each application sends its own specific **User-Agent** string value, but in some cases developers might want to quickly test server responses based on multiple different user agents.
 
+When Fiddler issues a request through its **Composer** it automatically set its own **User-Agent** value. You might observe a similar behavior when using other third-party proxy tools chained to Fiddler.
 
-In the below examples, we will create afew different rules named "Change User-Agent" that effectively changes the pre-set user agent header with predefined user agents that mock Chrome browser on Windows and on macOS.
+You can easily create a rule that changes the **User-Agent** for any HTTP request that goes through Fiddler while using the Fiddler's rules.
 
-## Creating a "Set User-Agent" Rule for Chrome Browser on Windows
+The following examples show how to create a few different rules named "Change User-Agent" that effectively mock the Chrome browser on Windows and macOS.
 
-Create a "Set User-Agent Chrome Windows" rule, by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+## Creating a "Set User-Agent" Rule for a Chrome Browser on Windows
 
-1. Create an action that sets the HTTP Request header **user-agent** with the following value 
+Create a "Set User-Agent Chrome Windows" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+
+1. Create an action that sets the HTTP Request header **user-agent** to the following value 
 
     ```bash
     Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36`.
     ```
 
-1. Create an action that sets the HTTP Request header **sec-ch-ua-platform** with value **"Windows"**.
+1. Create an action that sets the HTTP Request header **sec-ch-ua-platform** to **"Windows"**.
 
-1. Create an action **Update Response Body** that sets the following regular expression match
+1. Create an **Update Response Body** action that sets the following regular expression match:
     
     ```javascript
     (<script(?:(?!src).)*?>)
     ```
 
-    and update as 
+    and update as:
 
     ```javascript
     $1!function e(t,r){if(navigator.__defineGetter__?navigator.__defineGetter__("userAgent",function(){return r}):Object.defineProperty&&Object.defineProperty(navigator,"userAgent",{get:function(){return r}}),t.navigator.userAgent!==r){var n={get:function(){return r}};try{Object.defineProperty(t.navigator,"userAgent",n)}catch(i){t.navigator=Object.create(navigator,{userAgent:n})}}}(window,"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36");
@@ -41,43 +44,43 @@ This sample Fiddler rule matches all sessions and explicitly changes the user ag
 ![Creating "Set User-Agent Chrome Windows" rule](../../images/advanced/adv-change-ua-chrome-windows.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
-g
+
 ![Activating the "Set User-Agent Chrome Windows" rule](../../images/advanced/adv-change-ua-chrome-windows-active.png)
 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/changing-user-agent-chrome-windows" target="_blank">"Set User-Agent Chrome Windows"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-## Creating a "Set User-Agent" Rule for Chrome Browser on macOS
+## Creating a "Set User-Agent" Rule for a Chrome Browser on macOS
 
-Create a "Set User-Agent Chrome Mac" rule, by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Set User-Agent Chrome Mac" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. The HTTP Request header **user-agent** must be set with the following value 
+1. Create an action that sets the HTTP Request header **user-agent** to the following value: 
 
     ```bash
     Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     ```
 
-1. The HTTP Request header **sec-ch-ua-platform** must be set with a value **"Mac"**.
+1. Create an action that sets the HTTP Request header **sec-ch-ua-platform** to **"Mac"**.
 
-1. The last **Update Response Body** action must use regular expression to match 
+1. Create an **Update Response Body** action that sets the following regular expression match:
 
     ```javascript
     (<script(?:(?!src).)*?>)
     ```
 
-    and update as 
+    and update as:
 
     ```javascript
     $1!function e(t,r){if(navigator.__defineGetter__?navigator.__defineGetter__("userAgent",function(){return r}):Object.defineProperty&&Object.defineProperty(navigator,"userAgent",{get:function(){return r}}),t.navigator.userAgent!==r){var n={get:function(){return r}};try{Object.defineProperty(t.navigator,"userAgent",n)}catch(i){t.navigator=Object.create(navigator,{userAgent:n})}}}(window,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36");
     ```
 
 
-An example rule that matches all sessions and explicitly changes the user agent.
+This sample Fiddler rule matches all sessions and explicitly changes the user agent to mock a Chrome browser on macOS.
 
 ![Creating "Set User-Agent Chrome Mac" rule](../../images/advanced/adv-change-ua-chrome-mac.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
-g
+
 ![Activating the "Set User-Agent Chrome Mac" rule](../../images/advanced/adv-change-ua-chrome-mac-active.png)
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/changing-user-agent-chrome-macos" target="_blank">"Set User-Agent Chrome Mac"</a> rule as a FARX file, which you can import through the Rules toolbar.

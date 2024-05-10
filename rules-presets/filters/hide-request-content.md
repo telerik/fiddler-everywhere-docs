@@ -5,10 +5,11 @@ slug: adv_hide_resource_content
 position: 50
 ---
 
-# Resource Requests 
+# Hiding Resource Requests 
 
-In real-life most applications and web sites are executing mutliple different request to using multiple API endpoints. As a result, when capturing all HTTPS traffic, you will quickly notice an overwhelming amount of logged HTTPS sessions requesting different resapurces like PNG images, CSS files, JavaScript modules, SVG icons, font files and more. That can make finding and inspecting a specific session hard as in some cases the number of captured session can be in the number of thousands. With Fiddler Everywhere, you can easily hide resource requests based on your own matching criteria. This will allow you to see and concentrate only on the sessions that matter.
+In real life, most applications and web sites are executing multiple different requests to use multiple API endpoints. As a result, when capturing all HTTPS traffic, you will quickly notice an overwhelming amount of logged HTTPS sessions requesting different resources like PNG images, CSS files, JavaScript modules, SVG icons, font files and more. That can make finding and inspecting a specific session hard when you have thousands of captured sessions.
 
+With Fiddler Everywhere, you can easily hide resource requests based on your own matching criteria so that you can see and concentrate only on the sessions that matter.
 
 ## Creating a "Hide Resource Requests" Rule
 
@@ -16,7 +17,7 @@ In this example, we will create a rule named "Hide Resource Requests" that match
 
 Create a "Hide Resource Requests" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
 
 1. Match by a **Response Header** with name `Content-Type` where the value is not null.
 
@@ -24,7 +25,7 @@ Create a "Hide Resource Requests" rule that sets the following matching conditio
 
 1. Create a **Do Not Show** action.
 
-    > Important Note that the **Do Not Show** action is final, meaning no other action or active rule placed lower in the rules queue will be executed.
+    > >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
 
 This sample Fiddler rule hides all resource requests.
 
@@ -35,7 +36,6 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 ![Activating the "Hide Resource Requests" rule](../../images/advanced/adv-hide-resources-active.png)
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/hide-resource-requests" target="_blank">"Hide Resource Requests"</a> rule as a FARX file, which you can import through the Rules toolbar.
-
   
 ## See Also
 

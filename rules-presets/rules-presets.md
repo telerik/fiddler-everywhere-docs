@@ -23,7 +23,7 @@ The rules presets were conditionally separated into the following groups:
    * [Showing only localhost traffic]({%slug adv_show_only_localhost%})
    * [Showing only traffic from specific hosts]({%slug adv_show_only_specific_hosts%})
    * [Hiding traffic from specific hosts]({%slug adv_hide_specific_hosts%})
-   * [Showing only traffic from specific processes]({%slug adv_show_only_specific_processes%})
+   * [Showing Traffic Only from Specific Processes]({%slug adv_show_only_specific_processes%})
    * [Hiding traffic from specific processes]({%slug adv_hide_specific_processes%})
    * [Hiding CONNECT Tunnels]({%slug adv_hide_connect_tunnels%})
    * [Hiding HTTP requests with resource content (like JS, CSS, images, fonts, etc.)]({%slug adv_hide_resource_content%})

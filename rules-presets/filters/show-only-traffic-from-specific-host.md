@@ -1,25 +1,25 @@
 ---
 title: Show Traffic Only from Specific Hosts
-description: "Show only traffic for specific hosts while using Fiddler's rules."
+description: "Learn how to show traffic only from specific hosts while using Fiddler's rules."
 slug: adv_show_only_specific_hosts
 position: 20
 ---
 
 # Showing Only Traffic from Specific Hosts
 
+Similar to [showing traffic only from localhost]({% slug adv_show_only_localhost %}), there are scenarios where you would like to test and see traffic generated from a specific hostname.
 
-Similar to showing only traffic from localhost, there are scenarios where you would like to test and see traffic generated from a specific hostname. With Fiddler Everywhere, you can easily create rules that limit the captured traffic so that you can see and concentrate only on the sessions that matter.
-
+With Fiddler Everywhere, you can easily create rules that limit the captured traffic so that you can see and concentrate only on the sessions that matter.
 
 ## Creating a "Show Only Host Traffic" Rule
 
-In this example, we will create a rule named "Show Only Host Traffic" that hides all captured traffic except for traffic generated from the specified host.
+This example shows how to create a rule named "Show Only Host Traffic" that hides all captured traffic except for traffic generated from the specified host.
 
 Create a "Show Only Host Traffic" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
+1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**" pattern. This rule uses the negative statements to match and apply actions on anything but the desired targets.
 
-1. Match by a **URL** that uses a regular expression to match addresses that contain **google.com** and  **example.com.**
+1. For the matching condition, match by a **URL** that uses a regular expression for addresses that contain **google.com** and **example.com**.
 
     ```regex
     google\.com|example\.com
@@ -27,7 +27,7 @@ Create a "Show Only Host Traffic" rule that sets the following matching conditio
 
 1. Create a **Do Not Show** action.
 
-    >important Note that the **Do Not Show** action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
+    >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
 
 This sample Fiddler rule hides all sessions except those containing **google.com** or **example.com** in their URLs.
 
@@ -37,9 +37,8 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Show Only Host Traffic" rule](../../images/advanced/adv-show-only-specific-host-active.png)
 
-Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/show-only-specific-hosts" target="_blank">"Show Only Host Traffic"</a> rule as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/show-only-specific-hosts" target="_blank">"Show Only Host Traffic"</a> rule as a FARX file, which you can import through the **Rules** toolbar.
  
-  
 ## See Also
 
 * [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})

@@ -1,28 +1,27 @@
 ---
 title: Map Local File
-description: "Creating a transparent mapping/redirect to a DAT file containing the HTTP request while using Fiddler's rules."
+description: "Creating a transparent mapping or redirect to a DAT file containing the HTTP request while using Fiddler's rules."
 slug: adv_map_local_file
 position: 30
 ---
 
+# Map Local Files
 
-# Mapping Local Files
+Remote mapping of a request location means testing changes or fixes locally and avoiding deploying on an actual remote host. However, testing against a localhost environment is often the more straightforward, quicker, and cheaper solution. Mapping HTTP requests can be done to remote locations and local sources like files, Fiddler's predefined responses, or manual responses (through the Fiddler user interface). 
 
-
-Mapping HTTP requests can be done to remote locations and local sources like files, Fiddler's predefined responses, or manual responses (through the Fiddler user interface). This article will showcase how to create a rule that **maps HTTP requests to a local DAT file** (which contains the modified HTTP response).
-
+With Fiddler Everywhere, you can easily create a rule that **maps HTTP requests to a local DAT file** (which contains the modified HTTP response).
 
 ## Creating a "Map Local (File)" Rule
 
 Create a "Map Local (File)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
 
-1. Match by a **URL** that uses a string value to match the desired URL (for demonstration purposes, we match **example.com**).
+1. Match by a **URL** that uses a string value to match the desired URL. For example: **example.com**.
 
-1. (Optional) Create a **Return CONNECT Tunnel** action. This action should be used when you wish to test a URL that your DNS server will not resolve.
+1. (Optional) If you need to test a URL that your DNS server cannot resolve, create a **Return CONNECT Tunnel** action.
 
-1. Create **Return File** action and set the path to the DAT file that contains the modified HTTP request. For demonstration, we use a DAT file with the following content:
+1. Create a **Return File** action and set the path to the DAT file that contains the modified HTTP request. For example:
 
     ```
     HTTP/2 200
@@ -93,7 +92,7 @@ This sample Fiddler rule maps an HTTP request to return a manually-crafted respo
 
 ![Creating "Map Local (File)" rule](../../images/advanced/adv-map-local-file.png)
 
->tip As alternative to manually creating a DAT file that contains a proper response, Fiddler present a set of predefined DAT files available through [the **Return Predefined Response** action]({%slug fiddler-ar-actions%}).
+>tip Instead of manually creating a DAT file that contains a proper response, you can use one of Fiddler's predefined DAT files available through [the **Return Predefined Response** action]({%slug fiddler-ar-actions%}).
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
@@ -101,7 +100,6 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-local-file" target="_blank">"Map Local (File)"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-  
 ## See Also
 
 * [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})

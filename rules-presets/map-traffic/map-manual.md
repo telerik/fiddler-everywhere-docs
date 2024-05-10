@@ -1,28 +1,28 @@
 ---
 title: Map Manual Response
-description: "Creating a transparent mapping/redirect to a manually created HTTP Response within the Fiddler's rules."
+description: "Creating a transparent mapping or redirect to a manually created HTTP Response within the Fiddler's rules."
 slug: adv_map_local_manual
 position: 40
 ---
 
+# Map Manual Response
 
-# Mapping Manual Responses
 
+Remote mapping of a request location means testing changes or fixes locally and avoiding deploying on an actual remote host. However, testing against a localhost environment is often the more straightforward, quicker, and cheaper solution. Mapping HTTP requests can be done to remote locations and local sources like files, Fiddler's predefined responses, or manual responses (through the Fiddler user interface). 
 
-Mapping HTTP requests can be done to remote locations and local sources like files, Fiddler's predefined responses, or manual responses (through the Fiddler user interface). This article will showcase how to create a rule that **maps an HTTP request to a locally created HTTP Response**.
-
+With Fiddler Everywhere, you can easily create a rule that **maps an HTTP request to a locally created HTTP Response**.
 
 ## Creating a "Map Local (Manual)" Rule
 
 Create a "Map Local (Manual)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
 
-1. Match by a **URL** that uses a string value to match the desired URL (for demonstration purposes, we match **example.com**).
+1. Match by a **URL** that uses a string value to match the desired URL. For example: **example.com**.
 
-1. (Optional) Create a **Return CONNECT Tunnel** action. This action should be used when you wish to test a URL that your DNS server will not resolve.
+1. (Optional) If you need to test a URL that your DNS server cannot resolve, create a **Return CONNECT Tunnel** action.
 
-1. Create a **Return Manual Response** action and populate the modified response within the Fiddler's UI. For demonstration purposes, we use the following HTTP request:
+1. Create a **Return Manual Response** action and provide the modified response. For example:
 
  ```
  HTTP/2 200
@@ -99,7 +99,6 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-local-manual" target="_blank">"Map Local (Manual)"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
-  
 ## See Also
 
 * [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})

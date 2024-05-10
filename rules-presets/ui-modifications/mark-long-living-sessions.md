@@ -1,36 +1,34 @@
 ---
-title: Mark Long Living Sessions
-description: "Learn how to mark long living sessions with Fiddler's rules."
+title: Mark Long-Living Sessions
+description: "Learn how to mark long-living sessions with Fiddler's rules."
 slug: adv_marking_long_living_sessions
 position: 10
 ---
 
-# Marking Long Living Sessions
+# Marking Long-Living Sessions
 
+You can dynamically change the Fiddler Everywhere user interface based on your preferences. You can highlight matched sessions through the **Mark Sessions** action and set their the background and text color.
 
-The Fiddler Everywhere user interface can be dynamically changed based on your preferences. You can highlight matched sessions through the **Mark Sessions** action, which allows you to set the background and the text color.
+## Creating a "Mark Long-Living Sessions" Rule
 
-## Creating a "Mark Long Living Sessions" Rule
+Create a "Mark Long-Living Sessions" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-Create an "Mark Long Living Sessions" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
 
-1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
-
-1. Match by a **Session Type** that uses string values that match the desired session's types. For demonstration purposes, we match **WebSocket**, **gRPC**, **RPC**, **Socket.IO**, and **Server-Side Events** sessions.
+1. Match by a **Session Type** that uses string values that match the desired session types. For example: **WebSocket**, **gRPC**, **RPC**, **Socket.IO**, and **Server-Side Events** sessions.
 
 1. Create a **Mark Session** action and set the preferred background and foreground (text) colors.
 
-![Creating "Mark Long Living Sessions" rule](../../images/advanced/mark-long-living-sessions.png)
+![Creating "Mark Long-Living Sessions" rule](../../images/advanced/mark-long-living-sessions.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
-![Activating the "Mark Long Living Sessions" rule](../../images/advanced/mark-long-living-sessions-active.png)
+![Activating the "Mark Long-Living Sessions" rule](../../images/advanced/mark-long-living-sessions-active.png)
 
->tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the Live Traffic grid.
+>>tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the **Live Traffic** grid.
 
-Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/mark-long-living-sessions" target="_blank">"Mark Long Living Sessions"</a> rule as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/mark-long-living-sessions" target="_blank">"Mark Long-Living Sessions"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
- 
 ## See Also
 
 * [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})

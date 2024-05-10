@@ -7,22 +7,23 @@ position: 10
 
 # Showing Only Localhost Traffic
 
-A typical scenario for many software engineers is to work and test in a local environment. Web applications are often using localhost deployment before testing in production. With Fiddler Everywhere, you can easily create rules that allow you to limit the captured traffic so that you can see and concentrate only on the sessions that matter.
+A typical scenario for many software engineers is to work and test in a local environment. Web applications are often using localhost deployment before testing in production.
 
+With Fiddler Everywhere, you can easily create rules that allow you to limit the captured traffic so that you can see and concentrate only on the sessions that matter.
 
 ## Creating a "Show Only Localhost Traffic" Rule
 
-In this example, we will create a rule named "Show Only Localhost Traffic" that hides all captured traffic except for traffic generated from the **localhost** host or the local loopback address **127.0.0.1**.
+This example shows how to create a rule named "Show Only Localhost Traffic" that hides all captured traffic except for traffic generated from the **localhost** host or the local loopback address **127.0.0.1**.
 
 Create a "Show Only Localhost Traffic" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
+1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**" pattern. This rule uses the negative statements to match and apply actions on anything but the desired targets.
 
-1. Match by a **Host** that contains **localhost** and by a **Host** that contains **127.0.0.1**.
+1. For the matching condition, match by a **Host** that contains **localhost** and by a **Host** that contains **127.0.0.1**.
 
 1. Create a **Do Not Show** action. 
 
-    >important Note that the **Do Not Show** action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
+    >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
 
 This sample Fiddler rule hides all sessions except those containing **localhost** and **127.0.0.1** in their hosts.
 
@@ -32,9 +33,8 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Show Only Localhost Traffic" rule](../../images/advanced/adv-show-only-localhost-active.png)
 
-Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/show-only-localhost" target="_blank">"Show Only Localhost Traffic"</a> rule as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/show-only-localhost" target="_blank">"Show Only Localhost Traffic"</a> rule as a FARX file, which you can import through the **Rules** toolbar.
  
-  
 ## See Also
 
 * [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
