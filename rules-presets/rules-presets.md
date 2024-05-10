@@ -39,7 +39,7 @@ The rules presets were conditionally separated into the following groups:
     * [Mapping to localhost addresses]({%slug adv_map_remote_localhost%})
     * [Mapping to a local file]({%slug adv_map_local_file%})
     * [Mapping to a manually created response]({%slug adv_map_local_manual%})
-    * [Creating temporary redirect 307]({%slug adv_temp_redirect_307%})
+    * [Creating a temporary 307 redirect]({%slug adv_temp_redirect_307%})
 
 - Modify Traffic&mdash;A set of rules demonstrating how to make custom modifications to sent HTTP requests and received HTTP responses. For example:
     * [Modifying the content of a response body]({%slug adv_modify_response_body%})
