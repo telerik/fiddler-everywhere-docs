@@ -21,7 +21,7 @@ Create a "No Caching" rule, by setting the following actions through the [Rules 
 - Create an **Update Request Header** action, and remove all pre-set values for the **If-None-Match** header.
 - Create a **Update Request Header** action, and update the **Pragma** header with value **no-cache**.
 - Create a **Update Request Header** action, and update the **Cache-control** header with value **no-cache**.
-- Create a **Update Response Header** action, and update the **Expires** header with value **0**.
+- Create an **Update Response Header** action and set the **Expires** header to **0**.
 - Create an **Update Response Header** action and remove all pre-set values for the **Last-Modified** header.
 - Create an **Update Response Header** action and remove all pre-set values for the **eTag** header.
 - Create a **Update Response Header** action, and update the **Cache-Control** header with value **no-cache**.
