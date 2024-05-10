@@ -43,7 +43,7 @@ The rules presets were conditionally separated into the following groups:
 
 - Modify Traffic&mdash;A set of rules demonstrating how to make custom modifications to sent HTTP requests and received HTTP responses. For example:
     * [Modifying the content of a response body]({%slug adv_modify_response_body%})
-    * [Modifying image U RLs]({%slug adv_modify_image_url%})
+    * [Modifying image URLs]({%slug adv_modify_image_url%})
 
 - UI Modifications&mdash;A set of rules demonstrating how to change the Fiddler's UI to fit your needs. For example:
     * [Highlighting long-living sessions]({%slug adv_marking_long_living_sessions%})
