@@ -19,7 +19,7 @@ Create an "Mark Scripts and JSONs" rule by setting the following actions through
 
 - Match by a **Response Header** where the value of the header **Content-Type** does not equal **javascript**. This excludes dynamic content.
 
-- Match by a **Response Header**  where the value of the header **Content-Type** does not equals **json** (excluding dynamic content).
+- Match by a **Response Header** where the value of the header **Content-Type** does not equal **json**. This excludes dynamic content.
 
 - Match by **Method**  of type **GET**.
 
