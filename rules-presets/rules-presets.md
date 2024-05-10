@@ -28,7 +28,7 @@ The rules presets were conditionally separated into the following groups:
    * [Hiding CONNECT Tunnels]({%slug adv_hide_connect_tunnels%})
    * [Hiding HTTP requests with resource content (like JS, CSS, images, fonts, etc.)]({%slug adv_hide_resource_content%})
 
-- Block Lists and Allow lists&mdash;A set of rules demonstrating how to block or allow target traffic. For example:
+- Block lists and Allow lists&mdash;A set of rules demonstrating how to block or allow target traffic. For example:
     * [Blocking traffic to specific hosts]({%slug adv_block_traffic_hosts%})
     * [Allowing traffic only to specific hosts]({%slug adv_allow_traffic_hosts%})
     * [Blocking traffic from specific processes]({%slug adv_allow_traffic_processes%})
@@ -53,8 +53,8 @@ The rules presets were conditionally separated into the following groups:
 The predefined sessions are available as FARX files (Fiddler uses the FARX format to export and import a rule or set of rules) in
 <a href="https://github.com/telerik/fiddler-everywhere/rules/" target="_blank">the public GitHub repository of Fiddler Everywhere</a>.
 
-## Additional Resources
+## See Also
 
-- [Learn how to the Rules tab here..]({%slug modify-traffic-get-started%})
+- [Learn more about the Rules functionality in Fiddler Everywhere here..]({%slug modify-traffic-get-started%})
 - [Learn how to organize and set the order of execution of multiple rules here..]({%slug rulesbuilder-get-started%})
 - [Learn how to use the Fiddler breakpoints to pause, debug, and modify HTTPS traffic on the fly]({%slug rulesbuilder-breakpoints%})
