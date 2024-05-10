@@ -15,7 +15,7 @@ Create an "Mark Scripts and JSONs" rule by setting the following actions through
 
 - Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a **Response Header**  where the header **Content-Type** is not empty (matches any sessions where the header is present and has any value).
+- Match by a **Response Header** where the header **Content-Type** is not empty. This matches any sessions where the header is present and has any value.
 
 - Match by a **Response Header**  where the value of the header **Content-Type** does not equals **javascript** (excluding dynamic content).
 
