@@ -17,7 +17,7 @@ The rules presets were conditionally separated into the following groups:
    * [Bypassing CORS]({%slug adv_bypass_cors%})
    * [Blocking cookies]({%slug adv_block_cookies%})
    * [Disabling the browser's cache]({%slug adv_disable_cache%})
-   * [Changing user-agent]({slug adv_changing_user_agent}).
+   * [Changing user-agent]({% slug adv_changing_user_agent %})
 
 - Filters&mdash;A set of rules demonstrating how to show or hide targeted traffic. For example:
    * [Showing only localhost traffic]({%slug adv_show_only_localhost%})
