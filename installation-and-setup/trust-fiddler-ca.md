@@ -12,7 +12,7 @@ previous_url: /installation-and-update/trust-certificate-configuration
 This article provides additional information about the options for installing the Fiddler Everywhere certificate authority (CA) in your operating system. The proper certificate installation is a crucial step when using Fiddler Everywhere to [capture system  HTTPS traffic]({%slug capture-traffic-get-started%}#system-capturing). Note that the certificate authority installation is not mandatory if you choose to use the [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) or [terminal capturing]({%slug capture-traffic-get-started%}#terminal-capturing) modes.
 
 
-## Install & Trust the Fiddler's Certificate Authority (Recommended Automated Approach)
+## Install the Fiddler's Certificate Authority (Recommended Automated Approach)
 
 The recommended approach for installing and trusting the Fiddle CA is through the in-app system capturing mode wizards. Follow the articles below for detailed instructions n how to use the built-in wizards to install the Fiddler CA.
 
@@ -22,9 +22,9 @@ The recommended approach for installing and trusting the Fiddle CA is through th
 
 Once Fiddler CA installs successfully, you can capture and analyze HTTPS traffic. The CA install once and remains valid until it is explicitly uninstalled. The CA name as listed within the operating system certificate manager is `Fiddler Root Certificate Authority`.
 
-## Install & Trust the Fiddler's Certificate Authority (Manual Approach)
+## Install the Fiddler's Certificate Authority (Manual Approach)
 
-Fiddler Everywhere provides the option to manually go through the certificate authority installation and enable the HTTPS system traffic capture. In most cases, to capture the operating system HTTPS traffic, you can use the [recommended automated installation of the Fiddler CA](#install--trust-the-fiddlers-certificate-authority-recommended-automated-approach) through our wizards. 
+Fiddler Everywhere provides the option to manually go through the certificate authority installation and enable the HTTPS system traffic capture. In most cases, to capture the operating system HTTPS traffic, you can use the [recommended automated installation of the Fiddler CA](#install-the-fiddlers-certificate-authority-recommended-automated-approach) through our wizards. 
 
 >important Use the manual approach only if the automated approach fails or you want to control and track the different steps of the CA installation.
 
@@ -108,4 +108,14 @@ The automatic installation of the trust certificate can fail due to security res
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
 
 1. Back in the **Traffic** pane, enable the **System Proxy** to start capturing HTTP and HTTPS system traffic.
+
+
+### Install Fiddler's Certificate Authority in Third-Party Certificate Stores
+
+Fiddler Everywhere can export the CA file in different formats, enabling you to install the Fiddler CA in third-party certificate stores.
+
+* [Learn how to install the Fiddler CA in Firefox here...]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})
+* [Learn how to install the Fiddler CA in Electron-based applications here...]({%slug ubuntu-ca-electron%})
+* [Learn how to install the Fiddler CA in Python here...]({%slug fiddler-python-traffic%}#setting-fiddler-proxy-and-ca-through-environment-variable)
+* [Learn how to install the Fiddler CA for AWS here...]({%slug how-to-capture-aws-traffic%})
 
