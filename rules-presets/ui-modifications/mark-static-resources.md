@@ -21,7 +21,7 @@ Create an "Mark Scripts and JSONs" rule by setting the following actions through
 
 - Match by a **Response Header** where the value of the header **Content-Type** does not equal **json**. This excludes dynamic content.
 
-- Match by **Method**  of type **GET**.
+- Match by **Method** of type **GET**.
 
 - Create a **Mark Session** action and set the preferred background and foreground (text) colors.
 
