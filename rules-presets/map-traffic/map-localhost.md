@@ -15,11 +15,13 @@ Remote mapping of a request location means testing changes or fixes locally and 
 
 Create a "Map Remote (localhost)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a **URL** that uses a string value to match the desired URL (for demonstration purposes, we match **example.com**).
+1. Match by a **URL** that uses a string value to match the desired URL (for demonstration purposes, we match **example.com**).
 
-- Create an **Update URL** action and set the desired new target **localhost** path. In the demonstration, we use a regular expression that will replace only the request's **host** while preserving the **path**. Effectively that means that a request made to **https://example.com/my-test-api** will be mapped to **http://localhost:4000/my-test-api**
+1. Create an **Update URL** action and set the desired new target **localhost** path. In the demonstration, we use a regular expression that will replace only the request's **host** while preserving the **path**. Effectively that means that a request made to **https://example.com/my-test-api** will be mapped to **http://localhost:4000/my-test-api**
+
+This sample Fiddler rule maps an HTTP request to return a local file (that contains custom HTTP response).
 
 ![Creating "Map Remote (localhost)" rule](../../images/advanced/adv-map-remote-localhost.png)
 
@@ -29,3 +31,13 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-remote-localhost" target="_blank">"Map Remote (localhost)"</a> rule as a FARX file, which you can import through the Rules toolbar.
  
+  
+## See Also
+
+* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
+* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started
+publish: true%})
+* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
+* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
+* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)

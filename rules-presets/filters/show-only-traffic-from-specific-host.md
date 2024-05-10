@@ -17,19 +17,19 @@ In this example, we will create a rule named "Show Only Host Traffic" that hides
 
 Create a "Show Only Host Traffic" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
+1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
 
-- Match by a **URL** that uses a regular expression to match addresses that contain **google.com** and  **example.com.**
+1. Match by a **URL** that uses a regular expression to match addresses that contain **google.com** and  **example.com.**
 
     ```regex
     google\.com|example\.com
     ```
 
-- Create a **Do Not Show** action.
+1. Create a **Do Not Show** action.
 
     >important Note that the **Do Not Show** action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
 
-This example rule hides all sessions except those containing **google.com** or **example.com** in their URLs.
+This sample Fiddler rule hides all sessions except those containing **google.com** or **example.com** in their URLs.
 
 ![Creating "Show Only Host Traffic" rule](../../images/advanced/adv-show-only-specific-hosts.png)
 
@@ -39,3 +39,13 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/show-only-specific-hosts" target="_blank">"Show Only Host Traffic"</a> rule as a FARX file, which you can import through the Rules toolbar.
  
+  
+## See Also
+
+* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
+* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started
+publish: true%})
+* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
+* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
+* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)

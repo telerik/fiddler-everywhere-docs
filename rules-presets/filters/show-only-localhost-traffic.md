@@ -16,15 +16,15 @@ In this example, we will create a rule named "Show Only Localhost Traffic" that 
 
 Create a "Show Only Localhost Traffic" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
+1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
 
-- Match by a **Host** that contains **localhost** and by a **Host** that contains **127.0.0.1**.
+1. Match by a **Host** that contains **localhost** and by a **Host** that contains **127.0.0.1**.
 
-- Create a **Do Not Show** action. 
+1. Create a **Do Not Show** action. 
 
     >important Note that the **Do Not Show** action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
 
-This is an example rule that hides all sessions except those containing **localhost** and **127.0.0.1** in their hosts.
+This sample Fiddler rule hides all sessions except those containing **localhost** and **127.0.0.1** in their hosts.
 
 ![Creating "Show Only Localhost Traffic" rule](../../images/advanced/adv-show-only-localhost.png)
 
@@ -34,3 +34,13 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/show-only-localhost" target="_blank">"Show Only Localhost Traffic"</a> rule as a FARX file, which you can import through the Rules toolbar.
  
+  
+## See Also
+
+* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
+* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started
+publish: true%})
+* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
+* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
+* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)

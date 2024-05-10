@@ -15,9 +15,9 @@ In this example, we will create a rule named "Show Only Traffic from Specific Pr
 
 Create a "Show Only Traffic from Specific Processes" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
+1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
 
-- Match by a **Process** that uses a regular expression to match an application with a list of specific process names.
+1. Match by a **Process** that uses a regular expression to match an application with a list of specific process names.
 
     ```regex
     com\.apple\.webkit|chrome|msedge
@@ -25,11 +25,11 @@ Create a "Show Only Traffic from Specific Processes" rule that sets the followin
 
     >tip The above example serves as a basic demonstration that can be easily modified. For example, you can change the negative **none of these conditions** to **any of these conditions**, effectively hiding the traffic for the processes specified in the regular expression (as demonstrated [here]({%slug adv_hide_specific_processes%})). The regular expression is also for demonstration purposes—in real life, you can create your own regex or directly use a string value with **Contains** or another string modifier.
 
-- Create a **Do Not Show** action.
+1. Create a **Do Not Show** action.
 
     >important Note that the **Do Not Show** action is final, which means that no other action or active rule wplaced lower in the rules queue will be executed.
 
-This example rule hides all sessions except those coming from a Chromium-based browsers likke Microsoft Edge, or Google Chrome.
+This sample Fiddler rule hides all sessions except those coming from a Chromium-based browsers likke Microsoft Edge, or Google Chrome.
 
 ![Creating "Show Only Traffic from Specific Processes" rule](../../images/advanced/adv-show-only-specific-processes.png)
 
@@ -39,3 +39,13 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/show-only-specific-processes" target="_blank">"Show Only Traffic from Specific Processes"</a> rule as a FARX file, which you can import through the Rules toolbar.
  
+  
+## See Also
+
+* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
+* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started
+publish: true%})
+* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
+* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
+* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)

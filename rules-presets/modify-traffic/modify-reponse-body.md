@@ -14,11 +14,13 @@ One of the most common testing practices is quickly changing a piece of code or 
 
 Create an "Insert HTML" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a **URL** that uses a string value to match the desired URL. For demonstration purposes, we match **example.com**.
+1. Match by a **URL** that uses a string value to match the desired URL. For demonstration purposes, we match **example.com**.
 
-- Create an **Update Response Body** action and use the **Find and Replace** string modifier. For demonstration purposes, we will find the H1 HTML element and insert our image element like `<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Progress_Software_logo.svg">`.
+1. Create an **Update Response Body** action and use the **Find and Replace** string modifier. For demonstration purposes, we will find the H1 HTML element and insert our image element like `<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Progress_Software_logo.svg">`.
+
+This sample Fiddler rule maps an HTTP request to modify the HTML content of the received HTTP response.
 
 ![Creating "Insert HTML" rule](../../images/advanced/adv-modify-insert-html.png)
 
@@ -33,11 +35,11 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 This rule effectively achives the same output as the above rule but it demonstrates how to use regular expression to parse the response body and modify its content. Create an "Insert HTML (ReGex)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a **URL** that uses a string value to match the desired URL. For demonstration purposes, we match **example.com**.
+1. Match by a **URL** that uses a string value to match the desired URL. For demonstration purposes, we match **example.com**.
 
-- Create an **Update Response Body** action and use the **Regular expession** modifier. For demonstration purposes, we will find the H1 HTML element thorugh the following regular expression `<div[\n\r\s\S]*?<h1>` and then insert our image element through `<div><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Progress_Software_logo.svg"><h1>`.
+1. Create an **Update Response Body** action and use the **Regular expession** modifier. For demonstration purposes, we will find the H1 HTML element thorugh the following regular expression `<div[\n\r\s\S]*?<h1>` and then insert our image element through `<div><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Progress_Software_logo.svg"><h1>`.
 
 ![Creating "Insert HTML" rule](../../images/advanced/adv-modify-insert-html-regex.png)
 
@@ -49,3 +51,13 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 >tip You can combine multiple actions in a single rule, which allows you to identify different parts of the same response; note that actions are executed from top to bottom with the top action/rule with higher priority. Any final action will immediately prevent the execution of all other actions and rules that are with lower priority. However, if there are no final actions, then you can execute all actions from top to bottom, which means that the same part of the modification can be overwritten by  actions placed lower in the queue.
 
+ 
+## See Also
+
+* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
+* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started
+publish: true%})
+* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
+* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
+* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)

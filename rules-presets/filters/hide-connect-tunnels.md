@@ -16,15 +16,15 @@ In this example, we will create a rule named "Hide CONNECT Tunnels" that hides a
 
 Create a "Hide CONNECT Tunnels" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a **Method** that contains **CONNECT** as a string.
+1. Match by a **Method** that contains **CONNECT** as a string.
 
-- Create a **Do Not Show** action.
+1. Create a **Do Not Show** action.
 
     > Important Note that the **Do Not Show** action is final, meaning no other action or active rule placed lower in the rules queue will be executed.
 
-This example rule hides all HTTP sessions that use the **CONNECT** method.
+This sample Fiddler rule hides all HTTP sessions that use the **CONNECT** method.
 
 ![Creating "Hide CONNECT Tunnels" rule](../../images/advanced/adv-hide-connect-tunnels.png)
 
@@ -34,4 +34,13 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/hide-connect-tunnels" target="_blank">"Hide CONNECT Tunnels"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
- 
+  
+## See Also
+
+* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
+* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started
+publish: true%})
+* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
+* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
+* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)

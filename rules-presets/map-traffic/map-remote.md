@@ -14,13 +14,13 @@ Developers often need to test partial changes to a site from testing (staging) e
 
 Create a "Map Remote (URLs)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**". 
 
-- Match by a **URL** that uses a string value to match the desired URL (for demonstration purposes, **example.com**, but it could also match **localhost** or a more specific path).
+1. Match by a **URL** that uses a string value to match the desired URL (for demonstration purposes, **example.com**, but it could also match **localhost** or a more specific path).
 
-- Create an **Update URL** action and set the desired new target URL (for demonstration purposes, **google.com**, but it could also match **localhost** or another more specific path).
+1. Create an **Update URL** action and set the desired new target URL (for demonstration purposes, **google.com**, but it could also match **localhost** or another more specific path).
 
-This example rule matches all sessions where the host is **example.com** and redirects (maps) to **google.com**.
+This sample Fiddler rule matches all sessions where the host is **example.com** and redirects (maps) to **google.com**.
 
 ![Creating "Map Remote (URLs)" rule](../../images/advanced/adv-map-remote-urls.png)
 
@@ -31,5 +31,13 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-remote-utls" target="_blank">"Map Remote (URLs)"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
- 
- 
+  
+## See Also
+
+* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
+* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started
+publish: true%})
+* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
+* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
+* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)

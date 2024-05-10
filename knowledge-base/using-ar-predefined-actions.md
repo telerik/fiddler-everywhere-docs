@@ -32,7 +32,7 @@ The **Return Predefined Response** action in the **Rules Builder** provides pred
 
 ![Example for using the predefined responses](../images/kb/dat-files/predefined-responses.png)
 
-The content of each predefined options is as follows:
+The content of each predefined option is as follows:
 
 
 * `200 OK (HTML)`

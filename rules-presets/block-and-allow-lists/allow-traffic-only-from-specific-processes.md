@@ -14,13 +14,13 @@ With Fiddler Everywhere, you can create a rule that automatically allows traffic
 
 Create a "Allow Traffic from Specific Processes" rule, by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-- Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that we are using the negative statement (**none...**), which means that the action will be applied to all but the matched entries. 
+1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that we are using the negative statement (**none...**), which means that the action will be applied to all but the matched entries. 
 
-- Match by a **Process** where the string value defines the targeted process by its name. In the example below, we will match different browsers on macOS while using the following regular expression **com\.apple\.webkit|chrome|msedge**. Note that the process name might vary depending on the used operating system and version of the client application.
+1. Match by a **Process** where the string value defines the targeted process by its name. In the example below, we will match different browsers on macOS while using the following regular expression **com\.apple\.webkit|chrome|msedge**. Note that the process name might vary depending on the used operating system and version of the client application.
 
-- Create a **Close Non Gracefuly** action.
+1. Create a **Close Non Gracefuly** action.
 
-An example rule that matches all sessions where the proces contains one of the string literals set thorugh the regular expression and then closes the connections made by any other unmatched process.
+This sample Fiddler rule matches all sessions where the processes contains one of the string literals set through the regular expression and then closes the connections made by any other unmatched process.
 
 ![Creating "Allow Traffic from Specific Processes" rule](../../images/advanced/adv-allow-only-specific-processes.png)
 
@@ -34,3 +34,12 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
  
  
+## See Also
+
+* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
+* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started
+publish: true%})
+* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
+* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
+* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
