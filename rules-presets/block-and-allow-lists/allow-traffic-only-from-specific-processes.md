@@ -12,7 +12,7 @@ With Fiddler Everywhere, you can create a rule that automatically allows traffic
 
 ## Creating a "Allow Traffic from Specific Processes" Rule
 
-Create a "Allow Traffic from Specific Processes" rule, by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create an "Allow Traffic from Specific Processes" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
 1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**". Note that we are using the negative statement (**none...**), which means that the action will be applied to all but the matched entries. 
 
