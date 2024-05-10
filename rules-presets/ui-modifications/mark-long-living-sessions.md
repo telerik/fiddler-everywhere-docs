@@ -1,6 +1,6 @@
 ---
 title: Mark Long Living Sessions
-description: "Marking Long Living Sessions while using Fiddler's rules."
+description: "Learn how to mark long living sessions with Fiddler's rules."
 slug: adv_marking_long_living_sessions
 position: 10
 ---
