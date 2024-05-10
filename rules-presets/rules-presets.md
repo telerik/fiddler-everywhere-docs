@@ -7,7 +7,7 @@ position: 1
 
 # Predefined Rules
 
-The **Rules** functionality in Fiddler Everywhere is a powerful tool for tackling various web debugging tasks. The Fiddler team created rules presets that you can use directly or with minimal adjustments to fit your test cases.
+The **Rules** functionality in Fiddler Everywhere is a powerful tool for tackling various web debugging tasks. The Fiddler team created rules presets (predefined rules) that you can use directly or with minimal adjustments to fit your test cases.
 
 >tip A rule in Fiddler contains a **matching condition** (or set of conditions) that determines the target HTTP sessions and an **action** (or set of actions) that applies to them.
 
