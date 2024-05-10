@@ -15,7 +15,7 @@ With Fiddler Everywhere, you can create a rule that automatically disables data 
 
 ## Creating a "No Caching" Rule
 
-Create a "No Caching" rule, by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "No Caching" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
 - Create an **Update Request Header** action and remove all pre-set values for the **If-Modified-Since** header.
 - Create an **Update Request Header** action, and remove all pre-set values for the **If-None-Match** header.
