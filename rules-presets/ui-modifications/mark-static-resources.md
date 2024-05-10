@@ -31,7 +31,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Mark Scripts and JSONs" rule](../../images/advanced/mark-static-objects-active.png)
 
->tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the Live Traffic grid.
+>tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the **Live Traffic** grid.
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/mark-static-objects" target="_blank">"Mark Static Resources"</a> rule as a FARX file, which you can import through the Rules toolbar.
  
