@@ -9,7 +9,7 @@ position: 40
 
 With Fiddler Everywhere, you can create a rule that automatically allows traffic only from specific processes and forcibly closes HTTP connections triggered from any other process.
 
-## Creating a "Allow Traffic from Specific Processes" Rule
+## Creating an "Allow Traffic from Specific Processes" Rule
 
 Create an "Allow Traffic from Specific Processes" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
