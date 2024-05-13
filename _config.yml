@@ -27,9 +27,30 @@ navigation:
     collaboration:
         title: Collaboration
         position: 70
+    rules-presets:
+        title: Rules Presets
+        position: 80
+    rules-presets/tooling:
+        title: Tooling
+        position: 810
+    rules-presets/filters:
+        title: Filters
+        position: 820
+    rules-presets/block-and-allow-lists:
+        title: Block Lists and Allow Lists
+        position: 830
+    rules-presets/map-traffic:
+        title: Map Traffic
+        position: 840
+    rules-presets/modify-traffic:
+        title: Modify Traffic
+        position: 850
+    rules-presets/ui-modifications:
+        title: UI Modifications
+        position: 860
     user-guide:
         title: User Interface
-        position: 80
+        position: 90
     user-guide/settings:
         title: Settings
         position: 1

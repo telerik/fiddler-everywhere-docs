@@ -28,11 +28,11 @@ The main idea behind the **Rules** tab is to provide a set of rules based on mat
 
 ### Using the Predefined Actions in Rule Builder
 
-The **Actions** drop-down in the **Rules Builder** provides predefined options with a descriptive name of the simulated response.
+The **Return Predefined Response** action in the **Rules Builder** provides predefined options with descriptive names for the simulated response.
 
 ![Example for using the predefined responses](../images/kb/dat-files/predefined-responses.png)
 
-The content of each predefined options is as follows:
+The content of each predefined option is as follows:
 
 
 * `200 OK (HTML)`
