@@ -7,7 +7,7 @@ position: 30
 
 # Blocking Traffic from Specific Processes
 
-With Fiddler Everywhere, you can create a rule that automatically blocks traffic from any matched processes by forcibly closding the ongoing HTTP connection.
+With Fiddler Everywhere, you can create a rule that automatically blocks traffic from any matched processes by forcibly closing the ongoing HTTP connection.
 
 ## Creating a "Block Traffic from Specific Processes" Rule
 
