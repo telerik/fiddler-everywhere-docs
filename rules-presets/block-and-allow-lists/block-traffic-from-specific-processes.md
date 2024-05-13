@@ -19,7 +19,7 @@ Create a "Block Traffic from Specific Processes" rule by setting the following a
 
 1. Create a **Close Non Gracefully** action.
 
-This sample Fiddler rule matches all sessions where the proces contains one of the string literals set thorugh the regular expression and closes the connection forcibly.
+This sample Fiddler rule matches all sessions where the process contains one of the string literals set through the regular expression and closes the connection forcibly.
 
 ![Creating "Block Traffic to Specific Processes" rule](../../images/advanced/adv-block-specific-processes.png)
 
