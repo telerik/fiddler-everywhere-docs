@@ -1,6 +1,6 @@
 ---
 title: Hide Traffic from Specific Processes
-description: "With Fiddler's rules, you can show traffic only for specific processes and applications."
+description: "With Fiddler's rules, you can hide traffic from specific processes and applications."
 slug: adv_hide_specific_processes
 position: 35
 ---
