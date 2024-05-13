@@ -17,7 +17,7 @@ This example shows how to create a rule named "Hide Traffic from Specific Proces
 
 Create a "Hide Traffic from Specific Processes" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. This rule uses the negative statements to match and apply actions on anything but the desired targets.
 
 1. Match by a **Process** that uses a regular expression to match an application with a list of specific process names.
 
@@ -29,7 +29,7 @@ Create a "Hide Traffic from Specific Processes" rule that sets the following mat
 
     >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
 
-This sample Fiddler rule hides all sessions coming from a Chromium-based browsers likke Microsoft Edge, or Google Chrome.
+This sample Fiddler rule hides all sessions coming from a Chromium-based browsers like Microsoft Edge or Google Chrome.
 
 ![Creating "Hide Traffic from Specific Processes" rule](../../images/advanced/adv-hide-specific-processes.png)
 
