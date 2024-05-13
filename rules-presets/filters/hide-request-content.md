@@ -13,7 +13,7 @@ With Fiddler Everywhere, you can easily hide resource requests based on your own
 
 ## Creating a "Hide Resource Requests" Rule
 
-In this example, we will create a rule named "Hide Resource Requests" that matches and hodes all session that contains a `Content-Type` header. THis will effecitively remove any resource request from the Live Traffic grid.
+This example shows how to create a rule named "Hide Resource Requests" that matches and hodes all session that contains a `Content-Type` header. This will effecitively remove any resource request from the Live Traffic grid.
 
 Create a "Hide Resource Requests" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 

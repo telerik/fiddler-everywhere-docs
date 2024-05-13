@@ -19,7 +19,7 @@ Create a "Bypass CORS" rule that sets the following actions through the [Rules B
 
 1. Create an action that sets the HTTP Response header **Access-Control-Allow-Origin** with a wildcard value `*`.
 1. Create an action that sets the HTTP Response header **Access-Control-Allow-Methods** with a wildcard value `*`.
-1. Create an action that sets the HTTP Response header **Access-Control-Allow-Credentials** with a wildcard value `true`.
+1. Create an action that sets the HTTP Response header **Access-Control-Allow-Credentials** with a boolean value `true`.
 1. Create an action that sets the HTTP Response header **Access-Control-Allow-Headers** with a wildcard value `*`.
 
 This sample Fiddler rule matches all sessions and bypasses the pre-set CORS policies.
@@ -35,7 +35,7 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
   
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)

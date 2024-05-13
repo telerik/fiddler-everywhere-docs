@@ -17,7 +17,7 @@ Create a "Modify Image Endpoint" rule by setting the following actions through t
 
 1. Match by a **URL** that uses a string value to match the desired URL. For example, match **googlelogo** from the following URL `https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png`.
 
-1. Match by a **Method** equal to **GET**.
+1. Match by a **Method** equal to `GET`.
 
 1. Create an **Update URL** action and set the desired new target URL. For example:  `https://www.gstatic.com/ac/cb/youtube_logo_v2.svg`.
 
@@ -33,7 +33,7 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)

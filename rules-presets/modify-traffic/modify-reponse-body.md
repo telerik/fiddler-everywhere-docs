@@ -23,7 +23,6 @@ Create an "Insert HTML" rule by setting the following actions through the [Rules
 
 This sample Fiddler rule finds a selected H1 HTML element and inserts a logo before it.
 
-
 ![Creating "Insert HTML" rule](../../images/advanced/adv-modify-insert-html.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
@@ -31,9 +30,8 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 ![Activating the "Insert HTML" rule](../../images/advanced/adv-modify-insert-html-active.png)
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/modify-insert-html" target="_blank">"Insert HTML"</a> rule as a FARX file, which you can import through the Rules toolbar.
- 
- 
- ## Creating an "Insert HTML (ReGex)" Rule
+
+## Creating an "Insert HTML (ReGex)" Rule
 
 Create an "Insert HTML (RegEx)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
@@ -53,11 +51,11 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/modify-insert-html-regex" target="_blank">"Insert HTML via regex"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
->tip You can identify different parts of the same response by combining multiple actions in a single rule. Actions are executed from top to bottom with the top actions or rules having the higher priority. Any final action immediately prevents the execution of all other actions and rules that are with lower priority. If there are no final actions, you can execute all actions from top to bottom, which means that you can overwrite the same part of the modification by  actions placed lower in the queue.You can combine multiple actions in a single rule, which allows you to identify different parts of the same response; note that actions are executed from top to bottom with the top action/rule with higher priority. Any final action will immediately prevent the execution of all other actions and rules that are with lower priority. However, if there are no final actions, then you can execute all actions from top to bottom, which means that the same part of the modification can be overwritten by  actions placed lower in the queue.
+>tip You can identify different parts of the same response by combining multiple actions in a single rule. Actions are executed from top to bottom with the top actions or rules having the higher priority. Any final action immediately prevents the execution of all other actions and rules that are with lower priority. If there are no final actions, you can execute all actions from top to bottom, which means that you can overwrite the same part of the modification by actions placed lower in the queue.
  
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)

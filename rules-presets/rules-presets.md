@@ -23,9 +23,9 @@ The rules presets were conditionally separated into the following groups:
    * [Showing only localhost traffic]({%slug adv_show_only_localhost%})
    * [Showing only traffic from specific hosts]({%slug adv_show_only_specific_hosts%})
    * [Hiding traffic from specific hosts]({%slug adv_hide_specific_hosts%})
-   * [Showing Traffic Only from Specific Processes]({%slug adv_show_only_specific_processes%})
+   * [Showing traffic only from specific processes]({%slug adv_show_only_specific_processes%})
    * [Hiding traffic from specific processes]({%slug adv_hide_specific_processes%})
-   * [Hiding CONNECT Tunnels]({%slug adv_hide_connect_tunnels%})
+   * [Hiding CONNECT tunnels]({%slug adv_hide_connect_tunnels%})
    * [Hiding HTTP requests with resource content (like JS, CSS, images, fonts, etc.)]({%slug adv_hide_resource_content%})
 
 - Block lists and Allow lists&mdash;A set of rules demonstrating how to block or allow target traffic. For example:
@@ -50,11 +50,11 @@ The rules presets were conditionally separated into the following groups:
     * [Highlighting sessions that contain JavaScript or JSON]({%slug adv_marking_scripts_jsons%})
     * [Highlighting sessions that contain static resources (like images, text files, etc.,)]({%slug adv_marking_static_resources%})
 
-The predefined sessions are available as FARX files (Fiddler uses the FARX format to export and import a rule or set of rules) in
+All rules presets are available as FARX files (Fiddler uses the FARX format to export and import a rule or set of rules) in
 <a href="https://github.com/telerik/fiddler-everywhere/rules/" target="_blank">the public GitHub repository of Fiddler Everywhere</a>.
 
 ## See Also
 
-- [Learn more about the Rules functionality in Fiddler Everywhere here..]({%slug modify-traffic-get-started%})
-- [Learn how to organize and set the order of execution of multiple rules here..]({%slug rulesbuilder-get-started%})
+- [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
+- [Learn how to organize and set the order of execution of multiple rules here...]({%slug rulesbuilder-get-started%})
 - [Learn how to use the Fiddler breakpoints to pause, debug, and modify HTTPS traffic on the fly]({%slug rulesbuilder-breakpoints%})

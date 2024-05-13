@@ -13,7 +13,7 @@ With Fiddler Everywhere, you can easily create a rule to hide traffic from speci
 
 ## Creating a "Hide Traffic from Specific Processes" Rule
 
-In this example, we will create a rule named "Hide Traffic from Specific Processes" that hides all captured traffic except for traffic generated from a Chromium-based browser.
+This example shows how to create a rule named "Hide Traffic from Specific Processes" that hides all captured traffic except for traffic generated from a Chromium-based browser.
 
 Create a "Hide Traffic from Specific Processes" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
@@ -41,7 +41,7 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)

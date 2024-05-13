@@ -7,7 +7,7 @@ position: 30
 
 # Marking Static Resources
 
-You can dynamically change the Fiddler Everywhere user interface based on your preferences. You can highlight matched sessions through the **Mark Sessions** action and set their the background and text color. For example, you can highlight all sessions that are returning static resources like images and text files.
+You can dynamically change the Fiddler Everywhere user interface based on your preferences. You can highlight matched sessions through the **Mark Sessions** action and set their background and text color. For example, you can highlight all sessions that are returning static resources like images and text files.
 
 ## Creating a "Mark Scripts and JSONs" Rule
 

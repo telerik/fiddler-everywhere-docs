@@ -11,7 +11,7 @@ In some occasions, you would like to temporary hide traffic from specific hosts.
 
 ## Creating a "Hide Traffic From Specific Hosts" Rule
 
-In this example, we will create a rule named "Hide Traffic From Specific Hosts" that hides all captured traffic except for traffic generated from the specified host.
+This example shows how to create a rule named "Hide Traffic From Specific Hosts" that hides all captured traffic except for traffic generated from the specified host.
 
 Create a "Hide Traffic From Specific Hosts" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 

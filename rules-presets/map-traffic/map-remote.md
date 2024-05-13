@@ -12,6 +12,7 @@ Developers often need to test partial changes to a site from testing (staging) e
 With a proxy tool in the middle, you can map local and remote resources, which enables you to quickly and efficiently test (mock) changes on the fly.
 
 With Fiddler Everywhere, you can easily create a rule that redirects or maps traffic to and from remote hosts while enabling you to mock HTTP responses so that they are transparently served to client applications.
+
 ## Creating a "Map Remote (URLs)" Rule
 
 Create a "Map Remote (URLs)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
@@ -26,7 +27,6 @@ This sample Fiddler rule matches all sessions where the host is **example.com** 
 
 ![Creating "Map Remote (URLs)" rule](../../images/advanced/adv-map-remote-urls.png)
 
-
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
 ![Activating the "Map Remote (URLs)" rule](../../images/advanced/adv-map-remote-urls-active.png)
@@ -35,7 +35,7 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)

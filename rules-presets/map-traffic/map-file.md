@@ -21,7 +21,7 @@ Create a "Map Local (File)" rule by setting the following actions through the [R
 
 1. (Optional) If you need to test a URL that your DNS server cannot resolve, create a **Return CONNECT Tunnel** action.
 
-1. Create a **Return File** action and set the path to the DAT file that contains the modified HTTP request. For example:
+1. Create a **Return File** action and set the path to the DAT file that contains the modified HTTP response. The DAT file must contain a well-formed HTTP response. For example:
 
     ```
     HTTP/2 200
@@ -102,7 +102,7 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)

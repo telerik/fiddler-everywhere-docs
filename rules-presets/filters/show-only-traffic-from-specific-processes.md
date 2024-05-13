@@ -29,7 +29,7 @@ Create a "Show Only Traffic from Specific Processes" rule that sets the followin
 
     >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
 
-This sample Fiddler rule hides all sessions except those coming from a Chromium-based browsers likke Microsoft Edge, or Google Chrome.
+This sample Fiddler rule hides all sessions except those coming from a Chromium-based browsers like Microsoft Edge or Google Chrome.
 
 ![Creating "Show Only Traffic from Specific Processes" rule](../../images/advanced/adv-show-only-specific-processes.png)
 
@@ -41,7 +41,7 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)

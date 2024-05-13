@@ -15,7 +15,7 @@ With Fiddler Everywhere, you can easily hide the CONNECT Tunnels so that you can
 
 ## Creating a "Hide CONNECT Tunnels" Rule
 
-In this example, we will create a rule named "Hide CONNECT Tunnels" that hides all requests made with HTTP method CONNECT (also known as proxy CONNECT Tunnels).
+This example shows how to create a rule named "Hide CONNECT Tunnels" that hides all requests made with HTTP method CONNECT (also known as proxy CONNECT Tunnels).
 
 Create a "Hide CONNECT Tunnels" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 

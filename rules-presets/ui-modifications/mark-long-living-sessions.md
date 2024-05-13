@@ -7,7 +7,7 @@ position: 10
 
 # Marking Long-Living Sessions
 
-You can dynamically change the Fiddler Everywhere user interface based on your preferences. You can highlight matched sessions through the **Mark Sessions** action and set their the background and text color.
+You can dynamically change the Fiddler Everywhere user interface based on your preferences. You can highlight matched sessions through the **Mark Sessions** action and set their background and text color.
 
 ## Creating a "Mark Long-Living Sessions" Rule
 
@@ -25,13 +25,13 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Mark Long-Living Sessions" rule](../../images/advanced/mark-long-living-sessions-active.png)
 
->>tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the **Live Traffic** grid.
+>tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the **Live Traffic** grid.
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/mark-long-living-sessions" target="_blank">"Mark Long-Living Sessions"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)

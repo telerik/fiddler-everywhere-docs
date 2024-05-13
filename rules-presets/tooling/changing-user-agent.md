@@ -19,7 +19,7 @@ The following examples show how to create a few different rules named "Change Us
 
 Create a "Set User-Agent Chrome Windows" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. Create an action that sets the HTTP Request header **user-agent** to the following value 
+1. Create an action that sets the HTTP Request header **user-agent** to the following value:
 
     ```bash
     Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36`.
@@ -47,7 +47,6 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Set User-Agent Chrome Windows" rule](../../images/advanced/adv-change-ua-chrome-windows-active.png)
 
-
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/changing-user-agent-chrome-windows" target="_blank">"Set User-Agent Chrome Windows"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
 ## Creating a "Set User-Agent" Rule for a Chrome Browser on macOS
@@ -74,7 +73,6 @@ Create a "Set User-Agent Chrome Mac" rule by setting the following actions throu
     $1!function e(t,r){if(navigator.__defineGetter__?navigator.__defineGetter__("userAgent",function(){return r}):Object.defineProperty&&Object.defineProperty(navigator,"userAgent",{get:function(){return r}}),t.navigator.userAgent!==r){var n={get:function(){return r}};try{Object.defineProperty(t.navigator,"userAgent",n)}catch(i){t.navigator=Object.create(navigator,{userAgent:n})}}}(window,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36");
     ```
 
-
 This sample Fiddler rule matches all sessions and explicitly changes the user agent to mock a Chrome browser on macOS.
 
 ![Creating "Set User-Agent Chrome Mac" rule](../../images/advanced/adv-change-ua-chrome-mac.png)
@@ -85,11 +83,9 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/changing-user-agent-chrome-macos" target="_blank">"Set User-Agent Chrome Mac"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
- 
-  
 ## See Also
 
-* [Learn more about the Rules functionality in FIddler Everywhere here...]({%slug modify-traffic-get-started%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
 * [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
 * [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
 * [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
