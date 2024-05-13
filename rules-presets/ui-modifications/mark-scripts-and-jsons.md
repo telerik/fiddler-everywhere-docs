@@ -7,7 +7,7 @@ position: 20
 
 # Marking Scripts and JSON Files
 
-You can dynamically change the Fiddler Everywhere user interface based on your preferences. You can highlight matched sessions through the **Mark Sessions** action and set their the background and text color. This article will showcase how to highlight all sessions that are returing JavaScript or JSON files.
+You can dynamically change the Fiddler Everywhere user interface based on your preferences. You can highlight matched sessions through the **Mark Sessions** action and set their the background and text color. For example, you can highlight all sessions that are returning JavaScript or JSON files.
 
 ## Creating a "Mark Scripts and JSONs" Rule
 
