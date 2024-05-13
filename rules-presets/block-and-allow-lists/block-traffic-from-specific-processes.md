@@ -11,7 +11,7 @@ With Fiddler Everywhere, you can create a rule that automatically blocks traffic
 
 ## Creating a "Block Traffic from Specific Processes" Rule
 
-Create a "Block Traffic to Specific Processes" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Block Traffic from Specific Processes" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
 1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
 
