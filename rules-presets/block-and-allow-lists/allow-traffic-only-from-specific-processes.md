@@ -19,7 +19,7 @@ Create an "Allow Traffic from Specific Processes" rule by setting the following 
 
 1. Create a **Close Non Gracefully** action.
 
-This sample Fiddler rule matches all sessions where the processes contains one of the string literals set through the regular expression and then closes the connections made by any other unmatched process.
+This sample Fiddler rule matches all sessions where the processes contain one of the string literals set through the regular expression and then closes the connections made by any other unmatched process.
 
 ![Creating "Allow Traffic from Specific Processes" rule](../../images/advanced/adv-allow-only-specific-processes.png)
 
