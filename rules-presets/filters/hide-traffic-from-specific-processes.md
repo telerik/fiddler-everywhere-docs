@@ -17,7 +17,7 @@ In this example, we will create a rule named "Hide Traffic from Specific Process
 
 Create a "Hide Traffic from Specific Processes" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
-1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. Note that in this rule, we will use the negative statements to match and apply actions on anything but our targets.
+1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. This rule uses the negative statements to match and apply actions on anything but the desired targets.
 
 1. Match by a **Process** that uses a regular expression to match an application with a list of specific process names.
 
