@@ -5,7 +5,7 @@ slug: adv_block_traffic_processes
 position: 30
 ---
 
-# Blocking Traffic From Specific Processes
+# Blocking Traffic from Specific Processes
 
 With Fiddler Everywhere, you can create a rule that automatically blocks traffic from any matched processes by forcibly closding the ongoing HTTP connection.
 
