@@ -23,7 +23,7 @@ This sample Fiddler rule matches all sessions where the host is **example.com** 
 
 ![Creating "Block Traffic to Specific Hosts" rule](../../images/advanced/adv-block-specific-hosts.png)
 
->tip The blocking actions are not final can be combined with other action. [Learn more about final and non-final actions here]({%slug fiddler-rules-actions%})
+>tip The blocking actions are not final and can be combined with other actions. [Learn more about final and non-final actions here.]({%slug fiddler-rules-actions%})
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
