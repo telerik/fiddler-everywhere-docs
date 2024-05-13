@@ -9,7 +9,7 @@ position: 20
 
 With Fiddler Everywhere, you can create a rule that automatically allows traffic to a specific host or number of hosts and forcibly closes all other HTTP connections made to different hosts.
 
-## Creating a "Allow Traffic Only to Specific Hosts" Rule
+## Creating an "Allow Traffic Only to Specific Hosts" Rule
 
 Create an "Allow Traffic To Specific Hosts" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
 
