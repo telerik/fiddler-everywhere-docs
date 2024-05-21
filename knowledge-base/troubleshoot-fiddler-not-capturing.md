@@ -35,6 +35,8 @@ Various reasons can result in Fiddler Everywhere not acting as a system proxy. B
  - [Limited Internet Connectivity](#limited-internet-connectivity)
 
  - [Incompatibility with graphic drivers (White screen or failing startup)](#incompatibility-with-graphics-drivers)
+ 
+ - [Receiving "ERR_CONNECTION_RESET" error](#)
 
 ## Lack of Administrative Rights
 
@@ -58,11 +60,9 @@ Failure to set/unset the Fiddler Everywhere proxy while toggling the system capt
 
 To solve the above, reinstall Fiddler Everywhere with administrative rights or consult your system administrator.
 
-
 ## Incompatibility with VPN tools
 
 Some third-party VPN tools make additional network modifications which can result in Fiddler Everywhere not working correctly as an intermediate proxy. 
-
 
 ### Troubleshooting approach
 
@@ -142,7 +142,6 @@ Some systems use complex proxy configurations through remote servers and scripts
 
 Test if Fiddler Everywhere can capture traffic when the upstream proxy is removed from the OS proxy settings.
 
-
 ### Solution - Reconfigure the Upstream Proxy
 
 To resolve the issue, please consider applying the following solutions:
@@ -178,7 +177,6 @@ Your proxy was changed multiple times by other apps. Click here to learn for pos
 
 You can let Fiddler Everywhere automatically recover its proxy settings by following the `Click to reenable capturing` link or, alternatively, follow the troubleshooting instructions below.
 
-
 ### Troubleshooting approach
 
 To troubleshoot if a third-party proxy tool is interfering with Fiddler's proxy, please follow these steps:
@@ -192,7 +190,6 @@ To troubleshoot if a third-party proxy tool is interfering with Fiddler's proxy,
 - Start the third-party proxy tool and activate its system capturing mode.
 
 If Fiddler Everywhere ceases to capture traffic at this point, the third-party tool is **not** correctly chaining the proxy configuration and instead overwriting it. 
-
 
 ### Solution - Change the Proxy Startup Order
 
@@ -232,7 +229,6 @@ Fiddler Everywhere has a personalized user interface with different authenticati
 In case the above endpoints are inaccessible, then you can experience a login error that contains the following message **_"HTTP failure response for
 https://identity.getfiddler.com/oauth/token:0 Unknown Error"_**.
 
-
 ### Solution - Provide Access to the Fiddler's Endpoints
 
 To ensure that Fiddler Everywhere can start, use a network that allows access to the listed API endpoints.
@@ -246,7 +242,6 @@ The [Fiddler Everywhere enterprise tier](https://www.telerik.com/purchase/fiddle
 ## Incompatibility with Graphics Drivers
 
 In some cases, the Fiddler Everywhere application won't start at all, or will start with broken UI (like hanging white screen). One of the most common reasons for that to happen is incompatibility of the installed graphics drivers with the Electron application (the UI of the Fiddler Everywhere). 
-
 
 ### Solution - Update the Graphics Driver
 
@@ -268,6 +263,35 @@ The Fiddler Everywhere application provides an option to explicitly turn off the
 
 [Learn more about disabling the hardware acceleration here...]({%slug troubleshoot-video-incompatibility%})
 
+## Receiving ERR_CONNECTION_RESET Error
+
+Sometimes, traffic that goes through the Fiddler Everywhere proxy might fail with the error **ERR_CONNECTION_RESET** instead of loading the expected HTTP response. This error usually indicates that the client application (for example, the browser) fails to establish a connection with the server. While the actual reasons vary, when the error appears only with the Fiddler proxy in the middle, we can assume that the most likely cause is the improper installation of the Fiddler Certificate Authority (CAs).
+
+### Solution - Reinstall the Fiddler Certificate Authority
+
+The Fiddler Everywhere application allows automatically reinstalling or completely removing any preinstalled Fiddler's CA. The first thing to do is to try the automatic preinstallation of the Fiddler Everywhere CA through the following action:
+
+1. Open the Fiddler Everywhere application.
+
+1. Navigate to **Settings > HTTPS > Advanced Settings**.
+
+1. Click on the **Reset CA** option.
+
+1. Restart your client application (e.g., the browser) to ensure the changes are in place, and then retry executing the HTTP request.
+
+In case the issue persists, you can explicitly and entirely remove all Fiddler CA through the following steps:
+
+1. Open the Fiddler Everywhere application.
+
+1. Navigate to **Settings > HTTPS > Advanced Settings**.
+
+1. Click on the **Remove Fiddler's CA*** option.
+
+1. Open the operating system certificate manager application and explicitly delete any other Fiddler CA that might not have been deleted automatically. All FIddler CA files contain either **DO_NO_TRUST_Fiddler** or **Fiddler Root Certificate** within the name of the CA.
+
+1. Once the Fiddler's CA files are explicitly and entirely removed from your operating system, open the Fiddler Everywhere application and reinstall its CA through the **Settings > HTTPS > Trust CA** option.
+
+>tip The **ERR_CONNECTION_RESET** is reportedly appearing in some cases with the [Fiddler's independent browser capturing mode]({%slug capture-browser-traffic%}). In that case, an explicit manual removal of all installed Fiddler CA files is recommended.
 
 ## Capture Not Working - All Other Scenarios
 
@@ -280,6 +304,7 @@ If you cannot resolve your issue, then please do not hesitate to contact us. Our
 ### Testing macOS Network Access
 
 Specific macOS network configurations or administrative limitations can prevent Fiddler from properly recognizing and using the active network adapter. Use the technique described in [this KB article]({%slug fiddler-test-network-access-macos%}) to investigate possible issues related to macOS network access.
+
 
 ## See Also
 
