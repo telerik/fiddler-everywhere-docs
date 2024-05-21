@@ -1,13 +1,13 @@
 ---
-title: Modifying Traffic with Rules
-description: "Modify the HTTPS sessions while using the Rules tab in Fiddler Everywhere web-debugging proxy tool."
+title: Modify Traffic
+description: "Modify HTTPS traffic while using the Rules tab in Fiddler Everywhere web-debugging proxy tool."
 slug: modify-traffic-get-started
 publish: true
 position: 10
 previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic, /traffic/modify-traffic, /user-guide/rules, /get-started/mock-server-response, /mock-server-response, /knowledge-base/autoresponder, /user-guide/live-traffic/rules, /user-guide/live-traffic/rules-builder, /user-guide/live-traffic/autoresponder
 ---
 
-# Modifying Traffic
+# Modify Traffic
 
 Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic through the **Rules** functionality is crucial to the Fiddler testing and debugging capabilities. Using the Fiddler's rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
 
@@ -78,8 +78,10 @@ Fiddler automatically adds the newly created rule on the top of the [**Rules Que
 
 ## Additional Rules Resources
 
+- [Sample Rules Presets]({%slug adv_techniques_fiddler%})
 - [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
-- [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
+- [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
+- [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
 - [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
 - [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
 - [Example for disabling caching through the Rules tab]({%slug rule-disable-caching%})

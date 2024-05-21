@@ -52,3 +52,9 @@ will be redirected to
 http://localhost:4000/fiddler-everywhere/modify-and-filter-traffic/modify-traffic-with-rules
 ```
 
+## See Also
+
+- [Sample Rules Presets]({%slug adv_techniques_fiddler%})
+- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
+- [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
+- [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
