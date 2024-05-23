@@ -8,10 +8,10 @@
                 "type": "New",
                 "entries": [
                     {
-                        "title": "Remove \"Do not show again\" option for unsaved changes prompt in composer requests so the dialog will always be displayed"
+                        "title": "Remove \"Do not show again\" option for unsaved changes prompt in Composer requests so the dialog will always be displayed"
                     },
                     {
-                        "title": "Add \"Clear with options\" menu when clicking the remove button in the sessions grid toolbar"
+                        "title": "Add \"Clear with Options\" menu when clicking the Remove button in the sessions grid toolbar"
                     }
                 ]
             },
@@ -19,28 +19,34 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Improve rules list responsiveness when there are a lot of rules and groups added"
+                        "title": "Improve Rules' list responsiveness when there are a lot of rules and groups added"
                     },
                     {
-                        "title": "Slow resize or missing scrollbars in the sessions grid in some cases"
+                        "title": "Slow resize or missing scrollbars in the Sessions grid in some cases"
                     },
                     {
                         "title": "Issues with searching in messages while inspecting streaming sessions like gRPC, WebSockets and SocketIO"
                     },
                     {
-                        "title": "Prompt for unsaved changes in composer requests is not triggered during user sign out"
+                        "title": "Prompt for unsaved changes in Composer requests is not triggered during user sign out"
                     },
                     {
                         "title": "HTTP/2 sessions that use 103 HTTP response code for early hints are not captured correctly"
                     },
                     {
-                        "title": "CONNECT sessions response body size is incorrectly displayed as greater than zero in sessions grid"
+                        "title": "CONNECT sessions response body size is incorrectly displayed as greater than zero in Sessions grid"
                     },
                     {
-                        "title": "Request inspector word-wrap state not persisted in Composer view"
+                        "title": "Request Inspector word-wrap state not persisted in Composer view"
                     },
                     {
-                        "title": "UI fixes for rule builder dialog, Inspectors and sessions grid"
+                        "title": "Rules Processing for Protocol match condition"
+                    },
+                    {
+                        "title": "UI fixes for Rule builder dialog, Inspectors and Sessions grid"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate security issues"
                     }
                 ]
             }
