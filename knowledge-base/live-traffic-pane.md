@@ -25,7 +25,7 @@ The **Live Traffic** toolbar provides the following functionalities:
 - [Filtering Traffic](#filterin-traffic) (**Filters**)
 - [independent Browser Capturing](#independent-browser-capturing) (**Open Browser**)
 - [independent Terminal Capturing](#independent-terminal-capturing) (**>_Terminal**)
-- [Removing All Sessions](#removing-all-sessions) (**Remove All**)
+- [Clearing Sessions](#clearing-sessions) (**Clear**)
 - [Searching](#searching) (**Quick Search**)
 - [Saving Sessions](#saving-sessions) (**Save**)
 - [Sharing Sessions](#sharing-sessions) (**Share**)
@@ -58,9 +58,13 @@ Use the **>_ Terminal** button to capture traffic from a specific terminal insta
 [Learn more about the independent terminal capturing...]({%slug capture-terminal-traffic%})
 
 
-### Removing All Sessions
+### Clearing Sessions
 
-The **Remove All** button deletes all captured traffic from the **Live Traffic** grid. The action requires explicit confirmation. To remove only specific sessions, select the desired ones and use the remove options from the context menu.
+The **Clear** button will remove all captured traffic from the **Live Traffic** grid. The action requires explicit confirmation. To remove only specific sessions, select the targeted ones and use the **Clear** option from the context menu.
+
+You can also clear only specific set of sessions bazed on some pre-defined criterias. The full list of **Clear xxx** options is available through the dropdown menu next to the **Clear** button (refer for the screenshot for additional reference).
+
+![Clear dropdown options](../images/livetraffic/columns/clear-dropdown.png)
 
 
 ### Searching
