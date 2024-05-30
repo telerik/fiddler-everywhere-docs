@@ -32,13 +32,11 @@ The **Live Traffic** toolbar provides the following functionalities:
 - [Managing Columns](#managing-columns) (**Columns**)
 - [Toggling Layout](#toggling-layout)(**Toggle Layout Change**)
 
-
 ### Filtering Traffic
 
 Use the filtering options (the [**Filters** toolbar option]({%slug how-to-filter-traffic%}#filters) and the [column filters]({%slug how-to-filter-traffic%}#column-filters)) to create and apply complex filters on your captured sessions in the **Live Traffic** grid. 
 
 [Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
-
 
 ### Independent Browser Capturing
 
@@ -48,7 +46,6 @@ Use the **Open Browser** button to capture traffic from a specific browser insta
 
 [Learn more about the independent browser capturing...]({%slug capture-traffic-get-started%}#independent-browser-capturing)
 
-
 ### Terminal Capturing
 
 Use the **>_ Terminal** button to capture traffic from a specific terminal instance without modifying the system proxy settings.
@@ -57,22 +54,29 @@ Use the **>_ Terminal** button to capture traffic from a specific terminal insta
 
 [Learn more about the independent terminal capturing...]({%slug capture-terminal-traffic%})
 
-
 ### Clearing Sessions
 
-The **Clear** button will remove all captured traffic from the **Live Traffic** grid. The action requires explicit confirmation. To remove only specific sessions, select the targeted ones and use the **Clear** option from the context menu.
+The **Clear** button will remove all captured traffic from the **Live Traffic** grid. The action requires explicit confirmation. To remove only specific sessions, select the targeted sessions and use the **Clear** option from the context menu.
 
-You can also clear only specific set of sessions bazed on some pre-defined criterias. The full list of **Clear xxx** options is available through the dropdown menu next to the **Clear** button (refer for the screenshot for additional reference).
+You can also clear only a specific set of sessions based on some pre-defined criteria. The complete list of **Clear xxx** options is available through the dropdown menu next to the **Clear** button, and the available options are as follows:
+
+- **Clear All**&mdash;Removes all entries from the traffic grid (an analog to the **Clear** button).
+- **Clear Closed**&mdash;Removes all sessions with session state "Closed".
+- **Clear Visible**&mdash;Removes all sessions currently visible in the grid. Will preserve filtered sessions (these sessions will return if the filters are cleared).
+- **Clear Filtered Out**&mdash;Removes all sessions that are filtered.
+- **Clear CONNECTS**&mdash;Removes all sessions that use HTTP method CONNECT (also referred to as proxy tunnels).
+- **Clear XXX**&mdash;Removes all sessions where the received HTTP status code is XXX.
+- **Clear Static Resources**&mdash;Removes all sessions that return static resources like text or images.
+- **Clear Marked**&mdash;Removes all sessions from the grid marked through a rule or from the context menu.
+- **Clear Non-Marked**&mdash;Removes all sessions from the grid that are not through a rule or from the context menu.
 
 ![Clear dropdown options](../images/livetraffic/columns/clear-dropdown.png)
-
 
 ### Searching
 
 To search for specific values in the URL and the headers of all sessions, use the **Quick Search** text input. The search action immediately filters all sessions containing the search terms and highlights the matched data. If a match is in a hidden column (for example, due to an applied filter), a warning icon shows next to the search box, which helps you show the column(s) quickly.
 
 ![Quick Search option to highlight & filter sessions based on a match](../images/livetraffic/websessions/websessions-quick-search.png)
-
 
 ### Searching within Request and Response Bodies
 
@@ -81,7 +85,6 @@ Version 5.9.0 of Fiddler Everywhere introduced the option to quickly search with
 To enable the feature to search in bodies, toggle the button at the right end of the **Quick Search** input field.
 
 ![Quick search option to highlight and filter session based on a matched results from both URLs, and HTTP Bodies](../images/livetraffic/websessions/search-in-bodies.png)
-
 
 ### Saving Sessions
 
@@ -101,7 +104,6 @@ To save sessions for later or prepare sessions for sharing:
 
 1. Click **Save**. The saved session immediately loads in the save **Sessions** tree.
 
-
 ### Sharing Sessions
 
 Sharing sessions dramatically improve collaboration, and Fiddler Everywhere provides the following options to export and share sessions:
@@ -120,7 +122,6 @@ To share a session through the toolbar:
 
 1. In the **Share Sessions** prompt window, enter a valid email and click **Share**. Entering notes is optional.
 
-
 ### Managing Columns
 
 Use the **Columns** menu to manage which columns to show up in the [Live Traffic grid](#live-traffic-list). 
@@ -130,7 +131,6 @@ You can also [create a custom column through the **Add Custom Column** option](#
 
 [Learn more about each column present in the Live Traffic grid here...](#columns)
 
-
 ### Toggling Layout
 
 The last icon on the right side of the toolbar presents an option to restructure the main Fiddler Everywhere layout structure for the [**Live Traffic grid**](#live-traffic-list) and the [**Inspectors**]({%slug inspector-types%}). The layout change option is available for the **Live traffic** tab, comparison, and saved sessions tabs. The layout options are as follows:
@@ -138,14 +138,11 @@ The last icon on the right side of the toolbar presents an option to restructure
 - (Default layout) **Live Traffic grid** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
 - (Alternative layout) **Live Traffic grid** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
 
-
 >tip You can collapse the side panels **Sessions** and **Requests** and toggle the main layout to optimize your working space.
-
 
 ## Live Traffic Grid
 
 The **Live Traffic** grid displays all captured web sessions with their technical details structured in columns.
-
 
 Many operations start by selecting one or more entries in the **Live Traffic** grid and activating other features.
 
@@ -160,7 +157,6 @@ When the **Inspectors** are activated, they will automatically decide which insp
 The **Live Traffic grid** uses icons to provide additional context for each recorded session. To trigger an explanatory tooltip, hover over a **Live Traffic** grid entry icon.
 
 The following table displays the icons which **Live Traffic** grid supports for its entries:
-
 
 <table style="width: 80%; border-collapse: collapse;">
     <colgroup>
@@ -293,7 +289,6 @@ The following table displays the icons which **Live Traffic** grid supports for 
 
 A paused session or otherwise a session that hit [an active breakpoint]({%slug rulesbuilder-breakpoints%}) will have a special "Paused" icon in the Live Traffic grid.
 
-
 ### Certificate Indicators
 
 Each [list icon](#list-icons) can contain an additional triangle warning that indicates different server certificate issues.
@@ -312,11 +307,9 @@ Each [list icon](#list-icons) can contain an additional triangle warning that in
 
 [Learn more about how to use the server certificate details in Fiddler Everywhere here...]({%slug fe-cert-details%})
 
-
 ## Columns
 
 The following table lists the **Live Traffic** columns and the information they display. Apart from just being a descriptive tag, each column name can be applied as a matching condition filter (for example, you can create a filter that matches TLS Version column values and apply actions applicable only for a session with TLS 1.3). In addition to the predefined columns listed below, Fiddler Everywhere allows you to cr[eate your own custom columns](#creating-custom-columns).
-
 
 <table style=" width: 100%">
     <colgroup>
@@ -421,7 +414,6 @@ The following table lists the **Live Traffic** columns and the information they 
      </tbody>
 </table>
 
-
 ### Creating Custom Columns
 
 Add, edit, or remove a custom column to the columns list. Afterward, the columns are visualized similarly to the Fiddler's predefined columns. 
@@ -448,12 +440,9 @@ After the successful creation, the new column is immediately available in the **
 
 **Filter by a custom column** through the filtering button to the right of the column name.
 
-
-
 ### Reset Columns
 
 To reset all columns to their default Fiddler's state, open the [**Columns** menu](#managing-columns) and use the **Reset** option at the bottom. This action resets all columns (shows the default selection) but won't remove any custom-made columns (it will only hide them).
-
 
 ## Traffic Sorting and Filtering
 
@@ -470,7 +459,6 @@ Each column has a **filter** button, which popups an additional **Filter** menu 
 The column **Filter** menu lets you add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
 >tip Apply complex filters by using the [**Filters** toolbar option](#filtering) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters).
-
 
 ## Context Menu Options
 
@@ -502,7 +490,6 @@ To replay previously captured sessions, use the **Replay** context menu option, 
 
 The **Edit in Composer** context menu option loads the selected request in a new composer window where it can be edited, saved for later usage and sharing, and reissued.
 
-
 ### Resuming Paused Sessions
 
 To resume the execution of sessions that hit [active breakpoints]({%slug rulesbuilder-breakpoints%}), use the **Resume Paused Sessions** context menu option, which can be accessed with the keyboard by pressing `F5`.
@@ -516,8 +503,6 @@ To add a new rule:
 1. Select the desired session entry and right-click to open the context menu. Select **Add New Rule**.
 
 1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Manual Response** action option.
-
-
 
 ### Saving
 
@@ -537,11 +522,9 @@ The option displays a **Save** prompt window. To save the desired sessions:
 
 Alternatively, you can save all captured traffic through the **Save** button from the toolbar.
 
-
 ### Exporting
 
 The **Export** context menu option allows you to export the selected sessions in various formats such as SAZ (Fiddler Archive), HTTPArchive, WCAT, MeddlerScript, cURLScript, and more.
-
 
 ### Sharing
 
@@ -557,12 +540,9 @@ The option initially displays a **Save** and then a **Share** prompt window.
 
 Alternatively, you can share captured traffic through the **Share** button from the toolbar.
 
-
-
 ### Removing
 
 To delete a selected sessions from your **Live Traffic** grid, use the **Remove** context menu options.
-
 
 ### Copying
 
@@ -614,7 +594,6 @@ Add sessions to compare groups through the **Add to compare groups**. This funct
 
 [Learn more on how to work with compare groups here...]({%slug fe-compare-sessions%}#adding-sessions-to-the-compare-groups)
 
-
 ### Commenting
 
 To add comments on single or multiple sessions, use the **Comment** context menu option.
@@ -626,7 +605,6 @@ To add comments on single or multiple sessions, use the **Comment** context menu
 1. The text is added to the comment field for the selected sessions.
 
 Saved and shared sessions will contain the added comments.
-
 
 ### Bypassing the Proxy
 
