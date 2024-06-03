@@ -1,6 +1,6 @@
 ---
-title: Using Breakpoints to Pause Traffic
-description: "Pausing network traffic through breakpoint actions in Fiddler Everywhere"
+title: Using Breakpoints to Debug Traffic
+description: "Pausing and debuggin network traffic through breakpoint actions in Fiddler Everywhere"
 slug: rulesbuilder-breakpoints
 publish: true
 position: 30
