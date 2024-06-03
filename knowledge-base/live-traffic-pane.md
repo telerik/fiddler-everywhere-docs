@@ -61,14 +61,14 @@ The **Clear** button will remove all captured traffic from the **Live Traffic** 
 You can also clear only a specific set of sessions based on some pre-defined criteria. The complete list of **Clear xxx** options is available through the dropdown menu next to the **Clear** button, and the available options are as follows:
 
 - **Clear All**&mdash;Removes all entries from the traffic grid (an analog to the **Clear** button).
-- **Clear Closed**&mdash;Removes all sessions with session state "Closed".
+- **Clear Closed**&mdash;Removes all sessions with session state "Closed". The state of the session is available through [the **Session State** column]({%slug web-sessions-list%}#columns).
 - **Clear Visible**&mdash;Removes all sessions currently visible in the grid. Will preserve filtered sessions (these sessions will return if the filters are cleared).
 - **Clear Filtered Out**&mdash;Removes all sessions that are filtered.
 - **Clear CONNECTS**&mdash;Removes all sessions that use HTTP method CONNECT (also referred to as proxy tunnels).
 - **Clear XXX**&mdash;Removes all sessions where the received HTTP status code is XXX.
 - **Clear Static Resources**&mdash;Removes all sessions that return static resources like text or images.
-- **Clear Marked**&mdash;Removes all sessions from the grid marked through a rule or from the context menu.
-- **Clear Non-Marked**&mdash;Removes all sessions from the grid that are not through a rule or from the context menu.
+- **Clear Marked**&mdash;Removes all sessions from the grid marked through a rule or from the context menu. This action will remove all session made with CONNECT method (because they are marked by default).
+- **Clear Non-Marked**&mdash;Removes all sessions from the grid that are not marked through a rule or from the context menu.
 
 ![Clear dropdown options](../images/livetraffic/columns/clear-dropdown.png)
 
