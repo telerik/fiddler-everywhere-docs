@@ -40,6 +40,6 @@ The above opens the **Advanced Replay** configuration prompt window, allowing yo
     * **Sequential**: each request in the series of repeats will start after the previous one has finished. 
     * **Parallel**: all requests will start simultaneously in the repeats.
 
-[Advanced Replay configuration](../images/rules/replay-advanced.png)
+![Advanced Replay configuration](../images/rules/replay-advanced.png)
 
 All replay options are available for live traffic and traffic loaded from saved snapshots (for example, saved snapshots loaded from the **Sessions** list or imported SAZ files).
