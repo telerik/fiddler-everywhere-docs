@@ -1,5 +1,70 @@
 [
     {
+        "version": "5.11.0",
+        "title": "Fiddler Everywhere v5.11.0",
+        "date": "June 06, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add advanced replay options for single or multiple sessions, including the ability to reissue them either in sequence or in parallel"
+                    },
+                    {
+                        "title": "Add notification for successfully deleted ruleset"
+                    },
+                    {
+                        "title": "Improved macOS upstream proxy support when using a PAC script or WPAD"
+                    },
+                    {
+                        "title": "Add support for macOS upstream proxy set by a global policy"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Rules not working for for gRPC sessions headers"
+                    },
+                    {
+                        "title": "Small UI fixes for icon colors, search placeholders, and autocomplete suggestions"
+                    },
+                    {
+                        "title": "Saving/Exporting/Sharing sessions from the Sessions toolbar takes into account applied search and filters when it should not"
+                    },
+                    {
+                        "title": "The \"Install Now\" button is not visible in the release notes dialog when a new version is downloaded"
+                    },
+                    {
+                        "title": "The magnifier icon in the certificate details dialog does not expand HEX data when clicked"
+                    },
+                    {
+                        "title": "Opening a new tab in an instrumented browser shows advertising settings configuration pop-up"
+                    },
+                    {
+                        "title": "Slow responsiveness of Overview tab when lots of sessions are selected"
+                    },
+                    {
+                        "title": "Some rule actions are not applied for for CONNECT session"
+                    },
+                    {
+                        "title": "Selecting and deselecting lots of sessions can slow down the UI for several seconds"
+                    },
+                    {
+                        "title": "gRPC traffic is not captured correctly from an instrumented terminal when using Node.js"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate security issues"
+                    },
+                    {
+                        "title": "The network extension capturing on macOS stops capturing traffic in some cases"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.10.0",
         "title": "Fiddler Everywhere v5.10.0",
         "date": "May 23, 2024",
