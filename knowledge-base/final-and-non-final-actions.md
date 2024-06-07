@@ -8,7 +8,7 @@ res_type: kb
 ---
 
 
-The article lists and explains the supported matching [conditions](#conditions) and applicable [actions](#actions) while creating a rule with the **Rules** tab in Fiddler Everywhere. It also covers the specific of [final and non-final actions]() and their immediate result on the modified traffic.
+The article lists and explains the supported matching [conditions](#conditions) and applicable [actions](#actions) while creating a rule with the **Rules** tab in Fiddler Everywhere. It also covers the specific of [final and non-final actions](#final-and-non-final-actions) and their immediate result on the modified traffic.
 
 ## Conditions
 
