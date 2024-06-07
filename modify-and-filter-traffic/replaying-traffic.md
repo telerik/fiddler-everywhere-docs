@@ -33,12 +33,14 @@ The above opens the **Advanced Replay** configuration prompt window, allowing yo
 - **Number of Repeats**: Configure how many times the selected session must be replayed. The maximum is 100000 iterations.
 
 - **Repeat Behavior**: Set whether the repeats for each selected session must be triggered sequentially (one after the other) or in parallel (in a batch).
-    * **Sequential**: each repeat will start after the previous one has finished. 
-    * **Parallel**: all repeats will start at the same time.
+
+    * **Sequential**: each repeat will start after the previous one has finished. 
+    * **Parallel**: all repeats will start at the same time.
 
 - **Request Behavior**: Set whether the requests from multiple selected sessions in each repeat must be triggered sequentially (one after the other) or in parallel (in a batch). This option is available only when multiple different sessions are selected.
-    * **Sequential**: each request in the series of repeats will start after the previous one has finished. 
-    * **Parallel**: all requests will start simultaneously in the repeats.
+
+    * **Sequential**: each request in the series of repeats will start after the previous one has finished. 
+    * **Parallel**: all requests will start simultaneously in the repeats.
 
 ![Advanced Replay configuration](../images/rules/replay-advanced.png)
 
