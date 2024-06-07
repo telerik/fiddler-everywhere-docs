@@ -211,3 +211,10 @@ Another option that the **Rule Builder** provides is to create the mocked custom
 1. Click **Save** to create or update the rule.
 
 ![Response file](../images/kb/dat-files/kb-rules-response-manul.png)
+
+## See Also
+
+- [Sample Rules Presets]({%slug adv_techniques_fiddler%})
+- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
+- [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
+- [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)

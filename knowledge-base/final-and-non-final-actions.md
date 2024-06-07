@@ -10,7 +10,6 @@ res_type: kb
 
 The article lists and explains the supported matching [conditions](#conditions) and applicable [actions](#actions) while creating a rule with the **Rules** tab in Fiddler Everywhere. It also covers the specific of [final and non-final actions](#final-and-non-final-actions) and their immediate result on the modified traffic.
 
-
 ## Conditions
 
 The **Rule Builder** can add and use single or multiple matching **conditions** needed to trigger different [**actions**](#actions). The conditions are logical structures with different statements whose numbers can vary between two and four. A statement field that handles text (string modifier) is case-insensitive by default (you can use the `Aa` button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions.
