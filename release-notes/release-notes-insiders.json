@@ -1,5 +1,29 @@
 [
     {
+        "version": "5.11.1-insiders",
+        "title": "Fiddler Everywhere v5.11.1",
+        "date": "June 12, 2024",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Network Capturing on macOS does not work when there is another system proxy configured to capture traffic"
+                    },
+                    {
+                        "title": "Fiddler Everywhere shows notification about changed settings on macOS when a proxy is configured using system policy instead of the network interface settings"
+                    },
+                    {
+                        "title": "Searching in sessions using a quoted string can cause an application error"
+                    },
+                    {
+                        "title": "Advanced Replay dialog images are not easily readable when using a dark theme"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.11.0-insiders",
         "title": "Fiddler Everywhere v5.11.0",
         "date": "June 06, 2024",
