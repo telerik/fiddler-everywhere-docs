@@ -51,7 +51,7 @@ The rules presets were conditionally separated into the following groups:
     * [Highlighting sessions that contain static resources (like images, text files, etc.,)]({%slug adv_marking_static_resources%})
 
 All rules presets are available as FARX files (Fiddler uses the FARX format to export and import a rule or set of rules) in
-<a href="https://github.com/telerik/fiddler-everywhere/rules/" target="_blank">the public GitHub repository of Fiddler Everywhere</a>.
+<a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules" target="_blank">the public GitHub repository of Fiddler Everywhere</a>.
 
 ## See Also
 
