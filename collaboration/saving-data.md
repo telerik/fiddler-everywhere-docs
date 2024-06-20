@@ -24,6 +24,8 @@ The save options in Fiddler Everywhere allow you to use local and cloud save, or
  - Numbers (0-9).
  - Dashes (`-`), underscores (`_`), and blank spaces.
 
+ >tip Note that saving a session's snapshots in Fiddler will effectively store the snapshots in the local storage (when using local save) or in the Fiddler's cloud space (when using cloud save). If you need to work with a session file, you should use [the **Export** option]({%slug fiddler-export-and-import%}) which enables you to produce a file in various known formats (like SAZ, HTTPArchive, etc.).
+
 
 ## Saving Session's Snapshots
 
