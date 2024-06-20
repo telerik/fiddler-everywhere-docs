@@ -1,5 +1,49 @@
 [
     {
+        "version": "5.12.0-insiders",
+        "title": "Fiddler Everywhere v5.12.0",
+        "date": "June 20, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Offline license support on macOS"
+                    },
+                    {
+                        "title": "Support IPv6 address host names in the network extension on macOS"
+                    },
+                    {
+                        "title": "The UI term for saved and shared Sessions is changed to Snapshots"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Rules actions not working for gRPC sessions"
+                    },
+                    {
+                        "title": "Resume from breakpoint button not visible for gRPC sessions"
+                    },
+                    {
+                        "title": "Advanced replay dialog accepts non-integer values for number of repeats"
+                    },
+                    {
+                        "title": "Colors in the application status bar are not consistent"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate security issues"
+                    },
+                    {
+                        "title": "Error is raised while persisting the sorting and filtering state of a Snapshot or Live Traffic tab"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.11.1-insiders",
         "title": "Fiddler Everywhere v5.11.1",
         "date": "June 12, 2024",
