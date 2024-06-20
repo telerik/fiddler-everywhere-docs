@@ -1,6 +1,6 @@
 ---
 title: Organizing Traffic
-description: "Use the `Sessions` tree to save, organize and share snapshots of captured traffic."
+description: "Use the `Snapshots` tree to save, organize and share snapshots of captured traffic."
 slug: fe-organize-sessions
 publish: true
 position: 50
@@ -8,18 +8,18 @@ position: 50
 
 # Organizing Traffic
 
-In addition to the core capturing and inspection capabilities, Fiddler Everywhere provides options to save, share and organize already captured sessions. The section that enables you to achieve the above is called the **Sessions** tree. To open the **Sessions** follow these steps:
+In addition to the core capturing and inspection capabilities, Fiddler Everywhere provides options to save, share and organize already captured sessions. The section that enables you to achieve the above is called the **Snapshots** tree. To open the **Snapshots** follow these steps:
 
 1. Start Fiddler Everywhere.
 1. Open the **Traffic** pane.
-1. Expand the **Sessions** tree located to the left.
+1. Expand the **Snapshots** tree located to the left.
 
-The **Sessions** tree in Fiddler Everywhere provides the option to save, organize, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel that you can hide/show to optimize your working space.
+The **Snapshots** tree in Fiddler Everywhere provides the option to save, organize, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel that you can hide/show to optimize your working space.
 
 
 ## Saving in Fiddler Everywhere
 
-To save snapshots of captured traffic (single or multiple sessions) to the **Sessions** tree, use the saving and sharing options of the **Live Traffic** grid. All saved entries are automatically sorted in alphabetical order.
+To save snapshots of captured traffic (single or multiple sessions) to the **Snapshots** tree, use the saving and sharing options of the **Live Traffic** grid. All saved entries are automatically sorted in alphabetical order.
 
 Save a snapshot of captured HTTPS traffic through the following steps:
 
@@ -27,7 +27,7 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 
 1. Select one or more sessions.
 
-1. Use the context menu or the keyboard shortcuts `S` to invoke the **save** dialog.
+1. Use the context menu or the keyboard shortcuts `S` to invoke the **Save Snapshot** dialog.
 
     ![Save dialog](../images/livetraffic/session-save-prompt.png)
 
@@ -44,9 +44,9 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 
 ## Sharing in Fiddler Everywhere
 
-Already saved snapshots of captured traffic can be shared directly within the **Sessions** tree.
+Already saved snapshots of captured traffic can be shared directly within the **Snapshots** tree.
 
-1. Select the saved snapshot from within the **Sessions** tree.
+1. Select the saved snapshot from within the **Snapshots** tree.
 
 1. Use the context menu to invoke the **Share** dialog.
 

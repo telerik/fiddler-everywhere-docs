@@ -25,11 +25,11 @@ The session content immediately loads in the Fiddler's **Inspectors**. The appli
 
 ## Overview Traffic Statistics
 
-To extract information about the captured sessions, go to the **Live Traffic** grid, where each request/response entry (session) shows in a row with multiple columns fields in the save **Sessions** tree. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body sizer in bytes, and the HTTP method (GET or POST). The output traffic can be filtered, exported, commented on, and shared for further and detailed inspection.
+To extract information about the captured sessions, go to the **Live Traffic** grid, where each request/response entry (session) shows in a row with multiple columns fields. There you can extract valuable data such as the returned status code, the host and the URL, the type of the used protocol (HTTP or HTTPS), the body size in bytes, and the HTTP method (GET or POST). The output traffic can be filtered, exported, commented on, and shared for further and detailed inspection.
 
 To open the structured information about the session in the [**Overview** tab]({%slug overview-tab%}), follow these steps:
 
-1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
+1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}). ALternatively, you can load previosly saved session's snapshot from the **Snapshots** list.
 
 1. Select a session, and switch to the **Overview** tab.
 
@@ -47,10 +47,10 @@ Fiddler Everywhere loads the selected sessions side-by-side with the session wit
 
 [Deep-dive into the Fiddler's `Compare Sessions`` tab here ...]({%slug fe-compare-sessions%})
 
-## Sessions List
+## Snapshots
 
-Fiddler Everywhere provides a section called the **Sessions** tree that allows you to create a collection of previously captured HTTPS sessions.
+Fiddler Everywhere provides a section called the **Snapshots** that is a tree-based list to store and create a collection of previously captured HTTPS sessions.
 
-You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share selected or multiple sessions directly from the sessions grid or using the save **Sessions** tree.
+You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share selected or multiple sessions directly from the sessions grid or using the save **Snapshots** tree.
 
-[Learn more about saving and sharing with the Fiddler's Sessions tree here ...]({%slug fe-organize-sessions%})
+[Learn more about saving and sharing with the Fiddler's Snapshots tree here ...]({%slug fe-organize-sessions%})

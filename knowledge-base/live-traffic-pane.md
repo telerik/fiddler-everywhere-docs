@@ -102,13 +102,13 @@ To save sessions for later or prepare sessions for sharing:
 
 1. (Optional) Use the **password protection** switch to enable encryption and set a password.
 
-1. Click **Save**. The saved session immediately loads in the save **Sessions** tree.
+1. Click **Save**. The saved sessions loads in the **Snapshots** tree list.
 
 ### Sharing Sessions
 
 Sharing sessions dramatically improve collaboration, and Fiddler Everywhere provides the following options to export and share sessions:
 
-- Sharing through the **Share** button from a saved session entry in the save **Sessions** tree.
+- Sharing through the **Share** button from a saved session entry in the **Snapshots** tree list.
 
 - Sharing through the **Share** option from the **Live Traffic** grid context menu.
 
@@ -116,11 +116,11 @@ Sharing sessions dramatically improve collaboration, and Fiddler Everywhere prov
 
 To share a session through the toolbar:
 
-1. Click the **Share** button. As a result, the **Save Session** prompt window appears.
+1. Click the **Share** button. As a result, the **Save Snapshot** prompt window appears.
 
-1. In the **Save Sessions** prompt window, enter a valid name and choose a folder to store the session.
+1. In the **Save Snapshot** prompt window, enter a valid name and choose a folder to store the session.
 
-1. In the **Share Sessions** prompt window, enter a valid email and click **Share**. Entering notes is optional.
+1. In the **Share Snapshot** prompt window, enter a valid email and click **Share**. Entering notes is optional.
 
 ### Managing Columns
 
@@ -138,7 +138,7 @@ The last icon on the right side of the toolbar presents an option to restructure
 - (Default layout) **Live Traffic grid** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
 - (Alternative layout) **Live Traffic grid** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
 
->tip You can collapse the side panels **Sessions** and **Requests** and toggle the main layout to optimize your working space.
+>tip You can collapse or expand the **Snapshots** and **Requests** side panels and toggle the main layout to optimize your working space.
 
 ## Live Traffic Grid
 
@@ -506,7 +506,7 @@ To add a new rule:
 
 ### Saving
 
-To save selected sessions, use the **Save** context menu option. The saved sessions will appear in the save **Sessions** tree to the left of the Fiddler Everywhere interface, and from there, you can later re-open, export, and share them.
+To save selected sessions, use the **Save** context menu option. The snapshot of saved sessions will appear in the **Snapshots** tree to the left of the Fiddler Everywhere interface, and from there, you can later re-open, export, and share them.
 
 The option displays a **Save** prompt window. To save the desired sessions:
 
@@ -516,7 +516,7 @@ The option displays a **Save** prompt window. To save the desired sessions:
 
 1. (Optional) Use the **password protection** switch to enable encryption and set a password. Only users with knowledge of the password can open the entry.
 
-1. Click **Save**. The saved session immediately loads in the save **Sessions** tree.
+1. Click **Save**. The saved session immediately loads in the save **Snapshots** tree.
 
 1. Double-click the saved session to load it in a new **Composer** tab. Note that encrypted sessions will prompt for a password before loading.
 
@@ -528,7 +528,7 @@ The **Export** context menu option allows you to export the selected sessions in
 
 ### Sharing
 
-The **Share** context menu option enables the sharing of selected sessions. Before any session is shared, it is saved as an entry in the save **Sessions** tree. Then, the threshold can be transmitted through email.
+The **Share** context menu option enables the sharing of selected sessions. Before any session is shared, it is saved as an entry in the save **Snapshots** tree. Then, the threshold can be transmitted through email.
 
 The option initially displays a **Save** and then a **Share** prompt window.
 

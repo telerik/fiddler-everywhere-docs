@@ -46,11 +46,11 @@ You can add and compare more sessions by adding them to the comparison groups.
     ![Add to compare group](../images/livetraffic/compare/compare-context-menu-add-to-group.png)
 
 
-## Comparing Saved Sessions
+## Comparing Saved Session Snapshots
 
-With Fiddler Everywhere, you can compare previously saved sessions from the save **Sessions** tree.
+With Fiddler Everywhere, you can compare previously saved sessions from the save **Snapshots** tree.
 
-1. Select a saved entry from the save **Sessions** tree you want to compare.
+1. Select a saved entry from the save **Snapshots** tree you want to compare.
 
 1. Select the **Compare** option from the context menu.
 
@@ -89,6 +89,6 @@ You can manage all sessions added in the **Compare Sessions (BETA)** tab through
 
 - **Delete Selected Sessions**&mdash;Removes the selected sessions from the compare group.
 
-- **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** grid or the opened **Sessions** tree tab).
+- **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** grid or the opened **Snapshots** tree tab).
 
 ![Compared Sessions context menu](../images/livetraffic/compare/compare-list-context-menu.png)

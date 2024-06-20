@@ -103,11 +103,11 @@ The Fiddler Everywhere uses SAZ behind the scenes for each session explicitly sa
 
     ![Export SAZ from Live Traffic](../images/kb/saz/saz-export-live-traffic.png)
 
-- Use the **Export** option from the save **Sessions** tree's context menu and then choose **Fiddler Archive (SAZ)** as format.
+- Use the **Export** option from the **Snapshots** tree's context menu and then choose **Fiddler Archive (SAZ)** as format.
 
-    ![Export SAZ from Lthe saved Sessions list](../images/kb/saz/saz-export-saved-sessions.png)
+    ![Export SAZ from the saved Snapshots tree list](../images/kb/saz/saz-export-saved-sessions.png)
 
-- Use the **Import** option from the save **Sessions** tree's context menu and locate the *.saz file from the OS file system.   
+- Use the **Import** option from the **Snapshots** tree's context menu and locate the *.saz file from the OS file system.   
 
     ![Import SAZ into the **Sesssions** list](../images/kb/saz/saz-import-saved-sessions.png)
 
