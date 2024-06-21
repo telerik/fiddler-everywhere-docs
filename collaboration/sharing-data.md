@@ -106,7 +106,7 @@ Some network sessions may lack essential details not captured in the technical d
 
 Add a custom comment to one or more captured sessions to provide additional context.
 
-1. Select a session from the sessions grid or load saved session's snapshot from the save **Snapshots** tree.
+1. Select a session from the sessions grid or load a saved snapshot from the save **Snapshots** tree.
 
 1. Add a comment by using the **Comment** option from the context menu or press the **M** key while selecting the desired sessions. As a result, the newly added comment will appear in the **Comments** column.
 
