@@ -29,7 +29,7 @@ To extract information about the captured sessions, go to the **Live Traffic** g
 
 To open the structured information about the session in the [**Overview** tab]({%slug overview-tab%}), follow these steps:
 
-1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}). ALternatively, you can load previosly saved session's snapshot from the **Snapshots** list.
+1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}). Alternatively, you can load previously saved session snapshots from the **Snapshots** list.
 
 1. Select a session, and switch to the **Overview** tab.
 
