@@ -44,4 +44,4 @@ The above opens the **Advanced Replay** configuration prompt window, allowing yo
 
 ![Advanced Replay configuration](../images/rules/replay-advanced.png)
 
-All replay options are available for live traffic and traffic loaded from saved snapshots (for example, saved snapshots loaded from the **Sessions** list or imported SAZ files).
+All replay options are available for live traffic and traffic loaded from saved snapshots (for example, saved session's snapshots loaded from the **Snapshots** list or from imported SAZ files).

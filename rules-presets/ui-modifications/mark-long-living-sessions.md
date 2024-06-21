@@ -15,15 +15,13 @@ Create a "Mark Long-Living Sessions" rule by setting the following actions throu
 
 1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
 
-1. Match by a **Session Type** that uses string values that match the desired session types. For example: **WebSocket**, **gRPC**, **RPC**, **Socket.IO**, and **Server-Side Events** sessions.
+1. Match by a **Protocol** that uses string values that match the desired session types. For example: **WebSocket**, **gRPC**, **RPC**, **Socket.IO**, and **Server-Side Events** sessions.
 
 1. Create a **Mark Session** action and set the preferred background and foreground (text) colors.
 
 ![Creating "Mark Long-Living Sessions" rule](../../images/advanced/mark-long-living-sessions.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
-
-![Activating the "Mark Long-Living Sessions" rule](../../images/advanced/mark-long-living-sessions-active.png)
 
 >tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the **Live Traffic** grid.
 
