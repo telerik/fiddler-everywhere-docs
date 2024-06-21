@@ -11,7 +11,7 @@ previous_url: /collaboration
 
 This article covers the sharing capabilities of Fiddler Everywhere as follows:
 
-- [Sharing session's snapshots](#sharing-sessions-snapshots)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Snapshots** tree.
+- [Sharing snapshots](#sharing-sessions-snapshots)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Snapshots** tree.
 
 - [Sharing API request collections](#sharing-requests-collections)&mdash;Options to share API requests collections as local/cloud collections in the **Requests** list.
 
