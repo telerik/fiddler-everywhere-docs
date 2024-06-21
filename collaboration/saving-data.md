@@ -59,7 +59,7 @@ You can select, inspect, modify, and share snapshots of previously saved session
 
     ![Snapshot UI options](../images/collaboration/save-session-ui-buttons.png)
 0
-- Use the UI buttons at the top to **import** session snapshots or access previously **Shared Snapshots** snapshots.
+- Use the UI buttons at the top to **import** session snapshots or access previously **Shared Snapshots**.
 
     ![Sessions list UI options](../images/collaboration/save-sessions-list-button.png)
 
