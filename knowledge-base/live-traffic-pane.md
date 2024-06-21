@@ -102,7 +102,7 @@ To save sessions for later or prepare sessions for sharing:
 
 1. (Optional) Use the **password protection** switch to enable encryption and set a password.
 
-1. Click **Save**. The saved sessions loads in the **Snapshots** tree list.
+1. Click **Save**. The saved sessions load in the **Snapshots** tree list.
 
 ### Sharing Sessions
 
