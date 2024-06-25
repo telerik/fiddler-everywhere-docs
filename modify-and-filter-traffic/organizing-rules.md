@@ -1,5 +1,5 @@
 ---
-title: Organize Fiddler Rules
+title: Organizing Rules
 description: "Use the Rules queue to create, store, group, and prioritize the execution of multiple rules."
 slug: rulesbuilder-get-started
 publish: true
@@ -7,7 +7,7 @@ position: 20
 ---
 
 
-# Organize Fiddler Rules
+# Organizing Rules
 
 All created rules in the **Rules** tab are organized in the **Rules Queue** - a visual tree that lists all active rules & groups in a priority queue. Each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, turn on off, promote, denote, edit, export, import, share, and immediately execute the listed rules.
 

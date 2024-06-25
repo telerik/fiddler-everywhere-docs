@@ -1,5 +1,5 @@
 ---
-title: Modify Traffic
+title: Modifying Traffic
 description: "Modify HTTPS traffic while using the Rules tab in Fiddler Everywhere web-debugging proxy tool."
 slug: modify-traffic-get-started
 publish: true
@@ -7,7 +7,7 @@ position: 10
 previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic, /traffic/modify-traffic, /user-guide/rules, /get-started/mock-server-response, /mock-server-response, /knowledge-base/autoresponder, /user-guide/live-traffic/rules, /user-guide/live-traffic/rules-builder, /user-guide/live-traffic/autoresponder
 ---
 
-# Modify Traffic
+# Modifying Traffic
 
 Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic through the **Rules** functionality is crucial to the Fiddler testing and debugging capabilities. Using the Fiddler's rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
 

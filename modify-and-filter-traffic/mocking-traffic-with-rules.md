@@ -1,5 +1,5 @@
 ---
-title: Mock Traffic
+title: Mocking Traffic
 description: "Replay captured HTTPS traffic to effectively mock multiple HTTP sessions in Fiddler Everywhere web-debugging proxy tool."
 slug: mock-traffic-get-started
 publish: true
@@ -7,7 +7,7 @@ position: 15
 ---
 
 
-# Mock Traffic
+# Mocking Traffic
 
 A typical scenario is when a client, a colleague, or a third party is experiencing a specific issue when loading a web application. The problem is often related to the third-party tools (e.g., specific browser version, added extensions) or a set of specific steps that the user undertakes to result in the observed behavior. With Fiddler Everywhere, the user can easily capture and share the sessions with you for further investigation. Going one step further, Fiddler Everywhere allows you to easily mock multiple sessions just as they appeared originally.
 
