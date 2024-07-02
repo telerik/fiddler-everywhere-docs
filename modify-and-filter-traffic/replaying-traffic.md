@@ -3,7 +3,7 @@ title: Replaying Traffic
 description: "Replay HTTPS Traffic simultaneously or consiquencily while using Fiddler Everywhere advanced replay options"
 slug: replaying-traffic
 publish: true
-position: 25
+position: 40
 ---
 
 # Replaying Traffic

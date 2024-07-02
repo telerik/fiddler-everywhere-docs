@@ -83,6 +83,7 @@ Fiddler automatically adds the newly created rule on the top of the [**Rules** q
 ## Additional Rules Resources
 
 - [Sample Rules Presets]({%slug adv_techniques_fiddler%})
+- [Learn how to use the Rules preset here...]({%slug how-to-use-fiddler-rules-to-modify-traffic%})
 - [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
 - [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
 - [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
