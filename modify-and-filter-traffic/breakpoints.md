@@ -1,12 +1,12 @@
 ---
-title: Use Breakpoints to Debug Traffic
+title: Using Breakpoints
 description: "Pausing and debugging network traffic through breakpoint actions in Fiddler Everywhere"
 slug: rulesbuilder-breakpoints
 publish: true
 position: 30
 ---
 
-# Use Breakpoints to Debug Traffic
+# Using Breakpoints
 
 The **Rules** functionality in Fiddler Everywhere is a sophisticated tool that lets you virtually play with the ongoing traffic in any way possible. With its help, you can easily adjust the ongoing traffic per your requirements by matching all or specific sessions and consequentially applying specific actions that vary from simply highlighting and commenting entries (for easier inspection and analysis) to changing the content and behavior of HTTP Requests (before they reach the target server) or HTTP Responses (before they reach the client application).
 

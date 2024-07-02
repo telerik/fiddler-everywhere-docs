@@ -1,20 +1,20 @@
 ---
-title: Organize Fiddler Rules
+title: Organizing Rules
 description: "Use the Rules queue to create, store, group, and prioritize the execution of multiple rules."
 slug: rulesbuilder-get-started
 publish: true
-position: 20
+position: 25
 ---
 
 
-# Organize Fiddler Rules
+# Organizing Rules
 
-All created rules in the **Rules** tab are organized in the **Rules Queue** - a visual tree that lists all active rules & groups in a priority queue. Each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules Queue** allows you to enable, turn on off, promote, denote, edit, export, import, share, and immediately execute the listed rules.
+All created rules in the **Rules** tab are organized in the **Rules** queue - a visual tree that lists all active rules & groups in a priority queue. Each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules** queue allows you to enable, turn on off, promote, denote, edit, export, import, share, and immediately execute the listed rules.
 
 
 ## Using the Rules Queue
 
-To use a rule (or a group of rules) from the **Rules Queue**, take into consideration the following tips:
+To use a rule (or a group of rules) from the **Rules** queue, take into consideration the following tips:
 
 - The **Rules** tab must be active (switch ON).
 
@@ -24,9 +24,9 @@ To use a rule (or a group of rules) from the **Rules Queue**, take into consider
 
 - The **Execute** button is not affected by the active state of groups/rules. Actions from any selected rule or group of rules will be triggered when the **Execute** button is used.
 
-- The rules in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's rule position (and priority). Alternatively, you can drag and drop rules to change their position in the queue. 
+- The rules in the **Rules** queue are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's rule position (and priority). Alternatively, you can drag and drop rules to change their position in the queue. 
 
-- The groups in the **Rules Queue** are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's group position (and priority). Alternatively, you can drag and drop groups to change their position in the queue.
+- The groups in the **Rules** queue are executed with priority based on their position in the queue. Use the **Demote** and **Promote** buttons to change the queue's group position (and priority). Alternatively, you can drag and drop groups to change their position in the queue.
 
 - You can drag and drop rules in and out of groups and subgroups. Note that this can change the execution priority when multiple rules are executed simultaneously.
 
@@ -35,7 +35,7 @@ To use a rule (or a group of rules) from the **Rules Queue**, take into consider
 
 ## Rules Priority
 
-By default, the **Rules Queue** will list all created and imported rules based on their priority. Rules will be executed according to their appearance, starting from the top. When selecting specific rules and using the explicit **Execute** button, they will run in the order they appear in the queue.
+By default, the **Rules** queue will list all created and imported rules based on their priority. Rules will be executed according to their appearance, starting from the top. When selecting specific rules and using the explicit **Execute** button, they will run in the order they appear in the queue.
 
 
 ## Explicit Rules Execution
@@ -56,12 +56,12 @@ The group options allow you to further interact with the group's rules:
 
 - The **Play** button executes all active rules from the selected group. The rules will match any loaded sessions.
 - The **Enable/Disable** toggle explicitly enables or disables the group execution. Available only for **Live Traffic** grid's sessions and hidden when interacting with saved sessions.
-- The **Promote** up arrow promotes the selected group of rules in the **Rules Queue**.
-- The **Demote** down arrow demotes the selected group of rules in the **Rules Queue**.
+- The **Promote** up arrow promotes the selected group of rules in the **Rules** queue.
+- The **Demote** down arrow demotes the selected group of rules in the **Rules** queue.
 - The **Add Group** button automatically creates a subgroup within the selected group.
 - The **Add Rule** button opens the **Rules Builder** and places the new rule within the selected group.
 - The **Duplicate** button creates a duplicate copy of the selected group.
-- The **Delete** button deletes the group and all contained rules from the **Rules Queue**.
+- The **Delete** button deletes the group and all contained rules from the **Rules** queue.
 
 ![Group options](../images/livetraffic/rb/rules-group-options.png)
 

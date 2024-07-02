@@ -56,6 +56,7 @@ All rules presets are available as FARX files (Fiddler uses the FARX format to e
 ## See Also
 
 - [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
+- [Learn how to use the Rules preset here...]({%slug how-to-use-fiddler-rules-to-modify-traffic%})
 - [Learn how to organize and set the order of execution of multiple rules here...]({%slug rulesbuilder-get-started%})
 - [Learn how to use the Fiddler breakpoints to pause, debug, and modify HTTPS traffic on the fly]({%slug rulesbuilder-breakpoints%})
 - [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)

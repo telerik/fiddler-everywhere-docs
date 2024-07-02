@@ -1,5 +1,5 @@
 ---
-title: Modify Traffic
+title: Modifying Traffic
 description: "Modify HTTPS traffic while using the Rules tab in Fiddler Everywhere web-debugging proxy tool."
 slug: modify-traffic-get-started
 publish: true
@@ -7,9 +7,13 @@ position: 10
 previous_url: /get-started/modify-traffic, /get-started/traffic/modify-traffic, /traffic/modify-traffic, /user-guide/rules, /get-started/mock-server-response, /mock-server-response, /knowledge-base/autoresponder, /user-guide/live-traffic/rules, /user-guide/live-traffic/rules-builder, /user-guide/live-traffic/autoresponder
 ---
 
-# Modify Traffic
+# Modifying Traffic
 
-Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic through the **Rules** functionality is crucial to the Fiddler testing and debugging capabilities. Using the Fiddler's rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
+Fiddler Everywhere provides powerful debugging techniques for testing APIs and mocking server and client behavior. Modifying traffic through the **Rules** functionality is crucial to the Fiddler testing and debugging capabilities. 
+
+>tip A **rule** in Fiddler Everywhere is a feature that allows you to match a targeted HTTP(S) session and apply a specific action that will modify its original behavior. A rule can be created, activated, and executed through the **Rules** tab in the **Traffic** pane.
+
+Using the Fiddler's rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
 
 To open the **Rules** tab.
 
@@ -39,13 +43,13 @@ To create and test a rule through the **Rules Builder**:
 
     ![Adding new rule for modifying an HTTPS session through the Rules Builder](../images/rules/rules-builder-new-rule.png)
 
-1. Enter a descriptive rule name, which will appear in the **Rules Queue**.
+1. Enter a descriptive rule name, which will appear in the **Rules** queue.
 
 1. Add a condition or a set of conditions to match sessions.
 
 1. Add an action or a set of actions to modify the matched sessions.
 
-1. Click **Save** to save and add the created rule in the **Rules Queue**.
+1. Click **Save** to save and add the created rule in the **Rules** queue.
 
 1. Start capturing traffic or replay a specific session that triggers the rule.
 
@@ -74,11 +78,12 @@ To modify captured session through the **Rules**:
 
 1. Click **Save** to preserve the rule.
 
-Fiddler automatically adds the newly created rule on the top of the [**Rules Queue**]({%slug modify-traffic-get-started%}#rules-queue), giving it immediate execution priority (you can demote or promote each rule in the queue). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
+Fiddler automatically adds the newly created rule on the top of the [**Rules** queue]({%slug modify-traffic-get-started%}#rules-queue), giving it immediate execution priority (you can demote or promote each rule in the queue). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
 
 ## Additional Rules Resources
 
 - [Sample Rules Presets]({%slug adv_techniques_fiddler%})
+- [Learn how to use the Rules preset here...]({%slug how-to-use-fiddler-rules-to-modify-traffic%})
 - [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
 - [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
 - [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
