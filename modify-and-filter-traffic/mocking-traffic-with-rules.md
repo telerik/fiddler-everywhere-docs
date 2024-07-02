@@ -34,7 +34,7 @@ Fiddler can mock HTTPS traffic captured locally or remotely, for example, as tra
 
 Once the mock rules are created through the above methods, you can add modifications (within the newly created rules) and then use them with live traffic.
 
-1. (Optional) Made some modifications in the newly generated rules (for example, to test modified requests and response data).
+1. (Optional) Modify the newly generated rules (for example, you can change the request/response headers and bodies).
 
 1. Switch the Fiddler's tabs from the saved session snapshot to the **Live Traffic** tab. 
 

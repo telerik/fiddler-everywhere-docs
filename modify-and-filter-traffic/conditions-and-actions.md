@@ -1,5 +1,5 @@
 ---
-title: Conditions and Actions
+title: Using Conditions and Actions
 description: "Learn what matching conditions and actions are and understand the difference between final and non-final actions when working with rules in Fiddler Everywhere."
 slug: fiddler-rules-actions
 publish: true
@@ -7,7 +7,7 @@ previous_url: /knowledge-base/final-and-non-final-actions
 position: 20
 ---
 
-# Conditions and Actions
+# Using Conditions and Actions
 
 A **rule** in Fiddler Everywhere is a feature that enables you to use a condition to match targeted traffic (HTTP requests and responses) and then apply a specific action to modify its original behavior.
 
