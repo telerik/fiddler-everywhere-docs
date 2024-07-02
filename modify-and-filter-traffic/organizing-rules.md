@@ -3,7 +3,7 @@ title: Organizing Rules
 description: "Use the Rules queue to create, store, group, and prioritize the execution of multiple rules."
 slug: rulesbuilder-get-started
 publish: true
-position: 35
+position: 25
 ---
 
 

@@ -3,7 +3,7 @@ title: Filtering Traffic
 description: "Learn how to filter the captured HTTPS traffic to minimize the output in Live Traffic when working with the Fiddler Everywhere application."
 slug: how-to-filter-traffic
 publish: true
-position: 40
+position: 50
 previous_url: /knowledge-base/filter-traffic
 ---
 
