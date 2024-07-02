@@ -457,6 +457,8 @@ When you work with final and non-final actions, take into consideration the foll
 
 * Non-final actions are non-blocking - they will allow actions from any other active rules to execute.
 
+* A non-final action can be explicitly made final by checking the **"Make this action final"** option.
+
 The following table demonstrate what happens when you combine final and non-final actions in one or multiple rules.
 
 | Actions Type          | Result |
