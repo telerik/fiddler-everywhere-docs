@@ -1,5 +1,49 @@
 [
     {
+        "version": "5.13.0",
+        "title": "Fiddler Everywhere v5.13.0",
+        "date": "July 3, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add indication for \"Final\" actions in rules. When a rule with a \"Final\" action is executed, no further rule actions or rules will be processed for that session"
+                    },
+                    {
+                        "title": "Improve color picker components for the Mark Session action in the Rule Editor"
+                    },
+                    {
+                        "title": "Allow importing .SAZ session snaphosts in the Rules tab, creating a Rule for each session in the file"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Automatic scroll in Live Traffic sessions list is not reactivated when you manually scroll to the bottom of the list, preventing you from seeing newly added sessions"
+                    },
+                    {
+                        "title": "Unable to focus the Update Body Action text area in the Rule Editor dialog"
+                    },
+                    {
+                        "title": "Rules are updated slowly when there are large actions or a lot of rules in the list"
+                    },
+                    {
+                        "title": "Inconsistent behavior when adding rules from the Live Traffic tab by selecting multiple sessions"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate security issues"
+                    },
+                    {
+                        "title": "UI fixes for the network capture dialog on macOS"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.12.0",
         "title": "Fiddler Everywhere v5.12.0",
         "date": "June 20, 2024",
