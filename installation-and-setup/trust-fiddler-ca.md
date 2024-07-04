@@ -13,7 +13,7 @@ This article provides additional information about the options for installing th
 
 ## Install the Fiddler's Certificate Authority (Recommended Automated Approach)
 
-The recommended approach for installing and trusting the Fiddle CA is through the in-app system capturing mode wizards. Follow the articles below for detailed instructions on how to use the built-in wizards to install the Fiddler CA.
+The recommended approach for installing and trusting the Fiddler CA is through the in-app system capturing mode wizards. Follow the articles below for detailed instructions on how to use the built-in wizards to install the Fiddler CA.
 
 1. Open the **Home** pane.
 
