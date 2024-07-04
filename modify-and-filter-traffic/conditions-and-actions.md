@@ -447,9 +447,9 @@ Rule actions can be divided into **final** and **non-final** depending on their 
 
 When you work with final and non-final actions, take into consideration the following insights:
 
-* Final actions prevent any other action from executing if this action comes lower on the list for the specific rule. 
+* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules queue).
 
-* Final actions prevent any other rule from executing if this rule comes lower on the list of activated rules.
+* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules queue).
 
 * Final actions are valid (as final) only when the rule matches an HTTP(S) session.
 
