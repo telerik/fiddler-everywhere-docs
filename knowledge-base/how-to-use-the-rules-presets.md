@@ -13,7 +13,7 @@ We already discussed the **Rules** tab itself. This article will introduce you t
 
 ## Rules Presets
 
-While the **Rules** tab allows users to create rules based on[ specific matching conditions and apply various actions]({%slug fiddler-rules-actions%}), the community often requires assistance in making rules. A further analysis showed that some Fiddler users needed to be made aware of the full capabilities of the Fiddler rules. For that reason, the team developed [a set of predefined rules]({%slug adv_techniques_fiddler%}) that you can quickly reuse with few clicks or use as a reference for your specific testing requirements.
+While the **Rules** tab allows users to create rules based on [specific matching conditions and apply various actions]({%slug fiddler-rules-actions%}), the community often requires assistance in making rules. A further analysis showed that some Fiddler users needed to be made aware of the full capabilities of the Fiddler rules. For that reason, the team developed [a set of predefined rules]({%slug adv_techniques_fiddler%}) that you can quickly reuse with few clicks or use as a reference for your specific testing requirements.
 
 But first, let us make a quick recap of what a Fiddler rule stands for:
 
