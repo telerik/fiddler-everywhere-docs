@@ -137,6 +137,6 @@ The Fiddler Everywhere client informs the recipients about shared resources (inc
 
     * Confirm the opening of the resource.
 
-    * The shared resources load in the respective section (for example, a shared session loads in the **Snapshots** list, a rule in the **Rules Queue**, and a request in the **Requests** collection). If the shared resource is a snapshot of sessions, its content immediately loads in a new tab.
+    * The shared resources load in the respective section (for example, a shared session loads in the **Snapshots** list, a rule in the **Rules** queue, and a request in the **Requests** collection). If the shared resource is a snapshot of sessions, its content immediately loads in a new tab.
 
     ![Notification for received content](../images/settings/notifications-for-shared-content.png)
