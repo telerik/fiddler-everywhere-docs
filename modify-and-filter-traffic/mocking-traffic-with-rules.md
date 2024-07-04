@@ -16,7 +16,7 @@ A typical scenario is when a client, a colleague, or a third party is experienci
 Fiddler can mock HTTPS traffic captured locally or remotely, for example, as traffic captured by another instance of Fiddler Everywhere and shared as a cloud session or SAZ archive. The following steps showcase how to use a SAZ archive to load and mock the captured traffic (in this case, as loaded from [https://example.com)](https://example.com)).
 
 
-1. Capture the targeted HTTPS traffic or import an SAZ archive (containing the session snapshot) in the Snapshots list.
+1. Capture the targeted HTTPS traffic or import a SAZ archive (containing the sessions snapshot) in the Snapshots list.
 
  ![Loading SAZ archive with captured traffic](../images/rules/mock-rules-saz.png)
 
