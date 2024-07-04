@@ -19,7 +19,7 @@ But first, let us make a quick recap of what a Fiddler rule stands for:
 
 >tip A rule in Fiddler Everywhere contains [**a matching condition**]({%slug fiddler-rules-actions%}#conditions) (or set of conditions) that determines the target HTTP sessions and [**an action**]({%slug fiddler-rules-actions%}#actions) (or set of actions) that applies to the matched HTTP sessions.
 
-Fiddler provides multiple matching conditions related to HTTPS traffic (like protocols, schemes, timings, request and response data, and many others) to help you target a specific set of sessions. Then, the matched sessions are modified through the specified actions. As a result, you can quickly create logic that modifies the traffic without changing the client or the server application (or even having access to these applications). That said, the set of predefined rules that we created can be separated into several contextual groups based on what they are meant to achieve.
+Fiddler provides multiple matching conditions related to HTTPS traffic (like protocols, schemes, timings, request and response data, and many others) to help you target a specific set of sessions. Then, the matched sessions are modified through the specified actions. As a result, you can quickly create logic that modifies the traffic without changing the client or the server application (or even without having access to these applications). That said, the set of predefined rules that we created can be separated into several contextual groups based on what they are meant to achieve.
 
 ## Tooling 
 
