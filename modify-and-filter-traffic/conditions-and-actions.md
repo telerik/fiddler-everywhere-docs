@@ -1,14 +1,17 @@
 ---
-title: Conditions and Actions in Fiddler's Rules
-description: "Learn how to understand and use the final and non-final actions when creating and executing a rule in Fiddler Everywhere."
-type: how-to
+title: Using Conditions and Actions
+description: "Learn what matching conditions and actions are and understand the difference between final and non-final actions when working with rules in Fiddler Everywhere."
 slug: fiddler-rules-actions
 publish: true
-res_type: kb
+previous_url: /knowledge-base/final-and-non-final-actions
+position: 20
 ---
 
+# Using Conditions and Actions
 
-The article lists and explains the supported matching [conditions](#conditions) and applicable [actions](#actions) while creating a rule with the **Rules** tab in Fiddler Everywhere. It also covers the specific of [final and non-final actions](#final-and-non-final-actions) and their immediate result on the modified traffic.
+A **rule** in Fiddler Everywhere is a feature that enables you to use a condition to match targeted traffic (HTTP requests and responses) and then apply a specific action to modify its original behavior.
+
+The article lists and explains the supported matching [conditions](#conditions) and applicable [actions](#actions) while creating a rule with the **Rules** tab in Fiddler Everywhere. It also covers the specifics of [final and non-final actions](#final-and-non-final-actions) and their immediate result on the modified traffic.
 
 ## Conditions
 
@@ -289,7 +292,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>Modifies the status code returned by the server while preserving the other data untouched.</td>
-            <td>Final </td>
+            <td>Non-final</td>
         </tr>
         <tr>
             <td><b>Update Request Header</b></td>
@@ -353,7 +356,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the picked response file.</td>
-            <td>Final</td>
+            <td>Non-final</td>
         </tr>
         <tr>
             <td><b>Return Manual Response</b></td>
@@ -361,7 +364,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the manually created response.</td>
-            <td>Final</td>
+            <td>Non-final</td>
         </tr>
         <tr>
             <td><b>Return Predefined Response</b></td>
@@ -369,7 +372,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the selected predefined response.</td>
-            <td>Final</td>
+            <td>Non-final</td>
         </tr>
         <tr>
             <td><b>Return CONNECT Tunnel</b></td>
@@ -433,52 +436,49 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>Uses the <a href="https://docs.telerik.com/fiddler/knowledge-base/autoresponder#matching-rules">legacy Fiddler Classic string literals and regular expressions.</a></td>
-            <td>Final</td>
+            <td>Non-final</td>
         </tr>
     </tbody>
 </table>
 
 ## Final and Non-Final Actions
 
-Rule actions can be divided into **final** and **non-final** depending on their behavior.
+Rule actions can be divided into **final** and **non-final** depending on their behavior and whether their presence will allow our actions and rules to be executed.
 
 When you work with final and non-final actions, take into consideration the following insights:
 
-* Final actions immediately prevent any other action from executing if this action comes lower on the list for the specific rule. Final actions also prevent any rule with lower priority, which matches the request, from executing any actions.
+* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules queue).
 
-* Final actions are valid only when the rule is matched during the HTTP request.
+* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules queue).
 
-* If a session is matched with conditions that depend on its response (for example, a response body contains "HTML"), then any final action in any rule that matches the session will be ignored. The reason for this behavior is that final actions replace the response. By design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
+* Final actions are valid (as final) only when the rule matches an HTTP(S) session.
 
-* Non-final actions will allow other actions from the same rule or different rules with lower priority, which match the session, to execute.
+* If a session matches with conditions that depend on its response (for example, a response body contains "HTML"), then any final action in any rule that matches the session will be ignored. The reason for this behavior is that final actions replace the response. By design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
 
+* Non-final actions are non-blocking - they will allow actions from any other active rules to execute.
 
-The following examples demonstrate what will happen when you combine final and non-final actions in one or multiple rules.
+* A non-final action can be explicitly made final by checking the **"Make this action final"** option.
 
-### Non-Final Actions Only
+The following table demonstrate what happens when you combine final and non-final actions in one or multiple rules.
 
-When only non-final actions are executed, all matching rules have their actions performed and applied.
+| Actions Type          | Result |
+|:-----------------|:----------------|
+| Only non-final actions | All matching rules have their actions performed and applied |
+| Only final actions | When a final action triggers, the execution of the rule immediately stops. No other demoted actions or rules will be executed after that. For example,  **Do Not Show** and **Do Not Decrypt** are final actions. |
+| Mix of final and non-final Actions | When a final action triggers, the execution of the rule immediately stops. No other demoted actions or rules will be executed after that. For example, the **Do Not Show** action will block the execution of the **Update Response Body** action |
 
-### Final Actions Only
+Note that each rule is prioritized in the **Rules** queue and can be demoted and promoted, which will change the execution order. Final rules won't block other active rules that have higher priority the **Rules** queue.
 
-When one or more rules include final actions, the execution of the actions immediately stops after the most promoted rule that contains a final action takes place. No other demoted rules will be executed after that. For example,  **Do Not Show** and **Do Not Decrypt** are final actions.
-
-### Mix of Final and Non-Final Actions
-
-When one or more rules include final actions, the execution of the actions immediately stops after the most promoted rule that contains a final action takes place. No other demoted rules will be executed after that.
-
-Note that each rule has its priority in the **Rules** list and can be demoted and promoted, which will change the order of execution. Final rules won't block non-final rules with higher priority.
-
-For a illustration of this scenario, refer to the following cases:
+For an illustration of this scenario, refer to the following cases:
 
 - You have a rule with a final action (for example, the **Close Gracefully** final action).
-    ![a rule with a final action](../images/kb/final-actions/rule-only-final.png)
+ ![a rule with a final action](../images/kb/final-actions/rule-only-final.png)
 
-    In this case, the rule containing the final action has higher priority in the **Rules** list. Only the first rule will execute when the matching request is made, and other demoted rules won't be triggered.
-        ![final action first scenario](../images/kb/final-actions/final-action-first.png)
+ In this case, the rule containing the final action has higher priority in the **Rules** queue. When the matching request is made, only the first rule will execute, and other demoted rules will not be triggered.
+ ![final action first scenario](../images/kb/final-actions/final-action-first.png)
 
-- You have a rule with non-final actions (for example, the **Mark Session** and the **Update Request Header** non-final actions).
-    ![a rule with a non-final action](../images/kb/final-actions/rule-only-non-final.png)
+- You have a rule with non-final action (for example, the **Mark Session** action).
+ ![a rule with a non-final action](../images/kb/final-actions/rule-only-non-final.png)
 
-    In this case, the rule containing the non-final action has higher priority in the **Rules** list. When the matching request is made, the non-final action will execute, and then the following demoted rule will be triggered as well. If you add additional rules after the rule containing the final actions, they won't be executed.
-    ![non-final action first scenario](../images/kb/final-actions/non-final-action-first.png)
+ In this case, the rule containing the non-final action has higher priority in the **Rules** queue. When the matching request is made, the non-final action will execute, and then the following demoted rule will be triggered as well. If you add additional rules after the rule that contains the final actions, they won't be executed.
+ ![non-final action first scenario](../images/kb/final-actions/non-final-action-first.png)
