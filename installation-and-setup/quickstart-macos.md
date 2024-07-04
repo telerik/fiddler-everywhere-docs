@@ -28,7 +28,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on mac
     https://*.telerik.com/
     https://*.getfiddler.com/
     https://fiddler-backend-production.s3-accelerate.amazonaws.com
-    https://recaptcha.net
+    https://challenges.cloudflare.com
   ```
 
   >note The Telerik site (where the Fiddler authentication form resides) uses different CDNs to load various components, styles, and cookies related to its user interface. Having limited internet access can cause the site not to load correctly.

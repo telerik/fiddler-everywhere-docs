@@ -9,16 +9,15 @@ previous_url: /installation-and-update/trust-certificate-configuration
 
 # Trust Fiddler's Certificate Authority
 
-This article provides additional information about the options for installing the Fiddler Everywhere certificate authority (CA) in your operating system. The proper certificate installation is a crucial step when using Fiddler Everywhere to [capture system  HTTPS traffic]({%slug capture-traffic-get-started%}#system-capturing). Note that the certificate authority installation is not mandatory if you choose to use the [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) or [terminal capturing]({%slug capture-traffic-get-started%}#terminal-capturing) modes.
-
+This article provides additional information about the options for installing the Fiddler Everywhere certificate authority (CA) in your operating system. The proper certificate installation is a crucial step when using Fiddler Everywhere to [capture system HTTPS traffic]({%slug capture-traffic-get-started%}#system-capturing). Note that the certificate authority installation is not mandatory if you choose to use the [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) or [terminal capturing]({%slug capture-traffic-get-started%}#terminal-capturing) modes.
 
 ## Install the Fiddler's Certificate Authority (Recommended Automated Approach)
 
-The recommended approach for installing and trusting the Fiddle CA is through the in-app system capturing mode wizards. Follow the articles below for detailed instructions n how to use the built-in wizards to install the Fiddler CA.
+The recommended approach for installing and trusting the Fiddle CA is through the in-app system capturing mode wizards. Follow the articles below for detailed instructions on how to use the built-in wizards to install the Fiddler CA.
 
-* [Installing the Fiddler Everywhere CA on Windows]({% slug first_steps_windows %}#capturing-system-traffic)
-* [Installing the Fiddler Everywhere CA on macOS]({% slug first_steps_macos %}#capturing-system-traffic)
-* [Installing the Fiddler Everywhere CA on Linux]({% slug first_steps_linux %}#capturing-system-traffic)
+1. Open the **Home** pane.
+
+1. Open the **System Proxy** tutorial and follow the instructions. During the configuration steps, you will be prompted to install and trust the Fiddler CA with your operating system certificate manager.
 
 Once Fiddler CA installs successfully, you can capture and analyze HTTPS traffic. The CA install once and remains valid until it is explicitly uninstalled. The CA name as listed within the operating system certificate manager is `Fiddler Root Certificate Authority`.
 
@@ -29,7 +28,6 @@ Fiddler Everywhere provides the option to manually go through the certificate au
 >important Use the manual approach only if the automated approach fails or you want to control and track the different steps of the CA installation.
 
 As Fiddler Everywhere is a cross-platform web-debugging proxy available for Windows, macOS, and Linux, you must follow the respective approach for installing the tool.
-
 
 ### Windows
 
@@ -94,7 +92,6 @@ Fiddler Everywhere enables you to control the certificate installation and HTTPS
 
 >tip Fiddler Everywhere provides the [independent browser capturing mode]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing), which enables you to skip the system capturing configuration. The predefined browser-capturing option comes in handy when you generate captured traffic only from a browser, lack administrative rights to install certificates and modify the system proxy, or when third-party VPNs and security tools collide with the Fiddler Everywhere proxy.
 
-
 ## Exporting the Fiddler CA
 
 The automatic installation of the trust certificate can fail due to security restrictions, compatibility issues, limited read/write rights, corporate policies, etc. In that case, the Fiddler Everywhere application presents an error message that notifies the user that the certificate installation has failed. You can export the Fiddler certificate and install it to solve similar issues manually.
@@ -108,7 +105,6 @@ The automatic installation of the trust certificate can fail due to security res
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
 
 1. Back in the **Traffic** pane, enable the **System Proxy** to start capturing HTTP and HTTPS system traffic.
-
 
 ### Install Fiddler's Certificate Authority in Third-Party Certificate Stores
 
