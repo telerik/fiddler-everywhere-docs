@@ -19,25 +19,26 @@ The following table demonstrates the supported functionalities and differences b
 
 | Feature          | System Capturing | Network Capturing | Independent Browser Capturing  | Terminal Capturing | Explicit Capturing 
 |:-----------------|:----------------|:----------------|:-----------------|:-----------------|:-----------------
-| Captures browser traffic?   | Yes  | Yes  | Yes (Chromium browsers) | n/a | Yes 
-| Captures application traffic? | Yes | Yes | Browsers only | Terminals only | Yes
-| Captures remote traffic? | Yes  | No  | n/a | n/a | Yes 
-| Captures Android traffic? | Yes |  No | n/a | n/a | Yes
-| Captures iOS traffic? | Yes | No | n/a | n/a | Yes
-| Captures HTTPS from?  | The system proxy | Network adapter | Browser | Terminal and its child processes |  Client application
-| Supports modifying traffic (through Rules) ?  | Yes | Yes | Yes  | Yes | Yes
-| Supports breakpoints (through Rules) ? | Yes | Yes | Yes  | Yes | Yes
+| Capture browser traffic   | Yes  | Yes  | Yes (Chromium browsers) | n/a | Yes 
+| Capture application traffic | Yes | Yes | Browsers only | Terminals only | Yes
+| Capture remote traffic | Yes  | No  | n/a | n/a | Yes 
+| Capture Android traffic | Yes |  No | n/a | n/a | Yes
+| Capture iOS traffic | Yes | No | n/a | n/a | Yes
+| Capture HTTPS from  | The system proxy | The active network adapter | Dedicated browser | Dedicated terminal and its child processes |  Specific client application
+| Options to modify, mock and map traffic | Yes | Yes | Yes  | Yes | Yes
+| Using breakpoints | Yes | Yes | Yes  | Yes | Yes
 | Supported protocols  | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO
 | Support for HTTP/2   | Yes | Yes | Yes  | Yes | Yes
 | Support for TLS 1.3  | Yes | Yes | Yes  | Yes | Yes
 | Support for IPv4  | Yes | Yes | Yes  | Yes | Yes
 | Support for IPv6  | Yes | No | Yes  | Yes | Yes
 | Supported OS  | Windows, macOS, Linux | macOS | Windows, macOS, Linux  | Windows, macOS, Linux | Windows, macOS, Linux
-| VPN compatibility    | Partial | Partial | Yes | Yes | Depends on the app
-| Proxy Modification | Modifies the OS proxy | N/A (Installs Network Extension) | Sets proxy only within the browser instance | Sets proxy only for the terminal instance | Manual proxy configuration 
+| VPN compatibility  | Yes * | Yes * | Yes | Yes | Depends on the app
+| Proxy Modification | Yes (modifies the system proxy) | No (uses network extension) | Sets a proxy within a browser instance | Sets a proxy for a terminal instance | Manual proxy configuration 
 | Needs Configuration | Requires Fiddler CA | Requires Fiddler CA | No additional configuration needed | No additional configuration needed | Requires Fiddler CA 
-| Needs admin privileges? | Yes  | Yes  | Yes - to run a browser with params | Yes - to run a terminal with params | Depends on the app
-| Certificate Authority (CA) | Automated & Manual CA installation | Automated & Manual CA installation | Preconfigured CA  | Preconfigured CA  | Manual CA installation
+| Needs Certificate Authority (CA) | Yes - automated & manual CA installation | Yes - automated & manual CA installation | No - uses preconfigured CA  | No - uses preconfigured CA  | Yes - needs manual CA installation
+
+* The VPN support depends on the specific VPN tools and might require [additional configuration]({%slug configure-vpn-fiddler%}).
 
 ## System Capturing
 
@@ -56,7 +57,6 @@ To capture system traffic with Fiddler Everywhere:
 ![Use the "System Proxy" switch to toggle on and off the system capturing mode](../images/get-started/get-started-toggle.png)
 
 [Learn more about the system capturing mode here...]({%slug capture-system-traffic%})
-
 
 ## Network Capturing
 
@@ -86,7 +86,6 @@ Similarly to the independent browser capturing option, Fiddler lets you use a de
 ![Use the "Terminal" button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
 [Learn more on how to capture traffic from a terminal here...]({%slug capture-terminal-traffic%}#capturing-from-terminal)
-
 
 ## Explicit Capturing
 

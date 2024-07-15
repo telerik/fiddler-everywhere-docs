@@ -45,14 +45,11 @@ The **Network Capture** mode is in Beta state and, currently, has some known lim
 
 - The network capturing mode captures IPv4 traffic, while IPv6 is not yet supported.
 
-- The network capturing mode is incompatible with most VPN tools.
+- Some VPN tools might close the VPN connection if a third-party network extension is enabled. You can try to workaround that by making the VPN connection **before** starting Fiddler Everywhere and then enabling its network capturing mode.
 
-    >tip Some VPN tools will automatically close the VPN connection if a third-party network extension is enabled. You can try to workaround that by making the VPN connection before starting Fiddler Everywhere and enabling the network capturing mode.
-
-- The **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. Alternatively, you can create a Fiddler rule that executes the **Do Not Decrypt** action on the desired domains.
+    >tip To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints. However note that The **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. Alternatively, you can bypass targeted domains [by creating a Fiddler rule that executes the **Do Not Decrypt** action]({%slug configure-vpn-fiddler%}#configuration-for-network-capturing-mode).
 
 - The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
-
 
 ## Using the Network Capturing Mode
 
@@ -63,7 +60,6 @@ The network capturing mode is accessible in the Fiddler's **Live Traffic** menu 
 Once the **Network Capture** is enabled, you can capture all TCP traffic. As noted in the benefits section, the main perk of using the network capturing mode is that you don't need to change the operating system proxy or set the client's proxy. That lets you quickly capture traffic from processes that otherwise have trouble using HTTP(S) proxies.
 
 To use the **Network Capture**, you need to set the IP address explicitly, the TCP/IP ports, and the (optionally) process name. At least one rule that sets the IP address (or range of IP addresses) alongside the related TCP/IP port must be specified for the capturing to work.
-
 
 ### Start Network Capture
 
@@ -83,11 +79,9 @@ Immediately after pressing **Enable Capture**, you will see the following native
 
 1. Allow the Fiddler Everywhere extension.
 
-
 1. Enter your credentials to install the extension.
 
 1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
-
 
 ### Stop Network Capture
 
@@ -96,7 +90,6 @@ To stop the network capturing mode, execute the following steps:
 1. Click on the **Network Capture** button from the **Live Traffic** menu.
 
 1. Click on the **Disable Capture** from the **Network Capture Settings (BETA)** screen.
-
 
 ## Modify Network Capture Rules
 
@@ -122,7 +115,6 @@ The default capturing rules for port 80 (HTTP) and 443 (HTTPS) use  **IP Address
 
 In addition, the default rules are also adding a localhost IPv4 address (**IP Address** set as `127.0.0.0` and **Subnet Mask** set as `8`, plus localhost IPv6 address through **IP Address** set as `::1` and **Subnet Mask** set as `128` on port `3000`) that demonstrates how to set localhost capturing on port 3000. 
 
-
 ## Troubleshooting the macOS Network Extension
 
 Consider the following tips to troubleshoot the Fiddler's network extension on macOS:
@@ -130,7 +122,6 @@ Consider the following tips to troubleshoot the Fiddler's network extension on m
 - Ensure that the currently logged user on macOS has administrative privileges that allow installation and enablement of network extensions.
 
 If you experience trouble installing and enabling the Fiddler's network extension for macOS, don't hesitate to contact us through [the Telerik Support Center](https://www.telerik.com/account/support-center). 
-
 
 ## Removing the macOS Network Extension
 
