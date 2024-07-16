@@ -43,7 +43,9 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 ### macOS
 
-1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. Click the **Trust Fiddler CA** button.
+1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. 
+
+1. Click the **Trust Fiddler CA** button.
 
 1. In the window that appears, enter your machine's administrative credentials.
 
