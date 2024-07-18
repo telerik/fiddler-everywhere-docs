@@ -1,5 +1,46 @@
 [
     {
+        "version": "5.14.0",
+        "title": "Fiddler Everywhere v5.14.0",
+        "date": "July 18, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Highlight differences in Inspectors tab when comparing sessions"
+                    },
+                    {
+                        "title": "Updated information about the required browser when downloading the CA on iOS device"
+                    },
+                    {
+                        "title": "Add a new Certificate menu with options for trusting the Fiddler CA"
+                    },
+                    {
+                        "title": "Add a full timestamp to the default file name when saving sessions"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Stop trying to detect Windows automatic proxy configuration for each session if the first attempt returns no PAC file"
+                    },
+                    {
+                        "title": "Errors displayed in the application after using advanced replay options and a change occurs in the computer network adapters"
+                    },
+                    {
+                        "title": "Confirmation dialog when deleting rules is delayed when trying to delete a large amount of rules"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate security issues"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.13.0",
         "title": "Fiddler Everywhere v5.13.0",
         "date": "July 3, 2024",
