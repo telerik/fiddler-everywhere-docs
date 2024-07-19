@@ -28,7 +28,7 @@ To enable the capturing and decrypting of HTTPS traffic, you need to install the
 
     - **Trust Fiddler CA in the Machine Store**&mdash;Installs and trusts the Fiddler CA in the **machine store** of the operating system certificate manager. The option is available only on [Windows]({% slug first_steps_windows %}#start-system-capturing).
 
-    - **Export Fiddler CA**&mdash;A drop-down menu to select a format and export the Fiddler root CA to the operating system **Desktop** folder. Some operating systems do not have a default folder named **Desktop**. In such cases, you must create this folder (`~/Desktop` for macOS and Linux distributions) to export the certificate successfully. Fiddler Everywhere provides options to export the following formats:
+    - **Export Fiddler CA**&mdash;A drop-down menu to select a format and export the Fiddler CA to the operating system **Desktop** folder. Some operating systems do not have a default folder named **Desktop**. In such cases, you must create this folder (`~/Desktop` for macOS and Linux distributions) to export the certificate successfully. Fiddler Everywhere provides options to export the following formats:
         * **Export Fiddler CA(DER/Binary format)**&mdash;Exports the Fiddler Everywhere CA in binary format as `Fiddler_Root_Certificate_Authority.crt`.
         * **Export Fiddler CA(PEM/ASCII format)**&mdash;Exports the Fiddler Everywhere CA in ASCII format as `Fiddler_Root_Certificate_Authority.pem`.
         * **Export Fiddler CA(PKCS 12 format)**&mdash;Exports the Fiddler Everywhere CA in PKCS 12 format as `Fiddler_Root_Certificate_Authority.p12`.

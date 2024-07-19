@@ -66,7 +66,7 @@ You can now take advantage of the Fiddler Everywhere capabilities - capture, ins
 
 1. Capture HTTPS traffic through the preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
-  >tip To capture and decrypt secure HTTPS traffic, you will need to explicitly [install and trust the Fiddler certificate authority (CA)]({%slug trust-certificate%}).
+  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)]({%slug trust-certificate%}).
 
 1. [Inspect the captured data]({%slug inspecting-traffic-get-started%}).
 
