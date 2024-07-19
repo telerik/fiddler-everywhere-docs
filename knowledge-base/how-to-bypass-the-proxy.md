@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
 ## Environment
 
 |   |   |
@@ -16,9 +15,7 @@ res_type: kb
 | Product Version | 1.0.0 and above  |
 
 
-
 ## Description
-
 
 **Q:** I would like certain services, client applications, or specific endpoints to bypass the Fiddler Everywhere proxy and directly use the upstream proxy. How can I achieve that?
 
@@ -32,13 +29,11 @@ res_type: kb
 
 ## Solution
 
-
 All the described issues above have a common solution - [bypassing Fiddler](#bypassing-fiddler) so that the specific application endpoints use the default connection directly. As a result, any request to these endpoints will go straight through the upstream proxy, effectively bypassing Fiddler, and they won't use the Fiddler Everywhere certificate. The immediate effect is that Fiddler Everywhere won't capture traffic from the bypassed endpoints. Still, at the same time, the bypassed services will continue to work while using the default internet connection.
 
-Fiddler also allows decrypting only some endpoints while explicitly [skipping decryption](#skipping-decryption) for others. This is possible through the **Rules** tab and the action called **Do Not Decrypt**.
+Fiddler also allows decrypting only some endpoints while explicitly [skipping decryption](#skipping-decryption-through-rules) for others. This is possible through the **Rules** tab and the action called **Do Not Decrypt**.
 
 Lastly, you might want to filter the captured traffic while preserving all captured sessions temporarily. For that, you can use the [built-in filters]({%slug how-to-filter-traffic%}) or the **Do Not Show** rule action.
-
 
 ## Bypassing Fiddler
 
@@ -56,7 +51,6 @@ Lastly, you might want to filter the captured traffic while preserving all captu
 
 - Click **Save** to persist the change.
 
-
 ### Adding to Bypass List
 
 You can add a root domain or specific subdomain address to the bypass list on-the-fly while actively capturing.
@@ -69,7 +63,6 @@ You can add a root domain or specific subdomain address to the bypass list on-th
 
 ![Add domain or specific URL to the bypass list](../images/kb/bypass/add-to-bypass.png)
 
-
 ### Resetting the Bypass List
 
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
@@ -77,7 +70,6 @@ You can add a root domain or specific subdomain address to the bypass list on-th
 - Delete the endpoints that you no longer want to bypass the Fiddler proxy from the **Bypass Fiddler for URLS that starts with:** field.
 
 - Click **Save** to persist the change.
-
 
 ## Skipping Decryption through Rules
 
@@ -91,13 +83,13 @@ Toggling a **Do Not Decrypt** rule on and off will not modify existing connectio
 
 - Use **Add Rule** to open the **Rules Builder**.
 
-- Set your match condition through **Add Condition**. The action applies when the matching condition is for **Host**, **URL**, **Process**, **Client IP**, **HTTP Version**, or **Remote IP**.
+- Set the targeted endpoint as a match condition through **Add Condition**.
 
 - Create new action through **Add Action**. Select the **Do Not Decrypt** action.
 
     >important The **Do not decrypt** action is **final**, which means that no further actions will be executed once the action is applied. [Learn more about final and non-final actions here...]({%slug fiddler-rules-actions%})
 
-    ![Example rule taht uses the "Do Not Decrypt" action](../images/kb/bypass/donotdecrypt.png)
+    ![Example rule that uses the "Do Not Decrypt" action](../images/kb/bypass/donotdecrypt.png)
 
 - Save and enable the rule when needed.
 
