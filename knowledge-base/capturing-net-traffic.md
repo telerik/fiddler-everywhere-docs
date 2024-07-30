@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
 ## Environment
 
 |   |   |
@@ -20,7 +19,6 @@ res_type: kb
 ## Description
 
 How to capture HTTPS traffic from my .NET application? Do I need a particular flow or configuration while using Fiddler Everywhere as a proxy? Are there specifics while capturing localhost traffic during .NET application development?
-
 
 ## Capturing .NET Traffic through Terminal
 
@@ -43,7 +41,6 @@ Fiddler captures the HTTPS sessions and displays them in the Live Traffic grid.
 >tip Many Visual Studio users often rely on the built-in terminal during development. Fiddler can't work with the built-in terminal. However, you can configure your Visual Studio to attach the Fiddler's preconfigured terminal. This way, you can benefit from using the development perks (like debugging with breakpoints) while using the Fiddler proxy simultaneously. [Learn more about attaching running processes to the Visual Studio debugger here...](https://learn.microsoft.com/en-us/visualstudio/debugger/attach-to-running-processes-with-the-visual-studio-debugger?view=vs-2022).
 
 
-
 ## Capturing .NET Traffic through System Capturing
 
 A modern-day version of the .NET framework respects the system proxy settings. To capture HTTPS traffic from the .NET application, do the following:
@@ -55,12 +52,9 @@ A modern-day version of the .NET framework respects the system proxy settings. T
 
 Fiddler captures the HTTPS sessions and displays them in the Live Traffic grid.
 
-
-
 ## Manual Configuration
 
 Sometimes, you might need to manually configure your .NET applications to explicitly respect the Fiddler Everywhere proxy. The below sections provide details on how to configure your [NET Framework](#configuring-proxy-in-net-application) or [NETCore applications](#configuring-proxy-in-netcore-application) in case the automatic traffic capturing from [preconfigured terminal](#capturing-net-traffic-through-terminal) or via the [system proxy](#capturing-net-traffic-through-system-capturing) is not applicable.
-
 
 ### Configuring Proxy in .NET Application
 
@@ -98,8 +92,6 @@ Or, manually specify the proxy on an individual WebRequest object:
 objRequest = (HttpWebRequest)WebRequest.Create(url);
 objRequest.Proxy= new WebProxy("127.0.0.1", 8866);
 ```
-
-
 
 #### Localhost Traffic
 

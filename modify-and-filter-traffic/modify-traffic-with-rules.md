@@ -57,7 +57,6 @@ To create and test a rule through the **Rules Builder**:
 
     - If you test with already saved sessions&mdash;Select the rule and use the **Execute** button (green play arrow). The rule immediately applies to the preloaded saved sessions.
 
-
 The **Rules** tab can be a powerful ally in testing various complex scenarios without meddling with the server. You can share, import, and export created rules with collaborators to ease your support, development, and QA processes.
 
 ## Creating Rules for Captured Sessions
@@ -91,3 +90,4 @@ Fiddler automatically adds the newly created rule on the top of the [**Rules** q
 - [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
 - [Example for disabling caching through the Rules tab]({%slug rule-disable-caching%})
 - [Returning Custom HTTP Responses]({%slug using-custom-responses%})
+- [Fiddler Rules Archives (FARX)]({%slug fiddler-farx-format%})

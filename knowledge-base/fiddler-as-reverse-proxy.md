@@ -7,6 +7,7 @@ publish: true
 res_type: kb
 ---
 
+# Using Fiddler Everywhere as a Reverse Proxy
 
 One common scenario for developers, QA, and support engineers is to test how their server behaves when a client request is received. A common technique is the usage of reverse proxies, where the proxy tool is installed on the server, and all inbound HTTP requests explicitly go through it before landing on the server. Using a standalone reverse proxy can be hard to set up and a burden to configure for cases when you want only to test and inspect the received HTTP requests. Additionally, in the usual case, developers use localhost servers to mock and test their web applications, so setting up a full-blown reverse proxy can be over complicated. 
 
