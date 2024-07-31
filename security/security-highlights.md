@@ -6,7 +6,6 @@ publish: true
 position: 30
 ---
 
-
 ## Security Highlights
 
 While using Fiddler Everywhere, consider the following security indicators and highlights:
@@ -30,7 +29,6 @@ While using Fiddler Everywhere, consider the following security indicators and h
 - Fiddler Everywhere can be installed per machine on Windows OS (macOS and Linux installation is only per user). In that case,  each Fiddler user logs into the application with their credentials, and the generated data is accessible to the other users.
 
 - Fiddler Everywhere is [SOC 2 compliant](#soc-compliance).
-
 
 ## Application Analytics
 
