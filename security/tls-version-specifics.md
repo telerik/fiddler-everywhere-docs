@@ -6,7 +6,6 @@ publish: true
 position: 20
 ---
 
-
 ## TLS Version Specifics
 
 Fiddler Everywhere acts as an intermediate - it will serve as a server for the client (that sends the HTTPS request) and as a client to the server (that receives the HTTPS request and returns the HTTPS response). It is important to note that Fiddler will negotiate the TLS connections with the client and the server separately. When Fiddler Everywhere establishes the HTTPS connection, it will select the client's preferred TLS version. Then Fiddler will send the list of the supported TLS versions to the server. If the server supports the client's TLS version, it will select it for the connection. However, if the server negotiates a lower TLS version, Fiddler will successfully set up the connection (with the server) while using a lower TLS version.
@@ -22,7 +21,6 @@ As a result, a connection that will usually fail due to an unsupported version o
 ![Fiddler shows TLS Versions used during the different stages of the client-proxy-server connections](../images/security/tls-versions_13_11_list.png)
 
 ![Fiddler shows the TLS change in the inspectors](../images/security/tls-versions_13_11_inspectors.png)
-
 
 >tip TLS is the cryptographic protocol that provides end-to-end security in HTTPS. It evolved from SSL 3.0, and currently, [TLS 1.2](https://www.ietf.org/rfc/rfc5246.txt) and [TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446) are the most commonly used TLS versions. In contrast, versions like SSL 2.0, SSL 3.0, TLS 1.0, and TLS 1.1 are considered insecure and can be disabled on an operating system or application (such as browsers) level. Fiddler Everywhere supports [all listed versions]({%slug how-to-view-web-session-summary%}#tls-version), including TLS 1.3, introduced with version 4.2.0.
 

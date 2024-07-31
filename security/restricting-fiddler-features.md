@@ -30,7 +30,7 @@ Setting a policy through the **defaults** command
 defaults write com.progress-telerik.fiddler DisableAllowRemoteDevicesToConnect 1
 ```
 
-For the `DefaultProxyPort` policy, set the value to be integer as follows:
+For the **DefaultProxyPort** policy, set the value to be integer as follows:
 ```sh
 defaults write com.progress-telerik.fiddler DefaultProxyPort -integer 8899
 ```
