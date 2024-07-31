@@ -17,13 +17,13 @@ Users on macOS with administrative privileges set policies through the [**defaul
 
 | Policy          | Description | Value Type |  Value to apply the policy
 |:-----------------|:----------------|:----------------|:-----------------
-| DisableCloud   | Disables sharing options  | integer  | 1
-| DefaultProxyPort   | Sets default proxy port  | integer  | A number between 0 and 95535
-| DisableProxyPortChange   | Disables the change of port  | integer  | 1
-| DefaultBypassList   | Sets default bypass list  | string  | Add URLs with “;” in between
-| DisableBypassListChange   | Disables the change of the bypass list | integer  | 1
-| DisableAllowRemoteDevicesToConnect   | Disables option to connect to remote devices | integer  | 1
-| DisableAnalytics   | Disables Fiddler's analytics  | integer  | 1
+| **DisableCloud**   | Disables sharing options  | integer  | 1
+| **DefaultProxyPort**   | Sets default proxy port  | integer  | A number between 0 and 95535
+| **DisableProxyPortChange**   | Disables the change of port  | integer  | 1
+| **DefaultBypassList**   | Sets default bypass list  | string  | Add URLs with “;” in between
+| **DisableBypassListChange**   | Disables the change of the bypass list | integer  | 1
+| **DisableAllowRemoteDevicesToConnect**   | Disables option to connect to remote devices | integer  | 1
+| **DisableAnalytics**   | Disables Fiddler's analytics  | integer  | 1
 
 Setting a policy through the **defaults** command
 ```sh
@@ -51,13 +51,13 @@ Users on Windows with administrative privileges set policies through the Windows
 
 | Policy          | Description | Regedit Value Type |  Value to apply the policy
 |:-----------------|:----------------|:----------------|:-----------------
-| DisableCloud   | Disables sharing options  | DWORD-32 (hexadecimal)  | 1
-| DefaultProxyPort   | Sets default proxy port  | DWORD-32 (decimal)  | A number between 0 and 95535
-| DisableProxyPortChange   | Disables the change of port  | DWORD-32 (hexadecimal)  | 1
-| DefaultBypassList   | Sets default bypass list  | String Value  | Add URLs with “;” in between
-| DisableBypassListChange   | Disables the change of the bypass list | DWORD-32 (hexadecimal)  | 1
-| DisableAllowRemoteDevicesToConnect   | Disables option to connect to remote devices | DWORD-32 (hexadecimal)  | 1
-| DisableAnalytics   | Disables Fiddler's analytics  | DWORD-32 (hexadecimal)  | 1
+| **DisableCloud**   | Disables sharing options  | DWORD-32 (hexadecimal)  | 1
+| **DefaultProxyPort**   | Sets default proxy port  | DWORD-32 (decimal)  | A number between 0 and 95535
+| **DisableProxyPortChange**   | Disables the change of port  | DWORD-32 (hexadecimal)  | 1
+| **DefaultBypassList**   | Sets default bypass list  | String Value  | Add URLs with “;” in between
+| **DisableBypassListChange**   | Disables the change of the bypass list | DWORD-32 (hexadecimal)  | 1
+| **DisableAllowRemoteDevicesToConnect**   | Disables option to connect to remote devices | DWORD-32 (hexadecimal)  | 1
+| **DisableAnalytics**   | Disables Fiddler's analytics  | DWORD-32 (hexadecimal)  | 1
 
 Set the above policies as follows:
 
@@ -69,8 +69,8 @@ Set the above policies as follows:
 
  ![regedit Fiddler keys](../images/security/restrict-fid-win.png)
 
-1. Set the targeted policy by clicking on **Fiddler Everywhere > New> DWORD 32-bit**, and for the name type policy you want to set. Note that `DefaultBypassList` uses String Value and not DWORD-32.
+1. Set the targeted policy by clicking on **Fiddler Everywhere > New> DWORD 32-bit**, and for the name type policy you want to set. Note that **DefaultBypassList** uses String Value and not DWORD-32.
 
-1. Double-click on the policy name and set the value to **1**. Use hexadecimal values for all integer-type policies, excluding the `DefaultProxyPort,` which uses decimal values.
+1. Double-click on the policy name and set the value to **1**. Use hexadecimal values for all integer-type policies, excluding the **DefaultProxyPort**` which uses decimal values.
 
 If you need to turn off a policy, you delete the created DWORD-32 key.
