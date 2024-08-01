@@ -65,6 +65,3 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | **DisableAllowRemoteDevicesToConnect** | Disables the option for remote devices to connect and use the Fiddler proxy. | DWORD-32 (hexadecimal)  | 1
 | **DisableAnalytics** | Disables Fiddler's analytics  | DWORD-32 (hexadecimal)  | 1
 | **DisableCloud** | Disables all interactions with the Fiddler Everywhere's cloud. This includes sharing, storing data in the cloud, and receiving data that was shared with the current user through our cloud.  | DWORD-32 (hexadecimal)  | 1
-
-An example of applied app configuration in the Windows registry.
-![regedit Fiddler keys](../images/security/restrict-fid-win.png)
