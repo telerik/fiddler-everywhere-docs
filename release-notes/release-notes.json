@@ -1,5 +1,40 @@
 [
     {
+        "version": "5.15.0",
+        "title": "Fiddler Everywhere v5.15.0",
+        "date": "Aug 1, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Allow admins to to configure app settings through policy management systems on Windows and macOS"
+                    },
+                    {
+                        "title": "Add .pkg file as a new package distribution option for macOS"
+                    },
+                    {
+                        "title": "Open .farx (exported rules) file automatically with Fiddler Everywhere"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Login error screen can be accidentally closed leaving the application window blank"
+                    },
+                    {
+                        "title": "When comparing sessions, differences in HTTP/2 pseudo-headers are not highlighted in the headers tab "
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate security issues"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.14.0",
         "title": "Fiddler Everywhere v5.14.0",
         "date": "July 18, 2024",
