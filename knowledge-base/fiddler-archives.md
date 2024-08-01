@@ -1,5 +1,5 @@
 ---
-title: Fiddler Archive
+title: Fiddler Archives (SAZ)
 description: "Learn more about SAZ - the native Fiddler archive format for saving captured HTTP(S) traffic."
 type: how-to
 slug: fiddler-saz-format
@@ -7,24 +7,13 @@ publish: true
 res_type: kb
 ---
 
-## Environment
+# Fiddler Archives (SAZ)
 
-|   |   |
-|---|---|
-| File Format | **SAZ** (Fiddler Archive) |
-| Supported Products | Fiddler Everywhere, Fiddler Classic, FiddlerCore,  FiddlerCap |
-| Supported OS | macOS, Windows, Linux |
-
-## Description
-
-What is a SAZ file? How do Fiddler Everywhere stores capture traffic?
-
-
-## SAZ File
-
-The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddler format used to store HTTP(S), WebSocket, and GRPC traffic. Also known as **Fiddler Archive** or **Fiddler Session Archive**, the format is officially supported by Fiddler Everywhere, Fiddler Classic, FiddlerCap, and FiddlerCore. The SAZ format uses ZIP compression and, as such, can be opened by most of the popular archiving tools. The format is backward compatible with newer versions of the SAZ format containing more information about the session snapshots.
+The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddler format used to store HTTP(S), WebSocket, and GRPC traffic. Also known as **Fiddler Archive** or **Fiddler Session Archive**, the format is officially supported by Fiddler Everywhere, Fiddler Classic, FiddlerCore and all other products from the Fiddler family. The SAZ format uses ZIP compression and, as such, can be opened by most of the popular archiving tools. The format is backward compatible with newer versions of the SAZ format containing more information about the session snapshots.
 
 >tip Some archiving tools like 7-Zip recognize SAZ files by default, while others need to change the file extension to ZIP.
+
+## SAZ Structure
 
 Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains the following:
 

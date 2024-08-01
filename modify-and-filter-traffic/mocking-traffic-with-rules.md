@@ -6,7 +6,6 @@ publish: true
 position: 15
 ---
 
-
 # Mocking Traffic
 
 A typical scenario is when a client, a colleague, or a third party is experiencing a specific issue when loading a web application. The problem is often related to the third-party tools (e.g., specific browser version, added extensions) or a set of specific steps that the user undertakes to result in the observed behavior. With Fiddler Everywhere, the user can easily capture and share the sessions with you for further investigation. Going one step further, Fiddler Everywhere allows you to mock multiple sessions just as they initially appeared.
@@ -50,7 +49,6 @@ The next step is to use one of Fiddler's capturing modes and initiate the traffi
 
 That's it! At this very moment, the shown page is not the original one, but the one as mocked from the active Fiddler rules. 
 
-
 ## Additional Resources
 
 - [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
@@ -61,3 +59,4 @@ That's it! At this very moment, the shown page is not the original one, but the 
 - [Example for creating manual HTTP Responses]({%slug using-custom-responses%})
 - [Understanding the matching conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)
+- [Fiddler Rules Archives (FARX)]({%slug fiddler-farx-format%})
