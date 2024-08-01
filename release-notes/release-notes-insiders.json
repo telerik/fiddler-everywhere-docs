@@ -25,7 +25,7 @@
                         "title": "Login error screen can be accidentally closed leaving the application window blank"
                     },
                     {
-                        "title": "When comparing sessions differences in HTTP/2 pseudo-headers are not highlighted in the headers tab "
+                        "title": "When comparing sessions, differences in HTTP/2 pseudo-headers are not highlighted in the headers tab "
                     },
                     {
                         "title": "Update third-party dependencies to mitigate security issues"
