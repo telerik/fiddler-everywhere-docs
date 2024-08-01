@@ -10,7 +10,7 @@ position: 40
 
 Users of Fiddler Everywhere often work in a secure corporate environment where specific configurations are imposed. That means that administrators need to have options to limit or hardcode particular features of the Fiddler Everywhere application. With the **Fiddler Everywhere Enterprise** tier and its **Managed App Configuration** feature, administrators can control a set of functionalities through device management solutions/software on macOS and Windows.
 
-## Аpp Configuration on macOS
+## App Configuration on macOS
 
 IT teams managing macOS systems can apply app configuration through the preferred administrative tooling (like Jamf, Intune, etc.) using the following keys:
 
