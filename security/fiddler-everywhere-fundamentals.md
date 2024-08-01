@@ -39,7 +39,6 @@ The following image demonstrates how Fiddler Everywhere acts as if the client is
 
 ![Fiddler Everywhere as HTTPS proxy](../images/security/fe-tls-proxy.png)
 
-
 ## Additional Resources
 
 - [Fiddler Everywhere Official Product Page](https://www.telerik.com/fiddler/fiddler-everywhere)
