@@ -23,7 +23,7 @@ IT teams managing macOS systems can apply app configuration through the preferre
 | **DisableAllowRemoteDevicesToConnect** | Disables the option for remote devices to connect and use the Fiddler proxy. | integer  | 1
 | **DisableAnalytics** | Disables Fiddler's analytics  | integer  | 1
 | **DisableCloud** | Disables all interactions with the Fiddler Everywhere's cloud. This includes sharing, storing data in the cloud, and receiving data that was shared with the current user through our cloud.  | integer  | 1
-| **DefaultNetworkCaptureList** | A whitespace-separated list of CIDR (Classless Inter-Domain Routing) addresses plus port number values. Applicable only on macOS with the network capturing mode | string | A string that contains CIDR:port addresses separated by "white space |
+| **DefaultNetworkCaptureList** | A whitespace-separated list of CIDR (Classless Inter-Domain Routing) addresses plus port number values. Applicable only on macOS with the network capturing mode | string | A string that contains CIDR:port addresses separated by whitespace |
 | **DefaultNetworkCaptureFilterList** | A whitespace-separated list of process IDs or process name values. When set, the network mode will capture only traffic from these processes. | integer | 1
 | **DisableNetworkCaptureSettingsChange** | Disables the option to modify all settings within the network capturing mode | integer | 1
 
