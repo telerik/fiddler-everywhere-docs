@@ -1,5 +1,20 @@
 [
-        {
+    {
+        "version": "5.15.1-insiders",
+        "title": "Fiddler Everywhere v5.15.1",
+        "date": "Aug 6, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Allow admins to configure network capture settings through management systems on macOS"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.15.0-insiders",
         "title": "Fiddler Everywhere v5.15.0",
         "date": "Aug 1, 2024",
