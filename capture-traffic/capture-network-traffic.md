@@ -106,7 +106,7 @@ Through the advanced view, you can manually control what traffic to capture thro
 
 - **Port****&mdash;Sets the TCP/IP port. By default, most client applications use port 80 for HTTP and port 443 for HTTPS. However, it is common for some applications to use different ports for staging and testing purposes (for example, custom ports for demo applications running on localhost)
 
-- **Filter additionally by PID or process name**&mdash;Use this field to add multiple PID (process identifier) or process name values by separating them with a space. If your process name contains more than one word, add quotation marks (for example, "Google Chrome Helper"). You can use the macOS "Activity Monitor" application to determine any active application's specific PID or process name.
+- **Filter additionally by PID or process name**&mdash;Use this field to specify multiple PID (process identifiers) or process name values by separating them with a space. If your process name contains more than one word, add quotation marks (for example, "Google Chrome Helper"). You can use the macOS "Activity Monitor" application to determine any active application's specific PID or process name.
 
 ### CIDR Notation for Setting Network Addresses
 
