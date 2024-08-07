@@ -23,8 +23,8 @@ IT teams managing macOS systems can apply app configuration through the preferre
 | **DisableAllowRemoteDevicesToConnect** | Disables the option for remote devices to connect and use the Fiddler proxy. | integer  | 1
 | **DisableAnalytics** | Disables Fiddler's analytics  | integer  | 1
 | **DisableCloud** | Disables all interactions with the Fiddler Everywhere's cloud. This includes sharing, storing data in the cloud, and receiving data that was shared with the current user through our cloud.  | integer  | 1
-| **DefaultNetworkCaptureList** | A whitespace-separated list of CIDR (Classless Inter-Domain Routing) addresses plus port number values. Applicable only on macOS with the network capturing mode | string | A string that contains CIDR:port addresses separated by whitespace |
-| **DefaultNetworkCaptureFilterList** | A whitespace-separated list of process IDs or process name values. When set, the network mode will capture only traffic from these processes. | integer | 1
+| **DefaultNetworkCaptureList** | A whitespace-separated list of CIDR (Classless Inter-Domain Routing) addresses plus port number values. Applicable only on macOS with the network capturing mode | string | A string that contains CIDR addresses separated by a white space |
+| **DefaultNetworkCaptureFilterList** | A whitespace-separated list of process IDs or process name values. When set, the network mode will capture only traffic from these processes. | string | A string that contains CIDR addresses separated by a white space 
 | **DisableNetworkCaptureSettingsChange** | Disables the option to modify all settings within the network capturing mode | integer | 1
 
 >important Even with the **DisableCloud** in place, users need access to [the required Fiddler Everywhere API endpoints]({%slug first_steps_windows%}#prerequisites). If your environment has limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
@@ -37,11 +37,15 @@ The following values are needed to set the mobile device management profile corr
 | App Bundle ID | com.progress-telerik.fiddler
 | Extension Bundle ID | com. progress-Telerik.fiddler.fiddler-extension
 
+### DisableAllowRemoteDevicesToConnect Example Usage
+
 Example for applying the app configuration through the **defaults** command. Note that we are using **defaults** for demonstration purposes only - in real-life scenarios, administrators will use security tooling and other configuration utilities.
 ```sh
 defaults write com.progress-telerik.fiddler DisableAllowRemoteDevicesToConnect 1
 ```
 The above restricts Fiddler Everywhere to local usage only and restricts remote devices from finding and using the Fiddler proxy.
+
+### DefaultProxyPort Example Usage
 
 Example for applying the **DefaultProxyPort** key. The value must be set as an integer:
 ```sh
@@ -49,7 +53,9 @@ defaults write com.progress-telerik.fiddler DefaultProxyPort -integer 8899
 ```
 The above explicitly sets the Fiddler Everywhere default proxy port to port 8899.
 
-Example for applying the **DefaultNetworkCaptureList** key with multiple CIRD addresses. The value must be set as a string:
+### DefaultNetworkCaptureList Example Usage
+
+Example for applying the **DefaultNetworkCaptureList** key with multiple [CIDR addresses](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing). The value must be set as a string:
 ```sh
 defaults write com.progress-telerik.fiddler DefaultNetworkCaptureList "0.0.0.0/0:443 ::/0:443 0.0.0.0/0:8084 ::/0:8084 127.0.0.1/8:4200 ::1/128:4200"
 ```
