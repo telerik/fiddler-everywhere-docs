@@ -24,7 +24,7 @@ IT teams managing macOS systems can apply app configuration through the preferre
 | **DisableAnalytics** | Disables Fiddler's analytics  | integer  | 1
 | **DisableCloud** | Disables all interactions with the Fiddler Everywhere's cloud. This includes sharing, storing data in the cloud, and receiving data that was shared with the current user through our cloud.  | integer  | 1
 | **DefaultNetworkCaptureList** | A whitespace-separated list of CIDR (Classless Inter-Domain Routing) addresses plus port number values. Applicable only on macOS with the network capturing mode | string | A string that contains CIDR addresses separated by a white space |
-| **DefaultNetworkCaptureFilterList** | A whitespace-separated list of process IDs or process name values. When set, the network mode will capture only traffic from these processes. | string | A string that contains the process IDs or names separated by a white space (e.g. "chrome:13008 \"Google Chrome\"")
+| **DefaultNetworkCaptureFilterList** | A whitespace-separated list of process IDs or process name values. When set, the network mode will capture only traffic from these processes. | string | A string that contains the process IDs or names separated by a white space (e.g. "13008 \"Google Chrome\"")
 | **DisableNetworkCaptureSettingsChange** | Disables the option to modify all settings within the network capturing mode | integer | 1
 
 >important Even with the **DisableCloud** in place, users need access to [the required Fiddler Everywhere API endpoints]({%slug first_steps_windows%}#prerequisites). If your environment has limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
