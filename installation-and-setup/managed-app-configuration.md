@@ -57,7 +57,7 @@ The above explicitly sets the Fiddler Everywhere default proxy port to port 8899
 
 Example for applying the **DefaultNetworkCaptureList** key with multiple [CIDR addresses](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing). The value must be set as a string:
 ```sh
-defaults write com.progress-telerik.fiddler DefaultNetworkCaptureList "0.0.0.0/0:443 0.0.0.0/0:8084"
+defaults write com.progress-telerik.fiddler DefaultNetworkCaptureList "0.0.0.0/0:443 ::/0:443 0.0.0.0/0:8084 ::/0:8084 127.0.0.1/8:4200 ::1/128:4200""
 ```
 
 ## App Configuration on Windows
