@@ -9,11 +9,15 @@ previous_url: /get-started/capture-traffic, /knowledge-base/capture-and-inspect-
 
 # Capturing Modes
 
-Fiddler Everywhere is a local forward TLS proxy that can capture HTTP(S), WebSocket, Server-Sent Events (SSE), and gRPC traffic. The traffic can be generated from locally installed applications or remote devices (within the same local network).
+The Fiddler Everywhere application is a local forward TLS proxy that can capture HTTP(S), WebSocket, Server-Sent Events (SSE), and gRPC traffic. The captured traffic can come from locally installed applications or remote devices (within the same local network).
 
-The application supports capturing modes such as automatic [system capturing](#system-capturing), [independent browser capturing](#independent-browser-capturing), and [terminal capturing](#terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing), which can include [traffic from remote devices](#remote-traffic-capturing).
+The application supports different capturing modes such as automatic [system capturing](#system-capturing), [network capturing](#network-capturing), [independent browser capturing](#independent-browser-capturing), and [terminal capturing](#terminal-capturing). Upon startup, Fiddler Everywhere will also capture traffic from any application [explicitly set to use Fiddler's address and port as an HTTP proxy](#explicit-capturing), which can include [traffic from remote devices](#remote-traffic-capturing).
 
 ## Capturing Modes Comparison
+
+The various capturing modes in Fiddler Everywhere cover different scenarios. Whether to use a specific mode depends on the traffic you would like to capture, your network environment, the targeted applications, etc. Use the diagram below to preview which mode will benefit you the most.
+
+![When and why to use a specific capturing mode](../images/capturing-modes/capturing-modes-diagram.png)
 
 The following table demonstrates the supported functionalities and differences between the Fiddler's capturing modes.
 
@@ -32,7 +36,7 @@ The following table demonstrates the supported functionalities and differences b
 | Support for TLS 1.3  | Yes | Yes | Yes  | Yes | Yes
 | Support for IPv4  | Yes | Yes | Yes  | Yes | Yes
 | Support for IPv6  | Yes | No | Yes  | Yes | Yes
-| Supported OS  | Windows, macOS, Linux | macOS | Windows, macOS, Linux  | Windows, macOS, Linux | Windows, macOS, Linux
+| Supported OS  | Windows, macOS, Linux | macOS | macOS  | Windows, macOS, Linux | Windows, macOS, Linux
 | VPN compatibility  | Yes * | Yes * | Yes | Yes | Depends on the app
 | Proxy Modification | Yes (modifies the system proxy) | No (uses network extension) | Sets a proxy within a browser instance | Sets a proxy for a terminal instance | Manual proxy configuration 
 | Needs Configuration | Requires Fiddler CA | Requires Fiddler CA | No additional configuration needed | No additional configuration needed | Requires Fiddler CA 
@@ -64,7 +68,7 @@ The Fiddler Everywhere version 5.2.0 introduced the network capturing mode as a 
 
 [Learn more about the network capturing mode here...]({%slug capture-network-traffic%})
 
-The network capturing mode in Fiddler has many advantages compared to the traditional HTTPS proxy capturing. The main differences are:
+The network capturing mode in Fiddler has many advantages over traditional HTTPS proxy capturing. The main differences are:
 - You don't need to change or set an HTTPS proxy on your operating system or client applications.
 - You have more control over which network segment or processes to monitor.
 - It brings additional value in overcoming known HTTPS proxy limitations in specific operating systems and clients. 
@@ -81,7 +85,7 @@ Independent browser capturing is a feature that allows you to capture traffic fr
 
 ## Terminal Capturing
 
-Similarly to the independent browser capturing option, Fiddler lets you use a dedicated terminal instance to capture traffic from your preferred terminal on-the-fly. The option is accessible through the **>_ Terminal** button, enabling you to quickly capture and inspect traffic from terminal applications like **Node.js** libraries and **curl**.
+Similarly to the independent browser capturing option, Fiddler lets you use a dedicated terminal instance to capture traffic from your preferred terminal on the fly. The option is accessible through the **>_ Terminal** button, enabling you to quickly capture and inspect traffic from terminal applications like **Node.js** libraries and **curl**.
 
 ![Use the "Terminal" button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
 
@@ -104,7 +108,7 @@ Fiddler Everywhere can capture traffic from remote devices on the same local net
 >tip If you only need to capture remote traffic, then there is no need to install the Fiddler CA on the Fiddler host machine. You only need to download and install the Fiddler CA on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
 
-Below you will find some detailed guides for different scenarios:
+Below, you will find some detailed guides for different scenarios:
 
 [Learn more on how to capture traffic from an Android device here...]({%slug capture-mobile-android-traffic%})
 
@@ -115,13 +119,13 @@ Below you will find some detailed guides for different scenarios:
 
 ## HTTP Version Specifics
 
-Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. Note the following specifics when handling HTTP/2 requests.
+Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. When handling HTTP/2 requests, note the following specifics.
 
-- The HTTP/2 support in Fiddler Everywhere is enabled by default. If needed it can be disabled [through the **Connections** menu]({%slug connections-submenu%}).
+- The HTTP/2 support in Fiddler Everywhere is enabled by default. If needed, it can be disabled [through the **Connections** menu]({%slug connections-submenu%}).
 
 - With the **Enable HTTP/2 support** option, the connection between a client and a server will default to HTTP/2 if both support it. When the option is disabled, Fiddler Everywhere forces the communication to go through HTTP/1.1.
 
-- Even with HTTP/2 support enabled, Fiddler Everywhere does not guarantee that all requests will use HTTP/2. Fiddler will only communicate using the client's version if a client only supports HTTP/1.1 or lower. If the client works with HTTP/2 but the server does not, Fiddler will allow the HTTP/2 request, but internally it will translate the request to HTTP/1.1 when communicating with the server.
+- Even with HTTP/2 support enabled, Fiddler Everywhere does not guarantee that all requests will use HTTP/2. Fiddler will only communicate using the client's version if a client only supports HTTP/1.1 or lower. If the client works with HTTP/2 but the server does not, Fiddler will allow the HTTP/2 request, but internally, it will translate the request to HTTP/1.1 when communicating with the server.
 
 - Some browsers will share a single HTTP/2 connection to a website between tabs and keep a connection open even after a tab is closed. That can lead to unexpected behavior with the HTTP/2 support in Fiddler Everywhere, so if you experience similar issues, try to restart the browser.
 
@@ -133,7 +137,7 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. N
 
 The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer seven and depend on TCP at OSI layer four. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
 
-Fiddler Everywhere supports WebSocket capturing out-of-the-box through all capturing modes. The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-grpc-sse-and-socketio-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab). Encoded WebSocket messages are automatically decoded (if possible) and presented in human readable form in the related WebSocket inspector.
+Fiddler Everywhere supports WebSocket capturing out-of-the-box through all capturing modes. The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-grpc-sse-and-socketio-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab). Encoded WebSocket messages are automatically decoded (if possible) and presented in human-readable form in the related WebSocket inspector.
 
 
 ## Server-Sent Events
@@ -145,7 +149,7 @@ Fiddler Everywhere supports SSE capturing out-of-the-box for HTTP/2 through all 
 
 ## gRPC Capturing
 
-[gRPC](https://grpc.io/) stands for Google Remote Procedure Call, and while created by Google, now an open-source framework. gRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of gRPC are its performance, added security, and the possibility to generate code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
+[gRPC](https://grpc.io/) stands for Google Remote Procedure Call, and while created by Google, now an open-source framework. gRPC utilizes multiple technologies, including HTTP/2, which makes it incompatible with HTTP/1.1 and older versions. Similar to other RPC frameworks, one of its most common usage to directly call methods on remote clients. The main benefits of gRPC are its performance, added security, and the possibility of generating code efficiently. Some well-known usage scenarios are creating microservices application architecture and connecting mobile clients to backend services.
 
 Fiddler Everywhere supports gRPC capturing out-of-the-box through all capturing modes. The Fiddler application provides dedicated [gRPC inspectors]({%slug inspector-types%}#websocket-grpc-sse-and-socketio-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
 
@@ -155,6 +159,6 @@ Fiddler Everywhere supports gRPC capturing out-of-the-box through all capturing 
 
 ## Socket.IO Capturing
 
-[Socket.IO](https://socket.io) is a technology that provides bidirectional, low-latency and event-based communication between a client application and a server.
+[Socket.IO](https://socket.io) is a technology that provides bidirectional, low-latency, and event-based communication between a client application and a server.
 
-Fiddler Everywhere supports Socket.IO capturing out-of-the-box through all capturing modes. The Fiddler application provides dedicated [Socket.IO inspectors]({%slug inspector-types%}#socketio-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
+Fiddler Everywhere supports Socket.IO, capturing out-of-the-box through all capturing modes. The Fiddler application provides dedicated [Socket.IO inspectors]({%slug inspector-types%}#socketio-inspectors) to examine and extract data from the gRPC session's [handshake]({%slug inspector-types%}#handshake-tab), and [messages]({%slug inspector-types%}#messages-tab).
