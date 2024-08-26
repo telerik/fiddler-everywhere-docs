@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Fiddler Everywhere | 5.15.1 and above |
+| Fiddler Everywhere | 5.16.0 and above |
 | 3rd-party application | Office 365 applications, Microsoft Outlook, MS Teams |
 | Operating System | Windows, macOS |
 
