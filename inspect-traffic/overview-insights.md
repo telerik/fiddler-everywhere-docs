@@ -156,7 +156,7 @@ The **Statistics** widget contains a table with structured information for multi
     * **90% percentile**
     * **95% percentile**
     * **99% percentile**
-    * **Throughput**&
+    * **Throughput**
 
 ![Response Details](../images/overview/overview-statisticsl.png)
 
