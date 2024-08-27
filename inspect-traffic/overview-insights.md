@@ -49,7 +49,6 @@ When a single session is selected, the **Timings** widget displays two sections:
 
  ![Timeline section for a single session](../images/overview/overview-timings-single-sessions-durations.png)
 
-
 ### Timings (Multiple Sessions)
 
 When multiple sessions are selected, the **Timings** widget displays two sections:
@@ -94,7 +93,6 @@ Additionally, all sessions that use **CONNECT** method have the following timest
 
 - **Server Handshake**&mdash;A timestamp that indicates when the server confirmed or refused the TLS handshake.
 
-
 ## Sizes
 
 The **Sizes** widget visually represents the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and presented with a URL, which corresponds to the URL column in the sessions grid. The widget also includes a chart that shows the sizes of the headers and the body of the Request and Response, each included in a single chart.
@@ -108,7 +106,6 @@ The **Sizes** widget delivers the following options:
 - **Response Headers**&mdash;The size of all response headers in bytes or kilobytes.
 
 - **Response Body**&mdash;The size of all response bodies in bytes or kilobytes.
-
 
 Under the list of session lines, you will find the **Request Headers** (dark blue), **Request Body** (light blue), **Response Headers** (red), and **Response Body** (orange) footers with the total size in kilobytes (**kB**) or bytes (**B**) for all listed sessions.
 
