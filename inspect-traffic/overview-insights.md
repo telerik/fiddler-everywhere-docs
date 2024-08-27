@@ -1,61 +1,80 @@
 ---
-title: Overview Insights
-description: "Using the `Overview` tab in the Fiddler Everywhere web-debugging HTTP-proxy application."
+title: Session Overview
+description: "Using the `Overview` tab in Fiddler Everywhere for receiving and inspecting statistical data related to HTTP session timings, sizes, and other technical data."
 slug: overview-tab
 publish: true
 position: 20
 previous_url: /user-guide/live-traffic/overview, /user-guide/overview
 ---
 
-# Overview Tab
+# Session Overview
 
-The **Overview** tab provides options for getting structured information and statistical data for captured sessions. The section allows you to deep-dive, compare and analyze the timings, sizes and other contextual data for one or more HTTP sessions.
+The **Overview** tab in Fiddler Everywhere provides structured information and statistical data for the captured traffic. This section allows you to deep-dive, compare and analyze the timings, sizes and other contextual data for one or more HTTP sessions.
 
 The **Overview** tab contains a set of widgets, which are dynamically changing depending on the number of selected sessions:
 
-- [Timings](#timings)&mdash;Available for selecting both a single session and a selection of multiple sessions.
-- [Sizes](#sizes)&mdash;Available for selecting both a single session and a selection of multiple sessions.
-- [Statistics](#statistics)&mdash;Available for multiple sessions only.
-- [Request Details](#request-details)&mdash;Available for a single session only.
-- [Response Details](#response-details)&mdash;Available for a single session only.
+- [Session Details](#session-details)
+- [Timings](#timings)&mdash;Contains a detailed timeview of single or multiple selected sessions.
+- [Sizes](#sizes)&mdash;Contains a representative chart and technical information related to the size of a single or miltuple selected sessions.
+- [Statistics](#statistics)&mdash;Contains a statistical data for the selected sessions.
+- [Request Details](#request-details)&mdash;Contains details about the HTTP Request for a selected session.
+- [Response Details](#response-details)&mdash;Contains details about the HTTP Response for a selected session.
+
+## Session Details
+
+The **Session Details** widget lists technical details including:
+
+* Session's URL
+* Protocol
+* Session state
+* Session ID (within the Fiddler's traffic grid)
+
+The widget is available only when a single session is selected.
+
+![Session Details widget](../images/overview/overview-session-details.png)
 
 ## Timings
 
-The **Timings** widget visually represents the time needed to execute a single session or select multiple sessions. Each HTTP session is listed on a separate line and is presented with a URL that corresponds to the URL column in the sessions grid and a chart of the request and response timings.
+The **Timings** widget visually represents the timeline and the durations needed to execute the selected sessions. The widget dynamically changes based on whether the selection incvludes a single or multiple sessions.
+
+### Timings (Single Session)
+
+When a single session is selected, the **Timings** widget displays two sections:
+
+* **Timeline** section that contains a detailed graph that shows timestamps of each session event (including event related to the Fiddler proxy) and, a chart representation of the timings related to the sessions' CONNECT, HTTP Request, and HTTP Response (plus overall of all three combined).
+
+* **Duration** section that visualizes and compares the selected sessions based on their duration.
+
+
+### Timings (Multiple Sessions)
+
+When multiple sessions are selected, the **Timings** widget displays two sections:
+
+* **Timeline** section that visualizes the order of execution and the times for each session.
+* **Duration** section that visualizes and compares the selected sessions based on their duration.
 
 The maximum length of the URL is 30 symbols. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
-The **Timings** chart splits into two main parts&mdash;the blue section of the chart shows timings related to the Request, and the orange section of the chart shows timings related to the Response. Each sub-chart area has a tooltip with descriptive information about the visualized timing.
+### Timing Events Explained
 
-**Tracked Request Timings** provides the following options:
+The timeline secti9on in the **TImeline*8 widget (when a single session is selected) contains the following events:
 
-- **Determine Gateway**&mdash;The time (in milliseconds) required to determine the gateway. All values over 1000 milliseconds are unusual and suggest an issue.
-
-- **DNS Time**&mdash;The time (in milliseconds) required for a DNS lookup. Average DNS lookup times are between 20 and 120 milliseconds.
-
-- **TCP Connect Time**&mdash;The time (in milliseconds) required to set up a TCP/IP connection. A value around 21000 milliseconds means the target is unreachable, and the Windows OS took 21 seconds to confirm the issue.
-
-- **HTTPS Handshake Time**&mdash;The time (in milliseconds) required to finish an HTTPS handshake. While capturing HTTPS traffic, you will see what the client and the server are using to communicate with Fiddler Everywhere. This can be different from what they will use if Fiddler Everywhere is not set as intermediate proxy. To see the CONNECT tunnels without the Fiddler Everywhere interference, disable the **Settings > HTTPS > Capture HTTPS traffic** option.
-
-- **Client Connected**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget. This timing appears only in the **Request Details** and **Response Details** sections.
 
 - **Client Begin Request**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 
-- **Fiddler Got Request Headers**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
+- **FGot Request Headers**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 
 - **Client Done Request**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 
-- **Server Connected**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget. This timing appears only in the **Request Details** and **Response Details** sections.
 
 - **Fiddler Begin Request**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 
 - **Server Got Request**&mdash;The time (in milliseconds) between the current and the previous event. The timestamp that indicates when the event happened is available in the [**Request Details**](#request-details) widget.
 
-The **Tracked Response Timings** provide the following options:
 
 - **Server Begin Response**&mdash;The time (in milliseconds) between the current and the previous response event. The timestamp that indicates when the event happened is available in the [**Request Details**](#response-details) widget.
 
-- **Fiddler Got Response Headers**&mdash;The time (in milliseconds) between the current and the previous response event. The timestamp that indicates when the event happened is available in the [**Request Details**](#response-details) widget.
+- **Got Response Headers**&mdash;The time (in milliseconds) between the current and the previous response event. The timestamp that indicates when the event happened is available in the [**Request Details**](#response-details) widget.
 
 - **Server Done Response**&mdash;The time (in milliseconds) between the current and the previous response event. The timestamp that indicates when the event happened is available in the [**Request Details**](#response-details) widget.
 
