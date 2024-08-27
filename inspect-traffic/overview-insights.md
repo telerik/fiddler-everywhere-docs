@@ -47,7 +47,7 @@ When a single session is selected, the **Timings** widget displays two sections:
 
 * **Durations** section -  Lists the timings related to the sessions' CONNECT, HTTP Request, and HTTP Response events (plus the overall of all three combined). This section also contains timings for Fiddler-specific events like using breakpoints and rules.
 
- ![Timeline section for a single session](../images/overview/overview-timings-single-sessions-timeline.png)
+ ![Timeline section for a single session](../images/overview/overview-timings-single-sessions-durations.png)
 
 
 ### Timings (Multiple Sessions)
