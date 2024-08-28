@@ -45,21 +45,21 @@ When a single session is selected, the **Timings** widget displays two sections:
 
  ![Timeline section for a single session](../images/overview/overview-timings-single-sessions-timeline.png)
 
-The timeline represents the lifecycle of a session that goes through the Fiddler proxy. The following diagrams illustrate how each part of the timeline corresponds in a real-life HTTPS session.
+The timeline represents the lifecycle of a session that goes through the Fiddler proxy. The following diagrams illustrate how each part of the timeline corresponds to a real-life HTTPS session.
 
-_Lifecycle of the for bi-directional session_
+The following diagram demonstrates the lifecycle of the bi-directional session
 
 ![bi-directional session diagram](../images/overview/bi-directional-session-timeline.png)
 
-_Lifecycle of the CONNECT + HTTP Request + HTTP Response_ 
+The following diagram demonstrates the lifecycle of the CONNECT + HTTP Request + HTTP Response.
 
 ![CONNECT tunnel + request + response timeline detailed diagram](../images/overview/connect-request-response-timeline.png)
 
-_Lifecycle of the CONNECT tunnel _
+The following diagram demonstrates the lifecycle of the CONNECT tunnel when the Fiddler proxy is in the middle.
 
 ![connect tunnel timeline diagram](../images/overview/connect-timeline-diagram.png)
 
-* **Durations** section -  Lists the timings related to the sessions' CONNECT, HTTP Request, and HTTP Response events (plus the overall of all three combined). This section also contains timings for Fiddler-specific events like using breakpoints and rules.
+* **Durations** section -  Lists the timings related to the sessions' CONNECT, HTTP Request, and HTTP Response events (plus the overall of all three combined). This section also contains timings for Fiddler-specific events, such as using breakpoints and rules.
 
  ![Timeline section for a single session](../images/overview/overview-timings-single-sessions-durations.png)
 
@@ -109,7 +109,7 @@ Additionally, all sessions that use **CONNECT** method have the following timest
 
 ## Sizes
 
-The **Sizes** widget visually represents the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and presented with a URL, which corresponds to the URL column in the sessions grid. The widget also includes a chart that shows the sizes of the headers and the body of the Request and Response, each included in a single chart.
+The **Sizes** widget visually represents the size of a single session or a selection of multiple sessions. Each Session is listed on a separate line and presented with a URL corresponding to the URL column in the sessions grid. The widget also includes a chart showing the header sizes and the body of the Request and Response, each included in a single chart.
 
 The **Sizes** widget delivers the following options:
 
@@ -159,15 +159,15 @@ The **Statistics** widget contains a table with structured information for multi
 
 - **Timings**&mdash;Subsection that lists various timings and statistical data for all selected sessions.
 
-    * **Min Duration**
-    * **Max Duration**
-    * **Average Duration**
-    * **Median**
-    * **Standard Deviation**
-    * **90% percentile**
-    * **95% percentile**
-    * **99% percentile**
-    * **Throughput**
+    * **Min Duration**
+    * **Max Duration**
+    * **Average Duration**
+    * **Median**
+    * **Standard Deviation**
+    * **90% percentile**
+    * **95% percentile**
+    * **99% percentile**
+    * **Throughput**
 
 ![Response Details](../images/overview/overview-statisticsl.png)
 
@@ -184,8 +184,8 @@ The **Request Details** widget contains a table with the following information:
 - **TLS Version**&mdash;The version of the used cryptographic protocols (TLS or SSL).
 
 - **Sizes** displays the following options:
-    - **Body**&mdash;The size of the request body in bytes.
-    - **Headers**&mdash;The size of the request headers in bytes.
+    - **Body**&mdash;The size of the request body in bytes.
+    - **Headers**&mdash;The size of the request headers in bytes.
 
 ## Response Details
 
@@ -196,10 +196,10 @@ The **Response Details** widget contains a table with the following information:
 - **TLS Version**&mdash;The version of the used cryptographic protocols (TLS or SSL).
 
 - **Sizes**
-    - **Body**&mdash;The size of the response body in bytes.
-    - **Headers**&mdash;The size of the response headers in bytes.
-    - **Is Body Encoded**&mdash;A boolean that indicates whether the response body is decoded or encoded.
-    - **Decompressed Body**&mdash;The size of the decompressed body.
+    - **Body**&mdash;The size of the response body in bytes.
+    - **Headers**&mdash;The size of the response headers in bytes.
+    - **Is Body Encoded**&mdash;A boolean that indicates whether the response body is decoded or encoded.
+    - **Decompressed Body**&mdash;The size of the decompressed body.
 
 - **Times**&mdash;A list by execution order with timestamps or times (in milliseconds) for each triggered response event.
 
