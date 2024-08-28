@@ -45,6 +45,20 @@ When a single session is selected, the **Timings** widget displays two sections:
 
  ![Timeline section for a single session](../images/overview/overview-timings-single-sessions-timeline.png)
 
+The timeline represents the lifecycle of a session that goes through the Fiddler proxy. The following diagrams illustrate how each part of the timeline corresponds in a real-life HTTPS session.
+
+_Lifecycle of the for bi-directional session_
+
+![bi-directional session diagram](../images/overview/bi-directional-session-timeline.png)
+
+_Lifecycle of the CONNECT + HTTP Request + HTTP Response_ 
+
+![CONNECT tunnel + request + response timeline detailed diagram](../images/overview/connect-request-response-timeline.png)
+
+_Lifecycle of the CONNECT tunnel _
+
+![connect tunnel timeline diagram](../images/overview/connect-timeline-diagram.png)
+
 * **Durations** section -  Lists the timings related to the sessions' CONNECT, HTTP Request, and HTTP Response events (plus the overall of all three combined). This section also contains timings for Fiddler-specific events like using breakpoints and rules.
 
  ![Timeline section for a single session](../images/overview/overview-timings-single-sessions-durations.png)
