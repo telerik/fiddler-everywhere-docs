@@ -77,13 +77,13 @@ The URL can be up to 30 symbols long. To visualize a tooltip with the entire ses
 
 ### Timing Events Explained
 
-The timeline section in the **TImeline** widget can contain the following events:
+The timeline section in the **Timeline** widget can contain the following events:
 
-- **Client Begin Request**&mdash;A timestamp that indicates when the client app made the request.
+- **Client Begin Request**&mdash;A timestamp that indicates when the client app made the request. This is a Fiddler-specific timestamp.
 
 - **Got Request Headers**&mdash;A timestamp that indicates when Fiddler received the request headers as sent from the client app.
 
-- **Client Done Request**&mdash;A timestamp that indicates when the client finished the request.
+- **Client Done Request**&mdash;A timestamp that indicates when the client finished the request. This is a Fiddler-specific timestamp.
 
 - **Fiddler Begin Request**&mdash;A timestamp that indicates when Fiddler made the request.
 
@@ -95,17 +95,52 @@ The timeline section in the **TImeline** widget can contain the following events
 
 - **Server Done Response**&mdash;A timestamp that indicates when the server finished sending the request.
 
-- **Client Begin Response**&mdash;A timestamp that indicates when the client app received the response.
+- **Client Begin Response**&mdash;A timestamp that indicates when the client app received the response. This is a Fiddler-specific timestamp.
 
-- **Client Done Response**&mdash;A timestamp that indicates when the client finished processing the response.
+- **Client Done Response**&mdash;A timestamp that indicates when the client finished processing the response. This is a Fiddler-specific timestamp.
 
 Additionally, all sessions that use **CONNECT** method have the following timestamps:
 
-- **Client Connected**&mdash;A timestamp that indicates when the client app established a CONNECT session.
+- **Client Connected**&mdash;A timestamp that indicates when the client app established a CONNECT session. This is a Fiddler-specific timestamp.
 
 - **Server Connected**&mdash;A timestamp that indicates when the server established a CONNECT session.
 
 - **Server Handshake**&mdash;A timestamp that indicates when the server confirmed or refused the TLS handshake.
+
+### Fiddler-Specific Timings
+
+Some of the events visualized in the timeline are entirely related to Fiddler features like proxy determination, certificate retrieval, or executing custom rules for traffic modification. The following list represents all timings connected to a Fiddler-related application logic.
+
+- **Connect Rules**&mdash;The time needed for the Fiddler application to execute a rule related to a CONNECT session.
+
+- **Establish Connection**&mdash;The time needed to create the connection with the server (during a CONNECT session).
+
+- **Retrieve Certificate**&mdash;The time Fiddler takes to obtain the certificate (during a CONNECT session).
+
+- **Client Handshake**&mdash;The time Fiddler takes to complete the handshake with the client/server (during a CONNECT session).
+
+- **Stalled**&mdash;The time between the actual client request and its execution in Fiddler.
+
+- **Receive**&mdash;Tthe time Fiddler takes to receive the request.
+
+- **Request Rules**&mdash;The time Fiddler takes to execute a rule that modifies HTTP request.
+
+- **Breakpoint**&mdash;The time Fiddler takes during an explicitly created breakpoint that pauses an HTTP request.
+
+- **Response Header Rules**&mdash;The time Fiddler takes to execute a rule that modifies HTTP response headers.
+
+- **Response Rules**&mdash;The time Fiddler takes to execute a rule that modifies HTTP response.
+
+- **Breakpoint**&mdash;The time Fiddler takes during an explicitly created breakpoint that pauses an HTTP response.
+
+- **Transfer**&mdash;The time Fiddler takes during an explicitly created breakpoint.
+
+- **TTFB**&mdash;The time to First Byte (TTFB) measures the moment a client app makes a request to a server to the time the client app receives the first byte of data from the server. 
+
+- **TTLB**&mdash;The time to Last Byte (TTLB) measures the delay between the request sent by the client app and the receiving of the last byte of the related response.
+
+- **Total time without Fiddler**&mdash;The total time that the HTTP session took without the Fiddler-specific events (like rules, breakpoints, CONNECT-related events, etc.).
+
 
 ## Sizes
 
@@ -196,9 +231,13 @@ The **Response Details** widget contains a table with the following information:
 - **TLS Version**&mdash;The version of the used cryptographic protocols (TLS or SSL).
 
 - **Sizes**
+
     - **Body**&mdash;The size of the response body in bytes.
+
     - **Headers**&mdash;The size of the response headers in bytes.
+
     - **Is Body Encoded**&mdash;A boolean that indicates whether the response body is decoded or encoded.
+
     - **Decompressed Body**&mdash;The size of the decompressed body.
 
 - **Times**&mdash;A list by execution order with timestamps or times (in milliseconds) for each triggered response event.
