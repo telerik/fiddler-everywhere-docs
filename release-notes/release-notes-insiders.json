@@ -8,7 +8,7 @@
                 "type": "New",
                 "entries": [
                     {
-                        "title": "Add notification when a timestamp is copied from the timeline"
+                        "title": "Show notification when information is copied from the timings timeline "
                     }
                 ]
             },
@@ -16,10 +16,10 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Session times in overview tab show inconsistent values for some measurements like HTTPS handshakes"
+                        "title": "Session times in overview tab show inconsistent values for some timings like HTTPS handshakes"
                     },
                     {
-                        "title": "Wrong settings tab opened from when missing Protobuf warning message is clicked on a gRPC session"
+                        "title": "Wrong settings tab opened when missing Protobuf warning message is clicked on a gRPC session"
                     },
                     {
                         "title": "Update third-party dependencies to mitigate security issues"
