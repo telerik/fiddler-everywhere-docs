@@ -53,6 +53,10 @@ The rules presets were conditionally separated into the following groups:
 All rules presets are available as FARX files (Fiddler uses the FARX format to export and import a rule or set of rules) in
 <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules" target="_blank">the public GitHub repository of Fiddler Everywhere</a>.
 
+The above rules are also available in Fiddler Everywhere through a group called **Default Templates**.
+
+![the "Default Templates" group in Fiddler Everywhere](../images/rules/default-templates.png)
+
 ## See Also
 
 - [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
