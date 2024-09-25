@@ -35,7 +35,7 @@ The widget is available only when a single session is selected.
 
 ## Timings
 
-The **Timings** widget visually represents the timeline and the durations needed to execute the selected sessions. The widget dynamically changes based on whether the selection includes a single or multiple sessions.
+The **Timings** widget visually represents the timeline and the durations needed to execute the selected sessions. The widget dynamically changes based on whether the selection includes a single or multiple sessions. Hovering over a specific timing reveals additional details related to the targeted field.
 
 ### Timings (Single Session)
 
@@ -59,7 +59,7 @@ The following diagram demonstrates the lifecycle of the CONNECT tunnel when the 
 
 ![connect tunnel timeline diagram](../images/overview/connect-timeline-diagram.png)
 
-* **Durations** section -  Lists the timings related to the sessions' CONNECT, HTTP Request, and HTTP Response events (plus the overall of all three combined). This section also contains timings for Fiddler-specific events, such as using breakpoints and rules.
+* **Durations** section - Lists the timings related to the sessions' CONNECT, HTTP Request, and HTTP Response events (plus the overall of all three combined). This section also contains timings for Fiddler-specific events, such as using breakpoints and rules.
 
  ![Timeline section for a single session](../images/overview/overview-timings-single-sessions-durations.png)
 
@@ -75,9 +75,9 @@ The URL can be up to 30 symbols long. To visualize a tooltip with the entire ses
 
 ![Timings widget](../images/overview/overview-timings.png)
 
-### Timing Events Explained
+### Events and Timestamps Explained
 
-The timeline section in the **Timeline** widget can contain the following events:
+The timeline section in the **Timeline** widget can contain several timestamped events. The following are also available within the **Timestamps** section in **Timings**.
 
 - **Client Begin Request**&mdash;A timestamp that indicates when the client app made the request. This is a Fiddler-specific timestamp.
 
@@ -107,11 +107,27 @@ Additionally, all sessions that use **CONNECT** method have the following timest
 
 - **Server Handshake**&mdash;A timestamp that indicates when the server confirmed or refused the TLS handshake.
 
-### Fiddler-Specific Timings
+### Timings
 
 Some of the events visualized in the timeline are entirely related to Fiddler features like proxy determination, certificate retrieval, or executing custom rules for traffic modification. The following list represents all timings connected to a Fiddler-related application logic.
 
+#### Overall Timings
+
+- **Connect**&mdash;The time spent establishing a connection with the server.
+
+- **Request**&mdash;The time spent receiving, processing and sending the request.
+
+- **Response**&mdash;The time spent receiving, processing and sending the response.
+
+#### Connect Timings
+
 - **Connect Rules**&mdash;The time needed for the Fiddler application to execute a rule related to a CONNECT session.
+
+- **Gateway Determination**&mdash;The time spent determining which gateway to use for handling the request.
+
+- **DNS Resolution**&mdash;The time spent resolving the server's domain name to an IP address.
+
+- **TCP Connection**&mdash;The time spent establishing a TCP/IP connection with the server.
 
 - **Establish Connection**&mdash;The time needed to create the connection with the server (during a CONNECT session).
 
@@ -119,15 +135,29 @@ Some of the events visualized in the timeline are entirely related to Fiddler fe
 
 - **Client Handshake**&mdash;The time Fiddler takes to complete the handshake with the client/server (during a CONNECT session).
 
+- **Server Handshake**&mdash;The time Fiddler takes to complete the handshake with the client/server (during a CONNECT session).
+
+#### Request Timings
+
 - **Stalled**&mdash;The time between the actual client request and its execution in Fiddler.
 
-- **Receive**&mdash;Tthe time Fiddler takes to receive the request.
+- **Receive**&mdash;The time Fiddler takes to receive the request.
 
 - **Request Rules**&mdash;The time Fiddler takes to execute a rule that modifies HTTP request.
 
 - **Breakpoint**&mdash;The time Fiddler takes during an explicitly created breakpoint that pauses an HTTP request.
 
+- **Send**&mdash;The time spent sending the request to the server.
+
+#### Response Timings
+
+- **Remote Processing**&mdash;The time from when the request was sent to when the first byte of the response was received.
+
+- **Download Headers**&mdash;The time until the response headers are fully received.
+
 - **Response Header Rules**&mdash;The time Fiddler takes to execute a rule that modifies HTTP response headers.
+
+- **Download Body**&mdash;The time until the response body is fully downloaded.
 
 - **Response Rules**&mdash;The time Fiddler takes to execute a rule that modifies HTTP response.
 
@@ -135,12 +165,17 @@ Some of the events visualized in the timeline are entirely related to Fiddler fe
 
 - **Transfer**&mdash;The time Fiddler takes during an explicitly created breakpoint.
 
+#### Additional Info Timings
+
 - **TTFB**&mdash;The time to First Byte (TTFB) measures the moment a client app makes a request to a server to the time the client app receives the first byte of data from the server. 
 
 - **TTLB**&mdash;The time to Last Byte (TTLB) measures the delay between the request sent by the client app and the receiving of the last byte of the related response.
 
 - **Total time without Fiddler**&mdash;The total time that the HTTP session took without the Fiddler-specific events (like rules, breakpoints, CONNECT-related events, etc.).
 
+#### Timestamps
+
+This section provides a list of timestamps that indicate when a specific event occurred. [Learn more about the events in Fiddler Everywhere here...](#events-and-events-timestamps)
 
 ## Sizes
 
