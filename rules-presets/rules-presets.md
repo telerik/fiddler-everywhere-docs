@@ -3,7 +3,7 @@ title: Rules Presets
 description: "Using Fiddler's rules presets to modify, mock, and filter HTTPS traffic."
 slug: adv_techniques_fiddler
 position: 1
-previous_url: /hide-request-content, /mark-static-resources
+previous_url: /rules-presets/filters/hide-request-content, /rules-presets/ui-modifications/mark-static-resources
 ---
 
 # Rules Presets
