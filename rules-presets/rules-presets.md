@@ -3,6 +3,7 @@ title: Rules Presets
 description: "Using Fiddler's rules presets to modify, mock, and filter HTTPS traffic."
 slug: adv_techniques_fiddler
 position: 1
+previous_url: /rules-presets/filters/hide-request-content, /rules-presets/ui-modifications/mark-static-resources
 ---
 
 # Rules Presets
@@ -26,7 +27,6 @@ The rules presets were conditionally separated into the following groups:
    * [Showing traffic only from specific processes]({%slug adv_show_only_specific_processes%})
    * [Hiding traffic from specific processes]({%slug adv_hide_specific_processes%})
    * [Hiding CONNECT tunnels]({%slug adv_hide_connect_tunnels%})
-   * [Hiding HTTP requests with resource content (like JS, CSS, images, fonts, etc.)]({%slug adv_hide_resource_content%})
 
 - Block lists and Allow lists&mdash;A set of rules demonstrating how to block or allow target traffic. For example:
     * [Blocking traffic to specific hosts]({%slug adv_block_traffic_hosts%})
@@ -48,7 +48,6 @@ The rules presets were conditionally separated into the following groups:
 - UI Modifications&mdash;A set of rules demonstrating how to change the Fiddler's UI to fit your needs. For example:
     * [Highlighting long-living sessions]({%slug adv_marking_long_living_sessions%})
     * [Highlighting sessions that contain JavaScript or JSON]({%slug adv_marking_scripts_jsons%})
-    * [Highlighting sessions that contain static resources (like images, text files, etc.,)]({%slug adv_marking_static_resources%})
 
 All rules presets are available as FARX files (Fiddler uses the FARX format to export and import a rule or set of rules) in
 <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules" target="_blank">the public GitHub repository of Fiddler Everywhere</a>.
