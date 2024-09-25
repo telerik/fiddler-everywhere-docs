@@ -28,19 +28,19 @@ To create a rule that sets a breakpoint for HTTP request, do the following:
 
 1. Add a condition or a set of conditions to match sessions.
 
-1. Add the action called **Set Breakpoint** and choose the sub-action **Before Sending a Request**.
+1. Add the action called **Set Breakpoint** and choose the sub-action **Before Sending a Request** or **Before Sending a Response**.
+
+    >tip Use **Before Sending a Request** to pause an HTTP Request before it is sent from Fiddler to the server. Alternatively, use **Before Sending a Response** to pause an HTTP Response before it is sent from Fiddler to the client application.
 
 1. Click **Save** and then enable the **Rules** tab and the newly created rule.
 
 1. Start capturing traffic.
 
-The following steps demonstrate how the **Before Sending a Request** action works:
+The following steps demonstrate how the **Before Sending a Response** action works:
 
 1. The client application sends an HTTP request.
 
 1. The Fiddler Everywhere proxy receives the HTTP request and **pauses** it. At this moment, all sessions that match the condition will be paused. You can select a paused session, load its HTTP request through the **Raw** tab, and modify its HTTP headers or body.
-
-    ![Paused session with request breakpoint](../images/rules/advanced-rules-request-breakpoint.png)
 
 1. Once the inspection or modification of the session is completed, resume the request execution. Only at this point is the request forwarded to the server. The session will reach the server with its modified data.
 
@@ -60,6 +60,8 @@ To create a rule that sets a breakpoint for HTTP response, do the following:
 
 1. Add the action called **Set Breakpoint** and choose the sub-action **Before Sending a Response**.
 
+    ![Creating response breakpoint](../images/rules/creating-response-breakpoint.png)
+
 1. Click **Save** and then enable the **Rules** tab and the newly created rule.
 
 1. Start capturing traffic.
@@ -73,6 +75,8 @@ The following steps demonstrate how the **Before Sending a Response** action wor
 1. The server returns a response (received by Fiddler).
 
 1. The Fiddler Everywhere proxy receives the HTTP response and **pauses** it. At this moment, all sessions that match the condition will be paused. Select a paused session, load its HTTP response through the **Raw** tab, and inspect or modify its HTTP headers or body.
+
+    ![Paused session with request response](../images/rules/advanced-rules-response-breakpoint.png)
 
 1. Once the inspection or modification of the session is completed, resume the response execution. Only at this point does the response go to the client application. The session will reach the client with its modified data.
 
