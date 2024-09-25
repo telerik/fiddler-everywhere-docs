@@ -44,6 +44,10 @@ The following table demonstrates the supported functionalities and differences b
 
 * The VPN support depends on the specific VPN tools and might require [additional configuration]({%slug configure-vpn-fiddler%}).
 
+### License Tiers Comparision
+
+The Fiddler Everywhere license model offers three commercial tiers, each with a specific set of features to best suit your needs. [The purchase comparison table](https://www.telerik.com/purchase/fiddler) provides detailed information on each tier and its supported features.
+
 ## System Capturing
 
 The client logs all HTTP, HTTPS,  WebSocket, SSE, and gRPC traffic between your computer and the Internet and helps you analyze and debug the incoming and outgoing traffic from virtually any application that supports a proxy&mdash;browsers, desktop applications, CLI tools, and others. You can use the captured traffic to debug issues, identify performance bottlenecks, or share it with your teammates.
@@ -134,7 +138,6 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. W
 
 ## WebSocket Capturing
 
-
 The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer seven and depend on TCP at OSI layer four. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
 
 Fiddler Everywhere supports WebSocket capturing out-of-the-box through all capturing modes. The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-grpc-sse-and-socketio-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab). Encoded WebSocket messages are automatically decoded (if possible) and presented in human-readable form in the related WebSocket inspector.
@@ -145,7 +148,6 @@ Fiddler Everywhere supports WebSocket capturing out-of-the-box through all captu
 The [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_eventsp) is a server technology that enables a client application to receive updates from a server through the HTTP protocol. With server-sent events, a server can send new data to the client anytime by pushing messages.
 
 Fiddler Everywhere supports SSE capturing out-of-the-box for HTTP/2 through all capturing modes. The Fiddler application allows dedicated SSE inspectors to examine and extract data from the SSE session's handshake and messages.
-
 
 ## gRPC Capturing
 

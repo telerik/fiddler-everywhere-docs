@@ -88,15 +88,15 @@ Fiddler Everywhere delivers a modern, intuitive UI with collapsible panels, [lay
 
 Fiddler Everywhere offers a trial with a full-featured version of the tool&mdash;no restrictions! Moreover, you are eligible for complete technical support during your trial period if you have any questions. To sign up for a free trial, go [here](https://www.telerik.com/download/fiddler-everywhere). The trial version activates only once per each unique machine.
 
-
 ## Commercial Licenses
 
 To use Fiddler Everywhere commercially, you need to purchase a license. The terms of use are fully described in the [Fiddler Everywhere License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere).
 
+Fiddler Everywhere offers **Lite**, **Pro**, and **Enterprise** license tiers to best suit different technical and management needs.
+
 * For more information about the available subscription plans, go to the [Fiddler Everywhere purchase page](https://www.telerik.com/purchase/fiddler).
 * For more information on the available commercial and free support channels, refer to the article on the [available Fiddler Everywhere support options]({%slug support%}).
 * For a comparison of the different features included in the plans, like [policy-driven installation](#installation-options), bulk licensing, and SSO login options, refer to the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license.
-
 
 ### Installation Options
 
