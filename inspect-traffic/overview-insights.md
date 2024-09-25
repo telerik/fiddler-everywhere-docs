@@ -75,7 +75,7 @@ The URL can be up to 30 symbols long. To visualize a tooltip with the entire ses
 
 ![Timings widget](../images/overview/overview-timings.png)
 
-### Events and Events Timestamps
+### Events and Timestamps Explained
 
 The timeline section in the **Timeline** widget can contain several timestamped events. The following are also available within the **Timestamps** section in **Timings**.
 
