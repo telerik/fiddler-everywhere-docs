@@ -15,7 +15,7 @@ When developing and testing web applications, it's common to wonder how your ser
 To trigger a one-time replay for selected sessions, follow these steps:
 
 1. Select one or more sessions.
-2. Invoke the context menu or press `R`.
+1. Invoke the context menu or press `R`.
 
 As a result, the selected sessions will be immediately replayed and displayed as new entries in the Fiddler's traffic grid.
 
@@ -26,7 +26,7 @@ As a result, the selected sessions will be immediately replayed and displayed as
 For more advanced replay options, follow these steps:
 
 1. Select one or more sessions.
-2. Invoke the context menu or press `Alt + R`/`Option + R`.
+1. Invoke the context menu or press `Alt + R`/`Option + R`.
 
 The above opens the **Advanced Replay** configuration prompt window, allowing you to control the following aspects of the replay process:
 

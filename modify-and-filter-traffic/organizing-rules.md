@@ -6,11 +6,9 @@ publish: true
 position: 25
 ---
 
-
 # Organizing Rules
 
 All created rules in the **Rules** tab are organized in the **Rules** queue - a visual tree that lists all active rules & groups in a priority queue. Each active rule or group has higher execution priority than other rules & groups placed lower in the queue. The **Rules** queue allows you to enable, turn on off, promote, denote, edit, export, import, share, and immediately execute the listed rules.
-
 
 ## Using the Rules Queue
 
@@ -32,11 +30,9 @@ To use a rule (or a group of rules) from the **Rules** queue, take into consider
 
 - Some rule actions can trigger [a final action]({%slug fiddler-rules-actions%}), which stops the execution of all other actions and rules with lower priority.
 
-
 ## Rules Priority
 
 By default, the **Rules** queue will list all created and imported rules based on their priority. Rules will be executed according to their appearance, starting from the top. When selecting specific rules and using the explicit **Execute** button, they will run in the order they appear in the queue.
-
 
 ## Explicit Rules Execution
 
@@ -64,7 +60,6 @@ The group options allow you to further interact with the group's rules:
 - The **Delete** button deletes the group and all contained rules from the **Rules** queue.
 
 ![Group options](../images/livetraffic/rb/rules-group-options.png)
-
 
 ## Additional Resources
 
