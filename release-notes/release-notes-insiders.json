@@ -1,5 +1,43 @@
 [
     {
+        "version": "5.18.0-insiders",
+        "title": "Fiddler Everywhere v5.18.0",
+        "date": "Sep 26, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Show a warning that not all timing details are available in the Overview inspector when working with older snapshots"
+                    },
+                    {
+                        "title": "Move Rules builder dialog to a separate detached window"
+                    },
+                    {
+                        "title": "Add a group with predefined Rules templates covering common usage cases"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Filter conditions with \"Does not contain\" comparison do not work when the checked field is empty"
+                    },
+                    {
+                        "title": "UI fixes for new timings view in Overview inspector"
+                    },
+                    {
+                        "title": "Unexpected error in application logs when login fails"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate security issues"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.17.0-insiders",
         "title": "Fiddler Everywhere v5.17.0",
         "date": "Sep 12, 2024",
@@ -8,7 +46,7 @@
                 "type": "New",
                 "entries": [
                     {
-                        "title": "Show notification when information is copied from the timings timeline "
+                        "title": "Show notification when information is copied from the timings timeline"
                     }
                 ]
             },
