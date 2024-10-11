@@ -68,6 +68,8 @@ To start the network capturing mode, execute the following steps:
 
 1. Click on the **Network Capture (BETA)** button from the **Live Traffic** menu.
 
+    ![Network Capture mode button](../images/get-started/get-started-network-capture.png)
+
 1. Click on the **Enable Capture** from the **Network Capture Settings (BETA)** screen.
 
 >tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)

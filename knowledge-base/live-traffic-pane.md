@@ -6,15 +6,31 @@ res_type: kb
 previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar, /user-guide/live-traffic/live-traffic, /user-guide/live-traffic
 ---
 
-# Live Traffic Grid
+## Environment
+
+|   |   |
+|---|---|
+| Product   |
+| Product Version | Fiddler Everywhere 1.0.0 and above  |
+| Feature | Traffic capturing and inspection |
+
+## Description
+
+What does "live traffic" means in the context of Fiddler Everywhere? How does Fiddler displays the captured traffic and how to further access information from a captured HTTPS session?
+
+## live Traffic Grid Essentials
 
 The **Traffic pane** provides essential features of Fiddler Everywhere including the captured traffic visualized within the **Live Traffic grid**.
 
 Live traffic summarizes each captured session that shows in the **Live Traffic** grid. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug modify-traffic-get-started%}) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
 
-## Defining a Session
+## Definition for a HTTP Session
 
 A (web) session represents a single transaction between a client and a server, sometimes known as a request/response pair. Each session appears as a single entry in **Live Traffic** grid. Each session object has a **Request** and a **Response**, representing the data the client sends to the server and the data the server returns to the client. The session object also maintains a set of flags that record metadata about the session and a timers object that stores timestamps logged during the processing of the session.
+
+## Definition for Live Traffic
+
+The term **Live Traffic** refers to the user interface section in Fiddler Everywhere that lists the actively captured HTTPS sessions.
 
 ## Live Traffic Toolbar
 
