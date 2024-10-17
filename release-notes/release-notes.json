@@ -1,5 +1,44 @@
 [
     {
+        "version": "5.19.0",
+        "title": "Fiddler Everywhere v5.19.0",
+        "date": "Oct 18, 2024",
+        "items": [
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Application does not load on specific Windows OS configurations"
+                    },
+                    {
+                        "title": "Improved search, performance and selection in HEX inspector"
+                    },
+                    {
+                        "title": "The status bar covers the last row of inspector data when viewing large gRPC messages"
+                    },
+                    {
+                        "title": "Rule Builder autocomplete text and buttons can overlap"
+                    },
+                    {
+                        "title": "Rule Builder dialog closes without saving changes if Esc key is clicked"
+                    },
+                    {
+                        "title": "\"Update Header\" and \"Update Status Code\" rule actions do not execute for already captured sessions"
+                    },
+                    {
+                        "title": "Timestamps tooltips are displayed to the left of the text"
+                    },
+                    {
+                        "title": "Opened tabs state is not always persisted when app is closed"
+                    },
+                    {
+                        "title": "Update third party dependencies to mitigate potential security vulnerabilities"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.18.0",
         "title": "Fiddler Everywhere v5.18.0",
         "date": "Sep 26, 2024",
