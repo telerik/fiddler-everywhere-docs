@@ -11,7 +11,7 @@
                         "title": "Application does not load on specific Windows OS configurations"
                     },
                     {
-                        "title": "Improved search, performance and selection in HEX inspector"
+                        "title": "HEX inspector selection and search have inconsistent behavior"
                     },
                     {
                         "title": "The status bar covers the last row of inspector data when viewing large gRPC messages"
