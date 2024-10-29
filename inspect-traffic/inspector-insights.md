@@ -143,7 +143,6 @@ The **JSON** inspector interprets the selected request or response body as a Jav
 
 ![JSON Inspector](../images/livetraffic/inspectors/inspectors-json.png)
 
-
 #### HEX Body Inspector
 
 The **HEX** inspector loads a hex representation of the HTTP request/response bodies. The hex data can help identify hidden information in the requests/responses and find special characters (for example, CRLF, Tab, etc.). The HEX inspector's primary goal is to help people analyze bodies with binary data while providing performance optimization for working with larger files.
@@ -152,20 +151,15 @@ The **HEX** inspector consists of an offset column, a hex view column, and a tex
 
 ![HEX Inspector](../images/livetraffic/inspectors/inspectors-hex.png)
 
-
 #### MessagePack Body Inspector
 
 The **MessagePack** inspector interprets the selected request or response body as a [MessagePack](https://msgpack.org/index.html), showing a tree view of the MessagePack object nodes. The **MessagePack** inspector tab is auto-selected, and the message contents are decoded for all cases where the `Content-Type` header contains the keywords `messagepack` or `msgpack`, for example, `Content-Type: application/x-msgpack`.
-
-![MessagePack Inspector](../images/livetraffic/inspectors/inspectors-messagepack.png)
-
 
 #### Socket.IO Body Inspector
 
 The **Socket.IO** inspector interprets the selected request or response body as a [Socket.IO] message data, showing a tree view of the Socket.IO object nodes.
 
 ![Socket.IO Inspector](../images/livetraffic/inspectors/inspectors-socket.png)
-
 
 #### XML Body Inspector
 
