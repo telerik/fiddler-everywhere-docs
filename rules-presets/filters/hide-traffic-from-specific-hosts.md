@@ -25,7 +25,7 @@ Create a "Hide Traffic From Specific Hosts" rule that sets the following matchin
 
 1. Create a **Do Not Show** action.
 
-    >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
+    >important The **Do Not Show** action is final. No other action or active rule placed lower in the Rules list will be executed.
 
 This sample Fiddler rule hides all sessions containing **google.com** or **example.com** in their URLs.
 

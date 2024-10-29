@@ -29,7 +29,7 @@ OR
 
 1. Select the **Rules** tab.
 
-The **Rules** tab loads, and you can create, enable, organize, and rank rules in the rules queue.
+The **Rules** tab loads, and you can create, enable, organize, and rank rules in the Rules list.
 
 ![Example of active Rules tab with rules and groups](../images/rules/rules-tab-active.png)
 
@@ -43,13 +43,13 @@ To create and test a rule through the **Rule Builder**:
 
  ![Adding new rule for modifying an HTTPS session through the Rule Builder](../images/rules/rules-builder-new-rule.png)
 
-1. Enter a descriptive rule name, which will appear in the **Rules** queue.
+1. Enter a descriptive rule name, which will appear in the **Rules** list.
 
 1. Add a condition or a set of conditions to match sessions.
 
 1. Add an action or a set of actions to modify the matched sessions.
 
-1. Click **Save** to save and add the created rule in the **Rules** queue.
+1. Click **Save** to save and add the created rule in the **Rules** list.
 
 1. Start capturing traffic or replay a specific session that triggers the rule.
 
@@ -79,7 +79,7 @@ To modify the captured session through the **Rules**:
 
 1. Click **Save** to preserve the rule.
 
-Fiddler automatically adds the newly created rule on the top of the [**Rules** queue]({%slug modify-traffic-get-started%}#rules-queue), giving it immediate execution priority (you can demote or promote each rule in the queue). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
+Fiddler automatically adds the newly created rule on the top of the [**Rules** list]({%slug modify-traffic-get-started%}#rules-list), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
 
 ## Additional Rules Resources
 

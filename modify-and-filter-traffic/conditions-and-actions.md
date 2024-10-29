@@ -447,9 +447,9 @@ Rule actions can be divided into **final** and **non-final** depending on their 
 
 When you work with final and non-final actions, take into consideration the following insights:
 
-* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules queue).
+* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules list).
 
-* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules queue).
+* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules list).
 
 * Final actions are valid (as final) only when the rule matches an HTTP(S) session.
 
@@ -467,18 +467,18 @@ The following table demonstrate what happens when you combine final and non-fina
 | Only final actions | When a final action triggers, the execution of the rule immediately stops. No other demoted actions or rules will be executed after that. For example,  **Do Not Show** and **Do Not Decrypt** are final actions. |
 | Mix of final and non-final Actions | When a final action triggers, the execution of the rule immediately stops. No other demoted actions or rules will be executed after that. For example, the **Do Not Show** action will block the execution of the **Update Response Body** action |
 
-Note that each rule is prioritized in the **Rules** queue and can be demoted and promoted, which will change the execution order. Final rules won't block other active rules that have higher priority the **Rules** queue.
+Note that each rule is prioritized in the **Rules** list and can be demoted and promoted, which will change the execution order. Final rules won't block other active rules that have higher priority the **Rules** list.
 
 For an illustration of this scenario, refer to the following cases:
 
 - You have a rule with a final action (for example, the **Close Gracefully** final action).
  ![a rule with a final action](../images/kb/final-actions/rule-only-final.png)
 
- In this case, the rule containing the final action has higher priority in the **Rules** queue. When the matching request is made, only the first rule will execute, and other demoted rules will not be triggered.
+ In this case, the rule containing the final action has higher priority in the **Rules** list. When the matching request is made, only the first rule will execute, and other demoted rules (and actions) will not be triggered.
  ![final action first scenario](../images/kb/final-actions/final-action-first.png)
 
 - You have a rule with non-final action (for example, the **Mark Session** action).
  ![a rule with a non-final action](../images/kb/final-actions/rule-only-non-final.png)
 
- In this case, the rule containing the non-final action has higher priority in the **Rules** queue. When the matching request is made, the non-final action will execute, and then the following demoted rule will be triggered as well. If you add additional rules after the rule that contains the final actions, they won't be executed.
+ In this case, the rule containing the non-final action has higher priority in the **Rules** list. When the matching request is made, the non-final action will execute, and then the following demoted rule will be triggered as well. If you add additional rules after the rule that contains final actions, they won't be executed.
  ![non-final action first scenario](../images/kb/final-actions/non-final-action-first.png)

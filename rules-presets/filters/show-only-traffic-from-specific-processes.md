@@ -27,7 +27,7 @@ Create a "Show Only Traffic from Specific Processes" rule that sets the followin
 
 1. Create a **Do Not Show** action.
 
-    >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
+    >important The **Do Not Show** action is final. No other action or active rule placed lower in the Rules list will be executed.
 
 This sample Fiddler rule hides all sessions except those coming from a Chromium-based browsers like Microsoft Edge or Google Chrome.
 

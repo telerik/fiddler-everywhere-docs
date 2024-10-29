@@ -23,7 +23,7 @@ Create a "Show Only Localhost Traffic" rule that sets the following matching con
 
 1. Create a **Do Not Show** action. 
 
-    >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
+    >important The **Do Not Show** action is final. No other action or active rule placed lower in the Rules list will be executed.
 
 This sample Fiddler rule hides all sessions except those containing **localhost** and **127.0.0.1** in their hosts.
 
