@@ -75,7 +75,7 @@ Let's show how you can create, enable, and use your own rule that filters all se
 
 1. Create a **Do Not Show** action.
 
-    >important The **Do Not Show** action is final. No other action or active rule placed lower in the rules queue will be executed.
+    >important The **Do Not Show** action is final. No other action or active rule placed lower in the Rules list will be executed.
 
 This sample Fiddler rule hides all sessions except those from a Chromium-based browser like Microsoft Edge or Google Chrome.
 

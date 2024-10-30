@@ -83,4 +83,4 @@ To save composed API requests, follow these steps:
 
 ## Saving Rules
 
-All rules in Fiddler Everywhere are automatically saved in your **Rules** queue immediately after creation through the **Rules Builder**.
+All rules in Fiddler Everywhere are automatically saved in your **Rules** list immediately after creation through the **Rules Builder**.

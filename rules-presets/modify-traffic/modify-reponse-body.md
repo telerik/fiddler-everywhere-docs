@@ -51,7 +51,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/modify-insert-html-regex" target="_blank">"Insert HTML via regex"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
->tip You can identify different parts of the same response by combining multiple actions in a single rule. Actions are executed from top to bottom with the top actions or rules having the higher priority. Any final action immediately prevents the execution of all other actions and rules that are with lower priority. If there are no final actions, you can execute all actions from top to bottom, which means that you can overwrite the same part of the modification by actions placed lower in the queue.
+>tip You can identify different parts of the same response by combining multiple actions in a single rule. Actions are executed from top to bottom with the top actions or rules having the higher priority. Any final action immediately prevents the execution of all other actions and rules that are with lower priority. If there are no final actions, you can execute all actions from top to bottom, which means that you can overwrite the same part of the modification by actions placed lower in the list.
  
 ## See Also
 
