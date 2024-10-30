@@ -21,11 +21,11 @@ The section pops up on mouse interaction and lists the following information:
 
 - **Machine IPs**&mdash;A list of the IPv6 and IPv4 addresses of the active network adapters on the machine that hosts Fiddler Everywhere.
 
-    ![The connection status section](../images/status-bar/connection-details.png)
+    ![The connection status](../images/status-bar/connection-details.png)
 
 - **Traffic Sources**&mdash;A list of all available Fiddler Everywhere traffic sources that highlights the active ones.
 
-    ![The connection status section](../images/status-bar/traffic-sources.png)
+    ![The traffic sources](../images/status-bar/traffic-sources.png)
 
 - **Fiddler Port State**&mdash;Indicates if the Fiddler Everywhere proxy port is opened/closed for remote connections. You can control the state through the **Settings > Connections > Allow remote devices to connect** option.
 
@@ -33,8 +33,12 @@ The section pops up on mouse interaction and lists the following information:
 
 - **Rules Count**&mdash;A popup that shows counters of all enabled rules.
 
-    ![The rules count section](../images/status-bar/rules-count.png)
+    ![The rules count](../images/status-bar/rules-count.png)
+
+- **Breakpoints Count**&mdash;A popup that shows counters of all rules paused by a breakpoint rule.
+
+    ![The breakpoints count](../images/status-bar/breakpoints-count.png)
 
 - **Sessions Count**&mdash;A popup that shows live counters of **total** captured, **visible** (counts only the non-filtered) and **selected** sessions.
 
-    ![The sessions count section](../images/status-bar/sessions-count.png)
+    ![The sessions count](../images/status-bar/sessions-count.png)

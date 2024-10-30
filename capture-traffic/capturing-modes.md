@@ -147,7 +147,7 @@ Fiddler Everywhere supports WebSocket capturing out-of-the-box through all captu
 
 The [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_eventsp) is a server technology that enables a client application to receive updates from a server through the HTTP protocol. With server-sent events, a server can send new data to the client anytime by pushing messages.
 
-Fiddler Everywhere supports SSE capturing out-of-the-box for HTTP/2 through all capturing modes. The Fiddler application allows dedicated SSE inspectors to examine and extract data from the SSE session's handshake and messages.
+Fiddler Everywhere supports SSE capturing out-of-the-box for HTTP/2 through all capturing modes (note that SSE over HTTP/1.1 is unsupported). The Fiddler application allows dedicated SSE inspectors to examine and extract data from the SSE session's handshake and messages.
 
 ## gRPC Capturing
 
