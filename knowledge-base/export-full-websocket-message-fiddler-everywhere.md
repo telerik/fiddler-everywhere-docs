@@ -7,6 +7,7 @@ slug: export-full-websocket-message-fiddler-everywhere
 tags: fiddler, fiddler everywhere, websocket, export, hex, ASCII
 res_type: kb
 ---
+
 ## Environment
 
 | --- | --- |
@@ -14,6 +15,7 @@ res_type: kb
 | Version | 5.x.x and above |
 
 ## Description
+
 Sometimes, when using Fiddler Everywhere, you may encounter an issue where the entire WebSocket message is not exported correctly. The hex portion of the message may be cut off, making it impossible to convert it to ASCII or other known formats.
 
 ## Solution

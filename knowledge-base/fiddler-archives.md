@@ -7,8 +7,6 @@ publish: true
 res_type: kb
 ---
 
-# Fiddler Archives (SAZ)
-
 The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddler format used to store HTTP(S), WebSocket, and GRPC traffic. Also known as **Fiddler Archive** or **Fiddler Session Archive**, the format is officially supported by Fiddler Everywhere, Fiddler Classic, FiddlerCore and all other products from the Fiddler family. The SAZ format uses ZIP compression and, as such, can be opened by most of the popular archiving tools. The format is backward compatible with newer versions of the SAZ format containing more information about the session snapshots.
 
 >tip Some archiving tools like 7-Zip recognize SAZ files by default, while others need to change the file extension to ZIP.

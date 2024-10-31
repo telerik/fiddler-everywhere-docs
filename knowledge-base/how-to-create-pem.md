@@ -20,7 +20,6 @@ res_type: kb
 
 Third-party tools (like Docker) and some operating systems (some Linux distributions) accept trust certificates in PEM format. How to generate Fiddler's CA in PEM format?
 
-
 ## Exporting Fiddler's CA as PEM
 
 You can use the built-in functionality to export the Fiddler Everywhere CA in PEM format:

@@ -14,7 +14,6 @@ res_type: kb
 | Product   | Fiddler Everywhere |
 | Product Version | 1.0.0 and above  |
 
-
 ## Description
 
 **Q:** I would like certain services, client applications, or specific endpoints to bypass the Fiddler Everywhere proxy and directly use the upstream proxy. How can I achieve that?

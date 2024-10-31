@@ -25,7 +25,6 @@ To export WebSocket traffic using Fiddler Everywhere, use one of the following o
 - If you want to export a specific message, select it, go to its **Message inspector**, and then use the **Save message content to file** or **Copy all content to clipboard** options.
 You could also use the context menu of the **Message inspector** where all the messages are listed. Select the specific message, right-click, and from the context menu select "Copy Message".
 
-
 ## See Also
 
 - [Fiddler Everywhere Messages Inspector](https://docs.telerik.com/fiddler-everywhere/inspect-traffic/inspector-insights#messages-tab)

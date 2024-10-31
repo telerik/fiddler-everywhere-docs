@@ -6,13 +6,11 @@ slug: rule-disable-caching
 res_type: kb
 ---
 
-
 ## Environment
 
 |   |   |
 |---|---|
 | Fiddler Everywhere | all versions  |
-
 
 ## Description
 

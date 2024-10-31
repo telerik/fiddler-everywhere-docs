@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-# Fiddler Rules Archives (FARX)
 
 The FARX abbreviation stands for Fiddler Rules Archive, the native format in which Fiddler applications (like Fiddler Everywhere and Fiddler Classic) can generate and export rules or groups of rules.
 
