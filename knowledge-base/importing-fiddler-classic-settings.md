@@ -27,13 +27,12 @@ The foundation of the Fiddler Everywhere is built upon the old Fiddler Classic a
 
 The comparison table showcases several reasons why you would like to migrate from Fiddler Classic to the new Fiddler Everywhere. In this article, we will provide information about the built-in import wizard available in Fiddler Everywhere, which enables you to quickly and efficiently import your settings, rules, and filters from the old Fiddler Classic.
 
-## Using Fiddler Everywhere Import Wizard
+## Importing Application Options
 
-The built-in import wizard enables you to automatically import configuration options, AutoResponder rules, and pre-defined filters from Fiddler Classic to Fiddler Everywhere.
+Fiddler Everywhere version 5.2.0 provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity meaning they behave exactly the same in both applications. Once imported the configuration options can be found in the **Settings** menu in Fiddler Everywhere.
 
-### Importing Application Options
-
-Fiddler Everywhere version 5.2.0 provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity meaning they behave exactly the same in both applications. The imported options can be found in the **Settings** menu in Fiddler Everywhere.
+The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
+![import configuration options](../images/import-from-classic/import-options.png)
 
 - Fiddler Classic certificate&mdash;Instructs Fiddler Everwhere to use the installed Fiddler Classic certificate authority file. This option is available only if you have not yet installed and trusted the Fiddler Everywhere CA.
 
@@ -49,34 +48,21 @@ Fiddler Everywhere version 5.2.0 provides a built-in wizard allowing you to impo
 
 - Allow remote computers to connect&mdash;Exports the Fiddler Classic value from **Tools > Options > Connections > Allow Remote Computers to connect** and imports as value for **Settings > Connections > Allow remote devices to connnet** option in Fiddler Everywhere.
 
-![import configuration options](../images/import-from-classic/import-options.png)
+## Importing AutoResponder Rules
 
-### Importing AutoResponder Rules
-
-In Fiddler Everywhere, the Classic's **AutoResponder** is referred to as **Rules**. 
+In Fiddler Everywhere, the Classic's **AutoResponder** (as depicted in the screenshot below) is referred to as **Rules**. You can import only the loaded AutoResponder rules from Fiddler Classic to Fiddler Everywhere. Once imported, you'll be able to modify or delete these rules as needed.
 
 ![AutoReposnder rules in Fiddler Classic](../images/import-from-classic/fc-autoresponder.png)
 
-You can import only the loaded AutoResponder rules from Fiddler Classic to Fiddler Everywhere. Once imported, you'll be able to modify or delete these rules as needed.
+## Importing Filters
 
-![import AutoResponder rules](../images/import-from-classic/import-rules.png)
-
-### Importing Filters
-
-Fiddler Classic **Filters** function at a deeper level, excluding any traffic not specifically requested by the user.
+Fiddler Classic **Filters** function (refer to the screenshot) at a deeper level, excluding any traffic not specifically requested by the user. In Fiddler Everywhere, such actions are initiated through the **Rules** tab, this is why any loaded Fiddler Classic filters will be imported as separate rules.
 
 ![filters in Fiddler Classic](../images/import-from-classic/fc-filters.png)
 
-In Fiddler Everywhere, such actions are initiated through the **Rules** tab, this is why any loaded Fiddler Classic filters will be imported as separate rules.
+## Importing Quick Filters
 
-![import filters](../images/import-from-classic/import-filters.png)
-
-### Importing Quick Filters
-
-**Quick filters** in Fiddler Classic (refer to the screenshot) function similarly to filters in Fiddler Everywhere. 
+**Quick filters** in Fiddler Classic (refer to the screenshot) function similarly to filters in Fiddler Everywhere. You can import any existing quick filters into Fiddler Everywhere and find them in the Filters dialog under "Saved Filters" at the top left corner of the Live Traffic pane.
 
 ![quick filters in Fiddler Classic](../images/import-from-classic/fc-quick-filters.png)
 
-You can import any existing quick filters into Fiddler Everywhere and find them in the Filters dialog under "Saved Filters" at the top left corner of the Live Traffic pane.
-
-![import quick filters](../images/import-from-classic/import-quick-filters.png)
