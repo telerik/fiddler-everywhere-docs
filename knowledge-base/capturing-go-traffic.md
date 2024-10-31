@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
 ## Environment
 
 |   |   |
@@ -16,7 +15,6 @@ res_type: kb
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [Go](https://go.dev/) |
 | Supported OS | macOS, Linux, Windows |
-
 
 ## Description
 

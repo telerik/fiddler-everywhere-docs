@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
 The FARX abbreviation stands for Fiddler Rules Archive, the native format in which Fiddler applications (like Fiddler Everywhere and Fiddler Classic) can generate and export rules or groups of rules.
 
 >tip The rules archives originated from Fiddler Classic, where they were used alongside the AutoResponder feature. Thus, the FARX abbreviation originally came from the Fiddler AutoResponder Archive. The Fiddler Everywhere application enhanced the AutoResponder feature through its **Rules** tab.

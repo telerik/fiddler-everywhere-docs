@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
 ## Environment
 
 |   |   |
@@ -20,9 +19,7 @@ res_type: kb
 
 My client application utilizes the gRPC framework. What exactly is gRPC? Can I capture and inspect gRPC traffic with Fiddler Everywhere?
 
-
 ## Capturing gRPC in Fiddler Everywhere
-
 
 [gRPC](https://grpc.io/) is an open-source, cross-platform Remote- Procedure Call (RPC) framework. One of its common usages is to connect services in and across servers with pluggable support for tracing, load balancing, and authentication. 
 
@@ -56,7 +53,6 @@ You can use the **Trailer** inspector to examine the specific trailers the serve
 
 ![gRPC traffic and the Trailers inspector](../images/kb/grpc/grpc-traffic-trailers.png)
 
-
 The captured gRPC session will have a green badge until the gRPC channel is open and a red badge when the gRPC channel is closed.
 
 ![Selected gRPC session with closed channel](../images/kb/grpc/grpc-traffic-selected-session.png)
@@ -66,7 +62,6 @@ Double-click on a gRPC session to automatically open [the **Messages** tab]({%sl
 ![gRPC traffic and related Fiddler's inspectors](../images/kb/grpc/grpc-traffic-inspection.png)
 
 The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. You can use the context menu to copy the whole row message quickly.
-
 
 It's important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/), which is in unreadable form. That means that the **Decode value** context menu option can't be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file, which can't be extracted over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that have access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
 
