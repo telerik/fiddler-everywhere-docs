@@ -6,7 +6,7 @@ publish: true
 position: 40
 ---
 
-It's well known that the Fiddler Everywhere application is builds upon the old Fiddler Classic. While the FIddler Classic is still available more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches or tech support). There are multiple reasons why using Fiddler Everywhere should be your preffered choice and the below feature comparison table demonstrates some of them:
+The foundation of the Fiddler Everywhere is built upon the old Fiddler Classic application. While the FIddler Classic is still available, more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches or tech support). There are multiple reasons why using Fiddler Everywhere should be your preferred choice, and the below feature comparison table demonstrates some of them:
 
 | Feature          | Fiddler Classic   | Fiddler Everywhere     | 
 |:-----------------|:------------------|:-----------------------|
@@ -15,6 +15,7 @@ It's well known that the Fiddler Everywhere application is builds upon the old F
 | Low-level network capturing | No     | Yes (macOS) |
 | Sandboxed browser capturing | No     | Yes |
 | Rules to modify traffic | AutoResponder (limited options) | Rules (new enhanced functionality) |
+| Comparing HTTP sessions | Third-party extensions    | Built-in Comparison tab |
 | Filters | Limited pre-defined options | Advanced filtering options |
 | Collaboration | Manual export | Sharing, local & cloud saves, and manual export options |
 | Supported version of HTTP  | HTTP/1.x | HTTP/1.x and HTTP/2.x |
@@ -23,18 +24,58 @@ It's well known that the Fiddler Everywhere application is builds upon the old F
 | Statistical and analytical data | Statistics tab | Overview tab with enhanced statistical data and diagram |
 | Enterprise options | No | Technical support, SSO login, offline mode, managed app configuration, and more |
 
-The comparison table showcases a number of reasons why you would like to migrate from Fiddler Classic to the new Fiddler Everywhere. In this article, we will provide information about the feature parity and the automated import option available with Fiddler Everywhere 5.20.0 and above.
+The comparison table showcases several reasons why you would like to migrate from Fiddler Classic to the new Fiddler Everywhere. In this article, we will provide information about the built-in import wizard available in Fiddler Everywhere, which enables you to quickly and efficiently import your settings, rules, and filters from the old Fiddler Classic.
 
-## Using Fiddler Evewrywhere Import Wizard
+## Using Fiddler Everywhere Import Wizard
 
-Fiddler Everywhere version 5.2.0 provides a built-in wizard that allows you to automatically import the following from Fiddler Everywhere
+The built-in import wizard enables you to automatically import configuration options, AutoResponder rules, and pre-defined filters from Fiddler Classic to Fiddler Everywhere.
 
-- 
+### Importing Application Options
 
-## Comparing Settings and Features
+Fiddler Everywhere version 5.2.0 provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity meaning they behave exactly the same in both applications. The imported options can be found in the **Settings** menu in Fiddler Everywhere.
 
-### Comparing Classic against Everywhere Settings
+- Fiddler Classic certificate&mdash;Instructs Fiddler Everwhere to use the installed Fiddler Classic certificate authority file. This option is available only if you have not yet installed and trusted the Fiddler Everywhere CA.
 
-### Comparing Classic AutoResponder against Everywhere Rules Tab
+- Decrypt HTTPS traffic&mdash;Exports the Fiddler Classic value from **Tools > Options > HTTPS > Decrypt HTTPS Traffic** and imports as value for **Settings > HTTPS > Capture HTTPS Traffic** option in Fiddler Everywhere.
 
-### Comparing Classic Filters against Everywhere Filters
+- Ignore server certificate errors&mdash;Exports the Fiddler Classic value from **Tools > Options > HTTPS > Ignore server certificate errors (unsafe)** and imports as value for **Settings > HTTPS > Ignore server certificate errors (unsafe)** option in Fiddler Everywhere.
+
+- Listening proxy port&mdash;Exports the Fiddler Classic value from **Tools > Options > Connection > Fiddler Classic listens on port** and imports as value for **Settings > Connections > Fiddler listens on port** option in Fiddler Everywhere.
+
+- Bypassed URLs&mdash;Exports the Fiddler Classic value from **Tools > Options > Connections > Bypass Fiddler Classic for URLs that starts with** and imports as value for **Settings > Connections > Bypass Fiddler for URLs that starts with** option in Fiddler Everywhere.
+
+- Gateway settings&mdash;Exports the Fiddler Classic value from **Tools > Options > Gateway** and imports as value for **Settings > Gateway** option in Fiddler Everywhere.
+
+- Allow remote computers to connect&mdash;Exports the Fiddler Classic value from **Tools > Options > Connections > Allow Remote Computers to connect** and imports as value for **Settings > Connections > Allow remote devices to connnet** option in Fiddler Everywhere.
+
+![import configuration options](../images/import-from-classic/import-options.png)
+
+### Importing AutoResponder Rules
+
+In Fiddler Everywhere, the Classic's **AutoResponder** is referred to as **Rules**. 
+
+![AutoReposnder rules in Fiddler Classic](../images/import-from-classic/fc-autoresponder.png)
+
+You can import only the loaded AutoResponder rules from Fiddler Classic to Fiddler Everywhere. Once imported, you'll be able to modify or delete these rules as needed.
+
+![import AutoResponder rules](../images/import-from-classic/import-rules.png)
+
+### Importing Filters
+
+Fiddler Classic **Filters** function at a deeper level, excluding any traffic not specifically requested by the user.
+
+![filters in Fiddler Classic](../images/import-from-classic/fc-filters.png)
+
+In Fiddler Everywhere, such actions are initiated through the **Rules** tab, this is why any loaded Fiddler Classic filters will be imported as separate rules.
+
+![import filters](../images/import-from-classic/import-filters.png)
+
+### Importing Quick Filters
+
+**Quick filters** in Fiddler Classic (refer to the screenshot) function similarly to filters in Fiddler Everywhere. 
+
+![quick filters in Fiddler Classic](../images/import-from-classic/fc-quick-filters.png)
+
+You can import any existing quick filters into Fiddler Everywhere and find them in the Filters dialog under "Saved Filters" at the top left corner of the Live Traffic pane.
+
+![import quick filters](../images/import-from-classic/import-quick-filters.png)
