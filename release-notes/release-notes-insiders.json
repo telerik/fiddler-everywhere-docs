@@ -1,5 +1,31 @@
 [
     {
+        "version": "5.20.0-insiders",
+        "title": "Fiddler Everywhere v5.20.0",
+        "date": "Nov 1, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Import settings, filters, and rules from Fiddler Classic to Fiddler Everywhere through a wizard"
+                    },
+                    {
+                        "title": "Display an \"Unsaved Changes\" dialog when closing the Rule Builder window"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Update third-party dependencies to mitigate potential security vulnerabilities"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.19.0-insiders",
         "title": "Fiddler Everywhere v5.19.0",
         "date": "Oct 17, 2024",
@@ -32,7 +58,7 @@
                         "title": "Opened tabs state is not always persisted when app is closed"
                     },
                     {
-                        "title": "Update third party dependencies to mitigate potential security vulnerabilities"
+                        "title": "Update third-party dependencies to mitigate potential security vulnerabilities"
                     }
                 ]
             }
