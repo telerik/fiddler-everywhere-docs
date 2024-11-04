@@ -7,7 +7,7 @@ publish: true
 res_type: kb
 ---
 
-The foundation of the Fiddler Everywhere is built upon the old Fiddler Classic application. While the FIddler Classic is still available, more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches, or tech support). There are multiple reasons why using Fiddler Everywhere should be your preferred choice, and the below feature comparison table demonstrates some of them:
+The foundation of Fiddler Everywhere is built upon the old Fiddler Classic application. While Fiddler Classic is still available, more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches or tech support). There are multiple reasons why using Fiddler Everywhere should be your preferred choice, and the below feature comparison table demonstrates some of them:
 
 | Feature          | Fiddler Classic   | Fiddler Everywhere     | 
 |:-----------------|:------------------|:-----------------------|
@@ -29,7 +29,7 @@ The comparison table showcases several reasons why you would like to migrate fro
 
 ## Importing Application Options
 
-Fiddler Everywhere version 5.2.0 provides a built-in wizard that allows you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity, meaning they behave exactly the same in both applications. Once imported, the configuration options can be found in the Settings menu in Fiddler Everywhere.
+Starting with version 5.20.0, Fiddler Everywhere provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity meaning they behave exactly the same in both applications. Once imported the configuration options can be found in the **Settings** menu in Fiddler Everywhere.
 
 The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
 ![import configuration options](../images/import-from-classic/import-options.png)
@@ -52,7 +52,7 @@ The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
 
 ## Importing AutoResponder Rules
 
-In Fiddler Everywhere, the Classic's **AutoResponder** (as depicted in the screenshot below) is called **Rules**. You can import only the loaded AutoResponder rules from Fiddler Classic to Fiddler Everywhere. Once imported, you can modify or delete these rules as needed.
+In Fiddler Everywhere, Fiddler Classic's **AutoResponder** feature (as depicted in the screenshot below) is referred to as **Rules**. You can import only the loaded AutoResponder rules from Fiddler Classic to Fiddler Everywhere. Once imported, you'll be able to modify or delete these rules as needed.
 
 ![AutoResponder rules in Fiddler Classic](../images/import-from-classic/fc-autoresponder.png)
 
