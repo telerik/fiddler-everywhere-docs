@@ -7,7 +7,7 @@ publish: true
 res_type: kb
 ---
 
-The foundation of the Fiddler Everywhere is built upon the old Fiddler Classic application. While the FIddler Classic is still available, more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches or tech support). There are multiple reasons why using Fiddler Everywhere should be your preferred choice, and the below feature comparison table demonstrates some of them:
+The foundation of Fiddler Everywhere is built upon the old Fiddler Classic application. While Fiddler Classic is still available, more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches or tech support). There are multiple reasons why using Fiddler Everywhere should be your preferred choice, and the below feature comparison table demonstrates some of them:
 
 | Feature          | Fiddler Classic   | Fiddler Everywhere     | 
 |:-----------------|:------------------|:-----------------------|
