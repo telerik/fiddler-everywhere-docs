@@ -15,18 +15,15 @@ res_type: kb
 | Product Version | 1.0.0 and above  |
 | Operating System | macOS, Windows, Linux  |
 
-
 ## Checking for Leaked Proxy and Fixing Lost Internet Connection
 
 By design, when the Fiddler Everywhere application is closed, it automatically restores the default operating system proxy settings. The application or the operating system can crash unexpectedly for various reasons, such as a software bug, OS interruption, hardware failure, etc. As a result, that can result in leaked proxy settings - a case where Fiddler Everywhere application is closed (after reboot) but its proxy IP and port are still present within the operating system's manual proxy configuration. 
 
 This article explains how to check if your operating system has leaked proxy settings and how to restore them to their original state.
 
-
 ## Solution
 
 Follow the OS-specific guidelines below to learn if your OS has leaked proxy settings and remove them so you can restore the lost Internet connectivity.
-
 
 ### On Windows
 
@@ -35,7 +32,6 @@ Follow the OS-specific guidelines below to learn if your OS has leaked proxy set
 1. Open the **Proxy settings** in Windows (through the **Start** button and type **Proxy Settings**).
 
 1. Go to **Manual proxy setup** and ensure that the Fiddler's IP address and port are removed. By default, when your system does not use other proxies, the **Use a proxy server** is turned off with the **Address** and **Port** fields empty.  If your system uses a pre-set upstream proxy, restore it through the original settings.
-
 
 ### On macOS
 
@@ -48,7 +44,6 @@ Follow the OS-specific guidelines below to learn if your OS has leaked proxy set
 1. Verify that the Fiddler proxy is not set for **Web Proxy (HTTP)** and **Secure Web Proxy (HTTPS)**. If the Fiddler proxy is present, remove the IP and Port, uncheck both options (or restore your default proxy settings), and click **Apply** to apply the changes.  If your system uses a pre-set upstream proxy, restore it through the original settings.
 
 1. Click **OK** to confirm the changes.
-
 
 ### On Ubuntu
 

@@ -7,8 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
-
 ## Environment
 
 |   |   |

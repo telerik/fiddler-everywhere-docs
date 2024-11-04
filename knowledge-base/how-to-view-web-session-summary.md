@@ -22,7 +22,6 @@ Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered 
 
 This section lists the available **Live Traffic** grid and the type of information that they provide. Each colum can be explictly shown/hide through the **more** option (three vertical dots next to the column name). The column names are also identical to the filters in the [**Advanced Filters**]({%slug how-to-filter-traffic%}#advanced-filters) section.
 
-
 ### ID(#)
 
 An auto-generated identification number for the currently listed sessions.
@@ -49,7 +48,6 @@ The column indicates the version of the HTTP protocol used by the session.
 - __HTTP/2__&mdash;Both the client and the server are communicating in HTTP/2. 
 - __HTTP/2 + HTTP/1.1__&mdash;The client uses HTTP/2 but the server response is HTTP/1.1.
 - __HTTP/1.1 + HTTP/2__&mdash;The client uses HTTP/1.1 but the server response is HTTP/2.
-
 
 ### TLS Version
 
@@ -89,11 +87,9 @@ The column indicates the HTTP method used by the request (__GET__, __POST__, and
 - __TRACE__&mdash;The TRACE method performs a message loop-back test along the path to the target resource.
 - __PATCH__&mdash;The PATCH method is used to apply partial modifications to a resource.
 
-
 ### Client IP
 
 Indicates the client IP that sent this Request. The IP will often show the loopback address (`0.0.0.0`), but it will be different if multiple computers on the network are pointed to a single Fiddler Everywhere instance.
-
 
 ### Remote IP
 
@@ -110,7 +106,6 @@ Process: chrome:54000
 Process: outlook: 12564
 Process: teams:18352
 ```
-
 
 ### Body Size
 

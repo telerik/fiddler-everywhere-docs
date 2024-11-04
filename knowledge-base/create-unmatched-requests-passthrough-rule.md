@@ -6,8 +6,7 @@ slug: rules-unmatched-requests-passthrough
 res_type: kb
 ---
 
-
-##Environment
+## Environment
 
 |   |   |
 |---|---|

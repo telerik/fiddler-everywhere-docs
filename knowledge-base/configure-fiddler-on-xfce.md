@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
 ## Environment
 
 |   |   |
@@ -17,7 +16,6 @@ res_type: kb
 | 3rd-party tool | [XFCE](https://aws.amazon.com/cli/) |
 | Supported OS | Linux |
 | Reported through | https://community.getfiddler.com/support/discussions/topics/12000025720 |
-
 
 ## Description
 

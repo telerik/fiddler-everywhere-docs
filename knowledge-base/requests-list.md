@@ -5,8 +5,6 @@ slug: saved-requests-tab
 tags: Fiddler Everywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
 ---
 
-# Requests Section
-
 The **Requests**section in Fiddler Everywhere enables you to organize and modify existing requests, which are listed in it. The section is part of a collapsible panel that you can hide/show to optimize your working space.
 
 For more information about building and sending HTTP and HTTPS requests, refer to the article on the [**Composer** tab]({% slug composer-tab %}).
@@ -39,7 +37,6 @@ To share a collection, click the __Share__ icon. Then, enter the email addresses
 - You can share a collection only if you are the collection owner.
 - You can share only collection folders on the root level of the **Requests** list. You cannot share individual sub-folders.  
 
-
 ### Deleting a Collection
 
 To remove a selected collection or a specific request from the **Requests** list:
@@ -62,7 +59,6 @@ Each collection provides options that are accessible through a context menu.
 | **Manage Users**| Lists the users with shared access rights. You can use this option to remove users.
 | **Save As Local Collection** |(Available for cloud collections only) Makes a local copy of your cloud saved collection. Useful for testing changes that you don't need to share with the collaborators using the cloud collection.
 | **Duplicate Collection** |(Available for cloud collections only) Makes a local copy of your collection.
-
 
 ## Requests Context Menu
 

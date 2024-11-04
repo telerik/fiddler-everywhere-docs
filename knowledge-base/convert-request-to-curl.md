@@ -16,7 +16,6 @@ res_type: kb
 | 3rd-party tool | [cURL](https://curl.se/) |
 | Supported OS | macOS, Linux, Windows |
 
-
 ## Description
 
 Many developers, support engineers, and end-users are familiar with the [cURL](https://curl.se/) as a fast tool for executing and managing requests. How can I easily convert a request that was generated in the [**Composer**]({%slug composer-tab%}) to a cURL script?

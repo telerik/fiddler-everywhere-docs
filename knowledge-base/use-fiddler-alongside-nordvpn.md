@@ -7,7 +7,6 @@ publish: true
 res_type: kb
 ---
 
-
 ## Environment
 
 |   |   |
@@ -23,7 +22,6 @@ Can I use NordVPN alongside Fiddler Everywhere, and what configuration settings 
 ## Solution
 
 You can use the NordVPN and Fiddler Everywhere applications simultaneously, benefiting from all that virtual private networks offer, including testing and investigating possible network, page, and server issues from different world regions. Follow these steps to test your configuration:
-
 
 - Start the Fiddler Everywhere application.
 

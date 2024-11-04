@@ -30,7 +30,6 @@ While the issue will resurface when any HTTPS proxy tool is used, Fiddler Everyw
 
 With the **Network Capturing** mode turned on, Fiddler Everywhere automatically captures all WebSocket traffic including one coming from the macOS Safari browser.
 
-
 ## See Also
 
 [Learn more about WebSocket capturing with Fiddler Everywhere here...]({%slug capture-traffic-get-started%}#websocket-capturing)
