@@ -52,7 +52,7 @@ The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
 
 ## Importing AutoResponder Rules
 
-In Fiddler Everywhere, the Classic's **AutoResponder** (as depicted in the screenshot below) is referred to as **Rules**. You can import only the loaded AutoResponder rules from Fiddler Classic to Fiddler Everywhere. Once imported, you'll be able to modify or delete these rules as needed.
+In Fiddler Everywhere, Fiddler Classic's **AutoResponder** feature (as depicted in the screenshot below) is referred to as **Rules**. You can import only the loaded AutoResponder rules from Fiddler Classic to Fiddler Everywhere. Once imported, you'll be able to modify or delete these rules as needed.
 
 ![AutoResponder rules in Fiddler Classic](../images/import-from-classic/fc-autoresponder.png)
 
