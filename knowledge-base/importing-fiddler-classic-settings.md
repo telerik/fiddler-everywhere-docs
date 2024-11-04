@@ -29,7 +29,7 @@ The comparison table showcases several reasons why you would like to migrate fro
 
 ## Importing Application Options
 
-Fiddler Everywhere version 5.2.0 provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity meaning they behave exactly the same in both applications. Once imported the configuration options can be found in the **Settings** menu in Fiddler Everywhere.
+Starting with version 5.20.0, Fiddler Everywhere provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity meaning they behave exactly the same in both applications. Once imported the configuration options can be found in the **Settings** menu in Fiddler Everywhere.
 
 The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
 ![import configuration options](../images/import-from-classic/import-options.png)
