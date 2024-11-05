@@ -34,21 +34,21 @@ Starting with version 5.20.0, Fiddler Everywhere provides a built-in wizard allo
 The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
 ![import configuration options](../images/import-from-classic/import-options.png)
 
-- Fiddler Classic certificate&mdash;Instructs Fiddler Everwhere to use the installed Fiddler Classic certificate authority file. This option is available only if you have not yet installed and trusted the Fiddler Everywhere CA. The certificate option will be unavailable if Fiddler Classic's certificate is not trusted or is incompatible with Fiddler Everywhere (the supported certificate generator is BouncyCastle a.k.a. BCCertMaker).
+- Fiddler Classic certificate&mdash;Instructs Fiddler Everywhere to use the installed Fiddler Classic certificate authority file. This option is available only if you have not installed and trusted the Fiddler Everywhere CA. The certificate option will be unavailable if Fiddler Classic's certificate is not trusted or is incompatible with Fiddler Everywhere (the supported certificate generator is BouncyCastle, a.k.a. BCCertMaker).
 
 - Decrypt HTTPS traffic&mdash;Exports the Fiddler Classic value from **Tools > Options > HTTPS > Decrypt HTTPS Traffic** and imports as value for **Settings > HTTPS > Capture HTTPS Traffic** option in Fiddler Everywhere.
 
 - Ignore server certificate errors&mdash;Exports the Fiddler Classic value from **Tools > Options > HTTPS > Ignore server certificate errors (unsafe)** and imports as value for **Settings > HTTPS > Ignore server certificate errors (unsafe)** option in Fiddler Everywhere.
 
-- Listening proxy port&mdash;Exports the Fiddler Classic value from **Tools > Options > Connection > Fiddler Classic listens on port** and imports as value for **Settings > Connections > Fiddler listens on port** option in Fiddler Everywhere. 
+- Listening proxy port&mdash; Exports the Fiddler Classic value from **Tools > Options > Connection > Fiddler Classic listens on port** and imports as value for **Settings > Connections > Fiddler listens on port** option in Fiddler Everywhere. 
 
-    >important The default proxy port for Fiddler Classic is 8888, while for Fiddler Eveverywhere is 8866. This difference is often overlooked by users that follows specific proxy tutorial but are trying solutions based on a different proxy port.
+    >important The default proxy port for Fiddler Classic is 8888, while for Fiddler Everywhere, it is 8866. This difference is often overlooked by users who follow a specific proxy tutorial but are trying solutions based on a different proxy port.
 
 - Bypassed URLs&mdash;Exports the Fiddler Classic value from **Tools > Options > Connections > Bypass Fiddler Classic for URLs that starts with** and imports as value for **Settings > Connections > Bypass Fiddler for URLs that starts with** option in Fiddler Everywhere.
 
-- Gateway settings&mdash;Exports the Fiddler Classic value from **Tools > Options > Gateway** and imports as value for **Settings > Gateway** option in Fiddler Everywhere. The Gateway checkbox will be unavailable if the selected option in Fiddler Classic  is **Аutomatically Detect Proxy using WPAD**.
+- Gateway settings&mdash;Exports the Fiddler Classic value from **Tools > Options > Gateway** and imports as value for **Settings > Gateway** option in Fiddler Everywhere. The Gateway checkbox will be unavailable if the selected option in Fiddler Classic is **Аutomatically Detect Proxy using WPAD**.
 
-- Allow remote computers to connect&mdash;Exports the Fiddler Classic value from **Tools > Options > Connections > Allow Remote Computers to connect** and imports as value for **Settings > Connections > Allow remote devices to connnet** option in Fiddler Everywhere.
+- Allow remote computers to connect;Exports the Fiddler Classic value from **Tools > Options > Connections > Allow Remote Computers to connect** and imports as value for **Settings > Connections > Allow remote devices to connect** option in Fiddler Everywhere.
 
 ## Importing AutoResponder Rules
 
@@ -56,21 +56,21 @@ In Fiddler Everywhere, Fiddler Classic's **AutoResponder** feature (as depicted 
 
 ![AutoResponder rules in Fiddler Classic](../images/import-from-classic/fc-autoresponder.png)
 
-Additionally you can import any exported [rules archive (FARX)]({%slug fiddler-saz-format%}) through the **Import** button in Fiddler Everywhere's **Rules** tab.
+Additionally, you can import any exported [rules archive (FARX)]({%slug fiddler-saz-format%}) through the **Import** button in Fiddler Everywhere's **Rules** tab.
 
->tip If the Fiddler Classic rul has value populated within the "Comment" field, it will be used for the rules name in Fiddler Everywhere. Any Fiddler Classic rules that have no comment will use a predefined name.
+>tip If the Fiddler Classic rule has a value populated within the "Comment" field, it will be used for the rule name in Fiddler Everywhere. Any Fiddler Classic rules that have no comment will use a predefined name.
 
 ## Importing Filters
 
-Fiddler Classic **Filters** function (refer to the screenshot) at a deeper level, excluding any traffic not specifically requested by the user. In Fiddler Everywhere, such actions are initiated through the **Rules** tab, this is why any loaded Fiddler Classic filters will be imported as separate rules.
+Fiddler Classic **Filters** function (refer to the screenshot) at a deeper level, excluding any traffic not explicitly requested by the user. In Fiddler Everywhere, actions are initiated through the **Rules** tab. This is why any loaded Fiddler Classic filters will be imported using separate rules.
 
 ![filters in Fiddler Classic](../images/import-from-classic/fc-filters.png)
 
-The import wizard will effectively import only currently loaded fitlters. As an alternative you can import and FFX files (Fiddler Filters archive) in Fiddler Everywhere through the **Import** button in the **Rules** tab.
+The import wizard will effectively import only currently loaded filters. As an alternative, you can import FFX files (Fiddler Filters archive) in Fiddler Everywhere through the **Import** button in the **Rules** tab.
 
 ## Importing Quick Filters
 
 **Quick filters** in Fiddler Classic (refer to the screenshot) function similarly to filters in Fiddler Everywhere. You can import any existing quick filters into Fiddler Everywhere and find them in the Filters dialog under "Saved Filters" at the top left corner of the Live Traffic pane.
 
-![quick filters in Fiddler Classic](../images/import-from-classic/fc-quick-filters.png)
+![Quick filters in Fiddler Classic](../images/import-from-classic/fc-quick-filters.png)
 
