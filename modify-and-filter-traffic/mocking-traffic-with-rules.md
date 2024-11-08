@@ -50,6 +50,7 @@ That's it! At this very moment, the shown page is not the original one, but the 
 
 ## Additional Resources
 
+- [Fiddler Rules Archives (FARX)]({%slug fiddler-farx-format%})
 - [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
 - [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
 - [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
@@ -58,4 +59,4 @@ That's it! At this very moment, the shown page is not the original one, but the 
 - [Example for creating manual HTTP Responses]({%slug using-custom-responses%})
 - [Understanding the matching conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)
-- [Fiddler Rules Archives (FARX)]({%slug fiddler-farx-format%})
+
