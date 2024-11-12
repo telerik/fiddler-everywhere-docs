@@ -375,7 +375,7 @@ The following table lists the **Live Traffic** columns and the information they 
         </tr>
         <tr>
             <td><b>Session State</b></td>
-            <td>Indicates the session type as either <b>opened</b> (active) or <b>closed</b>.</td>
+            <td>Indicates the session state as <b>opened</b> (active), <b>closed</b> or <b>aborted</b>.</td>
         </tr>        
         <tr>
             <td><b>Body Size</b></td>
