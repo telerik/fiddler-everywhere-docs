@@ -67,10 +67,10 @@ For more information, refer to the following list.
         </tr>
         <tr>
             <td><b>Protocol</b></td>
-            <td>HTTP or HTTPS</td>
+            <td>HTTP, WebSocket, Socket.IO, RPC, gRPC, SSE</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Differentiate the traffic based on the used protocol (HTTP vs. HTTPS).</td>
+            <td>Differentiate the traffic based on the used protocol</td>
         </tr>
         <tr>
             <td><b>Method</b></td>
@@ -93,13 +93,6 @@ For more information, refer to the following list.
             <td>n/a</td>
             <td>Matches a specific <b>HTTP Version</b>.</td>
         </tr>
-        <tr>
-            <td><b>Session Type</b></td>
-            <td>Predefined types</td>
-            <td>n/a</td>
-            <td>n/a</td>
-            <td>Matches a session through its type (e.g., WebSocket, gRPC, Aborted, Tunnels, Images, etc.).</td>
-        </tr>   
         <tr>
             <td><b>Request Header</b></td>
             <td>Header name</td>

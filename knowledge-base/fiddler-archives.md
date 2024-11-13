@@ -96,7 +96,7 @@ The Fiddler Everywhere uses SAZ behind the scenes for each session explicitly sa
 
 - Use the **Import** option from the **Snapshots** tree's context menu and locate the *.saz file from the OS file system.   
 
-    ![Import SAZ into the **Sesssions** list](../images/kb/saz/saz-import-saved-sessions.png)
+    ![Import SAZ into the **Sessions** list](../images/kb/saz/saz-import-saved-sessions.png)
 
 All session snapshots saved in the local storage are also available as SAZ files in the `.fiddler` folder. You can manually access and backup your locally saved from the following paths:
 
