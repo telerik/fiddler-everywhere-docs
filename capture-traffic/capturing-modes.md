@@ -123,7 +123,7 @@ Below, you will find some detailed guides for different scenarios:
 
 ## HTTP Version Specifics
 
-Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. When handling HTTP/2 requests, note the following specifics.
+Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. When handling HTTP/2 requests, note the following specifics. The Fiddler Everywhere application has [dedicated columns]({%slug web-sessions-list%}#columns) to show the HTTP version for the current session. The columns are called **Client HTTP version** (which indicates the version used between the client app and Fiddler) and **Remote HTTP version** (which indicates the version used between Fiddler and the remote endpoint). Based on the information from the HTTP-related columns, you can create filters and rules to modify the traffic.
 
 - The HTTP/2 support in Fiddler Everywhere is enabled by default. If needed, it can be disabled [through the **Connections** menu]({%slug connections-submenu%}).
 
@@ -135,13 +135,11 @@ Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. W
 
 - Fiddler shows the HTTP/2 pseudo-headers as they are sent/received in their original order. Some client applications further modify the pseudo-header order, which can cause different behavior for some corner cases.
 
-
 ## WebSocket Capturing
 
 The [WebSocket protocol](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication channels over a TCP connection. WebSocket is distinct from the HTTP protocol. Both protocols are located at OSI layer seven and depend on TCP at OSI layer four. Although different, WebSocket is designed to work over HTTP ports 443 and 80 and support HTTP proxies and intermediaries, thus making it compatible with HTTP.
 
 Fiddler Everywhere supports WebSocket capturing out-of-the-box through all capturing modes. The application provides dedicated [WebSocket inspectors]({%slug inspector-types%}#websocket-grpc-sse-and-socketio-inspectors) to examine and extract data from the WebSocket session's [handshake]({%slug inspector-types%}#handshake-tab), [metadata]({%slug inspector-types%}#metadata-inspector), and [messages]({%slug inspector-types%}#messages-tab). Encoded WebSocket messages are automatically decoded (if possible) and presented in human-readable form in the related WebSocket inspector.
-
 
 ## Server-Sent Events
 
