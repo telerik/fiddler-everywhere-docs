@@ -200,7 +200,7 @@ text/x-javascript
 
 ### Auth Inspector
 
-The **Auth inspector** displays authentication-related tokens and data, such as JSON Web Token (JWT), Bearer token (Basic Auth), and Security Assertion Markup Language (SAML) assertions. The **Auth** inspector is available for live traffic sessions and saved snapshots.
+The **Auth** inspector displays authentication-related tokens and data, such as JSON Web Token (JWT), Bearer token (Basic Auth), and Security Assertion Markup Language (SAML) assertions. The **Auth** inspector is available for live traffic sessions and saved snapshots.
 
 ![Authentication Inspector](../images/livetraffic/inspectors/inspectors-auth.png)
 
