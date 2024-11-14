@@ -39,10 +39,12 @@ The **HTTP(S) Inspectors** provide the following types of inspecting tools that 
 
 * [Headers inspector](#headers-inspector)
 * [Params inspector](#params-inspector)
+* [Trailers inspector](#trailers-inspector)
 * [Cookies inspector](#cookies-inspector)
 * [Raw inspector](#raw-inspector)
 * [Preview inspector](#preview-inspector)
 * [Body inspector](#body-inspectors)
+* [Auth inspector](#auth-inspector)
 
 ### Headers Inspector
 
@@ -173,7 +175,6 @@ The **Form Data** inspector, available in the **Request** section only, parses t
 
 ![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
 
-
 #### JavaScript Body Inspector
 
 The **JavaScript** inspector interprets and formats the selected request or response body as a JavaScript/TypeScript code. The inspector will recognize and properly format the following MIME types:
@@ -197,6 +198,11 @@ text/x-javascript
 
 ![JavaScript Inspector](../images/livetraffic/inspectors/inspectors-javascript.png)
 
+### Auth Inspector
+
+The **Auth** inspector obtains authorization information from the `Authorize` and `Proxy-Authorize` headers and from SAML requests and responses within their query parameters and Request bodies, then tries to decode this information if possible. Fiddler recognizes the Basic auth scheme and JWT Bearer tokens as authorization headers.
+
+![Authentication Inspector](../images/livetraffic/inspectors/inspectors-auth.png)
 
 ## WebSocket, gRPC, SSE, and Socket.IO Inspectors
 

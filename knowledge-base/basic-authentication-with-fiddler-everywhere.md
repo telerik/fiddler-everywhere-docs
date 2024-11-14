@@ -80,7 +80,6 @@ Following the above steps will create **Basic Authentication** with Fiddler Ever
 
 ![Full API request demonstration the testing a basic authentication request](../images/kb/url-field-of-composer-with-http-method.png)
 
-
 ## Contact us
 
 Suppose you have more questions or need assistance for testing authentication scenario through Fiddler Everywhere, then you can reach out to our support team through the **Contact Support** option.
