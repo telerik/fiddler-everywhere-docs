@@ -343,11 +343,11 @@ The following table lists the **Live Traffic** columns and the information they 
         </tr>
         <tr>
             <td><b>Client HTTP Version</b></td>
-            <td>The protocol version used for communication between the client and Fiddler (<b>HTTP/1.1</b>, <b>HTTP/2</b>, <b>HTTP/2 + HTTP/1.1</b>, and <b>HTTP/1.1 + HTTP/2</b>)</td>
+            <td>The protocol version used for communication between the client and Fiddler (<b>HTTP/1.1</b>, <b>HTTP/2</b>)</td>
         </tr>
         <tr>
             <td><b>Remote HTTP Version</b></td>
-            <td>The protocol version used for communication between Fiddler and the remote server (<b>HTTP/1.1</b>, <b>HTTP/2</b>, <b>HTTP/2 + HTTP/1.1</b>, and <b>HTTP/1.1 + HTTP/2</b>)</td>
+            <td>The protocol version used for communication between Fiddler and the remote server (<b>HTTP/1.1</b>, <b>HTTP/2</b>)</td>
         </tr>
         <tr>
             <td><b>Client TLS Version</b></td>
