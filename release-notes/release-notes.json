@@ -1,5 +1,46 @@
 [
     {
+        "version": "5.21.0",
+        "title": "Fiddler Everywhere v5.21.0",
+        "date": "Nov 14, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add a settings menu to the Timings view in the Overview Tab"
+                    },
+                    {
+                        "title": "Add an Auth Inspector tab for requests"
+                    },
+                    {
+                        "title": "Replace HTTP Version and TLS version match conditions with separate client and server values for rules and filters"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Improved performance in the Inspectors tab when reviewing captured sessions"
+                    },
+                    {
+                        "title": "Application fails to open on Windows due to invalid COMSPEC environment variable"
+                    },
+                    {
+                        "title": "Some macOS and Linux systems generate numerous warnings and slow down capture when resolving port numbers to process names"
+                    },
+                    {
+                        "title": "Dialog for unsaved changes appeared unnecessarily when closing the rules window without making any changes"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate potential security vulnerabilities"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "5.20.0",
         "title": "Fiddler Everywhere v5.20.0",
         "date": "Nov 1, 2024",
