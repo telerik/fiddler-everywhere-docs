@@ -35,7 +35,7 @@ The widget is available only when a single session is selected.
 
 ## Timings
 
-The **Timings** widget visually represents the timeline and the durations needed to execute the selected sessions. The widget dynamically changes based on whether the selection includes a single or multiple sessions. Hovering over a specific timing reveals additional details related to the targeted field.
+The **Timings** widget visually represents the timeline and the durations needed to execute the selected sessions. The widget dynamically changes based on whether the selection includes a single or multiple sessions. Hovering over a specific timing reveals additional details related to the targeted field. All sections are collapsible and can be explicitly hidden or shown through the **Settings** button at the top-right corner.
 
 ### Timings (Single Session)
 
