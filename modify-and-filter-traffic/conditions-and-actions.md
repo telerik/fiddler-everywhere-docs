@@ -189,7 +189,7 @@ For more information, refer to the following list.
             <td>Field name</td>
             <td>String modifiers</td>
             <td>Search value</td>
-            <td>Matches sessions with specific keyword in the <b>explicitly mentioned certificate field</b>.</td>
+            <td>Matches HTTP responses with specific keyword in the <b>explicitly mentioned certificate field</b>.</td>
         </tr>
         <tr>
             <td><b>TLS Version</b></td>
@@ -268,7 +268,7 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>Value modifiers</td>
             <td>New value</td>
             <td>n/a</td>
-            <td>Uses the selected value modifier and the new value to update the current URL.</td>
+            <td>Uses the selected value modifier and the new value to update the current URL. Does not work for CONNECT requests</td>
             <td>Non-final</td>
         </tr>
         <tr>
@@ -336,11 +336,19 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>Non-final</td>
         </tr>
         <tr>
-            <td><b>Set Breakpoint</b></td>
-            <td><b>Before Sending a Request</b> or <b>Before Sending a Response</b></td>
+            <td><b>Set Request Breakpoint</b></td>
+            <td><b>Before Sending a Request</b>></td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Pauses the session before the sending request (to the server) or response (to the client). The action works only for newly established connections.</td>
+            <td>Pauses the session before the sending request from Fiddler to the targeted server. The action works only for newly established connections.</td>
+            <td>Non-final.</td>
+        </tr>
+                <tr>
+            <td><b>Set Response Breakpoint</b></td>
+            <td><b>Before Sending a Request</b></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Pauses the session before the sending the response from Fiddler to the client application. The action works only for newly established connections.</td>
             <td>Non-final.</td>
         </tr>
         <tr>
@@ -349,7 +357,7 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the picked response file.</td>
-            <td>Non-final</td>
+            <td>Final</td>
         </tr>
         <tr>
             <td><b>Return Manual Response</b></td>
@@ -357,7 +365,7 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the manually created response.</td>
-            <td>Non-final</td>
+            <td>Final</td>
         </tr>
         <tr>
             <td><b>Return Predefined Response</b></td>
@@ -365,14 +373,14 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the selected predefined response.</td>
-            <td>Non-final</td>
+            <td>Final</td>
         </tr>
         <tr>
             <td><b>Return CONNECT Tunnel</b></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server. The option is also reffered as "Accept all CONNECTs"</td>
+            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server. The option is also reffered as "Accept all CONNECTs". Incompatible with sessions snapshots (saved traffic).</td>
             <td>Final</td>
         </tr>
         <tr>
@@ -388,7 +396,7 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version, and Remote IP</b> can be used. The action works only for newly established connections.</td>
+            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Compatible with the following conditions: <b>All Sessions, URL, Host, Scheme, Client IP, Process</b>. The action works only for newly established connections.</td>
             <td>Final </td>
         </tr>
         <tr>
@@ -490,7 +498,7 @@ When creating a matching condition in Fiddler Everywhere, you should consider th
 
 - Each rule's matching conditions are tested on the applied changes from the previous rule's executed actions. 
 
-## Rules Execution Specifics
+## Actions and Rules Execution Specifics
 
 Multiple rules enable you to create complex logic that mocks, modifies, and tests your upcoming and outgoing traffic. Sometimes, you will also need to create a combination of the above actions. This section highlights some specifics you must consider while executing multiple rules and actions.
 
@@ -509,3 +517,5 @@ Multiple rules enable you to create complex logic that mocks, modifies, and test
     * If a rule's actions are incorrectly ordered and a response action is before a request action, the request action will be executed after the server receives the request. The changes will be visible in Fiddler only.  
 
     * Actions placed after a final action in one rule will not be executed.
+
+- The **Return File**, **Return Manual Response** and **Return Predefined Response** actions do not execute any connection to the server, they immediately set the HTTP response to the specified value.
