@@ -231,9 +231,9 @@ For more information, refer to the following list.
 
 ## Actions
 
-When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions. All actions in Fiddler Everywhere can be dragged and dropped to change their execution priority.
+When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions. All actions in Fiddler Everywhere can be dragged and dropped to change their execution priority and each action can be quickly duplicated or deleted (thorugh dedicated buttons).
 
-Apart from returning files or predefined responses, a rule can perform the following specific actions:
+Apart from returning files or predefined responses, a rule in Fiddler Everywhere can perform the following specific **actions**:
 
 <table style="width: 100%">
     <colgroup>
