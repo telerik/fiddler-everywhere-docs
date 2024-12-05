@@ -231,7 +231,7 @@ For more information, refer to the following list.
 
 ## Actions
 
-When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions.
+When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions. All actions in Fiddler Everywhere can be dragged and dropped to change their execution priority.
 
 Apart from returning files or predefined responses, a rule can perform the following specific actions:
 
@@ -475,3 +475,37 @@ For an illustration of this scenario, refer to the following cases:
 
  In this case, the rule containing the non-final action has higher priority in the **Rules** list. When the matching request is made, the non-final action will execute, and then the following demoted rule will be triggered as well. If you add additional rules after the rule that contains final actions, they won't be executed.
  ![non-final action first scenario](../images/kb/final-actions/non-final-action-first.png)
+
+## Matching Conditions Specifics
+
+When creating a matching condition in Fiddler Everywhere, you should consider the following:
+
+- Fiddler Everywhere will try to match each session before a request is sent to the server (Fiddler receives requests > match > Fiddler forwards the request to the server) and before a response is sent to the client (Fiddler receives response > match > Fiddler forwards the response to the client app)
+
+- Match conditions will be tested when all the information is available. For example, match conditions that only require data available for the requests are tested before the request is sent to the server. On the contrary, match conditions that depend on a value from the response are tested before returning the response.
+
+- All rules and their matching conditions are tested in order of appearance from top to bottom.
+
+- If a rule contains a matching condition related to a response but contains actions related to the request, then the specific action will be executed after the server receives the request, and all changes will be visible in Fiddler Everywhere only. 
+
+- Each rule's matching conditions are tested on the applied changes from the previous rule's executed actions. 
+
+## Rules Execution Specifics
+
+Multiple rules enable you to create complex logic that mocks, modifies, and tests your upcoming and outgoing traffic. Sometimes, you will also need to create a combination of the above actions. This section highlights some specifics you must consider while executing multiple rules and actions.
+
+- Each rule will execute independently. 
+
+- No rules can block the execution of other rules. 
+
+- All actions in this rule will be executed once a rule matches (through the set matching conditions). 
+
+    >tip An example of the above statement: A rule with matching conditions on the HTTP request and actions on the HTTP response will match before sending the request, and the actions will be applied before returning the response. 
+
+- All actions in a rule are executed in the order of appearance, from top to bottom. Actions can be dragged and dropped to change their execution priority.
+
+    * If a **final** action executes, the rules' processing on these sessions stops immediately. Fiddler won't process and perform any other rules or actions (even in the same rule).
+
+    * If a rule's actions are incorrectly ordered and a response action is before a request action, the request action will be executed after the server receives the request. The changes will be visible in Fiddler only.  
+
+    * Actions placed after a final action in one rule will not be executed.
