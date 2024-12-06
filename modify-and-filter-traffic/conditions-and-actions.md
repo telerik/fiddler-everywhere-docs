@@ -444,7 +444,7 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
 
 ## Final and Non-Final Actions
 
-Rule actions can be divided into **final** and **non-final** depending on their behavior and whether their presence will allow our actions and rules to be executed.
+Rule actions can be divided into **final** and **non-final** depending on their behavior and whether their presence will allow our actions and rules to be executed. By default, some actions are already final (refer to the detailed [actions comparison table](#actions) above). However, each non-final action can be explicitly made final through the dedicated checkbox **"Stop processing more rules"** while creating the action in the rules builder.
 
 When you work with final and non-final actions, take into consideration the following insights:
 
