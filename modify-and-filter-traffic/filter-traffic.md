@@ -7,8 +7,6 @@ position: 50
 previous_url: /knowledge-base/filter-traffic
 ---
 
-
-
 # Filtering Traffic
 
 Fiddler Everywhere sets itself as the operating system proxy once the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) activates. The application captures and outputs all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy. The [**Live Traffic grid**]({%slug web-sessions-list%}#live-traffic-grid) displays the traffic as session entries.
@@ -19,7 +17,6 @@ Modern applications often generate hundreds or thousands of requests, polluting 
 - [Filtering through column filters](#column-filters)
 - [Using browser or terminal capturing modes](#using-alternative-capturing-modes)
 - [Bypassing requests to specific domains](#bypassing-the-proxy)
-
 
 ## Filters
 
@@ -77,7 +74,6 @@ The **Filters** option provides a drop-down menu to manage your active and saved
 
 ![Filters menu](../images/kb/filters/filters-menu.png)
 
-
 ## Column Filters
 
 Each column (including your own [custom columns]({%slug web-sessions-list%}#creating-custom-columns)) from the [**Live Traffic grid**]({%slug web-sessions-list%}#live-traffic-grid) has its own [filtering submenu]({%slug web-sessions-list%}#filtering-options). A filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on). Each logical operation combines with the filter value, which depends on the column type and can be a string, number, boolean, or predefined value. 
@@ -88,12 +84,9 @@ A column filter adds a condition to your active filter (from the **Filters** too
 
 When you clear a column filter, it automatically deletes its condition from the active filter. If no active filter exists, the column filter removes its condition from the **Default** filter.
 
-
-
 ## Using Alternative Capturing Modes
 
 Fiddler Everywhere provides multiple capturing modes, with the system capturing mode being the most "invasive" as it will capture all traffic that goes through the operating system. You can limit the amount of captured traffic by using options like the [independent browser capturing mode]({%slug capture-browser-traffic%}) or the [terminal capturing mode]({%slug capture-terminal-traffic%}). These options ensure only traffic from the sandboxed instances is output in the sessions grid. All additional columns and advanced filters remain applicable. 
-
 
 ## Bypassing the Proxy
 
