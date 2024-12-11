@@ -189,7 +189,7 @@ For more information, refer to the following list.
             <td>Field name</td>
             <td>String modifiers</td>
             <td>Search value</td>
-            <td>Matches sessions with specific keyword in the <b>explicitly mentioned certificate field</b>.</td>
+            <td>Matches HTTP responses with specific keyword in the <b>explicitly mentioned certificate field</b>.</td>
         </tr>
         <tr>
             <td><b>TLS Version</b></td>
@@ -231,9 +231,9 @@ For more information, refer to the following list.
 
 ## Actions
 
-When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions.
+When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions. All actions in Fiddler Everywhere can be dragged and dropped to change their execution priority and each action can be quickly duplicated or deleted (thorugh dedicated buttons).
 
-Apart from returning files or predefined responses, a rule can perform the following specific actions:
+Apart from returning files or predefined responses, a rule in Fiddler Everywhere can perform the following specific **actions**:
 
 <table style="width: 100%">
     <colgroup>
@@ -268,7 +268,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Value modifiers</td>
             <td>New value</td>
             <td>n/a</td>
-            <td>Uses the selected value modifier and the new value to update the current URL.</td>
+            <td>Uses the selected value modifier and the new value to update the current URL. Does not work for CONNECT requests</td>
             <td>Non-final</td>
         </tr>
         <tr>
@@ -336,11 +336,19 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>Non-final</td>
         </tr>
         <tr>
-            <td><b>Set Breakpoint</b></td>
-            <td><b>Before Sending a Request</b> or <b>Before Sending a Response</b></td>
+            <td><b>Set Request Breakpoint</b></td>
+            <td><b>Before Sending a Request</b>></td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Pauses the session before the sending request (to the server) or response (to the client). The action works only for newly established connections.</td>
+            <td>Pauses the session before the sending request from Fiddler to the targeted server. The action works only for newly established connections.</td>
+            <td>Non-final.</td>
+        </tr>
+                <tr>
+            <td><b>Set Response Breakpoint</b></td>
+            <td><b>Before Sending a Request</b></td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Pauses the session before the sending the response from Fiddler to the client application. The action works only for newly established connections.</td>
             <td>Non-final.</td>
         </tr>
         <tr>
@@ -349,7 +357,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the picked response file.</td>
-            <td>Non-final</td>
+            <td>Final</td>
         </tr>
         <tr>
             <td><b>Return Manual Response</b></td>
@@ -357,7 +365,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the manually created response.</td>
-            <td>Non-final</td>
+            <td>Final</td>
         </tr>
         <tr>
             <td><b>Return Predefined Response</b></td>
@@ -365,14 +373,14 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>Returns the selected predefined response.</td>
-            <td>Non-final</td>
+            <td>Final</td>
         </tr>
         <tr>
             <td><b>Return CONNECT Tunnel</b></td>
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server. The option is also reffered as "Accept all CONNECTs"</td>
+            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server. The option is also reffered as "Accept all CONNECTs". This action is incompatible with sessions snapshots (saved traffic).</td>
             <td>Final</td>
         </tr>
         <tr>
@@ -388,7 +396,7 @@ Apart from returning files or predefined responses, a rule can perform the follo
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Only conditions for <b>Host, URL, Process, Client IP, HTTP Version, and Remote IP</b> can be used. The action works only for newly established connections.</td>
+            <td>Skips decryption for a matched session and shows only CONNECT tunnels. Compatible with the following conditions: <b>All Sessions, URL, Host, Scheme, Client IP, Process</b>. The action works only for newly established connections.</td>
             <td>Final </td>
         </tr>
         <tr>
@@ -436,9 +444,11 @@ Apart from returning files or predefined responses, a rule can perform the follo
 
 ## Final and Non-Final Actions
 
-Rule actions can be divided into **final** and **non-final** depending on their behavior and whether their presence will allow our actions and rules to be executed.
+Rule actions can be divided into **final** and **non-final** depending on their behavior and whether their presence will allow our actions and rules to be executed. By default, some actions are already final (refer to the detailed [actions comparison table](#actions) above). However, each non-final action can be explicitly made final through the dedicated checkbox **"Stop processing more rules"** while creating the action in the rules builder.
 
 When you work with final and non-final actions, take into consideration the following insights:
+
+* Final actions prevent the execution of any other actions in the same rule.
 
 * Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules list).
 
@@ -458,7 +468,57 @@ The following table demonstrate what happens when you combine final and non-fina
 |:-----------------|:----------------|
 | Only non-final actions | All matching rules have their actions performed and applied |
 | Only final actions | When a final action triggers, the execution of the rule immediately stops. No other demoted actions or rules will be executed after that. For example,  **Do Not Show** and **Do Not Decrypt** are final actions. |
-| Mix of final and non-final Actions | When a final action triggers, the execution of the rule immediately stops. No other demoted actions or rules will be executed after that. For example, the **Do Not Show** action will block the execution of the **Update Response Body** action |
+| Mix of final and non-final Actions | When a final action triggers, the execution of the rule immediately stops. No other demoted actions or rules will be executed after that (but promoted actions & rules won't be blocked). |
+
+When mixing non-final and final actions, note that their behavior also varies depending on the moment of execution. For example, assume you have a promoted **non-final rule A** based on a **response** matching condition. Then, we also have a demoted **final rule B** based on a **request** matching condition. The executing logic will be as follows:
+
+1. During the request phase, Fiddler skips the non-final rule A (no match), executes the final rule B, and then stops executing further actions. 
+
+2. During the response phase, Fiddler will execute non-final rule A (as it now matches). Since rule B is final and was already executed, Fiddler will stop executing further actions & rules. 
+
+As a result, the session will bear the action from non-final rule A, even though the final rule B was with lower priority. This is because the final action only blocks the execution of further actions and rules but does not block the execution of actions and rules that come before it. 
+
+## Matching Conditions Specifics
+
+When creating a matching condition in Fiddler Everywhere, you should consider the following:
+
+- Fiddler Everywhere will try to match each session before a request is sent to the server (Fiddler receives requests > match > Fiddler forwards the request to the server) and before a response is sent to the client (Fiddler receives response > match > Fiddler forwards the response to the client app)
+
+- Match conditions will be tested when all the information is available. For example, match conditions that only require data available for the requests are tested before the request is sent to the server. On the contrary, match conditions that depend on a value from the response are tested before returning the response.
+
+- All rules and their matching conditions are tested in order of appearance from top to bottom.
+
+- If a rule contains a matching condition related to a response but contains actions related to the request, then the specific action will be executed after the server receives the request, and all changes will be visible in Fiddler Everywhere only. The user receive a warning wihtin the UI about the above behavior.
+
+- Each rule's matching conditions are tested on the applied changes from the previous rule's executed actions. 
+
+## Actions and Rules Execution Specifics
+
+Multiple rules enable you to create complex logic that mocks, modifies, and tests your upcoming and outgoing traffic. Sometimes, you will also need to create a combination of the above actions. This section highlights some specifics you must consider while executing multiple rules and actions.
+
+- Each rule will execute independently. 
+
+- No rules can block the execution of other rules. 
+
+- All actions in this rule will be executed once a rule matches (through the set matching conditions). 
+
+    >tip An example of the above statement: A rule with matching conditions on the HTTP request and actions on the HTTP response will match before sending the request, and the actions will be applied before returning the response. 
+
+- All actions in a rule are executed in the order of appearance, from top to bottom. Actions can be dragged and dropped to change their execution priority.
+
+    * If a **final** action executes, the rules' processing on these sessions stops immediately. Fiddler won't process and perform any other rules or actions (even in the same rule).
+
+    * If a rule's actions are incorrectly ordered and a response action is before a request action, the request action will be executed after the server receives the request. The changes will be visible in Fiddler only.  
+
+    * Actions placed after a final action in one rule will not be executed.
+
+- The **Return File**, **Return Manual Response** and **Return Predefined Response** actions do not execute any connection to the server, they immediately set the HTTP response to the specified value.
+
+- If you execute multiple rules that modify the same thing in the session, the Fiddler will execute both rules in the order they have been set and change the state of the session with each rule action.
+
+- If you execute rules based on the results of other rules, Fiddler will execute only the first rule. The second, third, etc., will not be executed because the condition they use to test the session has changed, and there will be no match.  
+
+## Rules Order
 
 Note that each rule is prioritized in the **Rules** list and can be demoted and promoted, which will change the execution order. Final rules won't block other active rules that have higher priority the **Rules** list.
 
