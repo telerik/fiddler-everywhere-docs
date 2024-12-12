@@ -1,4 +1,48 @@
 [
+{
+        "version": "6.0.0",
+        "title": "Fiddler Everywhere v6.0.0",
+        "date": "Dec 12, 2024",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Rules now match requests before they're sent and responses before they're received for more precise traffic handling"
+                    },
+                    {
+                        "title": "Updated rule editor UI now shows the exact match time, flags when a rule won't execute as expected, and provides suggestions to fix it"
+                    },
+                    {
+                        "title": "Rule actions can now be reordered using drag and drop"
+                    },
+                    {
+                        "title": "Text areas in the rule editor window automatically expand to fit their content"
+                    },
+                    {
+                        "title": "Added zoom control shortcuts to rules editor dialog"
+                    },
+                    {
+                        "title": "Updated UI and expandable text areas for the advanced filter dialog"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Selecting parent or child requests in the live traffic grid does not update the sessions list"
+                    },
+                    {
+                        "title": "Error when trying to accept EULA"
+                    },
+                    {
+                        "title": "Rules with manual response actions will sometimes lose their response body after saving"
+                    }
+                ]
+            }
+        ]
+    },
     {
         "version": "5.21.0",
         "title": "Fiddler Everywhere v5.21.0",
