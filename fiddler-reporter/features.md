@@ -57,7 +57,7 @@ Use the capture everything option as follows:
 
 1. Click the **Start Capturing Everything** button (available through a drop-down).
 
-    >warning If that is your first time using this mode, then you will need to export and install the Fiddler certificate authority file explicitly while using the **Certificate > Trust Root Certificate** option or by manualy exporting and installing the Fiddler CA.
+    >warning If that is your first time using this mode, then you will need to export and install the Fiddler certificate authority file explicitly while using [the **Certificate > Trust Root Certificate** option](#configuring-the-fiddler-certificate) or by manualy exporting and installing the Fiddler CA.
 
 1. Capture the targeted traffic from the targeted client application.
 
