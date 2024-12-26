@@ -54,9 +54,12 @@ navigation:
     user-guide/settings:
         title: Settings
         position: 1
+    fiddler-reporter:
+        title: Fiddler Reporter
+        position: 100
     security:
         title: Security
-        position: 100
+        position: 110
     knowledge-base:
         title: Knowledge Base
         position: 1000
