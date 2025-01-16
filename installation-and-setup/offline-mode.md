@@ -17,19 +17,22 @@ The offline mode in Fiddler Everywhere allows you to use the application’s cor
 - (Windows only) Requires Active Directory configuration with valid AD user (AD principal email).
 - Supported on macOS with limited support for JAMF users only.
 
-## Configuration Instructions
+## Request an Offline license
 
-Execute the following steps to enable the offline mode:
+The offline mode is explicitly enabled through an individual offline license file. To request your license file, contact the Fiddler Everywhere technical support team through the [Telerik's Support Center](https://www.telerik.com/account/support-center
+) or contact us directly at [fiddler-support@progress.com](fiddler-support@progress.com). Your request should include the technical information as obtained from the following steps:
 
 1. Start Fiddler Everywhere on the device with limited internet access.
 
 2. Upon login attempt, the Fiddler Everywhere application will display the "Something Went Wrong" screen. From that same screen, copy the information from the text field that contains details about the operating system and the user's principal email.
 
-!["Something Went Wrong" screen on device with limited internet access](../images/offline/offline-mode-something-went-wrong-screen.png)
+    !["Something Went Wrong" screen on device with limited internet access](../images/offline/offline-mode-something-went-wrong-screen.png)
 
-3. Send the above information to the support team alongside your [offline license request](#request-an-offline-license).
+## Configuration Instructions
 
-Once the request is received and approved, our team will reach out and send an individual offline license file that you must install on your device as follows:
+Execute the following steps to enable the offline mode:
+
+Once [the request for creating an offline license](#request-an-offline-license) is received and approved, our team will reach out and send an individual offline license file that you must install on your device as follows:
 
 - Download and install [the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 
@@ -53,7 +56,3 @@ Once the request is received and approved, our team will reach out and send an i
 
 Finally, restart Fiddler Everywhere to use the offline mode for the currently logged user. Note that the logged user must be identical to the one specified as the user's principal email in your support request.
 
-## Request an Offline license
-
-The offline mode is explicitly enabled through an individual offline license file. To request your license file, contact the Fiddler Everywhere technical support team through the [Telerik's Support Center](https://www.telerik.com/account/support-center
-) or contact us directly at [fiddler-support@progress.com](fiddler-support@progress.com). Your request should include the technical information as obtained from the second step in the [configuration instructions](#configuration-instructions) and the email adress of the licensed user under the **Fiddler Everywhere Enterprise** subscription tier.
