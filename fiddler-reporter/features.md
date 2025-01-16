@@ -16,9 +16,9 @@ The Fiddler Reporter has four different capturing modes, which you can use depen
 
 - [**Start Capturing Browser**](#capturing-browser-option) - this option in Reporter corresponds to the browser capturing mode in Fiddler Everywhere. It captures traffic from a sandboxed browser instance.
 
-- [**Start Capturing Everything**](#capturing-everything-option) - this option corresponds to the terminal capturing mode. It captures traffic from a sandboxed terminal instance.
+- [**Start Capturing Everything**](#capturing-everything-option) - this option corresponds to the system capturing mode. It sets the Fiddler Reporter proxy as the operating system upstream proxy. This option requires the explicit instalation and trust of the Fiddler certificate authroity file.
 
-- [**Start Capturing Terminal**](#capturing-terminal-option) - this option corresponds to the system capturing mode. It sets the Fiddler Reporter proxy as the operating system upstream proxy. This option requires the explicit instalation and trust of the Fiddler certificate authroity file.
+- [**Start Capturing Terminal**](#capturing-terminal-option) - this option corresponds to the terminal capturing mode. It captures traffic from a sandboxed terminal instance.
 
 - [**Manual Setup (Advanced)**](#manual-setup-option) - this option corresponds to the explicit capturing mode. You can use this option to configure a specific client application alongside the Fiddler Reporter proxy address and port. This option requires the explicit installation and trust of the Fiddler certificate authority file.
 
@@ -27,10 +27,7 @@ The Fiddler Reporter has four different capturing modes, which you can use depen
 The **Start Browser Capturing** is the default option that allows traffic to be captured from a sandboxed browser instance. As a result, Fiddler Reporter starts an independent browser instance preconfigured to respect the Fiddler proxy and
 to trust its Root Certificate Authority (CA). The HTTPS traffic generated will appear in Fiddler Everywhere
 Reporter. Currently, the tool supports independent browser capturing only for Chrome and Edge browsers. If
-both exist on the machine, Chrome will be opened by default. Currently, there is no way to configure the
-launch of Edge if both are on the machine. If the user has not installed Chrome or Edge,
-the tool will display an error message that the browser option can’t be started.
-Note - users on Mac need to manually quit the browser instance from the dock even after the Fiddler Reporter tool is closed.
+both exist on the machine, Chrome will be opened by default. MacOS users need to manually quit the browser instance from the dock even after the Fiddler Reporter tool is closed.
 
 Use the browser option as follows:
 
@@ -70,8 +67,8 @@ Use the capture everything option as follows:
 The **Start Capturing Terminal** option will launch a new, clean terminal instance and route traffic only from this
 instance through Fiddler Everywhere Reporter. It will open PowerShell on Windows and the default Terminal
 on Mac. The option currently supports capturing traffic from cURL, Node.js, and Python out of the box. If you
-need to capture traffic from .NET applications, it is required to install and trust the Fiddler Root manually
-Certificate Authority (these options can be found in the Tools menu). The terminal capturing mode allows
+need to capture traffic from .NET applications, it is required to install and trust the Fiddler Root
+Certificate Authority manually (these options can be found in the Tools menu). The terminal capturing mode allows
 the proxy to be used in a sandboxed environment without changing the global OS proxy settings.
 
 Use the capturing terminal option as follows:
@@ -111,14 +108,14 @@ Use the manual setup  option as follows:
 
 ## Tools
 
-Use the **Tools** section within the application menu to set the default browser (for the [**Start Capturing Browser**](#capturing-browser-option)option) and to explicitly allow remote devices to connect.
+Use the **Tools** section within the application menu to set the default browser (for the [**Start Capturing Browser**](#capturing-browser-option) option) and to explicitly allow remote devices to connect.
 
 - **Default Browser** - Allows you to set the default browser which Fiddler Reporter should use to createa a sandboxed browser instance. Currently, the supported browsers are Google Chrome and Microsoft Edge.
 - **Allow Remote Devices to Connect** - Controls whether inbound connections to Fiddler Reporter are allowed. Enable this option to capture traffic from remote devices. Behind the scenes, the option opens (or closes) the Fiddler Reporter port for inbound connections on the host machine.
 
 ## Configuring the Fiddler Certificate
 
-Use the **Certificate** section within the application menu to generate trust, export, reset, and remove the Fiddler certificate authority (CA) or ignore server certificate errors. The options are as follows:
+Use the **Certificate** section within the application menu to trust, export, reset, and remove the Fiddler certificate authority (CA) or ignore server certificate errors. The options are as follows:
 
 - **Trust Root Certificate** - Installs and trusts the Fiddler root certificate authority (CA) in the **user store** of the operating system certificate manager.
 - **Export Root Certificate** - Exports the Fiddler Reporter CA on your `Desktop` folder. The format varies depending on the operating system. 

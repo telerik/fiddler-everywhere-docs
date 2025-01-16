@@ -12,13 +12,13 @@ Progress® Telerik® Fiddler Reporter is a cross-platform desktop tool that moni
 
 ## Download Fiddler Reporter
 
-The latest version of the Fiddler Reporter can be downloaded from the official download link. The tool is free to use and doesn't require a Fiddler Everywhere license. 
+The latest version of the Fiddler Reporter can be downloaded from the [official download link](https://www.telerik.com/download/fiddler-everywhere-reporter). The tool is free to use and doesn't require a Fiddler Everywhere license. 
 
 ## Prerequisites
 
 - A device with Windows 10 x64 (version 22H2 or newer patch version), Windows 11 x64, Windows Server 2016 (or newer), or macOS version 11 (or newer).
 
-- An account with administrative rights to install the Fiddler certificate authority (CA) and to set/unset system proxy.
+- To use the **Start Capturing Everything**, the app must start from an account with administrative rights to install the Fiddler certificate authority (CA) and set/unset the operating system proxy.
 
 ## Login and License
 
