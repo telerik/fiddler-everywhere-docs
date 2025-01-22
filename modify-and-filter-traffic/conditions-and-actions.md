@@ -452,8 +452,6 @@ When you work with final and non-final actions, take into consideration the foll
 
 * Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules list).
 
-* Final actions prevent the execution of any other rule with lower priority (placed lower in the Rules list).
-
 * Final actions are valid (as final) only when the rule matches an HTTP(S) session.
 
 * If a session matches with conditions that depend on its response (for example, a response body contains "HTML"), then any final action in any rule that matches the session will be ignored. The reason for this behavior is that final actions replace the response. By design, Fiddler is not intended to replace a response that was already received and matched conditions in a rule.
@@ -488,7 +486,7 @@ When creating a matching condition in Fiddler Everywhere, you should consider th
 
 - All rules and their matching conditions are tested in order of appearance from top to bottom.
 
-- If a rule contains a matching condition related to a response but contains actions related to the request, then the specific action will be executed after the server receives the request, and all changes will be visible in Fiddler Everywhere only. The user receive a warning wihtin the UI about the above behavior.
+- If a rule contains a matching condition related to a response but contains actions related to the request, then the specific action will be executed after the server receives the request, and all changes will be visible in Fiddler Everywhere only. The user receives a warning within the UI about the above behavior.
 
 - Each rule's matching conditions are tested on the applied changes from the previous rule's executed actions. 
 
