@@ -55,7 +55,7 @@ navigation:
         title: Settings
         position: 1
     fiddler-reporter:
-        title: Fiddler Reporter
+        title: Fiddler Everywhere Reporter
         position: 100
     security:
         title: Security
