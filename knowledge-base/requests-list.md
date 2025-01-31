@@ -62,7 +62,7 @@ Each collection provides options that are accessible through a context menu.
 
 ## Requests Context Menu
 
-Each request provides options for renaming or deleting it through its context menu or through keyboard shortcuts.
+Each request provides options for renaming or deleting it through its context menu or through [keyboard shortcuts]({%slug fiddler-shortcuts%}).
 
 You can update each saved request by inputting the modification (for example, in the Headers) and clicking the __Save__ button. To save a new instance of an already saved request, use __Save as__ in the drop-down, which is available for already saved requests only.
 

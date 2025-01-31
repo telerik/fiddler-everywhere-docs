@@ -16,7 +16,6 @@ In addition to the core capturing and inspection capabilities, Fiddler Everywher
 
 The **Snapshots** tree in Fiddler Everywhere provides the option to save, organize, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel that you can hide/show to optimize your working space.
 
-
 ## Saving in Fiddler Everywhere
 
 To save snapshots of captured traffic (single or multiple sessions) to the **Snapshots** tree, use the saving and sharing options of the **Live Traffic** grid. All saved entries are automatically sorted in alphabetical order.
@@ -27,7 +26,7 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 
 1. Select one or more sessions.
 
-1. Use the context menu or the keyboard shortcuts `S` to invoke the **Save Snapshot** dialog.
+1. Use the context menu or the keyboard shortcut `S` to invoke the **Save Snapshot** dialog.
 
     ![Save dialog](../images/livetraffic/session-save-prompt.png)
 
@@ -38,7 +37,6 @@ Save a snapshot of captured HTTPS traffic through the following steps:
     - (Optional) Encrypt the snapshot by adding password protection.
 
     - Choose save destination. The snapshots can be stored locally or in the cloud.
-
 
 [Learn more on how to save captured traffic in Fiddler Everywhere here...]({%slug fiddler-saving%})
 
@@ -56,7 +54,6 @@ Already saved snapshots of captured traffic can be shared directly within the **
 
     - (Optional) Adding a descriptive comment.
 
-
 You can share a snapshot of newly captured HTTPS traffic through the following steps:
 
 1. Capture HTTPS traffic through your [preferred capturing mode]({%slug capture-traffic-get-started%}).
@@ -73,9 +70,7 @@ You can share a snapshot of newly captured HTTPS traffic through the following s
 
     - (Optional) Adding a descriptive comment.
 
-
 [Learn more on how to share captured traffic in Fiddler Everywhere here...]({%slug fiddler-sharing%})
-
 
 ## Exporting and Importing Traffic in Known Formats
 
@@ -83,4 +78,10 @@ Apart from the built-in saving and sharing functionalities, you can also export 
 
 [Learn more on how to export and import traffic in different known formats here...]({%slug fiddler-export-and-import%})
 
->tip Fiddler Everywhere native format for saving sessions (and additional Fiddler-specific data) is called SAZ, which stands for [**Sessions Archive ZIP**]({%slug fiddler-saz-format%}) and is also known as Fiddler Archive. 
+>tip Fiddler Everywhere native format for saving sessions (and additional Fiddler-specific data) is called SAZ, which stands for [**Sessions Archive ZIP**]({%slug fiddler-saz-format%}) and is also known as Fiddler Archive.
+
+## Using Keyboard Shortcuts
+
+Almost all Fiddler Everywhere features are linked to a keyboard shortcut which oyu can use to optimize or automate your workflow.
+
+[Learn more about eh available keyboard shortcuts here...]({%slug fiddler-shortcuts%})
