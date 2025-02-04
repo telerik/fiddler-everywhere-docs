@@ -16,7 +16,7 @@ res_type: kb
 
 ## Description
 
-The Fiddler Everywhere application provides keyboard shortcuts for most in-applicaiton actions and features. This article lists the available shortcuts for macOS, Windows, аnd Linux.
+The Fiddler Everywhere application provides keyboard shortcuts for most in-application actions and features. This article lists the available shortcuts for macOS, Windows, аnd Linux.
 
 ## macOS Shortcuts
 
@@ -244,4 +244,3 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |Save (Composer request)|`Ctrl` + `S`|
 |Save As (Composer request)|`Ctrl` + `Shift` + `S`|
 |Execute request|`Ctrl` + `Enter`|
-
