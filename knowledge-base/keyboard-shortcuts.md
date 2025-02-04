@@ -155,8 +155,8 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |Zoom In|`Ctrl` + `+`|
 |Zoom Out|`Ctrl` + `-`|
 |Reset Zoom to 100%|`Ctrl` + `0`|
-|Move to next tab|`Ctrl` + `Tab` **or** `Ctrl` + `Shift` + `[`|
-|Move to previous tab|`Ctrl` + `Shift` + `Tab` **or** `Ctrl` + `Shift` + `]`|
+|Move to next tab|`Ctrl` + `Tab`|
+|Move to previous tab|`Ctrl` + `Shift` + `Tab`|
 |Open/Focus Home Tab|`Ctrl` + `1`|
 |Open/Focus Traffic Tab|`Ctrl` + `2`|
 |Open/Focus Composer Tab|`Ctrl` + `3`|
