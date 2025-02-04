@@ -12,7 +12,7 @@ res_type: kb
 |   |   |
 |---|---|
 | Product   |
-| Product Version | 6.2.0 and above  |
+| Product Version | 6.1.0 and above  |
 
 ## Description
 
