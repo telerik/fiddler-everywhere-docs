@@ -234,10 +234,11 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |Resume Paused Sessions(s) (Breakpoints)|`F5`|
 |Mark Selected Session(s) with Strikeout|`-`|
 |Mark Selected Session(s) with Red color|`1`|
-|Mark Selected Session(s) with Blue color|`2`|
-|Mark Selected Session(s) with Green color|`3`|
-|Mark Selected Session(s) with Orange color|`4`|
-|Mark Selected Session(s) with Purple color|`5`|
+|Mark selected session(s) with blue color|`2`|
+|Mark selected session(s) with copper color|`3`|
+|Mark selected session(s) with green color|`4`|
+|Mark selected session(s) with orange color|`5`|
+|Mark selected session(s) with purple color|`6`|
 |Unmark|`0`|
 
 ### Composer
