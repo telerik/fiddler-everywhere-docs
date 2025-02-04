@@ -26,7 +26,7 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 
 1. Select one or more sessions.
 
-1. Use the context menu or the keyboard shortcut `S` to invoke the **Save Snapshot** dialog.
+1. Use the context menu or the keyboard shortcut `Cmd` + `S`(macOS) or `Ctrl` + `S`(Windows)  to invoke the **Save Snapshot** dialog.
 
     ![Save dialog](../images/livetraffic/session-save-prompt.png)
 
