@@ -1,5 +1,5 @@
 ---
-title: Using Keyboard SHortcuts
+title: Using Keyboard Shortcuts
 description: "Comprehensive list of all in-app keyboard shortcuts for Windows and macOS."
 type: how-to
 slug: fiddler-shortcuts
