@@ -60,7 +60,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |---------|---------------------|
 |Set/Unset Proxy|`F12`|
 |Open Browser|`Cmd` + `B`|
-|Open Terminal|`Cmd` + `|
+|Open Terminal|`Ctrl` + `|
 
 ### Live Traffic
 
