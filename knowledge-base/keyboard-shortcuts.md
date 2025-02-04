@@ -142,7 +142,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 | Open Settings Window | `Ctrl` + `,`|
 | Close/Deselect | `Esc`|
 | Select all items | `Ctrl` + `A`|
-| Rename selected | `Return`|
+| Rename selected | `F2`|
 | Delete selected (sessions/tree view items, etc.) | `Ctrl` + `Del`|
 | Undo for inputs | `Ctrl` + `Z` |
 | Close all toasts | `Ctrl` + `Shift` + `Alt` + `W` |
