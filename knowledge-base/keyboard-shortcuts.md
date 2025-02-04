@@ -50,7 +50,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |Open/Focus Request Inspectors|`Cmd` + `Shift` + `<`|
 |Open/Focus Response Inspectors|`Cmd` + `Shift` + `>`|
 |Open/Focus Rules|`Cmd` + `Shift` + `R`|
-|Open/Focus Overview|`Cmd` + `Shift` + `0`|
+|Open/Focus Overview|`Cmd` + `Shift` + `O`|
 |Hide/Unhide Tree View (Sidebar)|`Cmd` + `Shift` + `B`|
 |Focus Composer URL Field|`Cmd` + `Shift` + `L`|
 
