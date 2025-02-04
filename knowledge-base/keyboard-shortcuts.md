@@ -28,10 +28,10 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 | Close/Deselect | `Esc`|
 | Select all items | `Cmd` + `A`|
 | Rename selected | `Return`|
-| Delete selected (sessions/tree view items, etc.) | `Cmd` + `Del`|
+| Delete selected | `Cmd` + `Del`|
 | Undo for inputs | `Cmd` + `Z` |
 | Close all toasts | `Cmd` + `Shift` + `Opt` + `W` |
-| Close current tab (Live Traffic + Composer) | `Cmd` + `W`|
+| Close current tab | `Cmd` + `W`|
 
 ### Layout, Navigation, and Focus
 
@@ -39,18 +39,18 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |---------|---------------------|
 |Zoom In|`Cmd` + `+`|
 |Zoom Out|`Cmd` + `-`|
-|Reset Zoom to 100%|`Cmd` + `0`|
+|Reset zoom to 100%|`Cmd` + `0`|
 |Move to next tab|`Ctrl` + `Tab` **or** `Cmd` + `Shift` + `[`|
 |Move to previous tab|`Ctrl` + `Shift` + `Tab` **or** `Cmd` + `Shift` + `]`|
-|Open/Focus Home Tab|`Cmd` + `1`|
-|Open/Focus Traffic Tab|`Cmd` + `2`|
-|Open/Focus Composer Tab|`Cmd` + `3`|
+|Focus Home|`Cmd` + `1`|
+|Focus Traffic|`Cmd` + `2`|
+|Focus Composer|`Cmd` + `3`|
 |Toggle Layout|`Cmd` + `Shift` + `\`|
-|Open/Focus Traffic Grid|`Cmd` + `Shift`+ `G`|
-|Open/Focus Request Inspectors|`Cmd` + `Shift` + `<`|
-|Open/Focus Response Inspectors|`Cmd` + `Shift` + `>`|
-|Open/Focus Rules|`Cmd` + `Shift` + `R`|
-|Open/Focus Overview|`Cmd` + `Shift` + `O`|
+|Focus Traffic Grid|`Cmd` + `Shift`+ `G`|
+|Focus Request Inspectors|`Cmd` + `Shift` + `<`|
+|Focus Response Inspectors|`Cmd` + `Shift` + `>`|
+|Focus Rules|`Cmd` + `Shift` + `R`|
+|Focus Overview|`Cmd` + `Shift` + `O`|
 |Hide/Unhide Tree View (Sidebar)|`Cmd` + `Shift` + `B`|
 |Focus Composer URL Field|`Cmd` + `Shift` + `L`|
 
@@ -67,20 +67,14 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 | Action  |  Keyboard Shortcut  |
 |---------|---------------------|
 |Search|`Cmd` + `F`|
-|Clear filters/conditions|`Cmd` + `Shift` + `'`|
+|Clear filters|`Cmd` + `Shift` + `'`|
 
 ### Tree View
 
 | Action  |  Keyboard Shortcut  |
 |---------|---------------------|
-|Open focused or selected session/composer item from tree|`Cmd` + `O`|
-|Export selected session item from tree|`Cmd` + `E`|
-
-### Tabs
-
-| Action  |  Keyboard Shortcut  |
-|---------|---------------------|
-|Open New Tab (Composer)|`Cmd` + `T`|
+|Open selected Snapshot/Composer request|`Cmd` + `O`|
+|Export selected Snapshot|`Cmd` + `E`|
 
 ### Session Grid
 
@@ -89,8 +83,8 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |Save selected session(s)|`Cmd` + `S`|
 |Clear all sessions|`Shift` + `Del`|
 |Open delete menu|`Opt` + `Del`|
-|Copy selected inspector key and value data (headers, cookies)|`Cmd` + `C`|
-|Copy selected inspector value data (headers, cookies)|`Cmd` + `Opt` + `C` |
+|Copy selected inspector key and value data|`Cmd` + `C`|
+|Copy selected inspector value data|`Cmd` + `Opt` + `C` |
 
 ### Rules
 
@@ -106,8 +100,8 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |---------|---------------------|
 |Open context menu|`Opt` + `M`|
 |Copy session(s) visible columns data| `Cmd` + `C`|
-|Copy session URL(s)|`Cmd` + `U`|
-|Replay Request(s) (Parallel)|`R`|
+|Copy session URL|`Cmd` + `U`|
+|Replay Request(s) in parallel|`R`|
 |Advanced Replay Dialog|`Opt` + `R`|
 |Add New Rule|`U`|
 |Export|`Cmd` + `E`|
@@ -115,23 +109,25 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |Select parent request|`P`|
 |Select child request|`C`|
 |Select duplicate request|`D`|
-|Add Comment to Session(s)|`M`|
-|Resume Paused Sessions(s) (Breakpoints)|`F5`|
-|Mark Selected Session(s) with Strikeout|`-`|
-|Mark Selected Session(s) with Red color|`1`|
-|Mark Selected Session(s) with Blue color|`2`|
-|Mark Selected Session(s) with Green color|`3`|
-|Mark Selected Session(s) with Orange color|`4`|
-|Mark Selected Session(s) with Purple color|`5`|
+|Add comment to session(s)|`M`|
+|Resume paused sessions(s) on breakpoint|`F5`|
+|Mark selected session(s) with strikeout|`-`|
+|Mark selected session(s) with red color|`1`|
+|Mark selected session(s) with blue color|`2`|
+|Mark selected session(s) with cooper color|`3`|
+|Mark selected session(s) with green color|`4`|
+|Mark selected session(s) with orange color|`5`|
+|Mark selected session(s) with purple color|`6`|
 |Unmark|`0`|
 
 ### Composer
 
 | Action  |  Keyboard Shortcut  |
 |---------|---------------------|
-|Save (Composer request)|`Cmd` + `S`|
-|Save As (Composer request)|`Cmd` + `Shift` + `S`|
+|Open New Tab|`Cmd` + `T`|
 |Execute request|`Cmd` + `Return`|
+|Save Composer request|`Cmd` + `S`|
+|Save As Composer request|`Cmd` + `Shift` + `S`|
 
 ## Windows and Linux Shortcuts
 
