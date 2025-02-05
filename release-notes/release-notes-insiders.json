@@ -1,5 +1,46 @@
 [
     {
+        "version": "6.1.0-insiders",
+        "title": "Fiddler Everywhere v6.1.0",
+        "date": "February 6, 2025",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Improve keyboard shortcuts for most used user flows"
+                    },
+                    {
+                        "title": "Improved session sizes information display for better clarity and detail"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Unable to install on clean Windows machine when starting the installer from Downloads folder"
+                    },
+                    {
+                        "title": "Moving the Session Selection in Live Traffic Grid should not require Enter"
+                    },
+                    {
+                        "title": "Add information im Messages Inspector that server-sent events over HTTP/1.1 cannot be displayed"
+                    },
+                    {
+                        "title": "Show total sum in Timings Table"
+                    },
+                    {
+                        "title": "When session is deleted clear the content from Inspectors too"
+                    },
+                    {
+                        "title": "Cannot scroll to the bottom of the Columns dropdown"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "6.0.0-insiders",
         "title": "Fiddler Everywhere v6.0.0",
         "date": "Dec 12, 2024",
