@@ -1,20 +1,14 @@
 ---
-title: Using Keyboard Shortcuts
+title: Keyboard Shortcuts
 description: "Comprehensive list of all in-app keyboard shortcuts for Windows and macOS."
 type: how-to
 slug: fiddler-shortcuts
+position: 30
 publish: true
 res_type: kb
 ---
 
-## Environment
-
-|   |   |
-|---|---|
-| Product   |
-| Product Version | 6.1.0 and above  |
-
-## Description
+# Keyboard Shortcuts
 
 The Fiddler Everywhere application provides keyboard shortcuts for most in-application actions and features. This article lists the available shortcuts for macOS, Windows, аnd Linux.
 
@@ -60,7 +54,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |---------|---------------------|
 |Set/Unset Proxy|`F12`|
 |Open Browser|`Cmd` + `B`|
-|Open Terminal|`Ctrl` + `|
+|Open Terminal|`Ctrl` + `\``|
 
 ### Live Traffic
 

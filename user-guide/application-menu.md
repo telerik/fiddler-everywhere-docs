@@ -3,13 +3,13 @@ title: Application Menu
 description: "Use the application menu to customize your Fiddler's user interface and access support and help-related features."
 slug: app-menu-section
 tags: Fiddler help menu, Fiddler Everywhere support, fiddler application logs, zoom interface
+position: 10
 publish: true
 ---
 
 # Application Menu
 
 The Fiddler application menu is located at the top-left corner of Fiddler Everywhere. It contains a [**View**](#view) section to customize the application and a [**Help**](#help) section with support resources. On macOS, the application also contains specific OS menus called **Fiddler Everywhere** and **Edit**
-
 
 ## Fiddler Everywhere (macOS only)
 
