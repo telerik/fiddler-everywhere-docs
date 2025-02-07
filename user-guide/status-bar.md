@@ -3,6 +3,7 @@ title: Status Bar
 description: "Learn how to use the status bar in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: connections-section
 tags: Fiddler Connections section, Fiddler Everywhere IP addresses, Fiddler Everywhere active network
+position: 20
 publish: true
 previous_url: /user-guide/connections, /user-guide/connections-field
 ---
