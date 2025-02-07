@@ -1,11 +1,9 @@
 ---
 title: Keyboard Shortcuts
 description: "Comprehensive list of all in-app keyboard shortcuts for Windows and macOS."
-type: how-to
 slug: fiddler-shortcuts
 position: 30
 publish: true
-res_type: kb
 ---
 
 # Keyboard Shortcuts
