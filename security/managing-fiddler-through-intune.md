@@ -1,5 +1,5 @@
 ---
-title: Managing Fiddler through Intune
+title: Managing Fiddler Everywhere through Intune
 description: "Manage the Fiddler Everywhere application installation through Microsoft Intune."
 slug: fe-intune
 publish: true
