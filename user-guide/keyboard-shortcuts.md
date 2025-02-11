@@ -4,6 +4,7 @@ description: "Comprehensive list of all in-app keyboard shortcuts for Windows an
 slug: fiddler-shortcuts
 position: 30
 publish: true
+previous_url: /knowledge-base/keyboard-shortcuts
 ---
 
 # Keyboard Shortcuts
