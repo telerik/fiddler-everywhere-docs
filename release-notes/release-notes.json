@@ -1,5 +1,46 @@
 [
     {
+        "version": "6.2.0",
+        "title": "Fiddler Everywhere v6.2.0",
+        "date": "February 25, 2025",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Show a dialog when Fiddler cannot set a proxy for the current user on Windows"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Endless loader in body inspector for empty chunked response"
+                    },
+                    {
+                        "title": "Request form data not shown correctly in inspector when content encoding is set in request headers"
+                    },
+                    {
+                        "title": "When a rule's manual response starts with an invalid symbol the whole response text is deleted"
+                    },
+                    {
+                        "title": "Adding a second manual response action to a rule overwrites unsaved changes in other manual response actions"
+                    },
+                    {
+                        "title": "Some rules keyboard shortcuts are triggered from the Composer URL address bar"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate potential security vulnerabilities"
+                    },
+                    {
+                        "title": "Minor text fixes"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "6.1.0",
         "title": "Fiddler Everywhere v6.1.0",
         "date": "February 7, 2025",
