@@ -263,6 +263,20 @@ The Fiddler Everywhere application provides an option to explicitly turn off the
 
 [Learn more about disabling the hardware acceleration here...]({%slug troubleshoot-video-incompatibility%})
 
+## Receiving AutoProxy Detection Failed Error
+
+Sometimes, your system administrator can create a proxy group policy by setting `ProxySettingsPerUser` to `0`. This means that instead of the default Windows behavior (each user has their proxy settings), all user accounts share one set of proxy settings. In that case, Fiddler requires administrative privilegie to set a proxy for all users. 
+
+To resolve the issue, apply one of the following solutions:
+
+* Run Fiddler Everywhere as admin
+
+OR
+
+* Change the value of the registry entry to `1` or delete the whole entry `ProxySettingsPerUser`
+
+[Learn more about resolving the issue while uisng ProxySettingsPerUser group policy here...]({%slug resolve-proxysettingsperuser-policy%})
+
 ## Receiving ERR_CONNECTION_RESET Error
 
 Sometimes, traffic that goes through the Fiddler Everywhere proxy might fail with the error **ERR_CONNECTION_RESET** instead of loading the expected HTTP response. This error usually indicates that the client application (for example, the browser) fails to establish a connection with the server. While the actual reasons vary, when the error appears only with the Fiddler proxy in the middle, we can assume that the most likely cause is the improper installation of the Fiddler Certificate Authority (CAs).
