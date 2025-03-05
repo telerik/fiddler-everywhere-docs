@@ -8,7 +8,9 @@ position: 40
 
 # Repro Playback
 
-A typical flow for both developers and support engineers is to find a way to reproduce a described case or issue (that a customer or a colleague might experience). In the context of ongoing HTTPS traffic, that could present a challenge as the issue is often related to a specific environment, client, or even timestamps. With Fiddler Everywhere, you can easily playback previously captured HTTPS traffic by creating the so-called "repro playback" set of rules.
+A typical flow for developers and support engineers is to find a way to reproduce a described case or issue (that a customer or a colleague might experience). In the context of ongoing HTTPS traffic, that could present a challenge as the issue is often related to a specific environment, client, or even timestamps. 
+
+With Fiddler Everywhere, you can easily playback previously captured HTTPS traffic by creating the so-called "repro playback" set of rules. This way, you can easily reproduce the issue or share websites that are not available on the Internet, such as a development site or an internal application.
 
 ## Creating a Repro Playback Rules
 
