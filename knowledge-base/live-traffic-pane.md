@@ -428,11 +428,11 @@ Add, edit, or remove a custom column to the columns list. Afterward, the columns
 
 - Open the [**Columns** menu](#managing-columns) and the click on the **Add Custom Column** item. 
 
-    ![Created custom column](../images/livetraffic/columns/custom-column-created.png)
+    ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create.png)
 
 - In the prompted custom column dialog, specify an HTTP Header (it's value will populate the column data) and assign a column name. The header's value will appear in the session grid if the header is present in the captured session. Otherwise, the column stays empty.
 
-    ![Create a custom column in Fiddler Everywhere](../images/livetraffic/columns/custom-column-create.png)
+    ![Created custom column](../images/livetraffic/columns/custom-column-created.png)
 
 - Open the **Headers** inspector in HTTP request/response, right-click on a selected header to load the context menu, and choose  **Add as a column**.
 
