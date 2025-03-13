@@ -6,7 +6,7 @@ publish: true
 position: 15
 ---
 
-# Network Capturing
+# Network Capturing Mode
 
 >important The network capturing mode is a feature in BETA state and is subject to change in the future. Currently, the functionality is available only for the **macOS** version of Fiddler Everywhere and works only for IPv4 protocol.
 
