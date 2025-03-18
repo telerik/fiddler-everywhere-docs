@@ -6,7 +6,7 @@ publish: true
 position: 30
 ---
 
-## Security Highlights
+# Security Highlights
 
 While using Fiddler Everywhere, consider the following security indicators and highlights:
 
