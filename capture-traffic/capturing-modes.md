@@ -120,7 +120,6 @@ Below, you will find some detailed guides for different scenarios:
 
 [Learn more on how to capture traffic from generic remote devices here...]({%slug fiddler-capture-other-computers%})
 
-
 ## HTTP Version Specifics
 
 Fiddler Everywhere supports HTTP/1.x and HTTP/2 traffic capture and composing. When handling HTTP/2 requests, note the following specifics. The Fiddler Everywhere application has [dedicated columns]({%slug web-sessions-list%}#columns) to show the HTTP version for the current session. The columns are called **Client HTTP version** (which indicates the version used between the client app and Fiddler) and **Remote HTTP version** (which indicates the version used between Fiddler and the remote endpoint). Based on the information from the HTTP-related columns, you can create filters and rules to modify the traffic.

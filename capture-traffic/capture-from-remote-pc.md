@@ -7,12 +7,9 @@ position: 60
 previous_url: /knowledge-base/how-to-capture-traffic-from-another-pc, /knowledge-base/capturing-from-remote-pc, /knowledge-base/how-to-track-different-devices
 ---
 
-
-
 # Capturing Traffic from Remote Devices
 
 The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install Fiddler's Certificate Authority (CA). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android]({%slug capture-mobile-android-traffic%}) or [iOS]({%slug capture-mobile-ios-traffic%}).
-
 
 ## Prerequisites
 
