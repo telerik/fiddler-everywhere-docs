@@ -6,7 +6,7 @@ publish: true
 position: 20
 ---
 
-## TLS Version Specifics
+# TLS Version Specifics
 
 Fiddler Everywhere acts as an intermediate - it will serve as a server for the client (that sends the HTTPS request) and as a client to the server (that receives the HTTPS request and returns the HTTPS response). It is important to note that Fiddler will negotiate the TLS connections with the client and the server separately. When Fiddler Everywhere establishes the HTTPS connection, it will select the client's preferred TLS version. Then Fiddler will send the list of the supported TLS versions to the server. If the server supports the client's TLS version, it will select it for the connection. However, if the server negotiates a lower TLS version, Fiddler will successfully set up the connection (with the server) while using a lower TLS version.
 

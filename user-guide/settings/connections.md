@@ -17,6 +17,8 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
     >tip [Learn more about the HTTP/2 support in Fiddler Everywhere here...]({%slug capture-traffic-get-started%}#http-version-specifics)
 
+- **Enable Automatic Authentication**&mdash; Enables or disables the automatic proxy authentication for protocols like Kerberos, Negotiate, and NTLM. With the option enabled, the Fiddler application tries to automatically obtain the proxy credentials as stored in the operating system credential management tool.
+
 - **Enable Streaming Mode**&mdash;With **Streaming mode** enabled, the response is immediately returned to the client as they are downloaded. Modifying the Response body (through the **Rules**) is possible only when **Streaming mode** is disabled.
 
 - **Allow remote devices to connect**&mdash;Controls whether inbound connections to Fiddler Everywhere are allowed. Enable this option to capture traffic from remote devices. Behind the scenes, the option opens (or closes) the Fiddler Everywhere port for inbound connections on the host machine.
