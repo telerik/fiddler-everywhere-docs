@@ -25,17 +25,36 @@ The below configuration options list the configuration steps while using the lat
             }
             ```
 
-        - The Fiddler Everywhere proxy (`127.0.0.1:8866`) should be the first option, and the Zscaler proxy should be the second option (e.g., `127.0.0.1:9000`)
+        - The Fiddler Everywhere proxy (`127.0.0.1:8866`) should be the first option, and the Zscaler proxy should be the second option (e.g., `127.0.0.1:9000`). For example:
 
             ```sh
-            return "PROXY 127.0.0.1:8866; PROXY ${ZAPP_LOCAL_PROXY};";
+            return "PROXY 127.0.0.1:8866; PROXY ${ZAPP_LOCAL_PROXY}; DIRECT;";
             ```
 
-        - Ensure no traffic is sent to Fiddler’s proxy.
+    1. Add the PAC file to a forwarding profile. Configure the forwarding profile with the following settings:
 
-    1. Add the PAC file to a forwarding profile.
+        - Select **Tunnel with Local Proxy** for all profiles (e.g., ON-trusted, OFF-trusted, VPN-trusted, etc.).
 
-        CAonfigure the forwarding profile with the following settings:
+        - Select **Z-Tunnel 2.0**. 
+        
+            >important Note that **Z-TUnnel 1.0** is incompatible with the Fiddler Everywhere application.
+
+        - Select the **PAC URL Location** field, and enter the custom PAC Url.
+
+    1. Add the forwarding profile to an app profile. You can create new Zscaler Client Connector profile or update an existing one, and then add the configured forwarding profile. The forwarding profile should contain the following options:
+
+        - The **Rule Order** must be set to **1**.
+
+        - The app profile must be enabled.
+
+        - The **Disabled Loopback Restriction** switch must be enabled.
+
+1. Configure the following within the **Fiddler Everywhere** application.
+
+    - Start the **Fiddler Everywhere** application and log in. 
+    
+    - Ensure that the **System Proxy** switch is toggled **OFF**. Note that Fiddler as an explict proxy (through the Zscaler forwarding profile and the Zscaler PAC script).
+
 
 
 
