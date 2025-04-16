@@ -74,7 +74,7 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 
 1. Open a browser on the remote device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. 
 
-1. Click the Fiddler CA link to download it.
+1. Click the Fiddler CA certificate link to download it.
 
 1. Open your client's certificate manager (like Keychain App on macOS or Certificate Manager on Windows), install, and trust the downloaded Fiddler CA.
 

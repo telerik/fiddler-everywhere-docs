@@ -12,7 +12,7 @@ After the initial startup, Fiddler Everywhere default captures only non-secure t
 
 To enable the capturing and decrypting of HTTPS traffic, you need to install the Fiddler root CA (certificate authority) through the **HTTPS** sub-menu under **Settings**.
 
-- **Trust Fiddler CA**&mdash;Installs and trusts the Fiddler root Certificate authority (CA) in the **user store** of the operating system certificate manager. The option is available on [macOS]({% slug first_steps_macos %}#start-system-capturing) and [Windows]({% slug first_steps_windows %}#start-system-capturing). On Linux, you have to [export and trust the Fiddler CA manually]({% slug first_steps_linux %}#start-system-capturing). After you install the CA, you are ready to [enable the capturing of HTTPS traffic](#capture-https-traffic).
+- **Trust CA Certificate**&mdash;Installs and trusts the Fiddler root Certificate authority (CA) in the **user store** of the operating system certificate manager. The option is available on [macOS]({% slug first_steps_macos %}#start-system-capturing) and [Windows]({% slug first_steps_windows %}#start-system-capturing). On Linux, you have to [export and trust the Fiddler CA certificate manually]({% slug first_steps_linux %}#start-system-capturing). After you install the CA, you are ready to [enable the capturing of HTTPS traffic](#capture-https-traffic).
 
 - **Capture HTTPS traffic**&mdash;Defines if Fiddler Everywhere will capture HTTPS traffic or skip it. By default, this option is disabled. Before you enable the capturing of HTTPS traffic, you must trust the Fiddler root certificate.
 
@@ -26,16 +26,16 @@ To enable the capturing and decrypting of HTTPS traffic, you need to install the
 
 - **Advanced Settings**&mdash;A drop-down menu that provides the following additional options related to the Fiddler root CA (certificate authority):
 
-    - **Trust Fiddler CA in the Machine Store**&mdash;Installs and trusts the Fiddler CA in the **machine store** of the operating system certificate manager. The option is available only on [Windows]({% slug first_steps_windows %}#start-system-capturing).
+    - **Trust CA Certificate in the Machine Store**&mdash;Installs and trusts the Fiddler CA certificate in the **machine store** of the operating system certificate manager. The option is available only on [Windows]({% slug first_steps_windows %}#start-system-capturing).
 
-    - **Export Fiddler CA**&mdash;A drop-down menu to select a format and export the Fiddler CA to the operating system **Desktop** folder. Some operating systems do not have a default folder named **Desktop**. In such cases, you must create this folder (`~/Desktop` for macOS and Linux distributions) to export the certificate successfully. Fiddler Everywhere provides options to export the following formats:
-        * **Export Fiddler CA(DER/Binary format)**&mdash;Exports the Fiddler Everywhere CA in binary format as `Fiddler_Root_Certificate_Authority.crt`.
-        * **Export Fiddler CA(PEM/ASCII format)**&mdash;Exports the Fiddler Everywhere CA in ASCII format as `Fiddler_Root_Certificate_Authority.pem`.
-        * **Export Fiddler CA(PKCS 12 format)**&mdash;Exports the Fiddler Everywhere CA in PKCS 12 format as `Fiddler_Root_Certificate_Authority.p12`.
+    - **Export CA Certificate**&mdash;A drop-down menu to select a format and export the Fiddler CA certificate to the operating system **Desktop** folder. Some operating systems do not have a default folder named **Desktop**. In such cases, you must create this folder (`~/Desktop` for macOS and Linux distributions) to export the certificate successfully. Fiddler Everywhere provides options to export the following formats:
+        * **Export CA Certificate(DER/Binary format)**&mdash;Exports the Fiddler Everywhere CA in binary format as `Fiddler_Root_Certificate_Authority.crt`.
+        * **Export CA Certificate(PEM/ASCII format)**&mdash;Exports the Fiddler Everywhere CA in ASCII format as `Fiddler_Root_Certificate_Authority.pem`.
+        * **Export CA Certificate(PKCS 12 format)**&mdash;Exports the Fiddler Everywhere CA in PKCS 12 format as `Fiddler_Root_Certificate_Authority.p12`.
 
-    - **Reset Fiddler CA**&mdash;Click the button to remove the currently trusted CA, generate a new one, and trust it.
+    - **Reset CA Certificate**&mdash;Click the button to remove the currently trusted CA, generate a new one, and trust it.
     
-    - **Remove Fiddler CA**&mdash;Click the button to remove the currently trusted CA from the OS certificate store. As a result, the capturing of HTTPS traffic will be disabled.
+    - **Remove CA Certificate**&mdash;Click the button to remove the currently trusted CA from the OS certificate store. As a result, the capturing of HTTPS traffic will be disabled.
 
 The following figure displays the default settings of the **HTTPS** menu.  
 

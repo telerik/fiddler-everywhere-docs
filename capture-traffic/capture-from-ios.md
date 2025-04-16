@@ -44,7 +44,7 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 1. Check the local IP address of the host where the Fiddler Everywhere application runs. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to obtain the host IP address. Alternatively, you can get the IP address while using  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere machine is **192.168.0.101**.
 
->tip: If you only need to capture remote traffic, then there is no need to install the Fiddler CA on the Fiddler host machine. You only need to download and install the Fiddler CA on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
+>tip: If you only need to capture remote traffic, then there is no need to install the Fiddler CA certificate on the Fiddler host machine. You only need to download and install the Fiddler CA certificate on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
 ### Configuring the Fiddler proxy on iOS Device
 
@@ -58,7 +58,7 @@ Refer to the following steps to configure real iOS devices to work alongside a F
 
     1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority**.
 
-        >tip You can check the installed profiles in **Settings > General > VPN & Device Management**. The Fiddler CA name is **Fiddler Root Certificate Authority**, but you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed. 
+        >tip You can check the installed profiles in **Settings > General > VPN & Device Management**. The Fiddler CA certificate name is **Fiddler Root Certificate Authority**, but you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed. 
 
 1. Set the Fiddler Everywhere proxy on the iOS device.
 

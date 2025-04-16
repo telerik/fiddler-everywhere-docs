@@ -44,7 +44,7 @@ The tutorial requires administrative privileges for the current user (on the And
 
 1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to obtain the host IP address. Alternatively, you can get the IP address using a terminal command like  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere host machine is **192.168.100.50**. 
 
->tip If you only need to capture remote traffic, then there is no need to install the Fiddler CA on the Fiddler host machine. You only need to download and install the Fiddler CA on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
+>tip If you only need to capture remote traffic, then there is no need to install the Fiddler CA certificate on the Fiddler host machine. You only need to download and install the Fiddler CA certificate on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
 ### Configuring the Fiddler proxy on Android Device
 
@@ -58,9 +58,9 @@ The following steps apply to real Android devices with access to the Internet th
 
         >important Do not tap the CA directly, as this won't trigger the install. Instead, go ahead with the instructions as described in the next step.
             
-    1. Install the downloaded Fiddler CA in the device certificate storage. The settings location depends on the Android version but is usually under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
+    1. Install the downloaded Fiddler CA certificate in the device certificate storage. The settings location depends on the Android version but is usually under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
-    1. Ensure the Fiddler CA is installed and trusted through the **Settings** > **Security** > **Encryption & Credentials** > **Trusted Credentials** > **User** tab.
+    1. Ensure the Fiddler CA certificate is installed and trusted through the **Settings** > **Security** > **Encryption & Credentials** > **Trusted Credentials** > **User** tab.
 
 1. Set the Fiddler Everywhere proxy on the Android device or emulator.
 
@@ -100,7 +100,7 @@ The Android Virtual Devices (a.k.a. AVDs or Android emulators) can use Fiddler E
 
     1. Tap the option to download the CA. Then save and install as follows:
 
-        1. Install the downloaded Fiddler CA in the device certificate storage. The settings location depends on the Android version but is usually under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
+        1. Install the downloaded Fiddler CA certificate in the device certificate storage. The settings location depends on the Android version but is usually under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
     1. Ensure that the Fiddler Everywhere CA installs as a user certificate in the **Settings** > **Security** > **Encryption & Credentials** > **User** tab.
 

@@ -39,7 +39,7 @@ The following table demonstrates the supported functionalities and differences b
 | Supported OS  | Windows, macOS, Linux | macOS | macOS  | Windows, macOS, Linux | Windows, macOS, Linux
 | VPN compatibility  | Yes * | Yes * | Yes | Yes | Depends on the app
 | Proxy Modification | Yes (modifies the system proxy) | No (uses network extension) | Sets a proxy within a browser instance | Sets a proxy for a terminal instance | Manual proxy configuration 
-| Needs Configuration | Requires Fiddler CA | Requires Fiddler CA | No additional configuration needed | No additional configuration needed | Requires Fiddler CA 
+| Needs Configuration | Requires Fiddler CA certificate | Requires Fiddler CA certificate | No additional configuration needed | No additional configuration needed | Requires Fiddler CA certificate 
 | Needs Certificate Authority (CA) | Yes - automated & manual CA installation | Yes - automated & manual CA installation | No - uses preconfigured CA  | No - uses preconfigured CA  | Yes - needs manual CA installation
 
 * The VPN support depends on the specific VPN tools and might require [additional configuration]({%slug configure-vpn-fiddler%}).
@@ -109,7 +109,7 @@ curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
 
 Fiddler Everywhere can capture traffic from remote devices on the same local network. That includes remote PCs, gaming consoles, IoT devices, smartphones, tablets, etc. All you need to do is set the Fiddler proxy address and port as a manual proxy on the remote machine (similar to the [explicit capturing mode](#explicit-capturing)) and install the Fiddler certificate authority within the remote device certificate manager. 
 
->tip If you only need to capture remote traffic, then there is no need to install the Fiddler CA on the Fiddler host machine. You only need to download and install the Fiddler CA on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
+>tip If you only need to capture remote traffic, then there is no need to install the Fiddler CA certificate on the Fiddler host machine. You only need to download and install the Fiddler CA certificate on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
 
 Below, you will find some detailed guides for different scenarios:

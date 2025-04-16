@@ -22,7 +22,7 @@ To capture system traffic with Fiddler Everywhere:
 
 1. Open the **System Proxy** tutorial and follow the instructions.
 
-OR (applicable when the Fiddler CA is already installed and trusted)
+OR (applicable when the Fiddler CA certificate is already installed and trusted)
 
 1. Start Fiddler Everywhere.
 

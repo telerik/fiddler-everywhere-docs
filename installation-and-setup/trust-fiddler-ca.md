@@ -13,13 +13,13 @@ This article provides additional information about the options for installing th
 
 ## Install the Fiddler's Certificate Authority (Recommended Automated Approach)
 
-The recommended approach for installing and trusting the Fiddler CA is through the in-app system capturing mode wizards. Follow the articles below for detailed instructions on how to use the built-in wizards to install the Fiddler CA.
+The recommended approach for installing and trusting the Fiddler CA certificate is through the in-app system capturing mode wizards. Follow the articles below for detailed instructions on how to use the built-in wizards to install the Fiddler CA.
 
 1. Open the **Home** pane.
 
-1. Open the **System Proxy** tutorial and follow the instructions. During the configuration steps, you will be prompted to install and trust the Fiddler CA with your operating system certificate manager.
+1. Open the **System Proxy** tutorial and follow the instructions. During the configuration steps, you will be prompted to install and trust the Fiddler CA certificate with your operating system certificate manager.
 
-Once Fiddler CA installs successfully, you can capture and analyze HTTPS traffic. The CA install once and remains valid until it is explicitly uninstalled. The CA name as listed within the operating system certificate manager is `Fiddler Root Certificate Authority`.
+Once Fiddler CA certificate installs successfully, you can capture and analyze HTTPS traffic. The CA install once and remains valid until it is explicitly uninstalled. The CA name as listed within the operating system certificate manager is `Fiddler Root Certificate Authority`.
 
 ## Install the Fiddler's Certificate Authority (Manual Approach)
 
@@ -35,7 +35,7 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 1. Click the **Trust Fiddler CA** button. Confirm your choice and add the certificate in the popup that appears.
 
-    >tip The **Trust Fiddler CA** option automatically exports and installs the Fiddler CA in the Windows **user store**. If you want to install the Fiddler CA in the Windows **machine store** (to be globally used from different users) then use the **Trust Fiddler CA in the Machine Store** from the [**Advanced Options**]({%slug decrypt-https-traffic%}).
+    >tip The **Trust Fiddler CA** option automatically exports and installs the Fiddler CA certificate in the Windows **user store**. If you want to install the Fiddler CA certificate in the Windows **machine store** (to be globally used from different users) then use the **Trust Fiddler CA certificate in the Machine Store** from the [**Advanced Options**]({%slug decrypt-https-traffic%}).
 
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
 
@@ -110,10 +110,10 @@ The automatic installation of the trust certificate can fail due to security res
 
 ### Install Fiddler's Certificate Authority in Third-Party Certificate Stores
 
-Fiddler Everywhere can export the CA file in different formats, enabling you to install the Fiddler CA in third-party certificate stores.
+Fiddler Everywhere can export the CA file in different formats, enabling you to install the Fiddler CA certificate in third-party certificate stores.
 
-* [Learn how to install the Fiddler CA in Firefox here...]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})
-* [Learn how to install the Fiddler CA in Electron-based applications here...]({%slug ubuntu-ca-electron%})
-* [Learn how to install the Fiddler CA in Python here...]({%slug fiddler-python-traffic%}#setting-fiddler-proxy-and-ca-through-environment-variable)
-* [Learn how to install the Fiddler CA for AWS here...]({%slug how-to-capture-aws-traffic%})
+* [Learn how to install the Fiddler CA certificate in Firefox here...]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})
+* [Learn how to install the Fiddler CA certificate in Electron-based applications here...]({%slug ubuntu-ca-electron%})
+* [Learn how to install the Fiddler CA certificate in Python here...]({%slug fiddler-python-traffic%}#setting-fiddler-proxy-and-ca-through-environment-variable)
+* [Learn how to install the Fiddler CA certificate for AWS here...]({%slug how-to-capture-aws-traffic%})
 
