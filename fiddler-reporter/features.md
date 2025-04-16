@@ -85,8 +85,8 @@ Use the capturing terminal option as follows:
 
 ### Manual Setup Option
 
-When this mode is selected, Fiddler Everywhere Reporter will start listening on the port printed next to the
-“Details” label. The address can be copied and used to specify the proxy registry setting of your application and
+When this mode is selected, Fiddler Everywhere Reporter will start listening on the address and port printed next to the
+**Details** switch. The address can be copied and used to specify the proxy registry setting of your application and
 manually configure it to send incoming and outgoing traffic to Fiddler Everywhere Reporter. In addition, the
 Fiddler Root Certificate must be trusted from the Tools menu or manually exported and trusted.
 
@@ -122,4 +122,8 @@ Use the **Certificate** section within the application menu to trust, export, re
 - **Remove Certificate** - Removes the currently trusted CA from the OS certificate store. 
 - **Reset Root Certificate** - Removes the currently trusted CA, generates a new one, and trusts it.
 - **Ignore Server Certificate Errors (unsafe)** - Configure Fiddler Everywhere Reporter to ignore all server certificate errors automatically.
+
+## Hiding and Showing Captured Data
+
+By default, the Fiddler Everywhere Reporter tool automatically shows up for each captured HTTP(S) session. To capture the session privately, toggle OFF the **Details** switch (located at the top-right corner of the application).
 
