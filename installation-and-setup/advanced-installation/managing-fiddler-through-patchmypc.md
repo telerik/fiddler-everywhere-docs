@@ -4,6 +4,7 @@ description: "Manage the Fiddler Everywhere application installation through Mic
 slug: fe-intune
 publish: true
 position: 50
+previous_url: /security/managing-fiddler-through-patchmypc
 ---
 
 # Managing Fiddler Everywhere through "Patch My PC"
