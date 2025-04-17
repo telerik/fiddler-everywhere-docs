@@ -74,6 +74,8 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 | Action  |  Keyboard Shortcut  |
 |---------|---------------------|
 |Save selected session(s)|`Cmd` + `S`|
+|Open AutoSave dialog|`Opt` + `S`|
+|Enable/Disable AutoSave dialog|`Cmd` + `Opt` + `S`|
 |Clear all sessions|`Shift` + `Del`|
 |Open delete menu|`Opt` + `Del`|
 |Copy selected inspector key and value data|`Cmd` + `C`|
@@ -190,7 +192,9 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 
 | Action  |  Keyboard Shortcut  |
 |---------|---------------------|
-|Save selected session(s)|`Ctrl` + `S`|
+|Save selected session(s)|`Ctrl` + `S`
+|Open AutoSave dialog|`Alt` + `S`|
+|Enable/Disable AutoSave dialog|`Ctrl` + `Alt` + `S`|
 |Clear all sessions|`Shift` + `Del`|
 |Open delete menu|`Alt` + `Del`|
 |Copy selected inspector key and value data (headers, cookies)|`Ctrl` + `C`|
