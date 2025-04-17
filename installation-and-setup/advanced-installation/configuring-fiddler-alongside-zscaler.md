@@ -3,16 +3,16 @@ title: Configuring Fiddler alongside Zscaler
 description: "Instructions for configuring Fiddler Everywhere alongside Zscaler"
 slug: fe-configure-zscaler
 publish: true
-position: 80
+position: 30
 ---
 
 # Configuring Fiddler alongside Zscaler
 
 Zscaler is a zero-trust security tool that provides a secure environment protected from internal and external threats. As such, the tool has some default mechanisms and applicable policies that prevent users or third-party applications (like Fiddler) from freely changing the operating system settings, including setting or unsetting an upstream system proxy. This article explains how both Fiddler Everywhere and Zscaler can be configured to work simultaneously.
 
-The options below list the configuration steps while using the latest version of the **Fiddler Everywhere** proxy and **Zscaler Client Connector**.
+The instructions below highlight the configuration steps while using the latest versions of [**Zscaler Client Connector**](#configure-zscaler-client-connector) and [**Fiddler Everywhere**](#configure-fiddler-everywhere).
 
-## Configure the following within the **Zscaler Client Connector**.
+## Configure Zscaler Client Connector
 
 1. Create a custom PAC file and add the following rules:
 
@@ -24,7 +24,7 @@ The options below list the configuration steps while using the latest version of
         }
         ```
 
-    - Ensure that the Fiddler Everywhere proxy (by default, the Fiddler proxy address is `127.0.0.1:8866`) should be the first option, and the Zscaler proxy should be the second option (for demonstration, the Zscaler proxy address is `127.0.0.1:9000`).
+    - Ensure that the Fiddler Everywhere proxy (by default, the Fiddler Everywhere proxy address is `127.0.0.1:8866`) should be the first option, and the Zscaler proxy should be the second option.
 
         ```sh
         return "PROXY 127.0.0.1:8866; PROXY ${ZAPP_LOCAL_PROXY}; DIRECT;";
@@ -48,7 +48,7 @@ The options below list the configuration steps while using the latest version of
 
     - Enable the **Disabled Loopback Restriction**.
 
-## Configure the following within the **Fiddler Everywhere** application.
+## Configure Fiddler Everywhere
 
 1. Start the **Fiddler Everywhere** application. 
 
@@ -58,7 +58,7 @@ The options below list the configuration steps while using the latest version of
 
 1. Open **Settings > Connections** and ensure that the Fiddler port is the same as the one configured in the Zscaler PAC script. The default port used by the Fiddler Everywhere proxy is **port 8866**.
 
-    ![Fiddler proxy port](../images/security/fiddler-zscaler-fiddler-port.png)
+    ![Fiddler proxy port](../../images/security/fiddler-zscaler-fiddler-port.png)
 
 1. Open **Settings > Gateway** and select **Set Manual Proxy Configuration**. Enter the Zscaler Client Connector proxy address and port.
 
@@ -66,7 +66,7 @@ The options below list the configuration steps while using the latest version of
     http=http://127.0.0.1:9000;https=http://127.0.0.1:9000
     ```
 
-    ![Fiddler gateway and manual proxy configuration](../images/security/fiddler-zscaler-manual-proxy.png)
+    ![Fiddler gateway and manual proxy configuration](../../images/security/fiddler-zscaler-manual-proxy.png)
 
 1. Save the changes and close the Fiddler Everywhere application.
 

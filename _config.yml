@@ -12,6 +12,9 @@ navigation:
     installation-and-setup:
         title: Installation & Setup
         position: 20
+    installation-and-setup/advanced-installation:
+        title: Advanced Installation
+        position: 201
     capture-traffic:
         title: Capture Traffic
         position: 30
