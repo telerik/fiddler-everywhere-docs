@@ -120,7 +120,7 @@ Use the **Certificate** section within the application menu to trust, export, re
 
 - **Export CA Certificate** - Exports the Fiddler Everywhere Reporter CA to your `Desktop` folder. The format varies depending on the operating system. 
 
-- **Remove CA цertificate** - Removes the currently trusted CA from the OS certificate store. 
+- **Remove CA Certificate** - Removes the currently trusted CA from the OS certificate store. 
 
 - **Reset CA Certificate** - Removes the currently trusted CA, generates a new one, and trusts it.
 
