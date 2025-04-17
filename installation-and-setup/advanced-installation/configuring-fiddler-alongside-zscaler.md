@@ -58,7 +58,7 @@ The instructions below highlight the configuration steps while using the latest 
 
 1. Open **Settings > Connections** and ensure that the Fiddler port is the same as the one configured in the Zscaler PAC script. The default port used by the Fiddler Everywhere proxy is **port 8866**.
 
-    ![Fiddler proxy port](../images/security/fiddler-zscaler-fiddler-port.png)
+    ![Fiddler proxy port](../../images/security/fiddler-zscaler-fiddler-port.png)
 
 1. Open **Settings > Gateway** and select **Set Manual Proxy Configuration**. Enter the Zscaler Client Connector proxy address and port.
 
@@ -66,7 +66,7 @@ The instructions below highlight the configuration steps while using the latest 
     http=http://127.0.0.1:9000;https=http://127.0.0.1:9000
     ```
 
-    ![Fiddler gateway and manual proxy configuration](../images/security/fiddler-zscaler-manual-proxy.png)
+    ![Fiddler gateway and manual proxy configuration](../../images/security/fiddler-zscaler-manual-proxy.png)
 
 1. Save the changes and close the Fiddler Everywhere application.
 

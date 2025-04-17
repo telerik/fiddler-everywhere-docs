@@ -17,4 +17,4 @@ The Fiddler Everywhere application supports upstream proxies that require authen
 
 - Check the **Enable Automatic Authentication** option.
 
-    ![Enable the automatic proxy authentication](../images/settings/sett-conn-enable-auth.png)
+    ![Enable the automatic proxy authentication]( ../images/settings/sett-conn-enable-auth.png)
