@@ -293,7 +293,7 @@ The Fiddler Everywhere application allows automatically reinstalling or complete
 
 1. Restart your client application (e.g., the browser) to ensure the changes are in place, and then retry executing the HTTP request.
 
-In case the issue persists, you can explicitly and entirely remove all Fiddler CA through the following steps:
+In case the issue persists, you can explicitly and entirely remove all Fiddler CA certificate through the following steps:
 
 1. Open the Fiddler Everywhere application.
 
@@ -301,11 +301,11 @@ In case the issue persists, you can explicitly and entirely remove all Fiddler C
 
 1. Click on the **Remove Fiddler's CA*** option.
 
-1. Open the operating system certificate manager application and explicitly delete any other Fiddler CA that might not have been deleted automatically. All FIddler CA files contain either **DO_NO_TRUST_Fiddler** or **Fiddler Root Certificate** within the name of the CA.
+1. Open the operating system certificate manager application and explicitly delete any other Fiddler CA certificate that might not have been deleted automatically. All Fiddler CA certificate files contain either **DO_NO_TRUST_Fiddler** or **Fiddler Root Certificate** within the name of the CA.
 
 1. Once the Fiddler's CA files are explicitly and entirely removed from your operating system, open the Fiddler Everywhere application and reinstall its CA through the **Settings > HTTPS > Trust CA** option.
 
->tip The **ERR_CONNECTION_RESET** is reportedly appearing in some cases with the [Fiddler's independent browser capturing mode]({%slug capture-browser-traffic%}). In that case, an explicit manual removal of all installed Fiddler CA files is recommended.
+>tip The **ERR_CONNECTION_RESET** is reportedly appearing in some cases with the [Fiddler's independent browser capturing mode]({%slug capture-browser-traffic%}). In that case, an explicit manual removal of all installed Fiddler CA certificate files is recommended.
 
 ## Capture Not Working - All Other Scenarios
 

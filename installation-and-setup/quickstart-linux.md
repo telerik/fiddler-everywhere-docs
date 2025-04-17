@@ -105,7 +105,7 @@ You can now take advantage of the Fiddler Everywhere capabilities - capture, ins
 
 1. Capture HTTPS traffic through the preferred [capturing mode]({%slug capture-traffic-get-started%}).
 
-  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)]({%slug trust-certificate%}). Alternatively, you can explicitly [install the Fiddler CA in a third-party certificate store]({%slug trust-certificate%}#install-the-fiddlers-certificate-authority-in-third-party-certificate-stores) (for example, [through intalling the CA in Firefox]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})) and capture traffic only from that application.
+  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)]({%slug trust-certificate%}). Alternatively, you can explicitly [install the Fiddler CA certificate in a third-party certificate store]({%slug trust-certificate%}#install-the-fiddlers-certificate-authority-in-third-party-certificate-stores) (for example, [through intalling the CA in Firefox]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})) and capture traffic only from that application.
 
 1. [Inspect the captured data]({%slug inspecting-traffic-get-started%}).
 
@@ -122,7 +122,7 @@ That's it! Now you're equipped to delve deeper into Fiddler Everywhere and make 
 ## Next Steps
 
 * [Learn more about the capturing options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
-* [Learn more about installing the Fiddler CA to decrypt secure HTTPS traffic]({%slug trust-certificate%})
+* [Learn more about installing the Fiddler CA certificate to decrypt secure HTTPS traffic]({%slug trust-certificate%})
 * [Sharing captured sessions with collaborators]({% slug fiddler-sharing %})
 * [Creating API requests]({% slug composer-get-started %})
 * [Grouping the API requests in collections]({% slug composer-collections-get-started %})
@@ -130,6 +130,6 @@ That's it! Now you're equipped to delve deeper into Fiddler Everywhere and make 
 * [Configuring Fiddler Everywhere on Fedora, CentOS, or RedHat]({%slug fiddler-fedora-centos%})
 * [Configuring Fiddler Everywhere on XFCE]({%slug fiddler-xfce%})
 * [Creating PEM certificate]({%slug how-to-create-pem%})
-* [Setting Up the Fiddler CA for Electron-based Applications]({%slug ubuntu-ca-electron%})
-* [Setting Up the Fiddler CA in Firefox]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})
+* [Setting Up the Fiddler CA certificate for Electron-based Applications]({%slug ubuntu-ca-electron%})
+* [Setting Up the Fiddler CA certificate in Firefox]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})
 

@@ -90,7 +90,7 @@ Use the manual setup  option as follows:
 
 1. Configure your client application to use the Fiddler proxy address (127.0.0.1), port (8877).
 
-1. To capture and decrypt secure traffic (HTTPS), export and install the Fiddler CA within your client applicaiton.
+1. To capture and decrypt secure traffic (HTTPS), export and install the Fiddler CA certificate within your client applicaiton.
 
 1. Start the Fiddler Everywhere Reporter application.
 
@@ -114,15 +114,15 @@ Use the **Tools** section within the application menu to set the default browser
 
 Use the **Certificate** section within the application menu to trust, export, reset, and remove the Fiddler certificate authority (CA) or ignore server certificate errors. The options are as follows:
 
-- **Trust Root Certificate** - Installs and trusts the Fiddler root certificate authority (CA) in one of the following certificate stores:
+- **Trust CA Certificate** - Installs and trusts the Fiddler root certificate authority (CA) in one of the following certificate stores:
     * **in the User Store** of the operating system certificate manager.
     * **in the Machine Store** of the operating system certificate manager.
 
-- **Export Root Certificate** - Exports the Fiddler Everywhere Reporter CA to your `Desktop` folder. The format varies depending on the operating system. 
+- **Export CA Certificate** - Exports the Fiddler Everywhere Reporter CA to your `Desktop` folder. The format varies depending on the operating system. 
 
-- **Remove Certificate** - Removes the currently trusted CA from the OS certificate store. 
+- **Remove CA Certificate** - Removes the currently trusted CA from the OS certificate store. 
 
-- **Reset Root Certificate** - Removes the currently trusted CA, generates a new one, and trusts it.
+- **Reset CA Certificate** - Removes the currently trusted CA, generates a new one, and trusts it.
 
 - **Capture HTTPS Traffic** -  Configures Fiddler Reporter to capture secure HTTP traffic (it requires an installed and trusted certificate).
 

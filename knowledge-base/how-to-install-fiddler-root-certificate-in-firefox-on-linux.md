@@ -19,13 +19,13 @@ res_type: kb
 
 **Q:** How can I manually install the Fiddler's Certificate Authority (CA) in Firefox?
 
-**Q:** I want to capture and decrypt traffic only from a browser. Can I export and install the Fiddler CA in Firefox certificate store?
+**Q:** I want to capture and decrypt traffic only from a browser. Can I export and install the Fiddler CA certificate in Firefox certificate store?
 
-**Q:** I don't want to install the Fiddler CA in my operating system  certificate store. Insteasd, I wanto to export and install the Fiddler CA in Firefox certificate store. Is that possible?
+**Q:** I don't want to install the Fiddler CA certificate in my operating system  certificate store. Insteasd, I wanto to export and install the Fiddler CA certificate in Firefox certificate store. Is that possible?
 
 ## Solution
 
-1. Export the Fiddler CA to your **Desktop** folder through the options in **Settings > HTTPS > Advanced > Export Fiddler CA**.
+1. Export the Fiddler CA certificate to your **Desktop** folder through the options in **Settings > HTTPS > Advanced > Export Fiddler CA**.
 
 1. Open Firefox.
 
@@ -39,7 +39,7 @@ res_type: kb
 
 1. Select the **Trust this CA to identify websites.** checkbox and click **OK**.
 
-The Fiddler CA is now installed. You can now decrypt traffic captured from the Firefox browser.
+The Fiddler CA certificate is now installed. You can now decrypt traffic captured from the Firefox browser.
 
 >tip In addition to installing and Fiddler CA, you can also instruct Firefox to explicitly use the Fiddler Everywhere proxy through **Settings** > **General** > **Network Settings** > **Manual Proxy COnfiguration** and then set the Fiddler address and port (by default, IP `127.0.0.1` and port `8866`) as values for **HTTP Proxy** and **HTTPS Proxy** fields.
 
