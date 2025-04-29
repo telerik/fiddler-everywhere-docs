@@ -25,7 +25,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 | Undo for inputs | `Cmd` + `Z` |
 | Close all toasts | `Cmd` + `Shift` + `Opt` + `W` |
 | Close current tab | `Cmd` + `W`|
-| Open Keyboard Shortcuts Window | `Cmd` + `/` |
+| Open shortcuts dialog | `Cmd` + `/` |
 
 ### Layout, Navigation, and Focus
 
@@ -139,7 +139,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 | Undo for inputs | `Ctrl` + `Z` |
 | Close all toasts | `Ctrl` + `Shift` + `Alt` + `W` |
 | Close current tab (Live Traffic + Composer) | `Ctrl` + `W`|
-| Open Keyboard Shortcuts Window | `Ctrl` + `/` |
+| Open shortcuts dialog | `Ctrl` + `/` |
 
 ### Layout, Navigation, and Focus
 
