@@ -63,7 +63,7 @@ The instructions below highlight the configuration steps while using the latest 
 1. Open **Settings > Gateway** and select **Set Manual Proxy Configuration**. Enter the Zscaler Client Connector proxy address and port.
 
     ```sh
-    http=http://127.0.0.1:9000;https=http://127.0.0.1:9000
+    http=127.0.0.1:9000;https=127.0.0.1:9000
     ```
 
     ![Fiddler gateway and manual proxy configuration](../../images/security/fiddler-zscaler-manual-proxy.png)
