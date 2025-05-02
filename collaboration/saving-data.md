@@ -63,6 +63,12 @@ You can select, inspect, modify, and share snapshots of previously saved session
 
     ![Sessions list UI options](../images/collaboration/save-sessions-list-button.png)
 
+## Adding Sessions to Snapshots
+
+Sometimes, you might need to add a newly captured HTTP session to an existing snapshot. Or you might want to join the sessions from two saved snapshots together in a single snapshot. In both scenarios, you can use the **Add to Snapshot** option by invoking the context menu after selecting the targeted sessions.
+
+[Learn more about using the **Add to Snapshot** context menu option here...]({%slug web-sessions-list%}#adding-session-to-snapshot)
+
 ## Automated Save and Export   
 
 The Fiddler Everywhere application (version 6.4.0 and above) now provides the **AutoSave** option to export captured HTTPS data automatically and periodically. This feature enables Fiddler users to conduct various tasks, such as monitoring traffic to identify anomalies in high-traffic systems, inspecting live production environments for sporadic issues, generating comprehensive HTTPS logs for compliance or audit logs, and other similar tasks that require preserving the traffic history.

@@ -474,6 +474,7 @@ The context menu for the **Live Traffic** grid exposes actions you can apply for
 - [Editing in the Composer](#editing-in-the-composer) (**Edit in Composer**)
 - [Resuming Paused Sessions](#resuming-paused-sessions) (**Resume Paused Sessions**)
 - [Adding New Rules](#adding-new-rules) (**Add New Rule**)
+- [Adding Sessions to Existing Snapshots](#adding-session-to-snapshot) (**Add to Snapshot**)
 - [Saving](#saving) (**Save**)
 - [Exporting](#exporting) (**Export**)
 - [Sharing](#sharing) (**Share**)
@@ -509,6 +510,16 @@ To add a new rule:
 1. Select the desired session entry and right-click to open the context menu. Select **Add New Rule**.
 
 1. A new rule is automatically created. The rule will use the URL from the selected session entry and, by default, will apply the initial response through the **Manual Response** action option.
+
+### Adding Session to Snapshot
+
+You can add a captured session to an existing snapshot using the **Add to Snapshot** option.
+
+![Adding a session to an existing snapshot](../images/settings/add-to-snapshot-context-menu.png)
+
+This option opens a dialog that allows you to select the session snapshot to which you would like to add the captured sessions.
+
+![The "Add to snapshot" dialog presents a tree to choose from a the list of saved snapshots](../images/settings/add-to-snapshot-dialog.png)
 
 ### Saving
 
