@@ -2,7 +2,6 @@
 title: Exporting the Full WebSocket Message in Fiddler Everywhere
 description: Learn how to export the full WebSocket message in Fiddler Everywhere when it is cutting off the hex, preventing conversion to ASCII.
 type: how-to
-page_title: Export the Full WebSocket Message in Fiddler Everywhere | Fiddler Everywhere
 slug: export-full-websocket-message-fiddler-everywhere
 tags: fiddler, fiddler everywhere, websocket, export, hex, ASCII
 res_type: kb

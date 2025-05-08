@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Fiddler Everywhere | 1.0.0 and above |
+| Product | Fiddler Everywhere |
 | 3rd-party application | Any electron-based application |
 | Operating System | Ubuntu 18.0.4 and above |
 
