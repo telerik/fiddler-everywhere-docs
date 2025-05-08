@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product   |
+| Product   |  Fiddler Everywhere  |
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [cURL](https://curl.se/) |
 | Supported OS | macOS, Linux, Windows |

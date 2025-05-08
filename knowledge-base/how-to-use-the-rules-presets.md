@@ -7,6 +7,15 @@ publish: true
 res_type: kb
 ---
 
+## Environment
+
+|   |   |
+|---|---|
+| Product   |  Fiddler Everywhere  | Fiddler Everywhere |
+| Version | 6.0.0 and above  |
+
+## Description
+
 At one point or another, we need to test web applications and their behavior online. Whether we are talking about a tiny front-end change in a CSS (Cascading Style Sheets) selector, reproducing a reported scenario, or a significant update of the backend API, testing online services can take much work. It often requires creating safe staging environments (so your test keeps the live production jobs untouched) and re-building and re-deploying through time and money-consuming processes. The Fiddler's Rules functionality allows you to execute your tasks quickly and effectively through the man-in-the-middle approach.
 
 We already discussed the **Rules** tab itself. This article will introduce you to a set of predefined rules that the team created as an entry point to display the power of the Rules in Fiddler Everywhere.

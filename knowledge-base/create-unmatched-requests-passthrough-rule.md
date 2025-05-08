@@ -10,7 +10,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product   | Fiddler Everywhere |
+| Product   |  Fiddler Everywhere  | Fiddler Everywhere |
 | Product Version | 3.4.0 and above  |
 
 ## Description
