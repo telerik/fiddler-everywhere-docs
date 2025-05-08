@@ -12,7 +12,7 @@ previous_url: /knowledge-base/setup-fiddler-alongside-outlook
 
 |   |   |
 |---|---|
-| Fiddler Everywhere | 1.0.0 and above |
+| Product | Fiddler Everywhere |
 | 3rd-party application | Office 365 applications, Microsoft Outlook, MS Teams |
 | Operating System | Windows, macOS |
 

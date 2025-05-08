@@ -3,7 +3,7 @@ title: Managing Fiddler's Licenses and Seats
 description: "Learn how to manage licenses and seats for the Fiddler products."
 type: how-to
 slug: fiddler-dashboard
-publish: true
+publish: false
 res_type: kb
 ---
 
@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product | Fiddler Everywhere, Fiddler Jam |
+| Product | Fiddler Everywhere |
 | Admin Panel Address | https://www.telerik.com/account/?LP=fiddler  |
 
 ## Description

@@ -11,7 +11,8 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product version | Fiddler Everywhere 4.2.0 and above  |
+| Product  | Fiddler Everywhere  |
+| Product Version | 4.2.0 and above  |
 | 3rd-party tools | [gRPC](https://gRPC.io/), [Wikipedia gRPC page](https://en.wikipedia.org/wiki/GRPC) |
 | Supported OS | macOS, Linux, Windows, iOS, Android |
 

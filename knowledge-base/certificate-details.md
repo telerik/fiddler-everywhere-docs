@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product   | Fiddler Everywhere
+| Product   |  Fiddler Everywhere  | 
 | Product Version | 3.2.0 and above  |
 
 ## Description

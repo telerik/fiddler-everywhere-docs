@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product   |
+| Product   |  Fiddler Everywhere  |
 | Product Version | 1.6.0 and above  |
 |---|---|
 | Operating System  | macOS |
