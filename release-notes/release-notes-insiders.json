@@ -32,6 +32,41 @@
         ]
     },
     {
+        "version": "6.4.0-insiders",
+        "title": "Fiddler Everywhere v6.4.0",
+        "date": "April 15, 2025",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add new tools menu with Advanced Replay, Decode Value and AutoSave features"
+                    },
+                    {
+                        "title": "Add support for AutoSave to automatically and periodically save live session data"
+                    },
+                    {
+                        "title": "Add menu option to trust Fiddler CA in the Windows Machine Certificate Store"
+                    },
+                    {
+                        "title": "Automatically enable HTTPS capturing after Fiddler CA certificate is trusted"
+                    },
+                    {
+                        "title": "Show a warning on macOS when enabling system proxy if Cisco AnyConnect VPN is running and add the VPN host to the bypass list"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Sessions used for automatic authentication are not marked as closed after they are done"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "6.3.0-insiders",
         "title": "Fiddler Everywhere v6.3.0",
         "date": "March 18, 2025",
