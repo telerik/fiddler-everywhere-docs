@@ -11,8 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  | Version |
-| Fiddler Everywhere |  1.0.0 and above  |
+| Product | Fiddler Everywhere |
 | Microsoft Edge | all versions |
 
 ## Description

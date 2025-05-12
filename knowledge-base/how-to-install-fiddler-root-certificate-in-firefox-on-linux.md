@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product   |
+| Product   |  Fiddler Everywhere  |
 | Product Version | Fiddler Everywhere 1.0.0 and above  |
 | OS | Linux, macOS, Windows |
 

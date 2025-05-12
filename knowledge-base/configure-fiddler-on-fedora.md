@@ -11,7 +11,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product   |
+| Product   |  Fiddler Everywhere  |
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [Shared System Certificates storage](https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/) |
 | Supported OS | Fedora, CentOS, RedHat, and others |

@@ -10,8 +10,8 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product | All versions of Fiddler Everywhere |
-| Used features | Live Traffic grid + Rules |
+| Product | Fiddler Everywhere |
+| Features | Live Traffic Grid + Rules Tab |
 | Aim | Mock multiple server responses |
 
 ## Description

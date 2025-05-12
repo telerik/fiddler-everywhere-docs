@@ -11,7 +11,8 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product version | Fiddler Everywhere 1.0.0 and above  |
+| Product  | Fiddler Everywhere  |
+| Product version | 1.0.0 and above  |
 | 3rd-party tools | [GIT](https://git-scm.com/), [GitHub](https://github.com/) |
 | Supported OS | macOS, Linux, Windows |
 

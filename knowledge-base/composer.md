@@ -5,6 +5,15 @@ slug: composer-tab
 res_type: kb
 ---
 
+## Environment
+
+|   |   |
+|---|---|
+| Product   |  Fiddler Everywhere  | 
+| Product Version | 3.2.0 and above  |
+
+## Composer Tab Essentials
+
 The **Composer** tab enables you to manually create a new HTTP or HTTPS request from scratch and edit an existing captured request, as well as send and test them. This article explains the user interface that creates the Fiddler Everywhere's Composer. [Learn more about how to use the Composer here...]({%slug composer-get-started%})
 
 To get started, open the **Composer** tab from the same pane. Alternatively, you can open a new **Composer** tab by clicking the **New Request** (**+**) button in the [**Requests**]({%slug saved-requests-tab%}) tab or by using the **Edit in Composer** option from the **Live Traffic** grid's context menu.
