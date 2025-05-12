@@ -1,5 +1,37 @@
 [
     {
+        "version": "6.5.0-insiders",
+        "title": "Fiddler Everywhere v6.5.0",
+        "date": "May 12, 2025",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Allow using custom CA certificates"
+                    },
+                    {
+                        "title": "Add live or saved sessions to existing snapshots"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "HTTP 407 errors returned from Fiddler proxy when using some third party services like Zscaler"
+                    },
+                    {
+                        "title": "MessagePack request body not decoded"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate potential security vulnerabilities"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "6.4.0-insiders",
         "title": "Fiddler Everywhere v6.4.0",
         "date": "April 15, 2025",
