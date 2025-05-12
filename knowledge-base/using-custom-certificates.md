@@ -14,7 +14,7 @@ res_type: kb
 
 ## Description
 
-I want to capture and decrypt traffic from a custom certificate page. How do you supply the custom certificate in Fiddler Everywhere?
+I want to capture and decrypt traffic using a custom certificate authority. How do you supply the custom certificate in Fiddler Everywhere?
 
 ## Solution
 
