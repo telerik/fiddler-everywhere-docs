@@ -37,7 +37,7 @@ The following values are needed to set the mobile device management profile corr
 |:-----------------|:----------------
 | Team ID | CHSQ3M3P37
 | App Bundle ID | com.progress-telerik.fiddler
-| Extension Bundle ID | com.progress-Telerik.fiddler.fiddler-extension
+| Extension Bundle ID | com.progress-telerik.fiddler.fiddler-extension
 
 ### DisableAllowRemoteDevicesToConnect Example Usage
 

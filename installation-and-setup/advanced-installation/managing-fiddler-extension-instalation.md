@@ -20,7 +20,7 @@ Alternatively, you can install the Fiddler's network extension without user inte
 |:-----------------|:----------------
 | Team Identifier | CHSQ3M3P37
 | App Bundle Identifier | com.progress-telerik.fiddler
-| Extension Bundle Identifier | com.progress-Telerik. Fiddler.fiddler-extension
+| Extension Bundle Identifier | com.progress-telerik.fiddler.fiddler-extension
 
 ## Enabling the Network Extension through JAMF
 
@@ -30,7 +30,7 @@ To enable the system extension, execute the following steps:
 - Create a new configuration with the following information:
     * Select System Extensions.
     * Enter the Fiddler's team identifier: **CHSQ3M3P37**.
-    * Enter the Fiddler's extension Bbundle identifier: **com.progress-Telerik.fiddler.fiddler-extension**.
+    * Enter the Fiddler's extension Bundle identifier: **com.progress-telerik.fiddler.fiddler-extension**.
 
 To install the extension after installing the Fiddler Everywhere application, run the following command (note that the actual version of the PKG file might differ):
 ```sh
@@ -49,7 +49,7 @@ Where the XML file install_extensions.xml has the following structure:
                   <key>choiceAttribute</key>
                   <string>selected</string>
                   <key>choiceIdentifier</key>
-                  <string>com.progress-telerik. Fiddler.fiddler-extension.systemextension.pkg</string>
+                  <string>com.progress-telerik.fiddler.fiddler-extension.systemextension.pkg</string>
             </dict>
 </array>
 </plist>
