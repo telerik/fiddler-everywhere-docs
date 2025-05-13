@@ -115,8 +115,9 @@ Use the **Tools** section within the application menu to set the default browser
 Use the **Certificate** section within the application menu to trust, export, reset, and remove the Fiddler certificate authority (CA) or ignore server certificate errors. The options are as follows:
 
 - **Trust CA Certificate** - Installs and trusts the Fiddler root certificate authority (CA) in one of the following certificate stores:
-    * **in the User Store** of the operating system certificate manager.
-    * **in the Machine Store** of the operating system certificate manager.
+    * **in the User Store** of the operating system certificate manager.
+
+    * **in the Machine Store** of the operating system certificate manager.
 
 - **Export CA Certificate** - Exports the Fiddler Everywhere Reporter CA to your `Desktop` folder. The format varies depending on the operating system. 
 
