@@ -12,7 +12,7 @@ Progress® Telerik® Fiddler Everywhere Reporter is a cross-platform desktop too
 
 ## Download Fiddler Everywhere Reporter
 
-The latest version of the Fiddler Everywhere Reporter can be downloaded from the [official download link](https://www.telerik.com/download/fiddler-everywhere-reporter). The tool is free to use and doesn't require a Fiddler Everywhere license. 
+The latest version of the Fiddler Everywhere Reporter can be downloaded from the [official download link](https://www.telerik.com/fiddler/fiddler-everywhere-reporter). The tool is free to use and doesn't require a Fiddler Everywhere license. 
 
 ## Prerequisites
 
