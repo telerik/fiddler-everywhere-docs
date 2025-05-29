@@ -8,80 +8,106 @@ position: 40
 
 # Managed App Configuration
 
-Users of Fiddler Everywhere often work in a secure corporate environment where specific configurations are imposed. That means that administrators need to have options to limit or hardcode particular features of the Fiddler Everywhere application. With the **Fiddler Everywhere Enterprise** tier and its **Managed App Configuration** feature, administrators can control a set of functionalities through device management solutions/software on macOS and Windows.
+Fiddler Everywhere is often used in secure corporate environments where IT administrators need to enforce specific configurations and restrictions. The **Fiddler Everywhere Enterprise** tier provides a **Managed App Configuration** feature, allowing administrators to centrally control and lock down various application settings on both macOS and Windows devices.
+
+With Managed App Configuration, IT teams can:
+
+- Enforce security and compliance policies.
+- Restrict or hardcode application features.
+- Prevent end users from modifying critical settings.
+- Streamline deployment and configuration across large organizations.
 
 ## App Configuration on macOS
 
-IT teams managing macOS systems can apply app configuration through the preferred administrative tooling (like Jamf, Intune, etc.) using the following keys:
+IT teams managing macOS systems can apply app configuration using their preferred device management solution (such as Jamf, Intune, or similar) by setting the following keys:
 
-| Key Name    | Description | Value Type |  Value to apply the key
-|:-----------------|:----------------|:----------------|:-----------------
-| **DefaultProxyPort** | Sets the proxy port on which Fiddler Everywhere will try to start its proxy server. Value can be changed by users.  | integer  | A number between 0 and 65535
-| **DisableProxyPortChange** | Disables the change of the Fiddler proxy port.  | integer  | 1
-| **DefaultBypassList** | Sets the default proxy bypass list. All listed endpoints will always bypass the Fiddler proxy and use the upstream proxy instead.   | string  | Add URLs with “;” in between
-| **DisableBypassListChange** | Disables the change of the proxy bypass list. | integer  | 1
-| **DisableAllowRemoteDevicesToConnect** | Disables the option for remote devices to connect and use the Fiddler proxy. | integer  | 1
-| **DisableAnalytics** | Disables Fiddler's analytics  | integer  | 1
-| **DisableCloud** | Disables all interactions with the Fiddler Everywhere's cloud. This includes sharing, storing data in the cloud, and receiving data that was shared with the current user through our cloud.  | integer  | 1
-| **DefaultNetworkCaptureList** | A whitespace-separated list of CIDR (Classless Inter-Domain Routing) addresses plus port number values. Applicable only on macOS with the network capturing mode | string | A string that contains CIDR addresses separated by a white space |
-| **DefaultNetworkCaptureFilterList** | A whitespace-separated list of process IDs or process name values. When set, the network mode will capture only traffic from these processes. | string | A string that contains the process IDs or names separated by a white space (e.g. "13008 \"Google Chrome\"")
-| **DisableNetworkCaptureSettingsChange** | Disables the option to modify all settings within the network capturing mode | integer | 1
-| **CustomCACertificate** | DER encoded base64 string of the certificate | string | <base64-cert>
-| **CustomCACertificatePrivateKey** | DER encoded base64 string of the private key | string | <base64-private-key>
+| Key Name | Description | Value Type | Value Example |
+|:-------------------------------|:------------------------------------------------------|:----------------|:----------------|
+| `DefaultProxyPort` | Sets the default proxy port for Fiddler Everywhere. Users can change this value unless restricted. | integer | A number between 0 and 65535 |
+| `DisableProxyPortChange` | Prevents users from changing the proxy port. | integer | 1 |
+| `DefaultBypassList` | Sets the default proxy bypass list. Endpoints listed here always bypass Fiddler and use the upstream proxy. | string | URLs separated by `;` |
+| `DisableBypassListChange` | Prevents users from changing the bypass list. | integer | 1 |
+| `DisableAllowRemoteDevicesToConnect` | Disables remote device connections to the Fiddler proxy. | integer | 1 |
+| `DisableAnalytics` | Disables Fiddler's analytics. | integer | 1 |
+| `DisableCloud` | Disables all cloud interactions (sharing, storing, and receiving data via Fiddler's cloud). | integer | 1 |
+| `DefaultNetworkCaptureList` | Whitespace-separated list of CIDR addresses and port numbers for network capturing mode. | string | `"0.0.0.0/0:443 ::/0:443"` |
+| `DefaultNetworkCaptureFilterList` | Whitespace-separated list of process IDs or names to capture in network mode. | string | `"13008 \"Google Chrome\""` |
+| `DisableNetworkCaptureSettingsChange` | Prevents users from modifying network capturing settings. | integer | 1 |
+| `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | integer | 1 |
+| `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | string | `<base64-cert>` |
+| `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | string | `<base64-private-key>` |
 
->important Even with the **DisableCloud** in place, users need access to [the required Fiddler Everywhere API endpoints]({%slug first_steps_windows%}#prerequisites). If your environment has limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
+>important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints]({%slug first_steps_windows%}#prerequisites). For environments with limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
 
-The following values are needed to set the mobile device management profile correctly:
+**MDM Profile Values:**
 
-| Key      | Value 
-|:-----------------|:----------------
-| Team ID | CHSQ3M3P37
-| App Bundle ID | com.progress-telerik.fiddler
-| Extension Bundle ID | com.progress-telerik.fiddler.fiddler-extension
+| Key | Value |
+|:---------------------|:----------------|
+| Team ID | CHSQ3M3P37 |
+| App Bundle ID | com.progress-telerik.fiddler |
+| Extension Bundle ID | com.progress-telerik.fiddler.fiddler-extension |
 
-### DisableAllowRemoteDevicesToConnect Example Usage
+### Example: Disabling Remote Device Connections
 
-Example for applying the app configuration through the **defaults** command. Note that we are using **defaults** for demonstration purposes only - in real-life scenarios, administrators will use security tooling and other configuration utilities.
+To restrict Fiddler Everywhere to local usage only and prevent remote devices from connecting:
+
 ```sh
 defaults write com.progress-telerik.fiddler DisableAllowRemoteDevicesToConnect 1
 ```
-The above restricts Fiddler Everywhere to local usage only and restricts remote devices from finding and using the Fiddler proxy.
 
-### DefaultProxyPort Example Usage
+### Example: Setting the Default Proxy Port
 
-Example for applying the **DefaultProxyPort** key. The value must be set as an integer:
+To set the default proxy port to 8899:
+
 ```sh
 defaults write com.progress-telerik.fiddler DefaultProxyPort -integer 8899
 ```
-The above explicitly sets the Fiddler Everywhere default proxy port to port 8899.
 
-### DefaultNetworkCaptureList Example Usage
+### Example: Setting the Default Network Capture List
 
-Example for applying the **DefaultNetworkCaptureList** key with multiple [CIDR addresses](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing). The value must be set as a string:
+To apply a default network capture list with multiple [CIDR addresses](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing):
+
 ```sh
 defaults write com.progress-telerik.fiddler DefaultNetworkCaptureList "0.0.0.0/0:443 ::/0:443 0.0.0.0/0:8084 ::/0:8084 127.0.0.1/8:4200 ::1/128:4200"
 ```
 
+### Example: Forcing Default Network Capture List Values
+
+The `DefaultNetworkCaptureList` key sets the initial default values for network capturing mode. However, if users have already set custom values, these defaults will not override them.  
+To enforce the defaults and prevent users from making changes, also set the `DisableNetworkCaptureSettingsChange` policy:
+
+```sh
+defaults write com.progress-telerik.fiddler DefaultNetworkCaptureList "0.0.0.0/0:443 ::/0:443 0.0.0.0/0:8084 ::/0:8084 127.0.0.1/8:4200 ::1/128:4200"
+defaults write com.progress-telerik.fiddler DisableNetworkCaptureSettingsChange 1
+```
+
 ## App Configuration on Windows
 
-IT teams managing Windows systems can apply app configuration keys through the preferred administrative tooling using the following Fiddler's registry path:
+IT teams managing Windows systems can apply app configuration keys using their preferred administrative tooling by setting values in the following registry path:
 
 ```
 HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 ```
 
->tip Fiddler Everywhere support both **HKEY_CURRENT_USER** and **HKEY_LOCAL_MACHINE**. If Fiddler's entities are present in both destinations, the app will preferably use the ones set in **HKEY_LOCAL_MACHINE**.
+>tip Fiddler Everywhere supports both **HKEY_CURRENT_USER** and **HKEY_LOCAL_MACHINE**. If configuration values are present in both locations, the app will prioritize those set in **HKEY_LOCAL_MACHINE**.
 
-| Key Name        | Description | Regedit Value Type |  Value to apply the key
-|:-----------------|:----------------|:----------------|:-----------------
-| **DefaultProxyPort** | Sets the proxy port on which Fiddler Everywhere will try to start its proxy server. Value can be changed by users. | DWORD-32 (decimal)  | A number between 0 and 65535
-| **DisableProxyPortChange** | Disables the change of the default proxy port.  | DWORD-32 (hexadecimal)  | 1
-| **DefaultBypassList** | Sets the default proxy bypass list. All listed endpoints will always bypass the Fiddler proxy and use the upstream proxy instead.  | String Value  | Add URLs with “;” in between
-| **DisableBypassListChange** | Disables the change of the proxy bypass list. | DWORD-32 (hexadecimal)  | 1
-| **DisableAllowRemoteDevicesToConnect** | Disables the option for remote devices to connect and use the Fiddler proxy. | DWORD-32 (hexadecimal)  | 1
-| **DisableAnalytics** | Disables Fiddler's analytics  | DWORD-32 (hexadecimal)  | 1
-| **DisableCloud** | Disables all interactions with the Fiddler Everywhere's cloud. This includes sharing, storing data in the cloud, and receiving data that was shared with the current user through our cloud.  | DWORD-32 (hexadecimal)  | 1
-| **CustomCACertificate** | DER encoded base64 string of the certificate | String Value | <base64-cert>
-| **CustomCACertificatePrivateKey** | DER encoded base64 string of the private key | String Value | <base64-private-key>
+| Key Name | Description | Registry Value Type | Value Example |
+|:-------------------------------|:------------------------------------------------------|:----------------|:----------------|
+| `DefaultProxyPort` | Sets the default proxy port for Fiddler Everywhere. Users can change this value unless restricted. | DWORD-32 (decimal) | A number between 0 and 65535 |
+| `DisableProxyPortChange` | Prevents users from changing the proxy port. | DWORD-32 (hexadecimal) | 1 |
+| `DefaultBypassList` | Sets the default proxy bypass list. Endpoints listed here always bypass Fiddler and use the upstream proxy. | String Value | URLs separated by `;` |
+| `DisableBypassListChange` | Prevents users from changing the bypass list. | DWORD-32 (hexadecimal) | 1 |
+| `DisableAllowRemoteDevicesToConnect` | Disables remote device connections to the Fiddler proxy. | DWORD-32 (hexadecimal) | 1 |
+| `DisableAnalytics` | Disables Fiddler's analytics. | DWORD-32 (hexadecimal) | 1 |
+| `DisableCloud` | Disables all cloud interactions (sharing, storing, and receiving data via Fiddler's cloud). | DWORD-32 (hexadecimal) | 1 |
+| `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | DWORD-32 (hexadecimal) | 1 |
+| `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | String Value | `<base64-cert>` |
+| `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | String Value | `<base64-private-key>` |
+
+---
+
+By leveraging these configuration options, IT administrators can ensure Fiddler Everywhere is deployed securely and consistently across their organization, while maintaining control over critical settings and features.
+
+For more details on each configuration key or for troubleshooting, refer to the [Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/).
 
 
