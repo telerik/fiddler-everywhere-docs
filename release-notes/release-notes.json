@@ -1,5 +1,55 @@
 [
     {
+        "version": "6.6.0",
+        "title": "Fiddler Everywhere v6.6.0",
+        "date": "May 29, 2025",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Allow self-generated CONNECT tunnels to use HTTP2"
+                    },
+                    {
+                        "title": "Add new policy \"DisableVpnHostBypass\" to disable automatic VPN detection"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Entering emails when sharing data with others only works if Enter key is pressed after typing"
+                    },
+                    {
+                        "title": "Dragging rules to reorder them does not work"
+                    },
+                    {
+                        "title": "Changes through App Configuration for DefaultNetworkCaptureList are not applied"
+                    },
+                    {
+                        "title": "\"DefaultBypassList\" policy on macOS does not work correctly when Cisco VPN client is installed"
+                    },
+                    {
+                        "title": "Application crash on startup when running on Fedora 41 or newer versions"
+                    },
+                    {
+                        "title": "Rule manual response will accept invalid HTTP status line without correcting it"
+                    },
+                    {
+                        "title": "Overview tab can show invalid timings when loading data from saved snapshots"
+                    },
+                    {
+                        "title": "App menu can show invalid items after changing the user account"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate potential security vulnerabilities"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "6.5.0",
         "title": "Fiddler Everywhere v6.5.0",
         "date": "May 12, 2025",
