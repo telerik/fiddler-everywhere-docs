@@ -130,8 +130,6 @@ To test HTTPS servers without changing your client to use HTTPS:
 
 > **Tip:** To avoid certificate errors, enable **Ignore server certificate errors (unsafe)** in **Settings > HTTPS**.
 
----
-
 ## Troubleshooting & Best Practices
 
 - Always use a custom client port for localhost reverse proxy scenarios.
@@ -140,8 +138,6 @@ To test HTTPS servers without changing your client to use HTTPS:
 - The custom rule approach works only for HTTP/1.x traffic.
 - Double-check port numbers in your client and server code.
 - If traffic is not captured, verify that the correct port and protocol are set in Fiddler's Reverse Proxy settings.
-
----
 
 ## Additional Resources
 
