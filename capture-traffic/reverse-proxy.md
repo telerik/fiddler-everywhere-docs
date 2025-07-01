@@ -14,7 +14,7 @@ Fiddler Everywhere can act as a reverse proxy, allowing you to inspect, debug, a
 
 This article explains how to use Fiddler Everywhere as a reverse proxy, either through the built-in **Reverse Proxy** feature (recommended) or by creating a custom rule. You'll also find a demo setup and troubleshooting tips.
 
-> **Tip:** For most users, the built-in Reverse Proxy feature is the simplest and most robust approach.
+>note For most users, the built-in Reverse Proxy feature is the simplest and most robust approach.
 
 ## Demo: Client and Server Applications
 
@@ -66,9 +66,14 @@ const server = http.createServer((req, res) => {
 server.listen(8443);
 ```
 
-By default, Fiddler will not capture traffic on port 8443 unless configured as a reverse proxy.
+The application can be started as follows:
+```sh
+npm i
+node server.js
+node app.js
+```
 
----
+The demo application above runs a server and a client application on port 8443. By default, Fiddler will not capture traffic on port 8443 unless configured as a reverse proxy or through the network capturing mode.
 
 ## Using Fiddler's Reverse Proxy (Recommended)
 
@@ -78,7 +83,7 @@ The built-in **Reverse Proxy** feature lets you quickly set up a reverse proxy f
 2. Click the **Reverse Proxy** button.
 3. Enter a custom port in the `Client Port` field (e.g., `8877`).
 4. Select the client protocol (default: `HTTP/HTTPS`).
-5. Enter the remote host and port (e.g., `localhost:8443`).
+5. Enter the remote host and port (e.g., `localhost:8443` where the port is `8443` as in the [demo application](#demo-client-and-server-applications)).
 6. Select the remote protocol (default: `HTTP/HTTPS`).
 7. Choose whether to preserve the host header (default: `No`).
 8. Save your changes.
@@ -88,10 +93,10 @@ The built-in **Reverse Proxy** feature lets you quickly set up a reverse proxy f
 **Update your client application to use the new port:**
 
 ```javascript
-xmlHttp.open("GET", 'http://localhost:8877/jsonData', false);
+xmlHttp.open("GET", 'http://localhost:8877/jsonData', false); // Changing the port from 8443 to 8877 (the port on which the reverse proxy listens)
 ```
 
-> **Note:** When both the client and server run on the same host, you must use a custom port for the client app.
+>note When both the client and server run on the same host (like `localhost`), you must use a custom port for the client app.
 
 ![Captured traffic through reverse proxy](../images/reverse/reverse-proxy-setup-002.png)
 
@@ -103,9 +108,13 @@ xmlHttp.open("GET", 'http://localhost:8877/jsonData', false);
 - **Remote Protocol:** Protocol used by the server.
 - **Preserve Host:** Whether to keep the original `Host` header (set to `Yes` only if required by your server).
 
+### Reverse Proxy Alongside Other Capturing Modes
+
+The reverse proxy can be used alongside other [capturing modes]({%slug capture-traffic-get-started%}). The immediate effect of using the reverse proxy simultaneously with other capturing modes is that you will observe the same request being captured and listed twice in the Fiddler's live traffic grid — once when going through the reverse proxy mode and once when going through the alternative forward proxy mode.
+
 ## Creating a Reverse Proxy Rule (Alternative)
 
-If you need more control or want to proxy only specific requests, you can create a custom rule. This method works for HTTP/1.x traffic.
+You can create a custom reverse proxy rule if you need more control or want to proxy only specific requests. This method works for HTTP/1.x traffic and must be used only as an alternative to the built-in reserve proxy feature and not alongside it.
 
 1. Change your client app to use Fiddler's default port (e.g., `8866`):
     ```javascript
@@ -132,12 +141,12 @@ To test HTTPS servers without changing your client to use HTTPS:
 
 ## Troubleshooting & Best Practices
 
-- Always use a custom client port for localhost reverse proxy scenarios.
-- Ensure Fiddler is running before sending requests.
-- For HTTPS, trust the Fiddler root certificate or use the "Ignore server certificate errors" option.
-- The custom rule approach works only for HTTP/1.x traffic.
+- Always use a custom client port for `localhost` reverse proxy scenarios.
 - Double-check port numbers in your client and server code.
+- For HTTPS, trust the Fiddler root certificate or use the **"Ignore server certificate errors"** option.
+- Ensure Fiddler is running before sending requests.
 - If traffic is not captured, verify that the correct port and protocol are set in Fiddler's Reverse Proxy settings.
+- The [custom rule approach](#creating-a-reverse-proxy-rule-alternative) works only for HTTP/1.x traffic.
 
 ## Additional Resources
 
