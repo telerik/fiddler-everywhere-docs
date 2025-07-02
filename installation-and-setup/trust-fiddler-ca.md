@@ -33,9 +33,9 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**.
 
-1. Click the **Trust Fiddler CA** button. Confirm your choice and add the certificate in the popup that appears.
+1. Click the **Trust Fiddler CA in the User Store** button. Confirm your choice and add the certificate in the popup that appears.
 
-    >tip The **Trust Fiddler CA** option automatically exports and installs the Fiddler CA certificate in the Windows **user store**. If you want to install the Fiddler CA certificate in the Windows **machine store** (to be globally used from different users) then use the **Trust Fiddler CA certificate in the Machine Store** from the [**Advanced Options**]({%slug decrypt-https-traffic%}).
+    >tip The **Trust Fiddler CA in the User Store** option automatically exports and installs the Fiddler CA certificate in the Windows **user store**. If you want to install the Fiddler CA certificate in the Windows **machine store** (to be globally used from different users), run Fiddler Everywhere with administrative privileges and then use the **Trust Fiddler CA certificate in the Machine Store**.
 
 1. Enable capturing the HTTPS traffic by selecting the **Capture HTTPS traffic** checkbox. Click **Save**.
 
@@ -45,7 +45,7 @@ As Fiddler Everywhere is a cross-platform web-debugging proxy available for Wind
 
 1. Start Fiddler Everywhere and go to **Settings** > **HTTPS**. 
 
-1. Click the **Trust Fiddler CA** button.
+1. Click the **Trust Fiddler CA in the User Store** button.
 
 1. In the window that appears, enter your machine's administrative credentials.
 
