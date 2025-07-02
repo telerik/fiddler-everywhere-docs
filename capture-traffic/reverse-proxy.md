@@ -135,10 +135,12 @@ In this scenario, we will test against [www.example.com](https://www.example.com
 
 **Map the remote server to your local machine**
 
-Configure the `hosts` file on your OS to map `www.example.com` to `127.0.0.1`. 
+Configure the `hosts` file on your OS to map `www.example.com` to `127.0.0.1`.
 
-```cmd
-# Add entry to hosts file
+**On Windows:**
+
+```bash
+# Add entry to hosts file (run as Administrator)
 echo 127.0.0.1 www.example.com >> C:\Windows\System32\drivers\etc\hosts
 
 # Verify the entry was added
@@ -147,6 +149,22 @@ type C:\Windows\System32\drivers\etc\hosts | findstr example.com
 # Flush DNS cache to apply changes
 ipconfig /flushdns
 ```
+
+**On macOS:**
+
+```bash
+# Add entry to hosts file (requires sudo)
+echo "127.0.0.1 www.example.com" | sudo tee -a /etc/hosts
+
+# Verify the entry was added
+grep example.com /etc/hosts
+
+# Flush DNS cache to apply changes
+sudo dscacheutil -flushcache
+sudo killall -HUP mDNSResponder
+```
+
+>tip On macOS, you can also edit the hosts file directly using: `sudo nano /etc/hosts` or `sudo vim /etc/hosts`
 
 **Configure the reverse proxy for the mapped remote server**
 
