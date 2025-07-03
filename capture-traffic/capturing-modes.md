@@ -29,6 +29,7 @@ The following table demonstrates the supported functionalities and differences b
 | Capture Android traffic | Yes |  No | n/a | n/a | Yes
 | Capture iOS traffic | Yes | No | n/a | n/a | Yes
 | Capture HTTPS from  | The system proxy | The active network adapter | Dedicated browser | Dedicated terminal and its child processes |  Specific client application
+| Reverse Proxy | Yes | Yes | Yes | Yes | Yes
 | Options to modify, mock and map traffic | Yes | Yes | Yes  | Yes | Yes
 | Using breakpoints | Yes | Yes | Yes  | Yes | Yes
 | Supported protocols  | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO
@@ -65,6 +66,12 @@ To capture system traffic with Fiddler Everywhere:
 ![Use the "System Proxy" switch to toggle on and off the system capturing mode](../images/get-started/get-started-toggle.png)
 
 [Learn more about the system capturing mode here...]({%slug capture-system-traffic%})
+
+## Reverse Proxy
+
+The Fiddler Everywhere application supports capturing in reverse proxy mode through the built-in **Reverse Proxy** functionality or through a custom reverse proxy rules.
+
+[Learn more about the reverse proxy mode here...]({%slug fiddler-reverse-proxy%})
 
 ## Network Capturing
 
