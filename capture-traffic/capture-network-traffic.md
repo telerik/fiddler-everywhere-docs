@@ -81,7 +81,7 @@ Immediately after pressing **Enable Capture**, you will see a native macOS popup
 
 1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
 
-Upon succesful instalation the **Reverse Proxy** screen reloads with reverse capturing enabled.
+Upon successful installation the **Reverse Proxy** screen reloads with reverse capturing enabled.
 
 **Initial Setup on Windows**
 
