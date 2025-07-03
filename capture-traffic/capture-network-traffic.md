@@ -101,76 +101,68 @@ To stop the network capturing mode, execute the following steps:
 
 ## Modify Network Capture Rules
 
-By default, the network capturing mode has the default active rules to capture traffic from all IP addresses and processes working on ports 80 (HTTP) and 443 (HTTPS). An additional rule also enables the capturing from localhost (`127.0.0.1`) on port 3000 - this rule demonstrates how you can add specific capturing rules within the **Network Capture Settings (BETA)** screen.
+By default, network capturing mode uses active rules to capture traffic from all IP addresses and processes working on ports 80 (HTTP) and 443 (HTTPS). An additional rule enables capturing from localhost (`127.0.0.1`) on port 3000—this demonstrates how to add specific rules in the **Network Capture Settings (BETA)** screen.
 
-The **Network Capture Settings (BETA)** screen has a **Basic** view that simplifies the setup of the rules. Alternatively, use the **Advanced** view to create more complex capturing rules.
+The **Network Capture Settings (BETA)** screen offers a **Basic** view for simple rule setup and an **Advanced** view for more complex configurations.
 
-Through the advanced view, you can manually control what traffic to capture through the following options:
+In the advanced view, you can manually control what traffic to capture using these options:
 
-- **IP Address**&mdash;Sets the value of the IP address or starting address of the IP range (in case the [CIDR-notated](#cidr-notation-for-setting-ip-addresses) subnet mask differs from 32).
-
-- **Subnet Mask**&mdash;Sets the subnet mask, which will determine the range of IP addresses. Accepts [Classless Inter-Domain Routing (CIDR) notation](#cidr-notation-for-setting-ip-addresses).
-
-- **Port****&mdash;Sets the TCP/IP port. By default, most client applications use port 80 for HTTP and port 443 for HTTPS. However, it is common for some applications to use different ports for staging and testing purposes (for example, custom ports for demo applications running on localhost)
-
-- **Filter additionally by PID or process name**&mdash;Use this field to specify multiple PID (process identifiers) or process name values by separating them with a space. If your process name contains more than one word, add quotation marks (for example, "Google Chrome Helper"). You can use the macOS "Activity Monitor" application to determine any active application's specific PID or process name.
+- **IP Address**: Set a specific IP address or the starting address of an IP range (use [CIDR notation](#cidr-notation-for-setting-ip-addresses) for subnets).
+- **Subnet Mask**: Define the subnet mask, which determines the range of IP addresses. Accepts [CIDR notation](#cidr-notation-for-setting-ip-addresses).
+- **Port**: Set the TCP/IP port. Most applications use port 80 (HTTP) and 443 (HTTPS) by default, but custom ports are common for staging, testing, or local development.
+- **Filter by PID or process name**: Specify one or more process IDs (PIDs) or process names, separated by spaces. For multi-word process names, use quotes (e.g., "Google Chrome Helper"). On macOS, use the Activity Monitor to find PIDs or process names.
 
 ### Reset Capturing Rules
 
-To revert the capturing rules to their defaults.
+To revert capturing rules to their defaults:
 
-- Load the **Netowrk Capture Setting** window.
-
+- Open the **Network Capture Settings** window.
 - Switch to **Advanced** view.
+- Click **Reset to Default**.
 
-- Click on the **Reset to Default**.
-
->tip: If the network capture properties are set through the managed app policies, then the reset option will revert to the rules set through the administrative policies.
+>tip If network capture properties are set via managed app policies, the reset option will revert to the rules defined by your administrator.
 
 ### CIDR Notation for Setting Network Addresses
 
-The **Subnet Mask** field accepts [a CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) value between 0 and 32. For example, A value of 32 (equal to subnet mask `255.255.255.255`) means that only the host address, as set through the **IP Address** field, will be monitored. Conversely, a value of 0 (equal to subnet mask `0.0.0.0`) means that all IP addresses from the range will be monitored.
+The **Subnet Mask** field accepts [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) values from 0 to 32. For example:
+- `32` (subnet mask `255.255.255.255`): Only the specified host address is monitored.
+- `0` (subnet mask `0.0.0.0`): All IP addresses in the range are monitored.
 
-The default capturing rules for port 80 (HTTP) and 443 (HTTPS) use  **IP Address** set as `0.0.0.0` and **Subnet Mask** set as `0` (`0.0.0.0`). That entry translates to all available IPv4 addresses because it starts from `0.0.0.0` and adds a mask covering the entire IPv4 range (all 4,294,967,296 available addresses). The default rules also adds the above range as IPv6 entry (**IP Address** set as `::` and **Subnet Mask** set as `0` on ports `80` and `443`).
+Default rules for ports 80 and 443 use **IP Address** `0.0.0.0` and **Subnet Mask** `0`, covering all IPv4 addresses. IPv6 is also supported (e.g., **IP Address** `::` and **Subnet Mask** `0`).
 
-In addition, the default rules are also adding a localhost IPv4 address (**IP Address** set as `127.0.0.0` and **Subnet Mask** set as `8`, plus localhost IPv6 address through **IP Address** set as `::1` and **Subnet Mask** set as `128` on port `3000`) that demonstrates how to set localhost capturing on port 3000. 
+A localhost rule is also included: **IP Address** `127.0.0.0` and **Subnet Mask** `8` (IPv4), or **IP Address** `::1` and **Subnet Mask** `128` (IPv6) on port 3000.
 
 ## Troubleshooting the macOS Network Extension
 
-Consider the following tips to troubleshoot the Fiddler's network extension on macOS:
+If you encounter issues with the Fiddler network extension on macOS:
 
-- Ensure that the currently logged user on macOS has administrative privileges that allow installation and enablement of network extensions.
-
-If you experience trouble installing and enabling the Fiddler's network extension for macOS, don't hesitate to contact us through [the Telerik Support Center](https://www.telerik.com/account/support-center). 
+- Ensure your OS user account has administrative privileges to install and enable network extensions.
+- If installation or enablement fails, contact [Telerik Support Center](https://www.telerik.com/account/support-center).
 
 ## Removing the macOS Network Extension
 
-Once the Fiddler's network extension installs, you can enable or disable the network capturing more quickly. However, it's essential to note that disabling the feature doesn't remove the network extension from your operating system. Suppose you want to remove the network extension from your macOS system. In that case, you can achieve that by [manually removing the extension](#manual-removal) or by [uninstalling the Fiddler Everywhere application](#removal-through-application-uninstall).
-
-### Manual Removal
-
-You can manually remove the extension by executing the following steps:
-
-1. Open the macOS **System Settings**.
-
-1. Navigate to the **Network** section.
-
-1. Click on **Filters**.
-
-1. Select the Fiddler Everywhere extension.
-
-    - Use the dropdown on the right side to turn off the network extension (you can re-enable it later).
-
-    - Use the "-" sign to uninstall and remove the network extension.
+Disabling network capturing does not remove the network extension from your system. To remove it:
 
 ### Removal through Application Uninstall
 
-Uninstalling the Fiddler Everywhere application also triggers the deletion of the Fiddler's network extension. To proceed with that option, execute the following steps.
+1. Open the **Applications** folder.
+2. Drag Fiddler Everywhere to the bin.
+3. In the warning prompt, choose **Continue** to confirm removal.
 
-- Open the **Applications** folder on macOS.
+>tip If removal fails, close Fiddler Everywhere, ensure no Fiddler processes are running, and retry the uninstall process.
 
-- Drag and drop the Fiddler Everywhere icon to the macOS bin.
+### Manual Removal (macOS)
 
-- In the prompted macOS warning, choose **Continue** to confirm the application and extension removal.
+1. Open **System Settings** on macOS.
+2. Go to the **Network** section.
+3. Click **Filters**.
+4. Select the Fiddler Everywhere extension.
+    - Use the dropdown to turn off the extension (can be re-enabled later).
+    - Use the "-" sign to uninstall and remove the extension.
 
-On some macOS systems, the removal of Fiddler Everywhere can fail initially. In such cases, close Fiddler Everywhere, ensure no Fiddler processes run in the background, and then re-try the uninstall process.
+## Best Practices
+
+- Use the Basic view for simple capture needs; switch to Advanced for granular control.
+- Always review and reset rules after major updates or policy changes.
+- Use descriptive process names or PIDs to avoid capturing unnecessary traffic.
+- For troubleshooting, start with default rules and add complexity incrementally.
