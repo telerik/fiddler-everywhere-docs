@@ -73,7 +73,7 @@ If this is the first time you are starting the network capturing mode on your ma
 
 **Initial Setup on macOS**
 
-Immediately after pressing **Enable Capture**, you will see s native macOS popup.
+Immediately after pressing **Enable Capture**, you will see a native macOS popup.
 
 1. In the macOS popup, choose **Open System Settings**. In the opened macOS system settings, scroll down to the message that the Fiddler extension is blocked.
 
@@ -89,7 +89,7 @@ Upon succesful instalation the **Network Capture** screen reloads with reverse c
 
 Immediately after pressing **Enable Capture**, the Windows OS will prompt a security popup.
 
-1. Click **Yes** to wllow the installation of the network extension.
+1. Click **Yes** to allow the installation of the network extension.
 
 Upon succesful instalation the **Network Capture** screen reloads with reverse capturing enabled.
 
