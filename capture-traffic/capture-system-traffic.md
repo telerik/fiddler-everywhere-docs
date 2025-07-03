@@ -47,6 +47,3 @@ You can manually turn on and off the system proxy capturing mode.
 Fiddler Everywhere warns you through an informative dialog when the system capturing mode is manually enabled.
 
 >important Fiddler Everywhere persists in the state of the **System Proxy** switch and starts with system capturing turned on or off based on the last switch state.
-
-
-

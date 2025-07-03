@@ -37,7 +37,7 @@ The following table demonstrates the supported functionalities and differences b
 | Support for TLS 1.3  | Yes | Yes | Yes  | Yes | Yes
 | Support for IPv4  | Yes | Yes | Yes  | Yes | Yes
 | Support for IPv6  | Yes | No | Yes  | Yes | Yes
-| Supported OS  | Windows, macOS, Linux | macOS | macOS  | Windows, macOS, Linux | Windows, macOS, Linux
+| Supported OS  | Windows, macOS, Linux | Windows, macOS | macOS  | Windows, macOS, Linux | Windows, macOS, Linux
 | VPN compatibility  | Yes * | Yes * | Yes | Yes | Depends on the app
 | Proxy Modification | Yes (modifies the system proxy) | No (uses network extension) | Sets a proxy within a browser instance | Sets a proxy for a terminal instance | Manual proxy configuration 
 | Needs Configuration | Requires Fiddler CA certificate | Requires Fiddler CA certificate | No additional configuration needed | No additional configuration needed | Requires Fiddler CA certificate 
@@ -75,7 +75,7 @@ The Fiddler Everywhere application supports capturing in reverse proxy mode thro
 
 ## Network Capturing
 
-The Fiddler Everywhere version 5.2.0 introduced the network capturing mode as a BETA feature for macOS. The mode works on a lower level than an HTTP(S) proxy and allows you to capture TCP traffic from all applications that use the active network adapter without changing the system or client proxy. 
+The Fiddler Everywhere version 5.2.0 introduced the network capturing mode as a BETA feature for macOS and Windows. The mode works on a lower level than an HTTP(S) proxy and allows you to capture TCP traffic from all applications that use the active network adapter without changing the system or client proxy. 
 
 [Learn more about the network capturing mode here...]({%slug capture-network-traffic%})
 
