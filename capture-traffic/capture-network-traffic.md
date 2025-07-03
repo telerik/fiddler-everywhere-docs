@@ -40,6 +40,8 @@ You must meet the following prerequisites to use the network capturing mode.
 
 The **Network Capture** mode is in Beta state and, currently, has some known limitations as follows:
 
+- The network capturing mode is available only for Windows and macOS. The Linux version of Fiddler Everywhere does not yet support network capturing.
+
 - Specific VPN tools are closing the VPN connection if a third-party network extension is detected. You can try to workaround that by making the VPN connection **before** starting Fiddler Everywhere and then enabling its network capturing mode.
 
 - To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints (for example, like `vpn.mycompany.com`). However the **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. When using network capturing mode, you must bypass targeted VPN endpoints [by creating a Fiddler rule that executes the **Do Not Decrypt** action]({%slug configure-vpn-fiddler%}#configuration-for-network-
@@ -81,7 +83,7 @@ Immediately after pressing **Enable Capture**, you will see s native macOS popup
 
 1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
 
-Upon succesful instalation the **Reverse Proxy** screen reloads with reverse capturing enabled.
+Upon succesful instalation the **Network Capture** screen reloads with reverse capturing enabled.
 
 **Initial Setup on Windows**
 
@@ -89,7 +91,7 @@ Immediately after pressing **Enable Capture**, the Windows OS will prompt a secu
 
 1. Click **Yes** to wllow the installation of the network extension.
 
-Upon succesful instalation the **Reverse Proxy** screen reloads with reverse capturing enabled.
+Upon succesful instalation the **Network Capture** screen reloads with reverse capturing enabled.
 
 ### Stop Network Capture
 
@@ -132,18 +134,15 @@ Default rules for ports 80 and 443 use **IP Address** `0.0.0.0` and **Subnet Mas
 
 A localhost rule is also included: **IP Address** `127.0.0.0` and **Subnet Mask** `8` (IPv4), or **IP Address** `::1` and **Subnet Mask** `128` (IPv6) on port 3000.
 
-## Troubleshooting the macOS Network Extension
-
-If you encounter issues with the Fiddler network extension on macOS:
-
-- Ensure your OS user account has administrative privileges to install and enable network extensions.
-- If installation or enablement fails, contact [Telerik Support Center](https://www.telerik.com/account/support-center).
-
-## Removing the macOS Network Extension
+## Removing the Network Extension
 
 Disabling network capturing does not remove the network extension from your system. To remove it:
 
-### Removal through Application Uninstall
+### Removal through Application Uninstall (Windows)
+
+1. Uninstall Fiddler Everywhere thorugh the Windows Control Panel.
+
+### Removal through Application Uninstall (macOS)
 
 1. Open the **Applications** folder.
 2. Drag Fiddler Everywhere to the bin.
@@ -160,9 +159,22 @@ Disabling network capturing does not remove the network extension from your syst
     - Use the dropdown to turn off the extension (can be re-enabled later).
     - Use the "-" sign to uninstall and remove the extension.
 
+## Troubleshooting the Network Extension
+
+If you encounter issues with the Fiddler network extension:
+
+- Ensure your OS user account has administrative privileges to install and enable network extensions.
+- If installation or enablement fails, contact [Telerik Support Center](https://www.telerik.com/account/support-center).
+
 ## Best Practices
 
 - Use the Basic view for simple capture needs; switch to Advanced for granular control.
 - Always review and reset rules after major updates or policy changes.
 - Use descriptive process names or PIDs to avoid capturing unnecessary traffic.
 - For troubleshooting, start with default rules and add complexity incrementally.
+
+## Additional Resources
+
+- [Capturing Modes in Fiddler]({%slug capture-traffic-get-started%})
+- [Fiddler as a System Proxy]({%slug capture-system-traffic%})
+- [Fiddler as a Reverse Proxy]({%slug fiddler-reverse-proxy%})
