@@ -83,7 +83,7 @@ Immediately after pressing **Enable Capture**, you will see a native macOS popup
 
 1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
 
-Upon succesful instalation the **Network Capture** screen reloads with reverse capturing enabled.
+Upon succesful instalation the **Network Capture** screen reloads with network capturing enabled.
 
 **Initial Setup on Windows**
 
@@ -91,7 +91,7 @@ Immediately after pressing **Enable Capture**, the Windows OS will prompt a secu
 
 1. Click **Yes** to allow the installation of the network extension.
 
-Upon succesful instalation the **Network Capture** screen reloads with reverse capturing enabled.
+Upon succesful instalation the **Network Capture** screen reloads with network capturing enabled.
 
 ### Stop Network Capture
 
