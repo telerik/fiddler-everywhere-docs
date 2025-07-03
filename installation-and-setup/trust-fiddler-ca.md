@@ -31,8 +31,9 @@ Use the manual approach if the automated wizard fails or you need more control o
 1. Go to **Settings** > **HTTPS** in Fiddler Everywhere.
 2. Click **Trust Fiddler CA in the User Store**. Confirm and accept the certificate in the popup.
    >tip To install the CA in the Windows **machine store** (for all users), run Fiddler as Administrator and use **Trust Fiddler CA in the Machine Store**.
-3. Enable **Capture HTTPS traffic** and click **Save**.
-4. On the main screen, toggle **System Proxy** ON to start capturing system HTTP/HTTPS traffic.
+3. Go to **Settings** > **HTTPS** once more and enable **Capture HTTPS traffic**
+4. Click **Save**.
+5. On the main screen, toggle **System Proxy** ON to start capturing system HTTP/HTTPS traffic.
 
 ### macOS
 
@@ -40,8 +41,9 @@ Use the manual approach if the automated wizard fails or you need more control o
 2. Click **Trust Fiddler CA in the User Store**.
 3. Enter your macOS admin credentials when prompted.
    ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-HTTPS-mac-keychain.png)
-4. Enable **Capture HTTPS traffic** and click **Save**.
-5. On the main screen, enable **Live Traffic** to start capturing system HTTP/HTTPS traffic.
+4. Go to **Settings** > **HTTPS** once more and enable **Capture HTTPS traffic**
+5. Click **Save**.
+6. On the main screen, enable **Live Traffic** to start capturing system HTTP/HTTPS traffic.
 
 ### Linux
 
