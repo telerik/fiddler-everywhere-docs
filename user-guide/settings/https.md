@@ -6,43 +6,51 @@ publish: true
 position: 10
 ---
 
-# HTTPS Menu
+# HTTPS Settings
 
-After the initial startup, Fiddler Everywhere default captures only non-secure traffic (HTTP).
+After initial startup, Fiddler Everywhere captures only non-secure HTTP traffic by default.
 
-To enable the capturing and decrypting of HTTPS traffic, you need to install the Fiddler root CA (certificate authority) through the **HTTPS** sub-menu under **Settings**.
+To capture and decrypt HTTPS traffic, you must install and trust the Fiddler root CA (Certificate Authority) via the **HTTPS** sub-menu under **Settings**.
 
-- **Trust CA Certificate**&mdash;Installs and trusts the Fiddler root Certificate authority (CA) in the **user store** of the operating system certificate manager. The option is available on [macOS]({% slug first_steps_macos %}#start-system-capturing) and [Windows]({% slug first_steps_windows %}#start-system-capturing). On Linux, you have to [export and trust the Fiddler CA certificate manually]({% slug first_steps_linux %}#start-system-capturing). After you install the CA, you are ready to [enable the capturing of HTTPS traffic](#capture-https-traffic).
+## Certificate Trust Options
 
-- **Capture HTTPS traffic**&mdash;Defines if Fiddler Everywhere will capture HTTPS traffic or skip it. By default, this option is disabled. Before you enable the capturing of HTTPS traffic, you must trust the Fiddler root certificate.
+- **Trust CA Certificate in the User Store**: Installs and trusts the Fiddler root CA in the user store of your OS certificate manager. Available on [macOS]({% slug first_steps_macos %}#start-system-capturing) and [Windows]({% slug first_steps_windows %}#start-system-capturing). On Linux, [export and trust the Fiddler CA certificate manually]({% slug first_steps_linux %}#start-system-capturing). After installation, you can [enable HTTPS traffic capturing](#capture-https-traffic).
 
-- **Ignore server certificate errors**&mdash;Controls whether Fiddler Everywhere warns you if an HTTPS server presents a certificate that cannot be validated. Do not check this box when surfing the Internet because of a possible [spoofing security threat](https://en.wikipedia.org/wiki/Spoofing_attack). 
+- **Trust CA Certificate in the Machine Store**: Installs and trusts the Fiddler root CA in the machine store (all users) of the OS certificate manager. Available on Windows only and requires administrative privileges.
 
-    * The **Ignore server certificate errors** checkbox is active (with a tick), but the ignore list is left blank&mdash;Fiddler will automatically ignore all server certificate errors. 
+- **Export**: Exports the Fiddler CA certificate in your chosen format: DER/Binary (.crt), PEM/BinASCII (.pem), or PKCS 12 (.p12).
 
-    * The **Ignore server certificate errors** checkbox is active (with a tick), and the ignore list is populated with specific endpoints&mdash;Fiddler will ignore only server certificate errors for the listed endpoints. Adding endpoints to the ignore list works only for new connections.
+- **Reset**: Removes the current CA, generates a new one, and trusts it. Use if you suspect compromise or encounter certificate issues.
 
-    * The **Ignore server certificate errors** checkbox is inactive (no tick)&mdash;Fiddler won't ignore server certificate errors, and upon hitting one, will present a special Fiddler's page that informs the user about the insecure connection. The custom Fiddler's page also provides a quick link to add the specific endpoint to the ignore list.
+- **Remove**: Removes the trusted CA from the OS certificate store. HTTPS traffic capturing will be disabled until a new CA is installed.
 
-- **Advanced Settings**&mdash;A drop-down menu that provides the following additional options related to the Fiddler root CA (certificate authority):
+## HTTPS Traffic Options
 
-    - **Trust CA Certificate in the Machine Store**&mdash;Installs and trusts the Fiddler CA certificate in the **machine store** of the operating system certificate manager. The option is available only on [Windows]({% slug first_steps_windows %}#start-system-capturing).
+- **Capture HTTPS traffic**: Enables or disables HTTPS traffic capturing. Disabled by default. You must trust the Fiddler root certificate first.
 
-    - **Export CA Certificate**&mdash;A drop-down menu to select a format and export the Fiddler CA certificate to the operating system **Desktop** folder. Some operating systems do not have a default folder named **Desktop**. In such cases, you must create this folder (`~/Desktop` for macOS and Linux distributions) to export the certificate successfully. Fiddler Everywhere provides options to export the following formats:
-        * **Export CA Certificate(DER/Binary format)**&mdash;Exports the Fiddler Everywhere CA in binary format as `Fiddler_Root_Certificate_Authority.crt`.
-        * **Export CA Certificate(PEM/ASCII format)**&mdash;Exports the Fiddler Everywhere CA in ASCII format as `Fiddler_Root_Certificate_Authority.pem`.
-        * **Export CA Certificate(PKCS 12 format)**&mdash;Exports the Fiddler Everywhere CA in PKCS 12 format as `Fiddler_Root_Certificate_Authority.p12`.
+- **Ignore server certificate errors**: Controls whether Fiddler warns you if an HTTPS server presents an invalid certificate. 
+  - **Warning:** Do not enable this when browsing the Internet, as it may expose you to [spoofing attacks](https://en.wikipedia.org/wiki/Spoofing_attack).
+  - **Checkbox active, ignore list blank**: Ignores all server certificate errors.
+  - **Checkbox active, ignore list populated**: Ignores errors only for listed endpoints (new connections only).
+  - **Checkbox inactive**: Fiddler will show a warning page for certificate errors, with a quick link to add the endpoint to the ignore list.
 
-    - **Reset CA Certificate**&mdash;Click the button to remove the currently trusted CA, generate a new one, and trust it.
-    
-    - **Remove CA Certificate**&mdash;Click the button to remove the currently trusted CA from the OS certificate store. As a result, the capturing of HTTPS traffic will be disabled.
+## Default HTTPS Settings
 
-The following figure displays the default settings of the **HTTPS** menu.  
+The following figure displays the default settings of the **HTTPS** menu:
 
-![default https settings](../../images/settings/settings-https.png)
+![Default HTTPS settings](../../images/settings/settings-https.png)
 
 ## Inline Notifications
 
-If the Fiddler root CA is not yet trusted, an inline notification will warn you that the [system HTTPS capture]({%slug capture-traffic-get-started%}#system-capturing) is disabled. This notification will hide if you use the [independent browser capturing option]({%slug capture-traffic-get-started%}#independent-browser-capturing) and will re-appear once you close the active independent browser instance.
+If the Fiddler root CA is not yet trusted, an inline notification will warn you that [system HTTPS capture]({%slug capture-traffic-get-started%}#system-capturing) is disabled. This notification hides if you use [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) and reappears when you close the independent browser instance.
 
-![inline notification](../../images/get-started/notification.png) 
+![Inline notification](../../images/get-started/notification.png)
+
+## Troubleshooting & Best Practices
+
+- Always install the CA certificate only from the official Fiddler Everywhere application.
+- Use the User Store for personal development; use the Machine Store only if multiple users need HTTPS capture.
+- Remove the CA certificate when you no longer need HTTPS capturing for security.
+- If HTTPS capture does not work, verify the CA is trusted and "Capture HTTPS traffic" is enabled.
+- For certificate errors on specific sites, add the domain to the ignore list (for development only).
+- On Linux, always follow the manual export and trust instructions for your distribution.
