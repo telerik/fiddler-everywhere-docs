@@ -87,7 +87,7 @@ Upon succesful instalation the **Reverse Proxy** screen reloads with reverse cap
 
 Immediately after pressing **Enable Capture**, the Windows OS will prompt a security popup.
 
-1. Click **Yes** to wllow the installation of the network extension.
+1. Click **Yes** to allow the installation of the network extension.
 
 Upon succesful instalation the **Reverse Proxy** screen reloads with reverse capturing enabled.
 
