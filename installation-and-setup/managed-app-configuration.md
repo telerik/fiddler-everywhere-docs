@@ -100,6 +100,9 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | `DisableAllowRemoteDevicesToConnect` | Disables remote device connections to the Fiddler proxy. | DWORD-32 (hexadecimal) | 1 |
 | `DisableAnalytics` | Disables Fiddler's analytics. | DWORD-32 (hexadecimal) | 1 |
 | `DisableCloud` | Disables all cloud interactions (sharing, storing, and receiving data via Fiddler's cloud). | DWORD-32 (hexadecimal) | 1 |
+| `DefaultNetworkCaptureList` | Whitespace-separated list of CIDR addresses and port numbers for network capturing mode. | String Value | `"0.0.0.0/0:443 ::/0:443"` |
+| `DefaultNetworkCaptureFilterList` | Whitespace-separated list of process IDs or names to capture in network mode. | String Value | `"13008 \"Google Chrome\""` |
+| `DisableNetworkCaptureSettingsChange` | Prevents users from modifying network capturing settings. | inteDWORD-32 (hexadecimal) | 1 |
 | `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | DWORD-32 (hexadecimal) | 1 |
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | String Value | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | String Value | `<base64-private-key>` |

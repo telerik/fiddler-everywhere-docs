@@ -8,7 +8,7 @@ position: 15
 
 # Network Capturing Mode
 
->important The network capturing mode is a feature in BETA state and is subject to change in the future. Currently, the functionality is available only for the **macOS** version of Fiddler Everywhere and works only for IPv4 protocol.
+>important The network capturing mode is a feature in BETA state and is subject to change in the future.
 
 This article describes using Fiddler's **network capturing mode**, where "network traffic" refers to all outgoing TCP traffic. The feature requires the installation of a network extension, which requires explicit administrative privileges.
 
@@ -34,23 +34,18 @@ You must meet the following prerequisites to use the network capturing mode.
 
 - [Installed and trusted Fiddler's Certificate Authority]({%slug trust-certificate%}).
 
-- Administrative privileges to install/uninstall the network extension on macOS.
-
+- Administrative privileges to install/uninstall the network extension.
 
 ### Limitations
 
 The **Network Capture** mode is in Beta state and, currently, has some known limitations as follows:
-
-- The network extension that enables the network capturing mode is available only on the macOS version of Fiddler Everywhere. The development for the counterpart Windows & Linux features is ongoing.
-
-- The network capturing mode captures IPv4 traffic, while capturing IPv6 traffic is not yet supported.
 
 - Specific VPN tools are closing the VPN connection if a third-party network extension is detected. You can try to workaround that by making the VPN connection **before** starting Fiddler Everywhere and then enabling its network capturing mode.
 
 - To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints (for example, like `vpn.mycompany.com`). However the **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. When using network capturing mode, you must bypass targeted VPN endpoints [by creating a Fiddler rule that executes the **Do Not Decrypt** action]({%slug configure-vpn-fiddler%}#configuration-for-network-
 capturing-mode).
 
-- The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
+- The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes like [reserve proxy]({%slug fiddler-reverse-proxy%}) or specific capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
 
 ## Using the Network Capturing Mode
 
@@ -72,9 +67,11 @@ To start the network capturing mode, execute the following steps:
 
 >tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)
 
-If this is the first time you are starting the network capturing mode on your macOS, then you will need to install and allow the usage of the Fiddler's network extension. To do so, proceed with the following steps:
+If this is the first time you are starting the network capturing mode on your macOS, then you will need to install and allow the usage of the Fiddler's network extension. To do so, proceed with the following steps.
 
-Immediately after pressing **Enable Capture**, you will see the following native macOS popup.
+**Initial Setup on macOS**
+
+Immediately after pressing **Enable Capture**, you will see s native macOS popup.
 
 1. In the macOS popup, choose **Open System Settings**. In the opened macOS system settings, scroll down to the message that the Fiddler extension is blocked.
 
@@ -83,6 +80,16 @@ Immediately after pressing **Enable Capture**, you will see the following native
 1. Enter your credentials to install the extension.
 
 1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
+
+Upon succesful instalation the **Reverse Proxy** screen reloads with reverse capturing enabled.
+
+**Initial Setup on Windows**
+
+Immediately after pressing **Enable Capture**, the Windows OS will prompt a security popup.
+
+1. Click **Yes** to wllow the installation of the network extension.
+
+Upon succesful instalation the **Reverse Proxy** screen reloads with reverse capturing enabled.
 
 ### Stop Network Capture
 
@@ -107,6 +114,18 @@ Through the advanced view, you can manually control what traffic to capture thro
 - **Port****&mdash;Sets the TCP/IP port. By default, most client applications use port 80 for HTTP and port 443 for HTTPS. However, it is common for some applications to use different ports for staging and testing purposes (for example, custom ports for demo applications running on localhost)
 
 - **Filter additionally by PID or process name**&mdash;Use this field to specify multiple PID (process identifiers) or process name values by separating them with a space. If your process name contains more than one word, add quotation marks (for example, "Google Chrome Helper"). You can use the macOS "Activity Monitor" application to determine any active application's specific PID or process name.
+
+### Reset Capturing Rules
+
+To revert the capturing rules to their defaults.
+
+- Load the **Netowrk Capture Setting** window.
+
+- Switch to **Advanced** view.
+
+- Click on the **Reset to Default**.
+
+>tip: If the network capture properties are set through the managed app policies, then the reset option will revert to the rules set through the administrative policies.
 
 ### CIDR Notation for Setting Network Addresses
 
