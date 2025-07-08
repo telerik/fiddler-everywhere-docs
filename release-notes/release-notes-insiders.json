@@ -1,5 +1,34 @@
 [
     {
+        "version": "7.0.0-insiders",
+        "title": "Fiddler Everywhere v7.0.0",
+        "date": "Jul 8, 2025",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "[Beta feature] Added network capture mode for Windows"
+                    },
+                    {
+                        "title": "Added support for Reverse proxy"
+                    },
+                    {
+                        "title": "Allow the Fiddler CA to be stored in the system keychain on macOS"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Update third-party dependencies to mitigate potential security vulnerabilities"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "6.6.0-insiders",
         "title": "Fiddler Everywhere v6.6.0",
         "date": "May 29, 2025",
