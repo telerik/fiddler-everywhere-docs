@@ -1,23 +1,51 @@
 ---
-title: Theme
-description: "Style the appearance of Fiddler Everywhere by selecting an available theme of your choice."
+title: Appearance
+description: "Customize the appearance of Fiddler Everywhere by selecting themes and UI modes that suit your preferences."
 slug: themes-settings-submenu
 publish: true
 position: 110
 ---
 
-# Theme Menu
+# Appearance Settings
 
-The **Theme** menu contains a set of UI themes, which you can apply to the Fiddler Everywhere application.
+The **Appearance** menu provides theme and UI customization options to personalize your Fiddler Everywhere experience.
 
-by default, Fiddler Everywhere renders its **Default Light** theme. To change it, select a new theme from the menu, and click **Save**.
+## Theme Selection
 
-The available themes are:
+By default, Fiddler Everywhere uses the **System** theme, which automatically adapts to your operating system's appearance settings. To change the theme:
 
-- Auto (changes the appearance based on your operating system theme)
-- Default Light
-- Light Blue
-- Default Dark
-- Dark Blue
+1. Select your preferred theme from the dropdown menu
+2. Click **Save** to apply the changes
 
-![Theme settings](../../images/settings/settings-themes.png)
+### Available Themes
+
+- **System**: Automatically matches your operating system's theme (light or dark)
+- **Light**: Uses a bright color scheme with dark text on light backgrounds
+- **Dark**: Features a dark color scheme with light text on dark backgrounds
+
+> **Tip:** The dark theme can reduce eye strain during extended debugging sessions, especially in low-light environments.
+
+## Table Density
+
+The **Table Density** setting controls the spacing and compactness of information displayed in:
+- Live traffic grid sessions
+- Inspector panel content
+- Other tabular data throughout the application
+
+### Density Options
+
+- **Default**: Standard spacing with comfortable row heights for easy reading and interaction
+- **Compact**: Reduced spacing and smaller row heights to display more information on screen
+
+Choose the option that best suits your screen size, resolution, and personal preference. Compact mode is particularly useful when working with large datasets or on smaller screens where you need to see more entries at once.
+
+![Appearance settings interface](../../images/settings/settings-themes.png)
+
+## Best Practices
+
+- **System theme** is recommended for users who switch between light and dark OS themes
+- **Dark theme** is ideal for extended debugging sessions or low-light environments  
+- **Light theme** works well in bright environments and for sharing screenshots
+- **Default density** provides better readability and is recommended for most users
+- **Compact density** is useful when you need to view more traffic entries simultaneously or work on smaller screens
+- Adjust settings based on your screen resolution and the amount of information you need to view simultaneously
