@@ -217,7 +217,6 @@ Encoded messages from a **gRPC** session are automatically decoded (if possible)
 
 [Learn more about capturing gRPC traffic with Fiddler Everywhere here...]({%slug capture-grpc-traffic%})
 
-
 ### Handshake Tab
 
 Similarly to an HTTP(S) request and response, the **Handshake tab** for the WebSocket and gRPC APIs provide the following types of inspecting tools that enable you to examine different parts of the WebSocket requests and responses:
@@ -235,7 +234,6 @@ Similarly to an HTTP(S) request and response, the **Handshake tab** for the WebS
 - [Body inspector](#body-inspectors)
 
 ![WebSocket and gRPC Handshake Inspector](../images/livetraffic/inspectors/websocket-handshake.png)
-
 
 ### Messages Tab
 
