@@ -31,6 +31,7 @@ Select the appropriate capturing mode based on your specific debugging needs:
 - **Independent Browser**: Perfect for web application testing without affecting other system traffic
 - **Terminal**: Great for debugging CLI tools, Node.js applications, and command-line utilities
 - **Explicit/Remote**: Essential for testing mobile apps, IoT devices, or distributed systems
+- **Reverse Proxy**: Best for capturing tarffic sent to a server
 
 ![When and why to use a specific capturing mode](../images/capturing-modes/capturing-modes-diagram.png)
 
@@ -98,6 +99,8 @@ System capturing is the most comprehensive mode, intercepting all HTTP, HTTPS, W
 
 The Fiddler Everywhere application supports capturing in reverse proxy mode through the built-in **Reverse Proxy** functionality or through a custom reverse proxy rules.
 
+![Use the "Reverse Proxy" button to configure and capture traffic as a reverse proxy](../images/get-started/get-started-reverse.png)
+
 [Learn more about the reverse proxy mode here...]({%slug fiddler-reverse-proxy%})
 
 ## Network Capturing (Beta)
@@ -115,6 +118,8 @@ Network capturing operates at a lower level than traditional HTTP proxies, captu
 - WebSocket debugging in Safari on macOS
 - Low-level network analysis
 - Environments where proxy configuration is restricted
+
+![Use the "Network Capture" button to configure and capture traffic through the Network capturing mode](../images/get-started/get-started-network-capturepng.png)
 
 [Learn more about network capturing...]({%slug capture-network-traffic%})
 
