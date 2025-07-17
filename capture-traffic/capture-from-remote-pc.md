@@ -9,83 +9,257 @@ previous_url: /knowledge-base/how-to-capture-traffic-from-another-pc, /knowledge
 
 # Capturing Traffic from Remote Devices
 
-The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install Fiddler's Certificate Authority (CA). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android]({%slug capture-mobile-android-traffic%}) or [iOS]({%slug capture-mobile-ios-traffic%}).
+Fiddler Everywhere can capture HTTP/HTTPS traffic from any remote device on your local network—computers, gaming consoles, smartphones, smart TVs, IoT devices, and more. This capability is essential for debugging mobile applications, testing cross-platform compatibility, and analyzing traffic from devices that can't run Fiddler directly.
 
-## Prerequisites
+This article covers generic remote device setup. For mobile-specific instructions, see our dedicated guides for [Android]({%slug capture-mobile-android-traffic%}) and [iOS]({%slug capture-mobile-ios-traffic%}) devices.
 
-- Install [the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
+## How It Works
 
-- Use a configurable device within the same local network as the Fiddler Everywhere host.
+Remote traffic capturing works by configuring your target device to route its internet traffic through Fiddler's proxy server. Here's the basic flow:
 
->important It's common for many company networks to be restricted by security tooling or administrative policies. To capture remote traffic, ensure that your system administrators do not limit the network discovery and usage, or consider using a public hotspot for your Fiddler host and remote device. The Fiddler Everywhere host and the remote machine must have the Fiddler proxy port opened, which is port **8866** by default.
+1. **Fiddler Host**: Your computer running Fiddler Everywhere acts as a proxy server
+2. **Remote Device**: Any device on your network configured to use Fiddler's proxy
+3. **Traffic Flow**: Remote device → Fiddler proxy → Internet → Fiddler proxy → Remote device
 
-The requirement for using the same network is actually not a must. However, most remote networks, like those managed by ISPs (Internet service providers), use firewalls, explicitly close most ports, and block access from remote networks. That makes configuring and using Fiddler over the internet virtually impossible (as few providers allow you to open a random port or apply custom administrative policies). If you are the administrator of two separate networks, you must ensure that the Fiddler proxy port is open and that both host and target machines see each other (successful ping).
+## Prerequisites & Network Requirements
 
+### Software Requirements
 
-## Capturing Remote Windows Traffic
+- [Latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere) installed on host computer
+- Remote device with proxy configuration capabilities
+- Administrative access on both host and remote devices (for certificate installation)
 
-Fiddler Everywhere provides an automated guide to configure remote Windows capturing through the following steps:
+### Network Requirements
 
-1. Start Fiddler Everywhere. 
+- Both devices must be on the same local network (e.g., same Wi-Fi network)
+- Fiddler proxy port (default: 8866) must be accessible between devices
+- No firewall blocking communication between devices
 
-1. Open the **Home** pane.
+### Corporate Network Considerations
 
-1. Open the **Remote Devices** screen.
+Company networks often restrict proxy usage and network discovery. If you encounter issues:
+- Check with your system administrator about network policies
+- Consider using a personal hotspot for testing
+- Ensure port 8866 (or your custom port) is not blocked by corporate firewalls
 
-1. Open the **Windows** tutorial and follow the instructions.
+### Alternative Network Setups
 
-The tutorial requires administrative privileges for the current user (on the remote host) to install Fiddler's CA and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote Windows device.
+While same-network setup is recommended, you can configure remote capturing across different networks if you have administrative control over both networks and can:
+- Open the Fiddler proxy port in firewalls
+- Ensure network routing allows communication between the devices
+- Configure appropriate security measures
 
+## Quick Setup: Automated Tutorials
 
-## Capturing Remote macOS Traffic
+Fiddler Everywhere provides automated setup wizards for Windows and macOS devices:
 
-Fiddler Everywhere provides an automated guide to configure remote macOS capturing through the following steps:
+### Windows Remote Device Setup
+1. Start Fiddler Everywhere
+2. Go to **Home** → **Remote Devices** → **Windows**
+3. Follow the step-by-step tutorial
 
-1. Start Fiddler Everywhere. 
+### macOS Remote Device Setup
+1. Start Fiddler Everywhere  
+2. Go to **Home** → **Remote Devices** → **macOS**
+3. Follow the step-by-step tutorial
 
-1. Open the **Home** pane.
+Both tutorials require administrative privileges on the remote device to install Fiddler's CA certificate and configure system proxy settings.
 
-1. Open the **Remote Devices** screen.
+## Manual Setup Guide
 
-1. Open the **macOS** tutorial and follow the instructions.
+For devices not covered by automated tutorials, follow this comprehensive manual setup process.
 
-The tutorial requires administrative privileges for the current user (on the remote host) to install Fiddler's CA and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote macOS device.
+### Step 1: Configure Fiddler Host
 
+#### Enable Remote Connections
+1. Open Fiddler Everywhere
+2. Go to **Settings** → **Connections**
+3. Check **Allow remote devices to connect**
+4. Optionally check **Keep it ON after app restart** for persistence
+5. Note the **Fiddler listens on port** value (default: 8866)
 
-## Configuring Other Generic Devices (Manual Setup)
+#### Find Your Host IP Address
 
-You can manually configure both the Fiddler Everywhere and the remote device. Notice that the instructions below apply only to remote devices that allow configuring manual proxy and installing the Fiddler certificate authority (CA).
+Use one of these methods to find your Fiddler host's IP address:
 
-1. [Prepare Fiddler Everywhere host for capturing remote traffic](#configuring-the-fiddler-everywhere-host).
+**Method 1: Fiddler Status Bar**
 
-1. [Configure the Fiddler Everywhere proxy on remote device](#configuring-the-fiddler-proxy-on-the-remote-device).
+- Look at the connection status in the lower-right corner of Fiddler
 
+**Method 2: Command Line**
 
-### Configuring the Fiddler Everywhere Host
+```bash
+# Windows
+ipconfig
 
-1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote devices to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
+# macOS/Linux  
+ifconfig
+```
 
-    >tip Behind the scenes, enabling the **Allow remote devices to connect** option opens the Fiddler Everywhere port on the host machine for inbound connections. The default port is **8866**, but you can change its value through the **Settings > Connections > Fiddler listens on port** option. 
+**Example Output:**
 
-1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to get the host IP address. Alternatively, you can get the host IP address using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
+```
+Wireless LAN adapter Wi-Fi:
+IPv4 Address. . . . . . . . . . . : 192.168.1.100
+```
 
+In this example, your Fiddler host IP is `192.168.1.100`.
 
-### Configuring the Fiddler proxy on the Remote Device
+### Step 2: Configure Remote Device
 
-1. Open a browser on the remote device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. 
+#### Download and Install Fiddler Certificate
 
-1. Click the Fiddler CA certificate link to download it.
+1. **Open browser on remote device**
+2. **Navigate to Fiddler's echo service:**
+   ```
+   http://192.168.1.100:8866
+   ```
+   (Replace `192.168.1.100` with your actual Fiddler host IP)
 
-1. Open your client's certificate manager (like Keychain App on macOS or Certificate Manager on Windows), install, and trust the downloaded Fiddler CA.
+3. **Download the CA certificate**
+   - Click the "Download Fiddler Certificate" link
+   - Save the certificate file to your device
 
-1. Go to the operating system proxy settings on the target machine.
+4. **Install and trust the certificate:**
 
-    >tip The proxy settings location of the target machine will differ depending on the used OS (it can be macOS, Windows, Ubuntu, [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or any other third-party operating system.).
+   **Windows:**
+   - Double-click the downloaded certificate
+   - Click "Install Certificate"
+   - Choose "Current User" or "Local Machine"
+   - Select "Place all certificates in the following store"
+   - Click "Browse" and select "Trusted Root Certification Authorities"
+   - Complete the installation
 
-1. Open the manual proxy settings:
+   **macOS:**
+   - Double-click the certificate to open Keychain Access
+   - Enter your password when prompted
+   - Find "Fiddler Root Certificate Authority" in Keychain
+   - Double-click it and set to "Always Trust"
 
-    - Enter the IP address of the Fiddler Everywhere host&mdash;for example, `<fiddler-host-IP>` (for example, it could be an IP address like `192.168.100.1`).
+   **Linux:**
+   ```bash
+   # Copy certificate to system store
+   sudo cp Fiddler_Root_Certificate_Authority.crt /usr/local/share/ca-certificates/
+   sudo update-ca-certificates
+   ```
 
-    - Enter the Fiddler Everywhere proxy port. By default, the port is `8866`.
+#### Configure Proxy Settings
 
-    - Apply and save the above settings.
+Configure your device to use Fiddler as its HTTP/HTTPS proxy:
+
+**Windows 10/11:**
+1. Go to **Settings** → **Network & Internet** → **Proxy**
+2. Under "Manual proxy setup," toggle **Use a proxy server** to On
+3. Set **Address:** `192.168.1.100` (your Fiddler host IP)
+4. Set **Port:** `8866` (or your custom port)
+5. Check **Don't use the proxy server for local addresses**
+6. Click **Save**
+
+**macOS:**
+1. Go to **System Preferences** → **Network**
+2. Select your active connection and click **Advanced**
+3. Go to the **Proxies** tab
+4. Check **Web Proxy (HTTP)** and **Secure Web Proxy (HTTPS)**
+5. For both, enter:
+   - **Web Proxy Server:** `192.168.1.100:8866`
+   - **Secure Web Proxy Server:** `192.168.1.100:8866`
+6. Click **OK** and **Apply**
+
+**Linux (Ubuntu):**
+1. Go to **Settings** → **Network**
+2. Click the gear icon next to your connection
+3. Go to **Proxy** tab
+4. Select **Manual**
+5. Set **HTTP Proxy:** `192.168.1.100:8866`
+6. Set **HTTPS Proxy:** `192.168.1.100:8866`
+7. Click **Apply**
+
+## Practical Examples
+
+### Example 1: Windows Laptop on Wi-Fi
+
+**Scenario:** Testing a web application from a Windows laptop while debugging with Fiddler on your main development machine.
+
+**Setup:**
+- Fiddler host: Desktop PC at `192.168.1.100`
+- Remote device: Windows laptop at `192.168.1.150`
+- Both connected to "HomeWiFi" network
+
+**Steps:**
+1. Configure Fiddler on desktop PC to allow remote connections
+2. On Windows laptop, navigate to `http://192.168.1.100:8866`
+3. Download and install Fiddler certificate
+4. Set laptop proxy to `192.168.1.100:8866`
+5. Test by browsing to any website—traffic should appear in Fiddler
+
+### Example 2: Smart TV or IoT Device
+
+**Scenario:** Analyzing network requests from a smart TV or IoT device.
+
+**Setup:**
+- Fiddler host: MacBook at `192.168.1.110`
+- Remote device: Samsung Smart TV
+- Home Wi-Fi network
+
+**Steps:**
+1. Configure Fiddler for remote connections
+2. On Smart TV:
+   - Access network settings (varies by manufacturer)
+   - Find proxy or advanced network settings
+   - Enter proxy: `192.168.1.110:8866`
+3. Use TV's browser to download Fiddler certificate
+4. Install certificate in TV's certificate store (if supported)
+5. Monitor TV's app traffic in Fiddler
+
+## Verification and Testing
+
+After completing setup:
+
+1. **Test basic connectivity:**
+   ```bash
+   # From remote device, ping Fiddler host
+   ping 192.168.1.100
+   ```
+
+2. **Verify proxy configuration:**
+   - Browse to `http://httpbin.org/ip` from remote device
+   - The response should show your Fiddler host's public IP
+
+3. **Check HTTPS traffic:**
+   - Visit `https://httpbin.org/get` from remote device  
+   - Verify the request appears in Fiddler's Live Traffic
+
+4. **Test certificate installation:**
+   - Visit `https://www.google.com` from remote device
+   - Should load without certificate warnings
+   - Traffic should be decrypted and visible in Fiddler
+
+## Troubleshooting Common Issues
+
+### Connection Refused Errors
+- Verify Fiddler host firewall allows port 8866
+- Check that "Allow remote devices to connect" is enabled
+- Confirm both devices are on same network
+
+### Certificate Errors  
+- Ensure certificate is installed in correct certificate store
+- Verify certificate is marked as "trusted"
+- Try clearing browser cache/cookies on remote device
+
+### No Traffic Appearing
+- Double-check proxy settings on remote device
+- Verify proxy address and port are correct
+- Test with HTTP traffic first before HTTPS
+
+### Network Connectivity Issues
+- Confirm devices can ping each other
+- Check for corporate firewalls blocking traffic
+- Try different ports if 8866 is blocked
+
+## Security Considerations
+
+- Only use on trusted networks
+- Remove proxy settings when finished testing
+- Consider removing Fiddler certificate after testing
+- Be aware that all HTTPS traffic is decrypted and visible
+- Use strong authentication if exposing Fiddler to wider networks
