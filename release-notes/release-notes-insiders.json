@@ -1,5 +1,43 @@
 [
     {
+        "version": "7.1.0-insiders",
+        "title": "Fiddler Everywhere v7.1.0",
+        "date": "Jul 24, 2025",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add compact tables view for session list, composer and inspectors to reduce row height and fit more data on the screen. Go to Settings > Appearance to switch between Default and Compact view."
+                    },
+                    {
+                        "title": "Add support for parsing messages in server-sent events (SSE) sessions using HTTP/1.1"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Error \"Invalid session id/session source id\" displayed when Fiddler works in the background"
+                    },
+                    {
+                        "title": "Email validation requires additional clicks when sharing resources with other users"
+                    },
+                    {
+                        "title": "The content-type header in composer requests gets duplicated in some cases"
+                    },
+                    {
+                        "title": "Scrolling inspectors view with small app window sometimes hides the session body contents"
+                    },
+                    {
+                        "title": "Update third-party dependencies to mitigate potential security vulnerabilities"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "7.0.0-insiders",
         "title": "Fiddler Everywhere v7.0.0",
         "date": "Jul 8, 2025",
