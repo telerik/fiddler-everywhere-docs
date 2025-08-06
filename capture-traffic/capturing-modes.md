@@ -237,7 +237,7 @@ Fiddler Everywhere supports both HTTP/1.x and HTTP/2 traffic capture and composi
 
 ### Streaming HTTP
 
-Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to send data in chunks over a single, long-lived connection. The direction of communication is unidirectional where the server send chunked data and the client can only receive themn but has to respond in new connection.
+Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to send data in chunks over a single, long-lived connection. The direction of communication is unidirectional where the server sends chunked data and the client can only receive them but has to respond in a new connection.
 
 **Fiddler Streaming HTTP Support:**
 - Compatible with all capturing modes
