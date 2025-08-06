@@ -17,26 +17,21 @@ Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, i
 
 Fiddler Everywhere delivers a range of handy and user-friendly features whose number and further development are not limited by the list in this section&mdash;the Fiddler team constantly invests efforts to improve the performance and add more value to the existing web-debugging proxy tool and build on top of its available features.
 
-
 ### Traffic Capturing
 
 Fiddler Everywhere captures and logs all HTTPS, WebSocket, Server-Sent Events, gRPC, and Socket.IO traffic between your computer and the Internet and enables you to capture traffic from virtually any application that supports a system proxy. [Read more about capturing HTTPS traffic with Fiddler Everywhere...]({% slug capture-traffic-get-started %})
-
 
 ### Independent Browser Capturing
 
 Fiddler Everywhere provides an option for automatic, sandboxed browser HTTPS capturing without modifying the operating system proxy. [Read more about the independent Fiddler Everywhere browser capturing...]({% slug capture-browser-traffic %})
 
-
 ### Terminal Capturing
 
 Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTPS capturing. [Read more about the Fiddler's terminal capturing...]({%slug capture-terminal-traffic%})
 
-
 ### Traffic Analysis
 
 Fiddler Everywhere provides an HTTPS and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, compare, and share captured traffic with collaborators. Read more about [inspecting]({%slug inspecting-traffic-get-started%}) and [modifying]({%slug modify-traffic-get-started%}) traffic with Fiddler Everywhere...
-
 
 ### Modern HTTP and TLS version support
 
@@ -46,21 +41,31 @@ Fiddler Everywhere supports the used versions of the HTTP protocol, including th
 
 [Learn more about the TLS support here...]({%slug fe-tls-versions%})
 
+### Advanced Protocol Support
+
+Fiddler Everywhere provides comprehensive support for modern web protocols and technologies beyond traditional HTTP/HTTPS:
+
+- **WebSocket**: Full-duplex communication protocol for real-time applications
+- **Server-Sent Events (SSE)**: Server-to-client streaming for live updates
+- **gRPC**: High-performance RPC framework built on HTTP/2
+- **Socket.IO**: Real-time bidirectional event-based communication
+- **Streaming HTTP**: Long-lived HTTP connections for continuous data streams
+
+This extensive protocol support enables developers to debug complex modern applications, microservices, and real-time systems with a single tool.
+
+[Learn more about capturing and inspecting different protocols...]({%slug capture-traffic-get-started%})
 
 ### Request and Response Mocking
 
 Fiddler supports mocking, modifying, and setting breakpoints on all HTTP requests and responses. With Fiddler's rules, you can quickly change HTTPS requests and responses without updating the code or accessing the server or the client application. [Read more about creating rules for modifying requests and responses with Fiddler Everywhere...]({% slug rulesbuilder-get-started %})
 
-
 ### API Composing
 
 Fiddler Everywhere comes with an API Composer, which allows you to test REST and SOAP APIs by creating and sending requests and saving and sharing composed APIs. You can use the API composing feature when developing new APIs and testing existing ones. [Read more about creating and organizing API requests with Fiddler Everywhere...]({% slug composer-get-started %})
 
-
 ### Secure Collaboration
 
 Fiddler Everywhere provides a secure method for saving and sharing network debugging logs with your teams for analysis, communication, and resolution. [Read more about the Fiddler Everywhere collaboration options...]({% slug fiddler-sharing %})
-
 
 ### Cross-Platform Support
 
@@ -70,7 +75,6 @@ Fiddler Everywhere provides platform-agnostic compatibility that enables you to 
 * [Get Started with Fiddler Everywhere on macOS]({% slug first_steps_macos %})
 * [Get Started with Fiddler Everywhere on Linux]({% slug first_steps_linux %})
 
-
 ### Fiddler Everywhere on Mobile
 
 Fiddler Everywhere enables you to also capture and inspect traffic on devices running on iOS and Android.
@@ -78,11 +82,9 @@ Fiddler Everywhere enables you to also capture and inspect traffic on devices ru
 * [Capturing and Inspecting Traffic on iOS]({% slug capture-mobile-ios-traffic %})
 * [Capturing and Inspecting Traffic on Android]({% slug capture-mobile-android-traffic %})
 
-
 ### Styling Options and Modern Layout
 
 Fiddler Everywhere delivers a modern, intuitive UI with collapsible panels, [layout reorganization options]({%slug web-sessions-list%}#toggling-layout), and a set of popular light and dark themes. [Read more about modifying the appearance of the Fiddler web-debugging tool...]({% slug themes-settings-submenu %})
-
 
 ## Trial Version 
 
@@ -109,7 +111,6 @@ Activate the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchas
 - The installation can be executed remotely to multiple licensed end users (via policy, script, etc.).
 
 Contact our support team for more details on enabling the policy-driven installation alongside your specific company configuration.
-
 
 ## Suggested Links
 
