@@ -1,5 +1,37 @@
 [
     {
+        "version": "7.2.0-insiders",
+        "title": "Fiddler Everywhere v7.2.0",
+        "date": "Aug 14, 2025",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Show streaming responses in real time in the body inspectors"
+                    },
+                    {
+                        "title": "Group multiple error messages into a single notification for better user experience"
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Folders tree in save resource dialog selection is in the wrong place"
+                    },
+                    {
+                        "title": "Toolbar buttons flicker when application window is resized for small monitors"
+                    },
+                    {
+                        "title": "Application window not visible when its previous location is outside of the screen boundaries"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "7.1.0-insiders",
         "title": "Fiddler Everywhere v7.1.0",
         "date": "Jul 24, 2025",
