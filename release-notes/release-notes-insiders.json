@@ -19,7 +19,7 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Folders tree in save resource dialog selection is in the wrong place"
+                        "title": "Folders tree selection in save resources dialog is in the wrong place"
                     },
                     {
                         "title": "Toolbar buttons flicker when application window is resized for small monitors"
