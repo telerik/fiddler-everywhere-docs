@@ -53,7 +53,7 @@ The following table shows the capabilities and differences between Fiddler's cap
 | Traffic modification | ✅ | ✅ | ✅  | ✅ | ✅
 | Breakpoints | ✅ | ✅ | ✅  | ✅ | ✅
 | **Protocol Support** |
-| Protocols  | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, WebSocket, SSE, gRPC, Socket.IO
+| Protocols  | HTTP, HTTPS, Streaming HTTP, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, Streaming HTTP, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, Streaming HTTP, WebSocket, SSE, Socket.IO | HTTP, HTTPS, Streaming HTTP, WebSocket, SSE, gRPC, Socket.IO | HTTP, HTTPS, Streaming HTTP, WebSocket, SSE, gRPC, Socket.IO
 | HTTP/2   | ✅ | ✅ | ✅  | ✅ | ✅
 | TLS 1.3  | ✅ | ✅ | ✅  | ✅ | ✅
 | IPv4  | ✅ | ✅ | ✅  | ✅ | ✅
@@ -234,6 +234,15 @@ Fiddler Everywhere supports both HTTP/1.x and HTTP/2 traffic capture and composi
 - Some browsers share HTTP/2 connections between tabs and keep connections open after tab closure
 - If experiencing issues, try restarting the browser
 - HTTP/2 pseudo-headers are displayed in their original transmission order
+
+### Streaming HTTP
+
+Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to send data in chunks over a single, long-lived connection. The direction of communication is unidirectional where the server sends chunked data and the client can only receive them but has to respond in a new connection.
+
+**Fiddler Streaming HTTP Support:**
+- Compatible with all capturing modes
+- Reuses the standard [HTTP inspectors]({%slug inspector-types%}#https-inspectors)
+- Automatic decoding of encoded messages
 
 ### WebSocket Protocol
 
