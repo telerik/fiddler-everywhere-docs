@@ -65,7 +65,7 @@ To start the network capturing mode, execute the following steps:
 
 1. Click on the **Network Capture (BETA)** button from the **Live Traffic** menu.
 
-1. Click on the **Enable Capture** from the **Network Capture Settings (BETA)** screen.
+1. Click on the **Enable** from the **Network Capture Settings (BETA)** screen.
 
 >tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)
 
@@ -73,7 +73,7 @@ If this is the first time you are starting the network capturing mode on your ma
 
 **Initial Setup on macOS**
 
-Immediately after pressing **Enable Capture**, you will see a native macOS popup.
+Immediately after pressing **Enable**, you will see a native macOS popup.
 
 1. In the macOS popup, choose **Open System Settings**. In the opened macOS system settings, scroll down to the message that the Fiddler extension is blocked.
 
@@ -87,7 +87,7 @@ Upon succesful instalation the **Network Capture** screen reloads with network c
 
 **Initial Setup on Windows**
 
-Immediately after pressing **Enable Capture**, the Windows OS will prompt a security popup.
+Immediately after pressing **Enable**, the Windows OS will prompt a security popup.
 
 1. Click **Yes** to allow the installation of the network extension.
 
