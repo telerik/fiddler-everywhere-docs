@@ -99,7 +99,7 @@ To stop the network capturing mode, execute the following steps:
 
 1. Click on the **Network Capture** button from the **Live Traffic** menu.
 
-1. Click on the **Disable Capture** from the **Network Capture Settings (BETA)** screen.
+1. Click on the **Disable** from the **Network Capture Settings (BETA)** screen.
 
 ## Modify Network Capture Rules
 
