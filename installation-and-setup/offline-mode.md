@@ -20,7 +20,7 @@ The offline mode in Fiddler Everywhere allows you to use the application’s cor
 ## Request an Offline license
 
 The offline mode is explicitly enabled through an individual offline license file. To request your license file, contact the Fiddler Everywhere technical support team through the [Telerik's Support Center](https://www.telerik.com/account/support-center
-) or contact us directly at [fiddler-support@progress.com](fiddler-support@progress.com). Your request should include the technical information as obtained from the following steps:
+) or contact us directly at [mailto:fiddler-support@progress.com](fiddler-support@progress.com). Your request should include the technical information as obtained from the following steps:
 
 1. Start Fiddler Everywhere on the device with limited internet access.
 

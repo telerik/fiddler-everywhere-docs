@@ -21,7 +21,7 @@ Create a "Map Remote (localhost)" rule by setting the following actions through 
 
 1. Create an **Update URL** action and set the desired new target **localhost** path. For example, you can use a regular expression that replaces only the request's **host** while preserving the **path**.
 
-This sample Fiddler rule matches requests made to **https://example.com/my-test-api** and maps them to **http://localhost:4000/my-test-api**.
+This sample Fiddler rule matches requests made to `https://example.com/my-test-api` and maps them to `http://localhost:4000/my-test-api`.
 
 ![Creating "Map Remote (localhost)" rule](../../images/advanced/adv-map-remote-localhost.png)
 
