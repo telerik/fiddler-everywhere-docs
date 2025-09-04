@@ -44,11 +44,11 @@ The following steps provide an overview of the procedure for creating a basic au
 
 ### Basic Authentication Request Example
 
-1. In the [**Composer**]({%slug composer-tab%}) tab, set the HTTP/HTTPS method to **GET** and add [https://httpbin.org/basic-auth/user1/pass1](https://httpbin.org/basic-auth/user1/pass1) in the URL field.
+1. In the [**Composer**]({%slug composer-tab%}) tab, set the HTTP/HTTPS method to **GET** and add `https://httpbin.org/basic-auth/user1/pass1` in the URL field.
 
-   The [https://httpbin.org/basic-auth/user1/pass1](https://httpbin.org/basic-auth/user1/pass1) URL includes the following fields:
+   The `https://httpbin.org/basic-auth/user1/pass1` URL includes the following fields:
 
-      * The [`httpbin.org`](https://httpbin.org/) HTTP request and response service.
+      * The `httpbin.org` HTTP request and response service.
 
       * The authentication scheme [**basic-auth**](https://tools.ietf.org/html/rfc7617).
 

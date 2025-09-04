@@ -59,7 +59,7 @@ Use the manual approach if the automated wizard fails or you need more control o
    sudo dpkg-reconfigure ca-certificates
    ```
 
-   >tip If your distribution does not use `dpkg`, refer to your OS documentation or see our [Fedora, CentOS, RedHat]({%slug iddler-fedora-centos%}) and [XFCE]({%slug fiddler-xfce%}) guides.
+   >tip If your distribution does not use `dpkg`, refer to your OS documentation or see our [Fedora, CentOS, RedHat]({%slug fiddler-fedora-centos%}) and [XFCE]({%slug fiddler-xfce%}) guides.
 
 3. In the prompt, select **Yes** to install new certificates, then select the Fiddler certificate and confirm.
 
