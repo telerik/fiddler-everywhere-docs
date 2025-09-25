@@ -16,7 +16,7 @@ res_type: kb
 
 ## Description
 
-While testing my application the traffic sent to [http://localhost](http://localhost) or [http://127.0.0.1](http://127.0.0.1) is not captured by [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}). How can I handle this issue?
+While testing my application the traffic sent to `localhost` or `127.0.0.1` is not captured by [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}). How can I handle this issue?
 
 ## Solution
 
