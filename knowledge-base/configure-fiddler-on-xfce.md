@@ -15,7 +15,6 @@ res_type: kb
 | Product Version | 1.0.0 and above  |
 | 3rd-party tool | [XFCE](https://aws.amazon.com/cli/) |
 | Supported OS | Linux |
-| Reported through | https://community.getfiddler.com/support/discussions/topics/12000025720 |
 
 ## Description
 

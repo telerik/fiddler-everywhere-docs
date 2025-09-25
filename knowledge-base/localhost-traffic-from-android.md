@@ -21,9 +21,9 @@ How can I configure Fiddler Everywhere to direct localhost traffic from the Andr
 ## Solution
 
 Each Android device and emulator uses special alias like 10.0.2.2 (might differ on different emulators) to your host loopback interface (i.e., 127.0.0.1 on your development machine). To direct the traffic generated from the alias address to the desired localhost endpoint, [enable capturing from Android device]({%slug capture-mobile-android-traffic%}) and then use [the Rule Builder]({%slug modify-traffic-get-started%}) to [create a rule]({%slug modify-traffic-get-started%}#adding-new-rules) with the following conditions and actions:
-- A condition where the **Host** contains the mobile loopback address and the Fiddler proxy port. For example: **10.0.2.2:8866**
-- An action to **find and replace** the mobile loopback address and the Fiddler proxy port with the desired localhost endpoint on the Fiddler host machine. For example: **localhost:4000**
+- A condition where the **Host** contains the mobile loopback address and the Fiddler proxy port. For example: `10.0.2.2:8866`
+- An action to **find and replace** the mobile loopback address and the Fiddler proxy port with the desired localhost endpoint on the Fiddler host machine. For example: `localhost:4000`
 
 ![Directing mobile loopback to host localhost](../images/kb/mobile-localhost/mobile-localhost.png)
 
-That's it! Enable the rule and any request on the Android device to **10.0.2.2:8866** will be directed to **localhost:4000**. Fiddler Everywhere is effectively acting as a reverse proxy.
+That's it! Enable the rule and any request on the Android device to `10.0.2.2:8866` will be directed to **localhost:4000**. Fiddler Everywhere is effectively acting as a reverse proxy.

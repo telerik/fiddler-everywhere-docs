@@ -20,7 +20,7 @@ To create the set of rules that will later playback the captured traffic, execut
 
 - Capture the targeted traffic. 
 
- For example, let's assume that you are using the browser capturing mode and your targeted traffic is the landing page called "This is Fiddler!" (the page automatically loads once the preconfigured browser instance starts and its address is from a local server that loads https://this.is.fiddler/)
+ For example, let's assume that you are using the browser capturing mode and your targeted traffic is the landing page called "This is Fiddler!" (the page automatically loads once the preconfigured browser instance starts and its address is from a local server that loads `https://this.is.fiddler`)
 
 - Back in Fiddler Everywhere, open the **Live Traffic** section and then select all sessions related to the captured traffic.
 
@@ -40,6 +40,6 @@ Once the repro playback rule group is created, you can execute the playback and 
 - Select and toggle ON the **Rules** tab.
 - Select and toggle ON [the previously created repro playback rule group](#creating-a-repro-playback-rules).
 - Open Fiddler Everywhere and start the preferred capturing mode (for example, the browser capturing mode).
-- Load the same URL(s) as done in the original capture (in our case, that would be the landing page https://this.is.fiddler/) 
+- Load the same URL(s) as done in the original capture (in our case, that would be the landing page `https://this.is.fiddler`) 
 
 After the above, the content of the newly captured HTTPS sessions will be exactly the same as the one set in the repro playback sessions alongside any possible deviations, differences, or modifications that are not present online but only in the playback traffic.
