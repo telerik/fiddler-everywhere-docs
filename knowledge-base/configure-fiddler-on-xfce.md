@@ -13,7 +13,7 @@ res_type: kb
 |---|---|
 | Product   |  Fiddler Everywhere  |
 | Product Version | 1.0.0 and above  |
-| 3rd-party tool | [XFCE](https://aws.amazon.com/cli/) |
+| 3rd-party tool | [XFCE](https://xfce.org/) |
 | Supported OS | Linux |
 
 ## Description
