@@ -3,7 +3,7 @@ title: Troubleshooting Mac Proxy Settings
 description: "Learn how to troubleshoot Mac proxy settings to isolate issues related to starting up the Fiddler Everywhere web-debugging proxy client."
 type: troubleshooting
 slug: troubleshoot-mac-proxy-settings
-page_title: Verifying Mac Proxy Settings
+meta_title: Verifying Mac Proxy Settings
 ticketid: 1388381
 publish: true
 res_type: kb

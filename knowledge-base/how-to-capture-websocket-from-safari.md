@@ -2,7 +2,7 @@
 title: WebSocket Capturing with macOS Safari
 description: WebSocket Captured Successfully with the macOS Safari browser
 type: how-to
-page_title: WebSocket Capturing with Safari on macOS
+meta_title: WebSocket Capturing with Safari on macOS
 slug: ws-capture-safari
 tags: WebSockets capture Safari, WebSocket capture, websocket safari, WSS Safari, WSS proxy capture, WSS proxy traffic
 res_type: kb

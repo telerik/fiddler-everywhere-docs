@@ -1,0 +1,147 @@
+top-navigation-product: fiddler-everywhere
+path-prefix: /fiddler-everywhere/documentation
+default-title-prefix: Fiddler Everywhere
+
+primary-color: "#27c106" # Fiddler Everywhere green
+
+product-id: 1952 # Get the product ID for Fiddler Everywhere
+product-code: FIDDLEREVERYWHERE # what is the product code for Fiddler Everywhere?
+product-name: Progress Telerik Fiddler Everywhere
+product-url: https://www.telerik.com/fiddler/fiddler-everywhere
+product-trial-url: https://www.telerik.com/download/fiddler-everywhere
+
+contribute-url: https://github.com/telerik/fiddler-everywhere-docs/edit/master
+search-engine-id: 4729071e3f011471f # TODO get a new one for Fiddler Everywhere
+# where should we add the google analytics and tag manager codes?
+avatar-path: ./images/common/avatar-ninja.svg # TODO get a NINJA
+no-results-image-path: ./images/common/no-results.svg # TODO get a no-results.png
+table-layout: fixed
+enable-tabbed-code-blocks: false # do we need this? Is it related to the AI assitant?
+gitLastCommitDateEnabled: false
+
+cta-overview: 'Fiddler Everywhere is a powerful web debugging tool that helps developers inspect, modify, and analyze HTTP and HTTPS traffic. It supports multiple platforms including Windows, macOS, and Linux, making it a versatile choice for web development and troubleshooting.'
+cta-intro: 'Fiddler Everywhere is a cross-platform web debugging proxy for macOS, Linux, and Windows. It allows you to inspect and modify HTTP and HTTPS traffic from any application that supports a proxy.'
+
+fileSources:
+    installation-and-setup:
+      meta:
+          title: Installation & Setup
+          position: 20
+          path: ./installation-and-setup
+          prefix: installation-and-setup  
+    advanced-installation:
+      meta:
+          title: Advanced Installation
+          position: 201
+          path: ./installation-and-setup/advanced-installation
+          prefix: advanced-installation
+    capture-traffic:
+      meta:
+        title: Capture Traffic
+        position: 30
+        path: ./capture-traffic
+        prefix: capture-traffic
+    inspect-traffic:
+      meta:
+        title: Inspect Traffic
+        position: 40
+        path: ./inspect-traffic
+        prefix: inspect-traffic
+    modify-and-filter-traffic:
+      meta:
+        title: Modify & Filter Traffic
+        position: 50
+        path: ./modify-and-filter-traffic
+        prefix: modify-and-filter-traffic
+    compose-api-requests:
+      meta:
+        title: Compose API Requests
+        position: 60
+        path: ./compose-api-requests
+        prefix: compose-api-requests
+    collaboration:
+      meta:
+        title: Collaboration
+        position: 70
+        path: ./collaboration
+        prefix: collaboration
+    rules-presets:
+      meta:
+        title: Rules Presets
+        position: 80
+        path: ./rules-presets
+        prefix: rules-presets
+      tooling:
+        meta:
+          title: Tooling
+          position: 810
+          path: ./rules-presets/tooling
+          prefix: tooling
+      filters:
+        meta:
+          title: Filters
+          position: 820
+          path: ./rules-presets/filters
+          prefix: filters
+      block-and-allow-lists:
+        meta:
+          title: Block Lists and Allow Lists
+          position: 830
+          path: ./rules-presets/block-and-allow-lists
+          prefix: block-and-allow-lists
+      map-traffic:
+        meta:
+          title: Map Traffic
+          position: 840
+          path: ./rules-presets/map-traffic
+          prefix: map-traffic
+      modify-traffic:
+        meta:
+          title: Modify Traffic
+          position: 850
+          path: ./rules-presets/modify-traffic
+          prefix: modify-traffic
+      ui-modifications:
+        meta:
+          title: UI Modifications
+          position: 860
+          path: ./rules-presets/ui-modifications
+          prefix: ui-modifications
+    user-guide:
+      meta:
+        title: User Interface
+        position: 90
+        path: ./user-guide
+        prefix: user-guide
+      settings:
+        meta:
+          title: Settings
+          position: 1
+          path: ./user-guide/settings
+          prefix: settings
+    fiddler-reporter:
+      meta:
+        title: Fiddler Everywhere Reporter
+        position: 100
+        path: ./fiddler-reporter
+        prefix: fiddler-reporter
+    security:
+      meta:
+        title: Security
+        position: 110
+        path: ./security
+        prefix: security
+    knowledge-base:
+      meta:
+        title: Knowledge Base
+        position: 1000
+        path: ./knowledge-base
+        prefix: knowledge-base
+        relativeUrl: /knowledge-base
+        hideChildren: true
+        res_type: kb
+
+redirects: 
+-
+    from: "^/?$"
+    to: "/introduction"
