@@ -32,7 +32,7 @@ You must meet the following prerequisites to use the network capturing mode.
 
 - [Installed the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 
-- [Installed and trusted Fiddler's Certificate Authority]({%slug trust-certificate%}).
+- [Installed and trusted Fiddler's Certificate Authority](slug://trust-certificate).
 
 - Administrative privileges to install/uninstall the network extension.
 
@@ -44,10 +44,10 @@ The **Network Capture** mode is in Beta state and, currently, has some known lim
 
 - Specific VPN tools are closing the VPN connection if a third-party network extension is detected. You can try to workaround that by making the VPN connection **before** starting Fiddler Everywhere and then enabling its network capturing mode.
 
-- To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints (for example, like `vpn.mycompany.com`). However the **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. When using network capturing mode, you must bypass targeted VPN endpoints [by creating a Fiddler rule that executes the **Do Not Decrypt** action]({%slug configure-vpn-fiddler%}#configuration-for-network-
+- To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints (for example, like `vpn.mycompany.com`). However the **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. When using network capturing mode, you must bypass targeted VPN endpoints [by creating a Fiddler rule that executes the **Do Not Decrypt** action](slug://configure-vpn-fiddler#configuration-for-network-
 capturing-mode).
 
-- The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes like [reserve proxy]({%slug fiddler-reverse-proxy%}) or specific capturing modes for [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or [remote PCs]({%slug fiddler-capture-other-computers%}).
+- The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes like [reserve proxy](slug://fiddler-reverse-proxy) or specific capturing modes for [Android](slug://capture-mobile-android-traffic), [iOS](slug://capture-mobile-ios-traffic), or [remote PCs](slug://fiddler-capture-other-computers).
 
 ## Using the Network Capturing Mode
 
@@ -175,6 +175,6 @@ If you encounter issues with the Fiddler network extension:
 
 ## Additional Resources
 
-- [Capturing Modes in Fiddler]({%slug capture-traffic-get-started%})
-- [Fiddler as a System Proxy]({%slug capture-system-traffic%})
-- [Fiddler as a Reverse Proxy]({%slug fiddler-reverse-proxy%})
+- [Capturing Modes in Fiddler](slug://capture-traffic-get-started)
+- [Fiddler as a System Proxy](slug://capture-system-traffic)
+- [Fiddler as a Reverse Proxy](slug://fiddler-reverse-proxy)

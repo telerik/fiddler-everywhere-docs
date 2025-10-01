@@ -15,7 +15,7 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
 - **Enable HTTP/2 support**&mdash;Enables or disables capture of traffic through the HTTP/2 protocol. Enabled by default.
 
-    >tip [Learn more about the HTTP/2 support in Fiddler Everywhere here...]({%slug capture-traffic-get-started%}#http-version-specifics)
+    >tip [Learn more about the HTTP/2 support in Fiddler Everywhere here...](slug://capture-traffic-get-started#http-version-specifics)
 
 - **Enable Automatic Authentication**&mdash; Enables or disables the automatic proxy authentication for protocols like Kerberos, Negotiate, and NTLM. With the option enabled, the Fiddler application tries to automatically obtain the proxy credentials as stored in the operating system credential management tool.
 
@@ -26,16 +26,16 @@ The **Connections** menu exposes options allowing granular control over proxy se
 - **Keep it ON after app restart**&mdash;With this option enabled, the **Allow remote devices to connect** persists for subsequent times the application starts.
 
 - **Bypass Fiddler for URLs that starts with:**&mdash;Allows you to manually add addresses that the Fiddler Everywhere proxy will explicitly bypass.
-    A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere]({%slug configure-vpn-fiddler%}). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**. You can also quickly add domains while selecting a session from the Live Traffic grid and using the [context menu]({%slug web-sessions-list%}#bypassing-the-proxy).
+    A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere](slug://configure-vpn-fiddler). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**. You can also quickly add domains while selecting a session from the Live Traffic grid and using the [context menu](slug://web-sessions-list#bypassing-the-proxy).
 
     Bypassing in Fiddler works in the following cases:
 
-    - [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **ON**
-    - Both [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) and [Independent Browser Capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) are **ON**
-    - [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF** and [Independent Browser Capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) **ON**
-    - Capturing traffic from Android device with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
-    - Capturing traffic from iOS device with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
-    - Explicit browser manual proxy settings (to Fiddler's proxy address:port) with [System Capturing]({%slug capture-traffic-get-started%}#system-capturing) **OFF**
+    - [System Capturing](slug://capture-traffic-get-started#system-capturing) **ON**
+    - Both [System Capturing](slug://capture-traffic-get-started#system-capturing) and [Independent Browser Capturing](slug://capture-traffic-get-started#independent-browser-capturing) are **ON**
+    - [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF** and [Independent Browser Capturing](slug://capture-traffic-get-started#independent-browser-capturing) **ON**
+    - Capturing traffic from Android device with [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
+    - Capturing traffic from iOS device with [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
+    - Explicit browser manual proxy settings (to Fiddler's proxy address:port) with [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF**
 
     >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they won't trust third-party certificates like the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) can manifest side effects or not work at all.
 

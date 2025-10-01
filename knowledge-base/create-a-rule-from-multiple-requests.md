@@ -43,5 +43,5 @@ The newly shown page is not the original, but the mocked one was created from th
 ![mocked endpoints](../images/kb/mock-traffic/mock-traffic-in-batch-003.png)
 
 
-[Learn more about mocking traffic in Fiddler Everywhere here...]({%slug mock-traffic-get-started%})
-[Learn more about replaying traffic in Fiddler Everywhere here...]({%slug replaying-traffic%})
+[Learn more about mocking traffic in Fiddler Everywhere here...](slug://mock-traffic-get-started)
+[Learn more about replaying traffic in Fiddler Everywhere here...](slug://replaying-traffic)

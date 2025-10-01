@@ -104,11 +104,11 @@ Test if Fiddler Everywhere is correctly configured to capture HTTPS traffic on m
 
 1. After opening each of the above URLs, check the sessions grid and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic&mdash;to remove any preset filters, use the **Clear All Filters** option.
 
-If the issue persists save the captured sessions by going to **File** > **Save Archive** > **All Sessions** and post them in [the support channels]({% slug support %}).
+If the issue persists save the captured sessions by going to **File** > **Save Archive** > **All Sessions** and post them in [the support channels](slug://support).
 
 ## See Also
 
-* [Troubleshooting Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
-* [Accessing and Inspecting Fiddler Everywhere Log Files]({%slug fiddler-log-files%})
-* [Troubleshooting macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
-* [Resetting Fiddler Everywhere Settings to Default]({%slug how-to-reset-fiddler-everywhere-settings-to-default%})
+* [Troubleshooting Mac Proxy Settings](slug://troubleshoot-mac-proxy-settings)
+* [Accessing and Inspecting Fiddler Everywhere Log Files](slug://fiddler-log-files)
+* [Troubleshooting macOS Trust Certificate Issues](slug://troubleshoot-certificate-error)
+* [Resetting Fiddler Everywhere Settings to Default](slug://how-to-reset-fiddler-everywhere-settings-to-default)

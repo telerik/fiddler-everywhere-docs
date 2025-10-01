@@ -49,4 +49,4 @@ That's it! After the above, the traffic generated from Outlook will bypass the F
 
 ## Related Links
 
-* [Capturing Traffic from Microsoft Applications]({%slug fiddler-capture-ms-traffic%})
+* [Capturing Traffic from Microsoft Applications](slug://fiddler-capture-ms-traffic)

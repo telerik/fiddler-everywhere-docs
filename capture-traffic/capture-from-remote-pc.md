@@ -9,7 +9,7 @@ previous_url: /knowledge-base/how-to-capture-traffic-from-another-pc, /knowledge
 
 # Capturing Traffic from Remote Devices
 
-The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install Fiddler's Certificate Authority (CA). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android]({%slug capture-mobile-android-traffic%}) or [iOS]({%slug capture-mobile-ios-traffic%}).
+The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install Fiddler's Certificate Authority (CA). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android](slug://capture-mobile-android-traffic) or [iOS](slug://capture-mobile-ios-traffic).
 
 ## Prerequisites
 
@@ -67,7 +67,7 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 
     >tip Behind the scenes, enabling the **Allow remote devices to connect** option opens the Fiddler Everywhere port on the host machine for inbound connections. The default port is **8866**, but you can change its value through the **Settings > Connections > Fiddler listens on port** option. 
 
-1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to get the host IP address. Alternatively, you can get the host IP address using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
+1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side](slug://connections-section) to get the host IP address. Alternatively, you can get the host IP address using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
 
 
 ### Configuring the Fiddler proxy on the Remote Device
@@ -80,7 +80,7 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 
 1. Go to the operating system proxy settings on the target machine.
 
-    >tip The proxy settings location of the target machine will differ depending on the used OS (it can be macOS, Windows, Ubuntu, [Android]({%slug capture-mobile-android-traffic%}), [iOS]({%slug capture-mobile-ios-traffic%}), or any other third-party operating system.).
+    >tip The proxy settings location of the target machine will differ depending on the used OS (it can be macOS, Windows, Ubuntu, [Android](slug://capture-mobile-android-traffic), [iOS](slug://capture-mobile-ios-traffic), or any other third-party operating system.).
 
 1. Open the manual proxy settings:
 

@@ -22,17 +22,17 @@ We already discussed the **Rules** tab itself. This article will introduce you t
 
 ## Rules Presets
 
-While the **Rules** tab allows users to create rules based on [specific matching conditions and apply various actions]({%slug fiddler-rules-actions%}), the community often requires assistance in making rules. A further analysis showed that some Fiddler users needed to be made aware of the full capabilities of the Fiddler rules. For that reason, the team developed [a set of predefined rules]({%slug adv_techniques_fiddler%}) that you can quickly reuse with few clicks or use as a reference for your specific testing requirements.
+While the **Rules** tab allows users to create rules based on [specific matching conditions and apply various actions](slug://fiddler-rules-actions), the community often requires assistance in making rules. A further analysis showed that some Fiddler users needed to be made aware of the full capabilities of the Fiddler rules. For that reason, the team developed [a set of predefined rules](slug://adv_techniques_fiddler) that you can quickly reuse with few clicks or use as a reference for your specific testing requirements.
 
 But first, let us make a quick recap of what a Fiddler rule stands for:
 
->tip A rule in Fiddler Everywhere contains [**a matching condition**]({%slug fiddler-rules-actions%}#conditions) (or set of conditions) that determines the target HTTP sessions and [**an action**]({%slug fiddler-rules-actions%}#actions) (or set of actions) that applies to the matched HTTP sessions.
+>tip A rule in Fiddler Everywhere contains [**a matching condition**](slug://fiddler-rules-actions#conditions) (or set of conditions) that determines the target HTTP sessions and [**an action**](slug://fiddler-rules-actions#actions) (or set of actions) that applies to the matched HTTP sessions.
 
 Fiddler provides multiple matching conditions related to HTTPS traffic (like protocols, schemes, timings, request and response data, and many others) to help you target a specific set of sessions. Then, the matched sessions are modified through the specified actions. As a result, you can quickly create logic that modifies the traffic without changing the client or the server application (or even without having access to these applications). That said, the set of predefined rules that we created can be separated into several contextual groups based on what they are meant to achieve.
 
 ## Tooling 
 
-A set of rules that provides custom "tools" to tackle different tasks, such as [blocking cookies]({%slug adv_block_cookies%}), [disabling browser cache]({%slug adv_disable_cache%}), [bypassing cross-origin resource sharing (CORS)]({%slug adv_bypass_cors%}), [mocking the user-agent HTTP header]({% slug adv_changing_user_agent %}) and others.
+A set of rules that provides custom "tools" to tackle different tasks, such as [blocking cookies](slug://adv_block_cookies), [disabling browser cache](slug://adv_disable_cache), [bypassing cross-origin resource sharing (CORS)](slug://adv_bypass_cors), [mocking the user-agent HTTP header](slug://adv_changing_user_agent) and others.
 
 Let's show how you can create, enable, and use your own rule that bypasses [the cross-origin resource sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). CORS uses specific HTTP Response Headers to tell the client application (a browser) which domains can access its limited resources. We need to match the session and then trigger an action that updates that specific set of HTTP Response Headers.
 
@@ -123,4 +123,4 @@ Modifying is similar to the mapping feature as it replaces the original content 
 Last but not least, we created rules allowing you to modify Fiddler's user interface. The idea behind these rules is to demonstrate how you can adjust Fiddler to your own needs by marking and highlighting what is essential. 
 
 
-Overall, [the rules preset]({%slug adv_techniques_fiddler%}) in Fiddler Everywhere are a good starting point for understanding how to use the Rules feature. You can learn more about the rules presets in Fiddler Everywhere from [the dedicated documentation articles]({%slug adv_techniques_fiddler%}) or by directly downloading them from [the Fiddler's public GitHub repository](https://github.com/telerik/fiddler-everywhere/tree/master/rules) and import them as FARX files.
+Overall, [the rules preset](slug://adv_techniques_fiddler) in Fiddler Everywhere are a good starting point for understanding how to use the Rules feature. You can learn more about the rules presets in Fiddler Everywhere from [the dedicated documentation articles](slug://adv_techniques_fiddler) or by directly downloading them from [the Fiddler's public GitHub repository](https://github.com/telerik/fiddler-everywhere/tree/master/rules) and import them as FARX files.

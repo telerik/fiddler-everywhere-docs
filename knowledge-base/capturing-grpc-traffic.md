@@ -24,7 +24,7 @@ My client application utilizes the gRPC framework. What exactly is gRPC? Can I c
 
 [gRPC](https://grpc.io/) is an open-source, cross-platform Remote- Procedure Call (RPC) framework. One of its common usages is to connect services in and across servers with pluggable support for tracing, load balancing, and authentication. 
 
-Fiddler Everywhere captures gRPC traffic out-of-the-box through [all capturing modes]({%slug capture-traffic-get-started%}) with the clarification that as gRPC is utilizing HTTP/2, you need to ensure that HTTP/2 capturing is enabled in Fiddler Everywhere. With Fiddler's proxy, you can capture gRPC traffic with all supported streaming modes - unary RPC (no streaming), server-streaming RPC, client-streaming RPC, and bi-directional streaming RPC. [Learn more about the streaming modes in gRPC here...](https://grpc.io/docs/what-is-grpc/core-concepts/#unary-rpc)
+Fiddler Everywhere captures gRPC traffic out-of-the-box through [all capturing modes](slug://capture-traffic-get-started) with the clarification that as gRPC is utilizing HTTP/2, you need to ensure that HTTP/2 capturing is enabled in Fiddler Everywhere. With Fiddler's proxy, you can capture gRPC traffic with all supported streaming modes - unary RPC (no streaming), server-streaming RPC, client-streaming RPC, and bi-directional streaming RPC. [Learn more about the streaming modes in gRPC here...](https://grpc.io/docs/what-is-grpc/core-concepts/#unary-rpc)
 
 To capture gRPC traffic with Fiddler Everywhere, the following conditions must be satisfied:
 
@@ -32,15 +32,15 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
 
 2. Configure the client using the gRPC framework to go through the Fiddler proxy. The execution of this step differs depending on the client's application. Here are some setup guidelines for different clients:
 
-    - **Terminals and shell applications**&mdash;A terminal and shells can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from a terminal here...]({%slug capture-terminal-traffic%})
+    - **Terminals and shell applications**&mdash;A terminal and shells can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from a terminal here...](slug://capture-terminal-traffic)
 
-    - **Bash**&mdash;A bash application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Bash here...]({%slug capture-terminal-traffic%})
+    - **Bash**&mdash;A bash application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Bash here...](slug://capture-terminal-traffic)
 
-    - **Node.js**&mdash;A Node.js application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Node.js here...]({%slug fiddler-nodejs-traffic%})
+    - **Node.js**&mdash;A Node.js application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Node.js here...](slug://fiddler-nodejs-traffic)
 
-    - **Python applications**&mdash;Python applications can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Python applications here...]({%slug fiddler-python-traffic%})
+    - **Python applications**&mdash;Python applications can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Python applications here...](slug://fiddler-python-traffic)
 
-    - **Java applications**&mdash;A Java application can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from Java applications here...]({%slug configure-java-fiddler-everywhere%})
+    - **Java applications**&mdash;A Java application can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from Java applications here...](slug://configure-java-fiddler-everywhere)
 
     - **Other gRPC clients**&mdash; If your gRPC client utilizes a different technology stack, you must find the proper method for configuring its proxy settings and set Fiddler's address (by default, http://127.0.0.1:8866) as an HTTP and HTTPS proxy.
 
@@ -48,7 +48,7 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
 
 ## Inspecting gRPC Traffic
 
-Fiddler Everywhere introduces a specific user interface to ease the inspection of gRPC traffic. [The gRPC inspectors]({%slug inspector-types%}#websocket-grpc-sse-and-socketio-inspectors) are pretty similar to the inspectors used for capturing WebSocket traffic with one exception - the new gRPC Response inspector called **Trailer** (part of the **Handshake** tab). 
+Fiddler Everywhere introduces a specific user interface to ease the inspection of gRPC traffic. [The gRPC inspectors](slug://inspector-types#websocket-grpc-sse-and-socketio-inspectors) are pretty similar to the inspectors used for capturing WebSocket traffic with one exception - the new gRPC Response inspector called **Trailer** (part of the **Handshake** tab). 
 
 You can use the **Trailer** inspector to examine the specific trailers the server sends or mock particular gRPC behavior. For example, you can modify (through a rule) the `grpc_status` trailer header and test how your application behaves in unexpected scenarios like unexpected errors in the stream.
 
@@ -58,7 +58,7 @@ The captured gRPC session will have a green badge until the gRPC channel is open
 
 ![Selected gRPC session with closed channel](../images/kb/grpc/grpc-traffic-selected-session.png)
 
-Double-click on a gRPC session to automatically open [the **Messages** tab]({%slug inspector-types%}#messages-tab) and [the **Message** inspector]({%slug inspector-types%}#message-inspector) that allows you to inspect each gRPC message as originally received (the context menu provides decoding option) or through [the **HEX inspector**]({%slug inspector-types%}#hex-body-inspector).
+Double-click on a gRPC session to automatically open [the **Messages** tab](slug://inspector-types#messages-tab) and [the **Message** inspector](slug://inspector-types#message-inspector) that allows you to inspect each gRPC message as originally received (the context menu provides decoding option) or through [the **HEX inspector**](slug://inspector-types#hex-body-inspector).
 
 ![gRPC traffic and related Fiddler's inspectors](../images/kb/grpc/grpc-traffic-inspection.png)
 

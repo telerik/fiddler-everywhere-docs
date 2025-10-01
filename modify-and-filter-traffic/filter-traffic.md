@@ -9,7 +9,7 @@ previous_url: /knowledge-base/filter-traffic
 
 # Filtering Traffic
 
-Fiddler Everywhere sets itself as the operating system proxy once the [system capturing]({%slug capture-traffic-get-started%}#system-capturing) activates. The application captures and outputs all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy. The [**Live Traffic grid**]({%slug web-sessions-list%}#live-traffic-grid) displays the traffic as session entries.
+Fiddler Everywhere sets itself as the operating system proxy once the [system capturing](slug://capture-traffic-get-started#system-capturing) activates. The application captures and outputs all HTTP/HTTPS/WebSocket traffic from client applications that respect the system proxy. The [**Live Traffic grid**](slug://web-sessions-list#live-traffic-grid) displays the traffic as session entries.
 
 Modern applications often generate hundreds or thousands of requests, polluting your session list with unwanted information. This article reveals some options to filter the captured traffic or lower the amount of captured traffic.
 
@@ -55,7 +55,7 @@ Create and apply a filter through the **Filters** toolbar option as follows:
     - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
     - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
 
-    >tip Learn more about the available [**match conditions**]({%slug modify-traffic-get-started%}#conditions), which apply to both the filters and rule creation.
+    >tip Learn more about the available [**match conditions**](slug://modify-traffic-get-started#conditions), which apply to both the filters and rule creation.
 
 1. Add one or more match conditions based on the HTTP headers, HTTP bodies, or other specific Fiddler's columns data.
 
@@ -76,7 +76,7 @@ The **Filters** option provides a drop-down menu to manage your active and saved
 
 ## Column Filters
 
-Each column (including your own [custom columns]({%slug web-sessions-list%}#creating-custom-columns)) from the [**Live Traffic grid**]({%slug web-sessions-list%}#live-traffic-grid) has its own [filtering submenu]({%slug web-sessions-list%}#filtering-options). A filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on). Each logical operation combines with the filter value, which depends on the column type and can be a string, number, boolean, or predefined value. 
+Each column (including your own [custom columns](slug://web-sessions-list#creating-custom-columns)) from the [**Live Traffic grid**](slug://web-sessions-list#live-traffic-grid) has its own [filtering submenu](slug://web-sessions-list#filtering-options). A filter condition contains different logical operations (for example, **contains**, **starts with**, **ends with**, **is equal to**, and so on). Each logical operation combines with the filter value, which depends on the column type and can be a string, number, boolean, or predefined value. 
 
 ![column filter menu](../images/livetraffic/columns/dots-filters.png)
 
@@ -86,11 +86,11 @@ When you clear a column filter, it automatically deletes its condition from the 
 
 ## Using Alternative Capturing Modes
 
-Fiddler Everywhere provides multiple capturing modes, with the system capturing mode being the most "invasive" as it will capture all traffic that goes through the operating system. You can limit the amount of captured traffic by using options like the [independent browser capturing mode]({%slug capture-browser-traffic%}) or the [terminal capturing mode]({%slug capture-terminal-traffic%}). These options ensure only traffic from the sandboxed instances is output in the sessions grid. All additional columns and advanced filters remain applicable. 
+Fiddler Everywhere provides multiple capturing modes, with the system capturing mode being the most "invasive" as it will capture all traffic that goes through the operating system. You can limit the amount of captured traffic by using options like the [independent browser capturing mode](slug://capture-browser-traffic) or the [terminal capturing mode](slug://capture-terminal-traffic). These options ensure only traffic from the sandboxed instances is output in the sessions grid. All additional columns and advanced filters remain applicable. 
 
 ## Bypassing the Proxy
 
-While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** grid. You can set a list of domains or URLs to bypass through the [**Connections** menu]({%slug connections-submenu%}), or you can add a root domain or specific subdomain address to the bypass list while using the **Live Traffic** context menu.
+While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** grid. You can set a list of domains or URLs to bypass through the [**Connections** menu](slug://connections-submenu), or you can add a root domain or specific subdomain address to the bypass list while using the **Live Traffic** context menu.
 
 ## Sorting Options
 

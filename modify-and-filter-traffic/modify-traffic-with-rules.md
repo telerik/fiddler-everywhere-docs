@@ -65,7 +65,7 @@ One of the most powerful features in Fiddler Everywhere resides in the **Rules**
 
 To modify the captured session through the **Rules**:
 
-1. Start any [capturing mode]({%slug capture-traffic-get-started%}) with Fiddler Everywhere and initiate the request. As a result, the session is captured and displayed in the **Live Traffic** grid.
+1. Start any [capturing mode](slug://capture-traffic-get-started) with Fiddler Everywhere and initiate the request. As a result, the session is captured and displayed in the **Live Traffic** grid.
 
 1. Select the desired session and right-click to open the context menu. From the context menu, select **Add New Rule**.
 
@@ -79,17 +79,17 @@ To modify the captured session through the **Rules**:
 
 1. Click **Save** to preserve the rule.
 
-Fiddler automatically adds the newly created rule on the top of the [**Rules** list]({%slug modify-traffic-get-started%}#rules-list), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
+Fiddler automatically adds the newly created rule on the top of the [**Rules** list](slug://modify-traffic-get-started#rules-list), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
 
 ## Additional Rules Resources
 
-- [Sample Rules Presets]({%slug adv_techniques_fiddler%})
-- [Learn how to use the Rules preset here...]({%slug how-to-use-fiddler-rules-to-modify-traffic%})
-- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
-- [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
-- [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
-- [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
-- [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
-- [Example for disabling caching through the Rules tab]({%slug rule-disable-caching%})
-- [Returning Custom HTTP Responses]({%slug using-custom-responses%})
-- [Fiddler Rules Archives (FARX)]({%slug fiddler-farx-format%})
+- [Sample Rules Presets](slug://adv_techniques_fiddler)
+- [Learn how to use the Rules preset here...](slug://how-to-use-fiddler-rules-to-modify-traffic)
+- [Using Breakpoints](slug://rulesbuilder-breakpoints)
+- [Understanding the Matching Conditions and the Actions](slug://fiddler-rules-actions#conditions)
+- [Understanding the role of Final and Non-Final Actions](slug://fiddler-rules-actions#final-and-non-final-actions)
+- [Example for using predefined actions in the Rules tab](slug://fiddler-ar-actions)
+- [Example for redirecting through the Rules tab](slug://rulesbuilder-redirect-traffic)
+- [Example for disabling caching through the Rules tab](slug://rule-disable-caching)
+- [Returning Custom HTTP Responses](slug://using-custom-responses)
+- [Fiddler Rules Archives (FARX)](slug://fiddler-farx-format)

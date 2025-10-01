@@ -20,7 +20,7 @@ Each __Session__ captured by Fiddler Everywhere has multiple attributes ordered 
 
 ## Solution
 
-This section lists the available **Live Traffic** grid and the type of information that they provide. Each colum can be explictly shown/hide through the **more** option (three vertical dots next to the column name). The column names are also identical to the filters in the [**Advanced Filters**]({%slug how-to-filter-traffic%}#advanced-filters) section.
+This section lists the available **Live Traffic** grid and the type of information that they provide. Each colum can be explictly shown/hide through the **more** option (three vertical dots next to the column name). The column names are also identical to the filters in the [**Advanced Filters**](slug://how-to-filter-traffic#advanced-filters) section.
 
 ### ID(#)
 
@@ -51,7 +51,7 @@ The column indicates the version of the HTTP protocol used by the session.
 
 ### TLS Version
 
-The column indicates the version of the TLS protocol used by the session. Suppose the established connection between the client and Fiddler uses a different TLS version than the one between Fiddler and the server. In that case, you will see a double value depicting the TLS-specific version for each connection stage.[Learn more about the TLS version specific with Fiddler here...]({%slug fe-security%}#tls-version-specifics)
+The column indicates the version of the TLS protocol used by the session. Suppose the established connection between the client and Fiddler uses a different TLS version than the one between Fiddler and the server. In that case, you will see a double value depicting the TLS-specific version for each connection stage.[Learn more about the TLS version specific with Fiddler here...](slug://fe-security#tls-version-specifics)
 
 - **SSL 2.0**
 - **SSL 3.0**
@@ -163,4 +163,4 @@ This column will have a value only if the comment was previously added, for exam
 
 ## Custom Columns
 
-Fiddler Everywhere enables you to [create custom columns]({%slug web-sessions-list%}#creating-custom-columns). These columns will display information from a pre-selected HTTP Request or Response.
+Fiddler Everywhere enables you to [create custom columns](slug://web-sessions-list#creating-custom-columns). These columns will display information from a pre-selected HTTP Request or Response.

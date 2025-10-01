@@ -18,7 +18,7 @@ I want to capture and decrypt traffic using a custom certificate authority. How 
 
 ## Solution
 
-The Fiddler Everywhere application can use a custom certificate through its [managed app configuration]({%slug fe-restrict-policies%}) options.
+The Fiddler Everywhere application can use a custom certificate through its [managed app configuration](slug://fe-restrict-policies) options.
 
 You must apply the following policies by adding the following keys and values to the registry editor.
 

@@ -208,7 +208,7 @@ The built-in **Reverse Proxy** provides the following configurable options:
 
 ## Reverse Proxy Alongside Other Capturing Modes
 
-The reverse proxy can be used alongside other [capturing modes]({%slug capture-traffic-get-started%}). The immediate effect of using the reverse proxy simultaneously with other capturing modes is that you will observe the same request being captured and listed twice in the Fiddler's live traffic grid — once when going through the reverse proxy mode and once when going through the alternative forward proxy mode.
+The reverse proxy can be used alongside other [capturing modes](slug://capture-traffic-get-started). The immediate effect of using the reverse proxy simultaneously with other capturing modes is that you will observe the same request being captured and listed twice in the Fiddler's live traffic grid — once when going through the reverse proxy mode and once when going through the alternative forward proxy mode.
 
 ## Troubleshooting & Best Practices
 
@@ -230,4 +230,4 @@ The reverse proxy can be used alongside other [capturing modes]({%slug capture-t
 ## Additional Resources
 
 - [GitHub Demo - Client App and Local Server](https://github.com/NickIliev/fiddler-reverse-demo)
-- [Fiddler's Capturing Modes Explained]({%slug capture-traffic-get-started%})
+- [Fiddler's Capturing Modes Explained](slug://capture-traffic-get-started)

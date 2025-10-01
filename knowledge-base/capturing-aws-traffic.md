@@ -29,7 +29,7 @@ Amazon Web Services (AWS) is a popular tool that provides multiple options for c
 
 To capture traffic generated from AWS CLI commands, you need to configure the Fiddler Proxy for the preferred terminal application (where AWS CLI will be executed) and configure the `AWS_CA_BUNDLE` environment variable for the certificate bundle that will be used for HTTPS certificate validation.
 
-1. Open the terminal application where the AWS CLI commands will run. Set the terminal application to use the Fiddler Everywhere proxy, as described in [this KB article]({%slug capture-terminal-traffic%}).
+1. Open the terminal application where the AWS CLI commands will run. Set the terminal application to use the Fiddler Everywhere proxy, as described in [this KB article](slug://capture-terminal-traffic).
 
 1. Open Fiddler Everywhere and export the `Fiddler_Root_Certificate_Authority.crt` file through **Settings** > **HTTPS** > **Advanced Settings** > **Export root certificate(PEM/ASCII format)** (note that this is **not** the default option from the drop-down menu). The certificate is exported to **~/Desktop** as file with name **Fiddler_Root_Certificate_Authority.pem**.
 
@@ -51,4 +51,4 @@ After the debugging of the request is over, reset the `AWS_CA_BUNDLE` environmen
 unset AWS_CA_BUNDLE
 ```
 
-You can also [reset the Fiddler Proxy in your terminal application]({%slug capture-terminal-traffic%}#reset-fiddler-proxy-(terminal-app)).
+You can also [reset the Fiddler Proxy in your terminal application](slug://capture-terminal-traffic#reset-fiddler-proxy-(terminal-app)).

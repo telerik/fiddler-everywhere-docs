@@ -10,9 +10,9 @@ position: 30
 
 While using Fiddler Everywhere, consider the following security indicators and highlights:
 
-- With the initial state for [the system capturing option]({%slug capture-traffic-get-started%}#system-capturing), Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic is not encrypted and can expose sensitive information like visited URLs, internal API endpoints, etc.
+- With the initial state for [the system capturing option](slug://capture-traffic-get-started#system-capturing), Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic is not encrypted and can expose sensitive information like visited URLs, internal API endpoints, etc.
 
-- With the initial state for [the independent browser capturing option]({%slug capture-traffic-get-started%}#browser-capturing), Fiddler Everywhere will capture both non-secure HTTP and secure HTTPS traffic. The Fiddler Everywhere application will decrypt the HTTPS traffic.
+- With the initial state for [the independent browser capturing option](slug://capture-traffic-get-started#browser-capturing), Fiddler Everywhere will capture both non-secure HTTP and secure HTTPS traffic. The Fiddler Everywhere application will decrypt the HTTPS traffic.
 
 - Fiddler Everywhere generates a unique root CA (certificate authority). Avoid sharing this certificate with anyone as it can pose a significant security threat (for example, anyone with access to that certificate can decrypt your HTTPS traffic).
 
@@ -24,7 +24,7 @@ While using Fiddler Everywhere, consider the following security indicators and h
 
 - Fiddler Everywhere will not store your data in the cloud if you do not use sharing or cloud capabilities. Once you sign in, everything is stored locally (your credentials are verified in the cloud). The only way to get captured data in the cloud is to upload it explicitly through user interaction from the **Snapshots** collections, **Requests** collections, or **rules** or share it with collaborators.
 
-- Sessions uploaded to the Fiddler Everywhere cloud space are encrypted when password protection is enabled. All uploaded sessions are stored in the cloud as [Fiddler archives]({%slug fiddler-saz-format%}).
+- Sessions uploaded to the Fiddler Everywhere cloud space are encrypted when password protection is enabled. All uploaded sessions are stored in the cloud as [Fiddler archives](slug://fiddler-saz-format).
 
 - Fiddler Everywhere can be installed per machine on Windows OS (macOS and Linux installation is only per user). In that case,  each Fiddler user logs into the application with their credentials, and the generated data is accessible to the other users.
 
@@ -40,7 +40,7 @@ Fiddler Everywhere provides options for securely saving and sharing captured tra
 
 ### Saving Traffic
 
-Once Fiddler Everywhere captures the traffic, you have the option to [save the sessions for later usage]({%slug web-sessions-list%}#saving). Consider the following security highlights before saving sessions.
+Once Fiddler Everywhere captures the traffic, you have the option to [save the sessions for later usage](slug://web-sessions-list#saving). Consider the following security highlights before saving sessions.
 
 - All saved sessions are stored locally on the Fiddler Everywhere host machine as SAZ files (Fiddler Sessions Archive ZIP). The absolute path is different and depends on the used OS and the unique ID of the currently logged user:
 
@@ -79,7 +79,7 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
 ### Sharing Traffic
 
-Fiddler Everywhere comes with [collaboration in mind]({%slug fiddler-sharing%}) and provides sharing functionalities. Consider the following security highlights when sharing sessions:
+Fiddler Everywhere comes with [collaboration in mind](slug://fiddler-sharing) and provides sharing functionalities. Consider the following security highlights when sharing sessions:
 
 A session is saved before sharing. Thus, you should consider the [saving-related security highlights](#saving-traffic).
 

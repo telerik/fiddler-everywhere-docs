@@ -14,9 +14,9 @@ res_type: kb
 
 ## Composer Tab Essentials
 
-The **Composer** tab enables you to manually create a new HTTP or HTTPS request from scratch and edit an existing captured request, as well as send and test them. This article explains the user interface that creates the Fiddler Everywhere's Composer. [Learn more about how to use the Composer here...]({%slug composer-get-started%})
+The **Composer** tab enables you to manually create a new HTTP or HTTPS request from scratch and edit an existing captured request, as well as send and test them. This article explains the user interface that creates the Fiddler Everywhere's Composer. [Learn more about how to use the Composer here...](slug://composer-get-started)
 
-To get started, open the **Composer** tab from the same pane. Alternatively, you can open a new **Composer** tab by clicking the **New Request** (**+**) button in the [**Requests**]({%slug saved-requests-tab%}) tab or by using the **Edit in Composer** option from the **Live Traffic** grid's context menu.
+To get started, open the **Composer** tab from the same pane. Alternatively, you can open a new **Composer** tab by clicking the **New Request** (**+**) button in the [**Requests**](slug://saved-requests-tab) tab or by using the **Edit in Composer** option from the **Live Traffic** grid's context menu.
 
 The **Composer** tab houses the **Request Composer** and the **Request Inspector**, and contains major sections to construct a request, to observe the response, and to save, replay and share previously composed requests.
 
@@ -25,7 +25,7 @@ The top section contains a toolbar with the following functionalities:
   - The [**URL field**](#url-field) enables you to enter the endpoint URL.
   - The [**HTTP version**](#http-version) is a drop-down where you can select the HTTP version. By default, the selected version is **HTTP 1.1**.
   - The [**Execute**](#execute-button) button is an action button for executing the composed request.
-  - The [**Save**](#save-button) button enables you to save your composed request in the [**Requests**]({%slug saved-requests-tab%}) list.
+  - The [**Save**](#save-button) button enables you to save your composed request in the [**Requests**](slug://saved-requests-tab) list.
 
 The mid-section provides options to further modify your request through the following options:
   - The [**Headers**](#headers) section allows you to add and modify the HTTP headers of the request.
@@ -89,7 +89,7 @@ The **Execute** button enables you to effectively execute the composed request. 
 
 ## Save Button
 
-The **Save** button enables you to save the composed request in the [**Requests**]({%slug saved-requests-tab%}) list. Note that if you are editing an already saved request entry, the changes will overwrite the previous version of that entry. To save the edits as an entirely new entry, use the drop-down option and click **Save as** (available for already saved requests only).
+The **Save** button enables you to save the composed request in the [**Requests**](slug://saved-requests-tab) list. Note that if you are editing an already saved request entry, the changes will overwrite the previous version of that entry. To save the edits as an entirely new entry, use the drop-down option and click **Save as** (available for already saved requests only).
 
   ![Save Button](../images/composer/composer-save-btn.png)
 
@@ -149,6 +149,6 @@ The **Body** delivers the following specific editors:
 
 ## Response Inspector
 
-With the **Response Inspector**, you can inspect the received response from the executed request. The inspector provides a set of views to visualize different parts of the request in specific formats. For detailed information on each inspector type, refer to the article about [the **Inspector** types Fiddler Everywhere provides]({%slug inspector-types%}).
+With the **Response Inspector**, you can inspect the received response from the executed request. The inspector provides a set of views to visualize different parts of the request in specific formats. For detailed information on each inspector type, refer to the article about [the **Inspector** types Fiddler Everywhere provides](slug://inspector-types).
 
   ![Response inspectors](../images/composer/composer-response-inspectors.png)

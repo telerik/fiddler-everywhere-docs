@@ -33,7 +33,7 @@ Follow these steps to capture HTTPS traffic from your Samsung device with Fiddle
    >tip By default, Fiddler Everywhere uses TCP port 8866 for remote connections. Make sure this port is open.
 
 4. **Start the "Connect Remote Devices" Wizard**  
-   In Fiddler Everywhere, open the ["Connect Remote Devices" automated configuration wizard]({%slug capture-mobile-android-traffic%}) to guide you through the setup.
+   In Fiddler Everywhere, open the ["Connect Remote Devices" automated configuration wizard](slug://capture-mobile-android-traffic) to guide you through the setup.
 
 5. **Install the Fiddler CA Certificate on Your Samsung Device**  
    When you reach the "Install CA Certificate" step in the wizard, do the following on your Samsung device:
@@ -61,6 +61,6 @@ Follow these steps to capture HTTPS traffic from your Samsung device with Fiddle
 
 ## Additional Resources
 
-- [Capturing HTTPS Traffic from Android Devices]({%slug capture-mobile-android-traffic%})
+- [Capturing HTTPS Traffic from Android Devices](slug://capture-mobile-android-traffic)
 - [Fiddler Everywhere Documentation](https://docs.telerik.com/fiddler-everywhere/)
 

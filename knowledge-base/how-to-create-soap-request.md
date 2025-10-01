@@ -20,9 +20,9 @@ How to make a SOAP request in Fiddler Everywhere?
 
 ## Solution 
 
-- Open [the Composer]({%slug composer-tab%}).
+- Open [the Composer](slug://composer-tab).
 
-- Select **POST** from the request [HTTP methods drop-down menu]({%slug composer-tab%}#http-methods).
+- Select **POST** from the request [HTTP methods drop-down menu](slug://composer-tab#http-methods).
 
 - Enter the SOAP request endpoint. For example:
     ```cURL

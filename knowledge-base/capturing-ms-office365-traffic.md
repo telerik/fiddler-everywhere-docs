@@ -22,13 +22,13 @@ How can I capture traffic from Microsoft applications like MS Teams and Outlook?
 
 ## Solution - Using System Capturing Mode
 
-You can use the [system capturing mode]({%slug capture-system-traffic%}) to capture traffic from Microsoft applications.
+You can use the [system capturing mode](slug://capture-system-traffic) to capture traffic from Microsoft applications.
 
 - Stop the Fiddler Everywhere system capturing.
 
 - Stop and close all targeted Microsoft applications.
 
-- Start Fiddler Everywhere and enable its [system capturing mode]({%slug capture-system-traffic%}).
+- Start Fiddler Everywhere and enable its [system capturing mode](slug://capture-system-traffic).
 
     >tip On macOS, you can also use the network capturing mode.
 
@@ -37,15 +37,15 @@ You can use the [system capturing mode]({%slug capture-system-traffic%}) to capt
 
 ## Solution - Using Fiddler's Terminal
 
-Sometimes, you might be unable to use the system capturing mode (for example, due to local network/system restrictions or administrative policies). In that case, you can [use Fiddler's terminal]({%slug capture-terminal-traffic%}) to capture traffic from all Microsoft applications that use MS Edge WebView 2.
+Sometimes, you might be unable to use the system capturing mode (for example, due to local network/system restrictions or administrative policies). In that case, you can [use Fiddler's terminal](slug://capture-terminal-traffic) to capture traffic from all Microsoft applications that use MS Edge WebView 2.
 
 - Stop and close all targeted Microsoft applications.
 
-- Start the [Fiddler's terminal instance]({%slug capture-terminal-traffic%}).
+- Start the [Fiddler's terminal instance](slug://capture-terminal-traffic).
 
 - Start the Microsoft application from within the started terminal instance.
 
 ## Related Links
 
-* [Bypassing Traffic from Microsoft Applications]({%slug fiddler-and-outlook%})
+* [Bypassing Traffic from Microsoft Applications](slug://fiddler-and-outlook)
 

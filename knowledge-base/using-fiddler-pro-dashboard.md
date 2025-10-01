@@ -20,7 +20,7 @@ The [Fiddler dashboard site](https://dashboard.getfiddler.com) provided means fo
 
 ## Solution
 
-The latest version of the Fiddler Everywhere application is now using **the unified Telerik system** for subscription management, and the old [Fiddler dashboard site](https://dashboard.getfiddler.com) is now obsolete. Refer to [**the migration guidelines**]({%slug migrate-fiddler-subscriptions%}) for detailed instructions on how to migrate your active subscription to Telerik. Once your account and subscription are successfully migrated, you can use the unified Telerik system to manage your license and product seats through the following links:
+The latest version of the Fiddler Everywhere application is now using **the unified Telerik system** for subscription management, and the old [Fiddler dashboard site](https://dashboard.getfiddler.com) is now obsolete. Refer to [**the migration guidelines**](slug://migrate-fiddler-subscriptions) for detailed instructions on how to migrate your active subscription to Telerik. Once your account and subscription are successfully migrated, you can use the unified Telerik system to manage your license and product seats through the following links:
 
 - ["My Account" section](https://www.telerik.com/account/?LP=fiddler)
 - ["Your Licenses" section](https://www.telerik.com/account/your-licenses)

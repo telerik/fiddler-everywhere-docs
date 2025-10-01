@@ -100,11 +100,11 @@ While the breakpoints are compelling functionality,  the following behavior must
 
 ## Additional Rules Resources
 
-The breakpoints in Fiddler are only one of the exposed [actions]({%slug fiddler-rules-actions%}#actions) that you can use in combination with various [matching conditions]({%slug fiddler-rules-actions%}#conditions). Use the following online resources for additional insights and examples of what you can achieve using the Fiddler's Rules tab.
+The breakpoints in Fiddler are only one of the exposed [actions](slug://fiddler-rules-actions#actions) that you can use in combination with various [matching conditions](slug://fiddler-rules-actions#conditions). Use the following online resources for additional insights and examples of what you can achieve using the Fiddler's Rules tab.
 
-- [Understanding the Matching Conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
-- [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
-- [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
-- [Example for disabling caching through the Rules tab]({%slug rule-disable-caching%})
-- [Example for creating manual HTTP Responses]({%slug using-custom-responses%})
+- [Understanding the Matching Conditions and Final vs. Non-Final Actions](slug://fiddler-rules-actions)
+- [Example for using predefined actions in the Rules tab](slug://fiddler-ar-actions)
+- [Example for redirecting through the Rules tab](slug://rulesbuilder-redirect-traffic)
+- [Example for disabling caching through the Rules tab](slug://rule-disable-caching)
+- [Example for creating manual HTTP Responses](slug://using-custom-responses)
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)

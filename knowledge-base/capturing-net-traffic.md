@@ -26,13 +26,13 @@ Fiddler Everywhere provides a preconfigured terminal to use as a sandboxed proxy
 
 - Start the Fiddler Everywhere application.
 
-- Ensure that the [Fiddler root CA is installed]({%slug trust-certificate%}).
+- Ensure that the [Fiddler root CA is installed](slug://trust-certificate).
 
-- Open new [Fiddler's terminal]({%slug capture-traffic-get-started%}#terminal-capturing).
+- Open new [Fiddler's terminal](slug://capture-traffic-get-started#terminal-capturing).
 
 - Start your .NET application through the Fiddler's terminal.
 
-    > Important Note that Fiddler Everywhere allows you to choose **Windows PowerShell** as a default terminal option. A limitation in  **Windows PowerShell** causes localhost traffic to not go through the proxy. Workaround the issue by [using the Fiddler's aliases]({%slug how-to-capture-localhost-traffic%}#using-aliases) or adding a dot to the end of the localhost address (for example, **localhost.:8080**).
+    > Important Note that Fiddler Everywhere allows you to choose **Windows PowerShell** as a default terminal option. A limitation in  **Windows PowerShell** causes localhost traffic to not go through the proxy. Workaround the issue by [using the Fiddler's aliases](slug://how-to-capture-localhost-traffic#using-aliases) or adding a dot to the end of the localhost address (for example, **localhost.:8080**).
 
 - Execute your HTTPS requests from within the .NET application.
 
@@ -47,7 +47,7 @@ A modern-day version of the .NET framework respects the system proxy settings. T
 
 - Close your .NET application.
 - Start the Fiddler Everywhere application.
-- Toggle ON the [system capturing mode]({%slug capture-traffic-get-started%}#system-capturing).
+- Toggle ON the [system capturing mode](slug://capture-traffic-get-started#system-capturing).
 - Start your .NET application and make the HTTPS request.
 
 Fiddler captures the HTTPS sessions and displays them in the Live Traffic grid.
@@ -95,7 +95,7 @@ objRequest.Proxy= new WebProxy("127.0.0.1", 8866);
 
 #### Localhost Traffic
 
-NET might bypass the Fiddler Everywhere proxy for URLs containing **localhost** regardless of other settings. So, rather than using localhost, change your code to refer to a machine name, or use [Fiddler Everywhere alliases]({%slug how-to-capture-localhost-traffic%}#using-aliases).
+NET might bypass the Fiddler Everywhere proxy for URLs containing **localhost** regardless of other settings. So, rather than using localhost, change your code to refer to a machine name, or use [Fiddler Everywhere alliases](slug://how-to-capture-localhost-traffic#using-aliases).
 
 This URL **won't** appear in Fiddler:
 ```

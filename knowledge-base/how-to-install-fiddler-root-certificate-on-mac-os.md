@@ -21,7 +21,7 @@ To capture secure traffic (HTTPS), Fiddler Everywhere needs to install a root CA
 
 ## Automated Approach (Recommended)
 
-The recommended approach is to install the Fiddler Everywhere root certificate on macOS automatically. For the step-by-step guide, refer to the [First Steps with Fiddler Everywhere on macOS article]({% slug first_steps_macos %}).  
+The recommended approach is to install the Fiddler Everywhere root certificate on macOS automatically. For the step-by-step guide, refer to the [First Steps with Fiddler Everywhere on macOS article](slug://first_steps_macos).  
 
 ## Manual Approach
 

@@ -23,7 +23,7 @@ Through the **Rules** toolbar, you can also manually import existing FARX files 
 
 The import wizard in Fiddler Everywhere allows you to import AutoResponder rules from the Fiddler Classic application. The imported rules load it as a new group in the **Rules** tab of Fiddler Everywhere and can be exported at any point as *FARX* files.
 
-[Learn more about the import wizard here..]({%slug fe-migrating-from-classic%}#importing-autoResponder-rules)
+[Learn more about the import wizard here..](slug://fe-migrating-from-classic#importing-autoResponder-rules)
 
 ## Using SAZ to create FARX Rules
 
@@ -45,11 +45,11 @@ Apart from creating a rule from SAZ, you can also directly use captured HTTPS tr
 
 ## Additional Resources
 
-- [Moodify traffic with Fiddler's Rules]({%slug modify-traffic-get-started%})
-- [Mocking traffic with Fiddler's Rules]({%slug mock-traffic-get-started%})
-- [Replaying HTTPS Traffic with Fiddler's Rules]({%slug replaying-traffic%})
-- [Rules tab options and structure]({%slug rulesbuilder-get-started%})
-- [Creating and Using Breakpoints in Fiddler Everywhere]({%slug rulesbuilder-breakpoints%})
-- [Understanding and Using Conditions and Actions in Fiddler's Rules]({%slug fiddler-rules-actions%})
+- [Moodify traffic with Fiddler's Rules](slug://modify-traffic-get-started)
+- [Mocking traffic with Fiddler's Rules](slug://mock-traffic-get-started)
+- [Replaying HTTPS Traffic with Fiddler's Rules](slug://replaying-traffic)
+- [Rules tab options and structure](slug://rulesbuilder-get-started)
+- [Creating and Using Breakpoints in Fiddler Everywhere](slug://rulesbuilder-breakpoints)
+- [Understanding and Using Conditions and Actions in Fiddler's Rules](slug://fiddler-rules-actions)
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)
 

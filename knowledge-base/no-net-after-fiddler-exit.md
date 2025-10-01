@@ -27,7 +27,7 @@ Follow the OS-specific guidelines below to learn if your OS has leaked proxy set
 
 ### On Windows
 
-1. In Fiddler Everywhere, turn off the [system capturing mode]({%slug capture-system-traffic%}), and close the application.
+1. In Fiddler Everywhere, turn off the [system capturing mode](slug://capture-system-traffic), and close the application.
 
 1. Open the **Proxy settings** in Windows (through the **Start** button and type **Proxy Settings**).
 
@@ -35,7 +35,7 @@ Follow the OS-specific guidelines below to learn if your OS has leaked proxy set
 
 ### On macOS
 
-1. In Fiddler Everywhere, disable [system capturing mode]({%slug capture-system-traffic%}) and close the application. 
+1. In Fiddler Everywhere, disable [system capturing mode](slug://capture-system-traffic) and close the application. 
 
 1. On macOS, go to **System Preferences** > **Network** and select the active Internet adapter.
 
@@ -47,7 +47,7 @@ Follow the OS-specific guidelines below to learn if your OS has leaked proxy set
 
 ### On Ubuntu
 
-1. In Fiddler Everywhere, disable [system capturing mode]({%slug capture-system-traffic%}) and close the application. 
+1. In Fiddler Everywhere, disable [system capturing mode](slug://capture-system-traffic) and close the application. 
 
 1. On Ubuntu, go to **Settings** > **Network**.
 

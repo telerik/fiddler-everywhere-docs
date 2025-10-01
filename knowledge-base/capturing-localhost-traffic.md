@@ -16,7 +16,7 @@ res_type: kb
 
 ## Description
 
-While testing my application the traffic sent to `localhost` or `127.0.0.1` is not captured by [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}). How can I handle this issue?
+While testing my application the traffic sent to `localhost` or `127.0.0.1` is not captured by [Fiddler Everywhere system capturing](slug://capture-traffic-get-started). How can I handle this issue?
 
 ## Solution
 
@@ -25,7 +25,7 @@ Some frameworks (like .NET) are not proxying the localhost traffic. To solve tha
 - [Use the machine name](#using-the-machine-name) instead of `localhost`.
 - [Use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere.
 
-Both solutions require you to enable the [**Capturing**]({%slug capture-traffic-get-started%}) mode.
+Both solutions require you to enable the [**Capturing**](slug://capture-traffic-get-started) mode.
 
 ### Using the Machine Name
 
@@ -74,6 +74,6 @@ While using one of the above solutions to capture localhost requests, the traffi
 
 ## Additional Resources
 
-* [Learn how to direct localhost requests from the mobile application through the Fiddler proxy... ]({%slug fiddler-localhost-android%})
+* [Learn how to direct localhost requests from the mobile application through the Fiddler proxy... ](slug://fiddler-localhost-android)
 
 If you have more questions or need help capturing localhost traffic with Fiddler Everywhere, you can reach out to our support team through the **Contact Support** option.

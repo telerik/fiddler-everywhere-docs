@@ -28,7 +28,7 @@ This section demonstrates the primary approach for each of the mentioned scenari
 
 ## Using the Fiddler's Terminal
 
-Fiddler Everywhere allows quickly opening dedicated terminal that automatically uses Fiddler as HTTP(S) proxy for Node.js. [Learn more about the Fiddler's terminal here...]({%slug capture-terminal-traffic%})
+Fiddler Everywhere allows quickly opening dedicated terminal that automatically uses Fiddler as HTTP(S) proxy for Node.js. [Learn more about the Fiddler's terminal here...](slug://capture-terminal-traffic)
 
 ## Setting the Proxy Globally
 

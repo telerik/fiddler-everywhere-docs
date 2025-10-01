@@ -13,7 +13,7 @@ The Fiddler Everywhere application supports upstream proxies that require authen
 
 - Start the Fiddler Everywhere application.
 
-- Open the [**Settings > Connections**]({%slug connections-submenu%}) window.
+- Open the [**Settings > Connections**](slug://connections-submenu) window.
 
 - Check the **Enable Automatic Authentication** option.
 

@@ -9,7 +9,7 @@ tags: Fiddler Everywhere Requests list, Fiddler Everywhere collections, saved re
 
 The **Requests**section in Fiddler Everywhere enables you to organize and modify existing requests, which are listed in it. The section is part of a collapsible panel that you can hide/show to optimize your working space.
 
-For more information about building and sending HTTP and HTTPS requests, refer to the article on the [**Composer** tab]({% slug composer-tab %}).
+For more information about building and sending HTTP and HTTPS requests, refer to the article on the [**Composer** tab](slug://composer-tab).
 
 When you save a request with the **Composer** tab, the request is added to a collection in the **Requests** list, which provides options for saving, modifying, executing, and sharing previously composed requests.
 
@@ -64,7 +64,7 @@ Each collection provides options that are accessible through a context menu.
 
 ## Requests Context Menu
 
-Each request provides options for renaming or deleting it through its context menu or through [keyboard shortcuts]({%slug fiddler-shortcuts%}).
+Each request provides options for renaming or deleting it through its context menu or through [keyboard shortcuts](slug://fiddler-shortcuts).
 
 You can update each saved request by inputting the modification (for example, in the Headers) and clicking the __Save__ button. To save a new instance of an already saved request, use __Save as__ in the drop-down, which is available for already saved requests only.
 

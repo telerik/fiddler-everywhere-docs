@@ -46,7 +46,7 @@ You can use the **Rules** tab to create and apply a rule for all traffic that go
 
 ## See Also
 
-- [Sample Rules Presets]({%slug adv_techniques_fiddler%})
-- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
-- [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
-- [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
+- [Sample Rules Presets](slug://adv_techniques_fiddler)
+- [Using Breakpoints](slug://rulesbuilder-breakpoints)
+- [Understanding the Matching Conditions and the Actions](slug://fiddler-rules-actions#conditions)
+- [Understanding the role of Final and Non-Final Actions](slug://fiddler-rules-actions#final-and-non-final-actions)

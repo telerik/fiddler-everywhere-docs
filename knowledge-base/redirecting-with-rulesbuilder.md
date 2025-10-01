@@ -17,7 +17,7 @@ previous_url: /knowledge-base/redirecting-with-autoresponder
 
 ## Description
 
-How can I use the [**Rules**]({%slug modify-traffic-get-started%}) tab for redirecting traffic from one server to another?
+How can I use the [**Rules**](slug://modify-traffic-get-started) tab for redirecting traffic from one server to another?
 
 ## Solution
 
@@ -52,7 +52,7 @@ http://localhost:4000/fiddler-everywhere/modify-and-filter-traffic/modify-traffi
 
 ## See Also
 
-- [Sample Rules Presets]({%slug adv_techniques_fiddler%})
-- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
-- [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
-- [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
+- [Sample Rules Presets](slug://adv_techniques_fiddler)
+- [Using Breakpoints](slug://rulesbuilder-breakpoints)
+- [Understanding the Matching Conditions and the Actions](slug://fiddler-rules-actions#conditions)
+- [Understanding the role of Final and Non-Final Actions](slug://fiddler-rules-actions#final-and-non-final-actions)

@@ -7,7 +7,7 @@ position: 20
 
 # Showing Only Traffic from Specific Hosts
 
-Similar to [showing traffic only from localhost]({% slug adv_show_only_localhost %}), there are scenarios where you would like to test and see traffic generated from a specific hostname.
+Similar to [showing traffic only from localhost](slug://adv_show_only_localhost), there are scenarios where you would like to test and see traffic generated from a specific hostname.
 
 With Fiddler Everywhere, you can easily create rules that limit the captured traffic so that you can see and concentrate only on the sessions that matter.
 
@@ -15,7 +15,7 @@ With Fiddler Everywhere, you can easily create rules that limit the captured tra
 
 This example shows how to create a rule named "Show Only Host Traffic" that hides all captured traffic except for traffic generated from the specified host.
 
-Create a "Show Only Host Traffic" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Show Only Host Traffic" rule that sets the following matching conditions and actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**" pattern. This rule uses the negative statements to match and apply actions on anything but the desired targets.
 
@@ -41,10 +41,10 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
  
 ## See Also
 
-* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
-* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
-* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
-* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
-* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
-* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
-* [Learn more about using breakpoints here...]({%slug rulesbuilder-breakpoints%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...](slug://modify-traffic-get-started)
+* [Learn more about all rules presets in Fiddler Everywhere here...](slug://adv_techniques_fiddler)
+* [Learn more on how to organize your rules here...](slug://rulesbuilder-get-started)
+* [Learn more about the matching conditions here...](slug://fiddler-rules-actions#conditions)
+* [Learn more about the supported actions here...](slug://fiddler-rules-actions#actions)
+* [Learn more about final and non-final rules here...](slug://fiddler-rules-actions#final-and-non-final-actions)
+* [Learn more about using breakpoints here...](slug://rulesbuilder-breakpoints)

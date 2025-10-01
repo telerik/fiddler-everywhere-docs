@@ -21,7 +21,7 @@ The Java Virtual Machine (JVM) has its proxy configuration settings. How can I e
 
 ## Solution
 
-1. [Export the Fiddler Everywhere root CA]({%slug decrypt-https-traffic%}).
+1. [Export the Fiddler Everywhere root CA](slug://decrypt-https-traffic).
 1. Create a JVM keystore by using the exported certificate and [the keytool application](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html). Note that you will need admin access rights to use the keytool application.
 
   The following command prompts you to create a password and outputs `FiddlerKeystoreFile` in the pre-set export path.

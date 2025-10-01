@@ -22,13 +22,13 @@ How can I create a request for APIs that require authentication in Fiddler Every
 
 ## Solution
 
-Create a request for APIs that require authentication by using the [**Composer**]({%slug composer-tab%}) and check the complete example of the suggested approach.
+Create a request for APIs that require authentication by using the [**Composer**](slug://composer-tab) and check the complete example of the suggested approach.
 
 ### Creating a Basic Authentication Request
 
 The following steps provide an overview of the procedure for creating a basic authentication request:
 
-1. Select the [**Composer**]({%slug composer-tab%}) tab.
+1. Select the [**Composer**](slug://composer-tab) tab.
 
 1. Set the HTTP/HTTPS method to **GET** and add the URL in the URL field.
 
@@ -44,7 +44,7 @@ The following steps provide an overview of the procedure for creating a basic au
 
 ### Basic Authentication Request Example
 
-1. In the [**Composer**]({%slug composer-tab%}) tab, set the HTTP/HTTPS method to **GET** and add `https://httpbin.org/basic-auth/user1/pass1` in the URL field.
+1. In the [**Composer**](slug://composer-tab) tab, set the HTTP/HTTPS method to **GET** and add `https://httpbin.org/basic-auth/user1/pass1` in the URL field.
 
    The `https://httpbin.org/basic-auth/user1/pass1` URL includes the following fields:
 

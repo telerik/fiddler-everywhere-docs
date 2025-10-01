@@ -37,7 +37,7 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | string | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | string | `<base64-private-key>` |
 
->important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints]({%slug first_steps_windows%}#prerequisites). For environments with limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
+>important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints](slug://first_steps_windows#prerequisites). For environments with limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
 
 **MDM Profile Values:**
 

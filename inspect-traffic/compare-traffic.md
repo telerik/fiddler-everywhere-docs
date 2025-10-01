@@ -15,7 +15,7 @@ previous_url: /traffic/compare-traffic
 
 Fiddler Everywhere provides a comparing option for detailed differentiation of two or more captured sessions from the sessions grid.
 
-1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
+1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
 
 1. Select two sessions that you want to compare.
 
@@ -31,7 +31,7 @@ Fiddler Everywhere loads both sessions side-by-side, with the session with a low
 
 You can add and compare more sessions by adding them to the comparison groups.
 
-1. Capture HTTP(S) traffic while using your preferred [capturing mode]({%slug capture-traffic-get-started%}).
+1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
 
 1. Select one or more sessions that you want to compare.
 

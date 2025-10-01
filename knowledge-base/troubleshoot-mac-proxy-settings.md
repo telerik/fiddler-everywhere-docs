@@ -23,11 +23,11 @@ How can I verify and troubleshoot changes in the macOS proxy settings? How can I
 
 ## Solution
 
-To troubleshoot common Mac scenarios, verify the Mac proxy settings. For example, after [installing Fiddler Everywhere on a Mac]({% slug first_steps_macos %}), Fiddler Everywhere may not be able to start capturing traffic. This issue may be caused by various reasons and may require troubleshooting.
+To troubleshoot common Mac scenarios, verify the Mac proxy settings. For example, after [installing Fiddler Everywhere on a Mac](slug://first_steps_macos), Fiddler Everywhere may not be able to start capturing traffic. This issue may be caused by various reasons and may require troubleshooting.
 
 To troubleshoot this issue:
 
-1. [Reset the Fiddler Everywhere settings to their default values]({% slug how-to-reset-fiddler-everywhere-settings-to-default %}).
+1. [Reset the Fiddler Everywhere settings to their default values](slug://how-to-reset-fiddler-everywhere-settings-to-default).
 1. Close Fiddler Everywhere.
 1. [Verify the Mac proxy settings](#verifying-the-mac-proxy-settings).
 1. Open Fiddler Everywhere.
@@ -48,9 +48,9 @@ When Fiddler Everywhere is open with the default settings, the **System Proxy Se
 ## See Also
 
 * [Download the latest Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere)
-* [Get Started with Fiddler Everywhere on macOS]({%slug first_steps_macos%})
-* [Troubleshooting Fiddler Everywhere Network Access]({%slug fiddler-test-network-access-macos%})
-* [Troubleshooting HTTPS Capturing on macOS]({%slug troubleshoot-capturing-traffic%})
-* [Troubleshooting macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
-* [Resetting Fiddler Everywhere Settings to Default]({%slug how-to-reset-fiddler-everywhere-settings-to-default%})
-* [Inspecting the Fiddler Everywhere application logs]({%slug fiddler-log-files%})
+* [Get Started with Fiddler Everywhere on macOS](slug://first_steps_macos)
+* [Troubleshooting Fiddler Everywhere Network Access](slug://fiddler-test-network-access-macos)
+* [Troubleshooting HTTPS Capturing on macOS](slug://troubleshoot-capturing-traffic)
+* [Troubleshooting macOS Trust Certificate Issues](slug://troubleshoot-certificate-error)
+* [Resetting Fiddler Everywhere Settings to Default](slug://how-to-reset-fiddler-everywhere-settings-to-default)
+* [Inspecting the Fiddler Everywhere application logs](slug://fiddler-log-files)

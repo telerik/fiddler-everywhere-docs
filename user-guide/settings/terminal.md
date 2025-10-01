@@ -8,7 +8,7 @@ position: 90
 
 # Terminal Menu
 
-The **Terminal** menu allows you to set the specific terminal to be used as a preconfigured instance with the [terminal capturing mode]({%slug capture-terminal-traffic%}).
+The **Terminal** menu allows you to set the specific terminal to be used as a preconfigured instance with the [terminal capturing mode](slug://capture-terminal-traffic).
 
 The available options are as follows:
 
@@ -21,5 +21,5 @@ The Fiddler's terminal instance automatically proxies all HTTPS requests made by
 
 ![Terminal settings](../../images/settings/settings-terminals.png)
 
-* [Learn more about the Fiddler's terminal instance here...]({%slug capture-terminal-traffic%})
-* [Learn more about other capturing modes in Fiddler here...]({%slug capture-traffic-get-started%})
+* [Learn more about the Fiddler's terminal instance here...](slug://capture-terminal-traffic)
+* [Learn more about other capturing modes in Fiddler here...](slug://capture-traffic-get-started)

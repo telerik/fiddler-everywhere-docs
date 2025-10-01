@@ -33,7 +33,7 @@ By default, Fiddler Everywhere will automatically chain to other system proxies 
 
 All modern applications use additional security layers like [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) to protect user data and prevent third parties from capturing the traffic.
 
-To capture secure traffic over HTTPS with Fiddler Everywhere, you need to explicitly elevate the trust by [installing and enabling the Fiddler root trust certificate]({%slug trust-certificate%}). Adding the Fiddler Everywhere CA in the Trusted Certificate Authority manager of the used operating system allows the man-in-the-middle approach to intercept the encoded TLS data. The Fiddler Everywhere application can now decode the otherwise encoded HTTPS traffic.
+To capture secure traffic over HTTPS with Fiddler Everywhere, you need to explicitly elevate the trust by [installing and enabling the Fiddler root trust certificate](slug://trust-certificate). Adding the Fiddler Everywhere CA in the Trusted Certificate Authority manager of the used operating system allows the man-in-the-middle approach to intercept the encoded TLS data. The Fiddler Everywhere application can now decode the otherwise encoded HTTPS traffic.
 
 The following image demonstrates how Fiddler Everywhere acts as if the client is speaking to the server, and the other way around&mdash;it works as if the server is communicating with the client applications.
 

@@ -19,13 +19,13 @@ With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, 
 
 - [Saving rules](#saving-rules)&mdash;Options to save single or multiple rules within the **Rules** tab.
 
-The save options in Fiddler Everywhere allow you to use local and cloud save, organize your traffic snapshots in collections, and collaborate easily with a few clicks. It is important to note that Fiddler Everywhere also provides straightforward [export/import options]({%slug fiddler-export-and-import%}), which are not interconnected with the application user interface. The latest version of Fiddler Everywhere supports different languages, and the following symbols are allowed:
+The save options in Fiddler Everywhere allow you to use local and cloud save, organize your traffic snapshots in collections, and collaborate easily with a few clicks. It is important to note that Fiddler Everywhere also provides straightforward [export/import options](slug://fiddler-export-and-import), which are not interconnected with the application user interface. The latest version of Fiddler Everywhere supports different languages, and the following symbols are allowed:
 
  - Letters.
  - Numbers (0-9).
  - Dashes (`-`), underscores (`_`), and blank spaces.
 
- >tip Note that saving a snapshot's sessions in Fiddler will effectively store them either in the application local storage (when using local save) or in Fiddler's cloud space (when using cloud save). If you need to create a file with sessions, you should use [the **Export** option]({%slug fiddler-export-and-import%}) which enables you to produce a file in various known formats (like SAZ, HTTPArchive, etc.).
+ >tip Note that saving a snapshot's sessions in Fiddler will effectively store them either in the application local storage (when using local save) or in Fiddler's cloud space (when using cloud save). If you need to create a file with sessions, you should use [the **Export** option](slug://fiddler-export-and-import) which enables you to produce a file in various known formats (like SAZ, HTTPArchive, etc.).
 
 ## Saving Session's Snapshots
 
@@ -67,7 +67,7 @@ You can select, inspect, modify, and share snapshots of previously saved session
 
 Sometimes, you might need to add a newly captured HTTP session to an existing snapshot. Or you might want to join the sessions from two saved snapshots together in a single snapshot. In both scenarios, you can use the **Add to Snapshot** option by invoking the context menu after selecting the targeted sessions.
 
-[Learn more about using the **Add to Snapshot** context menu option here...]({%slug web-sessions-list%}#adding-session-to-snapshot)
+[Learn more about using the **Add to Snapshot** context menu option here...](slug://web-sessions-list#adding-session-to-snapshot)
 
 ## Automated Save and Export   
 
@@ -90,7 +90,7 @@ Enable the **AutoSave** feature as follows:
 
 The **AutoSave** provides several options to control the exported data:
 
-- An option to set the duration in minutes. Once the set limit is reached, the Fiddler application automatically saves and exports the captured HTTPS data as an [SAZ file]({%slug fiddler-saz-format%}). The minimum duration is 1 minute, and the maximum duration is 720 minutes.
+- An option to set the duration in minutes. Once the set limit is reached, the Fiddler application automatically saves and exports the captured HTTPS data as an [SAZ file](slug://fiddler-saz-format). The minimum duration is 1 minute, and the maximum duration is 720 minutes.
 
 - An option to set the export folder. Files saved in this folder are also automatically synced to the **AutoSaved** folder in the **Snapshots** tree.
 

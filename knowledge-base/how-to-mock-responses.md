@@ -20,13 +20,13 @@ Fiddler Everywhere provides options for modifying the current response (HTML, JS
 
 ## Solution
 
-To achieve this scenario, you can use the **Manual Response** or the **Response File** actions of the [**Rules**]({%slug modify-traffic-get-started%}) tab.
+To achieve this scenario, you can use the **Manual Response** or the **Response File** actions of the [**Rules**](slug://modify-traffic-get-started) tab.
 
 ### Manual Response
 
-1. Open the [**Rules**]({%slug modify-traffic-get-started%}) tab.
+1. Open the [**Rules**](slug://modify-traffic-get-started) tab.
 
-1. Create a new rule through the **Add New rule** button. This will open the [**Rule Builder**]({%slug modify-traffic-get-started%}#rule-builder).
+1. Create a new rule through the **Add New rule** button. This will open the [**Rule Builder**](slug://modify-traffic-get-started#rule-builder).
 
 1. Add the match condition as per your requirements.
 

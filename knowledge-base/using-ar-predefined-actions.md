@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-The [**Rules** tab]({%slug modify-traffic-get-started%}) is a powerful debugging functionality in Fiddler Everywhere. How can I use each of the predefined actions in the **Actions** drop-down and customize a rule?
+The [**Rules** tab](slug://modify-traffic-get-started) is a powerful debugging functionality in Fiddler Everywhere. How can I use each of the predefined actions in the **Actions** drop-down and customize a rule?
 
 ## Solution
 
@@ -213,7 +213,7 @@ Another option that the **Rule Builder** provides is to create the mocked custom
 
 ## See Also
 
-- [Sample Rules Presets]({%slug adv_techniques_fiddler%})
-- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
-- [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
-- [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
+- [Sample Rules Presets](slug://adv_techniques_fiddler)
+- [Using Breakpoints](slug://rulesbuilder-breakpoints)
+- [Understanding the Matching Conditions and the Actions](slug://fiddler-rules-actions#conditions)
+- [Understanding the role of Final and Non-Final Actions](slug://fiddler-rules-actions#final-and-non-final-actions)

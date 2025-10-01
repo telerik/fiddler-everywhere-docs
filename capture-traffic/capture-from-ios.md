@@ -42,7 +42,7 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote devices to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
 
-1. Check the local IP address of the host where the Fiddler Everywhere application runs. You can use [the connection status on the lower right-hand side]({%slug connections-section%}) to obtain the host IP address. Alternatively, you can get the IP address while using  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere machine is **192.168.0.101**.
+1. Check the local IP address of the host where the Fiddler Everywhere application runs. You can use [the connection status on the lower right-hand side](slug://connections-section) to obtain the host IP address. Alternatively, you can get the IP address while using  **ipconfig**/ **ifconfig** (depending on the OS). For demonstration purposes, let's assume that the local IP of the Fiddler Everywhere machine is **192.168.0.101**.
 
 >tip: If you only need to capture remote traffic, then there is no need to install the Fiddler CA certificate on the Fiddler host machine. You only need to download and install the Fiddler CA certificate on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
@@ -105,7 +105,7 @@ Now you can immediately capture and inspect HTTP/HTTPS traffic from your iOS dev
 
 >tip When you've finished debugging, remove the WiFi proxy from your iOS device.
 
-[Learn more about inspecting the captured HTTPS sessions here...]({%slug inspecting-traffic-get-started%})
+[Learn more about inspecting the captured HTTPS sessions here...](slug://inspecting-traffic-get-started)
 
 ## Bypass the Apple Endpoints
 

@@ -62,7 +62,7 @@ The **Params inspector**, available only in the **Request** section, displays th
 
 ### Trailers Inspector
 
-The **Params inspector** is a gRPC-specific inspector that helps inspect gRPC server trailer headers. [Learn more about gRPC capturing here...]({%slug capture-grpc-traffic%}).
+The **Params inspector** is a gRPC-specific inspector that helps inspect gRPC server trailer headers. [Learn more about gRPC capturing here...](slug://capture-grpc-traffic).
 
 ### Cookies Inspector
 
@@ -215,7 +215,7 @@ Fiddler Everywhere provides common user interface to create inspectors for visua
 
 Encoded messages from a **gRPC** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobof files through the **Settings > Protobuf > Decode via .proto file** option.
 
-[Learn more about capturing gRPC traffic with Fiddler Everywhere here...]({%slug capture-grpc-traffic%})
+[Learn more about capturing gRPC traffic with Fiddler Everywhere here...](slug://capture-grpc-traffic)
 
 ### Handshake Tab
 
@@ -360,4 +360,4 @@ The Response Inspectors for ongoing capture (the sessions in the Live Traffic gr
 
 ![Certificate note](../images/livetraffic/certs/certficate-valid-note.png)
 
-[Learn more on how to inspect and use the certificate details with Fiddler Everywhere here...]({%slug fe-cert-details%})
+[Learn more on how to inspect and use the certificate details with Fiddler Everywhere here...](slug://fe-cert-details)

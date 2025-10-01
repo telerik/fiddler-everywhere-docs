@@ -30,7 +30,7 @@ To properly configure CiscoVPN alongside the Fiddler's system and network captur
 
 ### Configuring CiscoVPN alongside System Capturing Mode
 
-The following section showcases how to use Cisco VPN alongside [the Fiddler's **system capturing mode**]({%slug capture-system-traffic%}). Executing the steps in the exact order suggested in this section is crucial for properly setting up Cisco AnyConnect alongside Fiddler Everywhere.
+The following section showcases how to use Cisco VPN alongside [the Fiddler's **system capturing mode**](slug://capture-system-traffic). Executing the steps in the exact order suggested in this section is crucial for properly setting up Cisco AnyConnect alongside Fiddler Everywhere.
 
 1. Make sure your Cisco AnyConnect client is disconnected.
 
@@ -75,7 +75,7 @@ The workflow for Cisco AnyConnect alongside Fiddler Everywhere is as follows:
 
 ## Configuring CiscoVPN alongside Network Capturing Mode
 
-The following section showcases how to use Cisco VPN alongside [the Fiddler's **network capturing mode**]({%slug capture-network-traffic%}). Executing the steps in the exact order suggested in this section is crucial for properly setting up Cisco AnyConnect alongside Fiddler Everywhere.
+The following section showcases how to use Cisco VPN alongside [the Fiddler's **network capturing mode**](slug://capture-network-traffic). Executing the steps in the exact order suggested in this section is crucial for properly setting up Cisco AnyConnect alongside Fiddler Everywhere.
 
 1. Make sure your Cisco AnyConnect client is disconnected.
 
@@ -103,7 +103,7 @@ The following section showcases how to use Cisco VPN alongside [the Fiddler's **
 
 ## Configuring CiscoVPN alongside Browser and Terminal Capturing Modes
 
-You can directly use Cisco VPN alongside Fiddler's [**browser capturing mode**]({%slug capture-browser-traffic%}) or [**network capturing mode**]({%slug capture-terminal-traffic%}). By default, the CiscoVPN tool does not explicitly restrict the option to set third-party properties on clean browser or terminal instances, which Fiddler does when using one of the said modes.
+You can directly use Cisco VPN alongside Fiddler's [**browser capturing mode**](slug://capture-browser-traffic) or [**network capturing mode**](slug://capture-terminal-traffic). By default, the CiscoVPN tool does not explicitly restrict the option to set third-party properties on clean browser or terminal instances, which Fiddler does when using one of the said modes.
 
 ## In-app VPN Notifications
 

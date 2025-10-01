@@ -32,7 +32,7 @@ All the described issues above have a common solution - [bypassing Fiddler](#byp
 
 Fiddler also allows decrypting only some endpoints while explicitly [skipping decryption](#skipping-decryption-through-rules) for others. This is possible through the **Rules** tab and the action called **Do Not Decrypt**.
 
-Lastly, you might want to filter the captured traffic while preserving all captured sessions temporarily. For that, you can use the [built-in filters]({%slug how-to-filter-traffic%}) or the **Do Not Show** rule action.
+Lastly, you might want to filter the captured traffic while preserving all captured sessions temporarily. For that, you can use the [built-in filters](slug://how-to-filter-traffic) or the **Do Not Show** rule action.
 
 ## Bypassing Fiddler
 
@@ -86,7 +86,7 @@ Toggling a **Do Not Decrypt** rule on and off will not modify existing connectio
 
 - Create new action through **Add Action**. Select the **Do Not Decrypt** action.
 
-    >important The **Do not decrypt** action is **final**, which means that no further actions will be executed once the action is applied. [Learn more about final and non-final actions here...]({%slug fiddler-rules-actions%})
+    >important The **Do not decrypt** action is **final**, which means that no further actions will be executed once the action is applied. [Learn more about final and non-final actions here...](slug://fiddler-rules-actions)
 
     ![Example rule that uses the "Do Not Decrypt" action](../images/kb/bypass/donotdecrypt.png)
 

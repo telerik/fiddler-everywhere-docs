@@ -28,7 +28,7 @@ To use a rule (or a group of rules) from the **Rules** list, take into considera
 
 - You can drag and drop rules in and out of groups and subgroups. Note that this can change the execution priority when multiple rules are executed simultaneously.
 
-- Some rule actions can trigger [a final action]({%slug fiddler-rules-actions%}), which stops the execution of all other actions and rules with lower priority.
+- Some rule actions can trigger [a final action](slug://fiddler-rules-actions), which stops the execution of all other actions and rules with lower priority.
 
 ## Rules Priority
 
@@ -63,11 +63,11 @@ The group options allow you to further interact with the group's rules:
 
 ## Additional Resources
 
-- [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
-- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
-- [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
-- [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
-- [Example for disabling caching through the Rules tab]({%slug rule-disable-caching%})
-- [Example for creating manual HTTP Responses]({%slug using-custom-responses%})
-- [Understanding the matching conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
+- [Modifying HTTPS Traffic](slug://modify-traffic-get-started)
+- [Using Breakpoints](slug://rulesbuilder-breakpoints)
+- [Example for using predefined actions in the Rules tab](slug://fiddler-ar-actions)
+- [Example for redirecting through the Rules tab](slug://rulesbuilder-redirect-traffic)
+- [Example for disabling caching through the Rules tab](slug://rule-disable-caching)
+- [Example for creating manual HTTP Responses](slug://using-custom-responses)
+- [Understanding the matching conditions and Final vs. Non-Final Actions](slug://fiddler-rules-actions)
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)

@@ -8,7 +8,7 @@ previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-gui
 
 The **Traffic pane** provides essential features of Fiddler Everywhere including the captured traffic visualized within the **Live Traffic grid**.
 
-Live traffic summarizes each captured session that shows in the **Live Traffic** grid. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**]({%slug inspector-types%}) types, and the corresponding [**Rules**]({%slug modify-traffic-get-started%}) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
+Live traffic summarizes each captured session that shows in the **Live Traffic** grid. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**](slug://inspector-types) types, and the corresponding [**Rules**](slug://modify-traffic-get-started) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
 
 ## Defining a Session
 
@@ -32,9 +32,9 @@ The **Live Traffic** toolbar provides the following functionalities:
 
 ### Filtering Traffic
 
-Use the filtering options (the [**Filters** toolbar option]({%slug how-to-filter-traffic%}#filters) and the [column filters]({%slug how-to-filter-traffic%}#column-filters)) to create and apply complex filters on your captured sessions in the **Live Traffic** grid. 
+Use the filtering options (the [**Filters** toolbar option](slug://how-to-filter-traffic#filters) and the [column filters](slug://how-to-filter-traffic#column-filters)) to create and apply complex filters on your captured sessions in the **Live Traffic** grid. 
 
-[Learn more about the filtering options in Fiddler Everywhere...]({%slug how-to-filter-traffic%})
+[Learn more about the filtering options in Fiddler Everywhere...](slug://how-to-filter-traffic)
 
 ### Independent Browser Capturing
 
@@ -42,7 +42,7 @@ Use the **Open Browser** button to capture traffic from a specific browser insta
 
 ![Use the Open Browser button to start independent browser instance](../images/get-started/get-started-open-browser.png)
 
-[Learn more about the independent browser capturing...]({%slug capture-traffic-get-started%}#independent-browser-capturing)
+[Learn more about the independent browser capturing...](slug://capture-traffic-get-started#independent-browser-capturing)
 
 ### Terminal Capturing
 
@@ -50,7 +50,7 @@ Use the **>_ Terminal** button to capture traffic from a specific terminal insta
 
 ![Use the Terminal button to start independent terminal instance](../images/get-started/get-started-terminal.png)
 
-[Learn more about the independent terminal capturing...]({%slug capture-terminal-traffic%})
+[Learn more about the independent terminal capturing...](slug://capture-terminal-traffic)
 
 ### Clearing Sessions
 
@@ -59,7 +59,7 @@ The **Clear** button will remove all captured traffic from the **Live Traffic** 
 You can also clear only a specific set of sessions based on some pre-defined criteria. The complete list of **Clear xxx** options is available through the dropdown menu next to the **Clear** button, and the available options are as follows:
 
 - **Clear All**&mdash;Removes all entries from the traffic grid (an analog to the **Clear** button).
-- **Clear Closed**&mdash;Removes all sessions with session state "Closed". The state of the session is available through [the **Session State** column]({%slug web-sessions-list%}#columns).
+- **Clear Closed**&mdash;Removes all sessions with session state "Closed". The state of the session is available through [the **Session State** column](slug://web-sessions-list#columns).
 - **Clear Visible**&mdash;Removes all sessions currently visible in the grid. Will preserve filtered sessions (these sessions will return if the filters are cleared).
 - **Clear Filtered Out**&mdash;Removes all sessions that are filtered.
 - **Clear CONNECTS**&mdash;Removes all sessions that use HTTP method CONNECT (also referred to as proxy tunnels).
@@ -131,7 +131,7 @@ You can also [create a custom column through the **Add Custom Column** option](#
 
 ### Toggling Layout
 
-The last icon on the right side of the toolbar presents an option to restructure the main Fiddler Everywhere layout structure for the [**Live Traffic grid**](#live-traffic-list) and the [**Inspectors**]({%slug inspector-types%}). The layout change option is available for the **Live traffic** tab, comparison, and saved sessions tabs. The layout options are as follows:
+The last icon on the right side of the toolbar presents an option to restructure the main Fiddler Everywhere layout structure for the [**Live Traffic grid**](#live-traffic-list) and the [**Inspectors**](slug://inspector-types). The layout change option is available for the **Live traffic** tab, comparison, and saved sessions tabs. The layout options are as follows:
 
 - (Default layout) **Live Traffic grid** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
 - (Alternative layout) **Live Traffic grid** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
@@ -285,7 +285,7 @@ The following table displays the icons which **Live Traffic** grid supports for 
 
 ### Breakpoint Indicators
 
-A paused session or otherwise a session that hit [an active breakpoint]({%slug rulesbuilder-breakpoints%}) will have a special "Paused" icon in the Live Traffic grid.
+A paused session or otherwise a session that hit [an active breakpoint](slug://rulesbuilder-breakpoints) will have a special "Paused" icon in the Live Traffic grid.
 
 ### Certificate Indicators
 
@@ -303,7 +303,7 @@ Each [list icon](#list-icons) can contain an additional triangle warning that in
 
     ![Valid Certificate details](../images/livetraffic/certs/certficate-valid-note.png)
 
-[Learn more about how to use the server certificate details in Fiddler Everywhere here...]({%slug fe-cert-details%})
+[Learn more about how to use the server certificate details in Fiddler Everywhere here...](slug://fe-cert-details)
 
 ## Columns
 
@@ -464,7 +464,7 @@ Each column has a **filter** button, which popups an additional **Filter** menu 
 
 The column **Filter** menu lets you add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
->tip Apply complex filters by using the [**Filters** toolbar option](#filtering) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options]({%slug how-to-filter-traffic%}#columns-filters).
+>tip Apply complex filters by using the [**Filters** toolbar option](#filtering) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options](slug://how-to-filter-traffic#columns-filters).
 
 ## Context Menu Options
 
@@ -499,11 +499,11 @@ The **Edit in Composer** context menu option loads the selected request in a new
 
 ### Resuming Paused Sessions
 
-To resume the execution of sessions that hit [active breakpoints]({%slug rulesbuilder-breakpoints%}), use the **Resume Paused Sessions** context menu option, which can be accessed with the keyboard by pressing `F5`.
+To resume the execution of sessions that hit [active breakpoints](slug://rulesbuilder-breakpoints), use the **Resume Paused Sessions** context menu option, which can be accessed with the keyboard by pressing `F5`.
 
 ### Adding New Rules
 
-You can use a captured session entry to quickly mock client or server behavior. For similar cases, you can use the session URL alongside the [**Rules** tab]({%slug modify-traffic-get-started%}). Creating rules allows you to test complex scenarios and various mock responses.
+You can use a captured session entry to quickly mock client or server behavior. For similar cases, you can use the session URL alongside the [**Rules** tab](slug://modify-traffic-get-started). Creating rules allows you to test complex scenarios and various mock responses.
 
 To add a new rule:
 
@@ -603,13 +603,13 @@ Saved and shared sessions will contain the custom marking.
 
 Select two sessions and use the **Compare** context menu option to load the **Compare Sessions** tab.
 
-[Learn more on how to compare sessions with Fiddler Everywhere here...]({%slug fe-compare-sessions%}#comparing-live Traffic Sessions)
+[Learn more on how to compare sessions with Fiddler Everywhere here...](slug://fe-compare-sessions#comparing-live Traffic Sessions)
 
 ### Adding Sessions to Compare Groups
 
 Add sessions to compare groups through the **Add to compare groups**. This functionality allows you to add and inspect more sessions in the **Compare Sessions** tab.
 
-[Learn more on how to work with compare groups here...]({%slug fe-compare-sessions%}#adding-sessions-to-the-compare-groups)
+[Learn more on how to work with compare groups here...](slug://fe-compare-sessions#adding-sessions-to-the-compare-groups)
 
 ### Commenting
 
@@ -637,10 +637,10 @@ The **Bypass** option lets you quickly add a root domain or specific subdomain a
 
 Consider the following rules when bypassing a domain:
 
-- All endpoints added through **Bypass** option are part of the operating system bypass list until the [Fiddler Everywhere proxy captures system traffic]({%slug capture-traffic-get-started%}#system-capturing).
-- All endpoints added through **Bypass** option will be explicitly bypassed when the [Fiddler Everywhere proxy uses independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing).
-- You can remove added endpoints from the bypass list through [**Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}).
-- You can manually add more endpoints to the bypass list through [**Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%}) or through the **Live Traffic** context menu.
-- Toggling off the [Fiddler Everywhere system capturing]({%slug capture-traffic-get-started%}#system-capturing) removes Fiddler Everywhere as a system proxy and clears the operating system bypass list set by Fiddler Everywhere. Note that the Fiddler Everywhere bypass list ([**Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing).
-- Closing the Fiddler Everywhere application resets the system proxy and clears the operating system bypass list set by Fiddler Everywhere. Note that the Fiddler Everywhere bypass list ([**Bypass Fiddler for URLs that starts with**]({%slug connections-submenu%})) will remain unchanged and applicable for [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing).
+- All endpoints added through **Bypass** option are part of the operating system bypass list until the [Fiddler Everywhere proxy captures system traffic](slug://capture-traffic-get-started#system-capturing).
+- All endpoints added through **Bypass** option will be explicitly bypassed when the [Fiddler Everywhere proxy uses independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing).
+- You can remove added endpoints from the bypass list through [**Bypass Fiddler for URLs that starts with**](slug://connections-submenu).
+- You can manually add more endpoints to the bypass list through [**Bypass Fiddler for URLs that starts with**](slug://connections-submenu) or through the **Live Traffic** context menu.
+- Toggling off the [Fiddler Everywhere system capturing](slug://capture-traffic-get-started#system-capturing) removes Fiddler Everywhere as a system proxy and clears the operating system bypass list set by Fiddler Everywhere. Note that the Fiddler Everywhere bypass list ([**Bypass Fiddler for URLs that starts with**](slug://connections-submenu)) will remain unchanged and applicable for [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing).
+- Closing the Fiddler Everywhere application resets the system proxy and clears the operating system bypass list set by Fiddler Everywhere. Note that the Fiddler Everywhere bypass list ([**Bypass Fiddler for URLs that starts with**](slug://connections-submenu)) will remain unchanged and applicable for [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing).
 - The **Bypass** option is inactive and not applicable for [HTTP CONNECT tunnels](https://textslashplain.com/2015/11/19/understanding-connect-tunnels/), and localhost addresses (for example, localhost, 127.0.0.1, ::1).

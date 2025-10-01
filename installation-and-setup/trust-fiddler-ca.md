@@ -11,7 +11,7 @@ previous_url: /installation-and-update/trust-certificate-configuration
 
 Proper installation and trust of the Fiddler Everywhere Certificate Authority (CA) is essential for capturing and decrypting HTTPS traffic at the system level. This article explains the recommended and manual approaches for installing the Fiddler CA on Windows, macOS, and Linux, and provides troubleshooting tips and best practices.
 
->tip CA installation is not required if you use [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) or [terminal capturing]({%slug capture-traffic-get-started%}#terminal-capturing) modes.
+>tip CA installation is not required if you use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing](slug://capture-traffic-get-started#terminal-capturing) modes.
 
 ## Recommended: Automated CA Installation
 
@@ -59,7 +59,7 @@ Use the manual approach if the automated wizard fails or you need more control o
    sudo dpkg-reconfigure ca-certificates
    ```
 
-   >tip If your distribution does not use `dpkg`, refer to your OS documentation or see our [Fedora, CentOS, RedHat]({%slug fiddler-fedora-centos%}) and [XFCE]({%slug fiddler-xfce%}) guides.
+   >tip If your distribution does not use `dpkg`, refer to your OS documentation or see our [Fedora, CentOS, RedHat](slug://fiddler-fedora-centos) and [XFCE](slug://fiddler-xfce) guides.
 
 3. In the prompt, select **Yes** to install new certificates, then select the Fiddler certificate and confirm.
 
@@ -73,17 +73,17 @@ If automatic installation fails (due to security restrictions, permissions, or c
 
 1. Go to **Settings** > **HTTPS**.
 2. Choose the desired format (**DER/Binary**, **PEM/ASCII**, or **PKCS 12**) and click **Export**.
-3. Add the exported certificate to your certificate manager (see [Linux]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%}), [macOS]({%slug how-to-install-fiddler-root-certificate-on-mac-os%}), or your application documentation).
+3. Add the exported certificate to your certificate manager (see [Linux](slug://how-to-install-fiddler-root-certificate-in-firefox-on-linux), [macOS](slug://how-to-install-fiddler-root-certificate-on-mac-os), or your application documentation).
 4. Enable **Capture HTTPS traffic** and click **Save**.
 5. Enable **System Proxy** to start capturing system traffic.
 
 ### Installing in Third-Party Certificate Stores
 
 Fiddler CA can be exported in multiple formats for use in other applications:
-- [Firefox on Linux]({%slug how-to-install-fiddler-root-certificate-in-firefox-on-linux%})
-- [Electron-based apps]({%slug ubuntu-ca-electron%})
-- [Python]({%slug fiddler-python-traffic%}#setting-fiddler-proxy-and-ca-through-environment-variable)
-- [AWS]({%slug how-to-capture-aws-traffic%})
+- [Firefox on Linux](slug://how-to-install-fiddler-root-certificate-in-firefox-on-linux)
+- [Electron-based apps](slug://ubuntu-ca-electron)
+- [Python](slug://fiddler-python-traffic#setting-fiddler-proxy-and-ca-through-environment-variable)
+- [AWS](slug://how-to-capture-aws-traffic)
 
 ## Best Practices & Troubleshooting
 
@@ -93,5 +93,5 @@ Fiddler CA can be exported in multiple formats for use in other applications:
 - If HTTPS capture does not work, verify the CA is trusted and "Capture HTTPS traffic" is enabled.
 - For certificate errors on specific sites, add the domain to the ignore list (for development only).
 - On Linux, always follow the manual export and trust instructions for your distribution.
-- Use [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing-browser-capturing) if you lack admin rights or only need browser traffic.
+- Use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) if you lack admin rights or only need browser traffic.
 

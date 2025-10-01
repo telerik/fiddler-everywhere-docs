@@ -55,7 +55,7 @@ The **View** section contains various options, as described below. Note that som
 
 ## Certificate
 
-- **Trust Root Certificate**&mdash;Automatically installs and trusts the Fiddler certificate authority (CA) in the user certificate store of the operating system certificate manager. The option is available on [macOS]({% slug first_steps_macos %}#start-system-capturing) and [Windows]({% slug first_steps_windows %}#start-system-capturing). On Linux, you have to [export and trust the Fiddler CA certificate manually]({% slug first_steps_linux %}#start-system-capturing). After you install the CA, you are ready to [enable the capturing of HTTPS traffic](#capture-https-traffic).
+- **Trust Root Certificate**&mdash;Automatically installs and trusts the Fiddler certificate authority (CA) in the user certificate store of the operating system certificate manager. The option is available on [macOS](slug://first_steps_macos#start-system-capturing) and [Windows](slug://first_steps_windows#start-system-capturing). On Linux, you have to [export and trust the Fiddler CA certificate manually](slug://first_steps_linux#start-system-capturing). After you install the CA, you are ready to [enable the capturing of HTTPS traffic](#capture-https-traffic).
 
 - **Export Root Certificate**&mdash;Automatically exports the Fiddler Everywhere CA file in a format specific to the operating system used. The certificate is exported to the `Desktop` folder. Use the **Settings > HTTPS** section to export the certificate explicitly in a specific format.
 
@@ -81,7 +81,7 @@ The **Help** section contains various options, as described below. Note that som
 
 - **Documentation**&mdash;Direct link to the Fiddler Everywhere documentation.
 
-- **Open Application Logs Folder**&mdash;Opens the Fiddler's application folder that contains [the application logs files]({%slug fiddler-log-files%}).
+- **Open Application Logs Folder**&mdash;Opens the Fiddler's application folder that contains [the application logs files](slug://fiddler-log-files).
 
 - **About**&mdash;Opens an application dialog with detailed information about the currently installed version of Fiddler Everywhere. On macOS, this option is available in the menu's **Fiddler Everywhere** section.
 

@@ -71,17 +71,17 @@ After successful login into Fiddler Everywhere, you will see your personal and l
 
 You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import *& export, mock and modify HTTPS traffic.
 
-1. Capture HTTPS traffic through the preferred [capturing mode]({%slug capture-traffic-get-started%}).
+1. Capture HTTPS traffic through the preferred [capturing mode](slug://capture-traffic-get-started).
 
-  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)]({%slug trust-certificate%}).
+  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)](slug://trust-certificate).
 
-1. [Inspect the captured data]({%slug inspecting-traffic-get-started%}).
+1. [Inspect the captured data](slug://inspecting-traffic-get-started).
 
-1. [Save]({%slug fiddler-saving%}), [share]({%slug fiddler-sharing%}). or [export]({%slug fiddler-export-and-import%}) the captured HTTPS traffic.
+1. [Save](slug://fiddler-saving), [share](slug://fiddler-sharing). or [export](slug://fiddler-export-and-import) the captured HTTPS traffic.
 
-1. [Modify a session through the **Composer**]({%slug composer-get-started%})
+1. [Modify a session through the **Composer**](slug://composer-get-started)
 
-1. [Mock client and server behavior through the **Rules** tab]({%slug rulesbuilder-get-started%})
+1. [Mock client and server behavior through the **Rules** tab](slug://rulesbuilder-get-started)
 
 >tip The **Rules** tab is one of the most advanced features in Fiddler Everywhere. You can create and execute complex rules on your incoming traffic to mock client and server behavior without touching the client and server applications.
 
@@ -89,9 +89,9 @@ That's it! Now you're equipped to delve deeper into Fiddler Everywhere and make 
 
 ## Next Steps
 
-* [Learn more about the capturing options with Fiddler Everywhere]({%slug capture-traffic-get-started%})
-* [Learn more about installing the Fiddler CA certificate to decrypt secure HTTPS traffic]({%slug trust-certificate%})
-* [Sharing captured sessions with collaborators]({% slug fiddler-sharing %})
-* [Creating API requests]({% slug composer-get-started %})
-* [Grouping the API requests in collections]({% slug composer-collections-get-started %})
-* [Mocking server responses]({% slug rulesbuilder-get-started %})
+* [Learn more about the capturing options with Fiddler Everywhere](slug://capture-traffic-get-started)
+* [Learn more about installing the Fiddler CA certificate to decrypt secure HTTPS traffic](slug://trust-certificate)
+* [Sharing captured sessions with collaborators](slug://fiddler-sharing)
+* [Creating API requests](slug://composer-get-started)
+* [Grouping the API requests in collections](slug://composer-collections-get-started)
+* [Mocking server responses](slug://rulesbuilder-get-started)

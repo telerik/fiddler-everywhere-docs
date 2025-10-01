@@ -40,7 +40,7 @@ During the tutorial, you will need administrative privileges on the Android devi
 
 1. Enable remote connections in Fiddler Everywhere by navigating to **Settings** > **Connections** and checking the **Allow remote devices to connect** option. For convenience, you can also enable **Keep it ON after app restart** to persist this setting across future sessions.
 
-1. Determine the local IP address of the machine running Fiddler Everywhere. You can find this in the [connection status area at the lower right-hand corner]({%slug connections-section%}) of the Fiddler Everywhere window, or by running the **ipconfig** (Windows) or **ifconfig** (macOS/Linux) command in your terminal. For example, let's assume your host machine's IP address is **192.168.100.50**.
+1. Determine the local IP address of the machine running Fiddler Everywhere. You can find this in the [connection status area at the lower right-hand corner](slug://connections-section) of the Fiddler Everywhere window, or by running the **ipconfig** (Windows) or **ifconfig** (macOS/Linux) command in your terminal. For example, let's assume your host machine's IP address is **192.168.100.50**.
 
 >tip If you only need to capture traffic from a remote device, you do not need to install the Fiddler CA certificate on the Fiddler host machine. Simply download and install the Fiddler CA certificate on the remote device. Once the proxy is configured, Fiddler Everywhere will automatically capture and decrypt HTTPS traffic from the remote device.
 
@@ -58,7 +58,7 @@ The following steps apply to physical Android devices that are connected to the 
 
     1. Install the downloaded Fiddler CA certificate from your device storage. The exact location of this setting may vary by Android version, but it is typically found under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
 
-        >tip The exact path may vary depending on your Android device manufacturer and model. For example, see the [knowledge base article for Samsung devices with One UI 6]({%slug fe-samsung-device%}) for detailed installation steps specific to that platform.
+        >tip The exact path may vary depending on your Android device manufacturer and model. For example, see the [knowledge base article for Samsung devices with One UI 6](slug://fe-samsung-device) for detailed installation steps specific to that platform.
 
     1. Verify that the Fiddler CA certificate is installed and trusted by checking **Settings** > **Security** > **Encryption & Credentials** > **Trusted Credentials** > **User** tab.
 
@@ -157,7 +157,7 @@ Most production-ready applications block the use of user-installed certificates,
 
 ## Additional Resources
 
-* [Directing localhost Requests from Mobile Application through the Fiddler Proxy]({%slug fiddler-localhost-android%})
+* [Directing localhost Requests from Mobile Application through the Fiddler Proxy](slug://fiddler-localhost-android)
 * [Debugging Mobile Applications with Fiddler Everywhere (Webinar)](https://www.telerik.com/webinars/fiddler/how-to-debug-ios-and-android-mobile-apps-with-fiddler)
 
 ## Contact us

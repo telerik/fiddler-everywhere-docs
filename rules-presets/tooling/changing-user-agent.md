@@ -17,7 +17,7 @@ The following examples show how to create a few different rules named "Change Us
 
 ## Creating a "Set User-Agent" Rule for a Chrome Browser on Windows
 
-Create a "Set User-Agent Chrome Windows" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Set User-Agent Chrome Windows" rule by setting the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create an action that sets the HTTP Request header **user-agent** to the following value:
 
@@ -51,7 +51,7 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 ## Creating a "Set User-Agent" Rule for a Chrome Browser on macOS
 
-Create a "Set User-Agent Chrome Mac" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Set User-Agent Chrome Mac" rule by setting the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create an action that sets the HTTP Request header **user-agent** to the following value: 
 
@@ -85,10 +85,10 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 ## See Also
 
-* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
-* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
-* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
-* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
-* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
-* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
-* [Learn more about using breakpoints here...]({%slug rulesbuilder-breakpoints%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...](slug://modify-traffic-get-started)
+* [Learn more about all rules presets in Fiddler Everywhere here...](slug://adv_techniques_fiddler)
+* [Learn more on how to organize your rules here...](slug://rulesbuilder-get-started)
+* [Learn more about the matching conditions here...](slug://fiddler-rules-actions#conditions)
+* [Learn more about the supported actions here...](slug://fiddler-rules-actions#actions)
+* [Learn more about final and non-final rules here...](slug://fiddler-rules-actions#final-and-non-final-actions)
+* [Learn more about using breakpoints here...](slug://rulesbuilder-breakpoints)

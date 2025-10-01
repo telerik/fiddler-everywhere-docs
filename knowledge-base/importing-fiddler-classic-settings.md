@@ -56,7 +56,7 @@ In Fiddler Everywhere, Fiddler Classic's **AutoResponder** feature (as depicted 
 
 ![AutoResponder rules in Fiddler Classic](../images/import-from-classic/fc-autoresponder.png)
 
-Additionally, you can import any exported [rules archive (FARX)]({%slug fiddler-saz-format%}) through the **Import** button in Fiddler Everywhere's **Rules** tab.
+Additionally, you can import any exported [rules archive (FARX)](slug://fiddler-saz-format) through the **Import** button in Fiddler Everywhere's **Rules** tab.
 
 >tip If the Fiddler Classic rule has a value populated within the "Comment" field, it will be used for the rule name in Fiddler Everywhere. Any Fiddler Classic rules that have no comment will use a predefined name.
 

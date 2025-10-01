@@ -42,7 +42,7 @@ Once the mock rules are created through the above methods, you can add modificat
 
 The next step is to use one of Fiddler's capturing modes and initiate the traffic capturing (the rules will work only for traffic that goes through the Fiddler proxy). For Example:
 
-1. Use the **Browser** to start [the browser captruing mode]({%slug capture-browser-traffic%}).
+1. Use the **Browser** to start [the browser captruing mode](slug://capture-browser-traffic).
 
 1. Load the URL used by the client to generate the captured sessions (in our case, that would be [https://example.com)](https://example.com))
 
@@ -50,13 +50,13 @@ That's it! At this very moment, the shown page is not the original one, but the 
 
 ## Additional Resources
 
-- [Fiddler Rules Archives (FARX)]({%slug fiddler-farx-format%})
-- [Modifying HTTPS Traffic]({%slug modify-traffic-get-started%})
-- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
-- [Example for using predefined actions in the Rules tab]({%slug fiddler-ar-actions%})
-- [Example for redirecting through the Rules tab]({%slug rulesbuilder-redirect-traffic%})
-- [Example for turning off caching through the Rules tab]({%slug rule-disable-caching%})
-- [Example for creating manual HTTP Responses]({%slug using-custom-responses%})
-- [Understanding the matching conditions and Final vs. Non-Final Actions]({%slug fiddler-rules-actions%})
+- [Fiddler Rules Archives (FARX)](slug://fiddler-farx-format)
+- [Modifying HTTPS Traffic](slug://modify-traffic-get-started)
+- [Using Breakpoints](slug://rulesbuilder-breakpoints)
+- [Example for using predefined actions in the Rules tab](slug://fiddler-ar-actions)
+- [Example for redirecting through the Rules tab](slug://rulesbuilder-redirect-traffic)
+- [Example for turning off caching through the Rules tab](slug://rule-disable-caching)
+- [Example for creating manual HTTP Responses](slug://using-custom-responses)
+- [Understanding the matching conditions and Final vs. Non-Final Actions](slug://fiddler-rules-actions)
 - [Introducing the Rules tab (blog post)](https://www.telerik.com/blogs/introducing-new-rule-builder-fiddler-everywhere)
 

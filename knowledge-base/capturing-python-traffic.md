@@ -40,7 +40,7 @@ Steps needed to capture HTTPS traffic from a Python application:
 
 1. Run the Python app within the dedicated terminal instance.
 
-[Learn more about the **Open Browser** option in Fiddler Everywhere here...]({%slug capture-terminal-traffic%})
+[Learn more about the **Open Browser** option in Fiddler Everywhere here...](slug://capture-terminal-traffic)
 
 
 ## Setting Fiddler Proxy and CA through Environment Variables
@@ -101,4 +101,4 @@ r = requests.get('https://reqbin.com/echo', proxies=proxies)
 
 ## Related Links
 
-[Learn how to export the Fiddler CA certificate as PEM here...]({%slug how-to-create-pem%})
+[Learn how to export the Fiddler CA certificate as PEM here...](slug://how-to-create-pem)

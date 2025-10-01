@@ -15,7 +15,7 @@ With Fiddler Everywhere, you can easily create a rule that bypasses the pre-set 
 
 This example shows how to create a rule named "Bypass CORS" that effectively sets the CORS policy not to a same-origin or specific domain but to all domains using a wildcard. This effectively bypasses the same-origin policy, which might allow third-party actors to execute a cross-site request forgery (CSRF). The rule should only be used for testing purposes where and when needed, not for real-life scenarios.
 
-Create a "Bypass CORS" rule that sets the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Bypass CORS" rule that sets the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create an action that sets the HTTP Response header **Access-Control-Allow-Origin** with a wildcard value `*`.
 1. Create an action that sets the HTTP Response header **Access-Control-Allow-Methods** with a wildcard value `*`.
@@ -34,10 +34,10 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
  
 ## See Also
 
-* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
-* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
-* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
-* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
-* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
-* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
-* [Learn more about using breakpoints here...]({%slug rulesbuilder-breakpoints%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...](slug://modify-traffic-get-started)
+* [Learn more about all rules presets in Fiddler Everywhere here...](slug://adv_techniques_fiddler)
+* [Learn more on how to organize your rules here...](slug://rulesbuilder-get-started)
+* [Learn more about the matching conditions here...](slug://fiddler-rules-actions#conditions)
+* [Learn more about the supported actions here...](slug://fiddler-rules-actions#actions)
+* [Learn more about final and non-final rules here...](slug://fiddler-rules-actions#final-and-non-final-actions)
+* [Learn more about using breakpoints here...](slug://rulesbuilder-breakpoints)

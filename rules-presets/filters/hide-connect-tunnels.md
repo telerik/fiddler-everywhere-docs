@@ -17,7 +17,7 @@ With Fiddler Everywhere, you can easily hide the CONNECT Tunnels so that you can
 
 This example shows how to create a rule named "Hide CONNECT Tunnels" that hides all requests made with HTTP method CONNECT (also known as proxy CONNECT Tunnels).
 
-Create a "Hide CONNECT Tunnels" rule that sets the following matching conditions and actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Hide CONNECT Tunnels" rule that sets the following matching conditions and actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
 
@@ -39,10 +39,10 @@ Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/t
 
 ## See Also
 
-* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
-* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
-* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
-* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
-* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
-* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
-* [Learn more about using breakpoints here...]({%slug rulesbuilder-breakpoints%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...](slug://modify-traffic-get-started)
+* [Learn more about all rules presets in Fiddler Everywhere here...](slug://adv_techniques_fiddler)
+* [Learn more on how to organize your rules here...](slug://rulesbuilder-get-started)
+* [Learn more about the matching conditions here...](slug://fiddler-rules-actions#conditions)
+* [Learn more about the supported actions here...](slug://fiddler-rules-actions#actions)
+* [Learn more about final and non-final rules here...](slug://fiddler-rules-actions#final-and-non-final-actions)
+* [Learn more about using breakpoints here...](slug://rulesbuilder-breakpoints)
