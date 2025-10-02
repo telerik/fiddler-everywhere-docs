@@ -24,11 +24,11 @@ Create a "Bypass CORS" rule that sets the following actions through the [Rules B
 
 This sample Fiddler rule matches all sessions and bypasses the pre-set CORS policies.
 
-![Creating "Bypass CORS" rule](../../images/advanced/adv-bypass-cors.png)
+![Creating "Bypass CORS" rule](./images/adv-bypass-cors.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
-![Activating the "Bypass CORS" rule](../../images/advanced/adv-bypass-cors-active.png)
+![Activating the "Bypass CORS" rule](./images/adv-bypass-cors-active.png)
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/bypass-cors" target="_blank">"Bypass CORS"</a> rule as a FARX file, which you can import through the Rules toolbar.
  

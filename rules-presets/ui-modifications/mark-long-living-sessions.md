@@ -14,12 +14,10 @@ You can dynamically change the Fiddler Everywhere user interface based on your p
 Create a "Mark Long-Living Sessions" rule by setting the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create a matching condition that uses the "When **any of these conditions** are met **any number of times**" pattern. 
-
 1. Match by a **Protocol** that uses string values that match the desired session types. For example: **WebSocket**, **gRPC**, **RPC**, **Socket.IO**, and **Server-Side Events** sessions.
-
 1. Create a **Mark Session** action and set the preferred background and foreground (text) colors.
 
-![Creating "Mark Long-Living Sessions" rule](../../images/advanced/mark-long-living-sessions.png)
+![Creating "Mark Long-Living Sessions" rule](./images/mark-long-living-sessions.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 

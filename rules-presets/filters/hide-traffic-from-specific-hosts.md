@@ -16,24 +16,20 @@ This example shows how to create a rule named "Hide Traffic From Specific Hosts"
 Create a "Hide Traffic From Specific Hosts" rule that sets the following matching conditions and actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
-
-1. For the matching condition, match by a **URL** that uses a regular expression for addresses that contain **google.com** and **example.com**.
-
+1. For the matching condition, match by a **URL** that uses a regular expression for addresses that contain `google.com` and `example.com`.
     ```regex
     google\.com|example\.com
     ```
-
 1. Create a **Do Not Show** action.
-
     >important The **Do Not Show** action is final. No other action or active rule placed lower in the Rules list will be executed.
 
-This sample Fiddler rule hides all sessions containing **google.com** or **example.com** in their URLs.
+This sample Fiddler rule hides all sessions containing `google.com` and `example.com` in their URLs.
 
-![Creating "Hide Traffic From Specific Hosts" rule](../../images/advanced/adv-hide-specific-hosts.png)
+![Creating "Hide Traffic From Specific Hosts" rule](./images/adv-hide-specific-hosts.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
-![Activating the "Hide Traffic From Specific Hosts" rule](../../images/advanced/adv-hide-specific-hosts-active.png)
+![Activating the "Hide Traffic From Specific Hosts" rule](./images/adv-hide-specific-hosts-active.png)
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/hide-specific-hosts" target="_blank">"Hide Traffic From Specific Hosts"</a> rule as a FARX file, which you can import through the **Rules** toolbar.
   

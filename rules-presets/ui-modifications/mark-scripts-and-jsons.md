@@ -14,20 +14,17 @@ You can dynamically change the Fiddler Everywhere user interface based on your p
 Create a "Mark Scripts and JSONs" rule by setting the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
-
-1. Match by a **Response Header** where the header **Content-Type** matches the regular expression: **javascript|json**.
-
-1. Match by **Method** of type **GET**.
-
+1. Match by a **Response Header** where the header `Content-Type` matches the regular expression: `javascript|json`.
+1. Match by **Method** of type `GET`.
 1. Create a **Mark Session** action and set the preferred background and foreground (text) colors.
 
-This sample Fiddler rule highlights all sessions where the **Content-Type** header matches the specified values.
+This sample Fiddler rule highlights all sessions where the `Content-Type` header matches the specified values.
 
-![Creating "Mark Scripts and JSONs" rule](../../images/advanced/mark-scripts-and-jsons.png)
+![Creating "Mark Scripts and JSONs" rule](./images/mark-scripts-and-jsons.png)
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
-![Activating the "Mark Scripts and JSONs" rule](../../images/advanced/mark-scripts-and-jsons-active.png)
+![Activating the "Mark Scripts and JSONs" rule](./images/mark-scripts-and-jsons-active.png)
 
 >tip You can create the rule and then use the **Play** button to immediately apply the new UI effect to all captured sessions in the **Live Traffic** grid.
 
