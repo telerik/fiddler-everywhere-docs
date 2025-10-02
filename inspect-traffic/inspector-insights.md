@@ -14,22 +14,16 @@ The Fiddler Everywhere **Inspectors** tab renders the HTTP **Request** and the *
 The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide multiple perks, among which:
 
 - Great performance for loading large chunks of data.
-
 - Line IDs to quickly find and mark a specific portion of the request or response.
-
 - Powerful search functionality that supports strings and regular expressions.
-
 - Automatic context styling that highlights the content based on its type&mdash;for example, image renderers, HTML and XML formatters, JSON formatter, JavaScript, and more.
-
 - A **Preview** inspector type that recognizes and visualizes multiple formats.
-
 - A **Raw** inspector that shows the received HTTP requests/responses as is. It also allows you to encode bodies received in unreadable decoded form.
-
 - A **Copy all content to clipboard** option (in the toolbar at the top-right corner) that allows you to extract information efficiently.
 
 To load the data of a session in the **Inspectors** section, double-click an HTTP(S), WebSocket, or gRPC session from the __Live Traffic__ grid.
 
-![Inspectors for Traffic Monitoring](../images/inspect-traffic/inspectors-all.png)
+![Inspectors for Traffic Monitoring](./images/inspectors-all.png)
 
 To switch the loaded name of the inspector, single-click the desired inspector name&mdash;for example, __Image__ or __Raw__.
 
@@ -50,7 +44,7 @@ The **HTTP(S) Inspectors** provide the following types of inspecting tools that 
 
 The **Headers** inspector allows you to view the HTTP headers of the request and the response.
 
-![Headers Inspector](../images/livetraffic/inspectors/inspectors-headers.png)
+![Headers Inspector](./images/inspectors-headers.png)
 
 >tip Fiddler Everywhere supports HTTP/2 and shows the HTTP/2 pseudo-headers in their original order as they are sent/received.
 
@@ -58,7 +52,7 @@ The **Headers** inspector allows you to view the HTTP headers of the request and
 
 The **Params inspector**, available only in the **Request** section, displays the content from any input endpoint parameters.
 
-![Params Inspector](../images/livetraffic/inspectors/inspectors-params.png)
+![Params Inspector](./images/inspectors-params.png)
 
 ### Trailers Inspector
 
@@ -68,7 +62,7 @@ The **Params inspector** is a gRPC-specific inspector that helps inspect gRPC se
 
 The **Cookies inspector** displays the contents of any outbound `Cookie` and `Cookie2` request headers and any inbound `Set-Cookie`, `Set-Cookie2`, and `P3P` response headers.
 
-![Cookies Inspector](../images/livetraffic/inspectors/inspectors-cookies.png)
+![Cookies Inspector](./images/inspectors-cookies.png)
 
 ### Raw Inspector
 
@@ -78,12 +72,11 @@ By default, the request or response displays as received, which means that encod
 
 The following figure displays the encoded raw content with the **decode** button in an inactive state.
 
-![Raw Inspector with encoded content](../images/livetraffic/inspectors/inspectors-raw.png)
+![Raw Inspector with encoded content](./images/inspectors-raw.png)
 
 The following figure displays decoded raw content with the **decode** button in an active state.
 
-![Raw Inspector with decoded content](../images/livetraffic/inspectors/inspectors-raw-decoded.png)
-
+![Raw Inspector with decoded content](./images/inspectors-raw-decoded.png)
 
 #### Request Raw Inspector Details
 
@@ -113,11 +106,11 @@ The **Response body** (if such exists) appears at the bottom and is separated by
 
 The **Preview Inspector**, available in the **Request** section only, allows you to view the response bodies as an image or an HTML page, depending on the response content. The inspector can display the most common web image formats, including JPEG, PNG, GIF, and less common formats like cursors, WebP, JPEG-XR, bitmaps, and TIFF.
 
-![Preview Inspector rendering image](../images/livetraffic/inspectors/inspectors-image.png)
+![Preview Inspector rendering image](./images/inspectors-image.png)
 
 If the content is in HTML format, then the **Preview** inspector allows you to view responses in a web browser control, which provides a quick preview of how a given response may appear in a browser. The web browser control is configured to prevent additional downloads when rendering the response (to avoid flooding the Live Traffic grid), which means that most images and styles will not be displayed. Additionally, scripting and navigating are blocked and provide a read-only preview.
 
-![Preview Inspector rendering HTML content](../images/livetraffic/inspectors/inspectors-web.png)
+![Preview Inspector rendering HTML content](./images/inspectors-web.png)
 
 ### Body Inspectors
 
@@ -135,7 +128,7 @@ The **Body** inspectors are suitable for different requests and responses. Depen
 
 The **Text** inspector lets you view the request and response bodies as text. It truncates the data it renders at the first null byte it finds, making it inappropriate for displaying binary content. Most body inspectors represent a large text area that reveals the body text interpreted using the detected character set with the headers, the byte-order-marker, or an embedded META tag declaration.
 
-![Text Inspector](../images/livetraffic/inspectors/inspectors-textview.png)
+![Text Inspector](./images/inspectors-textview.png)
 
 #### JSON Body Inspector
 
@@ -143,7 +136,7 @@ The **JSON** inspector interprets the selected request or response body as a Jav
 
 >important If the JSON data is malformed, for example, the name component of a name/value pair is unquoted, the JSON inspector will show a warning in the footer.
 
-![JSON Inspector](../images/livetraffic/inspectors/inspectors-json.png)
+![JSON Inspector](./images/inspectors-json.png)
 
 #### HEX Body Inspector
 
@@ -151,7 +144,7 @@ The **HEX** inspector loads a hex representation of the HTTP request/response bo
 
 The **HEX** inspector consists of an offset column, a hex view column, and a text view column.
 
-![HEX Inspector](../images/livetraffic/inspectors/inspectors-hex.png)
+![HEX Inspector](./images/inspectors-hex.png)
 
 #### MessagePack Body Inspector
 
@@ -161,25 +154,25 @@ The **MessagePack** inspector interprets the selected request or response body a
 
 The **Socket.IO** inspector interprets the selected request or response body as a [Socket.IO] message data, showing a tree view of the Socket.IO object nodes.
 
-![Socket.IO Inspector](../images/livetraffic/inspectors/inspectors-socket.png)
+![Socket.IO Inspector](./images/inspectors-socket.png)
 
 #### XML Body Inspector
 
 The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an **Expand All / Collapse All** toggle button to expand or collapse all XML tree nodes.
 
-![XML Inspector](../images/livetraffic/inspectors/inspectors-xml.png)
+![XML Inspector](./images/inspectors-xml.png)
 
 #### Form Data Body Inspector
 
 The **Form Data** inspector, available in the **Request** section only, parses the request query string and body for any HTML form data. If a form is found, the parsed name/value pairs are displayed in the grid view. The inspector works best with `application/x-www-form-urlencoded` data used by most simple web forms.
 
-![Form Data Inspector](../images/livetraffic/inspectors/inspectors-webforms.png)
+![Form Data Inspector](./images/inspectors-webforms.png)
 
 #### JavaScript Body Inspector
 
 The **JavaScript** inspector interprets and formats the selected request or response body as a JavaScript/TypeScript code. The inspector will recognize and properly format the following MIME types:
 
-```
+```sh
 application/ecmascript
 application/javascript
 application/x-ecmascript
@@ -196,13 +189,13 @@ text/x-ecmascript
 text/x-javascript
 ```
 
-![JavaScript Inspector](../images/livetraffic/inspectors/inspectors-javascript.png)
+![JavaScript Inspector](./images/inspectors-javascript.png)
 
 ### Auth Inspector
 
 The **Auth** inspector obtains authorization information from the `Authorize` and `Proxy-Authorize` headers and from SAML requests and responses within their query parameters and Request bodies, then tries to decode this information if possible. Fiddler recognizes the Basic auth scheme and JWT Bearer tokens as authorization headers.
 
-![Authentication Inspector](../images/livetraffic/inspectors/inspectors-auth.png)
+![Authentication Inspector](./images/inspectors-auth.png)
 
 ## WebSocket, gRPC, SSE, and Socket.IO Inspectors
 
@@ -211,7 +204,7 @@ Fiddler Everywhere provides common user interface to create inspectors for visua
 - [Handshake tab](#handshake-tab)
 - [Messages tab](#messages-tab)
 
-![Capturing Socket.IO traffic](../images/livetraffic/inspectors/socketio-inspectors.png)
+![Capturing Socket.IO traffic](./images/socketio-inspectors.png)
 
 Encoded messages from a **gRPC** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobof files through the **Settings > Protobuf > Decode via .proto file** option.
 
@@ -222,18 +215,13 @@ Encoded messages from a **gRPC** session are automatically decoded (if possible)
 Similarly to an HTTP(S) request and response, the **Handshake tab** for the WebSocket and gRPC APIs provide the following types of inspecting tools that enable you to examine different parts of the WebSocket requests and responses:
 
 - [Headers inspector](#headers-inspector)
-
 - [Params inspector](#params-inspector)
-
 - [Cookies inspector](#cookies-inspector)
-
 - [Raw inspector](#raw-inspector)
-
 - [Preview inspector](#preview-inspector)
-
 - [Body inspector](#body-inspectors)
 
-![WebSocket and gRPC Handshake Inspector](../images/livetraffic/inspectors/websocket-handshake.png)
+![WebSocket and gRPC Handshake Inspector](./images/websocket-handshake.png)
 
 ### Messages Tab
 
@@ -242,74 +230,50 @@ The **Messages tab** renders a list of the WebSocket or gRPC messages sent from 
 The list of messages is rendered as a grid with multiple columns:
 
 - **#**&mdash;Number indicating the consecutive number of the message.
-
 - **Sender**&mdash;Inidicates whether the **Client** or **Server** sent the message.
-
 - **Type (WebSocket only)**&mdash;Indicates the type of the message. The supported values are as follows:
     * **Text**&mdash;message with text payload.
     * **Binary**&mdash;message with binary payload.
     * **Cont.**&mdash;represents a continuation message from a fragmented message. Use the **Unfragment all messages** button to unfragment messages of type **Cont.** and remove them from the **Messages** list.
     * [**Ping**](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.2).
     * [**Pong**](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.3).
-
 - **Size**&mdash;The length of the message in bytes.
-
 - **ID (SSE and Socket.IO)**&mdash;The ID for the specific SSE message (if such exists).
-
 - **Sender (gRPC, Socket.IO)**&mdash;Indicates whether the sender is the client or the server application.
-
 - **Event (SSE only)**&mdash;The server-sent event name which corresponds to **Type** column in Google Chrome’s DevTools.
-
 - **Data (SSE, Socket.IO)**&mdash;Contains the value of the data property of the message.
-
 - **Raw (SSE only)**&mdash;Contains the whole object sent from the server without any parsing.
-
 - **Time (WebSocket, SSE, Socket.IO)**&mdash;Renders the date and the time when the message is received.
-
 - **Message**&mdash;The string representation of the message sent/received.
-
 - **Packet Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO packet (e.g. Ping, Pong, Upgradew, Message).
-
 - **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (e.g. Event).
-
 - **Attachments (Socket.IO only)**&mdash;Lists the included attachments (if present).
-
 - **Namespace (Socket.IO only)**&mdash;Lists the included namespace (if present).
-
 - **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (e.g. Event).
-
 - **Ack.ID (Socket.IO only)**&mdash;Indicates the ID of the acknowledgment function (if present).
-
 
 #### Messages Toolbar
 
 The top-right corner of the **Messages tab** contains a toolbar with the following functionalities:
 
 - **Search (WebSocket only)** field to filter received WebSocket messages.
-
 - **Unfragment all messages (WebSocket only)** button to combine all continuation type messages with their original message and remove them from the **Messages** list.
-
 - **Copy all content to clipboard** button that immediately puts all captured messages into the operating system clipboard.
-
 
 #### Metadata inspector
 
 The **Metadata inspector** (available only for WebSocket traffic) contains timestamps and masking information about the selected WebSocket message.
 
 - **DoneRead**&mdash;Indicates when the Client/Server finished processing the message.
-
 - **BeginSend**&mdash;Indicates when the Client/Server sent the message.
-
 - **DoneSend**&mdash;Indicates when the Client/Server finished sending the message.
-
 - **Data masked by key**&mdash;The key that conceals the message.
-
 
 #### Message Inspector
 
 The **Message Inspector** contains the non-masked message content visualized in [Text](#text-body-inspector), [JSON](#json-body-inspector) (WebSocket only), or [HEX](#hex-body-inspector) body inspector. The inspector has a toolbar that allows you to word-wrap the message content and highlight content through a search term.
 
-![WebSocket and gRPC Message Inspector](../images/livetraffic/inspectors/websocket-messages.png)
+![WebSocket and gRPC Message Inspector](./images/websocket-messages.png)
 
 
 ## Inspector's Context Menu
@@ -322,42 +286,30 @@ All inspectors provide further interaction options through a context menu. The c
 - **Copy Response Cookie Value**&mdash;An option to copy the value of a selected cookie. Available in **Cookies** inspector.
 - **Decode Value**&mdash;An option that allows you to decode selected value. The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
 - **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and all **Body** inspectors (**Text, JSON, XML, JavaScript**). The **Decode Selection** option opens a new detached window that you can use to inspect different snapshots and sessions.
-    ![Decode functionality from the context menu](../images/livetraffic/inspectors/decode-original-base64.png)
+    ![Decode functionality from the context menu](./images/decode-original-base64.png)
 - **Add as a column**&mdash;An option to create a custom column in the Live Traffic grid while using the selected HTTP Header. Available in **Headers** inspector.
-
-
 
 ## Inspector's Toolbar
 
 Each inspector has a toolbar that provides a different set of functionalities and information as follows:
 
 - [**Server Certificate Details**](#server-certificate-details)
-
 - **Badges** that output the request URL (Request inspector only), the TLS version, the HTTP version, the HTTP method (Request inspector only), Body size, and the status code (Response inspector only).
-
 - **Expand All / Collapse All**&mdash;Toggle to expand or collapse all the output data. Available for all Body inspectors.
-
 - **Decode / Encode**&mdash;Toggle between compressed/uncompressed or decoded/encoded content. Available only for the Raw inspector.
-
 - **Reformat Text**&mdash;Formats the text with the built-in Monaco editor optimizations. Available only for JSON, XML, and JavaScript inspectors.
-
 - **Save request body to file**&mdash;Exports the body in the format specified as content type. Raw data is exported as DAT files. Available for the Raw and Body Request inspectors.
-
 - **Save response body to file**&mdash;Exports the body in the format specified as content type. Raw data is exported as DAT files. Available for the Raw and Body Response inspectors.
-
 - **Save image to file**&mdash;Exports the previewed images in the specified format. Available only for the Preview inspector.
-
 - **Toggle Word Wrap**&mdash;Toogle the option to transfer a word with insufficient space from the end of one line of text to the beginning of the next.
-
 - **Copy all content to clipboard**&mdash;Copies the inspector's content into the system clipboard.
 
-![Inspectors toolbar](../images/livetraffic/inspectors/inspectors-toolbar.png)
-
+![Inspectors toolbar](./images/inspectors-toolbar.png)
 
 ## Server Certificate Details
 
 The Response Inspectors for ongoing capture (the sessions in the Live Traffic grid) in Fiddler Everywhere contain indicators and notifications that show if a server certificate is valid, expiring, or causes errors. 
 
-![Certificate note](../images/livetraffic/certs/certficate-valid-note.png)
+![Certificate note](./images/certficate-valid-note.png)
 
 [Learn more on how to inspect and use the certificate details with Fiddler Everywhere here...](slug://fe-cert-details)

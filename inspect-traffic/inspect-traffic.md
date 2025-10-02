@@ -16,7 +16,6 @@ The core function of Fiddler Everywhere is to capture HTTPS requests and respons
 The ongoing HTTP traffic shows in the **Live Traffic grid**, which contains multiple columns. To inspect the HTTP Request and Response headers and bodies, follow these steps:
 
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
-
 1. Double-click on a captured session.
 
 The session content immediately loads in the Fiddler's **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use a single click on a session to preserve the last shown inspector.
@@ -30,7 +29,6 @@ To extract information about the captured sessions, go to the **Live Traffic** g
 To open the structured information about the session in the [**Overview** tab](slug://overview-tab), follow these steps:
 
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started). Alternatively, you can load previously saved session snapshots from the **Snapshots** list.
-
 1. Select a session, and switch to the **Overview** tab.
 
 [Deep-dive into the Fiddler's Overview tab here ...](slug://overview-tab)
@@ -40,7 +38,6 @@ To open the structured information about the session in the [**Overview** tab](s
 You can compare two or more captured sessions for detailed differentiation and side-by-side analysis. Use the **Compare Sessions** tab in Fiddler Everywhere as follows:
 
 1. Select two sessions or more sessions to compare.
-
 1. Use the **Compare** option from the context menu.
 
 Fiddler Everywhere loads the selected sessions side-by-side with the session with a lower ID to the left (called **Group 1**) and a higher ID to the right (called **Group 2**). Each compared session will highlight differences from its counterpart.

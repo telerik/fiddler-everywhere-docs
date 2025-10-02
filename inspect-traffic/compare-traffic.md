@@ -16,14 +16,12 @@ previous_url: /traffic/compare-traffic
 Fiddler Everywhere provides a comparing option for detailed differentiation of two or more captured sessions from the sessions grid.
 
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
-
 1. Select two sessions that you want to compare.
-
 1. Use the **Compare** option from the context menu. Note that the **Compare** option is active only when **two** sessions are selected.
-
 1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
 
-    ![Compare Sessions tab](../images/livetraffic/compare/compare-tab-001.png)
+
+![Compare Sessions tab](./images/compare-tab-001.png)
 
 Fiddler Everywhere loads both sessions side-by-side, with the session with a lower ID to the left (named **Group 1**) and a higher ID to the right (named **Group 2**). The differences are highlighted in the session inspectors by a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session. Additional sessions can be added to both groups, simultaneously comparing multiple sessions.
 
@@ -32,27 +30,21 @@ Fiddler Everywhere loads both sessions side-by-side, with the session with a low
 You can add and compare more sessions by adding them to the comparison groups.
 
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
-
 1. Select one or more sessions that you want to compare.
-
 1. Select the **Add to compare group** option from the context menu and select the compare group to add the session.
 
-    ![Add to compare group](../images/livetraffic/compare/compare-context-menu-add-to-group.png)
+
+![Add to compare group](./images/compare-context-menu-add-to-group.png)
 
 ## Comparing Saved Session Snapshots
 
 With Fiddler Everywhere, you can compare previously saved sessions from the save **Snapshots** tree.
 
 1. Select a saved entry from the save **Snapshots** tree you want to compare.
-
 1. Select the **Compare** option from the context menu.
-
-    ![Compare context menu in Sessions section](../images/sessions/compare/sessions-snapshots-compare-context-menu.png)
-
+    ![Compare context menu in Sessions section](./images/sessions-snapshots-compare-context-menu.png)
 1. Specify the primary and the secondary sessions you want to compare. Optionally, choose a [matching option](#comparing-options).
-
-    ![Choose sessions for comparison](../images/sessions/compare/sessions-snapshots-compare-prompt.png)
-
+    ![Choose sessions for comparison](./images/sessions-snapshots-compare-prompt.png)
 1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
 
 ## Compare Sessions (BETA) Section
@@ -67,19 +59,14 @@ The **Compare Sessions (BETA)** tab provides the following options to customize 
     - **URL** match sessions with different URLs.
     - **Order** match session by their order in their ID column. The ID is the Fiddler Everywhere unique identification for each captured session.
     - **Path** match sessions with the same paths (but different hosts). This match ignores queries and fragments.
-
-    ![Match sessions popup](../images/livetraffic/compare/compare-options-match-sessions.png)
-
+    ![Match sessions popup](./images/compare-options-match-sessions.png)
 - **Ignore Headers**&mdash;You can use the popup to create an ignore list of specific requests and response headers from the matching.
-    
-    ![Ignore Headers popup](../images/livetraffic/compare/compare-options-ignore-headers-popup.png)
+    ![Ignore Headers popup](./images/compare-options-ignore-headers-popup.png)
 
 ### Context Menu
 
 You can manage all sessions added in the **Compare Sessions (BETA)** tab through the context menu.
 
 - **Delete Selected Sessions**&mdash;Removes the selected sessions from the compare group.
-
 - **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** grid or the opened **Snapshots** tree tab).
-
-![Compared Sessions context menu](../images/livetraffic/compare/compare-list-context-menu.png)
+    ![Compared Sessions context menu](./images/compare-list-context-menu.png)

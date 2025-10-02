@@ -23,19 +23,12 @@ To save snapshots of captured traffic (single or multiple sessions) to the **Sna
 Save a snapshot of captured HTTPS traffic through the following steps:
 
 1. Capture HTTPS traffic through your preferred capturing mode.
-
 1. Select one or more sessions.
-
 1. Use the context menu or the keyboard shortcut `Cmd` + `S`(macOS) or `Ctrl` + `S`(Windows)  to invoke the **Save Snapshot** dialog.
-
-    ![Save dialog](../images/livetraffic/session-save-prompt.png)
-
+    ![Save dialog](./images/session-save-prompt.png)
 1. Complete the save by:
-
     - Assign a name for the snapshot.
-
     - (Optional) Encrypt the snapshot by adding password protection.
-
     - Choose save destination. The snapshots can be stored locally or in the cloud.
 
 [Learn more on how to save captured traffic in Fiddler Everywhere here...](slug://fiddler-saving)
@@ -45,29 +38,19 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 Already saved snapshots of captured traffic can be shared directly within the **Snapshots** tree.
 
 1. Select the saved snapshot from within the **Snapshots** tree.
-
 1. Use the context menu to invoke the **Share** dialog.
-
 1. Complete the share by:
-
     - Adding one or more collaborator's emails.
-
     - (Optional) Adding a descriptive comment.
 
 You can share a snapshot of newly captured HTTPS traffic through the following steps:
 
 1. Capture HTTPS traffic through your [preferred capturing mode](slug://capture-traffic-get-started).
-
 1. Select one or more sessions.
-
 1. Use **Share** option from the context menu.
-
 1. Save the sessions (shared sessions are always stored in the cloud).
-
 1. Complete the share by:
-
     - Adding one or more collaborator's emails.
-
     - (Optional) Adding a descriptive comment.
 
 [Learn more on how to share captured traffic in Fiddler Everywhere here...](slug://fiddler-sharing)
