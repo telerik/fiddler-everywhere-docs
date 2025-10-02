@@ -16,18 +16,13 @@ The Fiddler Everywhere application acts as an intermediate (also referred to as 
 By default, Fiddler Everywhere captures only non-secure HTTP traffic. As an HTTP proxy, Fiddler Everywhere acts in the following way:
 
 1. The client application (for example, browser, mobile application, or any other application that uses the system proxy and makes HTTP requests) connects to the Fiddler Everywhere proxy and makes a request.
-
 1. The Fiddler Everywhere proxy forwards the request to the upstream server. Any active Fiddler Everywhere rules (modifying the requests) are applied here.
-
 1. The server sends the response to the Fiddler Everywhere proxy.
-
 1. The Fiddler Everywhere proxy forwards the response to the client application. Any active Fiddler Everywhere rules (modifying the responses) are applied here.
-
 
 ## Fiddler as a Chained Proxy
 
 By default, Fiddler Everywhere will automatically chain to other system proxies preset on the host machine.
-
 
 ## Fiddler as an HTTPS Proxy
 

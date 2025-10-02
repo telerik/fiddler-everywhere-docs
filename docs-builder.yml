@@ -11,7 +11,7 @@ product-url: https://www.telerik.com/fiddler/fiddler-everywhere
 product-trial-url: https://www.telerik.com/download/fiddler-everywhere
 
 contribute-url: https://github.com/telerik/fiddler-everywhere-docs/edit/master
-search-engine-id: 4729071e3f011471f # TODO get a new one for Fiddler Everywhere
+search-engine-id: 001595215763381649090:dyayucp6jmq # TODO get a new one for Fiddler Everywhere
 # where should we add the google analytics and tag manager codes (refer to _config.yml)?
 avatar-path: ./images/common/avatar-ninja.svg # TODO get a Fiddler NINJA
 no-results-image-path: ./images/common/no-results.svg # TODO get a Fiddler no-results.png
@@ -27,74 +27,39 @@ img-max-width: 100%
 meta:
     '*':
         hideCta: true #consult if we want to hide the CTA on all pages (currently incorrectly sjhowing 30-days trial for Fiddler Everywhere)
-
-fileSources:
     installation-and-setup:
-      meta:
         title: Installation & Setup
         position: 20
-        path: ./installation-and-setup
-        prefix: installation-and-setup  
     capture-traffic:
-      meta:
         title: Capture Traffic
         position: 30
-        path: ./capture-traffic
-        prefix: capture-traffic
     inspect-traffic:
-      meta:
         title: Inspect Traffic
         position: 40
-        path: ./inspect-traffic
-        prefix: inspect-traffic
     modify-and-filter-traffic:
-      meta:
         title: Modify & Filter Traffic
         position: 50
-        path: ./modify-and-filter-traffic
-        prefix: modify-and-filter-traffic
     compose-api-requests:
-      meta:
         title: Compose API Requests
         position: 60
-        path: ./compose-api-requests
-        prefix: compose-api-requests
     collaboration:
-      meta:
         title: Collaboration
         position: 70
-        path: ./collaboration
-        prefix: collaboration
     rules-presets:
-      meta:
         title: Rules & Presets
         position: 80
-        path: ./rules-presets
-        prefix: rules-presets
     user-guide:
-      meta:
         title: User Interface
         position: 90
-        path: ./user-guide
-        prefix: user-guide
-    fiddler-reporter:
-      meta:
-        title: Fiddler Everywhere Reporter
-        position: 100
-        path: ./fiddler-reporter
-        prefix: fiddler-reporter
     security:
-      meta:
         title: Security
-        position: 110
-        path: ./security
-        prefix: security
+        position: 100
+    fiddler-reporter:
+        title: Fiddler Everywhere Reporter
+        position: 200
     knowledge-base:
-      meta:
         title: Knowledge Base
         position: 1000
-        path: ./knowledge-base
-        prefix: knowledge-base
         relativeUrl: /knowledge-base
         hideChildren: true
         res_type: kb

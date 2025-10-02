@@ -3,7 +3,7 @@ title: Support
 description: "Check out the commercial, trial, and free support channels maintained by the Fiddler Everywhere cross-platform, web-debugging, HTTP-request tool."
 slug: support
 publish: true
-position: 90
+position: 500
 ---
 
 # Support Options
@@ -19,9 +19,7 @@ The subscription plan includes unlimited access to Fiddler's dedicated support s
 Support services for paid subscription or trial users provide the following support services:
 
 * Guidance on handling existing features&mdash;You will receive references to existing resources, which demonstrate the product's intended use, and information on the product's proper configuration.
-
 * Confirmation of bug reports&mdash;You can count on our support for diagnosing and confirming reported product bugs. However, during the report investigation, we may ask you to isolate the issue and provide additional information or steps to reproduce it.
-
 * Sharing available workarounds&mdash;If available, you will get suggested workarounds for confirmed product bugs or for performing scenarios not implemented as built-in functionalities. You will also access service packs, hotfixes, and support when [logging feature requests through the support center](https://www.telerik.com/account/support-center).
 
 ## Free Support Channels
@@ -29,17 +27,11 @@ Support services for paid subscription or trial users provide the following supp
 If you are not a license holder or a trial user, you can use the [available support options](https://www.telerik.com/support/fiddler-everywhere):
 
 * Use the **Feedback** in-app option in the Fiddler Everywhere application to access  [Fiddler Feedback portal](https://feedback.telerik.com/fiddler) is where you can post your feedback, feature requests, and questions on all matters related to the Fiddler Everywhere application.
-
 * Use the **Report and Issue** in-app option in the Fiddler Everywhere application to access the [Fiddler Everywhere public GitHub repository](https://github.com/telerik/fiddler-everywhere/issues) is our public bug and feature request tracker.
-
-*  The [Fiddler discussions](https://www.telerik.com/forums/fiddler) are part of the free support you can get from the community and the Fiddler Everywhere team on all kinds of general issues. You can also receive information on the features in the discussion, request a feature, or report a bug.
-
+* The [Fiddler discussions](https://www.telerik.com/forums/fiddler) are part of the free support you can get from the community and the Fiddler Everywhere team on all kinds of general issues. You can also receive information on the features in the discussion, request a feature, or report a bug.
 * The [official Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/introduction) is public and available for all users. If you want to share your feedback on a specific article, fill in the **Was this article helpful?** form at the end and tell us more about whether the content was helpful for you to achieve what you desired. For detailed information about creating an issue or a Pull Request on the Fiddler Everywhere documentation, go to the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing).
-
 * For any features that have already been released, visit the [Fiddler Everywhere Release History page](https://www.telerik.com/support/whats-new/fiddler-everywhere/release-history).
-
 * If you have a question unanswered, check out the [Fiddler Everywhere FAQ section](https://www.telerik.com/fiddler/fiddler-everywhere/faq).
-
 * Need something unique that is tailor-made for your project? Progress offers its [Progress Services](https://www.progress.com/services) group that can work with you to create any customized solution you need.
 
 ## Suggested Links
