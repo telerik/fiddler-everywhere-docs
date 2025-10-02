@@ -22,6 +22,8 @@ gitLastCommitDateEnabled: false
 cta-overview: '@ProductLink is a powerful web debugging tool that helps developers inspect, modify, and analyze HTTP and HTTPS traffic. It supports multiple platforms including Windows, macOS, and Linux, making it a versatile choice for web development and troubleshooting.'
 cta-intro: '@ProductLink is a cross-platform web debugging proxy for macOS, Linux, and Windows. It allows you to inspect and modify HTTP and HTTPS traffic from any application that supports a proxy.'
 
+img-max-width: 100%
+
 meta:
     '*':
         hideCta: true #consult if we want to hide the CTA on all pages (currently incorrectly sjhowing 30-days trial for Fiddler Everywhere)
