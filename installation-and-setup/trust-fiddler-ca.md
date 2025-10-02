@@ -49,7 +49,6 @@ Use the manual approach if the automated wizard fails or you need more control o
 ### Linux
 
 1. Go to **Settings** > **HTTPS** > **Export** in Fiddler Everywhere. Export the CA certificate in **DER/Binary format**. The file will be saved as **Fiddler_Root_Certificate_Authority.crt** on your Desktop.
-
 2. Import and trust the exported certificate:
    >important Some Linux distributions use localized Desktop folder names. If needed, create a `~/Desktop` directory before exporting.
 
@@ -58,13 +57,9 @@ Use the manual approach if the automated wizard fails or you need more control o
    sudo cp ~/Desktop/Fiddler_Root_Certificate_Authority.crt /usr/share/ca-certificates/extra
    sudo dpkg-reconfigure ca-certificates
    ```
-
    >tip If your distribution does not use `dpkg`, refer to your OS documentation or see our [Fedora, CentOS, RedHat](slug://fiddler-fedora-centos) and [XFCE](slug://fiddler-xfce) guides.
-
 3. In the prompt, select **Yes** to install new certificates, then select the Fiddler certificate and confirm.
-
 4. Enable **Capture HTTPS traffic** and click **Save**.
-
 5. On the main screen, toggle **System Proxy** ON to capture system HTTP/HTTPS traffic.
 
 ## Exporting the Fiddler CA (for Manual or Third-Party Use)
