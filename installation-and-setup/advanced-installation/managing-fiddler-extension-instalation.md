@@ -9,12 +9,7 @@ previous_url: /security/managing-fiddler-extension-instalation
 
 # Installing and Enabling Fiddler Network Extension through MDM
 
-The Fiddler's [network capturing mode](slug://capture-network-traffic) enables macOS users (Windows support planned for the near future) to install a dedicated network extension that can be configured to capture TCP traffic based on custom capturing rules.
-
-You can trigger the installation of the network extension through the Fiddler's user interface by opening the **Network Capture** screen and clicking on **Enable Capture**.
-
-Alternatively, you can install the Fiddler's network extension without user interaction through the following identifiers:
-
+The Fiddler's [network capturing mode](slug://capture-network-traffic) enables users to install a dedicated network extension that can be configured to capture TCP traffic based on custom capturing rules. You can trigger the installation of the network extension through the Fiddler's user interface by opening the **Network Capture** screen and clicking on **Enable Capture**. Alternatively, you can install the Fiddler's network extension without user interaction through the following identifiers:
 
 | Key      | Value 
 |:-----------------|:----------------

@@ -19,12 +19,12 @@ table-layout: fixed
 enable-tabbed-code-blocks: true
 gitLastCommitDateEnabled: false
 
-cta-overview: 'Fiddler Everywhere is a powerful web debugging tool that helps developers inspect, modify, and analyze HTTP and HTTPS traffic. It supports multiple platforms including Windows, macOS, and Linux, making it a versatile choice for web development and troubleshooting.'
-cta-intro: 'Fiddler Everywhere is a cross-platform web debugging proxy for macOS, Linux, and Windows. It allows you to inspect and modify HTTP and HTTPS traffic from any application that supports a proxy.'
+cta-overview: '@ProductLink is a powerful web debugging tool that helps developers inspect, modify, and analyze HTTP and HTTPS traffic. It supports multiple platforms including Windows, macOS, and Linux, making it a versatile choice for web development and troubleshooting.'
+cta-intro: '@ProductLink is a cross-platform web debugging proxy for macOS, Linux, and Windows. It allows you to inspect and modify HTTP and HTTPS traffic from any application that supports a proxy.'
 
 meta:
     '*':
-        hideCta: true
+        hideCta: true #consult if we want to hide the CTA on all pages (currently incorrectly sjhowing 30-days trial for Fiddler Everywhere)
 
 fileSources:
     installation-and-setup:
@@ -33,12 +33,6 @@ fileSources:
         position: 20
         path: ./installation-and-setup
         prefix: installation-and-setup  
-    advanced-installation:
-      meta:
-          title: Advanced Installation
-          position: 201
-          path: ./installation-and-setup/advanced-installation
-          prefix: advanced-installation
     capture-traffic:
       meta:
         title: Capture Traffic

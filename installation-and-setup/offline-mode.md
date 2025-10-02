@@ -23,10 +23,10 @@ The offline mode is explicitly enabled through an individual offline license fil
 ) or contact us directly at [mailto:fiddler-support@progress.com](fiddler-support@progress.com). Your request should include the technical information as obtained from the following steps:
 
 1. Start Fiddler Everywhere on the device with limited internet access.
-
 2. Upon login attempt, the Fiddler Everywhere application will display the "Something Went Wrong" screen. From that same screen, copy the information from the text field that contains details about the operating system and the user's principal email.
 
-    !["Something Went Wrong" screen on device with limited internet access](../images/offline/offline-mode-something-went-wrong-screen.png)
+
+!["Something Went Wrong" screen on device with limited internet access](./images/offline-mode-something-went-wrong-screen.png)
 
 ## Configuration Instructions
 
@@ -35,23 +35,16 @@ Execute the following steps to enable the offline mode:
 Once [the request for creating an offline license](#request-an-offline-license) is received and approved, our team will reach out and send an individual offline license file that you must install on your device as follows:
 
 - Download and install [the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
-
 - Ensure that the Fiddler Everywhere application is closed.
-
 - Open the archive **license.zip** (which you will receive from the support team) and extract the **license.lic** file. You will need only this file, not the archive itself.
-
     * Instructions for **Windows** - Create and navigate to the following folder on your Windows PC/Server.
-
     ```sh
-        %PROGRAMDATA%/Fiddler/License
+    %PROGRAMDATA%/Fiddler/License
     ```
-
     * Instructions for **macOS** - Create and navigate to the following folder on your macOS device.
-
     ```sh
-        ~/Library/Application Support/Fiddler Everywhere/License
+    ~/Library/Application Support/Fiddler Everywhere/License
     ```
-
 - Inside the **License** folder, place the **license.lic** file. Ensure the file has the name **license.lic**.
 
 Finally, restart Fiddler Everywhere to use the offline mode for the currently logged user. Note that the logged user must be identical to the one specified as the user's principal email in your support request.
