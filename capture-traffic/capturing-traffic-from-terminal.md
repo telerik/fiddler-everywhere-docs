@@ -16,22 +16,18 @@ The **terminal capturing mode** in Fiddler Everywhere allows you to set the Fidd
 To capture terminal traffic with Fiddler Everywhere:
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Home** pane.
-
 1. Open the **Terminal** tutorial, and then click on **Open Terminal**.
 
 OR
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Traffic** pane.
-
-1. Click on the **>_ Terminal** button to load terminal instance.
-
-    ![Use the "Terminal" button to start terminal instance](../images/get-started/get-started-terminal.png)
-
+1. Click on the **Terminal** button to load terminal instance.
 1. Start your application within the terminal instance.
+
+
+![Use the "Terminal" button to start terminal instance](./images/get-started-terminal.png)
 
 As a result, Fiddler Everywhere opens a dedicated terminal instance and starts capturing the ongoing HTTPS traffic immediately. It's important to note that Fiddler will capture the traffic generated from the terminal and any child process that originates (starts) from the same terminal instance. The terminal instance will lose connectivity if Fiddler Everywhere application is closed.
 

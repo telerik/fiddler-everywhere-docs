@@ -25,11 +25,8 @@ This article describes using Fiddler Everywhere to capture HTTPS traffic from An
 Fiddler Everywhere offers an automated setup wizard to help you quickly configure remote Android traffic capturing:
 
 1. Launch Fiddler Everywhere.
-
 1. Navigate to the **Home** pane.
-
 1. Select the **Remote Devices** screen.
-
 1. Choose the **Android** tutorial and follow the on-screen instructions.
 
 During the tutorial, you will need administrative privileges on the Android device to install the Fiddler certificate authority (CA) and configure the manual proxy settings. After completing these steps, you can immediately begin capturing HTTPS traffic from your Android device.
@@ -39,7 +36,6 @@ During the tutorial, you will need administrative privileges on the Android devi
 ### Configuring Fiddler Everywhere Host
 
 1. Enable remote connections in Fiddler Everywhere by navigating to **Settings** > **Connections** and checking the **Allow remote devices to connect** option. For convenience, you can also enable **Keep it ON after app restart** to persist this setting across future sessions.
-
 1. Determine the local IP address of the machine running Fiddler Everywhere. You can find this in the [connection status area at the lower right-hand corner](slug://connections-section) of the Fiddler Everywhere window, or by running the **ipconfig** (Windows) or **ifconfig** (macOS/Linux) command in your terminal. For example, let's assume your host machine's IP address is **192.168.100.50**.
 
 >tip If you only need to capture traffic from a remote device, you do not need to install the Fiddler CA certificate on the Fiddler host machine. Simply download and install the Fiddler CA certificate on the remote device. Once the proxy is configured, Fiddler Everywhere will automatically capture and decrypt HTTPS traffic from the remote device.
@@ -51,30 +47,22 @@ The following steps apply to physical Android devices that are connected to the 
 1. **Install the Fiddler Certificate Authority (CA) on the Android device:**
 
     1. Open a mobile browser on your Android device and navigate to `http://<fiddler-host-IP>:8866` (replace `<fiddler-host-IP>` with the IP address of your Fiddler Everywhere host).
-
     1. Tap the option to download the CA certificate.
-
         >important Do not attempt to open the CA certificate file directly from the browser download prompt, as this may not trigger the installation process. Instead, follow the next steps to install it properly.
-
     1. Install the downloaded Fiddler CA certificate from your device storage. The exact location of this setting may vary by Android version, but it is typically found under **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate**.
-
         >tip The exact path may vary depending on your Android device manufacturer and model. For example, see the [knowledge base article for Samsung devices with One UI 6](slug://fe-samsung-device) for detailed installation steps specific to that platform.
-
     1. Verify that the Fiddler CA certificate is installed and trusted by checking **Settings** > **Security** > **Encryption & Credentials** > **Trusted Credentials** > **User** tab.
 
 2. **Configure the Fiddler Everywhere proxy on the Android device:**
 
     1. Go to **Settings** > select your active Wi-Fi connection > **Proxy**.
-
     1. Choose **Manual proxy**.
-
         - Enter the IP address of the Fiddler Everywhere host (e.g., `192.168.100.50`).
         - Enter the Fiddler Everywhere proxy port (default is `8866`).
 
 Once these steps are complete, you can capture traffic from your Android device’s browser. To test your setup:
 
 1. Open **Google Chrome** (or any browser that respects proxy settings) on your Android device and navigate to [https://example.com](https://example.com).
-
 1. Confirm that the HTTPS traffic appears in the Fiddler Everywhere application.
 
 ## Configuring the Fiddler proxy on Android Emulator
@@ -84,22 +72,14 @@ Android Virtual Devices (AVDs), also known as Android emulators, can be configur
 To configure your Android emulator to capture traffic with Fiddler Everywhere:
 
 1. Start the emulator, open the simulated Wi-Fi settings, tap **Settings**, and expand **Advanced Settings**.
-
 1. Select **Edit** and expand **Advanced Settings**. On some older Android versions, you may need to touch and hold the name of the connected network, then tap **Modify**, and expand **Advanced Settings**.
-
 1. Open the **Proxy** section and select **Manual proxy**.
-
     - Enter the emulator's loopback address as the proxy address (typically `10.0.2.2` for the native AVDs).
     - Enter the proxy port used by Fiddler Everywhere (default is `8866`, configurable in **Settings** > **Connections** > **Fiddler listens on port...**).
-
 1. Install the Fiddler Everywhere root CA certificate on the emulator:
-
     1. Open a browser within the emulator and navigate to `http://ipv4.fiddler:8866` or `http://10.0.2.2:8866`.
-
     1. Download the CA certificate when prompted.
-
     1. Install the downloaded Fiddler CA certificate from device storage. The typical path is **Settings** > **Security** > **Encryption and Credentials** > **Install a certificate** > **CA Certificate** (the exact path may vary by Android version).
-
     1. Confirm that the Fiddler CA certificate appears as a user certificate under **Settings** > **Security** > **Encryption & Credentials** > **User** tab.
 
 Once configured, you can capture traffic from your emulator’s browser. To verify your setup:

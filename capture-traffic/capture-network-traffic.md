@@ -17,11 +17,8 @@ In nature, the network capturing mode is a more powerful way to capture network 
 The benefits of the network capturing mode are as follows:
 
 - Works on a lower level compared to HTTP(S) proxies.
-
 - Captures all outgoing TCP traffic from the active network adapter. 
-
 - No limitations related to frameworks, applications, operating systems, and other configuration specifics that you usually must handle when using an HTTP(S) proxy.
-
 - Allows you to control the IP addresses and processes to monitor seamlessly.
 
 ## Prerequisites & Limitations
@@ -31,9 +28,7 @@ The benefits of the network capturing mode are as follows:
 You must meet the following prerequisites to use the network capturing mode.
 
 - [Installed the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
-
 - [Installed and trusted Fiddler's Certificate Authority](slug://trust-certificate).
-
 - Administrative privileges to install/uninstall the network extension.
 
 ### Limitations
@@ -41,19 +36,16 @@ You must meet the following prerequisites to use the network capturing mode.
 The **Network Capture** mode is in Beta state and, currently, has some known limitations as follows:
 
 - The network capturing mode is available only for Windows and macOS. The Linux version of Fiddler Everywhere does not yet support network capturing.
-
 - Specific VPN tools are closing the VPN connection if a third-party network extension is detected. You can try to workaround that by making the VPN connection **before** starting Fiddler Everywhere and then enabling its network capturing mode.
-
 - To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints (for example, like `vpn.mycompany.com`). However the **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. When using network capturing mode, you must bypass targeted VPN endpoints [by creating a Fiddler rule that executes the **Do Not Decrypt** action](slug://configure-vpn-fiddler#configuration-for-network-
 capturing-mode).
-
 - The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes like [reserve proxy](slug://fiddler-reverse-proxy) or specific capturing modes for [Android](slug://capture-mobile-android-traffic), [iOS](slug://capture-mobile-ios-traffic), or [remote PCs](slug://fiddler-capture-other-computers).
 
 ## Using the Network Capturing Mode
 
 The network capturing mode is accessible in the Fiddler's **Live Traffic** menu options through the **Network Capture** option.
 
-![the "Network Capture" feature](../images/livetraffic/websessions/websessions-toolbar-network-capture-beta.png)
+![the "Network Capture" feature](./images/websessions-toolbar-network-capture-beta.png)
 
 Once the **Network Capture** is enabled, you can capture all TCP traffic. As noted in the benefits section, the main perk of using the network capturing mode is that you don't need to change the operating system proxy or set the client's proxy. That lets you quickly capture traffic from processes that otherwise have trouble using HTTP(S) proxies.
 
@@ -64,7 +56,6 @@ To use the **Network Capture**, you need to set the IP address explicitly, the T
 To start the network capturing mode, execute the following steps:
 
 1. Click on the **Network Capture (BETA)** button from the **Live Traffic** menu.
-
 1. Click on the **Enable** from the **Network Capture Settings (BETA)** screen.
 
 >tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)
@@ -76,11 +67,8 @@ If this is the first time you are starting the network capturing mode on your ma
 Immediately after pressing **Enable**, you will see a native macOS popup.
 
 1. In the macOS popup, choose **Open System Settings**. In the opened macOS system settings, scroll down to the message that the Fiddler extension is blocked.
-
 1. Allow the Fiddler Everywhere extension.
-
 1. Enter your credentials to install the extension.
-
 1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
 
 Upon succesful instalation the **Network Capture** screen reloads with network capturing enabled.
@@ -98,7 +86,6 @@ Upon succesful instalation the **Network Capture** screen reloads with network c
 To stop the network capturing mode, execute the following steps:
 
 1. Click on the **Network Capture** button from the **Live Traffic** menu.
-
 1. Click on the **Disable** from the **Network Capture Settings (BETA)** screen.
 
 ## Modify Network Capture Rules

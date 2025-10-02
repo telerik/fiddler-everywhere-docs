@@ -17,31 +17,25 @@ Fiddler logs all HTTP and HTTPS traffic between your computer and the Internet a
 To capture system traffic with Fiddler Everywhere:
 
 1. Start Fiddler Everywhere. 
-
 1. Open the **Home** pane.
-
 1. Open the **System Proxy** tutorial and follow the instructions.
 
 OR (applicable when the Fiddler CA certificate is already installed and trusted)
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Traffic** pane.
-
 1. Toggle the **System Proxy** switch to enable system capturing.
 
-![Use the "System Proxy" switch to toggle on and off the system capturing mode](../images/get-started/get-started-toggle.png)
-
 > Tip With the switch **System Proxy** toggled on, open a browser and type an arbitrary web address. As a result, Fiddler Everywhere intercepts the request, and the Live Traffic grid populates.
+
+![Use the "System Proxy" switch to toggle on and off the system capturing mode](./images/get-started-toggle.png)
 
 ## Enable and Disable System Capturing
 
 You can manually turn on and off the system proxy capturing mode.
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Traffic** pane.
-
 1. Toggle the **System Proxy** switch ON or OFF to enable and disable the system capturing mode.
 
 Fiddler Everywhere warns you through an informative dialog when the system capturing mode is manually enabled.

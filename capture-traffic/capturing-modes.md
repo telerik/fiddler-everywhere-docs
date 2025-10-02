@@ -84,6 +84,8 @@ System capturing is the most comprehensive mode, intercepting all HTTP, HTTPS, W
 - Testing desktop applications
 - Capturing traffic from multiple applications simultaneously
 
+![Use the "System Proxy" switch to toggle on and off the system capturing mode](./images//get-started-toggle.png)
+
 **Setup Steps:**
 1. Start Fiddler Everywhere
 2. Enable system capturing using the OS-specific guides:
@@ -91,15 +93,13 @@ System capturing is the most comprehensive mode, intercepting all HTTP, HTTPS, W
    - [macOS setup guide](slug://first_steps_macos#capture-system-traffic)
    - [Linux setup guide](slug://first_steps_linux#capture-system-traffic)
 
-![Use the "System Proxy" switch to toggle on and off the system capturing mode](../images/get-started/get-started-toggle.png)
-
 [Learn more about system capturing...](slug://capture-system-traffic)
 
 ## Reverse Proxy
 
 The Fiddler Everywhere application supports capturing in reverse proxy mode through the built-in **Reverse Proxy** functionality or through a custom reverse proxy rules.
 
-![Use the "Reverse Proxy" button to configure and capture traffic as a reverse proxy](../images/get-started/get-started-reverse.png)
+![Use the "Reverse Proxy" button to configure and capture traffic as a reverse proxy](./images/get-started-reverse.png)
 
 [Learn more about the reverse proxy mode here...](slug://fiddler-reverse-proxy)
 
@@ -119,7 +119,7 @@ Network capturing operates at a lower level than traditional HTTP proxies, captu
 - Low-level network analysis
 - Environments where proxy configuration is restricted
 
-![Use the "Network Capture" button to configure and capture traffic through the Network capturing mode](../images/get-started/get-started-network-capturepng.png)
+![Use the "Network Capture" button to configure and capture traffic through the Network capturing mode](./images/get-started-network-capturepng.png)
 
 [Learn more about network capturing...](slug://capture-network-traffic)
 
@@ -147,7 +147,7 @@ Independent browser capturing provides a sandboxed browser environment for isola
 - Environments where certificate installation is restricted
 - Quick browser-based testing sessions
 
-![Use the "Browser" button to capture traffic from independent browser instance](../images/get-started/get-started-open-browser.png)
+![Use the "Browser" button to capture traffic from independent browser instance](./images/get-started-open-browser.png)
 
 [Learn more about independent browser capturing...](slug://capture-browser-traffic#capturing-from-terminal)
 
@@ -167,7 +167,7 @@ Terminal capturing provides a dedicated terminal session with Fiddler's proxy pr
 - curl command analysis
 - API testing scripts
 
-![Use the "Terminal" button to capture traffic from Node.js or other terminal application](../images/get-started/get-started-terminal.png)
+![Use the "Terminal" button to capture traffic from Node.js or other terminal application](./images/get-started-terminal.png)
 
 [Learn more about terminal capturing...](slug://capture-terminal-traffic#capturing-from-terminal)
 
