@@ -18,20 +18,18 @@ Using Fiddler's rules allows you to modify the ongoing HTTPS requests and respon
 To open the **Rules** tab.
 
 1. Start Fiddler Everywhere and open the **Home** Pane.
-
 1. Follow the **Rules** flow from the **Modify and Filter Traffic** section.
-
- ![Using the Fiddler's rules from the **Home** pane](../images/rules/rules-tutorial-flow.png)
+ 
+![Using the Fiddler's rules from the **Home** pane](./images/rules-tutorial-flow.png)
 
 OR
 
 1. Start Fiddler Everywhere and open the **Traffic** Pane.
-
 1. Select the **Rules** tab.
 
 The **Rules** tab loads, and you can create, enable, organize, and rank rules in the Rules list.
 
-![Example of active Rules tab with rules and groups](../images/rules/rules-tab-active.png)
+![Example of active Rules tab with rules and groups](./images/rules-tab-active.png)
 
 ## Using Rule Builder
 
@@ -40,21 +38,13 @@ Use the **Rule Builder** to create custom rules from scratch. Each rule can auto
 To create and test a rule through the **Rule Builder**:
 
 1. Select the **Rules** tab and click the **Add Rule** button. As a result, the **Rule Builder** opens.
-
- ![Adding new rule for modifying an HTTPS session through the Rule Builder](../images/rules/rules-builder-new-rule.png)
-
+    ![Adding new rule for modifying an HTTPS session through the Rule Builder](./images/rules-builder-new-rule.png)
 1. Enter a descriptive rule name, which will appear in the **Rules** list.
-
 1. Add a condition or a set of conditions to match sessions.
-
 1. Add an action or a set of actions to modify the matched sessions.
-
 1. Click **Save** to save and add the created rule in the **Rules** list.
-
 1. Start capturing traffic or replay a specific session that triggers the rule.
-
     - If you test with system capturing, independent browser, terminal, or through explicit proxy&mdash;Ensure that the switch of the main **Rules** tab is toggled ON. Open the application in the browser and execute a request that matches the set conditions. The rule immediately applies to the ongoing captured traffic.
-
     - If you test with already saved sessions&mdash;Select the rule and use the **Execute** button (green play arrow). The rule immediately applies to the preloaded saved sessions.
 
 The **Rules** tab can be a powerful ally in testing various complex scenarios without meddling with the server. You can share, import and export created rules with collaborators to ease your support, development, and QA processes.
@@ -66,17 +56,11 @@ One of the most powerful features in Fiddler Everywhere resides in the **Rules**
 To modify the captured session through the **Rules**:
 
 1. Start any [capturing mode](slug://capture-traffic-get-started) with Fiddler Everywhere and initiate the request. As a result, the session is captured and displayed in the **Live Traffic** grid.
-
 1. Select the desired session and right-click to open the context menu. From the context menu, select **Add New Rule**.
-
- ![Add new rule through selecting a session and using the context menu](../images/rules/add-new-rule-context-menu.png)
-
-    >tip The **Rule Builder** opens in a dedicated detached window. This enables you to create your rule and observe the Live Traffic simultaneously.
-
+    ![Add new rule through selecting a session and using the context menu](./images/add-new-rule-context-menu.png)
+    >tip The **Rule Builder** opens in a dedicated detached window. This enables you to create your rule and observe the Live Traffic simultaneously.
 1. The **Rule Builder**automatically populated the session data. You can further modify the matching conditions and the desired actions. 
-
- ![Automatically loaded session in Rules builder](../images/rules/add-new-rule-loaded-in-rules-builder.png)
-
+    ![Automatically loaded session in Rules builder](./images/add-new-rule-loaded-in-rules-builder.png)
 1. Click **Save** to preserve the rule.
 
 Fiddler automatically adds the newly created rule on the top of the [**Rules** list](slug://modify-traffic-get-started#rules-list), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
