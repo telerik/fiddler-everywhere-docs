@@ -29,10 +29,9 @@ The main idea behind the **Rules** tab is to provide a set of rules based on mat
 
 The **Return Predefined Response** action in the **Rules Builder** provides predefined options with descriptive names for the simulated response.
 
-![Example for using the predefined responses](../images/kb/dat-files/predefined-responses.png)
+![Example for using the predefined responses](./images/predefined-responses.png)
 
 The content of each predefined option is as follows:
-
 
 * `200 OK (HTML)`
 
@@ -44,7 +43,6 @@ The content of each predefined option is as follows:
 
     This is a simple Fiddler-returned <B>HTML</B> page.
     ```
-
 * `200 OK (Image/gif)`
 
     ```HTTP
@@ -56,7 +54,6 @@ The content of each predefined option is as follows:
 
     GIF89a# #encoded string for a sample GIF follows here
     ```
-
 * `200 OK (Pixel)`
 
     ```HTTP
@@ -68,7 +65,6 @@ The content of each predefined option is as follows:
 
     GIF89a #encoded string for a transparent GIF follows here
     ```
-
 * `204 No Content`
 
     ```HTTP
@@ -77,7 +73,6 @@ The content of each predefined option is as follows:
     Date: Fri, 25 Jan 2013 16:49:29 GMT
     Content-Length: 0
     ```
-
 * `302 Redirect`
 
     ```HTTP
@@ -87,7 +82,6 @@ The content of each predefined option is as follows:
     Location: https://www.telerik.com/fiddler/fiddler-everywhere
     Content-Length: 0
     ```
-
 * `303 Redirect (With Get)`
 
     ```HTTP
@@ -97,7 +91,6 @@ The content of each predefined option is as follows:
     Location: https://www.telerik.com/fiddler/fiddler-everywhere
     Content-Length: 0
     ```
-
 * `304 Not Modified`
 
     ```HTTP
@@ -106,7 +99,6 @@ The content of each predefined option is as follows:
     Date: Fri, 25 Jan 2013 16:49:29 GMT
     Content-Length: 0
     ```
-
 * `307 Redirect (Same Method)`
 
     ```HTTP
@@ -116,7 +108,6 @@ The content of each predefined option is as follows:
     Location: https://www.telerik.com/fiddler/fiddler-everywhere
     Content-Length: 0
     ```
-
 * `401 Basic Auth`
 
     ```HTTP
@@ -129,7 +120,6 @@ The content of each predefined option is as follows:
 
     Fiddler: HTTP/401 Basic Server Auth Required.    
     ```
-
 * `401 Digest Auth`
 
     ```HTTP
@@ -142,7 +132,6 @@ The content of each predefined option is as follows:
 
     Fiddler: HTTP/401 Digest Server Auth Required.
     ```
-
 * `403 Access Denied`
 
     ```HTTP
@@ -153,7 +142,6 @@ The content of each predefined option is as follows:
 
     Fiddler: HTTP/403 Access Denied.   
     ```
-
 * `404 Not Found`
 
     ```HTTP
@@ -165,7 +153,6 @@ The content of each predefined option is as follows:
 
     Fiddler: HTTP/404 Not Found
     ```
-
 * `407 Proxy Auth Required`
 
     ```HTTP
@@ -178,7 +165,6 @@ The content of each predefined option is as follows:
 
     Fiddler: HTTP/407 Proxy Auth Required.
     ```
-
 * `502 Unreachable Server`
 
     ```HTTP
@@ -199,7 +185,7 @@ The **Actions** drop-down of the **Rule Builder** provides an option to load you
 1. In the file selection window, load the DAT file with the custom HTTP response.
 1. Click **Save** to create or update the rule.
 
-![Response file](../images/kb/dat-files/kb-rules-response-file.png)
+![Response file](./images/kb-rules-response-file.png)
 
 ### Using the Custom Manual Response
 
@@ -209,7 +195,7 @@ Another option that the **Rule Builder** provides is to create the mocked custom
 1. Write the custom HTTP response in the text field.
 1. Click **Save** to create or update the rule.
 
-![Response file](../images/kb/dat-files/kb-rules-response-manul.png)
+![Response file](./images/kb-rules-response-manul.png)
 
 ## See Also
 

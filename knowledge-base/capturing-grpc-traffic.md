@@ -29,22 +29,14 @@ Fiddler Everywhere captures gRPC traffic out-of-the-box through [all capturing m
 To capture gRPC traffic with Fiddler Everywhere, the following conditions must be satisfied:
 
 1. Enable HTTP/2 capturing in Fiddler Everywhere through **Settings** > **Connections** > **Enable HTTP/2 support**.
-
-2. Configure the client using the gRPC framework to go through the Fiddler proxy. The execution of this step differs depending on the client's application. Here are some setup guidelines for different clients:
-
+1. Configure the client using the gRPC framework to go through the Fiddler proxy. The execution of this step differs depending on the client's application. Here are some setup guidelines for different clients:
     - **Terminals and shell applications**&mdash;A terminal and shells can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from a terminal here...](slug://capture-terminal-traffic)
-
     - **Bash**&mdash;A bash application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Bash here...](slug://capture-terminal-traffic)
-
     - **Node.js**&mdash;A Node.js application can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Node.js here...](slug://fiddler-nodejs-traffic)
-
     - **Python applications**&mdash;Python applications can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Python applications here...](slug://fiddler-python-traffic)
-
     - **Java applications**&mdash;A Java application can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from Java applications here...](slug://configure-java-fiddler-everywhere)
-
     - **Other gRPC clients**&mdash; If your gRPC client utilizes a different technology stack, you must find the proper method for configuring its proxy settings and set Fiddler's address (by default, http://127.0.0.1:8866) as an HTTP and HTTPS proxy.
-
-3. Start capturing! That's it! Fiddler Everywhere will start capturing gRPC immediately.
+1. Start capturing! That's it! Fiddler Everywhere will start capturing gRPC immediately.
 
 ## Inspecting gRPC Traffic
 
@@ -52,15 +44,13 @@ Fiddler Everywhere introduces a specific user interface to ease the inspection o
 
 You can use the **Trailer** inspector to examine the specific trailers the server sends or mock particular gRPC behavior. For example, you can modify (through a rule) the `grpc_status` trailer header and test how your application behaves in unexpected scenarios like unexpected errors in the stream.
 
-![gRPC traffic and the Trailers inspector](../images/kb/grpc/grpc-traffic-trailers.png)
+![gRPC traffic and the Trailers inspector](./images/grpc-traffic-trailers.png)
 
 The captured gRPC session will have a green badge until the gRPC channel is open and a red badge when the gRPC channel is closed.
 
-![Selected gRPC session with closed channel](../images/kb/grpc/grpc-traffic-selected-session.png)
-
 Double-click on a gRPC session to automatically open [the **Messages** tab](slug://inspector-types#messages-tab) and [the **Message** inspector](slug://inspector-types#message-inspector) that allows you to inspect each gRPC message as originally received (the context menu provides decoding option) or through [the **HEX inspector**](slug://inspector-types#hex-body-inspector).
 
-![gRPC traffic and related Fiddler's inspectors](../images/kb/grpc/grpc-traffic-inspection.png)
+![gRPC traffic and related Fiddler's inspectors](./images/grpc-traffic-inspection.png)
 
 The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. You can use the context menu to copy the whole row message quickly.
 
@@ -93,6 +83,6 @@ The received gRPC messages will be automatically decoded if server reflection is
 
 If you own the Protobuf schema files, you can provide them in Fiddler Everywhere through the **Settings > Protobuf > Decode via .proto file** option. Fiddler Everywhere will try to use the available `.proto` files to decode all received gRPC messages.
 
-![Supplying a .proto file for decoding gRPC messages](../images/settings/settings-protobuf.png)
+![Supplying a .proto file for decoding gRPC messages](./images/settings-protobuf.png)
 
 As a result, the gRPC message will have a tooltip indicating that Fiddler used a Protobuf file for its decoding.

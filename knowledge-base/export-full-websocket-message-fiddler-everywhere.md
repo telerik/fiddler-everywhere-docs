@@ -22,10 +22,9 @@ Sometimes, when using Fiddler Everywhere, you may encounter an issue where the e
 Some WebSocket messages may be fragmented, meaning the entire context is received in multiple messages, and the client/server unfragments them as needed. To export the entire unfragmented WebSocket message in Fiddler Everywhere, follow these steps:
 
 1. Open Fiddler Everywhere, select the WebSocket session and navigate to the **Messages** inspector.
-2. Look for WebSocket messages that are fragmented, which are identified by the **Cont.** type (continuation).
-3. To combine these fragmented messages with their original message, click the **Unfragment all messages** option on the **Messages** inspector toolbar. The initial unfragmented messages will be removed from the Messages list while the combined message will remain.
-4. Once you have unfragmented the messages, you can export the WebSocket message for further inspection.
-
+1. Look for WebSocket messages that are fragmented, which are identified by the **Cont.** type (continuation).
+1. To combine these fragmented messages with their original message, click the **Unfragment all messages** option on the **Messages** inspector toolbar. The initial unfragmented messages will be removed from the Messages list while the combined message will remain.
+1. Once you have unfragmented the messages, you can export the WebSocket message for further inspection.
 
 ## See Also
 - [Fiddler Everywhere Inspector Insights - Messages Tab](https://docs.telerik.com/fiddler-everywhere/inspect-traffic/inspector-insights#messages-tab)

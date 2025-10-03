@@ -23,19 +23,13 @@ The [instructions for installing the trusted root certificate for Fiddler Everyw
 ## Solution
 
 1. Install and open the Fiddler Everywhere application on a shared system certificate storage Linux distribution such as Fedora, CentOS, or RedHat.
-
 1. Export the Fiddler Everywhere root certificate through __Settings__ > __HTTPS__ > __Advanced Settings__ > **Export root certificate(DER/Binary format)**. The CA is exported to **~/Desktop** as a file named **Fiddler_Root_Certificate_Authority.crt**.
-
 1. Open a terminal and copy the exported CA to the shared certificate storage. The following example uses the default paths on Fedora 33.
-
-    ```
-    cp ~/Desktop/Fiddler_Root_Certificate_Authority /etc/pki/ca-trust/source/anchors/
-    ```
-
+```sh
+cp ~/Desktop/Fiddler_Root_Certificate_Authority /etc/pki/ca-trust/source/anchors/
+```
 1. Trust the certificate by updating the certificate authority through the following terminal command:
-
-    ```
-    update-ca-trust
-    ```
-
+```sh
+update-ca-trust
+```
 1. Return to Fiddler Everywhere and enable the HTTPS capturing by selecting the __Settings__ > __HTTPS__ > __Capture HTTPS traffic__ checkbox.

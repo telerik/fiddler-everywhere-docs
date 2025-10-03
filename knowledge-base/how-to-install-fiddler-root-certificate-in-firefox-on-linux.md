@@ -26,17 +26,11 @@ res_type: kb
 ## Solution
 
 1. Export the Fiddler CA certificate to your **Desktop** folder through the options in **Settings > HTTPS > Advanced > Export Fiddler CA**.
-
 1. Open Firefox.
-
 1. Go to **Settings** > **Privacy & Security**.
-
 1. Click the **View Certificates** button to open the Firefox's **Certificate Manager**.
-
 1. Within the **Certificate Manager**, select the **Authorities** tab.
-
 1. Click the **Import...** button and choose the `Fiddler_Root_Certificate_Authority.crt` file from your **Desktop** folder.
-
 1. Select the **Trust this CA to identify websites.** checkbox and click **OK**.
 
 The Fiddler CA certificate is now installed. You can now decrypt traffic captured from the Firefox browser.

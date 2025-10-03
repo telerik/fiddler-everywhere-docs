@@ -25,7 +25,6 @@ Third-party tools (like Docker) and some operating systems (some Linux distribut
 You can use the built-in functionality to export the Fiddler Everywhere CA in PEM format:
 
 - Open **Settings > HTTPS > Advanced Settings**.
-
 - From the drop-down menu choose **Export Root Certificate (PEM/ASCII format)**.
 
 Then manually install and trust the exported PEM in the third-party tool while following the tool's official guidelines. 

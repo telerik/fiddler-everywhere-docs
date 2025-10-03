@@ -20,7 +20,6 @@ res_type: kb
 
 Many developers, support engineers, and end-users are familiar with the [cURL](https://curl.se/) as a fast tool for executing and managing requests. How can I easily convert a request that was generated in the [**Composer**](slug://composer-tab) to a cURL script?
 
-
 ## Solution
 
 Fiddler Everywhere version 4.0.0 and above provides an automated export as cURL script through the [Live Traffic grid context menu](slug://web-sessions-list#context-menu-options).
@@ -28,11 +27,9 @@ Fiddler Everywhere version 4.0.0 and above provides an automated export as cURL 
 To export a session as cURL:
 
 - Select the captured session.
-
 - Open the context menu and choose **Copy > Copy as cURL**
 
-![Copy as Curl](../images/kb/copy-as-curl.png)
-
+>tip The "Copy as cURL" command will copy request bodies only when the request header Content-Type is set to `application/x-www-form-urlencoded` or `multipart/form-data` and will intentionally skip all other request and response bodies. The main reason for this is that the content of the HTTP body can be (and often is) quite large, which makes it impossible to put it in the clipboard. To transfer HTTP bodies of other sessions use the **Save Request Body to file** and **Save Response Body to file** inspector options.
 
 ## Solution (Obsolete)
 
@@ -50,7 +47,7 @@ By default, Fiddler Everywhere saves the outputted cURL script as [a BAT file](h
 
 A cURL output generated from Fiddler Everywhere looks similar to the following sample:
 
-```cURL
+```sh
 curl -k -i --raw -o 0.dat "http://httpbin.org/get?theAnswer=42" -H "User-Agent: Fiddler Everywhere" -H "Host: httpbin.org"
 ```
 

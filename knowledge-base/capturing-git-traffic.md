@@ -24,18 +24,14 @@ I want to capture the traffic generated from the Git source control while making
 ## Configuring Git HTTPS Access alongside Fiddler Everywhere Proxy
 
 1. Start your Git Bash terminal with administrative rights.
-
 1. Configure Git (for HTTPS-accessed repositories) to use the Fiddler Everywhere proxy.
-
-    ```
-    git config --global http.proxy http://127.0.0.1:8866 
-    ```
-
+```sh
+git config --global http.proxy http://127.0.0.1:8866 
+```
 1. Disable the SSL/TLS verification by setting `http.sslVerify` to `false`. 
-
-    ```
-    git config --global http.sslVerify false
-    ```
+```sh
+git config --global http.sslVerify false
+```
 
 Setting `http.sslVerify` to `false` can help you quickly setup your environment alongside a man-in-the-middle HTTPS proxy. However, its usage is insecure as it will disable the validation of all self-signed certificates. Alternatively, you could install the Fiddler root CA to the certificate chain and specify it with either `http.sslCAInfo` or `http.sslCAPath`.
 
@@ -52,7 +48,7 @@ http.sslCAPath <path-to-folder-containing-CAs>
 
 Check the current Git proxy configuration through the following command:
 
-```
+```sh
 git config --get-regexp http.* 
 ```
 
@@ -60,7 +56,7 @@ git config --get-regexp http.*
 
 Reset the Git proxy settings through the following commands:
 
-```
+```sh
 git config --global --unset http.proxy
 git config --global --unset http.sslVerify
 ```

@@ -48,29 +48,23 @@ http://localhost:8081/mytestpage.aspx
 To capture that traffic with Fiddler Everywhere, use any of the following approaches:
 
 * Replace `localhost` with the `ipv4.fiddler` alias to hit `localhost` on an `IPv4` adapter:
-
-    ```Shell
-    http://ipv4.fiddler:8081/mytestpage.aspx
-    ```
-
+```sh
+http://ipv4.fiddler:8081/mytestpage.aspx
+```
 * Replace `localhost` with the **ipv6.fiddler** alias to hit `localhost` on an `IPv6` adapter:
-
-    ```Shell
-    http://ipv6.fiddler:8081/mytestpage.aspx
-    ```
-
+```sh
+http://ipv6.fiddler:8081/mytestpage.aspx
+```
 * Replace `localhost` with the `localhost.fiddler` alias to hit `localhost` in the `Host` header:
-
-    ```Shell
-    http://localhost.fiddler:8081/mytestpage.aspx
-    ```
+```sh
+http://localhost.fiddler:8081/mytestpage.aspx
+```
 
 ### Filtering Localhost Traffic
 
 While using one of the above solutions to capture localhost requests, the traffic will be captured in the **Live Traffic** grid, and the loopback address will be displayed as a host name, usually `127.0.0.1`. To filter by the **Host** column so that only localhost traffic is displayed, enter the loopback address, and not the aliases used in the browsers, as a `host` value.
 
-![Example Localhost filtering](../images/kb/localhost-filtering.png)
-
+![Example Localhost filtering](./images/localhost-filtering.png)
 
 ## Additional Resources
 

@@ -29,13 +29,9 @@ Note that certificate information is available only for live traffic (ongoing ca
 Each session that successfully establishes secure connections over HTTPS stores information about the server certificate. Follow the steps to inspect the certificate's full details:
 
 - Open Fiddler Everywhere and capture the HTTPS session
-
 - Go to the Response Inspector and click on the **Certificate Valid** note
-
-    ![Valid certificate note](../images/livetraffic/certs/certficate-valid-note.png)
-
+    ![Valid certificate note](./images/certficate-valid-note.png)
 - Inspect the public certificate in detail. The prompt windows might contain the following sections:
-    
     * **Issued to**&mdash;Contains public information in fields such as **Common Name, Organization, Locality, Province, Country**
     * **Issued by**&mdash;Contains public information in fields such as **Common Name, Organization, Country**
     * **Validity Period**&mdash;Contains **Issued on** and **Expires on** date fields.
@@ -43,33 +39,29 @@ Each session that successfully establishes secure connections over HTTPS stores 
     * **Miscellaneous**&mdash;Different miscellaneous data like **Signature Algorithm**, **Serial Number**, and **Version**.
     * **Fingerprints**&mdash;Lists the **SHA-256** and **SHA-1 fingerprints**.
     * **Extensions**&mdash;Addition information about the certificate policies, constraints, usage, distribution points, etc.
-
-
-    ![Certificate details](../images/livetraffic/certs/certficate-valid.png)
+    ![Certificate details](./images/certficate-valid.png)
 
 ### Expiring Certificates
 
 Fiddler Everywhere explicitly indicates if a server certificate is about to expire within the next 30 days. The indicator is an orange triangle on top of the session's list icon and as a **Certificate Expiring** warning note in the Response Inspector. 
 
-![Expiring Certificate warning](../images/livetraffic/certs/certficate-expiriing-note.png)
+![Expiring Certificate warning](./images/certficate-expiriing-note.png)
 
 You can still extract certificate data through the [certificate details window](#extracting-certificate-details).
 
 >tip A trivial use-case for the expiring warning is to prepare the update of the certificates on your servers before expiration. 
 
-
 ### Certificate Errors
 
 Fiddler Everywhere will automatically detect server certificate errors and show error indicators. The certificate error indicator is a red triangle on the session's list icon and as a **Certificate Error** note in the Response Inspector. 
 
-![Certificate Error](../images/livetraffic/certs/certficate-error-note.png)
+![Certificate Error](./images/certficate-error-note.png)
 
 If you change the certificate error handling (by enabling **HTTPS** > **Ignore server certificate errors**), the note in the Response Inspector will remind you that the error is ignored.
 
-![Certificate error ignored](../images/livetraffic/certs/certficate-error-ignored.png)
+![Certificate error ignored](./images/certficate-error-ignored.png)
 
 >tip A typical use case for the **Ignore server certificate errors** option will be certificate validation errors on macOS while trying to access `*.icloud.com` domains. Use the option to ignore the validation error and continue the debugging process.
-
 
 ### Ignoring Sever Certificate Errors
 
@@ -82,24 +74,18 @@ All server certificate errors will be ignored when the **Ignore server certifica
 Fiddler Everywhere allows adding specific endpoints to the list of trusted servers to minimize the security risk of automatically ignoring all server certificates. You can add custom endpoints to the list as follows: 
 
 - Upon opening a page that returns a server certificate error, a custom Fiddler page will present the possibility of automatically adding the endpoint to the ignore list. This option works only when **Ignore server certificate errors** is inactive or active but not with an empty list.
-
-    ![When Fiddler works, a page with expired certificate loads the Fiddler's insecure warning](../images/livetraffic/certs/browser-fiddler-insecure-page.png)
-
+    ![When Fiddler works, a page with expired certificate loads the Fiddler's insecure warning](./images/browser-fiddler-insecure-page.png)
 - Tick the **Settings** > **HTTPS** > **Ignore server certificate errors (unsafe)** checkbox and add one or multiple endpoints separated by a semicolon.
-
-    ![Add servers to the ignore list through the Fiddler's settings](../images/livetraffic/certs/ignore-certificate-errors-settings.png)
+    ![Add servers to the ignore list through the Fiddler's settings](./images/ignore-certificate-errors-settings.png)
 
 >important Adding new endpoints to the ignore list works only for newly established connections. You might need to restart your client app (e.g., the browser) to force close an existing TCP connection.
-
 
 ### Certificate Details in SAZ files
 
 Fiddler Everywhere version 4.2.0 extended the SAZ format, the native format used for saving captured session snapshots (local saves, cloud saved, or manual SAZ exports). Consider the following when working with saved sessions snapshots and certificate details: 
 
 - (Fiddler Everywhere **version 4.2.0 and above**) All sessions saved locally, in the cloud, or exported as SAZ files will contain the certificate details (valid when the capturing occurred).
-
 - (Fiddler Everywhere **version 4.1.2 and below**) All sessions saved locally, in the cloud, or exported as SAZ files won't contain the certificate details.
-
 
 #### Deep-Dive with the SAZ format and the Certificate Details
 
@@ -109,7 +95,6 @@ Inside a SAZ file, you will find:
 
 - [Content_Types.xml] file&mdash;A metadata file that specifies a few MIME types so the archive can be read by System.IO.Packaging or other clients that support the Open Packaging Conventions.
 - a **raw** folder&mdash;Contains the files representing each captured session. Inside the **raw** folder, you can find three or four files for each session.
-
     * **sessid#_c.txt**&mdash;File containing the raw client request.
     * **sessid#_s.txt**&mdash;File containing the raw server request.
     * **sessid#_m.xml**&mdash;File containing metadata including session flags, socket reuse information, etc.

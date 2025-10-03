@@ -41,7 +41,6 @@ You can explicitly turn off the hardware acceleration through a boolean flag cal
   ```bash
   ~/.fiddler/Settings/electron-settings.json
   ```
-
 - Add the bellow key-value pair to disable the hardware acceleration and force software rendering instead.
     ```JSON
     "disableHardwareAcceleration" : true

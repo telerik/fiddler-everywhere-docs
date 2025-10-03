@@ -38,7 +38,6 @@ By using filters in Fiddler Everywhere, you can easily search for specific value
 ## Notes
 
 - Filters in Fiddler Everywhere allow you to create complex match conditions using various operators and logical expressions.
-
 - Saved filters can be reused across different sessions and projects, saving you time and effort in defining filters for each search.
 
 ## See Also

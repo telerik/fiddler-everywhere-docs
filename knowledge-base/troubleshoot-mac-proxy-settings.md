@@ -39,11 +39,11 @@ Go to the Apple Mac proxy settings in **System Preferences** > **Network** > **A
 
 When Fiddler Everywhere is closed with the default settings, the **System Proxy Settings** will look like the following.
 
-![mac proxy settings no proxy](../images/kb/mac-proxy-settings/mac-proxy-settings-no-proxy.png)
+![mac proxy settings no proxy](./images/mac-proxy-settings-no-proxy.png)
 
 When Fiddler Everywhere is open with the default settings, the **System Proxy Settings** will look like the following.
 
-![mac proxy settings with proxy](../images/kb/mac-proxy-settings/mac-proxy-settings-proxy-on.png)
+![mac proxy settings with proxy](./images/mac-proxy-settings-proxy-on.png)
 
 ## See Also
 

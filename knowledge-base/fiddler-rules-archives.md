@@ -17,7 +17,7 @@ The Fiddler Everywhere application automatically recognizes the FARX extension a
 
 Through the **Rules** toolbar, you can also manually import existing FARX files or export selected rules as FARX files.
 
-![FARX import and export options](../images/kb/saz/farx-files-options.png)
+![FARX import and export options](./images/farx-files-options.png)
 
 ## Importing Rules from Fiddler Classic
 
@@ -29,19 +29,19 @@ The import wizard in Fiddler Everywhere allows you to import AutoResponder rules
 
 In addition to creating rules from scratch, you can use any saved SAZ archive and import it as a rule while using the  **Import** button within the **Rules** toolbar. 
 
-![imporing SAZ as FARX file](../images/kb/saz/import-saz-as-farx.png)
+![imporing SAZ as FARX file](./images/import-saz-as-farx.png)
 
 As a result, the session contained in the SAZ archive will create a rule that mocks the traffic. For example, you can load any HTTPS Session with the GET method to produce a rule that will mock the HTTP Response and then make additional modifications per your requirements.
 
 Once the rule is created, export it as a FARX file through the **Export** option in the **Rules** toolbar.
 
-![Creating FARX rule from SAZ archive](../images/kb/saz/creating-rule-from-saz.png)
+![Creating FARX rule from SAZ archive](./images/creating-rule-from-saz.png)
 
 ## Using Live Traffic to create FARX Rules
 
 Apart from creating a rule from SAZ, you can also directly use captured HTTPS traffic to create a new mocking rule. Use the **Create New Rules** option from the context menu in the **Live Traffic** grid for that purpose.
 
-![create new rules from captured traffic](../images/kb/saz/farx-create-new-rule-context-menu.png)
+![create new rules from captured traffic](./images/farx-create-new-rule-context-menu.png)
 
 ## Additional Resources
 

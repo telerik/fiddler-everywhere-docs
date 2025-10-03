@@ -155,7 +155,7 @@ node fiddler-everywhere-test.js
 
 As a result, Fiddler Everywhere will capture the request and the response.
 
-![Successfully captured NodeJS traffic](../images/kb/nodejs/success-capture-nodejs.png)
+![Successfully captured NodeJS traffic](./images/success-capture-nodejs.png)
 
 ## Setting Fiddler Everywhere alongside the Node Proxy
 

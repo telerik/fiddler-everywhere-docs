@@ -23,33 +23,18 @@ When I troubleshoot common issues, I need to reset the Fiddler Everywhere settin
 The following screenshots represent the default Fiddler Everywhere settings.
 
 * Default **HTTPS** settings&mdash;Resets Fiddler Everywhere to its initial state, which means the secure traffic won't be captured until **Capture HTTPS** is checked.
-
-  ![default https settings](../images/settings/settings-https.png)
-
+  ![default https settings](./images//settings-https.png)
 * Default **Connection** settings&mdash;Acts as a system proxy on application startup. Remote connections and HTTP/2 support are disabled.
-
-  ![default Connection settings](../images/settings/settings-connections.png)
-
+  ![default Connection settings](./images//settings-connections.png)
 * Default **Gateway** settings&mdash;Use system proxy
-
-  ![default Gateway settings](../images/settings/settings-gateway.png)
-
+  ![default Gateway settings](./images//settings-gateway.png)
 * Default **Live Traffic** settings&mdash;Keep all sessions in the list
-
-  ![default Gateway settings](../images/settings/settings-live-traffic.png)  
-
+  ![default Gateway settings](./images//settings-live-traffic.png)  
 * Default **Privacy** settings 
-
-  ![default Privacy settings](../images/settings/settings-privacy.png)
-
+  ![default Privacy settings](./images//settings-privacy.png)
 * Default **Composer** settings&mdash;Follows HTTP 3xx responses as redirects when executing requests from the Composer.
-
-  ![default Composer settings](../images/settings/settings-composer.png)
-
+  ![default Composer settings](./images//settings-composer.png)
 * Default **Browsers** settings&mdash;Fiddler Everywhere tries to detect the default path to the Google Chrome installation folder (to be used with the [Open Browser](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) functionality)
-
-  ![default Browsers settings](../images/settings/settings-browsers.png)
-
+  ![default Browsers settings](./images//settings-browsers.png)
 * Default **Theme** settings&mdash;Default Light theme loads as the initial UI theme.
-
-  ![default Theme settings](../images/settings/settings-themes.png)
+  ![default Theme settings](./images//settings-themes.png)

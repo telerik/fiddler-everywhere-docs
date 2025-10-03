@@ -20,11 +20,8 @@ res_type: kb
 ## Description
 
 **Q:** How can I capture traffic from Python applications?
-
 **Q:** When Fiddler Everywhere acts as a system proxy, I can't use python's pip library (or other Python library that makes HTTPS requests).
-
 **Q.** My python library fails with `CERTIFICATE_VERIFY_FAILED` when Fiddler is an intermediate proxy.
-
 
 ## Using the Fiddler's Terminal
 
@@ -35,13 +32,10 @@ The Fiddler Everywhere application allows starting a dedicated terminal that aut
 Steps needed to capture HTTPS traffic from a Python application:
 
 1. Start the Fiddler Everywhere application.
-
 1. Click **Open Terminal** to start dedicated terminal instance.
-
 1. Run the Python app within the dedicated terminal instance.
 
 [Learn more about the **Open Browser** option in Fiddler Everywhere here...](slug://capture-terminal-traffic)
-
 
 ## Setting Fiddler Proxy and CA through Environment Variables
 
@@ -52,7 +46,7 @@ For Fiddler Everywhere to capture traffic from a Python application, the applica
 The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings > HTTPS > Advanced > Export Root Certificate (PEM/ASCII)**.
 
 **
-```bash
+```sh
 export http_proxy=http://127.0.0.1:8866
 export https_proxy=http://127.0.0.1:8866
 export SSL_CERT_FILE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
@@ -61,7 +55,7 @@ export REQUESTS_CA_BUNDLE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
 
 The following example demonstrates how to define the proxy settings through environmental variables on **Windows**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings > HTTPS > Advanced > Export Root Certificate (PEM/ASCII)**.
 
-```bash
+```sh
 set http_proxy=http://127.0.0.1:8866
 set https_proxy=http://127.0.0.1:8866
 set SSL_CERT_FILE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
@@ -76,14 +70,14 @@ Once debugging with Fiddler Everywhere, reset the current environment proxy by r
 
 The following example demonstrates how to unset the proxy on **macOS** and **Linux**.
 
-```bash
+```sh
 unset http_proxy
 unset https_proxy
 ```
 
 The following example demonstrates how to unset the proxy on **Windows**.
 
-```bash
+```sh
 set http_proxy=
 set https_proxy=
 ```
@@ -92,7 +86,7 @@ set https_proxy=
 
 You can set the Fiddler proxy explicitly through the Python application's code base.
 
-```py
+```python
 import requests
 
 proxies = {'http': '127.0.0.1:8866', 'https': '127.0.0.1:8866'}

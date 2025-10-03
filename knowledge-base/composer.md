@@ -63,35 +63,30 @@ The **Composer** supports the creation of a request with the following HTTP meth
 
 The  **URL field** is the place where you enter an endpoint URL for the composed request.
 
-  ![URL Address textview](../images/composer/composer-addresss-bar.png)
+  ![URL Address textview](./images/composer-addresss-bar.png)
 
 ## HTTP Version
 
 The **HTTP Version** drop-down list renders the following HTTP versions:
 
 - **HTTP 2.0**
-
 - **HTTP 1.2**
-
 - **HTTP 1.1**
-
 - **HTTP 1.0**
-
 - **HTTP 0.9**
-
-  ![HTTP Versions drop-down](../images/composer/composer-http-version.png)
+  ![HTTP Versions drop-down](./images/composer-http-version.png)
 
 ## Execute Button
 
 The **Execute** button enables you to effectively execute the composed request. After a successful execution, the [**Response inspector**](#response-inspector) will be populated with the received response content.
 
-  ![Execute Button](../images/composer/composer-execute-btn.png)
+  ![Execute Button](./images/composer-execute-btn.png)
 
 ## Save Button
 
 The **Save** button enables you to save the composed request in the [**Requests**](slug://saved-requests-tab) list. Note that if you are editing an already saved request entry, the changes will overwrite the previous version of that entry. To save the edits as an entirely new entry, use the drop-down option and click **Save as** (available for already saved requests only).
 
-  ![Save Button](../images/composer/composer-save-btn.png)
+  ![Save Button](./images/composer-save-btn.png)
 
 ## Headers, Params, Raw, and Body
 
@@ -104,15 +99,12 @@ The **Headers** section enables you to add or modify your request headers&mdash;
 To change it to raw UI through the drop-down in the top-right corner of the section:
 
 1. Add a new header by entering the header key-value pair. Click the **tick**.
-
-2. The new header is now part of your request headers. The header can now be disabled or enabled by using the tick to the left, or completely deleted by using the **Delete** icon to the right.
-
-  ![Added header](../images/composer/composer-headers-after.png)
+1. The new header is now part of your request headers. The header can now be disabled or enabled by using the tick to the left, or completely deleted by using the **Delete** icon to the right.
+  ![Added header](./images/composer-headers-after.png)
 
 Most of the servers using newer versions of TLS will require you to set `Host` and `User-Agent` headers. By default, Fiddler Everywhere automatically generates a `User-Agent` header set with the **Fiddler Everywhere** value and a `Host` header with the respective host value. Note that each HTTP request must include a `Host` header. The `User-Agent` header is not mandatory, yet keep in mind that some requests for securing servers might fail without a valid ' User-Agent'. Fiddler Everywhere allows you to uncheck the auto-generated headers, but you must manually add your own to compose valid HTTP requests. 
 
 >tip The request execution includes only checked headers. Unchecked headers won't be included in the request execution but are saved as part of the composed request (so you can activate them at a later time).
-
 
 ### Cookies
 
@@ -125,11 +117,8 @@ The **Params** section enables you to add query parameters to your request URL a
 You can change it to raw UI through the drop-down in the top-right corner of the section:
 
 1. Add new query parameters by entering the params key-value pair. Click the **tick**.
-
-2. The new query parameters are now added to your API endpoint URL. The params can now be disabled or enabled by using the tick to the left, or completely deleted by using the **Delete** icon to the right.
-
-  ![Added Params](../images/composer/composer-params-after.png)
-
+1. The new query parameters are now added to your API endpoint URL. The params can now be disabled or enabled by using the tick to the left, or completely deleted by using the **Delete** icon to the right.
+  ![Added Params](./images/composer-params-after.png)
 
 ### Body
 
@@ -145,10 +134,8 @@ The **Body** delivers the following specific editors:
 - x-www-form-urlencoded&mdash;&mdash;suitable for inputting key-value pairs formatted as [**application/x-www-form-urlencoded**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
 - JavaScript&mdash;suitable for JavaScript/TypeScript code. Supports the MIME types as described [here](https://mimesniff.spec.whatwg.org/#javascript-mime-type)
 
-
-
 ## Response Inspector
 
 With the **Response Inspector**, you can inspect the received response from the executed request. The inspector provides a set of views to visualize different parts of the request in specific formats. For detailed information on each inspector type, refer to the article about [the **Inspector** types Fiddler Everywhere provides](slug://inspector-types).
 
-  ![Response inspectors](../images/composer/composer-response-inspectors.png)
+  ![Response inspectors](./images/composer-response-inspectors.png)

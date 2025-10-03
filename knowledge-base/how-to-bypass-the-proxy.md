@@ -39,15 +39,11 @@ Lastly, you might want to filter the captured traffic while preserving all captu
 ### Proxy Bypass List
 
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
-
 - In the **Bypass Fiddler for URLS that starts with:** field, add the endpoints that you would like to bypass, separated by a comma:
-
-    _Example for bypassing the Apple endpoints (for system services that are using certificate pinning)_
     ```
     *.apple.com, *.itunes.com, *mzstatic.com
     ```
-    ![Example bypass list](../images//kb//bypass/bypass-endpoints.png)
-
+    ![Example bypass list](./images/bypass-endpoints.png)
 - Click **Save** to persist the change.
 
 ### Adding to Bypass List
@@ -55,19 +51,15 @@ Lastly, you might want to filter the captured traffic while preserving all captu
 You can add a root domain or specific subdomain address to the bypass list on-the-fly while actively capturing.
 
 - Open Fiddler Everywhere and start capturing traffic.
-
 - Select a session that uses the domain/URL you want to bypass.
-
 - With the session selected, open the context menu and choose **Bypass > Add <*.domain.xxx> to Bypass List** or **Bypass > Add <subdomain.domain.xxx> to Bypass List**.
 
-![Add domain or specific URL to the bypass list](../images/kb/bypass/add-to-bypass.png)
+![Add domain or specific URL to the bypass list](./images/add-to-bypass.png)
 
 ### Resetting the Bypass List
 
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
-
 - Delete the endpoints that you no longer want to bypass the Fiddler proxy from the **Bypass Fiddler for URLS that starts with:** field.
-
 - Click **Save** to persist the change.
 
 ## Skipping Decryption through Rules
@@ -79,17 +71,10 @@ Toggling a **Do Not Decrypt** rule on and off will not modify existing connectio
 ### Creating a Rule to Skip Decryption
 
 - Open Fiddler Everywhere and go to the **Rules** tab.
-
 - Use **Add Rule** to open the **Rules Builder**.
-
 - Set the targeted endpoint as a match condition through **Add Condition**.
-
 - Create new action through **Add Action**. Select the **Do Not Decrypt** action.
-
     >important The **Do not decrypt** action is **final**, which means that no further actions will be executed once the action is applied. [Learn more about final and non-final actions here...](slug://fiddler-rules-actions)
-
-    ![Example rule that uses the "Do Not Decrypt" action](../images/kb/bypass/donotdecrypt.png)
-
 - Save and enable the rule when needed.
 
 

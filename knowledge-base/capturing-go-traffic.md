@@ -26,29 +26,25 @@ Fiddler captures different traffic but I cannot capture localhost HTTP traffic g
 
 Fiddler Everywhere respects global variables like `HTTP_PROXY` which are also used by the [HttpProxy](https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config.ProxyFunc) and [useProxy](https://github.com/golang/net/blob/c0dbc17a35534bf2e581d7a942408dc936316da4/http/httpproxy/proxy.go#L172) in the Go language.
 
-However, a known limitation is that the above Go methods won't respect the proxy variables for traffic going through `localhost` or `127.0.0.1`.
-
-```
-... As a special case, if req.URL.Host is "localhost" or a loopback address (with or without a port number), then a nil URL and nil error will be returned.
-```
+However, a known limitation is that the above Go methods won't respect the proxy variables for traffic going through `localhost` or `127.0.0.1` because if `req.URL.Host` is `localhost` or a loopback address (with or without a port number), then a nil URL and nil error will be returned.
 
 To overcome the above limitation, you can explicitly overwrite the `hosts` file in your operating system and provide a custom alias for the localhost traffic.
 
 For example: 
 
 Open the `hosts` file on macOS
-```bash
+```sh
 open ~/etc/hosts
 ```
 
 or open the `hosts` file on Windows
-```bash
+```sh
 start c:/Windows/System32/Drivers/etc/hosts
 ```
 
 Then add an alias like `local` for the localhost address `127.0.0.1`
 
-```bash
+```sh
 127.0.0.1 local
 ```
 

@@ -39,7 +39,7 @@ Both log files are useful to investigate cases where the client is not working p
 
 Fiddler Everywhere version 1.3.0 and later provides a UI option through **Help** > **Open Application Logs Folder** to automatically open the folder that contains the log files.
 
-![Fiddler Everywhere log files](../images/kb/logs/log-files.png)
+![Fiddler Everywhere log files](./images/log-files.png)
 
 ### Accessing the Logs Manually
 

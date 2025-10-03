@@ -1,7 +1,7 @@
 ---
 title: Managing Fiddler Everywhere through PatchMyPc
 description: "Manage the Fiddler Everywhere application installation through Microsoft Patch My PC."
-slug: fe-intune
+slug: fe-patchmypc
 publish: true
 position: 50
 previous_url: /security/managing-fiddler-through-patchmypc

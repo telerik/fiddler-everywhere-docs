@@ -13,7 +13,7 @@ res_type: kb
 |---|---|
 | Product   |  Fiddler Everywhere  |
 | Product Version | 1.0.0 and above  |
-| 3rd-party tool | [.NET](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) |
+| 3rd-party tool | [.Net, .NET Framework, NetCore](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) |
 | Supported OS | macOS, Linux, Windows |
 
 ## Description
@@ -25,15 +25,10 @@ How to capture HTTPS traffic from my .NET application? Do I need a particular fl
 Fiddler Everywhere provides a preconfigured terminal to use as a sandboxed proxy environment. You can start your .NET application through Fiddler's **Terminal** option. This option enables you to capture HTTPS traffic from .NET applications started through the Fiddler's terminal. Using the terminal capturing mode is the recommended approach that lets you quickly capture the .NET application traffic with least configuration.
 
 - Start the Fiddler Everywhere application.
-
 - Ensure that the [Fiddler root CA is installed](slug://trust-certificate).
-
 - Open new [Fiddler's terminal](slug://capture-traffic-get-started#terminal-capturing).
-
 - Start your .NET application through the Fiddler's terminal.
-
-    > Important Note that Fiddler Everywhere allows you to choose **Windows PowerShell** as a default terminal option. A limitation in  **Windows PowerShell** causes localhost traffic to not go through the proxy. Workaround the issue by [using the Fiddler's aliases](slug://how-to-capture-localhost-traffic#using-aliases) or adding a dot to the end of the localhost address (for example, **localhost.:8080**).
-
+    >important Note that Fiddler Everywhere allows you to choose **Windows PowerShell** as a default terminal option. A limitation in  **Windows PowerShell** causes localhost traffic to not go through the proxy. Workaround the issue by [using the Fiddler's aliases](slug://how-to-capture-localhost-traffic#using-aliases) or adding a dot to the end of the localhost address (for example, **localhost.:8080**).
 - Execute your HTTPS requests from within the .NET application.
 
 Fiddler captures the HTTPS sessions and displays them in the Live Traffic grid. 

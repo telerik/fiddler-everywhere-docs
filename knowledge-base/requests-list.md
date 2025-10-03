@@ -19,7 +19,7 @@ The **Requests** list is organized into collections. Each collection is a folder
 
 The **Requests menu** displays the following buttons:
 
-- ![Create New Request](../images/requests/create-new-requests-sign.png)&mdash;Opens a new **Composer** tab.
+- ![Create New Request](./images/create-new-requests-sign.png)&mdash;Opens a new **Composer** tab.
 - **Shared Collections**&mdash;Controls who has access to the shared collections.
 - **Create New Collection**&mdash;Creates a new collection folder.
 

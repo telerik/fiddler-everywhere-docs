@@ -1,7 +1,7 @@
 ---
 title: Repro Playback 
 description: "Playback previously captured HTTPS traffic to reproduce the exact behavior from a specific moment."
-slug: replaying-traffic
+slug: repro-playback
 publish: true
 position: 40
 ---
