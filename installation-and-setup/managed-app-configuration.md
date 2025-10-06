@@ -36,6 +36,7 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | integer | 1 |
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | string | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | string | `<base64-private-key>` |
+| `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | integer | 1 |
 
 >important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints]({%slug first_steps_windows%}#prerequisites). For environments with limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
 
@@ -106,6 +107,7 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | DWORD-32 (hexadecimal) | 1 |
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | String Value | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | String Value | `<base64-private-key>` |
+| `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | DWORD-32 (hexadecimal) | `1` |
 
 ---
 
