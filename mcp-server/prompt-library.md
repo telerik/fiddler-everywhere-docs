@@ -23,15 +23,16 @@ The Fiddler Everywhere MCP server comes with a set of predefined system prompts.
 ```
 
 ```sh
+/mcp.fiddler.is-user-logged-in # A prompt to check if the user is logged in to Fiddler.
+```
+
+```sh
+/mcp.fiddler.get-status # A prompt to get the current status of Fiddler.
+
+```
+
+```sh
 /mcp.fiddler.open-trust-root-certificate-dialog # A prompt to open the Trust Root Certificate system dialog.
-```
-
-```sh
-/mcp.fiddler.clear-sessions # A prompt to clear all currently captured sessions in Fiddler.
-```
-
-```sh
-/mcp.fiddler.get-session-details  # A prompt to get detailed information about a specific session in Fiddler. Asks user for the ID of the session to retrieve details for.
 ```
 
 ```sh
@@ -39,21 +40,9 @@ The Fiddler Everywhere MCP server comes with a set of predefined system prompts.
 ```
 
 ```sh
-/mcp.fiddler.add-reverse-proxy-port # A prompt to add a reverse proxy port in Fiddler.
-```
-
-```sh
-/mcp.fiddler.get-status # A prompt to get the current status of Fiddler. Asks user for the client port to listen on. A number between 1025 and 65535 (required) and for the remote host to forward traffic to (required)
-
-```
-
-```sh
-/mcp.fiddler.disable-reverse-proxy # A prompt to disable the reverse proxy in Fiddler.
-```
-
-```sh
 /mcp.fiddler.start-capture-with-chrome # A prompt to start a new Chrome instance with Fiddler proxy settings applied.
 ```
+
 
 ```sh
 /mcp.fiddler.get-sessions-count # A prompt to get the number of currently captured sessions in Fiddler.
@@ -64,7 +53,15 @@ The Fiddler Everywhere MCP server comes with a set of predefined system prompts.
 ```
 
 ```sh
-/mcp.fiddler.is-user-logged-in # A prompt to check if the user is logged in to Fiddler.
+/mcp.fiddler.get-session-details  # A prompt to get detailed information about a specific session in Fiddler. Asks user for the ID of the session to retrieve details for.
+```
+
+```sh
+/mcp.fiddler.clear-sessions # A prompt to clear all currently captured sessions in Fiddler.
+```
+
+```sh
+/mcp.fiddler.add-reverse-proxy-port # A prompt to add a reverse proxy in Fiddler. Asks user for the client port to listen on. A number between 1025 and 65535 (required) and for the remote host to forward traffic to (required)
 ```
 
 ```sh
@@ -75,6 +72,9 @@ The Fiddler Everywhere MCP server comes with a set of predefined system prompts.
 /mcp.fiddler.enable-reverse-proxy # A prompt to enable the reverse proxy in Fiddler.
 ```
 
+```sh
+/mcp.fiddler.disable-reverse-proxy # A prompt to disable the reverse proxy in Fiddler.
+```
 
 ## Custom Prompts
 
