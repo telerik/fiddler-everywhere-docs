@@ -102,16 +102,16 @@ To use the Fiddler Everywhere MCP server:
 
 The MCP server will provide context from your captured HTTPS traffic to enhance your MCP-assisted development workflow.
 
->tip You can jump start your MCP journey by exploring our [prompt library](slug://fiddler_ai_prompt_library)
+>tip You can jump start your MCP journey by exploring our [prompt library]({%slug fiddler_ai_prompt_library%})
 
 
 ### Supported Capturing Modes
 
 The Fiddler Everywhere MCP server supports the following capturing modes:
 
-- [Browser capturing mode](slug://capture-browser-traffic)
-- [Terminal capturing mode](slug://capture-terminal-traffic)
-- [Reverse proxy](slug://fiddler-reverse-proxy)
+- [Browser capturing mode]({%slug capture-browser-traffic%})
+- [Terminal capturing mode]({%slug capture-terminal-traffic%})
+- [Reverse proxy]({%slug fiddler-reverse-proxy%})
 
 ## MCP Output Sanitization
 
@@ -145,4 +145,4 @@ IT teams managing macOS systems can apply app configuration using their preferre
 |:---------|:------------|:-----------|:--------------|
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | integer | `1` |
 
-For more information on using managed application configurations, refer to the [Managed Application Policies](slug://fe-restrict-policies) article.
+For more information on using managed application configurations, refer to the [Managed Application Policies]({%slug fe-restrict-policies%}) article.
