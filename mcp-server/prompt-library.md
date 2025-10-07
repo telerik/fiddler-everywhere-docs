@@ -29,78 +29,106 @@ All prompts in this library target the [MCP Server]({%slug fiddler-mcp-server%})
 
 This section provides examples of general questions related to Kendo UI for Angular.
 
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
 
-```
+``` Use Browser Capturing Mode
 #fiddler Start capturing HTTP traffic in Fiddler using Chrome
 ```
-
+```ts
 ```
+
+``` Use Terminal Capturing Mode
 #fiddler Start capturing HTTP traffic in Fiddler using a Terminal
 ```
-
+```ts
 ```
+
+``` Set Reverse Proxy
 #fiddler Аdd a reverse proxy, listening on {clientPort} and forwarding traffic to {remoteHost}
 ```
-
+```ts
 ```
+
+``` Unset Reverse Proxy
 #fiddler Disable the reverse proxy
 ```
-
+```ts
 ```
+
+``` Add a localhost filter
 #fiddler apply a filter to capture traffic that contains localhost
 ```
-
+```ts
 ```
+
+``` Add a specific filter
 #fiddler apply a filter to capture traffic that contains {keyword}
 ```
-
+```ts
 ```
+
+``` Add a specific filter
 #fiddler apply a filter to capture traffic that contains {keyword}
 ```
-
+```ts
 ```
+
+``` Show filtered sessions
 #fiddler show filtered sessions
 ```
-
+```ts
 ```
+
+``` Clear All Filters
 #fiddler clear all filters
 ```
-</div>
+```ts
+```
+
 
 ## Common Usage Prompts
 
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
 
-```
+``` Analyze the Captured Traffic
 #fiddler Analyze the captured HTTP traffic
 ```
-
+```ts
 ```
+
+``` Analyze Specific Session
 #fiddler Analyze session with ID 188
 ```
-
+```ts
 ```
+
+``` Check for Sanitization
 #fiddler Does the filtered sessions contain sanitized data
 ```
-
+```ts
 ```
+
+``` Conduct Security Analysis
 #fiddler Analyze the captured sessions for leaked sensitive data
 ```
-
+```ts
 ```
+
+``` Conduct Security Analysis (2)
 #fiddler analyze the captured sessions and suggest security optimizations
 ```
-
+```ts
 ```
+
+``` Conduct Performance Analysis
 #fiddler analyze the captured sessions and suggest performance optimizations
 ```
-
+```ts
 ```
+
+``` Generate Statistical Report
 #fiddler extract statistical data and timings from the traffic related to docs.telerik.com
 ```
-
-</div>
+```ts
+```
 
 ## See Also
 
