@@ -1,7 +1,8 @@
 ---
 title: Fiddler MCP Server
-description: "Configuring and installing the Fiddler Everywhere MCP server."
-slug: mcp-installation
+page_title: Fiddler MCP Server
+description: "Installing and using the Fiddler Everywhere MCP server to interact with AI tools."
+slug: fiddler-mcp-server
 publish: true
 position: 1
 ---
@@ -101,6 +102,17 @@ To use the Fiddler Everywhere MCP server:
 
 The MCP server will provide context from your captured HTTPS traffic to enhance your MCP-assisted development workflow.
 
+>tip You can jump start your MCP journey by exploring our [prompt library](slug://fiddler_ai_prompt_library)
+
+
+### Supported Capturing Modes
+
+The Fiddler Everywhere MCP server supports the following capturing modes:
+
+- [Browser capturing mode](slug://capture-browser-traffic)
+- [Terminal capturing mode](slug://capture-terminal-traffic)
+- [Reverse proxy](slug://fiddler-reverse-proxy)
+
 ## MCP Output Sanitization
 
 The Fiddler Everywhere application provides a sanitization tool that automatically removes sensitive data from the output passed to the MCP server. The data sanitization feature enables users to minimize the risk of disclosing specific information.
@@ -133,4 +145,4 @@ IT teams managing macOS systems can apply app configuration using their preferre
 |:---------|:------------|:-----------|:--------------|
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | integer | `1` |
 
-For more information on using managed application configurations, refer to the [Managed Application Policies]({%slug fe-restrict-policies%}) article.
+For more information on using managed application configurations, refer to the [Managed Application Policies](slug://fe-restrict-policies) article.
