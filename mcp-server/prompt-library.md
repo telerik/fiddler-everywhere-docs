@@ -31,91 +31,74 @@ This section provides examples of general questions related to Kendo UI for Angu
 
 <div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
 
-``` Use Browser Capturing Mode
+```
 #fiddler Start capturing HTTP traffic in Fiddler using Chrome
 ```
 
-
-``` Use Terminal Capturing Mode
+```
 #fiddler Start capturing HTTP traffic in Fiddler using a Terminal
 ```
 
-
-``` Set Reverse Proxy
+```
 #fiddler Аdd a reverse proxy, listening on {clientPort} and forwarding traffic to {remoteHost}
 ```
 
-
-``` Unset Reverse Proxy
+```
 #fiddler Disable the reverse proxy
 ```
 
-
-``` Add a localhost filter
+```
 #fiddler apply a filter to capture traffic that contains localhost
 ```
 
-
-``` Add a specific filter
+```
 #fiddler apply a filter to capture traffic that contains {keyword}
 ```
 
-
-``` Add a specific filter
+```
 #fiddler apply a filter to capture traffic that contains {keyword}
 ```
 
-
-``` Show filtered sessions
+```
 #fiddler show filtered sessions
 ```
 
-
-``` Clear All Filters
+```
 #fiddler clear all filters
 ```
-
-
 </div>
 
 ## Common Usage Prompts
 
 <div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
 
-``` Analyze the Captured Traffic
+```
 #fiddler Analyze the captured HTTP traffic
 ```
 
-
-``` Analyze Specific Session
+```
 #fiddler Analyze session with ID 188
 ```
 
-
-``` Check for Sanitization
+```
 #fiddler Does the filtered sessions contain sanitized data
 ```
 
-
-``` Conduct Security Analysis
+```
 #fiddler Analyze the captured sessions for leaked sensitive data
 ```
 
-
-``` Conduct Security Analysis (2)
+```
 #fiddler analyze the captured sessions and suggest security optimizations
 ```
 
-
-``` Conduct Performance Analysis
+```
 #fiddler analyze the captured sessions and suggest performance optimizations
 ```
 
-
-``` Generate Statistical Report
+```
 #fiddler extract statistical data and timings from the traffic related to docs.telerik.com
 ```
-
 
 </div>
 
