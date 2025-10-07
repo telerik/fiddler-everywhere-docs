@@ -57,8 +57,6 @@ To enable the Fiddler Everywhere MCP server in Visual Studio Code, follow these 
     }
     ```
 4. Start the Fiddler Everywhere MCP server in Visual Studio Code.
-    
-Alternatively, use the **Add Server** option in Visual Studio Code and manually add the Fiddler Everywhere MCP server.
 
 ### Cursor
 
