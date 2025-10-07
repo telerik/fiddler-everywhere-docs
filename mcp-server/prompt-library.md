@@ -25,66 +25,56 @@ All prompts in this library target the [MCP Server]({%slug fiddler-mcp-server%})
 
 >warning Always double-check the code and solutions proposed by any AI-powered tool before applying them to your project.
 
-
 ## General Prompts
 
 This section provides examples of general questions related to Kendo UI for Angular.
 
 <div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
 
-```prompt
+``` Use Browser Capturing Mode
 #fiddler Start capturing HTTP traffic in Fiddler using Chrome
 ```
-```ts
-```
 
-```prompt
+
+``` Use Terminal Capturing Mode
 #fiddler Start capturing HTTP traffic in Fiddler using a Terminal
 ```
-```ts
-```
 
-```prompt
+
+``` Set Reverse Proxy
 #fiddler Аdd a reverse proxy, listening on {clientPort} and forwarding traffic to {remoteHost}
 ```
-```ts
-```
 
-```prompt
+
+``` Unset Reverse Proxy
 #fiddler Disable the reverse proxy
 ```
-```ts
-```
 
-```prompt
+
+``` Add a localhost filter
 #fiddler apply a filter to capture traffic that contains localhost
 ```
-```ts
-```
 
-```prompt
+
+``` Add a specific filter
 #fiddler apply a filter to capture traffic that contains {keyword}
 ```
-```ts
-```
 
-```prompt
+
+``` Add a specific filter
 #fiddler apply a filter to capture traffic that contains {keyword}
 ```
-```ts
-```
 
-```prompt
+
+``` Show filtered sessions
 #fiddler show filtered sessions
 ```
-```ts
-```
 
-```prompt
+
+``` Clear All Filters
 #fiddler clear all filters
 ```
-```ts
-```
+
 
 </div>
 
@@ -92,159 +82,42 @@ This section provides examples of general questions related to Kendo UI for Angu
 
 <div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
 
-```prompt
+``` Analyze the Captured Traffic
 #fiddler Analyze the captured HTTP traffic
 ```
-```ts
-```
 
-```prompt
+
+``` Analyze Specific Session
 #fiddler Analyze session with ID 188
 ```
-```ts
-```
 
-```prompt
+
+``` Check for Sanitization
 #fiddler Does the filtered sessions contain sanitized data
 ```
-```ts
-```
 
-```prompt
+
+``` Conduct Security Analysis
 #fiddler Analyze the captured sessions for leaked sensitive data
 ```
-```ts
-```
 
-```prompt
+
+``` Conduct Security Analysis (2)
 #fiddler analyze the captured sessions and suggest security optimizations
 ```
-```ts
-```
 
-```prompt
+
+``` Conduct Performance Analysis
 #fiddler analyze the captured sessions and suggest performance optimizations
 ```
-```ts
-```
 
-```prompt
+
+``` Generate Statistical Report
 #fiddler extract statistical data and timings from the traffic related to docs.telerik.com
 ```
-```ts
-```
+
 
 </div>
-
-<!-- ## General Prompts
-
-This section provides examples of general questions related to Kendo UI for Angular.
-
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
-
-```prompt Use Browser Capturing Mode
-#fiddler Start capturing HTTP traffic in Fiddler using Chrome
-```
-```ts
-```
-
-```prompt Use Terminal Capturing Mode
-#fiddler Start capturing HTTP traffic in Fiddler using a Terminal
-```
-```ts
-```
-
-```prompt Set Reverse Proxy
-#fiddler Аdd a reverse proxy, listening on {clientPort} and forwarding traffic to {remoteHost}
-```
-```ts
-```
-
-```prompt Unset Reverse Proxy
-#fiddler Disable the reverse proxy
-```
-```ts
-```
-
-```prompt Add a localhost filter
-#fiddler apply a filter to capture traffic that contains localhost
-```
-```ts
-```
-
-```prompt Add a specific filter
-#fiddler apply a filter to capture traffic that contains {keyword}
-```
-```ts
-```
-
-```prompt Add a specific filter
-#fiddler apply a filter to capture traffic that contains {keyword}
-```
-```ts
-```
-
-```prompt Show filtered sessions
-#fiddler show filtered sessions
-```
-```ts
-```
-
-```prompt Clear All Filters
-#fiddler clear all filters
-```
-```ts
-```
-
-</div>
-
-## Common Usage Prompts
-
-<div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr;">
-
-```prompt Analyze the Captured Traffic
-#fiddler Analyze the captured HTTP traffic
-```
-```ts
-```
-
-```prompt Analyze Specific Session
-#fiddler Analyze session with ID 188
-```
-```ts
-```
-
-```prompt Check for Sanitization
-#fiddler Does the filtered sessions contain sanitized data
-```
-```ts
-```
-
-```prompt Conduct Security Analysis
-#fiddler Analyze the captured sessions for leaked sensitive data
-```
-```ts
-```
-
-```prompt Conduct Security Analysis (2)
-#fiddler analyze the captured sessions and suggest security optimizations
-```
-```ts
-```
-
-```prompt Conduct Performance Analysis
-#fiddler analyze the captured sessions and suggest performance optimizations
-```
-```ts
-```
-
-```prompt Generate Statistical Report
-#fiddler extract statistical data and timings from the traffic related to docs.telerik.com
-```
-```ts
-```
-
-</div> -->
 
 ## See Also
 
