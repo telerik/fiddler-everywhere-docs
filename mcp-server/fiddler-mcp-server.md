@@ -1,7 +1,7 @@
 ---
 title: Fiddler MCP Server
 page_title: Fiddler MCP Server
-description: "Installing and using the Fiddler Everywhere MCP server to interact with AI tools."
+description: "Learn how to install, configure, and use the Fiddler Everywhere MCP server to integrate captured HTTPS traffic analysis with AI-powered IDEs and development tools."
 slug: fiddler-mcp-server
 publish: true
 position: 1
