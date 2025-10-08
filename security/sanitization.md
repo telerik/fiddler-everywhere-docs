@@ -25,7 +25,7 @@ The **Sanitization** settings screen provides comprehensive options to control h
 
 Control when sanitization occurs by enabling or disabling sanitization for specific actions:
 
-- **On Save** - Automatically sanitizes session snapshots before any save operation in Fiddler Everywhere. Enable this option to ensure saved sessions never contain sensitive data locally.
+- **On Save** - Automatically sanitizes session snapshots before any save operation in Fiddler Everywhere. Enable this option to ensure saved sessions does not contain sensitive data locally.
 - **On Export** - Automatically sanitizes session snapshots before any export operation in Fiddler Everywhere. Enable this option when sharing exported files with team members or external parties.
 - **On MCP Output** - Automatically sanitizes session snapshots before data is sent to the Fiddler Everywhere MCP server. This option is **enabled by default** to protect sensitive information from being processed by AI models.
 
@@ -49,7 +49,7 @@ Specify which components of the HTTP(S) traffic should be sanitized. Sanitizatio
 
 Enhance the sanitization process by defining custom rules to target specific sensitive data patterns:
 
-- **Additional Headers** - Add custom HTTP header names that should always be sanitized, beyond the default headers. Useful for application-specific authentication headers or proprietary security tokens.
+- **Headers** - Add custom HTTP header names that should always be sanitized, beyond the default headers. Useful for application-specific authentication headers or proprietary security tokens.
 - **Keywords** - Specify keywords or phrases that should be masked wherever they appear in URLs, headers, or bodies. Examples include company names, project codenames, or specific sensitive terms.
 - **Regular Expression Patterns** - Define regex patterns to match and sanitize complex data formats such as:
   - Credit card numbers: `\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b`
@@ -68,6 +68,82 @@ When using data sanitization in Fiddler Everywhere, consider the following best 
 - **Combine with password protection** - Use sanitization in conjunction with [password-protected sessions]({%slug fe-security-highlights%}#saving-traffic) for multiple layers of security.
 - **Document custom rules** - Maintain documentation of custom sanitization rules, especially regex patterns, for team collaboration and compliance audits.
 - **Regular rule review** - Periodically review and update sanitization rules as your application evolves and new sensitive data types are introduced.
+
+
+## Sanitization Policies
+
+Fiddler Everywhere Enterprise provides managed application policies that enable IT administrators to centrally control sanitization settings across their organization. The `DefaultSanitizationSettings` and `DisableSanitizationSettingsUpdate` policies allow administrators to enforce consistent data protection standards and prevent users from modifying sanitization configurations.
+
+### Policy Configuration Keys
+
+The following policies are available for managing sanitization behavior:
+
+- **DefaultSanitizationSettings** - Defines the default sanitization configuration applied when users launch Fiddler Everywhere. This policy allows administrators to pre-configure sanitization options including the mask value, which traffic components to sanitize, when to sanitize, and custom sanitization rules.
+  
+- **DisableSanitizationSettingsUpdate** - When enabled, this policy locks the sanitization settings and prevents end users from modifying the configuration through the Fiddler Everywhere user interface. This ensures compliance with organizational data protection policies.
+
+### Windows Configuration
+
+IT teams managing Windows systems can apply sanitization policies using Group Policy, registry scripts, or endpoint management tools. Set the following registry values under:
+
+```
+HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
+```
+
+| Key Name | Value Type | Description | Example Value |
+|:---------|:-----------|:------------|:--------------|
+| `DefaultSanitizationSettings` | REG_SZ (string) | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. | See JSON structure below |
+| `DisableSanitizationSettingsUpdate` | REG_DWORD | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. | `0x00000001` (1) |
+
+#### DefaultSanitizationSettings JSON Structure
+
+The `DefaultSanitizationSettings` value accepts a JSON object with the following optional properties:
+
+```json
+{
+  "mask": "***SANITIZED***",
+  "sanitizeUrl": true,
+  "sanitizeHeaders": true,
+  "sanitizeCookies": true,
+  "sanitizeRequestBody": true,
+  "sanitizeResponseBody": true,
+  "stripRequestBody": false,
+  "stripResponseBody": false,
+  "sanitizeOnSave": false,
+  "sanitizeOnExport": false,
+  "sanitizeMcpOutput": true,
+  "additionalHeaders": ["X-Custom-Auth", "X-Internal-Token"],
+  "additionalKeywords": ["confidential", "proprietary"],
+  "additionalRegexes": ["\\b\\d{3}-\\d{2}-\\d{4}\\b"]
+}
+```
+
+**Property Descriptions:**
+
+- `mask` - String value used to replace sanitized data (default: `"***SANITIZED***"`)
+- `sanitizeUrl`, `sanitizeHeaders`, `sanitizeCookies`, `sanitizeRequestBody`, `sanitizeResponseBody` - Boolean values controlling which traffic components are sanitized
+- `stripRequestBody`, `stripResponseBody` - Boolean values controlling whether to completely remove body content
+- `sanitizeOnSave`, `sanitizeOnExport`, `sanitizeMcpOutput` - Boolean values controlling when sanitization occurs
+- `additionalHeaders` - Array of custom header names to sanitize (can be `null` or omitted)
+- `additionalKeywords` - Array of keywords to mask throughout traffic (can be `null` or omitted)
+- `additionalRegexes` - Array of regular expression patterns for advanced sanitization (can be `null` or omitted)
+
+>tip When setting registry values programmatically, ensure the JSON string is properly escaped. For manual registry editing, paste the JSON as a single-line string value.
+
+### macOS Configuration
+
+IT teams managing macOS systems can apply sanitization policies using Mobile Device Management (MDM) solutions such as Jamf Pro, Microsoft Intune, or Apple's Profile Manager. Configure the following managed preferences:
+
+| Key Name | Value Type | Description | Example Value |
+|:---------|:-----------|:------------|:--------------|
+| `DefaultSanitizationSettings` | String | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. | See JSON structure above |
+| `DisableSanitizationSettingsUpdate` | Integer | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. | `1` |
+
+The JSON structure and property descriptions for `DefaultSanitizationSettings` are identical to the Windows configuration described above.
+
+>important Managed preferences on macOS require proper MDM enrollment and configuration profile deployment. Test policy application in a non-production environment before enterprise-wide rollout.
+
+For comprehensive information on deploying managed application configurations, refer to the [Managed Application Policies]({%slug fe-restrict-policies%}) article.
 
 ## See Also
 
