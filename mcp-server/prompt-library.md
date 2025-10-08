@@ -263,10 +263,6 @@ Create and manage rules to modify traffic behavior:
 #fiddler Create a rule to add a custom header "X-Debug-Mode: true" to all requests to {domain}
 ```
 
-```
-#fiddler Create a rule to simulate a slow network by adding a 2-second delay to all responses
-```
-
 ### Comprehensive Reporting
 
 Generate detailed reports combining multiple analysis aspects:
@@ -346,8 +342,3 @@ When crafting your own custom prompts, consider these best practices:
 * [Fiddler Everywhere MCP Server Overview]({%slug fiddler-mcp-server%})
 * [Security Highlights]({%slug fe-security-highlights%})
 * [Data Sanitization]({%slug fe-sanitization%})
-```
-
-## See Also
-
-* [Fiddler Everywhere MCP Server Overview]({%slug fiddler-mcp-server%})

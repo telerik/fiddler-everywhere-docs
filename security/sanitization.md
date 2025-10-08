@@ -11,7 +11,7 @@ The Fiddler Everywhere application provides data sanitization capabilities to au
 
 Data sanitization is configurable through the **Settings > Sanitization** section. By default, the sanitization process is enabled only for MCP output.
 
->important Fiddler Everywhere attempts to sanitize HTTP traffic, but complete removal of sensitive data is not guaranteed. Unstructured, encrypted, compressed, obfuscated, or binary data may bypass the sanitization process. Each user is responsible for verifying the sanitization results and preventing unintended disclosure of sensitive information.
+>important Fiddler Everywhere attempts to sanitize HTTP(S) traffic, but complete removal of sensitive data is not guaranteed. Unstructured, encrypted, compressed, obfuscated, or binary data may bypass the sanitization process. Each user is responsible for verifying the sanitization results and preventing unintended disclosure of sensitive information.
 
 ## Configuring Sanitization
 
@@ -33,7 +33,7 @@ Control when sanitization occurs by enabling or disabling sanitization for speci
 
 ### Parts of the Session to Sanitize
 
-Specify which components of the HTTP traffic should be sanitized. Sanitization applies both default rules and custom rules configured in the **Additional Settings** section:
+Specify which components of the HTTP(S) traffic should be sanitized. Sanitization applies both default rules and custom rules configured in the **Additional Settings** section:
 
 - **Sanitize URL** - Masks sensitive parameters and path segments in request URLs (e.g., API keys, tokens, user IDs).
 - **Sanitize Headers** - Masks sensitive HTTP headers such as `Authorization`, `Cookie`, `X-API-Key`, and other custom headers containing credentials or tokens.
