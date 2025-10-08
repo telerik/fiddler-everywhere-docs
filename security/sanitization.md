@@ -17,10 +17,6 @@ Data sanitization is configurable through the **Settings > Sanitization** sectio
 
 The **Sanitization** settings screen provides comprehensive options to control how and when your captured traffic data is sanitized.
 
-## Configuring Sanitization
-
-The **Sanitization** settings screen provides comprehensive options to control how and when your captured traffic data is sanitized.
-
 ### Mask Value
 
 - **Mask** - Specifies the string value used to replace sanitized data. The default mask is typically `***SANITIZED***`, but you can customize it to any value that suits your needs.
