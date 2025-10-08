@@ -125,11 +125,6 @@ This section provides examples of general questions related to Kendo UI for Angu
 
 
 ```
-#fiddler apply a filter to capture traffic that contains {keyword}
-```
-
-
-```
 #fiddler show filtered sessions
 ```
 
