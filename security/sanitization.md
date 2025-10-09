@@ -100,21 +100,21 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 The `DefaultSanitizationSettings` value accepts a JSON object with the following optional properties:
 
 ```json
-{
-  "mask": "***SANITIZED***",
-  "sanitizeUrl": true,
-  "sanitizeHeaders": true,
-  "sanitizeCookies": true,
-  "sanitizeRequestBody": true,
-  "sanitizeResponseBody": true,
-  "stripRequestBody": false,
-  "stripResponseBody": false,
-  "sanitizeOnSave": false,
-  "sanitizeOnExport": false,
-  "sanitizeMcpOutput": true,
-  "additionalHeaders": ["X-Custom-Auth", "X-Internal-Token"],
-  "additionalKeywords": ["confidential", "proprietary"],
-  "additionalRegexes": ["\\b\\d{3}-\\d{2}-\\d{4}\\b"]
+{ 
+    "mask": "***SANITIZED***",
+    "sanitizeUrl": true,
+    "sanitizeHeaders": true,
+    "sanitizeCookies": true,
+    "sanitizeRequestBody": true,
+    "sanitizeResponseBody": true,
+    "stripRequestBody": false,
+    "stripResponseBody": false,
+    "sanitizeOnSave": false,
+    "sanitizeOnExport": false,
+    "sanitizeMcpOutput": true,
+    "additionalHeaders": "X-Custom-Auth, X-Internal-Token, X-My-Test-Header",
+    "additionalKeywords": "confidential, proprietary, test",
+    "additionalRegexes": "\\b\\d{3}-\\d{2}-\\d{4}\\b"
 }
 ```
 
