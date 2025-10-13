@@ -21,4 +21,4 @@ Note that sessions that are already explicitly hidden by an active filter won't 
 
 >tip Suppose you use Fiddler Everywhere for a prolonged period. In that case, it will get overloaded with sessions, making finding useful information almost impossible and possibly causing performance issues if your OS runs out of RAM. With the **Sessions List Length**, you can define a limit of sessions to be kept, so once it is reached, the oldest sessions in the list are deleted. This way, you can use Fiddler Everywhere all day long without worrying about how they'll find the sessions they need when they get back to it later.
 
-![The default "Live Traffic" settings](../../images/settings/settings-live-traffic.png)
+![The default "Live Traffic" settings](./images/settings-live-traffic.png)

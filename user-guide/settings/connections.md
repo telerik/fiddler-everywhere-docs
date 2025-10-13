@@ -39,7 +39,7 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
     >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they won't trust third-party certificates like the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) can manifest side effects or not work at all.
 
-![default Connections settings](../../images/settings/settings-connections.png)
+![default Connections settings](./images/settings-connections.png)
 
 ### Streaming Mode
 
@@ -47,6 +47,6 @@ By default, Fiddler Everywhere uses the buffering mode, which means that the res
 
 The streaming mode is helpful for low-level network timing scenarios&mdash;for example, by design, some browsers will parse partially downloaded HTML, which will start the download of external resources in parallel before the remote server has finished delivering the content. The streaming mode is also helpful if a site offers audio or video streams, as Fiddler Everywhere cannot buffer such constant streams.
 
-![Buffering mode vs. Streaming Mode](../../images/livetraffic/websessions/websessions-toolbar-streaming-mode.png)
+![Buffering mode vs. Streaming Mode](./images/websessions-toolbar-streaming-mode.png)
 
 To toggle between the buffering and the streaming mode, click the **Stream** button.

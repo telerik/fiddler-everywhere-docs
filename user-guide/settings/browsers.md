@@ -23,7 +23,7 @@ The **Browser Data** sub-menu provides an option for choosing whether the [indep
 
 The following figure displays the default settings of the **Browsers** menu.
 
-![Changing the path to the Chromium browsers](../../images/settings/settings-browsers.png)
+![Changing the path to the Chromium browsers](./images/settings-browsers.png)
 
 * [Learn more about the Fiddler's browser instance here...](slug://capture-browser-traffic)
 * [Learn more about other capturing modes in Fiddler here...](slug://capture-traffic-get-started)

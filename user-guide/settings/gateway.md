@@ -38,4 +38,4 @@ By default, Fiddler Everywhere "chains" to the default proxy of the system. The 
 
 The following figure displays an example for a proxy configuration.
 
-![Example manual proxy configuration](../../images/settings/settings-gateway.png)
+![Example manual proxy configuration](./images/settings-gateway.png)

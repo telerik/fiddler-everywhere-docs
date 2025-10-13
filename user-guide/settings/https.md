@@ -38,13 +38,13 @@ To capture and decrypt HTTPS traffic, you must install and trust the Fiddler roo
 
 The following figure displays the default settings of the **HTTPS** menu:
 
-![Default HTTPS settings](../../images/settings/settings-https.png)
+![Default HTTPS settings](./images/settings-https.png)
 
 ## Inline Notifications
 
 If the Fiddler root CA is not yet trusted, an inline notification will warn you that [system HTTPS capture](slug://capture-traffic-get-started#system-capturing) is disabled. This notification hides if you use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) and reappears when you close the independent browser instance.
 
-![Inline notification](../../images/get-started/notification.png)
+![Inline notification](./images/notification.png)
 
 ## Troubleshooting & Best Practices
 

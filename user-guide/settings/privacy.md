@@ -16,4 +16,4 @@ The **Privacy** sub-menu provides options to stop receiving emails from Progress
 
 The following figure displays the **Privacy** menu settings.
 
-![Privacy settings](../../images/settings/settings-privacy.png)
+![Privacy settings](./images/settings-privacy.png)
