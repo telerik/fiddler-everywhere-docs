@@ -1,5 +1,5 @@
 top-navigation-product: fiddler-everywhere
-path-prefix: /fiddler-everywhere/documentation
+path-prefix: /fiddler/fiddler-everywhere/documentation
 default-title-prefix: Fiddler Everywhere
 
 primary-color: "#27c106" # Fiddler Everywhere green
