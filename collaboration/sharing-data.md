@@ -88,7 +88,6 @@ Add a custom comment to one or more captured sessions to provide additional cont
 
 1. Select a session from the sessions grid or load a saved snapshot from the save **Snapshots** tree.
 1. Add a comment by using the **Comment** option from the context menu or press the **M** key while selecting the desired sessions. As a result, the newly added comment will appear in the **Comments** column.
-    ![Add a comment for selected sessions](./images/add-session-comment.png)
 
 ### Notes
 
@@ -97,8 +96,6 @@ Add additional context in the form of a descriptive note while sharing one or mo
 1. Use the **Share** option.
 1. In the first dialog window, provide a name for the shared sessions, set password protection, and choose the local destination folder.
 1. In the second dialog window, provide the additional information in the **Add a note** field.
-    ![Add a note in share prompt window](./images/websessions-toolbar-share-shareprompt.png)
-
 
 ## Receiving Shared Resources
 
