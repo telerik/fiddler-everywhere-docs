@@ -33,7 +33,7 @@ Select the appropriate capturing mode based on your specific debugging needs:
 - **Explicit/Remote**: Essential for testing mobile apps, IoT devices, or distributed systems
 - **Reverse Proxy**: Best for capturing tarffic sent to a server
 
-![When and why to use a specific capturing mode](../images/capturing-modes/capturing-modes-diagram.png)
+![When and why to use a specific capturing mode](./images/capturing-modes-diagram.png)
 
 ## Feature Comparison Table
 

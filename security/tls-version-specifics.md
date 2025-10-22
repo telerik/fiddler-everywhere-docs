@@ -17,7 +17,7 @@ The above behavior has a significant consequence that can "fix" your application
 
 As a result, a connection that will usually fail due to an unsupported version of TLS will flawlessly work when Fiddler stands in the middle as a forward proxy. Because the behavior differs from the real-life result, Fiddler will notify you in similar cases through the **TLS Version** column and the TLS chips in the HTTP Request and Response inspectors.
 
-![Fiddler shows the TLS change in the inspectors](../images/security/tls-versions_13_11_inspectors.png)
+![Fiddler shows the TLS change in the inspectors](./images/tls-versions_13_11_inspectors.png)
 
 >tip TLS is the cryptographic protocol that provides end-to-end security in HTTPS. It evolved from SSL 3.0, and currently, [TLS 1.2](https://www.ietf.org/rfc/rfc5246.txt) and [TLS 1.3](https://www.rfc-editor.org/rfc/rfc8446) are the most commonly used TLS versions. In contrast, versions like SSL 2.0, SSL 3.0, TLS 1.0, and TLS 1.1 are considered insecure and can be disabled on an operating system or application (such as browsers) level. Fiddler Everywhere supports [all listed versions](slug://how-to-view-web-session-summary#tls-version), including TLS 1.3, introduced with version 4.2.0.
 

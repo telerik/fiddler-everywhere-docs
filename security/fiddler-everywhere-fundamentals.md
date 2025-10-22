@@ -32,7 +32,7 @@ To capture secure traffic over HTTPS with Fiddler Everywhere, you need to explic
 
 The following image demonstrates how Fiddler Everywhere acts as if the client is speaking to the server, and the other way around&mdash;it works as if the server is communicating with the client applications.
 
-![Fiddler Everywhere as HTTPS proxy](../images/security/fe-tls-proxy.png)
+![Fiddler Everywhere as HTTPS proxy](./images/fe-tls-proxy.png)
 
 ## Additional Resources
 
