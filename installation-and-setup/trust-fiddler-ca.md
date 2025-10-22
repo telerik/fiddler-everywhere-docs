@@ -41,7 +41,7 @@ Use the manual approach if the automated wizard fails or you need more control o
 2. Click **Trust Fiddler CA in the User Store**.
    >tip To install the Fiddler CA certificate in the system keychain, you must use the export option and then proceed with manually installing it on macOS. The Fiddler Everywhere application automatically recognizes the installed CA from the login and system keychains.
 3. Enter your macOS admin credentials when prompted.
-   ![Enter Keychain credentials to trust the root certificate](../images/settings/settings-HTTPS-mac-keychain.png)
+   ![Enter Keychain credentials to trust the root certificate](./images/settings-https-mac-keychain.png)
 4. Go to **Settings** > **HTTPS** once more and enable **Capture HTTPS traffic**
 5. Click **Save**.
 6. On the main screen, enable **Live Traffic** to start capturing system HTTP/HTTPS traffic.
