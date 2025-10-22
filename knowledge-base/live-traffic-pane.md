@@ -6,6 +6,14 @@ res_type: kb
 previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar, /user-guide/live-traffic/live-traffic, /user-guide/live-traffic
 ---
 
+## Environment
+
+| Property | Value |
+|----------|-------|
+| Product  | Fiddler Everywhere |
+
+## Description
+
 The **Traffic pane** provides essential features of Fiddler Everywhere including the captured traffic visualized within the **Live Traffic grid**.
 
 Live traffic summarizes each captured session that shows in the **Live Traffic** grid. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**](slug://inspector-types) types, and the corresponding [**Rules**](slug://modify-traffic-get-started) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.

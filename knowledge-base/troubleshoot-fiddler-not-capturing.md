@@ -7,7 +7,15 @@ publish: true
 res_type: kb
 ---
 
-# Troubleshooting Fiddler Everywhere Not Capturing Traffic
+## Environment
+
+|   |   |
+|---|---|
+| Product   |  Fiddler Everywhere  |
+| Product Version | 1.0.0 and above  |
+| Operating System | macOS |
+
+## Description
 
 If Fiddler Everywhere is running but not capturing HTTP(S) traffic, even when:
 
@@ -20,8 +28,6 @@ And you see the message:
 _"It looks like you are unable to capture traffic. You might have a configuration issue - check our troubleshooting page for more information."_,
 
 This article provides troubleshooting steps and solutions to help you identify and resolve common issues that may prevent Fiddler Everywhere from capturing traffic.
-
----
 
 ## Common Causes and Solutions
 
@@ -53,8 +59,6 @@ If Fiddler cannot set/unset the proxy, it likely lacks the necessary rights.
 **Solution:**  
 Reinstall Fiddler Everywhere with administrative rights or consult your system administrator.
 
----
-
 ## Incompatibility with VPN Tools
 
 Some VPNs modify network settings, which can interfere with Fiddler's proxy.
@@ -73,8 +77,6 @@ If Fiddler only works when the VPN is off, the VPN is likely causing the issue.
 
 - **Use Alternative Capturing Modes:**  
   Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-terminal-capturing) instead of system capturing.
-
----
 
 ## Incompatibility with Security Tools
 
@@ -119,7 +121,6 @@ Complex proxy setups (e.g., PAC scripts) may prevent Fiddler from chaining to th
 - **Use Alternative Capturing Modes:**  
   Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-terminal-capturing).
 
----
 
 ## Incompatibility with Third-Party Proxy Tools
 
@@ -142,8 +143,6 @@ If Fiddler stops capturing, the third-party tool is likely overwriting the proxy
 - **Use Alternative Capturing Modes:**  
   Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-terminal-capturing).
 
----
-
 ## Limited Internet Connectivity
 
 Fiddler Everywhere requires access to certain endpoints for authentication and cloud features:
@@ -161,8 +160,6 @@ If these endpoints are blocked, you may see login errors.
 - Use a network that allows access to these endpoints.
 - [Enterprise only] Use Fiddler's offline mode (Windows only; contact support for details).
 
----
-
 ## Incompatibility with Graphics Drivers
 
 Fiddler may fail to start or display a white screen due to incompatible graphics drivers.
@@ -173,8 +170,6 @@ Fiddler may fail to start or display a white screen due to incompatible graphics
 - Disable hardware acceleration by adding `"disableHardwareAcceleration": true` to `%userprofile%\.fiddler\Settings\electron-settings.json`.  
   [Learn more...](slug://troubleshoot-video-incompatibility)
 
----
-
 ## Receiving AutoProxy Detection Failed Error
 
 If your system uses the `ProxySettingsPerUser` group policy set to `0`, Fiddler needs admin rights to set the proxy for all users.
@@ -184,8 +179,6 @@ If your system uses the `ProxySettingsPerUser` group policy set to `0`, Fiddler 
 - Run Fiddler Everywhere as administrator.
 - Change the registry entry value to `1` or remove `ProxySettingsPerUser`.  
   [Learn more...](slug://resolve-proxysettingsperuser-policy)
-
----
 
 ## Receiving ERR_CONNECTION_RESET Error
 
@@ -205,8 +198,6 @@ If the issue persists:
 
 >tip This error may also appear in [browser capturing mode](slug://capture-browser-traffic). In that case, manually remove all Fiddler CA certificates and reinstall.
 
----
-
 ## Other Scenarios
 
 If you still cannot resolve your issue:
@@ -217,13 +208,9 @@ If you still cannot resolve your issue:
   - Technical details (OS, security tools, VPNs, admin limitations, etc.).
   - [Fiddler Everywhere log files](slug://fiddler-log-files).
 
----
-
 ### Testing macOS Network Access
 
 macOS-specific configurations may prevent Fiddler from detecting the active network adapter. See [this KB article](slug://fiddler-test-network-access-macos) for troubleshooting.
-
----
 
 ## See Also
 

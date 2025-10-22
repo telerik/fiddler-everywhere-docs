@@ -6,6 +6,7 @@ slug: capture-from-mobile-firefox
 publish: true
 res_type: kb
 ---
+
 ## Environment
 
 |   |   |

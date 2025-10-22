@@ -51,7 +51,7 @@ A DAT file is a generic data file created by a specific application. It may cont
 
 1. Open your favorite text editor.
 2. Enter the custom response content. For example:
-    ```
+    ```txt
     HTTP/1.1 403 Access Denied
     FiddlerTemplate: True
     Date: Fri, 25 Jan 2013 16:49:29 GMT

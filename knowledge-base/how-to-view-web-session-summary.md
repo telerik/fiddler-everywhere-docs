@@ -119,7 +119,7 @@ The `Cache-Control` header contains instructions for caching (for both requests 
 
 The following example demonstrates a standard `Cache-Control` header.
 
-```
+```txt
 Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 ```
 
@@ -127,7 +127,7 @@ The `Expires` header contains the date/time after which the response is consider
 
 The following example demonstrates a standard `Expires` header.
 
-```
+```txt
 Expires: Fri, 20 Apr 2020 19:00:00 GMT
 ```
 

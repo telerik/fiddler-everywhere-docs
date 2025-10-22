@@ -5,7 +5,6 @@ type: how-to
 slug: fiddler-python-traffic
 publish: true
 res_type: kb
-
 ---
 
 ## Environment
