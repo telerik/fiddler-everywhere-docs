@@ -19,7 +19,7 @@ To trigger a one-time replay for selected sessions, follow these steps:
 
 As a result, the selected sessions will be immediately replayed and displayed as new entries in the Fiddler's traffic grid.
 
-![One-time replay for sessions](./images//replay-simple.png)
+![One-time replay for sessions](./images/replay-simple.png)
 
 ## Advanced Replay
 
@@ -38,6 +38,6 @@ The above opens the **Advanced Replay** configuration prompt window, allowing yo
     * **Sequential**: each request in the series of repeats will start after the previous one has finished. 
     * **Parallel**: all requests will start simultaneously in the repeats.
 
-![Advanced Replay configuration](./images//replay-advanced.png)
+![Advanced Replay configuration](./images/replay-advanced.png)
 
 All replay options are available for live traffic and traffic loaded from saved snapshots (for example, saved session's snapshots loaded from the **Snapshots** list or from imported SAZ files).

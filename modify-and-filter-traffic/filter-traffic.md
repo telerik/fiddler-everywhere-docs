@@ -22,7 +22,7 @@ Modern applications often generate hundreds or thousands of requests, polluting 
 
 The **Filters** option enables you to apply complex filtering solutions, such as creating multiple filtering conditions, combining them with logical operations, saving filters for later reuse, and more. An active [column filter](#column-filters) automatically adds as a condition in your active filter (or in the **Default** filter if no saved filters are active).
 
-![Filters toolbar option](./images//traffic-filters.png)
+![Filters toolbar option](./images/traffic-filters.png)
 
 To open the **Filters** dialog window.
 

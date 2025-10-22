@@ -32,7 +32,7 @@ Using the ** Live Traffic ** grid alongside the ** Rules ** tab, you can quickly
 
 The newly shown page is not the original, but the mocked one was created from the Fiddler rules. 
 
-![Mocked endpoints](./images//mock-traffic-in-batch-003.png)
+![Mocked endpoints](./images/mock-traffic-in-batch-003.png)
 
 [Learn more about mocking traffic in Fiddler Everywhere here...](slug://mock-traffic-get-started)
 [Learn more about replaying traffic in Fiddler Everywhere here...](slug://replaying-traffic)

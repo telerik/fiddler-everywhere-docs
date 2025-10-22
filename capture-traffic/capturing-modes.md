@@ -84,7 +84,7 @@ System capturing is the most comprehensive mode, intercepting all HTTP, HTTPS, W
 - Testing desktop applications
 - Capturing traffic from multiple applications simultaneously
 
-![Use the "System Proxy" switch to toggle on and off the system capturing mode](./images//get-started-toggle.png)
+![Use the "System Proxy" switch to toggle on and off the system capturing mode](./images/get-started-toggle.png)
 
 **Setup Steps:**
 1. Start Fiddler Everywhere
