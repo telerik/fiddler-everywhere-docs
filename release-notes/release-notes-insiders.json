@@ -1,4 +1,36 @@
 [
+  {
+    "version": "7.4.0-insiders",
+    "title": "Fiddler Everywhere v7.4.0",
+    "date": "Oct 23, 2025",
+    "items": [
+      {
+        "type": "New",
+        "entries": [
+          {
+            "title": "Added Fiddler Everywhere MCP server, enabling users to leverage Fiddler’s capabilities inside their AI-powered IDEs."
+          },
+          {
+            "title": "Added a data sanitization tool that lets users remove sensitive information from traffic before saving, exporting or sharing with the MCP server."
+          },
+          {
+            "title": "Added managed application configuration allowing administrators to control MCP server access."
+          },
+          {
+            "title": "Added a Save button to the AutoSave dialog for easier state changes."
+          }
+        ]
+      },
+      {
+        "type": "Fixed",
+        "entries": [
+          {
+            "title": "Open Autosave Dialog shortcut can open the dialog multiple times"
+          }
+        ]
+      }
+    ]
+  },
     {
         "version": "7.3.0-insiders",
         "title": "Fiddler Everywhere v7.3.0",
