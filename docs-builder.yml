@@ -24,6 +24,8 @@ cta-intro: '@ProductLink is a cross-platform web debugging proxy for macOS, Linu
 
 img-max-width: 100%
 
+center-images: false
+
 meta:
     '*':
         hideCta: true #consult if we want to hide the CTA on all pages (currently incorrectly sjhowing 30-days trial for Fiddler Everywhere)
