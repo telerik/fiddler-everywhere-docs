@@ -8,7 +8,7 @@
         "type": "New",
         "entries": [
           {
-            "title": "Added Fiddler Everywhere MCP server, enabling users to leverage Fiddler’s capabilities for advanced debugging inside their AI-powered IDEs."
+            "title": "Added Fiddler Everywhere MCP server, enabling users to leverage Fiddler’s capabilities inside their AI-powered IDEs."
           },
           {
             "title": "Added a data sanitization tool that lets users remove sensitive information from traffic before saving, exporting or sharing with the MCP server."
