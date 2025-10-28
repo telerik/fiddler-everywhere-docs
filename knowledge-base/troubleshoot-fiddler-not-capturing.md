@@ -42,8 +42,6 @@ Below are the most frequent reasons Fiddler Everywhere may not act as a system p
 - [Graphics driver incompatibility (white screen or failed startup)](#incompatibility-with-graphics-drivers).
 - [Receiving "ERR_CONNECTION_RESET" error](#receiving-err_connection_reset-error).
 
----
-
 ## Lack of Administrative Rights
 
 Fiddler Everywhere requires administrative rights to set and unset the operating system proxy settings.
@@ -76,7 +74,7 @@ If Fiddler only works when the VPN is off, the VPN is likely causing the issue.
   Add your VPN server addresses to **Settings > Connections > Bypass Fiddler for URLs that start with** and save.
 
 - **Use Alternative Capturing Modes:**  
-  Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-terminal-capturing) instead of system capturing.
+  Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) instead of system capturing.
 
 ## Incompatibility with Security Tools
 
@@ -100,9 +98,7 @@ Security tools or policies may block Fiddler's proxy configuration.
   - Ensure system requirements are met.
 
 - **Use Alternative Capturing Modes:**  
-  Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-terminal-capturing).
-
----
+  Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing).
 
 ## Incompatibility with Other Preset System Proxies
 
@@ -119,7 +115,7 @@ Complex proxy setups (e.g., PAC scripts) may prevent Fiddler from chaining to th
 - Consult your network administrator.
 
 - **Use Alternative Capturing Modes:**  
-  Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-terminal-capturing).
+  Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing).
 
 
 ## Incompatibility with Third-Party Proxy Tools
@@ -141,13 +137,13 @@ If Fiddler stops capturing, the third-party tool is likely overwriting the proxy
 - Configure the third-party tool to chain to Fiddler's proxy (`127.0.0.1:8866`).
 - Check the tool's documentation for chaining options.
 - **Use Alternative Capturing Modes:**  
-  Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing-terminal-capturing).
+  Try [browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing).
 
 ## Limited Internet Connectivity
 
 Fiddler Everywhere requires access to certain endpoints for authentication and cloud features:
 
-```curl
+```txt
 https://*.telerik.com/
 https://*.getfiddler.com/
 https://fiddler-backend-production.s3-accelerate.amazonaws.com

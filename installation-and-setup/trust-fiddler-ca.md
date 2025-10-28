@@ -77,8 +77,14 @@ If automatic installation fails (due to security restrictions, permissions, or c
 Fiddler CA can be exported in multiple formats for use in other applications:
 - [Firefox on Linux](slug://how-to-install-fiddler-root-certificate-in-firefox-on-linux)
 - [Electron-based apps](slug://ubuntu-ca-electron)
-- [Python](slug://fiddler-python-traffic#setting-fiddler-proxy-and-ca-through-environment-variable)
+- [Python](slug://fiddler-python-traffic)
 - [AWS](slug://how-to-capture-aws-traffic)
+
+## Using Custom CA Certificates
+
+The Fiddler Everywhere application can use a custom CA certificate through its [managed app configuration](slug://fe-restrict-policies) options.
+
+[Learn more on configuring Fiddler Everywhere alongside custom CA certificates here...](slug://using-custom-certs)
 
 ## Best Practices & Troubleshooting
 
@@ -88,5 +94,7 @@ Fiddler CA can be exported in multiple formats for use in other applications:
 - If HTTPS capture does not work, verify the CA is trusted and "Capture HTTPS traffic" is enabled.
 - For certificate errors on specific sites, add the domain to the ignore list (for development only).
 - On Linux, always follow the manual export and trust instructions for your distribution.
-- Use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) if you lack admin rights or only need browser traffic.
+- Use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) if you lack admin rights or only need browser traffic.
+
+
 

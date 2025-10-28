@@ -36,4 +36,4 @@ If you are not a license holder or a trial user, you can use the [available supp
 
 ## Suggested Links
 
-* [Trial Version and Commercial License](slug://introduction#trial-version-and-commercial-license)
+* [Trial Version and Commercial License](slug://introduction#trial-version)

@@ -79,7 +79,7 @@ After successful login into Fiddler Everywhere, you will see your personal and l
 You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import *& export, mock and modify HTTPS traffic.
 
 1. Capture HTTPS traffic through the preferred [capturing mode](slug://capture-traffic-get-started).
-  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)](slug://trust-certificate). Alternatively, you can explicitly [install the Fiddler CA certificate in a third-party certificate store](slug://trust-certificate#install-the-fiddlers-certificate-authority-in-third-party-certificate-stores) (for example, [through intalling the CA in Firefox](slug://how-to-install-fiddler-root-certificate-in-firefox-on-linux)) and capture traffic only from that application.
+  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)](slug://trust-certificate). Alternatively, you can explicitly [install the Fiddler CA certificate in a third-party certificate store](slug://trust-certificate) (for example, [through intalling the CA in Firefox](slug://how-to-install-fiddler-root-certificate-in-firefox-on-linux)) and capture traffic only from that application.
 1. [Inspect the captured data](slug://inspecting-traffic-get-started).
 1. [Save](slug://fiddler-saving), [share](slug://fiddler-sharing). or [export](slug://fiddler-export-and-import) the captured HTTPS traffic.
 1. [Modify a session through the **Composer**](slug://composer-get-started#edit-captured-api-request)

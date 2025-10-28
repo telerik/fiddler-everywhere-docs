@@ -96,8 +96,8 @@ The **Network Capture Settings (BETA)** screen offers a **Basic** view for simpl
 
 In the advanced view, you can manually control what traffic to capture using these options:
 
-- **IP Address**: Set a specific IP address or the starting address of an IP range (use [CIDR notation](#cidr-notation-for-setting-ip-addresses) for subnets).
-- **Subnet Mask**: Define the subnet mask, which determines the range of IP addresses. Accepts [CIDR notation](#cidr-notation-for-setting-ip-addresses).
+- **IP Address**: Set a specific IP address or the starting address of an IP range (use [CIDR notation](#cidr-notation-for-setting-network-addresses) for subnets).
+- **Subnet Mask**: Define the subnet mask, which determines the range of IP addresses. Accepts [CIDR notation](#cidr-notation-for-setting-network-addresses).
 - **Port**: Set the TCP/IP port. Most applications use port 80 (HTTP) and 443 (HTTPS) by default, but custom ports are common for staging, testing, or local development.
 - **Filter by PID or process name**: Specify one or more process IDs (PIDs) or process names, separated by spaces. For multi-word process names, use quotes (e.g., "Google Chrome Helper"). On macOS, use the Activity Monitor to find PIDs or process names.
 

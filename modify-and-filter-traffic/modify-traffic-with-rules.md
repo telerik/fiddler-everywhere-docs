@@ -63,7 +63,7 @@ To modify the captured session through the **Rules**:
     ![Automatically loaded session in Rules builder](./images/add-new-rule-loaded-in-rules-builder.png)
 1. Click **Save** to preserve the rule.
 
-Fiddler automatically adds the newly created rule on the top of the [**Rules** list](slug://modify-traffic-get-started#rules-list), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
+Fiddler automatically adds the newly created rule on the top of the [**Rules** list](slug://modify-traffic-get-started), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
 
 ## Additional Rules Resources
 

@@ -92,6 +92,6 @@ proxies = {'http': '127.0.0.1:8866', 'https': '127.0.0.1:8866'}
 r = requests.get('https://reqbin.com/echo', proxies=proxies)
 ```
 
-## Related Links
+## See Also
 
 [Learn how to export the Fiddler CA certificate as PEM here...](slug://how-to-create-pem)

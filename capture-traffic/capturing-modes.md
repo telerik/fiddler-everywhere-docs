@@ -16,7 +16,7 @@ Fiddler Everywhere is a comprehensive web debugging proxy that captures HTTP(S),
 Fiddler Everywhere offers multiple capturing modes to suit different debugging scenarios:
 
 - **[System Capturing](#system-capturing)**: Captures all system-wide traffic by modifying your OS proxy settings
-- **[Network Capturing](#network-capturing)**: Captures traffic at the network adapter level without proxy configuration
+- **[Network Capturing](#network-capturing-beta)**: Captures traffic at the network adapter level without proxy configuration
 - **[Independent Browser Capturing](#independent-browser-capturing)**: Uses a sandboxed browser instance for isolated traffic capture
 - **[Terminal Capturing](#terminal-capturing)**: Captures traffic from a dedicated terminal session
 - **[Explicit Capturing](#explicit-capturing)**: Captures traffic from applications manually configured to use Fiddler's proxy
@@ -88,10 +88,7 @@ System capturing is the most comprehensive mode, intercepting all HTTP, HTTPS, W
 
 **Setup Steps:**
 1. Start Fiddler Everywhere
-2. Enable system capturing using the OS-specific guides:
-   - [Windows setup guide](slug://first_steps_windows#capture-system-traffic)
-   - [macOS setup guide](slug://first_steps_macos#capture-system-traffic)
-   - [Linux setup guide](slug://first_steps_linux#capture-system-traffic)
+2. Enable [system capturing](slug://capture-system-traffic).
 
 [Learn more about system capturing...](slug://capture-system-traffic)
 
@@ -149,7 +146,7 @@ Independent browser capturing provides a sandboxed browser environment for isola
 
 ![Use the "Browser" button to capture traffic from independent browser instance](./images/get-started-open-browser.png)
 
-[Learn more about independent browser capturing...](slug://capture-browser-traffic#capturing-from-terminal)
+[Learn more about independent browser capturing...](slug://capture-browser-traffic)
 
 ## Terminal Capturing
 
@@ -169,7 +166,7 @@ Terminal capturing provides a dedicated terminal session with Fiddler's proxy pr
 
 ![Use the "Terminal" button to capture traffic from Node.js or other terminal application](./images/get-started-terminal.png)
 
-[Learn more about terminal capturing...](slug://capture-terminal-traffic#capturing-from-terminal)
+[Learn more about terminal capturing...](slug://capture-terminal-traffic)
 
 ## Explicit Capturing
 
@@ -241,7 +238,7 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 
 **Fiddler Streaming HTTP Support:**
 - Compatible with all capturing modes
-- Reuses the standard [HTTP inspectors](slug://inspector-types#https-inspectors)
+- Reuses the standard [HTTP inspectors](slug://inspector-types)
 - Automatic decoding of encoded messages
 
 ### WebSocket Protocol
@@ -282,5 +279,5 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 
 **Fiddler Socket.IO Support:**
 - Works with all capturing modes
-- Dedicated [Socket.IO inspectors](slug://inspector-types#socketio-inspectors)
+- Dedicated [Socket.IO inspectors](slug://inspector-types)
 - Handshake and message analysis capabilities

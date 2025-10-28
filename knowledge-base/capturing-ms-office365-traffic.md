@@ -36,7 +36,7 @@ Sometimes, you might be unable to use the system capturing mode (for example, du
 - Start the [Fiddler's terminal instance](slug://capture-terminal-traffic).
 - Start the Microsoft application from within the started terminal instance.
 
-## Related Links
+## See Also
 
 * [Bypassing Traffic from Microsoft Applications](slug://fiddler-and-outlook)
 

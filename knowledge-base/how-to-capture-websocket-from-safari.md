@@ -32,4 +32,4 @@ With the **Network Capturing** mode turned on, Fiddler Everywhere automatically 
 
 ## See Also
 
-[Learn more about WebSocket capturing with Fiddler Everywhere here...](slug://capture-traffic-get-started#websocket-capturing)
+[Learn more about WebSocket capturing with Fiddler Everywhere here...](slug://capture-traffic-get-started#websocket-protocol)

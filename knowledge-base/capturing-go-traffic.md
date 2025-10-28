@@ -20,9 +20,7 @@ res_type: kb
 
 Fiddler captures different traffic but I cannot capture localhost HTTP traffic generated from a **Go** application.
 
-
 ## Solution
-
 
 Fiddler Everywhere respects global variables like `HTTP_PROXY` which are also used by the [HttpProxy](https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config.ProxyFunc) and [useProxy](https://github.com/golang/net/blob/c0dbc17a35534bf2e581d7a942408dc936316da4/http/httpproxy/proxy.go#L172) in the Go language.
 

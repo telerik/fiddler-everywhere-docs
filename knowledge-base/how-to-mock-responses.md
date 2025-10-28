@@ -25,7 +25,7 @@ To achieve this scenario, you can use the **Manual Response** or the **Response 
 ### Manual Response
 
 1. Open the [**Rules**](slug://modify-traffic-get-started) tab.
-1. Create a new rule through the **Add New rule** button. This will open the [**Rule Builder**](slug://modify-traffic-get-started#rule-builder).
+1. Create a new rule through the **Add New rule** button. This will open the [**Rule Builder**](slug://modify-traffic-get-started).
 1. Add the match condition as per your requirements.
 1. Add the Action. In this case, choose **Manual Response** from the drop-down, and in the text field, enter the content.
     ```JSON

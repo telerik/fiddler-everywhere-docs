@@ -28,9 +28,9 @@ The toolbar of the **Live Traffic** section provides various functionalities suc
 
 The **Live Traffic** toolbar provides the following functionalities:
 
-- [Filtering Traffic](#filterin-traffic) (**Filters**)
-- [independent Browser Capturing](#independent-browser-capturing) (**Open Browser**)
-- [independent Terminal Capturing](#independent-terminal-capturing) (**>_Terminal**)
+- [Filtering Traffic](#filtering-traffic) (**Filters**)
+- [independent Browser Capturing](#independent-browser-capturing) **Open Browser**
+- [independent Terminal Capturing](#terminal-capturing) (**>_Terminal**)
 - [Clearing Sessions](#clearing-sessions) (**Clear**)
 - [Searching](#searching) (**Quick Search**)
 - [Saving Sessions](#saving-sessions) (**Save**)
@@ -120,7 +120,7 @@ To share a session through the toolbar:
 
 ### Managing Columns
 
-Use the **Columns** menu to manage which columns to show up in the [Live Traffic grid](#live-traffic-list). 
+Use the **Columns** menu to manage which columns to show up in the [Live Traffic grid](#live-traffic-grid). 
 
 You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
 ![Manage columns from the Fiddler's UI](./images/managing-columns.png)
@@ -129,7 +129,7 @@ You can also [create a custom column through the **Add Custom Column** option](#
 
 ### Toggling Layout
 
-The last icon on the right side of the toolbar presents an option to restructure the main Fiddler Everywhere layout structure for the [**Live Traffic grid**](#live-traffic-list) and the [**Inspectors**](slug://inspector-types). The layout change option is available for the **Live traffic** tab, comparison, and saved sessions tabs. The layout options are as follows:
+The last icon on the right side of the toolbar presents an option to restructure the main Fiddler Everywhere layout structure for the [**Live Traffic grid**](#live-traffic-grid) and the [**Inspectors**](slug://inspector-types). The layout change option is available for the **Live traffic** tab, comparison, and saved sessions tabs. The layout options are as follows:
 
 - (Default layout) **Live Traffic grid** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
 - (Alternative layout) **Live Traffic grid** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
@@ -449,7 +449,7 @@ Each column has a **filter** button, which popups an additional **Filter** menu 
 
 The column **Filter** menu lets you add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
->tip Apply complex filters by using the [**Filters** toolbar option](#filtering) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options](slug://how-to-filter-traffic#columns-filters).
+>tip Apply complex filters by using the [**Filters** toolbar option](#filtering-options) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options](slug://how-to-filter-traffic#column-filters).
 
 ## Context Menu Options
 

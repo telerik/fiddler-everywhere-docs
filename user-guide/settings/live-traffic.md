@@ -8,14 +8,13 @@ position: 35
 
 # Live Traffic Menu
 
-
 The **Live Traffic** sub-menu provides options for limiting the captured traffic visible in the [**Live Traffic** grid](slug://web-sessions-list#live-traffic-grid).
 
 The following options are available as **Sessions List Length**:
 
 - **Keep all sessions in the list**&mdash;The default selection will list all sessions in the **Live Traffic** grid.
 
-- **Keep only last <value> sessions**&mdash;Lists only the specified number of sessions in the **Live Traffic** grid. The possible value is a minimum of ten (10) saved sessions and a maximum of ten thousand (10000) sessions.
+- **Keep only last XXX sessions**&mdash;Lists only the specified number of sessions in the **Live Traffic** grid. The possible value is a minimum of ten (10) saved sessions and a maximum of ten thousand (10000) sessions.
 
 Note that sessions that are already explicitly hidden by an active filter won't appear in the **Live Traffic** grid.
 

@@ -11,7 +11,7 @@ previous_url: /collaboration
 
 This article covers the sharing capabilities of Fiddler Everywhere as follows:
 
-- [Sharing snapshots](#sharing-sessions-snapshots)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Snapshots** tree.
+- [Sharing snapshots](#sharing-saved-session-snapshot)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Snapshots** tree.
 - [Sharing API request collections](#sharing-requests-collections)&mdash;Options to share API requests collections as local/cloud collections in the **Requests** list.
 - [Sharing rules](#sharing-rules)&mdash;Options to share single or multiple rules within the **Rules** tab.
 - [Adding Context for Collaborators](#adding-context-for-collaborators)&mdash;Options to add contextual information in the form of comments and notes.
@@ -43,11 +43,9 @@ To share a saved session snapshot from the save **Snapshots** tree:
 
 The **Manage Users** option appears if the session snapshot is stored in the cloud and shared. Click **Manage Users** to prompt a window that allows you to manage the list of users with access to the shared session.
 
-
 ### Deleting Shared Sessions
 
-Fiddler Everywhere provides options for deleting previously shared sessions. To select the sessions you want to delete, go to the save **Snapshots** tree and use the **Delete** button. All users added as collaborators will be notified through the [notification bar](#notifications-for-shared-content)  and with an email message that the shared session is now deleted. To restore deleted sessions, use the **Shared Snapshots** option.
-
+Fiddler Everywhere provides options for deleting previously shared sessions. To select the sessions you want to delete, go to the save **Snapshots** tree and use the **Delete** button. All users added as collaborators will be notified through the notification bar and with an email message that the shared session is now deleted. To restore deleted sessions, use the **Shared Snapshots** option.
 
 ## Sharing Requests Collections
 

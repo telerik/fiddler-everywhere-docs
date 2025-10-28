@@ -21,7 +21,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 - Make sure you have 400MB+ free disk space.
 - Create an account with administrative rights, which you'll need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
-  ```curl
+  ```txt
     https://*.telerik.com/
     https://*.getfiddler.com/
     https://fiddler-backend-production.s3-accelerate.amazonaws.com
@@ -40,7 +40,6 @@ Fiddler Everywhere for Windows offers you the flexibility to select the installa
 
 When Fiddler Everywhere is installed per machine, each individual user must log into Fiddler Everywhere with their credentials, and the generated data won't be accessible from the other users.
 
-
 ## Step 2: Create Your Fiddler Account
 
 In this step, you'll register by creating your unified Telerik account.   
@@ -53,7 +52,6 @@ In this step, you'll register by creating your unified Telerik account.
 1. Return the Fiddler Everywhere application and choose whether to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
 
 After successful login into Fiddler Everywhere, you will see your personal and license information within the **Home** pane.
-
 
 ## Step 3: Interact with the Captured Traffic
 

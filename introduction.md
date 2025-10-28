@@ -4,7 +4,7 @@ description: "Try now the Fiddler Everywhere cross-platform, web-debugging, HTTP
 slug: introduction
 publish: true
 position: 1
-previous_url: /license
+previous_url: /license, /knowledge-base/using-fiddler-pro-dashboard
 ---
 
 # Welcome to Fiddler Everywhere!

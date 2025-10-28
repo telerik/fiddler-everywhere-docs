@@ -40,7 +40,7 @@ Lastly, you might want to filter the captured traffic while preserving all captu
 
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
 - In the **Bypass Fiddler for URLS that starts with:** field, add the endpoints that you would like to bypass, separated by a comma:
-    ```
+    ```txt
     *.apple.com, *.itunes.com, *mzstatic.com
     ```
     ![Example bypass list](./images/bypass-endpoints.png)

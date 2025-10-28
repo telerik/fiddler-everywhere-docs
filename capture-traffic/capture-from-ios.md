@@ -20,7 +20,6 @@ This article describes using Fiddler Everywhere to capture HTTPS traffic from iO
 
 >important It's common for many company networks to be restricted by security tooling or administrative policies. To capture remote traffic, ensure that your system administrators are not limiting the network discovery and usage, or consider using a public hotspot for your Fiddler host and remote device.
 
-
 ## Capturing Remote iOS Traffic (Automated)
 
 Fiddler Everywhere provides an automated guide to configure remote iOS capturing through the following steps:
@@ -48,7 +47,7 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 ### Configuring the Fiddler proxy on iOS Device
 
-Refer to the following steps to configure real iOS devices to work alongside a Fiddler Everywhere host. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configure-the-ios-simulator). Real iOS devices and iOS simulators must be discoverable on the same local network.
+Refer to the following steps to configure real iOS devices to work alongside a Fiddler Everywhere host. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configuring-the-fiddler-proxy-on-ios-emulator). Real iOS devices and iOS simulators must be discoverable on the same local network.
 
 1. Install the Fiddler certificate authority (CA) on the iOS device.
     1. Open a browser on the iOS device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. Follow the link to **download** the Fiddler certificate authority file.
@@ -78,7 +77,6 @@ The later versions of the iOS simulators, accessible through XCode, are using th
     1. In the iOS simulator, go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority**.
     >tip Due to [a security limitation](https://developer.apple.com/forums/thread/124056), some versions of the iOS simulators won't be able to access the folders containing the certificate authority files. To capture HTTPS traffic, you must manually export and install the Fiddler Everywhere certificate on your iOS simulator. You can achieve that by dragging and dropping the exported CRT file (**Settings** > **HTTPS** > **Advanced Settings** > **Export Fiddler CA(DER/Binary format)** ) into the iOS simulator.
 
-
 ## Capture Mobile Traffic
 
 Now you can immediately capture and inspect HTTP/HTTPS traffic from your iOS device. For example, open a Safari browser on your iOS device, type an address of your choice, and observe the captured traffic in the **Live Traffic** grid.
@@ -96,7 +94,7 @@ Some Apple services like the Apple Application store and iTunes use certificate 
 
 To prevent Apple services from losing connectivity, the Fiddler Everywhere application automatically adds the following endpoints to the macOS proxy bypass list:
 
-```
+```txt
 *.apple.com, *.itunes.com, *mzstatic.com
 ```
 
@@ -104,11 +102,10 @@ However, this is not the case for the other operating systems where these servic
 
 - Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
 - In the **Bypass Fiddler for URLs that starts with:** field, add the following Apple root domains:
-    ```
+    ```txt
     *.apple.com, *.itunes.com, *mzstatic.com
     ```
 - Click **Save** to persist the change.
-
 
 ## Contact us
 

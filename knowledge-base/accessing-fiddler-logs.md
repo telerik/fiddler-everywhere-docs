@@ -20,18 +20,18 @@ The Fiddler Everywhere client is an electron application that depends on modifyi
 
 ## Solution
 
-* [Application log files](#logging-files)
+* [Application log files](#fiddler-application-logs)
 * [Accessing the logs thorugh the Fiddler's user interface](#accessing-the-logs-through-the-ui)
 * [Accesising the logs manually](#accessing-the-logs-manually)
 * [Enable verbose logging](#enabling-verbose-logs)
-* [Using the `electron.log` file](#using-the-electronlog-file)
-* [Using the `netcore.log` file](#using-the-netcorelog-file)
+* [Using the `electron.log` file](#using-the-electron-log)
+* [Using the `netcore.log` file](#using-the-netcore-log)
 
-### Logging Files
+### Fiddler Application Logs
 
 The Fiddler Everywhere application generates the following log files:
-- [`electron.log`](#setting-the-electronlog-file)&mdash;The file logs the basic operations needed for the electron application to start up properly.
-- [`netcore.log`](#setting-the-netcorelog-file)&mdash;The file logs the operations done by the Fiddler core logic; for example, applying the proxy settings, trust certificate setup, login process, and more.
+- [`electron.log`](#using-the-electron-log)&mdash;The file logs the basic operations needed for the electron application to start up properly.
+- [`netcore.log`](#using-the-netcore-log)&mdash;The file logs the operations done by the Fiddler core logic; for example, applying the proxy settings, trust certificate setup, login process, and more.
 
 Both log files are useful to investigate cases where the client is not working properly. The location of these files varies depending on the operating system on which Fiddler Everywhere is working.
 
@@ -71,7 +71,7 @@ The verbose logging adds additional information about accessing the network adap
 "verboseLogging": true
 ```
 
-### Using the electron.log File
+### Using the Electron Log
 
 The `electron.log` file will output info, warnings, and errors related to the startup of the application, its connectivity, and the availability of later versions.
 
@@ -106,7 +106,7 @@ The following example demonstrates the content of the `electron.log` file.
 [2020-10-01 23:42:33:622] [info] Application exited with code 0.
 ```
 
-### Using the netcore.log File
+### Using the Netcore Log
 
 The `netcore.log` file will output info, warnings, and errors related to the network operations, the login process, the trust certificate setup, the user quota initialization, and so on.
 

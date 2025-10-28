@@ -142,7 +142,7 @@ Some of the events visualized in the timeline are entirely related to Fiddler fe
 
 #### Timestamps
 
-This section provides a list of timestamps that indicate when a specific event occurred. [Learn more about the events in Fiddler Everywhere here...](#events-and-events-timestamps)
+This section provides a list of timestamps that indicate when a specific event occurred. [Learn more about the events in Fiddler Everywhere here...](#events-and-timestamps-explained)
 
 ## Sizes
 

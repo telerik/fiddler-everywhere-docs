@@ -15,7 +15,8 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
 - **Enable HTTP/2 support**&mdash;Enables or disables capture of traffic through the HTTP/2 protocol. Enabled by default.
 
-    >tip [Learn more about the HTTP/2 support in Fiddler Everywhere here...](slug://capture-traffic-get-started#http-version-specifics)
+    >tip [Learn more about the HTTP/2 support in Fiddler Everywhere here...](slug://capture-traffic-get-started#http-version-support)
+
 
 - **Enable Automatic Authentication**&mdash; Enables or disables the automatic proxy authentication for protocols like Kerberos, Negotiate, and NTLM. With the option enabled, the Fiddler application tries to automatically obtain the proxy credentials as stored in the operating system credential management tool.
 

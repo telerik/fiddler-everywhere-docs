@@ -34,7 +34,7 @@ The following screenshots represent the default Fiddler Everywhere settings.
   ![default Privacy settings](./images/settings-privacy.png)
 * Default **Composer** settings&mdash;Follows HTTP 3xx responses as redirects when executing requests from the Composer.
   ![default Composer settings](./images/settings-composer.png)
-* Default **Browsers** settings&mdash;Fiddler Everywhere tries to detect the default path to the Google Chrome installation folder (to be used with the [Open Browser](slug://capture-traffic-get-started#independent-browser-capturing-browser-capturing) functionality)
+* Default **Browsers** settings&mdash;Fiddler Everywhere tries to detect the default path to the Google Chrome installation folder (to be used with the [Open Browser](slug://capture-traffic-get-started#independent-browser-capturing) functionality)
   ![default Browsers settings](./images/settings-browsers.png)
 * Default **Theme** settings&mdash;Default Light theme loads as the initial UI theme.
   ![default Theme settings](./images/settings-themes.png)

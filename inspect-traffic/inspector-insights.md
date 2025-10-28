@@ -68,7 +68,7 @@ The **Cookies inspector** displays the contents of any outbound `Cookie` and `Co
 
 The **Raw Inspector** allows you to view the complete request and response, including headers and bodies, as text. Most of the inspector represents a large text area that displays the body text interpreted using the detected character set with the headers, the byte-order-marker, or an embedded `META` tag declaration.
 
-By default, the request or response displays as received, which means that encoded or compressed content will be in a non-human readable format and displayed as is. The **Raw Inspector** comes with a special **decode** button (located in the [toolbar](#inspectors-toolbar)), decoding encoded content.
+By default, the request or response displays as received, which means that encoded or compressed content will be in a non-human readable format and displayed as is. The **Raw Inspector** comes with a special **decode** button (located in the [toolbar](#toolbar)), decoding encoded content.
 
 The following figure displays the encoded raw content with the **decode** button in an inactive state.
 
@@ -197,7 +197,7 @@ The **Auth** inspector obtains authorization information from the `Authorize` an
 
 ![Authentication Inspector](./images/inspectors-auth.png)
 
-## WebSocket, gRPC, SSE, and Socket.IO Inspectors
+## WebSocket, gRPC, SSE, and SocketIO Inspectors
 
 Fiddler Everywhere provides common user interface to create inspectors for visualizing WebSocket, gRPC, Server-Sent Events, and Socket.IO traffic. The inspectors provide the following types of inspecting tools that enable you to examine different parts of a connection:
 
@@ -275,7 +275,7 @@ The **Message Inspector** contains the non-masked message content visualized in 
 
 ![WebSocket and gRPC Message Inspector](./images/websocket-messages.png)
 
-## Inspector's Context Menu
+## Context Menu
 
 All inspectors provide further interaction options through a context menu. The context menu options vary depending on the inspectors' type (refer to the list below).
 
@@ -287,7 +287,7 @@ All inspectors provide further interaction options through a context menu. The c
 - **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and all **Body** inspectors (**Text, JSON, XML, JavaScript**). The **Decode Selection** option opens a new detached window that you can use to inspect different snapshots and sessions.
 - **Add as a column**&mdash;An option to create a custom column in the Live Traffic grid while using the selected HTTP Header. Available in **Headers** inspector.
 
-## Inspector's Toolbar
+## Toolbar
 
 Each inspector has a toolbar that provides a different set of functionalities and information as follows:
 

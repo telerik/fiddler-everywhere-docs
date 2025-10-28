@@ -21,7 +21,7 @@ How can I manually install the Fiddler root certificate on Windows?
 
 ## Solution
 
-You can install the Fiddler Everywhere root certificate on Windows automatically. For the step-by-step guide, refer to the [First Steps with Fiddler Everywhere on Windows article](slug://first_steps_windows#start-system-capturing).
+You can install the Fiddler Everywhere root certificate on Windows automatically. For the step-by-step guide, refer to the [First Steps with Fiddler Everywhere on Windows article](slug://first_steps_windows).
 
 If the automatic installation and enabling of the trust certificate do not work, you can manually install the trust certificate:
 

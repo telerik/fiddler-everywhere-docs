@@ -17,13 +17,13 @@ avatar-path: ./images/common/avatar-ninja.svg # TODO get a Fiddler NINJA
 no-results-image-path: ./images/common/no-results.svg # TODO get a Fiddler no-results.png
 table-layout: fixed
 enable-tabbed-code-blocks: true
+
 gitLastCommitDateEnabled: true
 
 cta-overview: '@ProductLink is a powerful web debugging tool that helps developers inspect, modify, and analyze HTTP and HTTPS traffic. It supports multiple platforms including Windows, macOS, and Linux, making it a versatile choice for web development and troubleshooting.'
 cta-intro: '@ProductLink is a cross-platform web debugging proxy for macOS, Linux, and Windows. It allows you to inspect and modify HTTP and HTTPS traffic from any application that supports a proxy.'
 
 img-max-width: 100%
-
 center-images: false
 
 meta:
@@ -41,6 +41,9 @@ meta:
     modify-and-filter-traffic:
         title: Modify & Filter Traffic
         position: 50
+    mcp-server:
+        title: MCP Server
+        position: 55
     compose-api-requests:
         title: Compose API Requests
         position: 60
