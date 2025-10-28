@@ -102,7 +102,6 @@ The MCP server will provide context from your captured HTTPS traffic to enhance 
 
 >tip You can jump start your MCP journey by exploring our [prompt library](slug://fiddler_ai_prompt_library)
 
-
 ### Supported Capturing Modes
 
 The Fiddler Everywhere MCP server supports the following capturing modes:
