@@ -4,19 +4,10 @@ description: "Learn how to configure a Java application to send traffic to the F
 type: how-to
 slug: configure-java-fiddler-everywhere
 publish: true
-res_type: kb
 previous_url: /knowledge-base/configure-java-app-with-fiddler-everywhere
 ---
 
-## Environment
-
-|   |   |
-|---|---|
-| Product   |  Fiddler Everywhere  |
-| Product Version | 1.0.0 and above  |
-| 3rd-party tool| Java Virtual Machine, Java applications |
-
-## Description
+# Capturing Traffic from Java Applications
 
 The Java Virtual Machine (JVM) has its proxy configuration settings. How can I export the Fiddler root CA (certificate authority) for handling HTTPS traffic and set up the JVM to respect the Fiddler proxy?
 

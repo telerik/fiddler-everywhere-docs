@@ -4,20 +4,10 @@ description: "Configure the Fiddler Everywhere proxy alongside Node.js and captu
 type: how-to
 slug: fiddler-nodejs-traffic
 publish: true
-res_type: kb
 previous_url: /knowledge-base/how-to-capture-nodejs-traffic
 ---
 
-## Environment
-
-|   |   |
-|---|---|
-| Product   |  Fiddler Everywhere  |
-| Product Version | 1.0.0 and above  |
-| Node.js Module  | http |
-| Node.js Module  | request |
-
-## Description
+# Capturing Traffic from Node.js Libraries
 
 Many developers use Fiddler Everywhere to capture traffic from Node.js libraries that make HTTP and HTTPS requests. How can I proxy these requests to capture and analyze them with Fiddler Everywhere?
 
