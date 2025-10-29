@@ -2,7 +2,7 @@
 title: Using Filters in Fiddler Everywhere for Advanced Search
 description: Learn how to use filters in Fiddler Everywhere to search for specific values within request and response bodies and headers.
 type: how-to
-page_title: Using Filters in Fiddler Everywhere for Advanced Search
+meta_title: Using Filters in Fiddler Everywhere for Advanced Search
 slug: using-filters-in-fiddler-everywhere-for-advanced-search
 tags: fiddler-everywhere, search, filters, request body, response body, headers
 res_type: kb
@@ -38,7 +38,6 @@ By using filters in Fiddler Everywhere, you can easily search for specific value
 ## Notes
 
 - Filters in Fiddler Everywhere allow you to create complex match conditions using various operators and logical expressions.
-
 - Saved filters can be reused across different sessions and projects, saving you time and effort in defining filters for each search.
 
 ## See Also

@@ -26,7 +26,7 @@ The Fiddler Everywhere Reporter is a free tool that requires no login or license
 
 ## Using Fiddler Everywhere Reporter
 
-Any user can download Fiddler Everywhere Reporter and start it immediately without an explicit installation. After the tool loads, you can choose and start the preferred [capturing mode]({%slug reporter-features%}) to log the targeted HTTPS traffic. Once the capture is complete, the Fiddler Everywhere Reporter tool presents the option to save the captured traffic as an SAZ file (also known as a Fiddler archive). The SAZ archive will contain a snapshot of all captured HTTPS sessions, which, at any point, can be loaded in Fiddler Everywhere.
+Any user can download Fiddler Everywhere Reporter and start it immediately without an explicit installation. After the tool loads, you can choose and start the preferred [capturing mode](slug://reporter-features) to log the targeted HTTPS traffic. Once the capture is complete, the Fiddler Everywhere Reporter tool presents the option to save the captured traffic as an SAZ file (also known as a Fiddler archive). The SAZ archive will contain a snapshot of all captured HTTPS sessions, which, at any point, can be loaded in Fiddler Everywhere.
 
 Example for basic usage of the Fiddler Everywhere Reporter application:
 
@@ -36,7 +36,7 @@ Example for basic usage of the Fiddler Everywhere Reporter application:
 
 1. Click on the **Start Capturing Browser** button.
 
- >tip The **Start Capturing Browser** is the default option that captures HTTPS traffic from a sandboxed browser instance. The reporter starts an independent browser instance (Google Chrome or MS Edge) that is preconfigured to respect the Fiddler proxy and trust its certificate authority (CA). If you aim to capture traffic from another client, you can use other [capturing modes]({%slug reporter-features%}).
+ >tip The **Start Capturing Browser** is the default option that captures HTTPS traffic from a sandboxed browser instance. The reporter starts an independent browser instance (Google Chrome or MS Edge) that is preconfigured to respect the Fiddler proxy and trust its certificate authority (CA). If you aim to capture traffic from another client, you can use other [capturing modes](slug://reporter-features).
 
 1. Capture the targeted traffic in the sandboxed browser instance opened from the Fiddler Everywhere Reporter tool.
 

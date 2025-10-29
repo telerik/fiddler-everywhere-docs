@@ -1,7 +1,7 @@
 ---
 title: Repro Playback 
 description: "Playback previously captured HTTPS traffic to reproduce the exact behavior from a specific moment."
-slug: replaying-traffic
+slug: repro-playback
 publish: true
 position: 40
 ---
@@ -17,21 +17,11 @@ With Fiddler Everywhere, you can easily playback previously captured HTTPS traff
 To create the set of rules that will later playback the captured traffic, execute the following steps:
 
 - Open Fiddler Everywhere and start the preferred capturing mode (for example, the browser capturing mode).
-
 - Capture the targeted traffic. 
-
- For example, let's assume that you are using the browser capturing mode and your targeted traffic is the landing page called "This is Fiddler!" (the page automatically loads once the preconfigured browser instance starts and its address is from a local server that loads `https://this.is.fiddler`)
-
-- Back in Fiddler Everywhere, open the **Live Traffic** section and then select all sessions related to the captured traffic.
-
-    ![Select all sessions and use the "Add New Rules" option from the context menu](../images/rules/context-menu-add-new-rules.png)
-
-At this point, Fiddler Everywhere will automatically create a new rule group that contains a dedicated rule for each selected session as follows:
-
-- Each CONNECT session will be represented by a rule that uses the **Return CONNECT Tunnel** action.
-- Each other session will be represented by a rule that uses the **Return Manual Response** action. By default, the content of the **Return Manual Response** action will be identical to the one from the captured session.
-
-[Repro playback rules](../images/rules/repro-playback-rules.png)
+    For example, let's assume that you are using the browser capturing mode and your targeted traffic is the landing page called "This is Fiddler!" (the page automatically loads once the preconfigured browser instance starts and its address is from a local server that loads `https://this.is.fiddler`)
+- Back in Fiddler Everywhere, open the **Live Traffic** section and then select all sessions related to the captured traffic.At this point, Fiddler Everywhere will automatically create a new rule group that contains a dedicated rule for each selected session as follows:
+    - Each `CONNECT` session will be represented by a rule that uses the **Return CONNECT Tunnel** action.
+    - Each other session will be represented by a rule that uses the **Return Manual Response** action. By default, the content of the **Return Manual Response** action will be identical to the one from the captured session.
 
 ## Using the Repro Playback Rules
 

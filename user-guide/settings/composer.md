@@ -16,4 +16,4 @@ By default, the automatic following of redirects is enabled.
 
 The following figure displays the settings of the **Composer** menu.
 
-![Composer settings](../../images/settings/settings-composer.png)
+![Composer settings](./images/settings-composer.png)

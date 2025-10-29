@@ -31,6 +31,4 @@ Take the following steps:
 3. Enter `localhost` into the box, then click the **Delete** button.
 4. Start Fiddler Everywhere and use the Google authentication option again.
 
-Here is a screenshot of the setting and what to do:
-
-![](../images/kb/edge/edge-hsts-setting.png)
+![Chromium browser HSTS settings](./images/edge-hsts-setting.png)

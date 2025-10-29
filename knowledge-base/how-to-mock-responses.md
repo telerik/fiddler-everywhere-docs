@@ -20,18 +20,14 @@ Fiddler Everywhere provides options for modifying the current response (HTML, JS
 
 ## Solution
 
-To achieve this scenario, you can use the **Manual Response** or the **Response File** actions of the [**Rules**]({%slug modify-traffic-get-started%}) tab.
+To achieve this scenario, you can use the **Manual Response** or the **Response File** actions of the [**Rules**](slug://modify-traffic-get-started) tab.
 
 ### Manual Response
 
-1. Open the [**Rules**]({%slug modify-traffic-get-started%}) tab.
-
-1. Create a new rule through the **Add New rule** button. This will open the [**Rule Builder**]({%slug modify-traffic-get-started%}#rule-builder).
-
+1. Open the [**Rules**](slug://modify-traffic-get-started) tab.
+1. Create a new rule through the **Add New rule** button. This will open the [**Rule Builder**](slug://modify-traffic-get-started).
 1. Add the match condition as per your requirements.
-
 1. Add the Action. In this case, choose **Manual Response** from the drop-down, and in the text field, enter the content.
-
     ```JSON
     HTTP/1.1 502 Unreachable Server
     Date: Fri, 20 Apr 2023 16:42:42 GMT
@@ -43,11 +39,9 @@ To achieve this scenario, you can use the **Manual Response** or the **Response 
     {"errors": "Hey, hey - the server is unreachable at this moment!"}.      
     ```
 
-    ![Sample unreachable host rule](../images/kb/dat-files/kb-rules-unreachable.png)
-
+    ![Sample unreachable host rule](./images/kb-rules-unreachable.png)
 1. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. Congratulations! You have just mocked a 502 status code response!
-
-    ![Unreachable rule applied in Chrome](../images/kb/dat-files/kb-rules-chrome-result.png)
+    ![Unreachable rule applied in Chrome](./images/kb-rules-chrome-result.png)
 
 ### Automating Multiple Mock Responses
 
@@ -56,10 +50,8 @@ In some scenarios, you may need a better workflow to automate multiple mock resp
 A DAT file is a generic data file created by a specific application. It may contain data in binary or text format. Text-based DAT files can be viewed in a text editor.
 
 1. Open your favorite text editor.
-
 2. Enter the custom response content. For example:
-
-    ```
+    ```txt
     HTTP/1.1 403 Access Denied
     FiddlerTemplate: True
     Date: Fri, 25 Jan 2013 16:49:29 GMT
@@ -67,24 +59,20 @@ A DAT file is a generic data file created by a specific application. It may cont
 
     Fiddler: HTTP/403 Access Denied.
     ```
-
 3. Save the file with the `dat` extension. For example, `action-403-status.dat`.
-
 4. Add the **Action** in the rule through **Response file**. In the popup window, choose the newly created `action-403-status.dat` DAT file.
-
 5. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations! You have just mocked a 403 status code response while using a DAT file!
 
 ### Other Response Modification Actions
 
 The **Rules Builder** provides more actions for even more sophisticated modification of your HTTP responses. Use the **Update Response Headers**, **Update Response Body**, and **Update Response Cookies**. Each Action provides different subactions to optimize further and ease your mocking process.
 
-
 #### Update Response Body
 
 The **Update Response Body** action allows you to modify the Response body (while preserving the Response headers and cookies).
 
 The example below demonstrates the usage of **Set Value** with **JSON** Response inspector:
-![ Update Response Body with Set Value](../images/kb/dat-files/kb-rules-response-body-set-value.png)
+![ Update Response Body with Set Value](./images/kb-rules-response-body-set-value.png)
 
 ##### Method
 The **Method** subaction supports the following options:
@@ -93,7 +81,6 @@ The **Method** subaction supports the following options:
 - **Regular Expression** - replacing values with Regex
 - **Remove** - explicitly deleting the Response body
  
-
 ##### Set Value
 The **Set Value** subaction supports the following format editors:
  - Plain text
@@ -103,14 +90,14 @@ The **Set Value** subaction supports the following format editors:
  - HTML
  - JavaScript/TypeScript
 
-
 #### Update Response Header
 This action allows you to modify a Response header (while preserving the Response body and cookies).
 
 The example below demonstrates the usage of **Append to value**:
-![Update Response header with Append to value](../images//kb/dat-files/kb-rules-response-header-append.png)
+![Update Response header with Append to value](./images/kb-rules-response-header-append.png)
 
 ##### Method
+
 The **Method** subaction supports the following options:
 - **Set Value** - setting a new value
 - **Append if not present** - setting a new value only if it doesn't already exist
@@ -119,12 +106,12 @@ The **Method** subaction supports the following options:
 - **Regular Expression** - replacing values with Regex
 - **Remove** - explicitly deleting the Response body
 
-
 #### Update Response Cookies
 
 The **Update Response Cookies** action allows you to modify Response cookies (while preserving the Response body and headers).
 
 ##### Method
+
 The **Method** subaction supports the following options:
 - **Set Value** - setting a new value
 - **Add if not present** - setting a new value only if it doesn't already exist
@@ -133,10 +120,9 @@ The **Method** subaction supports the following options:
 - **Regular Expression** - replacing values with Regex
 - **Remove** - explicitly deleting the Response body
 
-
 >tip The specified Response actions are also available as Request counterparts (**Update Request Headers**, **Update Request Body**, and **Update Request Cookies**).
 
+## Additional Resources
 
-## Contact us
-
-If you have more questions or need assistance configuring specific rules with Fiddler Everywhere, you can reach out to our support team through the **Contact Support** option.
+* [Modifying HTTPS Traffic Basics](slug://modify-traffic-get-started)
+* [Rules Presets in Fiddler Everywhere](slug://adv_techniques_fiddler)

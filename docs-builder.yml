@@ -1,0 +1,74 @@
+top-navigation-product: fiddler-everywhere
+path-prefix: /fiddler/fiddler-everywhere/documentation
+default-title-prefix: Fiddler Everywhere
+
+primary-color: "#27c106" # Fiddler Everywhere green
+
+product-id: 1892
+product-code: FIDDLEREVERYWHERE
+product-name: Progress Telerik Fiddler Everywhere
+product-url: https://www.telerik.com/fiddler/fiddler-everywhere
+product-trial-url: https://www.telerik.com/download/fiddler-everywhere
+
+contribute-url: https://github.com/telerik/fiddler-everywhere-docs/edit/master
+search-engine-id: 001595215763381649090:dyayucp6jmq # TODO get a new one for Fiddler Everywhere
+# where should we add the google analytics and tag manager codes (refer to _config.yml)?
+avatar-path: ./images/common/avatar-ninja.svg # TODO get a Fiddler NINJA
+no-results-image-path: ./images/common/no-results.svg # TODO get a Fiddler no-results.png
+table-layout: fixed
+enable-tabbed-code-blocks: true
+
+gitLastCommitDateEnabled: true
+
+cta-overview: '@ProductLink is a powerful web debugging tool that helps developers inspect, modify, and analyze HTTP and HTTPS traffic. It supports multiple platforms including Windows, macOS, and Linux, making it a versatile choice for web development and troubleshooting.'
+cta-intro: '@ProductLink is a cross-platform web debugging proxy for macOS, Linux, and Windows. It allows you to inspect and modify HTTP and HTTPS traffic from any application that supports a proxy.'
+
+img-max-width: 100%
+center-images: false
+
+meta:
+    '*':
+        hideCta: true #consult if we want to hide the CTA on all pages (currently incorrectly sjhowing 30-days trial for Fiddler Everywhere)
+    installation-and-setup:
+        title: Installation & Setup
+        position: 20
+    capture-traffic:
+        title: Capture Traffic
+        position: 30
+    inspect-traffic:
+        title: Inspect Traffic
+        position: 40
+    modify-and-filter-traffic:
+        title: Modify & Filter Traffic
+        position: 50
+    mcp-server:
+        title: MCP Server
+        position: 55
+    compose-api-requests:
+        title: Compose API Requests
+        position: 60
+    collaboration:
+        title: Collaboration
+        position: 70
+    rules-presets:
+        title: Rules & Presets
+        position: 80
+    user-guide:
+        title: User Interface
+        position: 90
+    security:
+        title: Security
+        position: 100
+    fiddler-reporter:
+        title: Fiddler Everywhere Reporter
+        position: 200
+    knowledge-base:
+        title: Knowledge Base
+        position: 1000
+        relativeUrl: /knowledge-base
+        hideChildren: true
+        res_type: kb
+
+redirects: 
+- from: ^/$
+  to: /introduction

@@ -22,22 +22,18 @@ The feature is useful when capturing browser traffic, but your environment doesn
 To capture browser traffic with Fiddler Everywhere:
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Home** pane.
-
 1. Open the **Browser** tutorial, and then click on **Open Browser**.
 
 OR
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Traffic** pane.
-
 1. Click the **Browser** button to load a terminal instance.
 
-![Use the "Browser" button to capture traffic from independent browser instance](../images/get-started/get-started-open-browser.png)
-
 As a result, Fiddler Everywhere starts an independent browser instance preconfigured to respect the Fiddler proxy and to trust its root CA. You can type an arbitrary URL, and the HTTPS traffic generated from its requests and response will immediately appear in Fiddler's Live Traffic grid.
+
+![Use the "Browser" button to capture traffic from independent browser instance](./images/get-started-open-browser.png)
 
 ## Choosing Default Browser
 
@@ -52,17 +48,13 @@ The independent browser capturing mode allows you to create a custom directory w
 To use a browser instance that persists the input data:
 
 1. Start Fiddler Everywhere.
-
 1. Go to **Settings > Browsers**
-
 1. From the **Browser Data** section, choose the **Persist data in a specific directory** option.
-
 1. Choose a directory to save the custom browser instance.
-
 1. Click on **save** to confirm the change.
 
 Once the above change is applied, [the browser capturing mode](#capturing-browser-traffic) will reuse those settings for the newly started instances.
 
 ## Capturing from Other Browsers
 
-While the independent browser capturing works only with Chromium-based browsers, Fiddler can capture traffic from virtually any browser application that respects the Fiddler proxy. To capture traffic from browsers like Safari, Mozilla Firefox, or even from Chromium browsers (that are not started as independent instances from within Fiddler Everywhere) then, you can use the Fiddler's [system capturing mode]({%slug capture-system-traffic%}) or the explicit capturing mode.
+While the independent browser capturing works only with Chromium-based browsers, Fiddler can capture traffic from virtually any browser application that respects the Fiddler proxy. To capture traffic from browsers like Safari, Mozilla Firefox, or even from Chromium browsers (that are not started as independent instances from within Fiddler Everywhere) then, you can use the Fiddler's [system capturing mode](slug://capture-system-traffic) or the explicit capturing mode.

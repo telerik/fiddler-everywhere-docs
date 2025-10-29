@@ -17,7 +17,7 @@ previous_url: /knowledge-base/redirecting-with-autoresponder
 
 ## Description
 
-How can I use the [**Rules**]({%slug modify-traffic-get-started%}) tab for redirecting traffic from one server to another?
+How can I use the [**Rules**](slug://modify-traffic-get-started) tab for redirecting traffic from one server to another?
 
 ## Solution
 
@@ -37,22 +37,22 @@ To create more complex redirect rules, use the Fiddler Everywhere regex support 
 **Match Condition**: URL > Regular Expression > `(.*)docs.telerik.com/(.*)`
 **Action**: Update URL > Regular Expression > Find `(.*)docs.telerik.com/(.*)` + Replace `http://localhost:4000/$2`
 
-![Creating a rule that uses regular expression to change an URL](../images/kb/regex/rule-with-regex.png)
+![Creating a rule that uses regular expression to change an URL](./images/rule-with-regex.png)
 
 In the previous example, two regex variables are automatically created. The second one will have as its value everything that comes after the last slash (`/`).
 
 As a result, after applying the above rule, the following example endpoint
-```
+```sh
 https://docs.telerik.com/fiddler-everywhere/modify-and-filter-traffic/modify-traffic-with-rules
 ```
 will be redirected to
-```
+```sh
 http://localhost:4000/fiddler-everywhere/modify-and-filter-traffic/modify-traffic-with-rules
 ```
 
 ## See Also
 
-- [Sample Rules Presets]({%slug adv_techniques_fiddler%})
-- [Using Breakpoints]({%slug rulesbuilder-breakpoints%})
-- [Understanding the Matching Conditions and the Actions]({%slug fiddler-rules-actions%}#conditions)
-- [Understanding the role of Final and Non-Final Actions]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
+- [Sample Rules Presets](slug://adv_techniques_fiddler)
+- [Using Breakpoints](slug://rulesbuilder-breakpoints)
+- [Understanding the Matching Conditions and the Actions](slug://fiddler-rules-actions#conditions)
+- [Understanding the role of Final and Non-Final Actions](slug://fiddler-rules-actions#final-and-non-final-actions)

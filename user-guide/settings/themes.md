@@ -39,7 +39,7 @@ The **Table Density** setting controls the spacing and compactness of informatio
 
 Choose the option that best suits your screen size, resolution, and personal preference. Compact mode is particularly useful when working with large datasets or on smaller screens where you need to see more entries at once.
 
-![Appearance settings interface](../../images/settings/settings-themes.png)
+![Appearance settings interface](./images/settings-themes.png)
 
 ## Best Practices
 

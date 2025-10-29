@@ -13,17 +13,13 @@ With Fiddler Everywhere, you can easily create a rule that **maps HTTP requests 
 
 ## Creating a "Map Local (File)" Rule
 
-Create a "Map Local (File)" rule by setting the following actions through the [Rules Builder]({%slug modify-traffic-get-started%}).
+Create a "Map Local (File)" rule by setting the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
-
-1. Match by a **URL** that uses a string value to match the desired URL. For example: **example.com**.
-
+1. Match by a **URL** that uses a string value to match the desired URL. For example: `example.com`.
 1. (Optional) If you need to test a URL that your DNS server cannot resolve, create a **Return CONNECT Tunnel** action.
-
 1. Create a **Return File** action and set the path to the DAT file that contains the modified HTTP response. The DAT file must contain a well-formed HTTP response. For example:
-
-    ```
+    ```html
     HTTP/2 200
     accept-ranges: bytes
     age: 339925
@@ -90,22 +86,22 @@ Create a "Map Local (File)" rule by setting the following actions through the [R
 
 This sample Fiddler rule maps an HTTP request to return a manually-crafted response.
 
-![Creating "Map Local (File)" rule](../../images/advanced/adv-map-local-file.png)
+![Creating "Map Local (File)" rule](./images/adv-map-local-file.png)
 
->tip Instead of manually creating a DAT file that contains a proper response, you can use one of Fiddler's predefined DAT files available through [the **Return Predefined Response** action]({%slug fiddler-ar-actions%}).
+>tip Instead of manually creating a DAT file that contains a proper response, you can use one of Fiddler's predefined DAT files available through [the **Return Predefined Response** action](slug://fiddler-ar-actions).
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 
-![Activating the "Map Local (File)" rule](../../images/advanced/adv-map-local-file-active.png)
+![Activating the "Map Local (File)" rule](./images/adv-map-local-file-active.png)
 
 Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-local-file" target="_blank">"Map Local (File)"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
 ## See Also
 
-* [Learn more about the Rules functionality in Fiddler Everywhere here...]({%slug modify-traffic-get-started%})
-* [Learn more about all rules presets in Fiddler Everywhere here...]({%slug adv_techniques_fiddler%})
-* [Learn more on how to organize your rules here...]({%slug rulesbuilder-get-started%})
-* [Learn more about the matching conditions here...]({%slug fiddler-rules-actions%}#conditions)
-* [Learn more about the supported actions here...]({%slug fiddler-rules-actions%}#actions)
-* [Learn more about final and non-final rules here...]({%slug fiddler-rules-actions%}#final-and-non-final-actions)
-* [Learn more about using breakpoints here...]({%slug rulesbuilder-breakpoints%})
+* [Learn more about the Rules functionality in Fiddler Everywhere here...](slug://modify-traffic-get-started)
+* [Learn more about all rules presets in Fiddler Everywhere here...](slug://adv_techniques_fiddler)
+* [Learn more on how to organize your rules here...](slug://rulesbuilder-get-started)
+* [Learn more about the matching conditions here...](slug://fiddler-rules-actions#conditions)
+* [Learn more about the supported actions here...](slug://fiddler-rules-actions#actions)
+* [Learn more about final and non-final rules here...](slug://fiddler-rules-actions#final-and-non-final-actions)
+* [Learn more about using breakpoints here...](slug://rulesbuilder-breakpoints)

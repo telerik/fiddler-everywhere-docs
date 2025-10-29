@@ -69,7 +69,6 @@ When using data sanitization in Fiddler Everywhere, consider the following best 
 - **Document custom rules** - Maintain documentation of custom sanitization rules, especially regex patterns, for team collaboration and compliance audits.
 - **Regular rule review** - Periodically review and update sanitization rules as your application evolves and new sensitive data types are introduced.
 
-
 ## Sanitization Policies
 
 Fiddler Everywhere Enterprise provides managed application policies that enable IT administrators to centrally control sanitization settings across their organization. The `DefaultSanitizationSettings` and `DisableSanitizationSettingsUpdate` policies allow administrators to enforce consistent data protection standards and prevent users from modifying sanitization configurations.
@@ -86,7 +85,7 @@ The following policies are available for managing sanitization behavior:
 
 IT teams managing Windows systems can apply sanitization policies using Group Policy, registry scripts, or endpoint management tools. Set the following registry values under:
 
-```
+```txt
 HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 ```
 
@@ -99,7 +98,7 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 
 The `DefaultSanitizationSettings` value accepts a JSON object with the following optional properties:
 
-```json
+```JSON
 { 
     "mask": "***SANITIZED***",
     "sanitizeUrl": true,
@@ -147,5 +146,5 @@ For comprehensive information on deploying managed application configurations, r
 
 ## See Also
 
-- [Security Highlights]({%slug fe-security-highlights%})
-- [Using the Fiddler MCP Server]({%slug fiddler-mcp-server%}) 
+- [Security Highlights](slug://fe-security-highlights)
+- [Using the Fiddler MCP Server](slug://fiddler-mcp-server) 

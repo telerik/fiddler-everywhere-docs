@@ -36,9 +36,11 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | integer | 1 |
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | string | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | string | `<base64-private-key>` |
-| `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | integer | 1 |
+| `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | integer | `1` |
+| `DefaultSanitizationSettings` | String | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. | See the JSON structure [here](slug://fe-sanitization#defaultsanitizationsettings-json-structure)|
+| `DisableSanitizationSettingsUpdate` | Integer | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. | `1` |
 
->important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints]({%slug first_steps_windows%}#prerequisites). For environments with limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
+>important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints](slug://first_steps_windows#prerequisites). For environments with limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
 
 **MDM Profile Values:**
 
@@ -86,7 +88,7 @@ defaults write com.progress-telerik.fiddler DisableNetworkCaptureSettingsChange 
 
 IT teams managing Windows systems can apply app configuration keys using their preferred administrative tooling by setting values in the following registry path:
 
-```
+```txt
 HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 ```
 
@@ -108,6 +110,8 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | String Value | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | String Value | `<base64-private-key>` |
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | DWORD-32 (hexadecimal) | `1` |
+| `DefaultSanitizationSettings` | REG_SZ (string) | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. | See the JSON structure [here](slug://fe-sanitization#defaultsanitizationsettings-json-structure) |
+| `DisableSanitizationSettingsUpdate` | REG_DWORD | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. | `0x00000001` (1) |
 
 ---
 
@@ -115,4 +119,8 @@ By leveraging these configuration options, IT administrators can ensure Fiddler 
 
 For more details on each configuration key or for troubleshooting, refer to the [Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/).
 
+## See Also
 
+* [Applyiing sanitizaion for captured traffic in Fiddler Everywhere](slug://fe-sanitization)
+* [Enabling and disabling the Fiddler Everywhere MCP server](slug://fiddler-mcp-server)
+* [Not capturing traffic due to group policy](slug://resolve-proxysettingsperuser-policy)

@@ -18,11 +18,11 @@ By default, Fiddler Everywhere "chains" to the default proxy of the system. The 
 
     - **Proxy string**&mdash;To manually set the gateway proxy, enter the proxy string.
         To enter the proxy configuration string directly, use the following line.
-        ```curl
+        ```sh
         proxyserver:8080
         ```
         To enter the proxy in the protocol-specific form, use the following line.
-        ```curl
+        ```sh
         http=httpproxy:8080;https=httpsproxy:8080
         ```
 
@@ -30,7 +30,7 @@ By default, Fiddler Everywhere "chains" to the default proxy of the system. The 
         - Wildcards. For example, `*.extranet.example.com;`.
         - The `<local>` special token, which means any host name that does not contain a period.
         - The `<-loopback>` special token, which removes the default bypass for `127.0.0.1` and `localhost` host names. The following example demonstrates how to list multiple bypass entries separated by a semicolon (`;`).
-        ```curl
+        ```sh
         *.extranet.example.com;<local>;<-loopback>;
         ```
 
@@ -38,4 +38,4 @@ By default, Fiddler Everywhere "chains" to the default proxy of the system. The 
 
 The following figure displays an example for a proxy configuration.
 
-![Example manual proxy configuration](../../images/settings/settings-gateway.png)
+![Example manual proxy configuration](./images/settings-gateway.png)

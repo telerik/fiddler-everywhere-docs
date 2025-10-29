@@ -21,7 +21,7 @@ OR
 
 As a result, Fiddler loads the **Composer** screen where you can compose and execute HTTP requests and organize them in collections through the **Requests** tree.
 
-![the Composer pane in Fiddler Everywhere](../images/composer/composer-main.png)
+![the Composer pane in Fiddler Everywhere](./images/composer-main.png)
 
 ## Compose API Request
 
@@ -43,53 +43,42 @@ Once the API request executes, you can inspect its HTTP Response in the Composer
 ## Edit Captured API Request
 
 1. Start Fiddler Everywhere and open the **Traffic** pane.
-
 1. Capture a session (or open a session from the saved save **Snapshots** tree) and use the **Edit in Composer** option from the context menu.
 
 As a result, the session loads as an HTTP request in Fiddler's **Composer**, where you can make atomic modifications to its structure. The **Composer** has a flexible user interface that allows you to switch between **Structured** and **Raw** content (refer to the screenshots below) and between **Table** or **Bulk** style inspectors.
 
-
 * Using the **Structured** mode
-    ![structured mode in Composer](../images/composer/composer-structured.png)
-
+    ![structured mode in Composer](./images/composer-structured.png)
 * Using the **Raw** mode
-    ![raw mode in Composer](../images/composer/composer-raw.png)
+    ![raw mode in Composer](./images/composer-raw.png)
 
 ## Save API Request
 
 You can save the API request through the following steps.
 
 - Open the **Composer** pane.
-
 - [Compose your API request](#compose-api-request)
-
 - Click the **Save** button. 
 
 Saved requests are loaded as a collection in the **Requests** list and can be reused or shared with collaborators at any later moment.
 
-![Creating API request](../images/composer/comp-pane-all.png)
-
+![Creating API request](./images/comp-pane-all.png)
 
 ## Share Requests Collection
 
 With Fiddler Everywhere, you can quickly share a collection of saved API requests.
 
 - Open the **Request** list.
-
 - Select a collection of saved API requests.
-
 - Use the context menu to share the collection with collaborators.
-
-![Share API requests](../images/composer/comp-requests-share.png)
+![Share API requests](./images/comp-requests-share.png)
 
 ## Save API Request
 
 You can save the API request through the following steps.
 
 - Open the **Composer** pane.
-
 - [Compose your API request](#compose-api-request)
-
 - Click the **Save** button. 
 
 Saved requests are loaded as a collection in the **Requests** list and can be reused or shared with collaborators at any later moment.

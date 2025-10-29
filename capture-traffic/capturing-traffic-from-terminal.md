@@ -16,22 +16,18 @@ The **terminal capturing mode** in Fiddler Everywhere allows you to set the Fidd
 To capture terminal traffic with Fiddler Everywhere:
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Home** pane.
-
 1. Open the **Terminal** tutorial, and then click on **Open Terminal**.
 
 OR
 
 1. Start Fiddler Everywhere.
-
 1. Open the **Traffic** pane.
-
-1. Click on the **>_ Terminal** button to load terminal instance.
-
-    ![Use the "Terminal" button to start terminal instance](../images/get-started/get-started-terminal.png)
-
+1. Click on the **Terminal** button to load terminal instance.
 1. Start your application within the terminal instance.
+
+
+![Use the "Terminal" button to start terminal instance](./images/get-started-terminal.png)
 
 As a result, Fiddler Everywhere opens a dedicated terminal instance and starts capturing the ongoing HTTPS traffic immediately. It's important to note that Fiddler will capture the traffic generated from the terminal and any child process that originates (starts) from the same terminal instance. The terminal instance will lose connectivity if Fiddler Everywhere application is closed.
 
@@ -55,14 +51,14 @@ While using the terminal capturing mode, you must consider the technical specifi
 
 Some frameworks, like the .NET Framework, are hardcoded not to send requests for localhost through any proxies, and as a proxy, Fiddler will not receive such traffic.
 
-Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell, which uses .NET Core), the localhost traffic won't be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases]({%slug how-to-capture-localhost-traffic%}) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
+Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell, which uses .NET Core), the localhost traffic won't be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases](slug://how-to-capture-localhost-traffic) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
 
 
 ### NET Traffic through a Terminal
 
 Capturing traffic from **curl** or **Node.js** libraries does not require explicitly installing and trusting the Fiddler certificate authority on the Fiddler host. However, this is a mandatory requirement for a NET application that executes HTTPS requests.
 
-[Learn how to install and trust the Fiddler root CA here...]({%slug trust-certificate%})
+[Learn how to install and trust the Fiddler root CA here...](slug://trust-certificate)
 
 ## Capturing from Non-Fiddler Terminals
 
@@ -97,7 +93,7 @@ curl https://docs.telerik.com/fiddler-everywhere --
 
 ### Setting the Fiddler Root Certificate
 
-Apart from setting the environment variables `http_proxy` and `https_proxy`, you can manually export and point your terminal application to explicitly use the Fiddler_Root_Certificate_Authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you can use variables like `SSL_CERT_FILE` and `REQUESTS_CA_BUNDLE` for [configuring the Fiddler's CA within a Python application]({%slug fiddler-python-traffic%}).
+Apart from setting the environment variables `http_proxy` and `https_proxy`, you can manually export and point your terminal application to explicitly use the Fiddler_Root_Certificate_Authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you can use variables like `SSL_CERT_FILE` and `REQUESTS_CA_BUNDLE` for [configuring the Fiddler's CA within a Python application](slug://fiddler-python-traffic).
 
 ### Resetting the Fiddler Proxy
 

@@ -7,6 +7,15 @@ publish: true
 res_type: kb
 ---
 
+
+## Environment
+
+| Property | Value |
+|----------|-------|
+| Product  | Fiddler Everywhere |
+
+## Description
+
 The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddler format used to store HTTP(S), WebSocket, and GRPC traffic. Also known as **Fiddler Archive** or **Fiddler Session Archive**, the format is officially supported by Fiddler Everywhere, Fiddler Classic, FiddlerCore and all other products from the Fiddler family. The SAZ format uses ZIP compression and, as such, can be opened by most of the popular archiving tools. The format is backward compatible with newer versions of the SAZ format containing more information about the session snapshots.
 
 >tip Some archiving tools like 7-Zip recognize SAZ files by default, while others need to change the file extension to ZIP.
@@ -15,11 +24,8 @@ The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddle
 
 Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains the following:
 
-* a **raw** folder&mdash;The **raw** folder contains several files for each captured session.
-
+* A **raw** folder&mdash;The **raw** folder contains several files for each captured session.
     * **sessid#_c.txt**&mdash;The file contains the raw client HTTP(S) request.
-
-        _An example for raw client request file_
         ```txt
         GET https://expired.badssl.com/ HTTP/1.1
         Host: expired.badssl.com
@@ -38,10 +44,7 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
         Accept-Encoding: gzip, deflate, br
         Accept-Language: en-US,en;q=0.9,bg-US;q=0.8,bg;q=0.7
         ```
-
     * **sessid#_s.txt**&mdash;The file contains the raw server HTTP(S) response.
-
-        _An example for raw server response file_
         ```xml
         HTTP/1.1 502 Bad Gateway
         Content-Length: 82269
@@ -67,13 +70,9 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
         </body>
         </html>
         ```
-
     * **sessid#_m.xml**&mdash;The file contains metadata, including session flags (element `SessionFlags`), certificate chain information (element `CertificateChainInfo`), socket reuse information, etc.
-
     * **sessid#_w.txt**&mdash;(Optional) The file contains WebSocket messages.
-
     * **sessid#_g.txt**&mdash;(Optional) The file contains GRPC messages.
-
 * **[Content_Types.xml]**&mdash;A metadata file that specifies a few MIME types, so the archive is compatible with `System.IO.Packaging` or other clients that support the Open Packaging Conventions.
 
 >tip Newer versions of Fiddler Everywhere constantly bring added value to the information obtained from each session. New features like the **TLS Version** column introduced in version 4.2.0 also add information for each captured session in the produced SAZ files. Note that SAZ files and sessions saved with older versions of Fiddler won't contain the new data (like the **TLS Version**).
@@ -87,34 +86,25 @@ The Fiddler Everywhere uses SAZ behind the scenes for each session explicitly sa
  SAZ files use the following UI options:
 
 - Use the **Export** option from the Live Traffic context menu and then choose **Fiddler Archive (SAZ)** as format.
-
-    ![Export SAZ from Live Traffic](../images/kb/saz/saz-export-live-traffic.png)
-
+    ![Export SAZ from Live Traffic](./images/saz-export-live-traffic.png)
 - Use the **Export** option from the **Snapshots** tree's context menu and then choose **Fiddler Archive (SAZ)** as format.
-
-    ![Export SAZ from the saved Snapshots tree list](../images/kb/saz/saz-export-saved-sessions.png)
-
+    ![Export SAZ from the saved Snapshots tree list](./images/saz-export-saved-sessions.png)
 - Use the **Import** option from the **Snapshots** tree's context menu and locate the *.saz file from the OS file system.   
-
-    ![Import SAZ into the **Sessions** list](../images/kb/saz/saz-import-saved-sessions.png)
+    ![Import SAZ into the **Sessions** list](./images/saz-import-saved-sessions.png)
 
 All session snapshots saved in the local storage are also available as SAZ files in the `.fiddler` folder. You can manually access and backup your locally saved from the following paths:
 
 * Windows path
-    ```curl
-    %userprofile%\.fiddler\<unique-fiddler-user-GUID>\Snapshots
-    ```
-
+```sh
+%userprofile%\.fiddler\<unique-fiddler-user-GUID>\Snapshots
+```
 * macOS path
-
-    ```curl
-    ~/.fiddler/<unique-fiddler-user-GUID>/Snapshots
-    ```
-
+```sh
+~/.fiddler/<unique-fiddler-user-GUID>/Snapshots
+```
 * Linux path
-
-    ```curl
-    ~/.fiddler/<unique-fiddler-user-GUID>/Snapshots
-    ```
+```sh
+~/.fiddler/<unique-fiddler-user-GUID>/Snapshots
+```
 
 >important Deleting any SAZ files from the above local folders is irreversible and might result in data loss. Consider backing up data (manually or through the cloud save options) if you plan to delete the `.fiddler` folder or any of its subfolders.

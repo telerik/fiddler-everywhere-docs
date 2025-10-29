@@ -24,18 +24,14 @@ How can I troubleshoot traffic capturing on macOS?
 Test if Fiddler Everywhere is correctly configured to capture HTTPS traffic on macOS by executing a cURL command in the macOS terminal and checking the output in the terminal and inside Fiddler Everywhere:
 
 1. Open Fiddler Everywhere and ensure that the root certificate is installed and trusted, and **Settings** > **HTTPS** > **Capture HTTPS traffic** is checked.
-
 1. Open a terminal and enter the following command:
-
-    ```Shell
+    ```sh
     curl -v --url https://www.example.com/ -x 127.0.0.1:8866
     ```
 
     The `-x` option sets the Fiddler Everywhere proxy. The `-v` option provides verbose logs. Optionally, you can use the `-k` option to disable SSL verification.
-
 1. Check the command output for a line related to the server certificate. Under it, the certificate will list the Fiddler URL (http://www.fiddler2.com).
-
-    ```Console
+    ```sh
     *   Trying 127.0.0.1...
     * TCP_NODELAY set
     * Connected to 127.0.0.1 (127.0.0.1) port 8866 (#0)
@@ -88,27 +84,19 @@ Test if Fiddler Everywhere is correctly configured to capture HTTPS traffic on m
     < X-Cache: HIT
     < Content-Length: 1256
     ```
-
 1. Check the Fiddler Everywhere application window. A new session will be visible in the **Live Traffic** tab, the protocol will be **HTTPS**, and no **Tunnel** to indicate in the **Host** column will be available. If this is correct, then Fiddler Everywhere is configured to capture HTTPS traffic.
-
-    ![Fiddler showing HTTPS traffic](../images/kb/troubleshoot/curl-request-fiddler.png)
-
+    ![Fiddler showing HTTPS traffic](./images/curl-request-fiddler.png)
 1. Enable the **System Proxy** capturing mode and open a Chrome browser. Use the incognito mode to make sure no credentials or cookies are cached. Then open each of these URLs and see if they are captured inside Fiddler Everywhere:
-
-    - http://httpbin.org (note that this request uses **HTTP**)
-
-    - https://www.example.com (note that this request uses **HTTPS**)
-
-    - https://www.google.com
-
-
+    - `http://example.com` (note that this request uses **HTTP**)
+    - `https://www.example.com` (note that this request uses **HTTPS**)
+    - `https://www.google.com`
 1. After opening each of the above URLs, check the sessions grid and see if the traffic is captured. Additionally, make sure that no active filters are hiding the captured traffic&mdash;to remove any preset filters, use the **Clear All Filters** option.
 
-If the issue persists save the captured sessions by going to **File** > **Save Archive** > **All Sessions** and post them in [the support channels]({% slug support %}).
+If the issue persists save the captured sessions by going to **File** > **Save Archive** > **All Sessions** and post them in [the support channels](slug://support).
 
 ## See Also
 
-* [Troubleshooting Mac Proxy Settings]({%slug troubleshoot-mac-proxy-settings%})
-* [Accessing and Inspecting Fiddler Everywhere Log Files]({%slug fiddler-log-files%})
-* [Troubleshooting macOS Trust Certificate Issues]({%slug troubleshoot-certificate-error%})
-* [Resetting Fiddler Everywhere Settings to Default]({%slug how-to-reset-fiddler-everywhere-settings-to-default%})
+* [Troubleshooting Mac Proxy Settings](slug://troubleshoot-mac-proxy-settings)
+* [Accessing and Inspecting Fiddler Everywhere Log Files](slug://fiddler-log-files)
+* [Troubleshooting macOS Trust Certificate Issues](slug://troubleshoot-certificate-error)
+* [Resetting Fiddler Everywhere Settings to Default](slug://how-to-reset-fiddler-everywhere-settings-to-default)

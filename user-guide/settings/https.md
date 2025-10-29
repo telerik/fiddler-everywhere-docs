@@ -14,7 +14,7 @@ To capture and decrypt HTTPS traffic, you must install and trust the Fiddler roo
 
 ## Certificate Trust Options
 
-- **Trust CA Certificate in the User Store**: Installs and trusts the Fiddler root CA in the user store of your OS certificate manager. Available on [macOS]({% slug first_steps_macos %}#start-system-capturing) and [Windows]({% slug first_steps_windows %}#start-system-capturing). On Linux, [export and trust the Fiddler CA certificate manually]({% slug first_steps_linux %}#start-system-capturing). After installation, you can [enable HTTPS traffic capturing](#capture-https-traffic).
+- **Trust CA Certificate in the User Store**: Installs and trusts the Fiddler root CA in the user store of your OS certificate manager. Available on [macOS](slug://first_steps_macos) and [Windows](slug://first_steps_windows). On Linux, [export and trust the Fiddler CA certificate manually](slug://first_steps_linux). After installation, you can [enable HTTPS traffic capturing](#https-traffic-options).
 
 - **Trust CA Certificate in the Machine Store**: Installs and trusts the Fiddler root CA in the machine store (all users) of the OS certificate manager. Available on Windows only and requires administrative privileges.
 
@@ -38,13 +38,13 @@ To capture and decrypt HTTPS traffic, you must install and trust the Fiddler roo
 
 The following figure displays the default settings of the **HTTPS** menu:
 
-![Default HTTPS settings](../../images/settings/settings-https.png)
+![Default HTTPS settings](./images/settings-https.png)
 
 ## Inline Notifications
 
-If the Fiddler root CA is not yet trusted, an inline notification will warn you that [system HTTPS capture]({%slug capture-traffic-get-started%}#system-capturing) is disabled. This notification hides if you use [independent browser capturing]({%slug capture-traffic-get-started%}#independent-browser-capturing) and reappears when you close the independent browser instance.
+If the Fiddler root CA is not yet trusted, an inline notification will warn you that [system HTTPS capture](slug://capture-traffic-get-started#system-capturing) is disabled. This notification hides if you use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) and reappears when you close the independent browser instance.
 
-![Inline notification](../../images/get-started/notification.png)
+![Inline notification](./images/notification.png)
 
 ## Troubleshooting & Best Practices
 

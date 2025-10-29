@@ -18,30 +18,27 @@ res_type: kb
 
 ## Description
 
-Many developers, support engineers, and end-users are familiar with the [cURL](https://curl.se/) as a fast tool for executing and managing requests. How can I easily convert a request that was generated in the [**Composer**]({%slug composer-tab%}) to a cURL script?
-
+Many developers, support engineers, and end-users are familiar with the [cURL](https://curl.se/) as a fast tool for executing and managing requests. How can I easily convert a request that was generated in the [**Composer**](slug://composer-tab) to a cURL script?
 
 ## Solution
 
-Fiddler Everywhere version 4.0.0 and above provides an automated export as cURL script through the [Live Traffic grid context menu]({%slug web-sessions-list%}#context-menu-options).
+Fiddler Everywhere version 4.0.0 and above provides an automated export as cURL script through the [Live Traffic grid context menu](slug://web-sessions-list#context-menu-options).
 
 To export a session as cURL:
 
 - Select the captured session.
-
 - Open the context menu and choose **Copy > Copy as cURL**
 
-![Copy as Curl](../images/kb/copy-as-curl.png)
-
+>tip The "Copy as cURL" command will copy request bodies only when the request header Content-Type is set to `application/x-www-form-urlencoded` or `multipart/form-data` and will intentionally skip all other request and response bodies. The main reason for this is that the content of the HTTP body can be (and often is) quite large, which makes it impossible to put it in the clipboard. To transfer HTTP bodies of other sessions use the **Save Request Body to file** and **Save Response Body to file** inspector options.
 
 ## Solution (Obsolete)
 
-The [**Composer**]({%slug composer-tab%}) provides options for creating and executing your requests. Each executed request is added to the [**Live Traffic** grid]({%slug web-sessions-list%}) as a new session entry.
+The [**Composer**](slug://composer-tab) provides options for creating and executing your requests. Each executed request is added to the [**Live Traffic** grid](slug://web-sessions-list) as a new session entry.
 
 To convert a request created in the **Composer**:
 
-1. [Create and execute your request in the **Composer**]({%slug composer-get-started%}).
-1. Open the [**Live Traffic** grid]({%slug web-sessions-list%}) and select the generated session from the executed request above.
+1. [Create and execute your request in the **Composer**](slug://composer-get-started).
+1. Open the [**Live Traffic** grid](slug://web-sessions-list) and select the generated session from the executed request above.
 1. Open the context menu by right-clicking the session entry and go to **Export** > **Selected Sessions**.
 1. From the drop-down menu, choose **cURL Script** and click **Next**.
 1. Choose a name and extension for the file. Click **Save**. By default, the file name is the current date and the extension is BAT.
@@ -50,7 +47,7 @@ By default, Fiddler Everywhere saves the outputted cURL script as [a BAT file](h
 
 A cURL output generated from Fiddler Everywhere looks similar to the following sample:
 
-```cURL
+```sh
 curl -k -i --raw -o 0.dat "http://httpbin.org/get?theAnswer=42" -H "User-Agent: Fiddler Everywhere" -H "Host: httpbin.org"
 ```
 

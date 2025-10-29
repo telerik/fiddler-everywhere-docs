@@ -25,15 +25,11 @@ You can configure a custom adblock filter in the Brave browser configuration. Us
 To add an exception filter for the Fiddler Everywhere endpoint:
 
 1. Open the Brave browser and in type `brave://adblock` in the address field. Brave opens the **Additional filters** configuration page.
-
 1. Scroll down to the **Custom Filters** option. Type the following exception rule on a new line:
-
     ```Shell
     @@||localhost^$domain=getfiddler.com
     ```
-
 1. Exit the page and restart Brave.
-
 1. Start Fiddler Everywhere and use the Google authentication with Brave as a default OS browser.
 
 ## Alternative Solution

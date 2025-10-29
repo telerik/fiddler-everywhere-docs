@@ -29,9 +29,7 @@ To handle the issue, first access the name of the active network adapter and the
 The Fiddler Everywhere client will use the name of the active network adapter (for example, something like **Wi-FI**) to set the Fiddler proxy. You can get the name manually by creating and executing a [Shell script](https://en.wikipedia.org/wiki/Shell_script):
 
 1. Create a Shell file through your preferred IDE. For demonstration purposes, name this file as `test.sh`.
-
 2. In the newly created `test.sh` file, copy and paste the following Shell script.
-
     ```Shell
     services=$(networksetup -listnetworkserviceorder | sed '1d;/(\*)/,+2d;s/^([^)]*) \(.*\)$/\1FIDDLER_SEPARATOR/g;s/^.*Device: \([^)]*\))/\1\t/g;/^$/d' | sed 'N;s/\n//')
 
@@ -64,13 +62,10 @@ The Fiddler Everywhere client will use the name of the active network adapter (f
     networksetup -getsecurewebproxy "$currentservice"
     networksetup -getsocksfirewallproxy "$currentservice"
     ```
-
 3. Execute the `test.sh` through the terminal.
-
     ```Shell
     sh <path-to-script>/test.sh
     ```
-
 
 
 Once you can successfully run the above script, you can use its output to troubleshoot possible issues with the active network adapter discovery.

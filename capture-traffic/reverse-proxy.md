@@ -21,16 +21,17 @@ This article explains how to use Fiddler Everywhere as a reverse proxy through t
 The built-in **Reverse Proxy** feature lets you quickly set up a reverse proxy for localhost or remote servers. Follow these steps:
 
 1. Start Fiddler Everywhere.
-2. Click the **Reverse Proxy** button.
-3. Enter the targeted port in the `Client Port` field (e.g., `8443`).
-4. Select the client protocol (default: `HTTP/HTTPS`).
-5. Enter the **remote host address** and **port** in the `Remote Host` field (e.g., `localhost:8877`).
+1. Click the **Reverse Proxy** button.
+1. Enter the targeted port in the `Client Port` field (e.g., `8443`).
+1. Select the client protocol (default: `HTTP/HTTPS`).
+1. Enter the **remote host address** and **port** in the `Remote Host` field (e.g., `localhost:8877`).
     >important The custom port configured in the `Remote Host` field must differ from the port used by the Fiddler Everywhere proxy (configured through the **Settings > Connections > Fiddler listens on port** option).
-6. Select the remote protocol (default: `HTTP/HTTPS`).
-7. Choose whether to preserve the host header (default: `No`).
-8. Save your changes.
+1. Select the remote protocol (default: `HTTP/HTTPS`).
+1. Choose whether to preserve the host header (default: `No`).
+1. Save your changes.
 
-![Reverse proxy setup in Fiddler Everywhere](../images/reverse/reverse-proxy-setup-001.png)
+
+![Reverse proxy setup in Fiddler Everywhere](./images/reverse-proxy-setup-001.png)
 
 **Update your server application to use the custom port:**
 
@@ -49,7 +50,7 @@ console.log(`Server listening on port: ${reverseProxyPort}`);
 
 >note When both the client and server run on the same host (like `localhost`), you must use a custom port for the server app. The above can be tested while using our [demo application](#demo-client-and-server-applications).
 
-![Captured traffic through reverse proxy](../images/reverse/reverse-proxy-setup-002.png)
+![Captured traffic through reverse proxy](./images/reverse-proxy-setup-002.png)
 
 ### Demo: Client and Server Applications
 
@@ -180,7 +181,7 @@ For demonstation purposes. we will configure the reverse proxy rule for the remo
 
 - For both rules, set the `Preserve Host` option to **YES** to ensure that Fiddler understands which website to reach when redirecting an IP. 
 
-    ![creating reverse proxy rule for remote server](../images/reverse/reverse-proxy-remote-server-001.png)
+    ![creating reverse proxy rule for remote server](./images/reverse-proxy-remote-server-001.png)
 
 - Go to **Settings > HTTPS** and enable the **Ignore Server Certificate Errors (unsafe)** option.
 
@@ -194,7 +195,7 @@ Once the above configuration is in place, you can trigger a request to `www.exam
 curl -k www.example.com
 ```
 
-![Testing the reverse proxy rules for the remote host](../images/reverse/reverse-proxy-remote-server-002.png)
+![Testing the reverse proxy rules for the remote host](./images/reverse-proxy-remote-server-002.png)
 
 ## Reverse Proxy Options Explained
 
@@ -208,7 +209,7 @@ The built-in **Reverse Proxy** provides the following configurable options:
 
 ## Reverse Proxy Alongside Other Capturing Modes
 
-The reverse proxy can be used alongside other [capturing modes]({%slug capture-traffic-get-started%}). The immediate effect of using the reverse proxy simultaneously with other capturing modes is that you will observe the same request being captured and listed twice in the Fiddler's live traffic grid — once when going through the reverse proxy mode and once when going through the alternative forward proxy mode.
+The reverse proxy can be used alongside other [capturing modes](slug://capture-traffic-get-started). The immediate effect of using the reverse proxy simultaneously with other capturing modes is that you will observe the same request being captured and listed twice in the Fiddler's live traffic grid — once when going through the reverse proxy mode and once when going through the alternative forward proxy mode.
 
 ## Troubleshooting & Best Practices
 
@@ -230,4 +231,4 @@ The reverse proxy can be used alongside other [capturing modes]({%slug capture-t
 ## Additional Resources
 
 - [GitHub Demo - Client App and Local Server](https://github.com/NickIliev/fiddler-reverse-demo)
-- [Fiddler's Capturing Modes Explained]({%slug capture-traffic-get-started%})
+- [Fiddler's Capturing Modes Explained](slug://capture-traffic-get-started)
