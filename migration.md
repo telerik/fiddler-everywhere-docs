@@ -7,7 +7,6 @@ publish: false
 position: 200
 ---
 
-
 ## Migrating Fiddler Accounts and Subscriptions
 
 Fiddler products are now part of Progress Telerik's extensive portfolio. This article explains how to migrate your existing Fiddler accounts and subscriptions to the new unified Telerik system.
