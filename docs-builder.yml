@@ -11,8 +11,7 @@ product-url: https://www.telerik.com/fiddler/fiddler-everywhere
 product-trial-url: https://www.telerik.com/download/fiddler-everywhere
 
 contribute-url: https://github.com/telerik/fiddler-everywhere-docs/edit/master
-search-engine-id: 001595215763381649090:dyayucp6jmq # TODO get a new one for Fiddler Everywhere
-# where should we add the google analytics and tag manager codes (refer to _config.yml)?
+search-engine-id: a3bf7c26095d847bc # Google Search Engine
 avatar-path: ./images/common/avatar-ninja.svg # TODO get a Fiddler NINJA
 no-results-image-path: ./images/common/no-results.svg # TODO get a Fiddler no-results.png
 table-layout: fixed
