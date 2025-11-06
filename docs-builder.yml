@@ -13,7 +13,7 @@ product-trial-url: https://www.telerik.com/download/fiddler-everywhere
 contribute-url: https://github.com/telerik/fiddler-everywhere-docs/edit/master
 search-engine-id: a3bf7c26095d847bc # Google Search Engine
 avatar-path: ./images/common/avatar-ninja.svg # TODO get a Fiddler NINJA
-no-results-image-path: ./images/common/no-results.svg # TODO get a Fiddler no-results.png
+no-results-image-path: ./images/common/ninja-no-results.svg # TODO get a Fiddler no-results.png
 table-layout: fixed
 enable-tabbed-code-blocks: true
 
