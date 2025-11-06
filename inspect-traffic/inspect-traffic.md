@@ -42,7 +42,7 @@ You can compare two or more captured sessions for detailed differentiation and s
 
 Fiddler Everywhere loads the selected sessions side-by-side with the session with a lower ID to the left (called **Group 1**) and a higher ID to the right (called **Group 2**). Each compared session will highlight differences from its counterpart.
 
-[Deep-dive into the Fiddler's `Compare Sessions`` tab here ...](slug://fe-compare-sessions)
+[Deep-dive into the Fiddler's Compare Sessions tab here ...](slug://fe-compare-sessions)
 
 ## Snapshots
 

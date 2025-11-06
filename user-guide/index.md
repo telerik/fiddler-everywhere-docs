@@ -5,6 +5,7 @@ slug: app-menu-section
 tags: Fiddler help menu, Fiddler Everywhere support, fiddler application logs, zoom interface
 position: 10
 publish: true
+previous_url: /user-guide/application-menu
 ---
 
 # Application Menu
