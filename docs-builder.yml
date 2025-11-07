@@ -50,7 +50,7 @@ meta:
         title: Collaboration
         position: 70
     rules-presets:
-        title: Rules & Presets
+        title: Rules Presets
         position: 80
     user-guide:
         title: User Interface
