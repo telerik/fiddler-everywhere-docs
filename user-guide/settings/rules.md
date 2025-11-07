@@ -2,7 +2,7 @@
 title: Rules
 description: "Learn how to use the Rules menu and change the behavour of sessions that are not matching active rules"
 slug: rules-settings-submenu
-publish: false
+published: false
 position: 60
 ---
 
