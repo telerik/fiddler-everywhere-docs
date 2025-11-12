@@ -48,7 +48,7 @@ To use the Debugging Assistant:
 1. Click the **Ask Assistant** button.
 1. Ask questions in natural language about Fiddler or the captured traffic data.
 
-![Debugging assistant chat overview](./images/fiddler_assistant_chat.png)
+![Debugging assistant chat overview](./images/fiddler_assistent_chat.png)
 
 ## Limitations
 
