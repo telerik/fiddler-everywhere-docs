@@ -30,7 +30,7 @@ Select your preferred LLM provider and set its API key through **Settings > Assi
 
 ![Configuring the debugging assistant API key](./images/fiddler_assistent_settings.png)
 
-Once app properties are set, use the **Test Connection** button to verify that the connection is properly established.
+Once all properties are set, use the **Test Connection** button to verify that the connection is properly established.
 
 ![Testing and verifying the LLM connection](./images/fiddler_assistent_settings_002.png)
 
@@ -74,8 +74,35 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | Key Name | Description | Value Type | Value Example |
 |:---------|:------------|:-----------|:--------------|
 | `DisableAssistant` | Enables or disables the Debugging Assistant | DWORD-32 (hexadecimal) | `1` |
-| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) for the Debugging Assistant | REG_SZ (string) | `{"provider": "anthropic","providerApiKey": "my-api-key","model": "claude-sonnet-4-20250514"}` |
+| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) for the Debugging Assistant | REG_SZ (string) | See the JSON structure [here](#configuring-the-defaultassistantsettings-policy) |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | DWORD-32 (hexadecimal) | `1` |
+
+### macOS
+
+IT teams managing macOS systems can apply app configuration using their preferred device management solution (such as Jamf, Intune, or similar) by setting the following keys:
+
+| Key Name | Description | Value Type | Value Example |
+|:---------|:------------|:-----------|:--------------|
+| `DisableAssistant` | Enables or disables the Debugging Assistant | integer | `1` |
+| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) for the Debugging Assistant | String | See the JSON structure [here](#configuring-the-defaultassistantsettings-policy) |
+| `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | integer | `1` |
+
+The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
+
+- `provider` - Sets the LLM provider. Supports the following values (case-sensitive):
+```txt
+openai
+anthropic
+azure_openai
+google_gemini
+```
+- `providerApiKey` - Sets the API key for the selected provider. 
+- `model` - Sets a specific model from the selected provider. Available when the `provider` key is set to `openai`,`anthropic`, or `google_gemini`.
+- `azureUri` - Sets the Azure OpenAI resource URI . Available only when the `provider` key is set to `azure_openai`.
+
+For more information on using managed application configurations, see the [Managed Application Policies](slug://fe-restrict-policies) article.
+
+### Configuring the DefaultAssistantSettings Policy
 
 The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
 
@@ -101,28 +128,3 @@ google_gemini
 ```JSON
 {"provider": "azure_openai","providerApiKey": "my-api-key","azureUri": "https://fiddlerai.cognitiveservices.azure.com/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-01-01-preview"}
 ```
-
-### macOS
-
-IT teams managing macOS systems can apply app configuration using their preferred device management solution (such as Jamf, Intune, or similar) by setting the following keys:
-
-| Key Name | Description | Value Type | Value Example |
-|:---------|:------------|:-----------|:--------------|
-| `DisableAssistant` | Enables or disables the Debugging Assistant | integer | `1` |
-| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) for the Debugging Assistant | String | `{"provider": "anthropic","providerApiKey": "my-api-key","model": "claude-sonnet-4-20250514"}`  |
-| `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | integer | `1` |
-
-The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
-
-- `provider` - Sets the LLM provider. Supports the following values (case-sensitive):
-```txt
-openai
-anthropic
-azure_openai
-google_gemini
-```
-- `providerApiKey` - Sets the API key for the selected provider. 
-- `model` - Sets a specific model from the selected provider. Available when the `provider` key is set to `openai`,`anthropic`, or `google_gemini`.
-- `azureUri` - Sets the Azure OpenAI resource URI . Available only when the `provider` key is set to `azure_openai`.
-
-For more information on using managed application configurations, see the [Managed Application Policies](slug://fe-restrict-policies) article.
