@@ -9,39 +9,39 @@ position: 1
 
 # Fiddler Debugging Assistant
 
-The Fiddler Debugging Assistant lets you use large language models (LLMs) to reach new levels of developer productivity. The Debugging Assistant is a built-in chat feature that enables you to receive additional insights by leveraging your preferred AI model alongside Fiddler's powerful functionalities.
+The Fiddler Debugging Assistant enables you to leverage large language models (LLMs) to reach new levels of developer productivity. This built-in chat feature provides additional insights by combining your preferred AI model with Fiddler's powerful traffic analysis capabilities.
 
 ## Prerequisites
 
 - The latest version of Fiddler Everywhere.
-- An API key with access to one of the supported language models. Currently, Fiddler Everywhere supports the following providers:
+- An API key with access to one of the supported language models. Fiddler Everywhere currently supports the following providers:
     * OpenAI
     * Anthropic
     * Azure OpenAI
     * Google Gemini
 
->important Once configured, the Fiddler Debugging Assistant will consume tokens for each generated inquiry. Note that the price per token varies depending on your LLM provider's pricing plan, so use the assistant only after carefully reviewing the third-party pricing options.
+>important Once configured, the Fiddler Debugging Assistant consumes tokens for each generated inquiry. Token pricing varies depending on your LLM provider's plan, so review third-party pricing options carefully before using the assistant.
 
 ## Configuring the Debugging Assistant
 
-The Debugging Assistant is accessible through the **Ask Assistant** button in the Fiddler toolbar. To use the Fiddler Debugging Assistant, you must provide a valid API key for one of the supported AI providers.
+The Debugging Assistant is accessible through the **Ask Assistant** button in the Fiddler toolbar. To use it, you must provide a valid API key for one of the supported AI providers.
 
-You can select your preferred LLM provider and set its API key through **Settings > Assistant**. 
+Select your preferred LLM provider and set its API key through **Settings > Assistant**. 
 
 ![Configuring the debugging assistant API key](./images/fiddler_assistent_settings.png)
 
-Once the API key is set, use the **Test Connection** button to confirm the connection is properly established.
+Once the API key is set, use the **Test Connection** button to verify that the connection is properly established.
 
 ![Testing and verifying the LLM connection](./images/fiddler_assistent_settings_002.png)
 
 ## Using the Debugging Assistant
 
-To start using the Debugging Assistant:
+To use the Debugging Assistant:
 
 1. Open the Fiddler Everywhere application.
 2. Select the **Traffic** pane.
 3. Click the **Ask Assistant** button.
-4. Use natural language to ask questions related to Fiddler or the captured traffic data.
+4. Ask questions in natural language about Fiddler or the captured traffic data.
 
 ![Debugging assistant chat overview](./images/fiddler_assistent_chat.png)
 
@@ -54,8 +54,56 @@ When working with the Debugging Assistant, consider the following limitations:
 
 ## Debugging Assistant Access Policies
 
-Fiddler Everywhere provides managed application policies through its Enterprise tier. License administrators can use these policies to restrict access to the Fiddler Debugging Assistant for licensed users.
+Fiddler Everywhere provides managed application policies through its Enterprise tier. License administrators can use these policies to control access to the Fiddler Debugging Assistant for licensed users.
 
-For more information about configuring enterprise policies, refer to the [Managed App Configuration](slug://fe-restrict-policies) documentation.
+For more information about configuring enterprise policies, see the [Managed App Configuration](slug://fe-restrict-policies) article.
 
-<!-- TODO: Add specific policy configuration examples for Windows and macOS -->
+### Windows
+
+IT teams managing Windows systems can apply app configuration keys using their preferred administrative tooling by setting values in the following registry path:
+
+```txt
+HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
+```
+
+| Key Name | Description | Value Type | Value Example |
+|:---------|:------------|:-----------|:--------------|
+| `DisableAssistant` | Enables or disables the Debugging Assistant | DWORD-32 (hexadecimal) | `1` |
+| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) for the Debugging Assistant | REG_SZ (string) | `{"provider": "anthropic","providerApiKey": "my-api-key","model": "claude-sonnet-4-20250514"}` |
+| `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | DWORD-32 (hexadecimal) | `1` |
+
+The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
+
+- `provider` - Sets the LLM provider. Supports the following values (case-sensitive):
+```
+openai
+anthropic
+azure_openai
+google_gemini
+```
+- `providerApiKey` - Sets the API key for the selected provider. 
+- `model` - Sets a specific model from the selected provider. 
+
+### macOS
+
+IT teams managing macOS systems can apply app configuration using their preferred device management solution (such as Jamf, Intune, or similar) by setting the following keys:
+
+| Key Name | Description | Value Type | Value Example |
+|:---------|:------------|:-----------|:--------------|
+| `DisableAssistant` | Enables or disables the Debugging Assistant | integer | `1` |
+| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) for the Debugging Assistant | String | `{"provider": "anthropic","providerApiKey": "my-api-key","model": "claude-sonnet-4-20250514"}`  |
+| `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | integer | `1` |
+
+The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
+
+- `provider` - Sets the LLM provider. Supports the following values (case-sensitive):
+```
+openai
+anthropic
+azure_openai
+google_gemini
+```
+- `providerApiKey` - Sets the API key for the selected provider. 
+- `model` - Sets a specific model from the selected provider. 
+
+For more information on using managed application configurations, see the [Managed Application Policies](slug://fe-restrict-policies) article.

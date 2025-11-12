@@ -37,8 +37,11 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | string | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | string | `<base64-private-key>` |
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | integer | `1` |
-| `DefaultSanitizationSettings` | String | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. | See the JSON structure [here](slug://fe-sanitization#defaultsanitizationsettings-json-structure)|
-| `DisableSanitizationSettingsUpdate` | Integer | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. | `1` |
+| `DefaultSanitizationSettings` | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. | string | See the JSON structure [here](slug://fe-sanitization#defaultsanitizationsettings-json-structure)|
+| `DisableSanitizationSettingsUpdate` | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. | integer | `1` |
+| `DisableAssistant` | Enables or disables the Fiddler Everywhere MCP server | integer | `1` |
+| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) of the the Debugging Assistant | string | `{"provider": "anthropic","providerApiKey": "my-api-key","model": "claude-sonnet-4-20250514"}`  |
+| `DisableAssistantSettingsUpdate` | Enables or disables the option to update the settings of the Debugging Assistant | integer | `1` |
 
 >important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints](slug://first_steps_windows#prerequisites). For environments with limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
 
@@ -98,22 +101,23 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 |:-------------------------------|:------------------------------------------------------|:----------------|:----------------|
 | `DefaultProxyPort` | Sets the default proxy port for Fiddler Everywhere. Users can change this value unless restricted. | DWORD-32 (decimal) | A number between 0 and 65535 |
 | `DisableProxyPortChange` | Prevents users from changing the proxy port. | DWORD-32 (hexadecimal) | 1 |
-| `DefaultBypassList` | Sets the default proxy bypass list. Endpoints listed here always bypass Fiddler and use the upstream proxy. | String Value | URLs separated by `;` |
+| `DefaultBypassList` | Sets the default proxy bypass list. Endpoints listed here always bypass Fiddler and use the upstream proxy. | REG_SZ (string) | URLs separated by `;` |
 | `DisableBypassListChange` | Prevents users from changing the bypass list. | DWORD-32 (hexadecimal) | 1 |
 | `DisableAllowRemoteDevicesToConnect` | Disables remote device connections to the Fiddler proxy. | DWORD-32 (hexadecimal) | 1 |
 | `DisableAnalytics` | Disables Fiddler's analytics. | DWORD-32 (hexadecimal) | 1 |
 | `DisableCloud` | Disables all cloud interactions (sharing, storing, and receiving data via Fiddler's cloud). | DWORD-32 (hexadecimal) | 1 |
-| `DefaultNetworkCaptureList` | Whitespace-separated list of CIDR addresses and port numbers for network capturing mode. | String Value | `"0.0.0.0/0:443 ::/0:443"` |
-| `DefaultNetworkCaptureFilterList` | Whitespace-separated list of process IDs or names to capture in network mode. | String Value | `"13008 \"Google Chrome\""` |
+| `DefaultNetworkCaptureList` | Whitespace-separated list of CIDR addresses and port numbers for network capturing mode. | REG_SZ (string)| `"0.0.0.0/0:443 ::/0:443"` |
+| `DefaultNetworkCaptureFilterList` | Whitespace-separated list of process IDs or names to capture in network mode. |REG_SZ (string) | `"13008 \"Google Chrome\""` |
 | `DisableNetworkCaptureSettingsChange` | Prevents users from modifying network capturing settings. | DWORD-32 (hexadecimal) | 1 |
 | `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | DWORD-32 (hexadecimal) | 1 |
-| `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | String Value | `<base64-cert>` |
-| `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | String Value | `<base64-private-key>` |
+| `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | REG_SZ (string) | `<base64-cert>` |
+| `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | REG_SZ (string) | `<base64-private-key>` |
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | DWORD-32 (hexadecimal) | `1` |
-| `DefaultSanitizationSettings` | REG_SZ (string) | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. | See the JSON structure [here](slug://fe-sanitization#defaultsanitizationsettings-json-structure) |
-| `DisableSanitizationSettingsUpdate` | REG_DWORD | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. | `0x00000001` (1) |
-
----
+| `DefaultSanitizationSettings` | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. |  REG_SZ (string) | See the JSON structure [here](slug://fe-sanitization#defaultsanitizationsettings-json-structure) |
+| `DisableSanitizationSettingsUpdate` | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. |  REG_DWORD | `0x00000001` (1) |
+| `DisableAssistant` | Enables or disables the Fiddler Everywhere MCP server | DWORD-32 | `1` |
+| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) of the the Debugging Assistant | REG_SZ (string) | `{"provider": "anthropic","providerApiKey": "my-api-key","model": "claude-sonnet-4-20250514"}`  |
+| `DisableAssistantSettingsUpdate` | Enables or disables the option to update the settings of the Debugging Assistant | DWORD-32 | `1` |
 
 By leveraging these configuration options, IT administrators can ensure Fiddler Everywhere is deployed securely and consistently across their organization, while maintaining control over critical settings and features.
 
@@ -124,3 +128,5 @@ For more details on each configuration key or for troubleshooting, refer to the 
 * [Applyiing sanitizaion for captured traffic in Fiddler Everywhere](slug://fe-sanitization)
 * [Enabling and disabling the Fiddler Everywhere MCP server](slug://fiddler-mcp-server)
 * [Not capturing traffic due to group policy](slug://resolve-proxysettingsperuser-policy)
+* [Policies for managing access and usage of the Fiddler MCP server](slug://fiddler-mcp-server#mcp-access-policies)
+* [Policies for managing access and usage of the Fiddler Debugging Asistant](slug://fiddler-assistantr#debugging-assistant-access-policies)
