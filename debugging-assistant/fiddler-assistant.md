@@ -28,11 +28,11 @@ The Debugging Assistant is accessible through the **Ask Assistant** button in th
 
 Select your preferred LLM provider and set its API key through **Settings > Assistant**. 
 
-![Configuring the debugging assistant API key](./images/fiddler_assistent_settings.png)
+![Configuring the debugging assistant API key](./images/fiddler_assistant_settings.png)
 
 Once the API key is set, use the **Test Connection** button to verify that the connection is properly established.
 
-![Testing and verifying the LLM connection](./images/fiddler_assistent_settings_002.png)
+![Testing and verifying the LLM connection](./images/fiddler_assistant_settings_002.png)
 
 ## Using the Debugging Assistant
 
@@ -42,7 +42,7 @@ To use the Debugging Assistant:
 1. Click the **Ask Assistant** button.
 1. Ask questions in natural language about Fiddler or the captured traffic data.
 
-![Debugging assistant chat overview](./images/fiddler_assistent_chat.png)
+![Debugging assistant chat overview](./images/fiddler_assistant_chat.png)
 
 ## Limitations
 
