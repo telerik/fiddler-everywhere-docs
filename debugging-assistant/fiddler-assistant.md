@@ -75,7 +75,7 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
 
 - `provider` - Sets the LLM provider. Supports the following values (case-sensitive):
-```
+```txt
 openai
 anthropic
 azure_openai
@@ -97,7 +97,7 @@ IT teams managing macOS systems can apply app configuration using their preferre
 The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
 
 - `provider` - Sets the LLM provider. Supports the following values (case-sensitive):
-```
+```txt
 openai
 anthropic
 azure_openai
