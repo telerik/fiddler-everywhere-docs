@@ -14,6 +14,7 @@ The Fiddler Debugging Assistant enables you to leverage large language models (L
 ## Prerequisites
 
 - The latest version of Fiddler Everywhere.
+- A Fiddler Everywhere Pro or higher subscription tier.
 - An API key with access to one of the supported language models. Fiddler Everywhere currently supports the following providers:
     * OpenAI
     * Anthropic
