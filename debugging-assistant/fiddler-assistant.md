@@ -39,9 +39,8 @@ Once the API key is set, use the **Test Connection** button to verify that the c
 To use the Debugging Assistant:
 
 1. Open the Fiddler Everywhere application.
-2. Select the **Traffic** pane.
-3. Click the **Ask Assistant** button.
-4. Ask questions in natural language about Fiddler or the captured traffic data.
+1. Click the **Ask Assistant** button.
+1. Ask questions in natural language about Fiddler or the captured traffic data.
 
 ![Debugging assistant chat overview](./images/fiddler_assistent_chat.png)
 
@@ -82,7 +81,8 @@ azure_openai
 google_gemini
 ```
 - `providerApiKey` - Sets the API key for the selected provider. 
-- `model` - Sets a specific model from the selected provider. 
+- `model` - Sets a specific model from the selected provider. Available when the `provider` key is set to `openai`,`anthropic`, or `google_gemini`.
+- `azureUri` - Sets the Azure OpenAI resource URI . Available only when the `provider` key is set to `azure_openai`.
 
 ### macOS
 
@@ -104,6 +104,7 @@ azure_openai
 google_gemini
 ```
 - `providerApiKey` - Sets the API key for the selected provider. 
-- `model` - Sets a specific model from the selected provider. 
+- `model` - Sets a specific model from the selected provider. Available when the `provider` key is set to `openai`,`anthropic`, or `google_gemini`.
+- `azureUri` - Sets the Azure OpenAI resource URI . Available only when the `provider` key is set to `azure_openai`.
 
 For more information on using managed application configurations, see the [Managed Application Policies](slug://fe-restrict-policies) article.
