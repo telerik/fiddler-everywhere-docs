@@ -129,4 +129,4 @@ For more details on each configuration key or for troubleshooting, refer to the 
 * [Enabling and disabling the Fiddler Everywhere MCP server](slug://fiddler-mcp-server)
 * [Not capturing traffic due to group policy](slug://resolve-proxysettingsperuser-policy)
 * [Policies for managing access and usage of the Fiddler MCP server](slug://fiddler-mcp-server#mcp-access-policies)
-* [Policies for managing access and usage of the Fiddler Debugging Asistant](slug://fiddler-assistantr#debugging-assistant-access-policies)
+* [Policies for managing access and usage of the Fiddler Debugging Asistant](slug://fiddler-assistant#debugging-assistant-access-policies)

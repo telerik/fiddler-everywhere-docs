@@ -3,7 +3,6 @@ title: Fiddler Debugging Assistant
 page_title: Fiddler Debugging Assistant
 description: "Use the Fiddler Everywhere Debugging Assistant alongside your preferred LLM model to enhance your HTTP traffic analysis and debugging workflow."
 slug: fiddler-assistant
-publish: true
 position: 1
 ---
 
