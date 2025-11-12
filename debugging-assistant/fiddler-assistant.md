@@ -128,5 +128,5 @@ google_gemini
 **Example JSON for setting Azure using `provider`, `providerApiKey`, and `azureUri`:**
 
 ```JSON
-{"provider": "azure_openai","providerApiKey": "my-api-key","azureUri": "https://fiddlerai.cognitiveservices.azure.com/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-01-01-preview"}
+{"provider": "azure_openai","providerApiKey": "my-api-key","azureUri": "https://<your-azure-app-endpoint>/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-01-01-preview"}
 ```
