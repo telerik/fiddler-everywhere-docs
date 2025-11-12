@@ -50,6 +50,8 @@ To use the Debugging Assistant:
 
 ![Debugging assistant chat overview](./images/fiddler_assistent_chat.png)
 
+Use the **New Chat** button to start a fresh conversation and clear the current chat history from the context.
+
 ## Limitations
 
 When working with the Debugging Assistant, consider the following limitations:
