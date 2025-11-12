@@ -20,7 +20,7 @@ The Fiddler Debugging Assistant enables you to leverage large language models (L
     * Azure OpenAI
     * Google Gemini
 
->important Once configured, the Fiddler Debugging Assistant consumes tokens for each generated inquiry. Token pricing varies depending on your LLM provider's plan, so review third-party pricing options carefully before using the assistant.
+>important Requests are processed using your own API key and billed directly to your account with the LLM provider. Data usage and retention follow the provider’s Terms of Service and Privacy Policy.
 
 ## Configuring the Debugging Assistant
 
