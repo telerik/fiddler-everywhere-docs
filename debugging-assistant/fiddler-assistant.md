@@ -28,11 +28,17 @@ The Debugging Assistant is accessible through the **Ask Assistant** button in th
 
 Select your preferred LLM provider and set its API key through **Settings > Assistant**. 
 
-![Configuring the debugging assistant API key](./images/fiddler_assistant_settings.png)
+![Configuring the debugging assistant API key](./images/fiddler_assistent_settings.png)
 
-Once the API key is set, use the **Test Connection** button to verify that the connection is properly established.
+Once app properties are set, use the **Test Connection** button to verify that the connection is properly established.
 
-![Testing and verifying the LLM connection](./images/fiddler_assistant_settings_002.png)
+![Testing and verifying the LLM connection](./images/fiddler_assistent_settings_002.png)
+
+### Configuration Details
+ 
+- When setting the `model`, you can choose from the dropdown list of available models or enter a custom model name if it's not listed.
+
+- When setting the `Azure target URI`, note that this must be a complete URL containing the endpoint, deployment name, and API version. You can find this target URI in the deployment details page in Azure AI Foundry.
 
 ## Using the Debugging Assistant
 
@@ -73,16 +79,28 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 
 The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
 
-- `provider` - Sets the LLM provider. Supports the following values (case-sensitive):
+- `provider` - Sets the LLM provider. Supports the following case-sensitive values:
 ```txt
 openai
 anthropic
 azure_openai
 google_gemini
 ```
-- `providerApiKey` - Sets the API key for the selected provider. 
-- `model` - Sets a specific model from the selected provider. Available when the `provider` key is set to `openai`,`anthropic`, or `google_gemini`.
-- `azureUri` - Sets the Azure OpenAI resource URI . Available only when the `provider` key is set to `azure_openai`.
+- `providerApiKey` - Sets the API key for the selected provider.
+- `model` - Sets a specific model from the selected provider. Available when the `provider` key is set to `openai`, `anthropic`, or `google_gemini`.
+- `azureUri` - Sets the Azure OpenAI resource URI. Available only when the `provider` key is set to `azure_openai`.
+
+**Example JSON for setting Anthropic using `provider`, `providerApiKey`, and `model`:**
+
+```JSON
+{"provider": "anthropic","providerApiKey": "my-api-key","model": "claude-sonnet-4-20250514"}
+```
+
+**Example JSON for setting Azure using `provider`, `providerApiKey`, and `azureUri`:**
+
+```JSON
+{"provider": "azure_openai","providerApiKey": "my-api-key","azureUri": "https://fiddlerai.cognitiveservices.azure.com/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-01-01-preview"}
+```
 
 ### macOS
 
