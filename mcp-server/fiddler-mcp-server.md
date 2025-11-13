@@ -16,6 +16,7 @@ The Fiddler Everywhere MCP (Model Context Protocol) server lets you interact wit
 To use the Fiddler Everywhere MCP server, you need:
 
 - The latest version of Fiddler Everywhere.
+- A Fiddler Everywhere Pro or higher subscription tier.
 - An active internet connection.
 - A unique API Key for the Fiddler Everywhere MCP server (generated within the application).
 - A compatible MCP client (IDE, code editor, or app) that supports MCP tools.

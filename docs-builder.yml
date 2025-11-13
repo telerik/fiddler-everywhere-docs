@@ -49,6 +49,9 @@ meta:
     collaboration:
         title: Collaboration
         position: 70
+    debugging-assistant:
+        title: Debugging Assistant
+        position: 75      
     rules-presets:
         title: Rules Presets
         position: 80
