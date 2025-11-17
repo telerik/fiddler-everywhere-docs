@@ -11,7 +11,7 @@
             "title": "Added Debugging Assistant, enabling users to connect their preferred LLM model and enhance HTTP traffic analysis and debugging workflows."
           },
           {
-            "title": "AAdded managed application configuration allowing administrators to control Debugging Assistant access."
+            "title": "Added managed application configuration allowing administrators to control Debugging Assistant access."
           }
         ]
       },
