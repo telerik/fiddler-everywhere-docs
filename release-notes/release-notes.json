@@ -1,4 +1,36 @@
 [
+    {
+    "version": "7.5.0",
+    "title": "Fiddler Everywhere v7.5.0",
+    "date": "Nov 17, 2025",
+    "items": [
+      {
+        "type": "New",
+        "entries": [
+          {
+            "title": "Added Debugging Assistant, enabling users to connect their preferred LLM model and enhance HTTP traffic analysis and debugging workflows."
+          },
+          {
+            "title": "Added managed application configuration allowing administrators to control Debugging Assistant access."
+          }
+        ]
+      },
+      {
+        "type": "Fixed",
+        "entries": [
+          {
+            "title": "It was possible to configure the same reverse proxy port multiple times through MCP."
+          },
+          {
+            "title": "SSE over HTTP/1.1 fails the entire session when unchunking is unsuccessful."
+          },
+          {
+            "title": "Update third-party dependencies to mitigate potential security vulnerabilities."
+          }
+        ]
+      }
+    ]
+  },
   {
     "version": "7.4.0",
     "title": "Fiddler Everywhere v7.4.0",
