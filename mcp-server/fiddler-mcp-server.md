@@ -101,6 +101,8 @@ To use the Fiddler Everywhere MCP server:
 
 The MCP server will provide context from your captured HTTPS traffic to enhance your MCP-assisted development workflow.
 
+>important The results and quality of outputs from the Fiddler Everywhere MCP server may vary depending on the prompt formulation and the specific Large Language Model (LLM) being used. Different LLMs have varying capabilities, and prompt quality significantly impacts the accuracy and relevance of generated responses.
+
 >tip You can jump start your MCP journey by exploring our [prompt library](slug://fiddler_ai_prompt_library)
 
 ### Supported Capturing Modes

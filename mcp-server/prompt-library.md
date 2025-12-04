@@ -12,6 +12,15 @@ Welcome to the Fiddler Everywhere Prompt Library—your comprehensive resource f
 
 This library provides ready-to-use prompts optimized for the Fiddler Everywhere [MCP Server](slug://fiddler-mcp-server). Whether you're performing web debugging, security analysis, performance optimization, or data extraction, these prompts will help you maximize productivity by leveraging AI assistance with your captured HTTPS traffic.
 
+>important **Understanding Result Variability**: The quality, accuracy, and format of outputs generated using these prompts can vary significantly based on several factors:
+>
+>- **LLM Selection**: Different Large Language Models (Claude, GPT-4, Gemini, etc.) have distinct capabilities, strengths, and limitations. Some models excel at code generation, while others may be better suited for analysis or explanation tasks.
+>- **Prompt Formulation**: How you phrase your request dramatically impacts the response. More specific prompts with clear context and constraints typically yield better results than vague or ambiguous requests.
+>- **Model Version**: Even within the same LLM family, different versions (e.g., Claude Sonnet 4 vs. Claude Sonnet 4.5) may produce different outputs for identical prompts.
+>- **Context Window**: The amount of captured traffic data and conversation history can affect the model's ability to provide comprehensive analysis.
+>
+>**Best Practice**: Always review, validate, and test AI-generated outputs before implementing them in your workflow. Consider iterating on your prompts if initial results don't meet your expectations.
+
 >tip Start with the [built-in prompts](#built-in-mcp-prompts) for quick actions, or explore [custom prompts](#custom-prompts) for advanced scenarios.
 
 ## Built-in MCP Prompts
