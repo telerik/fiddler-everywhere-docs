@@ -10,7 +10,9 @@ position: 15
 
 >important The network capturing mode is a feature in BETA state and is subject to change in the future.
 
-This article describes using Fiddler's **network capturing mode**, where "network traffic" refers to all outgoing TCP traffic. The feature requires the installation of a network extension, which requires explicit administrative privileges.
+This article describes using Fiddler's **network capturing mode**, where "network traffic" refers to all outgoing TCP traffic. The feature requires the installation of a network extension (macOS) or kernel driver (Windows), which requires explicit administrative privileges.
+
+On Windows, the network capturing mode installs a kernel driver through the Windows Filtering Platform (WFP), which then interacts with the Fiddler proxy to capture network traffic at a lower level.
 
 In nature, the network capturing mode is a more powerful way to capture network traffic on a lower level than an HTTPS(S) proxy works (which is how Fiddler works in the **System Capturing** mode or all other available capturing modes). 
 
@@ -29,13 +31,16 @@ You must meet the following prerequisites to use the network capturing mode.
 
 - [Installed the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 - [Installed and trusted Fiddler's Certificate Authority](slug://trust-certificate).
-- Administrative privileges to install/uninstall the network extension.
+- **Administrative privileges** to install/uninstall the network extension (macOS) or kernel driver (Windows).
+  - **Windows**: Admin privileges are required to install the WFP kernel driver through the User Account Control (UAC) dialog.
+  - **macOS**: Admin privileges are required to install and enable the network extension.
 
 ### Limitations
 
 The **Network Capture** mode is in Beta state and, currently, has some known limitations as follows:
 
 - The network capturing mode is available only for Windows and macOS. The Linux version of Fiddler Everywhere does not yet support network capturing.
+- **The network capturing mode cannot work alongside the system capturing mode**. If the network capturing mode is enabled, Fiddler will automatically disable the system capturing mode to prevent conflicts.
 - Specific VPN tools are closing the VPN connection if a third-party network extension is detected. You can try to workaround that by making the VPN connection **before** starting Fiddler Everywhere and then enabling its network capturing mode.
 - To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints (for example, like `vpn.mycompany.com`). However the **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. When using network capturing mode, you must bypass targeted VPN endpoints [by creating a Fiddler rule that executes the **Do Not Decrypt** action](slug://configure-vpn-fiddler#configuration-for-network-
 capturing-mode).
@@ -60,26 +65,32 @@ To start the network capturing mode, execute the following steps:
 
 >tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)
 
-If this is the first time you are starting the network capturing mode on your macOS, then you will need to install and allow the usage of the Fiddler's network extension. To do so, proceed with the following steps.
+>important If the system capturing mode is currently enabled, Fiddler will automatically disable it when you enable network capturing mode, as these two modes cannot work simultaneously.
 
-**Initial Setup on macOS**
-
-Immediately after pressing **Enable**, you will see a native macOS popup.
-
-1. In the macOS popup, choose **Open System Settings**. In the opened macOS system settings, scroll down to the message that the Fiddler extension is blocked.
-1. Allow the Fiddler Everywhere extension.
-1. Enter your credentials to install the extension.
-1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
-
-Upon succesful instalation the **Network Capture** screen reloads with network capturing enabled.
+The first time you enable network capturing mode, you must install the required system component with administrative privileges. The installation process differs between Windows and macOS.
 
 **Initial Setup on Windows**
 
-Immediately after pressing **Enable**, the Windows OS will prompt a security popup.
+When you enable network capturing for the first time on Windows, Fiddler installs a kernel driver through the Windows Filtering Platform (WFP). This process requires administrative privileges.
 
-1. Click **Yes** to allow the installation of the network extension.
+1. Immediately after pressing **Enable**, Windows will display a User Account Control (UAC) dialog asking for permission to install the driver.
+1. Click **Yes** to allow the installation of the kernel driver.
+1. Upon successful installation, the **Network Capture** screen reloads with network capturing enabled.
 
-Upon succesful instalation the **Network Capture** screen reloads with network capturing enabled.
+>important If you click **No** or do not have administrative privileges, Fiddler will display a red toast notification indicating that network capturing cannot be started. The driver installation is required to use this feature.
+
+**Initial Setup on macOS**
+
+When you enable network capturing for the first time on macOS, Fiddler installs a network extension. This process requires administrative privileges.
+
+1. Immediately after pressing **Enable**, you will see a native macOS popup.
+1. In the macOS popup, choose **Open System Settings**. In the opened macOS system settings, scroll down to the message that the Fiddler extension is blocked.
+1. Allow the Fiddler Everywhere extension.
+1. Enter your administrator credentials to install the extension.
+1. Click **Allow** to confirm the Fiddler Everywhere network extension installation.
+1. Upon successful installation, the **Network Capture** screen reloads with network capturing enabled.
+
+>important Administrative privileges are required to install the network extension on macOS. If you do not have the necessary privileges, Fiddler will not be able to enable network capturing.
 
 ### Stop Network Capture
 
