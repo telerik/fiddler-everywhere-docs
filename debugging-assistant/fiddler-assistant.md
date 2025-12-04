@@ -122,11 +122,19 @@ google_gemini
 **Example JSON for setting Anthropic using `provider`, `providerApiKey`, and `model`:**
 
 ```JSON
-{"provider": "anthropic","providerApiKey": "my-api-key","model": "claude-sonnet-4-20250514"}
+{
+    "provider": "anthropic",
+    "providerApiKey": "my-api-key",
+    "model": "claude-sonnet-4-20250514"
+}
 ```
 
 **Example JSON for setting Azure using `provider`, `providerApiKey`, and `azureUri`:**
 
 ```JSON
-{"provider": "azure_openai","providerApiKey": "my-api-key","azureUri": "https://<your-azure-app-endpoint>/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-01-01-preview"}
+{
+    "provider": "azure_openai",
+    "providerApiKey": "my-api-key",
+    "azureUri": "https://<your-azure-app-endpoint>/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-01-01-preview"
+}
 ```

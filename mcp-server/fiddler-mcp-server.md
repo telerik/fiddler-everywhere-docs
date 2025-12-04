@@ -1,7 +1,7 @@
 ---
 title: Fiddler MCP Server
 page_title: Fiddler MCP Server
-description: "Learn how to install, configure, and use the Fiddler Everywhere MCP server to integrate captured HTTPS traffic analysis with AI-powered IDEs and development tools."
+description: "Learn how to install, configure, and use the Fiddler Everywhere MCP server to integrate captured HTTPS traffic analysis with LLM-powered IDEs and development tools."
 slug: fiddler-mcp-server
 publish: true
 position: 1
@@ -9,7 +9,7 @@ position: 1
 
 # Fiddler MCP Server
 
-The Fiddler Everywhere MCP (Model Context Protocol) server lets you interact with LLM models and reach new levels of developer productivity. The MCP server provides proprietary context to AI-powered IDEs, apps, and tools. You can use the Fiddler Everywhere MCP server for comprehensive analysis of captured HTTPS traffic, including web debugging, security highlights, performance reports, data extraction, and general usage. The Fiddler MCP enables you to successfully prompt more complex questions and tasks, and generate tailored code based on the information received from the captured HTTPS traffic.
+The Fiddler Everywhere MCP (Model Context Protocol) server lets you interact with LLM models and reach new levels of developer productivity. The MCP server provides proprietary context to LLM-powered IDEs, apps, and tools. You can use the Fiddler Everywhere MCP server for comprehensive analysis of captured HTTPS traffic, including web debugging, security highlights, performance reports, data extraction, and general usage. The Fiddler MCP enables you to successfully prompt more complex questions and tasks, and generate tailored code based on the information received from the captured HTTPS traffic.
 
 ## Prerequisites
 
@@ -100,6 +100,8 @@ To use the Fiddler Everywhere MCP server:
 4. Start your prompt with `#fiddler` (or with `#` followed by your custom server name, if configured).
 
 The MCP server will provide context from your captured HTTPS traffic to enhance your MCP-assisted development workflow.
+
+>important The results and quality of outputs from the Fiddler Everywhere MCP server may vary depending on the prompt formulation and the specific Large Language Model (LLM) being used. Different LLMs have varying capabilities, and prompt quality significantly impacts the accuracy and relevance of generated responses.
 
 >tip You can jump start your MCP journey by exploring our [prompt library](slug://fiddler_ai_prompt_library)
 
