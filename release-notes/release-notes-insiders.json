@@ -1,4 +1,25 @@
 [
+  {
+  "version": "7.6.0-insiders",
+  "title": "Fiddler Everywhere v7.6.0",
+  "date": "January 20, 2026",
+  "items": [
+    {
+      "type": "Fixed",
+      "entries": [
+        {
+          "title": "JSON format and tables not displayed correctly in Debugging Assistant."
+        },
+        {
+          "title": "Upgraded the application’s core frontend technologies and UI component libraries to latest supported versions."
+        },
+        {
+          "title": "Update third-party dependencies to mitigate potential security vulnerabilities."
+        }
+      ]
+    }
+  ]
+},
     {
     "version": "7.5.0-insiders",
     "title": "Fiddler Everywhere v7.5.0",
