@@ -8,13 +8,13 @@
       "type": "Fixed",
       "entries": [
         {
+          "title": "JSON format and tables not displayed correctly in Debugging Assistant."
+        },
+        {
           "title": "Upgraded the application’s core frontend technologies and UI component libraries to latest supported versions."
         },
         {
           "title": "Update third-party dependencies to mitigate potential security vulnerabilities."
-        },
-        {
-          "title": "Json format not displayed correctly in Debugging Assistant."
         }
       ]
     }
