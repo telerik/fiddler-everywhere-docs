@@ -71,6 +71,30 @@ This usually means the app is proxying traffic, but TLS decryption fails (the ap
 - Android apps often need an explicit debug-time configuration to trust user-added CAs.
 - Follow the steps in [Capture Mobile Application Traffic](slug://capture-mobile-android-traffic#capture-mobile-application-traffic).
 
+If you can’t (or don’t want to) change the Android app network security config, you have a few other development-time options:
+
+- **Dart-only traffic (debug-only): accept the interception certificate in code.** For requests that go through `dart:io`, you can override certificate validation in your `HttpOverrides`. This is useful to confirm that the issue is CA trust, but it should never be enabled in production builds.
+
+  ```dart
+  import 'dart:io';
+
+  class DebugHttpOverrides extends HttpOverrides {
+    @override
+    HttpClient createHttpClient(SecurityContext? context) {
+      final client = super.createHttpClient(context);
+      client.badCertificateCallback = (cert, host, port) => true;
+      return client;
+    }
+  }
+
+  // In main() before runApp():
+  // HttpOverrides.global = DebugHttpOverrides();
+  ```
+
+- **Use an emulator or a rooted device and install the Fiddler CA as a system CA.** On Android 7+ (API 24+), many apps ignore *user-installed* CAs by default, but still trust *system* CAs. Installing the Fiddler CA into the system store can enable TLS decryption without changing app code (requires elevated privileges and is typically done only on test devices/emulators).
+
+- **Check for certificate pinning.** If the app (or one of its SDKs) pins certificates, it will reject the MITM certificate even if the CA is trusted. In that case, you need a debug build with pinning disabled/relaxed, or an SDK-specific way to allow a custom trust store.
+
 ### I still see no traffic from the Flutter app
 
 - Confirm the device proxy is set (Wi-Fi proxy) and that browser traffic from the same device is visible in Fiddler Everywhere.
