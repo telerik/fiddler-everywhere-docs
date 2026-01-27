@@ -56,8 +56,8 @@ Use the **New Chat** button to start a fresh conversation and clear the current 
 
 When working with the Debugging Assistant, consider the following limitations:
 
-- The current version of the Debugging Assistant does not have access to the internet.
 - The current version of the Debugging Assistant does not have access to captured traffic in live sessions or saved snapshots.
+- Internet connectivity features (such as web search) depend on the selected LLM model.
 
 ## Debugging Assistant Access Policies
 
