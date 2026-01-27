@@ -56,8 +56,9 @@ Use the **New Chat** button to start a fresh conversation and clear the current 
 
 When working with the Debugging Assistant, consider the following limitations:
 
-- The current version of the Debugging Assistant does not have access to the internet.
-- The current version of the Debugging Assistant does not have access to captured traffic in live sessions or saved snapshots.
+- The current version of the Debugging Assistant does not have access to captured traffic in live sessions or saved snapshots. To analyze specific captured sessions, you need to copy and paste the relevant traffic details into the chat.
+
+- Most LLMs (like Claude Sonnet, GPT-5, Gemini Pro) work only with preexisting training data or information provided in the conversation. Internet connectivity features (such as web search) depend on the selected LLM model.
 
 ## Debugging Assistant Access Policies
 
