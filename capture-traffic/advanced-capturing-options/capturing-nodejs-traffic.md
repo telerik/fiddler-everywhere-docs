@@ -90,6 +90,20 @@ setFiddlerProxy();
 removeFiddlerProxy();
 ```
 
+### Using the Fiddler CA in Node.js
+
+The `NODE_TLS_REJECT_UNAUTHORIZED` option is unsafe and poses a security risk. To capture and decrypt Node.js traffic without disabling TLS verification, set the `NODE_EXTRA_CA_CERTS` environment variable to the exported Fiddler CA certificate.
+
+1. Open **System Properties** > **Advanced** > **Environment Variables**
+2. Under **User variables**, click **New**
+3. Set the variable name: `NODE_EXTRA_CA_CERTS`
+4. Set the variable value to the full path of your exported Fiddler CA certificate (PEM):
+   ```bash
+   %USERPROFILE%\Desktop\Fiddler_Root_Certificate_Authority.pem
+   ```
+5. Click **OK** to save the environment variable
+6. Restart your terminal or Node.js process to pick up the new environment variable
+
 ## Setting the Proxy Explicitly
 
 The [global proxy settings](#setting-the-proxy-globally) won't work for modules like the [`HTTP` module](https://nodejs.org/api/http.html), where you need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to explicitly set the proxy through the code.
