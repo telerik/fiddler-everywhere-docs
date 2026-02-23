@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Fiddler Everywhere Not Capturing Traffic
-description: "Cases where Fiddler Everywhere might fail to capture your HTTP(S) traffic and steps to resolve them."
+description: "Troubleshoot Fiddler Everywhere not capturing traffic. Fix issues with admin rights, VPN, Zscaler, security policies, certificate errors, and group policy."
 type: how-to
 slug: troubleshoot-no-traffic
 publish: true
