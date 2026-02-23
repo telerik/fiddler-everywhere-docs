@@ -2,7 +2,7 @@
 title: Troubleshoot Fiddler Everywhere Not Capturing Traffic
 description: "Cases where Fiddler Everywhere might fail to capture your HTTP(S) traffic and steps to resolve them."
 type: how-to
-slug: troubleshoot-cno-traffic
+slug: troubleshoot-no-traffic
 publish: true
 res_type: kb
 ---
@@ -86,7 +86,7 @@ If Fiddler works only when the VPN is disconnected, the VPN is the likely cause.
 
 - **Bypass VPN for Fiddler's proxy:** Add your VPN server addresses to **Settings > Connections > Bypass Fiddler for URLs that start with** and save.
 - **Use an alternative capturing mode:** [Browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) are often less affected by VPN tools.
-- See also: [Configure VPN with Fiddler Everywhere](slug://configure-vpn-with-fiddler).
+- See also: [Configure VPN with Fiddler Everywhere](slug://configure-vpn-fiddler).
 
 ## Incompatibility with Security Tools
 
