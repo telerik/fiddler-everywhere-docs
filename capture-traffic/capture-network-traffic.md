@@ -1,6 +1,6 @@
 ---
 title: Capturing Network Traffic
-description: "Capture all network traffic that goes thorugh the active network adapter and uses the TCP protocol"
+description: "Capture all network traffic that goes through the active network adapter and uses the TCP protocol"
 slug: capture-network-traffic
 publish: true
 position: 15
@@ -124,45 +124,72 @@ To revert capturing rules to their defaults:
 
 ### CIDR Notation for Setting Network Addresses
 
-The **Subnet Mask** field accepts [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) values from 0 to 32. For example:
-- `32` (subnet mask `255.255.255.255`): Only the specified host address is monitored.
-- `0` (subnet mask `0.0.0.0`): All IP addresses in the range are monitored.
+The **Subnet Mask** field accepts [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) values. For IPv4, the valid range is `0` to `32`; for IPv6, it is `0` to `128`. For example:
 
-Default rules for ports 80 and 443 use **IP Address** `0.0.0.0` and **Subnet Mask** `0`, covering all IPv4 addresses. IPv6 is also supported (e.g., **IP Address** `::` and **Subnet Mask** `0`).
+| CIDR Value | Subnet Mask | Effect |
+|---|---|---|
+| `32` | `255.255.255.255` | Only the exact host address is monitored. |
+| `24` | `255.255.255.0` | All addresses in a /24 subnet (e.g., `192.168.1.0`–`192.168.1.255`) are monitored. |
+| `0` | `0.0.0.0` | All IPv4 addresses are monitored. |
 
-A localhost rule is also included: **IP Address** `127.0.0.0` and **Subnet Mask** `8` (IPv4), or **IP Address** `::1` and **Subnet Mask** `128` (IPv6) on port 3000.
+Default rules for ports 80 and 443 use **IP Address** `0.0.0.0` and **Subnet Mask** `0`, covering all IPv4 addresses. IPv6 is also supported (e.g., **IP Address** `::` and **Subnet Mask** `0` to cover all IPv6 addresses).
+
+A localhost rule is also included by default:
+- IPv4: **IP Address** `127.0.0.0` with **Subnet Mask** `8` (covers the entire `127.0.0.0/8` loopback range)
+- IPv6: **IP Address** `::1` with **Subnet Mask** `128` (exact loopback address)
+
+Both localhost rules apply to port `3000`.
 
 ## Removing the Network Extension
 
-Disabling network capturing does not remove the network extension from your system. To remove it:
+Disabling network capturing does not remove the network extension from your system. To fully remove it, use one of the methods below.
 
 ### Removal through Application Uninstall (Windows)
 
-1. Uninstall Fiddler Everywhere thorugh the Windows Control Panel.
+1. Open the **Windows Control Panel** and navigate to **Programs > Uninstall a program**.
+2. Select **Fiddler Everywhere** from the list and click **Uninstall**.
+
+>tip The uninstaller automatically stops and removes the `fid_kernel` kernel driver as part of the uninstallation process.
+
+### Removal through CLI Commands (Windows)
+
+To remove only the kernel driver without uninstalling Fiddler Everywhere, run the following commands in an elevated (Administrator) shell:
+
+```bash
+sc stop fid_kernel
+sc delete fid_kernel
+```
+
+>tip `sc` is the Windows Service Control command-line utility used to communicate with the Service Control Manager. The first command stops the running driver service; the second permanently removes it.
 
 ### Removal through Application Uninstall (macOS)
 
-1. Open the **Applications** folder.
-2. Drag Fiddler Everywhere to the bin.
-3. In the warning prompt, choose **Continue** to confirm removal.
+1. Open the **Applications** folder in Finder.
+2. Drag **Fiddler Everywhere** to the **Trash**.
+3. In the confirmation prompt, choose **Continue** to confirm removal.
 
->tip If removal fails, close Fiddler Everywhere, ensure no Fiddler processes are running, and retry the uninstall process.
+>tip If removal fails, quit Fiddler Everywhere, ensure no Fiddler processes are running (check **Activity Monitor**), and retry the uninstall.
 
 ### Manual Removal (macOS)
+
+Use this method to remove only the network extension without uninstalling Fiddler Everywhere:
 
 1. Open **System Settings** on macOS.
 2. Go to the **Network** section.
 3. Click **Filters**.
-4. Select the Fiddler Everywhere extension.
-    - Use the dropdown to turn off the extension (can be re-enabled later).
-    - Use the "-" sign to uninstall and remove the extension.
+4. Select the **Fiddler Everywhere** network extension.
+    - Use the toggle or dropdown to disable the extension (it can be re-enabled later without reinstalling).
+    - Click the **"-"** (minus) button to permanently uninstall and remove the extension.
 
 ## Troubleshooting the Network Extension
 
-If you encounter issues with the Fiddler network extension:
+If you encounter issues with the Fiddler Everywhere network extension, try the following steps:
 
 - Ensure your OS user account has administrative privileges to install and enable network extensions.
-- If installation or enablement fails, contact [Telerik Support Center](https://www.telerik.com/account/support-center).
+- Uninstall any previously installed versions of the network extension (see [removal steps above](#removing-the-network-extension)), then reinstall Fiddler Everywhere.
+- On Windows, check the **Windows Event Viewer** (under **Windows Logs > System**) for errors related to `fid_kernel` to get detailed failure information.
+- On macOS, open the **Console** app and filter by `Fiddler` to review system-level extension errors.
+- If installation or enablement continues to fail, contact [Telerik Support Center](https://www.telerik.com/account/support-center).
 
 ## Best Practices
 
