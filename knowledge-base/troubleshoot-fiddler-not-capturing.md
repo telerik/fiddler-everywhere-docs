@@ -35,7 +35,7 @@ Work through this checklist first. Many capturing problems can be identified and
 - **Check that a capturing mode is active.** The [system capturing mode](slug://capture-traffic-get-started#system-capturing) or an [alternative capturing mode](slug://capture-traffic-get-started) must be explicitly enabled. Look for the toggle in the top-left area of the Fiddler UI.
 - **Verify the Fiddler CA certificate is installed and trusted.** Go to **Settings > HTTPS** and confirm that **Capture HTTPS Traffic** is checked and that the CA certificate is trusted in your OS certificate store.
 - **Confirm no active filters are hiding traffic.** Open the **Traffic** pane and use **Clear All Filters** to rule out filters that may be suppressing the display of captured sessions.
-- **Check that no active rules are blocking traffic.** Open **Rules** and confirm that no rules with a **DoNotShow** or **CloseNonGracefully** action are interfering.
+- **Check that no active rules are blocking traffic.** Open **Rules** and confirm that no rules with a **DoNotShow** or **CloseNonGracefully** action are interfering. Note that the **Rules** tab includes a master switch—rules only execute when this switch is toggled **ON**.
 - **If using system capturing mode, open your OS proxy settings and verify Fiddler is registered as the system proxy.** The default address is `127.0.0.1` and the default port is `8866`. See [Verifying proxy settings by OS](#verifying-proxy-settings-by-os) below. This check does not apply to [browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing](slug://capture-traffic-get-started#independent-browser-capturing), which do not modify OS proxy settings.
 - **Try capturing with an alternative mode.** If system capturing fails, test with [browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing](slug://capture-traffic-get-started#independent-browser-capturing) to isolate whether the issue is system-proxy-specific.
 - **Collect the Fiddler logs** for later analysis or for sharing with support. See [Collecting Fiddler Log Files](#collecting-fiddler-log-files).
@@ -169,7 +169,7 @@ On Windows, an administrator may set the `ProxySettingsPerUser` group policy to 
 
 **Symptoms:**
 
-The `netcore.log` file contains lines similar to:
+The `netcore.log` file (see [Accessing and Inspecting Fiddler Everywhere Log Files](slug://fiddler-log-files)) contains lines similar to:
 
 ```txt
 [2020-06-19 08:09:18:109] [Information] [Fiddler] Fiddler.Network.AutoProxy> AutoProxy Detection failed.
