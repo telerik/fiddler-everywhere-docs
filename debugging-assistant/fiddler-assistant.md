@@ -42,7 +42,7 @@ Once all properties are set, use the **Test Connection** button to verify that t
 
 ## Getting Started with a Free Gemini API Key
 
-Google provides a free API key through [Google AI Studio](https://aistudio.google.com/api-keys) that allows any user to try the Debugging Assistant without a paid LLM provider subscription.
+Google provides a free‑tier Gemini API key through [Google AI Studio](https://aistudio.google.com/api-keys) that lets you use the Debugging Assistant without a paid LLM provider subscription; however, you still need a Fiddler Everywhere Pro (or higher) subscription to access the Debugging Assistant.
 
 ### Obtaining a Free Gemini API Key
 
