@@ -71,7 +71,7 @@ You can disable the **Cache** switch at any time to resume live calls to the end
 
 ## Managed App Configuration
 
-IT administrators can disable the **Agent Calls** tab entirely through the **Managed App Configuration** policy `DisableLLMSessionsTab`. When this policy is enabled, the tab is hidden from the **Traffic** pane for all users governed by the policy.
+IT administrators can disable the **Agent Calls** tab through the **Managed App Configuration** policy `DisableLLMSessionsTab`. When this policy is enabled, the tab remains visible in the **Traffic** pane but becomes inactive—users cannot interact with it or have sessions populate it.
 
 | Platform | Key | Type | Value |
 |:---------|:----|:-----|:------|
