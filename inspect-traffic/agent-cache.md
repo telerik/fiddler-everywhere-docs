@@ -69,6 +69,17 @@ The following scenario demonstrates how Agent Cache eliminates redundant token u
 
 You can disable the **Cache** switch at any time to resume live calls to the endpoint.
 
+## Managed App Configuration
+
+IT administrators can disable the **Agent Calls** tab entirely through the **Managed App Configuration** policy `DisableLLMSessionsTab`. When this policy is enabled, the tab is hidden from the **Traffic** pane for all users governed by the policy.
+
+| Platform | Key | Type | Value |
+|:---------|:----|:-----|:------|
+| macOS | `DisableLLMSessionsTab` | integer | `1` to disable, `0` to enable |
+| Windows | `DisableLLMSessionsTab` | DWORD-32 (hexadecimal) | `1` to disable, `0` to enable |
+
+For details on applying managed configuration policies, see [Managed App Configuration](slug://fe-restrict-policies).
+
 ## Notes
 
 - Agent Cache is intended for development and verification workflows where deterministic responses are required.
