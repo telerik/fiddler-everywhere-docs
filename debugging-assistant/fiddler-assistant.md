@@ -40,6 +40,41 @@ Once all properties are set, use the **Test Connection** button to verify that t
 
 - When setting the `Azure target URI`, note that this must be a complete URL containing the endpoint, deployment name, and API version. You can find this target URI in the deployment details page in Azure AI Foundry.
 
+## Getting Started with a Free Gemini API Key
+
+Google provides a free‑tier Gemini API key through [Google AI Studio](https://aistudio.google.com/api-keys) that lets you use the Debugging Assistant without a paid LLM provider subscription; however, you still need a Fiddler Everywhere Pro (or higher) subscription to access the Debugging Assistant.
+
+### Obtaining a Free Gemini API Key
+
+1. Navigate to [https://aistudio.google.com/api-keys](https://aistudio.google.com/api-keys).
+1. Sign in with your Google account.
+1. Click **Create API key** and follow the prompts.
+1. Copy the generated API key.
+
+### Configuring Gemini in Fiddler Everywhere
+
+1. Open Fiddler Everywhere and go to **Settings > Assistant**.
+1. Select **Google Gemini** as the provider.
+1. Paste your API key from Google AI Studio.
+1. Select a supported Gemini model from the dropdown list.
+1. Click **Test Connection** to confirm the setup.
+
+### Supported Gemini Models and Free-Tier Limits
+
+Fiddler Everywhere supports the following Gemini models. Of these, only two are currently available under the Google AI Studio free tier:
+
+| Model               | Free-Tier Available |
+|:--------------------|:--------------------|
+| Gemini 2.5 Pro      | No                  |
+| Gemini 2.5 Flash    | Yes                 |
+| Gemini 2.5 Flash Lite | Yes               |
+| Gemini 2.0 Flash    | No                  |
+| Gemini 2.0 Flash Lite | No                |
+
+For the latest model availability and rate limit information, see the [Google AI Studio rate limits page](https://aistudio.google.com/rate-limit).
+
+>warning Google may use data submitted through the free-tier API to improve its models. Avoid sharing sensitive, confidential, or personally identifiable information when using the free Gemini API key. Review Google's Terms of Service and Privacy Policy before use.
+
 ## Using the Debugging Assistant
 
 To use the Debugging Assistant:
