@@ -75,3 +75,10 @@ You can disable the **Cache** switch at any time to resume live calls to the end
 - Matching is based on the captured request details. If your agent changes the request payload, headers, or target path, capture and cache the updated variant separately.
 - Review cached sessions periodically to keep the stored responses aligned with your current workflow expectations.
 - Cached sessions are stored within the current Fiddler Everywhere session. Closing and reopening the application clears the cache state.
+
+## Feedback
+
+We welcome your feedback on Agent Cache and any other features you would like to see. You can reach the team by:
+
+- Emailing [fiddler-support@progress.com](mailto:fiddler-support@progress.com)
+- Opening a GitHub issue at [https://github.com/telerik/fiddler-everywhere/issues](https://github.com/telerik/fiddler-everywhere/issues)
