@@ -68,12 +68,18 @@ The following section showcases how to use Cisco VPN alongside [the Fiddler's **
 1. Start Fiddler Everywhere and enable the network capturing mode.
 1. Open the **Settings** > **HTTP** menu, trust the Fiddler's certificate, and check the **Capture HTTPS traffic** box.
 1. Create a **Do Not Decrypt** rule to bypass the VPN endpoints.
+
     - Open **Traffic** pange and go to the **Rules** tab.
+
     - Use **Add Rule** to open the **Rule Builder**.
+
     - Create a match condition through **Add Condition** and match the targeted VPN host (for example, match `vpn.mycompany.com`). Additionally, match all sessions that use **CONNECT** HTTP methods (to match the so called proxy tunnels).
+
     - Create a new action through **Add Action**. Select the **Do Not Decrypt** action.
     ![Example rule that uses the "Do Not Decrypt" action](./images/vpn-do-not-decrypt.png)
+
     - Save and enable the rule.
+
 1. Start the Cisco VPN client and connect to the VPN network.
 1. Start capturing the traffic with Fiddler Everywhere using the network capturing mode.
 
