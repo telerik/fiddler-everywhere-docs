@@ -63,15 +63,15 @@ Google provides a free‑tier Gemini API key through [Google AI Studio](https://
 
 Fiddler Everywhere supports the following Gemini models. Of these, only two are currently available under the Google AI Studio free tier:
 
-| Model | Free-Tier Available | Requests/Minute | Tokens/Minute | Requests/Day |
-|:------|:--------------------|:----------------|:--------------|:-------------|
-| Gemini 2.5 Pro | No | — | — | — |
-| Gemini 2.5 Flash | Yes | 5 | 250,000 | 20 |
-| Gemini 2.5 Flash Lite | Yes | 10 | 250,000 | 20 |
-| Gemini 2.0 Flash | No | — | — | — |
-| Gemini 2.0 Flash Lite | No | — | — | — |
+| Model               | Free-Tier Available |
+|:--------------------|:--------------------|
+| Gemini 2.5 Pro      | No                  |
+| Gemini 2.5 Flash    | Yes                 |
+| Gemini 2.5 Flash Lite | Yes               |
+| Gemini 2.0 Flash    | No                  |
+| Gemini 2.0 Flash Lite | No                |
 
-For the latest rate limit information, see the [Google AI Studio rate limits page](https://aistudio.google.com/rate-limit).
+For the latest model availability and rate limit information, see the [Google AI Studio rate limits page](https://aistudio.google.com/rate-limit).
 
 >warning Google may use data submitted through the free-tier API to improve its models. Avoid sharing sensitive, confidential, or personally identifiable information when using the free Gemini API key. Review Google's Terms of Service and Privacy Policy before use.
 
