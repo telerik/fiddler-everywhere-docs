@@ -16,19 +16,22 @@ When building and testing automated agents that communicate with service-provide
 
 Fiddler Everywhere adds an **Agent Calls** tab in the **Traffic** pane, alongside tabs such as **Live Traffic** and **Compare Sessions**.
 
-The **Agent Calls** tab is a focused view over sessions already captured in **Live Traffic**. It automatically filters and displays HTTPS sessions that target supported service-provider endpoints, such as OpenAI and Gemini.
+The **Agent Calls** tab is a focused view over sessions already captured in **Live Traffic**. It automatically filters and displays HTTPS sessions that target supported service-provider endpoints.
 
 >important The **Agent Calls** tab reflects sessions that have already been captured. You must have active traffic capture running, or previously captured sessions present in **Live Traffic**, before any sessions appear in **Agent Calls**.
 
 ## Why Agent Cache
 
-**Faster Iterations**
+### Faster Iterations
+
 Replaying a captured response is instant. Instead of waiting on a round-trip to the provider on every run, you get a result back immediately—shortening the feedback loop so you can move through prompt and code changes without unnecessary delays.
 
-**Lower Execution Costs**
+### Lower Execution Costs
+
 Each cached run incurs zero costs on the provider side. During active development—where the same request may be triggered dozens of times across a team—this directly reduces the usage spend that accumulates before a feature is even complete.
 
-**More Deterministic Testing**
+### More Deterministic Testing
+
 A cached response is fixed and repeatable. Running the same agent logic against the same response on every iteration makes it straightforward to verify that a code change had the intended effect, without having to account for variability in live endpoint output.
 
 ## Availability
