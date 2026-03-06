@@ -1,6 +1,6 @@
 ---
 title: Agent Cache
-description: "Use the Agent Calls tab in Fiddler Everywhere to capture, inspect, and cache model-provider endpoint responses and eliminate repeated token usage during development."
+description: "Use the Agent Calls tab in Fiddler Everywhere to capture, inspect, and cache inference-provider endpoint responses and eliminate repeated token usage during development."
 slug: agent-cache
 publish: true
 position: 57
@@ -10,13 +10,13 @@ position: 57
 
 Reuse prior agent responses during development and testing to shorten the feedback loop and speed up iterations—while keeping execution costs under control. This is **Agent Cache**.
 
-When building and testing automated agents that communicate with model-provider endpoints over HTTPS, every test run sends a live request and consumes tokens. Agent Cache breaks that cycle by letting you cache a captured endpoint response and have Fiddler Everywhere replay it for matching calls—so your testing no longer incurs token costs after the first capture.
+When building and testing automated agents that communicate with inference-provider endpoints over HTTPS, every test run sends a live request and consumes credits. Agent Cache breaks that cycle by letting you cache a captured endpoint response and have Fiddler Everywhere replay it for matching calls—so your testing no longer incurs usage costs after the first capture.
 
 ## Overview
 
 Fiddler Everywhere adds an **Agent Calls** tab in the **Traffic** pane, alongside tabs such as **Live Traffic** and **Compare Sessions**.
 
-The **Agent Calls** tab is a focused view over sessions already captured in **Live Traffic**. It automatically filters and displays HTTPS sessions that target supported model-provider endpoints, such as OpenAI and Gemini.
+The **Agent Calls** tab is a focused view over sessions already captured in **Live Traffic**. It automatically filters and displays HTTPS sessions that target supported inference-provider endpoints, such as OpenAI and Gemini.
 
 >important The **Agent Calls** tab reflects sessions that have already been captured. You must have active traffic capture running, or previously captured sessions present in **Live Traffic**, before any sessions appear in **Agent Calls**.
 
@@ -26,7 +26,7 @@ The **Agent Calls** tab is a focused view over sessions already captured in **Li
 Replaying a captured response is instant. Instead of waiting on a round-trip to the provider on every run, you get a result back immediately—shortening the feedback loop so you can move through prompt and code changes without unnecessary delays.
 
 **Lower Execution Costs**
-Each cached run consumes zero tokens on the provider side. During active development—where the same request may be triggered dozens of times across a team—this directly reduces the token spend that accumulates before a feature is even complete.
+Each cached run consumes zero credits on the provider side. During active development—where the same request may be triggered dozens of times across a team—this directly reduces the usage spend that accumulates before a feature is even complete.
 
 **More Deterministic Testing**
 A cached response is fixed and repeatable. Running the same agent logic against the same response on every iteration makes it straightforward to verify that a code change had the intended effect, without having to account for variability in live model output.
@@ -62,17 +62,17 @@ When the **Cache** switch is enabled for a session, Fiddler Everywhere intercept
 
 ## Get Started
 
-The following scenario demonstrates how Agent Cache eliminates redundant token usage during the development of an agent that calls a model-provider endpoint.
+The following scenario demonstrates how Agent Cache eliminates redundant token usage during the development of an agent that calls an inference-provider endpoint.
 
-**Scenario:** You are building an agent that sends a structured HTTPS request to a completion endpoint (for example, `api.openai.com`). During development you repeatedly trigger the same call to verify your agent's parsing and response-handling logic. Without caching, each run consumes tokens.
+**Scenario:** You are building an agent that sends a structured HTTPS request to a completion endpoint (for example, `api.openai.com`). During development you repeatedly trigger the same call to verify your agent's parsing and response-handling logic. Without caching, each run consumes credits.
 
 1. Start capturing traffic in Fiddler Everywhere—click **Start Capture** in the toolbar.
-1. Run your agent to trigger an HTTPS call to the model-provider endpoint.
+1. Run your agent to trigger an HTTPS call to the inference-provider endpoint.
 1. Open **Traffic > Agent Calls**.
 1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
 1. Enable the **Cache** switch for that session in the sticky **Cache** column.
 1. Run your agent again using the same request.
-1. Verify in the **Agent Calls** grid that Fiddler Everywhere served the cached response—no new live call is made and no tokens are consumed on the provider side.
+1. Verify in the **Agent Calls** grid that Fiddler Everywhere served the cached response—no new live call is made and no credits are consumed on the provider side.
 
 You can disable the **Cache** switch at any time to resume live calls to the endpoint.
 
@@ -120,11 +120,11 @@ The following diagram shows the request flow when Agent Cache is active.
 1. Your agent routes HTTPS traffic through Fiddler Everywhere, either by configuring a proxy in code, by using system proxy settings, or by launching the agent from Fiddler's built-in terminal.
 2. Fiddler captures the call and displays it in the **Agent Calls** tab.
 3. When the **Cache** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
-4. The provider endpoint never receives the duplicate request—no tokens are charged.
+4. The provider endpoint never receives the duplicate request—no credits are charged.
 
 ## Supported Endpoints
 
-The **Agent Calls** tab automatically detects and displays sessions targeting a broad range of model-provider and inference-gateway endpoints—including major providers, cloud-hosted inference services, and local runners—without any manual configuration.
+The **Agent Calls** tab automatically detects and displays sessions targeting a broad range of inference-provider and inference-gateway endpoints—including major providers, cloud-hosted inference services, and local runners—without any manual configuration.
 
 If a session targeting your agent's API endpoint does not appear in **Agent Calls** automatically, you can promote it manually. Right-click the session in **Live Traffic** and select **Add to Agent Calls** from the context menu. The session then appears in the **Agent Calls** tab and can be cached like any automatically detected session.
 
