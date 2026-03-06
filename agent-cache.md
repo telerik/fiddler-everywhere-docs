@@ -56,9 +56,11 @@ The grid adds one dedicated sticky column:
 
 | Column | Description |
 |:-------|:------------|
-| **Cache** | A toggle switch per session. Enable it to cache the session's recorded response. Disable it to stop intercepting and resume live calls to that endpoint. |
+| **Caching** | A toggle switch per session. Enable it to cache the session's recorded response. Disable it to stop intercepting and resume live calls to that endpoint. 
 
-When the **Cache** switch is enabled for a session, Fiddler Everywhere intercepts matching outbound calls and returns the cached response instead of forwarding the request to the remote endpoint. When the switch is disabled, requests pass through normally.
+![The "Agent Calls" tab in Fiddler](./images/caching-column.png)
+
+When the **Caching** switch is enabled for a session, Fiddler Everywhere intercepts matching outbound calls and returns the cached response instead of forwarding the request to the remote endpoint. When the switch is disabled, requests pass through normally.
 
 ## Get Started
 
@@ -67,14 +69,27 @@ The following scenario demonstrates how Agent Cache eliminates redundant API usa
 **Scenario:** You are building an agent that sends a structured HTTPS request to a target endpoint (for example, `api.openai.com`). During development you repeatedly trigger the same call to verify your agent's parsing and response-handling logic. Without caching, each run incurs costs.
 
 1. Start capturing traffic in Fiddler Everywhere—click **Start Capture** in the toolbar.
-1. Run your agent to trigger an HTTPS call to the service-provider endpoint.
-1. Open **Traffic > Agent Calls**.
-1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
-1. Enable the **Cache** switch for that session in the sticky **Cache** column.
-1. Run your agent again using the same request.
-1. Verify in the **Agent Calls** grid that Fiddler Everywhere served the cached response—no new live call is made and no costs are incurred on the provider side.
 
-You can disable the **Cache** switch at any time to resume live calls to the endpoint.
+1. Run your agent so that it triggers an HTTPS call to the service-provider endpoint.
+
+1. Open **Traffic > Agent Calls**.
+
+1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
+
+1. Enable the **Caching** switch for that session in the sticky **Caching** column.
+       ![The "Agent Calls" tab in Fiddler](./images/caching-column.png)
+
+1. Run your agent again with the same request. The **Live Traffic** grid now shows the cached endpoints.
+       ![The cached endpoints in Fiddler's Live Traffic grid](./images/cached-agent-calls.png)
+
+1. Verify in the service provider that Fiddler Everywhere served the cached response—no new live call was made and no costs were incurred on the provider side.
+
+![Result in the service provider](./images/single-agent-call-made.png)
+
+As a result, the API service registers only the initial call. All subsequent calls are served from the local cache by Fiddler and do not reach the remote endpoint.
+
+
+You can disable the **Caching** switch at any time to resume live calls to the endpoint.
 
 ## How It Works
 
@@ -152,7 +167,7 @@ For details on applying managed configuration policies, see [Managed App Configu
 
 We welcome your feedback on Agent Cache and any other features you would like to see. You can reach the team by:
 
-- Emailing [fiddler-support@progress.com](mailto:fiddler-support@progress.com)
+- Email [fiddler-support@progress.com](mailto:fiddler-support@progress.com)
 - Opening a GitHub issue at [https://github.com/telerik/fiddler-everywhere/issues](https://github.com/telerik/fiddler-everywhere/issues)
 
 ## See Also
