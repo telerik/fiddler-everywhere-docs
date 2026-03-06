@@ -51,7 +51,7 @@ The **Agent Calls** grid includes the same key columns as **Live Traffic**—for
 Additional behaviors to keep in mind:
 
 - Sessions appear in **Agent Calls** automatically when Fiddler detects traffic to supported agentic endpoints.
-- If two or more identical endpoints are cached (for example `https://api.anthropic.com/v1/messages`), Fiddler returns the response from the first cached session.
+- If two or more identical endpoints are cached, Fiddler returns the response from the first cached session.
 - Fiddler rules apply only to non-cached sessions. Cached responses are returned as-is without rule evaluation.
 - After a session is cached, subsequent requests to that endpoint appear only in **Live Traffic**. **Agent Calls** shows the original non-cached requests.
 
@@ -69,7 +69,7 @@ When the **Caching** switch is enabled for a session, Fiddler Everywhere interce
 
 The following scenario demonstrates how Agent Cache eliminates redundant API usage during the development of an agent that calls a service-provider endpoint.
 
-**Scenario:** You are building an agent that sends a structured HTTPS request to a target endpoint (for example, `api.openai.com`). During development you repeatedly trigger the same call to verify your agent's parsing and response-handling logic. Without caching, each run incurs costs.
+**Scenario:** You are building an agent that sends a structured HTTPS request to a target endpoint. During development you repeatedly trigger the same call to verify your agent's parsing and response-handling logic. Without caching, each run incurs costs.
 
 1. Start capturing traffic in Fiddler Everywhere—click **Start Capture** in the toolbar.
 
