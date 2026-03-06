@@ -47,7 +47,7 @@ The **Agent Calls** grid includes the same key columns as **Live Traffic**—for
 
 Additional behaviors to keep in mind:
 
-- Sessions appear in **Agent Calls** deterministically when Fiddler detects traffic to supported agentic endpoints.
+- Sessions appear in **Agent Calls** automatically when Fiddler detects traffic to supported agentic endpoints.
 - If two or more identical endpoints are cached (for example `https://api.anthropic.com/v1/messages`), Fiddler returns the response from the first cached session.
 - Fiddler rules apply only to non-cached sessions. Cached responses are returned as-is without rule evaluation.
 - After a session is cached, subsequent requests to that endpoint appear only in **Live Traffic**. **Agent Calls** shows the original non-cached requests.
@@ -159,5 +159,5 @@ We welcome your feedback on Agent Cache and any other features you would like to
 
 * [Fiddler's MCP Server - Overview](slug://fiddler-mcp-server)
 * [Fiddler's MCP Server - Prompt Ideas](slug://fiddler_ai_prompt_library)
-* [Fiddler's Debuggin Asisstanct ](slug://fiddler-assistant)
+* [Fiddler's Debugging Assistant](slug://fiddler-assistant)
 
