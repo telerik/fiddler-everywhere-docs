@@ -41,6 +41,87 @@ The **Agent Calls** tab is available for:
 
 The feature is **not available** for Lite licenses.
 
+## The Agent Calls Tab
+
+The **Agent Calls** grid includes the same key columns as **Live Traffic**—for example, **#**, **Host**, **URL**, **Method**, **Status**, **Body**, and **Duration**—giving you full visibility into each captured endpoint call.
+
+Additional behaviors to keep in mind:
+
+- Sessions appear in **Agent Calls** deterministically when Fiddler detects traffic to supported agentic endpoints.
+- If two or more identical endpoints are cached (for example `https://api.anthropic.com/v1/messages`), Fiddler returns the response from the first cached session.
+- Fiddler rules apply only to non-cached sessions. Cached responses are returned as-is without rule evaluation.
+- After a session is cached, subsequent requests to that endpoint appear only in **Live Traffic**. **Agent Calls** shows the original non-cached requests.
+
+The grid adds one dedicated sticky column:
+
+| Column | Description |
+|:-------|:------------|
+| **Cache** | A toggle switch per session. Enable it to cache the session's recorded response. Disable it to stop intercepting and resume live calls to that endpoint. |
+
+When the **Cache** switch is enabled for a session, Fiddler Everywhere intercepts matching outbound calls and returns the cached response instead of forwarding the request to the remote endpoint. When the switch is disabled, requests pass through normally.
+
+## Get Started
+
+The following scenario demonstrates how Agent Cache eliminates redundant token usage during the development of an agent that calls a model-provider endpoint.
+
+**Scenario:** You are building an agent that sends a structured HTTPS request to a completion endpoint (for example, `api.openai.com`). During development you repeatedly trigger the same call to verify your agent's parsing and response-handling logic. Without caching, each run consumes tokens.
+
+1. Start capturing traffic in Fiddler Everywhere—click **Start Capture** in the toolbar.
+1. Run your agent to trigger an HTTPS call to the model-provider endpoint.
+1. Open **Traffic > Agent Calls**.
+1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
+1. Enable the **Cache** switch for that session in the sticky **Cache** column.
+1. Run your agent again using the same request.
+1. Verify in the **Agent Calls** grid that Fiddler Everywhere served the cached response—no new live call is made and no tokens are consumed on the provider side.
+
+You can disable the **Cache** switch at any time to resume live calls to the endpoint.
+
+## How It Works
+
+The following diagram shows the request flow when Agent Cache is active.
+
+```
+┌─────────────────────┐
+│    Your Agent       │
+└──────────┬──────────┘
+           │ HTTPS request (proxied)
+           ▼
+┌─────────────────────┐
+│ Fiddler Everywhere  │
+│  (Agent Calls tab)  │
+└──────────┬──────────┘
+           │
+      Cache ON?
+           │
+    ┌──────┴──────┐
+    │             │
+   YES           NO
+    │             │
+    ▼             ▼
+┌─────────┐  ┌─────────┐
+│ Return  │  │ Forward │
+│ cached  │  │ request │
+│response │  └────┬────┘
+└────┬────┘       │ HTTPS
+     │            ▼
+     │    ┌──────────────┐
+     │    │   Provider   │
+     │    └──────┬───────┘
+     │           │ response
+     │           │
+     └───────────┤
+                 ▼
+          ┌─────────────┐
+          │ Your Agent  │
+          │  (response) │
+          └─────────────┘
+```
+
+1. Your agent routes HTTPS traffic through Fiddler Everywhere, either by configuring a proxy in code, by using system proxy settings, or by launching the agent from Fiddler's built-in terminal.
+2. Fiddler captures the call and displays it in the **Agent Calls** tab.
+3. When the **Cache** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
+4. The provider endpoint never receives the duplicate request—no tokens are charged.
+
 ## Supported Endpoints
 
 The **Agent Calls** tab automatically detects and displays sessions targeting the following model-provider and inference-gateway endpoints. No manual configuration is required.
@@ -109,67 +190,6 @@ If your agent calls a provider or endpoint that is not automatically recognized,
 
 This is useful when you work with self-hosted models, internal gateway services, or newer providers that are not yet included in the built-in endpoint list.
 
-## The Agent Calls Tab
-
-The **Agent Calls** grid includes the same key columns as **Live Traffic**—for example, **#**, **Host**, **URL**, **Method**, **Status**, **Body**, and **Duration**—giving you full visibility into each captured endpoint call.
-
-Additional behaviors to keep in mind:
-
-- Sessions appear in **Agent Calls** deterministically when Fiddler detects traffic to supported agentic endpoints.
-- If two or more identical endpoints are cached (for example `https://api.anthropic.com/v1/messages`), Fiddler returns the response from the first cached session.
-- Fiddler rules apply only to non-cached sessions. Cached responses are returned as-is without rule evaluation.
-- After a session is cached, subsequent requests to that endpoint appear only in **Live Traffic**. **Agent Calls** shows the original non-cached requests.
-
-The grid adds one dedicated sticky column:
-
-| Column | Description |
-|:-------|:------------|
-| **Cache** | A toggle switch per session. Enable it to cache the session's recorded response. Disable it to stop intercepting and resume live calls to that endpoint. |
-
-When the **Cache** switch is enabled for a session, Fiddler Everywhere intercepts matching outbound calls and returns the cached response instead of forwarding the request to the remote endpoint. When the switch is disabled, requests pass through normally.
-
-## Get Started
-
-The following scenario demonstrates how Agent Cache eliminates redundant token usage during the development of an agent that calls a model-provider endpoint.
-
-**Scenario:** You are building an agent that sends a structured HTTPS request to a completion endpoint (for example, `api.openai.com`). During development you repeatedly trigger the same call to verify your agent's parsing and response-handling logic. Without caching, each run consumes tokens.
-
-1. Start capturing traffic in Fiddler Everywhere—click **Start Capture** in the toolbar.
-1. Run your agent to trigger an HTTPS call to the model-provider endpoint.
-1. Open **Traffic > Agent Calls**.
-1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
-1. Enable the **Cache** switch for that session in the sticky **Cache** column.
-1. Run your agent again using the same request.
-1. Verify in the **Agent Calls** grid that Fiddler Everywhere served the cached response—no new live call is made and no tokens are consumed on the provider side.
-
-You can disable the **Cache** switch at any time to resume live calls to the endpoint.
-
-## How It Works
-
-The following diagram shows the request flow when Agent Cache is active.
-
-```
-┌─────────────┐   HTTPS (proxied)   ┌──────────────────────┐   HTTPS   ┌────────────────────┐
-│  Your Agent │ ──────────────────► │  Fiddler Everywhere  │ ────────► │  Model Provider    │
-│             │                     │  (Agent Calls tab)   │           └────────────────────┘
-│             │ ◄────────────────── │                      │ ◄──────── response
-└─────────────┘   response          └──────────────────────┘
-                                            │
-                                     Cache switch ON?
-                                            │
-                                    ┌───────▼────────┐
-                                    │ Return cached  │
-                                    │ response.      │
-                                    │ No new call to │
-                                    │ the provider.  │
-                                    └────────────────┘
-```
-
-1. Your agent routes HTTPS traffic through Fiddler Everywhere, either by configuring a proxy in code, by using system proxy settings, or by launching the agent from Fiddler's built-in terminal.
-2. Fiddler captures the call and displays it in the **Agent Calls** tab.
-3. When the **Cache** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
-4. The provider endpoint never receives the duplicate request—no tokens are charged.
-
 ## Managed App Configuration
 
 IT administrators can disable the **Agent Calls** tab entirely through the **Managed App Configuration** policy `DisableLLMSessionsTab`. When this policy is enabled, the tab is hidden from the **Traffic** pane for all users governed by the policy.
@@ -194,3 +214,10 @@ We welcome your feedback on Agent Cache and any other features you would like to
 
 - Emailing [fiddler-support@progress.com](mailto:fiddler-support@progress.com)
 - Opening a GitHub issue at [https://github.com/telerik/fiddler-everywhere/issues](https://github.com/telerik/fiddler-everywhere/issues)
+
+## See Also
+
+* [Fiddler's MCP Server - Overview](slug://fiddler-mcp-server)
+* [Fiddler's MCP Server - Prompt Ideas](slug://fiddler_ai_prompt_library)
+* [Fiddler's Debuggin Asisstanct ](slug://fiddler-assistant)
+
