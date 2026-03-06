@@ -124,71 +124,11 @@ The following diagram shows the request flow when Agent Cache is active.
 
 ## Supported Endpoints
 
-The **Agent Calls** tab automatically detects and displays sessions targeting the following model-provider and inference-gateway endpoints. No manual configuration is required.
+The **Agent Calls** tab automatically detects and displays sessions targeting a broad range of model-provider and inference-gateway endpoints—including major providers, cloud-hosted inference services, and local runners—without any manual configuration.
 
-### Model Providers
+If a session targeting your agent's API endpoint does not appear in **Agent Calls** automatically, you can promote it manually. Right-click the session in **Live Traffic** and select **Add to Agent Calls** from the context menu. The session then appears in the **Agent Calls** tab and can be cached like any automatically detected session.
 
-| Provider | Host | Paths |
-|:---------|:-----|:------|
-| OpenAI | `api.openai.com` | `/v1/chat/completions`, `/v1/completions`, `/v1/responses`, `/v1/embeddings`, `/v1/images`, `/v1/audio`, `/v1/moderations` |
-| Anthropic | `api.anthropic.com` | `/v1/messages`, `/v1/complete` |
-| Google – Gemini / Vertex AI | `generativelanguage.googleapis.com` | All paths |
-| Google – Gemini / Vertex AI | `aiplatform.googleapis.com` | All paths |
-| Google – AI Studio | `aistudio.google.com` | `/api/` |
-| Mistral AI | `api.mistral.ai` | `/v1/chat/completions`, `/v1/completions`, `/v1/embeddings` |
-| Cohere | `api.cohere.ai`, `api.cohere.com` | `/v1/chat`, `/v1/generate`, `/v1/embed`, `/v2/chat` |
-| AI21 Labs | `api.ai21.com` | `/studio/v1/`, `/v1/chat/completions` |
-| xAI (Grok) | `api.x.ai` | `/v1/chat/completions`, `/v1/completions` |
-| Meta Llama | `api.llama.com`, `api.llama-api.com` | All paths |
-| Perplexity | `api.perplexity.ai` | `/chat/completions` |
-| DeepSeek | `api.deepseek.com` | `/v1/chat/completions`, `/v1/completions` |
-| Zhipu AI (GLM) | `open.bigmodel.cn` | `/api/paas/` |
-| Moonshot / Kimi | `api.moonshot.cn` | `/v1/chat/completions` |
-| Minimax | `api.minimax.chat` | All paths |
-| 01.AI (Yi) | `api.01.ai` | `/v1/chat/completions` |
-| Reka | `api.reka.ai` | All paths |
-| Aleph Alpha | `api.aleph-alpha.com` | `/complete`, `/evaluate`, `/embed` |
-| Writer | `api.writer.com` | `/v1/chat`, `/v1/completions` |
-
-### Inference and Gateway Providers
-
-| Provider | Host | Paths |
-|:---------|:-----|:------|
-| Azure OpenAI | `*.openai.azure.com` | `/openai/deployments/` |
-| Amazon Bedrock | `bedrock-runtime.amazonaws.com`, `bedrock.amazonaws.com` | All paths |
-| OpenRouter | `openrouter.ai` | `/api/v1/chat/completions`, `/api/v1/completions` |
-| Hugging Face | `api-inference.huggingface.co` | All paths |
-| Hugging Face | `huggingface.co` | `/api/models/` |
-| Together AI | `api.together.xyz`, `api.together.ai` | `/v1/chat/completions`, `/v1/completions`, `/v1/embeddings`, `/inference` |
-| Fireworks AI | `api.fireworks.ai` | `/inference/` |
-| Replicate | `api.replicate.com` | `/v1/predictions`, `/v1/models/` |
-| Groq | `api.groq.com` | `/openai/v1/chat/completions`, `/openai/v1/completions` |
-| Cerebras | `api.cerebras.ai` | `/v1/chat/completions` |
-| SambaNova | `api.sambanova.ai` | `/v1/chat/completions` |
-| Lepton AI | `api.lepton.ai` | All paths |
-| Anyscale | `api.endpoints.anyscale.com` | `/v1/chat/completions`, `/v1/completions` |
-| DeepInfra | `api.deepinfra.com` | `/v1/openai/chat/completions`, `/v1/openai/completions`, `/v1/inference/` |
-| OVH AI Endpoints | `ai.endpoints.ovh.net` | All paths |
-| Cloudflare Workers AI | `api.cloudflare.com` | `/client/v4/accounts/`, `/v1/chat/completions` |
-| IBM watsonx.ai | `*.ml.cloud.ibm.com` | `/ml/v1/text/generation`, `/ml/v1/text/chat` |
-| NVIDIA NIM / NGC | `integrate.api.nvidia.com` | `/v1/chat/completions`, `/v1/completions`, `/v1/embeddings` |
-| Databricks | `databricks.com` | `/serving-endpoints/`, `/api/2.0/serving-endpoints/` |
-| Oracle OCI Generative AI | `inference.generativeai.oci.oraclecloud.com` | All paths |
-
-### Local Runners
-
-| Provider | Host | Paths |
-|:---------|:-----|:------|
-| Ollama | `localhost:11434`, `127.0.0.1:11434` | `/api/generate`, `/api/chat`, `/api/embeddings`, `/v1/chat/completions` |
-| LM Studio | `localhost:1234`, `127.0.0.1:1234` | `/v1/chat/completions`, `/v1/completions`, `/v1/embeddings` |
-
->tip "All paths" means Fiddler matches any request path to that host. Where specific paths are listed, only requests matching those path prefixes are included.
-
-### Adding Custom Endpoints
-
-If your agent calls a provider or endpoint that is not automatically recognized, you can manually promote any session from the **Live Traffic** grid to **Agent Calls**. Right-click the session in **Live Traffic** and select the option to add it to **Agent Calls** from the context menu. The session then appears in the **Agent Calls** tab and can be cached like any automatically detected session.
-
-This is useful when you work with self-hosted models, internal gateway services, or newer providers that are not yet included in the built-in endpoint list.
+This is useful when working with locally hosted inference endpoints, internal gateway services, or newer providers not yet included in the built-in detection list.
 
 ## Managed App Configuration
 
