@@ -134,7 +134,7 @@ The following diagram shows the request flow when Agent Cache is active.
 
 1. Your agent routes HTTPS traffic through Fiddler Everywhere, either by configuring a proxy in code, by using system proxy settings, or by launching the agent from Fiddler's built-in terminal.
 2. Fiddler captures the call and displays it in the **Agent Calls** tab.
-3. When the **Cache** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
+3. When the **Caching** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
 4. The provider endpoint never receives the duplicate request—no costs are incurred.
 
 ## Supported Endpoints
