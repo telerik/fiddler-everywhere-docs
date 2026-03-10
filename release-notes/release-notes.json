@@ -1,5 +1,40 @@
 [
   {
+  "version": "7.7.0",
+  "title": "Fiddler Everywhere v7.7.0",
+  "date": "March 11, 2026",
+  "items": [
+    {
+      "type": "New",
+      "entries": [
+        {
+          "title": "Introduced Agent Cache functionality, enabling users to capture and selectively cache real Agent request/response pairs."
+        }
+      ]
+    },
+    {
+      "type": "Fixed",
+      "entries": [
+        {
+          "title": "Autosave could not be disabled when there is quota limiting the functionality."
+        },
+        {
+          "title": "Debugging Assistant continued to function after the Fiddler Everywhere trial had expired."
+        },
+        {
+          "title": "Email addresses were duplicated when separated by spaces in Share dialogs."
+        },
+        {
+          "title": "Upgraded the application’s core backend runtime to the latest supported version."
+        },
+        {
+          "title": "Updated third-party dependencies to mitigate potential security vulnerabilities."
+        }
+      ]
+    }
+  ]
+},
+  {
     "version": "7.6.0",
     "title": "Fiddler Everywhere v7.6.0",
     "date": "January 20, 2026",
