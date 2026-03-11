@@ -10,7 +10,7 @@ position: 57
 
 Reuse prior agent responses during development and testing to shorten the feedback loop and speed up iterations—while keeping execution costs under control. This is **Agent Cache**.
 
-When building and testing automated agents that communicate with model-provider endpoints over HTTPS, every test run sends a live request and consumes tokens. Agent Cache breaks that cycle by letting you cache a captured endpoint response and have Fiddler Everywhere replay it for matching calls—so your testing no longer incurs token costs after the first capture.
+When building and testing automated agents that communicate with model-provider endpoints over HTTPS, every test run sends a live request and consumes tokens. Agent Cache breaks that cycle by letting you cache a captured endpoint response and have Fiddler Everywhere replay it for matching calls—so your testing no longer incurs token costs after the first capture, and repeated runs against the same cached response stay fast and deterministic.
 
 ## Overview
 
@@ -19,20 +19,6 @@ Fiddler Everywhere adds an **Agent Calls** tab in the **Traffic** pane, alongsid
 The **Agent Calls** tab is a focused view over sessions already captured in **Live Traffic**. It automatically filters and displays HTTPS sessions that target supported model-provider endpoints.
 
 >important The **Agent Calls** tab reflects sessions that have already been captured. You must have active traffic capture running, or previously captured sessions present in **Live Traffic**, before any sessions appear in **Agent Calls**.
-
-## Why Agent Cache
-
-### Faster Iterations
-
-Replaying a captured response is instant. Instead of waiting on a round-trip to the provider on every run, you get a result back immediately—shortening the feedback loop so you can move through prompt and code changes without unnecessary delays.
-
-### Lower Execution Costs
-
-Each cached run consumes zero tokens on the provider side. During active development—where the same request may be triggered dozens of times across a team—this directly reduces the token spend that accumulates before a feature is even complete.
-
-### More Deterministic Testing
-
-A cached response is fixed and repeatable. Running the same agent logic against the same response on every iteration makes it straightforward to verify that a code change had the intended effect, without having to account for variability in live endpoint output.
 
 ## The Agent Calls Tab
 
