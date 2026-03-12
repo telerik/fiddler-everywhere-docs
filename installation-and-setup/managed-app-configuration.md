@@ -113,6 +113,7 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | REG_SZ (string) | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | REG_SZ (string) | `<base64-private-key>` |
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | DWORD-32 (hexadecimal) | `1` |
+| `DisableLLMSessionsTab` | Enables or disables the Agent Calls tab in the Traffic pane | DWORD-32 (hexadecimal) | `1` |
 | `DefaultSanitizationSettings` | JSON object defining default sanitization configuration. All properties are optional; omitted properties use Fiddler Everywhere defaults. |  REG_SZ (string) | See the JSON structure [here](slug://fe-sanitization#defaultsanitizationsettings-json-structure) |
 | `DisableSanitizationSettingsUpdate` | Locks sanitization settings to prevent user modifications. Set to `1` to enable, `0` to disable. |  REG_DWORD | `0x00000001` (1) |
 | `DisableAssistant` | Enables or disables the Debugging Assistant feature | DWORD-32 | `1` |
