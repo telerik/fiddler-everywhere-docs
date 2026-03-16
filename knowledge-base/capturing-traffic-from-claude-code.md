@@ -72,7 +72,7 @@ To decrypt and inspect HTTPS traffic from Claude Code, you need to export Fiddle
 3. Click **Export Root Certificate**
 4. Select **PEM Format** from the export options
 5. Save the certificate to a known location, such as:
-   ```
+   ```txt
    %USERPROFILE%\.claude\Fiddler_Root_Certificate_Authority.pem
    ```
 
@@ -86,7 +86,7 @@ Claude Code (and Node.js applications in general) uses the `NODE_EXTRA_CA_CERTS`
 2. Under **User variables**, click **New**
 3. Set the variable name: `NODE_EXTRA_CA_CERTS`
 4. Set the variable value to the full path of your exported certificate:
-   ```
+   ```txt
    %USERPROFILE%\.claude\Fiddler_Root_Certificate_Authority.pem
    ```
 5. Click **OK** to save the environment variable
@@ -117,7 +117,7 @@ This terminal is now configured to route all HTTP/HTTPS traffic through Fiddler.
 Now that everything is configured, test the setup by asking Claude Code to perform a task.
 
 1. In the Claude Code session, enter a request, such as:
-   ```
+   ```txt
    Create a Python function that reads a JSON file and returns the data as a dictionary
    ```
 

@@ -78,7 +78,7 @@ The session then appears in the **Agent Calls** tab and can be cached like any a
 
 The following diagram shows the request flow when Agent Cache is active.
 
-```
+```txt
 ┌─────────────────────┐
 │    Your Agent       │
 └──────────┬──────────┘

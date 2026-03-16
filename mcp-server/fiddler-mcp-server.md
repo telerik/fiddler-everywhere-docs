@@ -113,6 +113,52 @@ The Fiddler Everywhere MCP server supports the following capturing modes:
 - [Terminal capturing mode](slug://capture-terminal-traffic)
 - [Reverse proxy](slug://fiddler-reverse-proxy)
 
+## Available MCP Tools
+
+The Fiddler Everywhere MCP server exposes the following tools. These tools can be invoked by your LLM agent (using `#fiddler` or your configured server name) to interact programmatically with the Fiddler Everywhere application.
+
+### Authentication and Status
+
+| Tool | Description |
+|:-----|:------------|
+| `get_status` | Returns the current status of the Fiddler Everywhere application, including login state, certificate trust status, proxy configuration, and captured session counts. Useful as a health check before issuing other commands. |
+| `is_user_logged_in` | Checks whether the current user is authenticated with Fiddler Everywhere. Returns a boolean result. |
+| `initiate_login` | Triggers the Fiddler Everywhere login flow by opening the authentication page. Use this when `is_user_logged_in` reports that the user is not authenticated. |
+| `open_trust_root_certificate_dialog` | Opens the Fiddler Everywhere dialog for trusting the root CA certificate. Trusting the certificate is required for HTTPS traffic decryption and interception. |
+
+### Traffic Capture
+
+| Tool | Description |
+|:-----|:------------|
+| `start_capture_with_browser` | Launches a browser instance (Chrome) with the Fiddler Everywhere proxy settings pre-configured, enabling immediate capture of browser HTTP/HTTPS traffic. |
+| `start_capture_with_terminal` | Opens a terminal session with the Fiddler Everywhere proxy environment variables pre-set, enabling capture of traffic from CLI tools, scripts, or applications started within that terminal. |
+
+### Session Management
+
+| Tool | Description |
+|:-----|:------------|
+| `get_sessions` | Retrieves the list of captured HTTP/HTTPS sessions, optionally limited by any active filters. Returns session metadata such as URLs, methods, status codes, and timing. |
+| `get_sessions_count` | Returns the total number of currently captured sessions. Useful for quickly assessing session volume without fetching the full session list. |
+| `get_session_details` | Fetches full details for a specific captured session by its ID, including request and response headers, request and response body, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. The session ID is the numeric value shown in the **ID** column of the **Live Traffic** grid in Fiddler Everywhere. |
+| `apply_filters` | Applies filter criteria (such as URL pattern, status code, or HTTP method) to the active session list to narrow down the sessions visible to subsequent tool calls. |
+| `clear_sessions` | Permanently removes all currently captured sessions from the Fiddler Everywhere session list. |
+
+### Rules
+
+| Tool | Description |
+|:-----|:------------|
+| `create_rule` | Creates a traffic manipulation rule with configurable match conditions and actions. Rules can be used to modify request or response headers, redirect URLs, inject content, simulate latency, and more. |
+| `clear_rules` | Removes all rules that were created through the MCP server during the current session. |
+
+### Reverse Proxy
+
+| Tool | Description |
+|:-----|:------------|
+| `add_reverse_proxy_port` | Adds a reverse proxy mapping that forwards traffic arriving on a specified local port to a designated remote host and port. Useful for intercepting traffic from applications that do not honor system proxy settings. |
+| `remove_reverse_proxy_port` | Removes a previously configured reverse proxy port mapping by its local port number. |
+| `enable_reverse_proxy` | Enables the Fiddler Everywhere reverse proxy feature so that active port mappings start forwarding traffic. |
+| `disable_reverse_proxy` | Disables the Fiddler Everywhere reverse proxy feature, stopping all active port mappings from forwarding traffic. |
+
 ## MCP Output Sanitization
 
 The Fiddler Everywhere application provides a sanitization tool that automatically removes sensitive data from the output passed to the MCP server. The data sanitization feature enables users to minimize the risk of disclosing specific information.
