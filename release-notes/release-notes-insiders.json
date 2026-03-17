@@ -8,7 +8,7 @@
         "type": "Fixed",
         "entries": [
           {
-            "title": "Agent Cache response returned comment shows wrong origin session ID"
+            "title": "Agent Cache response returned comment shows wrong origin session ID."
           },
           {
             "title": "Updated third-party dependencies to mitigate potential security vulnerabilities."
