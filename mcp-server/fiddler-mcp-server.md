@@ -115,7 +115,7 @@ The endpoint returns a JSON object with three fields:
 
 | Field | Type | Description |
 |:------|:-----|:------------|
-| `apiKey` | string | The API key to use in the `Authorization` header when connecting to the MCP server. |
+| `apiKey` | string | The raw API key string. This value does not include the `ApiKey ` prefix; when calling the MCP server, send it in the `Authorization` header as `Authorization: ApiKey <apiKey>`. |
 | `port` | integer | The port on which the MCP server is listening (default: `8868`). |
 | `url` | string | The full MCP server URL ready for use in an IDE configuration. |
 
