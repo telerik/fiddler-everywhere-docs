@@ -1,5 +1,23 @@
 [
     {
+    "version": "7.7.2",
+    "title": "Fiddler Everywhere v7.7.2",
+    "date": "March 26, 2026",
+    "items": [
+      {
+        "type": "Fixed",
+        "entries": [
+          {
+            "title": "Agent Cache response returned comment shows wrong origin session ID."
+          },
+          {
+            "title": "Updated third-party dependencies to mitigate potential security vulnerabilities."
+          }
+        ]
+      }
+    ]
+  },
+    {
     "version": "7.7.1",
     "title": "Fiddler Everywhere v7.7.1",
     "date": "March 18, 2026",
