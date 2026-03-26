@@ -136,7 +136,7 @@ The following diagram shows how an AI agent can use this endpoint to wire up the
 ```txt
 ┌──────────────────────┐
 │   AI Agent / Tool    │
-│  (e.g. GitHub Copilot│
+│ (e.g. GitHub Copilot)│
 └──────────┬───────────┘
            │ POST /api/McpManagement/GetOrGenerateApiKey
            ▼
