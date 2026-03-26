@@ -87,6 +87,80 @@ To enable the Fiddler Everywhere MCP server in Cursor, follow these steps:
     ```
 4. Start the Fiddler Everywhere MCP server in Cursor.
 
+## Automated API Key Provisioning
+
+Fiddler Everywhere exposes a local management endpoint that lets tools, scripts, and AI agents (such as GitHub Copilot) obtain an API key programmatically—without requiring a user to open **Settings > MCP Server**, copy a key, and paste it into a configuration file.
+
+### Endpoint
+
+```
+POST http://localhost:8868/api/McpManagement/GetOrGenerateApiKey
+```
+
+No request body or query parameters are required. The endpoint is accessible only on `localhost` and is served by the Fiddler Everywhere application while it is running.
+
+### Access Requirements
+
+The endpoint enforces the following conditions before returning or generating a key:
+
+- The user must be logged in to Fiddler Everywhere.
+- The user must hold a valid Pro or higher subscription license.
+- The `DisableMCP` policy must not be active (see [MCP Access Policies](#mcp-access-policies)).
+
+If any condition is not met, the endpoint responds with an appropriate HTTP error code.
+
+### Response
+
+The endpoint returns a JSON object with three fields:
+
+| Field | Type | Description |
+|:------|:-----|:------------|
+| `apiKey` | string | The API key to use in the `Authorization` header when connecting to the MCP server. |
+| `port` | integer | The port on which the MCP server is listening (default: `8868`). |
+| `url` | string | The full MCP server URL ready for use in an IDE configuration. |
+
+Whether an API key already exists or is newly generated, the response shape is identical. When no key exists, one is generated and persisted in `appsettings.json` before responding:
+
+```json
+{
+    "apiKey": "xxxx-yyyy-xxxx",
+    "port": 8868,
+    "url": "http://localhost:8868/mcp"
+}
+```
+
+### Automated Setup Flow
+
+The following diagram shows how an AI agent can use this endpoint to wire up the MCP server without user interaction:
+
+```txt
+┌──────────────────────┐
+│   AI Agent / Tool    │
+│  (e.g. GitHub Copilot│
+└──────────┬───────────┘
+           │ POST /api/McpManagement/GetOrGenerateApiKey
+           ▼
+┌──────────────────────┐
+│  Fiddler Everywhere  │
+│  (running locally)   │
+└──────────┬───────────┘
+           │ { apiKey, port, url }
+           ▼
+┌──────────────────────┐
+│  Agent writes key    │
+│  into mcp.json and   │
+│  activates MCP server│
+└──────────────────────┘
+```
+
+1. The agent sends a `POST` request to the local endpoint.
+2. Fiddler Everywhere validates the login session and license, then returns (or generates) the API key together with the server URL.
+3. The agent constructs the IDE-specific MCP configuration (for example, `.vscode/mcp.json`) using the returned values and completes setup automatically.
+
+>important The `GetOrGenerateApiKey` endpoint is only available while Fiddler Everywhere is running. Ensure the application is started before invoking the endpoint from an automated workflow.
+
+>tip If you are setting up the MCP server manually, use the instructions in the [Installation](#installation) section instead.
+
 ## Usage
 
 To use the Fiddler Everywhere MCP server:
