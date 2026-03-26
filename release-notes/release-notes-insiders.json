@@ -1,5 +1,28 @@
 [
     {
+    "version": "7.7.2-insiders",
+    "title": "Fiddler Everywhere v7.7.0",
+    "date": "March 26, 2026",
+    "items": [
+      {
+        "type": "New",
+        "entries": [
+          {
+            "title": "Introduce new API endpoint for MCP API key generation."
+          }
+        ]
+      },
+      {
+        "type": "Fixed",
+        "entries": [
+          {
+            "title": "The empty state of the Agent Calls tab does not provide clear guidance."
+          }
+        ]
+      }
+    ]
+  },
+    {
     "version": "7.7.1-insiders",
     "title": "Fiddler Everywhere v7.7.1",
     "date": "March 18, 2026",
