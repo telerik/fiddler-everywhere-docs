@@ -54,7 +54,7 @@ After cloning, point your coding tool at the skill files using the configuration
 
 Skills are loaded as [custom instructions](https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot). Add the skill files to your workspace's `.github/` folder or reference them via your user-level instructions file.
 
-1. Copy or symlink the `SKILL.md` files you want into `.github/copilot-instructions.md` or include them using the `files` directive in your Copilot configuration.
+1. Create or edit `.github/copilot-instructions.md`, then paste or append the contents of the `SKILL.md` files you want to use, or reference the original `SKILL.md` files using the `files` directive in your Copilot configuration.
 2. Open the Copilot Chat panel, switch to **Agent** mode, and activate the `@workspace` agent.
 3. Invoke a skill by describing the task in natural language (see [Invoking Skills](#invoking-skills)).
 
