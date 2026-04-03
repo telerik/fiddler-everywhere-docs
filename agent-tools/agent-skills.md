@@ -15,7 +15,7 @@ The official Fiddler Everywhere skills are hosted in the [fiddler-agent-tools](h
 
 | Skill | Purpose |
 |:------|:--------|
-| `fiddler-download-setup` | Download, install, and launch Fiddler Everywhere from scratch. |
+| `fiddler-download-setup` | Download, install, and launch Fiddler Everywhere from scratch, then automatically configure the MCP server. |
 | `fiddler-mcp-setup` | Connect your coding assistant to the Fiddler MCP server. |
 | `fiddler-feature-verification` | Verify that a feature's HTTP calls completed correctly by analyzing captured traffic. |
 
@@ -120,7 +120,7 @@ Skills are triggered by describing your intent in natural language. Each skill i
 
 | Skill | When the Agent Invokes It | Example Trigger Phrase |
 |:------|:--------------------------|:-----------------------|
-| `fiddler-download-setup` | Fiddler Everywhere is not installed | *"Download and install Fiddler Everywhere"* / *"Set up Fiddler from scratch"* |
+| `fiddler-download-setup` | Fiddler Everywhere is not installed | *"Download and install Fiddler Everywhere"* / *"Set up Fiddler from scratch"* / *"Get started with Fiddler"* |
 | `fiddler-mcp-setup` | MCP tools are unavailable, auth errors, first-time setup | *"Set up Fiddler MCP"* / *"Connect Fiddler to my IDE"* / *"I can't see Fiddler tools"* |
 | `fiddler-feature-verification` | After running a feature you want to verify via HTTP traffic | *"Verify the HTTP calls my feature made"* / *"Check what requests my app sent"* |
 
@@ -130,7 +130,7 @@ Skills are triggered by describing your intent in natural language. Each skill i
 
 ### fiddler-download-setup
 
-**Purpose**: Automates the complete first-time installation of Fiddler Everywhere on macOS, Linux, or Windows — from downloading the installer to launching the application.
+**Purpose**: Automates the complete first-time installation of Fiddler Everywhere on macOS, Linux, or Windows — from downloading the installer to launching the application. Once Fiddler is running, the skill automatically chains into MCP configuration so your coding tool can start using Fiddler tools immediately.
 
 **What it does**:
 1. Checks whether Fiddler Everywhere is already installed.
@@ -138,10 +138,11 @@ Skills are triggered by describing your intent in natural language. Each skill i
 3. Downloads the installer for your platform.
 4. Runs a silent installation (with a native macOS privilege prompt where required).
 5. Launches Fiddler Everywhere.
+6. Automatically chains into the `fiddler-mcp-setup` workflow to configure the MCP server for your coding tool.
 
-**When to use**: Use this skill when a developer does not have Fiddler Everywhere installed yet and wants to go from zero to a running Fiddler instance in one step.
+**When to use**: Use this skill when a developer does not have Fiddler Everywhere installed yet and wants to go from zero to a running, MCP-connected Fiddler instance in one step.
 
-**Typical invocation**: *"Download Fiddler Everywhere"*, *"Install Fiddler for me"*, *"Get started with Fiddler"*
+**Typical invocation**: *"Download Fiddler Everywhere"*, *"Install Fiddler for me"*, *"Get started with Fiddler"*, *"Set up Fiddler from scratch"*
 
 ---
 
