@@ -87,6 +87,96 @@ To enable the Fiddler Everywhere MCP server in Cursor, follow these steps:
     ```
 4. Start the Fiddler Everywhere MCP server in Cursor.
 
+### Claude Code
+
+To enable the Fiddler Everywhere MCP server in Claude Code, follow these steps:
+
+1. Start the Fiddler Everywhere application.
+2. Go to **Settings > MCP Server** and complete the following:
+    * Set the MCP server port (default value is `8868`).
+    * Generate a unique API Key.
+3. In your project directory, create an `.mcp.json` file with the following configuration:
+
+    _example .mcp.json file for Claude Code with Fiddler Everywhere MCP server_
+    ```JSON
+    {
+        "mcpServers": {
+            "fiddler": {
+                "type": "http",
+                "url": "http://localhost:8868/mcp",
+                "headers": {
+                    "Authorization": "ApiKey FIDDLER_API_KEY_HERE"
+                }
+            }
+        }
+    }
+    ```
+    Replace `FIDDLER_API_KEY_HERE` with the API key generated in step 2.
+4. Add `.mcp.json` to your `.gitignore` to avoid committing the API key to source control.
+5. Start Claude Code from your project directory. The Fiddler MCP server will be available automatically.
+
+>tip Alternatively, you can register the server via the CLI: `claude mcp add --transport http fiddler http://localhost:8868/mcp -H "Authorization: ApiKey FIDDLER_API_KEY_HERE"`
+
+### Claude Desktop
+
+To enable the Fiddler Everywhere MCP server in Claude Desktop, follow these steps:
+
+1. Start the Fiddler Everywhere application.
+2. Go to **Settings > MCP Server** and complete the following:
+    * Set the MCP server port (default value is `8868`).
+    * Generate a unique API Key.
+3. Open the Claude Desktop configuration file for your operating system:
+    * **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+    * **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+4. Add the Fiddler Everywhere MCP server entry to the `mcpServers` object. Create the file if it does not exist.
+
+    _example claude_desktop_config.json file with Fiddler Everywhere MCP server_
+    ```JSON
+    {
+        "mcpServers": {
+            "fiddler": {
+                "type": "http",
+                "url": "http://localhost:8868/mcp",
+                "headers": {
+                    "Authorization": "ApiKey FIDDLER_API_KEY_HERE"
+                }
+            }
+        }
+    }
+    ```
+    Replace `FIDDLER_API_KEY_HERE` with the API key generated in step 2.
+5. Restart Claude Desktop to apply the configuration.
+
+### Windsurf
+
+To enable the Fiddler Everywhere MCP server in Windsurf, follow these steps:
+
+1. Start the Fiddler Everywhere application.
+2. Go to **Settings > MCP Server** and complete the following:
+    * Set the MCP server port (default value is `8868`).
+    * Generate a unique API Key.
+3. Open the Windsurf MCP configuration file located at:
+    * **macOS / Linux**: `~/.codeium/windsurf/mcp_config.json`
+    * **Windows**: `%USERPROFILE%\.codeium\windsurf\mcp_config.json`
+4. Add the Fiddler Everywhere MCP server entry to the `mcpServers` object. Create the file if it does not exist.
+
+    _example mcp_config.json file in Windsurf with Fiddler Everywhere MCP server_
+    ```JSON
+    {
+        "mcpServers": {
+            "fiddler": {
+                "serverType": "http",
+                "url": "http://localhost:8868/mcp",
+                "headers": {
+                    "Authorization": "ApiKey FIDDLER_API_KEY_HERE"
+                }
+            }
+        }
+    }
+    ```
+    Replace `FIDDLER_API_KEY_HERE` with the API key generated in step 2.
+5. Restart Windsurf or reload the MCP configuration to apply the changes.
+
 ## Usage
 
 To use the Fiddler Everywhere MCP server:
@@ -95,7 +185,10 @@ To use the Fiddler Everywhere MCP server:
 2. Configure the MCP server in your IDE:
     * [Visual Studio Code](#visual-studio-code)
     * [Cursor](#cursor)
-    * Or any other compatible IDE that supports MCP servers with tools.
+    * [Claude Code](#claude-code)
+    * [Claude Desktop](#claude-desktop)
+    * [Windsurf](#windsurf)
+    * Or any other compatible tool that supports MCP servers.
 3. Enable the **agent mode** in your IDE.
 4. Start your prompt with `#fiddler` (or with `#` followed by your custom server name, if configured).
 
