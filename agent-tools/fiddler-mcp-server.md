@@ -1,15 +1,16 @@
 ---
 title: Fiddler MCP Server
-page_title: Fiddler MCP Server
-description: "Learn how to install, configure, and use the Fiddler Everywhere MCP server to integrate captured HTTPS traffic analysis with LLM-powered IDEs and development tools."
+page_title: Fiddler Everywhere MCP Server – Connect AI-Powered IDEs to Live HTTPS Traffic
+description: "Install and configure the Fiddler Everywhere MCP server to give AI-powered IDEs and LLM coding assistants (VS Code, Cursor, Claude, Windsurf) real-time access to captured HTTPS traffic for debugging, security analysis, and performance optimization."
 slug: fiddler-mcp-server
 publish: true
 position: 1
+previous_url: /mcp-server/fiddler-mcp-server
 ---
 
 # Fiddler MCP Server
 
-The Fiddler Everywhere MCP (Model Context Protocol) server lets you interact with LLM models and reach new levels of developer productivity. The MCP server provides proprietary context to LLM-powered IDEs, apps, and tools. You can use the Fiddler Everywhere MCP server for comprehensive analysis of captured HTTPS traffic, including web debugging, security highlights, performance reports, data extraction, and general usage. The Fiddler MCP enables you to successfully prompt more complex questions and tasks, and generate tailored code based on the information received from the captured HTTPS traffic.
+The Fiddler Everywhere MCP (Model Context Protocol) server lets you connect coding assistants and agent-powered tools, reaching new levels of developer productivity. The MCP server provides proprietary context to agent-powered IDEs, apps, and tools. You can use the Fiddler Everywhere MCP server for comprehensive analysis of captured HTTPS traffic, including web debugging, security highlights, performance reports, data extraction, and general usage. The Fiddler MCP enables you to successfully prompt more complex questions and tasks, and generate tailored code based on the information received from the captured HTTPS traffic.
 
 ## Prerequisites
 
@@ -23,6 +24,10 @@ To use the Fiddler Everywhere MCP server, you need:
 
 ## Installation
 
+>tip The fastest way to configure the Fiddler MCP server in any supported coding tool is to use the **[fiddler-mcp-setup](slug://fiddler-agent-skills#fiddler-mcp-setup) agent skill**. It auto-discovers the port, retrieves your API key, writes the correct config file for your tool, and gitignores it — all in one step. If Fiddler Everywhere is not yet installed, start with the **[fiddler-download-setup](slug://fiddler-agent-skills#fiddler-download-setup) skill** instead.
+
+To configure the MCP server manually, use the generic settings below or follow the per-tool instructions:
+
 The generic settings for the Fiddler Everywhere MCP server are:
 
 * **Server name handle**: `#fiddler` (default value - can be customized through **Settings > MCP Server**)
@@ -30,9 +35,9 @@ The generic settings for the Fiddler Everywhere MCP server are:
 * **Server URL**: `http://localhost:8868/mcp` (default value - the port can be customized through **Settings > MCP Server**)
 * **Authorization**: A generated unique API key to be placed as an `Authorization` header.
 
-### Visual Studio Code
+### GitHub Copilot in Visual Studio Code
 
-To enable the Fiddler Everywhere MCP server in Visual Studio Code, follow these steps:
+To enable the Fiddler Everywhere MCP server for GitHub Copilot in Visual Studio Code, follow these steps:
 
 1. Start the Fiddler Everywhere application.
 2. Go to **Settings > MCP Server** and complete the following:
@@ -43,13 +48,13 @@ To enable the Fiddler Everywhere MCP server in Visual Studio Code, follow these 
     * Create a `.vscode/mcp.json` file in your workspace.
     * Paste the copied Fiddler Everywhere MCP configuration. Ensure that the JSON is properly formatted and that the Fiddler MCP server is within the `servers` property.
 
-    _example mcp.json file in VSCode with Fiddler Evereywhere MCP server_
+    _example mcp.json file in VSCode with Fiddler Everywhere MCP server_
     ```JSON
     {
         "servers": {
             "fiddler": {
-            "type": "http",
-            "url": "http://localhost:8868/mcp",
+                "type": "http",
+                "url": "http://localhost:8868/mcp",
                 "headers": {
                     "Authorization": "ApiKey FIDDLER_API_KEY_HERE"
                 }
@@ -57,7 +62,9 @@ To enable the Fiddler Everywhere MCP server in Visual Studio Code, follow these 
         }
     }
     ```
-4. Start the Fiddler Everywhere MCP server in Visual Studio Code.
+    Replace `FIDDLER_API_KEY_HERE` with the API key generated in step 2.
+4. Add `.vscode/mcp.json` to your `.gitignore` to avoid committing the API key to source control.
+5. Start the Fiddler Everywhere MCP server in Visual Studio Code.
 
 ### Cursor
 
@@ -177,13 +184,46 @@ To enable the Fiddler Everywhere MCP server in Windsurf, follow these steps:
     Replace `FIDDLER_API_KEY_HERE` with the API key generated in step 2.
 5. Restart Windsurf or reload the MCP configuration to apply the changes.
 
+### GitHub Copilot CLI
+
+To enable the Fiddler Everywhere MCP server in GitHub Copilot CLI, follow these steps:
+
+1. Start the Fiddler Everywhere application.
+2. Go to **Settings > MCP Server** and complete the following:
+    * Set the MCP server port (default value is `8868`).
+    * Generate a unique API Key.
+3. Open or create the GitHub Copilot CLI MCP configuration file at `~/.copilot/mcp-config.json`.
+4. Add the Fiddler Everywhere MCP server entry to the `mcpServers` object.
+
+    _example mcp-config.json for GitHub Copilot CLI with Fiddler Everywhere MCP server_
+    ```JSON
+    {
+        "mcpServers": {
+            "fiddler": {
+                "type": "http",
+                "url": "http://localhost:8868/mcp",
+                "headers": {
+                    "Authorization": "ApiKey FIDDLER_API_KEY_HERE"
+                },
+                "tools": ["*"]
+            }
+        }
+    }
+    ```
+    Replace `FIDDLER_API_KEY_HERE` with the API key generated in step 2.
+
+>important The `"tools": ["*"]` property is required for GitHub Copilot CLI — omitting it disables all MCP tools.
+
+>important The configuration file `~/.copilot/mcp-config.json` is a global user-level file stored outside any repository. Keep it private and do not share or commit it, as it contains your API key in plaintext.
+
 ## Usage
 
 To use the Fiddler Everywhere MCP server:
 
 1. Start the Fiddler Everywhere application.
 2. Configure the MCP server in your IDE:
-    * [Visual Studio Code](#visual-studio-code)
+    * [GitHub Copilot in Visual Studio Code](#github-copilot-in-visual-studio-code)
+    * [GitHub Copilot CLI](#github-copilot-cli)
     * [Cursor](#cursor)
     * [Claude Code](#claude-code)
     * [Claude Desktop](#claude-desktop)
@@ -194,9 +234,9 @@ To use the Fiddler Everywhere MCP server:
 
 The MCP server will provide context from your captured HTTPS traffic to enhance your MCP-assisted development workflow.
 
->important The results and quality of outputs from the Fiddler Everywhere MCP server may vary depending on the prompt formulation and the specific Large Language Model (LLM) being used. Different LLMs have varying capabilities, and prompt quality significantly impacts the accuracy and relevance of generated responses.
+>important The results and quality of outputs from the Fiddler Everywhere MCP server may vary depending on the prompt formulation and the specific language model being used. Different models have varying capabilities, and prompt quality significantly impacts the accuracy and relevance of generated responses.
 
->tip You can jump start your MCP journey by exploring our [prompt library](slug://fiddler_ai_prompt_library)
+>tip You can jump start your MCP journey by exploring our [prompt library](slug://fiddler_ai_prompt_library) or check the [agent skills](slug://fiddler-agent-skills) that automate common setup and analysis tasks.
 
 ### Supported Capturing Modes
 
@@ -208,7 +248,7 @@ The Fiddler Everywhere MCP server supports the following capturing modes:
 
 ## Available MCP Tools
 
-The Fiddler Everywhere MCP server exposes the following tools. These tools can be invoked by your LLM agent (using `#fiddler` or your configured server name) to interact programmatically with the Fiddler Everywhere application.
+The Fiddler Everywhere MCP server exposes the following tools. These tools can be invoked by your coding assistant (using `#fiddler` or your configured server name) to interact programmatically with the Fiddler Everywhere application.
 
 ### Authentication and Status
 

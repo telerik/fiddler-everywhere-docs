@@ -1,35 +1,36 @@
 ---
 title: Prompt Library
-page_title: Fiddler Everywhere AI Prompt Library
-description: "Explore built-in and custom AI prompts for the Fiddler Everywhere MCP server to analyze HTTP traffic, debug applications, optimize performance, and enhance your development workflow."
+page_title: Fiddler Everywhere AI Prompt Library – MCP Prompts for HTTP Traffic Analysis
+description: "Explore a curated library of built-in and custom AI prompts for the Fiddler Everywhere MCP server. Use LLM-powered coding assistants to analyze HTTPS traffic, detect security vulnerabilities, optimize performance, and automate debugging workflows."
 slug: fiddler_ai_prompt_library
 position: 10
+previous_url: /mcp-server/prompt-library
 ---
 
 # Fiddler Everywhere Prompt Library
 
-Welcome to the Fiddler Everywhere Prompt Library—your comprehensive resource for AI-powered HTTP traffic analysis and debugging.
+Welcome to the Fiddler Everywhere Prompt Library—your comprehensive resource for HTTP traffic analysis and debugging with agent-powered coding tools.
 
-This library provides ready-to-use prompts optimized for the Fiddler Everywhere [MCP Server](slug://fiddler-mcp-server). Whether you're performing web debugging, security analysis, performance optimization, or data extraction, these prompts will help you maximize productivity by leveraging AI assistance with your captured HTTPS traffic.
+This library provides ready-to-use prompts optimized for the Fiddler Everywhere [MCP Server](slug://fiddler-mcp-server). Whether you're performing web debugging, security analysis, performance optimization, or data extraction, these prompts will help you maximize productivity by leveraging your coding assistant with captured HTTPS traffic.
 
 >important **Understanding Result Variability**: The quality, accuracy, and format of outputs generated using these prompts can vary significantly based on several factors:
 >
->- **LLM Selection**: Different Large Language Models (Claude, GPT-4, Gemini, etc.) have distinct capabilities, strengths, and limitations. Some models excel at code generation, while others may be better suited for analysis or explanation tasks.
+>- **Model Selection**: Different language models (Claude, GPT-4, Gemini, etc.) have distinct capabilities, strengths, and limitations. Some models excel at code generation, while others may be better suited for analysis or explanation tasks.
 >- **Prompt Formulation**: How you phrase your request dramatically impacts the response. More specific prompts with clear context and constraints typically yield better results than vague or ambiguous requests.
->- **Model Version**: Even within the same LLM family, different versions (e.g., Claude Sonnet 4 vs. Claude Sonnet 4.5) may produce different outputs for identical prompts.
+>- **Model Version**: Even within the same model family, different versions (e.g., Claude Sonnet 4 vs. Claude Sonnet 4.5) may produce different outputs for identical prompts.
 >- **Context Window**: The amount of captured traffic data and conversation history can affect the model's ability to provide comprehensive analysis.
 >
->**Best Practice**: Always review, validate, and test AI-generated outputs before implementing them in your workflow. Consider iterating on your prompts if initial results don't meet your expectations.
+>**Best Practice**: Always review, validate, and test generated outputs before implementing them in your workflow. Consider iterating on your prompts if initial results don't meet your expectations.
 
 >tip Start with the [built-in prompts](#built-in-mcp-prompts) for quick actions, or explore [custom prompts](#custom-prompts) for advanced scenarios.
 
 ## Built-in MCP Prompts
 
-The Fiddler Everywhere MCP server includes predefined system prompts for common operations. These built-in prompts provide quick access to Fiddler's core functionality directly from your AI-powered IDE.
+The Fiddler Everywhere MCP server includes predefined system prompts for common operations. These built-in prompts provide quick access to Fiddler's core functionality directly from your agent-powered IDE.
 
 ### How to Use Built-in Prompts
 
-1. Start your AI-powered IDE in **agent mode**.
+1. Start your agent-powered IDE in **agent mode**.
 2. Type `/mcp.fiddler.` to display all available built-in prompts.
 3. Select the desired prompt or continue typing to autocomplete.
 
@@ -128,9 +129,9 @@ All custom prompts in this library use the `#fiddler` handle to target the [MCP 
 1. **Browse** the prompt library to find a prompt that matches your use case.
 2. **Copy** the prompt text, including the `#fiddler` handle.
 3. **Customize** (optional) the prompt for your specific scenario, replacing placeholders like `{keyword}`, `{clientPort}`, or `{remoteHost}` with actual values.
-4. **Run** the prompt in your AI-powered IDE's agent mode.
+4. **Run** the prompt in your agent-powered IDE's agent mode.
 
->warning Always review and validate the code, configurations, and solutions proposed by AI-powered tools before applying them to your production environment.
+>warning Always review and validate the code, configurations, and solutions proposed by agent-powered tools before applying them to your production environment.
 
 ### Capture and Session Management
 
@@ -349,5 +350,6 @@ When crafting your own custom prompts, consider these best practices:
 ## See Also
 
 * [Fiddler Everywhere MCP Server Overview](slug://fiddler-mcp-server)
+* [Agent Skills](slug://fiddler-agent-skills)
 * [Security Highlights](slug://fe-security-highlights)
 * [Data Sanitization](slug://fe-sanitization)
