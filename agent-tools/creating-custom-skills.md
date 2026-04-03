@@ -122,7 +122,7 @@ security response headers across all relevant endpoints.
 1. Call get_status. Confirm Fiddler is reachable and the user is logged in.
    If session count is 0, stop and ask the user to capture traffic first.
 2. Call get_sessions to retrieve the session list.
-3. Filter to unique (host, path) pairs — ignore query strings and fragment identifiers.
+3. Filter to unique (host, path) pairs — ignore query strings.
    Deduplicate by host to keep the analysis manageable.
 4. For each unique host (up to 10), call get_session_details for the
    most recent successful (2xx/3xx) session.
