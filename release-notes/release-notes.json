@@ -1,5 +1,23 @@
 [
     {
+    "version": "7.7.3",
+    "title": "Fiddler Everywhere v7.7.3",
+    "date": "April 14, 2026",
+    "items": [
+      {
+        "type": "Fixed",
+        "entries": [
+          {
+            "title": "The MCP get_sessions tool is failing with agents that require object-root structured responses."
+          },
+          {
+            "title": "The MCP tool get_session_details does not properly return request & response bodies for POST requests."
+          }
+        ]
+      }
+    ]
+  },
+    {
     "version": "7.7.2",
     "title": "Fiddler Everywhere v7.7.2",
     "date": "March 26, 2026",
