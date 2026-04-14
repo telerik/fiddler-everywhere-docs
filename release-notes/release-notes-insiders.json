@@ -8,10 +8,10 @@
         "type": "Fixed",
         "entries": [
           {
-            "title": "Some mcp tools are failing with agents that require object-root structured responses."
+            "title": "The MCP get_sessions tool is failing with agents that require object-root structured responses."
           },
           {
-            "title": "The mcp tool get_session_details does not properly return request & response bodies for POST requests."
+            "title": "The MCP tool get_session_details does not properly return request & response bodies for POST requests."
           }
         ]
       }
