@@ -17,7 +17,7 @@ The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any r
 - Install [the latest version of Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 - Use a configurable device within the same local network as the Fiddler Everywhere host.
 
->important It's common for many company networks to be restricted by security tooling or administrative policies. To capture remote traffic, ensure that your system administrators do not limit the network discovery and usage, or consider using a public hotspot for your Fiddler host and remote device. The Fiddler Everywhere host and the remote machine must have the Fiddler proxy port opened, which is port **8866** by default.
+>important It is common for many company networks to be restricted by security tooling or administrative policies. To capture remote traffic, ensure that your system administrators do not limit the network discovery and usage, or consider using a public hotspot for your Fiddler host and remote device. The Fiddler Everywhere host and the remote machine must have the Fiddler proxy port opened, which is port **8866** by default.
 
 The requirement for using the same network is actually not a must. However, most remote networks, like those managed by ISPs (Internet service providers), use firewalls, explicitly close most ports, and block access from remote networks. That makes configuring and using Fiddler over the internet virtually impossible (as few providers allow you to open a random port or apply custom administrative policies). If you are the administrator of two separate networks, you must ensure that the Fiddler proxy port is open and that both host and target machines see each other (successful ping).
 

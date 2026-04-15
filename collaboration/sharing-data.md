@@ -73,7 +73,7 @@ To share a created rule or group of rules, execute the following steps:
 
 - Open the **Rules** tab.
 - Select a rule or group of rules from the list.
-- Click on the **Share** button.
+- Click the **Share** button.
     ![Sharing a rule or group of rules](./images/share-rules-toolbar.png)
 
 
@@ -102,7 +102,7 @@ The Fiddler Everywhere client informs the recipients about shared resources (inc
 
 - Collaborators receive an email with an invitation to open the shared resources. If the session creator has added a note, the email will display the note as well.
 - All listed collaborators receive a notification within the Fiddler Everywhere client. To open the shared session:
-    * Click on the received notification.
+    * Click the received notification.
     * Confirm the opening of the resource.
     * The shared resources load in the respective section (for example, a shared session loads in the **Snapshots** list, a rule in the **Rules** list, and a request in the **Requests** collection). If the shared resource is a snapshot of sessions, its content immediately loads in a new tab.
 

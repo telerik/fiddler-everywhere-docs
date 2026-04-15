@@ -10,7 +10,7 @@ previous_url: /knowledge-base/capturing-curl-traffic
 
 # Capturing cURL Traffic
 
-Some third-party tools like [Curl](https://curl.se/docs/manpage.html) don't use the OS system proxy by default. How can I intercept the traffic generated from Curl or similar applications?
+Some third-party tools like [Curl](https://curl.se/docs/manpage.html) do not use the OS system proxy by default. How can I intercept the traffic generated from Curl or similar applications?
 
 ## Solution
 

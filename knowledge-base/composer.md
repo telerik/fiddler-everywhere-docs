@@ -105,7 +105,7 @@ To change it to raw UI through the drop-down in the top-right corner of the sect
 
 Most of the servers using newer versions of TLS will require you to set `Host` and `User-Agent` headers. By default, Fiddler Everywhere automatically generates a `User-Agent` header set with the **Fiddler Everywhere** value and a `Host` header with the respective host value. Note that each HTTP request must include a `Host` header. The `User-Agent` header is not mandatory, yet keep in mind that some requests for securing servers might fail without a valid ' User-Agent'. Fiddler Everywhere allows you to uncheck the auto-generated headers, but you must manually add your own to compose valid HTTP requests. 
 
->tip The request execution includes only checked headers. Unchecked headers won't be included in the request execution but are saved as part of the composed request (so you can activate them at a later time).
+>tip The request execution includes only checked headers. Unchecked headers will not be included in the request execution but are saved as part of the composed request (so you can activate them at a later time).
 
 ### Cookies
 

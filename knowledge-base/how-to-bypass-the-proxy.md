@@ -29,7 +29,7 @@ res_type: kb
 
 ## Solution
 
-All the described issues above have a common solution - [bypassing Fiddler](#bypassing-fiddler) so that the specific application endpoints use the default connection directly. As a result, any request to these endpoints will go straight through the upstream proxy, effectively bypassing Fiddler, and they won't use the Fiddler Everywhere certificate. The immediate effect is that Fiddler Everywhere won't capture traffic from the bypassed endpoints. Still, at the same time, the bypassed services will continue to work while using the default internet connection.
+All the described issues above have a common solution - [bypassing Fiddler](#bypassing-fiddler) so that the specific application endpoints use the default connection directly. As a result, any request to these endpoints will go straight through the upstream proxy, effectively bypassing Fiddler, and they will not use the Fiddler Everywhere certificate. The immediate effect is that Fiddler Everywhere will not capture traffic from the bypassed endpoints. Still, at the same time, the bypassed services will continue to work while using the default internet connection.
 
 Fiddler also allows decrypting only some endpoints while explicitly [skipping decryption](#skipping-decryption-through-rules) for others. This is possible through the **Rules** tab and the action called **Do Not Decrypt**.
 

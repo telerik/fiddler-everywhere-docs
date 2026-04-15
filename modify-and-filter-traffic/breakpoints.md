@@ -9,7 +9,7 @@ position: 30
 
 # Using Breakpoints
 
-The **Rules** functionality in Fiddler Everywhere is a sophisticated tool that lets you virtually play with the ongoing traffic in any way possible. With its help, you can easily adjust the ongoing traffic per your requirements by matching all or specific sessions and consequentially applying specific actions that vary from simply highlighting and commenting entries (for easier inspection and analysis) to changing the content and behavior of HTTP Requests (before they reach the target server) or HTTP Responses (before they reach the client application).
+The **Rules** functionality in Fiddler Everywhere is a sophisticated tool that lets you virtually play with the ongoing traffic in any way possible. With its help, you can easily adjust the ongoing traffic per your requirements by matching all or specific sessions and consequentially applying specific actions that vary from highlighting and commenting entries (for easier inspection and analysis) to changing the content and behavior of HTTP Requests (before they reach the target server) or HTTP Responses (before they reach the client application).
 
 Being able to "hack" an HTTPS session on the fly provides almost unlimited testing and development opportunities. This article will demonstrate some more complex actions that can be used while using the Fiddler's breakpoints rule action.
 
@@ -80,7 +80,7 @@ While the breakpoints are compelling functionality,  the following behavior must
 
 - You can replace or modify an HTTP request and response bodies. Still, any HTTP body modification will also automatically modify the original headers that provide encoding details (like `Content-Encoding` and `Transfer-Encoding` ), plus the `Content-Length` header will be updated after the Request/Response is modified. For example, suppose you received an HTTP response with `Content-Encoding` set to `gzip`. In that case, the body modification will remove the encoding, resulting in a changed `Content-Encoding` header received by the client.
 
-- If you add a response breakpoint, Fiddler will pause the forwarding. However, some client applications have caching or replay mechanisms that will automatically resend the request if they don't receive a response within a specific time.
+- If you add a response breakpoint, Fiddler will pause the forwarding. However, some client applications have caching or replay mechanisms that will automatically resend the request if they do not receive a response within a specific time.
 
 ## Additional Rules Resources
 

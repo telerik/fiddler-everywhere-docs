@@ -107,9 +107,9 @@ Network capturing operates at a lower level than traditional HTTP proxies, captu
 
 **Key Advantages:**
 - No proxy configuration required
-- Captures traffic from applications that don't support proxies
+- Captures traffic from applications that do not support proxies
 - More granular control over monitored processes and IP ranges
-- Overcomes proxy-related limitations (e.g., Safari WebSocket issues on macOS)
+- Overcomes proxy-related limitations (for example, Safari WebSocket issues on macOS)
 
 **Use Cases:**
 - Applications that ignore proxy settings
@@ -126,7 +126,7 @@ Network capturing operates at a lower level than traditional HTTP proxies, captu
 Network capturing solves several common proxy limitations:
 
 - **Safari WebSocket Issue**: [Safari on macOS ignores proxy settings for WebSocket traffic](https://discussions.apple.com/thread/253885692?sortBy=best), making traditional proxy tools ineffective. Network capturing bypasses this limitation by operating at the TCP level.
-- **Proxy-Resistant Applications**: Some applications don't respect system proxy settings or have their own network stacks.
+- **Proxy-Resistant Applications**: Some applications do not respect system proxy settings or have their own network stacks.
 - **Corporate Environments**: Where proxy configuration may be restricted or controlled by IT policies. 
 
 ## Independent Browser Capturing
@@ -211,7 +211,7 @@ Remote capturing enables traffic analysis from devices on your local network, in
 - [iOS device setup](slug://capture-mobile-ios-traffic)
 - [Generic remote device setup](slug://fiddler-capture-other-computers)
 
-> **Tip:** When capturing only remote traffic, you don't need to install the Fiddler CA on the host machine—only on the remote devices you want to monitor.
+> **Tip:** When capturing only remote traffic, you do not need to install the Fiddler CA on the host machine—only on the remote devices you want to monitor.
 
 ## Protocol Support
 
@@ -226,7 +226,7 @@ Fiddler Everywhere supports both HTTP/1.x and HTTP/2 traffic capture and composi
 - HTTP/2 support is enabled by default but can be disabled in [**Settings > Connections**](slug://connections-submenu)
 - Connections default to HTTP/2 when both client and server support it
 - When disabled, Fiddler forces HTTP/1.1 communication
-- Fiddler translates between HTTP versions as needed (e.g., HTTP/2 client to HTTP/1.1 server)
+- Fiddler translates between HTTP versions as needed (for example, HTTP/2 client to HTTP/1.1 server)
 
 **Important Considerations:**
 - Some browsers share HTTP/2 connections between tabs and keep connections open after tab closure
@@ -244,7 +244,7 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 
 ### WebSocket Protocol
 
-[WebSocket](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication over TCP connections. While distinct from HTTP, it's designed to work over HTTP ports (80, 443) and supports HTTP proxies.
+[WebSocket](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication over TCP connections. While distinct from HTTP, it is designed to work over HTTP ports (80, 443) and supports HTTP proxies.
 
 **Fiddler WebSocket Support:**
 - Compatible with all capturing modes

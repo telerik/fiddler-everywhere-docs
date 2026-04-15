@@ -136,7 +136,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 | Close/Deselect | `Esc`|
 | Select all items | `Ctrl` + `A`|
 | Rename selected | `F2`|
-| Delete selected (sessions/tree view items, etc.) | `Del`|
+| Delete selected (sessions/tree view items, and others) | `Del`|
 | Undo for inputs | `Ctrl` + `Z` |
 | Close all toasts | `Ctrl` + `Shift` + `Alt` + `W` |
 | Close current tab (Live Traffic + Composer) | `Ctrl` + `W`|

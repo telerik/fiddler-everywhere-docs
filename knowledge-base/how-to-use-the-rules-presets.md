@@ -35,11 +35,11 @@ Fiddler provides multiple matching conditions related to HTTPS traffic (like pro
 
 A set of rules that provides custom "tools" to tackle different tasks, such as [blocking cookies](slug://adv_block_cookies), [disabling browser cache](slug://adv_disable_cache), [bypassing cross-origin resource sharing (CORS)](slug://adv_bypass_cors), [mocking the user-agent HTTP header](slug://adv_changing_user_agent) and others.
 
-Let's show how you can create, enable, and use your own rule that bypasses [the cross-origin resource sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). CORS uses specific HTTP Response Headers to tell the client application (a browser) which domains can access its limited resources. We need to match the session and then trigger an action that updates that specific set of HTTP Response Headers.
+Let us show how you can create, enable, and use your own rule that bypasses [the cross-origin resource sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). CORS uses specific HTTP Response Headers to tell the client application (a browser) which domains can access its limited resources. We need to match the session and then trigger an action that updates that specific set of HTTP Response Headers.
 
 1. Open the Fiddler **Traffic** pane and focus the **Rules** tab.
     ![Open the Rules tab](./images/open-rules.png)
-1. Click on **Add Rule**.
+1. Click **Add Rule**.
 1. Create the following rule in the newly opened **Rules Builder** screen.
     * Name the rule. For demonstration purposes, we will name the rule "Bypass CORS".
     * Set a matching condition. We are creating a condition that matches all captured sessions for demonstration purposes.
@@ -58,9 +58,9 @@ With the above rule activated, all sessions receiving the specific HTTP Response
 
 ## Filters
 
-One of the first things you observe as a new Fiddler user is that once the intermediate proxy starts capturing traffic, you will receive an overwhelming number of captured sessions. Every modern application makes multiple requests (the number of HTTP requests made varies but can go up to hundreds per application startup). The predefined filters demonstrate how Fiddler can be set to show only specific traffic (for example, localhost addresses, particular processes, specific domains, etc.). 
+One of the first things you observe as a new Fiddler user is that once the intermediate proxy starts capturing traffic, you will receive an overwhelming number of captured sessions. Every modern application makes multiple requests (the number of HTTP requests made varies but can go up to hundreds per application startup). The predefined filters demonstrate how Fiddler can be set to show only specific traffic (for example, localhost addresses, particular processes, specific domains, and others). 
 
-Let's show how you can create, enable, and use your own rule that filters all sessions and leaves only HTTP sessions triggered by specific processes. We will match sessions triggered by browsers like Safari, Firefox, Edge, and Google Chrome for demonstration purposes.
+Let us show how you can create, enable, and use your own rule that filters all sessions and leaves only HTTP sessions triggered by specific processes. We will match sessions triggered by browsers like Safari, Firefox, Edge, and Google Chrome for demonstration purposes.
 
 1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**" pattern. This rule uses negative statements to match and apply actions to anything but the desired targets.
 1. Match by a **Process** that uses a regular expression to match an application with a list of specific process names.
@@ -81,7 +81,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 While the filters remove traffic from Fiddler's live traffic grid, requests still go through the Fiddler proxy. Sometimes, you will need to block or entirely allow specific traffic. This is where this set of rules comes in.
 
-Let's show how you can create, enable, and use your own rule that blocks all sessions and allows only HTTP sessions triggered by specific processes. We will match sessions triggered by browsers like Safari, Firefox, Edge, and Google Chrome for demonstration purposes. This rule is similar to the one we created in the previous section - however, the difference is that the matched traffic won't be filtered or blocked entirely.
+Let us show how you can create, enable, and use your own rule that blocks all sessions and allows only HTTP sessions triggered by specific processes. We will match sessions triggered by browsers like Safari, Firefox, Edge, and Google Chrome for demonstration purposes. This rule is similar to the one we created in the previous section - however, the difference is that the matched traffic will not be filtered or blocked entirely.
 
 1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**" pattern. This rule uses the negative statement **none ...** to apply the desired actions to everything but the matched entries.
 1. Match by a **Process** where the string value defines the targeted process by its name. The process name varies depending on the operating system and version of the client application.<br/>The example below matches different browsers on macOS while using the following regular expression: **com\.apple\.webkit|chrome|msedge**.

@@ -121,7 +121,7 @@ Skills are triggered by describing your intent in natural language. Each skill i
 | Skill | When the Agent Invokes It | Example Trigger Phrase |
 |:------|:--------------------------|:-----------------------|
 | `fiddler-download-setup` | Fiddler Everywhere is not installed | *"Download and install Fiddler Everywhere"* / *"Set up Fiddler from scratch"* / *"Get started with Fiddler"* |
-| `fiddler-mcp-setup` | MCP tools are unavailable, auth errors, first-time setup | *"Set up Fiddler MCP"* / *"Connect Fiddler to my IDE"* / *"I can't see Fiddler tools"* |
+| `fiddler-mcp-setup` | MCP tools are unavailable, auth errors, first-time setup | *"Set up Fiddler MCP"* / *"Connect Fiddler to my IDE"* / *"I cannot see Fiddler tools"* |
 | `fiddler-feature-verification` | After running a feature you want to verify via HTTP traffic | *"Verify the HTTP calls my feature made"* / *"Check what requests my app sent"* |
 
 ---
@@ -152,7 +152,7 @@ Skills are triggered by describing your intent in natural language. Each skill i
 
 **What it does**:
 1. Verifies Fiddler Everywhere is installed and running.
-2. Detects the current coding tool (VS Code, Claude Code, Cursor, etc.) from directory markers.
+2. Detects the current coding tool (VS Code, Claude Code, Cursor, and others) from directory markers.
 3. Checks whether a Fiddler MCP config already exists.
 4. Discovers the MCP port (default `8868`) and confirms it is reachable.
 5. Calls the Fiddler key-management endpoint to retrieve or generate a unique API key.
@@ -163,7 +163,7 @@ Skills are triggered by describing your intent in natural language. Each skill i
 
 **When to use**: Use this skill whenever the Fiddler MCP tools are not available in a session, on first-time setup, or when you encounter authentication errors connecting to Fiddler.
 
-**Typical invocation**: *"Set up Fiddler MCP"*, *"I can't see Fiddler tools"*, *"Connect Fiddler to VS Code"*, *"tool not found error"*
+**Typical invocation**: *"Set up Fiddler MCP"*, *"I cannot see Fiddler tools"*, *"Connect Fiddler to VS Code"*, *"tool not found error"*
 
 ---
 

@@ -18,19 +18,19 @@ To capture terminal traffic with Fiddler Everywhere:
 
 1. Start Fiddler Everywhere.
 1. Open the **Home** pane.
-1. Open the **Terminal** tutorial, and then click on **Open Terminal**.
+1. Open the **Terminal** tutorial, and then click **Open Terminal**.
 
 OR
 
 1. Start Fiddler Everywhere.
 1. Open the **Traffic** pane.
-1. Click on the **Terminal** button to load terminal instance.
+1. Click the **Terminal** button to load terminal instance.
 1. Start your application within the terminal instance.
 
 
 ![Use the "Terminal" button to start terminal instance](./images/get-started-terminal.png)
 
-As a result, Fiddler Everywhere opens a dedicated terminal instance and starts capturing the ongoing HTTPS traffic immediately. It's important to note that Fiddler will capture the traffic generated from the terminal and any child process that originates (starts) from the same terminal instance. The terminal instance will lose connectivity if Fiddler Everywhere application is closed.
+As a result, Fiddler Everywhere opens a dedicated terminal instance and starts capturing the ongoing HTTPS traffic immediately. It is important to note that Fiddler will capture the traffic generated from the terminal and any child process that originates (starts) from the same terminal instance. The terminal instance will lose connectivity if Fiddler Everywhere application is closed.
 
 ## Choosing Default Terminal
 
@@ -41,7 +41,7 @@ You can set your preferred terminal application through **Settings > Terminal > 
 - **PowerShell**&mdash;Available only on Windows. Specifies the PowerShell built on .NET Core or the new .NET.
 - **Terminal application**&mdash;Available on macOS and Linux. This option will use the default shell environment, for example, **bash**, **zsh**, or **sh**.
 
-The Fiddler's terminal instance automatically proxies all HTTPS requests made by **curl**, **Python** or **Node.js** libraries (like **https**, **request**, etc.) and all applications which respect the `http_proxy` and `https_proxy` environment variables.
+The Fiddler's terminal instance automatically proxies all HTTPS requests made by **curl**, **Python** or **Node.js** libraries (like **https**, **request**, and others) and all applications which respect the `http_proxy` and `https_proxy` environment variables.
 
 
 ## Terminal Traffic Specifics
@@ -52,7 +52,7 @@ While using the terminal capturing mode, you must consider the technical specifi
 
 Some frameworks, like the .NET Framework, are hardcoded not to send requests for localhost through any proxies, and as a proxy, Fiddler will not receive such traffic.
 
-Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell, which uses .NET Core), the localhost traffic won't be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases](slug://how-to-capture-localhost-traffic) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
+Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell, which uses .NET Core), the localhost traffic will not be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases](slug://how-to-capture-localhost-traffic) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
 
 
 ### NET Traffic through a Terminal

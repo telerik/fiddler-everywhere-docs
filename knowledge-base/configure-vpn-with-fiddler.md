@@ -90,7 +90,7 @@ You can directly use Cisco VPN alongside Fiddler's [**browser capturing mode**](
 
 ## In-app VPN Notifications
 
-Due to how the CiscoVPN tool works, if the VPN tool is started before the Fiddler's system capturing mode and the VPN is not exlicitly bypassed (as in the [configuration instructions](#configuring-ciscovpn-alongside-system-capturing-mode)) then you won't see most of the traffic in Fiddler.
+Due to how the CiscoVPN tool works, if the VPN tool is started before the Fiddler's system capturing mode and the VPN is not exlicitly bypassed (as in the [configuration instructions](#configuring-ciscovpn-alongside-system-capturing-mode)) then you will not see most of the traffic in Fiddler.
 
 The Fiddler Everywhere application can automatically detect when a VPN tool was started before starting up the Fiddler application. In similar cases, the in-app nitoficaitons will warn users about the required order of exectuion so that the traffic can be succesfully captured.
 

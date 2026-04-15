@@ -9,7 +9,7 @@ position: 15
 
 # Mocking Traffic
 
-A typical scenario is when a client, a colleague, or a third party is experiencing a specific issue when loading a web application. The problem is often related to the third-party tools (e.g., specific browser version, added extensions) or a set of specific steps that the user undertakes to result in the observed behavior. With Fiddler Everywhere, the user can easily capture and share the sessions with you for further investigation. Going one step further, Fiddler Everywhere allows you to mock multiple sessions just as they initially appeared.
+A typical scenario is when a client, a colleague, or a third party is experiencing a specific issue when loading a web application. The problem is often related to the third-party tools (for example, specific browser version, added extensions) or a set of specific steps that the user undertakes to result in the observed behavior. With Fiddler Everywhere, the user can easily capture and share the sessions with you for further investigation. Going one step further, Fiddler Everywhere allows you to mock multiple sessions just as they initially appeared.
 
 ## Creating and Using a "Mock Traffic" Rule
 
@@ -34,7 +34,7 @@ The next step is to use one of Fiddler's capturing modes and initiate the traffi
 1. Use the **Browser** to start [the browser captruing mode](slug://capture-browser-traffic).
 1. Load the URL used by the client to generate the captured sessions (in our case, that would be [https://example.com)](https://example.com))
 
-That's it! At this very moment, the shown page is not the original one, but the one as mocked from the active Fiddler rules. 
+That is it! At this very moment, the shown page is not the original one, but the one as mocked from the active Fiddler rules. 
 
 ## Additional Resources
 

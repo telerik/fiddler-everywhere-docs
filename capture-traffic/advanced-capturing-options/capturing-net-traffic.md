@@ -25,7 +25,7 @@ Fiddler Everywhere provides a preconfigured terminal to use as a sandboxed proxy
 
 Fiddler captures the HTTPS sessions and displays them in the Live Traffic grid. 
 
->tip Many Visual Studio users often rely on the built-in terminal during development. Fiddler can't work with the built-in terminal. However, you can configure your Visual Studio to attach the Fiddler's preconfigured terminal. This way, you can benefit from using the development perks (like debugging with breakpoints) while using the Fiddler proxy simultaneously. [Learn more about attaching running processes to the Visual Studio debugger here...](https://learn.microsoft.com/en-us/visualstudio/debugger/attach-to-running-processes-with-the-visual-studio-debugger?view=vs-2022).
+>tip Many Visual Studio users often rely on the built-in terminal during development. Fiddler cannot work with the built-in terminal. However, you can configure your Visual Studio to attach the Fiddler's preconfigured terminal. This way, you can benefit from using the development perks (like debugging with breakpoints) while using the Fiddler proxy simultaneously. [Learn more about attaching running processes to the Visual Studio debugger here...](https://learn.microsoft.com/en-us/visualstudio/debugger/attach-to-running-processes-with-the-visual-studio-debugger?view=vs-2022).
 
 ## Capturing .NET Traffic through System Capturing
 
@@ -83,7 +83,7 @@ objRequest.Proxy= new WebProxy("127.0.0.1", 8866);
 
 NET might bypass the Fiddler Everywhere proxy for URLs containing **localhost** regardless of other settings. So, rather than using localhost, change your code to refer to a machine name, or use [Fiddler Everywhere alliases](slug://how-to-capture-localhost-traffic#using-aliases).
 
-This URL **won't** appear in Fiddler:
+This URL **will not** appear in Fiddler:
 ```txt
 http://localhost:4000/some-service/
 ```

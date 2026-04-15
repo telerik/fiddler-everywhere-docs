@@ -107,7 +107,7 @@ The `NODE_TLS_REJECT_UNAUTHORIZED` option is unsafe and poses a security risk. T
 
 ## Setting the Proxy Explicitly
 
-The [global proxy settings](#setting-the-proxy-globally) won't work for modules like the [`HTTP` module](https://nodejs.org/api/http.html), where you need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to explicitly set the proxy through the code.
+The [global proxy settings](#setting-the-proxy-globally) will not work for modules like the [`HTTP` module](https://nodejs.org/api/http.html), where you need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to explicitly set the proxy through the code.
 
 The following example demonstrates the `fiddler-everywhere-test.js` file.
 

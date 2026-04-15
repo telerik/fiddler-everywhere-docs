@@ -28,7 +28,7 @@ To capture gRPC traffic with Fiddler Everywhere, the following conditions must b
     - **Python applications**&mdash;Python applications can be configured to go through the Fiddler proxy. [Learn how to capture traffic from Python applications here...](slug://fiddler-python-traffic)
     - **Java applications**&mdash;A Java application can be configured explicitly through the Fiddler proxy. [Learn how to capture traffic from Java applications here...](slug://configure-java-fiddler-everywhere)
     - **Other gRPC clients**&mdash; If your gRPC client utilizes a different technology stack, you must find the proper method for configuring its proxy settings and set Fiddler's address (by default, http://127.0.0.1:8866) as an HTTP and HTTPS proxy.
-1. Start capturing! That's it! Fiddler Everywhere will start capturing gRPC immediately.
+1. Start capturing! That is it! Fiddler Everywhere will start capturing gRPC immediately.
 
 ## Inspecting gRPC Traffic
 
@@ -40,13 +40,13 @@ You can use the **Trailer** inspector to examine the specific trailers the serve
 
 The captured gRPC session will have a green badge until the gRPC channel is open and a red badge when the gRPC channel is closed.
 
-Double-click on a gRPC session to automatically open [the **Messages** tab](slug://inspector-types#messages-tab) and [the **Message** inspector](slug://inspector-types#message-inspector) that allows you to inspect each gRPC message as originally received (the context menu provides decoding option) or through [the **HEX inspector**](slug://inspector-types#hex-body-inspector).
+Double-click a gRPC session to automatically open [the **Messages** tab](slug://inspector-types#messages-tab) and [the **Message** inspector](slug://inspector-types#message-inspector) that allows you to inspect each gRPC message as originally received (the context menu provides decoding option) or through [the **HEX inspector**](slug://inspector-types#hex-body-inspector).
 
 ![gRPC traffic and related Fiddler's inspectors](./images/grpc-traffic-inspection.png)
 
 The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: Server) gRPC messages. Fiddler Everywhere shows the size and the original content of each message. You can use the context menu to copy the whole row message quickly.
 
-It's important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/), which is in unreadable form. That means that the **Decode value** context menu option can't be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file, which can't be extracted over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that have access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
+It is important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/), which is in unreadable form. That means that the **Decode value** context menu option cannot be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file, which cannot be extracted over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that have access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
 
 ```js
 // [message_object_name] is the name of the message object in the .proto file. If the message is inside a package in the .proto file, use package_name.message_object_name.

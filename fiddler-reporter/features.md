@@ -33,11 +33,11 @@ Use the browser option as follows:
 
 1. Start the Fiddler Everywhere Reporter application.
 
-1. Click on the **Start Capturing Browser** button.
+1. Click the **Start Capturing Browser** button.
 
 1. Capture the targeted traffic in the sandboxed browser instance opened from the Fiddler Everywhere Reporter tool.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
 1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
@@ -45,7 +45,7 @@ Use the browser option as follows:
 
 The **Start Capturing Everything** option will log all HTTP, HTTPS, WebSocket, SSE, and gRPC traffic between the
 computer and the Internet. It works by setting the system proxy and capturing all incoming and outgoing
-traffic from any application that supports a proxy - browsers, desktop applications, CLI tools, etc. This
+traffic from any application that supports a proxy - browsers, desktop applications, CLI tools, and others. This
 option requires installing and trusting the operating system's Fiddler Root Certificate Authority (CA).
 
 Use the capture everything option as follows:
@@ -58,7 +58,7 @@ Use the capture everything option as follows:
 
 1. Capture the targeted traffic from the targeted client application.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
 1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
@@ -72,13 +72,13 @@ Use the capturing terminal option as follows:
 
 1. Start the Fiddler Everywhere Reporter application.
 
-1. Click on the **Start Capturing Terminal** button.
+1. Click the **Start Capturing Terminal** button.
 
 1. Capture the targeted traffic in the sandboxed terminal instance opened from the Fiddler Everywhere Reporter tool.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
-1. Click on the **Save Capture** option, set a password, and choose a location to store your SAZ file.
+1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
 ### Manual Setup Option
 
@@ -95,11 +95,11 @@ Use the manual setup  option as follows:
 
 1. Start the Fiddler Everywhere Reporter application.
 
-1. Click on the **Manual Setup (Advanced)** button.
+1. Click the **Manual Setup (Advanced)** button.
 
 1. Capture the targeted traffic from your client application. At this point, the application should already respect the Fiddler Everywhere Reporter proxy address, port, and certificate.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
 1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 

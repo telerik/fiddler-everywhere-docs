@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-I've installed the latest version of Fiddler Everywhere, but it fails to start, or it starts with a broken UI like a hanging splash screen, an empty white screen, etc. How can I troubleshoot and resolve the issue?
+I've installed the latest version of Fiddler Everywhere, but it fails to start, or it starts with a broken UI like a hanging splash screen, an empty white screen, and others. How can I troubleshoot and resolve the issue?
 
 ## Solution
 

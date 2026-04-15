@@ -85,7 +85,7 @@ To search for specific values in the URL and the headers of all sessions, use th
 
 ### Searching within Request and Response Bodies
 
-Version 5.9.0 of Fiddler Everywhere introduced the option to quickly search within multiple response bodies as a feature requested by the community. Note that in some cases, the Fiddler Everywhere application can search in hundreds or even thousands of sessions that can have large HTTP bodies - the immediate result of a similar search could lead to degradation of the performance (due to the processing time and memory resources needed to complete the search). It's recommended to use the search in bodies feature only with a smaller set of captured sessions.
+Version 5.9.0 of Fiddler Everywhere introduced the option to quickly search within multiple response bodies as a feature requested by the community. Note that in some cases, the Fiddler Everywhere application can search in hundreds or even thousands of sessions that can have large HTTP bodies - the immediate result of a similar search could lead to degradation of the performance (due to the processing time and memory resources needed to complete the search). It is recommended to use the search in bodies feature only with a smaller set of captured sessions.
 
 To enable the feature to search in bodies, toggle the button at the right end of the **Quick Search** input field.
 
@@ -372,7 +372,7 @@ The following table lists the **Live Traffic** columns and the information they 
         </tr>
         <tr>
             <td><b>Protocol</b></td>
-            <td>The protocol type (HTTP, gRPC, Socket.IO, etc.,) used by the session.</td>
+            <td>The protocol type (HTTP, gRPC, Socket.IO, and others, ) used by the session.</td>
         </tr>
         <tr>
             <td><b>Session State</b></td>
@@ -419,22 +419,22 @@ Add, edit, or remove a custom column to the columns list. Afterward, the columns
 
 **Add a custom column** through one of these actions:
 
-- Open the [**Columns** menu](#managing-columns) and the click on the **Add Custom Column** item. 
+- Open the [**Columns** menu](#managing-columns) and the click the **Add Custom Column** item. 
     ![Create a custom column in Fiddler Everywhere](./images/custom-column-create.png)
-- In the prompted custom column dialog, specify an HTTP Header (it's value will populate the column data) and assign a column name. The header's value will appear in the session grid if the header is present in the captured session. Otherwise, the column stays empty.
+- In the prompted custom column dialog, specify an HTTP Header (it is value will populate the column data) and assign a column name. The header's value will appear in the session grid if the header is present in the captured session. Otherwise, the column stays empty.
     ![Created custom column](./images/custom-column-created.png)
-- Open the **Headers** inspector in HTTP request/response, right-click on a selected header to load the context menu, and choose  **Add as a column**.
+- Open the **Headers** inspector in HTTP request/response, right-click a selected header to load the context menu, and choose  **Add as a column**.
     ![Create a custom column in Fiddler Everywhere](./images/custom-column-create-through-header.png)
 
-After the successful creation, the new column is immediately available in the **Live Traffic** grid. Adding a new column makes the new column visible in all tabs (both Live Traffic and opened snapshots). Unchecking the column is persisted per tab - it won't apply globally.
+After the successful creation, the new column is immediately available in the **Live Traffic** grid. Adding a new column makes the new column visible in all tabs (both Live Traffic and opened snapshots). Unchecking the column is persisted per tab - it will not apply globally.
 
-**Edit a custom column** through the [**Columns** menu](#managing-columns) and click the edit icon. **Remove a custom column** through the [**Columns** menu](#managing-columns) and click on the remove icon (a deletion confirmation displays).
+**Edit a custom column** through the [**Columns** menu](#managing-columns) and click the edit icon. **Remove a custom column** through the [**Columns** menu](#managing-columns) and click the remove icon (a deletion confirmation displays).
 
 **Filter by a custom column** through the filtering button to the right of the column name.
 
 ### Reset Columns
 
-To reset all columns to their default Fiddler's state, open the [**Columns** menu](#managing-columns) and use the **Reset** option at the bottom. This action resets all columns (shows the default selection) but won't remove any custom-made columns (it will only hide them).
+To reset all columns to their default Fiddler's state, open the [**Columns** menu](#managing-columns) and use the **Reset** option at the bottom. This action resets all columns (shows the default selection) but will not remove any custom-made columns (it will only hide them).
 
 ## Traffic Sorting and Filtering
 

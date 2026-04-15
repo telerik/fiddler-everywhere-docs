@@ -11,16 +11,16 @@ previous_url: /mcp-server/prompt-library
 
 Welcome to the Fiddler Everywhere Prompt Library—your comprehensive resource for HTTP traffic analysis and debugging with agent-powered coding tools.
 
-This library provides ready-to-use prompts optimized for the Fiddler Everywhere [MCP Server](slug://fiddler-mcp-server). Whether you're performing web debugging, security analysis, performance optimization, or data extraction, these prompts will help you maximize productivity by leveraging your coding assistant with captured HTTPS traffic.
+This library provides ready-to-use prompts optimized for the Fiddler Everywhere [MCP Server](slug://fiddler-mcp-server). Whether you are performing web debugging, security analysis, performance optimization, or data extraction, these prompts will help you maximize productivity by leveraging your coding assistant with captured HTTPS traffic.
 
 >important **Understanding Result Variability**: The quality, accuracy, and format of outputs generated using these prompts can vary significantly based on several factors:
 >
->- **Model Selection**: Different language models (Claude, GPT-4, Gemini, etc.) have distinct capabilities, strengths, and limitations. Some models excel at code generation, while others may be better suited for analysis or explanation tasks.
+>- **Model Selection**: Different language models (Claude, GPT-4, Gemini, and others) have distinct capabilities, strengths, and limitations. Some models excel at code generation, while others may be better suited for analysis or explanation tasks.
 >- **Prompt Formulation**: How you phrase your request dramatically impacts the response. More specific prompts with clear context and constraints typically yield better results than vague or ambiguous requests.
->- **Model Version**: Even within the same model family, different versions (e.g., Claude Sonnet 4 vs. Claude Sonnet 4.5) may produce different outputs for identical prompts.
+>- **Model Version**: Even within the same model family, different versions (for example, Claude Sonnet 4 vs. Claude Sonnet 4.5) may produce different outputs for identical prompts.
 >- **Context Window**: The amount of captured traffic data and conversation history can affect the model's ability to provide comprehensive analysis.
 >
->**Best Practice**: Always review, validate, and test generated outputs before implementing them in your workflow. Consider iterating on your prompts if initial results don't meet your expectations.
+>**Best Practice**: Always review, validate, and test generated outputs before implementing them in your workflow. Consider iterating on your prompts if initial results do not meet your expectations.
 
 >tip Start with the [built-in prompts](#built-in-mcp-prompts) for quick actions, or explore [custom prompts](#custom-prompts) for advanced scenarios.
 
@@ -343,7 +343,7 @@ When crafting your own custom prompts, consider these best practices:
 
 - **Be specific**: Include domain names, session IDs, or specific criteria to narrow down the analysis.
 - **Use filters**: Apply filters before complex analysis to reduce processing time and improve accuracy.
-- **Combine operations**: Ask for multiple related tasks in a single prompt (e.g., "analyze and create a report").
+- **Combine operations**: Ask for multiple related tasks in a single prompt (for example, "analyze and create a report").
 - **Leverage context**: Reference previous prompts or analyses to build on earlier work.
 - **Iterate**: Start with broad questions and refine based on the results.
 

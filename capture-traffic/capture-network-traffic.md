@@ -53,7 +53,7 @@ The network capturing mode is accessible in the Fiddler's **Live Traffic** menu 
 
 ![the "Network Capture" feature](./images/websessions-toolbar-network-capture-beta.png)
 
-Once the **Network Capture** is enabled, you can capture all TCP traffic. As noted in the benefits section, the main perk of using the network capturing mode is that you don't need to change the operating system proxy or set the client's proxy. That lets you quickly capture traffic from processes that otherwise have trouble using HTTP(S) proxies.
+Once the **Network Capture** is enabled, you can capture all TCP traffic. As noted in the benefits section, the main perk of using the network capturing mode is that you do not need to change the operating system proxy or set the client's proxy. That lets you quickly capture traffic from processes that otherwise have trouble using HTTP(S) proxies.
 
 To use the **Network Capture**, you need to set the IP address explicitly, the TCP/IP ports, and the (optionally) process name. At least one rule that sets the IP address (or range of IP addresses) alongside the related TCP/IP port must be specified for the capturing to work.
 
@@ -61,8 +61,8 @@ To use the **Network Capture**, you need to set the IP address explicitly, the T
 
 To start the network capturing mode, execute the following steps:
 
-1. Click on the **Network Capture (BETA)** button from the **Live Traffic** menu.
-1. Click on the **Enable** from the **Network Capture Settings (BETA)** screen.
+1. Click the **Network Capture (BETA)** button from the **Live Traffic** menu.
+1. Click the **Enable** from the **Network Capture Settings (BETA)** screen.
 
 >tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)
 
@@ -97,8 +97,8 @@ When you enable network capturing for the first time on macOS, Fiddler installs 
 
 To stop the network capturing mode, execute the following steps:
 
-1. Click on the **Network Capture** button from the **Live Traffic** menu.
-1. Click on the **Disable** from the **Network Capture Settings (BETA)** screen.
+1. Click the **Network Capture** button from the **Live Traffic** menu.
+1. Click the **Disable** from the **Network Capture Settings (BETA)** screen.
 
 ## Modify Network Capture Rules
 
@@ -111,7 +111,7 @@ In the advanced view, you can manually control what traffic to capture using the
 - **IP Address**: Set a specific IP address or the starting address of an IP range (use [CIDR notation](#cidr-notation-for-setting-network-addresses) for subnets).
 - **Subnet Mask**: Define the subnet mask, which determines the range of IP addresses. Accepts [CIDR notation](#cidr-notation-for-setting-network-addresses).
 - **Port**: Set the TCP/IP port. Most applications use port 80 (HTTP) and 443 (HTTPS) by default, but custom ports are common for staging, testing, or local development.
-- **Filter by PID or process name**: Specify one or more process IDs (PIDs) or process names, separated by spaces. For multi-word process names, use quotes (e.g., "Google Chrome Helper"). On macOS, use the Activity Monitor to find PIDs or process names.
+- **Filter by PID or process name**: Specify one or more process IDs (PIDs) or process names, separated by spaces. For multi-word process names, use quotes (for example, "Google Chrome Helper"). On macOS, use the Activity Monitor to find PIDs or process names.
 
 ### Reset Capturing Rules
 
@@ -130,10 +130,10 @@ The **Subnet Mask** field accepts [CIDR notation](https://en.wikipedia.org/wiki/
 | CIDR Value | Subnet Mask | Effect |
 |---|---|---|
 | `32` | `255.255.255.255` | Only the exact host address is monitored. |
-| `24` | `255.255.255.0` | All addresses in a /24 subnet (e.g., `192.168.1.0`–`192.168.1.255`) are monitored. |
+| `24` | `255.255.255.0` | All addresses in a /24 subnet (for example, `192.168.1.0`–`192.168.1.255`) are monitored. |
 | `0` | `0.0.0.0` | All IPv4 addresses are monitored. |
 
-Default rules for ports 80 and 443 use **IP Address** `0.0.0.0` and **Subnet Mask** `0`, covering all IPv4 addresses. IPv6 is also supported (e.g., **IP Address** `::` and **Subnet Mask** `0` to cover all IPv6 addresses).
+Default rules for ports 80 and 443 use **IP Address** `0.0.0.0` and **Subnet Mask** `0`, covering all IPv4 addresses. IPv6 is also supported (for example, **IP Address** `::` and **Subnet Mask** `0` to cover all IPv6 addresses).
 
 A localhost rule is also included by default:
 - IPv4: **IP Address** `127.0.0.0` with **Subnet Mask** `8` (covers the entire `127.0.0.0/8` loopback range)

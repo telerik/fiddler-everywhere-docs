@@ -26,7 +26,7 @@ To use filters for advanced search in Fiddler Everywhere, follow these steps:
 
 1. Open Fiddler Everywhere.
 1. Open the **Traffic** Pane.
-1. In the toolbar, click on the "Filters" button.
+1. In the toolbar, click the "Filters" button.
 1. In the filter panel, specify the match conditions for the request body, response body, and headers. For example, you can set the filter to match a specific value in both the request and response bodies.
 1. Save the filter by giving it a name and clicking the "Save" button (top-right corner).
 1. Apply the filter by clicking the "Apply" button (bottom-right corner).

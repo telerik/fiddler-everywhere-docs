@@ -12,14 +12,14 @@ previous_url: /get-started/quickstart-linux
 This tutorial describes how to install and start using Fiddler Everywhere on Linux.
 
 * First, you will go through the installation and configuration steps.
-* Next, you'll create a Fiddler account so that you can move on to using the web-debugging tool.
+* Next, you will create a Fiddler account so that you can move on to using the web-debugging tool.
 * Finally, you will see how to capture, inspect, and modify traffic.
 
 ## Prerequisites
 
 - Install Ubuntu 20+ x64.
 - Provide 400MB of free disk space.
-- Create an account with administrative rights, which you'll need for capturing and decoding HTTPS traffic.
+- Create an account with administrative rights, which you will need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
   ```sh
   https://*.telerik.com/
@@ -28,7 +28,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Lin
   https://challenges.cloudflare.com
   ```
   >note The Telerik site (where the Fiddler authentication form resides) uses different CDNs to load various components, styles, and cookies related to its user interface. Having limited internet access can cause the site not to load correctly.
-- Ensure that Fiddler Everywhere's proxy port is open and unrestricted by a firewall/security tool. By default, that's **port 8866**, but you can change it from **Settings > Connections > Fiddler listens on port**.
+- Ensure that Fiddler Everywhere's proxy port is open and unrestricted by a firewall/security tool. By default, that is **port 8866**, but you can change it from **Settings > Connections > Fiddler listens on port**.
 
 ## Step 1: Install Fiddler Everywhere on Your Machine
 
@@ -64,7 +64,7 @@ The above installs the required dependencies to run .appimage files on Ubuntu 24
 
 ## Step 2: Create Your Fiddler Account
 
-In this step, you'll register by creating your unified Telerik account.   
+In this step, you will register by creating your unified Telerik account.   
 
 1. Launch the Fiddler Everywhere application. Follow the **Sign in or create an account** link.
 1. Create an account using email and password or using the **Sign in with Google** option.
@@ -88,7 +88,7 @@ You can now take advantage of the Fiddler Everywhere capabilities - capture, ins
 
 >tip The **Rules** tab is one of the most advanced features in Fiddler Everywhere. You can create and execute complex rules on your incoming traffic to mock client and server behavior without touching the client and server applications.
 
-That's it! Now you're equipped to delve deeper into Fiddler Everywhere and make the most of its powerful functionalities.
+That is it! Now you are equipped to delve deeper into Fiddler Everywhere and make the most of its powerful functionalities.
 
 ## Next Steps
 

@@ -32,7 +32,7 @@ One-sentence summary of what this skill accomplishes.
 
 ## Operating rules
 
-- Rule 1 — a constraint that must always hold (e.g. "Use MCP tools only; do not grep local files for traffic data.")
+- Rule 1 — a constraint that must always hold (for example, "Use MCP tools only; do not grep local files for traffic data.")
 - Rule 2 — another invariant
 
 ## Steps
@@ -66,7 +66,7 @@ The most useful tools for custom skills are:
 | `get_sessions_count` | Total session count | Quick sanity check before heavier calls |
 | `get_session_details(id)` | Full request/response headers and body | Inspect specific sessions in depth |
 | `apply_filters` | (modifies the active session view) | Narrow a large capture to relevant traffic before calling `get_sessions` |
-| `create_rule` | (creates a traffic manipulation rule) | Automate response modification, header injection, redirect, etc. |
+| `create_rule` | (creates a traffic manipulation rule) | Automate response modification, header injection, redirect, and others. |
 | `clear_sessions` | (clears all captured sessions) | Reset state at the start of a clean test run |
 | `start_capture_with_browser` | (launches a browser with proxy pre-set) | Automate a browser-based capture |
 | `start_capture_with_terminal` | (opens a proxied terminal) | Automate a CLI-based capture |
@@ -159,7 +159,7 @@ Recommendation:
 ### 3. Load and invoke the skill
 
 Place the `SKILL.md` in `.claude/skills/fiddler-security-header-check/` and restart your
-coding tool. Then simply ask:
+coding tool. Then ask:
 
 > *"Check the security headers in my captured traffic"*
 

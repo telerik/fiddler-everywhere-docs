@@ -17,8 +17,8 @@ The following options are available as **Sessions List Length**:
 
 - **Keep only last XXX sessions**&mdash;Lists only the specified number of sessions in the **Live Traffic** grid. The possible value is a minimum of ten (10) saved sessions and a maximum of ten thousand (10000) sessions.
 
-Note that sessions that are already explicitly hidden by an active filter won't appear in the **Live Traffic** grid.
+Note that sessions that are already explicitly hidden by an active filter will not appear in the **Live Traffic** grid.
 
->tip Suppose you use Fiddler Everywhere for a prolonged period. In that case, it will get overloaded with sessions, making finding useful information almost impossible and possibly causing performance issues if your OS runs out of RAM. With the **Sessions List Length**, you can define a limit of sessions to be kept, so once it is reached, the oldest sessions in the list are deleted. This way, you can use Fiddler Everywhere all day long without worrying about how they'll find the sessions they need when they get back to it later.
+>tip Suppose you use Fiddler Everywhere for a prolonged period. In that case, it will get overloaded with sessions, making finding useful information almost impossible and possibly causing performance issues if your OS runs out of RAM. With the **Sessions List Length**, you can define a limit of sessions to be kept, so once it is reached, the oldest sessions in the list are deleted. This way, you can use Fiddler Everywhere all day long without worrying about how they will find the sessions they need when they get back to it later.
 
 ![The default "Live Traffic" settings](./images/settings-live-traffic.png)

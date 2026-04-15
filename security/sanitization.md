@@ -36,7 +36,7 @@ Control when sanitization occurs by enabling or disabling sanitization for speci
 
 Specify which components of the HTTP(S) traffic should be sanitized. Sanitization applies both default rules and custom rules configured in the **Additional Settings** section:
 
-- **Sanitize URL** - Masks sensitive parameters and path segments in request URLs (e.g., API keys, tokens, user IDs).
+- **Sanitize URL** - Masks sensitive parameters and path segments in request URLs (for example, API keys, tokens, user IDs).
 - **Sanitize Headers** - Masks sensitive HTTP headers such as `Authorization`, `Cookie`, `X-API-Key`, and other custom headers containing credentials or tokens.
 - **Sanitize Cookies** - Masks cookie values that may contain session identifiers, authentication tokens, or user-specific data.
 - **Sanitize Request Body** - Masks sensitive data within HTTP request bodies, such as passwords, credit card numbers, personal information, or proprietary data.

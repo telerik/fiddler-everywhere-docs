@@ -139,7 +139,7 @@ Some of the events visualized in the timeline are entirely related to Fiddler fe
 
 - **TTFB**&mdash;The time to First Byte (TTFB) measures the moment a client app makes a request to a server to the time the client app receives the first byte of data from the server. 
 - **TTLB**&mdash;The time to Last Byte (TTLB) measures the delay between the request sent by the client app and the receiving of the last byte of the related response.
-- **Total time without Fiddler**&mdash;The total time that the HTTP session took without the Fiddler-specific events (like rules, breakpoints, CONNECT-related events, etc.).
+- **Total time without Fiddler**&mdash;The total time that the HTTP session took without the Fiddler-specific events (like rules, breakpoints, CONNECT-related events, and others).
 
 #### Timestamps
 

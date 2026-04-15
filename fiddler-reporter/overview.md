@@ -9,11 +9,11 @@ position: 0
 
 # Fiddler Everywhere Reporter
 
-Progress® Telerik® Fiddler Everywhere Reporter is a cross-platform desktop tool that monitors and logs all HTTPS traffic and issues requests between a computer and the Internet. It lets you quickly capture, save, and export HTTPS traffic on any machine without explicit installation. It's free to use and doesn't require a Fiddler Everywhere license. As such, it can be used on any computer, including third-party devices, test devices, servers, and any other compatible Windows or macOS device. The primary purpose of the Fiddler Everywhere Reporter is to serve as an extension tool of the Fiddler Everywhere application that aims to capture traffic on the end user (remote) and share it with a user holding an active license for Fiddler Everywhere.
+Progress® Telerik® Fiddler Everywhere Reporter is a cross-platform desktop tool that monitors and logs all HTTPS traffic and issues requests between a computer and the Internet. It lets you quickly capture, save, and export HTTPS traffic on any machine without explicit installation. It is free to use and does not require a Fiddler Everywhere license. As such, it can be used on any computer, including third-party devices, test devices, servers, and any other compatible Windows or macOS device. The primary purpose of the Fiddler Everywhere Reporter is to serve as an extension tool of the Fiddler Everywhere application that aims to capture traffic on the end user (remote) and share it with a user holding an active license for Fiddler Everywhere.
 
 ## Download Fiddler Everywhere Reporter
 
-The latest version of the Fiddler Everywhere Reporter can be downloaded from the [official download link](https://www.telerik.com/fiddler/fiddler-everywhere-reporter). The tool is free to use and doesn't require a Fiddler Everywhere license. 
+The latest version of the Fiddler Everywhere Reporter can be downloaded from the [official download link](https://www.telerik.com/fiddler/fiddler-everywhere-reporter). The tool is free to use and does not require a Fiddler Everywhere license. 
 
 ## Prerequisites
 
@@ -35,14 +35,14 @@ Example for basic usage of the Fiddler Everywhere Reporter application:
 
 1. Start the application by clicking on the downloaded artifact.
 
-1. Click on the **Start Capturing Browser** button.
+1. Click the **Start Capturing Browser** button.
 
  >tip The **Start Capturing Browser** is the default option that captures HTTPS traffic from a sandboxed browser instance. The reporter starts an independent browser instance (Google Chrome or MS Edge) that is preconfigured to respect the Fiddler proxy and trust its certificate authority (CA). If you aim to capture traffic from another client, you can use other [capturing modes](slug://reporter-features).
 
 1. Capture the targeted traffic in the sandboxed browser instance opened from the Fiddler Everywhere Reporter tool.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
-1. Click on the **Save Capture** option, set a password, and choose a location to store your SAZ file.
+1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
-That's it! You have now captured, saved, and exported the web traffic as a Fiddler archive (SAZ). As a next step, a licensed Fiddler user can load the SAZ archive in the Fiddler Everywhere desktop application, where the traffic can be inspected, analyzed, replayed, and modified according to your needs.
+That is it! You have now captured, saved, and exported the web traffic as a Fiddler archive (SAZ). As a next step, a licensed Fiddler user can load the SAZ archive in the Fiddler Everywhere desktop application, where the traffic can be inspected, analyzed, replayed, and modified according to your needs.

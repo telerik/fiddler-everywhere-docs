@@ -9,7 +9,7 @@ position: 35
 
 # Replaying Traffic
 
-When developing and testing web applications, it's common to wonder how your server and site will handle many continuous requests. You may also want to test if a specific functionality of your web application will respond correctly to multiple repeating requests. With Fiddler Everywhere, you can replay a session or multiple sessions and set specific repeating conditions such as the number of repeats, repeat behavior, and request behavior for each separate repeat.
+When developing and testing web applications, it is common to wonder how your server and site will handle many continuous requests. You may also want to test if a specific functionality of your web application will respond correctly to multiple repeating requests. With Fiddler Everywhere, you can replay a session or multiple sessions and set specific repeating conditions such as the number of repeats, repeat behavior, and request behavior for each separate repeat.
 
 ## One-Time Replay
 

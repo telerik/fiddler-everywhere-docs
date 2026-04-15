@@ -14,7 +14,7 @@ The **Select Browser** sub-menu provides an option for changing the default Fidd
 
 - The **Automatically detect path to Google Chrome** option finds and uses the Google Chrome for the [**independent browser capturing mode**](slug://capture-traffic-get-started#independent-browser-capturing).
 
-- The **Path to Browser** option allows you to change the default browser by setting a path to a different Chromium browser. Fiddler Everywhere supports most Chromium-based browsers (like Edge, Brave, Vivaldi, etc.).
+- The **Path to Browser** option allows you to change the default browser by setting a path to a different Chromium browser. Fiddler Everywhere supports most Chromium-based browsers (like Edge, Brave, Vivaldi, and others).
 
 The **Browser Data** sub-menu provides an option for choosing whether the [independent browser capturing mode](slug://browsers-settings-submenu) should always use a clean instance or an instance that persists the input data.
 

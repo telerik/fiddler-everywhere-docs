@@ -133,7 +133,7 @@ The **Text** inspector lets you view the request and response bodies as text. It
 
 #### JSON Body Inspector
 
-The **JSON** inspector interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object nodes. The tree view will remain empty if the body can't be interpreted as JSON. The JSON inspector can render the data even if the request or response is compressed or has HTTP chunked encoding.
+The **JSON** inspector interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object nodes. The tree view will remain empty if the body cannot be interpreted as JSON. The JSON inspector can render the data even if the request or response is compressed or has HTTP chunked encoding.
 
 >important If the JSON data is malformed, for example, the name component of a name/value pair is unquoted, the JSON inspector will show a warning in the footer.
 
@@ -141,7 +141,7 @@ The **JSON** inspector interprets the selected request or response body as a Jav
 
 #### HEX Body Inspector
 
-The **HEX** inspector loads a hex representation of the HTTP request/response bodies. The hex data can help identify hidden information in the requests/responses and find special characters (for example, CRLF, Tab, etc.). The HEX inspector's primary goal is to help people analyze bodies with binary data while providing performance optimization for working with larger files.
+The **HEX** inspector loads a hex representation of the HTTP request/response bodies. The hex data can help identify hidden information in the requests/responses and find special characters (for example, CRLF, Tab, and others). The HEX inspector's primary goal is to help people analyze bodies with binary data while providing performance optimization for working with larger files.
 
 The **HEX** inspector consists of an offset column, a hex view column, and a text view column.
 
@@ -159,7 +159,7 @@ The **Socket.IO** inspector interprets the selected request or response body as 
 
 #### XML Body Inspector
 
-The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an **Expand All / Collapse All** toggle button to expand or collapse all XML tree nodes.
+The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body cannot be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an **Expand All / Collapse All** toggle button to expand or collapse all XML tree nodes.
 
 ![XML Inspector](./images/inspectors-xml.png)
 
@@ -246,11 +246,11 @@ The list of messages is rendered as a grid with multiple columns:
 - **Raw (SSE only)**&mdash;Contains the whole object sent from the server without any parsing.
 - **Time (WebSocket, SSE, Socket.IO)**&mdash;Renders the date and the time when the message is received.
 - **Message**&mdash;The string representation of the message sent/received.
-- **Packet Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO packet (e.g. Ping, Pong, Upgradew, Message).
-- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (e.g. Event).
+- **Packet Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO packet (for example, Ping, Pong, Upgradew, Message).
+- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (for example, Event).
 - **Attachments (Socket.IO only)**&mdash;Lists the included attachments (if present).
 - **Namespace (Socket.IO only)**&mdash;Lists the included namespace (if present).
-- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (e.g. Event).
+- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (for example, Event).
 - **Ack.ID (Socket.IO only)**&mdash;Indicates the ID of the acknowledgment function (if present).
 
 #### Messages Toolbar

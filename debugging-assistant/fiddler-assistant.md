@@ -36,7 +36,7 @@ Once all properties are set, use the **Test Connection** button to verify that t
 
 ### Configuration Details
  
-- When setting the `model`, you can choose from the dropdown list of available models or enter a custom model name if it's not listed.
+- When setting the `model`, you can choose from the dropdown list of available models or enter a custom model name if it is not listed.
 
 - When setting the `Azure target URI`, note that this must be a complete URL containing the endpoint, deployment name, and API version. You can find this target URI in the deployment details page in Azure AI Foundry.
 

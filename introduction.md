@@ -8,7 +8,7 @@ position: 1
 previous_url: /license, /knowledge-base/using-fiddler-pro-dashboard
 ---
 
-# Welcome to Fiddler Everywhere!
+# Welcome to Fiddler Everywhere
 
 Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTPS traffic, issues requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high-performance, cross-platform proxy for any browser, system, or platform.
 
@@ -108,8 +108,8 @@ Activate the [**Fiddler Everywhere Pro**](https://www.telerik.com/purchase/fiddl
  - The installation can be executed locally (on the machine running Fiddler Everywhere).
 
 Activate the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license to enable the **policy-driven installation** with the following options:
-- The executable installation file can be distributed from your source (shared internal location, OS image, etc.).
-- The installation can be executed remotely to multiple licensed end users (via policy, script, etc.).
+- The executable installation file can be distributed from your source (shared internal location, OS image, and others).
+- The installation can be executed remotely to multiple licensed end users (via policy, script, and others).
 
 Contact our support team for more details on enabling the policy-driven installation alongside your specific company configuration.
 

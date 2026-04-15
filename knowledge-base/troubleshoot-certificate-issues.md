@@ -73,4 +73,4 @@ Test the import of the Fiddler Everywhere root certificate on macOS by using cus
     ```
 
     ![Check SHA1 signature](./images/certificate-sha-check.png)
-1. (Optional) Delete the `/tmp/trustSettings.xml` file after troubleshooting the issue as it's only needed to check that the `SHA-1` key is properly exported.
+1. (Optional) Delete the `/tmp/trustSettings.xml` file after troubleshooting the issue as it is only needed to check that the `SHA-1` key is properly exported.

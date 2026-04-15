@@ -77,7 +77,7 @@ To decrypt and inspect HTTPS traffic from Claude Code, you need to export Fiddle
    %USERPROFILE%\.claude\Fiddler_Root_Certificate_Authority.pem
    ```
 
->**Tip:** Create the `.claude` folder if it doesn't exist. This keeps your Claude-related configurations organized in one location.
+>**Tip:** Create the `.claude` folder if it does not exist. This keeps your Claude-related configurations organized in one location.
 
 ### Step 2: Configure the CA Certificate Environment Variable
 

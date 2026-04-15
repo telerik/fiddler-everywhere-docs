@@ -28,7 +28,7 @@ The instructions below highlight the configuration steps while using the latest 
         return "PROXY 127.0.0.1:8866; PROXY ${ZAPP_LOCAL_PROXY}; DIRECT;";
         ```
 1. Add the PAC file to a forwarding profile. Configure the forwarding profile with the following settings:
-    - Select **Tunnel with Local Proxy** for all profiles (e.g., ON-trusted, OFF-trusted, VPN-trusted, etc.).
+    - Select **Tunnel with Local Proxy** for all profiles (for example, ON-trusted, OFF-trusted, VPN-trusted, and others).
     - Select **Z-Tunnel 2.0**. 
         >important Note that **Z-Tunnel 1.0** is incompatible with the Fiddler Everywhere application.
     - Select the **PAC URL Location** field, and enter the custom PAC Url.

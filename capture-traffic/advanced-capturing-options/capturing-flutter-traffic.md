@@ -9,7 +9,7 @@ publish: true
 
 # Capturing Flutter Traffic
 
-By default, Flutter applications that use Dart's `dart:io` networking stack don't automatically follow the proxy configured on the mobile device (Wi-Fi proxy / system proxy). As a consequence, even when the device is configured to use the Fiddler Everywhere proxy, you might not see any traffic from the Flutter app in Fiddler Everywhere.
+By default, Flutter applications that use Dart's `dart:io` networking stack do not automatically follow the proxy configured on the mobile device (Wi-Fi proxy / system proxy). As a consequence, even when the device is configured to use the Fiddler Everywhere proxy, you might not see any traffic from the Flutter app in Fiddler Everywhere.
 
 This article shows how to make a Flutter app use the device proxy settings so that Fiddler Everywhere can capture the app's HTTP and HTTPS traffic.
 

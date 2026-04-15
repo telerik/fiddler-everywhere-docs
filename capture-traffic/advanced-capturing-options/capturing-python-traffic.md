@@ -11,7 +11,7 @@ previous_url: /knowledge-base/capturing-python-traffic
 # Setting Fiddler alongside Python applications
 
 **Q:** How can I capture traffic from Python applications?
-**Q:** When Fiddler Everywhere acts as a system proxy, I can't use python's pip library (or other Python library that makes HTTPS requests).
+**Q:** When Fiddler Everywhere acts as a system proxy, I cannot use python's pip library (or other Python library that makes HTTPS requests).
 **Q.** My python library fails with `CERTIFICATE_VERIFY_FAILED` when Fiddler is an intermediate proxy.
 
 ## Using the Fiddler's Terminal

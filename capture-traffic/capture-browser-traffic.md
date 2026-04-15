@@ -16,7 +16,7 @@ This article describes how to use Fiddler's **independent browser capturing mode
 
 - You will capture only specific HTTPS traffic generated from the independent browser instance.
 
-The feature is useful when capturing browser traffic, but your environment doesn't allow you to change the system proxy or install and trust third-party CA. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
+The feature is useful when capturing browser traffic, but your environment does not allow you to change the system proxy or install and trust third-party CA. It also solves compatibility issues with VPN and third-party security tools, which modify the system proxy. Additionally, it allows you to focus your capturing on a sandboxed browser instance and prevent capturing other system traffic.
 
 ## Capturing Browser Traffic
 
@@ -24,7 +24,7 @@ To capture browser traffic with Fiddler Everywhere:
 
 1. Start Fiddler Everywhere.
 1. Open the **Home** pane.
-1. Open the **Browser** tutorial, and then click on **Open Browser**.
+1. Open the **Browser** tutorial, and then click **Open Browser**.
 
 OR
 
@@ -44,7 +44,7 @@ You can set your preferred browser through **Settings > Browsers > Manually choo
 
 ## Persisting Data
 
-The independent browser capturing mode allows you to create a custom directory where the browser data persists. That way, you can reuse the same custom browser instance and easily keep settings and data like entered URLs, cookies, form data, authentication details, etc.
+The independent browser capturing mode allows you to create a custom directory where the browser data persists. That way, you can reuse the same custom browser instance and easily keep settings and data like entered URLs, cookies, form data, and authentication details.
 
 To use a browser instance that persists the input data:
 
@@ -52,7 +52,7 @@ To use a browser instance that persists the input data:
 1. Go to **Settings > Browsers**
 1. From the **Browser Data** section, choose the **Persist data in a specific directory** option.
 1. Choose a directory to save the custom browser instance.
-1. Click on **save** to confirm the change.
+1. Click **save** to confirm the change.
 
 Once the above change is applied, [the browser capturing mode](#capturing-browser-traffic) will reuse those settings for the newly started instances.
 

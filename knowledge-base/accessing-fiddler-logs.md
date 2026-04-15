@@ -44,7 +44,7 @@ Fiddler Everywhere version 1.3.0 and later provides a UI option through **Help**
 
 ### Accessing the Logs Manually
 
-Alternatively, you can manually navigate to the folder on your operating system and obtain the Fiddler Everywhere log files. Manual extraction of the logs can be useful in scenarios where your Fiddler Everywhere client is not starting at all, or you can't access the UI.
+Alternatively, you can manually navigate to the folder on your operating system and obtain the Fiddler Everywhere log files. Manual extraction of the logs can be useful in scenarios where your Fiddler Everywhere client is not starting at all, or you cannot access the UI.
 
 * The log files on macOS are available in the following folder:
 

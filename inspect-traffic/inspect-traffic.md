@@ -17,9 +17,9 @@ The core function of Fiddler Everywhere is to capture HTTPS requests and respons
 The ongoing HTTP traffic shows in the **Live Traffic grid**, which contains multiple columns. To inspect the HTTP Request and Response headers and bodies, follow these steps:
 
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
-1. Double-click on a captured session.
+1. Double-click a captured session.
 
-The session content immediately loads in the Fiddler's **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use a single click on a session to preserve the last shown inspector.
+The session content immediately loads in the Fiddler's **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use a single click a session to preserve the last shown inspector.
 
 [Deep-dive into the Fiddler's inspectors tab here ...](slug://inspector-types)
 

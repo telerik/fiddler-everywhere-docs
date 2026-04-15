@@ -22,7 +22,7 @@ res_type: kb
 
 **Q:** I want to capture and decrypt traffic only from a browser. Can I export and install the Fiddler CA certificate in Firefox certificate store?
 
-**Q:** I don't want to install the Fiddler CA certificate in my operating system  certificate store. Insteasd, I wanto to export and install the Fiddler CA certificate in Firefox certificate store. Is that possible?
+**Q:** I do not want to install the Fiddler CA certificate in my operating system  certificate store. Insteasd, I wanto to export and install the Fiddler CA certificate in Firefox certificate store. Is that possible?
 
 ## Solution
 

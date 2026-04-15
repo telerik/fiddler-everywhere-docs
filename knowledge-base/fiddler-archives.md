@@ -71,12 +71,12 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
         </body>
         </html>
         ```
-    * **sessid#_m.xml**&mdash;The file contains metadata, including session flags (element `SessionFlags`), certificate chain information (element `CertificateChainInfo`), socket reuse information, etc.
+    * **sessid#_m.xml**&mdash;The file contains metadata, including session flags (element `SessionFlags`), certificate chain information (element `CertificateChainInfo`), and socket reuse information.
     * **sessid#_w.txt**&mdash;(Optional) The file contains WebSocket messages.
     * **sessid#_g.txt**&mdash;(Optional) The file contains GRPC messages.
 * **[Content_Types.xml]**&mdash;A metadata file that specifies a few MIME types, so the archive is compatible with `System.IO.Packaging` or other clients that support the Open Packaging Conventions.
 
->tip Newer versions of Fiddler Everywhere constantly bring added value to the information obtained from each session. New features like the **TLS Version** column introduced in version 4.2.0 also add information for each captured session in the produced SAZ files. Note that SAZ files and sessions saved with older versions of Fiddler won't contain the new data (like the **TLS Version**).
+>tip Newer versions of Fiddler Everywhere constantly bring added value to the information obtained from each session. New features like the **TLS Version** column introduced in version 4.2.0 also add information for each captured session in the produced SAZ files. Note that SAZ files and sessions saved with older versions of Fiddler will not contain the new data (like the **TLS Version**).
 
 ## Using SAZ with Fiddler Everywhere
 

@@ -19,7 +19,7 @@ This article describes using Fiddler Everywhere to capture HTTPS traffic from An
 
 - Connect an Android device to the same network or use an Android emulator on the Fiddler Everywhere host machine. Ensure that the machine on which Fiddler Everywhere and the Android device run is discoverable on the same network.
 
->important It's common for many company networks to be restricted by security tooling or administrative policies. To capture remote traffic, ensure that your system administrators are not limiting the network discovery and usage, or consider using a public hotspot for your Fiddler host and remote device.
+>important It is common for many company networks to be restricted by security tooling or administrative policies. To capture remote traffic, ensure that your system administrators are not limiting the network discovery and usage, or consider using a public hotspot for your Fiddler host and remote device.
 
 ## Capturing Remote Android Traffic (Automated)
 
@@ -37,9 +37,9 @@ During the tutorial, you will need administrative privileges on the Android devi
 ### Configuring Fiddler Everywhere Host
 
 1. Enable remote connections in Fiddler Everywhere by navigating to **Settings** > **Connections** and checking the **Allow remote devices to connect** option. For convenience, you can also enable **Keep it ON after app restart** to persist this setting across future sessions.
-1. Determine the local IP address of the machine running Fiddler Everywhere. You can find this in the [connection status area at the lower right-hand corner](slug://connections-section) of the Fiddler Everywhere window, or by running the **ipconfig** (Windows) or **ifconfig** (macOS/Linux) command in your terminal. For example, let's assume your host machine's IP address is **192.168.100.50**.
+1. Determine the local IP address of the machine running Fiddler Everywhere. You can find this in the [connection status area at the lower right-hand corner](slug://connections-section) of the Fiddler Everywhere window, or by running the **ipconfig** (Windows) or **ifconfig** (macOS/Linux) command in your terminal. For example, let us assume your host machine's IP address is **192.168.100.50**.
 
->tip If you only need to capture traffic from a remote device, you do not need to install the Fiddler CA certificate on the Fiddler host machine. Simply download and install the Fiddler CA certificate on the remote device. Once the proxy is configured, Fiddler Everywhere will automatically capture and decrypt HTTPS traffic from the remote device.
+>tip If you only need to capture traffic from a remote device, you do not need to install the Fiddler CA certificate on the Fiddler host machine. Download and install the Fiddler CA certificate on the remote device. Once the proxy is configured, Fiddler Everywhere will automatically capture and decrypt HTTPS traffic from the remote device.
 
 ### Configuring the Fiddler proxy on Android Device
 
@@ -58,7 +58,7 @@ The following steps apply to physical Android devices that are connected to the 
 
     1. Go to **Settings** > select your active Wi-Fi connection > **Proxy**.
     1. Choose **Manual proxy**.
-        - Enter the IP address of the Fiddler Everywhere host (e.g., `192.168.100.50`).
+        - Enter the IP address of the Fiddler Everywhere host (for example, `192.168.100.50`).
         - Enter the Fiddler Everywhere proxy port (default is `8866`).
 
 Once these steps are complete, you can capture traffic from your Android device’s browser. To test your setup:

@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-The Fiddler Everywhere certificate is installed to inspect network traffic and debug it. I don't want the traffic monitoring anymore, so how can I remove the HTTPS certificate from my system?
+The Fiddler Everywhere certificate is installed to inspect network traffic and debug it. I do not want the traffic monitoring anymore, so how can I remove the HTTPS certificate from my system?
 
 ## Solution
 
