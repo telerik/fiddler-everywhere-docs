@@ -273,7 +273,7 @@ curl -v --url https://www.example.com/ -x 127.0.0.1:8866
 In the output, look for a line like:
 
 ```txt
-* issuer: OU=Created by http://www.fiddler2.com; O=Fiddler Root Certificate Authority; CN=Fiddler Root Certificate Authority
+* issuer: OU=Created by http://www.fiddler2.com; O=Progress Telerik Fiddler; CN=Fiddler Root Certificate Authority
 ```
 
 If this line is present and you see a corresponding session appear in Fiddler's **Live Traffic** tab, HTTPS capturing is working correctly.

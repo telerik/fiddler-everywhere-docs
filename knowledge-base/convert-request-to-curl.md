@@ -33,6 +33,8 @@ To export a session as cURL:
 
 ## Solution (Obsolete)
 
+>tip The manual export workflow described in this section was replaced with the automated **Copy as cURL** option in Fiddler Everywhere version 4.0.0 and above. Use the approach described in the [Solution](#solution) section instead.
+
 The [**Composer**](slug://composer-tab) provides options for creating and executing your requests. Each executed request is added to the [**Live Traffic** grid](slug://web-sessions-list) as a new session entry.
 
 To convert a request created in the **Composer**:

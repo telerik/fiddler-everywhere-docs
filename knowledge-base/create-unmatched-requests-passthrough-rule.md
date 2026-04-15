@@ -13,6 +13,8 @@ res_type: kb
 | Product   |  Fiddler Everywhere  |
 | Product Version | 3.4.0 and above  |
 
+>tip The **Unmatched Requests Passthrough** option was removed in Fiddler Everywhere version 3.4.0. The recommended approach is to use the [**Rules** tab](slug://modify-traffic-get-started) to create equivalent matching rules as demonstrated below.
+
 ## Description
 
 Fiddler Everywhere 3.4.0 removed the **Unmatched Requests Passthrough** option (previously available through **Settings > Rules**). The legacy option was obsolete as it often confused users and was not easily accessible for quick management. How can I achieve the same functionality with version 3.4.0 and above?

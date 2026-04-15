@@ -47,8 +47,7 @@ cryptographic
 AES
 SAZ
 BadSSL
-sandboxed
-F12 
+F12
 NetXML
 LoadTest
 WebRequest
@@ -61,10 +60,12 @@ WCAT
 HTTPArchive
 Protobuf
 .proto
-JVM 
+JVM
 keystore
 keytool
 keychain
 hotspot
+ISPs
+ISP
 MessagePack
 Breakpoint
