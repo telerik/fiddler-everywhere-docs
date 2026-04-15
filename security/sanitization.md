@@ -1,5 +1,6 @@
 ---
 title: Data Sanitization
+meta_title: Data Sanitization - Security | Fiddler Everywhere
 description: "Configure data sanitization in Fiddler Everywhere to automatically remove sensitive information from captured HTTPS traffic before saving, exporting, or sharing with the MCP server."
 slug: fe-sanitization
 position: 40
@@ -27,7 +28,7 @@ Control when sanitization occurs by enabling or disabling sanitization for speci
 
 - **On Save** - Automatically sanitizes session snapshots before any save operation in Fiddler Everywhere. Enable this option to ensure saved sessions does not contain sensitive data locally.
 - **On Export** - Automatically sanitizes session snapshots before any export operation in Fiddler Everywhere. Enable this option when sharing exported files with team members or external parties.
-- **On MCP Output** - Automatically sanitizes session snapshots before data is sent to the Fiddler Everywhere MCP server. This option is **enabled by default** to protect sensitive information from being processed by AI models.
+- **On MCP Output** - Automatically sanitizes session snapshots before data is sent to the Fiddler Everywhere MCP server. This option is **enabled by default** to protect sensitive information from being processed by language models.
 
 >tip Enable all three sanitization options if you regularly work with highly sensitive data or need to comply with strict data protection policies.
 
@@ -63,7 +64,7 @@ Enhance the sanitization process by defining custom rules to target specific sen
 When using data sanitization in Fiddler Everywhere, consider the following best practices:
 
 - **Always verify sanitization results** - Review sanitized sessions before sharing to confirm that all sensitive data has been properly masked.
-- **Enable MCP sanitization by default** - Keep the "On MCP Output" option enabled to prevent inadvertent exposure of sensitive data to AI models.
+- **Enable MCP sanitization by default** - Keep the "On MCP Output" option enabled to prevent inadvertent exposure of sensitive data to language models.
 - **Use appropriate sanitization scope** - Balance security needs with debugging requirements. Over-sanitization may hinder troubleshooting efforts.
 - **Combine with password protection** - Use sanitization in conjunction with [password-protected sessions]({%slug fe-security-highlights%}#saving-traffic) for multiple layers of security.
 - **Document custom rules** - Maintain documentation of custom sanitization rules, especially regex patterns, for team collaboration and compliance audits.

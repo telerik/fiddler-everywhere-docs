@@ -1,5 +1,6 @@
 ---
 title: Map Manual Response
+meta_title: Map Manual Response - Rules Presets | Fiddler Everywhere
 description: "Creating a transparent mapping or redirect to a manually created HTTP Response within the Fiddler's rules."
 slug: adv_map_local_manual
 position: 40

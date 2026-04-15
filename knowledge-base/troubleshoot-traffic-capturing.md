@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting HTTPS Capturing on macOS
+meta_title: Troubleshooting HTTPS Capturing on macOS | Fiddler Everywhere
 description: "Learn how to troubleshoot traffic capturing on macOS with the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: troubleshoot-capturing-traffic

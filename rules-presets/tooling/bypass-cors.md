@@ -1,5 +1,6 @@
 ---
 title: Bypass CORS
+meta_title: Bypass CORS - Rules Presets | Fiddler Everywhere
 description: "Using Fiddler's rules to bypass the same-origin policy when using cross-origin resource sharing (CORS)."
 slug: adv_bypass_cors
 position: 30

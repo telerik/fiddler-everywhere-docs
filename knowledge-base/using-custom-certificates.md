@@ -1,5 +1,6 @@
 ---
 title: Using Custom Certificates in Fiddler Everywhere
+meta_title: Using Custom Certificates in Fiddler Everywhere | Fiddler Everywhere
 description: Learn how to use and create custom certificates with Fiddler Everywhere.
 type: how-to
 slug: using-custom-certs

@@ -1,5 +1,6 @@
 ---
 title: Replaying Traffic
+meta_title: Replaying Traffic - Rules | Fiddler Everywhere
 description: "Replay HTTPS Traffic simultaneously or consiquencily while using Fiddler Everywhere advanced replay options"
 slug: replaying-traffic
 publish: true

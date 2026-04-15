@@ -1,6 +1,7 @@
 ---
 title: Managing Fiddler Everywhere through PatchMyPc
-description: "Manage the Fiddler Everywhere application installation through Microsoft Patch My PC."
+meta_title: Managing Fiddler Everywhere through PatchMyPc | Fiddler Everywhere
+description: "Manage the Fiddler Everywhere application installation through Microsoft Patch My PC. Follow enterprise deployment and installation instructions."
 slug: fe-patchmypc
 publish: true
 position: 50

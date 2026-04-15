@@ -1,6 +1,7 @@
 ---
 title: Composer Tab
-description: "Learn how to use the Composer tab in the Fiddler Everywhere web-debugging HTTP-proxy client."
+meta_title: Composer Tab | Fiddler Everywhere
+description: "Learn how to use the Composer tab in the Fiddler Everywhere web-debugging HTTP-proxy client. Step-by-step instructions and troubleshooting guidance."
 slug: composer-tab
 res_type: kb
 ---

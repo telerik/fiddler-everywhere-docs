@@ -1,5 +1,6 @@
 ---
 title: Live Traffic 
+meta_title: Live Traffic - Settings | Fiddler Everywhere
 description: "Learn how to limit the captured session listed in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: live-traffic-submenu
 publish: true

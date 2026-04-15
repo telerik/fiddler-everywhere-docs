@@ -1,5 +1,6 @@
 ---
 title: Comparing Traffic
+meta_title: Comparing Traffic - Inspect Traffic | Fiddler Everywhere
 description: "Compare two or more captured HTTP sessions with the Fiddler Everywhere web-debugging HTTPS proxy application."
 slug: fe-compare-sessions
 publish: true

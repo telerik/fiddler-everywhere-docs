@@ -1,5 +1,6 @@
 ---
 title: No Internet Connectivity after Closing Fiddler Everywhere
+meta_title: No Internet Connectivity after Closing Fiddler Ev | Fiddler Everywhere
 description: "Check for leaked proxy settings and restore the Internet connectivity after the Fiddler Everywhere proxy application stops unexpectedly."
 type: how-to
 slug: fiddler-restore-internet

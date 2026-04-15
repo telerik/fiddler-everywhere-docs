@@ -1,6 +1,7 @@
 ---
 title: Bypassing the Fiddler Everywhere proxy
-description: "Learn how to bypass the Fiddler Everywhere proxy or skip decryption for particular endpoints."
+meta_title: Bypassing the Fiddler Everywhere proxy | Fiddler Everywhere
+description: "Learn how to bypass the Fiddler Everywhere proxy or skip decryption for particular endpoints. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-bypass-list
 publish: true

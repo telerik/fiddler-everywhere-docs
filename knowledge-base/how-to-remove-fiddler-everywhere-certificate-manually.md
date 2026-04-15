@@ -1,5 +1,6 @@
 ---
 title: Manually Removing Fiddler Everywhere Certificate
+meta_title: Manually Removing Fiddler Everywhere Certificate | Fiddler Everywhere
 description: "Learn how to remove the Fiddler Everywhere web-debugging client certificate from Windows and macOS manually."
 type: how-to
 slug: how-to-remove-fiddler-everywhere-certificate-manually

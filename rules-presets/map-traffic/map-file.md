@@ -1,5 +1,6 @@
 ---
 title: Map Local File
+meta_title: Map Local File - Rules Presets | Fiddler Everywhere
 description: "Creating a transparent mapping or redirect to a DAT file containing the HTTP request while using Fiddler's rules."
 slug: adv_map_local_file
 position: 30

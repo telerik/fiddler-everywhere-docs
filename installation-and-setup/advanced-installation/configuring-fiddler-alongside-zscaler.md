@@ -1,6 +1,7 @@
 ---
 title: Configuring Fiddler alongside Zscaler
-description: "Instructions for configuring Fiddler Everywhere alongside Zscaler"
+meta_title: Configuring Fiddler alongside Zscaler | Fiddler Everywhere
+description: "Instructions for configuring Fiddler Everywhere alongside Zscaler. Follow enterprise deployment and installation instructions."
 slug: fe-configure-zscaler
 publish: true
 position: 30

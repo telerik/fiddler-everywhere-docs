@@ -1,6 +1,7 @@
 ---
 title: Block Specific Processes
-description: "Blocking HTTPS traffic from specific processes while using Fiddler's rules."
+meta_title: Block Specific Processes - Rules Presets | Fiddler Everywhere
+description: "Blocking HTTPS traffic from specific processes while using Fiddler's rules. Import and customize ready-to-use rule presets for traffic control."
 slug: adv_block_traffic_processes
 position: 30
 ---

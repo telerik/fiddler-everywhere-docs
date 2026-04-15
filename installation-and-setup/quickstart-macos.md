@@ -1,5 +1,6 @@
 ---
 title: First Steps on macOS
+meta_title: First Steps on macOS - Installation | Fiddler Everywhere
 description: "Install and configure Fiddler Everywhere on macOS and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
 slug: first_steps_macos
 position: 2

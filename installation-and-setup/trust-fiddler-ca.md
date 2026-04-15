@@ -1,5 +1,6 @@
 ---
 title: Trust Fiddler Certificate Authority
+meta_title: Trust Fiddler Certificate Authority | Fiddler Everywhere
 description: "Install and trust the Fiddler's root CA in your operating system and learn how it relates to enabling the HTTPS capturing of system traffic."
 slug: trust-certificate
 position: 20

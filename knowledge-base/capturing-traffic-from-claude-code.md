@@ -1,5 +1,6 @@
 ---
 title: How to Capture and Debug Claude Code HTTPS Traffic with Fiddler Everywhere
+meta_title: How to Capture and Debug Claude Code HTTPS Traffi | Fiddler Everywhere
 description: "Step-by-step guide to configure Fiddler Everywhere to capture, decrypt, and inspect HTTPS API calls from Claude Code. Debug Anthropic's AI agent with proxy configuration and certificate setup."
 type: how-to
 slug: fiddler-and-claude
@@ -121,7 +122,7 @@ Now that everything is configured, test the setup by asking Claude Code to perfo
    Create a Python function that reads a JSON file and returns the data as a dictionary
    ```
 
-2. Claude Code will process your request, communicate with the LLM, and execute the chain of thought.
+2. Claude Code will process your request, communicate with the language model, and execute the chain of thought.
 
 3. Switch to Fiddler Everywhere and observe the **Live Traffic** grid. You should immediately see HTTPS requests appearing, showing the communication between Claude Code and Anthropic's API servers.
 

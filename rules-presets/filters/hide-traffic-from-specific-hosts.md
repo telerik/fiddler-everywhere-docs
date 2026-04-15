@@ -1,6 +1,7 @@
 ---
 title: Hide Traffic from Specific Hosts
-description: "Hide HTTPS traffic for specific hosts while using Fiddler's rules."
+meta_title: Hide Traffic from Specific Hosts - Rules Presets | Fiddler Everywhere
+description: "Hide HTTPS traffic for specific hosts while using Fiddler's rules. Import and customize ready-to-use rule presets for traffic filtering."
 slug: adv_hide_specific_hosts
 position: 25
 ---

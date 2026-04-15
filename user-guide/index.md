@@ -1,5 +1,6 @@
 ---
 title: Application Menu
+meta_title: Application Menu - User Guide | Fiddler Everywhere
 description: "Use the application menu to customize your Fiddler's user interface and access support and help-related features."
 slug: app-menu-section
 tags: Fiddler help menu, Fiddler Everywhere support, fiddler application logs, zoom interface

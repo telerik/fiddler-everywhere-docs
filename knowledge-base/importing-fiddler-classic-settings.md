@@ -1,5 +1,6 @@
 ---
 title: Importing Fiddler Classic Settings
+meta_title: Importing Fiddler Classic Settings | Fiddler Everywhere
 description: "Use Fiddler Everywhere to automatically import settings, AutoResponder rules, and filters from Fiddler Classic"
 type: how-to
 slug: fe-migrating-from-classic

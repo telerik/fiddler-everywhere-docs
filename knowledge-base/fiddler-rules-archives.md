@@ -1,6 +1,7 @@
 ---
 title: Fiddler Rules Archives (FARX)
-description: "FARX is the native archive format for saving rules created with Fiddler."
+meta_title: Fiddler Rules Archives (FARX) | Fiddler Everywhere
+description: "FARX is the native archive format for saving rules created with Fiddler. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-farx-format
 publish: true

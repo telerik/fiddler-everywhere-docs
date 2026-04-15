@@ -1,6 +1,7 @@
 ---
 title: Configuring Fiddler alongside Proxy Authentication
-description: "Interactive installation instructions of the Fiddler's network extension."
+meta_title: Configuring Fiddler alongside Proxy Authenticatio | Fiddler Everywhere
+description: "Interactive installation instructions of the Fiddler's network extension. Follow enterprise deployment and installation instructions."
 slug: fe-configure-automatic-auth
 publish: true
 position: 20

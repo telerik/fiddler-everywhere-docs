@@ -1,5 +1,6 @@
 ---
 title: Capturing Traffic from Java Applications
+meta_title: Capturing Traffic from Java Applications | Fiddler Everywhere
 description: "Learn how to configure a Java application to send traffic to the Fiddler Everywhere proxy and use the Fiddler CA certificate for encrypt HTTPS traffic."
 type: how-to
 slug: configure-java-fiddler-everywhere

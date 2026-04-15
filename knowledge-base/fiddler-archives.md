@@ -1,6 +1,7 @@
 ---
 title: Fiddler Archives (SAZ)
-description: "Learn more about SAZ - the native Fiddler archive format for saving captured HTTP(S) traffic."
+meta_title: Fiddler Archives (SAZ) | Fiddler Everywhere
+description: "Learn more about SAZ - the native Fiddler archive format for saving captured HTTP(S) traffic. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-saz-format
 publish: true

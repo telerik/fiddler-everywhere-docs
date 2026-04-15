@@ -1,5 +1,6 @@
 ---
 title: Appearance
+meta_title: Appearance - Settings | Fiddler Everywhere
 description: "Customize the appearance of Fiddler Everywhere by selecting themes and UI modes that suit your preferences."
 slug: themes-settings-submenu
 publish: true

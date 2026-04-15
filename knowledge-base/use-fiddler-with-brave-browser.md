@@ -1,5 +1,6 @@
 ---
 title: Logging In with Google on Brave Browser
+meta_title: Logging In with Google on Brave Browser | Fiddler Everywhere
 description: "Learn how to fix issues with the Google authentication on the Brave browser when working with the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: fiddler-everywhere-brave

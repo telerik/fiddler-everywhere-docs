@@ -1,6 +1,7 @@
 ---
 title: Capturing from Mobile Firefox Browser
-description: "Configure the mobile version of Firefox to work alongside the Fiddler Everywhere proxy and CA."
+meta_title: Capturing from Mobile Firefox Browser | Fiddler Everywhere
+description: "Configure the mobile version of Firefox to work alongside the Fiddler Everywhere proxy and CA. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: capture-from-mobile-firefox
 publish: true

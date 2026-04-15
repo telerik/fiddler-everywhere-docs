@@ -1,6 +1,7 @@
 ---
 title: Configuring Fiddler Everywhere alongside Cisco AnyConnect
-description: "Learn how to use Cisco AnyConnect alongside the Fiddler Everywhere web-debugging client."
+meta_title: Configuring Fiddler Everywhere alongside Cisco An | Fiddler Everywhere
+description: "Learn how to use Cisco AnyConnect alongside the Fiddler Everywhere web-debugging client. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: configure-vpn-fiddler
 publish: true

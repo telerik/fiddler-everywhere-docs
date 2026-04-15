@@ -1,6 +1,7 @@
 ---
 title: Create a Rule from Multiple Requests
-description: "Create a rule from multiple requests to easily mock server responses in batch."
+meta_title: Create a Rule from Multiple Requests | Fiddler Everywhere
+description: "Create a rule from multiple requests to easily mock server responses in batch. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: rule-multiple-requests
 res_type: kb

@@ -1,6 +1,7 @@
 ---
 title: Capturing Git Traffic
-description: "Learn how to capture Git HTTPS traffic while using the Fiddler Everywhere proxy application."
+meta_title: Capturing Git Traffic - Capture Traffic | Fiddler Everywhere
+description: "Learn how to capture Git HTTPS traffic while using the Fiddler Everywhere proxy application. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: how-to-capture-git-traffic
 publish: true

@@ -1,5 +1,6 @@
 ---
 title: Capturing Traffic from Microsoft Apps (Outlook and MSTeams)
+meta_title: Capturing Traffic from Microsoft Apps (Outlook an | Fiddler Everywhere
 description: "Learn how to capture traffic from Microsoft applications using Microsoft Edge WebView 2 (like MSTeams, Outlook, and others)."
 type: how-to
 slug: fiddler-capture-ms-traffic

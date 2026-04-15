@@ -1,6 +1,7 @@
 ---
 title: Capturing Traffic from Samsung Devices
-description: "Learn how to install and trust the Fiddler CA certificate on Samsung devices"
+meta_title: Capturing Traffic from Samsung Devices | Fiddler Everywhere
+description: "Learn how to install and trust the Fiddler CA certificate on Samsung devices. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: fe-samsung-device
 publish: true

@@ -1,6 +1,7 @@
 ---
 title: Show Only Localhost Traffic
-description: "Show only localhost traffic while using Fiddler's rules."
+meta_title: Show Only Localhost Traffic - Rules Presets | Fiddler Everywhere
+description: "Show only localhost traffic while using Fiddler's rules. Import and customize ready-to-use rule presets for traffic filtering."
 slug: adv_show_only_localhost
 position: 10
 ---

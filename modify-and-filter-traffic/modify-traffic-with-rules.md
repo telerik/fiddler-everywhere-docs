@@ -1,6 +1,7 @@
 ---
 title: Modifying Traffic
-description: "Modify HTTPS traffic while using the Rules tab in the Fiddler Everywhere web-debugging proxy tool."
+meta_title: Modifying Traffic - Rules | Fiddler Everywhere
+description: "Modify HTTPS traffic while using the Rules tab in the Fiddler Everywhere web-debugging proxy tool. Create, manage, and execute rules for traffic modification."
 slug: modify-traffic-get-started
 publish: true
 position: 10

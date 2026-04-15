@@ -1,5 +1,6 @@
 ---
 title: Features
+meta_title: Features - Reporter | Fiddler Everywhere
 description: "Using the different capturing modes in the Fiddler Everywhere Reporter tool and learning more about the available configuration options."
 slug: reporter-features
 publish: true

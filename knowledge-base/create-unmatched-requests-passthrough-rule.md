@@ -1,6 +1,7 @@
 ---
 title: Unmatched Requests Passthrough Rule
-description: "Learn how to enable or disable passthrough of HTTP requests that are not matching any active rule."
+meta_title: Unmatched Requests Passthrough Rule | Fiddler Everywhere
+description: "Learn how to enable or disable passthrough of HTTP requests that are not matching any active rule. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: rules-unmatched-requests-passthrough
 res_type: kb

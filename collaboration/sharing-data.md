@@ -1,5 +1,6 @@
 ---
 title: Sharing HTTPS Traffic
+meta_title: Sharing HTTPS Traffic - Collaboration | Fiddler Everywhere
 description: "Sharing snapshots of captured traffic, API requests, and rules with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-sharing
 publish: true

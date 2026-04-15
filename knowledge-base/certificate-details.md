@@ -1,5 +1,6 @@
 ---
 title: Inspecting Server Certificate
+meta_title: Inspecting Server Certificate | Fiddler Everywhere
 description: "Learn how to inspect server certificate details and catch potential certificate-related issues with Fiddler Everywhere MITM proxy."
 type: how-to
 slug: fe-cert-details

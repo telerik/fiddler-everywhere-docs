@@ -1,6 +1,7 @@
 ---
 title: TLS Version Specifics
-description: "Deep-dive into Fiddler's support for TLS and SSL protocols."
+meta_title: TLS Version Specifics - Security | Fiddler Everywhere
+description: "Deep-dive into Fiddler's support for TLS and SSL protocols. Understand how Fiddler Everywhere protects your data and traffic."
 slug: fe-tls-versions
 publish: true
 position: 20

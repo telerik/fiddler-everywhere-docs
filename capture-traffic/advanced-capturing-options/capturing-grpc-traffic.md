@@ -1,6 +1,7 @@
 ---
 title: Capturing and Inspecting gRPC Traffic
-description: "Learn how to capture and inspect gRPC traffic with Fiddler Everywhere."
+meta_title: Capturing and Inspecting gRPC Traffic | Fiddler Everywhere
+description: "Learn how to capture and inspect gRPC traffic with Fiddler Everywhere. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: capture-grpc-traffic
 publish: true

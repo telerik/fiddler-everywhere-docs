@@ -1,5 +1,6 @@
 ---
 title: Rules
+meta_title: Rules - Settings | Fiddler Everywhere
 description: "Learn how to use the Rules menu and change the behavour of sessions that are not matching active rules"
 slug: rules-settings-submenu
 published: false

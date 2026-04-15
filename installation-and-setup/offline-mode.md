@@ -1,5 +1,6 @@
 ---
 title: Offline Mode
+meta_title: Offline Mode - Installation | Fiddler Everywhere
 description: "Requesting, enabling, and using Fiddler's offline mode for environments with restricted internet access."
 slug: fe-offline-mode
 publish: true

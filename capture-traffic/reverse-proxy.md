@@ -1,6 +1,7 @@
 ---
 title: Reverse Proxy
-description: "Use Fiddler Everywhere as a reverse proxy for servers."
+meta_title: Reverse Proxy - Capture Traffic | Fiddler Everywhere
+description: "Use Fiddler Everywhere as a reverse proxy for servers. Capture, inspect, and analyze HTTPS sessions in real time."
 type: how-to
 slug: fiddler-reverse-proxy
 publish: true

@@ -1,6 +1,7 @@
 ---
 title: Inspecting Traffic
-description: "Inspect captured HTTPS traffic through the Live Traffic tab in the Fiddler Everywhere proxy tool."
+meta_title: Inspecting Traffic - Inspect Traffic | Fiddler Everywhere
+description: "Inspect captured HTTPS traffic through the Live Traffic tab in the Fiddler Everywhere proxy tool. Use the inspection tools to analyze requests and responses."
 slug: inspecting-traffic-get-started
 publish: true
 position: 1

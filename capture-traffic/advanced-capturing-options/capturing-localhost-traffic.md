@@ -1,5 +1,6 @@
 ---
 title: Capturing Localhost Traffic
+meta_title: Capturing Localhost Traffic - Capture Traffic | Fiddler Everywhere
 description: "Learn how to capture and inspect localhost traffic by using the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: how-to-capture-localhost-traffic

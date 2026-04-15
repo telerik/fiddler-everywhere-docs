@@ -8,7 +8,7 @@ position: 1
 
 # Fiddler Debugging Assistant
 
-The Fiddler Debugging Assistant enables you to leverage large language models (LLMs) to reach new levels of developer productivity. This built-in chat feature provides additional insights by combining your preferred AI model with Fiddler's powerful traffic analysis capabilities.
+The Fiddler Debugging Assistant enables you to leverage large language models to reach new levels of developer productivity. This built-in chat feature provides additional insights by combining your preferred language model with Fiddler's powerful traffic analysis capabilities.
 
 ## Prerequisites
 
@@ -20,19 +20,19 @@ The Fiddler Debugging Assistant enables you to leverage large language models (L
     * Azure OpenAI
     * Google Gemini
 
->important Requests are processed using your own API key and billed directly to your account with the LLM provider. Data usage and retention follow the provider’s Terms of Service and Privacy Policy.
+>important Requests are processed using your own API key and billed directly to your account with the model provider. Data usage and retention follow the provider's Terms of Service and Privacy Policy.
 
 ## Configuring the Debugging Assistant
 
-The Debugging Assistant is accessible through the **Ask Assistant** button in the Fiddler toolbar. To use it, you must provide a valid API key for one of the supported AI providers.
+The Debugging Assistant is accessible through the **Ask Assistant** button in the Fiddler toolbar. To use it, you must provide a valid API key for one of the supported model providers.
 
-Select your preferred LLM provider and set its API key through **Settings > Assistant**. 
+Select your preferred model provider and set its API key through **Settings > Assistant**. 
 
 ![Configuring the debugging assistant API key](./images/fiddler_assistent_settings.png)
 
 Once all properties are set, use the **Test Connection** button to verify that the connection is properly established.
 
-![Testing and verifying the LLM connection](./images/fiddler_assistent_settings_002.png)
+![Testing and verifying the model connection](./images/fiddler_assistent_settings_002.png)
 
 ### Configuration Details
  
@@ -42,7 +42,7 @@ Once all properties are set, use the **Test Connection** button to verify that t
 
 ## Getting Started with a Free Gemini API Key
 
-Google provides a free‑tier Gemini API key through [Google AI Studio](https://aistudio.google.com/api-keys) that lets you use the Debugging Assistant without a paid LLM provider subscription; however, you still need a Fiddler Everywhere Pro (or higher) subscription to access the Debugging Assistant.
+Google provides a free‑tier Gemini API key through [Google AI Studio](https://aistudio.google.com/api-keys) that lets you use the Debugging Assistant without a paid model provider subscription; however, you still need a Fiddler Everywhere Pro (or higher) subscription to access the Debugging Assistant.
 
 ### Obtaining a Free Gemini API Key
 
@@ -93,7 +93,7 @@ When working with the Debugging Assistant, consider the following limitations:
 
 - The current version of the Debugging Assistant does not have access to captured traffic in live sessions or saved snapshots. To analyze specific captured sessions, you need to copy and paste the relevant traffic details into the chat.
 
-- Most LLMs (like Claude Sonnet, GPT-5, Gemini Pro) work only with preexisting training data or information provided in the conversation. Internet connectivity features (such as web search) depend on the selected LLM model.
+- Most language models (such as Claude Sonnet, GPT-5, Gemini Pro) work only with preexisting training data or information provided in the conversation. Internet connectivity features (such as web search) depend on the selected model.
 
 ## Debugging Assistant Access Policies
 
@@ -112,7 +112,7 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | Key Name | Description | Value Type | Value Example |
 |:---------|:------------|:-----------|:--------------|
 | `DisableAssistant` | Enables or disables the Debugging Assistant | DWORD-32 (hexadecimal) | `1` |
-| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) for the Debugging Assistant | REG_SZ (string) | See the JSON structure [here](#configuring-the-defaultassistantsettings-policy) |
+| `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) for the Debugging Assistant | REG_SZ (string) | See the JSON structure [here](#configuring-the-defaultassistantsettings-policy) |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | DWORD-32 (hexadecimal) | `1` |
 
 ### macOS
@@ -122,12 +122,12 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | Key Name | Description | Value Type | Value Example |
 |:---------|:------------|:-----------|:--------------|
 | `DisableAssistant` | Enables or disables the Debugging Assistant | integer | `1` |
-| `DefaultAssistantSettings` | Sets the default settings (LLM provider, API key, and model) for the Debugging Assistant | String | See the JSON structure [here](#configuring-the-defaultassistantsettings-policy) |
+| `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) for the Debugging Assistant | String | See the JSON structure [here](#configuring-the-defaultassistantsettings-policy) |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | integer | `1` |
 
 The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
 
-- `provider` - Sets the LLM provider. Supports the following values (case-sensitive):
+- `provider` - Sets the model provider. Supports the following values (case-sensitive):
 ```txt
 openai
 anthropic
@@ -144,7 +144,7 @@ For more information on using managed application configurations, see the [Manag
 
 The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:
 
-- `provider` - Sets the LLM provider. Supports the following case-sensitive values:
+- `provider` - Sets the model provider. Supports the following case-sensitive values:
 ```txt
 openai
 anthropic

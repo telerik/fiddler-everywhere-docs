@@ -1,5 +1,6 @@
 ---
 title: Mocking traffic
+meta_title: Mocking traffic - Rules | Fiddler Everywhere
 description: "Replay captured HTTPS traffic to effectively mock multiple HTTP sessions in Fiddler Everywhere web-debugging proxy tool."
 slug: mock-traffic-get-started
 publish: true

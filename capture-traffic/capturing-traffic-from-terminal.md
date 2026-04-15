@@ -1,5 +1,6 @@
 ---
 title: Capturing Traffic from Terminal
+meta_title: Capturing Traffic from Terminal - Capture Traffic | Fiddler Everywhere
 description: "Capture HTTPS, WebSocket, and gRPC traffic from terminals and shell applications while using the Fiddler Everywhere proxy application."
 slug: capture-terminal-traffic
 position: 30

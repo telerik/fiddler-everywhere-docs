@@ -1,6 +1,7 @@
 ---
 title: Accessing and Inspecting Application Log Files
-description: "Learn how to access and inspect the Fiddler Everywhere application log files."
+meta_title: Accessing and Inspecting Application Log Files | Fiddler Everywhere
+description: "Learn how to access and inspect the Fiddler Everywhere application log files. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-log-files
 publish: true

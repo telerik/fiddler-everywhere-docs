@@ -1,5 +1,6 @@
 ---
 title: Security Highlights
+meta_title: Security Highlights - Security | Fiddler Everywhere
 description: "Learn about essential security considerations, best practices, and safeguards when using Fiddler Everywhere as a proxy, including data protection, sanitization, and MCP server security."
 slug: fe-security-highlights
 publish: true
@@ -68,12 +69,12 @@ Fiddler Everywhere comes with [collaboration in mind](slug://fiddler-sharing) an
 
 ## Using the Fiddler MCP Server
 
-Fiddler Everywhere provides an [MCP (Model Context Protocol) server]({%slug fiddler-mcp-server%}) that enables integration with AI-powered IDEs and tools for analyzing captured HTTPS traffic. Consider the following security highlights when using the MCP server:
+Fiddler Everywhere provides an [MCP (Model Context Protocol) server]({%slug fiddler-mcp-server%}) that enables integration with intelligent IDEs and coding tools for analyzing captured HTTPS traffic. Consider the following security highlights when using the MCP server:
 
-- The MCP server runs locally on your machine (default port `8868`) and provides captured traffic data to connected AI tools and IDEs. Any application with access to your API key can retrieve your captured traffic data.
+- The MCP server runs locally on your machine (default port `8868`) and provides captured traffic data to connected coding tools and IDEs. Any application with access to your API key can retrieve your captured traffic data.
 - Protect your MCP server API key. This key grants access to all captured traffic data. Do not share the API key or commit it to version control systems. Regenerate the API key immediately if you suspect it has been compromised.
-- By default, [data sanitization]({%slug fe-sanitization%}) is enabled for MCP output to help prevent exposure of sensitive information to AI models. Verify that **Settings > Sanitization > On MCP Output** is enabled before using the MCP server.
-- Be aware that captured traffic data sent to the MCP server will be processed by AI models (such as those provided by your IDE). Review your AI provider's data handling and privacy policies to understand how your data may be used, stored, or retained.
+- By default, [data sanitization]({%slug fe-sanitization%}) is enabled for MCP output to help prevent exposure of sensitive information to language models. Verify that **Settings > Sanitization > On MCP Output** is enabled before using the MCP server.
+- Be aware that captured traffic data sent to the MCP server will be processed by language models (such as those provided by your IDE). Review your model provider's data handling and privacy policies to understand how your data may be used, stored, or retained.
 - The MCP server provides access to all captured sessions available in Fiddler Everywhere. Consider clearing old or unnecessary sessions before enabling the MCP server to limit data exposure.
 - Only enable the MCP server when actively using it. Stop the server when not in use to minimize the window of potential unauthorized access.
 - When using the MCP server on shared or multi-user machines, be particularly cautious as other users may attempt to access the MCP endpoint if they discover your API key.

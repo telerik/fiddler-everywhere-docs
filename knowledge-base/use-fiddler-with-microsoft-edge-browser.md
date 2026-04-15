@@ -1,5 +1,6 @@
 ---
 title: Resolving HSTS while using Google Auth with Microsoft Edge
+meta_title: Resolving HSTS while using Google Auth with Micro | Fiddler Everywhere
 description: "Learn how to fix HSTS issues with the Google authentication on the Microsoft Edge when working with the Fiddler Everywhere local proxy."
 type: how-to
 slug: fiddler-everywhere-microsoft-edge

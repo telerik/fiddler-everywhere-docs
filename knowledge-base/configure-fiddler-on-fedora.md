@@ -1,5 +1,6 @@
 ---
 title: Configuring Fiddler Everywhere on Fedora, CentOS, or RedHat
+meta_title: Configuring Fiddler Everywhere on Fedora, CentOS, | Fiddler Everywhere
 description: "Learn how to configure Fiddler Everywhere and trust its root certificate on Fedora, CentOS, RedHat, or any other Linux distribution that uses a shared system certificate storage."
 type: how-to
 slug: fiddler-fedora-centos

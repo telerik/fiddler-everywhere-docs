@@ -1,5 +1,6 @@
 ---
 title: Privacy 
+meta_title: Privacy - Settings | Fiddler Everywhere
 description: "Learn how to use the Privacy menu settings in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: privacy-submenu
 publish: true

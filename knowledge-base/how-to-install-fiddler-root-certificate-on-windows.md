@@ -1,6 +1,7 @@
 ---
 title: Manually Installing the Root Certificate on Windows
-description: "Learn how to manually install the root certificate for Fiddler Everywhere on Windows."
+meta_title: Manually Installing the Root Certificate on Windo | Fiddler Everywhere
+description: "Learn how to manually install the root certificate for Fiddler Everywhere on Windows. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: how-to-install-fiddler-root-certificate-on-windows
 publish: true

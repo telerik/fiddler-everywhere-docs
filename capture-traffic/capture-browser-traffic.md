@@ -1,6 +1,7 @@
 ---
 title: Capturing from Independent Browser Instance
-description: "Capture browser HTTPS traffic with Fiddler Everywhere and the independent browser capturing mode."
+meta_title: Capturing from Independent Browser Instance | Fiddler Everywhere
+description: "Capture browser HTTPS traffic with Fiddler Everywhere and the independent browser capturing mode. Capture, inspect, and analyze HTTPS sessions in real time."
 slug: capture-browser-traffic
 position: 20
 ---
