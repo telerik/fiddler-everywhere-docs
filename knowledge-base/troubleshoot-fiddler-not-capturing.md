@@ -74,7 +74,7 @@ If Fiddler does not register its proxy address, it likely lacks the required rig
 
 ## Incompatibility with VPN Tools
 
-Some VPN clients modify network routing and proxy settings in ways that interfere with Fiddler's system proxy.
+Some VPN clients modify network routing and proxy settings in ways that interfere with the Fiddler system proxy.
 
 **Troubleshooting:**
 
@@ -85,13 +85,13 @@ If Fiddler works only when the VPN is disconnected, the VPN is the likely cause.
 
 **Solutions:**
 
-- **Bypass VPN for Fiddler's proxy:** Add your VPN server addresses to **Settings > Connections > Bypass Fiddler for URLs that start with** and save.
+- **Bypass VPN for the Fiddler proxy:** Add your VPN server addresses to **Settings > Connections > Bypass Fiddler for URLs that start with** and save.
 - **Use an alternative capturing mode:** [Browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) are often less affected by VPN tools.
 - See also: [Configure VPN with Fiddler Everywhere](slug://configure-vpn-fiddler).
 
 ## Incompatibility with Security Tools
 
-Firewalls, antivirus software, zero-trust agents, and enterprise security policies can prevent Fiddler from modifying proxy settings or block connections through Fiddler's proxy port.
+Firewalls, antivirus software, zero-trust agents, and enterprise security policies can prevent Fiddler from modifying proxy settings or block connections through the Fiddler proxy port.
 
 **Troubleshooting:**
 
@@ -112,11 +112,11 @@ Firewalls, antivirus software, zero-trust agents, and enterprise security polici
 
 **Known security tool configurations:**
 
-- **Zscaler:** Zscaler acts as a network-level SSL inspection proxy and can conflict with Fiddler's system proxy. When Zscaler is active, it typically controls OS proxy settings via its forwarding profile and PAC script, preventing Fiddler from registering as the system proxy. Use Fiddler in [explicit proxy mode](slug://capture-traffic-get-started#explicit-capturing) with system capturing turned **OFF**, and configure the Zscaler forwarding profile to route traffic through Fiddler. See [Configuring Fiddler Everywhere alongside Zscaler](slug://fe-configure-zscaler) for step-by-step instructions.
+- **Zscaler:** Zscaler acts as a network-level SSL inspection proxy and can conflict with the Fiddler system proxy. When Zscaler is active, it typically controls OS proxy settings via its forwarding profile and PAC script, preventing Fiddler from registering as the system proxy. Use Fiddler in [explicit proxy mode](slug://capture-traffic-get-started#explicit-capturing) with system capturing turned **OFF**, and configure the Zscaler forwarding profile to route traffic through Fiddler. See [Configuring Fiddler Everywhere alongside Zscaler](slug://fe-configure-zscaler) for step-by-step instructions.
 
 ## Incompatibility with Other Preset System Proxies
 
-If your system already uses a proxy—such as a PAC script or an upstream corporate proxy—Fiddler's attempt to chain to it may fail, resulting in no captured traffic or loss of Internet access.
+If your system already uses a proxy—such as a PAC script or an upstream corporate proxy—the Fiddler attempt to chain to it may fail, resulting in no captured traffic or loss of Internet access.
 
 **Troubleshooting:**
 
@@ -124,26 +124,26 @@ If your system already uses a proxy—such as a PAC script or an upstream corpor
 
 **Solutions:**
 
-- Configure the upstream proxy to accept connections from Fiddler's proxy address (`127.0.0.1:8866`).
+- Configure the upstream proxy to accept connections from the Fiddler proxy address (`127.0.0.1:8866`).
 - Adjust PAC scripts or proxy settings to allow Fiddler to chain to the upstream proxy.
 - Consult your network administrator for help with chained proxy configurations.
 - **Use an alternative capturing mode:** [Browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) may work independently of system-proxy chains.
 
 ## Incompatibility with Third-Party Proxy Tools
 
-Some proxy tools (such as Charles Proxy, mitmproxy, or similar) overwrite Fiddler's proxy settings when their capturing mode is enabled, instead of chaining to Fiddler.
+Some proxy tools (such as Charles Proxy, mitmproxy, or similar) overwrite the Fiddler proxy settings when their capturing mode is enabled, instead of chaining to Fiddler.
 
 **Troubleshooting:**
 
 1. Enable system capturing in Fiddler Everywhere and confirm traffic is captured.
 2. Start the third-party proxy tool and enable its capturing mode.
-3. If Fiddler stops capturing, the third-party tool has overwritten Fiddler's proxy settings.
+3. If Fiddler stops capturing, the third-party tool has overwritten the Fiddler proxy settings.
 
 **Solutions:**
 
 - Start the third-party proxy tool **before** enabling Fiddler Everywhere's system capture, so Fiddler can chain on top.
 - Stop the third-party proxy tool before starting Fiddler.
-- Configure the third-party tool to forward traffic through Fiddler's proxy (`127.0.0.1:8866`); check the tool's documentation for proxy-chaining options.
+- Configure the third-party tool to forward traffic through the Fiddler proxy (`127.0.0.1:8866`); check the tool's documentation for proxy-chaining options.
 - **Use an alternative capturing mode:** [Browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing](slug://capture-traffic-get-started#independent-browser-capturing) bypasses system-proxy conflicts.
 
 ## Limited Internet Connectivity
@@ -162,7 +162,7 @@ https://fiddler-backend-production.s3-accelerate.amazonaws.com
 
 - Switch to a network that allows access to the above endpoints.
 - Ask your IT administrator to whitelist the above endpoints.
-- [Enterprise only] Consider Fiddler's offline mode (Windows only). Contact [Telerik Support](https://www.telerik.com/account/support-center) for details.
+- [Enterprise only] Consider the Fiddler offline mode (Windows only). Contact [Telerik Support](https://www.telerik.com/account/support-center) for details.
 
 ## Windows Group Policy: ProxySettingsPerUser
 
@@ -224,13 +224,13 @@ Fiddler may fail to start, show a blank (white) screen, or crash immediately due
 
 ## No Internet Connectivity After Fiddler Exits
 
-By design, Fiddler Everywhere restores the original OS proxy settings when it closes. However, if the application or OS crashes unexpectedly, Fiddler's proxy settings can remain in the operating system configuration even after the application is no longer running (a "leaked proxy"). This results in complete loss of Internet access.
+By design, Fiddler Everywhere restores the original OS proxy settings when it closes. However, if the application or OS crashes unexpectedly, the Fiddler proxy settings can remain in the operating system configuration even after the application is no longer running (a "leaked proxy"). This results in complete loss of Internet access.
 
 ### Fix on Windows
 
 1. Close Fiddler Everywhere (or reboot if it is already closed).
 2. Open **Proxy Settings** (press **Start** and search for **Proxy Settings**).
-3. Under **Manual proxy setup**, verify that the **Use a proxy server** toggle is off and that the **Address** and **Port** fields are empty. If Fiddler's address (`127.0.0.1:8866`) is still listed, clear it and save.
+3. Under **Manual proxy setup**, verify that the **Use a proxy server** toggle is off and that the **Address** and **Port** fields are empty. If the Fiddler address (`127.0.0.1:8866`) is still listed, clear it and save.
 4. If your system used an upstream proxy before Fiddler, restore those settings now.
 
 ### Fix on macOS
@@ -238,14 +238,14 @@ By design, Fiddler Everywhere restores the original OS proxy settings when it cl
 1. Close Fiddler Everywhere (or reboot if it is already closed).
 2. Go to **System Preferences** (or **System Settings** on macOS Ventura+) > **Network** and select your active Internet adapter.
 3. Click **Advanced…** > **Proxies**.
-4. Verify that Fiddler's proxy is not set for **Web Proxy (HTTP)** or **Secure Web Proxy (HTTPS)**. If `127.0.0.1:8866` is still listed, remove it from both fields, uncheck the proxy options, and click **Apply**.
+4. Verify that the Fiddler proxy is not set for **Web Proxy (HTTP)** or **Secure Web Proxy (HTTPS)**. If `127.0.0.1:8866` is still listed, remove it from both fields, uncheck the proxy options, and click **Apply**.
 5. Click **OK** to confirm.
 
 ### Fix on Ubuntu / Linux
 
 1. Close Fiddler Everywhere (or reboot if it is already closed).
 2. Go to **Settings** > **Network** > **Network Proxy**.
-3. Ensure that the **Network Proxy** option is set to **Off** (or to your original default settings). If Fiddler's address is still listed under **Manual** proxy settings, remove it.
+3. Ensure that the **Network Proxy** option is set to **Off** (or to your original default settings). If the Fiddler address is still listed under **Manual** proxy settings, remove it.
 
 ## Verifying Proxy Settings by OS
 
@@ -277,13 +277,13 @@ In the output, look for a line like:
 * issuer: OU=Created by http://www.fiddler2.com; O=Progress Telerik Fiddler; CN=Fiddler Root Certificate Authority
 ```
 
-If this line is present and you see a corresponding session appear in Fiddler's **Live Traffic** tab, HTTPS capturing is working correctly.
+If this line is present and you see a corresponding session appear in the Fiddler **Live Traffic** tab, HTTPS capturing is working correctly.
 
 If the issue persists, save all captured sessions via **File > Save Archive > All Sessions** and share them with [Telerik Support](slug://support) along with the log files.
 
 ### Ubuntu / Linux
 
-Go to **Settings** > **Network** > **Network Proxy** and verify that the proxy is set to **Manual** with `127.0.0.1:8866` for HTTP and HTTPS when Fiddler's system capture is active.
+Go to **Settings** > **Network** > **Network Proxy** and verify that the proxy is set to **Manual** with `127.0.0.1:8866` for HTTP and HTTPS when the Fiddler system capture is active.
 
 ## Collecting Fiddler Log Files
 
@@ -318,7 +318,7 @@ macOS-specific configurations may prevent Fiddler from detecting the active netw
 
 ### macOS: Proxy Settings Not Restored After Reset
 
-If Fiddler's proxy remains active after a reset or uninstall, [reset Fiddler Everywhere's settings to their defaults](slug://how-to-reset-fiddler-everywhere-settings-to-default) and then manually verify the proxy settings as described in [Troubleshooting macOS Proxy Settings](slug://troubleshoot-mac-proxy-settings).
+If the Fiddler proxy remains active after a reset or uninstall, [reset Fiddler Everywhere's settings to their defaults](slug://how-to-reset-fiddler-everywhere-settings-to-default) and then manually verify the proxy settings as described in [Troubleshooting macOS Proxy Settings](slug://troubleshoot-mac-proxy-settings).
 
 ### Application Fails to Start or Shows a White Screen
 
@@ -332,7 +332,7 @@ This indicates that HTTPS decryption is not enabled or the Fiddler CA certificat
 
 Some applications use certificate pinning or their own certificate store (for example, Firefox, some Electron apps, Java-based apps). These applications will not trust the Fiddler CA certificate by default. You may need to:
 - Manually import the Fiddler CA into the application's certificate store.
-- Use Fiddler's **Browser Capturing** mode for Chromium-based browsers.
+- Use the Fiddler **Browser Capturing** mode for Chromium-based browsers.
 - Disable certificate pinning in development builds.
 
 ## Getting Support

@@ -21,12 +21,12 @@ You can use the [system capturing mode](slug://capture-system-traffic) to captur
 - Start Fiddler Everywhere and enable the [system capturing mode](slug://capture-system-traffic) or the [network capturing mode](slug://capture-network-traffic).
 - Start all targeted Microsoft applications.
 
-## Solution - Using Fiddler's Terminal
+## Solution - Using the Fiddler Terminal
 
-Sometimes, you might be unable to use the system capturing mode (for example, due to local network/system restrictions or administrative policies). In that case, you can [use Fiddler's terminal](slug://capture-terminal-traffic) to capture traffic from all Microsoft applications that use MS Edge WebView 2.
+Sometimes, you might be unable to use the system capturing mode (for example, due to local network/system restrictions or administrative policies). In that case, you can [use the Fiddler terminal](slug://capture-terminal-traffic) to capture traffic from all Microsoft applications that use MS Edge WebView 2.
 
 - Stop and close all targeted Microsoft applications.
-- Start the [Fiddler's terminal instance](slug://capture-terminal-traffic).
+- Start the [the Fiddler terminal instance](slug://capture-terminal-traffic).
 - Start the Microsoft application from within the started terminal instance.
 
 ## See Also

@@ -50,7 +50,7 @@ Create and apply a filter through the **Filters** toolbar option as follows:
     - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
     - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
     >tip Learn more about the available [**match conditions**](slug://modify-traffic-get-started), which apply to both the filters and rule creation.
-1. Add one or more match conditions based on the HTTP headers, HTTP bodies, or other specific Fiddler's columns data.
+1. Add one or more match conditions based on the HTTP headers, HTTP bodies, or other specific the Fiddler columns data.
 1. (**Optional**) Save the filter.
     >tip Saved filters can be activated and deactivated, simplifying and improving their usage. You can also duplicate, edit or remove a saved filter through the **Filters** editor.
 1. Click **Apply** to close the **Filters** editor and immediately apply the newly created filter.   

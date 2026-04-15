@@ -67,4 +67,4 @@ Explore and learn more about the unified Telerik system through the following re
 - [Your Licenses](https://www.telerik.com/account/your-licenses)
 - [Purchasing & Licensing FAQs](https://www.telerik.com/purchase/faq/licensing-purchasing)
 - [Support Center](https://www.telerik.com/account/support-center)
-- [Learn more about Fiddler's move to Telerik](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).
+- [Learn more about the Fiddler move to Telerik](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).

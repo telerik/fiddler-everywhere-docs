@@ -1,7 +1,7 @@
 ---
 title: Browsers
 meta_title: Browsers - Settings | Fiddler Everywhere
-description: "Change the Fiddler's browser instance for the automatic independent browser capturing mode. Explore available configuration and personalization options."
+description: "Change the Fiddler browser instance for the automatic independent browser capturing mode. Explore available configuration and personalization options."
 slug: browsers-settings-submenu
 publish: true
 position: 70
@@ -10,7 +10,7 @@ previous_url: /user-guide/main-menu
 
 # Browsers Menu
 
-The **Select Browser** sub-menu provides an option for changing the default Fiddler's browser from Google Chrome to other third-party Chromium browsers.
+The **Select Browser** sub-menu provides an option for changing the default the Fiddler browser from Google Chrome to other third-party Chromium browsers.
 
 - The **Automatically detect path to Google Chrome** option finds and uses the Google Chrome for the [**independent browser capturing mode**](slug://capture-traffic-get-started#independent-browser-capturing).
 
@@ -26,5 +26,5 @@ The following figure displays the default settings of the **Browsers** menu.
 
 ![Changing the path to the Chromium browsers](./images/settings-browsers.png)
 
-* [Learn more about the Fiddler's browser instance here...](slug://capture-browser-traffic)
+* [Learn more about the Fiddler browser instance here...](slug://capture-browser-traffic)
 * [Learn more about other capturing modes in Fiddler here...](slug://capture-traffic-get-started)

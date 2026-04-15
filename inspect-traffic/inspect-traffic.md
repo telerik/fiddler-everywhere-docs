@@ -19,9 +19,9 @@ The ongoing HTTP traffic shows in the **Live Traffic grid**, which contains mult
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
 1. Double-click a captured session.
 
-The session content immediately loads in the Fiddler's **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use a single click a session to preserve the last shown inspector.
+The session content immediately loads in the Fiddler **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use a single click a session to preserve the last shown inspector.
 
-[Deep-dive into the Fiddler's inspectors tab here ...](slug://inspector-types)
+[Deep-dive into the Fiddler inspectors tab here ...](slug://inspector-types)
 
 ## Overview Traffic Statistics
 
@@ -32,7 +32,7 @@ To open the structured information about the session in the [**Overview** tab](s
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started). Alternatively, you can load previously saved session snapshots from the **Snapshots** list.
 1. Select a session, and switch to the **Overview** tab.
 
-[Deep-dive into the Fiddler's Overview tab here ...](slug://overview-tab)
+[Deep-dive into the Fiddler Overview tab here ...](slug://overview-tab)
 
 ## Compare Sessions
 
@@ -43,7 +43,7 @@ You can compare two or more captured sessions for detailed differentiation and s
 
 Fiddler Everywhere loads the selected sessions side-by-side with the session with a lower ID to the left (called **Group 1**) and a higher ID to the right (called **Group 2**). Each compared session will highlight differences from its counterpart.
 
-[Deep-dive into the Fiddler's Compare Sessions tab here ...](slug://fe-compare-sessions)
+[Deep-dive into the Fiddler Compare Sessions tab here ...](slug://fe-compare-sessions)
 
 ## Snapshots
 
@@ -51,4 +51,4 @@ Fiddler Everywhere provides a section called the **Snapshots** that is a tree-ba
 
 You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share selected or multiple sessions directly from the sessions grid or using the save **Snapshots** tree.
 
-[Learn more about saving and sharing with the Fiddler's Snapshots tree here ...](slug://fe-organize-sessions)
+[Learn more about saving and sharing with the Fiddler Snapshots tree here ...](slug://fe-organize-sessions)

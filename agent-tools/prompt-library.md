@@ -26,7 +26,7 @@ This library provides ready-to-use prompts optimized for the Fiddler Everywhere 
 
 ## Built-in MCP Prompts
 
-The Fiddler Everywhere MCP server includes predefined system prompts for common operations. These built-in prompts provide quick access to Fiddler's core functionality directly from your agent-powered IDE.
+The Fiddler Everywhere MCP server includes predefined system prompts for common operations. These built-in prompts provide quick access to the Fiddler core functionality directly from your agent-powered IDE.
 
 ### How to Use Built-in Prompts
 

@@ -18,7 +18,7 @@ To trigger a one-time replay for selected sessions, follow these steps:
 1. Select one or more sessions.
 1. Invoke the context menu or press `R`.
 
-As a result, the selected sessions will be immediately replayed and displayed as new entries in the Fiddler's traffic grid.
+As a result, the selected sessions will be immediately replayed and displayed as new entries in the Fiddler traffic grid.
 
 ![One-time replay for sessions](./images/replay-simple.png)
 

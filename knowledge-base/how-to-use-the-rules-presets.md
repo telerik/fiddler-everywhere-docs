@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-At one point or another, we need to test web applications and their behavior online. Whether we are talking about a tiny front-end change in a CSS (Cascading Style Sheets) selector, reproducing a reported scenario, or a significant update of the backend API, testing online services can take much work. It often requires creating safe staging environments (so your test keeps the live production jobs untouched) and re-building and re-deploying through time and money-consuming processes. The Fiddler's Rules functionality allows you to execute your tasks quickly and effectively through the man-in-the-middle approach.
+At one point or another, we need to test web applications and their behavior online. Whether we are talking about a tiny front-end change in a CSS (Cascading Style Sheets) selector, reproducing a reported scenario, or a significant update of the backend API, testing online services can take much work. It often requires creating safe staging environments (so your test keeps the live production jobs untouched) and re-building and re-deploying through time and money-consuming processes. The Fiddler Rules functionality allows you to execute your tasks quickly and effectively through the man-in-the-middle approach.
 
 We already discussed the **Rules** tab itself. This article will introduce you to a set of predefined rules that the team created as an entry point to display the power of the Rules in Fiddler Everywhere.
 
@@ -79,7 +79,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ## Block Lists and Allow Lists
 
-While the filters remove traffic from Fiddler's live traffic grid, requests still go through the Fiddler proxy. Sometimes, you will need to block or entirely allow specific traffic. This is where this set of rules comes in.
+While the filters remove traffic from the Fiddler live traffic grid, requests still go through the Fiddler proxy. Sometimes, you will need to block or entirely allow specific traffic. This is where this set of rules comes in.
 
 Let us show how you can create, enable, and use your own rule that blocks all sessions and allows only HTTP sessions triggered by specific processes. We will match sessions triggered by browsers like Safari, Firefox, Edge, and Google Chrome for demonstration purposes. This rule is similar to the one we created in the previous section - however, the difference is that the matched traffic will not be filtered or blocked entirely.
 
@@ -101,6 +101,6 @@ Modifying is similar to the mapping feature as it replaces the original content 
 
 ## UI Modifications
 
-Last but not least, we created rules allowing you to modify Fiddler's user interface. The idea behind these rules is to demonstrate how you can adjust Fiddler to your own needs by marking and highlighting what is essential. 
+Last but not least, we created rules allowing you to modify the Fiddler user interface. The idea behind these rules is to demonstrate how you can adjust Fiddler to your own needs by marking and highlighting what is essential. 
 
-Overall, [the rules preset](slug://adv_techniques_fiddler) in Fiddler Everywhere are a good starting point for understanding how to use the Rules feature. You can learn more about the rules presets in Fiddler Everywhere from [the dedicated documentation articles](slug://adv_techniques_fiddler) or by directly downloading them from [the Fiddler's public GitHub repository](https://github.com/telerik/fiddler-everywhere/tree/master/rules) and import them as FARX files.
+Overall, [the rules preset](slug://adv_techniques_fiddler) in Fiddler Everywhere are a good starting point for understanding how to use the Rules feature. You can learn more about the rules presets in Fiddler Everywhere from [the dedicated documentation articles](slug://adv_techniques_fiddler) or by directly downloading them from [the Fiddler public GitHub repository](https://github.com/telerik/fiddler-everywhere/tree/master/rules) and import them as FARX files.

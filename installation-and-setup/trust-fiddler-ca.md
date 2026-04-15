@@ -1,14 +1,14 @@
 ---
 title: Trust Fiddler Certificate Authority
 meta_title: Trust Fiddler Certificate Authority | Fiddler Everywhere
-description: "Install and trust the Fiddler's root CA in your operating system and learn how it relates to enabling the HTTPS capturing of system traffic."
+description: "Install and trust the Fiddler root CA in your operating system and learn how it relates to enabling the HTTPS capturing of system traffic."
 slug: trust-certificate
 position: 20
 publish: true
 previous_url: /installation-and-update/trust-certificate-configuration
 ---
 
-# Trust Fiddler's Certificate Authority
+# Trust the Fiddler Certificate Authority
 
 Proper installation and trust of the Fiddler Everywhere Certificate Authority (CA) is essential for capturing and decrypting HTTPS traffic at the system level. This article explains the recommended and manual approaches for installing the Fiddler CA on Windows, macOS, and Linux, and provides troubleshooting tips and best practices.
 

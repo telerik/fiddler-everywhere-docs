@@ -20,7 +20,7 @@ Fiddler Everywhere offers multiple capturing modes to suit different debugging s
 - **[Network Capturing](#network-capturing-beta)**: Captures traffic at the network adapter level without proxy configuration
 - **[Independent Browser Capturing](#independent-browser-capturing)**: Uses a sandboxed browser instance for isolated traffic capture
 - **[Terminal Capturing](#terminal-capturing)**: Captures traffic from a dedicated terminal session
-- **[Explicit Capturing](#explicit-capturing)**: Captures traffic from applications manually configured to use Fiddler's proxy
+- **[Explicit Capturing](#explicit-capturing)**: Captures traffic from applications manually configured to use the Fiddler proxy
 - **[Remote Traffic Capturing](#remote-traffic-capturing)**: Captures traffic from devices on your local network
 
 ## Choosing the Right Capturing Mode
@@ -38,7 +38,7 @@ Select the appropriate capturing mode based on your specific debugging needs:
 
 ## Feature Comparison Table
 
-The following table shows the capabilities and differences between Fiddler's capturing modes:
+The following table shows the capabilities and differences between the Fiddler capturing modes:
 
 | Feature          | System Capturing | Network Capturing | Independent Browser Capturing  | Terminal Capturing | Explicit Capturing 
 |:-----------------|:-----------------|:------------------|:--------------------------------|:-------------------|:-----------------
@@ -151,7 +151,7 @@ Independent browser capturing provides a sandboxed browser environment for isola
 
 ## Terminal Capturing
 
-Terminal capturing provides a dedicated terminal session with Fiddler's proxy pre-configured, making it ideal for debugging command-line tools and server-side applications.
+Terminal capturing provides a dedicated terminal session with the Fiddler proxy pre-configured, making it ideal for debugging command-line tools and server-side applications.
 
 **Benefits:**
 - Isolated terminal environment
@@ -171,7 +171,7 @@ Terminal capturing provides a dedicated terminal session with Fiddler's proxy pr
 
 ## Explicit Capturing
 
-Explicit capturing works with applications manually configured to use Fiddler's proxy address (`127.0.0.1:8866` by default). This method works even when system capturing is disabled.
+Explicit capturing works with applications manually configured to use the Fiddler proxy address (`127.0.0.1:8866` by default). This method works even when system capturing is disabled.
 
 **Configuration:**
 - Proxy address: `127.0.0.1:8866`
@@ -195,8 +195,8 @@ curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
 Remote capturing enables traffic analysis from devices on your local network, including smartphones, tablets, IoT devices, and other computers.
 
 **Setup Requirements:**
-1. Configure the remote device to use Fiddler's proxy (`[Fiddler-IP]:8866`)
-2. Install Fiddler's CA certificate on the remote device
+1. Configure the remote device to use the Fiddler proxy (`[Fiddler-IP]:8866`)
+2. Install the Fiddler CA certificate on the remote device
 3. Ensure devices are on the same network
 
 **Supported Remote Devices:**

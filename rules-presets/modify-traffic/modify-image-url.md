@@ -1,7 +1,7 @@
 ---
 title: Modify API Endpoint
 meta_title: Modify API Endpoint - Rules Presets | Fiddler Everywhere
-description: "Modify an image API endpoint while using Fiddler's rules. Import and customize ready-to-use rule presets for response modification."
+description: "Modify an image API endpoint while using the Fiddler rules. Import and customize ready-to-use rule presets for response modification."
 slug: adv_modify_image_url
 position: 20
 ---

@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-**Q:** How can I manually install the Fiddler's Certificate Authority (CA) in Firefox?
+**Q:** How can I manually install the Fiddler Certificate Authority (CA) in Firefox?
 
 **Q:** I want to capture and decrypt traffic only from a browser. Can I export and install the Fiddler CA certificate in Firefox certificate store?
 

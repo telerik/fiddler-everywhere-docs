@@ -14,14 +14,14 @@ Fiddler Everywhere provides powerful debugging techniques for testing APIs and m
 
 >tip A **rule** in Fiddler Everywhere is a feature that allows you to match a targeted HTTP(S) session and apply a specific action that will modify its original behavior. A rule can be created, activated, and executed through the **Rules** tab in the **Traffic** pane.
 
-Using Fiddler's rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
+Using the Fiddler rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
 
 To open the **Rules** tab.
 
 1. Start Fiddler Everywhere and open the **Home** Pane.
 1. Follow the **Rules** flow from the **Modify and Filter Traffic** section.
  
-![Using the Fiddler's rules from the **Home** pane](./images/rules-tutorial-flow.png)
+![Using the Fiddler rules from the **Home** pane](./images/rules-tutorial-flow.png)
 
 OR
 

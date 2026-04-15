@@ -9,7 +9,7 @@ previous_url: /knowledge-base/capturing-traffic-from-terminal
 
 # Terminal Capturing Mode
 
-The **terminal capturing mode** in Fiddler Everywhere allows you to set the Fiddler's proxy on a dedicated terminal instance. The terminal capturing mode lets you use the proxy in a sandboxed environment without changing the global OS proxy settings. Simultaneously, using a sandboxed proxy provides better control of the captured traffic.
+The **terminal capturing mode** in Fiddler Everywhere allows you to set the Fiddler proxy on a dedicated terminal instance. The terminal capturing mode lets you use the proxy in a sandboxed environment without changing the global OS proxy settings. Simultaneously, using a sandboxed proxy provides better control of the captured traffic.
 
 
 ## Capturing Terminal Traffic
@@ -41,18 +41,18 @@ You can set your preferred terminal application through **Settings > Terminal > 
 - **PowerShell**&mdash;Available only on Windows. Specifies the PowerShell built on .NET Core or the new .NET.
 - **Terminal application**&mdash;Available on macOS and Linux. This option will use the default shell environment, for example, **bash**, **zsh**, or **sh**.
 
-The Fiddler's terminal instance automatically proxies all HTTPS requests made by **curl**, **Python** or **Node.js** libraries (like **https**, **request**, and others) and all applications which respect the `http_proxy` and `https_proxy` environment variables.
+The Fiddler terminal instance automatically proxies all HTTPS requests made by **curl**, **Python** or **Node.js** libraries (like **https**, **request**, and others) and all applications which respect the `http_proxy` and `https_proxy` environment variables.
 
 
 ## Terminal Traffic Specifics
 
 While using the terminal capturing mode, you must consider the technical specifics listed below.
 
-### Localhost Traffic through the Fiddler's Terminal
+### Localhost Traffic through the Fiddler Terminal
 
 Some frameworks, like the .NET Framework, are hardcoded not to send requests for localhost through any proxies, and as a proxy, Fiddler will not receive such traffic.
 
-Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell, which uses .NET Core), the localhost traffic will not be sent through the proxy. You can workaround the issue by [using the Fiddler's aliases](slug://how-to-capture-localhost-traffic) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
+Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell, which uses .NET Core), the localhost traffic will not be sent through the proxy. You can workaround the issue by [using the Fiddler aliases](slug://how-to-capture-localhost-traffic) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
 
 
 ### NET Traffic through a Terminal
@@ -67,7 +67,7 @@ Capturing traffic from **curl** or **Node.js** libraries does not require explic
 
 ### Setting the Fiddler Proxy Explicitly
 
-As an alternative to [the Fiddler's terminal option](#capturing-terminal-traffic) described above, you can also explicitly configure your terminal and shell applications to respect the Fiddler proxy and trust the Fiddler root CA. One way to achieve that is to use the `export` command (for macOS and Linux) or the `set` command (for Windows) alongside the `http_proxy` and `https_proxy` variables. The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
+As an alternative to [the Fiddler terminal option](#capturing-terminal-traffic) described above, you can also explicitly configure your terminal and shell applications to respect the Fiddler proxy and trust the Fiddler root CA. One way to achieve that is to use the `export` command (for macOS and Linux) or the `set` command (for Windows) alongside the `http_proxy` and `https_proxy` variables. The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
 
 The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**.
 
@@ -94,7 +94,7 @@ curl https://docs.telerik.com/fiddler-everywhere --
 
 ### Setting the Fiddler Root Certificate
 
-Apart from setting the environment variables `http_proxy` and `https_proxy`, you can manually export and point your terminal application to explicitly use the Fiddler_Root_Certificate_Authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you can use variables like `SSL_CERT_FILE` and `REQUESTS_CA_BUNDLE` for [configuring the Fiddler's CA within a Python application](slug://fiddler-python-traffic).
+Apart from setting the environment variables `http_proxy` and `https_proxy`, you can manually export and point your terminal application to explicitly use the Fiddler_Root_Certificate_Authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you can use variables like `SSL_CERT_FILE` and `REQUESTS_CA_BUNDLE` for [configuring the Fiddler CA within a Python application](slug://fiddler-python-traffic).
 
 ### Resetting the Fiddler Proxy
 

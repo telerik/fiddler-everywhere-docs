@@ -28,7 +28,7 @@ Fiddler Everywhere provides an option for automatic, sandboxed browser HTTPS cap
 
 ### Terminal Capturing
 
-Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTPS capturing. [Read more about the Fiddler's terminal capturing...](slug://capture-terminal-traffic)
+Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTPS capturing. [Read more about the Fiddler terminal capturing...](slug://capture-terminal-traffic)
 
 ### Traffic Analysis
 
@@ -58,7 +58,7 @@ This extensive protocol support enables developers to debug complex modern appli
 
 ### Request and Response Mocking
 
-Fiddler supports mocking, modifying, and setting breakpoints on all HTTP requests and responses. With Fiddler's rules, you can quickly change HTTPS requests and responses without updating the code or accessing the server or the client application. [Read more about creating rules for modifying requests and responses with Fiddler Everywhere...](slug://rulesbuilder-get-started)
+Fiddler supports mocking, modifying, and setting breakpoints on all HTTP requests and responses. With the Fiddler rules, you can quickly change HTTPS requests and responses without updating the code or accessing the server or the client application. [Read more about creating rules for modifying requests and responses with Fiddler Everywhere...](slug://rulesbuilder-get-started)
 
 ### API Composing
 

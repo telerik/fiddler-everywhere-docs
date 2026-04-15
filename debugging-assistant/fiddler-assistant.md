@@ -8,7 +8,7 @@ position: 1
 
 # Fiddler Debugging Assistant
 
-The Fiddler Debugging Assistant enables you to leverage large language models to reach new levels of developer productivity. This built-in chat feature provides additional insights by combining your preferred language model with Fiddler's powerful traffic analysis capabilities.
+The Fiddler Debugging Assistant enables you to leverage large language models to reach new levels of developer productivity. This built-in chat feature provides additional insights by combining your preferred language model with the Fiddler powerful traffic analysis capabilities.
 
 ## Prerequisites
 

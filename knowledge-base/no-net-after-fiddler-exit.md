@@ -30,7 +30,7 @@ Follow the OS-specific guidelines below to learn if your OS has leaked proxy set
 
 1. In Fiddler Everywhere, turn off the [system capturing mode](slug://capture-system-traffic), and close the application.
 1. Open the **Proxy settings** in Windows (through the **Start** button and type **Proxy Settings**).
-1. Go to **Manual proxy setup** and ensure that the Fiddler's IP address and port are removed. By default, when your system does not use other proxies, the **Use a proxy server** is turned off with the **Address** and **Port** fields empty.  If your system uses a pre-set upstream proxy, restore it through the original settings.
+1. Go to **Manual proxy setup** and ensure that the Fiddler IP address and port are removed. By default, when your system does not use other proxies, the **Use a proxy server** is turned off with the **Address** and **Port** fields empty.  If your system uses a pre-set upstream proxy, restore it through the original settings.
 
 ### On macOS
 

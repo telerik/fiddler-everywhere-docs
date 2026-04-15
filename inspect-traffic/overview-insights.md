@@ -28,7 +28,7 @@ The **Session Details** widget lists technical details, including:
 * Session's URL
 * Protocol
 * Session state
-* Session ID (within the Fiddler's traffic grid)
+* Session ID (within the Fiddler traffic grid)
 
 The widget is available only when a single session is selected.
 

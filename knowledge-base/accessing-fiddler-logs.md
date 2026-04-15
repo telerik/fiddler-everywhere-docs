@@ -22,7 +22,7 @@ The Fiddler Everywhere client is an electron application that depends on modifyi
 ## Solution
 
 * [Application log files](#fiddler-application-logs)
-* [Accessing the logs thorugh the Fiddler's user interface](#accessing-the-logs-through-the-ui)
+* [Accessing the logs thorugh the Fiddler user interface](#accessing-the-logs-through-the-ui)
 * [Accesising the logs manually](#accessing-the-logs-manually)
 * [Enable verbose logging](#enabling-verbose-logs)
 * [Using the `electron.log` file](#using-the-electron-log)

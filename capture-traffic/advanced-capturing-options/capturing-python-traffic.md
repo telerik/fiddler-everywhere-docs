@@ -14,9 +14,9 @@ previous_url: /knowledge-base/capturing-python-traffic
 **Q:** When Fiddler Everywhere acts as a system proxy, I cannot use python's pip library (or other Python library that makes HTTPS requests).
 **Q.** My python library fails with `CERTIFICATE_VERIFY_FAILED` when Fiddler is an intermediate proxy.
 
-## Using the Fiddler's Terminal
+## Using the Fiddler Terminal
 
-The Fiddler Everywhere application allows starting a dedicated terminal that automatically proxies HTTPS requests through the Fiddler proxy. The Fiddler's terminal supports capturing from Python applications without additional configuration - Fiddler Everywhere sets everything. 
+The Fiddler Everywhere application allows starting a dedicated terminal that automatically proxies HTTPS requests through the Fiddler proxy. The Fiddler terminal supports capturing from Python applications without additional configuration - Fiddler Everywhere sets everything. 
 
 >important FIddler Everywhere terminal supports Python version 3 and above, which was first introduced in 2009. Older versions of Python are unsupported.
 

@@ -11,7 +11,7 @@ position: 30
 
 The **Rules** functionality in Fiddler Everywhere is a sophisticated tool that lets you virtually play with the ongoing traffic in any way possible. With its help, you can easily adjust the ongoing traffic per your requirements by matching all or specific sessions and consequentially applying specific actions that vary from highlighting and commenting entries (for easier inspection and analysis) to changing the content and behavior of HTTP Requests (before they reach the target server) or HTTP Responses (before they reach the client application).
 
-Being able to "hack" an HTTPS session on the fly provides almost unlimited testing and development opportunities. This article will demonstrate some more complex actions that can be used while using the Fiddler's breakpoints rule action.
+Being able to "hack" an HTTPS session on the fly provides almost unlimited testing and development opportunities. This article will demonstrate some more complex actions that can be used while using the Fiddler breakpoints rule action.
 
 ## Using Breakpoints
 
@@ -84,7 +84,7 @@ While the breakpoints are compelling functionality,  the following behavior must
 
 ## Additional Rules Resources
 
-The breakpoints in Fiddler are only one of the exposed [actions](slug://fiddler-rules-actions#actions) that you can use in combination with various [matching conditions](slug://fiddler-rules-actions#conditions). Use the following online resources for additional insights and examples of what you can achieve using the Fiddler's Rules tab.
+The breakpoints in Fiddler are only one of the exposed [actions](slug://fiddler-rules-actions#actions) that you can use in combination with various [matching conditions](slug://fiddler-rules-actions#conditions). Use the following online resources for additional insights and examples of what you can achieve using the Fiddler Rules tab.
 
 - [Understanding the Matching Conditions and Final vs. Non-Final Actions](slug://fiddler-rules-actions)
 - [Example for using predefined actions in the Rules tab](slug://fiddler-ar-actions)

@@ -29,12 +29,12 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | `DefaultBypassList` | Sets the default proxy bypass list. Endpoints listed here always bypass Fiddler and use the upstream proxy. | string | URLs separated by `;` |
 | `DisableBypassListChange` | Prevents users from changing the bypass list. | integer | 1 |
 | `DisableAllowRemoteDevicesToConnect` | Disables remote device connections to the Fiddler proxy. | integer | 1 |
-| `DisableAnalytics` | Disables Fiddler's analytics. | integer | 1 |
-| `DisableCloud` | Disables all cloud interactions (sharing, storing, and receiving data via Fiddler's cloud). | integer | 1 |
+| `DisableAnalytics` | Disables the Fiddler analytics. | integer | 1 |
+| `DisableCloud` | Disables all cloud interactions (sharing, storing, and receiving data via the Fiddler cloud). | integer | 1 |
 | `DefaultNetworkCaptureList` | Whitespace-separated list of CIDR addresses and port numbers for network capturing mode. | string | `"0.0.0.0/0:443 ::/0:443"` |
 | `DefaultNetworkCaptureFilterList` | Whitespace-separated list of process IDs or names to capture in network mode. | string | `"13008 \"Google Chrome\""` |
 | `DisableNetworkCaptureSettingsChange` | Prevents users from modifying network capturing settings. | integer | 1 |
-| `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | integer | 1 |
+| `DisableVpnHostBypass` | Disables the Fiddler automatic VPN bypass. | integer | 1 |
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | string | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | string | `<base64-private-key>` |
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | integer | `1` |
@@ -44,7 +44,7 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) of the Debugging Assistant | string | See the JSON structure [here](slug://fiddler-assistant#configuring-the-defaultassistantsettings-policy)  |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the settings of the Debugging Assistant | integer | `1` |
 
->important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints](slug://first_steps_windows#prerequisites). For environments with limited internet access, consider using [Fiddler's offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
+>important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints](slug://first_steps_windows#prerequisites). For environments with limited internet access, consider using [the Fiddler offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
 
 **MDM Profile Values:**
 
@@ -105,12 +105,12 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | `DefaultBypassList` | Sets the default proxy bypass list. Endpoints listed here always bypass Fiddler and use the upstream proxy. | REG_SZ (string) | URLs separated by `;` |
 | `DisableBypassListChange` | Prevents users from changing the bypass list. | DWORD-32 (hexadecimal) | 1 |
 | `DisableAllowRemoteDevicesToConnect` | Disables remote device connections to the Fiddler proxy. | DWORD-32 (hexadecimal) | 1 |
-| `DisableAnalytics` | Disables Fiddler's analytics. | DWORD-32 (hexadecimal) | 1 |
-| `DisableCloud` | Disables all cloud interactions (sharing, storing, and receiving data via Fiddler's cloud). | DWORD-32 (hexadecimal) | 1 |
+| `DisableAnalytics` | Disables the Fiddler analytics. | DWORD-32 (hexadecimal) | 1 |
+| `DisableCloud` | Disables all cloud interactions (sharing, storing, and receiving data via the Fiddler cloud). | DWORD-32 (hexadecimal) | 1 |
 | `DefaultNetworkCaptureList` | Whitespace-separated list of CIDR addresses and port numbers for network capturing mode. | REG_SZ (string)| `"0.0.0.0/0:443 ::/0:443"` |
 | `DefaultNetworkCaptureFilterList` | Whitespace-separated list of process IDs or names to capture in network mode. |REG_SZ (string) | `"13008 \"Google Chrome\""` |
 | `DisableNetworkCaptureSettingsChange` | Prevents users from modifying network capturing settings. | DWORD-32 (hexadecimal) | 1 |
-| `DisableVpnHostBypass` | Disables Fiddler's automatic VPN bypass. | DWORD-32 (hexadecimal) | 1 |
+| `DisableVpnHostBypass` | Disables the Fiddler automatic VPN bypass. | DWORD-32 (hexadecimal) | 1 |
 | `CustomCACertificate` | DER-encoded base64 string of a custom certificate. | REG_SZ (string) | `<base64-cert>` |
 | `CustomCACertificatePrivateKey` | DER-encoded base64 string of the private key. | REG_SZ (string) | `<base64-private-key>` |
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | DWORD-32 (hexadecimal) | `1` |

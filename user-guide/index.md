@@ -1,7 +1,7 @@
 ---
 title: Application Menu
 meta_title: Application Menu - User Guide | Fiddler Everywhere
-description: "Use the application menu to customize your Fiddler's user interface and access support and help-related features."
+description: "Use the application menu to customize your the Fiddler user interface and access support and help-related features."
 slug: app-menu-section
 tags: Fiddler help menu, Fiddler Everywhere support, fiddler application logs, zoom interface
 position: 10
@@ -69,7 +69,7 @@ The **View** section contains various options, as described below. Note that som
 
 - **Ignore Server Errors (Unsage)**&mdash;Controls whether Fiddler Everywhere warns you if an HTTPS server presents a certificate that cannot be validated.
 
->tip All options from the **Certificate** menu, are available through the Fiddler's **Settings** > **HTTPS** section.
+>tip All options from the **Certificate** menu, are available through the Fiddler **Settings** > **HTTPS** section.
 
 ## Help
 
@@ -83,7 +83,7 @@ The **Help** section contains various options, as described below. Note that som
 
 - **Documentation**&mdash;Direct link to the Fiddler Everywhere documentation.
 
-- **Open Application Logs Folder**&mdash;Opens the Fiddler's application folder that contains [the application logs files](slug://fiddler-log-files).
+- **Open Application Logs Folder**&mdash;Opens the Fiddler application folder that contains [the application logs files](slug://fiddler-log-files).
 
 - **About**&mdash;Opens an application dialog with detailed information about the currently installed version of Fiddler Everywhere. On macOS, this option is available in the menu's **Fiddler Everywhere** section.
 

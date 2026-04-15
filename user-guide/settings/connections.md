@@ -37,7 +37,7 @@ The **Connections** menu exposes options allowing granular control over proxy se
     - [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF** and [Independent Browser Capturing](slug://capture-traffic-get-started#independent-browser-capturing) **ON**
     - Capturing traffic from Android device with [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
     - Capturing traffic from iOS device with [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF** (shows only CONNECT tunnels for bypassed URLs)
-    - Explicit browser manual proxy settings (to Fiddler's proxy address:port) with [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF**
+    - Explicit browser manual proxy settings (to the Fiddler proxy address:port) with [System Capturing](slug://capture-traffic-get-started#system-capturing) **OFF**
 
     >tip (**macOS only**) Fiddler Everywhere automatically adds the following system endpoints to the macOS proxy bypass list: `*.apple.com, *.itunes.com, *mzstatic.com`. These system endpoints use certificate pinning (meaning they will not trust third-party certificates like the Fiddler certificate at all). If not explicitly bypassed, some services (that depend on them) can manifest side effects or not work at all.
 

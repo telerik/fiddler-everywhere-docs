@@ -10,7 +10,7 @@ previous_url: /knowledge-base/how-to-capture-traffic-from-another-pc, /knowledge
 
 # Capturing Traffic from Remote Devices
 
-The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install Fiddler's Certificate Authority (CA). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android](slug://capture-mobile-android-traffic) or [iOS](slug://capture-mobile-ios-traffic).
+The Fiddler Everywhere proxy can capture HTTP/HTTPS traffic from virtually any remote device (like a computer, console, smartphone, smart TV, and other smart devices) on the same network as the Fiddler Everywhere host machine. This article covers the instructions for setting up a generic remote device that allows you to provide a custom proxy configuration and install the Fiddler Certificate Authority (CA). In case you want to configure the Fiddler proxy on a smartphone, then please use the dedicated documentation articles for [Android](slug://capture-mobile-android-traffic) or [iOS](slug://capture-mobile-ios-traffic).
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Fiddler Everywhere provides an automated guide to configure remote Windows captu
 1. Open the **Remote Devices** screen.
 1. Open the **Windows** tutorial and follow the instructions.
 
-The tutorial requires administrative privileges for the current user (on the remote host) to install Fiddler's CA and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote Windows device.
+The tutorial requires administrative privileges for the current user (on the remote host) to install the Fiddler CA and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote Windows device.
 
 
 ## Capturing Remote macOS Traffic
@@ -43,7 +43,7 @@ Fiddler Everywhere provides an automated guide to configure remote macOS capturi
 1. Open the **Remote Devices** screen.
 1. Open the **macOS** tutorial and follow the instructions.
 
-The tutorial requires administrative privileges for the current user (on the remote host) to install Fiddler's CA and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote macOS device.
+The tutorial requires administrative privileges for the current user (on the remote host) to install the Fiddler CA and to set the system proxy. Once the steps are executed, you can immediately capture traffic from the remote macOS device.
 
 
 ## Configuring Other Generic Devices (Manual Setup)

@@ -27,7 +27,7 @@ The Fiddler Everywhere Reporter has four different capturing modes, which you ca
 
 The **Start Browser Capturing** is the default option that allows HTTPS traffic to be captured from a sandboxed browser instance. As a result, the Fiddler Everywhere Reporter starts an independent browser instance preconfigured to respect the Fiddler proxy and
 trust its Root Certificate Authority (CA). The HTTPS traffic generated will appear in Fiddler Everywhere
-Reporter. Currently, the tool supports independent browser capturing only for Chrome and Edge browsers. The Google Chrome browser opens by default if both exist on the machine. MacOS users need to manually quit the browser instance from the dock even after the Fiddler Everywhere Reporter tool is closed.
+Reporter. Currently, the tool supports independent browser capturing only for Chrome and Edge browsers. The Google Chrome browser opens by default if both exist on the machine. macOS users need to manually quit the browser instance from the dock even after the Fiddler Everywhere Reporter tool is closed.
 
 Use the browser option as follows:
 

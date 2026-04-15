@@ -34,7 +34,7 @@ As a result, Fiddler loads the **Composer** screen where you can compose and exe
 
 1. (Optional) Enter additional headers, parameters, and body if required. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data. Note that the request execution includes only checked headers.
 
-    >important By default, the Fiddler's Composer auto-generates the required default headers, including the `Host` header and the `User-Agent` header with the value `Fiddler Everywhere`. This `Host` header lets servers and network peers identify the targeted host and port number of the targeted server. The `User-Agent` agent is a characteristic string that enables servers and network peers to identify the application or version of the requesting user agent. Note that while you can uncheck and execute a request without the default headers, an HTTP request without `Host` header will return a server error as it is considered a malformed request.
+    >important By default, the Fiddler Composer auto-generates the required default headers, including the `Host` header and the `User-Agent` header with the value `Fiddler Everywhere`. This `Host` header lets servers and network peers identify the targeted host and port number of the targeted server. The `User-Agent` agent is a characteristic string that enables servers and network peers to identify the application or version of the requesting user agent. Note that while you can uncheck and execute a request without the default headers, an HTTP request without `Host` header will return a server error as it is considered a malformed request.
 
 1. Click **Execute** to send the composed API request. 
 
@@ -46,7 +46,7 @@ Once the API request executes, you can inspect its HTTP Response in the Composer
 1. Start Fiddler Everywhere and open the **Traffic** pane.
 1. Capture a session (or open a session from the saved save **Snapshots** tree) and use the **Edit in Composer** option from the context menu.
 
-As a result, the session loads as an HTTP request in Fiddler's **Composer**, where you can make atomic modifications to its structure. The **Composer** has a flexible user interface that allows you to switch between **Structured** and **Raw** content (refer to the screenshots below) and between **Table** or **Bulk** style inspectors.
+As a result, the session loads as an HTTP request in the Fiddler **Composer**, where you can make atomic modifications to its structure. The **Composer** has a flexible user interface that allows you to switch between **Structured** and **Raw** content (refer to the screenshots below) and between **Table** or **Bulk** style inspectors.
 
 * Using the **Structured** mode
     ![structured mode in Composer](./images/composer-structured.png)

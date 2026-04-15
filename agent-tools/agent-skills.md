@@ -38,7 +38,7 @@ git clone https://github.com/telerik/fiddler-agent-tools.git
 
 Each skill lives as a `SKILL.md` file inside its own folder under `skills/`:
 
-```
+```txt
 fiddler-agent-tools/
   skills/
     fiddler-download-setup/SKILL.md
@@ -181,7 +181,7 @@ Skills are triggered by describing your intent in natural language. Each skill i
 7. Produces a plain-language verification report with verdict, endpoint summary, timing, status-code distribution, and a flagged issues list.
 
 **Output format**:
-```
+```txt
 Feature Verification
 
 Overall verdict: [Feature appears healthy / partially successful / likely failed / Inconclusive]

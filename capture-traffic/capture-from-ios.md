@@ -70,7 +70,7 @@ The later versions of the iOS simulators, accessible through XCode, are using th
     >important The iOS simulators are automatically detecting the macOS proxy settings. However, not all simulators are not dynamically detecting changes in the OS proxy settings. This step must execute before the iOS simulator starts.
 1. In Fiddler Everywhere, go to **Settings** > **HTTPS** and enable **Capture HTTPS traffic**.
 1. In Fiddler Everywhere, go to **Settings** > **Connections** and enable **Allow remote devices to connect**.
-1. Start the iOS simulator. Restart the simulator in case it was already started before enabling the Fiddler's system capturing.
+1. Start the iOS simulator. Restart the simulator in case it was already started before enabling the Fiddler system capturing.
 1. Open a mobile browser in the iOS simulator and type `http://ipv4.fiddler:8866`.
     1. Click the **Download Certificate (.CER)** button. Confirm the CA download in the native iOS popup by pressing **Allow**.
     1. In the iOS simulator, go to **Settings** > **General** > **Device Management** and install the certificate named **Fiddler Root Certificate Authority**.

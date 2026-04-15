@@ -39,5 +39,5 @@ http://www.dneonline.com/calculator.asmx
     </soap:Body>
 </soap:Envelope>
 ```
-- Add the required headers. By default, the Fiddler's Composer automatically adds the **Content-Type** header with value **text/xml**. Change this header with the appropriate value as requested by the SOAP endpoint.
+- Add the required headers. By default, the Fiddler Composer automatically adds the **Content-Type** header with value **text/xml**. Change this header with the appropriate value as requested by the SOAP endpoint.
 - Click **Execute** to send your SOAP request.

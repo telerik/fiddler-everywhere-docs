@@ -1,7 +1,7 @@
 ---
 title: Change User-Agent
 meta_title: Change User-Agent - Rules Presets | Fiddler Everywhere
-description: "Changing the User-Agent HTTP Header while using Fiddler's rules. Import and customize ready-to-use rule presets for common web tooling."
+description: "Changing the User-Agent HTTP Header while using the Fiddler rules. Import and customize ready-to-use rule presets for common web tooling."
 slug: adv_changing_user_agent
 position: 40
 ---
@@ -12,7 +12,7 @@ The **User-Agent** HTTP Header lets servers identify the application, operating 
 
 When Fiddler issues a request through its **Composer** it automatically set its own `User-Agent` value. You might observe a similar behavior when using other third-party proxy tools chained to Fiddler.
 
-You can easily create a rule that changes the `User-Agent` for any HTTP request that goes through Fiddler while using the Fiddler's rules.
+You can easily create a rule that changes the `User-Agent` for any HTTP request that goes through Fiddler while using the Fiddler rules.
 
 The following examples show how to create a few different rules named "Change User-Agent" that effectively mock the Chrome browser on Windows and macOS.
 

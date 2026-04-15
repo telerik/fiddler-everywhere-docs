@@ -124,7 +124,7 @@ To share a session through the toolbar:
 Use the **Columns** menu to manage which columns to show up in the [Live Traffic grid](#live-traffic-grid). 
 
 You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
-![Manage columns from the Fiddler's UI](./images/managing-columns.png)
+![Manage columns from the Fiddler UI](./images/managing-columns.png)
 
 [Learn more about each column present in the Live Traffic grid here...](#columns)
 
@@ -415,7 +415,7 @@ The following table lists the **Live Traffic** columns and the information they 
 
 ### Creating Custom Columns
 
-Add, edit, or remove a custom column to the columns list. Afterward, the columns are visualized similarly to the Fiddler's predefined columns. 
+Add, edit, or remove a custom column to the columns list. Afterward, the columns are visualized similarly to the Fiddler predefined columns. 
 
 **Add a custom column** through one of these actions:
 
@@ -434,7 +434,7 @@ After the successful creation, the new column is immediately available in the **
 
 ### Reset Columns
 
-To reset all columns to their default Fiddler's state, open the [**Columns** menu](#managing-columns) and use the **Reset** option at the bottom. This action resets all columns (shows the default selection) but will not remove any custom-made columns (it will only hide them).
+To reset all columns to their default the Fiddler state, open the [**Columns** menu](#managing-columns) and use the **Reset** option at the bottom. This action resets all columns (shows the default selection) but will not remove any custom-made columns (it will only hide them).
 
 ## Traffic Sorting and Filtering
 
@@ -450,7 +450,7 @@ Each column has a **filter** button, which popups an additional **Filter** menu 
 
 The column **Filter** menu lets you add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
->tip Apply complex filters by using the [**Filters** toolbar option](#filtering-options) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options](slug://how-to-filter-traffic#column-filters).
+>tip Apply complex filters by using the [**Filters** toolbar option](#filtering-options) (which supports [all the Fiddler columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options](slug://how-to-filter-traffic#column-filters).
 
 ## Context Menu Options
 

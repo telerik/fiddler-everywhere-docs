@@ -26,11 +26,11 @@ Fiddler can mock HTTPS traffic captured locally or remotely, for example, as tra
 1. Import the SAZ archive with the captured traffic in the **Rules** tab. At this point, Fiddler will automatically generate rules for each captured session and create a parent group. The group's name will be "File Import" followed by a timestamp. Once the mock rules are created through the above methods, you can add modifications (within the newly created rules) and then use them with live traffic.
     ![Loading SAZ in RUles tab to automaticaly created a set of new rules](./images/importing-saz-in-rules-tab.png)
 1. (Optional) Modify the newly generated rules (for example, you can change the request/response headers and bodies).
-1. Switch the Fiddler's tabs from the saved session snapshot to the **Live Traffic** tab. 
+1. Switch the Fiddler tabs from the saved session snapshot to the **Live Traffic** tab. 
 1. Ensure that the switches for the newly created rule group and the **Rules** tab are toggled ON (refer to the screenshot below). Note that the switches are available only when the Live Traffic tab is focused.
     ![Loading SAZ archive with captured traffic](./images/mock-rules-live-traffic-tab.png)
 
-The next step is to use one of Fiddler's capturing modes and initiate the traffic capturing (the rules will work only for traffic that goes through the Fiddler proxy). For Example:
+The next step is to use one of the Fiddler capturing modes and initiate the traffic capturing (the rules will work only for traffic that goes through the Fiddler proxy). For Example:
 1. Use the **Browser** to start [the browser captruing mode](slug://capture-browser-traffic).
 1. Load the URL used by the client to generate the captured sessions (in our case, that would be [https://example.com)](https://example.com))
 

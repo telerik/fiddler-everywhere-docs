@@ -75,9 +75,9 @@ All server certificate errors will be ignored when the **Ignore server certifica
 Fiddler Everywhere allows adding specific endpoints to the list of trusted servers to minimize the security risk of automatically ignoring all server certificates. You can add custom endpoints to the list as follows: 
 
 - Upon opening a page that returns a server certificate error, a custom Fiddler page will present the possibility of automatically adding the endpoint to the ignore list. This option works only when **Ignore server certificate errors** is inactive or active but not with an empty list.
-    ![When Fiddler works, a page with expired certificate loads the Fiddler's insecure warning](./images/browser-fiddler-insecure-page.png)
+    ![When Fiddler works, a page with expired certificate loads the Fiddler insecure warning](./images/browser-fiddler-insecure-page.png)
 - Tick the **Settings** > **HTTPS** > **Ignore server certificate errors (unsafe)** checkbox and add one or multiple endpoints separated by a semicolon.
-    ![Add servers to the ignore list through the Fiddler's settings](./images/ignore-certificate-errors-settings.png)
+    ![Add servers to the ignore list through the Fiddler settings](./images/ignore-certificate-errors-settings.png)
 
 >important Adding new endpoints to the ignore list works only for newly established connections. You might need to restart your client app (for example, the browser) to force close an existing TCP connection.
 
