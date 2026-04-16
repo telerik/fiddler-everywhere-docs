@@ -14,7 +14,7 @@ previous_url: /knowledge-base/capturing-python-traffic
 **Q:** When Fiddler Everywhere acts as a system proxy, I cannot use python's pip library (or other Python library that makes HTTPS requests).
 **Q.** My python library fails with `CERTIFICATE_VERIFY_FAILED` when Fiddler is an intermediate proxy.
 
-## Using the Fiddler Terminal
+## Using Fiddler Terminal
 
 The Fiddler Everywhere application allows starting a dedicated terminal that automatically proxies HTTPS requests through the Fiddler proxy. The Fiddler terminal supports capturing from Python applications without additional configuration - Fiddler Everywhere sets everything. 
 
@@ -55,7 +55,7 @@ set REQUESTS_CA_BUNDLE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
 
 Once the Fiddler Everywhere proxy is set, you can immediately capture traffic through the Python application.
 
-### Resetting the Fiddler Proxy
+### Resetting Fiddler Proxy
 
 Once debugging with Fiddler Everywhere, reset the current environment proxy by removing the Fiddler Everywhere proxy variables. You can use the `unset` command on macOS and Linux to achieve that. On Windows, you need to set an empty string.
 

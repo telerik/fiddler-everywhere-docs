@@ -214,6 +214,8 @@ The reverse proxy can be used alongside other [capturing modes](slug://capture-t
 
 ## Troubleshooting & Best Practices
 
+Use the following guidance to resolve common reverse proxy issues and optimize your configuration.
+
 ### Common Issues and Solutions
 
 - **Traffic not captured:** Ensure Fiddler is running and the correct port and protocol are set in the Fiddler Reverse Proxy settings.

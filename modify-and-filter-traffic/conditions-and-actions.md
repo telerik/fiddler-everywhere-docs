@@ -381,7 +381,7 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server. The option is also referred to as "Accept all CONNECTs". This action is incompatible with sessions snapshots (saved traffic).</td>
+            <td>Use this action when you wish to test a URL, which will not be resolved by your DNS Server. The option is also referred to as "Accept all CONNECTs". This action is incompatible with sessions snapshots (saved traffic).</td>
             <td>Final</td>
         </tr>
         <tr>
@@ -473,7 +473,7 @@ As a result, the session will bear the action from non-final rule A, even though
 
 ## Matching Conditions Specifics
 
-When creating a matching condition in Fiddler Everywhere, you should consider the following:
+When creating a matching condition in Fiddler Everywhere, consider the following:
 
 - Fiddler Everywhere will try to match each session before a request is sent to the server (Fiddler receives requests > match > Fiddler forwards the request to the server) and before a response is sent to the client (Fiddler receives response > match > Fiddler forwards the response to the client app)
 - Match conditions will be tested when all the information is available. For example, match conditions that only require data available for the requests are tested before the request is sent to the server. On the contrary, match conditions that depend on a value from the response are tested before returning the response.

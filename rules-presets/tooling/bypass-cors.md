@@ -14,7 +14,7 @@ With Fiddler Everywhere, you can easily create a rule that bypasses the pre-set 
 
 ## Creating a "Bypass CORS" Rule
 
-This example shows how to create a rule named "Bypass CORS" that effectively sets the CORS policy not to a same-origin or specific domain but to all domains using a wildcard. This effectively bypasses the same-origin policy, which might allow third-party actors to execute a cross-site request forgery (CSRF). The rule should only be used for testing purposes where and when needed, not for real-life scenarios.
+This example shows how to create a rule named "Bypass CORS" that effectively sets the CORS policy not to a same-origin or specific domain but to all domains using a wildcard. This effectively bypasses the same-origin policy, which might allow third-party actors to execute a cross-site request forgery (CSRF). The rule must only be used for testing purposes where and when needed, not for real-life scenarios.
 
 Create a "Bypass CORS" rule that sets the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 

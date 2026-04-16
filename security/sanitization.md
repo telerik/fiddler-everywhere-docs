@@ -34,15 +34,15 @@ Control when sanitization occurs by enabling or disabling sanitization for speci
 
 ### Parts of the Session to Sanitize
 
-Specify which components of the HTTP(S) traffic should be sanitized. Sanitization applies both default rules and custom rules configured in the **Additional Settings** section:
+Specify which components of the HTTP(S) traffic to sanitize. Sanitization applies both default rules and custom rules configured in the **Additional Settings** section:
 
 - **Sanitize URL** - Masks sensitive parameters and path segments in request URLs (for example, API keys, tokens, user IDs).
 - **Sanitize Headers** - Masks sensitive HTTP headers such as `Authorization`, `Cookie`, `X-API-Key`, and other custom headers containing credentials or tokens.
 - **Sanitize Cookies** - Masks cookie values that may contain session identifiers, authentication tokens, or user-specific data.
 - **Sanitize Request Body** - Masks sensitive data within HTTP request bodies, such as passwords, credit card numbers, personal information, or proprietary data.
 - **Sanitize Response Body** - Masks sensitive data within HTTP response bodies, including user data, API responses containing secrets, or any confidential information returned by servers.
-- **Strip Request Body** - Completely removes all HTTP request bodies from sessions. Use this option when request bodies consistently contain highly sensitive data that should not be stored at all.
-- **Strip Response Body** - Completely removes all HTTP response bodies from sessions. Use this option when response bodies consistently contain highly sensitive data that should not be stored at all.
+- **Strip Request Body** - Completely removes all HTTP request bodies from sessions. Use this option when request bodies consistently contain highly sensitive data that must not be stored at all.
+- **Strip Response Body** - Completely removes all HTTP response bodies from sessions. Use this option when response bodies consistently contain highly sensitive data that must not be stored at all.
 
 >important The difference between "Sanitize" and "Strip" options: Sanitization replaces sensitive values with the mask string while preserving the structure of the data. Stripping completely removes the entire body content, which may affect your ability to debug or analyze the traffic later.
 
@@ -50,8 +50,8 @@ Specify which components of the HTTP(S) traffic should be sanitized. Sanitizatio
 
 Enhance the sanitization process by defining custom rules to target specific sensitive data patterns:
 
-- **Headers** - Add custom HTTP header names that should always be sanitized, beyond the default headers. Useful for application-specific authentication headers or proprietary security tokens.
-- **Keywords** - Specify keywords or phrases that should be masked wherever they appear in URLs, headers, or bodies. Examples include company names, project codenames, or specific sensitive terms.
+- **Headers** - Add custom HTTP header names that are always sanitized, beyond the default headers. Useful for application-specific authentication headers or proprietary security tokens.
+- **Keywords** - Specify keywords or phrases that are masked wherever they appear in URLs, headers, or bodies. Examples include company names, project codenames, or specific sensitive terms.
 - **Regular Expression Patterns** - Define regex patterns to match and sanitize complex data formats such as:
   - Credit card numbers: `\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b`
   - Email addresses: `\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b`

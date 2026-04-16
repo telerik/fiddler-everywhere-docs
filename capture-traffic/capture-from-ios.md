@@ -38,6 +38,8 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 ## Capturing Remote iOS Traffic (Manual Setup)
 
+Follow these steps to configure Fiddler Everywhere and your iOS device for remote traffic capture.
+
 ### Configuring Fiddler Everywhere Host
 
 1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote devices to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
@@ -46,7 +48,7 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 >tip: If you only need to capture remote traffic, then there is no need to install the Fiddler CA certificate on the Fiddler host machine. You only need to download and install the Fiddler CA certificate on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
-### Configuring the Fiddler Proxy on iOS Device
+### Configuring Fiddler Proxy on iOS Device
 
 Refer to the following steps to configure real iOS devices to work alongside a Fiddler Everywhere host. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configuring-the-fiddler-proxy-on-ios-emulator). Real iOS devices and iOS simulators must be discoverable on the same local network.
 
@@ -62,7 +64,7 @@ Refer to the following steps to configure real iOS devices to work alongside a F
         - In the **SERVER** field, enter the IP address of the Fiddler Everywhere host&mdash;for example, `192.168.0.101` (for demo purposes, we assume this is the IP of the host that runs Fiddler).
         - Enter the Fiddler Everywhere proxy port in the **PORT** field. By default, the port is `8866`.
 
-## Configuring the Fiddler Proxy on iOS Emulator
+## Configuring Fiddler Proxy on iOS Emulator
 
 The later versions of the iOS simulators, accessible through XCode, are using the macOS system proxy by default. 
 
@@ -86,7 +88,7 @@ Now you can immediately capture and inspect HTTP/HTTPS traffic from your iOS dev
 
 [Learn more about inspecting the captured HTTPS sessions here...](slug://inspecting-traffic-get-started)
 
-## Bypass the Apple Endpoints
+## Bypassing Apple Endpoints
 
 Some Apple services like the Apple Application store and iTunes use certificate pinning as an additional layer of security. That means these services will not trust third-party CAs like the one Fiddler Everywhere installs and operates as a MITM proxy. The above causes significant effects:  
 

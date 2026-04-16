@@ -22,7 +22,7 @@ The Fiddler Debugging Assistant enables you to leverage large language models to
 
 >important Requests are processed using your own API key and billed directly to your account with the model provider. Data usage and retention follow the provider's Terms of Service and Privacy Policy.
 
-## Configuring the Debugging Assistant
+## Configuring Debugging Assistant
 
 The Debugging Assistant is accessible through the **Ask Assistant** button in the Fiddler toolbar. To use it, you must provide a valid API key for one of the supported model providers.
 
@@ -75,7 +75,7 @@ For the latest model availability and rate limit information, see the [Google AI
 
 >warning Google may use data submitted through the free-tier API to improve its models. Avoid sharing sensitive, confidential, or personally identifiable information when using the free Gemini API key. Review Google's Terms of Service and Privacy Policy before use.
 
-## Using the Debugging Assistant
+## Using Debugging Assistant
 
 To use the Debugging Assistant:
 

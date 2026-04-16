@@ -1,6 +1,6 @@
 ---
 title: Capturing and Debugging Claude Code HTTPS Traffic with Fiddler Everywhere
-meta_title: How to Capture and Debug Claude Code HTTPS Traffi | Fiddler Everywhere
+meta_title: How to Capture and Debug Claude Code HTTPS Traffic | Fiddler Everywhere
 description: "Step-by-step guide to configure Fiddler Everywhere to capture, decrypt, and inspect HTTPS API calls from Claude Code. Debug Anthropic's AI agent with proxy configuration and certificate setup."
 type: how-to
 slug: fiddler-and-claude
@@ -64,7 +64,9 @@ Terminal capturing mode launches a dedicated terminal session with the Fiddler p
 
 ## Step-by-Step Configuration
 
-### Step 1: Export the Fiddler CA Certificate
+Complete the following steps to enable traffic capture from Claude Code.
+
+### Step 1: Export Fiddler CA Certificate
 
 To decrypt and inspect HTTPS traffic from Claude Code, you need to export the Fiddler root certificate authority (CA) certificate and configure your system to trust it.
 
@@ -124,7 +126,7 @@ Now that everything is configured, test the setup by asking Claude Code to perfo
 
 2. Claude Code will process your request, communicate with the language model, and execute the chain of thought.
 
-3. Switch to Fiddler Everywhere and observe the **Live Traffic** grid. You should immediately see HTTPS requests appearing, showing the communication between Claude Code and Anthropic's API servers.
+3. Switch to Fiddler Everywhere and observe the **Live Traffic** grid. HTTPS requests immediately appear, showing the communication between Claude Code and Anthropic's API servers.
 
 ## Inspecting Claude Code Traffic
 
@@ -137,6 +139,8 @@ Once traffic is being captured, you can use the Fiddler powerful inspection feat
 - **Save Sessions**: Export sessions for later analysis or sharing with your team
 
 ## Troubleshooting
+
+If traffic does not appear as expected, check the following common issues.
 
 ### Traffic Not Appearing in Fiddler
 

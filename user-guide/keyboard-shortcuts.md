@@ -14,6 +14,8 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 
 ## macOS Shortcuts
 
+The following tables list the keyboard shortcuts available on macOS.
+
 ### General
 
 | Action  |  Keyboard Shortcut  |
@@ -127,6 +129,8 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |Save As Composer request|`Cmd` + `Shift` + `S`|
 
 ## Windows and Linux Shortcuts
+
+The following tables list the keyboard shortcuts available on Windows and Linux.
 
 ### General
 

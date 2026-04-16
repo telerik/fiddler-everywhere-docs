@@ -36,6 +36,8 @@ The Fiddler Everywhere MCP server includes predefined system prompts for common 
 
 ### Available Built-in Prompts
 
+The built-in prompts are grouped by functional area.
+
 #### Authentication and Status
 
 ```bash

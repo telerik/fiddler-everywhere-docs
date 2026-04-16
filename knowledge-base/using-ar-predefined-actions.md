@@ -1,6 +1,6 @@
 ---
 title: Using the Predefined Actions of the Rules Tab
-meta_title: Using the Predefined Actions of the Rules Tab | Fiddler Everywhere
+meta_title: Mock HTTP Responses with Built-In Rule Actions | Fiddler Everywhere
 description: "Learn how to use the predefined actions of the Rules tab for mocking different HTTP responses when working with the Fiddler Everywhere web-debugging proxy."
 type: how-to
 slug: fiddler-ar-actions

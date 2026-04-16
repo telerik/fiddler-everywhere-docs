@@ -63,7 +63,7 @@ Use the manual approach if the automated wizard fails or you need more control o
 4. Enable **Capture HTTPS traffic** and click **Save**.
 5. On the main screen, toggle **System Proxy** ON to capture system HTTP/HTTPS traffic.
 
-## Exporting the Fiddler CA (for Manual or Third-Party Use)
+## Exporting Fiddler CA (for Manual or Third-Party Use)
 
 If automatic installation fails (due to security restrictions, permissions, or corporate policy), you can export the Fiddler CA and install it manually:
 

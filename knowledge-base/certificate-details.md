@@ -1,6 +1,6 @@
 ---
 title: Inspecting Server Certificate
-meta_title: Inspecting Server Certificate | Fiddler Everywhere
+meta_title: View TLS and SSL Certificate Details for Any Domain | Fiddler Everywhere
 description: "Learn how to inspect server certificate details and catch potential certificate-related issues with Fiddler Everywhere MITM proxy."
 type: how-to
 slug: fe-cert-details
@@ -70,7 +70,7 @@ Fiddler Everywhere provides a way to quickly go around any server certificate er
 
 All server certificate errors will be ignored when the **Ignore server certificate errors** checkbox is active, and no endpoints are added.
 
->important The **Ignore server certificate errors** option is considered **unsafe** and should be used cautiously. It sets if Fiddler Everywhere should warn you when an HTTPS server has presented a certificate that did not validate. You should not check this box when surfing the Internet due to the possibility of [spoofing attack](https://en.wikipedia.org/wiki/Spoofing_attack).
+>important The **Ignore server certificate errors** option is considered **unsafe** and must be used cautiously. It sets whether Fiddler Everywhere warns you when an HTTPS server has presented a certificate that did not validate. You must not check this box when surfing the Internet due to the possibility of [spoofing attack](https://en.wikipedia.org/wiki/Spoofing_attack).
 
 Fiddler Everywhere allows adding specific endpoints to the list of trusted servers to minimize the security risk of automatically ignoring all server certificates. You can add custom endpoints to the list as follows: 
 

@@ -1,6 +1,6 @@
 ---
 title: Manually Installing the Root Certificate on Windows
-meta_title: Manually Installing the Root Certificate on Windo | Fiddler Everywhere
+meta_title: Trust the HTTPS Proxy Certificate on Windows | Fiddler Everywhere
 description: "Learn how to manually install the root certificate for Fiddler Everywhere on Windows. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: how-to-install-fiddler-root-certificate-on-windows

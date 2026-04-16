@@ -1,6 +1,6 @@
 ---
 title: Resolving Graphics Incompatibility Issues
-meta_title: Resolving Graphics Incompatibility Issues | Fiddler Everywhere
+meta_title: Fix Video Driver Startup Errors and GPU Rendering Problems | Fiddler Everywhere
 description: "Test and resolve video driver incompatibility issue that prevent the proper startup of Fiddler Everywhere."
 type: how-to
 slug: troubleshoot-video-incompatibility
@@ -47,7 +47,7 @@ You can explicitly turn off the hardware acceleration through a boolean flag cal
     "disableHardwareAcceleration" : true
     ```
 
-As a result, the `electron-settings.json` file should look similar to the one shown below:
+As a result, the `electron-settings.json` file looks similar to the one shown below:
 ```JSON
 {
   "autoUpdateSettings": {

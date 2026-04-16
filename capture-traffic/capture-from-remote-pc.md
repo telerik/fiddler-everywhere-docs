@@ -54,14 +54,14 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 1. [Configure the Fiddler Everywhere proxy on remote device](#configuring-the-fiddler-proxy-on-the-remote-device).
 
 
-### Configuring the Fiddler Everywhere Host
+### Configuring Fiddler Everywhere Host
 
 1. Enable the remote connections of Fiddler Everywhere through **Settings** > **Connections** > **Allow remote devices to connect**. Combine it with **Keep it ON after app restart** if you want to persist the setting for subsequent application startups.
     >tip Behind the scenes, enabling the **Allow remote devices to connect** option opens the Fiddler Everywhere port on the host machine for inbound connections. The default port is **8866**, but you can change its value through the **Settings > Connections > Fiddler listens on port** option. 
 1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side](slug://connections-section) to get the host IP address. Alternatively, you can get the host IP address using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
 
 
-### Configuring the Fiddler Proxy on the Remote Device
+### Configuring Fiddler Proxy on Remote Device
 
 1. Open a browser on the remote device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. 
 1. Click the Fiddler CA certificate link to download it.

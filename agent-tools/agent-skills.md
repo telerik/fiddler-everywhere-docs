@@ -17,7 +17,7 @@ The official Fiddler Everywhere skills are hosted in the [fiddler-agent-tools](h
 |:------|:--------|
 | `fiddler-download-setup` | Download, install, and launch Fiddler Everywhere from scratch, then automatically configure the MCP server. |
 | `fiddler-mcp-setup` | Connect your coding assistant to the Fiddler MCP server. |
-| `fiddler-feature-verification` | Verify that a feature's HTTP calls completed correctly by analyzing captured traffic. |
+| `fiddler-traffic-debugging` | Debug and analyze captured HTTP traffic to verify feature behavior, diagnose failures, and identify performance issues. |
 
 >tip You can also [create your own custom skills](slug://fiddler-creating-custom-skills) to tailor Fiddler-powered workflows to your specific needs.
 
@@ -43,12 +43,14 @@ fiddler-agent-tools/
   skills/
     fiddler-download-setup/SKILL.md
     fiddler-mcp-setup/SKILL.md
-    fiddler-feature-verification/SKILL.md
+    fiddler-traffic-debugging/SKILL.md
 ```
 
 After cloning, point your coding tool at the skill files using the configuration steps for your tool below.
 
 ## Supported Tools
+
+The following sections describe how to load the Fiddler skills in each supported coding tool.
 
 ### GitHub Copilot in VS Code
 
@@ -75,7 +77,7 @@ Claude Code loads skills automatically when a `SKILL.md` is placed in a `.claude
    cp -r /path/to/fiddler-agent-tools/skills/* .claude/skills/
    ```
 2. Start (or restart) Claude Code from your project directory. The skills are loaded automatically.
-3. Add `.claude/skills/` to `.gitignore` if the skills folder should stay local.
+3. Add `.claude/skills/` to `.gitignore` to keep the skills folder local.
 
 ### Claude Desktop
 
@@ -122,11 +124,13 @@ Skills are triggered by describing your intent in natural language. Each skill i
 |:------|:--------------------------|:-----------------------|
 | `fiddler-download-setup` | Fiddler Everywhere is not installed | *"Download and install Fiddler Everywhere"* / *"Set up Fiddler from scratch"* / *"Get started with Fiddler"* |
 | `fiddler-mcp-setup` | MCP tools are unavailable, auth errors, first-time setup | *"Set up Fiddler MCP"* / *"Connect Fiddler to my IDE"* / *"I cannot see Fiddler tools"* |
-| `fiddler-feature-verification` | After running a feature you want to verify via HTTP traffic | *"Verify the HTTP calls my feature made"* / *"Check what requests my app sent"* |
+| `fiddler-traffic-debugging` | After running a feature you want to debug or verify via HTTP traffic | *"Debug the HTTP calls my feature made"* / *"Check what requests my app sent"* / *"Analyze the captured traffic"* |
 
 ---
 
 ## Available Skills
+
+Each skill below includes its purpose, the steps it performs, and example trigger phrases.
 
 ### fiddler-download-setup
 
@@ -167,9 +171,9 @@ Skills are triggered by describing your intent in natural language. Each skill i
 
 ---
 
-### fiddler-feature-verification
+### fiddler-traffic-debugging
 
-**Purpose**: Analyzes the HTTPS traffic captured by Fiddler Everywhere after you run a feature or user flow, and produces a structured report grouped by endpoint — flagging failures, auth errors, retries, and slow calls.
+**Purpose**: Analyzes the HTTPS traffic captured by Fiddler Everywhere after you run a feature or user flow, and produces a structured debugging report grouped by endpoint — flagging failures, auth errors, retries, performance issues, and slow calls.
 
 **What it does**:
 1. Calls `get_status` to confirm Fiddler is reachable and capturing.
@@ -182,7 +186,7 @@ Skills are triggered by describing your intent in natural language. Each skill i
 
 **Output format**:
 ```txt
-Feature Verification
+Traffic Debugging Report
 
 Overall verdict: [Feature appears healthy / partially successful / likely failed / Inconclusive]
 
@@ -200,9 +204,9 @@ Conclusion:
 - [Short answer on whether the feature appears to work correctly]
 ```
 
-**When to use**: Run this skill after executing a feature, clicking a UI flow, or running an integration test — whenever you want to confirm that the HTTP calls your application made look correct.
+**When to use**: Run this skill after executing a feature, clicking a UI flow, or running an integration test — whenever you want to debug, verify, or analyze the HTTP calls your application made.
 
-**Typical invocation**: *"Verify the HTTP calls my feature made"*, *"Check what requests my app sent"*, *"Did my login flow work correctly?"*, *"Are there any errors in the captured traffic?"*
+**Typical invocation**: *"Debug the HTTP calls my feature made"*, *"Check what requests my app sent"*, *"Did my login flow work correctly?"*, *"Analyze the captured traffic"*, *"Are there any errors in the captured traffic?"*
 
 ## See Also
 

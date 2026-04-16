@@ -18,7 +18,7 @@ Some Node.js modules, such as [`request`](https://www.npmjs.com/package/request)
 
 This section demonstrates the primary approach for each of the mentioned scenarios.
 
-## Using the Fiddler Terminal
+## Using Fiddler Terminal
 
 Fiddler Everywhere allows quickly opening dedicated terminal that automatically uses Fiddler as HTTP(S) proxy for Node.js. [Learn more about the Fiddler terminal here...](slug://capture-terminal-traffic)
 
@@ -91,7 +91,7 @@ setFiddlerProxy();
 removeFiddlerProxy();
 ```
 
-### Using the Fiddler CA in Node.js
+### Using Fiddler CA in Node.js
 
 The `NODE_TLS_REJECT_UNAUTHORIZED` option is unsafe and poses a security risk. To capture and decrypt Node.js traffic without disabling TLS verification, set the `NODE_EXTRA_CA_CERTS` environment variable to the exported Fiddler CA certificate.
 

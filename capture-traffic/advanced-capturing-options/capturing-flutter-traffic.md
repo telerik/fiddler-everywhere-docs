@@ -54,7 +54,7 @@ Use the [http_proxy](https://pub.dev/packages/http_proxy) Flutter plugin to read
 
 3. Rebuild and restart the application.
 
-If the device proxy is configured to point to the Fiddler Everywhere host, you should now see the Flutter app sessions appear in Fiddler Everywhere.
+If the device proxy is configured to point to the Fiddler Everywhere host, the Flutter app sessions now appear in Fiddler Everywhere.
 
 ## Notes for common Flutter HTTP stacks
 
@@ -65,6 +65,8 @@ If the device proxy is configured to point to the Fiddler Everywhere host, you s
 
 ## Troubleshooting
 
+The following sections cover common issues when capturing Flutter traffic with Fiddler Everywhere.
+
 ### I only see `CONNECT` tunnels (port 443)
 
 This usually means the app is proxying traffic, but TLS decryption fails (the app does not trust the user-installed CA).
@@ -74,7 +76,7 @@ This usually means the app is proxying traffic, but TLS decryption fails (the ap
 
 If you can’t (or don’t want to) change the Android app network security config, you have a few other development-time options:
 
-- **Dart-only traffic (debug-only): accept the interception certificate in code.** For requests that go through `dart:io`, you can override certificate validation in your `HttpOverrides`. This is useful to confirm that the issue is CA trust, but it should never be enabled in production builds.
+- **Dart-only traffic (debug-only): accept the interception certificate in code.** For requests that go through `dart:io`, you can override certificate validation in your `HttpOverrides`. This is useful to confirm that the issue is CA trust, but it must never be enabled in production builds.
 
   ```dart
   import 'dart:io';

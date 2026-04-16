@@ -23,7 +23,7 @@ The instructions below highlight the configuration steps while using the latest 
             return DIRECT;
         }
         ```
-    - Ensure that the Fiddler Everywhere proxy (by default, the Fiddler Everywhere proxy address is `127.0.0.1:8866`) should be the first option, and the Zscaler proxy should be the second option.
+    - Ensure that the Fiddler Everywhere proxy (by default, the Fiddler Everywhere proxy address is `127.0.0.1:8866`) must be the first option, and the Zscaler proxy must be the second option.
         ```sh
         return "PROXY 127.0.0.1:8866; PROXY ${ZAPP_LOCAL_PROXY}; DIRECT;";
         ```
@@ -32,7 +32,7 @@ The instructions below highlight the configuration steps while using the latest 
     - Select **Z-Tunnel 2.0**. 
         >important Note that **Z-Tunnel 1.0** is incompatible with the Fiddler Everywhere application.
     - Select the **PAC URL Location** field, and enter the custom PAC Url.
-1. Add the forwarding profile to an app profile. You can create a new Zscaler Client Connector profile or update an existing one and then add the configured forwarding profile. The forwarding profile should contain the following options:
+1. Add the forwarding profile to an app profile. You can create a new Zscaler Client Connector profile or update an existing one and then add the configured forwarding profile. The forwarding profile must contain the following options:
     - Set the **Rule Order** to **1**.
     - Enable the **app profile**.
     - Enable the **Disabled Loopback Restriction**.

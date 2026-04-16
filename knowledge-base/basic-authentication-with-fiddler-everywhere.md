@@ -1,6 +1,6 @@
 ---
 title: Composing Basic Authentication Requests
-meta_title: Composing Basic Authentication Requests | Fiddler Everywhere
+meta_title: Send HTTP Basic Auth Requests with a Proxy | Fiddler Everywhere
 description: "Learn what the steps for the basic authentication with Fiddler Everywhere are. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: basic-authentication-with-fiddler-everywhere

@@ -43,7 +43,7 @@ One-sentence summary of what this skill accomplishes.
 
 ## Output format
 
-Describe the exact shape of the final output the agent should produce.
+Describe the exact shape of the final output the agent produces.
 ```
 
 ### Frontmatter fields
@@ -78,8 +78,8 @@ Refer to the [Fiddler MCP Server](slug://fiddler-mcp-server#available-mcp-tools)
 - **Start with `get_status`** — always confirm Fiddler is reachable and the user is logged in before proceeding.
 - **Use `apply_filters` before `get_sessions`** when the capture may be noisy — this reduces the data the agent must reason about.
 - **Limit `get_session_details` calls** — call it only for sessions that genuinely need deep inspection (failures, slow calls, key representative requests). Avoid calling it for every session.
-- **Be explicit about output format** — define the exact shape of the report the agent should produce. This makes the skill's output consistent and easy to consume.
-- **Keep operating rules short and unambiguous** — every rule should be a hard constraint, not advice.
+- **Be explicit about output format** — define the exact shape of the report the agent produces. This makes the skill's output consistent and easy to consume.
+- **Keep operating rules short and unambiguous** — every rule must be a hard constraint, not advice.
 
 ## Walkthrough: A Custom Security Header Check Skill
 

@@ -63,11 +63,11 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
 Fiddler Everywhere comes with [collaboration in mind](slug://fiddler-sharing) and provides sharing functionalities. Consider the following security highlights when sharing sessions:
 
-- A session is saved before sharing. Thus, you should consider the [saving-related security highlights](#saving-traffic).
+- A session is saved before sharing. Thus, consider the [saving-related security highlights](#saving-traffic).
 - Enable [data sanitization]({%slug fe-sanitization%}) before sharing sessions to automatically remove sensitive information. This is especially important when sharing with external collaborators or using the Fiddler MCP server integration.
 - Sharing an unprotected session can expose your sensitive data to unauthorized third parties. Always consider adding password protection to your sessions before sharing them.
 
-## Using the Fiddler MCP Server
+## Using Fiddler MCP Server
 
 Fiddler Everywhere provides an [MCP (Model Context Protocol) server]({%slug fiddler-mcp-server%}) that enables integration with intelligent IDEs and coding tools for analyzing captured HTTPS traffic. Consider the following security highlights when using the MCP server:
 

@@ -48,7 +48,7 @@ The Fiddler terminal instance automatically proxies all HTTPS requests made by *
 
 While using the terminal capturing mode, you must consider the technical specifics listed below.
 
-### Localhost Traffic Through the Fiddler Terminal
+### Localhost Traffic Through Fiddler Terminal
 
 Some frameworks, like the .NET Framework, are hardcoded not to send requests for localhost through any proxies, and as a proxy, Fiddler will not receive such traffic.
 
@@ -65,7 +65,7 @@ Capturing traffic from **curl** or **Node.js** libraries does not require explic
 
 >important The [terminal capturing mode](#capturing-terminal-traffic) is the recommended approach because it sets the proxy only per the current session, which makes it considerably more comfortable for testing and debugging. Use the below method only if you aim to solve specific application requirements (for example, an application that does not respect the terminal proxy implicitly).
 
-### Setting the Fiddler Proxy Explicitly
+### Setting Fiddler Proxy Explicitly
 
 As an alternative to [the Fiddler terminal option](#capturing-terminal-traffic) described above, you can also explicitly configure your terminal and shell applications to respect the Fiddler proxy and trust the Fiddler root CA. One way to achieve that is to use the `export` command (for macOS and Linux) or the `set` command (for Windows) alongside the `http_proxy` and `https_proxy` variables. The `export` command will generate an environmental variable that will be included in a child process environment. It does not affect other already-existing settings.
 
@@ -92,11 +92,11 @@ curl https://docs.telerik.com/fiddler-everywhere --
 ```
 
 
-### Setting the Fiddler Root Certificate
+### Setting Fiddler Root Certificate
 
 Apart from setting the environment variables `http_proxy` and `https_proxy`, you can manually export and point your terminal application to explicitly use the Fiddler_Root_Certificate_Authority (for decrypting TLS traffic). You must use different global variables depending on the specific application/framework. For example, you can use variables like `SSL_CERT_FILE` and `REQUESTS_CA_BUNDLE` for [configuring the Fiddler CA within a Python application](slug://fiddler-python-traffic).
 
-### Resetting the Fiddler Proxy
+### Resetting Fiddler Proxy
 
 Once debugging with Fiddler Everywhere, reset the current environment proxy by removing the Fiddler Everywhere proxy variables. You can use the `unset` command on macOS and Linux to achieve that. On Windows, you need to set an empty string.
 

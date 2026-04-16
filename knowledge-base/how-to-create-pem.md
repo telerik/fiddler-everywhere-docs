@@ -1,6 +1,6 @@
 ---
 title: Creating PEM certificate
-meta_title: Creating PEM certificate | Fiddler Everywhere
+meta_title: Convert CRT to PEM Certificate Format | Fiddler Everywhere
 description: "Learn how to convert the exported CRT file to a PEM certificate. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: how-to-create-pem
@@ -21,7 +21,7 @@ res_type: kb
 
 Third-party tools (like Docker) and some operating systems (some Linux distributions) accept trust certificates in PEM format. How to generate the Fiddler CA in PEM format?
 
-## Exporting the Fiddler CA as PEM
+## Exporting Fiddler CA as PEM
 
 You can use the built-in functionality to export the Fiddler Everywhere CA in PEM format:
 

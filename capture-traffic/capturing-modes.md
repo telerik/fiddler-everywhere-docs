@@ -215,6 +215,8 @@ Remote capturing enables traffic analysis from devices on your local network, in
 
 ## Protocol Support
 
+Fiddler Everywhere supports a range of protocols across all capturing modes.
+
 ### HTTP Version Support
 
 Fiddler Everywhere supports both HTTP/1.x and HTTP/2 traffic capture and composition. The application includes [dedicated columns](slug://web-sessions-list#columns) showing HTTP versions:

@@ -1,6 +1,6 @@
 ---
 title: Bypassing the Fiddler Everywhere proxy
-meta_title: Bypassing the Fiddler Everywhere proxy | Fiddler Everywhere
+meta_title: Skip Proxy or Disable HTTPS Decryption for Specific Endpoints | Fiddler Everywhere
 description: "Learn how to bypass the Fiddler Everywhere proxy or skip decryption for particular endpoints. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-bypass-list
@@ -36,6 +36,8 @@ Fiddler also allows decrypting only some endpoints while explicitly [skipping de
 Lastly, you might want to filter the captured traffic while preserving all captured sessions temporarily. For that, you can use the [built-in filters](slug://how-to-filter-traffic) or the **Do Not Show** rule action.
 
 ## Bypassing Fiddler
+
+Fiddler Everywhere provides multiple ways to exclude specific traffic from the proxy.
 
 ### Proxy Bypass List
 

@@ -21,7 +21,7 @@ Follow these steps to capture HTTPS traffic from your Samsung device with Fiddle
 2. **Enable Remote Connections in Fiddler Everywhere**  
    Open Fiddler Everywhere on your host computer. In the application, ensure that the **Allow remote devices to connect** option is enabled by checking the checkbox next to it.
 3. **Connect Both Devices to the Same Network**  
-   Ensure both your Samsung device and the host computer are connected to the same Wi-Fi network. The network should not have restrictions that block device-to-device communication.  
+   Ensure both your Samsung device and the host computer are connected to the same Wi-Fi network. The network must not have restrictions that block device-to-device communication.  
    >tip By default, Fiddler Everywhere uses TCP port 8866 for remote connections. Make sure this port is open.
 4. **Start the "Connect Remote Devices" Wizard**  
    In Fiddler Everywhere, open the ["Connect Remote Devices" automated configuration wizard](slug://capture-mobile-android-traffic) to guide you through the setup.

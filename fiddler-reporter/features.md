@@ -97,7 +97,7 @@ Use the manual setup  option as follows:
 
 1. Click the **Manual Setup (Advanced)** button.
 
-1. Capture the targeted traffic from your client application. At this point, the application should already respect the Fiddler Everywhere Reporter proxy address, port, and certificate.
+1. Capture the targeted traffic from your client application. At this point, the application already respects the Fiddler Everywhere Reporter proxy address, port, and certificate.
 
 1. Click the **Stop Capture** button. 
 
@@ -107,11 +107,11 @@ Use the manual setup  option as follows:
 
 Use the **Tools** section within the application menu to set the default browser (for the [**Start Capturing Browser**](#capturing-browser-option) option) and to explicitly allow remote devices to connect.
 
-- **Default Browser** - This option allows you to set the default browser that Fiddler Everywhere Reporter should use to create a sandboxed browser instance. Currently, Google Chrome and Microsoft Edge are supported browsers.
+- **Default Browser** - This option allows you to set the default browser that Fiddler Everywhere Reporter uses to create a sandboxed browser instance. Currently, Google Chrome and Microsoft Edge are supported browsers.
 
 - **Allow Remote Devices to Connect** - Controls whether inbound connections to Fiddler Everywhere Reporter are allowed. Enable this option to capture traffic from remote devices. Behind the scenes, the option opens (or closes) the Fiddler Everywhere Reporter port for inbound connections on the host machine.
 
-## Configuring the Fiddler Certificate
+## Configuring Fiddler Certificate
 
 Use the **Certificate** section within the application menu to trust, export, reset, and remove the Fiddler certificate authority (CA) or ignore server certificate errors. The options are as follows:
 

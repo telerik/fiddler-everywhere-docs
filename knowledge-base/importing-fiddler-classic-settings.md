@@ -1,6 +1,6 @@
 ---
 title: Importing Fiddler Classic Settings
-meta_title: Importing Fiddler Classic Settings | Fiddler Everywhere
+meta_title: Migrate AutoResponder Rules and Filters from Fiddler Classic | Fiddler Everywhere
 description: "Use Fiddler Everywhere to automatically import settings, AutoResponder rules, and filters from Fiddler Classic"
 type: how-to
 slug: fe-migrating-from-classic
@@ -16,7 +16,7 @@ res_type: kb
 
 ## Description
 
-The foundation of Fiddler Everywhere is built upon the old Fiddler Classic application. While Fiddler Classic is still available, more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches or tech support). There are multiple reasons why using Fiddler Everywhere should be your preferred choice, and the below feature comparison table demonstrates some of them:
+The foundation of Fiddler Everywhere is built upon the old Fiddler Classic application. While Fiddler Classic is still available, more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches or tech support). There are multiple reasons why Fiddler Everywhere is the recommended choice, and the below feature comparison table demonstrates some of them:
 
 | Feature          | Fiddler Classic   | Fiddler Everywhere     | 
 |:-----------------|:------------------|:-----------------------|

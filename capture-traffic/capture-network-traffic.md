@@ -24,6 +24,8 @@ The benefits of the network capturing mode are as follows:
 
 ## Prerequisites & Limitations
 
+Review the following requirements and constraints before using the network capturing mode.
+
 ### Prerequisites
 
 You must meet the following prerequisites to use the network capturing mode.
@@ -45,7 +47,7 @@ The **Network Capture** mode currently has some known limitations as follows:
 capturing-mode).
 - The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes like [reserve proxy](slug://fiddler-reverse-proxy) or specific capturing modes for [Android](slug://capture-mobile-android-traffic), [iOS](slug://capture-mobile-ios-traffic), or [remote PCs](slug://fiddler-capture-other-computers).
 
-## Using the Network Capturing Mode
+## Using Network Capturing Mode
 
 The network capturing mode is accessible in the Fiddler **Live Traffic** menu options through the **Network Capture** option.
 
@@ -139,7 +141,7 @@ A localhost rule is also included by default:
 
 Both localhost rules apply to port `3000`.
 
-## Removing the Network Extension
+## Removing Network Extension
 
 Disabling network capturing does not remove the network extension from your system. To fully remove it, use one of the methods below.
 
@@ -180,7 +182,7 @@ Use this method to remove only the network extension without uninstalling Fiddle
     - Use the toggle or dropdown to disable the extension (it can be re-enabled later without reinstalling).
     - Click the **"-"** (minus) button to permanently uninstall and remove the extension.
 
-## Troubleshooting the Network Extension
+## Troubleshooting Network Extension
 
 If you encounter issues with the Fiddler Everywhere network extension, try the following steps:
 

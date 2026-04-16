@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot Fiddler Everywhere Not Capturing Traffic
-meta_title: Troubleshoot Fiddler Everywhere Not Capturing Tra | Fiddler Everywhere
+title: Troubleshooting Fiddler Everywhere Not Capturing Traffic
+meta_title: Fix No Traffic Issues with Admin Rights, VPN, Zscaler, and More | Fiddler Everywhere
 description: "Troubleshoot Fiddler Everywhere not capturing traffic. Fix issues with admin rights, VPN, Zscaler, security policies, certificate errors, and group policy."
 type: how-to
 slug: troubleshoot-no-traffic
@@ -311,6 +311,8 @@ Log files are essential for diagnosing startup, proxy, certificate, and connecti
 For a full guide on using log files, see [Accessing and Inspecting Fiddler Everywhere Log Files](slug://fiddler-log-files).
 
 ## Other Known Issues and Scenarios
+
+The following sections cover platform-specific issues that may prevent Fiddler from capturing traffic.
 
 ### macOS: Network Adapter Not Detected
 
