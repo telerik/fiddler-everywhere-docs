@@ -4,7 +4,6 @@ description: "Learn how to troubleshoot Mac proxy settings to isolate issues rel
 type: troubleshooting
 slug: troubleshoot-mac-proxy-settings
 meta_title: Verify and Fix Mac Proxy Settings | Fiddler Everywhere
-ticketid: 1388381
 publish: true
 res_type: kb
 ---
@@ -20,6 +19,10 @@ res_type: kb
 ## Description
 
 How can I verify and troubleshoot changes in the macOS proxy settings? How can I confirm that the [Fiddler Everywhere](https://www.telerik.com/fiddler/fiddler-everywhere) is successfully set as a system proxy?
+
+## Cause
+
+Changes to the macOS proxy configuration may prevent Fiddler Everywhere from registering as the system proxy. Common causes include third-party VPN or security software overriding proxy settings, network adapter mismatches, or leftover proxy entries from a previous session.
 
 ## Solution
 

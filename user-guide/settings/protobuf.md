@@ -9,7 +9,7 @@ position: 100
 
 # Protobuf Menu
 
-The **Protobuf** menu provides an option to supply Fiddler with `.proto` files for gRPC decoding.
+The **Protobuf** menu provides an option to supply Fiddler Everywhere with `.proto` files for gRPC decoding.
 
 The available options are:
 

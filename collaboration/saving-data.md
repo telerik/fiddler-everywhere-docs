@@ -39,8 +39,6 @@ Save session snapshots to the save **Snapshots** tree as follows:
 - Use the **Save** option from the **Live Traffic** grid context menu
     !["Save" option from the context menu](./images/save-context-menu.png)
 
-### Working with Saved Snapshots
-
 You can select, inspect, modify, and share snapshots of previously saved session snapshots with collaborators. The snapshots can be saved locally or in the cloud. You can apply the following actions to a saved session snapshot:
 
 - Single-click to select a session snapshot from the save **Snapshots** tree.

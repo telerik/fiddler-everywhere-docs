@@ -73,7 +73,7 @@ When multiple sessions are selected, the **Timings** widget displays two section
 
 The URL can be up to 30 symbols long. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
-![Timings widget](./images/overview-timings.png)
+![Timings widget showing request and response duration breakdown](./images/overview-timings.png)
 
 ### Events and Timestamps Explained
 
@@ -158,7 +158,7 @@ The **Sizes** widget delivers the following options:
 
 Under the list of session lines, you will find the **Request Headers** (dark blue), **Request Body** (light blue), **Response Headers** (red), and **Response Body** (orange) footers with the total size in kilobytes (**kB**) or bytes (**B**) for all listed sessions.
 
-![Sizes widget](./images/overview-sizes.png)
+![Sizes widget displaying request and response payload sizes](./images/overview-sizes.png)
 
 ## Statistics
 
@@ -222,4 +222,4 @@ The **Response Details** widget contains a table with the following information:
 - [Inspector Types](slug://inspector-types)
 - [Comparing Sessions](slug://fe-compare-sessions)
 
-![Request Details](./images/overview-request-and-response-details.png)
+![Request Details section with headers, cookies, and query parameters](./images/overview-request-and-response-details.png)

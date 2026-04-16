@@ -2,6 +2,7 @@
 title: Requests Section
 meta_title: Save, Organize, and Share API Request Collections | Fiddler Everywhere
 description: "Learn how to use the Requests section in the Fiddler Everywhere web-debugging HTTP-proxy client. Step-by-step instructions and troubleshooting guidance."
+type: how-to
 res_type: kb
 slug: saved-requests-tab
 tags: Fiddler Everywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection

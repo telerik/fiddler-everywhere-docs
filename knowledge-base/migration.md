@@ -9,9 +9,17 @@ position: 200
 previous_url: /migration
 ---
 
-## Migrating Fiddler Accounts and Subscriptions
+## Environment
 
-Fiddler products are now part of Progress Telerik's extensive portfolio. This article explains how to migrate your existing Fiddler accounts and subscriptions to the new unified Telerik system.
+| Property | Value |
+|----------|-------|
+| Product  | Fiddler Everywhere |
+
+## Description
+
+Fiddler products are now part of Progress Telerik's extensive portfolio. How to migrate existing Fiddler accounts and subscriptions to the new unified Telerik system?
+
+## Solution
 
 Depending on the license status, your Fiddler account presents one of the following roles:
 
@@ -20,7 +28,7 @@ Depending on the license status, your Fiddler account presents one of the follow
 
 >tip [Learn more on why Fiddler products moved to Telerik.com and what improvements you can expect...](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).
 
-## Account Migration
+### Account Migration
 
 >note The following steps are directed at all users – **license holders** and **licensed developers**.
 
@@ -35,7 +43,7 @@ Each Fiddler account must migrate to the Telerik system and create a Telerik acc
 1. Open the activation link to finalize your Telerik account creation.
 1. Once the activation completes, you can immediately sign in and continue using your Fiddler product.
 
-## Subscription Migration
+### Subscription Migration
 
 >tip The following steps are directed only at **license holders**.
 

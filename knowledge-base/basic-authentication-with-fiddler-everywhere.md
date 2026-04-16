@@ -45,7 +45,7 @@ The following steps provide an overview of the procedure for creating a basic au
    * The values of the `user` and `passwd` variables: `user1` and `pass1`.
 1. Create a JSON object in the **Body** tab:
    The predefined variables for **Basic Authentication** are `user` and `passwd`. Set their values to `user1` and `pass1`, respectively.
-   ![JSON Body](./images/body-of-composer-with-username-password.png)
+   ![Composer JSON body with username and password fields](./images/body-of-composer-with-username-password.png)
 1. Add the Authorization key in the **Headers** tab:
    * Encode the value of the `<username>:<password>` string with a **Base64 converter**. The resulting string from the encoding of **user1:pass1** is `dXNlcjE6cGFzczE=`.
    * In **Headers** tab, set the **Key** to `Authorization`.

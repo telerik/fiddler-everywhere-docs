@@ -8,7 +8,7 @@ position: 20
 
 # Independent Browser Capturing Mode
 
-This article describes how to use the Fiddler **independent browser capturing mode** where "browser traffic" refers to all HTTPS traffic directed to go through a sandboxed browser instance started from Fiddler Everywhere. Compared to the system capturing mode, the independent browser capturing mode has the following advantages:
+This article describes how to use the Fiddler Everywhere **independent browser capturing mode** where "browser traffic" refers to all HTTPS traffic directed to go through a sandboxed browser instance started from the application. Compared to the system capturing mode, the independent browser capturing mode has the following advantages:
 
 - No need to set/unset the operating system proxy.
 

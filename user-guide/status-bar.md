@@ -35,7 +35,7 @@ The section pops up on mouse interaction and lists the following information:
 
 - **Rules Count**&mdash;A popup that shows counters of all enabled rules.
 
-    ![The rules count](./images/rules-count.png)
+    ![Status bar displaying the active rules count](./images/rules-count.png)
 
 - **Breakpoints Count**&mdash;A popup that shows counters of all rules paused by a breakpoint rule.
 

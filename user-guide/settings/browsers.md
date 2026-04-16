@@ -10,7 +10,7 @@ previous_url: /user-guide/main-menu
 
 # Browsers Menu
 
-The **Select Browser** sub-menu provides an option for changing the default the Fiddler browser from Google Chrome to other third-party Chromium browsers.
+The **Select Browser** sub-menu provides an option for changing the default Fiddler Everywhere browser from Google Chrome to other third-party Chromium browsers.
 
 - The **Automatically detect path to Google Chrome** option finds and uses the Google Chrome for the [**independent browser capturing mode**](slug://capture-traffic-get-started#independent-browser-capturing).
 

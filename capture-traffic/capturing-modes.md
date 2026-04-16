@@ -71,8 +71,6 @@ The following table shows the capabilities and differences between the Fiddler c
 
 * VPN support depends on the specific VPN software and may require [additional configuration](slug://configure-vpn-fiddler).
 
-### License Tier Comparison
-
 Fiddler Everywhere offers multiple license tiers with different feature sets. See the [purchase comparison table](https://www.telerik.com/purchase/fiddler) for detailed information about each tier and its supported features.
 
 ## System Capturing

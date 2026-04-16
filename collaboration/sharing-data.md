@@ -37,7 +37,7 @@ To share a saved session snapshot from the save **Snapshots** tree:
 
 1. Double-click a saved session entry from the save **Snapshots** tree.
 1. The session entry opens in a new tab. Click the **Share** button from the **more** option in the toolbar. This action loads the **Share Sessions** prompt window. 
-    ![Sessions list](./images/share-saved-toolbar-more.png)
+    ![Fiddler Everywhere sessions list with share toolbar options](./images/share-saved-toolbar-more.png)
 1. Enter a valid email (mandatory) and notes (optional), and then click **Share**.
 
 ### Managing Users
@@ -58,8 +58,6 @@ To share a collection of saved API requests, follow these steps:
 - Select a requests collection from the **Requests** list.
 - Click the **Share** icon. Then, enter the email addresses of the users in the **Share Collection** window.
     ![Sharing an API request collection](./images/share-saved-request-collection.png)
-
-### Sharing Requests Collections Specifics
 
 Consider the following when sharing a collection of requests.
 

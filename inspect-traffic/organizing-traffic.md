@@ -26,7 +26,7 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 1. Capture HTTPS traffic through your preferred capturing mode.
 1. Select one or more sessions.
 1. Use the context menu or the keyboard shortcut `Cmd` + `S`(macOS) or `Ctrl` + `S`(Windows)  to invoke the **Save Snapshot** dialog.
-    ![Save dialog](./images/session-save-prompt.png)
+    ![Save dialog for naming and storing a traffic snapshot](./images/session-save-prompt.png)
 1. Complete the save by:
     - Assign a name for the snapshot.
     - (Optional) Encrypt the snapshot by adding password protection.

@@ -186,7 +186,7 @@ The **Actions** drop-down of the **Rule Builder** provides an option to load you
 1. In the file selection window, load the DAT file with the custom HTTP response.
 1. Click **Save** to create or update the rule.
 
-![Response file](./images/kb-rules-response-file.png)
+![Rule action returning a response from an external file](./images/kb-rules-response-file.png)
 
 ### Using the Custom Manual Response
 
@@ -196,7 +196,7 @@ Another option that the **Rule Builder** provides is to create the mocked custom
 1. Write the custom HTTP response in the text field.
 1. Click **Save** to create or update the rule.
 
-![Response file](./images/kb-rules-response-manul.png)
+![Rule action returning a manually crafted response](./images/kb-rules-response-manul.png)
 
 ## See Also
 

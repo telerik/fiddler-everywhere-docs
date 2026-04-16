@@ -36,7 +36,11 @@ The foundation of Fiddler Everywhere is built upon the old Fiddler Classic appli
 
 The comparison table showcases several reasons why you would like to migrate from Fiddler Classic to the new Fiddler Everywhere. In this article, we will provide information about the built-in import wizard available in Fiddler Everywhere, which enables you to quickly and efficiently import your settings, rules, and filters from the old Fiddler Classic.
 
-## Importing Application Options
+## Solution
+
+The built-in import wizard in Fiddler Everywhere supports the following import types.
+
+### Importing Application Options
 
 Starting with version 5.20.0, Fiddler Everywhere provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity meaning they behave exactly the same in both applications. Once imported the configuration options can be found in the **Settings** menu in Fiddler Everywhere.
 
@@ -53,7 +57,7 @@ The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
 - Gateway settings&mdash;Exports the Fiddler Classic value from **Tools > Options > Gateway** and imports as value for **Settings > Gateway** option in Fiddler Everywhere. The Gateway checkbox will be unavailable if the selected option in Fiddler Classic is **Аutomatically Detect Proxy using WPAD**.
 - Allow remote computers to connect&mdash;Exports the Fiddler Classic value from **Tools > Options > Connections > Allow Remote Computers to connect** and imports as value for **Settings > Connections > Allow remote devices to connect** option in Fiddler Everywhere.
 
-## Importing AutoResponder Rules
+### Importing AutoResponder Rules
 
 In Fiddler Everywhere, Fiddler Classic's **AutoResponder** feature (as depicted in the screenshot below) is referred to as **Rules**. You can import only the loaded AutoResponder rules from Fiddler Classic to Fiddler Everywhere. Once imported, you will be able to modify or delete these rules as needed.
 
@@ -63,7 +67,7 @@ Additionally, you can import any exported [rules archive (FARX)](slug://fiddler-
 
 >tip If the Fiddler Classic rule has a value populated within the "Comment" field, it will be used for the rule name in Fiddler Everywhere. Any Fiddler Classic rules that have no comment will use a predefined name.
 
-## Importing Filters
+### Importing Filters
 
 Fiddler Classic **Filters** function (refer to the screenshot) at a deeper level, excluding any traffic not explicitly requested by the user. In Fiddler Everywhere, actions are initiated through the **Rules** tab. This is why any loaded Fiddler Classic filters will be imported using separate rules.
 
@@ -71,7 +75,7 @@ Fiddler Classic **Filters** function (refer to the screenshot) at a deeper level
 
 The import wizard will effectively import only currently loaded filters. As an alternative, you can import FFX files (Fiddler Filters archive) in Fiddler Everywhere through the **Import** button in the **Rules** tab.
 
-## Importing Quick Filters
+### Importing Quick Filters
 
 **Quick filters** in Fiddler Classic (refer to the screenshot) function similarly to filters in Fiddler Everywhere. You can import any existing quick filters into Fiddler Everywhere and find them in the Filters dialog under "Saved Filters" at the top left corner of the Live Traffic pane.
 

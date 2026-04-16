@@ -9,7 +9,7 @@ position: 15
 
 # Network Capturing Mode
 
-This article describes using the Fiddler **network capturing mode**, where "network traffic" refers to all outgoing TCP traffic. The feature requires the installation of a network extension (macOS) or kernel driver (Windows), which requires explicit administrative privileges.
+This article describes using the Fiddler Everywhere **network capturing mode**, where "network traffic" refers to all outgoing TCP traffic. The feature requires the installation of a network extension (macOS) or kernel driver (Windows), which requires explicit administrative privileges.
 
 On Windows, the network capturing mode installs a kernel driver through the Windows Filtering Platform (WFP), which then interacts with the Fiddler proxy to capture network traffic at a lower level.
 

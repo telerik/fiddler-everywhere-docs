@@ -16,6 +16,10 @@ res_type: kb
 
 ## Description
 
+How to export captured WebSocket traffic as plain text from Fiddler Everywhere?
+
+## Solution
+
 To export WebSocket traffic using Fiddler Everywhere, use one of the following options:
 
 - Save or export the entire WebSocket sessions through the **Save** and **Export** options in the Live Traffic grid context menu. This allows you to preserve the whole WebSocket session and reload it later for further inspection.

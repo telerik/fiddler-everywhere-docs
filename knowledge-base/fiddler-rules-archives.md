@@ -8,11 +8,23 @@ publish: true
 res_type: kb
 ---
 
+## Environment
+
+| Property | Value |
+|----------|-------|
+| Product  | Fiddler Everywhere |
+
+## Description
+
 The FARX abbreviation stands for Fiddler Rules Archive, the native format in which Fiddler applications (like Fiddler Everywhere and Fiddler Classic) can generate and export rules or groups of rules.
 
 >tip The rules archives originated from Fiddler Classic, where they were used alongside the AutoResponder feature. Thus, the FARX abbreviation originally came from the Fiddler AutoResponder Archive. The Fiddler Everywhere application enhanced the AutoResponder feature through its **Rules** tab.
 
-## Using FARX with Fiddler Everywhere
+## Solution
+
+The following sections describe how to use FARX files with Fiddler Everywhere.
+
+### Using FARX with Fiddler Everywhere
 
 The Fiddler Everywhere application automatically recognizes the FARX extension as a native extension. Double-clicking on the FARX file immediately loads it as a new group in the **Rules** tab of Fiddler Everywhere.
 
@@ -20,13 +32,13 @@ Through the **Rules** toolbar, you can also manually import existing FARX files 
 
 ![FARX import and export options](./images/farx-files-options.png)
 
-## Importing Rules from Fiddler Classic
+### Importing Rules from Fiddler Classic
 
 The import wizard in Fiddler Everywhere allows you to import AutoResponder rules from the Fiddler Classic application. The imported rules load it as a new group in the **Rules** tab of Fiddler Everywhere and can be exported at any point as *FARX* files.
 
 [Learn more about the import wizard here..](slug://fe-migrating-from-classic#importing-autoResponder-rules)
 
-## Using SAZ to create FARX Rules
+### Using SAZ to Create FARX Rules
 
 In addition to creating rules from scratch, you can use any saved SAZ archive and import it as a rule while using the  **Import** button within the **Rules** toolbar. 
 
@@ -38,7 +50,7 @@ Once the rule is created, export it as a FARX file through the **Export** option
 
 ![Creating FARX rule from SAZ archive](./images/creating-rule-from-saz.png)
 
-## Using Live Traffic to create FARX Rules
+### Using Live Traffic to Create FARX Rules
 
 Apart from creating a rule from SAZ, you can also directly use captured HTTPS traffic to create a new mocking rule. Use the **Create New Rules** option from the context menu in the **Live Traffic** grid for that purpose.
 

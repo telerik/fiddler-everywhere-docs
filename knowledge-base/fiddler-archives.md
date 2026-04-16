@@ -21,7 +21,11 @@ The SAZ abbreviation stands for **Session Archive Zip** and is the native Fiddle
 
 >tip Some archiving tools like 7-Zip recognize SAZ files by default, while others need to change the file extension to ZIP.
 
-## SAZ Structure
+## Solution
+
+The following sections detail the SAZ file structure and how to use SAZ archives with Fiddler Everywhere.
+
+### SAZ Structure
 
 Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains the following:
 
@@ -78,7 +82,7 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
 
 >tip Newer versions of Fiddler Everywhere constantly bring added value to the information obtained from each session. New features like the **TLS Version** column introduced in version 4.2.0 also add information for each captured session in the produced SAZ files. Note that SAZ files and sessions saved with older versions of Fiddler will not contain the new data (like the **TLS Version**).
 
-## Using SAZ with Fiddler Everywhere
+### Using SAZ with Fiddler Everywhere
 
 The Fiddler Everywhere uses SAZ behind the scenes for each session explicitly saved locally or in the cloud. The application also provides options to manually export and import captured and saved traffic through the UI. 
 

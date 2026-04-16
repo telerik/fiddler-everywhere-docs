@@ -26,8 +26,6 @@ Fiddler Everywhere provides a comparing option for detailed differentiation of t
 
 Fiddler Everywhere loads both sessions side-by-side, with the session with a lower ID to the left (named **Group 1**) and a higher ID to the right (named **Group 2**). The differences are highlighted in the session inspectors by a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session. Additional sessions can be added to both groups, simultaneously comparing multiple sessions.
 
-### Adding Sessions to the Compare Groups
-
 You can add and compare more sessions by adding them to the comparison groups.
 
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).

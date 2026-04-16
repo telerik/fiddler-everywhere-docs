@@ -71,7 +71,7 @@ An action called **Do Not Decrypt** is available in the **Rules Builder**. Only 
 
 Toggling a **Do Not Decrypt** rule on and off will not modify existing connections. The rule works only for newly established connections.
 
-### Creating a Rule to Skip Decryption
+To create a rule that skips decryption:
 
 - Open Fiddler Everywhere and go to the **Rules** tab.
 - Use **Add Rule** to open the **Rules Builder**.

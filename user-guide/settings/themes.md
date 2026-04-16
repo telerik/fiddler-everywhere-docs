@@ -18,7 +18,7 @@ By default, Fiddler Everywhere uses the **System** theme, which automatically ad
 1. Select your preferred theme from the dropdown menu
 2. Click **Save** to apply the changes
 
-### Available Themes
+The following themes are available:
 
 - **System**: Automatically matches your operating system's theme (light or dark)
 - **Light**: Uses a bright color scheme with dark text on light backgrounds
@@ -33,7 +33,7 @@ The **Table Density** setting controls the spacing and compactness of informatio
 - Inspector panel content
 - Other tabular data throughout the application
 
-### Density Options
+The following density options are available:
 
 - **Default**: Standard spacing with comfortable row heights for easy reading and interaction
 - **Compact**: Reduced spacing and smaller row heights to display more information on screen

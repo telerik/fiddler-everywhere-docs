@@ -9,7 +9,7 @@ position: 20
 
 # Creating Custom Skills
 
-The [official Fiddler agent skills](slug://fiddler-agent-skills) cover the most common workflows, but you can write your own skills to automate any Fiddler-powered analysis or debugging task that is specific to your application or team.
+The [official Fiddler Everywhere agent skills](slug://fiddler-agent-skills) cover the most common workflows, but you can write your own skills to automate any Fiddler-powered analysis or debugging task that is specific to your application or team.
 
 A **skill** is a plain Markdown file (`SKILL.md`) that instructs a coding assistant on how to perform a specific task. The file describes what the skill does (for automatic invocation), lists the operating rules the agent must follow, and documents the step-by-step procedure including which Fiddler MCP tools to call and what output to produce.
 

@@ -20,11 +20,15 @@ res_type: kb
 
 To capture secure traffic (HTTPS), Fiddler Everywhere needs to install a root CA, called `Fiddler Root Certificate Authority`, in the macOS Keychain Access application. How can I install the trust certificate automatically or manually?
 
-## Automated Approach (Recommended)
+## Solution
+
+You can install the root certificate automatically through the Fiddler Everywhere application or manually through the Keychain Access application.
+
+### Automated Approach (Recommended)
 
 The recommended approach is to install the Fiddler Everywhere root certificate on macOS automatically. For the step-by-step guide, refer to the [First Steps with Fiddler Everywhere on macOS article](slug://first_steps_macos).  
 
-## Manual Approach
+### Manual Approach
 
 If the automatic installation and enabling of the trust certificate do not work, you can manually install the trust CA within your keychain application:
 

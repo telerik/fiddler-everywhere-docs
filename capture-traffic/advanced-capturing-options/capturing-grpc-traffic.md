@@ -65,13 +65,13 @@ Often, the content in the received gRPC messages will be encoded. Meanwhile, Fid
 
 - Decoding through Protobuf schema files (files with extension `.proto`).
 
-### Decoding Through Server Reflection
+### Server Reflection
 
 Fiddler Everywhere will automatically detect if the gRPC server supports and uses server reflection. The server reflection might not work when it uses TLS due to certificate errors. You can ignore the errors through the **Settings> HTTPS > Ignore Server Certificate Errors** option.
 
 The received gRPC messages will be automatically decoded if server reflection is available.
 
-### Decoding Through Protobuf
+### Protobuf Files
 
 If you own the Protobuf schema files, you can provide them in Fiddler Everywhere through the **Settings > Protobuf > Decode via .proto file** option. Fiddler Everywhere will try to use the available `.proto` files to decode all received gRPC messages.
 

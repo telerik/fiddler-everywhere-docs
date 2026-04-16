@@ -129,7 +129,7 @@ The **Body** inspectors are suitable for different requests and responses. Depen
 
 The **Text** inspector lets you view the request and response bodies as text. It truncates the data it renders at the first null byte it finds, making it inappropriate for displaying binary content. Most body inspectors represent a large text area that reveals the body text interpreted using the detected character set with the headers, the byte-order-marker, or an embedded META tag declaration.
 
-![Text Inspector](./images/inspectors-textview.png)
+![Text Inspector displaying raw request and response content](./images/inspectors-textview.png)
 
 #### JSON Body Inspector
 
@@ -137,7 +137,7 @@ The **JSON** inspector interprets the selected request or response body as a Jav
 
 >important If the JSON data is malformed, for example, the name component of a name/value pair is unquoted, the JSON inspector will show a warning in the footer.
 
-![JSON Inspector](./images/inspectors-json.png)
+![JSON Inspector rendering structured JSON response data](./images/inspectors-json.png)
 
 #### HEX Body Inspector
 
@@ -145,7 +145,7 @@ The **HEX** inspector loads a hex representation of the HTTP request/response bo
 
 The **HEX** inspector consists of an offset column, a hex view column, and a text view column.
 
-![HEX Inspector](./images/inspectors-hex.png)
+![HEX Inspector showing hexadecimal and ASCII byte representation](./images/inspectors-hex.png)
 
 #### MessagePack Body Inspector
 
@@ -161,7 +161,7 @@ The **Socket.IO** inspector interprets the selected request or response body as 
 
 The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body cannot be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an **Expand All / Collapse All** toggle button to expand or collapse all XML tree nodes.
 
-![XML Inspector](./images/inspectors-xml.png)
+![XML Inspector displaying formatted XML response body](./images/inspectors-xml.png)
 
 #### Form Data Body Inspector
 
