@@ -41,7 +41,7 @@ Fiddler Everywhere provides multiple ways to exclude specific traffic from the p
 
 ### Proxy Bypass List
 
-- Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
+- Open Fiddler Everywhere on the host machine and go to **Settings** > **Connections**.
 - In the **Bypass Fiddler for URLS that starts with:** field, add the endpoints that you would like to bypass, separated by a comma:
     ```txt
     *.apple.com, *.itunes.com, *mzstatic.com
@@ -55,13 +55,13 @@ You can add a root domain or specific subdomain address to the bypass list on-th
 
 - Open Fiddler Everywhere and start capturing traffic.
 - Select a session that uses the domain/URL you want to bypass.
-- With the session selected, open the context menu and choose **Bypass > Add <*.domain.xxx> to Bypass List** or **Bypass > Add <subdomain.domain.xxx> to Bypass List**.
+- With the session selected, open the context menu and choose **Bypass > Add <*.domain.xxx> to Bypass List** or **Bypass** > **Add <subdomain.domain.xxx** > **to Bypass List**.
 
 ![Add domain or specific URL to the bypass list](./images/add-to-bypass.png)
 
 ### Resetting the Bypass List
 
-- Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
+- Open Fiddler Everywhere on the host machine and go to **Settings** > **Connections**.
 - Delete the endpoints that you no longer want to bypass the Fiddler proxy from the **Bypass Fiddler for URLS that starts with:** field.
 - Click **Save** to persist the change.
 

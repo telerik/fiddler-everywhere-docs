@@ -34,7 +34,7 @@ As an alternative to the preconfigured terminal, you can configure your python a
 
 For Fiddler Everywhere to capture traffic from a Python application, the application must be configured to respect the Fiddler Everywhere proxy. You can achieve that by setting the environment variables `http_proxy` and `https_proxy`. The `export` command (for macOS and Linux) or the `set` command (for Windows). The `export` command will generate an environment variable in a child process environment. It does not affect other already-existing settings.
 
-The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings > HTTPS > Advanced > Export Root Certificate (PEM/ASCII)**.
+The following example demonstrates how to define the proxy settings through environmental variables on **macOS** and **Linux**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings** > **HTTPS** > **Advanced** > **Export Root Certificate (PEM/ASCII)**.
 
 **
 ```sh
@@ -44,7 +44,7 @@ export SSL_CERT_FILE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
 export REQUESTS_CA_BUNDLE=~/Desktop/Fiddler_Root_Certificate_Authority.pem
 ```
 
-The following example demonstrates how to define the proxy settings through environmental variables on **Windows**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings > HTTPS > Advanced > Export Root Certificate (PEM/ASCII)**.
+The following example demonstrates how to define the proxy settings through environmental variables on **Windows**. Note that you need to have the Fiddler root CA exported to the Desktop folder through **Settings** > **HTTPS** > **Advanced** > **Export Root Certificate (PEM/ASCII)**.
 
 ```sh
 set http_proxy=http://127.0.0.1:8866

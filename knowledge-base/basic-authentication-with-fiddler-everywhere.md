@@ -17,7 +17,7 @@ res_type: kb
 
 ## Description
 
-In the context of an HTTP transaction, **Basic Access Authentication** is a method for an HTTP user agent (for example, a web browser) to provide a user name and password when making a request. In **Basic HTTP Authentication**, a request contains a header field in the form of `Authorization: Basic <base64 string>` where credentials are the **Base64** encoding of `username` and `password` joined by a single colon (`:`).
+In the context of an HTTP transaction, **Basic Access Authentication** is a method for an HTTP user agent (for example, a web browser) to provide a user name and password when making a request. In **Basic HTTP Authentication**, a request contains a header field in the form of `Authorization: Basic <base64 string** > **` where credentials are the**Base64** encoding of `username` and `password` joined by a single colon (`:`).
 
 How can I create a request for APIs that require authentication in Fiddler Everywhere?
 
@@ -34,7 +34,7 @@ The following steps provide an overview of the procedure for creating a basic au
 1. Create an object in the request **Body** and the `user` and `passwd` variables and their values. In this object, `user` and `passwd` are the predefined variables for the **Basic Authentication**.
 1. Add an `Authorization` key to the header:
    - Encode the value of the `<username>:<password>` string with a [**Base64 converter**](https://www.base64decode.org/) and note the encoded value.
-   - In the **Headers** tab, set the **Key** to `Authorization` and add the encoded `<username>:<password>` under **Value**.
+   - In the **Headers** tab, set the **Key**to `Authorization` and add the encoded `<username** > **:<password** > **` under**Value**.
    - Add a **Description** for the key. Click the **tick** to add the `Authorization` key.
 
 ### Basic Authentication Request Example

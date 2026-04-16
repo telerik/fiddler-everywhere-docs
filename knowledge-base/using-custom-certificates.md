@@ -73,4 +73,4 @@ You must apply the following policies by adding the following keys and values to
     security add-trusted-cert -d -r trustRoot -k ~/Library/Keychains/login.keychain-db "<path-to-the-ca.der.crt-file>"
 ```
 
-Once the custom certificate is installed and trusted, the Fiddler Everywhere application shows the custom certificate in **Settings > HTTPS**.
+Once the custom certificate is installed and trusted, the Fiddler Everywhere application shows the custom certificate in **Settings** > **HTTPS**.

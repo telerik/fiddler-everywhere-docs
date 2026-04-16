@@ -86,7 +86,7 @@ Any SAZ files produced from Fiddler Everywhere version 4.2.0 and above contains 
 
 The Fiddler Everywhere uses SAZ behind the scenes for each session explicitly saved locally or in the cloud. The application also provides options to manually export and import captured and saved traffic through the UI. 
 
->tip You can set the Fiddler Everywhere application as the default application for opening SAZ files through the operating system's settings (for example, on Windows 11 through **Settings > Apps > Default Apps**).
+>tip You can set the Fiddler Everywhere application as the default application for opening SAZ files through the operating system's settings (for example, on Windows 11 through **Settings** > **Apps** > **Default Apps**).
 
  SAZ files use the following UI options:
 

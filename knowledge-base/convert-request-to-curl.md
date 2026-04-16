@@ -28,7 +28,7 @@ Fiddler Everywhere version 4.0.0 and above provides an automated export as cURL 
 To export a session as cURL:
 
 - Select the captured session.
-- Open the context menu and choose **Copy > Copy as cURL**
+- Open the context menu and choose **Copy** > **Copy as cURL**
 
 >tip The "Copy as cURL" command will copy request bodies only when the request header Content-Type is set to `application/x-www-form-urlencoded` or `multipart/form-data` and will intentionally skip all other request and response bodies. The main reason for this is that the content of the HTTP body can be (and often is) quite large, which makes it impossible to put it in the clipboard. To transfer HTTP bodies of other sessions use the **Save Request Body to file** and **Save Response Body to file** inspector options.
 

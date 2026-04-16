@@ -34,7 +34,7 @@ This article provides a structured set of troubleshooting steps and solutions fo
 Work through this checklist first. Many capturing problems can be identified and resolved within minutes.
 
 - **Check that a capturing mode is active.** The [system capturing mode](slug://capture-traffic-get-started#system-capturing) or an [alternative capturing mode](slug://capture-traffic-get-started) must be explicitly enabled. Look for the toggle in the top-left area of the Fiddler UI.
-- **Verify the Fiddler CA certificate is installed and trusted.** Go to **Settings > HTTPS** and confirm that **Capture HTTPS Traffic** is checked and that the CA certificate is trusted in your OS certificate store.
+- **Verify the Fiddler CA certificate is installed and trusted.** Go to **Settings** > **HTTPS** and confirm that **Capture HTTPS Traffic** is checked and that the CA certificate is trusted in your OS certificate store.
 - **Confirm no active filters are hiding traffic.** Open the **Traffic** pane and use **Clear All Filters** to rule out filters that may be suppressing the display of captured sessions.
 - **Check that no active rules are blocking traffic.** Open **Rules** and confirm that no rules with a **DoNotShow** or **CloseNonGracefully** action are interfering. Note that the **Rules** tab includes a master switch—rules only execute when this switch is toggled **ON**.
 - **If using system capturing mode, open your OS proxy settings and verify Fiddler is registered as the system proxy.** The default address is `127.0.0.1` and the default port is `8866`. See [Verifying proxy settings by OS](#verifying-proxy-settings-by-os) below. This check does not apply to [browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing](slug://capture-traffic-get-started#independent-browser-capturing), which do not modify OS proxy settings.
@@ -85,7 +85,7 @@ If Fiddler works only when the VPN is disconnected, the VPN is the likely cause.
 
 **Solutions:**
 
-- **Bypass VPN for the Fiddler proxy:** Add your VPN server addresses to **Settings > Connections > Bypass Fiddler for URLs that start with** and save.
+- **Bypass VPN for the Fiddler proxy:** Add your VPN server addresses to **Settings** > **Connections** > **Bypass Fiddler for URLs that start with** and save.
 - **Use an alternative capturing mode:** [Browser capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) or [terminal capturing mode](slug://capture-traffic-get-started#independent-browser-capturing) are often less affected by VPN tools.
 - See also: [Configure VPN with Fiddler Everywhere](slug://configure-vpn-fiddler).
 
@@ -196,14 +196,14 @@ If **ERR_CONNECTION_RESET** appears only when Fiddler is running, the Fiddler CA
 
 **Solution:**
 
-1. In Fiddler Everywhere, go to **Settings > HTTPS > Advanced Settings** and click **Reset CA**.
+1. In Fiddler Everywhere, go to **Settings** > **HTTPS** > **Advanced Settings** and click **Reset CA**.
 2. Restart your client application and test again.
 
 If the issue persists:
 
 1. Open your OS certificate manager and remove all existing Fiddler CA certificates.
-2. In Fiddler Everywhere, go to **Settings > HTTPS** and use **Trust CA Certificate in the User Store** (or **Trust CA Certificate in the Machine Store** for machine-wide trust).
-3. Confirm that **Capture HTTPS Traffic** is enabled under **Settings > HTTPS**.
+2. In Fiddler Everywhere, go to **Settings** > **HTTPS** and use **Trust CA Certificate in the User Store** (or **Trust CA Certificate in the Machine Store** for machine-wide trust).
+3. Confirm that **Capture HTTPS Traffic** is enabled under **Settings** > **HTTPS**.
 
 >tip This error can also appear in [browser capturing mode](slug://capture-browser-traffic). In that case, manually remove all Fiddler CA certificates from the browser's certificate store and reinstall them.
 
@@ -279,7 +279,7 @@ In the output, look for a line like:
 
 If this line is present and you see a corresponding session appear in the Fiddler **Live Traffic** tab, HTTPS capturing is working correctly.
 
-If the issue persists, save all captured sessions via **File > Save Archive > All Sessions** and share them with [Telerik Support](slug://support) along with the log files.
+If the issue persists, save all captured sessions via **File** > **Save Archive** > **All Sessions** and share them with [Telerik Support](slug://support) along with the log files.
 
 ### Ubuntu / Linux
 
@@ -328,7 +328,7 @@ This can be caused by graphics driver issues. See [Incompatibility with Graphics
 
 ### Traffic Appears in Fiddler but HTTPS Sessions Show as Tunnels
 
-This indicates that HTTPS decryption is not enabled or the Fiddler CA certificate is not trusted. Ensure **Settings > HTTPS > Capture HTTPS Traffic** is checked and that the CA certificate is trusted in the OS store.
+This indicates that HTTPS decryption is not enabled or the Fiddler CA certificate is not trusted. Ensure **Settings** > **HTTPS** > **Capture HTTPS Traffic** is checked and that the CA certificate is trusted in the OS store.
 
 ### Fiddler Captures Some Apps but Not Others
 

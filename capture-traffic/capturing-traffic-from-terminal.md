@@ -34,7 +34,7 @@ As a result, Fiddler Everywhere opens a dedicated terminal instance and starts c
 
 ## Choosing Default Terminal
 
-You can set your preferred terminal application through **Settings > Terminal > Default Terminal**. The following options are available:
+You can set your preferred terminal application through **Settings** > **Terminal** > **Default Terminal**. The following options are available:
 
 - **Command Prompt**&mdash;Available only on Windows.
 - **Windows PowerShell**&mdash;Available only on Windows. Specifies the Windows PowerShell built on .NET Framework 4.5 and older versions.

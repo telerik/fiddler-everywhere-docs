@@ -26,7 +26,7 @@ res_type: kb
 
 ## Solution
 
-1. Export the Fiddler CA certificate to your **Desktop** folder through the options in **Settings > HTTPS > Advanced > Export Fiddler CA**.
+1. Export the Fiddler CA certificate to your **Desktop** folder through the options in **Settings** > **HTTPS** > **Advanced** > **Export Fiddler CA**.
 1. Open Firefox.
 1. Go to **Settings** > **Privacy & Security**.
 1. Click the **View Certificates** button to open the Firefox's **Certificate Manager**.

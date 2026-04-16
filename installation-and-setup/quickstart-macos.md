@@ -28,7 +28,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on mac
   https://challenges.cloudflare.com
   ```
   >note The Telerik site (where the Fiddler authentication form resides) uses different CDNs to load various components, styles, and cookies related to its user interface. Having limited internet access can cause the site not to load correctly.
-- Ensure that Fiddler Everywhere's proxy port is open and unrestricted by a firewall/security tool. By default, that is **port 8866**, but it can be changed from **Settings > Connections > Fiddler listens on port**.
+- Ensure that Fiddler Everywhere's proxy port is open and unrestricted by a firewall/security tool. By default, that is **port 8866**, but it can be changed from **Settings** > **Connections** > **Fiddler listens on port**.
 
 ## Step 1: Install Fiddler Everywhere on Your Machine
 

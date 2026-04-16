@@ -16,7 +16,7 @@ My client application utilizes the gRPC framework. What exactly is gRPC? Can I c
 
 [gRPC](https://grpc.io/) is an open-source, cross-platform Remote- Procedure Call (RPC) framework. One of its common usages is to connect services in and across servers with pluggable support for tracing, load balancing, and authentication. 
 
-Fiddler Everywhere captures gRPC traffic out-of-the-box through [all capturing modes](slug://capture-traffic-get-started) with the clarification that as gRPC is utilizing HTTP/2, you need to ensure that HTTP/2 capturing is enabled in Fiddler Everywhere. With the Fiddler proxy, you can capture gRPC traffic with all supported streaming modes - unary RPC (no streaming), server-streaming RPC, client-streaming RPC, and bi-directional streaming RPC. [Learn more about the streaming modes in gRPC here...](https://grpc.io/docs/what-is-grpc/core-concepts/#unary-rpc)
+Fiddler Everywhere captures gRPC traffic automatically through [all capturing modes](slug://capture-traffic-get-started) with the clarification that as gRPC uses HTTP/2, you need to ensure that HTTP/2 capturing is enabled in Fiddler Everywhere. With the Fiddler proxy, you can capture gRPC traffic with all supported streaming modes - unary RPC (no streaming), server-streaming RPC, client-streaming RPC, and bi-directional streaming RPC. [Learn more about the streaming modes in gRPC here...](https://grpc.io/docs/what-is-grpc/core-concepts/#unary-rpc)
 
 To capture gRPC traffic with Fiddler Everywhere, the following conditions must be satisfied:
 
@@ -49,7 +49,8 @@ The **Messages** tab lists the outgoing (Sender: Client) and incoming (Sender: S
 It is important to note that the gRPC uses [Protobuf format](https://protobuf.dev/overview/), which is in unreadable form. That means that the **Decode value** context menu option cannot be used for proper decoding of any gRPC channel message. The only way to decode a Protobuf message is to own the **.proto** file, which cannot be extracted over the gRPC session. Only the scheme creators are aware of the **.proto** format. Fiddler can help developers (that have access to the **.proto** scheme) by allowing them to extract a specific message and then decode it through the owner **.proto** file and the following command:
 
 ```js
-// [message_object_name] is the name of the message object in the .proto file. If the message is inside a package in the .proto file, use package_name.message_object_name.
+// [message_object_name] is the name of the message object in the .proto file.
+// If the message is inside a package, use package_name.message_object_name.
 // [.proto_file_path] is the path to the .proto file where the message is defined.
 // [binary_message_file_path] is the path to the file you want to decode.
 protoc --decode [message_object_name] [.proto_file_path] < [binary_message_file_path]
@@ -67,13 +68,13 @@ Often, the content in the received gRPC messages will be encoded. Meanwhile, Fid
 
 ### Server Reflection
 
-Fiddler Everywhere will automatically detect if the gRPC server supports and uses server reflection. The server reflection might not work when it uses TLS due to certificate errors. You can ignore the errors through the **Settings> HTTPS > Ignore Server Certificate Errors** option.
+Fiddler Everywhere will automatically detect if the gRPC server supports and uses server reflection. The server reflection might not work when it uses TLS due to certificate errors. You can ignore the errors through the **Settings** > **HTTPS** > **Ignore Server Certificate Errors** option.
 
 The received gRPC messages will be automatically decoded if server reflection is available.
 
 ### Protobuf Files
 
-If you own the Protobuf schema files, you can provide them in Fiddler Everywhere through the **Settings > Protobuf > Decode via .proto file** option. Fiddler Everywhere will try to use the available `.proto` files to decode all received gRPC messages.
+If you own the Protobuf schema files, you can provide them in Fiddler Everywhere through the **Settings** > **Protobuf** > **Decode via .proto file** option. Fiddler Everywhere will try to use the available `.proto` files to decode all received gRPC messages.
 
 ![Supplying a .proto file for decoding gRPC messages](./images/settings-protobuf.png)
 

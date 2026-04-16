@@ -207,7 +207,7 @@ Fiddler Everywhere provides common user interface to create inspectors for visua
 
 ![Capturing Socket.IO traffic](./images/socketio-inspectors.png)
 
-Encoded messages from a **gRPC** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobof files through the **Settings > Protobuf > Decode via .proto file** option.
+Encoded messages from a **gRPC** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobuf files through the **Settings** > **Protobuf** > **Decode via .proto file** option.
 
 [Learn more about capturing gRPC traffic with Fiddler Everywhere here...](slug://capture-grpc-traffic)
 
@@ -284,8 +284,8 @@ All inspectors provide further interaction options through a context menu. The c
 - **Copy Value**&mdash;An option to copy only the value (from a key-value pair). Available in **Headers** inspector.
 - **Copy Key/Value**&mdash;An option to copy the key-value pair. Available in **Headers** inspector.
 - **Copy Response Cookie Value**&mdash;An option to copy the value of a selected cookie. Available in **Cookies** inspector.
-- **Decode Value**&mdash;An option that allows you to decode selected value. The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
-- **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and all **Body** inspectors (**Text, JSON, XML, JavaScript**). The **Decode Selection** option opens a new detached window that you can use to inspect different snapshots and sessions.
+- **Decode Value**&mdash;An option that allows you to decode selected value. The decode option supports built-in decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
+- **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option supports built-in decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and all **Body** inspectors (**Text, JSON, XML, JavaScript**). The **Decode Selection** option opens a new detached window that you can use to inspect different snapshots and sessions.
 - **Add as a column**&mdash;An option to create a custom column in the Live Traffic grid while using the selected HTTP Header. Available in **Headers** inspector.
 
 ## Toolbar

@@ -1,6 +1,6 @@
 ---
 title: Prompt Library
-page_title: Fiddler Everywhere AI Prompt Library – MCP Prompts for HTTP Traffic Analysis
+meta_title: Fiddler Everywhere AI Prompt Library – MCP Prompts for HTTP Traffic Analysis
 description: "Explore a curated library of built-in and custom AI prompts for the Fiddler Everywhere MCP server. Use LLM-powered coding assistants to analyze HTTPS traffic, detect security vulnerabilities, optimize performance, and automate debugging workflows."
 slug: fiddler_ai_prompt_library
 position: 10
@@ -346,7 +346,7 @@ When crafting your own custom prompts, consider these best practices:
 - **Be specific**: Include domain names, session IDs, or specific criteria to narrow down the analysis.
 - **Use filters**: Apply filters before complex analysis to reduce processing time and improve accuracy.
 - **Combine operations**: Ask for multiple related tasks in a single prompt (for example, "analyze and create a report").
-- **Leverage context**: Reference previous prompts or analyses to build on earlier work.
+- **Use context**: Reference previous prompts or analyses to build on earlier work.
 - **Iterate**: Start with broad questions and refine based on the results.
 
 ## See Also

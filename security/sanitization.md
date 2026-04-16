@@ -10,7 +10,7 @@ position: 40
 
 The Fiddler Everywhere application provides data sanitization capabilities to automatically remove sensitive information from captured HTTPS traffic. This feature helps protect confidential data before performing actions such as saving sessions, exporting snapshots, or passing information to the Fiddler Everywhere MCP server.
 
-Data sanitization is configurable through the **Settings > Sanitization** section. By default, the sanitization process is enabled only for MCP output.
+Data sanitization is configurable through the **Settings** > **Sanitization** section. By default, the sanitization process is enabled only for MCP output.
 
 >important Fiddler Everywhere attempts to sanitize HTTP(S) traffic, but complete removal of sensitive data is not guaranteed. Unstructured, encrypted, compressed, obfuscated, or binary data may bypass the sanitization process. Each user is responsible for verifying the sanitization results and preventing unintended disclosure of sensitive information.
 

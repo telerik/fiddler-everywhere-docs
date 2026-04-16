@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-Fiddler Everywhere 3.4.0 removed the **Unmatched Requests Passthrough** option (previously available through **Settings > Rules**). The legacy option was obsolete as it often confused users and was not easily accessible for quick management. How can I achieve the same functionality with version 3.4.0 and above?
+Fiddler Everywhere 3.4.0 removed the **Unmatched Requests Passthrough** option (previously available through **Settings** > **Rules**). The legacy option was obsolete as it often confused users and was not easily accessible for quick management. How can I achieve the same functionality with version 3.4.0 and above?
 
 ## Solution
 

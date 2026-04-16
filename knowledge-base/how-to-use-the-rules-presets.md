@@ -88,7 +88,7 @@ While the filters remove traffic from the Fiddler live traffic grid, requests st
 Let us show how you can create, enable, and use your own rule that blocks all sessions and allows only HTTP sessions triggered by specific processes. We will match sessions triggered by browsers like Safari, Firefox, Edge, and Google Chrome for demonstration purposes. This rule is similar to the one we created in the previous section - however, the difference is that the matched traffic will not be filtered or blocked entirely.
 
 1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**" pattern. This rule uses the negative statement **none ...** to apply the desired actions to everything but the matched entries.
-1. Match by a **Process** where the string value defines the targeted process by its name. The process name varies depending on the operating system and version of the client application.<br/>The example below matches different browsers on macOS while using the following regular expression: **com\.apple\.webkit|chrome|msedge**.
+1. Match by a **Process**where the string value defines the targeted process by its name. The process name varies depending on the operating system and version of the client application.<br/** > **The example below matches different browsers on macOS while using the following regular expression:**com\.apple\.webkit|chrome|msedge**.
 1. Create a **Close Non Gracefully** action.
 
 This sample Fiddler rule matches all sessions where the processes contain one of the string literals set through the regular expression and then closes the connections made by any other unmatched process.

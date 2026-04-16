@@ -15,7 +15,7 @@ Fiddler Everywhere can act as a reverse proxy, allowing you to inspect, debug, a
 
 This article explains how to use Fiddler Everywhere as a reverse proxy through the built-in **Reverse Proxy** feature. You will also find a demo setup and troubleshooting tips.
 
->note For most users, the built-in Reverse Proxy feature is the simplest and most robust approach.
+>note For most users, the built-in Reverse Proxy feature is the simplest and most reliable approach.
 
 ## Reverse Proxy for Local Servers
 
@@ -26,7 +26,7 @@ The built-in **Reverse Proxy** feature lets you quickly set up a reverse proxy f
 1. Enter the targeted port in the `Client Port` field (for example, `8443`).
 1. Select the client protocol (default: `HTTP/HTTPS`).
 1. Enter the **remote host address** and **port** in the `Remote Host` field (for example, `localhost:8877`).
-    >important The custom port configured in the `Remote Host` field must differ from the port used by the Fiddler Everywhere proxy (configured through the **Settings > Connections > Fiddler listens on port** option).
+    >important The custom port configured in the `Remote Host` field must differ from the port used by the Fiddler Everywhere proxy (configured through the **Settings** > **Connections** > **Fiddler listens on port** option).
 1. Select the remote protocol (default: `HTTP/HTTPS`).
 1. Choose whether to preserve the host header (default: `No`).
 1. Save your changes.
@@ -184,7 +184,7 @@ For demonstation purposes. we will configure the reverse proxy rule for the remo
 
     ![creating reverse proxy rule for remote server](./images/reverse-proxy-remote-server-001.png)
 
-- Go to **Settings > HTTPS** and enable the **Ignore Server Certificate Errors (unsafe)** option.
+- Go to **Settings** > **HTTPS** and enable the **Ignore Server Certificate Errors (unsafe)** option.
 
     >tip Enabling the **Ignore Server Certificate Errors (unsafe)** option ensures that Fiddler will not encounter certificate errors when connecting to an IP hosting multiple web applications.
 
@@ -220,7 +220,7 @@ Use the following guidance to resolve common reverse proxy issues and optimize y
 
 - **Traffic not captured:** Ensure Fiddler is running and the correct port and protocol are set in the Fiddler Reverse Proxy settings.
 - **Connection refused errors:** Verify that your server is running on the configured port.
-- **Certificate errors (HTTPS):** Trust the Fiddler root certificate or enable **"Ignore server certificate errors"** in **Settings > HTTPS**.
+- **Certificate errors (HTTPS):** Trust the Fiddler root certificate or enable **"Ignore server certificate errors"** in **Settings** > **HTTPS**.
 
 ### Best Practices
 

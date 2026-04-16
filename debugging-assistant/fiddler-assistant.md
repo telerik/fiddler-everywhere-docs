@@ -1,6 +1,6 @@
 ---
 title: Fiddler Debugging Assistant
-page_title: Fiddler Debugging Assistant
+meta_title: Fiddler Debugging Assistant | Fiddler Everywhere
 description: "Use the Fiddler Everywhere Debugging Assistant alongside your preferred LLM model to enhance your HTTP traffic analysis and debugging workflow."
 slug: fiddler-assistant
 position: 1
@@ -8,7 +8,7 @@ position: 1
 
 # Fiddler Debugging Assistant
 
-The Fiddler Debugging Assistant enables you to leverage large language models to reach new levels of developer productivity. This built-in chat feature provides additional insights by combining your preferred language model with the Fiddler powerful traffic analysis capabilities.
+The Fiddler Debugging Assistant enables you to use large language models to increase developer productivity. This built-in chat feature provides additional insights by combining your preferred language model with the Fiddler powerful traffic analysis capabilities.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ The Fiddler Debugging Assistant enables you to leverage large language models to
 
 The Debugging Assistant is accessible through the **Ask Assistant** button in the Fiddler toolbar. To use it, you must provide a valid API key for one of the supported model providers.
 
-Select your preferred model provider and set its API key through **Settings > Assistant**. 
+Select your preferred model provider and set its API key through **Settings** > **Assistant**. 
 
 ![Configuring the debugging assistant API key](./images/fiddler_assistent_settings.png)
 
@@ -51,7 +51,7 @@ Google provides a free‑tier Gemini API key through [Google AI Studio](https://
 
 ### Configuring in Fiddler Everywhere
 
-1. Open Fiddler Everywhere and go to **Settings > Assistant**.
+1. Open Fiddler Everywhere and go to **Settings** > **Assistant**.
 1. Select **Google Gemini** as the provider.
 1. Paste your API key from Google AI Studio.
 1. Select a supported Gemini model from the dropdown list.

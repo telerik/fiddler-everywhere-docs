@@ -29,7 +29,7 @@ The section pops up on mouse interaction and lists the following information:
 
     ![The traffic sources](./images/traffic-sources.png)
 
-- **Fiddler Port State**&mdash;Indicates if the Fiddler Everywhere proxy port is opened/closed for remote connections. You can control the state through the **Settings > Connections > Allow remote devices to connect** option.
+- **Fiddler Port State**&mdash;Indicates if the Fiddler Everywhere proxy port is opened/closed for remote connections. You can control the state through the **Settings** > **Connections** > **Allow remote devices to connect** option.
 
     ![State of the Fiddler port](./images/remote-connections-status.png)
 

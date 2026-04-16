@@ -42,9 +42,9 @@ The instructions below highlight the configuration steps while using the latest 
 1. Start the **Fiddler Everywhere** application. 
 1. Ensure that the **System Proxy** switch is toggled **OFF**.
     >important Fiddler Everywhere will work as [an explicit proxy](slug://capture-traffic-get-started#explicit-capturing) with the HTTPS traffic being directly forwarded (to Fiddler) by the Zscaler forwarding profile and the related Zscaler PAC script. Zscaler will usually revert any changes made in the OS system proxy settings, so ensure that the **System Proxy** switch always stays **OFF**.
-1. Open **Settings > Connections** and ensure that the Fiddler port is the same as the one configured in the Zscaler PAC script. The default port used by the Fiddler Everywhere proxy is **port 8866**.
+1. Open **Settings** > **Connections** and ensure that the Fiddler port is the same as the one configured in the Zscaler PAC script. The default port used by the Fiddler Everywhere proxy is **port 8866**.
     ![Fiddler proxy port](./images/fiddler-zscaler-fiddler-port.png)
-1. Open **Settings > Gateway** and select **Set Manual Proxy Configuration**. Enter the Zscaler Client Connector proxy address and port.
+1. Open **Settings** > **Gateway** and select **Set Manual Proxy Configuration**. Enter the Zscaler Client Connector proxy address and port.
     ```sh
     http=127.0.0.1:9000;https=127.0.0.1:9000
     ```

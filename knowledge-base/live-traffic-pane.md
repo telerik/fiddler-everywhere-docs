@@ -597,7 +597,7 @@ The **Bypass** option lets you quickly add a root domain or specific subdomain a
 1. Select the desired session entry.
 1. Right-click to open the context menu. Then choose one of the following bypass options:
  - Select **Bypass > Add <*.domain.xxx> to the bypass list** to add the root domain and its subdomains to the bypass list. Adds a wildcard entry in the form ***.domain.xxx**.
- - Select **Bypass > Add <subdomain.domain.xxx> to the bypass list** to add a specific domain address to the bypass list.
+ - Select **Bypass** > **Add <subdomain.domain.xxx** > **to the bypass list** to add a specific domain address to the bypass list.
 
 Consider the following rules when bypassing a domain:
 

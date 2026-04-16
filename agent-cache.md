@@ -48,7 +48,7 @@ The following scenario demonstrates how Agent Cache eliminates redundant token u
 
 1. Start capturing traffic in Fiddler Everywhere—click **Start Capture** in the toolbar.
 1. Run your agent to trigger an HTTPS call to the model-provider endpoint.
-1. Open **Traffic > Agent Calls**.
+1. Open **Traffic** > **Agent Calls**.
 1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
 1. Enable the **Caching** switch for that session in the sticky **Caching** column.
        ![The "Agent Calls" tab in Fiddler](./images/caching-column.png)

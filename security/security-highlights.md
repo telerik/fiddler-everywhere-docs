@@ -73,7 +73,7 @@ Fiddler Everywhere provides an [MCP (Model Context Protocol) server]({%slug fidd
 
 - The MCP server runs locally on your machine (default port `8868`) and provides captured traffic data to connected coding tools and IDEs. Any application with access to your API key can retrieve your captured traffic data.
 - Protect your MCP server API key. This key grants access to all captured traffic data. Do not share the API key or commit it to version control systems. Regenerate the API key immediately if you suspect it has been compromised.
-- By default, [data sanitization]({%slug fe-sanitization%}) is enabled for MCP output to help prevent exposure of sensitive information to language models. Verify that **Settings > Sanitization > On MCP Output** is enabled before using the MCP server.
+- By default, [data sanitization]({%slug fe-sanitization%}) is enabled for MCP output to help prevent exposure of sensitive information to language models. Verify that **Settings** > **Sanitization** > **On MCP Output** is enabled before using the MCP server.
 - Be aware that captured traffic data sent to the MCP server will be processed by language models (such as those provided by your IDE). Review your model provider's data handling and privacy policies to understand how your data may be used, stored, or retained.
 - The MCP server provides access to all captured sessions available in Fiddler Everywhere. Consider clearing old or unnecessary sessions before enabling the MCP server to limit data exposure.
 - Only enable the MCP server when actively using it. Stop the server when not in use to minimize the window of potential unauthorized access.

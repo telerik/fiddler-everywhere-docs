@@ -59,7 +59,7 @@ The **View** section contains various options, as described below. Note that som
 
 - **Trust Root Certificate**&mdash;Automatically installs and trusts the Fiddler certificate authority (CA) in the user certificate store of the operating system certificate manager. The option is available on [macOS](slug://first_steps_macos) and [Windows](slug://first_steps_windows). On Linux, you have to [export and trust the Fiddler CA certificate manually](slug://first_steps_linux). After you install the CA, you are ready to enable the capturing of HTTPS traffic.
 
-- **Export Root Certificate**&mdash;Automatically exports the Fiddler Everywhere CA file in a format specific to the operating system used. The certificate is exported to the `Desktop` folder. Use the **Settings > HTTPS** section to export the certificate explicitly in a specific format.
+- **Export Root Certificate**&mdash;Automatically exports the Fiddler Everywhere CA file in a format specific to the operating system used. The certificate is exported to the `Desktop` folder. Use the **Settings** > **HTTPS** section to export the certificate explicitly in a specific format.
 
 - **Reset Certificate**&mdash;Removes the currently installed CA, generates a new one, and adds it to the user certificate store. It requires elevated privileges for the Fiddler Everywhere application.
 

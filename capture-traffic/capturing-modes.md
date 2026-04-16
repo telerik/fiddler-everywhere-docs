@@ -223,7 +223,7 @@ Fiddler Everywhere supports both HTTP/1.x and HTTP/2 traffic capture and composi
 - **Remote HTTP version**: Protocol version between Fiddler and remote endpoint
 
 **HTTP/2 Specifics:**
-- HTTP/2 support is enabled by default but can be disabled in [**Settings > Connections**](slug://connections-submenu)
+- HTTP/2 support is enabled by default but can be disabled in [**Settings** > **Connections**](slug://connections-submenu)
 - Connections default to HTTP/2 when both client and server support it
 - When disabled, Fiddler forces HTTP/1.1 communication
 - Fiddler translates between HTTP versions as needed (for example, HTTP/2 client to HTTP/1.1 server)
@@ -270,7 +270,7 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 - Dedicated [gRPC inspectors](slug://inspector-types#websocket-grpc-sse-and-socketio-inspectors)
 - Handshake and message inspection capabilities
 
-> **Important:** gRPC requires HTTP/2 support to be enabled in **Settings > Connections > Enable HTTP/2 support**.
+> **Important:** gRPC requires HTTP/2 support to be enabled in **Settings** > **Connections** > **Enable HTTP/2 support**.
 
 [Learn more about gRPC traffic capture...](slug://capture-grpc-traffic)
 

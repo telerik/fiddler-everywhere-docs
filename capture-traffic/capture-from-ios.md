@@ -56,7 +56,7 @@ Refer to the following steps to configure real iOS devices to work alongside a F
     1. Open a browser on the iOS device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. Follow the link to **download** the Fiddler certificate authority file.
     1. On your iOS device, open **General** > **Profile Downloaded** and install the downloaded Fiddler CA.
     1. (iOS 10.3+) Go to **Settings** > **General** > **About** > **Certificate Trust Settings** and enable full trust for the **Fiddler Root Certificate Authority**.
-        >tip You can check the installed profiles in **Settings > General > VPN & Device Management**. The Fiddler CA certificate name is **Fiddler Root Certificate Authority**, but you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed. 
+        >tip You can check the installed profiles in **Settings** > **General** > **VPN & Device Management**. The Fiddler CA certificate name is **Fiddler Root Certificate Authority**, but you see can be **DO_NOT_TRUST_FiddlerRoot** if the Fiddler host machine has older versions of Fiddler Everywhere installed. 
 1. Set the Fiddler Everywhere proxy on the iOS device.
     1. On your iOS device, go to **Settings** > **WiFi**.
     1. Find your current network and click the **i** icon.
@@ -103,7 +103,7 @@ To prevent Apple services from losing connectivity, the Fiddler Everywhere appli
 
 However, this is not the case for the other operating systems where these services are not commonly used. If you like to continue using Apple services like iTunes or AppStore on different operating systems, ensure to add the above endpoints manually as follows:
 
-- Open Fiddler Everywhere on the host machine and go to **Settings > Connections**.
+- Open Fiddler Everywhere on the host machine and go to **Settings** > **Connections**.
 - In the **Bypass Fiddler for URLs that starts with:** field, add the following Apple root domains:
     ```txt
     *.apple.com, *.itunes.com, *mzstatic.com

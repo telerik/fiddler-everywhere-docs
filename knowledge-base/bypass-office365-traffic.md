@@ -19,7 +19,7 @@ previous_url: /knowledge-base/setup-fiddler-alongside-outlook, /knowledge-base/s
 
 ## Description
 
-Some third-party applications like Microsoft Outlook and Office 365 tools are not working seamlessly alongside MITM proxies like Fiddler Everywhere.  How can I instruct Fiddler to disregard their traffic?
+Some third-party applications like Microsoft Outlook and Office 365 tools do not work well alongside MITM proxies like Fiddler Everywhere.  How can I instruct Fiddler to disregard their traffic?
 
 ## Solution
 

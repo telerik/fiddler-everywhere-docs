@@ -37,7 +37,7 @@ If the automatic installation and enabling of the trust certificate do not work,
 1. Open the Fiddler Everywhere application, go to __Settings > HTTPS__ and check the **Capture HTTPS traffic** checkbox.
 1. Restart Fiddler Everywhere and start capturing HTTPS traffic.
 
-If you are still unable to capture HTTPS traffic after the steps above, consider troubleshooting your configuration by looking up for possible errors logged in [the Fiddler log files](slug://fiddler-log-files) or contacting the Fiddler Everywhere support (through the **Help > Contact Support** option).
+If you are still unable to capture HTTPS traffic after the steps above, consider troubleshooting your configuration by looking up for possible errors logged in [the Fiddler log files](slug://fiddler-log-files) or contacting the Fiddler Everywhere support (through the **Help** > **Contact Support** option).
 
 ## Contact Us
 

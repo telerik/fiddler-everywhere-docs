@@ -20,7 +20,7 @@ The benefits of the network capturing mode are as follows:
 - Works on a lower level compared to HTTP(S) proxies.
 - Captures all outgoing TCP traffic from the active network adapter. 
 - No limitations related to frameworks, applications, operating systems, and other configuration specifics that you usually must handle when using an HTTP(S) proxy.
-- Allows you to control the IP addresses and processes to monitor seamlessly.
+- Allows you to control which IP addresses and processes to monitor.
 
 ## Prerequisites & Limitations
 
@@ -43,7 +43,7 @@ The **Network Capture** mode currently has some known limitations as follows:
 - The network capturing mode is available only for Windows and macOS. The Linux version of Fiddler Everywhere does not yet support network capturing.
 - **The network capturing mode cannot work alongside the system capturing mode**. If the network capturing mode is enabled, Fiddler will automatically disable the system capturing mode to prevent conflicts.
 - Specific VPN tools are closing the VPN connection if a third-party network extension is detected. You can try to workaround that by making the VPN connection **before** starting Fiddler Everywhere and then enabling its network capturing mode.
-- To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints (for example, like `vpn.mycompany.com`). However the **HTTPS > Connections > Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. When using network capturing mode, you must bypass targeted VPN endpoints [by creating a Fiddler rule that executes the **Do Not Decrypt** action](slug://configure-vpn-fiddler#configuration-for-network-
+- To use a VPN connection alongside Fiddler you often need to bypass specific VPN endpoints (for example, like `vpn.mycompany.com`). However the **HTTPS** > **Connections** > **Bypass Fiddler for URLs that starts with:** option is incompatible with the **Network Capture** mode. When using network capturing mode, you must bypass targeted VPN endpoints [by creating a Fiddler rule that executes the **Do Not Decrypt** action](slug://configure-vpn-fiddler#configuration-for-network-
 capturing-mode).
 - The network capturing mode can capture only outbound traffic. Currently, inbound traffic from remote devices is not captured. For such cases, use our alternative capturing modes like [reserve proxy](slug://fiddler-reverse-proxy) or specific capturing modes for [Android](slug://capture-mobile-android-traffic), [iOS](slug://capture-mobile-ios-traffic), or [remote PCs](slug://fiddler-capture-other-computers).
 
@@ -147,7 +147,7 @@ Disabling network capturing does not remove the network extension from your syst
 
 ### Removal Through Application Uninstall (Windows)
 
-1. Open the **Windows Control Panel** and navigate to **Programs > Uninstall a program**.
+1. Open the **Windows Control Panel** and navigate to **Programs** > **Uninstall a program**.
 2. Select **Fiddler Everywhere** from the list and click **Uninstall**.
 
 >tip The uninstaller automatically stops and removes the `fid_kernel` kernel driver as part of the uninstallation process.
@@ -188,7 +188,7 @@ If you encounter issues with the Fiddler Everywhere network extension, try the f
 
 - Ensure your OS user account has administrative privileges to install and enable network extensions.
 - Uninstall any previously installed versions of the network extension (see [removal steps above](#removing-the-network-extension)), then reinstall Fiddler Everywhere.
-- On Windows, check the **Windows Event Viewer** (under **Windows Logs > System**) for errors related to `fid_kernel` to get detailed failure information.
+- On Windows, check the **Windows Event Viewer** (under **Windows Logs** > **System**) for errors related to `fid_kernel` to get detailed failure information.
 - On macOS, open the **Console** app and filter by `Fiddler` to review system-level extension errors.
 - If installation or enablement continues to fail, contact [Telerik Support Center](https://www.telerik.com/account/support-center).
 

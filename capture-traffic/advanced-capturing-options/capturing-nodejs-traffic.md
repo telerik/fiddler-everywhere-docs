@@ -75,7 +75,7 @@ const setFiddlerProxy = () => {
     var proxyUrl = url.format(fiddlerProxy);
     env.http_proxy = proxyUrl;
     env.https_proxy = proxyUrl;
-    // Use this only for debugging purposes, as it introduces a security issue
+    // Use this only for debugging purposes, as it introduces a security issue.
     env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 };
 const removeFiddlerProxy = () => {
