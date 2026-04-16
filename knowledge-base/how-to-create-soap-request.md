@@ -1,6 +1,6 @@
 ---
-title: Compose SOAP requests
-meta_title: Compose SOAP requests | Fiddler Everywhere
+title: Composing SOAP Requests
+meta_title: Composing SOAP Requests | Fiddler Everywhere
 description: "Learn how to compose SOAP requests with the Fiddler Everywhere Composer. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-composer-soap

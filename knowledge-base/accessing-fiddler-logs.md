@@ -36,7 +36,7 @@ The Fiddler Everywhere application generates the following log files:
 
 Both log files are useful to investigate cases where the client is not working properly. The location of these files varies depending on the operating system on which Fiddler Everywhere is working.
 
-### Accessing the Logs through the UI
+### Accessing the Logs Through the UI
 
 Fiddler Everywhere version 1.3.0 and later provides a UI option through **Help** > **Open Application Logs Folder** to automatically open the folder that contains the log files.
 

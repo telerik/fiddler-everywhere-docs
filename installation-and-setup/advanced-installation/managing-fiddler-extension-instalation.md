@@ -18,7 +18,7 @@ The Fiddler [network capturing mode](slug://capture-network-traffic) enables use
 | App Bundle Identifier | com.progress-telerik.fiddler
 | Extension Bundle Identifier | com.progress-telerik.fiddler.fiddler-extension
 
-## Enabling the Network Extension through JAMF
+## Enabling the Network Extension Through JAMF
 
 To enable the system extension, execute the following steps:
 

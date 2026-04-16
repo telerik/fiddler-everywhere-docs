@@ -1,6 +1,6 @@
 ---
-title: Create a Rule from Multiple Requests
-meta_title: Create a Rule from Multiple Requests | Fiddler Everywhere
+title: Creating a Rule from Multiple Requests
+meta_title: Creating a Rule from Multiple Requests | Fiddler Everywhere
 description: "Create a rule from multiple requests to easily mock server responses in batch. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: rule-multiple-requests

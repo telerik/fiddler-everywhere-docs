@@ -28,7 +28,7 @@ Steps needed to capture HTTPS traffic from a Python application:
 
 [Learn more about the **Open Browser** option in Fiddler Everywhere here...](slug://capture-terminal-traffic)
 
-## Setting Fiddler Proxy and CA through Environment Variables
+## Setting Fiddler Proxy and CA Through Environment Variables
 
 As an alternative to the preconfigured terminal, you can configure your python applications to go through the Fiddler Everywhere proxy explicitly.
 
@@ -73,7 +73,7 @@ set http_proxy=
 set https_proxy=
 ```
 
-## Setting Fiddler Proxy through Python Code
+## Setting Fiddler Proxy Through Python Code
 
 You can set the Fiddler proxy explicitly through the Python application's code base.
 

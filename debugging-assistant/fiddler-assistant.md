@@ -112,7 +112,7 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | Key Name | Description | Value Type | Value Example |
 |:---------|:------------|:-----------|:--------------|
 | `DisableAssistant` | Enables or disables the Debugging Assistant | DWORD-32 (hexadecimal) | `1` |
-| `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) for the Debugging Assistant | REG_SZ (string) | See the JSON structure [here](#configuring-the-defaultassistantsettings-policy) |
+| `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) for the Debugging Assistant | REG_SZ (string) | See the [JSON structure below](#configuring-the-defaultassistantsettings-policy) |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | DWORD-32 (hexadecimal) | `1` |
 
 ### macOS
@@ -122,7 +122,7 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | Key Name | Description | Value Type | Value Example |
 |:---------|:------------|:-----------|:--------------|
 | `DisableAssistant` | Enables or disables the Debugging Assistant | integer | `1` |
-| `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) for the Debugging Assistant | String | See the JSON structure [here](#configuring-the-defaultassistantsettings-policy) |
+| `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) for the Debugging Assistant | String | See the [JSON structure below](#configuring-the-defaultassistantsettings-policy) |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the Debugging Assistant settings | integer | `1` |
 
 The `DefaultAssistantSettings` policy expects a JSON object that contains the following properties:

@@ -62,7 +62,7 @@ To start the network capturing mode, execute the following steps:
 1. Click the **Network Capture** button from the **Live Traffic** menu.
 1. Click the **Enable** from the **Network Capture Settings** screen.
 
->tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)
+>tip The capturing will use the pre-configured rules. [Learn how to modify the default capturing rules or add additional rules...](#modify-network-capture-rules)
 
 >important If the system capturing mode is currently enabled, Fiddler will automatically disable it when you enable network capturing mode, as these two modes cannot work simultaneously.
 
@@ -143,14 +143,14 @@ Both localhost rules apply to port `3000`.
 
 Disabling network capturing does not remove the network extension from your system. To fully remove it, use one of the methods below.
 
-### Removal through Application Uninstall (Windows)
+### Removal Through Application Uninstall (Windows)
 
 1. Open the **Windows Control Panel** and navigate to **Programs > Uninstall a program**.
 2. Select **Fiddler Everywhere** from the list and click **Uninstall**.
 
 >tip The uninstaller automatically stops and removes the `fid_kernel` kernel driver as part of the uninstallation process.
 
-### Removal through CLI Commands (Windows)
+### Removal Through CLI Commands (Windows)
 
 To remove only the kernel driver without uninstalling Fiddler Everywhere, run the following commands in an elevated (Administrator) shell:
 
@@ -161,7 +161,7 @@ sc delete fid_kernel
 
 >tip `sc` is the Windows Service Control command-line utility used to communicate with the Service Control Manager. The first command stops the running driver service; the second permanently removes it.
 
-### Removal through Application Uninstall (macOS)
+### Removal Through Application Uninstall (macOS)
 
 1. Open the **Applications** folder in Finder.
 2. Drag **Fiddler Everywhere** to the **Trash**.

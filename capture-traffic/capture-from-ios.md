@@ -46,7 +46,7 @@ The tutorial requires administrative privileges for the current user (on the iOS
 
 >tip: If you only need to capture remote traffic, then there is no need to install the Fiddler CA certificate on the Fiddler host machine. You only need to download and install the Fiddler CA certificate on the remote device. Once the proxy configuration is in place, Fiddler Everywhere will automatically capture and decrypt the remote HTTPS traffic.
 
-### Configuring the Fiddler proxy on iOS Device
+### Configuring the Fiddler Proxy on iOS Device
 
 Refer to the following steps to configure real iOS devices to work alongside a Fiddler Everywhere host. For more information on working with iOS simulators, refer to the section about [configuring iOS simulators](#configuring-the-fiddler-proxy-on-ios-emulator). Real iOS devices and iOS simulators must be discoverable on the same local network.
 
@@ -62,7 +62,7 @@ Refer to the following steps to configure real iOS devices to work alongside a F
         - In the **SERVER** field, enter the IP address of the Fiddler Everywhere host&mdash;for example, `192.168.0.101` (for demo purposes, we assume this is the IP of the host that runs Fiddler).
         - Enter the Fiddler Everywhere proxy port in the **PORT** field. By default, the port is `8866`.
 
-## Configuring the Fiddler proxy on iOS Emulator
+## Configuring the Fiddler Proxy on iOS Emulator
 
 The later versions of the iOS simulators, accessible through XCode, are using the macOS system proxy by default. 
 
@@ -108,6 +108,6 @@ However, this is not the case for the other operating systems where these servic
     ```
 - Click **Save** to persist the change.
 
-## Contact us
+## Contact Us
 
 If you have more questions or need help configuring your iOS device alongside Fiddler Everywhere, you can contact our support team through the **Contact Support** option.

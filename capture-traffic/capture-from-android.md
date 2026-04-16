@@ -41,7 +41,7 @@ During the tutorial, you will need administrative privileges on the Android devi
 
 >tip If you only need to capture traffic from a remote device, you do not need to install the Fiddler CA certificate on the Fiddler host machine. Download and install the Fiddler CA certificate on the remote device. Once the proxy is configured, Fiddler Everywhere will automatically capture and decrypt HTTPS traffic from the remote device.
 
-### Configuring the Fiddler proxy on Android Device
+### Configuring the Fiddler Proxy on Android Device
 
 The following steps apply to physical Android devices that are connected to the same network as the Fiddler Everywhere host machine.
 
@@ -66,7 +66,7 @@ Once these steps are complete, you can capture traffic from your Android deviceâ
 1. Open **Google Chrome** (or any browser that respects proxy settings) on your Android device and navigate to [https://example.com](https://example.com).
 1. Confirm that the HTTPS traffic appears in the Fiddler Everywhere application.
 
-## Configuring the Fiddler proxy on Android Emulator
+## Configuring the Fiddler Proxy on Android Emulator
 
 Android Virtual Devices (AVDs), also known as Android emulators, can be configured to use Fiddler Everywhere as a proxy by adjusting the network settings within the emulator, similar to a physical device. The key difference is that the proxy address for the emulator should be set to its loopback address. For most standard Android emulators, this address is `10.0.2.2`, but some third-party emulators may use a different loopback alias. Refer to your emulator's documentation if you are unsure.
 
@@ -141,6 +141,6 @@ Most production-ready applications block the use of user-installed certificates,
 * [Directing localhost Requests from Mobile Application through the Fiddler Proxy](slug://fiddler-localhost-android)
 * [Debugging Mobile Applications with Fiddler Everywhere (Webinar)](https://www.telerik.com/webinars/fiddler/how-to-debug-ios-and-android-mobile-apps-with-fiddler)
 
-## Contact us
+## Contact Us
 
 If you have more questions or need help configuring your iOS device alongside Fiddler Everywhere, you can contact our support team through the **Contact Support** option.

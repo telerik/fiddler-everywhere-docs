@@ -63,7 +63,7 @@ You can add a root domain or specific subdomain address to the bypass list on-th
 - Delete the endpoints that you no longer want to bypass the Fiddler proxy from the **Bypass Fiddler for URLS that starts with:** field.
 - Click **Save** to persist the change.
 
-## Skipping Decryption through Rules
+## Skipping Decryption Through Rules
 
 An action called **Do Not Decrypt** is available in the **Rules Builder**. Only the CONNECT tunnel session will appear for the matched sessions when the action is active. You can see the Fiddler message that no further sessions will be decrypted inside the CONNECT tunnel session's response. Only conditions matching **Host**, **URL**, **Process**, **Client IP**, **HTTP Version**, and **Remote IP** can be used alongside the **Do Not Decrypt** action.
 

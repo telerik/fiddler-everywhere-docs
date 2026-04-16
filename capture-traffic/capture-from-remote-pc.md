@@ -61,7 +61,7 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
 1. Check the local IP address of the Fiddler Everywhere application host. You can use [the connection status on the lower right-hand side](slug://connections-section) to get the host IP address. Alternatively, you can get the host IP address using a terminal command like **ipconfig**/ **ifconfig** (depending on the OS).
 
 
-### Configuring the Fiddler proxy on the Remote Device
+### Configuring the Fiddler Proxy on the Remote Device
 
 1. Open a browser on the remote device and type the `http://<fiddler-host-IP>:8866` echo service address of Fiddler Everywhere. 
 1. Click the Fiddler CA certificate link to download it.

@@ -36,6 +36,6 @@ res_type: kb
 
 The Fiddler CA certificate is now installed. You can now decrypt traffic captured from the Firefox browser.
 
->tip In addition to installing and Fiddler CA, you can also instruct Firefox to explicitly use the Fiddler Everywhere proxy through **Settings** > **General** > **Network Settings** > **Manual Proxy COnfiguration** and then set the Fiddler address and port (by default, IP `127.0.0.1` and port `8866`) as values for **HTTP Proxy** and **HTTPS Proxy** fields.
+>tip In addition to installing and Fiddler CA, you can also instruct Firefox to explicitly use the Fiddler Everywhere proxy through **Settings** > **General** > **Network Settings** > **Manual Proxy Configuration** and then set the Fiddler address and port (by default, IP `127.0.0.1` and port `8866`) as values for **HTTP Proxy** and **HTTPS Proxy** fields.
 
 

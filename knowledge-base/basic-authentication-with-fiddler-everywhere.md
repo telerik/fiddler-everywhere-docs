@@ -57,6 +57,6 @@ After performing all the above steps, select **Execute** that is located at the 
 
 Following the above steps will create **Basic Authentication** with Fiddler Everywhere. To check, go through the **Response Inspector** section of the **Composer**. A successful request will return **status 200** from the server along with the server-specific payload:
 
-## Contact us
+## Contact Us
 
 Suppose you have more questions or need assistance for testing authentication scenario through Fiddler Everywhere, then you can reach out to our support team through the **Contact Support** option.

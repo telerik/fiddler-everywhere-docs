@@ -12,7 +12,7 @@ previous_url: /knowledge-base/capturing-net-traffic
 
 How to capture HTTPS traffic from my .NET application? Do I need a particular flow or configuration while using Fiddler Everywhere as a proxy? Are there specifics while capturing localhost traffic during .NET application development?
 
-## Capturing .NET Traffic through Terminal
+## Capturing .NET Traffic Through Terminal
 
 Fiddler Everywhere provides a preconfigured terminal to use as a sandboxed proxy environment. You can start your .NET application through the Fiddler **Terminal** option. This option enables you to capture HTTPS traffic from .NET applications started through the Fiddler terminal. Using the terminal capturing mode is the recommended approach that lets you quickly capture the .NET application traffic with least configuration.
 
@@ -27,7 +27,7 @@ Fiddler captures the HTTPS sessions and displays them in the Live Traffic grid.
 
 >tip Many Visual Studio users often rely on the built-in terminal during development. Fiddler cannot work with the built-in terminal. However, you can configure your Visual Studio to attach the Fiddler preconfigured terminal. This way, you can benefit from using the development perks (like debugging with breakpoints) while using the Fiddler proxy simultaneously. [Learn more about attaching running processes to the Visual Studio debugger here...](https://learn.microsoft.com/en-us/visualstudio/debugger/attach-to-running-processes-with-the-visual-studio-debugger?view=vs-2022).
 
-## Capturing .NET Traffic through System Capturing
+## Capturing .NET Traffic Through System Capturing
 
 A modern-day version of the .NET framework respects the system proxy settings. To capture HTTPS traffic from the .NET application, do the following:
 

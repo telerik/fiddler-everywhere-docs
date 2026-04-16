@@ -1,6 +1,6 @@
 ---
-title: Create a Rule to Disable Caching
-meta_title: Create a Rule to Disable Caching | Fiddler Everywhere
+title: Creating a Rule to Disable Caching
+meta_title: Creating a Rule to Disable Caching | Fiddler Everywhere
 description: "Create a rule in Fiddler Everywhere to disable caching of pages and resources. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: rule-disable-caching

@@ -14,7 +14,7 @@ Fiddler Everywhere provides full-scale support for its paid subscription and tri
 
 Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the developers who built the tool. Use the **Contact Support** option within the Fiddler Everywhere application to open the [support center](https://www.telerik.com/account/support-center) and submit a support ticket.
 
-The subscription plan includes unlimited access to Fiddler's dedicated support services. However, to keep providing an industry-leading support experience, we have instituted a fair usage policy for support services. This means that if customer activity exceeds at least ten times the average, it may be reviewed by a Fiddler support manager at any time to assess whether the number of support requests is excessive and whether the user is in violation of the fair usage policy.
+The subscription plan includes unlimited access to the Fiddler dedicated support services. However, to keep providing an industry-leading support experience, we have instituted a fair usage policy for support services. This means that if customer activity exceeds at least ten times the average, it may be reviewed by a Fiddler support manager at any time to assess whether the number of support requests is excessive and whether the user is in violation of the fair usage policy.
 
 Support services for paid subscription or trial users provide the following support services:
 

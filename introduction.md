@@ -34,7 +34,7 @@ Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTPS c
 
 Fiddler Everywhere provides an HTTPS and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, compare, and share captured traffic with collaborators. Read more about [inspecting](slug://inspecting-traffic-get-started) and [modifying](slug://modify-traffic-get-started) traffic with Fiddler Everywhere...
 
-### Modern HTTP and TLS version support
+### Modern HTTP and TLS Version Support
 
 Fiddler Everywhere supports the used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. Fiddler Everywhere supports obsolete and modern SSL and TLS versions, including TLS 1.2 and TLS 1.3.
 
@@ -89,7 +89,7 @@ Fiddler Everywhere delivers a modern, intuitive UI with collapsible panels, [lay
 
 ## Trial Version 
 
-Fiddler Everywhere offers a trial with a full-featured version of the tool&mdash;no restrictions! Moreover, you are eligible for complete technical support during your trial period if you have any questions. To sign up for a free trial, go [here](https://www.telerik.com/download/fiddler-everywhere). The trial version activates only once per each unique machine.
+Fiddler Everywhere offers a trial with a full-featured version of the tool&mdash;no restrictions. Moreover, you are eligible for complete technical support during your trial period if you have any questions. To sign up for a free trial, go to the [Fiddler Everywhere download page](https://www.telerik.com/download/fiddler-everywhere). The trial version activates only once per each unique machine.
 
 ## Commercial Licenses
 

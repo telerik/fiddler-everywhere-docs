@@ -48,14 +48,14 @@ The Fiddler terminal instance automatically proxies all HTTPS requests made by *
 
 While using the terminal capturing mode, you must consider the technical specifics listed below.
 
-### Localhost Traffic through the Fiddler Terminal
+### Localhost Traffic Through the Fiddler Terminal
 
 Some frameworks, like the .NET Framework, are hardcoded not to send requests for localhost through any proxies, and as a proxy, Fiddler will not receive such traffic.
 
 Because Windows PowerShell uses the .NET Framework (not to be confused with PowerShell, which uses .NET Core), the localhost traffic will not be sent through the proxy. You can workaround the issue by [using the Fiddler aliases](slug://how-to-capture-localhost-traffic) or adding a dot to the end of the localhost address (for example, `localhost.:8080`).
 
 
-### NET Traffic through a Terminal
+### NET Traffic Through a Terminal
 
 Capturing traffic from **curl** or **Node.js** libraries does not require explicitly installing and trusting the Fiddler certificate authority on the Fiddler host. However, this is a mandatory requirement for a NET application that executes HTTPS requests.
 
