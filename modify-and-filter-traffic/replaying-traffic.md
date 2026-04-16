@@ -27,7 +27,7 @@ As a result, the selected sessions will be immediately replayed and displayed as
 For more advanced replay options, follow these steps:
 
 1. Select one or more sessions.
-1. Invoke the context menu or press `Alt + R`/`Option + R`.
+1. Invoke the context menu or press `Alt`+`R`/`Option`+`R`.
 
 The above opens the **Advanced Replay** configuration prompt window, allowing you to control the following aspects of the replay process:
 

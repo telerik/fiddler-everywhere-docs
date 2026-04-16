@@ -143,8 +143,8 @@ The **Live Traffic** grid displays all captured web sessions with their technica
 
 Many operations start by selecting one or more entries in the **Live Traffic** grid and activating other features.
 
-- To select more than one session, hold the **Ctrl** (**Command** on Mac) or **Shift** keys while clicking the desired rows.
-- Double-click or press **Enter** (**Return** on Mac) to activate the default inspectors for a single selected session.
+- To select more than one session, hold the `Ctrl` (`Command` on Mac) or `Shift` keys while clicking the desired rows.
+- Double-click or press `Enter` (`Return` on Mac) to activate the default inspectors for a single selected session.
 
 When the **Inspectors** are activated, they will automatically decide which inspector type is best suited to display the request and response of the selected session.
 
@@ -454,7 +454,7 @@ The column **Filter** menu lets you add filters for the currently selected colum
 
 ## Context Menu Options
 
-The context menu for the **Live Traffic** grid exposes actions you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press **Control** and mouse-click (macOS).
+The context menu for the **Live Traffic** grid exposes actions you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press `Control` and mouse-click (macOS).
 
 - [Replaying](#replaying) (**Replay**)
 - [Editing in the Composer](#editing-in-the-composer) (**Edit in Composer**)

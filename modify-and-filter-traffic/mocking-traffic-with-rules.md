@@ -17,7 +17,7 @@ Fiddler can mock HTTPS traffic captured locally or remotely, for example, as tra
 
 1. Capture the targeted HTTPS traffic or import a SAZ archive (containing the sessions snapshot) in the Snapshots list.
     ![Loading SAZ archive with captured traffic](./images/mock-rules-saz.png)
-1. Select all sessions (`Ctrl + A` on Windows or `CMD + A` on macOS).
+1. Select all sessions (`Ctrl`+`A` on Windows or `Cmd`+`A` on macOS).
 1. Right-click to invoke the context menu and choose **Add New Rules**. At this point, Fiddler will automatically generate rules for each captured session and create a parent group. The group's name will be "Selection Import" followed by a timestamp.
     ![Loading SAZ archive with captured traffic](./images/mock-rules-saz-tab.png)
 

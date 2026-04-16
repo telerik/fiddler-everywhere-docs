@@ -40,7 +40,7 @@ Install the latest version of Fiddler Everywhere on your machine.
         1. Open a terminal.
         1. Navigate to the folder where the installation file resides.
         1. Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
-        1. If prompted, enter your username and password. Press the **Enter** key.
+        1. If prompted, enter your username and password. Press the `Enter` key.
     - Setting the installation plan as executable through the GUI.
         * For the Gnome distribution
           ![Gnome setting executable](./images/exec-gnome.jpg)
