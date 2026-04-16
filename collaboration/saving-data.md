@@ -101,3 +101,9 @@ To save composed API requests, follow these steps:
 ## Saving Rules
 
 All rules in Fiddler Everywhere are automatically saved in your **Rules** list immediately after creation through the **Rules Builder**.
+
+## See Also
+
+- [Sharing Captured Traffic](slug://fiddler-sharing)
+- [Exporting and Importing Traffic](slug://fiddler-export-and-import)
+- [Grouping API Requests in Collections](slug://composer-collections-get-started)

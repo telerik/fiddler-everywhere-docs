@@ -174,3 +174,10 @@ google_gemini
     "azureUri": "https://<your-azure-app-endpoint>/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-01-01-preview"
 }
 ```
+
+## See Also
+
+- [Using the Fiddler MCP Server](slug://fiddler-mcp-server)
+- [Fiddler Agent Skills](slug://fiddler-agent-skills)
+- [Fiddler Prompt Library](slug://fiddler_ai_prompt_library)
+```

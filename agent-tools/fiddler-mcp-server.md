@@ -325,3 +325,9 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | `DisableMCP` | Enables or disables the Fiddler Everywhere MCP server | integer | `1` |
 
 For more information on using managed application configurations, refer to the [Managed Application Policies](slug://fe-restrict-policies) article.
+
+## See Also
+
+- [Fiddler Agent Skills](slug://fiddler-agent-skills)
+- [Fiddler Prompt Library](slug://fiddler_ai_prompt_library)
+- [Creating Custom Skills](slug://fiddler-creating-custom-skills)

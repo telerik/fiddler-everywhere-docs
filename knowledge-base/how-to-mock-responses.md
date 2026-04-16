@@ -123,7 +123,7 @@ The **Method** subaction supports the following options:
 
 >tip The specified Response actions are also available as Request counterparts (**Update Request Headers**, **Update Request Body**, and **Update Request Cookies**).
 
-## Additional Resources
+## See Also
 
 * [Modifying HTTPS Traffic Basics](slug://modify-traffic-get-started)
 * [Rules Presets in Fiddler Everywhere](slug://adv_techniques_fiddler)

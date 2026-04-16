@@ -130,7 +130,7 @@ Now that everything is configured, test the setup by asking Claude Code to perfo
 
 Once traffic is being captured, you can use the Fiddler powerful inspection features:
 
-- **Inspect Request/Response**: Click on any session in the Live Traffic grid to view detailed request headers, body, and response data
+- **Inspect Request/Response**: Click any session in the Live Traffic grid to view detailed request headers, body, and response data
 - **View JSON Payloads**: Examine the prompts sent to Claude and the responses received
 - **Monitor Performance**: Analyze response times and identify performance bottlenecks
 - **Filter Sessions**: Use the Fiddler filtering capabilities to show only Claude Code traffic by filtering on the hostname or process name
@@ -156,7 +156,7 @@ Once traffic is being captured, you can use the Fiddler powerful inspection feat
 - Check if your corporate firewall or antivirus is interfering with the Fiddler proxy
 - Review the debug logs (path shown when you ran `claude.exe --debug`) for detailed error messages
 
-## Additional Resources
+## See Also
 
 - [Fiddler Everywhere Terminal Capturing Mode](slug://capture-terminal-traffic)
 - [Exporting the Fiddler Root Certificate](slug://trust-certificate)

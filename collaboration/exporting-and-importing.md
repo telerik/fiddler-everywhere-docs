@@ -25,4 +25,9 @@ The **Export** context menu option allows you to export the captured traffic in 
 
 Use the **Import Snapshot** option (within the saved **Snapshots** tree) to load sessions kept in various formats such as `*.saz` (Fiddler Archive), `*.har` (HTTPrchive), `*.tstest` (TestStudio LoadTest), `*.cap` (Packet Capture), `*.xml` (IE F12 NetXML).
 
+## See Also
+
+- [Saving Captured Traffic](slug://fiddler-saving)
+- [Sharing Captured Traffic](slug://fiddler-sharing)
+
 ![Saved sessions import](./images/saved-sessions-import.png)

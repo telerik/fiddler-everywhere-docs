@@ -72,3 +72,10 @@ You can manually configure both the Fiddler Everywhere and the remote device. No
     - Enter the IP address of the Fiddler Everywhere host&mdash;for example, `<fiddler-host-IP>` (for example, it could be an IP address like `192.168.100.1`).
     - Enter the Fiddler Everywhere proxy port. By default, the port is `8866`.
     - Apply and save the above settings.
+
+## See Also
+
+- [Capturing Traffic from iOS](slug://capture-mobile-ios-traffic)
+- [Capturing Traffic from Android](slug://capture-mobile-android-traffic)
+- [Using the Reverse Proxy](slug://fiddler-reverse-proxy)
+- [Trusting the Fiddler CA Certificate](slug://trust-certificate)

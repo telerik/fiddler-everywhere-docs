@@ -34,6 +34,6 @@ If you are not a license holder or a trial user, you can use the [available supp
 * If you have a question unanswered, check out the [Fiddler Everywhere FAQ section](https://www.telerik.com/fiddler/fiddler-everywhere/faq).
 * Need something unique that is tailor-made for your project? Progress offers its [Progress Services](https://www.progress.com/services) group that can work with you to create any customized solution you need.
 
-## Suggested Links
+## See Also
 
 * [Trial Version and Commercial License](slug://introduction#trial-version)

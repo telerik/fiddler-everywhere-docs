@@ -95,7 +95,13 @@ The Fiddler Everywhere application can use a custom CA certificate through its [
 - If HTTPS capture does not work, verify the CA is trusted and "Capture HTTPS traffic" is enabled.
 - For certificate errors on specific sites, add the domain to the ignore list (for development only).
 - On Linux, always follow the manual export and trust instructions for your distribution.
-- Use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) if you lack admin rights or only need browser traffic.
+- Use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) if you lack admin rights or only need browser traffic.  
+
+## See Also
+
+- [Capturing Modes Overview](slug://capture-traffic-get-started)
+- [Capturing System Traffic](slug://capture-system-traffic)
+- [Capturing Browser Traffic](slug://capture-browser-traffic)
 
 
 

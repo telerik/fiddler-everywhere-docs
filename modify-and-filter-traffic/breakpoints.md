@@ -82,7 +82,7 @@ While the breakpoints are compelling functionality,  the following behavior must
 
 - If you add a response breakpoint, Fiddler will pause the forwarding. However, some client applications have caching or replay mechanisms that will automatically resend the request if they do not receive a response within a specific time.
 
-## Additional Rules Resources
+## See Also
 
 The breakpoints in Fiddler are only one of the exposed [actions](slug://fiddler-rules-actions#actions) that you can use in combination with various [matching conditions](slug://fiddler-rules-actions#conditions). Use the following online resources for additional insights and examples of what you can achieve using the Fiddler Rules tab.
 

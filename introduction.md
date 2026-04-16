@@ -113,7 +113,7 @@ Activate the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchas
 
 Contact our support team for more details on enabling the policy-driven installation alongside your specific company configuration.
 
-## Suggested Links
+## See Also
 
 * [Before You Start: All Things Fiddler (Telerik Blog Post)](https://www.telerik.com/blogs/fiddler)
 * [Getting Started with Fiddler Everywhere (Video Tutorials)](https://www.telerik.com/videos/fiddler/tag/fiddler-everywhere)

@@ -10,7 +10,7 @@ previous_url: /traffic/compare-traffic
 
 # Comparing Traffic
 
-
+Fiddler Everywhere enables you to compare two or more captured HTTP sessions side by side to identify differences in headers, bodies, and timings.
 
 ## Comparing Live Traffic Sessions
 
@@ -71,3 +71,9 @@ You can manage all sessions added in the **Compare Sessions** tab through the co
 - **Delete Selected Sessions**&mdash;Removes the selected sessions from the compare group.
 - **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** grid or the opened **Snapshots** tree tab).
     ![Compared Sessions context menu](./images/compare-list-context-menu.png)
+
+## See Also
+
+- [Inspecting Traffic](slug://inspecting-traffic-get-started)
+- [Inspector Types](slug://inspector-types)
+- [Organizing Traffic](slug://fe-organize-sessions)

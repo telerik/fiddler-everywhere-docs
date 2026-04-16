@@ -52,3 +52,10 @@ Fiddler Everywhere provides a section called the **Snapshots** that is a tree-ba
 You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share selected or multiple sessions directly from the sessions grid or using the save **Snapshots** tree.
 
 [Learn more about saving and sharing with the Fiddler Snapshots tree here ...](slug://fe-organize-sessions)
+
+## See Also
+
+- [Inspector Types](slug://inspector-types)
+- [Overview Insights](slug://overview-tab)
+- [Comparing Sessions](slug://fe-compare-sessions)
+- [Organizing Traffic](slug://fe-organize-sessions)

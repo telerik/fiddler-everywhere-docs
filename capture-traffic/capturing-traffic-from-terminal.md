@@ -113,3 +113,9 @@ The following example demonstrates how to unset the proxy on **Windows**.
 set http_proxy=
 set https_proxy=
 ```
+
+## See Also
+
+- [Capturing Modes Overview](slug://capture-traffic-get-started)
+- [Capturing System Traffic](slug://capture-system-traffic)
+- [Trusting the Fiddler CA Certificate](slug://trust-certificate)

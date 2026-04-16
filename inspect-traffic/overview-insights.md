@@ -216,4 +216,10 @@ The **Response Details** widget contains a table with the following information:
     - **Decompressed Body**&mdash;The size of the decompressed body.
 - **Times**&mdash;A list by execution order with timestamps or times (in milliseconds) for each triggered response event.
 
+## See Also
+
+- [Inspecting Traffic](slug://inspecting-traffic-get-started)
+- [Inspector Types](slug://inspector-types)
+- [Comparing Sessions](slug://fe-compare-sessions)
+
 ![Request Details](./images/overview-request-and-response-details.png)

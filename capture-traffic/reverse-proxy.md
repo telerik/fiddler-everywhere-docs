@@ -229,7 +229,7 @@ The reverse proxy can be used alongside other [capturing modes](slug://capture-t
 - Keep a backup of your hosts file before making changes.
 - Use descriptive comments in your code when changing ports for reverse proxy scenarios.
 
-## Additional Resources
+## See Also
 
 - [GitHub Demo - Client App and Local Server](https://github.com/NickIliev/fiddler-reverse-demo)
 - [the Fiddler Capturing Modes Explained](slug://capture-traffic-get-started)

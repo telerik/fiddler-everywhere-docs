@@ -22,4 +22,8 @@ To create a collection of composed API requests:
     ![Requests lists](./images/requests-enter-name-and-folder.png)
 1. Click **Save** to close the dialog and add the request to the collection.
 
+## See Also
+
+- [Composing API Requests](slug://composer-get-started)
+- [Sharing Captured Traffic and Requests](slug://fiddler-sharing)
 

@@ -58,7 +58,7 @@ After a successful migration, you will see a message confirming the operation, a
 
 ![Migrate subscription link on Telerik](./images/fe-updated-migration-013.png)
 
-## Additional Resources
+## See Also
 
 Explore and learn more about the unified Telerik system through the following resources:
 

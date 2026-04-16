@@ -312,3 +312,9 @@ The Response Inspectors for ongoing capture (the sessions in the Live Traffic gr
 ![Certificate note](./images/certficate-valid-note.png)
 
 [Learn more on how to inspect and use the certificate details with Fiddler Everywhere here...](slug://fe-cert-details)
+
+## See Also
+
+- [Inspecting Traffic](slug://inspecting-traffic-get-started)
+- [Overview Insights](slug://overview-tab)
+- [Comparing Sessions](slug://fe-compare-sessions)

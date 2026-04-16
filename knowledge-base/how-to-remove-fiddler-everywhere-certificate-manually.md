@@ -40,7 +40,7 @@ To remove the root certificate, follow the steps in each of the sections below d
 3. Select **Fiddler_Root_Certificate_Authority** and delete the certificate. Click **Yes** in both prompts that will appear. As a result, the certificate will be removed from your system.
     ![Delete Fiddler Everywhere](./images/select-do-not-trust-fiddlerroot-and-press-yes.png)
 
-## Additional Resources
+## See Also
 
 * [Modifying HTTPS Traffic Basics](slug://modify-traffic-get-started)
 * [Rules Presets in Fiddler Everywhere](slug://adv_techniques_fiddler)

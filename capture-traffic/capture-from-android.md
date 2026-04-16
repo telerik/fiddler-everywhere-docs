@@ -136,7 +136,7 @@ Most production-ready applications block the use of user-installed certificates,
 
 1. Rebuild the application. Now you can start monitoring its HTTP/HTTPS traffic.
 
-## Additional Resources
+## See Also
 
 * [Directing localhost Requests from Mobile Application through the Fiddler Proxy](slug://fiddler-localhost-android)
 * [Debugging Mobile Applications with Fiddler Everywhere (Webinar)](https://www.telerik.com/webinars/fiddler/how-to-debug-ios-and-android-mobile-apps-with-fiddler)

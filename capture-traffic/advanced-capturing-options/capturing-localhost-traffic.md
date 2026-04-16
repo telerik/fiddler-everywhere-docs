@@ -60,7 +60,7 @@ While using one of the above solutions to capture localhost requests, the traffi
 
 ![Example Localhost filtering](./images/localhost-filtering.png)
 
-## Additional Resources
+## See Also
 
 * [Learn how to direct localhost requests from the mobile application through the Fiddler proxy... ](slug://fiddler-localhost-android)
 

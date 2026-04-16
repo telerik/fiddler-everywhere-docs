@@ -36,7 +36,7 @@ The next step is to use one of the Fiddler capturing modes and initiate the traf
 
 At this point, the shown page is not the original one but the page as mocked from the active Fiddler rules. 
 
-## Additional Resources
+## See Also
 
 - [Fiddler Rules Archives (FARX)](slug://fiddler-farx-format)
 - [Modifying HTTPS Traffic](slug://modify-traffic-get-started)

@@ -66,7 +66,7 @@ To modify the captured session through the **Rules**:
 
 Fiddler automatically adds the newly created rule on the top of the [**Rules** list](slug://modify-traffic-get-started), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
 
-## Additional Rules Resources
+## See Also
 
 - [Sample Rules Presets](slug://adv_techniques_fiddler)
 - [Learn how to use the Rules preset here...](slug://how-to-use-fiddler-rules-to-modify-traffic)

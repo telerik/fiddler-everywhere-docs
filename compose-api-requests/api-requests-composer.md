@@ -74,14 +74,9 @@ With Fiddler Everywhere, you can quickly share a collection of saved API request
 - Use the context menu to share the collection with collaborators.
 ![Share API requests](./images/comp-requests-share.png)
 
-## Save API Request
+## See Also
 
-You can save the API request through the following steps.
-
-- Open the **Composer** pane.
-- [Compose your API request](#compose-api-request)
-- Click the **Save** button. 
-
-Saved requests are loaded as a collection in the **Requests** list and can be reused or shared with collaborators at any later moment.
-
+- [Grouping API Requests in Collections](slug://composer-collections-get-started)
+- [Sharing Captured Traffic and Requests](slug://fiddler-sharing)
+- [Modifying Traffic with Rules](slug://modify-traffic-get-started)
 

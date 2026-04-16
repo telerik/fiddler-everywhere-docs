@@ -281,4 +281,11 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 **Fiddler Socket.IO Support:**
 - Works with all capturing modes
 - Dedicated [Socket.IO inspectors](slug://inspector-types)
+
+## See Also
+
+- [Capturing Browser Traffic](slug://capture-browser-traffic)
+- [Capturing System Traffic](slug://capture-system-traffic)
+- [Capturing Network Traffic](slug://capture-network-traffic)
+- [Trusting the Fiddler CA Certificate](slug://trust-certificate)
 - Handshake and message analysis capabilities

@@ -197,7 +197,7 @@ If you encounter issues with the Fiddler Everywhere network extension, try the f
 - Use descriptive process names or PIDs to avoid capturing unnecessary traffic.
 - For troubleshooting, start with default rules and add complexity incrementally.
 
-## Additional Resources
+## See Also
 
 - [Capturing Modes in Fiddler](slug://capture-traffic-get-started)
 - [Fiddler as a System Proxy](slug://capture-system-traffic)

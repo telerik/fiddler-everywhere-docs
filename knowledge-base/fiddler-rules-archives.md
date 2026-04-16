@@ -44,7 +44,7 @@ Apart from creating a rule from SAZ, you can also directly use captured HTTPS tr
 
 ![create new rules from captured traffic](./images/farx-create-new-rule-context-menu.png)
 
-## Additional Resources
+## See Also
 
 - [Modify traffic with the Fiddler Rules](slug://modify-traffic-get-started)
 - [Mocking traffic with the Fiddler Rules](slug://mock-traffic-get-started)

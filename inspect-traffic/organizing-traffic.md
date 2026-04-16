@@ -68,4 +68,10 @@ Apart from the built-in saving and sharing functionalities, you can also export 
 
 Almost all Fiddler Everywhere features are linked to a keyboard shortcut which you can use to optimize or automate your workflow.
 
+## See Also
+
+- [Inspecting Traffic](slug://inspecting-traffic-get-started)
+- [Sharing Captured Traffic](slug://fiddler-sharing)
+- [Exporting and Importing Traffic](slug://fiddler-export-and-import)
+
 [Learn more about the available keyboard shortcuts here...](slug://fiddler-shortcuts)

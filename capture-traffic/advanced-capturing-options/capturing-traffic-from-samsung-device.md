@@ -46,7 +46,7 @@ Follow these steps to capture HTTPS traffic from your Samsung device with Fiddle
 - Make sure the Fiddler CA certificate is correctly installed and trusted.
 - Restart your Samsung device if the certificate does not appear in the trusted credentials list.
 
-## Additional Resources
+## See Also
 
 - [Capturing HTTPS Traffic from Android Devices](slug://capture-mobile-android-traffic)
 - [Fiddler Everywhere Documentation](https://docs.telerik.com/fiddler-everywhere/)

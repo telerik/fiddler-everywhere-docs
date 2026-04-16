@@ -55,7 +55,7 @@ The group options allow you to further interact with the group's rules:
 
 ![Group options](./images/rules-group-options.png)
 
-## Additional Resources
+## See Also
 
 - [Modifying HTTPS Traffic](slug://modify-traffic-get-started)
 - [Using Breakpoints](slug://rulesbuilder-breakpoints)
