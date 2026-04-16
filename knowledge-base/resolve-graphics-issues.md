@@ -1,6 +1,6 @@
 ---
 title: Resolving Graphics Incompatibility Issues
-meta_title: Fix Video Driver Startup Errors and GPU Rendering Problems | Fiddler Everywhere
+page_title: Fix Video Driver Startup Errors and GPU Rendering Problems | Fiddler Everywhere
 description: "Test and resolve video driver incompatibility issue that prevent the proper startup of Fiddler Everywhere."
 type: how-to
 slug: troubleshoot-video-incompatibility

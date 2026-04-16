@@ -1,6 +1,6 @@
 ---
 title: Inspectors Insights
-meta_title: Inspectors Insights - Inspect Traffic | Fiddler Everywhere
+page_title: Inspectors Insights - Inspect Traffic | Fiddler Everywhere
 description: "Using the `Inspectors` tab in the Fiddler Everywhere web-debugging proxy application. Use the inspection tools to analyze requests and responses."
 slug: inspector-types
 publish: true

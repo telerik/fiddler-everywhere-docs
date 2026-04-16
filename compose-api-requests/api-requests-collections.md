@@ -1,6 +1,6 @@
 ---
 title: API Requests Collections
-meta_title: API Requests Collections - API Composer | Fiddler Everywhere
+page_title: API Requests Collections - API Composer | Fiddler Everywhere
 description: "Create and share API request collections when using the 'Composer' in Fiddler Everywhere proxy tool."
 slug: composer-collections-get-started
 publish: true

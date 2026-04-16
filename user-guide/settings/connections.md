@@ -1,6 +1,6 @@
 ---
 title: Connections
-meta_title: Connections - Settings | Fiddler Everywhere
+page_title: Connections - Settings | Fiddler Everywhere
 description: "Learn how to use the Connections menu, change the default proxy port, and allow remote connections in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: connections-submenu
 publish: true

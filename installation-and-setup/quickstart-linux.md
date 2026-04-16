@@ -1,6 +1,6 @@
 ---
 title: First Steps on Linux
-meta_title: First Steps on Linux - Installation | Fiddler Everywhere
+page_title: First Steps on Linux - Installation | Fiddler Everywhere
 description: "Install and configure Fiddler Everywhere on Linux and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
 slug: first_steps_linux
 position: 3

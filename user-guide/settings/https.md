@@ -1,6 +1,6 @@
 ---
 title: HTTPS
-meta_title: HTTPS - Settings | Fiddler Everywhere
+page_title: HTTPS - Settings | Fiddler Everywhere
 description: "Learn how to use the HTTPS settings menu in the Fiddler Everywhere web-debugging proxy tool. Explore available configuration and personalization options."
 slug: decrypt-https-traffic
 publish: true

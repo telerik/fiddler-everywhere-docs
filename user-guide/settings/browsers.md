@@ -1,6 +1,6 @@
 ---
 title: Browsers
-meta_title: Browsers - Settings | Fiddler Everywhere
+page_title: Browsers - Settings | Fiddler Everywhere
 description: "Change the Fiddler browser instance for the automatic independent browser capturing mode. Explore available configuration and personalization options."
 slug: browsers-settings-submenu
 publish: true

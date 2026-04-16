@@ -1,6 +1,6 @@
 ---
 title: Using Conditions and Actions
-meta_title: Using Conditions and Actions - Rules | Fiddler Everywhere
+page_title: Using Conditions and Actions - Rules | Fiddler Everywhere
 description: "Learn what matching conditions and actions are and understand the difference between final and non-final actions when working with rules in Fiddler Everywhere."
 slug: fiddler-rules-actions
 publish: true

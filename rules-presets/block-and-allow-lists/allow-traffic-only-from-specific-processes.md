@@ -1,6 +1,6 @@
 ---
 title: Allow Specific Processes
-meta_title: Allow Specific Processes - Rules Presets | Fiddler Everywhere
+page_title: Allow Specific Processes - Rules Presets | Fiddler Everywhere
 description: "Allowing HTTPS traffic from specific processes while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic control."
 slug: adv_allow_traffic_processes
 position: 40

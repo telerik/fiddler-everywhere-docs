@@ -1,6 +1,6 @@
 ---
 title: Capturing .NET Traffic
-meta_title: Capturing .NET Traffic - Capture Traffic | Fiddler Everywhere
+page_title: Capturing .NET Traffic - Capture Traffic | Fiddler Everywhere
 description: "Configure .NET applications to respect the Fiddler proxy and capture their HTTPS traffic. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: how-to-capture-net-traffic

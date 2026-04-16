@@ -2,7 +2,7 @@
 title: Resetting Fiddler Everywhere Settings to Default
 description: "Learn how to reset the Fiddler Everywhere settings to their default values to troubleshoot common issues."
 type: how-to
-meta_title: Reset Fiddler Everywhere to Default Settings | Fiddler Everywhere
+page_title: Reset Fiddler Everywhere to Default Settings | Fiddler Everywhere
 slug: how-to-reset-fiddler-everywhere-settings-to-default
 res_type: kb
 ---

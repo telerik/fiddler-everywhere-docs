@@ -1,6 +1,6 @@
 ---
 title: Session Overview
-meta_title: Session Overview - Inspect Traffic | Fiddler Everywhere
+page_title: Session Overview - Inspect Traffic | Fiddler Everywhere
 description: "Using the `Overview` tab in Fiddler Everywhere to receive and inspect statistical data related to HTTP session timings, sizes, and other technical data."
 slug: overview-tab
 publish: true

@@ -1,6 +1,6 @@
 ---
 title: Keyboard Shortcuts
-meta_title: Keyboard Shortcuts - User Guide | Fiddler Everywhere
+page_title: Keyboard Shortcuts - User Guide | Fiddler Everywhere
 description: "Comprehensive list of all in-app keyboard shortcuts for Windows and macOS. Explore the application interface and available configuration options."
 slug: fiddler-shortcuts
 position: 30

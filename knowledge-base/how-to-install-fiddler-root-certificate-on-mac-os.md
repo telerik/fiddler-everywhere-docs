@@ -1,6 +1,6 @@
 ---
 title: Manually Installing the Root Certificate on macOS
-meta_title: Trust the HTTPS Proxy Certificate on macOS Keychain | Fiddler Everywhere
+page_title: Trust the HTTPS Proxy Certificate on macOS Keychain | Fiddler Everywhere
 description: "Learn how to manually install the Fiddler Everywhere web-debugging client root certificate on macOS."
 type: how-to
 slug: how-to-install-fiddler-root-certificate-on-mac-os

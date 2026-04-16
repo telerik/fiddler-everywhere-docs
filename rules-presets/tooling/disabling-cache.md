@@ -1,6 +1,6 @@
 ---
 title: Disable Caching
-meta_title: Disable Caching - Rules Presets | Fiddler Everywhere
+page_title: Disable Caching - Rules Presets | Fiddler Everywhere
 description: "You can disable application caching to force load the latest resources while using the Fiddler rules. Import and customize ready-to-use rule presets for common web tooling."
 slug: adv_disable_cache
 position: 10

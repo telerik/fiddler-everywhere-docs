@@ -1,6 +1,6 @@
 ---
 title: Organizing Rules
-meta_title: Organizing Rules - Rules | Fiddler Everywhere
+page_title: Organizing Rules - Rules | Fiddler Everywhere
 description: "Use the Rules list to create, store, group, and prioritize the execution of multiple rules. Create, manage, and execute rules for traffic modification."
 slug: rulesbuilder-get-started
 publish: true

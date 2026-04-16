@@ -1,6 +1,6 @@
 ---
 title: Repro Playback 
-meta_title: Repro Playback - Rules | Fiddler Everywhere
+page_title: Repro Playback - Rules | Fiddler Everywhere
 description: "Playback previously captured HTTPS traffic to reproduce the exact behavior from a specific moment. Create, manage, and execute rules for traffic modification."
 slug: repro-playback
 publish: true

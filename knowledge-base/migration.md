@@ -1,6 +1,6 @@
 ---
 title: Migrating Fiddler Accounts and Licenses
-meta_title: Transfer Subscriptions to the Progress Telerik System | Fiddler Everywhere
+page_title: Transfer Subscriptions to the Progress Telerik System | Fiddler Everywhere
 description: "Learn how to migrate your Fiddler accounts and licenses to the Progress Telerik system. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 res_type: kb

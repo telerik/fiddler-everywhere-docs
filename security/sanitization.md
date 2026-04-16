@@ -1,6 +1,6 @@
 ---
 title: Data Sanitization
-meta_title: Data Sanitization - Security | Fiddler Everywhere
+page_title: Data Sanitization - Security | Fiddler Everywhere
 description: "Configure data sanitization in Fiddler Everywhere to automatically remove sensitive information from captured HTTPS traffic before saving, exporting, or sharing with the MCP server."
 slug: fe-sanitization
 position: 40

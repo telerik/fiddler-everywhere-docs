@@ -1,6 +1,6 @@
 ---
 title: Capturing System Traffic
-meta_title: Capturing System Traffic - Capture Traffic | Fiddler Everywhere
+page_title: Capturing System Traffic - Capture Traffic | Fiddler Everywhere
 description: "Capture HTTPS traffic that goes through the operating system proxy. Capture, inspect, and analyze HTTPS sessions in real time."
 slug: capture-system-traffic
 publish: true

@@ -1,6 +1,6 @@
 ---
 title: Create 307 Redirect
-meta_title: Create 307 Redirect - Rules Presets | Fiddler Everywhere
+page_title: Create 307 Redirect - Rules Presets | Fiddler Everywhere
 description: "Creating a temporary redirect (HTTP status code 307) while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic redirection."
 slug: adv_temp_redirect_307
 position: 60

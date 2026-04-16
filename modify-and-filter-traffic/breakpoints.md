@@ -1,6 +1,6 @@
 ---
 title: Using Breakpoints
-meta_title: Using Breakpoints - Rules | Fiddler Everywhere
+page_title: Using Breakpoints - Rules | Fiddler Everywhere
 description: "Pausing and debugging network traffic through breakpoint actions in Fiddler Everywhere. Create, manage, and execute rules for traffic modification."
 slug: rulesbuilder-breakpoints
 publish: true

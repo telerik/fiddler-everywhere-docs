@@ -1,6 +1,6 @@
 ---
 title: Bypassing the Fiddler Everywhere proxy
-meta_title: Skip Proxy or Disable HTTPS Decryption for Specific Endpoints | Fiddler Everywhere
+page_title: Skip Proxy or Disable HTTPS Decryption for Specific Endpoints | Fiddler Everywhere
 description: "Learn how to bypass the Fiddler Everywhere proxy or skip decryption for particular endpoints. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-bypass-list

@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting macOS Proxy Settings and Network Access
-meta_title: Diagnose Proxy and Firewall Connectivity Issues on Mac | Fiddler Everywhere
+page_title: Diagnose Proxy and Firewall Connectivity Issues on Mac | Fiddler Everywhere
 description: "Learn how to use a custom-made Shell script to troubleshoot the network access of the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: fiddler-test-network-access-macos

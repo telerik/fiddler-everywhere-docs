@@ -1,6 +1,6 @@
 ---
 title: Capturing cURL Traffic
-meta_title: Capturing cURL Traffic - Capture Traffic | Fiddler Everywhere
+page_title: Capturing cURL Traffic - Capture Traffic | Fiddler Everywhere
 description: "Learn how to capture cURL traffic while using the Fiddler Everywhere web-debugging tool. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: how-to-capture-curl-traffic

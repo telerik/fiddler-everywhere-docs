@@ -1,6 +1,6 @@
 ---
 title: Protobuf
-meta_title: Protobuf - Settings | Fiddler Everywhere
+page_title: Protobuf - Settings | Fiddler Everywhere
 description: "Supply Protobuf schema files in Fiddler Everywhere to decode received gRPC messages. Explore available configuration and personalization options."
 slug: protobuf-settings-submenu
 publish: true

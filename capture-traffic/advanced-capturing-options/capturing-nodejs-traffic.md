@@ -1,6 +1,6 @@
 ---
 title: Capturing Traffic from Node.js Libraries
-meta_title: Capturing Traffic from Node.js Libraries | Fiddler Everywhere
+page_title: Capturing Traffic from Node.js Libraries | Fiddler Everywhere
 description: "Configure the Fiddler Everywhere proxy alongside Node.js and capture their HTTPS traffic. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: fiddler-nodejs-traffic

@@ -1,6 +1,6 @@
 ---
 title: Fiddler Rules Archives (FARX)
-meta_title: Import and Export Rules with FARX Archives | Fiddler Everywhere
+page_title: Import and Export Rules with FARX Archives | Fiddler Everywhere
 description: "FARX is the native archive format for saving rules created with Fiddler. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-farx-format

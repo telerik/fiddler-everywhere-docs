@@ -1,6 +1,6 @@
 ---
 title: Converting Composed Fiddler Everywhere Requests to cURL
-meta_title: Export API Requests as cURL Commands | Fiddler Everywhere
+page_title: Export API Requests as cURL Commands | Fiddler Everywhere
 description: "Learn how to convert composed requests to cURL through the Fiddler Everywhere web-debugging application."
 type: how-to
 slug: how-to-convert-request-to-curl

@@ -1,6 +1,6 @@
 ---
 title: Capturing Modes
-meta_title: Capturing Modes - Capture Traffic | Fiddler Everywhere
+page_title: Capturing Modes - Capture Traffic | Fiddler Everywhere
 description: "Capturing modes in Fiddler Everywhere as forward HTTPS proxy. Capture, inspect, and analyze HTTPS sessions in real time."
 slug: capture-traffic-get-started
 publish: true

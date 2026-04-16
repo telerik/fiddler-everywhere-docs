@@ -1,6 +1,6 @@
 ---
 title: Organizing Traffic
-meta_title: Organizing Traffic - Inspect Traffic | Fiddler Everywhere
+page_title: Organizing Traffic - Inspect Traffic | Fiddler Everywhere
 description: "Use the `Snapshots` tree to save, organize and share snapshots of captured traffic. Use the inspection tools to analyze requests and responses."
 slug: fe-organize-sessions
 publish: true

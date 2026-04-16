@@ -1,6 +1,6 @@
 ---
 title: Capturing Flutter Traffic
-meta_title: Capturing Flutter Traffic - Capture Traffic | Fiddler Everywhere
+page_title: Capturing Flutter Traffic - Capture Traffic | Fiddler Everywhere
 description: "Capture HTTPS traffic from Flutter mobile application while using the Fiddler Everywhere proxy. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: how-to-capture-flutter-traffic

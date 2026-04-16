@@ -1,6 +1,6 @@
 ---
 title: Fiddler MCP Server
-meta_title: Fiddler Everywhere MCP Server – Connect AI-Powered IDEs to Live HTTPS Traffic
+page_title: Fiddler Everywhere MCP Server – Connect AI-Powered IDEs to Live HTTPS Traffic
 description: "Install and configure the Fiddler Everywhere MCP server to give AI-powered IDEs and LLM coding assistants (VS Code, Cursor, Claude, Windsurf) real-time access to captured HTTPS traffic for debugging, security analysis, and performance optimization."
 slug: fiddler-mcp-server
 publish: true

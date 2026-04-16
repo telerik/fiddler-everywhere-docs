@@ -1,6 +1,6 @@
 ---
 title: Directing Localhost Traffic from Android Through Fiddler Everywhere as a Reverse Proxy
-meta_title: Localhost Traffic from Android Through Fiddler Everywhere | Fiddler Everywhere
+page_title: Localhost Traffic from Android Through Fiddler Everywhere | Fiddler Everywhere
 description: "Learn how to direct localhost traffic from mobile Android browser through the Fiddler Everywhere proxy."
 type: how-to
 slug: fiddler-localhost-android

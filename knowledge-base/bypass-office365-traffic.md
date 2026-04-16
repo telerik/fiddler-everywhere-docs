@@ -1,6 +1,6 @@
 ---
 title: Bypassing Office365 Apps (Outlook and MSTeams)
-meta_title: Exclude Outlook and Teams Traffic from Proxy Capture | Fiddler Everywhere
+page_title: Exclude Outlook and Teams Traffic from Proxy Capture | Fiddler Everywhere
 description: "Learn how to configure your proxy settings to bypass specific Microsoft endpoints so that you can use Microsoft Office 365 applications alongside Fiddler Everywhere."
 type: how-to
 slug: fiddler-and-outlook

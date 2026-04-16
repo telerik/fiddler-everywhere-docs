@@ -1,6 +1,6 @@
 ---
 title: Live Traffic Grid
-meta_title: Working with the HTTP Sessions List | Fiddler Everywhere
+page_title: Working with the HTTP Sessions List | Fiddler Everywhere
 description: "Learn how to use the user interface from the 'Live Traffic' grid in the Fiddler Everywhere web-debugging proxy application."
 type: how-to
 slug: web-sessions-list

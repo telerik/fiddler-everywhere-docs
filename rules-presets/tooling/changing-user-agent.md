@@ -1,6 +1,6 @@
 ---
 title: Change User-Agent
-meta_title: Change User-Agent - Rules Presets | Fiddler Everywhere
+page_title: Change User-Agent - Rules Presets | Fiddler Everywhere
 description: "Changing the User-Agent HTTP Header while using the Fiddler rules. Import and customize ready-to-use rule presets for common web tooling."
 slug: adv_changing_user_agent
 position: 40

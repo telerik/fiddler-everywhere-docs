@@ -1,6 +1,6 @@
 ---
 title: Capturing Network Traffic
-meta_title: Capturing Network Traffic - Capture Traffic | Fiddler Everywhere
+page_title: Capturing Network Traffic - Capture Traffic | Fiddler Everywhere
 description: "Capture all network traffic that goes through the active network adapter and uses the TCP protocol. Capture, inspect, and analyze HTTPS sessions in real time."
 slug: capture-network-traffic
 publish: true

@@ -1,6 +1,6 @@
 ---
 title: Creating Custom Skills
-meta_title: Creating Custom Fiddler Agent Skills – Build AI-Powered HTTP Analysis Workflows
+page_title: Creating Custom Fiddler Agent Skills – Build AI-Powered HTTP Analysis Workflows
 description: "Learn how to build custom Fiddler Everywhere agent skills that combine MCP tools with your own analysis logic. Extend AI coding assistants like GitHub Copilot, Claude, and Cursor with tailored LLM-driven HTTPS traffic workflows and share them with your team."
 slug: fiddler-creating-custom-skills
 publish: true

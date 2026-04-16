@@ -1,6 +1,6 @@
 ---
 title: Using Fiddler Everywhere proxy alongside NordVPN
-meta_title: Configure NordVPN to Work with an HTTP Debugging Proxy | Fiddler Everywhere
+page_title: Configure NordVPN to Work with an HTTP Debugging Proxy | Fiddler Everywhere
 description: "Learn how to configure NordVPN to work alongside Fiddler Everywhere. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-everywhere-nordvpn

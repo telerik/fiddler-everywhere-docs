@@ -1,6 +1,6 @@
 ---
 title: HTTPS Traffic Modifications with Fiddler Rules
-meta_title: Debug, Mock, and Modify Web Traffic Using Rules | Fiddler Everywhere
+page_title: Debug, Mock, and Modify Web Traffic Using Rules | Fiddler Everywhere
 description: "Learn how to use Fiddler Everywhere rules for debugging, modifying, mocking, and testing the ongoing web traffic."
 type: how-to
 slug: how-to-use-fiddler-rules-to-modify-traffic

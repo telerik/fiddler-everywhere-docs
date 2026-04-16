@@ -1,6 +1,6 @@
 ---
 title: Creating a Rule to Disable Caching
-meta_title: Bypass Browser Cache with a No-Cache Rule | Fiddler Everywhere
+page_title: Bypass Browser Cache with a No-Cache Rule | Fiddler Everywhere
 description: "Create a rule in Fiddler Everywhere to disable caching of pages and resources. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: rule-disable-caching

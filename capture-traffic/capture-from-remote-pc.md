@@ -1,6 +1,6 @@
 ---
 title: Capturing Traffic from Remote Devices
-meta_title: Capturing Traffic from Remote Devices | Fiddler Everywhere
+page_title: Capturing Traffic from Remote Devices | Fiddler Everywhere
 description: "Use Fiddler Everywhere to capture remote HTTPS traffic from other computers, consoles, tablets, and other smart devices."
 slug: fiddler-capture-other-computers
 publish: true

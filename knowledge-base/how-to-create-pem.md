@@ -1,6 +1,6 @@
 ---
 title: Creating PEM certificate
-meta_title: Convert CRT to PEM Certificate Format | Fiddler Everywhere
+page_title: Convert CRT to PEM Certificate Format | Fiddler Everywhere
 description: "Learn how to convert the exported CRT file to a PEM certificate. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: how-to-create-pem

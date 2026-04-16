@@ -1,6 +1,6 @@
 ---
 title: Composing SOAP Requests
-meta_title: Send and Debug SOAP API Calls with the Composer | Fiddler Everywhere
+page_title: Send and Debug SOAP API Calls with the Composer | Fiddler Everywhere
 description: "Learn how to compose SOAP requests with the Fiddler Everywhere Composer. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-composer-soap

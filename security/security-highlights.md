@@ -1,6 +1,6 @@
 ---
 title: Security Highlights
-meta_title: Security Highlights - Security | Fiddler Everywhere
+page_title: Security Highlights - Security | Fiddler Everywhere
 description: "Learn about essential security considerations, best practices, and safeguards when using Fiddler Everywhere as a proxy, including data protection, sanitization, and MCP server security."
 slug: fe-security-highlights
 publish: true

@@ -1,6 +1,6 @@
 ---
 title: Agent Cache
-meta_title: Agent Cache | Fiddler Everywhere
+page_title: Agent Cache | Fiddler Everywhere
 description: "Use the Agent Calls tab in Fiddler Everywhere to capture, inspect, and cache model-provider endpoint responses and eliminate repeated token usage during development."
 slug: agent-cache
 publish: true

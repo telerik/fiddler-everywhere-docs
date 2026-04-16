@@ -1,6 +1,6 @@
 ---
 title: Block Specific Hosts
-meta_title: Block Specific Hosts - Rules Presets | Fiddler Everywhere
+page_title: Block Specific Hosts - Rules Presets | Fiddler Everywhere
 description: "Blocking HTTPS traffic to specific hosts while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic control."
 slug: adv_block_traffic_hosts
 position: 10

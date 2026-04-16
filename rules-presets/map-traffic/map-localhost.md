@@ -1,6 +1,6 @@
 ---
 title: Map Localhost
-meta_title: Map Localhost - Rules Presets | Fiddler Everywhere
+page_title: Map Localhost - Rules Presets | Fiddler Everywhere
 description: "Creating a transparent mapping or redirect to a localhost location while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic redirection."
 slug: adv_map_remote_localhost
 position: 20

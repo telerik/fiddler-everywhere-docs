@@ -1,6 +1,6 @@
 ---
 title: Hide Traffic from Specific Processes
-meta_title: Hide Traffic from Specific Processes | Fiddler Everywhere
+page_title: Hide Traffic from Specific Processes | Fiddler Everywhere
 description: "With the Fiddler rules, you can hide traffic from specific processes and applications. Import and customize ready-to-use rule presets for traffic filtering."
 slug: adv_hide_specific_processes
 position: 35

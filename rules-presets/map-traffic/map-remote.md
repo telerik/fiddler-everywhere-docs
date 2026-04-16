@@ -1,6 +1,6 @@
 ---
 title: Map Remote URL
-meta_title: Map Remote URL - Rules Presets | Fiddler Everywhere
+page_title: Map Remote URL - Rules Presets | Fiddler Everywhere
 description: "Creating a transparent redirect to remote location (a.k.a. mapping remote URL) while using the Fiddler rules."
 slug: adv_map_remote_url
 position: 10

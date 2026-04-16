@@ -1,6 +1,6 @@
 ---
 title: Installing the Fiddler certificate authority in Firefox
-meta_title: Add the Proxy CA to the Firefox Certificate Store on Linux | Fiddler Everywhere
+page_title: Add the Proxy CA to the Firefox Certificate Store on Linux | Fiddler Everywhere
 description: "Enable HTTPS decrypting of Firefox traffic by installing the Fiddler certificate authority in the Firefox certificate store."
 type: how-to
 slug: how-to-install-fiddler-root-certificate-in-firefox-on-linux

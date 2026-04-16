@@ -1,6 +1,6 @@
 ---
 title: Capturing AWS Traffic
-meta_title: Capturing AWS Traffic - Capture Traffic | Fiddler Everywhere
+page_title: Capturing AWS Traffic - Capture Traffic | Fiddler Everywhere
 description: "Learn how to capture Amazon Web Services traffic by using the Fiddler Everywhere web-debugging tool."
 type: how-to
 slug: how-to-capture-aws-traffic

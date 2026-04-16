@@ -1,6 +1,6 @@
 ---
 title: Hide CONNECT Tunnels
-meta_title: Hide CONNECT Tunnels - Rules Presets | Fiddler Everywhere
+page_title: Hide CONNECT Tunnels - Rules Presets | Fiddler Everywhere
 description: "Hide the proxy CONNECT Tunnels while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic filtering."
 slug: adv_hide_connect_tunnels
 position: 40

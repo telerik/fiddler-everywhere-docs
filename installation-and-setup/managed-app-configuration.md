@@ -1,6 +1,6 @@
 ---
 title: Managed App Configuration
-meta_title: Managed App Configuration - Installation | Fiddler Everywhere
+page_title: Managed App Configuration - Installation | Fiddler Everywhere
 description: "Using the Managed App Configuration feature to disable specific Fiddler Everywhere features like remote connections, changing ports, cloud services, and others."
 slug: fe-restrict-policies
 publish: true

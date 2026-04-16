@@ -1,6 +1,6 @@
 ---
 title: Setting Fiddler alongside Python applications
-meta_title: Setting Fiddler alongside Python applications | Fiddler Everywhere
+page_title: Setting Fiddler alongside Python applications | Fiddler Everywhere
 description: "Learn how to capture traffic from Python applications. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: fiddler-python-traffic

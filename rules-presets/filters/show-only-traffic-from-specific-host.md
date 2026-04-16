@@ -1,6 +1,6 @@
 ---
 title: Show Traffic Only from Specific Hosts
-meta_title: Show Traffic Only from Specific Hosts | Fiddler Everywhere
+page_title: Show Traffic Only from Specific Hosts | Fiddler Everywhere
 description: "Learn how to show traffic only from specific hosts while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic filtering."
 slug: adv_show_only_specific_hosts
 position: 20

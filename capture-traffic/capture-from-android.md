@@ -1,6 +1,6 @@
 ---
 title: Capturing Android Traffic
-meta_title: Capturing Android Traffic - Capture Traffic | Fiddler Everywhere
+page_title: Capturing Android Traffic - Capture Traffic | Fiddler Everywhere
 description: "Capture HTTPS traffic from Android devices while using the Fiddler Everywhere web-debugging proxy tool."
 type: how-to
 slug: capture-mobile-android-traffic

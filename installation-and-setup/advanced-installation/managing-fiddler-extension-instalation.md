@@ -1,6 +1,6 @@
 ---
 title: Installing and Enabling Fiddler Network Extension through MDM
-meta_title: Installing and Enabling Fiddler Network Extension | Fiddler Everywhere
+page_title: Installing and Enabling Fiddler Network Extension | Fiddler Everywhere
 description: "Interactive installation instructions of the Fiddler network extension. Follow enterprise deployment and installation instructions."
 slug: fe-net-extension-installation
 publish: true

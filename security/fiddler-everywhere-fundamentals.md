@@ -1,6 +1,6 @@
 ---
 title: Fiddler Everywhere Fundamentals
-meta_title: Fiddler Everywhere Fundamentals - Security | Fiddler Everywhere
+page_title: Fiddler Everywhere Fundamentals - Security | Fiddler Everywhere
 description: "Learn more about how Fiddler Everywhere works as a forward proxy. Understand how Fiddler Everywhere protects your data and traffic."
 slug: fe-security
 publish: true

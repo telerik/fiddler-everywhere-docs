@@ -1,6 +1,6 @@
 ---
 title: Managing Fiddler Everywhere through Intune
-meta_title: Managing Fiddler Everywhere through Intune | Fiddler Everywhere
+page_title: Managing Fiddler Everywhere through Intune | Fiddler Everywhere
 description: "Manage the Fiddler Everywhere application installation through Microsoft Intune. Follow enterprise deployment and installation instructions."
 slug: fe-intune
 publish: true

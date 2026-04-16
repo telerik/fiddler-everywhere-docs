@@ -1,6 +1,6 @@
 ---
 title: Capturing Go Traffic
-meta_title: Capturing Go Traffic - Capture Traffic | Fiddler Everywhere
+page_title: Capturing Go Traffic - Capture Traffic | Fiddler Everywhere
 description: "Run GO applicaton and its capture HTTPS traffic while using the Fiddler Everywhere proxy debugging tool."
 type: how-to
 slug: how-to-capture-go-traffic

@@ -1,6 +1,6 @@
 ---
 title: Composer Tab
-meta_title: Build and Send HTTP Requests with the Composer | Fiddler Everywhere
+page_title: Build and Send HTTP Requests with the Composer | Fiddler Everywhere
 description: "Learn how to use the Composer tab in the Fiddler Everywhere web-debugging HTTP-proxy client. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: composer-tab

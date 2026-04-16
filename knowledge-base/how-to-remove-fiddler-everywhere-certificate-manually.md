@@ -1,6 +1,6 @@
 ---
 title: Manually Removing Fiddler Everywhere Certificate
-meta_title: Uninstall the Root CA from Windows or macOS Certificate Store | Fiddler Everywhere
+page_title: Uninstall the Root CA from Windows or macOS Certificate Store | Fiddler Everywhere
 description: "Learn how to remove the Fiddler Everywhere web-debugging client certificate from Windows and macOS manually."
 type: how-to
 slug: how-to-remove-fiddler-everywhere-certificate-manually

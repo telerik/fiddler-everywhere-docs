@@ -1,6 +1,6 @@
 ---
 title: Capturing and Debugging Claude Code HTTPS Traffic with Fiddler Everywhere
-meta_title: How to Capture and Debug Claude Code HTTPS Traffic | Fiddler Everywhere
+page_title: How to Capture and Debug Claude Code HTTPS Traffic | Fiddler Everywhere
 description: "Step-by-step guide to configure Fiddler Everywhere to capture, decrypt, and inspect HTTPS API calls from Claude Code. Debug Anthropic's AI agent with proxy configuration and certificate setup."
 type: how-to
 slug: fiddler-and-claude

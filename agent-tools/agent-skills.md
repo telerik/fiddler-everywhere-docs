@@ -1,6 +1,6 @@
 ---
 title: Agent Skills
-meta_title: Fiddler Everywhere Agent Skills – Automate MCP Setup and Traffic Analysis in AI Coding Tools
+page_title: Fiddler Everywhere Agent Skills – Automate MCP Setup and Traffic Analysis in AI Coding Tools
 description: "Install and use the official Fiddler Everywhere agent skills to automate MCP server configuration, HTTPS traffic analysis, and Fiddler installation in AI-powered IDEs such as GitHub Copilot, Claude Code, Cursor, Windsurf, and OpenAI Codex CLI."
 slug: fiddler-agent-skills
 publish: true

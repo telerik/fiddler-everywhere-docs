@@ -1,6 +1,6 @@
 ---
 title: Mark Scripts and JSON Files
-meta_title: Mark Scripts and JSON Files - Rules Presets | Fiddler Everywhere
+page_title: Mark Scripts and JSON Files - Rules Presets | Fiddler Everywhere
 description: "Marking JavaScript sessions and JSON files while using the Fiddler rules. Import and customize ready-to-use rule presets for visual traffic marking."
 slug: adv_marking_scripts_jsons
 position: 20
