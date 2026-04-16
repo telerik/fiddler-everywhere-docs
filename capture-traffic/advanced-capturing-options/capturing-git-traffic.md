@@ -27,11 +27,11 @@ git config --global http.sslVerify false
 Setting `http.sslVerify` to `false` can help you quickly setup your environment alongside a man-in-the-middle HTTPS proxy. However, its usage is insecure as it will disable the validation of all self-signed certificates. Alternatively, you could install the Fiddler root CA to the certificate chain and specify it with either `http.sslCAInfo` or `http.sslCAPath`.
 
 
-```JS
-// File containing the certificates to verify the peer when fetching or pushing over HTTPS. The `GIT_SSL_CAINFO` environment variable can override it.
+```ini
+# File containing the certificates to verify the peer when fetching or pushing over HTTPS. The GIT_SSL_CAINFO environment variable can override it.
 http.sslCAInfo <path-to-CA-file>
 
-// Path containing files with the CA certificates to verify the peer when fetching or pushing over HTTPS. Can be overridden by the `GIT_SSL_CAPATH` environment variable
+# Path containing files with the CA certificates to verify the peer when fetching or pushing over HTTPS. Can be overridden by the GIT_SSL_CAPATH environment variable.
 http.sslCAPath <path-to-folder-containing-CAs>
 ```
 

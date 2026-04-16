@@ -10,7 +10,7 @@ previous_url: /security/managing-fiddler-through-intune
 
 # Managing Fiddler Everywhere through Intune
 
-A common task for system and network administrators is to bundle and manage applications through a third-party management system. This article highlights the basics needed to bundle the Fiddler Everywhere application and manage its installation through [Miscrosoft Intune](https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune).
+A common task for system and network administrators is to bundle and manage applications through a third-party management system. This article highlights the basics needed to bundle the Fiddler Everywhere application and manage its installation through [Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune).
 
 
 1. Before you can add Fiddler Everywhere as a Win32 app to Microsoft Intune, you must prepare the application by using the [Microsoft Win32 Content Prep Tool](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool). Use the tool to convert the Fiddler Everywhere application installation files into the `.intunewin  ` format by following the official instructions:

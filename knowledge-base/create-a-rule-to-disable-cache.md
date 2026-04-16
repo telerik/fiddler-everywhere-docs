@@ -21,7 +21,7 @@ I want to always get the latest content from the server. How to prevent the serv
 
 You can use the **Rules** tab to create and apply a rule for all traffic that goes through the proxy. 
 
-- Create a condtition that matches all captured trafficc. For demonstartion purposes we are using regular expression `.*` which matches every string.
+- Create a condition that matches all captured traffic. For demonstration purposes we are using regular expression `.*` which matches every string.
     ![Matching all traffic through ReGex](./images/disable-caching-rule-condition.png)
 - Add actions to overwrire and remove all HTTP Requests and Responses Headers that are related to caching:
     | Fiddler Action | Headers | Value | Action |

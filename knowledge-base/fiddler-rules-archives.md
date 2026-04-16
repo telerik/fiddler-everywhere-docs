@@ -46,7 +46,7 @@ Apart from creating a rule from SAZ, you can also directly use captured HTTPS tr
 
 ## Additional Resources
 
-- [Moodify traffic with the Fiddler Rules](slug://modify-traffic-get-started)
+- [Modify traffic with the Fiddler Rules](slug://modify-traffic-get-started)
 - [Mocking traffic with the Fiddler Rules](slug://mock-traffic-get-started)
 - [Replaying HTTPS Traffic with the Fiddler Rules](slug://replaying-traffic)
 - [Rules tab options and structure](slug://rulesbuilder-get-started)

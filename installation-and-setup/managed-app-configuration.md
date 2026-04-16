@@ -127,7 +127,7 @@ For more details on each configuration key or for troubleshooting, refer to the 
 
 ## See Also
 
-* [Applyiing sanitizaion for captured traffic in Fiddler Everywhere](slug://fe-sanitization)
+* [Applying sanitization for captured traffic in Fiddler Everywhere](slug://fe-sanitization)
 * [Enabling and disabling the Fiddler Everywhere MCP server](slug://fiddler-mcp-server)
 * [Not capturing traffic due to group policy](slug://resolve-proxysettingsperuser-policy)
 * [Policies for managing access and usage of the Fiddler MCP server](slug://fiddler-mcp-server#mcp-access-policies)

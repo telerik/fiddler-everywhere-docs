@@ -66,6 +66,6 @@ Apart from the built-in saving and sharing functionalities, you can also export 
 
 ## Using Keyboard Shortcuts
 
-Almost all Fiddler Everywhere features are linked to a keyboard shortcut which oyu can use to optimize or automate your workflow.
+Almost all Fiddler Everywhere features are linked to a keyboard shortcut which you can use to optimize or automate your workflow.
 
-[Learn more about eh available keyboard shortcuts here...](slug://fiddler-shortcuts)
+[Learn more about the available keyboard shortcuts here...](slug://fiddler-shortcuts)

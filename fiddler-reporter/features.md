@@ -17,7 +17,7 @@ The Fiddler Everywhere Reporter has four different capturing modes, which you ca
 
 - [**Start Capturing Browser**](#capturing-browser-option) - this option in Reporter corresponds to the browser capturing mode in Fiddler Everywhere. It captures traffic from a sandboxed browser instance.
 
-- [**Start Capturing Everything**](#capturing-everything-option) - this option corresponds to the system capturing mode. It sets the Fiddler Everywhere Reporter proxy as the operating system upstream proxy. This option requires the explicit instalation and trust of the Fiddler certificate authroity file.
+- [**Start Capturing Everything**](#capturing-everything-option) - this option corresponds to the system capturing mode. It sets the Fiddler Everywhere Reporter proxy as the operating system upstream proxy. This option requires the explicit installation and trust of the Fiddler certificate authority file.
 
 - [**Start Capturing Terminal**](#capturing-terminal-option) - this option corresponds to the terminal capturing mode. It captures traffic from a sandboxed terminal instance.
 
@@ -54,7 +54,7 @@ Use the capture everything option as follows:
 
 1. Click the **Start Capturing Everything** button (available through a drop-down).
 
-    >warning If that is your first time using this mode, then you will need to export and install the Fiddler certificate authority file explicitly while using [the **Certificate > Trust Root Certificate** option](#configuring-the-fiddler-certificate) or by manualy exporting and installing the Fiddler CA.
+    >warning If that is your first time using this mode, then you will need to export and install the Fiddler certificate authority file explicitly while using [the **Certificate > Trust Root Certificate** option](#configuring-the-fiddler-certificate) or by manually exporting and installing the Fiddler CA.
 
 1. Capture the targeted traffic from the targeted client application.
 
@@ -91,7 +91,7 @@ Use the manual setup  option as follows:
 
 1. Configure your client application to use the Fiddler proxy address (127.0.0.1), port (8877).
 
-1. To capture and decrypt secure traffic (HTTPS), export and install the Fiddler CA certificate within your client applicaiton.
+1. To capture and decrypt secure traffic (HTTPS), export and install the Fiddler CA certificate within your client application.
 
 1. Start the Fiddler Everywhere Reporter application.
 

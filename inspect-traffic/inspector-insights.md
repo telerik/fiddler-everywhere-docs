@@ -85,7 +85,7 @@ Every HTTP(S) request begins with plain text headers that describe what the clie
 
 * The HTTP method&mdash;For example, __GET__.
 * The URL path which is being requested&mdash;For example, `/index.html`.
-* The HTTP version&mdash;For example, `HTTP/1.2`.
+* The HTTP version&mdash;For example, `HTTP/1.1`.
 
 The **Request line** can consist of one or more headers listed in rows that contain name-value pairs of metadata about the request and the client, such as the `User-Agent` and `Accept-Language`.
 
@@ -173,7 +173,7 @@ The **Form Data** inspector, available in the **Request** section only, parses t
 
 The **JavaScript** inspector interprets and formats the selected request or response body as a JavaScript/TypeScript code. The inspector will recognize and properly format the following MIME types:
 
-```sh
+```text
 application/ecmascript
 application/javascript
 application/x-ecmascript
@@ -231,7 +231,7 @@ The **Messages tab** renders a list of the WebSocket or gRPC messages sent from 
 The list of messages is rendered as a grid with multiple columns:
 
 - **#**&mdash;Number indicating the consecutive number of the message.
-- **Sender**&mdash;Inidicates whether the **Client** or **Server** sent the message.
+- **Sender**&mdash;Indicates whether the **Client** or **Server** sent the message.
 - **Type (WebSocket only)**&mdash;Indicates the type of the message. The supported values are as follows:
     * **Text**&mdash;message with text payload.
     * **Binary**&mdash;message with binary payload.
@@ -246,7 +246,7 @@ The list of messages is rendered as a grid with multiple columns:
 - **Raw (SSE only)**&mdash;Contains the whole object sent from the server without any parsing.
 - **Time (WebSocket, SSE, Socket.IO)**&mdash;Renders the date and the time when the message is received.
 - **Message**&mdash;The string representation of the message sent/received.
-- **Packet Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO packet (for example, Ping, Pong, Upgradew, Message).
+- **Packet Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO packet (for example, Ping, Pong, Upgrade, Message).
 - **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (for example, Event).
 - **Attachments (Socket.IO only)**&mdash;Lists the included attachments (if present).
 - **Namespace (Socket.IO only)**&mdash;Lists the included namespace (if present).

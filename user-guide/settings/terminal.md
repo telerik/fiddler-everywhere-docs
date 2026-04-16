@@ -1,7 +1,7 @@
 ---
 title: Terminal
 meta_title: Terminal - Settings | Fiddler Everywhere
-description: "Style the default termanal for Fiddler Everywhere to use as a preconfigired terminal option. Explore available configuration and personalization options."
+description: "Style the default terminal for Fiddler Everywhere to use as a preconfigired terminal option. Explore available configuration and personalization options."
 slug: terminal-settings-submenu
 publish: true
 position: 90

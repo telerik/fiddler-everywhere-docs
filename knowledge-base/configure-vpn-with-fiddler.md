@@ -70,7 +70,7 @@ The following section showcases how to use Cisco VPN alongside [the Fiddler **ne
 1. Open the **Settings** > **HTTP** menu, trust the Fiddler certificate, and check the **Capture HTTPS traffic** box.
 1. Create a **Do Not Decrypt** rule to bypass the VPN endpoints.
 
-    - Open **Traffic** pange and go to the **Rules** tab.
+    - Open **Traffic** pane and go to the **Rules** tab.
 
     - Use **Add Rule** to open the **Rule Builder**.
 
@@ -90,9 +90,9 @@ You can directly use Cisco VPN alongside the Fiddler [**browser capturing mode**
 
 ## In-app VPN Notifications
 
-Due to how the CiscoVPN tool works, if the VPN tool is started before the Fiddler system capturing mode and the VPN is not exlicitly bypassed (as in the [configuration instructions](#configuring-ciscovpn-alongside-system-capturing-mode)) then you will not see most of the traffic in Fiddler.
+Due to how the CiscoVPN tool works, if the VPN tool is started before the Fiddler system capturing mode and the VPN is not explicitly bypassed (as in the [configuration instructions](#configuring-ciscovpn-alongside-system-capturing-mode)) then you will not see most of the traffic in Fiddler.
 
-The Fiddler Everywhere application can automatically detect when a VPN tool was started before starting up the Fiddler application. In similar cases, the in-app nitoficaitons will warn users about the required order of exectuion so that the traffic can be succesfully captured.
+The Fiddler Everywhere application can automatically detect when a VPN tool was started before starting up the Fiddler application. In similar cases, the in-app notifications will warn users about the required order of execution so that the traffic can be successfully captured.
 
 ## Lost Internet Access Troubleshooting
 

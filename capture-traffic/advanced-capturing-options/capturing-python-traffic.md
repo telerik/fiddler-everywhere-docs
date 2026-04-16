@@ -18,7 +18,7 @@ previous_url: /knowledge-base/capturing-python-traffic
 
 The Fiddler Everywhere application allows starting a dedicated terminal that automatically proxies HTTPS requests through the Fiddler proxy. The Fiddler terminal supports capturing from Python applications without additional configuration - Fiddler Everywhere sets everything. 
 
->important FIddler Everywhere terminal supports Python version 3 and above, which was first introduced in 2009. Older versions of Python are unsupported.
+>important Fiddler Everywhere terminal supports Python version 3 and above, which was first introduced in 2009. Older versions of Python are unsupported.
 
 Steps needed to capture HTTPS traffic from a Python application:
 

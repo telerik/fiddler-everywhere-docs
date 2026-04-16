@@ -31,10 +31,10 @@ Fiddler can mock HTTPS traffic captured locally or remotely, for example, as tra
     ![Loading SAZ archive with captured traffic](./images/mock-rules-live-traffic-tab.png)
 
 The next step is to use one of the Fiddler capturing modes and initiate the traffic capturing (the rules will work only for traffic that goes through the Fiddler proxy). For Example:
-1. Use the **Browser** to start [the browser captruing mode](slug://capture-browser-traffic).
+1. Use the **Browser** to start [the browser capturing mode](slug://capture-browser-traffic).
 1. Load the URL used by the client to generate the captured sessions (in our case, that would be [https://example.com)](https://example.com))
 
-That is it! At this very moment, the shown page is not the original one, but the one as mocked from the active Fiddler rules. 
+At this point, the shown page is not the original one but the page as mocked from the active Fiddler rules. 
 
 ## Additional Resources
 

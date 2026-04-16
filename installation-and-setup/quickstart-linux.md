@@ -17,7 +17,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Lin
 
 ## Prerequisites
 
-- Install Ubuntu 20+ x64.
+- Install Ubuntu 22+ x64.
 - Provide 400MB of free disk space.
 - Create an account with administrative rights, which you will need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
@@ -77,7 +77,7 @@ After successful login into Fiddler Everywhere, you will see your personal and l
 
 ## Step 3: Interact with the Captured Traffic
 
-You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import *& export, mock and modify HTTPS traffic.
+You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import & export, mock and modify HTTPS traffic.
 
 1. Capture HTTPS traffic through the preferred [capturing mode](slug://capture-traffic-get-started).
   >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)](slug://trust-certificate). Alternatively, you can explicitly [install the Fiddler CA certificate in a third-party certificate store](slug://trust-certificate) (for example, [through intalling the CA in Firefox](slug://how-to-install-fiddler-root-certificate-in-firefox-on-linux)) and capture traffic only from that application.
@@ -88,7 +88,7 @@ You can now take advantage of the Fiddler Everywhere capabilities - capture, ins
 
 >tip The **Rules** tab is one of the most advanced features in Fiddler Everywhere. You can create and execute complex rules on your incoming traffic to mock client and server behavior without touching the client and server applications.
 
-That is it! Now you are equipped to delve deeper into Fiddler Everywhere and make the most of its powerful functionalities.
+Now you are equipped to delve deeper into Fiddler Everywhere and make the most of its powerful functionalities.
 
 ## Next Steps
 

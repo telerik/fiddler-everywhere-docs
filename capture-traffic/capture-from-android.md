@@ -117,7 +117,7 @@ Most production-ready applications block the use of user-installed certificates,
     </network-security-config>
     ```
 
-1. In the `AndroidManifest.xml_` file, reference the `network-security-config` from the previous step through a parameter in the `application` tag:
+1. In the `AndroidManifest.xml` file, reference the `network-security-config` from the previous step through a parameter in the `application` tag:
 
     ```XML
     android:networkSecurityConfig="@xml/network_security_config"

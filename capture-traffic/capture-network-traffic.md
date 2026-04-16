@@ -9,8 +9,6 @@ position: 15
 
 # Network Capturing Mode
 
->important The network capturing mode is a feature in BETA state and is subject to change in the future.
-
 This article describes using the Fiddler **network capturing mode**, where "network traffic" refers to all outgoing TCP traffic. The feature requires the installation of a network extension (macOS) or kernel driver (Windows), which requires explicit administrative privileges.
 
 On Windows, the network capturing mode installs a kernel driver through the Windows Filtering Platform (WFP), which then interacts with the Fiddler proxy to capture network traffic at a lower level.
@@ -38,7 +36,7 @@ You must meet the following prerequisites to use the network capturing mode.
 
 ### Limitations
 
-The **Network Capture** mode is in Beta state and, currently, has some known limitations as follows:
+The **Network Capture** mode currently has some known limitations as follows:
 
 - The network capturing mode is available only for Windows and macOS. The Linux version of Fiddler Everywhere does not yet support network capturing.
 - **The network capturing mode cannot work alongside the system capturing mode**. If the network capturing mode is enabled, Fiddler will automatically disable the system capturing mode to prevent conflicts.
@@ -61,8 +59,8 @@ To use the **Network Capture**, you need to set the IP address explicitly, the T
 
 To start the network capturing mode, execute the following steps:
 
-1. Click the **Network Capture (BETA)** button from the **Live Traffic** menu.
-1. Click the **Enable** from the **Network Capture Settings (BETA)** screen.
+1. Click the **Network Capture** button from the **Live Traffic** menu.
+1. Click the **Enable** from the **Network Capture Settings** screen.
 
 >tip The capturing will use the pre-configured rules. [Instructions on how to modify the default capturing rules or add additional rules here...](#modify-network-capture-rules)
 
@@ -98,13 +96,13 @@ When you enable network capturing for the first time on macOS, Fiddler installs 
 To stop the network capturing mode, execute the following steps:
 
 1. Click the **Network Capture** button from the **Live Traffic** menu.
-1. Click the **Disable** from the **Network Capture Settings (BETA)** screen.
+1. Click the **Disable** from the **Network Capture Settings** screen.
 
 ## Modify Network Capture Rules
 
-By default, network capturing mode uses active rules to capture traffic from all IP addresses and processes working on ports 80 (HTTP) and 443 (HTTPS). An additional rule enables capturing from localhost (`127.0.0.1`) on port 3000—this demonstrates how to add specific rules in the **Network Capture Settings (BETA)** screen.
+By default, network capturing mode uses active rules to capture traffic from all IP addresses and processes working on ports 80 (HTTP) and 443 (HTTPS). An additional rule enables capturing from localhost (`127.0.0.1`) on port 3000—this demonstrates how to add specific rules in the **Network Capture Settings** screen.
 
-The **Network Capture Settings (BETA)** screen offers a **Basic** view for simple rule setup and an **Advanced** view for more complex configurations.
+The **Network Capture Settings** screen offers a **Basic** view for simple rule setup and an **Advanced** view for more complex configurations.
 
 In the advanced view, you can manually control what traffic to capture using these options:
 

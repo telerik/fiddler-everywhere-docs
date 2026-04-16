@@ -79,7 +79,7 @@ To enable the Fiddler Everywhere MCP server in Cursor, follow these steps:
     * Create a `.cursor/mcp.json` file in your workspace.
     * Paste the copied Fiddler Everywhere MCP configuration. Ensure that the JSON is properly formatted and that the Fiddler MCP server is within the `mcpServers` property.
 
-     _example mcp.json file in Cursor with Fiddler Evereywhere MCP server_
+     _example mcp.json file in Cursor with Fiddler Everywhere MCP server_
     ```JSON
     {
         "mcpServers": {

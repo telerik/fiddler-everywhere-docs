@@ -45,4 +45,4 @@ Example for basic usage of the Fiddler Everywhere Reporter application:
 
 1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
-That is it! You have now captured, saved, and exported the web traffic as a Fiddler archive (SAZ). As a next step, a licensed Fiddler user can load the SAZ archive in the Fiddler Everywhere desktop application, where the traffic can be inspected, analyzed, replayed, and modified according to your needs.
+You have now captured, saved, and exported the web traffic as a Fiddler archive (SAZ). As a next step, a licensed Fiddler user can load the SAZ archive in the Fiddler Everywhere desktop application, where the traffic can be inspected, analyzed, replayed, and modified according to your needs.

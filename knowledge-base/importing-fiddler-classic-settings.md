@@ -51,7 +51,7 @@ The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
     >important The default proxy port for Fiddler Classic is 8888, while for Fiddler Everywhere, it is 8866. This difference is often overlooked by users who follow a specific proxy tutorial but are trying solutions based on a different proxy port.
 - Bypassed URLs&mdash;Exports the Fiddler Classic value from **Tools > Options > Connections > Bypass Fiddler Classic for URLs that starts with** and imports as value for **Settings > Connections > Bypass Fiddler for URLs that starts with** option in Fiddler Everywhere.
 - Gateway settings&mdash;Exports the Fiddler Classic value from **Tools > Options > Gateway** and imports as value for **Settings > Gateway** option in Fiddler Everywhere. The Gateway checkbox will be unavailable if the selected option in Fiddler Classic is **Аutomatically Detect Proxy using WPAD**.
-- Allow remote computers to connect;Exports the Fiddler Classic value from **Tools > Options > Connections > Allow Remote Computers to connect** and imports as value for **Settings > Connections > Allow remote devices to connect** option in Fiddler Everywhere.
+- Allow remote computers to connect&mdash;Exports the Fiddler Classic value from **Tools > Options > Connections > Allow Remote Computers to connect** and imports as value for **Settings > Connections > Allow remote devices to connect** option in Fiddler Everywhere.
 
 ## Importing AutoResponder Rules
 

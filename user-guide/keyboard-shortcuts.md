@@ -169,7 +169,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |---------|---------------------|
 |Set/Unset Proxy|`F12`|
 |Open Browser|`Ctrl` + `B`|
-|Open Terminal|`Ctrl` + `|
+|Open Terminal|`Ctrl` + \`|
 
 ### Live Traffic
 

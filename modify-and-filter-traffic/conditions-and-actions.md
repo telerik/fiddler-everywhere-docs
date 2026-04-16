@@ -232,7 +232,7 @@ For more information, refer to the following list.
 
 ## Actions
 
-When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions. All actions in Fiddler Everywhere can be dragged and dropped to change their execution priority and each action can be quickly duplicated or deleted (thorugh dedicated buttons).
+When Fiddler Everywhere identifies a request that matches the rule's [**conditions**](#conditions), it automatically maps it to the **action** set in the rule. An action field that handles text (string modifier) is case-insensitive by default (you can use the **Aa** button to change them to case-sensitive) and can be auto-completed with suggestions corresponding to the captured sessions. Note that multiple actions will be executed in their numbered order, and action with the final action type will prevent the execution of all subsequent actions. All actions in Fiddler Everywhere can be dragged and dropped to change their execution priority and each action can be quickly duplicated or deleted (through dedicated buttons).
 
 Apart from returning files or predefined responses, a rule in Fiddler Everywhere can perform the following specific **actions**:
 
@@ -381,7 +381,7 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>n/a</td>
             <td>n/a</td>
             <td>n/a</td>
-            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server. The option is also reffered as "Accept all CONNECTs". This action is incompatible with sessions snapshots (saved traffic).</td>
+            <td>This action should be used when you wish to test a URL, which will not be resolved by your DNS Server. The option is also referred to as "Accept all CONNECTs". This action is incompatible with sessions snapshots (saved traffic).</td>
             <td>Final</td>
         </tr>
         <tr>

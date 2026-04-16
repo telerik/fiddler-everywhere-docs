@@ -1,7 +1,7 @@
 ---
 title: Using Fiddler Everywhere proxy alongside NordVPN
 meta_title: Using Fiddler Everywhere proxy alongside NordVPN | Fiddler Everywhere
-description: "Learn how to configure NordVPN t work alongside FIddler Everywhere. Step-by-step instructions and troubleshooting guidance."
+description: "Learn how to configure NordVPN to work alongside Fiddler Everywhere. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-everywhere-nordvpn
 publish: true

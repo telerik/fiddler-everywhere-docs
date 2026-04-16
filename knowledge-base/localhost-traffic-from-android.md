@@ -27,4 +27,4 @@ Each Android device and emulator uses special alias like 10.0.2.2 (might differ 
 
 ![Directing mobile loopback to host localhost](./images/mobile-localhost.png)
 
-That is it! Enable the rule and any request on the Android device to `10.0.2.2:8866` will be directed to **localhost:4000**. Fiddler Everywhere is effectively acting as a reverse proxy.
+Enable the rule and any request on the Android device to `10.0.2.2:8866` will be directed to **localhost:4000**. Fiddler Everywhere is effectively acting as a reverse proxy.
