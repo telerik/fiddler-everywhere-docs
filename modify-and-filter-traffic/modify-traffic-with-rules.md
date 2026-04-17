@@ -1,6 +1,7 @@
 ---
 title: Modifying Traffic
-description: "Modify HTTPS traffic while using the Rules tab in the Fiddler Everywhere web-debugging proxy tool."
+page_title: Modifying Traffic - Rules | Fiddler Everywhere
+description: "Modify HTTPS traffic while using the Rules tab in the Fiddler Everywhere web-debugging proxy tool. Create, manage, and execute rules for traffic modification."
 slug: modify-traffic-get-started
 publish: true
 position: 10
@@ -13,14 +14,14 @@ Fiddler Everywhere provides powerful debugging techniques for testing APIs and m
 
 >tip A **rule** in Fiddler Everywhere is a feature that allows you to match a targeted HTTP(S) session and apply a specific action that will modify its original behavior. A rule can be created, activated, and executed through the **Rules** tab in the **Traffic** pane.
 
-Using Fiddler's rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
+Using the Fiddler rules allows you to modify the ongoing HTTPS requests and responses without accessing or modifying the client and server applications.
 
 To open the **Rules** tab.
 
 1. Start Fiddler Everywhere and open the **Home** Pane.
 1. Follow the **Rules** flow from the **Modify and Filter Traffic** section.
  
-![Using the Fiddler's rules from the **Home** pane](./images/rules-tutorial-flow.png)
+![Using the Fiddler rules from the **Home** pane](./images/rules-tutorial-flow.png)
 
 OR
 
@@ -63,9 +64,9 @@ To modify the captured session through the **Rules**:
     ![Automatically loaded session in Rules builder](./images/add-new-rule-loaded-in-rules-builder.png)
 1. Click **Save** to preserve the rule.
 
-Fiddler automatically adds the newly created rule on the top of the [**Rules** list](slug://modify-traffic-get-started), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay > Reissue Requests**).
+Fiddler automatically adds the newly created rule on the top of the [**Rules** list](slug://modify-traffic-get-started), giving it immediate execution priority (you can demote or promote each rule in the list). The rule is also automatically activated (the rule switch toggles on), so any new requests that match the rule will be affected by it. You can also replay the original session through its context menu (**Replay** > **Reissue Requests**).
 
-## Additional Rules Resources
+## See Also
 
 - [Sample Rules Presets](slug://adv_techniques_fiddler)
 - [Learn how to use the Rules preset here...](slug://how-to-use-fiddler-rules-to-modify-traffic)

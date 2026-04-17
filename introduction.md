@@ -1,5 +1,6 @@
 ---
 title: Introduction
+page_title: Introduction | Fiddler Everywhere
 description: "Try now the Fiddler Everywhere cross-platform, web-debugging, HTTP-request proxy and use it for any browser, system, or platform to ensure high performance of your processes."
 slug: introduction
 publish: true
@@ -7,7 +8,7 @@ position: 1
 previous_url: /license, /knowledge-base/using-fiddler-pro-dashboard
 ---
 
-# Welcome to Fiddler Everywhere!
+# Welcome to Fiddler Everywhere
 
 Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTPS traffic, issues requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high-performance, cross-platform proxy for any browser, system, or platform.
 
@@ -27,13 +28,13 @@ Fiddler Everywhere provides an option for automatic, sandboxed browser HTTPS cap
 
 ### Terminal Capturing
 
-Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTPS capturing. [Read more about the Fiddler's terminal capturing...](slug://capture-terminal-traffic)
+Fiddler Everywhere provides an option for automatic, sandboxed, terminal HTTPS capturing. [Read more about the Fiddler terminal capturing...](slug://capture-terminal-traffic)
 
 ### Traffic Analysis
 
 Fiddler Everywhere provides an HTTPS and WebSocket traffic-analyzing functionality, which renders the captured information in a structured way and visualizes various statistical data for one or more captured sessions. You can also decrypt secure traffic and save, receive, compare, and share captured traffic with collaborators. Read more about [inspecting](slug://inspecting-traffic-get-started) and [modifying](slug://modify-traffic-get-started) traffic with Fiddler Everywhere...
 
-### Modern HTTP and TLS version support
+### Modern HTTP and TLS Version Support
 
 Fiddler Everywhere supports the used versions of the HTTP protocol, including the widely used HTTP/1.1 and the latest major revision HTTP/2. Fiddler Everywhere supports obsolete and modern SSL and TLS versions, including TLS 1.2 and TLS 1.3.
 
@@ -57,7 +58,7 @@ This extensive protocol support enables developers to debug complex modern appli
 
 ### Request and Response Mocking
 
-Fiddler supports mocking, modifying, and setting breakpoints on all HTTP requests and responses. With Fiddler's rules, you can quickly change HTTPS requests and responses without updating the code or accessing the server or the client application. [Read more about creating rules for modifying requests and responses with Fiddler Everywhere...](slug://rulesbuilder-get-started)
+Fiddler supports mocking, modifying, and setting breakpoints on all HTTP requests and responses. With the Fiddler rules, you can quickly change HTTPS requests and responses without updating the code or accessing the server or the client application. [Read more about creating rules for modifying requests and responses with Fiddler Everywhere...](slug://rulesbuilder-get-started)
 
 ### API Composing
 
@@ -88,7 +89,7 @@ Fiddler Everywhere delivers a modern, intuitive UI with collapsible panels, [lay
 
 ## Trial Version 
 
-Fiddler Everywhere offers a trial with a full-featured version of the tool&mdash;no restrictions! Moreover, you are eligible for complete technical support during your trial period if you have any questions. To sign up for a free trial, go [here](https://www.telerik.com/download/fiddler-everywhere). The trial version activates only once per each unique machine.
+Fiddler Everywhere offers a trial with a full-featured version of the tool&mdash;no restrictions. Moreover, you are eligible for complete technical support during your trial period if you have any questions. To sign up for a free trial, go to the [Fiddler Everywhere download page](https://www.telerik.com/download/fiddler-everywhere). The trial version activates only once per each unique machine.
 
 ## Commercial Licenses
 
@@ -107,12 +108,12 @@ Activate the [**Fiddler Everywhere Pro**](https://www.telerik.com/purchase/fiddl
  - The installation can be executed locally (on the machine running Fiddler Everywhere).
 
 Activate the [**Fiddler Everywhere Enterprise**](https://www.telerik.com/purchase/fiddler) license to enable the **policy-driven installation** with the following options:
-- The executable installation file can be distributed from your source (shared internal location, OS image, etc.).
-- The installation can be executed remotely to multiple licensed end users (via policy, script, etc.).
+- The executable installation file can be distributed from your source (shared internal location, OS image, and others).
+- The installation can be executed remotely to multiple licensed end users (via policy, script, and others).
 
 Contact our support team for more details on enabling the policy-driven installation alongside your specific company configuration.
 
-## Suggested Links
+## See Also
 
 * [Before You Start: All Things Fiddler (Telerik Blog Post)](https://www.telerik.com/blogs/fiddler)
 * [Getting Started with Fiddler Everywhere (Video Tutorials)](https://www.telerik.com/videos/fiddler/tag/fiddler-everywhere)

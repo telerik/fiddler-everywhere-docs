@@ -1,6 +1,9 @@
 ---
 title: Requests Section
-description: "Learn how to use the Requests section in the Fiddler Everywhere web-debugging HTTP-proxy client."
+page_title: Save, Organize, and Share API Request Collections | Fiddler Everywhere
+description: "Learn how to use the Requests section in the Fiddler Everywhere web-debugging HTTP-proxy client. Step-by-step instructions and troubleshooting guidance."
+type: how-to
+res_type: kb
 slug: saved-requests-tab
 tags: Fiddler Everywhere Requests list, Fiddler Everywhere collections, saved requests, share requests, share Fiddler collection
 ---
@@ -30,7 +33,7 @@ The **Collection menu** displays options for managing your currently selected re
 - **Create New Collection**&mdash;Creates a new collection folder within the selected collection.
 - **Manage Shared Collection**&mdash;Lists and manages users with access to the collection.
 - **Share Collection**&mdash;Opens the sharing prompt and provide users with shared access rights.
-- **Delete**&mdash;Deletes the selected collection completely. This action will also remove the collection for everyone with whom you've shared the collection.
+- **Delete**&mdash;Deletes the selected collection completely. This action will also remove the collection for everyone with whom you have shared the collection.
 
 ### Sharing a Collection
 
@@ -59,7 +62,7 @@ Each collection provides options that are accessible through a context menu.
 | **Delete**      | Deletes the collection from the **Requests** list. This will also delete all the requests in the collection. If the collection is shared, the collection will be removed for everyone; can be accessed through the keyboard by pressing `Cmd`+`Back` (on Mac), or `Del` (on Windows).
 | **Share**       | Triggers the **Share Collection** window; can be accessed through the keyboard by pressing `Cmd`+`Shift`+`=` (on Mac), or `Ctrl`+`Shift`+`=` (on Windows).
 | **Manage Users**| Lists the users with shared access rights. You can use this option to remove users.
-| **Save As Local Collection** |(Available for cloud collections only) Makes a local copy of your cloud saved collection. Useful for testing changes that you don't need to share with the collaborators using the cloud collection.
+| **Save As Local Collection** |(Available for cloud collections only) Makes a local copy of your cloud saved collection. Useful for testing changes that you do not need to share with the collaborators using the cloud collection.
 | **Duplicate Collection** |(Available for cloud collections only) Makes a local copy of your collection.
 
 ## Requests Context Menu

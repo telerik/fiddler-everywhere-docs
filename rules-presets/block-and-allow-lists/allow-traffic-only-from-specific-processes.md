@@ -1,6 +1,7 @@
 ---
 title: Allow Specific Processes
-description: "Allowing HTTPS traffic from specific processes while using Fiddler's rules."
+page_title: Allow Specific Processes - Rules Presets | Fiddler Everywhere
+description: "Allowing HTTPS traffic from specific processes while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic control."
 slug: adv_allow_traffic_processes
 position: 40
 ---
@@ -14,7 +15,7 @@ With Fiddler Everywhere, you can create a rule that automatically allows traffic
 Create an "Allow Traffic from Specific Processes" rule by setting the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 
 1. Create a matching condition that uses the "When **none of these conditions** are met **any number of times**" pattern. This rule uses the negative statement **none ...** to apply the desired actions to everything but the matched entries.
-1. Match by a **Process** where the string value defines the targeted process by its name. The process name varies depending on the used operating system and version of the client application.<br/>The example below matches different browsers on macOS while using the following regular expression: **com\.apple\.webkit|chrome|msedge**.
+1. Match by a **Process**where the string value defines the targeted process by its name. The process name varies depending on the used operating system and version of the client application.<br/** > **The example below matches different browsers on macOS while using the following regular expression:**com\.apple\.webkit|chrome|msedge**.
 1. Create a **Close Non Gracefully** action.
 
 This sample Fiddler rule matches all sessions where the processes contain one of the string literals set through the regular expression and then closes the connections made by any other unmatched process.

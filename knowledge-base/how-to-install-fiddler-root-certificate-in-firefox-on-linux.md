@@ -1,5 +1,6 @@
 ---
 title: Installing the Fiddler certificate authority in Firefox
+page_title: Add the Proxy CA to the Firefox Certificate Store on Linux | Fiddler Everywhere
 description: "Enable HTTPS decrypting of Firefox traffic by installing the Fiddler certificate authority in the Firefox certificate store."
 type: how-to
 slug: how-to-install-fiddler-root-certificate-in-firefox-on-linux
@@ -17,15 +18,15 @@ res_type: kb
 
 ## Description
 
-**Q:** How can I manually install the Fiddler's Certificate Authority (CA) in Firefox?
+**Q:** How can I manually install the Fiddler Certificate Authority (CA) in Firefox?
 
 **Q:** I want to capture and decrypt traffic only from a browser. Can I export and install the Fiddler CA certificate in Firefox certificate store?
 
-**Q:** I don't want to install the Fiddler CA certificate in my operating system  certificate store. Insteasd, I wanto to export and install the Fiddler CA certificate in Firefox certificate store. Is that possible?
+**Q:** I do not want to install the Fiddler CA certificate in my operating system  certificate store. Instead, I want to export and install the Fiddler CA certificate in Firefox certificate store. Is that possible?
 
 ## Solution
 
-1. Export the Fiddler CA certificate to your **Desktop** folder through the options in **Settings > HTTPS > Advanced > Export Fiddler CA**.
+1. Export the Fiddler CA certificate to your **Desktop** folder through the options in **Settings** > **HTTPS** > **Advanced** > **Export Fiddler CA**.
 1. Open Firefox.
 1. Go to **Settings** > **Privacy & Security**.
 1. Click the **View Certificates** button to open the Firefox's **Certificate Manager**.
@@ -35,6 +36,6 @@ res_type: kb
 
 The Fiddler CA certificate is now installed. You can now decrypt traffic captured from the Firefox browser.
 
->tip In addition to installing and Fiddler CA, you can also instruct Firefox to explicitly use the Fiddler Everywhere proxy through **Settings** > **General** > **Network Settings** > **Manual Proxy COnfiguration** and then set the Fiddler address and port (by default, IP `127.0.0.1` and port `8866`) as values for **HTTP Proxy** and **HTTPS Proxy** fields.
+>tip In addition to installing and Fiddler CA, you can also instruct Firefox to explicitly use the Fiddler Everywhere proxy through **Settings** > **General** > **Network Settings** > **Manual Proxy Configuration** and then set the Fiddler address and port (by default, IP `127.0.0.1` and port `8866`) as values for **HTTP Proxy** and **HTTPS Proxy** fields.
 
 

@@ -1,7 +1,7 @@
 <h1>
 <a name="fiddler-public-documentation" class="anchor" href="#fiddler-public-documentation"><span class="mini-icon mini-icon-link"></span></a>Fiddler Public Documentation</h1>
 
-<p>Welcome to the GitHub repo for <a href="http://www.telerik.com/fiddler-everywhere">Fiddler</a> <a href="#">Documentation</a>. This repository contains the source content--written in Markdown--that we use to power the Fiddler Everywhere Documentation at <a href="http://www.telerik.com/fiddler-everywhere">www.fiddler2.com/docs</a>. If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to <a href="http:%5Cwww.fiddler2.com/docs">www.fiddler2.com/docs</a> where our content is prettified and searchable. </p>
+<p>Welcome to the GitHub repo for <a href="http://www.telerik.com/fiddler-everywhere">Fiddler</a> <a href="#">Documentation</a>. This repository contains the source content--written in Markdown--that we use to power the Fiddler Everywhere Documentation at <a href="https://www.telerik.com/fiddler-everywhere">www.telerik.com/fiddler-everywhere</a>. If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to <a href="https://www.telerik.com/fiddler-everywhere">www.telerik.com/fiddler-everywhere</a> where our content is prettified and searchable. </p>
 
 <p>We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced. That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.</p>
 
@@ -38,7 +38,7 @@ Description: The image for setting up the the foobar handler is missing. https:/
 <ul>
 <li>Fixing grammar, punctuation, and other general errors is always appreciated. So are changes that expand on key ideas or correct errors in logic phrasing or otherwise. If your ambitions are greater, however, and you want to add completely new content to the site--like a new tutorial on using Fiddler Everywhere with an Atari 2600, for instance--we suggest you contact a member of the team first (or enter an issue!) to vet your idea. We will all be happy to hear your idea and offer advice.</li>
 <li>
-<p>Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the <a href="http://www.fiddler2.com/docs">www.fiddler2.com/docs</a> site. Please don't edit the content in this section of a document.</p>
+<p>Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the <a href="https://www.telerik.com/fiddler-everywhere">www.telerik.com/fiddler-everywhere</a> site. Please don't edit the content in this section of a document.</p>
 
 <hr>
 <p>title: Add stuff to Fiddler Everywhere</p>

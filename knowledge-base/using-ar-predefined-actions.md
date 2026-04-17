@@ -1,5 +1,6 @@
 ---
 title: Using the Predefined Actions of the Rules Tab
+page_title: Mock HTTP Responses with Built-In Rule Actions | Fiddler Everywhere
 description: "Learn how to use the predefined actions of the Rules tab for mocking different HTTP responses when working with the Fiddler Everywhere web-debugging proxy."
 type: how-to
 slug: fiddler-ar-actions
@@ -11,7 +12,7 @@ res_type: kb
 
 |   |   |
 |---|---|
-| Product  |
+| Product  | Fiddler Everywhere |
 | Product Version | 1.5.0 and above  |
 | Operating System | macOS, Windows, and Linux |
 
@@ -185,7 +186,7 @@ The **Actions** drop-down of the **Rule Builder** provides an option to load you
 1. In the file selection window, load the DAT file with the custom HTTP response.
 1. Click **Save** to create or update the rule.
 
-![Response file](./images/kb-rules-response-file.png)
+![Rule action returning a response from an external file](./images/kb-rules-response-file.png)
 
 ### Using the Custom Manual Response
 
@@ -195,7 +196,7 @@ Another option that the **Rule Builder** provides is to create the mocked custom
 1. Write the custom HTTP response in the text field.
 1. Click **Save** to create or update the rule.
 
-![Response file](./images/kb-rules-response-manul.png)
+![Rule action returning a manually crafted response](./images/kb-rules-response-manul.png)
 
 ## See Also
 

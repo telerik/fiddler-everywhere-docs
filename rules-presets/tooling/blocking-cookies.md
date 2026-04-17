@@ -1,6 +1,7 @@
 ---
 title: Block Cookies
-description: "You can use Fiddler's rules to block cookies."
+page_title: Block Cookies - Rules Presets | Fiddler Everywhere
+description: "You can use the Fiddler rules to block cookies. Import and customize ready-to-use rule presets for common web tooling."
 slug: adv_block_cookies
 position: 20
 ---

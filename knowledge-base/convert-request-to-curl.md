@@ -1,5 +1,6 @@
 ---
 title: Converting Composed Fiddler Everywhere Requests to cURL
+page_title: Export API Requests as cURL Commands | Fiddler Everywhere
 description: "Learn how to convert composed requests to cURL through the Fiddler Everywhere web-debugging application."
 type: how-to
 slug: how-to-convert-request-to-curl
@@ -27,11 +28,13 @@ Fiddler Everywhere version 4.0.0 and above provides an automated export as cURL 
 To export a session as cURL:
 
 - Select the captured session.
-- Open the context menu and choose **Copy > Copy as cURL**
+- Open the context menu and choose **Copy** > **Copy as cURL**
 
 >tip The "Copy as cURL" command will copy request bodies only when the request header Content-Type is set to `application/x-www-form-urlencoded` or `multipart/form-data` and will intentionally skip all other request and response bodies. The main reason for this is that the content of the HTTP body can be (and often is) quite large, which makes it impossible to put it in the clipboard. To transfer HTTP bodies of other sessions use the **Save Request Body to file** and **Save Response Body to file** inspector options.
 
 ## Solution (Obsolete)
+
+>tip The manual export workflow described in this section was replaced with the automated **Copy as cURL** option in Fiddler Everywhere version 4.0.0 and above. Use the approach described in the [Solution](#solution) section instead.
 
 The [**Composer**](slug://composer-tab) provides options for creating and executing your requests. Each executed request is added to the [**Live Traffic** grid](slug://web-sessions-list) as a new session entry.
 

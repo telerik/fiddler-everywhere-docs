@@ -1,5 +1,6 @@
 ---
 title: Capturing Localhost Traffic
+page_title: Capturing Localhost Traffic - Capture Traffic | Fiddler Everywhere
 description: "Learn how to capture and inspect localhost traffic by using the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: how-to-capture-localhost-traffic
@@ -13,7 +14,7 @@ While testing my application the traffic sent to `localhost` or `127.0.0.1` is n
 
 ## Solution
 
-Some frameworks (like .NET) are not proxying the localhost traffic. To solve that issue, you can utilize either of the following approaches:
+Some frameworks (like .NET) are not proxying the localhost traffic. To solve that issue, you can use either of the following approaches:
 
 - [Use the machine name](#using-the-machine-name) instead of `localhost`.
 - [Use one of the specially provided aliases](#using-aliases) in Fiddler Everywhere.
@@ -59,7 +60,7 @@ While using one of the above solutions to capture localhost requests, the traffi
 
 ![Example Localhost filtering](./images/localhost-filtering.png)
 
-## Additional Resources
+## See Also
 
 * [Learn how to direct localhost requests from the mobile application through the Fiddler proxy... ](slug://fiddler-localhost-android)
 

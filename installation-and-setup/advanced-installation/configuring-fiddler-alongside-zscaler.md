@@ -1,6 +1,7 @@
 ---
 title: Configuring Fiddler alongside Zscaler
-description: "Instructions for configuring Fiddler Everywhere alongside Zscaler"
+page_title: Configuring Fiddler alongside Zscaler | Fiddler Everywhere
+description: "Instructions for configuring Fiddler Everywhere alongside Zscaler. Follow enterprise deployment and installation instructions."
 slug: fe-configure-zscaler
 publish: true
 position: 30
@@ -22,16 +23,16 @@ The instructions below highlight the configuration steps while using the latest 
             return DIRECT;
         }
         ```
-    - Ensure that the Fiddler Everywhere proxy (by default, the Fiddler Everywhere proxy address is `127.0.0.1:8866`) should be the first option, and the Zscaler proxy should be the second option.
+    - Ensure that the Fiddler Everywhere proxy (by default, the Fiddler Everywhere proxy address is `127.0.0.1:8866`) must be the first option, and the Zscaler proxy must be the second option.
         ```sh
         return "PROXY 127.0.0.1:8866; PROXY ${ZAPP_LOCAL_PROXY}; DIRECT;";
         ```
 1. Add the PAC file to a forwarding profile. Configure the forwarding profile with the following settings:
-    - Select **Tunnel with Local Proxy** for all profiles (e.g., ON-trusted, OFF-trusted, VPN-trusted, etc.).
+    - Select **Tunnel with Local Proxy** for all profiles (for example, ON-trusted, OFF-trusted, VPN-trusted, and others).
     - Select **Z-Tunnel 2.0**. 
         >important Note that **Z-Tunnel 1.0** is incompatible with the Fiddler Everywhere application.
     - Select the **PAC URL Location** field, and enter the custom PAC Url.
-1. Add the forwarding profile to an app profile. You can create a new Zscaler Client Connector profile or update an existing one and then add the configured forwarding profile. The forwarding profile should contain the following options:
+1. Add the forwarding profile to an app profile. You can create a new Zscaler Client Connector profile or update an existing one and then add the configured forwarding profile. The forwarding profile must contain the following options:
     - Set the **Rule Order** to **1**.
     - Enable the **app profile**.
     - Enable the **Disabled Loopback Restriction**.
@@ -41,9 +42,9 @@ The instructions below highlight the configuration steps while using the latest 
 1. Start the **Fiddler Everywhere** application. 
 1. Ensure that the **System Proxy** switch is toggled **OFF**.
     >important Fiddler Everywhere will work as [an explicit proxy](slug://capture-traffic-get-started#explicit-capturing) with the HTTPS traffic being directly forwarded (to Fiddler) by the Zscaler forwarding profile and the related Zscaler PAC script. Zscaler will usually revert any changes made in the OS system proxy settings, so ensure that the **System Proxy** switch always stays **OFF**.
-1. Open **Settings > Connections** and ensure that the Fiddler port is the same as the one configured in the Zscaler PAC script. The default port used by the Fiddler Everywhere proxy is **port 8866**.
+1. Open **Settings** > **Connections** and ensure that the Fiddler port is the same as the one configured in the Zscaler PAC script. The default port used by the Fiddler Everywhere proxy is **port 8866**.
     ![Fiddler proxy port](./images/fiddler-zscaler-fiddler-port.png)
-1. Open **Settings > Gateway** and select **Set Manual Proxy Configuration**. Enter the Zscaler Client Connector proxy address and port.
+1. Open **Settings** > **Gateway** and select **Set Manual Proxy Configuration**. Enter the Zscaler Client Connector proxy address and port.
     ```sh
     http=127.0.0.1:9000;https=127.0.0.1:9000
     ```

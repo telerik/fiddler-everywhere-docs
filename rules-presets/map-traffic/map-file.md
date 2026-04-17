@@ -1,13 +1,14 @@
 ---
 title: Map Local File
-description: "Creating a transparent mapping or redirect to a DAT file containing the HTTP request while using Fiddler's rules."
+page_title: Map Local File - Rules Presets | Fiddler Everywhere
+description: "Creating a transparent mapping or redirect to a DAT file containing the HTTP request while using the Fiddler rules."
 slug: adv_map_local_file
 position: 30
 ---
 
 # Map Local Files
 
-Remote mapping of a request location means testing changes or fixes locally and avoiding deploying on an actual remote host. However, testing against a localhost environment is often the more straightforward, quicker, and cheaper solution. Mapping HTTP requests can be done to remote locations and local sources like files, Fiddler's predefined responses, or manual responses (through the Fiddler user interface). 
+Remote mapping of a request location means testing changes or fixes locally and avoiding deploying on an actual remote host. However, testing against a localhost environment is often the more straightforward, quicker, and cheaper solution. Mapping HTTP requests can be done to remote locations and local sources like files, the Fiddler predefined responses, or manual responses (through the Fiddler user interface). 
 
 With Fiddler Everywhere, you can easily create a rule that **maps HTTP requests to a local DAT file** (which contains the modified HTTP response).
 
@@ -88,7 +89,7 @@ This sample Fiddler rule maps an HTTP request to return a manually-crafted respo
 
 ![Creating "Map Local (File)" rule](./images/adv-map-local-file.png)
 
->tip Instead of manually creating a DAT file that contains a proper response, you can use one of Fiddler's predefined DAT files available through [the **Return Predefined Response** action](slug://fiddler-ar-actions).
+>tip Instead of manually creating a DAT file that contains a proper response, you can use one of the Fiddler predefined DAT files available through [the **Return Predefined Response** action](slug://fiddler-ar-actions).
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 

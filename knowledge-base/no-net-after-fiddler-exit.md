@@ -1,5 +1,6 @@
 ---
 title: No Internet Connectivity after Closing Fiddler Everywhere
+page_title: Fix Leaked Proxy Settings and Restore Internet Access | Fiddler Everywhere
 description: "Check for leaked proxy settings and restore the Internet connectivity after the Fiddler Everywhere proxy application stops unexpectedly."
 type: how-to
 slug: fiddler-restore-internet
@@ -15,9 +16,9 @@ res_type: kb
 | Product Version | 1.0.0 and above  |
 | Operating System | macOS, Windows, Linux  |
 
-## Checking for Leaked Proxy and Fixing Lost Internet Connection
+## Description
 
-By design, when the Fiddler Everywhere application is closed, it automatically restores the default operating system proxy settings. The application or the operating system can crash unexpectedly for various reasons, such as a software bug, OS interruption, hardware failure, etc. As a result, that can result in leaked proxy settings - a case where Fiddler Everywhere application is closed (after reboot) but its proxy IP and port are still present within the operating system's manual proxy configuration. 
+By design, when the Fiddler Everywhere application is closed, it automatically restores the default operating system proxy settings. The application or the operating system can crash unexpectedly for various reasons, such as a software bug, OS interruption, hardware failure, and others. As a result, that can result in leaked proxy settings - a case where Fiddler Everywhere application is closed (after reboot) but its proxy IP and port are still present within the operating system's manual proxy configuration. 
 
 This article explains how to check if your operating system has leaked proxy settings and how to restore them to their original state.
 
@@ -29,7 +30,7 @@ Follow the OS-specific guidelines below to learn if your OS has leaked proxy set
 
 1. In Fiddler Everywhere, turn off the [system capturing mode](slug://capture-system-traffic), and close the application.
 1. Open the **Proxy settings** in Windows (through the **Start** button and type **Proxy Settings**).
-1. Go to **Manual proxy setup** and ensure that the Fiddler's IP address and port are removed. By default, when your system does not use other proxies, the **Use a proxy server** is turned off with the **Address** and **Port** fields empty.  If your system uses a pre-set upstream proxy, restore it through the original settings.
+1. Go to **Manual proxy setup** and ensure that the Fiddler IP address and port are removed. By default, when your system does not use other proxies, the **Use a proxy server** is turned off with the **Address** and **Port** fields empty.  If your system uses a pre-set upstream proxy, restore it through the original settings.
 
 ### On macOS
 

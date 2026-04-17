@@ -14,7 +14,7 @@ Fiddler Everywhere provides full-scale support for its paid subscription and tri
 
 Fiddler license holders and anyone in an active trial can take advantage of the Fiddler Everywhere outstanding customer support delivered by the developers who built the tool. Use the **Contact Support** option within the Fiddler Everywhere application to open the [support center](https://www.telerik.com/account/support-center) and submit a support ticket.
 
-The subscription plan includes unlimited access to Fiddler's dedicated support services. However, to keep providing an industry-leading support experience, we have instituted a fair usage policy for support services. This means that if customer activity exceeds at least ten times the average, it may be reviewed by a Fiddler support manager at any time to assess whether the number of support requests is excessive and whether the user is in violation of the fair usage policy.
+The subscription plan includes unlimited access to the Fiddler dedicated support services. However, to keep providing an industry-leading support experience, we have instituted a fair usage policy for support services. This means that if customer activity exceeds at least ten times the average, it may be reviewed by a Fiddler support manager at any time to assess whether the number of support requests is excessive and whether the user is in violation of the fair usage policy.
 
 Support services for paid subscription or trial users provide the following support services:
 
@@ -26,7 +26,7 @@ Support services for paid subscription or trial users provide the following supp
 
 If you are not a license holder or a trial user, you can use the [available support options](https://www.telerik.com/support/fiddler-everywhere):
 
-* Use the **Feedback** in-app option in the Fiddler Everywhere application to access  [Fiddler Feedback portal](https://feedback.telerik.com/fiddler) is where you can post your feedback, feature requests, and questions on all matters related to the Fiddler Everywhere application.
+* Use the **Feedback** in-app option in the Fiddler Everywhere application to access [Fiddler Feedback portal](https://feedback.telerik.com/fiddler) is where you can post your feedback, feature requests, and questions on all matters related to the Fiddler Everywhere application.
 * Use the **Report and Issue** in-app option in the Fiddler Everywhere application to access the [Fiddler Everywhere public GitHub repository](https://github.com/telerik/fiddler-everywhere/issues) is our public bug and feature request tracker.
 * The [Fiddler discussions](https://www.telerik.com/forums/fiddler) are part of the free support you can get from the community and the Fiddler Everywhere team on all kinds of general issues. You can also receive information on the features in the discussion, request a feature, or report a bug.
 * The [official Fiddler Everywhere documentation](https://docs.telerik.com/fiddler-everywhere/introduction) is public and available for all users. If you want to share your feedback on a specific article, fill in the **Was this article helpful?** form at the end and tell us more about whether the content was helpful for you to achieve what you desired. For detailed information about creating an issue or a Pull Request on the Fiddler Everywhere documentation, go to the [contribution instructions](https://github.com/telerik/fiddler-everywhere-docs#contributing).
@@ -34,6 +34,6 @@ If you are not a license holder or a trial user, you can use the [available supp
 * If you have a question unanswered, check out the [Fiddler Everywhere FAQ section](https://www.telerik.com/fiddler/fiddler-everywhere/faq).
 * Need something unique that is tailor-made for your project? Progress offers its [Progress Services](https://www.progress.com/services) group that can work with you to create any customized solution you need.
 
-## Suggested Links
+## See Also
 
 * [Trial Version and Commercial License](slug://introduction#trial-version)

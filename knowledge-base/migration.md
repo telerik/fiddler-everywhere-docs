@@ -1,15 +1,25 @@
 ---
 title: Migrating Fiddler Accounts and Licenses
-description: "Learn how to migrate your Fiddler accounts and licenses to the Progress Telerik system."
+page_title: Transfer Subscriptions to the Progress Telerik System | Fiddler Everywhere
+description: "Learn how to migrate your Fiddler accounts and licenses to the Progress Telerik system. Step-by-step instructions and troubleshooting guidance."
 type: how-to
+res_type: kb
 slug: migrate-fiddler-subscriptions
 position: 200
 previous_url: /migration
 ---
 
-## Migrating Fiddler Accounts and Subscriptions
+## Environment
 
-Fiddler products are now part of Progress Telerik's extensive portfolio. This article explains how to migrate your existing Fiddler accounts and subscriptions to the new unified Telerik system.
+| Property | Value |
+|----------|-------|
+| Product  | Fiddler Everywhere |
+
+## Description
+
+Fiddler products are now part of Progress Telerik's extensive portfolio. How to migrate existing Fiddler accounts and subscriptions to the new unified Telerik system?
+
+## Solution
 
 Depending on the license status, your Fiddler account presents one of the following roles:
 
@@ -18,7 +28,7 @@ Depending on the license status, your Fiddler account presents one of the follow
 
 >tip [Learn more on why Fiddler products moved to Telerik.com and what improvements you can expect...](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).
 
-## Account Migration
+### Account Migration
 
 >note The following steps are directed at all users – **license holders** and **licensed developers**.
 
@@ -33,7 +43,7 @@ Each Fiddler account must migrate to the Telerik system and create a Telerik acc
 1. Open the activation link to finalize your Telerik account creation.
 1. Once the activation completes, you can immediately sign in and continue using your Fiddler product.
 
-## Subscription Migration
+### Subscription Migration
 
 >tip The following steps are directed only at **license holders**.
 
@@ -56,13 +66,11 @@ After a successful migration, you will see a message confirming the operation, a
 
 ![Migrate subscription link on Telerik](./images/fe-updated-migration-013.png)
 
-## Additional Resources
-
-Explore and learn more about the unified Telerik system through the following resources:
+## See Also
 
 - [Account Overview](https://www.telerik.com/account/)
 - [Your Account FAQ](https://www.telerik.com/account/faqs)
 - [Your Licenses](https://www.telerik.com/account/your-licenses)
 - [Purchasing & Licensing FAQs](https://www.telerik.com/purchase/faq/licensing-purchasing)
 - [Support Center](https://www.telerik.com/account/support-center)
-- [Learn more about Fiddler's move to Telerik](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).
+- [Learn more about the Fiddler move to Telerik](https://www.telerik.com/blogs/fiddler-moving-telerik-what-expect).

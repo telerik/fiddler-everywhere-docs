@@ -2,7 +2,7 @@
 title: Exporting WebSocket Traffic
 description: Learn how to export WebSocket traffic using Fiddler Everywhere.
 type: how-to
-meta_title: Export WebSocket Traffic as Plain Text | Fiddler Everywhere
+page_title: Export WebSocket Traffic as Plain Text | Fiddler Everywhere
 slug: export-websocket-traffic-plain-text
 tags: fiddler-everywhere, export, websocket, plain-text
 res_type: kb
@@ -15,6 +15,10 @@ res_type: kb
 | Product  | Fiddler Everywhere |
 
 ## Description
+
+How to export captured WebSocket traffic as plain text from Fiddler Everywhere?
+
+## Solution
 
 To export WebSocket traffic using Fiddler Everywhere, use one of the following options:
 

@@ -1,6 +1,7 @@
 ---
 title: Resolving Incompatibility with Windows's ProxySettingsPerUser
-description: "Resolve no traffic being captured with ProxySettingsPerUser group policy setting."
+page_title: Fix Empty Traffic Grid Caused by ProxySettingsPerUser Group Policy | Fiddler Everywhere
+description: "Resolve no traffic being captured with ProxySettingsPerUser group policy setting. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: resolve-proxysettingsperuser-policy
 publish: true

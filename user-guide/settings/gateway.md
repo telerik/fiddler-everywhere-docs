@@ -1,5 +1,6 @@
 ---
 title: Gateway
+page_title: Gateway - Settings | Fiddler Everywhere
 description: "Learn how to use the Gateway menu and use the options for advanced proxy setup in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: gateway-submenu
 publish: true

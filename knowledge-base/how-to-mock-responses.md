@@ -1,5 +1,6 @@
 ---
 title: Creating Custom Responses
+page_title: Mock HTTP Responses and Status Codes with Rules | Fiddler Everywhere
 description: "Learn how to create manually crafted responses, mock status codes, and use external files with predefined responses with the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: using-custom-responses
@@ -16,7 +17,7 @@ res_type: kb
 
 ## Description
 
-Fiddler Everywhere provides options for modifying the current response (HTML, JS, JSON) previously returned by the server. How can I manually simulate and test user conditions to ensure the client-side experience doesn't suffer due to unexpected issues?
+Fiddler Everywhere provides options for modifying the current response (HTML, JS, JSON) previously returned by the server. How can I manually simulate and test user conditions to ensure the client-side experience does not suffer due to unexpected issues?
 
 ## Solution
 
@@ -40,7 +41,7 @@ To achieve this scenario, you can use the **Manual Response** or the **Response 
     ```
 
     ![Sample unreachable host rule](./images/kb-rules-unreachable.png)
-1. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. Congratulations! You have just mocked a 502 status code response!
+1. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will return status code 502 with your custom error message. You have mocked a 502 status code response.
     ![Unreachable rule applied in Chrome](./images/kb-rules-chrome-result.png)
 
 ### Automating Multiple Mock Responses
@@ -61,7 +62,7 @@ A DAT file is a generic data file created by a specific application. It may cont
     ```
 3. Save the file with the `dat` extension. For example, `action-403-status.dat`.
 4. Add the **Action** in the rule through **Response file**. In the popup window, choose the newly created `action-403-status.dat` DAT file.
-5. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. Congratulations! You have just mocked a 403 status code response while using a DAT file!
+5. Enable the **Rules** tab, activate the newly created rule, and send the request. As a result, the request to https://www.example.com will now return status code 403 with your custom error message. You have mocked a 403 status code response while using a DAT file.
 
 ### Other Response Modification Actions
 
@@ -100,7 +101,7 @@ The example below demonstrates the usage of **Append to value**:
 
 The **Method** subaction supports the following options:
 - **Set Value** - setting a new value
-- **Append if not present** - setting a new value only if it doesn't already exist
+- **Append if not present** - setting a new value only if it does not already exist
 - **Append to value** - adding to an existing value
 - **Find and Replace** - replacing a specific value
 - **Regular Expression** - replacing values with Regex
@@ -114,7 +115,7 @@ The **Update Response Cookies** action allows you to modify Response cookies (wh
 
 The **Method** subaction supports the following options:
 - **Set Value** - setting a new value
-- **Add if not present** - setting a new value only if it doesn't already exist
+- **Add if not present** - setting a new value only if it does not already exist
 - **Append to value** - adding to an existing value
 - **Find and Replace** - replacing a specific value
 - **Regular Expression** - replacing values with Regex
@@ -122,7 +123,7 @@ The **Method** subaction supports the following options:
 
 >tip The specified Response actions are also available as Request counterparts (**Update Request Headers**, **Update Request Body**, and **Update Request Cookies**).
 
-## Additional Resources
+## See Also
 
 * [Modifying HTTPS Traffic Basics](slug://modify-traffic-get-started)
 * [Rules Presets in Fiddler Everywhere](slug://adv_techniques_fiddler)

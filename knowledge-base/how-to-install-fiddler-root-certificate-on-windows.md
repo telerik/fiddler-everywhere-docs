@@ -1,6 +1,7 @@
 ---
 title: Manually Installing the Root Certificate on Windows
-description: "Learn how to manually install the root certificate for Fiddler Everywhere on Windows."
+page_title: Trust the HTTPS Proxy Certificate on Windows | Fiddler Everywhere
+description: "Learn how to manually install the root certificate for Fiddler Everywhere on Windows. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: how-to-install-fiddler-root-certificate-on-windows
 publish: true
@@ -36,8 +37,8 @@ If the automatic installation and enabling of the trust certificate do not work,
 1. Open the Fiddler Everywhere application, go to __Settings > HTTPS__ and check the **Capture HTTPS traffic** checkbox.
 1. Restart Fiddler Everywhere and start capturing HTTPS traffic.
 
-If you are still unable to capture HTTPS traffic after the steps above, consider troubleshooting your configuration by looking up for possible errors logged in [the Fiddler log files](slug://fiddler-log-files) or contacting the Fiddler Everywhere support (through the **Help > Contact Support** option).
+If you are still unable to capture HTTPS traffic after the steps above, consider troubleshooting your configuration by looking up for possible errors logged in [the Fiddler log files](slug://fiddler-log-files) or contacting the Fiddler Everywhere support (through the **Help** > **Contact Support** option).
 
-## Contact us
+## Contact Us
 
-In case you have more questions or need help configuring the root certificate on WIndows, then you can reach out to our support team through the **Contact Support** option.
+In case you have more questions or need help configuring the root certificate on Windows, then you can reach out to our support team through the **Contact Support** option.

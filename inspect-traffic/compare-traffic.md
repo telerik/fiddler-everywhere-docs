@@ -1,5 +1,6 @@
 ---
 title: Comparing Traffic
+page_title: Comparing Traffic - Inspect Traffic | Fiddler Everywhere
 description: "Compare two or more captured HTTP sessions with the Fiddler Everywhere web-debugging HTTPS proxy application."
 slug: fe-compare-sessions
 publish: true
@@ -9,7 +10,7 @@ previous_url: /traffic/compare-traffic
 
 # Comparing Traffic
 
->tip The **Compare Sessions (BETA)** feature is under active development and subject to additional changes and improvements in future releases.
+Fiddler Everywhere enables you to compare two or more captured HTTP sessions side by side to identify differences in headers, bodies, and timings.
 
 ## Comparing Live Traffic Sessions
 
@@ -18,14 +19,12 @@ Fiddler Everywhere provides a comparing option for detailed differentiation of t
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
 1. Select two sessions that you want to compare.
 1. Use the **Compare** option from the context menu. Note that the **Compare** option is active only when **two** sessions are selected.
-1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
+1. Inspect both sessions in a new [**Compare Sessions** tab](#compare-sessions-section).
 
 
 ![Compare Sessions tab](./images/compare-tab-001.png)
 
 Fiddler Everywhere loads both sessions side-by-side, with the session with a lower ID to the left (named **Group 1**) and a higher ID to the right (named **Group 2**). The differences are highlighted in the session inspectors by a red background highlight for the removed content from the primary session and a green background highlight for newly added content in the secondary session. Additional sessions can be added to both groups, simultaneously comparing multiple sessions.
-
-### Adding Sessions to the Compare Groups
 
 You can add and compare more sessions by adding them to the comparison groups.
 
@@ -45,15 +44,15 @@ With Fiddler Everywhere, you can compare previously saved sessions from the save
     ![Compare context menu in Sessions section](./images/sessions-snapshots-compare-context-menu.png)
 1. Specify the primary and the secondary sessions you want to compare. Optionally, choose a [matching option](#comparing-options).
     ![Choose sessions for comparison](./images/sessions-snapshots-compare-prompt.png)
-1. Inspect both sessions in a new [**Compare Sessions (BETA**) tab](#compare-sessions-beta-section).
+1. Inspect both sessions in a new [**Compare Sessions** tab](#compare-sessions-section).
 
-## Compare Sessions (BETA) Section
+## Compare Sessions Section
 
-The **Compare Sessions (BETA)** section consists of a tab that loads a grid containing the sessions (or groups of sessions) and inspectors comparing the selected sessions' HTTP requests and responses. The section also has a toolbar that provides the [comparing options](#comparing-options) and the ability to rearrange the tab user interface.
+The **Compare Sessions** section consists of a tab that loads a grid containing the sessions (or groups of sessions) and inspectors comparing the selected sessions' HTTP requests and responses. The section also has a toolbar that provides the [comparing options](#comparing-options) and the ability to rearrange the tab user interface.
 
 ### Comparing Options
 
-The **Compare Sessions (BETA)** tab provides the following options to customize your comparing criteria.
+The **Compare Sessions** tab provides the following options to customize your comparing criteria.
 
 - **Match sessions by**&mdash;Highlights unmatched sessions with default criteria set to match by **URL**. The possible match options are as follows:
     - **URL** match sessions with different URLs.
@@ -65,8 +64,14 @@ The **Compare Sessions (BETA)** tab provides the following options to customize 
 
 ### Context Menu
 
-You can manage all sessions added in the **Compare Sessions (BETA)** tab through the context menu.
+You can manage all sessions added in the **Compare Sessions** tab through the context menu.
 
 - **Delete Selected Sessions**&mdash;Removes the selected sessions from the compare group.
 - **Reveal in the Original List**&mdash;Focuses the selected session in its original location (for example, the **Live Traffic** grid or the opened **Snapshots** tree tab).
     ![Compared Sessions context menu](./images/compare-list-context-menu.png)
+
+## See Also
+
+- [Inspecting Traffic](slug://inspecting-traffic-get-started)
+- [Inspector Types](slug://inspector-types)
+- [Organizing Traffic](slug://fe-organize-sessions)

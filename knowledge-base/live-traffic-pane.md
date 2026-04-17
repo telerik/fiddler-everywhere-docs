@@ -1,6 +1,8 @@
 ---
 title: Live Traffic Grid
+page_title: Working with the HTTP Sessions List | Fiddler Everywhere
 description: "Learn how to use the user interface from the 'Live Traffic' grid in the Fiddler Everywhere web-debugging proxy application."
+type: how-to
 slug: web-sessions-list
 res_type: kb
 previous_url: /user-guide/toolbar/decode-content, /user-guide/toolbar, /user-guide/live-traffic/web-sessions/web-sessions-toolbar, /user-guide/live-traffic/live-traffic, /user-guide/live-traffic
@@ -84,7 +86,7 @@ To search for specific values in the URL and the headers of all sessions, use th
 
 ### Searching within Request and Response Bodies
 
-Version 5.9.0 of Fiddler Everywhere introduced the option to quickly search within multiple response bodies as a feature requested by the community. Note that in some cases, the Fiddler Everywhere application can search in hundreds or even thousands of sessions that can have large HTTP bodies - the immediate result of a similar search could lead to degradation of the performance (due to the processing time and memory resources needed to complete the search). It's recommended to use the search in bodies feature only with a smaller set of captured sessions.
+Version 5.9.0 of Fiddler Everywhere introduced the option to quickly search within multiple response bodies as a feature requested by the community. Note that in some cases, the Fiddler Everywhere application can search in hundreds or even thousands of sessions that can have large HTTP bodies - the immediate result of a similar search could lead to degradation of the performance (due to the processing time and memory resources needed to complete the search). It is recommended to use the search in bodies feature only with a smaller set of captured sessions.
 
 To enable the feature to search in bodies, toggle the button at the right end of the **Quick Search** input field.
 
@@ -123,7 +125,7 @@ To share a session through the toolbar:
 Use the **Columns** menu to manage which columns to show up in the [Live Traffic grid](#live-traffic-grid). 
 
 You can also [create a custom column through the **Add Custom Column** option](#creating-custom-columns) near the bottom of the menu.
-![Manage columns from the Fiddler's UI](./images/managing-columns.png)
+![Manage columns from the Fiddler UI](./images/managing-columns.png)
 
 [Learn more about each column present in the Live Traffic grid here...](#columns)
 
@@ -142,8 +144,8 @@ The **Live Traffic** grid displays all captured web sessions with their technica
 
 Many operations start by selecting one or more entries in the **Live Traffic** grid and activating other features.
 
-- To select more than one session, hold the **Ctrl** (**Command** on Mac) or **Shift** keys while clicking the desired rows.
-- Double-click or press **Enter** (**Return** on Mac) to activate the default inspectors for a single selected session.
+- To select more than one session, hold the `Ctrl` (`Command` on Mac) or `Shift` keys while clicking the desired rows.
+- Double-click or press `Enter` (`Return` on Mac) to activate the default inspectors for a single selected session.
 
 When the **Inspectors** are activated, they will automatically decide which inspector type is best suited to display the request and response of the selected session.
 
@@ -371,7 +373,7 @@ The following table lists the **Live Traffic** columns and the information they 
         </tr>
         <tr>
             <td><b>Protocol</b></td>
-            <td>The protocol type (HTTP, gRPC, Socket.IO, etc.,) used by the session.</td>
+            <td>The protocol type (HTTP, gRPC, Socket.IO, and others, ) used by the session.</td>
         </tr>
         <tr>
             <td><b>Session State</b></td>
@@ -414,26 +416,26 @@ The following table lists the **Live Traffic** columns and the information they 
 
 ### Creating Custom Columns
 
-Add, edit, or remove a custom column to the columns list. Afterward, the columns are visualized similarly to the Fiddler's predefined columns. 
+Add, edit, or remove a custom column to the columns list. Afterward, the columns are visualized similarly to the Fiddler predefined columns. 
 
 **Add a custom column** through one of these actions:
 
-- Open the [**Columns** menu](#managing-columns) and the click on the **Add Custom Column** item. 
+- Open the [**Columns** menu](#managing-columns) and the click the **Add Custom Column** item. 
     ![Create a custom column in Fiddler Everywhere](./images/custom-column-create.png)
-- In the prompted custom column dialog, specify an HTTP Header (it's value will populate the column data) and assign a column name. The header's value will appear in the session grid if the header is present in the captured session. Otherwise, the column stays empty.
+- In the prompted custom column dialog, specify an HTTP Header (it is value will populate the column data) and assign a column name. The header's value will appear in the session grid if the header is present in the captured session. Otherwise, the column stays empty.
     ![Created custom column](./images/custom-column-created.png)
-- Open the **Headers** inspector in HTTP request/response, right-click on a selected header to load the context menu, and choose  **Add as a column**.
+- Open the **Headers** inspector in HTTP request/response, right-click a selected header to load the context menu, and choose  **Add as a column**.
     ![Create a custom column in Fiddler Everywhere](./images/custom-column-create-through-header.png)
 
-After the successful creation, the new column is immediately available in the **Live Traffic** grid. Adding a new column makes the new column visible in all tabs (both Live Traffic and opened snapshots). Unchecking the column is persisted per tab - it won't apply globally.
+After the successful creation, the new column is immediately available in the **Live Traffic** grid. Adding a new column makes the new column visible in all tabs (both Live Traffic and opened snapshots). Unchecking the column is persisted per tab - it will not apply globally.
 
-**Edit a custom column** through the [**Columns** menu](#managing-columns) and click the edit icon. **Remove a custom column** through the [**Columns** menu](#managing-columns) and click on the remove icon (a deletion confirmation displays).
+**Edit a custom column** through the [**Columns** menu](#managing-columns) and click the edit icon. **Remove a custom column** through the [**Columns** menu](#managing-columns) and click the remove icon (a deletion confirmation displays).
 
 **Filter by a custom column** through the filtering button to the right of the column name.
 
 ### Reset Columns
 
-To reset all columns to their default Fiddler's state, open the [**Columns** menu](#managing-columns) and use the **Reset** option at the bottom. This action resets all columns (shows the default selection) but won't remove any custom-made columns (it will only hide them).
+To reset all columns to their default the Fiddler state, open the [**Columns** menu](#managing-columns) and use the **Reset** option at the bottom. This action resets all columns (shows the default selection) but will not remove any custom-made columns (it will only hide them).
 
 ## Traffic Sorting and Filtering
 
@@ -449,11 +451,11 @@ Each column has a **filter** button, which popups an additional **Filter** menu 
 
 The column **Filter** menu lets you add filters for the currently selected column &mdash;for example, filter all the traffic by the **host** name or by a specific **status code**. Columns with active filters will have a blue filter indicator. You can remove a column filter through the **Clear** button in the **Filter** menu (for the filtered column) or through the **Filters** toolbar option.
 
->tip Apply complex filters by using the [**Filters** toolbar option](#filtering-options) (which supports [all Fiddler's columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options](slug://how-to-filter-traffic#column-filters).
+>tip Apply complex filters by using the [**Filters** toolbar option](#filtering-options) (which supports [all the Fiddler columns](#columns) as possible match conditions) or learn more about the [**Column Filters** options](slug://how-to-filter-traffic#column-filters).
 
 ## Context Menu Options
 
-The context menu for the **Live Traffic** grid exposes actions you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press **Control** and mouse-click (macOS).
+The context menu for the **Live Traffic** grid exposes actions you can apply for one or more sessions. To show the context menu, right-click (Windows OS), or press `Control` and mouse-click (macOS).
 
 - [Replaying](#replaying) (**Replay**)
 - [Editing in the Composer](#editing-in-the-composer) (**Edit in Composer**)
@@ -595,7 +597,7 @@ The **Bypass** option lets you quickly add a root domain or specific subdomain a
 1. Select the desired session entry.
 1. Right-click to open the context menu. Then choose one of the following bypass options:
  - Select **Bypass > Add <*.domain.xxx> to the bypass list** to add the root domain and its subdomains to the bypass list. Adds a wildcard entry in the form ***.domain.xxx**.
- - Select **Bypass > Add <subdomain.domain.xxx> to the bypass list** to add a specific domain address to the bypass list.
+ - Select **Bypass** > **Add <subdomain.domain.xxx** > **to the bypass list** to add a specific domain address to the bypass list.
 
 Consider the following rules when bypassing a domain:
 

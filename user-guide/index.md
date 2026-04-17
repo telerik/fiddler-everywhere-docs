@@ -1,6 +1,7 @@
 ---
 title: Application Menu
-description: "Use the application menu to customize your Fiddler's user interface and access support and help-related features."
+page_title: Application Menu - User Guide | Fiddler Everywhere
+description: "Use the application menu to customize your the Fiddler user interface and access support and help-related features."
 slug: app-menu-section
 tags: Fiddler help menu, Fiddler Everywhere support, fiddler application logs, zoom interface
 position: 10
@@ -17,7 +18,7 @@ The Fiddler application menu is located at the top-left corner of Fiddler Everyw
 This menu is available only on the macOS version of Fiddler Everywhere. It contains the following options:
 
 - **About**&mdash;Opens an application dialog with detailed information about the currently installed version of Fiddler Everywhere.
-- **Setttings**&mdash;A fast link to the Fiddler Everywhere **Settings** menu.
+- **Settings**&mdash;A fast link to the Fiddler Everywhere **Settings** menu.
 - **Hide Fiddler Everywhere**
 - **Hide Others**
 - **Show All**
@@ -42,7 +43,7 @@ The **View** section contains various options, as described below. Note that som
 
 - **Minimize**&mdash;(macOS only)Minimizes the Fiddler Everywhere application.
 
-- **Toogle Full Screen**&mdash;(macOS only)Enables or disables the full-screen mode on macOS.
+- **Toggle Full Screen**&mdash;(macOS only)Enables or disables the full-screen mode on macOS.
 
 - **Actual Size**&mdash;Resets the Fiddler Everywhere UI to 100% zoom level.
 
@@ -58,17 +59,17 @@ The **View** section contains various options, as described below. Note that som
 
 - **Trust Root Certificate**&mdash;Automatically installs and trusts the Fiddler certificate authority (CA) in the user certificate store of the operating system certificate manager. The option is available on [macOS](slug://first_steps_macos) and [Windows](slug://first_steps_windows). On Linux, you have to [export and trust the Fiddler CA certificate manually](slug://first_steps_linux). After you install the CA, you are ready to enable the capturing of HTTPS traffic.
 
-- **Export Root Certificate**&mdash;Automatically exports the Fiddler Everywhere CA file in a format specific to the operating system used. The certificate is exported to the `Desktop` folder. Use the **Settings > HTTPS** section to export the certificate explicitly in a specific format.
+- **Export Root Certificate**&mdash;Automatically exports the Fiddler Everywhere CA file in a format specific to the operating system used. The certificate is exported to the `Desktop` folder. Use the **Settings** > **HTTPS** section to export the certificate explicitly in a specific format.
 
-- **Reset Certificate**&mdash;Removes the currently installed CA, generates a new one, and adds it to the user certificate store. It requires elevated privileges for the Fiddler Evedrywhere application.
+- **Reset Certificate**&mdash;Removes the currently installed CA, generates a new one, and adds it to the user certificate store. It requires elevated privileges for the Fiddler Everywhere application.
 
-- **Remove Certificate**&mdash;Completely removes the currently installed FIddler CA. Requires elevated privilegies for the Fiddler Evedrywhere application.
+- **Remove Certificate**&mdash;Completely removes the currently installed Fiddler CA. Requires elevated privileges for the Fiddler Everywhere application.
 
 - **Capture HTTPS Traffic**&mdash;Defines whether Fiddler Everywhere will capture HTTPS traffic or skip it. By default, this option is disabled, and Fiddler will capture only non-secure HTTP traffic. The Fiddler certificate authority must be installed and trusted to use this option.
 
-- **Ignore Server Errors (Unsage)**&mdash;Controls whether Fiddler Everywhere warns you if an HTTPS server presents a certificate that cannot be validated.
+- **Ignore Server Errors (Unsafe)**&mdash;Controls whether Fiddler Everywhere warns you if an HTTPS server presents a certificate that cannot be validated.
 
->tip All options from the **Certificate** menu, are available through the Fiddler's **Settings** > **HTTPS** section.
+>tip All options from the **Certificate** menu, are available through the Fiddler **Settings** > **HTTPS** section.
 
 ## Help
 
@@ -82,7 +83,7 @@ The **Help** section contains various options, as described below. Note that som
 
 - **Documentation**&mdash;Direct link to the Fiddler Everywhere documentation.
 
-- **Open Application Logs Folder**&mdash;Opens the Fiddler's application folder that contains [the application logs files](slug://fiddler-log-files).
+- **Open Application Logs Folder**&mdash;Opens the Fiddler application folder that contains [the application logs files](slug://fiddler-log-files).
 
 - **About**&mdash;Opens an application dialog with detailed information about the currently installed version of Fiddler Everywhere. On macOS, this option is available in the menu's **Fiddler Everywhere** section.
 

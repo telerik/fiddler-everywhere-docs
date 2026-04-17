@@ -1,6 +1,7 @@
 ---
-title: Create a Rule from Multiple Requests
-description: "Create a rule from multiple requests to easily mock server responses in batch."
+title: Creating a Rule from Multiple Requests
+page_title: Batch-Mock Server Responses from Multiple Requests | Fiddler Everywhere
+description: "Create a rule from multiple requests to easily mock server responses in batch. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: rule-multiple-requests
 res_type: kb
@@ -23,8 +24,8 @@ How do you create a single rule to replay traffic from multiple server responses
 Using the ** Live Traffic ** grid alongside the ** Rules ** tab, you can quickly create a single rule to replay all traffic generated from a server endpoint.
 
 - Start Fiddler Everywhere and capture the traffic from the targeted server endpoint.
-- Select all captured sessions and invoke the Fiddler's context menu (right mouse click).
-- Click on the **Add New Rules** option. As a result, Fiddler Everywhere will immediately create a group containing multiple rules mocking the captured traffic. At this point (and if needed), you can modify each rule depending on the scenario you are trying to mock. If you need to simply have a snapshot of the current state, leave the rules unmodified.
+- Select all captured sessions and invoke the Fiddler context menu (right mouse click).
+- Click the **Add New Rules** option. As a result, Fiddler Everywhere will immediately create a group containing multiple rules mocking the captured traffic. At this point (and if needed), you can modify each rule depending on the scenario you are trying to mock. If you need to have a snapshot of the current state, leave the rules unmodified.
     ![Context menu option](./images/mock-traffic-in-batch-001.png)
 - Enable the **Rules** tab and the newly created rule group.
     ![Enabling the newly created group of rules](./images/mock-traffic-in-batch-002.png)

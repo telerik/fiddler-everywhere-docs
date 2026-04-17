@@ -1,5 +1,6 @@
 ---
 title: Setting Up the Root Certificate for Electron Applications on Ubuntu
+page_title: Capture HTTPS from Electron Apps like MSTeams on Ubuntu | Fiddler Everywhere
 description: "Learn how to set up the CA for Electron applications (like MSTeams) so that they can get the certificate for HTTPS capturing of the Fiddler Everywhere web-debugging client."
 type: how-to
 slug: ubuntu-ca-electron

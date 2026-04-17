@@ -1,5 +1,6 @@
 ---
 title: Capturing AWS Traffic
+page_title: Capturing AWS Traffic - Capture Traffic | Fiddler Everywhere
 description: "Learn how to capture Amazon Web Services traffic by using the Fiddler Everywhere web-debugging tool."
 type: how-to
 slug: how-to-capture-aws-traffic
@@ -16,7 +17,7 @@ Amazon Web Services (AWS) is a popular tool that provides multiple options for c
 * [Configuring the AWS CLI alongside Fiddler Everywhere](#configuring-the-aws-cli-alongside-fiddler-everywhere)
 * [Resetting the AWS CLI to default settings](#resetting-the-aws-cli-to-default-settings)
 
-### Configuring the AWS CLI alongside Fiddler Everywhere
+### Configuring AWS CLI alongside Fiddler Everywhere
 
 To capture traffic generated from AWS CLI commands, you need to configure the Fiddler Proxy for the preferred terminal application (where AWS CLI will be executed) and configure the `AWS_CA_BUNDLE` environment variable for the certificate bundle that will be used for HTTPS certificate validation.
 
@@ -31,7 +32,7 @@ To capture traffic generated from AWS CLI commands, you need to configure the Fi
     aws sts get-caller-identity
     ```
 
-### Resetting the AWS CLI to Default Settings
+### Resetting AWS CLI to Default Settings
 
 After the debugging of the request is over, reset the `AWS_CA_BUNDLE` environment variable by using the `unset` command.
 

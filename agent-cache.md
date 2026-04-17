@@ -1,5 +1,6 @@
 ---
 title: Agent Cache
+page_title: Agent Cache | Fiddler Everywhere
 description: "Use the Agent Calls tab in Fiddler Everywhere to capture, inspect, and cache model-provider endpoint responses and eliminate repeated token usage during development."
 slug: agent-cache
 publish: true
@@ -47,13 +48,13 @@ The following scenario demonstrates how Agent Cache eliminates redundant token u
 
 1. Start capturing traffic in Fiddler Everywhere—click **Start Capture** in the toolbar.
 1. Run your agent to trigger an HTTPS call to the model-provider endpoint.
-1. Open **Traffic > Agent Calls**.
+1. Open **Traffic** > **Agent Calls**.
 1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
 1. Enable the **Caching** switch for that session in the sticky **Caching** column.
        ![The "Agent Calls" tab in Fiddler](./images/caching-column.png)
 1. Run your agent again with the same request.
 1. Verify in the **Live Traffic** grid that Fiddler Everywhere served the cached response for all subsequent requests.
-       ![The cached endpoints in Fiddler's Live Traffic grid](./images/cached-agent-calls.png)
+       ![The cached endpoints in the Fiddler Live Traffic grid](./images/cached-agent-calls.png)
 
 A quick check in the agent provider confirms that no new live calls were made and no tokens were consumed.
 
@@ -115,7 +116,7 @@ The following diagram shows the request flow when Agent Cache is active.
           └─────────────┘
 ```
 
-1. Your agent routes HTTPS traffic through Fiddler Everywhere, either by configuring a proxy in code, by using system proxy settings, or by launching the agent from Fiddler's built-in terminal.
+1. Your agent routes HTTPS traffic through Fiddler Everywhere, either by configuring a proxy in code, by using system proxy settings, or by launching the agent from the Fiddler built-in terminal.
 2. Fiddler captures the call and displays it in the **Agent Calls** tab.
 3. When the **Caching** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
 4. The provider endpoint never receives the duplicate request—no tokens are charged.
@@ -137,6 +138,6 @@ We welcome your feedback on Agent Cache and any other features you would like to
 
 ## See Also
 
-* [Fiddler's MCP Server - Overview](slug://fiddler-mcp-server)
-* [Fiddler's MCP Server - Prompt Ideas](slug://fiddler_ai_prompt_library)
-* [Fiddler's Debugging Assistant](slug://fiddler-assistant)
+* [the Fiddler MCP Server - Overview](slug://fiddler-mcp-server)
+* [the Fiddler MCP Server - Prompt Ideas](slug://fiddler_ai_prompt_library)
+* [the Fiddler Debugging Assistant](slug://fiddler-assistant)

@@ -1,6 +1,7 @@
 ---
 title: Create 307 Redirect
-description: "Creating a temporary redirect (HTTP status code 307) while using Fiddler's rules."
+page_title: Create 307 Redirect - Rules Presets | Fiddler Everywhere
+description: "Creating a temporary redirect (HTTP status code 307) while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic redirection."
 slug: adv_temp_redirect_307
 position: 60
 ---
@@ -17,7 +18,7 @@ Create a "Redirect to URL with 307" rule by setting the following actions throug
 
 1. Create a matching condition that uses the "When **all these conditions** are met **any number of times**" pattern. 
 1. Match by a **Method** where the string value equals the desired HTTP method. For example: a `GET` method.
-1. Match by a **Method** where the string value defines the targeted hosts. For example: a regular expression that matches the `example.com` domain.
+1. Match by a **URL** where the string value defines the targeted hosts. For example: a regular expression that matches the `example.com` domain.
 1. Create an **Update Status Code** action and set it to `307 Internal Redirect`.
 1. Create an **Update Response Header** action and set the `Location` header to the desired new value. For example: `https://www.example.com`.
 

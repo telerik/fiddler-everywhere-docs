@@ -1,5 +1,6 @@
 ---
-title: How to Capture and Debug Claude Code HTTPS Traffic with Fiddler Everywhere
+title: Capturing and Debugging Claude Code HTTPS Traffic with Fiddler Everywhere
+page_title: How to Capture and Debug Claude Code HTTPS Traffic | Fiddler Everywhere
 description: "Step-by-step guide to configure Fiddler Everywhere to capture, decrypt, and inspect HTTPS API calls from Claude Code. Debug Anthropic's AI agent with proxy configuration and certificate setup."
 type: how-to
 slug: fiddler-and-claude
@@ -49,7 +50,7 @@ System capturing mode configures Fiddler as the system-wide proxy through operat
 
 ### Terminal Capturing Mode (Recommended)
 
-Terminal capturing mode launches a dedicated terminal session with Fiddler's proxy settings pre-configured. Only traffic from applications running in this specific terminal will be captured.
+Terminal capturing mode launches a dedicated terminal session with the Fiddler proxy settings pre-configured. Only traffic from applications running in this specific terminal will be captured.
 
 **Pros:**
 - **Isolated capture**: Only captures traffic from the specific terminal session, eliminating noise from other applications
@@ -63,9 +64,11 @@ Terminal capturing mode launches a dedicated terminal session with Fiddler's pro
 
 ## Step-by-Step Configuration
 
-### Step 1: Export the Fiddler CA Certificate
+Complete the following steps to enable traffic capture from Claude Code.
 
-To decrypt and inspect HTTPS traffic from Claude Code, you need to export Fiddler's root certificate authority (CA) certificate and configure your system to trust it.
+### Step 1: Export Fiddler CA Certificate
+
+To decrypt and inspect HTTPS traffic from Claude Code, you need to export the Fiddler root certificate authority (CA) certificate and configure your system to trust it.
 
 1. Open Fiddler Everywhere
 2. Navigate to **Settings** > **HTTPS**
@@ -76,7 +79,7 @@ To decrypt and inspect HTTPS traffic from Claude Code, you need to export Fiddle
    %USERPROFILE%\.claude\Fiddler_Root_Certificate_Authority.pem
    ```
 
->**Tip:** Create the `.claude` folder if it doesn't exist. This keeps your Claude-related configurations organized in one location.
+>**Tip:** Create the `.claude` folder if it does not exist. This keeps your Claude-related configurations organized in one location.
 
 ### Step 2: Configure the CA Certificate Environment Variable
 
@@ -96,7 +99,7 @@ Claude Code (and Node.js applications in general) uses the `NODE_EXTRA_CA_CERTS`
 ### Step 3: Enable Terminal Capturing Mode
 
 1. In Fiddler Everywhere, navigate to the **Home** tab or main toolbar
-2. Click **Terminal** to launch a new terminal session with Fiddler's proxy settings pre-configured
+2. Click **Terminal** to launch a new terminal session with the Fiddler proxy settings pre-configured
 3. A new command prompt or PowerShell window will open with the proxy environment variables already set
 
 This terminal is now configured to route all HTTP/HTTPS traffic through Fiddler.
@@ -121,21 +124,23 @@ Now that everything is configured, test the setup by asking Claude Code to perfo
    Create a Python function that reads a JSON file and returns the data as a dictionary
    ```
 
-2. Claude Code will process your request, communicate with the LLM, and execute the chain of thought.
+2. Claude Code will process your request, communicate with the language model, and execute the chain of thought.
 
-3. Switch to Fiddler Everywhere and observe the **Live Traffic** grid. You should immediately see HTTPS requests appearing, showing the communication between Claude Code and Anthropic's API servers.
+3. Switch to Fiddler Everywhere and observe the **Live Traffic** grid. HTTPS requests immediately appear, showing the communication between Claude Code and Anthropic's API servers.
 
 ## Inspecting Claude Code Traffic
 
-Once traffic is being captured, you can use Fiddler's powerful inspection features:
+Once traffic is being captured, you can use the Fiddler powerful inspection features:
 
-- **Inspect Request/Response**: Click on any session in the Live Traffic grid to view detailed request headers, body, and response data
+- **Inspect Request/Response**: Click any session in the Live Traffic grid to view detailed request headers, body, and response data
 - **View JSON Payloads**: Examine the prompts sent to Claude and the responses received
 - **Monitor Performance**: Analyze response times and identify performance bottlenecks
-- **Filter Sessions**: Use Fiddler's filtering capabilities to show only Claude Code traffic by filtering on the hostname or process name
+- **Filter Sessions**: Use the Fiddler filtering capabilities to show only Claude Code traffic by filtering on the hostname or process name
 - **Save Sessions**: Export sessions for later analysis or sharing with your team
 
 ## Troubleshooting
+
+If traffic does not appear as expected, check the following common issues.
 
 ### Traffic Not Appearing in Fiddler
 
@@ -152,15 +157,15 @@ Once traffic is being captured, you can use Fiddler's powerful inspection featur
 ### Claude Code Connection Errors
 
 - Temporarily disable Fiddler to verify that Claude Code can connect without the proxy
-- Check if your corporate firewall or antivirus is interfering with Fiddler's proxy
+- Check if your corporate firewall or antivirus is interfering with the Fiddler proxy
 - Review the debug logs (path shown when you ran `claude.exe --debug`) for detailed error messages
-
-## Additional Resources
-
-- [Fiddler Everywhere Terminal Capturing Mode](slug://capture-terminal-traffic)
-- [Exporting Fiddler's Root Certificate](slug://trust-certificate)
-- [Filtering and Organizing Traffic](slug://how-to-filter-traffic)
 
 ## Conclusion
 
 By configuring Fiddler Everywhere to capture Claude Code traffic using Terminal Capturing Mode, you gain complete visibility into the API interactions between Claude and Anthropic's services. This enables you to debug issues, understand how Claude processes your requests, and optimize your development workflow.
+
+## See Also
+
+- [Fiddler Everywhere Terminal Capturing Mode](slug://capture-terminal-traffic)
+- [Exporting the Fiddler Root Certificate](slug://trust-certificate)
+- [Filtering and Organizing Traffic](slug://how-to-filter-traffic)

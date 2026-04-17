@@ -1,5 +1,6 @@
 ---
 title: Features
+page_title: Features - Reporter | Fiddler Everywhere
 description: "Using the different capturing modes in the Fiddler Everywhere Reporter tool and learning more about the available configuration options."
 slug: reporter-features
 publish: true
@@ -16,7 +17,7 @@ The Fiddler Everywhere Reporter has four different capturing modes, which you ca
 
 - [**Start Capturing Browser**](#capturing-browser-option) - this option in Reporter corresponds to the browser capturing mode in Fiddler Everywhere. It captures traffic from a sandboxed browser instance.
 
-- [**Start Capturing Everything**](#capturing-everything-option) - this option corresponds to the system capturing mode. It sets the Fiddler Everywhere Reporter proxy as the operating system upstream proxy. This option requires the explicit instalation and trust of the Fiddler certificate authroity file.
+- [**Start Capturing Everything**](#capturing-everything-option) - this option corresponds to the system capturing mode. It sets the Fiddler Everywhere Reporter proxy as the operating system upstream proxy. This option requires the explicit installation and trust of the Fiddler certificate authority file.
 
 - [**Start Capturing Terminal**](#capturing-terminal-option) - this option corresponds to the terminal capturing mode. It captures traffic from a sandboxed terminal instance.
 
@@ -26,17 +27,17 @@ The Fiddler Everywhere Reporter has four different capturing modes, which you ca
 
 The **Start Browser Capturing** is the default option that allows HTTPS traffic to be captured from a sandboxed browser instance. As a result, the Fiddler Everywhere Reporter starts an independent browser instance preconfigured to respect the Fiddler proxy and
 trust its Root Certificate Authority (CA). The HTTPS traffic generated will appear in Fiddler Everywhere
-Reporter. Currently, the tool supports independent browser capturing only for Chrome and Edge browsers. The Google Chrome browser opens by default if both exist on the machine. MacOS users need to manually quit the browser instance from the dock even after the Fiddler Everywhere Reporter tool is closed.
+Reporter. Currently, the tool supports independent browser capturing only for Chrome and Edge browsers. The Google Chrome browser opens by default if both exist on the machine. macOS users need to manually quit the browser instance from the dock even after the Fiddler Everywhere Reporter tool is closed.
 
 Use the browser option as follows:
 
 1. Start the Fiddler Everywhere Reporter application.
 
-1. Click on the **Start Capturing Browser** button.
+1. Click the **Start Capturing Browser** button.
 
 1. Capture the targeted traffic in the sandboxed browser instance opened from the Fiddler Everywhere Reporter tool.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
 1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
@@ -44,7 +45,7 @@ Use the browser option as follows:
 
 The **Start Capturing Everything** option will log all HTTP, HTTPS, WebSocket, SSE, and gRPC traffic between the
 computer and the Internet. It works by setting the system proxy and capturing all incoming and outgoing
-traffic from any application that supports a proxy - browsers, desktop applications, CLI tools, etc. This
+traffic from any application that supports a proxy - browsers, desktop applications, CLI tools, and others. This
 option requires installing and trusting the operating system's Fiddler Root Certificate Authority (CA).
 
 Use the capture everything option as follows:
@@ -53,11 +54,11 @@ Use the capture everything option as follows:
 
 1. Click the **Start Capturing Everything** button (available through a drop-down).
 
-    >warning If that is your first time using this mode, then you will need to export and install the Fiddler certificate authority file explicitly while using [the **Certificate > Trust Root Certificate** option](#configuring-the-fiddler-certificate) or by manualy exporting and installing the Fiddler CA.
+    >warning If that is your first time using this mode, then you will need to export and install the Fiddler certificate authority file explicitly while using [the **Certificate** > **Trust Root Certificate** option](#configuring-the-fiddler-certificate) or by manually exporting and installing the Fiddler CA.
 
 1. Capture the targeted traffic from the targeted client application.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
 1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
@@ -71,13 +72,13 @@ Use the capturing terminal option as follows:
 
 1. Start the Fiddler Everywhere Reporter application.
 
-1. Click on the **Start Capturing Terminal** button.
+1. Click the **Start Capturing Terminal** button.
 
 1. Capture the targeted traffic in the sandboxed terminal instance opened from the Fiddler Everywhere Reporter tool.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
-1. Click on the **Save Capture** option, set a password, and choose a location to store your SAZ file.
+1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
 ### Manual Setup Option
 
@@ -90,15 +91,15 @@ Use the manual setup  option as follows:
 
 1. Configure your client application to use the Fiddler proxy address (127.0.0.1), port (8877).
 
-1. To capture and decrypt secure traffic (HTTPS), export and install the Fiddler CA certificate within your client applicaiton.
+1. To capture and decrypt secure traffic (HTTPS), export and install the Fiddler CA certificate within your client application.
 
 1. Start the Fiddler Everywhere Reporter application.
 
-1. Click on the **Manual Setup (Advanced)** button.
+1. Click the **Manual Setup (Advanced)** button.
 
-1. Capture the targeted traffic from your client application. At this point, the application should already respect the Fiddler Everywhere Reporter proxy address, port, and certificate.
+1. Capture the targeted traffic from your client application. At this point, the application already respects the Fiddler Everywhere Reporter proxy address, port, and certificate.
 
-1. Click on the **Stop Capture** button. 
+1. Click the **Stop Capture** button. 
 
 1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
 
@@ -106,11 +107,11 @@ Use the manual setup  option as follows:
 
 Use the **Tools** section within the application menu to set the default browser (for the [**Start Capturing Browser**](#capturing-browser-option) option) and to explicitly allow remote devices to connect.
 
-- **Default Browser** - This option allows you to set the default browser that Fiddler Everywhere Reporter should use to create a sandboxed browser instance. Currently, Google Chrome and Microsoft Edge are supported browsers.
+- **Default Browser** - This option allows you to set the default browser that Fiddler Everywhere Reporter uses to create a sandboxed browser instance. Currently, Google Chrome and Microsoft Edge are supported browsers.
 
 - **Allow Remote Devices to Connect** - Controls whether inbound connections to Fiddler Everywhere Reporter are allowed. Enable this option to capture traffic from remote devices. Behind the scenes, the option opens (or closes) the Fiddler Everywhere Reporter port for inbound connections on the host machine.
 
-## Configuring the Fiddler Certificate
+## Configuring Fiddler Certificate
 
 Use the **Certificate** section within the application menu to trust, export, reset, and remove the Fiddler certificate authority (CA) or ignore server certificate errors. The options are as follows:
 

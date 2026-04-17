@@ -1,5 +1,6 @@
 ---
 title: Composer
+page_title: Composer - Settings | Fiddler Everywhere
 description: "Learn how to use the Composer menu and follow redirects (responses with status 3xx) in the Fiddler Everywhere web-debugging HTTP-proxy client."
 slug: composer-settings-submenu
 publish: true

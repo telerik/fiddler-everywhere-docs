@@ -1,6 +1,7 @@
 ---
 title: Capturing Flutter Traffic
-description: "Capture HTTPS traffic from Flutter mobile application while using the Fiddler Everywhere proxy."
+page_title: Capturing Flutter Traffic - Capture Traffic | Fiddler Everywhere
+description: "Capture HTTPS traffic from Flutter mobile application while using the Fiddler Everywhere proxy. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: how-to-capture-flutter-traffic
 publish: true
@@ -8,7 +9,7 @@ publish: true
 
 # Capturing Flutter Traffic
 
-By default, Flutter applications that use Dart's `dart:io` networking stack don't automatically follow the proxy configured on the mobile device (Wi-Fi proxy / system proxy). As a consequence, even when the device is configured to use the Fiddler Everywhere proxy, you might not see any traffic from the Flutter app in Fiddler Everywhere.
+By default, Flutter applications that use Dart's `dart:io` networking stack do not automatically follow the proxy configured on the mobile device (Wi-Fi proxy / system proxy). As a consequence, even when the device is configured to use the Fiddler Everywhere proxy, you might not see any traffic from the Flutter app in Fiddler Everywhere.
 
 This article shows how to make a Flutter app use the device proxy settings so that Fiddler Everywhere can capture the app's HTTP and HTTPS traffic.
 
@@ -53,7 +54,7 @@ Use the [http_proxy](https://pub.dev/packages/http_proxy) Flutter plugin to read
 
 3. Rebuild and restart the application.
 
-If the device proxy is configured to point to the Fiddler Everywhere host, you should now see the Flutter app sessions appear in Fiddler Everywhere.
+If the device proxy is configured to point to the Fiddler Everywhere host, the Flutter app sessions now appear in Fiddler Everywhere.
 
 ## Notes for common Flutter HTTP stacks
 
@@ -64,6 +65,8 @@ If the device proxy is configured to point to the Fiddler Everywhere host, you s
 
 ## Troubleshooting
 
+The following sections cover common issues when capturing Flutter traffic with Fiddler Everywhere.
+
 ### I only see `CONNECT` tunnels (port 443)
 
 This usually means the app is proxying traffic, but TLS decryption fails (the app does not trust the user-installed CA).
@@ -73,7 +76,7 @@ This usually means the app is proxying traffic, but TLS decryption fails (the ap
 
 If you can’t (or don’t want to) change the Android app network security config, you have a few other development-time options:
 
-- **Dart-only traffic (debug-only): accept the interception certificate in code.** For requests that go through `dart:io`, you can override certificate validation in your `HttpOverrides`. This is useful to confirm that the issue is CA trust, but it should never be enabled in production builds.
+- **Dart-only traffic (debug-only): accept the interception certificate in code.** For requests that go through `dart:io`, you can override certificate validation in your `HttpOverrides`. This is useful to confirm that the issue is CA trust, but it must never be enabled in production builds.
 
   ```dart
   import 'dart:io';

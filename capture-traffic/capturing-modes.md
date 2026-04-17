@@ -1,6 +1,7 @@
 ---
 title: Capturing Modes
-description: "Capturing modes in Fiddler Everywhere as forward HTTPS proxy."
+page_title: Capturing Modes - Capture Traffic | Fiddler Everywhere
+description: "Capturing modes in Fiddler Everywhere as forward HTTPS proxy. Capture, inspect, and analyze HTTPS sessions in real time."
 slug: capture-traffic-get-started
 publish: true
 position: 5
@@ -19,7 +20,7 @@ Fiddler Everywhere offers multiple capturing modes to suit different debugging s
 - **[Network Capturing](#network-capturing-beta)**: Captures traffic at the network adapter level without proxy configuration
 - **[Independent Browser Capturing](#independent-browser-capturing)**: Uses a sandboxed browser instance for isolated traffic capture
 - **[Terminal Capturing](#terminal-capturing)**: Captures traffic from a dedicated terminal session
-- **[Explicit Capturing](#explicit-capturing)**: Captures traffic from applications manually configured to use Fiddler's proxy
+- **[Explicit Capturing](#explicit-capturing)**: Captures traffic from applications manually configured to use the Fiddler proxy
 - **[Remote Traffic Capturing](#remote-traffic-capturing)**: Captures traffic from devices on your local network
 
 ## Choosing the Right Capturing Mode
@@ -37,7 +38,7 @@ Select the appropriate capturing mode based on your specific debugging needs:
 
 ## Feature Comparison Table
 
-The following table shows the capabilities and differences between Fiddler's capturing modes:
+The following table shows the capabilities and differences between the Fiddler capturing modes:
 
 | Feature          | System Capturing | Network Capturing | Independent Browser Capturing  | Terminal Capturing | Explicit Capturing 
 |:-----------------|:-----------------|:------------------|:--------------------------------|:-------------------|:-----------------
@@ -69,8 +70,6 @@ The following table shows the capabilities and differences between Fiddler's cap
 **Legend:** ✅ Fully supported | 🟨 Limited support | 🟡 Requires additional setup | ❌ Not supported
 
 * VPN support depends on the specific VPN software and may require [additional configuration](slug://configure-vpn-fiddler).
-
-### License Tier Comparison
 
 Fiddler Everywhere offers multiple license tiers with different feature sets. See the [purchase comparison table](https://www.telerik.com/purchase/fiddler) for detailed information about each tier and its supported features.
 
@@ -106,9 +105,9 @@ Network capturing operates at a lower level than traditional HTTP proxies, captu
 
 **Key Advantages:**
 - No proxy configuration required
-- Captures traffic from applications that don't support proxies
+- Captures traffic from applications that do not support proxies
 - More granular control over monitored processes and IP ranges
-- Overcomes proxy-related limitations (e.g., Safari WebSocket issues on macOS)
+- Overcomes proxy-related limitations (for example, Safari WebSocket issues on macOS)
 
 **Use Cases:**
 - Applications that ignore proxy settings
@@ -125,7 +124,7 @@ Network capturing operates at a lower level than traditional HTTP proxies, captu
 Network capturing solves several common proxy limitations:
 
 - **Safari WebSocket Issue**: [Safari on macOS ignores proxy settings for WebSocket traffic](https://discussions.apple.com/thread/253885692?sortBy=best), making traditional proxy tools ineffective. Network capturing bypasses this limitation by operating at the TCP level.
-- **Proxy-Resistant Applications**: Some applications don't respect system proxy settings or have their own network stacks.
+- **Proxy-Resistant Applications**: Some applications do not respect system proxy settings or have their own network stacks.
 - **Corporate Environments**: Where proxy configuration may be restricted or controlled by IT policies. 
 
 ## Independent Browser Capturing
@@ -150,7 +149,7 @@ Independent browser capturing provides a sandboxed browser environment for isola
 
 ## Terminal Capturing
 
-Terminal capturing provides a dedicated terminal session with Fiddler's proxy pre-configured, making it ideal for debugging command-line tools and server-side applications.
+Terminal capturing provides a dedicated terminal session with the Fiddler proxy pre-configured, making it ideal for debugging command-line tools and server-side applications.
 
 **Benefits:**
 - Isolated terminal environment
@@ -170,7 +169,7 @@ Terminal capturing provides a dedicated terminal session with Fiddler's proxy pr
 
 ## Explicit Capturing
 
-Explicit capturing works with applications manually configured to use Fiddler's proxy address (`127.0.0.1:8866` by default). This method works even when system capturing is disabled.
+Explicit capturing works with applications manually configured to use the Fiddler proxy address (`127.0.0.1:8866` by default). This method works even when system capturing is disabled.
 
 **Configuration:**
 - Proxy address: `127.0.0.1:8866`
@@ -194,8 +193,8 @@ curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
 Remote capturing enables traffic analysis from devices on your local network, including smartphones, tablets, IoT devices, and other computers.
 
 **Setup Requirements:**
-1. Configure the remote device to use Fiddler's proxy (`[Fiddler-IP]:8866`)
-2. Install Fiddler's CA certificate on the remote device
+1. Configure the remote device to use the Fiddler proxy (`[Fiddler-IP]:8866`)
+2. Install the Fiddler CA certificate on the remote device
 3. Ensure devices are on the same network
 
 **Supported Remote Devices:**
@@ -210,9 +209,11 @@ Remote capturing enables traffic analysis from devices on your local network, in
 - [iOS device setup](slug://capture-mobile-ios-traffic)
 - [Generic remote device setup](slug://fiddler-capture-other-computers)
 
-> **Tip:** When capturing only remote traffic, you don't need to install the Fiddler CA on the host machine—only on the remote devices you want to monitor.
+> **Tip:** When capturing only remote traffic, you do not need to install the Fiddler CA on the host machine—only on the remote devices you want to monitor.
 
 ## Protocol Support
+
+Fiddler Everywhere supports a range of protocols across all capturing modes.
 
 ### HTTP Version Support
 
@@ -222,10 +223,10 @@ Fiddler Everywhere supports both HTTP/1.x and HTTP/2 traffic capture and composi
 - **Remote HTTP version**: Protocol version between Fiddler and remote endpoint
 
 **HTTP/2 Specifics:**
-- HTTP/2 support is enabled by default but can be disabled in [**Settings > Connections**](slug://connections-submenu)
+- HTTP/2 support is enabled by default but can be disabled in [**Settings** > **Connections**](slug://connections-submenu)
 - Connections default to HTTP/2 when both client and server support it
 - When disabled, Fiddler forces HTTP/1.1 communication
-- Fiddler translates between HTTP versions as needed (e.g., HTTP/2 client to HTTP/1.1 server)
+- Fiddler translates between HTTP versions as needed (for example, HTTP/2 client to HTTP/1.1 server)
 
 **Important Considerations:**
 - Some browsers share HTTP/2 connections between tabs and keep connections open after tab closure
@@ -243,7 +244,7 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 
 ### WebSocket Protocol
 
-[WebSocket](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication over TCP connections. While distinct from HTTP, it's designed to work over HTTP ports (80, 443) and supports HTTP proxies.
+[WebSocket](https://en.wikipedia.org/wiki/WebSocket) provides full-duplex communication over TCP connections. While distinct from HTTP, it is designed to work over HTTP ports (80, 443) and supports HTTP proxies.
 
 **Fiddler WebSocket Support:**
 - Compatible with all capturing modes
@@ -269,7 +270,7 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 - Dedicated [gRPC inspectors](slug://inspector-types#websocket-grpc-sse-and-socketio-inspectors)
 - Handshake and message inspection capabilities
 
-> **Important:** gRPC requires HTTP/2 support to be enabled in **Settings > Connections > Enable HTTP/2 support**.
+> **Important:** gRPC requires HTTP/2 support to be enabled in **Settings** > **Connections** > **Enable HTTP/2 support**.
 
 [Learn more about gRPC traffic capture...](slug://capture-grpc-traffic)
 
@@ -280,4 +281,10 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 **Fiddler Socket.IO Support:**
 - Works with all capturing modes
 - Dedicated [Socket.IO inspectors](slug://inspector-types)
-- Handshake and message analysis capabilities
+
+## See Also
+
+- [Capturing Browser Traffic](slug://capture-browser-traffic)
+- [Capturing System Traffic](slug://capture-system-traffic)
+- [Capturing Network Traffic](slug://capture-network-traffic)
+- [Trusting the Fiddler CA Certificate](slug://trust-certificate)

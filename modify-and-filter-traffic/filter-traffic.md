@@ -1,5 +1,6 @@
 ---
 title: Filtering Traffic
+page_title: Filtering Traffic - Rules | Fiddler Everywhere
 description: "Learn how to filter the captured HTTPS traffic to minimize the output in Live Traffic when working with the Fiddler Everywhere application."
 slug: how-to-filter-traffic
 publish: true
@@ -49,7 +50,7 @@ Create and apply a filter through the **Filters** toolbar option as follows:
     - **any of these conditions**&mdash;The rule applies when any conditions are true (logical OR).
     - **none of these conditions**&mdash;The rule applies when none of the conditions is true (logical FALSE).
     >tip Learn more about the available [**match conditions**](slug://modify-traffic-get-started), which apply to both the filters and rule creation.
-1. Add one or more match conditions based on the HTTP headers, HTTP bodies, or other specific Fiddler's columns data.
+1. Add one or more match conditions based on the HTTP headers, HTTP bodies, or other specific the Fiddler columns data.
 1. (**Optional**) Save the filter.
     >tip Saved filters can be activated and deactivated, simplifying and improving their usage. You can also duplicate, edit or remove a saved filter through the **Filters** editor.
 1. Click **Apply** to close the **Filters** editor and immediately apply the newly created filter.   
@@ -61,7 +62,7 @@ All condition values connected to a **Live Traffic** column are auto-completed w
 
 The **Filters** option provides a drop-down menu to manage your active and saved filters. Through the drop-down, you can apply a saved filter, change an active filter, disable an active filter, save a new filter, or clear an unsaved column filter. The **Clear** option is available only when there is an active [column filter](#column-filters).
 
-![Filters menu](./images/filters-menu.png)
+![Filters menu with available column and condition filters](./images/filters-menu.png)
 
 ## Column Filters
 
@@ -79,7 +80,7 @@ Fiddler Everywhere provides multiple capturing modes, with the system capturing 
 
 ## Bypassing the Proxy
 
-While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions won't pollute your **Live Traffic** grid. You can set a list of domains or URLs to bypass through the [**Connections** menu](slug://connections-submenu), or you can add a root domain or specific subdomain address to the bypass list while using the **Live Traffic** context menu.
+While bypassing the proxy is not technically related to filtering, requests to specific domains may not go through the Fiddler proxy but directly through the upstream proxy. As a result, these sessions will not pollute your **Live Traffic** grid. You can set a list of domains or URLs to bypass through the [**Connections** menu](slug://connections-submenu), or you can add a root domain or specific subdomain address to the bypass list while using the **Live Traffic** context menu.
 
 ## Sorting Options
 

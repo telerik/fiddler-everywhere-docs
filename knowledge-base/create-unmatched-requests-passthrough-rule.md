@@ -1,6 +1,7 @@
 ---
 title: Unmatched Requests Passthrough Rule
-description: "Learn how to enable or disable passthrough of HTTP requests that are not matching any active rule."
+page_title: Allow or Block Unmatched HTTP Requests | Fiddler Everywhere
+description: "Learn how to enable or disable passthrough of HTTP requests that are not matching any active rule. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: rules-unmatched-requests-passthrough
 res_type: kb
@@ -13,15 +14,17 @@ res_type: kb
 | Product   |  Fiddler Everywhere  |
 | Product Version | 3.4.0 and above  |
 
+>tip The **Unmatched Requests Passthrough** option was removed in Fiddler Everywhere version 3.4.0. The recommended approach is to use the [**Rules** tab](slug://modify-traffic-get-started) to create equivalent matching rules as demonstrated below.
+
 ## Description
 
-Fiddler Everywhere 3.4.0 removed the **Unmatched Requests Passthrough** option (previously available through **Settings > Rules**). The legacy option was obsolete as it often confused users and was not easily accessible for quick management. How can I achieve the same functionality with version 3.4.0 and above?
+Fiddler Everywhere 3.4.0 removed the **Unmatched Requests Passthrough** option (previously available through **Settings** > **Rules**). The legacy option was obsolete as it often confused users and was not easily accessible for quick management. How can I achieve the same functionality with version 3.4.0 and above?
 
 ## Solution
 
 Fiddler Everywhere comes with the powerful [**Rules** tab](slug://modify-traffic-get-started) that allows you to easily create a rule that extends the behavior of the **Unmatched Requests Passthrough** option. By default, with Fiddler Everywhere, all requests are sent to the server as is, without modifications from the **Rules** tab. Creating rules that modify that behavior is easily achievable through the [**Rules Builder**](slug://modify-traffic-get-started#using-rule-builder).
 
-### Creating basic "Unmatched Requests Non-Passthrough" rule:
+### Creating Basic "Unmatched Requests Non-Passthrough" Rule
 
 - Open the **Rules** tab and use **Add New Rule** to create new rule.
 
@@ -37,7 +40,7 @@ Fiddler Everywhere comes with the powerful [**Rules** tab](slug://modify-traffic
 
 When active, the above rule will return 404 for all URLs (because the used regular expression uses wildcard match).
 
-### Creating basic "Unmatched Requests Non-Passthrough (except for specified URL)" rule:
+### Creating Basic "Unmatched Requests Non-Passthrough (except for specified URL)" Rule
 
 - Open the **Rules** tab and use **Add New Rule** to create new rule.
 

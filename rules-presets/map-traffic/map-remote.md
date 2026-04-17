@@ -1,6 +1,7 @@
 ---
 title: Map Remote URL
-description: "Creating a transparent redirect to remote location (a.k.a. mapping remote URL) while using Fiddler's rules."
+page_title: Map Remote URL - Rules Presets | Fiddler Everywhere
+description: "Creating a transparent redirect to remote location (a.k.a. mapping remote URL) while using the Fiddler rules."
 slug: adv_map_remote_url
 position: 10
 ---
@@ -29,7 +30,7 @@ Once the rule is created, enable the **Rules** tab, toggle the rule switch, and 
 
 ![Activating the "Map Remote (URLs)" rule](./images/adv-map-remote-urls-active.png)
 
-Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-remote-utls" target="_blank">"Map Remote (URLs)"</a> rule as a FARX file, which you can import through the Rules toolbar.
+Download a ready-to-use <a href="https://github.com/telerik/fiddler-everywhere/tree/master/rules/map-remote-urls" target="_blank">"Map Remote (URLs)"</a> rule as a FARX file, which you can import through the Rules toolbar.
 
 ## See Also
 

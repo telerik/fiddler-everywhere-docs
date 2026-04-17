@@ -1,5 +1,6 @@
 ---
 title: Security Highlights
+page_title: Security Highlights - Security | Fiddler Everywhere
 description: "Learn about essential security considerations, best practices, and safeguards when using Fiddler Everywhere as a proxy, including data protection, sanitization, and MCP server security."
 slug: fe-security-highlights
 publish: true
@@ -10,7 +11,7 @@ position: 30
 
 While using Fiddler Everywhere, consider the following security indicators and highlights:
 
-- With the initial state for [the system capturing option](slug://capture-traffic-get-started#system-capturing), Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic is not encrypted and can expose sensitive information like visited URLs, internal API endpoints, etc.
+- With the initial state for [the system capturing option](slug://capture-traffic-get-started#system-capturing), Fiddler Everywhere will capture only non-secure HTTP traffic. This traffic is not encrypted and can expose sensitive information like visited URLs and internal API endpoints.
 - With the initial state for [the independent browser capturing option](slug://capture-traffic-get-started#independent-browser-capturing), Fiddler Everywhere will capture both non-secure HTTP and secure HTTPS traffic. The Fiddler Everywhere application will decrypt the HTTPS traffic.
 - Fiddler Everywhere generates a unique root CA (certificate authority). Avoid sharing this certificate with anyone as it can pose a significant security threat (for example, anyone with access to that certificate can decrypt your HTTPS traffic).
 - When HTTPS capturing is enabled, the captured data will contain readable, usually decrypted information. Share that data with trusted parties only and carefully consider what the requests and responses include.
@@ -62,18 +63,18 @@ Once Fiddler Everywhere captures the traffic, you have the option to [save the s
 
 Fiddler Everywhere comes with [collaboration in mind](slug://fiddler-sharing) and provides sharing functionalities. Consider the following security highlights when sharing sessions:
 
-- A session is saved before sharing. Thus, you should consider the [saving-related security highlights](#saving-traffic).
+- A session is saved before sharing. Thus, consider the [saving-related security highlights](#saving-traffic).
 - Enable [data sanitization]({%slug fe-sanitization%}) before sharing sessions to automatically remove sensitive information. This is especially important when sharing with external collaborators or using the Fiddler MCP server integration.
 - Sharing an unprotected session can expose your sensitive data to unauthorized third parties. Always consider adding password protection to your sessions before sharing them.
 
-## Using the Fiddler MCP Server
+## Using Fiddler MCP Server
 
-Fiddler Everywhere provides an [MCP (Model Context Protocol) server]({%slug fiddler-mcp-server%}) that enables integration with AI-powered IDEs and tools for analyzing captured HTTPS traffic. Consider the following security highlights when using the MCP server:
+Fiddler Everywhere provides an [MCP (Model Context Protocol) server]({%slug fiddler-mcp-server%}) that enables integration with intelligent IDEs and coding tools for analyzing captured HTTPS traffic. Consider the following security highlights when using the MCP server:
 
-- The MCP server runs locally on your machine (default port `8868`) and provides captured traffic data to connected AI tools and IDEs. Any application with access to your API key can retrieve your captured traffic data.
+- The MCP server runs locally on your machine (default port `8868`) and provides captured traffic data to connected coding tools and IDEs. Any application with access to your API key can retrieve your captured traffic data.
 - Protect your MCP server API key. This key grants access to all captured traffic data. Do not share the API key or commit it to version control systems. Regenerate the API key immediately if you suspect it has been compromised.
-- By default, [data sanitization]({%slug fe-sanitization%}) is enabled for MCP output to help prevent exposure of sensitive information to AI models. Verify that **Settings > Sanitization > On MCP Output** is enabled before using the MCP server.
-- Be aware that captured traffic data sent to the MCP server will be processed by AI models (such as those provided by your IDE). Review your AI provider's data handling and privacy policies to understand how your data may be used, stored, or retained.
+- By default, [data sanitization]({%slug fe-sanitization%}) is enabled for MCP output to help prevent exposure of sensitive information to language models. Verify that **Settings** > **Sanitization** > **On MCP Output** is enabled before using the MCP server.
+- Be aware that captured traffic data sent to the MCP server will be processed by language models (such as those provided by your IDE). Review your model provider's data handling and privacy policies to understand how your data may be used, stored, or retained.
 - The MCP server provides access to all captured sessions available in Fiddler Everywhere. Consider clearing old or unnecessary sessions before enabling the MCP server to limit data exposure.
 - Only enable the MCP server when actively using it. Stop the server when not in use to minimize the window of potential unauthorized access.
 - When using the MCP server on shared or multi-user machines, be particularly cautious as other users may attempt to access the MCP endpoint if they discover your API key.

@@ -1,6 +1,7 @@
 ---
 title: Replaying Traffic
-description: "Replay HTTPS Traffic simultaneously or consiquencily while using Fiddler Everywhere advanced replay options"
+page_title: Replaying Traffic - Rules | Fiddler Everywhere
+description: "Replay HTTPS Traffic simultaneously or consecutively while using Fiddler Everywhere advanced replay options"
 slug: replaying-traffic
 publish: true
 position: 35
@@ -8,7 +9,7 @@ position: 35
 
 # Replaying Traffic
 
-When developing and testing web applications, it's common to wonder how your server and site will handle many continuous requests. You may also want to test if a specific functionality of your web application will respond correctly to multiple repeating requests. With Fiddler Everywhere, you can replay a session or multiple sessions and set specific repeating conditions such as the number of repeats, repeat behavior, and request behavior for each separate repeat.
+When developing and testing web applications, it is common to wonder how your server and site will handle many continuous requests. You may also want to test if a specific functionality of your web application will respond correctly to multiple repeating requests. With Fiddler Everywhere, you can replay a session or multiple sessions and set specific repeating conditions such as the number of repeats, repeat behavior, and request behavior for each separate repeat.
 
 ## One-Time Replay
 
@@ -17,7 +18,7 @@ To trigger a one-time replay for selected sessions, follow these steps:
 1. Select one or more sessions.
 1. Invoke the context menu or press `R`.
 
-As a result, the selected sessions will be immediately replayed and displayed as new entries in the Fiddler's traffic grid.
+As a result, the selected sessions will be immediately replayed and displayed as new entries in the Fiddler traffic grid.
 
 ![One-time replay for sessions](./images/replay-simple.png)
 
@@ -26,7 +27,7 @@ As a result, the selected sessions will be immediately replayed and displayed as
 For more advanced replay options, follow these steps:
 
 1. Select one or more sessions.
-1. Invoke the context menu or press `Alt + R`/`Option + R`.
+1. Invoke the context menu or press `Alt`+`R`/`Option`+`R`.
 
 The above opens the **Advanced Replay** configuration prompt window, allowing you to control the following aspects of the replay process:
 

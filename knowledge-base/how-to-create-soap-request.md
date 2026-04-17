@@ -1,6 +1,7 @@
 ---
-title: Compose SOAP requests
-description: "Learn how to compose SOAP requests with the Fiddler Everywhere Composer."
+title: Composing SOAP Requests
+page_title: Send and Debug SOAP API Calls with the Composer | Fiddler Everywhere
+description: "Learn how to compose SOAP requests with the Fiddler Everywhere Composer. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-composer-soap
 publish: true
@@ -38,5 +39,5 @@ http://www.dneonline.com/calculator.asmx
     </soap:Body>
 </soap:Envelope>
 ```
-- Add the required headers. By default, the Fiddler's Composer automatically adds the **Content-Type** header with value **text/xml**. Change this header with the appropriate value as requested by the SOAP endpoint.
-- Click **Execute** to send your SOAP request. That's it!
+- Add the required headers. By default, the Fiddler Composer automatically adds the **Content-Type** header with value **text/xml**. Change this header with the appropriate value as requested by the SOAP endpoint.
+- Click **Execute** to send your SOAP request.

@@ -1,6 +1,7 @@
 ---
 title: Organizing Rules
-description: "Use the Rules list to create, store, group, and prioritize the execution of multiple rules."
+page_title: Organizing Rules - Rules | Fiddler Everywhere
+description: "Use the Rules list to create, store, group, and prioritize the execution of multiple rules. Create, manage, and execute rules for traffic modification."
 slug: rulesbuilder-get-started
 publish: true
 position: 25
@@ -31,7 +32,7 @@ By default, the **Rules** list will list all created and imported rules based on
 
 The **Execute** button from the main toolbar explicitly executes all active rules on captured sessions. The **Execute** functionality is available for both the **Live Traffic** tab and saved sessions.
 
-![Rule options](./images/rules-individual-rule.png)
+![Individual rule options including enable, disable, and edit](./images/rules-individual-rule.png)
 
 ## Group Options
 
@@ -52,9 +53,9 @@ The group options allow you to further interact with the group's rules:
 - The **Duplicate** button creates a duplicate copy of the selected group.
 - The **Delete** button deletes the group and all contained rules from the **Rules** list.
 
-![Group options](./images/rules-group-options.png)
+![Rule group options for organizing and managing rule sets](./images/rules-group-options.png)
 
-## Additional Resources
+## See Also
 
 - [Modifying HTTPS Traffic](slug://modify-traffic-get-started)
 - [Using Breakpoints](slug://rulesbuilder-breakpoints)

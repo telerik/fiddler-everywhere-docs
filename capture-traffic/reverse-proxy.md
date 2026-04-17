@@ -1,6 +1,7 @@
 ---
 title: Reverse Proxy
-description: "Use Fiddler Everywhere as a reverse proxy for servers."
+page_title: Reverse Proxy - Capture Traffic | Fiddler Everywhere
+description: "Use Fiddler Everywhere as a reverse proxy for servers. Capture, inspect, and analyze HTTPS sessions in real time."
 type: how-to
 slug: fiddler-reverse-proxy
 publish: true
@@ -12,9 +13,9 @@ previous_url: /knowledge-base/fiddler-as-reverse-proxy
 
 Fiddler Everywhere can act as a reverse proxy, allowing you to inspect, debug, and modify HTTP(S) requests sent to your server. This is especially useful for developers, QA, and support engineers who need to analyze how their server handles client requests without the complexity of setting up a dedicated reverse proxy solution.
 
-This article explains how to use Fiddler Everywhere as a reverse proxy through the built-in **Reverse Proxy** feature. You'll also find a demo setup and troubleshooting tips.
+This article explains how to use Fiddler Everywhere as a reverse proxy through the built-in **Reverse Proxy** feature. You will also find a demo setup and troubleshooting tips.
 
->note For most users, the built-in Reverse Proxy feature is the simplest and most robust approach.
+>note For most users, the built-in Reverse Proxy feature is the simplest and most reliable approach.
 
 ## Reverse Proxy for Local Servers
 
@@ -22,10 +23,10 @@ The built-in **Reverse Proxy** feature lets you quickly set up a reverse proxy f
 
 1. Start Fiddler Everywhere.
 1. Click the **Reverse Proxy** button.
-1. Enter the targeted port in the `Client Port` field (e.g., `8443`).
+1. Enter the targeted port in the `Client Port` field (for example, `8443`).
 1. Select the client protocol (default: `HTTP/HTTPS`).
-1. Enter the **remote host address** and **port** in the `Remote Host` field (e.g., `localhost:8877`).
-    >important The custom port configured in the `Remote Host` field must differ from the port used by the Fiddler Everywhere proxy (configured through the **Settings > Connections > Fiddler listens on port** option).
+1. Enter the **remote host address** and **port** in the `Remote Host` field (for example, `localhost:8877`).
+    >important The custom port configured in the `Remote Host` field must differ from the port used by the Fiddler Everywhere proxy (configured through the **Settings** > **Connections** > **Fiddler listens on port** option).
 1. Select the remote protocol (default: `HTTP/HTTPS`).
 1. Choose whether to preserve the host header (default: `No`).
 1. Save your changes.
@@ -169,7 +170,7 @@ sudo killall -HUP mDNSResponder
 
 **Configure the reverse proxy for the mapped remote server**
 
-For demonstation purposes. we will configure the reverse proxy rule for the remote server (e.g., for `www.example.com`).
+For demonstation purposes. we will configure the reverse proxy rule for the remote server (for example, for `www.example.com`).
 
 - Use a service to obtain the IP address of the targeted remote server. In our case, we will use IP address `212.95.165.25`, which currently stands for the server behind `www.example.com`
 
@@ -183,9 +184,9 @@ For demonstation purposes. we will configure the reverse proxy rule for the remo
 
     ![creating reverse proxy rule for remote server](./images/reverse-proxy-remote-server-001.png)
 
-- Go to **Settings > HTTPS** and enable the **Ignore Server Certificate Errors (unsafe)** option.
+- Go to **Settings** > **HTTPS** and enable the **Ignore Server Certificate Errors (unsafe)** option.
 
-    >tip Enabling the **Ignore Server Certificate Errors (unsafe)** option ensures that Fiddler won't encounter certificate errors when connecting to an IP hosting multiple web applications.
+    >tip Enabling the **Ignore Server Certificate Errors (unsafe)** option ensures that Fiddler will not encounter certificate errors when connecting to an IP hosting multiple web applications.
 
 **Testing the reverse proxy configuration**
 
@@ -203,21 +204,23 @@ The built-in **Reverse Proxy** provides the following configurable options:
 
 - **Client Port:** Port for client requests. Use a custom port for localhost scenarios to avoid conflicts.
 - **Client Protocol:** Protocol used by the client application. Options include **HTTP**, **HTTPS**, or **HTTP/HTTPS** (default).
-- **Remote Host:** Address and port of the target server (e.g., `localhost:8877` or `192.168.1.100:80`).
+- **Remote Host:** Address and port of the target server (for example, `localhost:8877` or `192.168.1.100:80`).
 - **Remote Protocol:** Protocol used by the remote server. Options include **HTTP**, **HTTPS**, or **HTTP/HTTPS** (default).
 - **Preserve Host:** Whether to keep the original `Host` header. Set to `Yes` only if your server requires the original host information.
 
 ## Reverse Proxy Alongside Other Capturing Modes
 
-The reverse proxy can be used alongside other [capturing modes](slug://capture-traffic-get-started). The immediate effect of using the reverse proxy simultaneously with other capturing modes is that you will observe the same request being captured and listed twice in the Fiddler's live traffic grid — once when going through the reverse proxy mode and once when going through the alternative forward proxy mode.
+The reverse proxy can be used alongside other [capturing modes](slug://capture-traffic-get-started). The immediate effect of using the reverse proxy simultaneously with other capturing modes is that you will observe the same request being captured and listed twice in the Fiddler live traffic grid — once when going through the reverse proxy mode and once when going through the alternative forward proxy mode.
 
 ## Troubleshooting & Best Practices
 
+Use the following guidance to resolve common reverse proxy issues and optimize your configuration.
+
 ### Common Issues and Solutions
 
-- **Traffic not captured:** Ensure Fiddler is running and the correct port and protocol are set in Fiddler's Reverse Proxy settings.
+- **Traffic not captured:** Ensure Fiddler is running and the correct port and protocol are set in the Fiddler Reverse Proxy settings.
 - **Connection refused errors:** Verify that your server is running on the configured port.
-- **Certificate errors (HTTPS):** Trust the Fiddler root certificate or enable **"Ignore server certificate errors"** in **Settings > HTTPS**.
+- **Certificate errors (HTTPS):** Trust the Fiddler root certificate or enable **"Ignore server certificate errors"** in **Settings** > **HTTPS**.
 
 ### Best Practices
 
@@ -228,7 +231,7 @@ The reverse proxy can be used alongside other [capturing modes](slug://capture-t
 - Keep a backup of your hosts file before making changes.
 - Use descriptive comments in your code when changing ports for reverse proxy scenarios.
 
-## Additional Resources
+## See Also
 
 - [GitHub Demo - Client App and Local Server](https://github.com/NickIliev/fiddler-reverse-demo)
-- [Fiddler's Capturing Modes Explained](slug://capture-traffic-get-started)
+- [the Fiddler Capturing Modes Explained](slug://capture-traffic-get-started)

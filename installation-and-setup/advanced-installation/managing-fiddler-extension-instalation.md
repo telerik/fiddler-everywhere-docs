@@ -1,6 +1,7 @@
 ---
 title: Installing and Enabling Fiddler Network Extension through MDM
-description: "Interactive installation instructions of the Fiddler's network extension."
+page_title: Installing and Enabling Fiddler Network Extension | Fiddler Everywhere
+description: "Interactive installation instructions of the Fiddler network extension. Follow enterprise deployment and installation instructions."
 slug: fe-net-extension-installation
 publish: true
 position: 10
@@ -9,7 +10,7 @@ previous_url: /security/managing-fiddler-extension-instalation
 
 # Installing and Enabling Fiddler Network Extension through MDM
 
-The Fiddler's [network capturing mode](slug://capture-network-traffic) enables users to install a dedicated network extension that can be configured to capture TCP traffic based on custom capturing rules. You can trigger the installation of the network extension through the Fiddler's user interface by opening the **Network Capture** screen and clicking on **Enable Capture**. Alternatively, you can install the Fiddler's network extension without user interaction through the following identifiers:
+The Fiddler [network capturing mode](slug://capture-network-traffic) enables users to install a dedicated network extension that can be configured to capture TCP traffic based on custom capturing rules. You can trigger the installation of the network extension through the Fiddler user interface by opening the **Network Capture** screen and clicking on **Enable Capture**. Alternatively, you can install the Fiddler network extension without user interaction through the following identifiers:
 
 | Key      | Value 
 |:-----------------|:----------------
@@ -17,15 +18,15 @@ The Fiddler's [network capturing mode](slug://capture-network-traffic) enables u
 | App Bundle Identifier | com.progress-telerik.fiddler
 | Extension Bundle Identifier | com.progress-telerik.fiddler.fiddler-extension
 
-## Enabling the Network Extension through JAMF
+## Enabling the Network Extension Through JAMF
 
 To enable the system extension, execute the following steps:
 
 - Within jamf PRO, navigate to **Computers** > **Configuration Profiles** > **New**.
 - Create a new configuration with the following information:
     * Select System Extensions.
-    * Enter the Fiddler's team identifier: **CHSQ3M3P37**.
-    * Enter the Fiddler's extension Bundle identifier: **com.progress-telerik.fiddler.fiddler-extension**.
+    * Enter the Fiddler team identifier: **CHSQ3M3P37**.
+    * Enter the Fiddler extension Bundle identifier: **com.progress-telerik.fiddler.fiddler-extension**.
 
 To install the extension after installing the Fiddler Everywhere application, run the following command (note that the actual version of the PKG file might differ):
 ```sh

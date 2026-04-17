@@ -1,6 +1,7 @@
 ---
 title: Modify Response Body
-description: "Modify an HTTP response by inserting HTML elements while using Fiddler's rules."
+page_title: Modify Response Body - Rules Presets | Fiddler Everywhere
+description: "Modify an HTTP response by inserting HTML elements while using the Fiddler rules. Import and customize ready-to-use rule presets for response modification."
 slug: adv_modify_response_body
 position: 10
 ---

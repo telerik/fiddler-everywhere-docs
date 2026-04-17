@@ -2,7 +2,7 @@
 title: Using Filters in Fiddler Everywhere for Advanced Search
 description: Learn how to use filters in Fiddler Everywhere to search for specific values within request and response bodies and headers.
 type: how-to
-meta_title: Using Filters in Fiddler Everywhere for Advanced Search
+page_title: Search Request and Response Bodies with Advanced Filters | Fiddler Everywhere
 slug: using-filters-in-fiddler-everywhere-for-advanced-search
 tags: fiddler-everywhere, search, filters, request body, response body, headers
 res_type: kb
@@ -26,7 +26,7 @@ To use filters for advanced search in Fiddler Everywhere, follow these steps:
 
 1. Open Fiddler Everywhere.
 1. Open the **Traffic** Pane.
-1. In the toolbar, click on the "Filters" button.
+1. In the toolbar, click the "Filters" button.
 1. In the filter panel, specify the match conditions for the request body, response body, and headers. For example, you can set the filter to match a specific value in both the request and response bodies.
 1. Save the filter by giving it a name and clicking the "Save" button (top-right corner).
 1. Apply the filter by clicking the "Apply" button (bottom-right corner).
@@ -41,5 +41,6 @@ By using filters in Fiddler Everywhere, you can easily search for specific value
 - Saved filters can be reused across different sessions and projects, saving you time and effort in defining filters for each search.
 
 ## See Also
+
 - [Filterting traffic in Fiddler Everywhere](https://docs.telerik.com/fiddler-everywhere/modify-and-filter-traffic/filter-traffic)
 - [Inspecting traffic with Fiddler Everywhere](https://docs.telerik.com/fiddler-everywhere/inspect-traffic/inspect-traffic)

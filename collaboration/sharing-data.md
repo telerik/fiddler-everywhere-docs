@@ -1,5 +1,6 @@
 ---
 title: Sharing HTTPS Traffic
+page_title: Sharing HTTPS Traffic - Collaboration | Fiddler Everywhere
 description: "Sharing snapshots of captured traffic, API requests, and rules with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-sharing
 publish: true
@@ -36,7 +37,7 @@ To share a saved session snapshot from the save **Snapshots** tree:
 
 1. Double-click a saved session entry from the save **Snapshots** tree.
 1. The session entry opens in a new tab. Click the **Share** button from the **more** option in the toolbar. This action loads the **Share Sessions** prompt window. 
-    ![Sessions list](./images/share-saved-toolbar-more.png)
+    ![Fiddler Everywhere sessions list with share toolbar options](./images/share-saved-toolbar-more.png)
 1. Enter a valid email (mandatory) and notes (optional), and then click **Share**.
 
 ### Managing Users
@@ -58,8 +59,6 @@ To share a collection of saved API requests, follow these steps:
 - Click the **Share** icon. Then, enter the email addresses of the users in the **Share Collection** window.
     ![Sharing an API request collection](./images/share-saved-request-collection.png)
 
-### Sharing Requests Collections Specifics
-
 Consider the following when sharing a collection of requests.
 
 - You can share a collection only if you are the collection owner.
@@ -72,7 +71,7 @@ To share a created rule or group of rules, execute the following steps:
 
 - Open the **Rules** tab.
 - Select a rule or group of rules from the list.
-- Click on the **Share** button.
+- Click the **Share** button.
     ![Sharing a rule or group of rules](./images/share-rules-toolbar.png)
 
 
@@ -85,7 +84,7 @@ Some network sessions may lack essential details not captured in the technical d
 Add a custom comment to one or more captured sessions to provide additional context.
 
 1. Select a session from the sessions grid or load a saved snapshot from the save **Snapshots** tree.
-1. Add a comment by using the **Comment** option from the context menu or press the **M** key while selecting the desired sessions. As a result, the newly added comment will appear in the **Comments** column.
+1. Add a comment by using the **Comment** option from the context menu or press the `M` key while selecting the desired sessions. As a result, the newly added comment will appear in the **Comments** column.
 
 ### Notes
 
@@ -101,8 +100,14 @@ The Fiddler Everywhere client informs the recipients about shared resources (inc
 
 - Collaborators receive an email with an invitation to open the shared resources. If the session creator has added a note, the email will display the note as well.
 - All listed collaborators receive a notification within the Fiddler Everywhere client. To open the shared session:
-    * Click on the received notification.
+    * Click the received notification.
     * Confirm the opening of the resource.
     * The shared resources load in the respective section (for example, a shared session loads in the **Snapshots** list, a rule in the **Rules** list, and a request in the **Requests** collection). If the shared resource is a snapshot of sessions, its content immediately loads in a new tab.
 
-![Notification for received content](./images/notifications-for-shared-content.png)
+![Notification for received content](./images/notifications-for-shared-content.png)    
+
+## See Also
+
+- [Saving Captured Traffic](slug://fiddler-saving)
+- [Exporting and Importing Traffic](slug://fiddler-export-and-import)
+- [Organizing Traffic](slug://fe-organize-sessions)

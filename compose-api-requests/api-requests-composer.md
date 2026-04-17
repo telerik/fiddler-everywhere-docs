@@ -1,5 +1,6 @@
 ---
 title: Composing API Requests
+page_title: Composing API Requests - API Composer | Fiddler Everywhere
 description: "Create, modify, and execute API requests with the Composer feature of the Fiddler web-debugging HTTP proxy application."
 slug: composer-get-started
 publish: true
@@ -33,7 +34,7 @@ As a result, Fiddler loads the **Composer** screen where you can compose and exe
 
 1. (Optional) Enter additional headers, parameters, and body if required. For example, common scenarios are to enter an authorization header, a **Content-type** header, or custom body data. Note that the request execution includes only checked headers.
 
-    >important By default, the Fiddler's Composer auto-generates the required default headers, including the `Host` header and the `User-Agent` header with the value `Fiddler Everywhere`. This `Host` header lets servers and network peers identify the targeted host and port number of the targeted server. The `User-Agent` agent is a characteristic string that enables servers and network peers to identify the application or version of the requesting user agent. Note that while you can uncheck and execute a request without the default headers, an HTTP request without `Host` header will return a server error as it is considered a malformed request.
+    >important By default, the Fiddler Composer auto-generates the required default headers, including the `Host` header and the `User-Agent` header with the value `Fiddler Everywhere`. This `Host` header lets servers and network peers identify the targeted host and port number of the targeted server. The `User-Agent` agent is a characteristic string that enables servers and network peers to identify the application or version of the requesting user agent. Note that while you can uncheck and execute a request without the default headers, an HTTP request without `Host` header will return a server error as it is considered a malformed request.
 
 1. Click **Execute** to send the composed API request. 
 
@@ -45,7 +46,7 @@ Once the API request executes, you can inspect its HTTP Response in the Composer
 1. Start Fiddler Everywhere and open the **Traffic** pane.
 1. Capture a session (or open a session from the saved save **Snapshots** tree) and use the **Edit in Composer** option from the context menu.
 
-As a result, the session loads as an HTTP request in Fiddler's **Composer**, where you can make atomic modifications to its structure. The **Composer** has a flexible user interface that allows you to switch between **Structured** and **Raw** content (refer to the screenshots below) and between **Table** or **Bulk** style inspectors.
+As a result, the session loads as an HTTP request in the Fiddler **Composer**, where you can make atomic modifications to its structure. The **Composer** has a flexible user interface that allows you to switch between **Structured** and **Raw** content (refer to the screenshots below) and between **Table** or **Bulk** style inspectors.
 
 * Using the **Structured** mode
     ![structured mode in Composer](./images/composer-structured.png)
@@ -73,14 +74,9 @@ With Fiddler Everywhere, you can quickly share a collection of saved API request
 - Use the context menu to share the collection with collaborators.
 ![Share API requests](./images/comp-requests-share.png)
 
-## Save API Request
+## See Also
 
-You can save the API request through the following steps.
-
-- Open the **Composer** pane.
-- [Compose your API request](#compose-api-request)
-- Click the **Save** button. 
-
-Saved requests are loaded as a collection in the **Requests** list and can be reused or shared with collaborators at any later moment.
-
+- [Grouping API Requests in Collections](slug://composer-collections-get-started)
+- [Sharing Captured Traffic and Requests](slug://fiddler-sharing)
+- [Modifying Traffic with Rules](slug://modify-traffic-get-started)
 

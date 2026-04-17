@@ -1,19 +1,20 @@
 ---
 title: Bypass CORS
-description: "Using Fiddler's rules to bypass the same-origin policy when using cross-origin resource sharing (CORS)."
+page_title: Bypass CORS - Rules Presets | Fiddler Everywhere
+description: "Using the Fiddler rules to bypass the same-origin policy when using cross-origin resource sharing (CORS)."
 slug: adv_bypass_cors
 position: 30
 ---
 
 # Bypassing CORS and the Same-Origin Policy
 
-Cross-Origin Resource Sharing (CORS) is a technique based on HTTP headers that limits the origins (outside the target domain) allowed to load resources on the client's side. Setting specific domains, schemes, or ports permitted to serve resources guarantees that clients can't be tricked into sharing sensitive data with third-party actors. Most modern-day applications strictly set a list of external origins that are allowed to bypass CORS. 
+Cross-Origin Resource Sharing (CORS) is a technique based on HTTP headers that limits the origins (outside the target domain) allowed to load resources on the client's side. Setting specific domains, schemes, or ports permitted to serve resources guarantees that clients cannot be tricked into sharing sensitive data with third-party actors. Most modern-day applications strictly set a list of external origins that are allowed to bypass CORS. 
 
 With Fiddler Everywhere, you can easily create a rule that bypasses the pre-set CORS policies by overwriting the sent/received values with wildcards (or other specific values).
 
 ## Creating a "Bypass CORS" Rule
 
-This example shows how to create a rule named "Bypass CORS" that effectively sets the CORS policy not to a same-origin or specific domain but to all domains using a wildcard. This effectively bypasses the same-origin policy, which might allow third-party actors to execute a cross-site request forgery (CSRF). The rule should only be used for testing purposes where and when needed, not for real-life scenarios.
+This example shows how to create a rule named "Bypass CORS" that effectively sets the CORS policy not to a same-origin or specific domain but to all domains using a wildcard. This effectively bypasses the same-origin policy, which might allow third-party actors to execute a cross-site request forgery (CSRF). The rule must only be used for testing purposes where and when needed, not for real-life scenarios.
 
 Create a "Bypass CORS" rule that sets the following actions through the [Rules Builder](slug://modify-traffic-get-started).
 

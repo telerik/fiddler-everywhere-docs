@@ -1,6 +1,7 @@
 ---
 title: Allow Only Specific Hosts
-description: "Allowing HTTPS traffic only to specific hosts while using Fiddler's rules."
+page_title: Allow Only Specific Hosts - Rules Presets | Fiddler Everywhere
+description: "Allowing HTTPS traffic only to specific hosts while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic control."
 slug: adv_allow_traffic_hosts
 position: 20
 ---

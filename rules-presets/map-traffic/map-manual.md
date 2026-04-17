@@ -1,6 +1,7 @@
 ---
 title: Map Manual Response
-description: "Creating a transparent mapping or redirect to a manually created HTTP Response within the Fiddler's rules."
+page_title: Map Manual Response - Rules Presets | Fiddler Everywhere
+description: "Creating a transparent mapping or redirect to a manually created HTTP Response within the Fiddler rules."
 slug: adv_map_local_manual
 position: 40
 ---
@@ -8,7 +9,7 @@ position: 40
 # Map Manual Response
 
 
-Remote mapping of a request location means testing changes or fixes locally and avoiding deploying on an actual remote host. However, testing against a localhost environment is often the more straightforward, quicker, and cheaper solution. Mapping HTTP requests can be done to remote locations and local sources like files, Fiddler's predefined responses, or manual responses (through the Fiddler user interface). 
+Remote mapping of a request location means testing changes or fixes locally and avoiding deploying on an actual remote host. However, testing against a localhost environment is often the more straightforward, quicker, and cheaper solution. Mapping HTTP requests can be done to remote locations and local sources like files, the Fiddler predefined responses, or manual responses (through the Fiddler user interface). 
 
 With Fiddler Everywhere, you can easily create a rule that **maps an HTTP request to a locally created HTTP Response**.
 

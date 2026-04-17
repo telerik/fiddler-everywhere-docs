@@ -1,5 +1,6 @@
 ---
 title: Configuring Fiddler Everywhere on XFCE
+page_title: Fix Proxy Settings on XFCE Linux Desktop | Fiddler Everywhere
 description: "Learn how to properly configure or fix leaked Fiddler Everywhere web-debugging proxy on XFCE and other Linux desktop with environments without graphical proxy settings."
 type: how-to
 slug: fiddler-xfce

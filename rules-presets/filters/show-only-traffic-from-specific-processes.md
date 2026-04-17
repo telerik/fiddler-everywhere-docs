@@ -1,6 +1,7 @@
 ---
 title: Show Traffic Only from Specific Processes
-description: "Show only traffic for specific processes and applications while using Fiddler's rules."
+page_title: Show Traffic Only from Specific Processes | Fiddler Everywhere
+description: "Show only traffic for specific processes and applications while using the Fiddler rules. Import and customize ready-to-use rule presets for traffic filtering."
 slug: adv_show_only_specific_processes
 position: 30
 ---

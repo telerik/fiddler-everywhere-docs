@@ -1,6 +1,7 @@
 ---
 title: Fiddler Everywhere Fundamentals
-description: "Learn more about how Fiddler Everywhere works as a forward proxy."
+page_title: Fiddler Everywhere Fundamentals - Security | Fiddler Everywhere
+description: "Learn more about how Fiddler Everywhere works as a forward proxy. Understand how Fiddler Everywhere protects your data and traffic."
 slug: fe-security
 publish: true
 position: 10
@@ -34,7 +35,7 @@ The following image demonstrates how Fiddler Everywhere acts as if the client is
 
 ![Fiddler Everywhere as HTTPS proxy](./images/fe-tls-proxy.png)
 
-## Additional Resources
+## See Also
 
 - [Fiddler Everywhere Official Product Page](https://www.telerik.com/fiddler/fiddler-everywhere)
 - [Fiddler Everywhere End User License Agreement](https://www.telerik.com/purchase/license-agreement/fiddler-everywhere)

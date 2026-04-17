@@ -1,6 +1,7 @@
 ---
 title: Capturing Traffic from Node.js Libraries
-description: "Configure the Fiddler Everywhere proxy alongside Node.js and capture their HTTPS traffic."
+page_title: Capturing Traffic from Node.js Libraries | Fiddler Everywhere
+description: "Configure the Fiddler Everywhere proxy alongside Node.js and capture their HTTPS traffic. Configure proxy settings and trust the Fiddler certificate for HTTPS decryption."
 type: how-to
 slug: fiddler-nodejs-traffic
 publish: true
@@ -17,9 +18,9 @@ Some Node.js modules, such as [`request`](https://www.npmjs.com/package/request)
 
 This section demonstrates the primary approach for each of the mentioned scenarios.
 
-## Using the Fiddler's Terminal
+## Using Fiddler Terminal
 
-Fiddler Everywhere allows quickly opening dedicated terminal that automatically uses Fiddler as HTTP(S) proxy for Node.js. [Learn more about the Fiddler's terminal here...](slug://capture-terminal-traffic)
+Fiddler Everywhere allows quickly opening dedicated terminal that automatically uses Fiddler as HTTP(S) proxy for Node.js. [Learn more about the Fiddler terminal here...](slug://capture-terminal-traffic)
 
 ## Setting the Proxy Globally
 
@@ -74,7 +75,7 @@ const setFiddlerProxy = () => {
     var proxyUrl = url.format(fiddlerProxy);
     env.http_proxy = proxyUrl;
     env.https_proxy = proxyUrl;
-    // Use this only for debugging purposes, as it introduces a security issue
+    // Use this only for debugging purposes, as it introduces a security issue.
     env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 };
 const removeFiddlerProxy = () => {
@@ -90,7 +91,7 @@ setFiddlerProxy();
 removeFiddlerProxy();
 ```
 
-### Using the Fiddler CA in Node.js
+### Using Fiddler CA in Node.js
 
 The `NODE_TLS_REJECT_UNAUTHORIZED` option is unsafe and poses a security risk. To capture and decrypt Node.js traffic without disabling TLS verification, set the `NODE_EXTRA_CA_CERTS` environment variable to the exported Fiddler CA certificate.
 
@@ -106,7 +107,7 @@ The `NODE_TLS_REJECT_UNAUTHORIZED` option is unsafe and poses a security risk. T
 
 ## Setting the Proxy Explicitly
 
-The [global proxy settings](#setting-the-proxy-globally) won't work for modules like the [`HTTP` module](https://nodejs.org/api/http.html), where you need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to explicitly set the proxy through the code.
+The [global proxy settings](#setting-the-proxy-globally) will not work for modules like the [`HTTP` module](https://nodejs.org/api/http.html), where you need to proxy each HTTP request to Fiddler Everywhere. One way to solve that is to explicitly set the proxy through the code.
 
 The following example demonstrates the `fiddler-everywhere-test.js` file.
 

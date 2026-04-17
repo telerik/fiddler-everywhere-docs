@@ -1,5 +1,6 @@
 ---
 title: Saving HTTPS Traffic
+page_title: Saving HTTPS Traffic - Collaboration | Fiddler Everywhere
 description: "Saving snapshots of captured traffic, API requests, and rules with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-saving
 publish: true
@@ -9,7 +10,7 @@ previous_url: /user-guide/sessions-list
 
 # Saving Traffic in Fiddler Everywhere
 
-With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, composed API requests, and rules. It's only natural that the application provides user interface options to save, organize and share the information so it can be reused later. This article covers the saving capabilities of Fiddler Everywhere as follows:
+With Fiddler Everywhere, you can capture and generate data like HTTPS sessions, composed API requests, and rules. It is only natural that the application provides user interface options to save, organize and share the information so it can be reused later. This article covers the saving capabilities of Fiddler Everywhere as follows:
 
 - [Saving session's snapshots](#saving-snapshots)&mdash;Options to save single or multiple captured HTTPS sessions as local/cloud snapshots in the save **Snapshots** tree.
 - [Automated save of session's snapshots](#automated-save-and-export)&mdash;Options to save and export data automatically and periodically as SAZ files.
@@ -22,7 +23,7 @@ The save options in Fiddler Everywhere allow you to use local and cloud save, or
  - Numbers (0-9).
  - Dashes (`-`), underscores (`_`), and blank spaces.
 
- >tip Note that saving a snapshot's sessions in Fiddler will effectively store them either in the application local storage (when using local save) or in Fiddler's cloud space (when using cloud save). If you need to create a file with sessions, you should use [the **Export** option](slug://fiddler-export-and-import) which enables you to produce a file in various known formats (like SAZ, HTTPArchive, etc.).
+ >tip Note that saving a snapshot's sessions in Fiddler will effectively store them either in the application local storage (when using local save) or in the Fiddler cloud space (when using cloud save). If you need to create a file with sessions, use [the **Export** option](slug://fiddler-export-and-import) which enables you to produce a file in various known formats (like SAZ, HTTPArchive, and others).
 
 ## Saving Snapshots
 
@@ -37,8 +38,6 @@ Save session snapshots to the save **Snapshots** tree as follows:
 
 - Use the **Save** option from the **Live Traffic** grid context menu
     !["Save" option from the context menu](./images/save-context-menu.png)
-
-### Working with Saved Snapshots
 
 You can select, inspect, modify, and share snapshots of previously saved session snapshots with collaborators. The snapshots can be saved locally or in the cloud. You can apply the following actions to a saved session snapshot:
 
@@ -100,3 +99,9 @@ To save composed API requests, follow these steps:
 ## Saving Rules
 
 All rules in Fiddler Everywhere are automatically saved in your **Rules** list immediately after creation through the **Rules Builder**.
+
+## See Also
+
+- [Sharing Captured Traffic](slug://fiddler-sharing)
+- [Exporting and Importing Traffic](slug://fiddler-export-and-import)
+- [Grouping API Requests in Collections](slug://composer-collections-get-started)

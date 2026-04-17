@@ -1,6 +1,7 @@
 ---
 title: Disable Caching
-description: "You can disable application caching to force load the latest resources while using Fiddler's rules."
+page_title: Disable Caching - Rules Presets | Fiddler Everywhere
+description: "You can disable application caching to force load the latest resources while using the Fiddler rules. Import and customize ready-to-use rule presets for common web tooling."
 slug: adv_disable_cache
 position: 10
 ---
@@ -30,7 +31,7 @@ This sample Fiddler rule matches all sessions and explicitly turns off the cachi
 
 ![Creating "No Caching" rule](./images/adv-tech-no-caching.png)
 
->tip The matching criteria in the above screenshot demonstrate how to apply the rule for all sessions. However, Fiddler Everywhere provides robust matching conditions that you can use to further optimize your web debugging process.
+>tip The matching criteria in the above screenshot demonstrate how to apply the rule for all sessions. However, Fiddler Everywhere provides versatile matching conditions that you can use to further refine your web debugging process.
 
 Once the rule is created, enable the **Rules** tab, toggle the rule switch, and start capturing traffic.
 

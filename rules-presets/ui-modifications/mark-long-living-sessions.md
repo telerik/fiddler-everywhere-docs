@@ -1,6 +1,7 @@
 ---
 title: Mark Long-Living Sessions
-description: "Learn how to mark long-living sessions with Fiddler's rules."
+page_title: Mark Long-Living Sessions - Rules Presets | Fiddler Everywhere
+description: "Learn how to mark long-living sessions with the Fiddler rules. Import and customize ready-to-use rule presets for visual traffic marking."
 slug: adv_marking_long_living_sessions
 position: 10
 ---

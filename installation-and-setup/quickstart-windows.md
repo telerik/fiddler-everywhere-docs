@@ -1,5 +1,6 @@
 ---
 title: First Steps on Windows
+page_title: First Steps on Windows - Installation | Fiddler Everywhere
 description: "Install and configure Fiddler Everywhere on Windows and learn how to capture, inspect, and modify the HTTPS traffic to analyze data effectively."
 slug: first_steps_windows
 position: 1
@@ -11,7 +12,7 @@ previous_url: /get-started/quickstart-windows, /login-and-update
 This tutorial describes how to install and start using Fiddler Everywhere on Windows.
 
 * First, you will go through the installation and configuration steps.
-* Next, you'll create a Fiddler account so that you can move on to using the web-debugging tool.
+* Next, you will create a Fiddler account so that you can move on to using the web-debugging tool.
 * Finally, you will see how to capture, inspect, and modify traffic.
 
 ## Prerequisites
@@ -19,7 +20,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
 - Install Windows 10 x64 (version 22H2 or newer patch version), Windows 11 x64, or Windows Server 2016 or newer versions.
   >tip To enhance security and align with modern practices, Fiddler Everywhere version 5.0.0 discontinues support for the outdated Windows 7 and 8.1, which reached end-of-life and are no longer supported.
 - Make sure you have 400MB+ free disk space.
-- Create an account with administrative rights, which you'll need for capturing and decoding HTTPS traffic.
+- Create an account with administrative rights, which you will need for capturing and decoding HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
   ```txt
     https://*.telerik.com/
@@ -28,21 +29,21 @@ This tutorial describes how to install and start using Fiddler Everywhere on Win
     https://challenges.cloudflare.com
   ```
   >note The Telerik site (where the Fiddler authentication form resides) uses different CDNs to load various components, styles, and cookies related to its user interface. Having limited internet access can cause the site not to load correctly.
-- Ensure that Fiddler Everywhere's proxy port is open and unrestricted by a firewall/security tool. The default port is **8866**, but you can change it from **Settings > Connections > Fiddler listens on port**.
+- Ensure that Fiddler Everywhere's proxy port is open and unrestricted by a firewall/security tool. The default port is **8866**, but you can change it from **Settings** > **Connections** > **Fiddler listens on port**.
 
 ## Step 1: Install Fiddler Everywhere on Your Machine
 
-You'll first have to install your machine's latest version of Fiddler Everywhere.
+You will first have to install your machine's latest version of Fiddler Everywhere.
 
 1. Download and install the latest version of [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 
 Fiddler Everywhere for Windows offers you the flexibility to select the installation scope based on your preferences. You can opt for a **per user** installation, limiting access to the currently logged-in user, or choose a **per machine** installation, allowing all users on the host machine to use Fiddler Everywhere. Note that simultaneous execution of multiple instances of Fiddler Everywhere on the same host machine is not supported.
 
-When Fiddler Everywhere is installed per machine, each individual user must log into Fiddler Everywhere with their credentials, and the generated data won't be accessible from the other users.
+When Fiddler Everywhere is installed per machine, each individual user must log in to Fiddler Everywhere with their credentials, and the generated data will not be accessible from the other users.
 
 ## Step 2: Create Your Fiddler Account
 
-In this step, you'll register by creating your unified Telerik account.   
+In this step, you will register by creating your unified Telerik account.   
 
 1. Launch the Fiddler Everywhere application. Follow the **Sign in or create an account** link.
 1. Create an account using email and password or using the **Sign in with Google** option.
@@ -55,7 +56,7 @@ After successful login into Fiddler Everywhere, you will see your personal and l
 
 ## Step 3: Interact with the Captured Traffic
 
-You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import *& export, mock and modify HTTPS traffic.
+You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import & export, mock and modify HTTPS traffic.
 
 1. Capture HTTPS traffic through the preferred [capturing mode](slug://capture-traffic-get-started).
   >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)](slug://trust-certificate).
@@ -66,7 +67,7 @@ You can now take advantage of the Fiddler Everywhere capabilities - capture, ins
 
 >tip The **Rules** tab is one of the most advanced features in Fiddler Everywhere. You can create and execute complex rules on your incoming traffic to mock client and server behavior without touching the client and server applications.
 
-That's it! Now you're equipped to delve deeper into Fiddler Everywhere and make the most of its powerful functionalities.
+Now you are equipped to delve deeper into Fiddler Everywhere and make the most of its powerful functionalities.
 
 ## Next Steps
 

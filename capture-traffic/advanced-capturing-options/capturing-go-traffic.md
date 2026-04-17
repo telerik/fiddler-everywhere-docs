@@ -1,5 +1,6 @@
 ---
 title: Capturing Go Traffic
+page_title: Capturing Go Traffic - Capture Traffic | Fiddler Everywhere
 description: "Run GO applicaton and its capture HTTPS traffic while using the Fiddler Everywhere proxy debugging tool."
 type: how-to
 slug: how-to-capture-go-traffic
@@ -15,7 +16,7 @@ Fiddler captures different traffic but I cannot capture localhost HTTP traffic g
 
 Fiddler Everywhere respects global variables like `HTTP_PROXY` which are also used by the [HttpProxy](https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config.ProxyFunc) and [useProxy](https://github.com/golang/net/blob/c0dbc17a35534bf2e581d7a942408dc936316da4/http/httpproxy/proxy.go#L172) in the Go language.
 
-However, a known limitation is that the above Go methods won't respect the proxy variables for traffic going through `localhost` or `127.0.0.1` because if `req.URL.Host` is `localhost` or a loopback address (with or without a port number), then a nil URL and nil error will be returned.
+However, a known limitation is that the above Go methods will not respect the proxy variables for traffic going through `localhost` or `127.0.0.1` because if `req.URL.Host` is `localhost` or a loopback address (with or without a port number), then a nil URL and nil error will be returned.
 
 To overcome the above limitation, you can explicitly overwrite the `hosts` file in your operating system and provide a custom alias for the localhost traffic.
 

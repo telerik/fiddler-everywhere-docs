@@ -1,6 +1,7 @@
 ---
 title: Status Bar
-description: "Learn how to use the status bar in the Fiddler Everywhere web-debugging HTTP-proxy client."
+page_title: Status Bar - User Guide | Fiddler Everywhere
+description: "Learn how to use the status bar in the Fiddler Everywhere web-debugging HTTP-proxy client. Explore the application interface and available configuration options."
 slug: connections-section
 tags: Fiddler Connections section, Fiddler Everywhere IP addresses, Fiddler Everywhere active network
 position: 20
@@ -28,13 +29,13 @@ The section pops up on mouse interaction and lists the following information:
 
     ![The traffic sources](./images/traffic-sources.png)
 
-- **Fiddler Port State**&mdash;Indicates if the Fiddler Everywhere proxy port is opened/closed for remote connections. You can control the state through the **Settings > Connections > Allow remote devices to connect** option.
+- **Fiddler Port State**&mdash;Indicates if the Fiddler Everywhere proxy port is opened/closed for remote connections. You can control the state through the **Settings** > **Connections** > **Allow remote devices to connect** option.
 
     ![State of the Fiddler port](./images/remote-connections-status.png)
 
 - **Rules Count**&mdash;A popup that shows counters of all enabled rules.
 
-    ![The rules count](./images/rules-count.png)
+    ![Status bar displaying the active rules count](./images/rules-count.png)
 
 - **Breakpoints Count**&mdash;A popup that shows counters of all rules paused by a breakpoint rule.
 

@@ -1,6 +1,7 @@
 ---
 title: Organizing Traffic
-description: "Use the `Snapshots` tree to save, organize and share snapshots of captured traffic."
+page_title: Organizing Traffic - Inspect Traffic | Fiddler Everywhere
+description: "Use the `Snapshots` tree to save, organize and share snapshots of captured traffic. Use the inspection tools to analyze requests and responses."
 slug: fe-organize-sessions
 publish: true
 position: 50
@@ -25,7 +26,7 @@ Save a snapshot of captured HTTPS traffic through the following steps:
 1. Capture HTTPS traffic through your preferred capturing mode.
 1. Select one or more sessions.
 1. Use the context menu or the keyboard shortcut `Cmd` + `S`(macOS) or `Ctrl` + `S`(Windows)  to invoke the **Save Snapshot** dialog.
-    ![Save dialog](./images/session-save-prompt.png)
+    ![Save dialog for naming and storing a traffic snapshot](./images/session-save-prompt.png)
 1. Complete the save by:
     - Assign a name for the snapshot.
     - (Optional) Encrypt the snapshot by adding password protection.
@@ -65,6 +66,11 @@ Apart from the built-in saving and sharing functionalities, you can also export 
 
 ## Using Keyboard Shortcuts
 
-Almost all Fiddler Everywhere features are linked to a keyboard shortcut which oyu can use to optimize or automate your workflow.
+Almost all Fiddler Everywhere features are linked to a keyboard shortcut which you can use to optimize or automate your workflow.
 
-[Learn more about eh available keyboard shortcuts here...](slug://fiddler-shortcuts)
+## See Also
+
+- [Inspecting Traffic](slug://inspecting-traffic-get-started)
+- [Sharing Captured Traffic](slug://fiddler-sharing)
+- [Exporting and Importing Traffic](slug://fiddler-export-and-import)
+- [Available Keyboard Shortcuts](slug://fiddler-shortcuts)

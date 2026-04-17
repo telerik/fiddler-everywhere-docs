@@ -1,6 +1,7 @@
 ---
 title: Using Fiddler Everywhere proxy alongside NordVPN
-description: "Learn how to configure NordVPN t work alongside FIddler Everywhere."
+page_title: Configure NordVPN to Work with an HTTP Debugging Proxy | Fiddler Everywhere
+description: "Learn how to configure NordVPN to work alongside Fiddler Everywhere. Step-by-step instructions and troubleshooting guidance."
 type: how-to
 slug: fiddler-everywhere-nordvpn
 publish: true
@@ -16,7 +17,7 @@ res_type: kb
 
 ## Description
 
-Can I use NordVPN alongside Fiddler Everywhere, and what configuration settings should I consider?
+Can I use NordVPN alongside Fiddler Everywhere, and what configuration settings do I need?
 
 ## Solution
 
@@ -25,7 +26,7 @@ You can use the NordVPN and Fiddler Everywhere applications simultaneously, bene
 - Start the Fiddler Everywhere application.
 - Toggle ON the **System Proxy** switch to start network capturing.
 - Start the NordVPN application.
-- Go to **Settings > Advanced** and ensure that **Invisibility on LAN** is turned on. This will allow you to see and capture traffic from other devices on the local network.
+- Go to **Settings** > **Advanced** and ensure that **Invisibility on LAN** is turned on. This will allow you to see and capture traffic from other devices on the local network.
     ![Invisibility mode OFF](./images/nordvpn-invis-off.png)
 - Connect to a selected VPN. At some point, NordVPN will detect and warn you about the existence of the Fiddler Root Certificate. Confirm that you recognize the certificate by using the **Trust** option.
     ![Providing complete trust for the Fiddler CA](./images/nordvpn-trust-fe.png)

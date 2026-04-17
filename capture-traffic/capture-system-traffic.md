@@ -1,6 +1,7 @@
 ---
 title: Capturing System Traffic
-description: "Capture HTTPS traffic that goes through the operating system proxy."
+page_title: Capturing System Traffic - Capture Traffic | Fiddler Everywhere
+description: "Capture HTTPS traffic that goes through the operating system proxy. Capture, inspect, and analyze HTTPS sessions in real time."
 slug: capture-system-traffic
 publish: true
 position: 10
@@ -8,7 +9,7 @@ position: 10
 
 # System Capturing Mode
 
-This article describes how to use Fiddler's **system capturing mode**, where "system traffic" refers to all HTTP, HTTPS, WebSocket, Server-Sent Events, and gRPC traffic directed to go through the operating system proxy settings.
+This article describes how to use the Fiddler Everywhere **system capturing mode**, where "system traffic" refers to all HTTP, HTTPS, WebSocket, Server-Sent Events, and gRPC traffic directed to go through the operating system proxy settings.
 
 ## Capturing System Traffic
 
@@ -41,3 +42,10 @@ You can manually turn on and off the system proxy capturing mode.
 Fiddler Everywhere warns you through an informative dialog when the system capturing mode is manually enabled.
 
 >important Fiddler Everywhere persists in the state of the **System Proxy** switch and starts with system capturing turned on or off based on the last switch state.
+
+## See Also
+
+- [Capturing Modes Overview](slug://capture-traffic-get-started)
+- [Capturing Browser Traffic](slug://capture-browser-traffic)
+- [Capturing Network Traffic](slug://capture-network-traffic)
+- [Trusting the Fiddler CA Certificate](slug://trust-certificate)

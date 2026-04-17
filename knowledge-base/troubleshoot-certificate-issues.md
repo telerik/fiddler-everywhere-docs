@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting macOS Trust Certificate Issues
+page_title: Fix Root Certificate Not Trusted Error on macOS | Fiddler Everywhere
 description: "Learn how to troubleshoot issues related to the trusting of the root certificate of Fiddler Everywhere and fix the 'Fiddler root certificate NOT trusted successfully' error."
 type: how-to
 slug: troubleshoot-certificate-error
@@ -72,4 +73,4 @@ Test the import of the Fiddler Everywhere root certificate on macOS by using cus
     ```
 
     ![Check SHA1 signature](./images/certificate-sha-check.png)
-1. (Optional) Delete the `/tmp/trustSettings.xml` file after troubleshooting the issue as it's only needed to check that the `SHA-1` key is properly exported.
+1. (Optional) Delete the `/tmp/trustSettings.xml` file after troubleshooting the issue as it is only needed to check that the `SHA-1` key is properly exported.

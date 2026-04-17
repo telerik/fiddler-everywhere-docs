@@ -1,6 +1,7 @@
 ---
 title: Keyboard Shortcuts
-description: "Comprehensive list of all in-app keyboard shortcuts for Windows and macOS."
+page_title: Keyboard Shortcuts - User Guide | Fiddler Everywhere
+description: "Comprehensive list of all in-app keyboard shortcuts for Windows and macOS. Explore the application interface and available configuration options."
 slug: fiddler-shortcuts
 position: 30
 publish: true
@@ -12,6 +13,8 @@ previous_url: /knowledge-base/keyboard-shortcuts
 The Fiddler Everywhere application provides keyboard shortcuts for most in-application actions and features. This article lists the available shortcuts for macOS, Windows, аnd Linux.
 
 ## macOS Shortcuts
+
+The following tables list the keyboard shortcuts available on macOS.
 
 ### General
 
@@ -127,6 +130,8 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 
 ## Windows and Linux Shortcuts
 
+The following tables list the keyboard shortcuts available on Windows and Linux.
+
 ### General
 
 | Action  |  Keyboard Shortcut  |
@@ -135,7 +140,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 | Close/Deselect | `Esc`|
 | Select all items | `Ctrl` + `A`|
 | Rename selected | `F2`|
-| Delete selected (sessions/tree view items, etc.) | `Del`|
+| Delete selected (sessions/tree view items, and others) | `Del`|
 | Undo for inputs | `Ctrl` + `Z` |
 | Close all toasts | `Ctrl` + `Shift` + `Alt` + `W` |
 | Close current tab (Live Traffic + Composer) | `Ctrl` + `W`|
@@ -168,7 +173,7 @@ The Fiddler Everywhere application provides keyboard shortcuts for most in-appli
 |---------|---------------------|
 |Set/Unset Proxy|`F12`|
 |Open Browser|`Ctrl` + `B`|
-|Open Terminal|`Ctrl` + `|
+|Open Terminal|`Ctrl` + \`|
 
 ### Live Traffic
 

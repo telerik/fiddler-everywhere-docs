@@ -1,6 +1,7 @@
 ---
 title: Rules Presets
-description: "Using Fiddler's rules presets to modify, mock, and filter HTTPS traffic."
+page_title: Rules Presets - Rules Presets | Fiddler Everywhere
+description: "Using the Fiddler rules presets to modify, mock, and filter HTTPS traffic. Import ready-to-use rule presets to streamline common debugging workflows."
 slug: adv_techniques_fiddler
 position: 1
 previous_url: /rules-presets/filters/hide-request-content, /rules-presets/ui-modifications/mark-static-resources, /rules-presets/rules-presets
@@ -40,7 +41,7 @@ The rules presets were conditionally separated into the following groups:
 - Modify Traffic&mdash;A set of rules demonstrating how to make custom modifications to sent HTTP requests and received HTTP responses. For example:
     * [Modifying the content of a response body](slug://adv_modify_response_body)
     * [Modifying image URLs](slug://adv_modify_image_url)
-- UI Modifications&mdash;A set of rules demonstrating how to change the Fiddler's UI to fit your needs. For example:
+- UI Modifications&mdash;A set of rules demonstrating how to change the Fiddler UI to fit your needs. For example:
     * [Highlighting long-living sessions](slug://adv_marking_long_living_sessions)
     * [Highlighting sessions that contain JavaScript or JSON](slug://adv_marking_scripts_jsons)
 

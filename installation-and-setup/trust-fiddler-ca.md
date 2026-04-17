@@ -1,13 +1,14 @@
 ---
 title: Trust Fiddler Certificate Authority
-description: "Install and trust the Fiddler's root CA in your operating system and learn how it relates to enabling the HTTPS capturing of system traffic."
+page_title: Trust Fiddler Certificate Authority | Fiddler Everywhere
+description: "Install and trust the Fiddler root CA in your operating system and learn how it relates to enabling the HTTPS capturing of system traffic."
 slug: trust-certificate
 position: 20
 publish: true
 previous_url: /installation-and-update/trust-certificate-configuration
 ---
 
-# Trust Fiddler's Certificate Authority
+# Trust the Fiddler Certificate Authority
 
 Proper installation and trust of the Fiddler Everywhere Certificate Authority (CA) is essential for capturing and decrypting HTTPS traffic at the system level. This article explains the recommended and manual approaches for installing the Fiddler CA on Windows, macOS, and Linux, and provides troubleshooting tips and best practices.
 
@@ -62,7 +63,7 @@ Use the manual approach if the automated wizard fails or you need more control o
 4. Enable **Capture HTTPS traffic** and click **Save**.
 5. On the main screen, toggle **System Proxy** ON to capture system HTTP/HTTPS traffic.
 
-## Exporting the Fiddler CA (for Manual or Third-Party Use)
+## Exporting Fiddler CA (for Manual or Third-Party Use)
 
 If automatic installation fails (due to security restrictions, permissions, or corporate policy), you can export the Fiddler CA and install it manually:
 
@@ -94,7 +95,13 @@ The Fiddler Everywhere application can use a custom CA certificate through its [
 - If HTTPS capture does not work, verify the CA is trusted and "Capture HTTPS traffic" is enabled.
 - For certificate errors on specific sites, add the domain to the ignore list (for development only).
 - On Linux, always follow the manual export and trust instructions for your distribution.
-- Use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) if you lack admin rights or only need browser traffic.
+- Use [independent browser capturing](slug://capture-traffic-get-started#independent-browser-capturing) if you lack admin rights or only need browser traffic.  
+
+## See Also
+
+- [Capturing Modes Overview](slug://capture-traffic-get-started)
+- [Capturing System Traffic](slug://capture-system-traffic)
+- [Capturing Browser Traffic](slug://capture-browser-traffic)
 
 
 

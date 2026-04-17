@@ -1,5 +1,6 @@
 ---
 title: Exporting and Importing HTTPS Traffic
+page_title: Exporting and Importing HTTPS Traffic | Fiddler Everywhere
 description: "Export and import captured traffic in multiple formats with the Fiddler Everywhere web-debugging proxy application."
 slug: fiddler-export-and-import
 publish: true
@@ -25,3 +26,8 @@ The **Export** context menu option allows you to export the captured traffic in 
 Use the **Import Snapshot** option (within the saved **Snapshots** tree) to load sessions kept in various formats such as `*.saz` (Fiddler Archive), `*.har` (HTTPrchive), `*.tstest` (TestStudio LoadTest), `*.cap` (Packet Capture), `*.xml` (IE F12 NetXML).
 
 ![Saved sessions import](./images/saved-sessions-import.png)
+
+## See Also
+
+- [Saving Captured Traffic](slug://fiddler-saving)
+- [Sharing Captured Traffic](slug://fiddler-sharing)

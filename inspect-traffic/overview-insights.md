@@ -1,5 +1,6 @@
 ---
 title: Session Overview
+page_title: Session Overview - Inspect Traffic | Fiddler Everywhere
 description: "Using the `Overview` tab in Fiddler Everywhere to receive and inspect statistical data related to HTTP session timings, sizes, and other technical data."
 slug: overview-tab
 publish: true
@@ -27,7 +28,7 @@ The **Session Details** widget lists technical details, including:
 * Session's URL
 * Protocol
 * Session state
-* Session ID (within the Fiddler's traffic grid)
+* Session ID (within the Fiddler traffic grid)
 
 The widget is available only when a single session is selected.
 
@@ -72,7 +73,7 @@ When multiple sessions are selected, the **Timings** widget displays two section
 
 The URL can be up to 30 symbols long. To visualize a tooltip with the entire session URL plus the fast copy option, click the eye icon at the end of the wrapped URL. 
 
-![Timings widget](./images/overview-timings.png)
+![Timings widget showing request and response duration breakdown](./images/overview-timings.png)
 
 ### Events and Timestamps Explained
 
@@ -138,7 +139,7 @@ Some of the events visualized in the timeline are entirely related to Fiddler fe
 
 - **TTFB**&mdash;The time to First Byte (TTFB) measures the moment a client app makes a request to a server to the time the client app receives the first byte of data from the server. 
 - **TTLB**&mdash;The time to Last Byte (TTLB) measures the delay between the request sent by the client app and the receiving of the last byte of the related response.
-- **Total time without Fiddler**&mdash;The total time that the HTTP session took without the Fiddler-specific events (like rules, breakpoints, CONNECT-related events, etc.).
+- **Total time without Fiddler**&mdash;The total time that the HTTP session took without the Fiddler-specific events (like rules, breakpoints, CONNECT-related events, and others).
 
 #### Timestamps
 
@@ -157,7 +158,7 @@ The **Sizes** widget delivers the following options:
 
 Under the list of session lines, you will find the **Request Headers** (dark blue), **Request Body** (light blue), **Response Headers** (red), and **Response Body** (orange) footers with the total size in kilobytes (**kB**) or bytes (**B**) for all listed sessions.
 
-![Sizes widget](./images/overview-sizes.png)
+![Sizes widget displaying request and response payload sizes](./images/overview-sizes.png)
 
 ## Statistics
 
@@ -215,4 +216,10 @@ The **Response Details** widget contains a table with the following information:
     - **Decompressed Body**&mdash;The size of the decompressed body.
 - **Times**&mdash;A list by execution order with timestamps or times (in milliseconds) for each triggered response event.
 
-![Request Details](./images/overview-request-and-response-details.png)
+![Request Details section with headers, cookies, and query parameters](./images/overview-request-and-response-details.png)
+
+## See Also
+
+- [Inspecting Traffic](slug://inspecting-traffic-get-started)
+- [Inspector Types](slug://inspector-types)
+- [Comparing Sessions](slug://fe-compare-sessions)

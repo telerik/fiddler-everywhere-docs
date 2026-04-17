@@ -1,6 +1,7 @@
 ---
 title: Managing Fiddler Everywhere through PatchMyPc
-description: "Manage the Fiddler Everywhere application installation through Microsoft Patch My PC."
+page_title: Managing Fiddler Everywhere through PatchMyPc | Fiddler Everywhere
+description: "Manage the Fiddler Everywhere application installation through Microsoft Patch My PC. Follow enterprise deployment and installation instructions."
 slug: fe-patchmypc
 publish: true
 position: 50
@@ -11,7 +12,7 @@ previous_url: /security/managing-fiddler-through-patchmypc
 
 The policy-driven installation is available directly through the "Patch My PC" application. Fiddler Everywhere is listed as a supported product in [official database](https://patchmypc.com/supported-products) (search for Fiddler Everywhere)
  
-![Patch My PC database and the Fiddler's entries](./images/fe-patch-my-pc.png)
+![Patch My PC database and the Fiddler entries](./images/fe-patch-my-pc.png)
 
 When you use "Patch My PC", you have two options for installing Fiddler Everywhere: 
 

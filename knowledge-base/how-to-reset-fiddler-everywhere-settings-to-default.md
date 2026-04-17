@@ -2,7 +2,7 @@
 title: Resetting Fiddler Everywhere Settings to Default
 description: "Learn how to reset the Fiddler Everywhere settings to their default values to troubleshoot common issues."
 type: how-to
-meta_title: Configure Fiddler Everywhere Default Settings
+page_title: Reset Fiddler Everywhere to Default Settings | Fiddler Everywhere
 slug: how-to-reset-fiddler-everywhere-settings-to-default
 res_type: kb
 ---
@@ -22,7 +22,7 @@ When I troubleshoot common issues, I need to reset the Fiddler Everywhere settin
 
 The following screenshots represent the default Fiddler Everywhere settings.
 
-* Default **HTTPS** settings&mdash;Resets Fiddler Everywhere to its initial state, which means the secure traffic won't be captured until **Capture HTTPS** is checked.
+* Default **HTTPS** settings&mdash;Resets Fiddler Everywhere to its initial state, which means the secure traffic will not be captured until **Capture HTTPS** is checked.
   ![default https settings](./images/settings-https.png)
 * Default **Connection** settings&mdash;Acts as a system proxy on application startup. Remote connections and HTTP/2 support are disabled.
   ![default Connection settings](./images/settings-connections.png)

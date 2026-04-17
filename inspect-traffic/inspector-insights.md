@@ -1,6 +1,7 @@
 ---
 title: Inspectors Insights
-description: "Using the `Inspectors` tab in the Fiddler Everywhere web-debugging proxy application."
+page_title: Inspectors Insights - Inspect Traffic | Fiddler Everywhere
+description: "Using the `Inspectors` tab in the Fiddler Everywhere web-debugging proxy application. Use the inspection tools to analyze requests and responses."
 slug: inspector-types
 publish: true
 position: 10
@@ -84,7 +85,7 @@ Every HTTP(S) request begins with plain text headers that describe what the clie
 
 * The HTTP method&mdash;For example, __GET__.
 * The URL path which is being requested&mdash;For example, `/index.html`.
-* The HTTP version&mdash;For example, `HTTP/1.2`.
+* The HTTP version&mdash;For example, `HTTP/1.1`.
 
 The **Request line** can consist of one or more headers listed in rows that contain name-value pairs of metadata about the request and the client, such as the `User-Agent` and `Accept-Language`.
 
@@ -128,23 +129,23 @@ The **Body** inspectors are suitable for different requests and responses. Depen
 
 The **Text** inspector lets you view the request and response bodies as text. It truncates the data it renders at the first null byte it finds, making it inappropriate for displaying binary content. Most body inspectors represent a large text area that reveals the body text interpreted using the detected character set with the headers, the byte-order-marker, or an embedded META tag declaration.
 
-![Text Inspector](./images/inspectors-textview.png)
+![Text Inspector displaying raw request and response content](./images/inspectors-textview.png)
 
 #### JSON Body Inspector
 
-The **JSON** inspector interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object nodes. The tree view will remain empty if the body can't be interpreted as JSON. The JSON inspector can render the data even if the request or response is compressed or has HTTP chunked encoding.
+The **JSON** inspector interprets the selected request or response body as a JavaScript Object Notation (JSON) formatted string, showing a tree view of the JSON object nodes. The tree view will remain empty if the body cannot be interpreted as JSON. The JSON inspector can render the data even if the request or response is compressed or has HTTP chunked encoding.
 
 >important If the JSON data is malformed, for example, the name component of a name/value pair is unquoted, the JSON inspector will show a warning in the footer.
 
-![JSON Inspector](./images/inspectors-json.png)
+![JSON Inspector rendering structured JSON response data](./images/inspectors-json.png)
 
 #### HEX Body Inspector
 
-The **HEX** inspector loads a hex representation of the HTTP request/response bodies. The hex data can help identify hidden information in the requests/responses and find special characters (for example, CRLF, Tab, etc.). The HEX inspector's primary goal is to help people analyze bodies with binary data while providing performance optimization for working with larger files.
+The **HEX** inspector loads a hex representation of the HTTP request/response bodies. The hex data can help identify hidden information in the requests/responses and find special characters (for example, CRLF, Tab, and others). The HEX inspector's primary goal is to help people analyze bodies with binary data while providing performance optimization for working with larger files.
 
 The **HEX** inspector consists of an offset column, a hex view column, and a text view column.
 
-![HEX Inspector](./images/inspectors-hex.png)
+![HEX Inspector showing hexadecimal and ASCII byte representation](./images/inspectors-hex.png)
 
 #### MessagePack Body Inspector
 
@@ -158,9 +159,9 @@ The **Socket.IO** inspector interprets the selected request or response body as 
 
 #### XML Body Inspector
 
-The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body can't be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an **Expand All / Collapse All** toggle button to expand or collapse all XML tree nodes.
+The **XML** inspector interprets the selected request or response body as an Extensible Markup Language (XML) document, showing a tree view of the XML document nodes. The tree view will remain empty if the body cannot be interpreted as XML (that includes valid HTML). Each XML element is represented as a node in the tree. The attributes of the element are displayed in square brackets after its name. The inspector provides an **Expand All / Collapse All** toggle button to expand or collapse all XML tree nodes.
 
-![XML Inspector](./images/inspectors-xml.png)
+![XML Inspector displaying formatted XML response body](./images/inspectors-xml.png)
 
 #### Form Data Body Inspector
 
@@ -172,7 +173,7 @@ The **Form Data** inspector, available in the **Request** section only, parses t
 
 The **JavaScript** inspector interprets and formats the selected request or response body as a JavaScript/TypeScript code. The inspector will recognize and properly format the following MIME types:
 
-```sh
+```text
 application/ecmascript
 application/javascript
 application/x-ecmascript
@@ -206,7 +207,7 @@ Fiddler Everywhere provides common user interface to create inspectors for visua
 
 ![Capturing Socket.IO traffic](./images/socketio-inspectors.png)
 
-Encoded messages from a **gRPC** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobof files through the **Settings > Protobuf > Decode via .proto file** option.
+Encoded messages from a **gRPC** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobuf files through the **Settings** > **Protobuf** > **Decode via .proto file** option.
 
 [Learn more about capturing gRPC traffic with Fiddler Everywhere here...](slug://capture-grpc-traffic)
 
@@ -230,7 +231,7 @@ The **Messages tab** renders a list of the WebSocket or gRPC messages sent from 
 The list of messages is rendered as a grid with multiple columns:
 
 - **#**&mdash;Number indicating the consecutive number of the message.
-- **Sender**&mdash;Inidicates whether the **Client** or **Server** sent the message.
+- **Sender**&mdash;Indicates whether the **Client** or **Server** sent the message.
 - **Type (WebSocket only)**&mdash;Indicates the type of the message. The supported values are as follows:
     * **Text**&mdash;message with text payload.
     * **Binary**&mdash;message with binary payload.
@@ -245,11 +246,11 @@ The list of messages is rendered as a grid with multiple columns:
 - **Raw (SSE only)**&mdash;Contains the whole object sent from the server without any parsing.
 - **Time (WebSocket, SSE, Socket.IO)**&mdash;Renders the date and the time when the message is received.
 - **Message**&mdash;The string representation of the message sent/received.
-- **Packet Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO packet (e.g. Ping, Pong, Upgradew, Message).
-- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (e.g. Event).
+- **Packet Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO packet (for example, Ping, Pong, Upgrade, Message).
+- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (for example, Event).
 - **Attachments (Socket.IO only)**&mdash;Lists the included attachments (if present).
 - **Namespace (Socket.IO only)**&mdash;Lists the included namespace (if present).
-- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (e.g. Event).
+- **Message Type (Socket.IO only)**&mdash;Indicates the type of the received Socket.IO message (for example, Event).
 - **Ack.ID (Socket.IO only)**&mdash;Indicates the ID of the acknowledgment function (if present).
 
 #### Messages Toolbar
@@ -283,8 +284,8 @@ All inspectors provide further interaction options through a context menu. The c
 - **Copy Value**&mdash;An option to copy only the value (from a key-value pair). Available in **Headers** inspector.
 - **Copy Key/Value**&mdash;An option to copy the key-value pair. Available in **Headers** inspector.
 - **Copy Response Cookie Value**&mdash;An option to copy the value of a selected cookie. Available in **Cookies** inspector.
-- **Decode Value**&mdash;An option that allows you to decode selected value. The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
-- **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option supports out-of-the-box decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and all **Body** inspectors (**Text, JSON, XML, JavaScript**). The **Decode Selection** option opens a new detached window that you can use to inspect different snapshots and sessions.
+- **Decode Value**&mdash;An option that allows you to decode selected value. The decode option supports built-in decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Headers**, **Form Data** and **Cookies** inspectors.
+- **Decode Selection**&mdash;An option that allows you to decode selected content (encoded). The decode option supports built-in decoding of Base64, EscapedSequences, Encoded URL, Hex, and Encoded HTML. Available in **Raw** inspector and all **Body** inspectors (**Text, JSON, XML, JavaScript**). The **Decode Selection** option opens a new detached window that you can use to inspect different snapshots and sessions.
 - **Add as a column**&mdash;An option to create a custom column in the Live Traffic grid while using the selected HTTP Header. Available in **Headers** inspector.
 
 ## Toolbar
@@ -311,3 +312,9 @@ The Response Inspectors for ongoing capture (the sessions in the Live Traffic gr
 ![Certificate note](./images/certficate-valid-note.png)
 
 [Learn more on how to inspect and use the certificate details with Fiddler Everywhere here...](slug://fe-cert-details)
+
+## See Also
+
+- [Inspecting Traffic](slug://inspecting-traffic-get-started)
+- [Overview Insights](slug://overview-tab)
+- [Comparing Sessions](slug://fe-compare-sessions)
