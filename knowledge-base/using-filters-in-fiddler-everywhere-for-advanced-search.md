@@ -41,5 +41,6 @@ By using filters in Fiddler Everywhere, you can easily search for specific value
 - Saved filters can be reused across different sessions and projects, saving you time and effort in defining filters for each search.
 
 ## See Also
+
 - [Filterting traffic in Fiddler Everywhere](https://docs.telerik.com/fiddler-everywhere/modify-and-filter-traffic/filter-traffic)
 - [Inspecting traffic with Fiddler Everywhere](https://docs.telerik.com/fiddler-everywhere/inspect-traffic/inspect-traffic)

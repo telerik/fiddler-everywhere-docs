@@ -160,12 +160,12 @@ If traffic does not appear as expected, check the following common issues.
 - Check if your corporate firewall or antivirus is interfering with the Fiddler proxy
 - Review the debug logs (path shown when you ran `claude.exe --debug`) for detailed error messages
 
+## Conclusion
+
+By configuring Fiddler Everywhere to capture Claude Code traffic using Terminal Capturing Mode, you gain complete visibility into the API interactions between Claude and Anthropic's services. This enables you to debug issues, understand how Claude processes your requests, and optimize your development workflow.
+
 ## See Also
 
 - [Fiddler Everywhere Terminal Capturing Mode](slug://capture-terminal-traffic)
 - [Exporting the Fiddler Root Certificate](slug://trust-certificate)
 - [Filtering and Organizing Traffic](slug://how-to-filter-traffic)
-
-## Conclusion
-
-By configuring Fiddler Everywhere to capture Claude Code traffic using Terminal Capturing Mode, you gain complete visibility into the API interactions between Claude and Anthropic's services. This enables you to debug issues, understand how Claude processes your requests, and optimize your development workflow.

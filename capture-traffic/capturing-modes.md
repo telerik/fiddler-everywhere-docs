@@ -288,4 +288,3 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 - [Capturing System Traffic](slug://capture-system-traffic)
 - [Capturing Network Traffic](slug://capture-network-traffic)
 - [Trusting the Fiddler CA Certificate](slug://trust-certificate)
-- Handshake and message analysis capabilities

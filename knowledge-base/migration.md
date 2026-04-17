@@ -68,8 +68,6 @@ After a successful migration, you will see a message confirming the operation, a
 
 ## See Also
 
-Explore and learn more about the unified Telerik system through the following resources:
-
 - [Account Overview](https://www.telerik.com/account/)
 - [Your Account FAQ](https://www.telerik.com/account/faqs)
 - [Your Licenses](https://www.telerik.com/account/your-licenses)

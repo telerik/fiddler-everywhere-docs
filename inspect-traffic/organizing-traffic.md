@@ -73,5 +73,4 @@ Almost all Fiddler Everywhere features are linked to a keyboard shortcut which y
 - [Inspecting Traffic](slug://inspecting-traffic-get-started)
 - [Sharing Captured Traffic](slug://fiddler-sharing)
 - [Exporting and Importing Traffic](slug://fiddler-export-and-import)
-
-[Learn more about the available keyboard shortcuts here...](slug://fiddler-shortcuts)
+- [Available Keyboard Shortcuts](slug://fiddler-shortcuts)

@@ -178,4 +178,3 @@ google_gemini
 - [Using the Fiddler MCP Server](slug://fiddler-mcp-server)
 - [Fiddler Agent Skills](slug://fiddler-agent-skills)
 - [Fiddler Prompt Library](slug://fiddler_ai_prompt_library)
-```
