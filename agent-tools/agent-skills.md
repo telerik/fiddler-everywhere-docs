@@ -23,7 +23,7 @@ The official Fiddler Everywhere skills are hosted in the [fiddler-agent-tools](h
 
 ## Prerequisites
 
-- Fiddler Everywhere **Pro** or higher subscription.
+- Fiddler Everywhere **Trial**, **Pro**, or higher subscription.
 - A supported coding tool (see [Supported Tools](#supported-tools)).
 - **Node.js** installed — required when using Claude Desktop (the `npx mcp-remote` bridge).
 - Git or a browser — to clone or download the repository.
