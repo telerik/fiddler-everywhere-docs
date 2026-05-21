@@ -268,7 +268,7 @@ The Fiddler Everywhere MCP server exposes the following tools. These tools can b
 
 ### Session Management
 
-The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a `sessionsSource` parameter. The parameter accepts the values `LiveTraffic` (default) and `AgentCalls`. When omitted, the tools operate on the Live Traffic tab.
+The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a `sessionsSource` parameter. The parameter accepts two values: `LiveTraffic` and `AgentCalls`. The default value is `LiveTraffic`—when the sessions source is not explicitly mentioned in your prompt, the tools automatically operate on the **Live Traffic** tab. To target the **Agent Calls** tab instead, explicitly include "Agent Calls" (or similar wording) in your prompt so that the coding assistant sets `sessionsSource` to `AgentCalls`.
 
 | Tool | Description |
 |:-----|:------------|

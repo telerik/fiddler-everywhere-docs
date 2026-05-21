@@ -134,6 +134,8 @@ The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated
 
 ### Session Management Tools with Agent Calls Support
 
+>tip When prompting your coding assistant, explicitly mention **"Agent Calls"** (or similar wording such as "Agent Calls tab") in your request. This tells the MCP server to target the **Agent Calls** tab. If you omit this context, the tools default to operating on the **Live Traffic** tab instead.
+
 | Tool | Description |
 |:-----|:------------|
 | `get_sessions` | Retrieves sessions from the Agent Calls tab. Returns additional Agent Cache-specific fields: `IsCached` (cache state), `Model` (the LLM model used), and `PromptPreview` (a preview of the last user prompt, limited to 200 characters). |
