@@ -129,8 +129,8 @@ The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated
 
 | Tool | Description |
 |:-----|:------------|
-| `toggle_cache` | Enables or disables caching for a specific session in the Agent Calls tab. When enabled, the session's recorded response is served from cache for matching future requests. When disabled, the session remains visible but no longer serves cached responses. |
-| `check_cache_status` | Checks whether a specific session in the Agent Calls tab is currently cached. Returns the current cache status for the requested session. |
+| `toggle_cache` | Enables or disables caching for a specific session in the Agent Calls tab. **Required parameters:** `sessionId` (the target session ID) and `enableCache` (`true` to enable caching, `false` to disable it). When enabled, the session's recorded response is served from cache for matching future requests. When disabled, the session remains visible but no longer serves cached responses. |
+| `check_cache_status` | Checks whether a specific session in the Agent Calls tab is currently cached. **Required parameter:** `sessionId` (the target session ID). Returns the current cache status for the requested session. |
 
 ### Session Management Tools with Agent Calls Support
 
