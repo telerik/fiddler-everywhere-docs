@@ -96,6 +96,38 @@ Fetches detailed information about a specific session. You will be prompted to p
 ```
 Clears all currently captured sessions from Fiddler Everywhere.
 
+#### Agent Cache
+
+```bash
+/mcp.fiddler.get-agent-cache-sessions-count
+```
+Returns the total number of sessions in the Agent Calls tab in Fiddler Everywhere.
+
+```bash
+/mcp.fiddler.get-agent-cache-sessions
+```
+Retrieves the sessions in the Agent Calls tab, including cache status, model information, and prompt previews.
+
+```bash
+/mcp.fiddler.get-agent-cache-session-details
+```
+Fetches detailed information about a specific session in the Agent Calls tab. You will be prompted to provide the session ID.
+
+```bash
+/mcp.fiddler.clear-agent-cache-sessions
+```
+Clears all sessions in the Agent Calls tab. If cached sessions are present, prompts for confirmation before proceeding.
+
+```bash
+/mcp.fiddler.toggle-agent-cache
+```
+Toggles caching on or off for a specific session in the Agent Calls tab. You will be prompted to provide the session ID.
+
+```bash
+/mcp.fiddler.check-agent-cache-status
+```
+Checks whether a specific session in the Agent Calls tab is currently cached. You will be prompted to provide the session ID.
+
 #### Reverse Proxy Operations
 
 ```bash
@@ -173,6 +205,46 @@ Start capturing traffic and manage your sessions with these essential prompts:
 
 ```txt
 #fiddler Clear all captured sessions
+```
+
+### Agent Cache
+
+Manage cached agent sessions and control caching behavior through the Agent Calls tab:
+
+```txt
+#fiddler Show me all sessions in the Agent Calls tab
+```
+
+```txt
+#fiddler How many sessions are currently in the Agent Calls tab?
+```
+
+```txt
+#fiddler Get detailed information about session {sessionId} in the Agent Calls tab
+```
+
+```txt
+#fiddler Enable caching for session {sessionId} in the Agent Calls tab
+```
+
+```txt
+#fiddler Disable caching for session {sessionId} in the Agent Calls tab
+```
+
+```txt
+#fiddler Check the cache status of session {sessionId} in the Agent Calls tab
+```
+
+```txt
+#fiddler Clear all sessions in the Agent Calls tab
+```
+
+```txt
+#fiddler Show me all cached sessions in the Agent Calls tab
+```
+
+```txt
+#fiddler Which model was used for session {sessionId} in the Agent Calls tab?
 ```
 
 ### Traffic Analysis

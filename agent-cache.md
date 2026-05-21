@@ -121,6 +121,51 @@ The following diagram shows the request flow when Agent Cache is active.
 3. When the **Caching** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
 4. The provider endpoint never receives the duplicate request—no tokens are charged.
 
+## MCP Tools for Agent Cache
+
+The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated tools for programmatic interaction with Agent Cache directly from your AI-powered coding assistant. These tools allow you to manage cached sessions, check cache status, and toggle caching without leaving your IDE.
+
+### Dedicated Agent Cache Tools
+
+| Tool | Description |
+|:-----|:------------|
+| `toggle_cache` | Enables or disables caching for a specific session in the Agent Calls tab. When enabled, the session's recorded response is served from cache for matching future requests. When disabled, the session remains visible but no longer serves cached responses. |
+| `check_cache_status` | Checks whether a specific session in the Agent Calls tab is currently cached. Returns the current cache status for the requested session. |
+
+### Session Management Tools with Agent Calls Support
+
+The following session management tools support the Agent Calls tab through the `sessionsSource` parameter set to `AgentCalls`:
+
+| Tool | Description |
+|:-----|:------------|
+| `get_sessions` | Retrieves sessions from the Agent Calls tab. Returns additional Agent Cache-specific fields: `IsCached` (cache state), `Model` (the LLM model used), and `PromptPreview` (a preview of the last user prompt, limited to 200 characters). |
+| `get_sessions_count` | Returns the total number of sessions in the Agent Calls tab. |
+| `get_session_details` | Fetches full details for a specific session in the Agent Calls tab by its ID. |
+| `apply_filters` | Applies filter criteria to the Agent Calls tab to narrow down visible sessions. |
+| `clear_sessions` | Removes all sessions from the Agent Calls tab. If cached sessions are present, an elicitation prompts the user to confirm, as clearing also stops caching for those sessions. |
+
+### Example MCP Prompts for Agent Cache
+
+Use these prompts with your coding assistant to interact with Agent Cache through the MCP server:
+
+```txt
+#fiddler Check the cache status of session {sessionId} in the Agent Calls tab
+```
+
+```txt
+#fiddler Enable caching for session {sessionId} in the Agent Calls tab
+```
+
+```txt
+#fiddler Show me all sessions in the Agent Calls tab
+```
+
+```txt
+#fiddler How many sessions are currently in the Agent Calls tab?
+```
+
+For the full list of available prompts, refer to the [Prompt Library](slug://fiddler_ai_prompt_library).
+
 ## Notes
 
 - Agent Cache is available on Trial, Pro, and Enterprise plans. It is not available on Lite licenses.

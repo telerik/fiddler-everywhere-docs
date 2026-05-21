@@ -268,13 +268,24 @@ The Fiddler Everywhere MCP server exposes the following tools. These tools can b
 
 ### Session Management
 
+The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a `sessionsSource` parameter. The parameter accepts the values `LiveTraffic` (default) and `AgentCalls`. When omitted, the tools operate on the Live Traffic tab.
+
 | Tool | Description |
 |:-----|:------------|
-| `get_sessions` | Retrieves the list of captured HTTP/HTTPS sessions, optionally limited by any active filters. Returns session metadata such as URLs, methods, status codes, and timing. |
-| `get_sessions_count` | Returns the total number of currently captured sessions. Useful for quickly assessing session volume without fetching the full session list. |
-| `get_session_details` | Fetches full details for a specific captured session by its ID, including request and response headers, request and response body, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. The session ID is the numeric value shown in the **ID** column of the **Live Traffic** grid in Fiddler Everywhere. |
-| `apply_filters` | Applies filter criteria (such as URL pattern, status code, or HTTP method) to the active session list to narrow down the sessions visible to subsequent tool calls. |
-| `clear_sessions` | Permanently removes all currently captured sessions from the Fiddler Everywhere session list. |
+| `get_sessions` | Retrieves the list of captured HTTP/HTTPS sessions from the selected sessions source, optionally limited by any active filters. Returns session metadata such as URLs, methods, status codes, and timing. When the `sessionsSource` is set to `AgentCalls`, each session also includes `IsCached` (whether the session response is cached), `Model` (the LLM model used), and `PromptPreview` (a preview of the last user prompt, limited to 200 characters). |
+| `get_sessions_count` | Returns the total number of sessions in the selected sessions source. Useful for quickly assessing session volume without fetching the full session list. |
+| `get_session_details` | Fetches full details for a specific captured session by its ID from the selected sessions source, including request and response headers, request and response body, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. The session ID is the numeric value shown in the **ID** column of the traffic grid in Fiddler Everywhere. |
+| `apply_filters` | Applies filter criteria (such as URL pattern, status code, or HTTP method) to the selected sessions source to narrow down the sessions visible to subsequent tool calls. |
+| `clear_sessions` | Permanently removes all sessions from the selected sessions source. When clearing the Agent Calls tab with cached sessions present, an elicitation prompts the user to confirm, as clearing also stops caching for those sessions. |
+
+### Agent Cache
+
+The Agent Cache tools provide programmatic control over the [Agent Cache](slug://agent-cache) functionality, allowing you to manage cached responses for model-provider endpoint sessions directly from your coding assistant.
+
+| Tool | Description |
+|:-----|:------------|
+| `toggle_cache` | Enables or disables caching for a specific session in the **Agent Calls** tab. When caching is enabled for a session, its recorded response is served from cache for all matching future requests. When caching is disabled, the session remains in the Agent Calls tab but no longer serves cached responses. Requires a `sessionId` and an `enableCache` boolean parameter. |
+| `check_cache_status` | Checks whether a specific session in the **Agent Calls** tab is currently cached. Returns the cache status for the requested session. Requires a `sessionId` parameter. |
 
 ### Rules
 
