@@ -134,8 +134,6 @@ The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated
 
 ### Session Management Tools with Agent Calls Support
 
-The following session management tools support the Agent Calls tab through the `sessionsSource` parameter set to `AgentCalls`:
-
 | Tool | Description |
 |:-----|:------------|
 | `get_sessions` | Retrieves sessions from the Agent Calls tab. Returns additional Agent Cache-specific fields: `IsCached` (cache state), `Model` (the LLM model used), and `PromptPreview` (a preview of the last user prompt, limited to 200 characters). |
