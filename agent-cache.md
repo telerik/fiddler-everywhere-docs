@@ -129,20 +129,20 @@ The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated
 
 | Tool | Description |
 |:-----|:------------|
-| `toggle_cache` | Toggles caching on or off for a specific session in the Agent Calls tab. **Required parameters:** `sessionId` (integer — the target session ID) and `enableCache` (boolean — `true` to enable caching, `false` to disable it). When caching is enabled, the session's response is served from cache for matching future requests. When caching is disabled, the session remains in the Agent Calls tab but no longer serves cached responses. |
+| `cache_agent_calls` | Enables or disables caching for a specific session in the Agent Calls tab. **Required parameters:** `sessionId` (integer — the target session ID) and `enableCache` (boolean — `true` to enable caching, `false` to disable it). When caching is enabled, the session's response is served from cache for matching future requests. When caching is disabled, the session remains in the Agent Calls tab but stops serving cached responses. |
 | `check_cache_status` | Checks whether a specific session in the Agent Calls tab is currently cached. **Required parameter:** `sessionId` (integer — the target session ID). Returns the cache status for the requested session. |
 
 ### Session Management Tools with Agent Calls Support
 
->tip When prompting your coding assistant, explicitly mention **"Agent Calls"** (or similar wording such as "Agent Calls tab") in your request. This tells the MCP server to target the **Agent Calls** tab. If you omit this context, the tools default to operating on the **Live Traffic** tab instead.
+>tip When prompting your coding assistant, explicitly specify **"Agent Calls"** as the sessions source in your request. The `sessionsSource` parameter is required for all session management tools. Set it to `AgentCalls` to target the **Agent Calls** tab or to `LiveTraffic` for the **Live Traffic** tab.
 
 | Tool | Description |
 |:-----|:------------|
-| `get_sessions` | Retrieves sessions from the Agent Calls tab. Returns additional Agent Cache-specific fields: `isCached` (cache state), `model` (the LLM model name), and `promptPreview` (a preview of the last user prompt). Active filters are applied if any. |
-| `get_sessions_count` | Returns the total number of sessions in the Agent Calls tab. |
-| `get_session_details` | Fetches detailed information about a specific session in the Agent Calls tab by its ID. **Required parameter:** `sessionId` (integer). |
-| `apply_filters` | Applies filter criteria to the Agent Calls tab to narrow down visible sessions. Applying filters wipes all existing filters. To clear all filters, call this tool with an empty filter collection. |
-| `clear_sessions` | Clears all sessions from the Agent Calls tab. If cached sessions are present, a confirmation prompt warns the user, as clearing also stops caching for those sessions. |
+| `get_sessions` | Gets sessions from the specified Fiddler sessions source. When `sessionsSource` is set to `AgentCalls`, each session includes additional Agent Cache-specific fields: `isCached` status, `model` (the LLM model name), and `promptPreview` (a preview of the last user prompt). Active filters are applied if any. **Required parameter:** `sessionsSource`. |
+| `get_sessions_count` | Gets the number of sessions in the specified Fiddler sessions source. **Required parameter:** `sessionsSource`. |
+| `get_session_details` | Gets detailed information about a specific session in the specified Fiddler sessions source. **Required parameters:** `sessionId` (integer) and `sessionsSource`. |
+| `apply_filters` | Applies filter criteria to the specified Fiddler sessions source to narrow down visible sessions. Applying filters wipes all existing filters. To clear all filters, call this tool with an empty filter collection. **Required parameters:** `filters` (object) and `sessionsSource`. |
+| `clear_sessions` | Clears all sessions in the specified Fiddler sessions source. Agent calls are also HTTP traffic so they appear in both tabs. **Required parameter:** `sessionsSource`. |
 
 ### Example MCP Prompts for Agent Cache
 

@@ -254,29 +254,29 @@ The Fiddler Everywhere MCP server exposes the following tools. These tools can b
 
 | Tool | Description |
 |:-----|:------------|
-| `get_status` | Returns the current status of the Fiddler Everywhere application, including login state, certificate trust status, proxy configuration, and captured session counts. Useful as a health check before issuing other commands. |
-| `is_user_logged_in` | Checks whether the current user is authenticated with Fiddler Everywhere. Returns a boolean result. |
-| `initiate_login` | Triggers the Fiddler Everywhere login flow by opening the authentication page. Use this when `is_user_logged_in` reports that the user is not authenticated. |
-| `open_trust_root_certificate_dialog` | Opens the Fiddler Everywhere dialog for trusting the root CA certificate. Trusting the certificate is required for HTTPS traffic decryption and interception. |
+| `get_status` | Gets the current status of Fiddler, including `IsUserLoggedIn`, `IsRootCertificateTrusted`, number of Browser and Terminal instances running, reverse proxy status and configured ports, `IsSystemProxyEnabled`, `IsNetworkCaptureEnabled`, and the number of captured and visible sessions. Useful as a health check before issuing other commands. |
+| `is_user_logged_in` | Indicates whether Fiddler is currently authenticated. |
+| `initiate_login` | Performs login to Fiddler. Opens a new Chrome window for authentication. Use this when `is_user_logged_in` reports that the user is not authenticated. |
+| `open_trust_root_certificate_dialog` | Opens the system trust root certificate dialog. Required for HTTPS traffic interception. |
 
 ### Traffic Capture
 
 | Tool | Description |
 |:-----|:------------|
-| `start_capture_with_browser` | Launches a browser instance (Chrome) with the Fiddler Everywhere proxy settings pre-configured, enabling immediate capture of browser HTTP/HTTPS traffic. |
-| `start_capture_with_terminal` | Opens a terminal session with the Fiddler Everywhere proxy environment variables pre-set, enabling capture of traffic from CLI tools, scripts, or applications started within that terminal. |
+| `start_capture_with_browser` | Opens a fresh Chrome-based browser instance with Fiddler proxy settings applied. |
+| `start_capture_with_terminal` | Starts a new terminal with Fiddler proxy settings applied. |
 
 ### Session Management
 
-The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a `sessionsSource` parameter. The parameter accepts two values: `LiveTraffic` and `AgentCalls`. The default value is `LiveTraffic`—when the sessions source is not explicitly mentioned in your prompt, the tools automatically operate on the **Live Traffic** tab. To target the **Agent Calls** tab instead, explicitly include "Agent Calls" (or similar wording) in your prompt so that the coding assistant sets `sessionsSource` to `AgentCalls`.
+The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a required `sessionsSource` parameter. The parameter accepts two values: `LiveTraffic` and `AgentCalls`. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM/AI agent API calls. When prompting your coding assistant, explicitly specify which sessions source to target so that the `sessionsSource` parameter is set correctly.
 
 | Tool | Description |
 |:-----|:------------|
-| `get_sessions` | Retrieves the list of captured HTTP/HTTPS sessions from the selected sessions source. Active filters are applied if any. Returns session metadata such as URLs, methods, status codes, and timing. When `sessionsSource` is set to `AgentCalls`, each session also includes `isCached` (whether the session response is cached), `model` (the LLM model name), and `promptPreview` (a preview of the last user prompt). |
-| `get_sessions_count` | Returns the total number of sessions in the selected sessions source. Useful for quickly assessing session volume without fetching the full session list. |
-| `get_session_details` | Fetches detailed information about a specific captured session by its ID from the selected sessions source, including request and response headers, bodies, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. **Required parameter:** `sessionId` (integer). The session ID is the numeric value shown in the **ID** column of the traffic grid in Fiddler Everywhere. |
-| `apply_filters` | Applies filter criteria (such as URL pattern, status code, or HTTP method) to the selected sessions source to narrow down the sessions visible to subsequent tool calls. Applying filters wipes all existing filters. To clear all active filters, call this tool with an empty filter collection. |
-| `clear_sessions` | Clears all sessions from the selected sessions source. When clearing the Agent Calls tab with cached sessions present, a confirmation prompt warns the user, as clearing also stops caching for those sessions. |
+| `get_sessions` | Gets the sessions from the specified Fiddler sessions source. Active filters are applied if any. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM/AI agent API calls—each session also includes `isCached` status, the LLM model name, and a preview of the last user prompt. **Required parameter:** `sessionsSource`. |
+| `get_sessions_count` | Gets the number of sessions in the specified Fiddler sessions source. **Required parameter:** `sessionsSource`. |
+| `get_session_details` | Gets detailed information about a specific session in the specified Fiddler sessions source, including request and response headers, bodies, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. The session ID is the numeric value shown in the **ID** column of the traffic grid in Fiddler Everywhere. **Required parameters:** `sessionId` (integer) and `sessionsSource`. |
+| `apply_filters` | Applies filters to the specified Fiddler sessions source. Selects only the sessions that match the specified criteria. Applying filters wipes all existing filters. To clear filters, call this tool with an empty filter collection. **Required parameters:** `filters` (object) and `sessionsSource`. |
+| `clear_sessions` | Clears all sessions in the specified Fiddler sessions source. Agent calls are also HTTP traffic so they appear in both tabs. **Required parameter:** `sessionsSource`. |
 
 ### Agent Cache
 
@@ -284,24 +284,24 @@ The Agent Cache tools provide programmatic control over the [Agent Cache](slug:/
 
 | Tool | Description |
 |:-----|:------------|
-| `toggle_cache` | Toggles caching on or off for a specific session in the **Agent Calls** tab. When caching is enabled for a session, its response is served from cache for matching future requests. When caching is disabled, the session remains in the Agent Calls tab but no longer serves cached responses. **Required parameters:** `sessionId` (integer) and `enableCache` (boolean). |
+| `cache_agent_calls` | Enables or disables caching for a specific session in the **Agent Calls** tab. Set `enableCache` to `true` to cache the session—future requests matching this session will be served from cache instead of hitting the server. Set `enableCache` to `false` to disable caching—the session remains in the Agent Calls tab but stops serving cached responses. **Required parameters:** `sessionId` (integer) and `enableCache` (boolean). |
 | `check_cache_status` | Checks whether a specific session in the **Agent Calls** tab is currently cached. Returns the cache status for the requested session. **Required parameter:** `sessionId` (integer). |
 
 ### Rules
 
 | Tool | Description |
 |:-----|:------------|
-| `create_rule` | Creates a traffic manipulation rule with configurable match conditions and actions. Rules can be used to modify request or response headers, redirect URLs, inject content, simulate latency, and more. |
-| `clear_rules` | Removes all rules that were created through the MCP server during the current session. |
+| `create_rule` | Creates a rule to modify sessions in Fiddler. The rule is applied to all sessions that match the specified criteria. At least one condition must be specified. If the match criteria requires response data, it is matched after the server responds; otherwise before the request is sent. If an action updates response data (such as the status code), it executes after the response is received; other actions are applied before the request is sent. If an action is marked as final, no other actions are executed after it. Some actions are final even if not explicitly marked—`CloseGracefully`, `CloseNonGracefully`, `DoNotShow`, and `DoNotDecrypt`. These four do not require any additional parameters except for the type. Update actions need parameters: all require a `condition` and a `value`, and if the action updates a header, also a `key`. |
+| `clear_rules` | Clears all rules created from the MCP server. |
 
 ### Reverse Proxy
 
 | Tool | Description |
 |:-----|:------------|
-| `add_reverse_proxy_port` | Adds a reverse proxy mapping that forwards traffic arriving on a specified local port to a designated remote host and port. Useful for intercepting traffic from applications that do not honor system proxy settings. |
-| `remove_reverse_proxy_port` | Removes a previously configured reverse proxy port mapping by its local port number. |
-| `enable_reverse_proxy` | Enables the Fiddler Everywhere reverse proxy feature so that active port mappings start forwarding traffic. |
-| `disable_reverse_proxy` | Disables the Fiddler Everywhere reverse proxy feature, stopping all active port mappings from forwarding traffic. |
+| `add_reverse_proxy_port` | Adds a reverse proxy configuration to Fiddler to forward requests from a specific port to a remote host and intercept the traffic in between. Useful for testing and debugging purposes. **Required parameters:** `clientPort` (integer — the local port to listen on) and `remoteHost` (string — the remote host to forward traffic to). |
+| `remove_reverse_proxy_port` | Removes a reverse proxy configuration for a specific port from Fiddler. **Required parameter:** `clientPort` (integer). |
+| `enable_reverse_proxy` | Enables the reverse proxy. |
+| `disable_reverse_proxy` | Disables the reverse proxy. |
 
 ## MCP Output Sanitization
 
