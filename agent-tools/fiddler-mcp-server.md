@@ -272,11 +272,11 @@ The session management tools support both the **Live Traffic** and **Agent Calls
 
 | Tool | Description |
 |:-----|:------------|
-| `get_sessions` | Retrieves the list of captured HTTP/HTTPS sessions from the selected sessions source, optionally limited by any active filters. Returns session metadata such as URLs, methods, status codes, and timing. When the `sessionsSource` is set to `AgentCalls`, each session also includes `IsCached` (whether the session response is cached), `Model` (the LLM model used), and `PromptPreview` (a preview of the last user prompt, limited to 200 characters). |
+| `get_sessions` | Retrieves the list of captured HTTP/HTTPS sessions from the selected sessions source. Active filters are applied if any. Returns session metadata such as URLs, methods, status codes, and timing. When `sessionsSource` is set to `AgentCalls`, each session also includes `isCached` (whether the session response is cached), `model` (the LLM model name), and `promptPreview` (a preview of the last user prompt). |
 | `get_sessions_count` | Returns the total number of sessions in the selected sessions source. Useful for quickly assessing session volume without fetching the full session list. |
-| `get_session_details` | Fetches full details for a specific captured session by its ID from the selected sessions source, including request and response headers, request and response body, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. The session ID is the numeric value shown in the **ID** column of the traffic grid in Fiddler Everywhere. |
-| `apply_filters` | Applies filter criteria (such as URL pattern, status code, or HTTP method) to the selected sessions source to narrow down the sessions visible to subsequent tool calls. |
-| `clear_sessions` | Permanently removes all sessions from the selected sessions source. When clearing the Agent Calls tab with cached sessions present, an elicitation prompts the user to confirm, as clearing also stops caching for those sessions. |
+| `get_session_details` | Fetches detailed information about a specific captured session by its ID from the selected sessions source, including request and response headers, bodies, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. **Required parameter:** `sessionId` (integer). The session ID is the numeric value shown in the **ID** column of the traffic grid in Fiddler Everywhere. |
+| `apply_filters` | Applies filter criteria (such as URL pattern, status code, or HTTP method) to the selected sessions source to narrow down the sessions visible to subsequent tool calls. Applying filters wipes all existing filters. To clear all active filters, call this tool with an empty filter collection. |
+| `clear_sessions` | Clears all sessions from the selected sessions source. When clearing the Agent Calls tab with cached sessions present, a confirmation prompt warns the user, as clearing also stops caching for those sessions. |
 
 ### Agent Cache
 
@@ -284,8 +284,8 @@ The Agent Cache tools provide programmatic control over the [Agent Cache](slug:/
 
 | Tool | Description |
 |:-----|:------------|
-| `toggle_cache` | Enables or disables caching for a specific session in the **Agent Calls** tab. When caching is enabled for a session, its recorded response is served from cache for all matching future requests. When caching is disabled, the session remains in the Agent Calls tab but no longer serves cached responses. Requires a `sessionId` and an `enableCache` boolean parameter. |
-| `check_cache_status` | Checks whether a specific session in the **Agent Calls** tab is currently cached. Returns the cache status for the requested session. Requires a `sessionId` parameter. |
+| `toggle_cache` | Toggles caching on or off for a specific session in the **Agent Calls** tab. When caching is enabled for a session, its response is served from cache for matching future requests. When caching is disabled, the session remains in the Agent Calls tab but no longer serves cached responses. **Required parameters:** `sessionId` (integer) and `enableCache` (boolean). |
+| `check_cache_status` | Checks whether a specific session in the **Agent Calls** tab is currently cached. Returns the cache status for the requested session. **Required parameter:** `sessionId` (integer). |
 
 ### Rules
 

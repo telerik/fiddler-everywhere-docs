@@ -121,7 +121,7 @@ Clears all sessions in the Agent Calls tab. If cached sessions are present, prom
 ```bash
 /mcp.fiddler.toggle-agent-calls-cache
 ```
-Toggles caching on or off for a specific session in the Agent Calls tab. You will be prompted to provide the session ID.
+Toggles caching on or off for a specific session in the Agent Calls tab. You will be prompted to provide the session ID and whether to enable or disable caching.
 
 ```bash
 /mcp.fiddler.check-agent-calls-cache-status

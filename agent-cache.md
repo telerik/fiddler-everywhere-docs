@@ -129,8 +129,8 @@ The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated
 
 | Tool | Description |
 |:-----|:------------|
-| `toggle_cache` | Enables or disables caching for a specific session in the Agent Calls tab. **Required parameters:** `sessionId` (the target session ID) and `enableCache` (`true` to enable caching, `false` to disable it). When enabled, the session's recorded response is served from cache for matching future requests. When disabled, the session remains visible but no longer serves cached responses. |
-| `check_cache_status` | Checks whether a specific session in the Agent Calls tab is currently cached. **Required parameter:** `sessionId` (the target session ID). Returns the current cache status for the requested session. |
+| `toggle_cache` | Toggles caching on or off for a specific session in the Agent Calls tab. **Required parameters:** `sessionId` (integer — the target session ID) and `enableCache` (boolean — `true` to enable caching, `false` to disable it). When caching is enabled, the session's response is served from cache for matching future requests. When caching is disabled, the session remains in the Agent Calls tab but no longer serves cached responses. |
+| `check_cache_status` | Checks whether a specific session in the Agent Calls tab is currently cached. **Required parameter:** `sessionId` (integer — the target session ID). Returns the cache status for the requested session. |
 
 ### Session Management Tools with Agent Calls Support
 
@@ -138,11 +138,11 @@ The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated
 
 | Tool | Description |
 |:-----|:------------|
-| `get_sessions` | Retrieves sessions from the Agent Calls tab. Returns additional Agent Cache-specific fields: `IsCached` (cache state), `Model` (the LLM model used), and `PromptPreview` (a preview of the last user prompt, limited to 200 characters). |
+| `get_sessions` | Retrieves sessions from the Agent Calls tab. Returns additional Agent Cache-specific fields: `isCached` (cache state), `model` (the LLM model name), and `promptPreview` (a preview of the last user prompt). Active filters are applied if any. |
 | `get_sessions_count` | Returns the total number of sessions in the Agent Calls tab. |
-| `get_session_details` | Fetches full details for a specific session in the Agent Calls tab by its ID. |
-| `apply_filters` | Applies filter criteria to the Agent Calls tab to narrow down visible sessions. |
-| `clear_sessions` | Removes all sessions from the Agent Calls tab. If cached sessions are present, an elicitation prompts the user to confirm, as clearing also stops caching for those sessions. |
+| `get_session_details` | Fetches detailed information about a specific session in the Agent Calls tab by its ID. **Required parameter:** `sessionId` (integer). |
+| `apply_filters` | Applies filter criteria to the Agent Calls tab to narrow down visible sessions. Applying filters wipes all existing filters. To clear all filters, call this tool with an empty filter collection. |
+| `clear_sessions` | Clears all sessions from the Agent Calls tab. If cached sessions are present, a confirmation prompt warns the user, as clearing also stops caching for those sessions. |
 
 ### Example MCP Prompts for Agent Cache
 
