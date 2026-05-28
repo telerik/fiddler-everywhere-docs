@@ -1,5 +1,49 @@
 [
     {
+    "version": "7.8.0-insiders",
+    "title": "Fiddler Everywhere v7.8.0",
+    "date": "May 27, 2026",
+    "items": [
+      {
+        "type": "New",
+        "entries": [
+          {
+            "title": "Expose caching of agent calls through the Fiddler MCP."
+          }
+        ]
+      },
+      {
+        "type": "Fixed",
+        "entries": [
+        {
+            "title": "MCP get_sessions_details returns compressed body when sanitization is used."
+          },
+          {
+            "title": "Requests to bedrock-runtime are not displayed in Agent Calls tab."
+          },
+          {
+            "title": "Certificate errors are shown in application logs when certificate is trusted"
+          },
+          {
+            "title": "After Add to Snapshot, the Streaming messages are not visible."
+          },
+          {
+            "title": "SingalR lost connection leads to multple Unexpected Errors."
+          },
+          {
+            "title": "Mark session in Copper colour doesn't work."
+          },
+          {
+            "title": "Update the list of available models in Assistant settings tab."
+          },
+          {
+            "title": "Updated third-party dependencies to mitigate potential security vulnerabilities."
+          }
+        ]
+      }
+    ]
+  },
+    {
     "version": "7.7.3-insiders",
     "title": "Fiddler Everywhere v7.7.3",
     "date": "April 14, 2026",
