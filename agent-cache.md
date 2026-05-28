@@ -121,6 +121,51 @@ The following diagram shows the request flow when Agent Cache is active.
 3. When the **Caching** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
 4. The provider endpoint never receives the duplicate request—no tokens are charged.
 
+## MCP Tools for Agent Cache
+
+The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated tools for programmatic interaction with Agent Cache directly from your AI-powered coding assistant. These tools allow you to manage cached sessions, check cache status, and toggle caching without leaving your IDE.
+
+### Dedicated Agent Cache Tools
+
+| Tool | Description |
+|:-----|:------------|
+| `cache_agent_calls` | Enables or disables caching for a specific session in the Agent Calls tab. **Required parameters:** `sessionId` (integer — the target session ID) and `enableCache` (boolean — `true` to enable caching, `false` to disable it). When caching is enabled, the session's response is served from cache for matching future requests. When caching is disabled, the session remains in the Agent Calls tab but stops serving cached responses. |
+| `check_cache_status` | Checks whether a specific session in the Agent Calls tab is currently cached. **Required parameter:** `sessionId` (integer — the target session ID). Returns the cache status for the requested session. |
+
+### Session Management Tools with Agent Calls Support
+
+>tip When prompting your coding assistant, explicitly specify **"Agent Calls"** as the sessions source in your request. The `sessionsSource` parameter is required for all session management tools. Set it to `AgentCalls` to target the **Agent Calls** tab or to `LiveTraffic` for the **Live Traffic** tab.
+
+| Tool | Description |
+|:-----|:------------|
+| `get_sessions` | Gets sessions from the specified Fiddler sessions source. When `sessionsSource` is set to `AgentCalls`, each session includes additional Agent Cache-specific fields: `isCached` status, `model` (the LLM model name), and `promptPreview` (a preview of the last user prompt). Active filters are applied if any. **Required parameter:** `sessionsSource`. |
+| `get_sessions_count` | Gets the number of sessions in the specified Fiddler sessions source. **Required parameter:** `sessionsSource`. |
+| `get_session_details` | Gets detailed information about a specific session in the specified Fiddler sessions source. **Required parameters:** `sessionId` (integer) and `sessionsSource`. |
+| `apply_filters` | Applies filter criteria to the specified Fiddler sessions source to narrow down visible sessions. Applying filters wipes all existing filters. To clear all filters, call this tool with an empty filter collection. **Required parameters:** `filters` (object) and `sessionsSource`. |
+| `clear_sessions` | Clears all sessions in the specified Fiddler sessions source. Agent calls are also HTTP traffic so they appear in both tabs. **Required parameter:** `sessionsSource`. |
+
+### Example MCP Prompts for Agent Cache
+
+Use these prompts with your coding assistant to interact with Agent Cache through the MCP server:
+
+```txt
+#fiddler Check the cache status of session {sessionId} in the Agent Calls tab
+```
+
+```txt
+#fiddler Enable caching for session {sessionId} in the Agent Calls tab
+```
+
+```txt
+#fiddler Show me all sessions in the Agent Calls tab
+```
+
+```txt
+#fiddler How many sessions are currently in the Agent Calls tab?
+```
+
+For the full list of available prompts, refer to the [Prompt Library](slug://fiddler_ai_prompt_library).
+
 ## Notes
 
 - Agent Cache is available on Trial, Pro, and Enterprise plans. It is not available on Lite licenses.
