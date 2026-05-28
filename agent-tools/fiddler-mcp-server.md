@@ -284,7 +284,7 @@ The Agent Cache tools provide programmatic control over the [Agent Cache](slug:/
 
 | Tool | Description |
 |:-----|:------------|
-| `cache_agent_calls` | Enables or disables caching for a specific session in the **Agent Calls** tab. Set `enableCache` to `enable` to cache the session—future requests matching this session will be served from cache instead of hitting the server. Set `enableCache` to `disable` to stop caching—the session remains in the Agent Calls tab but stops serving cached responses. **Required parameters:** `sessionId` (integer) and `enableCache` (`enable` or `disable`). |
+| `cache_agent_calls` | Enables or disables caching for a specific session in the **Agent Calls** tab. Set `enableCache` to `true` to cache the session—future requests matching this session will be served from cache instead of hitting the server. Set `enableCache` to `false` to disable caching—the session remains in the Agent Calls tab but stops serving cached responses. **Required parameters:** `sessionId` (integer) and `enableCache` (boolean). |
 | `check_cache_status` | Checks whether a specific session in the **Agent Calls** tab is currently cached. Returns the cache status for the requested session. **Required parameter:** `sessionId` (integer). |
 
 ### Rules
