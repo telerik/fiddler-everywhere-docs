@@ -135,7 +135,11 @@ To enable the Fiddler Everywhere MCP server in Claude Code, follow these steps:
 4. Add `.mcp.json` to your `.gitignore` to avoid committing the API key to source control.
 5. Start Claude Code from your project directory. The Fiddler MCP server will be available automatically.
 
->tip Alternatively, you can register the server via the CLI: `claude mcp add --transport http fiddler http://localhost:8868/mcp -H "Authorization: ApiKey FIDDLER_API_KEY_HERE"`
+Alternatively, you can register the server via the CLI: 
+
+```sh
+claude mcp add --transport http fiddler http://localhost:8868/mcp -H "Authorization: ApiKey FIDDLER_API_KEY_HERE"
+```
 
 ### Claude Desktop
 
