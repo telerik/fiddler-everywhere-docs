@@ -15,7 +15,7 @@ The **Assistant** settings section lets you configure the language model used by
 
 ## Model Configuration
 
-- **Provider**: Selects the LLM provider to use. Currently supported providers include **Anthropic**.
+- **Provider**: Selects the LLM provider to use. Currently supported providers include **OpenAI**, **Anthropic**, **Azure OpenAI**, and **Google Gemini**.
 
 - **API Key**: Your personal API key for the selected provider. The key is stored locally and is never shared. Refer to your provider's documentation for instructions on generating an API key.
 
