@@ -53,4 +53,3 @@ The **Reset to Default** link in the top-right corner restores all sanitization 
 
 - [MCP Server Settings](slug://settings-mcp-server)
 - [Fiddler MCP Server](slug://fiddler-mcp-server)
-- [Saving and Exporting Traffic](slug://saving-data)
