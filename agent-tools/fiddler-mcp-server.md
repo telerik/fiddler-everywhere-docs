@@ -84,7 +84,7 @@ To enable the Fiddler Everywhere MCP server for GitHub Copilot in Visual Studio 
 To enable the Fiddler Everywhere MCP server in Cursor, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server > Manual Setup** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
     * Copy the generated JSON configuration from the **Cursor** tab.
@@ -112,7 +112,7 @@ To enable the Fiddler Everywhere MCP server in Cursor, follow these steps:
 To enable the Fiddler Everywhere MCP server in Claude Code, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server > Manual Setup** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
 3. In your project directory, create an `.mcp.json` file with the following configuration:
@@ -146,7 +146,7 @@ claude mcp add --transport http fiddler http://localhost:8868/mcp -H "Authorizat
 To enable the Fiddler Everywhere MCP server in Claude Desktop, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server > Manual Setup** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
 3. Open the Claude Desktop configuration file for your operating system:
@@ -176,7 +176,7 @@ To enable the Fiddler Everywhere MCP server in Claude Desktop, follow these step
 To enable the Fiddler Everywhere MCP server in GitHub Copilot CLI, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server > Manual Setup** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
 3. Open or create the GitHub Copilot CLI MCP configuration file at `~/.copilot/mcp-config.json`.
