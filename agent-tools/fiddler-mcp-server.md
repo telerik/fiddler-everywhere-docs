@@ -172,7 +172,7 @@ To enable the Fiddler Everywhere MCP server in Claude Desktop, follow these step
 To enable the Fiddler Everywhere MCP server in GitHub Copilot CLI, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server > Manual Setup** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
 3. Open or create the GitHub Copilot CLI MCP configuration file at `~/.copilot/mcp-config.json`.
