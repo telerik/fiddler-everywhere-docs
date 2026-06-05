@@ -84,7 +84,7 @@ To enable the Fiddler Everywhere MCP server for GitHub Copilot in Visual Studio 
 To enable the Fiddler Everywhere MCP server in Cursor, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server > Manual Setup** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
     * Copy the generated JSON configuration from the **Cursor** tab.
