@@ -121,6 +121,7 @@ The **Body** inspectors are suitable for different requests and responses. Depen
 - [**JSON**](#json-body-inspector)
 - [**HEX**](#hex-body-inspector)
 - [**MessagePack**](#messagepack-body-inspector)
+- [**Protobuf**](#protobuf-body-inspector)
 - [**XML**](#xml-body-inspector)
 - [**Form-Data**](#form-data-body-inspector)
 - [**JavaScript**](#javascript-body-inspector)
@@ -150,6 +151,12 @@ The **HEX** inspector consists of an offset column, a hex view column, and a tex
 #### MessagePack Body Inspector
 
 The **MessagePack** inspector interprets the selected request or response body as a [MessagePack](https://msgpack.org/index.html), showing a tree view of the MessagePack object nodes. The **MessagePack** inspector tab is auto-selected, and the message contents are decoded for all cases where the `Content-Type` header contains the keywords `messagepack` or `msgpack`, for example, `Content-Type: application/x-msgpack`.
+
+#### Protobuf Body Inspector
+
+The **Protobuf** inspector decodes request and response bodies that use Protocol Buffers (Protobuf). The **Protobuf** tab was previously available only for gRPC sessions, but it is now also available for HTTPS sessions in **Live Traffic** when the selected message contains Protobuf data.
+
+To decode Protobuf messages, add one or more `.proto` files through **Settings** > **Protobuf** > **Decode via .proto file**. If no matching schema is available, the inspector cannot decode the message and prompts you to add a `.proto` file.
 
 #### Socket.IO Body Inspector
 
@@ -208,6 +215,8 @@ Fiddler Everywhere provides common user interface to create inspectors for visua
 ![Capturing Socket.IO traffic](./images/socketio-inspectors.png)
 
 Encoded messages from a **gRPC** session are automatically decoded (if possible) and presented in human-readable form in the inspector. Fiddler will try to automatically decode captured **gRPC** sessions through a known decoding mechanism, server reflection (if such is present on the server side), or through a Protobuf file. Users can add one or more Protobuf files through the **Settings** > **Protobuf** > **Decode via .proto file** option.
+
+The same Protobuf decoding capabilities are also available for HTTPS sessions through the **Body** > **Protobuf** tab in **Live Traffic**.
 
 [Learn more about capturing gRPC traffic with Fiddler Everywhere here...](slug://capture-grpc-traffic)
 
