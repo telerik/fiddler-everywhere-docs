@@ -12,8 +12,6 @@ previous_url: /license, /knowledge-base/using-fiddler-pro-dashboard
 
 Progress® Telerik® Fiddler Everywhere is a web-debugging tool that monitors, inspects, edits, and logs all HTTPS traffic, issues requests between your computer and the Internet, and fiddles with incoming and outgoing data. It is a high-performance, cross-platform proxy for any browser, system, or platform.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vSLrxVkTnX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Key Features
 
 Fiddler Everywhere delivers a range of handy and user-friendly features whose number and further development are not limited by the list in this section&mdash;the Fiddler team constantly invests efforts to improve the performance and add more value to the existing web-debugging proxy tool and build on top of its available features.
