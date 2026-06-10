@@ -26,13 +26,26 @@ To use the Fiddler Everywhere MCP server, you need:
 
 >tip The fastest way to configure the Fiddler MCP server in any supported coding tool is to use the **[fiddler-mcp-setup](slug://fiddler-agent-skills#fiddler-mcp-setup) agent skill**. It auto-discovers the port, retrieves your API key, writes the correct config file for your tool, and gitignores it — all in one step. If Fiddler Everywhere is not yet installed, start with the **[fiddler-download-setup](slug://fiddler-agent-skills#fiddler-download-setup) skill** instead.
 
-To configure the MCP server manually, use the generic settings below or follow the per-tool instructions:
+### Automated Configuration via Fiddler Everywhere
+
+Fiddler Everywhere provides a built-in one-click configuration option for the most popular coding agents. To use it:
+
+1. Start the Fiddler Everywhere application.
+2. Go to **Settings** > **MCP Server**.
+3. Select the **Coding agent** tab.
+4. Click the card for your coding tool (VS Code, Cursor, Claude Code, GitHub Copilot CLI, or Codex CLI).
+
+Fiddler Everywhere automatically generates the API key, writes the correct configuration file for the selected tool, and marks it as **Configured**. No manual editing of configuration files is required.
+
+### Manual Configuration
+
+To configure the MCP server manually, go to **Settings** > **MCP Server** and select the **Manual setup** tab. Use the generic settings below or follow the per-tool instructions:
 
 The generic settings for the Fiddler Everywhere MCP server are:
 
-* **Server name handle**: `#fiddler` (default value - can be customized through **Settings** > **MCP Server**)
+* **Server name handle**: `#fiddler` (default value - can be customized through **Settings** > **MCP Server** > **Manual setup**)
 * **Server type**: `http`
-* **Server URL**: `http://localhost:8868/mcp` (default value - the port can be customized through **Settings** > **MCP Server**)
+* **Server URL**: `http://localhost:8868/mcp` (default value - the port can be customized through **Settings** > **MCP Server** > **Manual setup**)
 * **Authorization**: A generated unique API key to be placed as an `Authorization` header.
 
 ### GitHub Copilot in Visual Studio Code
@@ -40,7 +53,7 @@ The generic settings for the Fiddler Everywhere MCP server are:
 To enable the Fiddler Everywhere MCP server for GitHub Copilot in Visual Studio Code, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server** and complete the following:
+2. Go to **Settings** > **MCP Server > Manual Setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
     * Copy the generated JSON configuration from the **VSCode** tab.
@@ -71,7 +84,7 @@ To enable the Fiddler Everywhere MCP server for GitHub Copilot in Visual Studio 
 To enable the Fiddler Everywhere MCP server in Cursor, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
     * Copy the generated JSON configuration from the **Cursor** tab.
@@ -99,7 +112,7 @@ To enable the Fiddler Everywhere MCP server in Cursor, follow these steps:
 To enable the Fiddler Everywhere MCP server in Claude Code, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
 3. In your project directory, create an `.mcp.json` file with the following configuration:
@@ -122,14 +135,18 @@ To enable the Fiddler Everywhere MCP server in Claude Code, follow these steps:
 4. Add `.mcp.json` to your `.gitignore` to avoid committing the API key to source control.
 5. Start Claude Code from your project directory. The Fiddler MCP server will be available automatically.
 
->tip Alternatively, you can register the server via the CLI: `claude mcp add --transport http fiddler http://localhost:8868/mcp -H "Authorization: ApiKey FIDDLER_API_KEY_HERE"`
+Alternatively, you can register the server via the CLI: 
+
+```sh
+claude mcp add --transport http fiddler http://localhost:8868/mcp -H "Authorization: ApiKey FIDDLER_API_KEY_HERE"
+```
 
 ### Claude Desktop
 
 To enable the Fiddler Everywhere MCP server in Claude Desktop, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
 3. Open the Claude Desktop configuration file for your operating system:
@@ -154,42 +171,12 @@ To enable the Fiddler Everywhere MCP server in Claude Desktop, follow these step
     Replace `FIDDLER_API_KEY_HERE` with the API key generated in step 2.
 5. Restart Claude Desktop to apply the configuration.
 
-### Windsurf
-
-To enable the Fiddler Everywhere MCP server in Windsurf, follow these steps:
-
-1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server** and complete the following:
-    * Set the MCP server port (default value is `8868`).
-    * Generate a unique API Key.
-3. Open the Windsurf MCP configuration file located at:
-    * **macOS / Linux**: `~/.codeium/windsurf/mcp_config.json`
-    * **Windows**: `%USERPROFILE%\.codeium\windsurf\mcp_config.json`
-4. Add the Fiddler Everywhere MCP server entry to the `mcpServers` object. Create the file if it does not exist.
-
-    _example mcp_config.json file in Windsurf with Fiddler Everywhere MCP server_
-    ```JSON
-    {
-        "mcpServers": {
-            "fiddler": {
-                "serverType": "http",
-                "url": "http://localhost:8868/mcp",
-                "headers": {
-                    "Authorization": "ApiKey FIDDLER_API_KEY_HERE"
-                }
-            }
-        }
-    }
-    ```
-    Replace `FIDDLER_API_KEY_HERE` with the API key generated in step 2.
-5. Restart Windsurf or reload the MCP configuration to apply the changes.
-
 ### GitHub Copilot CLI
 
 To enable the Fiddler Everywhere MCP server in GitHub Copilot CLI, follow these steps:
 
 1. Start the Fiddler Everywhere application.
-2. Go to **Settings** > **MCP Server** and complete the following:
+2. Go to **Settings** > **MCP Server** > **Manual setup** and complete the following:
     * Set the MCP server port (default value is `8868`).
     * Generate a unique API Key.
 3. Open or create the GitHub Copilot CLI MCP configuration file at `~/.copilot/mcp-config.json`.
@@ -205,7 +192,9 @@ To enable the Fiddler Everywhere MCP server in GitHub Copilot CLI, follow these 
                 "headers": {
                     "Authorization": "ApiKey FIDDLER_API_KEY_HERE"
                 },
-                "tools": ["*"]
+                "tools": [
+                    "*"
+                ]
             }
         }
     }
@@ -227,7 +216,6 @@ To use the Fiddler Everywhere MCP server:
     * [Cursor](#cursor)
     * [Claude Code](#claude-code)
     * [Claude Desktop](#claude-desktop)
-    * [Windsurf](#windsurf)
     * Or any other compatible tool that supports MCP servers.
 3. Enable the **agent mode** in your IDE.
 4. Start your prompt with `#fiddler` (or with `#` followed by your custom server name, if configured).
