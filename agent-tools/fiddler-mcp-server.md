@@ -254,13 +254,30 @@ The Fiddler Everywhere MCP server exposes the following tools. These tools can b
 |:-----|:------------|
 | `start_capture_with_browser` | Opens a fresh Chrome-based browser instance with Fiddler proxy settings applied. |
 | `start_capture_with_terminal` | Starts a new terminal with Fiddler proxy settings applied. |
-| `capture_application` | Starts network-level traffic capture scoped to the application currently running in the developer's IDE or CLI session. Auto-detects the target process and port from the active coding context — no manual configuration required. If the network capture extension is not yet installed and enabled, the tool guides the user through the prerequisite setup flow, including the admin rights requirement and system-level extension approval. |
+| `capture_application` | Starts network-level traffic capture scoped to a specific application. Accepts an optional process name or PID parameter — when omitted, the tool auto-detects the target from the active IDE or CLI context. Can be invoked as a natural-language prompt (`#fiddler capture traffic from my app`) or as a slash command (`/mcp.fiddler.capture-application`). If the network capture extension is not yet installed and enabled, the tool guides the user through the prerequisite setup flow, including the admin rights requirement and system-level extension approval. |
 
 ### Capturing Application Traffic (`capture_application`)
 
 The `capture_application` tool enables a streamlined, in-chat traffic capture workflow. Instead of leaving the IDE or CLI to configure a reverse proxy or manually start a capturing session, developers can ask their coding assistant to start capturing their app's traffic and the MCP handles the rest.
 
-The tool auto-detects the target application from the current IDE or CLI session — it reads process metadata or the active port from the model request context. No manual port or process input is required.
+The tool can target a process in two ways:
+
+- **Auto-detect (no parameter)** — The tool reads process metadata or the active port from the model request context and scopes capture to the detected application automatically.
+- **Manual targeting (process name or PID)** — You can explicitly specify the process to capture by providing its name or numeric PID. When invoking the tool as a slash command (`/mcp.fiddler.capture-application`), a prompt appears where you can enter the process name or PID directly.
+
+**Example prompts**
+
+```
+#fiddler capture traffic from my app
+```
+
+```
+/mcp.fiddler.capture-application my-api-server
+```
+
+```
+/mcp.fiddler.capture-application 14732
+```
 
 #### Prerequisite: Network Capture Enablement
 
