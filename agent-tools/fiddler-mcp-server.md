@@ -233,6 +233,7 @@ The Fiddler Everywhere MCP server supports the following capturing modes:
 - [Browser capturing mode](slug://capture-browser-traffic)
 - [Terminal capturing mode](slug://capture-terminal-traffic)
 - [Reverse proxy](slug://fiddler-reverse-proxy)
+- [Network capturing mode](slug://capture-network-traffic) (via the `capture_application` tool)
 
 ## Available MCP Tools
 
@@ -253,6 +254,29 @@ The Fiddler Everywhere MCP server exposes the following tools. These tools can b
 |:-----|:------------|
 | `start_capture_with_browser` | Opens a fresh Chrome-based browser instance with Fiddler proxy settings applied. |
 | `start_capture_with_terminal` | Starts a new terminal with Fiddler proxy settings applied. |
+| `capture_application` | Starts network-level traffic capture scoped to the application currently running in the developer's IDE or CLI session. Auto-detects the target process and port from the active coding context — no manual configuration required. If the network capture extension is not yet installed and enabled, the tool guides the user through the prerequisite setup flow, including the admin rights requirement and system-level extension approval. |
+
+### Capturing Application Traffic (`capture_application`)
+
+The `capture_application` tool enables a streamlined, in-chat traffic capture workflow. Instead of leaving the IDE or CLI to configure a reverse proxy or manually start a capturing session, developers can ask their coding assistant to start capturing their app's traffic and the MCP handles the rest.
+
+The tool auto-detects the target application from the current IDE or CLI session — it reads process metadata or the active port from the model request context. No manual port or process input is required.
+
+#### Prerequisite: Network Capture Enablement
+
+The `capture_application` tool relies on the [network capturing mode](slug://capture-network-traffic), which requires a system-level network extension (macOS) or kernel driver (Windows) to be installed and enabled. This setup happens automatically when you first invoke the tool, but the following constraints apply:
+
+- **Administrator privileges are required.** The user must have admin rights on the machine. The MCP notifies the user of this requirement *before* initiating the installation prompt.
+- **Extension installation approval is required.** The user must accept the system-level prompt to install the network capture extension.
+
+**Enablement flow (triggered automatically from the MCP)**
+
+1. User invokes `capture_application` (or the MCP detects that network capture is not yet enabled).
+2. The MCP notifies the user in the chat: *"Network capture requires administrator privileges on the machine. Only users with admin rights can continue."*
+3. The MCP initiates the enablement sequence — the user is directed to the system window to approve the extension installation.
+4. After approval, the user is redirected back to the chat and capture proceeds automatically.
+
+>important If the user does not have administrator rights, the flow fails gracefully with a clear message. The admin rights requirement is always communicated **before** the system prompt is shown.
 
 ### Session Management
 
