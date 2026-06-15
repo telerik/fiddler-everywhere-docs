@@ -272,7 +272,7 @@ The tool can target a process in two ways:
 ```
 
 ```
-/mcp.fiddler.capture-application my-api-server
+/mcp.fiddler.capture-application my-process-name
 ```
 
 ```
