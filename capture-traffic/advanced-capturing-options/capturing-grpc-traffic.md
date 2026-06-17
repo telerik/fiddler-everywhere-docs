@@ -89,7 +89,7 @@ Fiddler Everywhere supports two proxy approaches for capturing gRPC traffic. Und
 | h2c (insecure, `add_insecure_port`) | Forward proxy |
 | h2 (TLS, `add_secure_port`) | Reverse proxy |
 
-> gRPC Python uses a bundled BoringSSL stack and does **not** use the operating system's certificate store. This affects how trust is established for both proxy modes described below.
+> Some gRPC runtimes (including gRPC Python on some platforms) may not reliably use the operating system's certificate store. If you hit TLS verification errors while proxying, explicitly provide the relevant CA PEM bytes to the channel credentials.
 
 ### Capturing h2 (TLS) gRPC Traffic via Reverse Proxy
 
