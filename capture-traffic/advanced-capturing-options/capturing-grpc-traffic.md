@@ -114,7 +114,7 @@ port = server.add_secure_port('localhost:8877', server_credentials)
 
 **Step 3 — Trust Fiddler's root CA in your gRPC client.**
 
-Because gRPC Python uses its own TLS stack (BoringSSL) independent of the OS certificate store, you must explicitly provide Fiddler's root CA certificate when constructing the channel credentials. Export Fiddler's root certificate (available in **Settings > HTTPS > Export root certificate**) and concatenate it with your server's CA before passing it to `ssl_channel_credentials`:
+Because gRPC Python uses its own TLS stack (BoringSSL) independent of the OS certificate store, you may need to explicitly provide Fiddler's root CA certificate when constructing the channel credentials. Export Fiddler's root certificate via **Settings > HTTPS > Advanced Settings > Export root certificate(PEM/ASCII format)** and (if you already use a custom CA bundle) concatenate it with your existing CA roots before passing it to `ssl_channel_credentials`:
 
 ```python
 # Load your server's CA and Fiddler's root CA
