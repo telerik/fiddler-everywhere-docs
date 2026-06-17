@@ -221,8 +221,8 @@ Use the following guidance to resolve common reverse proxy issues and optimize y
 - **Traffic not captured:** Ensure Fiddler is running and the correct port and protocol are set in the Fiddler Reverse Proxy settings.
 - **Connection refused errors:** Verify that your server is running on the configured port.
 - **Certificate errors (HTTPS):** Trust the Fiddler root certificate or enable **"Ignore server certificate errors"** in **Settings** > **HTTPS**.
-- **gRPC h2c traffic fails with "End of TCP stream"**: The reverse proxy does not support h2c (HTTP/2 cleartext) connections used by gRPC insecure channels. The `PRI * HTTP/2.0` connection preface is not handled in reverse proxy mode. Use the forward proxy approach with the `grpc.http_proxy` channel option instead, or switch to a TLS-secured gRPC server and use the reverse proxy with HTTPS on both sides.
-- **gRPC TLS certificate errors through reverse proxy**: gRPC Python (and other runtimes that bundle BoringSSL) do not use the OS certificate store. Importing Fiddler's root certificate into the system store has no effect. You must explicitly concatenate Fiddler's root CA PEM with your server's CA PEM and pass the combined bytes to `grpc.ssl_channel_credentials(combined_pem_bytes)`.
+- **gRPC h2c traffic fails with "End of TCP stream":** The reverse proxy does not support h2c (HTTP/2 cleartext) connections used by gRPC insecure channels. The `PRI * HTTP/2.0` connection preface is not handled in reverse proxy mode. Use the forward proxy approach with the `grpc.http_proxy` channel option instead, or switch to a TLS-secured gRPC server and use the reverse proxy with HTTPS on both sides.
+- **gRPC TLS certificate errors through reverse proxy:** Some gRPC runtimes (including gRPC Python on some platforms) may not reliably use the OS certificate store. If trusting the Fiddler root CA at the OS level doesn’t resolve the error, explicitly provide the Fiddler root CA PEM bytes (and any other custom roots you already use) to `grpc.ssl_channel_credentials(...)`.
 
 ### Best Practices
 
