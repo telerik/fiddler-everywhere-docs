@@ -124,8 +124,9 @@ with open('path/to/fiddler_root.pem', 'rb') as f:
     fiddler_ca = f.read()
 
 # Combine both CAs so gRPC trusts the server cert and Fiddler's MITM cert
+if not server_ca.endswith(b"\n"):
+    server_ca += b"\n"
 combined_roots = server_ca + fiddler_ca
-channel_credential = grpc.ssl_channel_credentials(combined_roots)
 
 channel = grpc.secure_channel('localhost:8843', channel_credential)
 ```
