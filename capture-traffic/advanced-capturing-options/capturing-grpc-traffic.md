@@ -79,3 +79,99 @@ If you own the Protobuf schema files, you can provide them in Fiddler Everywhere
 ![Supplying a .proto file for decoding gRPC messages](./images/settings-protobuf.png)
 
 As a result, the gRPC message will have a tooltip indicating that Fiddler used a Protobuf file for its decoding.
+
+## Capturing gRPC Traffic via Proxy (Reverse vs Forward) — Python Example
+
+Fiddler Everywhere supports two proxy approaches for capturing gRPC traffic. Understanding which one to use depends on whether your gRPC server uses **TLS (h2 — HTTP/2 over TLS)** or **cleartext (h2c — HTTP/2 without TLS)**.
+
+| Transport | Recommended Capture Method |
+|---|---|
+| h2c (insecure, `add_insecure_port`) | Forward proxy |
+| h2 (TLS, `add_secure_port`) | Reverse proxy |
+
+> Some gRPC runtimes (including gRPC Python on some platforms) may not reliably use the operating system's certificate store. If you hit TLS verification errors while proxying, explicitly provide the relevant CA PEM bytes to the channel credentials.
+
+### Capturing h2 (TLS) gRPC Traffic via Reverse Proxy
+
+When the gRPC server is configured with TLS (`add_secure_port` / `ssl_server_credentials`), the reverse proxy is the recommended capture method. Fiddler Everywhere accepts the TLS connection from the client on one port and forwards it to the server on a different port.
+
+**Step 1 — Configure the server to listen on a custom port.**
+
+Change your server to listen on a port that differs from the one your client connects to (for example, move the server to `8877` and keep the client pointing to `8843`):
+
+```python
+# greeter_server.py (TLS example)
+port = server.add_secure_port('localhost:8877', server_credentials)
+```
+
+**Step 2 — Add a reverse proxy rule in Fiddler Everywhere.**
+
+1. Open the **Reverse Proxy** panel in Fiddler Everywhere.
+2. Set **Client Port** to `8843` (the port your client connects to).
+3. Set **Remote Host** to `localhost:8877` (the port your server listens on).
+4. Set both **Client Protocol** and **Remote Protocol** to **HTTPS**.
+5. Save and enable the reverse proxy.
+
+**Step 3 — Trust Fiddler's root CA in your gRPC client.**
+
+Because gRPC Python uses its own TLS stack (BoringSSL) independent of the OS certificate store, you may need to explicitly provide Fiddler's root CA certificate when constructing the channel credentials. Export Fiddler's root certificate via **Settings > HTTPS > Advanced Settings > Export root certificate(PEM/ASCII format)** and (if you already use a custom CA bundle) concatenate it with your existing CA roots before passing it to `ssl_channel_credentials`:
+
+```python
+# Load your server's CA and Fiddler's root CA
+with open('path/to/server_root.crt', 'rb') as f:
+    server_ca = f.read()
+with open('path/to/fiddler_root.pem', 'rb') as f:
+    fiddler_ca = f.read()
+
+# Combine both CAs so gRPC trusts the server cert and Fiddler's MITM cert
+if not server_ca.endswith(b"\n"):
+    server_ca += b"\n"
+combined_roots = server_ca + fiddler_ca
+
+channel = grpc.secure_channel('localhost:8843', channel_credential)
+```
+
+> To reliably trust Fiddler's MITM certificate in gRPC Python, pass the Fiddler root CA PEM bytes (or a CA bundle that includes it) to `grpc.ssl_channel_credentials(...)` rather than relying on the default root certificates.
+
+**Traffic flow:**
+
+```
+gRPC Client → Fiddler reverse proxy (8843, HTTPS) → gRPC Server (8877, HTTPS)
+```
+
+### Capturing h2c (Cleartext) gRPC Traffic via Forward Proxy
+
+When the gRPC server uses cleartext transport (`add_insecure_port` / `insecure_channel`), the **reverse proxy cannot be used** for gRPC. Fiddler Everywhere's reverse proxy does not support the h2c upgrade handshake (the `PRI * HTTP/2.0` connection preface sent over plain TCP). Connections will be accepted but immediately dropped, resulting in a `StatusCode.UNAVAILABLE: End of TCP stream` error.
+
+Use the **forward proxy** approach instead. The `grpc.http_proxy` channel option instructs the gRPC library to tunnel the connection through Fiddler using an HTTP `CONNECT` tunnel, which passes h2c traffic transparently.
+
+**Step 1 — Keep the server on its original port** (no port changes needed):
+
+```python
+# greeter_server.py
+server.add_insecure_port('[::]:50051')
+```
+
+**Step 2 — Configure the client to route through Fiddler's forward proxy:**
+
+```python
+# greeter_client.py
+channel = grpc.insecure_channel(
+    'localhost:50051',
+    options=[('grpc.http_proxy', 'http://localhost:8866')]
+)
+```
+
+Replace `8866` with the port Fiddler Everywhere listens on (configured in **Settings > Connections > Fiddler listens on port**).
+
+**Step 3 — Ensure HTTP/2 is enabled in Fiddler Everywhere.**
+
+Go to **Settings > Connections** and enable **HTTP/2 support**.
+
+**Traffic flow:**
+
+```
+gRPC Client → Fiddler forward proxy (8866, CONNECT tunnel) → gRPC Server (50051, h2c)
+```
+
+> No port changes are required on either the client or the server when using the forward proxy approach. The proxy address is provided entirely through the `grpc.http_proxy` channel option.
