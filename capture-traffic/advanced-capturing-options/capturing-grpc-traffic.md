@@ -131,7 +131,7 @@ combined_roots = server_ca + fiddler_ca
 channel = grpc.secure_channel('localhost:8843', channel_credential)
 ```
 
-> Passing `None` to `grpc.ssl_channel_credentials()` does **not** fall back to the OS trust store in gRPC Python. You must always pass the explicit PEM bytes for any CA you want gRPC to trust.
+> To reliably trust Fiddler's MITM certificate in gRPC Python, pass the Fiddler root CA PEM bytes (or a CA bundle that includes it) to `grpc.ssl_channel_credentials(...)` rather than relying on the default root certificates.
 
 **Traffic flow:**
 
