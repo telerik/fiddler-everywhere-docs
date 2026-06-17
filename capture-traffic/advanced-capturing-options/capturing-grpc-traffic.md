@@ -80,7 +80,7 @@ If you own the Protobuf schema files, you can provide them in Fiddler Everywhere
 
 As a result, the gRPC message will have a tooltip indicating that Fiddler used a Protobuf file for its decoding.
 
-## Capturing gRPC Traffic via Reverse Proxy
+## Capturing gRPC Traffic via Proxy (Reverse vs Forward)
 
 Fiddler Everywhere supports two proxy approaches for capturing gRPC traffic. Understanding which one to use depends on whether your gRPC server uses **TLS (h2 — HTTP/2 over TLS)** or **cleartext (h2c — HTTP/2 without TLS)**.
 
