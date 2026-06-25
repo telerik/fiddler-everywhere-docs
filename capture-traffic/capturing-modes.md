@@ -115,7 +115,7 @@ Network capturing operates at a lower level than traditional HTTP proxies, captu
 - Low-level network analysis
 - Environments where proxy configuration is restricted
 
-![Use the "Network Capture" button to configure and capture traffic through the Network capturing mode](./images/get-started-network-capture.png)
+![Use the "Network Capture" button to configure and capture traffic through the Network capturing mode](./images/get-started-network-capturepng.png)
 
 [Learn more about network capturing...](slug://capture-network-traffic)
 
