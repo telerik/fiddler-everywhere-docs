@@ -32,7 +32,7 @@ Select the appropriate capturing mode based on your specific debugging needs:
 - **Independent Browser**: Perfect for web application testing without affecting other system traffic
 - **Terminal**: Great for debugging CLI tools, Node.js applications, and command-line utilities
 - **Explicit/Remote**: Essential for testing mobile apps, IoT devices, or distributed systems
-- **Reverse Proxy**: Best for capturing tarffic sent to a server
+- **Reverse Proxy**: Best for capturing traffic sent to a server
 
 ![When and why to use a specific capturing mode](./images/capturing-modes-diagram.png)
 
@@ -115,7 +115,7 @@ Network capturing operates at a lower level than traditional HTTP proxies, captu
 - Low-level network analysis
 - Environments where proxy configuration is restricted
 
-![Use the "Network Capture" button to configure and capture traffic through the Network capturing mode](./images/get-started-network-capturepng.png)
+![Use the "Network Capture" button to configure and capture traffic through the Network capturing mode](./images/get-started-network-capturepng.png)
 
 [Learn more about network capturing...](slug://capture-network-traffic)
 
@@ -187,6 +187,8 @@ curl --url https://www.example.com/ -x 127.0.0.1:8866 --ssl-no-revoke -v
 - Remote device configuration
 - Applications with custom proxy settings
 - Testing scenarios requiring precise control
+
+[Learn more about explicit capturing...](slug://explicit-capturing)
 
 ## Remote Traffic Capturing
 
@@ -287,4 +289,5 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 - [Capturing Browser Traffic](slug://capture-browser-traffic)
 - [Capturing System Traffic](slug://capture-system-traffic)
 - [Capturing Network Traffic](slug://capture-network-traffic)
+- [Explicit Capturing](slug://explicit-capturing)
 - [Trusting the Fiddler CA Certificate](slug://trust-certificate)
