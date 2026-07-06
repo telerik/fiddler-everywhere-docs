@@ -1,5 +1,52 @@
 [
     {
+        "version": "8.0.0-insiders",
+        "title": "Fiddler Everywhere v8.0.0",
+        "date": "July 8, 2026",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Added a new Agent Inspector for viewing agent messages, tool calls, model details, cost, and latency."
+                    },
+                    {
+                        "title": "Added caching recommendations for Agent Cache to help reduce latency and token usage for expensive agent calls."
+                    },
+                    {
+                        "title": "Added an MCP traffic capture tool that automatically captures traffic only from applications launched from the current terminal session."
+                    },
+                    {
+                        "title": "Added one-click MCP setup for supported IDEs and coding agents, making it easier to connect Fiddler without manual configuration."
+                    },
+                    {
+                        "title": "Added a new Protobuf inspector."
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Updated the MCP Setup Skill."
+                    },
+                    {
+                        "title": "Updated the MCP core library."
+                    },
+                    {
+                        "title": "Updated the list of models supported in the Debugging Assistant setup."
+                    },
+                    {
+                        "title": "Updates for Windows Network Driver."
+                    },
+                    {
+                        "title": "Updated third-party dependencies to mitigate potential security vulnerabilities."
+                    }
+                ]
+            }
+        ]
+    },
+    {
     "version": "7.8.0-insiders",
     "title": "Fiddler Everywhere v7.8.0",
     "date": "May 27, 2026",
