@@ -173,7 +173,7 @@ Each skill below includes its purpose, the steps it performs, and example trigge
 
 ### fiddler-traffic-debugging
 
-**Purpose**: Analyzes the HTTPS traffic captured by Fiddler Everywhere after you run a feature or user flow, and produces a structured debugging report grouped by endpoint — flagging failures, auth errors, retries, performance issues, and slow calls.
+**Purpose**: Analyzes the HTTPS traffic captured by Fiddler Everywhere after you run a feature or user flow, and produces a structured debugging report grouped by endpoint — flagging failures, auth errors, retries, performance issues, and slow calls. For AI/LLM sessions captured in the **Agent Calls** tab, the corresponding data (cost, latency, messages, tool calls, and model configuration) is also available in the Fiddler Everywhere UI through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab.
 
 **What it does**:
 1. Calls `get_status` to confirm Fiddler is reachable and capturing.

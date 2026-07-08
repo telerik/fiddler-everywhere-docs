@@ -299,6 +299,8 @@ The `capture_application` tool relies on the [network capturing mode](slug://cap
 
 The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a required `sessionsSource` parameter. The parameter accepts two values: `LiveTraffic` and `AgentCalls`. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM/AI agent API calls. When prompting your coding assistant, explicitly specify which sessions source to target so that the `sessionsSource` parameter is set correctly.
 
+>tip Sessions from the **Agent Calls** tab can also be inspected visually through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab in the Fiddler Everywhere UI. The Agent Inspector surfaces cost, latency, messages, tool calls, and model configuration in a structured view for each AI session.
+
 | Tool | Description |
 |:-----|:------------|
 | `get_sessions` | Gets the sessions from the specified Fiddler sessions source. Active filters are applied if any. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM/AI agent API calls—each session also includes `isCached` status, the LLM model name, and a preview of the last user prompt. **Required parameter:** `sessionsSource`. |
@@ -309,7 +311,7 @@ The session management tools support both the **Live Traffic** and **Agent Calls
 
 ### Agent Cache
 
-The Agent Cache tools provide programmatic control over the [Agent Cache](slug://agent-cache) functionality, allowing you to manage cached responses for model-provider endpoint sessions directly from your coding assistant.
+The Agent Cache tools provide programmatic control over the [Agent Cache](slug://agent-cache) functionality, allowing you to manage cached responses for model-provider endpoint sessions directly from your coding assistant. The data exposed by these tools is also surfaced visually in the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab within the Fiddler Everywhere UI, where you can review cost savings, latency gains, messages, tool calls, and model configuration for each cached session.
 
 | Tool | Description |
 |:-----|:------------|

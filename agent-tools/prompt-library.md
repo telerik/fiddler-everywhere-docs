@@ -209,7 +209,7 @@ Start capturing traffic and manage your sessions with these essential prompts:
 
 ### Agent Cache
 
-Manage cached agent sessions and control caching behavior through the Agent Calls tab:
+Manage cached agent sessions and control caching behavior through the Agent Calls tab. The cache metadata (cost savings, latency gains, model info) is also available directly in the Fiddler Everywhere UI through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab:
 
 ```txt
 #fiddler Show me all sessions in the Agent Calls tab

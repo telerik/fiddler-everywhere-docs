@@ -19,7 +19,7 @@ The ongoing HTTP traffic shows in the **Live Traffic grid**, which contains mult
 1. Capture HTTP(S) traffic while using your preferred [capturing mode](slug://capture-traffic-get-started).
 1. Double-click a captured session.
 
-The session content immediately loads in the Fiddler **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use a single click a session to preserve the last shown inspector.
+The session content immediately loads in the Fiddler **Inspectors**. The application automatically decides which inspector is best suited to display the request and response of the double-clicked session. Alternatively, you can use a single click a session to preserve the last shown inspector. For AI-related sessions (such as calls to LLM providers), the **Agent Inspector** tab provides dedicated analysis including token cost, latency, messages, tool calls, and model configuration.
 
 [Deep-dive into the Fiddler inspectors tab here ...](slug://inspector-types)
 
