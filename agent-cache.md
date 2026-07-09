@@ -40,7 +40,7 @@ The grid adds one dedicated sticky column:
 
 When the **Caching** switch is enabled for a session, Fiddler Everywhere intercepts matching outbound calls and returns the cached response instead of forwarding the request to the remote endpoint. When the switch is disabled, requests pass through normally.
 
-Selecting any session in the **Agent Calls** tab opens the [**Agent Inspector**](slug://inspector-types#agent-inspector) in the details pane. The Agent Inspector provides structured, AI-specific analysis of the selected session across five sub-tabs: **Cost** (token usage and monetary cost, including cache savings), **Latency** (response time and cache-avoided latency), **Messages** (the full user/agent conversation), **Tools** (any tool calls made during the session), and **Model** (provider, model version, and system prompt).
+Selecting any session in the **Agent Calls** tab opens the [**Agent Inspector**](slug://inspector-types#agent-inspector) in the details pane. The Agent Inspector provides structured analysis of the selected session across five sub-tabs: **Cost** (token usage and monetary cost, including cache savings), **Latency** (response time and cache-avoided latency), **Messages** (the full user/agent conversation), **Tools** (all available tools and any tool calls made during the session), and **Model** (provider, model version, and system prompt).
 
 ## Get Started
 
@@ -126,7 +126,7 @@ The following diagram shows the request flow when Agent Cache is active.
 
 ## MCP Tools for Agent Cache
 
-The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated tools for programmatic interaction with Agent Cache directly from your AI-powered coding assistant. These tools allow you to manage cached sessions, check cache status, and toggle caching without leaving your IDE.
+The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated tools for programmatic interaction with Agent Cache directly from your coding assistant. These tools allow you to manage cached sessions, check cache status, and toggle caching without leaving your IDE.
 
 ### Dedicated Agent Cache Tools
 

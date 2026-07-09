@@ -1,7 +1,7 @@
 ---
 title: Prompt Library
-page_title: Fiddler Everywhere AI Prompt Library – MCP Prompts for HTTP Traffic Analysis
-description: "Explore a curated library of built-in and custom AI prompts for the Fiddler Everywhere MCP server. Use LLM-powered coding assistants to analyze HTTPS traffic, detect security vulnerabilities, optimize performance, and automate debugging workflows."
+page_title: Fiddler Everywhere Prompt Library – MCP Prompts for HTTP Traffic Analysis
+description: "Explore a curated library of built-in and custom prompts for the Fiddler Everywhere MCP server. Use LLM-powered coding assistants to analyze HTTPS traffic, detect security vulnerabilities, optimize performance, and automate debugging workflows."
 slug: fiddler_ai_prompt_library
 position: 10
 previous_url: /mcp-server/prompt-library

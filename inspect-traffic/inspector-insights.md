@@ -1,7 +1,7 @@
 ---
 title: Inspectors Insights
 page_title: Inspectors Insights - Inspect Traffic | Fiddler Everywhere
-description: "Using the `Inspectors` tab in the Fiddler Everywhere web-debugging proxy application. Use the HTTP Inspector and Agent Inspector tools to analyze requests, responses, and AI agent sessions."
+description: "Using the `Inspectors` tab in the Fiddler Everywhere web-debugging proxy application. Use the HTTP Inspector and Agent Inspector tools to analyze requests, responses, and agent sessions."
 slug: inspector-types
 publish: true
 position: 10
@@ -10,7 +10,7 @@ previous_url: /user-guide/live-traffic/inspectors/request-inspector, /user-guide
 
 # Inspectors Insights
 
-The Fiddler Everywhere **Inspectors** section provides dedicated tabs for inspecting different types of captured traffic. The [**HTTP Inspector**](#http-inspector) renders the HTTP **Request** and **Response** sections, which display the information for the selected HTTP(S) sessions from the sessions grid. The [**Agent Inspector**](#agent-inspector) is a dedicated inspector for AI-related sessions that surfaces cost, latency, messages, tool calls, and model configuration details. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the gRPC framework](https://gRPC.io/), a dedicated [**WebSocket and gRPC inspectors**](#websocket-grpc-sse-and-socketio-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
+The Fiddler Everywhere **Inspectors** section provides dedicated tabs for inspecting different types of captured traffic. The [**HTTP Inspector**](#http-inspector) renders the HTTP **Request** and **Response** sections, which display the information for the selected HTTP(S) sessions from the sessions grid. The [**Agent Inspector**](#agent-inspector) is a dedicated inspector for LLM/agent sessions that surfaces cost, latency, messages, tool calls, and model configuration details. In the case where the captured traffic uses [the WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) or [the gRPC framework](https://gRPC.io/), a dedicated [**WebSocket and gRPC inspectors**](#websocket-grpc-sse-and-socketio-inspectors) tab renders, which display the connection handshake details, messages, and each message details. For secure connections in the Live Traffic section, Fiddler Everywhere can show detailed [server certificate information](#server-certificate-details).
 
 The inspectors are based on the [Monaco editor](https://microsoft.github.io/monaco-editor/) and provide multiple perks, among which:
 
@@ -207,7 +207,7 @@ The **Auth** inspector obtains authorization information from the `Authorize` an
 
 ## Agent Inspector
 
-The **Agent Inspector** is a dedicated inspector for AI-related sessions. It appears alongside the **HTTP Inspector** tab and is available when inspecting sessions in the **Live Traffic** grid, the **Agent Calls** tab, and saved snapshots. When an AI-related session (such as an API call to an LLM provider) is selected from the **Agent Calls** tab, the **Agent Inspector** is shown as the default inspector. When the same session is selected from the **Live Traffic** grid, the **Agent Inspector** appears as an additional tab next to **HTTP Inspector**.
+The **Agent Inspector** is a dedicated inspector for LLM/agent sessions. It appears alongside the **HTTP Inspector** tab and is available when inspecting sessions in the **Live Traffic** grid, the **Agent Calls** tab, and saved snapshots. When an agent session (such as an API call to an LLM provider) is selected from the **Agent Calls** tab, the **Agent Inspector** is shown as the default inspector. When the same session is selected from the **Live Traffic** grid, the **Agent Inspector** appears as an additional tab next to **HTTP Inspector**.
 
 The **Agent Inspector** provides the following sub-tabs:
 
@@ -219,7 +219,7 @@ The **Agent Inspector** provides the following sub-tabs:
 
 ### Cost Sub-Tab
 
-The **Cost** sub-tab provides a token usage and cost breakdown for the selected AI session. The tab contains two collapsible sections:
+The **Cost** sub-tab provides a token usage and cost breakdown for the selected session. The tab contains two collapsible sections:
 
 - **Tokens Count**&mdash;Displays the number of input tokens, output tokens, and total tokens consumed by the request, along with each value's percentage share of the total.
 - **Cost**&mdash;Displays the monetary cost for input tokens, output tokens, and the total cost of the call, along with each value's percentage share of the total.
@@ -228,31 +228,32 @@ When a session is served from the [Fiddler Everywhere Agent Cache](slug://agent-
 
 ### Latency Sub-Tab
 
-The **Latency** sub-tab shows the response time for the selected AI session. When a session is served from the [Fiddler Everywhere Agent Cache](slug://agent-cache), the tab shows a cache-hit banner indicating how many seconds of latency were avoided by serving the cached response (for example, _"Cache hit. This call avoided ~2.88 s latency."_).
+The **Latency** sub-tab shows the response time for the selected session. When a session is served from the [Fiddler Everywhere Agent Cache](slug://agent-cache), the tab shows a cache-hit banner indicating how many seconds of latency were avoided by serving the cached response (for example, _"Cache hit. This call avoided ~2.88 s latency."_).
 
 ### Messages Sub-Tab
 
-The **Messages** sub-tab renders the full conversation exchange of the selected AI session in a readable, chat-style view. Messages are presented by role:
+The **Messages** sub-tab renders the full conversation exchange of the selected session in a readable, chat-style view. Messages are presented by role:
 
-- **User**&mdash;Displays the user prompt and any additional context or data passed to the AI model.
-- **Agent**&mdash;Displays the AI model's response to the user prompt.
+- **User**&mdash;Displays the user prompt and any additional context or data passed to the model.
+- **Agent**&mdash;Displays the model's response to the user prompt.
+- **Tool Call**&mdash;Displays a tool call made by the agent during the session.
+- **Tool Response**&mdash;Displays the response returned by the tool.
 
 A filter icon in the top-right corner of the sub-tab allows you to filter the displayed messages.
 
 ### Tools Sub-Tab
 
-The **Tools** sub-tab lists any tool calls made during the AI session. The number of detected tool calls is indicated directly in the sub-tab label (for example, **Tools (0)** when no tool calls are detected). When no tool calls are present, the tab displays the message _"No tool calls detected in this session."_
+The **Tools** sub-tab displays all tools available to the model and any tool calls made during the session. The number of detected tool calls is indicated directly in the sub-tab label (for example, **Tools (0)** when no tool calls are detected). The sub-tab provides two views:
+
+- **Usage**&mdash;Shows each available tool and the number of times it was called during the session. When no tool calls are present, the view displays the message _"No tool calls detected in this session."_
+- **JSON**&mdash;Displays the full definitions of all available tools in JSON format, including their names, descriptions, and parameters.
 
 ### Model Sub-Tab
 
-The **Model** sub-tab displays the AI model configuration details for the selected session. It provides the following collapsible sections:
+The **Model** sub-tab displays the model configuration details for the selected session. It provides the following collapsible sections:
 
-- **Model Configuration**&mdash;Shows key model parameters for the session:
-    - **Provider**&mdash;The AI service provider (for example, `OpenAI`).
-    - **Model**&mdash;The specific model version used (for example, `gpt-4.1-mini-2025-04-14`).
-    - **Stream**&mdash;Indicates whether streaming was enabled for the response (`true` or `false`).
-    - **Thinking Tokens Used**&mdash;Indicates whether extended thinking tokens were consumed during the request (`Yes` or `No`).
-- **System Prompt**&mdash;Displays the system prompt passed to the AI model for the session (for example, _"Summarize hotel options. Be helpful and confident."_).
+- **Model Configuration**&mdash;Shows model parameters for the session. The available parameters vary depending on what was included in the LLM request. Common parameters include **Provider** (the service provider, for example `OpenAI`), **Model** (the model version, for example `gpt-4.1-mini-2025-04-14`), **Stream** (whether streaming was enabled), and **Thinking Tokens Used** (whether extended thinking tokens were consumed). Additional parameters such as **Max Tokens** may appear when specified in the request.
+- **System Prompt**&mdash;Displays the system prompt passed to the model for the session (for example, _"Summarize hotel options. Be helpful and confident."_).
 
 ## WebSocket, gRPC, SSE, and SocketIO Inspectors
 

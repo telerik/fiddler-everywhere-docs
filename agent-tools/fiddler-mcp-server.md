@@ -1,7 +1,7 @@
 ---
 title: Fiddler MCP Server
-page_title: Fiddler Everywhere MCP Server – Connect AI-Powered IDEs to Live HTTPS Traffic
-description: "Install and configure the Fiddler Everywhere MCP server to give AI-powered IDEs and LLM coding assistants (VS Code, Cursor, Claude, Windsurf) real-time access to captured HTTPS traffic for debugging, security analysis, and performance optimization."
+page_title: Fiddler Everywhere MCP Server – Connect LLM-Powered Coding Tools to Live HTTPS Traffic
+description: "Install and configure the Fiddler Everywhere MCP server to give LLM-powered coding assistants (VS Code, Cursor, Claude, Windsurf) real-time access to captured HTTPS traffic for debugging, security analysis, and performance optimization."
 slug: fiddler-mcp-server
 publish: true
 position: 1
@@ -297,13 +297,13 @@ The `capture_application` tool relies on the [network capturing mode](slug://cap
 
 ### Session Management
 
-The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a required `sessionsSource` parameter. The parameter accepts two values: `LiveTraffic` and `AgentCalls`. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM/AI agent API calls. When prompting your coding assistant, explicitly specify which sessions source to target so that the `sessionsSource` parameter is set correctly.
+The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a required `sessionsSource` parameter. The parameter accepts two values: `LiveTraffic` and `AgentCalls`. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM agent API calls. When prompting your coding assistant, explicitly specify which sessions source to target so that the `sessionsSource` parameter is set correctly.
 
->tip Sessions from the **Agent Calls** tab can also be inspected visually through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab in the Fiddler Everywhere UI. The Agent Inspector surfaces cost, latency, messages, tool calls, and model configuration in a structured view for each AI session.
+>tip Sessions from the **Agent Calls** tab can also be inspected visually through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab in the Fiddler Everywhere UI. The Agent Inspector surfaces cost, latency, messages, tool calls, and model configuration in a structured view for each agent session.
 
 | Tool | Description |
 |:-----|:------------|
-| `get_sessions` | Gets the sessions from the specified Fiddler sessions source. Active filters are applied if any. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM/AI agent API calls—each session also includes `isCached` status, the LLM model name, and a preview of the last user prompt. **Required parameter:** `sessionsSource`. |
+| `get_sessions` | Gets the sessions from the specified Fiddler sessions source. Active filters are applied if any. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM agent API calls—each session also includes `isCached` status, the LLM model name, and a preview of the last user prompt. **Required parameter:** `sessionsSource`. |
 | `get_sessions_count` | Gets the number of sessions in the specified Fiddler sessions source. **Required parameter:** `sessionsSource`. |
 | `get_session_details` | Gets detailed information about a specific session in the specified Fiddler sessions source, including request and response headers, bodies, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. The session ID is the numeric value shown in the **ID** column of the traffic grid in Fiddler Everywhere. **Required parameters:** `sessionId` (integer) and `sessionsSource`. |
 | `apply_filters` | Applies filters to the specified Fiddler sessions source. Selects only the sessions that match the specified criteria. Applying filters wipes all existing filters. To clear filters, call this tool with an empty filter collection. **Required parameters:** `filters` (object) and `sessionsSource`. |
