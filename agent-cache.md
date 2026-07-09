@@ -40,6 +40,8 @@ The grid adds one dedicated sticky column:
 
 When the **Caching** switch is enabled for a session, Fiddler Everywhere intercepts matching outbound calls and returns the cached response instead of forwarding the request to the remote endpoint. When the switch is disabled, requests pass through normally.
 
+Selecting any session in the **Agent Calls** tab opens the [**Agent Inspector**](slug://inspector-types#agent-inspector) in the details pane. The Agent Inspector provides structured analysis of the selected session across five sub-tabs: **Cost** (token usage and monetary cost, including cache savings), **Latency** (response time and cache-avoided latency), **Messages** (the full user/agent conversation), **Tools** (all available tools and any tool calls made during the session), and **Model** (provider, model version, and system prompt).
+
 ## Get Started
 
 The following scenario demonstrates how Agent Cache eliminates redundant token usage during the development of an agent that calls a model-provider endpoint.
@@ -50,6 +52,7 @@ The following scenario demonstrates how Agent Cache eliminates redundant token u
 1. Run your agent to trigger an HTTPS call to the model-provider endpoint.
 1. Open **Traffic** > **Agent Calls**.
 1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
+1. Select the session to open the [**Agent Inspector**](slug://inspector-types#agent-inspector) in the details pane—review the **Cost**, **Latency**, **Messages**, **Tools**, and **Model** sub-tabs to confirm the captured response meets your expectations before caching it.
 1. Enable the **Caching** switch for that session in the sticky **Caching** column.
        ![The "Agent Calls" tab in Fiddler](./images/caching-column.png)
 1. Run your agent again with the same request.
@@ -123,7 +126,7 @@ The following diagram shows the request flow when Agent Cache is active.
 
 ## MCP Tools for Agent Cache
 
-The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated tools for programmatic interaction with Agent Cache directly from your AI-powered coding assistant. These tools allow you to manage cached sessions, check cache status, and toggle caching without leaving your IDE.
+The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated tools for programmatic interaction with Agent Cache directly from your coding assistant. These tools allow you to manage cached sessions, check cache status, and toggle caching without leaving your IDE.
 
 ### Dedicated Agent Cache Tools
 
@@ -183,6 +186,7 @@ We welcome your feedback on Agent Cache and any other features you would like to
 
 ## See Also
 
+* [Agent Inspector](slug://inspector-types#agent-inspector)
 * [the Fiddler MCP Server - Overview](slug://fiddler-mcp-server)
 * [the Fiddler MCP Server - Prompt Ideas](slug://fiddler_ai_prompt_library)
 * [the Fiddler Debugging Assistant](slug://fiddler-assistant)

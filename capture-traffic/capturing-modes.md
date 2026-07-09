@@ -241,7 +241,7 @@ Streaming HTTP uses the standard HTTP protocol with chunked transfer encoding to
 
 **Fiddler Streaming HTTP Support:**
 - Compatible with all capturing modes
-- Reuses the standard [HTTP inspectors](slug://inspector-types)
+- Reuses the standard [HTTP Inspector](slug://inspector-types)
 - Automatic decoding of encoded messages
 
 ### WebSocket Protocol

@@ -1,7 +1,7 @@
 ---
 title: Agent Skills
-page_title: Fiddler Everywhere Agent Skills – Automate MCP Setup and Traffic Analysis in AI Coding Tools
-description: "Install and use the official Fiddler Everywhere agent skills to automate MCP server configuration, HTTPS traffic analysis, and Fiddler installation in AI-powered IDEs such as GitHub Copilot, Claude Code, Cursor, Windsurf, and OpenAI Codex CLI."
+page_title: Fiddler Everywhere Agent Skills – Automate MCP Setup and Traffic Analysis in LLM-Powered Coding Tools
+description: "Install and use the official Fiddler Everywhere agent skills to automate MCP server configuration, HTTPS traffic analysis, and Fiddler installation in LLM-powered IDEs such as GitHub Copilot, Claude Code, Cursor, Windsurf, and OpenAI Codex CLI."
 slug: fiddler-agent-skills
 publish: true
 position: 15
@@ -173,7 +173,7 @@ Each skill below includes its purpose, the steps it performs, and example trigge
 
 ### fiddler-traffic-debugging
 
-**Purpose**: Analyzes the HTTPS traffic captured by Fiddler Everywhere after you run a feature or user flow, and produces a structured debugging report grouped by endpoint — flagging failures, auth errors, retries, performance issues, and slow calls.
+**Purpose**: Analyzes the HTTPS traffic captured by Fiddler Everywhere after you run a feature or user flow, and produces a structured debugging report grouped by endpoint — flagging failures, auth errors, retries, performance issues, and slow calls. For LLM/agent sessions captured in the **Agent Calls** tab, the corresponding data (cost, latency, messages, tool calls, and model configuration) is also available in the Fiddler Everywhere UI through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab.
 
 **What it does**:
 1. Calls `get_status` to confirm Fiddler is reachable and capturing.
