@@ -12,9 +12,6 @@
                     },
                     {
                         "title": "Updated the list of supported OpenAI models available in Debugging Assistant integrations."
-                    },
-                    {
-                        "title": "Improved application diagnostics logs by adding additional logging."
                     }
                 ]
             }
