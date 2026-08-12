@@ -16,10 +16,13 @@ res_type: kb
 
 ## Description
 
-The foundation of Fiddler Everywhere is built upon the old Fiddler Classic application. While Fiddler Classic is still available, more and more users are choosing to migrate to Fiddler Everywhere (as noted on the official product page, the Fiddler Classic application is no longer in active development and offers no commitments for releases, patches or tech support). There are multiple reasons why Fiddler Everywhere is the recommended choice, and the below feature comparison table demonstrates some of them:
+Fiddler Everywhere builds on the Fiddler Classic foundation with a modern, commercially licensed debugging experience. Under the current Fiddler Classic EULA, Fiddler Classic is available for personal, non-commercial use only. It is no longer in active development and does not include commitments for releases, patches, or technical support.
+
+For commercial, team, and enterprise use, Fiddler Everywhere is the licensed Fiddler offering. It provides a modern debugging solution designed for today's security, identity, deployment, collaboration, and application development requirements. The following feature comparison table highlights key differences between Fiddler Classic and Fiddler Everywhere and shows the added value Fiddler Everywhere brings to teams debugging modern applications across platforms:
 
 | Feature          | Fiddler Classic   | Fiddler Everywhere     | 
 |:-----------------|:------------------|:-----------------------|
+| License / Usage  | Personal, non-commercial use only | Commercial, team, and enterprise use |
 | OS support       | Windows only      | Windows, macOS, Linux  |
 | System proxy     | Windows only      | Windows, macOS, Linux  |
 | Low-level network capturing | No     | Yes (macOS) |
@@ -32,9 +35,11 @@ The foundation of Fiddler Everywhere is built upon the old Fiddler Classic appli
 | Maximum supported version of TLS  | TLS 1.2 | TLS 1.3 |
 | Support for streaming protocols  | WebSocket | WebSocket, SSE, Socket.IO, gRPC |
 | Statistical and analytical data | Statistics tab | Overview tab with enhanced statistical data and diagram |
+| AI Assistant | No | Yes |
+| MCP server | No | Yes |
 | Enterprise options | No | Technical support, SSO login, offline mode, managed app configuration, and more |
 
-The comparison table showcases several reasons why you would like to migrate from Fiddler Classic to the new Fiddler Everywhere. In this article, we will provide information about the built-in import wizard available in Fiddler Everywhere, which enables you to quickly and efficiently import your settings, rules, and filters from the old Fiddler Classic.
+Beyond the feature and platform differences, the licensing change is a key driver for migration: any commercial or team use of Fiddler Classic is no longer permitted under its EULA. This article describes the built-in import wizard in Fiddler Everywhere, which enables you to quickly and efficiently carry over your existing settings, rules, and filters from Fiddler Classic.
 
 ## Solution
 
@@ -42,7 +47,7 @@ The built-in import wizard in Fiddler Everywhere supports the following import t
 
 ### Importing Application Options
 
-Starting with version 5.20.0, Fiddler Everywhere provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity meaning they behave exactly the same in both applications. Once imported the configuration options can be found in the **Settings** menu in Fiddler Everywhere.
+Starting with version 5.20.0, Fiddler Everywhere provides a built-in wizard allowing you to import the following configuration options from Fiddler Classic automatically. All configuration options have full feature parity, meaning they behave exactly the same in both applications. Once imported, the configuration options can be found in the **Settings** menu in Fiddler Everywhere.
 
 The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
 ![import configuration options](./images/import-options.png)
@@ -51,10 +56,10 @@ The import wizard is accessible through the **Home** pane in Fiddler Everywhere.
 
 - Decrypt HTTPS traffic&mdash;Exports the Fiddler Classic value from **Tools** > **Options** > **HTTPS** > **Decrypt HTTPS Traffic** and imports as value for **Settings** > **HTTPS** > **Capture HTTPS Traffic** option in Fiddler Everywhere.
 - Ignore server certificate errors&mdash;Exports the Fiddler Classic value from **Tools** > **Options** > **HTTPS** > **Ignore server certificate errors (unsafe)** and imports as value for **Settings** > **HTTPS** > **Ignore server certificate errors (unsafe)** option in Fiddler Everywhere.
-- Listening proxy port&mdash; Exports the Fiddler Classic value from **Tools** > **Options** > **Connection** > **Fiddler Classic listens on port** and imports as value for **Settings** > **Connections** > **Fiddler listens on port** option in Fiddler Everywhere. 
+- Listening proxy port&mdash;Exports the Fiddler Classic value from **Tools** > **Options** > **Connection** > **Fiddler Classic listens on port** and imports as value for **Settings** > **Connections** > **Fiddler listens on port** option in Fiddler Everywhere. 
     >important The default proxy port for Fiddler Classic is 8888, while for Fiddler Everywhere, it is 8866. This difference is often overlooked by users who follow a specific proxy tutorial but are trying solutions based on a different proxy port.
 - Bypassed URLs&mdash;Exports the Fiddler Classic value from **Tools** > **Options** > **Connections** > **Bypass Fiddler Classic for URLs that starts with** and imports as value for **Settings** > **Connections** > **Bypass Fiddler for URLs that starts with** option in Fiddler Everywhere.
-- Gateway settings&mdash;Exports the Fiddler Classic value from **Tools** > **Options** > **Gateway** and imports as value for **Settings** > **Gateway** option in Fiddler Everywhere. The Gateway checkbox will be unavailable if the selected option in Fiddler Classic is **Аutomatically Detect Proxy using WPAD**.
+- Gateway settings&mdash;Exports the Fiddler Classic value from **Tools** > **Options** > **Gateway** and imports as value for **Settings** > **Gateway** option in Fiddler Everywhere. The Gateway checkbox will be unavailable if the selected option in Fiddler Classic is **Automatically Detect Proxy using WPAD**.
 - Allow remote computers to connect&mdash;Exports the Fiddler Classic value from **Tools** > **Options** > **Connections** > **Allow Remote Computers to connect** and imports as value for **Settings** > **Connections** > **Allow remote devices to connect** option in Fiddler Everywhere.
 
 ### Importing AutoResponder Rules
@@ -80,4 +85,3 @@ The import wizard will effectively import only currently loaded filters. As an a
 **Quick filters** in Fiddler Classic (refer to the screenshot) function similarly to filters in Fiddler Everywhere. You can import any existing quick filters into Fiddler Everywhere and find them in the Filters dialog under "Saved Filters" at the top left corner of the Live Traffic pane.
 
 ![Quick filters in Fiddler Classic](./images/fc-quick-filters.png)
-
