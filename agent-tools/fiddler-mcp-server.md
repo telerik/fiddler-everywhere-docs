@@ -297,9 +297,9 @@ The `capture_application` tool relies on the [network capturing mode](slug://cap
 
 ### Session Management
 
-The session management tools support both the **Live Traffic** and **Agent Calls** tabs through a required `sessionsSource` parameter. The parameter accepts two values: `LiveTraffic` and `AgentCalls`. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM agent API calls. When prompting your coding assistant, explicitly specify which sessions source to target so that the `sessionsSource` parameter is set correctly.
+The session management tools support both the **Live Traffic** grid and the **Agent Calls** section through a required `sessionsSource` parameter. The parameter accepts two values: `LiveTraffic` and `AgentCalls`. Use `LiveTraffic` for real-time captured HTTP/HTTPS traffic. Use `AgentCalls` for LLM agent API calls. When prompting your coding assistant, explicitly specify which sessions source to target so that the `sessionsSource` parameter is set correctly.
 
->tip Sessions from the **Agent Calls** tab can also be inspected visually through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab in the Fiddler Everywhere UI. The Agent Inspector surfaces cost, latency, messages, tool calls, and model configuration in a structured view for each agent session.
+>tip Sessions from the **Agent Calls** section can also be inspected visually through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab in the Fiddler Everywhere UI. The Agent Inspector surfaces cost, latency, messages, tool calls, and model configuration in a structured view for each agent session.
 
 | Tool | Description |
 |:-----|:------------|
@@ -307,7 +307,7 @@ The session management tools support both the **Live Traffic** and **Agent Calls
 | `get_sessions_count` | Gets the number of sessions in the specified Fiddler sessions source. **Required parameter:** `sessionsSource`. |
 | `get_session_details` | Gets detailed information about a specific session in the specified Fiddler sessions source, including request and response headers, bodies, HTTP method, URL, status code, protocol, start time, duration, client and remote HTTP versions, TLS versions, and IP addresses. The session ID is the numeric value shown in the **ID** column of the traffic grid in Fiddler Everywhere. **Required parameters:** `sessionId` (integer) and `sessionsSource`. |
 | `apply_filters` | Applies filters to the specified Fiddler sessions source. Selects only the sessions that match the specified criteria. Applying filters wipes all existing filters. To clear filters, call this tool with an empty filter collection. **Required parameters:** `filters` (object) and `sessionsSource`. |
-| `clear_sessions` | Clears all sessions in the specified Fiddler sessions source. Agent calls are also HTTP traffic so they appear in both tabs. **Required parameter:** `sessionsSource`. |
+| `clear_sessions` | Clears all sessions in the specified Fiddler sessions source. Agent calls are also HTTP traffic so they appear in both sources. **Required parameter:** `sessionsSource`. |
 
 ### Agent Cache
 
@@ -315,8 +315,8 @@ The Agent Cache tools provide programmatic control over the [Agent Cache](slug:/
 
 | Tool | Description |
 |:-----|:------------|
-| `cache_agent_calls` | Enables or disables caching for a specific session in the **Agent Calls** tab. Set `enableCache` to `true` to cache the session—future requests matching this session will be served from cache instead of hitting the server. Set `enableCache` to `false` to disable caching—the session remains in the Agent Calls tab but stops serving cached responses. **Required parameters:** `sessionId` (integer) and `enableCache` (boolean). |
-| `check_cache_status` | Checks whether a specific session in the **Agent Calls** tab is currently cached. Returns the cache status for the requested session. **Required parameter:** `sessionId` (integer). |
+| `cache_agent_calls` | Enables or disables caching for a specific session in the **Agent Calls** section. Set `enableCache` to `true` to cache the session—future requests matching this session will be served from cache instead of hitting the server. Set `enableCache` to `false` to disable caching—the session remains in the Agent Calls section but stops serving cached responses. **Required parameters:** `sessionId` (integer) and `enableCache` (boolean). |
+| `check_cache_status` | Checks whether a specific session in the **Agent Calls** section is currently cached. Returns the cache status for the requested session. **Required parameter:** `sessionId` (integer). |
 
 ### Rules
 

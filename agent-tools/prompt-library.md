@@ -101,32 +101,32 @@ Clears all currently captured sessions from Fiddler Everywhere.
 ```bash
 /mcp.fiddler.get-agent-calls-sessions-count
 ```
-Returns the total number of sessions in the Agent Calls tab in Fiddler Everywhere.
+Returns the total number of sessions in the Agent Calls section in Fiddler Everywhere.
 
 ```bash
 /mcp.fiddler.get-agent-calls-sessions
 ```
-Retrieves the sessions in the Agent Calls tab, including cache status, model information, and prompt previews.
+Retrieves the sessions in the Agent Calls section, including cache status, model information, and prompt previews.
 
 ```bash
 /mcp.fiddler.get-agent-calls-session-details
 ```
-Fetches detailed information about a specific session in the Agent Calls tab. You will be prompted to provide the session ID.
+Fetches detailed information about a specific session in the Agent Calls section. You will be prompted to provide the session ID.
 
 ```bash
 /mcp.fiddler.clear-agent-calls-sessions
 ```
-Clears all sessions in the Agent Calls tab. Agent calls are also HTTP traffic so they appear in both tabs.
+Clears all sessions in the Agent Calls section. Agent calls are also HTTP traffic so they appear in both sources.
 
 ```bash
 /mcp.fiddler.cache-agent-calls
 ```
-Enables or disables caching for a specific session in the Agent Calls tab. You will be prompted to provide the session ID and whether to enable or disable caching.
+Enables or disables caching for a specific session in the Agent Calls section. You will be prompted to provide the session ID and whether to enable or disable caching.
 
 ```bash
 /mcp.fiddler.check-agent-calls-cache-status
 ```
-Checks whether a specific session in the Agent Calls tab is currently cached. You will be prompted to provide the session ID.
+Checks whether a specific session in the Agent Calls section is currently cached. You will be prompted to provide the session ID.
 
 #### Reverse Proxy Operations
 
@@ -209,42 +209,42 @@ Start capturing traffic and manage your sessions with these essential prompts:
 
 ### Agent Cache
 
-Manage cached agent sessions and control caching behavior through the Agent Calls tab. The cache metadata (cost savings, latency gains, model info) is also available directly in the Fiddler Everywhere UI through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab:
+Manage cached agent sessions and control caching behavior through the Agent Calls section. The cache metadata (cost savings, latency gains, model info) is also available directly in the Fiddler Everywhere UI through the [**Agent Inspector**](slug://inspector-types#agent-inspector) tab:
 
 ```txt
-#fiddler Show me all sessions in the Agent Calls tab
+#fiddler Show me all sessions in the Agent Calls section
 ```
 
 ```txt
-#fiddler How many sessions are currently in the Agent Calls tab?
+#fiddler How many sessions are currently in the Agent Calls section?
 ```
 
 ```txt
-#fiddler Get detailed information about session {sessionId} in the Agent Calls tab
+#fiddler Get detailed information about session {sessionId} in the Agent Calls section
 ```
 
 ```txt
-#fiddler Enable caching for session {sessionId} in the Agent Calls tab
+#fiddler Enable caching for session {sessionId} in the Agent Calls section
 ```
 
 ```txt
-#fiddler Disable caching for session {sessionId} in the Agent Calls tab
+#fiddler Disable caching for session {sessionId} in the Agent Calls section
 ```
 
 ```txt
-#fiddler Check the cache status of session {sessionId} in the Agent Calls tab
+#fiddler Check the cache status of session {sessionId} in the Agent Calls section
 ```
 
 ```txt
-#fiddler Clear all sessions in the Agent Calls tab
+#fiddler Clear all sessions in the Agent Calls section
 ```
 
 ```txt
-#fiddler Show me all cached sessions in the Agent Calls tab
+#fiddler Show me all cached sessions in the Agent Calls section
 ```
 
 ```txt
-#fiddler Which model was used for session {sessionId} in the Agent Calls tab?
+#fiddler Which model was used for session {sessionId} in the Agent Calls section?
 ```
 
 ### Traffic Analysis

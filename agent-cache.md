@@ -1,7 +1,7 @@
 ---
 title: Agent Cache
 page_title: Agent Cache | Fiddler Everywhere
-description: "Use the Agent Calls tab in Fiddler Everywhere to capture, inspect, and cache model-provider endpoint responses and eliminate repeated token usage during development."
+description: "Use the Agent Calls section in Fiddler Everywhere to capture, inspect, and cache model-provider endpoint responses and eliminate repeated token usage during development."
 slug: agent-cache
 publish: true
 position: 57
@@ -15,22 +15,22 @@ When building and testing automated agents that communicate with model-provider 
 
 ## Overview
 
-Fiddler Everywhere adds an **Agent Calls** tab in the **Traffic** pane, alongside tabs such as **Live Traffic** and **Compare Sessions**.
+Fiddler Everywhere surfaces an **Agent Calls** section in the [grouped traffic panel](slug://web-sessions-list#grouped-traffic-panel) on the left-hand side of the **Traffic** pane, alongside sections such as **All Traffic**, **Apps**, and **Domains**.
 
-The **Agent Calls** tab is a focused view over sessions already captured in **Live Traffic**. It automatically filters and displays HTTPS sessions that target supported model-provider endpoints.
+The **Agent Calls** section is a focused view over sessions already captured in **Live Traffic**. It automatically filters and displays HTTPS sessions that target supported model-provider endpoints.
 
->important The **Agent Calls** tab reflects sessions that have already been captured. You must have active traffic capture running, or previously captured sessions present in **Live Traffic**, before any sessions appear in **Agent Calls**.
+>important The **Agent Calls** section reflects sessions that have already been captured. You must have active traffic capture running, or previously captured sessions present in **Live Traffic**, before any sessions appear in **Agent Calls**.
 
-## The Agent Calls Tab
+## The Agent Calls Section
 
-The **Agent Calls** grid includes the same key columns as **Live Traffic**—for example, **#**, **Host**, **URL**, **Method**, **Status**, **Body**, and **Duration**—giving you full visibility into each captured endpoint call.
+When you select the **Agent Calls** section, the **Live Traffic** grid shows the same key columns as usual—for example, **#**, **Host**, **URL**, **Method**, **Status**, **Body**, and **Duration**—giving you full visibility into each captured endpoint call.
 
 Additional behaviors to keep in mind:
 
 - Sessions appear in **Agent Calls** automatically when Fiddler detects traffic to supported agentic endpoints.
 - If two or more identical endpoints are cached, Fiddler returns the response from the first cached session.
 - Fiddler rules apply only to non-cached sessions. Cached responses are returned as-is without rule evaluation.
-- After a session is cached, subsequent requests to that endpoint appear only in **Live Traffic**. **Agent Calls** shows the original non-cached requests.
+- After a session is cached, subsequent requests to that endpoint appear only in **All Traffic**. **Agent Calls** shows the original non-cached requests.
 
 The grid adds one dedicated sticky column:
 
@@ -40,7 +40,7 @@ The grid adds one dedicated sticky column:
 
 When the **Caching** switch is enabled for a session, Fiddler Everywhere intercepts matching outbound calls and returns the cached response instead of forwarding the request to the remote endpoint. When the switch is disabled, requests pass through normally.
 
-Selecting any session in the **Agent Calls** tab opens the [**Agent Inspector**](slug://inspector-types#agent-inspector) in the details pane. The Agent Inspector provides structured analysis of the selected session across five sub-tabs: **Cost** (token usage and monetary cost, including cache savings), **Latency** (response time and cache-avoided latency), **Messages** (the full user/agent conversation), **Tools** (all available tools and any tool calls made during the session), and **Model** (provider, model version, and system prompt).
+Selecting any session in the **Agent Calls** section opens the [**Agent Inspector**](slug://inspector-types#agent-inspector) in the details pane. The Agent Inspector provides structured analysis of the selected session across five sub-tabs: **Cost** (token usage and monetary cost, including cache savings), **Latency** (response time and cache-avoided latency), **Messages** (the full user/agent conversation), **Tools** (all available tools and any tool calls made during the session), and **Model** (provider, model version, and system prompt).
 
 ## Get Started
 
@@ -50,14 +50,14 @@ The following scenario demonstrates how Agent Cache eliminates redundant token u
 
 1. Start capturing traffic in Fiddler Everywhere—click **Start Capture** in the toolbar.
 1. Run your agent to trigger an HTTPS call to the model-provider endpoint.
-1. Open **Traffic** > **Agent Calls**.
+1. In the **Traffic** pane, select the **Agent Calls** section in the grouped traffic panel.
 1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
 1. Select the session to open the [**Agent Inspector**](slug://inspector-types#agent-inspector) in the details pane—review the **Cost**, **Latency**, **Messages**, **Tools**, and **Model** sub-tabs to confirm the captured response meets your expectations before caching it.
 1. Enable the **Caching** switch for that session in the sticky **Caching** column.
-       ![The "Agent Calls" tab in Fiddler](./images/caching-column.png)
+       ![ the **Agent Calls** section and the **Caching** column](./images/agent-calls-tab.png)
 1. Run your agent again with the same request.
 1. Verify in the **Live Traffic** grid that Fiddler Everywhere served the cached response for all subsequent requests.
-       ![The cached endpoints in the Fiddler Live Traffic grid](./images/cached-agent-calls.png)
+       > **TODO (screenshot):** Add an updated screenshot of the cached endpoints in the Live Traffic grid reflecting the new UI.
 
 A quick check in the agent provider confirms that no new live calls were made and no tokens were consumed.
 
@@ -67,16 +67,16 @@ You can disable the **Caching** switch at any time to resume live calls to the e
 
 ## Supported Endpoints
 
-The **Agent Calls** tab automatically detects and displays sessions targeting a broad range of model-provider and inference-gateway endpoints—including major providers, cloud-hosted inference services, and local runners—without any manual configuration.
+The **Agent Calls** section automatically detects and displays sessions targeting a broad range of model-provider and inference-gateway endpoints—including major providers, cloud-hosted inference services, and local runners—without any manual configuration.
 
 ### Adding Endpoints Manually
 
 If a session does not appear in **Agent Calls** automatically—for example, when working with a locally hosted API, an internal gateway, or a newer provider not yet in the built-in detection list—you can promote it manually:
 
-1. In **Live Traffic**, right-click the session.
+1. In **All Traffic**, right-click the session.
 2. Select **Add to Agent Calls** from the context menu.
 
-The session then appears in the **Agent Calls** tab and can be cached like any automatically detected session.
+The session then appears in the **Agent Calls** section and can be cached like any automatically detected session.
 
 ## How It Works
 
@@ -90,7 +90,7 @@ The following diagram shows the request flow when Agent Cache is active.
            ▼
 ┌─────────────────────┐
 │ Fiddler Everywhere  │
-│  (Agent Calls tab)  │
+│(Agent Calls section)│
 └──────────┬──────────┘
            │
       Cache ON?
@@ -120,7 +120,7 @@ The following diagram shows the request flow when Agent Cache is active.
 ```
 
 1. Your agent routes HTTPS traffic through Fiddler Everywhere, either by configuring a proxy in code, by using system proxy settings, or by launching the agent from the Fiddler built-in terminal.
-2. Fiddler captures the call and displays it in the **Agent Calls** tab.
+2. Fiddler captures the call and displays it in the **Agent Calls** section.
 3. When the **Caching** switch is enabled for that session, Fiddler replays the stored response for any matching subsequent call.
 4. The provider endpoint never receives the duplicate request—no tokens are charged.
 
@@ -132,12 +132,12 @@ The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated
 
 | Tool | Description |
 |:-----|:------------|
-| `cache_agent_calls` | Enables or disables caching for a specific session in the Agent Calls tab. **Required parameters:** `sessionId` (integer — the target session ID) and `enableCache` (boolean — `true` to enable caching, `false` to disable it). When caching is enabled, the session's response is served from cache for matching future requests. When caching is disabled, the session remains in the Agent Calls tab but stops serving cached responses. |
-| `check_cache_status` | Checks whether a specific session in the Agent Calls tab is currently cached. **Required parameter:** `sessionId` (integer — the target session ID). Returns the cache status for the requested session. |
+| `cache_agent_calls` | Enables or disables caching for a specific session in the Agent Calls section. **Required parameters:** `sessionId` (integer — the target session ID) and `enableCache` (boolean — `true` to enable caching, `false` to disable it). When caching is enabled, the session's response is served from cache for matching future requests. When caching is disabled, the session remains in the Agent Calls section but stops serving cached responses. |
+| `check_cache_status` | Checks whether a specific session in the Agent Calls section is currently cached. **Required parameter:** `sessionId` (integer — the target session ID). Returns the cache status for the requested session. |
 
 ### Session Management Tools with Agent Calls Support
 
->tip When prompting your coding assistant, explicitly specify **"Agent Calls"** as the sessions source in your request. The `sessionsSource` parameter is required for all session management tools. Set it to `AgentCalls` to target the **Agent Calls** tab or to `LiveTraffic` for the **Live Traffic** tab.
+>tip When prompting your coding assistant, explicitly specify **"Agent Calls"** as the sessions source in your request. The `sessionsSource` parameter is required for all session management tools. Set it to `AgentCalls` to target the **Agent Calls** section or to `LiveTraffic` for the **Live Traffic** grid.
 
 | Tool | Description |
 |:-----|:------------|
@@ -145,26 +145,26 @@ The [Fiddler Everywhere MCP server](slug://fiddler-mcp-server) exposes dedicated
 | `get_sessions_count` | Gets the number of sessions in the specified Fiddler sessions source. **Required parameter:** `sessionsSource`. |
 | `get_session_details` | Gets detailed information about a specific session in the specified Fiddler sessions source. **Required parameters:** `sessionId` (integer) and `sessionsSource`. |
 | `apply_filters` | Applies filter criteria to the specified Fiddler sessions source to narrow down visible sessions. Applying filters wipes all existing filters. To clear all filters, call this tool with an empty filter collection. **Required parameters:** `filters` (object) and `sessionsSource`. |
-| `clear_sessions` | Clears all sessions in the specified Fiddler sessions source. Agent calls are also HTTP traffic so they appear in both tabs. **Required parameter:** `sessionsSource`. |
+| `clear_sessions` | Clears all sessions in the specified Fiddler sessions source. Agent calls are also HTTP traffic so they appear in both sources. **Required parameter:** `sessionsSource`. |
 
 ### Example MCP Prompts for Agent Cache
 
 Use these prompts with your coding assistant to interact with Agent Cache through the MCP server:
 
 ```txt
-#fiddler Check the cache status of session {sessionId} in the Agent Calls tab
+#fiddler Check the cache status of session {sessionId} in the Agent Calls section
 ```
 
 ```txt
-#fiddler Enable caching for session {sessionId} in the Agent Calls tab
+#fiddler Enable caching for session {sessionId} in the Agent Calls section
 ```
 
 ```txt
-#fiddler Show me all sessions in the Agent Calls tab
+#fiddler Show me all sessions in the Agent Calls section
 ```
 
 ```txt
-#fiddler How many sessions are currently in the Agent Calls tab?
+#fiddler How many sessions are currently in the Agent Calls section?
 ```
 
 For the full list of available prompts, refer to the [Prompt Library](slug://fiddler_ai_prompt_library).

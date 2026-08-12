@@ -207,7 +207,7 @@ The **Auth** inspector obtains authorization information from the `Authorize` an
 
 ## Agent Inspector
 
-The **Agent Inspector** is a dedicated inspector for LLM/agent sessions. It appears alongside the **HTTP Inspector** tab and is available when inspecting sessions in the **Live Traffic** grid, the **Agent Calls** tab, and saved snapshots. When an agent session (such as an API call to an LLM provider) is selected from the **Agent Calls** tab, the **Agent Inspector** is shown as the default inspector. When the same session is selected from the **Live Traffic** grid, the **Agent Inspector** appears as an additional tab next to **HTTP Inspector**.
+The **Agent Inspector** is a dedicated inspector for LLM/agent sessions. It appears alongside the **HTTP Inspector** tab and is available when inspecting sessions in the **Live Traffic** grid, the **Agent Calls** section, and saved snapshots. When an agent session (such as an API call to an LLM provider) is selected from the **Agent Calls** section, the **Agent Inspector** is shown as the default inspector. When the same session is selected from the **Live Traffic** grid, the **Agent Inspector** appears as an additional tab next to **HTTP Inspector**.
 
 The **Agent Inspector** provides the following sub-tabs:
 

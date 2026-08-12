@@ -47,11 +47,11 @@ Fiddler Everywhere loads the selected sessions side-by-side with the session wit
 
 ## Snapshots
 
-Fiddler Everywhere provides a section called the **Snapshots** that is a tree-based list to store and create a collection of previously captured HTTPS sessions.
+Fiddler Everywhere provides a standalone pane called the **Snapshots** pane that hosts a tree-based list to store and create a collection of previously captured HTTPS sessions. The pane opens and closes independently from the navigation rail, similar to the **Composer** pane.
 
-You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share selected or multiple sessions directly from the sessions grid or using the save **Snapshots** tree.
+You can save (and then share) a snapshot of captured traffic (for example, a selected session or multiple selected sessions) through one of the save options within the user interface. The inspection of sessions often happens with teammates or external collaborators. You can share selected or multiple sessions directly from the sessions grid or using the **Snapshots** pane.
 
-[Learn more about saving and sharing with the Fiddler Snapshots tree here ...](slug://fe-organize-sessions)
+[Learn more about saving and sharing with the Fiddler Snapshots pane here ...](slug://fe-organize-sessions)
 
 ## See Also
 
