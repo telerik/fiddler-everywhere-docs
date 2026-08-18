@@ -54,10 +54,10 @@ The following scenario demonstrates how Agent Cache eliminates redundant token u
 1. Locate the captured session in the grid (use the **Host** or **URL** columns to identify it).
 1. Select the session to open the [**Agent Inspector**](slug://inspector-types#agent-inspector) in the details pane—review the **Cost**, **Latency**, **Messages**, **Tools**, and **Model** sub-tabs to confirm the captured response meets your expectations before caching it.
 1. Enable the **Caching** switch for that session in the sticky **Caching** column.
-       ![ the **Agent Calls** section and the **Caching** column](./images/agent-calls-tab.png)
+       ![The **Agent Calls** section and the **Caching** column](./images/agent-calls-tab.png)
 1. Run your agent again with the same request.
 1. Verify in the **Live Traffic** grid that Fiddler Everywhere served the cached response for all subsequent requests.
-       > **TODO (screenshot):** Add an updated screenshot of the cached endpoints in the Live Traffic grid reflecting the new UI.
+       ![Cached endpoints in the Live Traffic grid](./images/cached-agent-calls.png)
 
 A quick check in the agent provider confirms that no new live calls were made and no tokens were consumed.
 
