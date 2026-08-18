@@ -83,3 +83,9 @@ Fiddler Everywhere provides an [MCP (Model Context Protocol) server]({%slug fidd
 ## SOC Compliance
 
 The Fiddler Everywhere application is certified by an independent third party to comply with the service organization control standards (SOC 2) developed by the Association of International Certified Professional Accountants (AICPA). Compliance with SOC 2 is a testament that Progress has established a comprehensive set of internal procedures and controls to ensure the security, confidentiality, and availability of its cloud services and software development infrastructure, increasing the level of trust and confidence organizations have when choosing to rely on Progress services and products.
+
+## See Also
+
+* [Single Sign-On (SSO) Setup](slug://fe-sso-setup)
+* [Managed App Configuration](slug://fe-restrict-policies)
+* [Applying sanitization for captured traffic in Fiddler Everywhere](slug://fe-sanitization)

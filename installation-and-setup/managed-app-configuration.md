@@ -132,3 +132,4 @@ For more details on each configuration key or for troubleshooting, refer to the 
 * [Not capturing traffic due to group policy](slug://resolve-proxysettingsperuser-policy)
 * [Policies for managing access and usage of the Fiddler MCP server](slug://fiddler-mcp-server#mcp-access-policies)
 * [Policies for managing access and usage of the Fiddler Debugging Assistant](slug://fiddler-assistant#debugging-assistant-access-policies)
+* [Single Sign-On (SSO) Setup](slug://fe-sso-setup)
