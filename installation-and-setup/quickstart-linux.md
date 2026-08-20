@@ -68,7 +68,7 @@ In this step, you will register by creating your unified Telerik account.
 
 1. Launch the Fiddler Everywhere application. Follow the **Sign in or create an account** link.
 1. Create an account using email and password or using the **Sign in with Google** option.
-  >tip The [Fiddler Everywhere Enterprise subscription plan](https://www.telerik.com/purchase/fiddler) supports SSO login. Refer to [this Telerik blog post](https://www.telerik.com/blogs/sso-telerik-kendo-ui-simpler-more-secure-access-account) for detailed instructions on configuring your company-specific SSO.
+  >tip The [Fiddler Everywhere Enterprise subscription plan](https://www.telerik.com/purchase/fiddler) supports SSO login. Refer to the [Single Sign-On (SSO) Setup]({%slug fe-sso-setup%}) article for detailed instructions on configuring your company-specific SSO.
 1. Enter the requested information on the **Enter Your Email to Sign in or Create an Account** screen.
 1. Check your inbox, open the confirmation email, and complete your account activation.
 1. Return the Fiddler Everywhere application and choose whether to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.

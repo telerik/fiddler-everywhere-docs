@@ -1,6 +1,12 @@
 VPN
 TLS
 SSL
+SAML
+Okta
+Entra
+IdP
+DevCraft
+SCIM
 blocklist
 blocklisting
 allowlist
