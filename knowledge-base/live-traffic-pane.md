@@ -20,6 +20,54 @@ The **Traffic pane** provides essential features of Fiddler Everywhere including
 
 Live traffic summarizes each captured session that shows in the **Live Traffic** grid. It also provides functionalities to work with these sessions through the **Live Traffic** toolbar, the [**Inspectors**](slug://inspector-types) types, and the corresponding [**Rules**](slug://modify-traffic-get-started) tab. The feature enables the saving and sharing of sessions, editing issued requests, marking, commenting sessions, and applying rules.
 
+## Grouped Traffic Panel
+
+The **Traffic** pane includes a collapsible grouped traffic panel on the left-hand side that automatically organizes captured sessions into sections. Selecting a section applies a hidden filter and narrows the **Live Traffic** grid to the matching sessions. The name of the active tab changes to reflect the selected group.
+
+![The grouped traffic panel in the Traffic pane](./images/live-traffic-pane-overview.png)
+
+The panel contains the following sections:
+
+- **All Traffic**&mdash;Shows all captured sessions with no grouping. A **New** badge next to the title highlights the reworked panel. Using the **Clear all sessions** action (trashcan icon) while inside a group returns you to **All Traffic**.
+- **Pinned**&mdash;Apps or domains you have pinned for quick access. Pinned groups are remembered between application restarts.
+- **Apps**&mdash;Traffic grouped by the originating application, with the related domains nested underneath each app.
+- **Domains**&mdash;A flat domain-level grouping for traffic with no identifiable app. Domains are grouped by their base URL&mdash;for example, `home.abv.bg` and `img.abv.bg` are grouped together under `abv.bg`.
+- **Agent Calls**&mdash;AI agent traffic surfaced as a dedicated section. Selecting it filters the **Live Traffic** grid to agent calls only. For details on caching agent responses, see [Agent Cache](slug://agent-cache).
+- **Bypassed**&mdash;Domains you have suppressed. This section mirrors the **Settings** > **Connections** > **Bypass Fiddler for URLs that start with** list.
+
+Each row displays a session count and exposes a dropdown menu with the actions applicable to that row (for example, **Pin**, **Bypass**, and **Delete**). The available actions differ depending on whether the row is an app or a domain. Rows are visually highlighted when a new session is added to them.
+
+### Pinning and Unpinning
+
+Use pinning to keep the apps or domains you care about the most within quick reach at the top of the grouped traffic panel. To manage the pinned state, open the row's context menu by right-clicking the app or domain (or by clicking its dropdown menu).
+
+To pin a row:
+
+1. Right-click an app or domain under the **Apps** or **Domains** section.
+1. Select **Pin** from the context menu. The row is copied to the **Pinned** section for quick access while remaining available under its original section.
+
+To unpin a row:
+
+1. Right-click the pinned row under the **Pinned** section.
+1. Select **Unpin** from the context menu. The row is removed from the **Pinned** section but continues to appear under its original **Apps** or **Domains** section.
+
+Pinned groups are remembered between application restarts. The context menu shows **Pin** for rows that are not pinned yet and **Unpin** for rows that are already pinned.
+
+### Group Filters
+
+Selecting a group applies a hidden filter that is not visible to you. You can additionally apply your own [custom filters](slug://how-to-filter-traffic) inside each group. Custom filters are remembered per group&mdash;if you apply a filter to one group, switch to another group (where the filter is not applied), and then switch back, the original filter is reapplied. When you open the filtering dialog while inside an app or domain group, a message informs you that you are filtering within a group.
+
+### Bypassing a Domain
+
+Only domains can be bypassed. When you bypass a domain:
+
+- A confirmation dialog warns you about the effect of the action.
+- Two entries are added to the bypass list to match both the base domain and its subdomains (for example, bypassing `abv.bg` creates the entries `abv.bg` and `*.abv.bg`).
+- Existing sessions to that domain are deleted from the grid.
+- Future traffic to that domain is no longer captured.
+
+Groups added to the **Bypassed** section are mirrored in the **Settings** > **Connections** > **Bypass Fiddler for URLs that start with** list.
+
 ## Defining a Session
 
 A (web) session represents a single transaction between a client and a server, sometimes known as a request/response pair. Each session appears as a single entry in **Live Traffic** grid. Each session object has a **Request** and a **Response**, representing the data the client sends to the server and the data the server returns to the client. The session object also maintains a set of flags that record metadata about the session and a timers object that stores timestamps logged during the processing of the session.
@@ -136,7 +184,7 @@ The last icon on the right side of the toolbar presents an option to restructure
 - (Default layout) **Live Traffic grid** on the left side and the **Inspectors** on the right (top for **Request Inspectors** and bottom for **Response Inspectors**).
 - (Alternative layout) **Live Traffic grid** at the top and the **Inspectors** at the bottom (left for **Request Inspectors** and right for **Response Inspectors**).
 
->tip You can collapse or expand the **Snapshots** and **Requests** side panels and toggle the main layout to optimize your working space.
+>tip You can collapse or expand the grouped traffic panel to optimize your working space. The **Snapshots** and **Composer** panes open independently, so you can switch to them without losing your place in the **Traffic** pane.
 
 ## Live Traffic Grid
 
@@ -507,7 +555,7 @@ This option opens a dialog that allows you to select the session snapshot to whi
 
 ### Saving
 
-To save selected sessions, use the **Save** context menu option. The snapshot of saved sessions will appear in the **Snapshots** tree to the left of the Fiddler Everywhere interface, and from there, you can later re-open, export, and share them.
+To save selected sessions, use the **Save** context menu option. The snapshot of saved sessions will appear in the **Snapshots** pane, and from there, you can later re-open, export, and share them.
 
 The option displays a **Save** prompt window. To save the desired sessions:
 

@@ -27,7 +27,7 @@ The save options in Fiddler Everywhere allow you to use local and cloud save, or
 
 ## Saving Snapshots
 
-The **Snapshots** tree in Fiddler Everywhere lets you store snapshots of previously captured traffic. The section is part of a collapsible panel that you can hide/show to optimize your working space. 
+The **Snapshots** tree in Fiddler Everywhere lets you store snapshots of previously captured traffic. The tree lives in the standalone **Snapshots** pane, which you can open and close independently from the navigation rail to optimize your working space. 
 
 Save session snapshots to the save **Snapshots** tree as follows:
 

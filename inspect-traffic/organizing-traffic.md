@@ -9,17 +9,18 @@ position: 50
 
 # Organizing Traffic
 
-In addition to the core capturing and inspection capabilities, Fiddler Everywhere provides options to save, share and organize already captured sessions. The section that enables you to achieve the above is called the **Snapshots** tree. To open the **Snapshots** follow these steps:
+In addition to the core capturing and inspection capabilities, Fiddler Everywhere provides options to save, share and organize already captured sessions. The pane that enables you to achieve the above is called the **Snapshots** pane. To open the **Snapshots** pane follow these steps:
 
 1. Start Fiddler Everywhere.
-1. Open the **Traffic** pane.
-1. Expand the **Snapshots** tree located to the left.
+1. Open the **Snapshots** pane from the navigation rail on the left edge of the application.
 
-The **Snapshots** tree in Fiddler Everywhere provides the option to save, organize, modify, inspect, encrypt, and share previously captured traffic. The section is part of a collapsible panel that you can hide/show to optimize your working space.
+The **Snapshots** pane in Fiddler Everywhere provides the option to save, organize, modify, inspect, encrypt, and share previously captured traffic. It is a standalone pane that opens and closes independently of the **Traffic** pane, similar to the **Composer** pane.
+
+ ![The **Snapshots** pane](./images/snapshots-pane-overview.png)
 
 ## Saving in Fiddler Everywhere
 
-To save snapshots of captured traffic (single or multiple sessions) to the **Snapshots** tree, use the saving and sharing options of the **Live Traffic** grid. All saved entries are automatically sorted in alphabetical order.
+To save snapshots of captured traffic (single or multiple sessions) to the **Snapshots** pane, use the saving and sharing options of the **Live Traffic** grid. All saved entries are automatically sorted in alphabetical order.
 
 Save a snapshot of captured HTTPS traffic through the following steps:
 
