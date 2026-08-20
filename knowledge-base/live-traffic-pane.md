@@ -28,7 +28,7 @@ The **Traffic** pane includes a collapsible grouped traffic panel on the left-ha
 
 The panel contains the following sections:
 
-- **All Traffic**&mdash;Shows all captured sessions with no grouping. A **New** badge next to the title highlights the reworked panel. Using the **Clear all** action while inside a group returns you to **All Traffic**.
+- **All Traffic**&mdash;Shows all captured sessions with no grouping. A **New** badge next to the title highlights the reworked panel. Using the **Clear all sessions** action (trashcan icon) while inside a group returns you to **All Traffic**.
 - **Pinned**&mdash;Apps or domains you have pinned for quick access. Pinned groups are remembered between application restarts.
 - **Apps**&mdash;Traffic grouped by the originating application, with the related domains nested underneath each app.
 - **Domains**&mdash;A flat domain-level grouping for traffic with no identifiable app. Domains are grouped by their base URL&mdash;for example, `home.abv.bg` and `img.abv.bg` are grouped together under `abv.bg`.
