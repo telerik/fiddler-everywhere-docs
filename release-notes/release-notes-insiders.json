@@ -1,5 +1,54 @@
 [
      {
+        "version": "8.1.0-insiders",
+        "title": "Fiddler Everywhere v8.1.0",
+        "date": "Aug 31, 2026",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Group sessions per domain/application."
+                    },
+                    {
+                        "title": "Add QUERY method in Composer."
+                    },
+                    {
+                        "title": "Updated AppImage integration for Linux."
+                    },
+                    {
+                        "title": "Option to copy header name only in inspectors."
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "App crashes on startup when network access is blocked."
+                    },
+                    {
+                        "title": "Duplicate VPN bypass entries when host contains multiple endpoints."
+                    },
+                    {
+                        "title": "GRPC reflection fails to resolve for some sessions."
+                    },
+                    {
+                        "title": "Stop loading animation if OS animations are disabled."
+                    },
+                    {
+                        "title": "Close button is missing on some notifications."
+
+                    },
+                    {
+                        "title": "Updated third-party dependencies to address potential security vulnerabilities."
+                        
+                    }
+                ]
+            }
+        ]
+    },
+     {
         "version": "8.0.2-insiders",
         "title": "Fiddler Everywhere v8.0.2",
         "date": "July 30, 2026",
