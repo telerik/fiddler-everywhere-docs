@@ -55,6 +55,7 @@ If any check fails, the script is not enabled/saved, and the editor highlights t
 ## See Also
 
 - [Script Hooks Reference](slug://fiddler-script-hooks)
+- [Common Scripting Examples](slug://fiddler-script-examples)
 - [Scripting Settings and Limits](slug://fiddler-script-settings)
 - [Scripting Security Considerations](slug://fiddler-script-security)
 - [Using Conditions and Actions with Rules](slug://fiddler-rules-actions)

@@ -49,4 +49,5 @@ To make the timeout effective even inside a script's own loops, Fiddler Everywhe
 
 - [Scripting Overview](slug://fiddler-script)
 - [Script Hooks Reference](slug://fiddler-script-hooks)
+- [Common Scripting Examples](slug://fiddler-script-examples)
 - [Scripting Security Considerations](slug://fiddler-script-security)

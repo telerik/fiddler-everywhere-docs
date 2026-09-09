@@ -61,4 +61,5 @@ The guardrails are a **best-effort allowlist/blocklist**, not process isolation.
 
 - [Scripting Overview](slug://fiddler-script)
 - [Script Hooks Reference](slug://fiddler-script-hooks)
+- [Common Scripting Examples](slug://fiddler-script-examples)
 - [Scripting Settings and Limits](slug://fiddler-script-settings)

@@ -112,5 +112,6 @@ While editing a script, the built-in editor offers:
 ## See Also
 
 - [Scripting Overview](slug://fiddler-script)
+- [Common Scripting Examples](slug://fiddler-script-examples)
 - [Scripting Settings and Limits](slug://fiddler-script-settings)
 - [Scripting Security Considerations](slug://fiddler-script-security)
