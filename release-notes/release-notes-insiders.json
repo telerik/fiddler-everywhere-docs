@@ -1,5 +1,20 @@
 [
      {
+        "version": "8.2.0-insiders",
+        "title": "Fiddler Everywhere v8.2.0",
+        "date": "Sep 9, 2026",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Host Remapping: redirect traffic for a host to a different host, IP address, or port through the new Settings > Hosts tab, with per-mapping protocol override, Preserve Host control, and import from the OS hosts file - feature parity with Fiddler Classic's Tools > HOSTS."
+                    }
+                ]
+            }
+        ]
+    },
+     {
         "version": "8.1.0-insiders",
         "title": "Fiddler Everywhere v8.1.0",
         "date": "Aug 31, 2026",
