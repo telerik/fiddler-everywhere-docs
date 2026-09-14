@@ -4,7 +4,7 @@ page_title: Host Remapping - Settings | Fiddler Everywhere
 description: "Use the Settings > Hosts tab to redirect traffic for a host to a different host, IP address, or port - feature parity with Fiddler Classic's Tools > HOSTS."
 slug: settings-host-remapping
 publish: true
-position: 120
+position: 105
 ---
 
 # Hosts (Host Remapping)
@@ -30,7 +30,7 @@ Host Remapping is commonly used to:
 
 ## Adding a Host Mapping
 
-Each row in the **Host Mappings** list represents a single redirect rule and has the following fields:
+Each row in the **Host Mappings** list represents a single redirect rule and has the following fields. Only the column header row has a divider line below it - individual mapping rows are not separated by lines.
 
 - **Enabled (checkbox, unlabeled)**&mdash;Turns the individual mapping on or off without deleting it. New manual mappings are enabled by default; entries added through **Import from OS Hosts File** are added disabled so you can review them before they take effect.
 - **Original Host**&mdash;The hostname the client requests, for example `www.example.com`. Do not include a scheme (`http://`/`https://`). You can optionally append `:port` (for example, `www.example.com:8080`) to scope the mapping to requests on that specific port only; a mapping without a port matches the host on **any** port, unless a more specific `host:port` mapping also exists for the same host (the more specific entry always wins).
@@ -38,9 +38,11 @@ Each row in the **Host Mappings** list represents a single redirect rule and has
 - **Protocol**&mdash;`Auto` (default), `HTTP`, or `HTTPS`. Controls the protocol used for the outbound connection to **Redirect To**. See [Protocol Override](#protocol-override).
 - **Preserve Host**&mdash;`Yes` (default) or `No`. Controls whether the destination server (and the Fiddler Rules engine) see the original requested hostname or the new **Redirect To** hostname. See [Preserve Host](#preserve-host-header-and-sni).
 
-Use **Add Mapping** to append a new empty row, and the trash icon at the end of a row to remove it.
+Use **Add Mapping** to append a new empty row, and the trash icon at the end of a row to remove it. Adding, removing, importing, or toggling a mapping's **enabled** checkbox immediately enables the dialog's **Save** button, so you can tell right away that you have unsaved changes.
 
->important Both **Original Host** and **Redirect To** are validated as a hostname or IP address, optionally followed by `:port`. Fiddler performs a format check only (no DNS lookup) - it does not verify that the target actually exists or is reachable.
+>important Both **Original Host** and **Redirect To** are validated as a hostname or IP address, optionally followed by `:port`. Fiddler performs a format check only (no DNS lookup) - it does not verify that the target actually exists or is reachable. Validation runs only for **enabled** mappings - clicking **Save** with an enabled mapping that has an invalid or blank **Original Host** or **Redirect To** is rejected with an error message, so you can keep a mapping around, half-configured, as long as it stays disabled.
+
+>note An empty row (both **Original Host** and **Redirect To** left blank, for example a row you just added with **Add Mapping** but haven't filled in yet) is not persisted when you click **Save** - it's silently dropped rather than saved as a no-op entry. This is expected: if you close and reopen **Settings** without filling in a newly added row, that blank row will not reappear.
 
 ## Port Behavior (Original Host vs. Redirect To)
 
