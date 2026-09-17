@@ -1,12 +1,12 @@
 ---
 title: Host Remapping
-page_title: Host Remapping - Application Menu | Fiddler Everywhere
+page_title: Host Remapping - Capture Traffic | Fiddler Everywhere
 description: "Use Host Remapping to redirect traffic for a host to a different host, IP address, or port - feature parity with Fiddler Classic's Tools > HOSTS."
 slug: host-remapping
 tags: Fiddler Host Remapping, Fiddler Tools menu, redirect host traffic
 publish: true
-position: 4
-previous_url: /user-guide/settings/host-remapping, /user-guide/host-remapping
+position: 75
+previous_url: /user-guide/settings/host-remapping, /user-guide/host-remapping, /user-guide/application-menu/host-remapping
 ---
 
 # Host Remapping
