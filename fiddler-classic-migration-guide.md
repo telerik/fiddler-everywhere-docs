@@ -28,6 +28,7 @@ Even before the EULA update, many users had already been migrating to Fiddler Ev
 | Maximum supported version of TLS  | TLS 1.2 | TLS 1.3 |
 | Support for streaming protocols  | WebSocket | WebSocket, SSE, Socket.IO, gRPC |
 | Statistical and analytical data | Statistics tab | Overview tab with enhanced statistical data and diagram |
+| Redirect a host to a different host/IP/port | Tools > HOSTS | [Host Remapping](slug://settings-host-remapping) (**Tools** menu or status bar), with added per-mapping port and protocol override, and import from the OS hosts file |
 | AI Assistant | No | Yes |
 | MCP server | No | Yes |
 | Enterprise options | No | Technical support, SSO login, offline mode, managed app configuration, and more |
