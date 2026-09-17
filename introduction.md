@@ -58,6 +58,10 @@ This extensive protocol support enables developers to debug complex modern appli
 
 Fiddler supports mocking, modifying, and setting breakpoints on all HTTP requests and responses. With the Fiddler rules, you can quickly change HTTPS requests and responses without updating the code or accessing the server or the client application. [Read more about creating rules for modifying requests and responses with Fiddler Everywhere...](slug://rulesbuilder-get-started)
 
+### Scripting (BETA)
+
+Fiddler Everywhere lets you write C# scripts that hook into the traffic pipeline and application lifecycle for automation scenarios that go beyond the Rules Builder. [Read more about Scripting in Fiddler Everywhere...](slug://fiddler-script)
+
 ### API Composing
 
 Fiddler Everywhere comes with an API Composer, which allows you to test REST and SOAP APIs by creating and sending requests and saving and sharing composed APIs. You can use the API composing feature when developing new APIs and testing existing ones. [Read more about creating and organizing API requests with Fiddler Everywhere...](slug://composer-get-started)
