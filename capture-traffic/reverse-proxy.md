@@ -17,7 +17,7 @@ This article explains how to use Fiddler Everywhere as a reverse proxy through t
 
 >note For most users, the built-in Reverse Proxy feature is the simplest and most reliable approach.
 
->tip Looking to redirect traffic for an *existing* hostname to a different host/IP/port without opening a new listening port? Use [Host Remapping](slug://settings-host-remapping) (**Settings** > **Hosts**) instead - it is closer to editing the OS hosts file. See [Host Remapping vs. Reverse Proxy](slug://settings-host-remapping#host-remapping-vs-reverse-proxy) for a side-by-side comparison.
+>tip Looking to redirect traffic for an *existing* hostname to a different host/IP/port without opening a new listening port? Use [Host Remapping](slug://settings-host-remapping) (**Tools** menu or status bar) instead - it is closer to editing the OS hosts file. See [Host Remapping vs. Reverse Proxy](slug://settings-host-remapping#host-remapping-vs-reverse-proxy) for a side-by-side comparison.
 
 ## Reverse Proxy for Local Servers
 

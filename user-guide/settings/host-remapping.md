@@ -1,7 +1,7 @@
 ---
 title: Hosts
-page_title: Host Remapping - Settings | Fiddler Everywhere
-description: "Use the Settings > Hosts tab to redirect traffic for a host to a different host, IP address, or port - feature parity with Fiddler Classic's Tools > HOSTS."
+page_title: Host Remapping | Fiddler Everywhere
+description: "Use Host Remapping to redirect traffic for a host to a different host, IP address, or port - feature parity with Fiddler Classic's Tools > HOSTS."
 slug: settings-host-remapping
 publish: true
 position: 105
@@ -9,7 +9,7 @@ position: 105
 
 # Hosts (Host Remapping)
 
-The **Settings** > **Hosts** tab lets you redirect traffic requested for one host to a different host, IP address, or port, without changing what the client or the destination server actually see. This is Fiddler Everywhere's built-in replacement for Fiddler Classic's **Tools** > **HOSTS** dialog, extended with per-mapping port and protocol control.
+**Host Remapping** lets you redirect traffic requested for one host to a different host, IP address, or port, without changing what the client or the destination server actually see. This is Fiddler Everywhere's built-in replacement for Fiddler Classic's **Tools** > **HOSTS** dialog, extended with per-mapping port and protocol control.
 
 Host Remapping is commonly used to:
 
@@ -21,10 +21,19 @@ Host Remapping is commonly used to:
 
 ## Enabling Host Remapping
 
-1. Open **Settings** > **Hosts**.
-1. Check **Enable Host Remapping**. Mappings are only applied while this option is checked - individual mappings also have their own **enabled** toggle, described below.
+Open the **Host Remapping** window from the **Tools** menu or the status bar. Unlike a typical Settings tab, there is no separate "Enable Host Remapping" checkbox - the window's own **Enable**/**Disable** button (see below) is what turns the feature on and off globally.
+
+The window has three buttons at the bottom:
+
+- **Cancel**&mdash;Discards any unsaved local edits (added, removed, or updated mappings) and closes the window without changing anything.
+- **Save**&mdash;Persists your mapping edits (add/remove/update) without changing whether Host Remapping is globally enabled or disabled.
+- **Enable**/**Disable** (primary button)&mdash;Persists your edits and also flips the global on/off state, then closes the window. The button's label reflects the action it will take next: it reads **Enable** when Host Remapping is currently off, and **Disable** when it's currently on. **Enable** is disabled (greyed out) until at least one mapping row has its own per-row enabled checkbox checked.
+
+To set up Host Remapping:
+
 1. Add one or more [host mappings](#adding-a-host-mapping), either manually or by [importing them from the OS hosts file](#importing-from-the-os-hosts-file).
-1. Save your changes.
+1. Make sure at least one mapping's per-row **enabled** checkbox is checked.
+1. Click **Enable** to persist your mappings and turn Host Remapping on (or click **Save** first if you only want to persist edits without changing the global state yet).
 
 >note Host Remapping does not require the Fiddler root certificate or **Capture HTTPS Traffic** to be enabled for plain HTTP redirects, but decrypting an HTTPS mapping (so you can inspect the remapped traffic) still requires [HTTPS traffic capturing](slug://decrypt-https-traffic) to be turned on.
 
@@ -38,11 +47,11 @@ Each row in the **Host Mappings** list represents a single redirect rule and has
 - **Protocol**&mdash;`Auto` (default), `HTTP`, or `HTTPS`. Controls the protocol used for the outbound connection to **Redirect To**. See [Protocol Override](#protocol-override).
 - **Preserve Host**&mdash;`Yes` (default) or `No`. Controls whether the destination server (and the Fiddler Rules engine) see the original requested hostname or the new **Redirect To** hostname. See [Preserve Host](#preserve-host-header-and-sni).
 
-Use **Add Mapping** to append a new empty row, and the trash icon at the end of a row to remove it. Adding, removing, importing, or toggling a mapping's **enabled** checkbox immediately enables the dialog's **Save** button, so you can tell right away that you have unsaved changes.
+Use the grid's own trailing "add new row" behavior to append a new mapping - start typing into the empty last row and it becomes an editable mapping; there is no separate **Add Mapping** button. Use the trash icon at the end of a row to remove it. Adding, removing, importing, or editing a mapping (including toggling its **enabled** checkbox) immediately enables the window's **Save** button, so you can tell right away that you have unsaved changes.
 
->important Both **Original Host** and **Redirect To** are validated as a hostname or IP address, optionally followed by `:port`. Fiddler performs a format check only (no DNS lookup) - it does not verify that the target actually exists or is reachable. Validation runs only for **enabled** mappings - clicking **Save** with an enabled mapping that has an invalid or blank **Original Host** or **Redirect To** is rejected with an error message, so you can keep a mapping around, half-configured, as long as it stays disabled.
+>important A row is **incomplete** if either **Original Host** or **Redirect To** is left blank, and this blocks both **Save** and **Enable**/**Disable** - an inline title/tooltip on the row explains why. This "both fields must be filled in" check applies to **every** non-blank row, regardless of whether that row's own **enabled** checkbox is checked. A deeper check - whether the value is actually a well-formed `host` or `host:port` - only runs for **enabled** mappings; a disabled row can hold an invalid or unresolved-looking value without blocking **Save** or **Enable**/**Disable**, as long as both fields are non-blank. Duplicate **Original Host** values across rows (matched case-insensitively) are also rejected with an inline validation error, whether or not the duplicate rows are enabled.
 
->note An empty row (both **Original Host** and **Redirect To** left blank, for example a row you just added with **Add Mapping** but haven't filled in yet) is not persisted when you click **Save** - it's silently dropped rather than saved as a no-op entry. This is expected: if you close and reopen **Settings** without filling in a newly added row, that blank row will not reappear.
+>note An empty row (both **Original Host** and **Redirect To** left blank, for example a new row you started adding but haven't filled in yet) is not persisted when you click **Save** or **Enable**/**Disable** - it's silently dropped rather than saved as a no-op entry, and it does not count as "incomplete" for validation purposes.
 
 ## Port Behavior (Original Host vs. Redirect To)
 
@@ -107,15 +116,15 @@ Any remaining entries are added to the **Host Mappings** list as **new, disabled
 
 >important As noted in [Port Behavior](#port-behavior-original-host-vs-redirect-to), imported entries never have a port on **Redirect To**, because the OS hosts file has no way to express one. Review each imported mapping and add an explicit port to **Redirect To** if the real target listens on a non-default port your client doesn't already specify.
 
-## Settings Persistence
+## Persistence
 
-Host Remapping settings (the enabled state and every mapping) are saved as part of your regular Fiddler Everywhere settings, so they persist across application restarts just like any other **Settings** option.
+Clicking **Save** or **Enable**/**Disable** persists the enabled state and every mapping as part of your regular Fiddler Everywhere settings, so they persist across application restarts. **Cancel** discards unsaved edits instead.
 
 ## Host Remapping vs. Reverse Proxy
 
 Host Remapping and [Reverse Proxy](slug://fiddler-reverse-proxy) can look similar at first glance, but they solve different problems:
 
-| | Host Remapping (Settings > Hosts) | [Reverse Proxy](slug://fiddler-reverse-proxy) |
+| | Host Remapping | [Reverse Proxy](slug://fiddler-reverse-proxy) |
 |:---|:---|:---|
 | What it does | Redirects traffic for an existing, client-requested hostname to a different host/IP/port, in-flight - no new listener is created. | Opens a **new** listening port on the Fiddler machine and forwards anything that arrives on it to a remote host. |
 | Client change required | None - the client keeps requesting the original hostname/port; Fiddler only needs to be the active proxy (or the hostname needs to resolve to the machine running Fiddler). | The client (or its hosts file/DNS) must be pointed at the new listening port/host that Fiddler opens. |
@@ -125,7 +134,7 @@ Both features share the same underlying protocol choices (`Auto`/`HTTP`/`HTTPS`)
 
 ## Troubleshooting
 
-- **Mapping doesn't seem to apply:** Confirm both **Enable Host Remapping** (top of the tab) and the individual mapping's own enabled checkbox are checked, and that changes were saved.
+- **Mapping doesn't seem to apply:** Confirm the mapping's own per-row enabled checkbox is checked, that Host Remapping is globally enabled (the window's primary button reads **Disable**, meaning it's currently on), and that you clicked **Enable**/**Disable** (or previously **Save**, if it was already enabled) rather than **Cancel**.
 - **Connection refused to a local dev server:** If **Redirect To** is a loopback IP literal (`127.0.0.1`/`::1`), switch it to `localhost` - see [Loopback Addresses vs. localhost](#loopback-addresses-vs-localhost).
 - **Redirect reaches the wrong port (or times out) after importing from the OS hosts file:** The imported mapping has no port on **Redirect To** - see [Port Behavior](#port-behavior-original-host-vs-redirect-to) for how to fix it.
 - **HTTPS request to a dev server hangs or fails:** Set **Protocol** to **HTTP** on that mapping if the target only serves plain HTTP - see [Protocol Override](#protocol-override).
