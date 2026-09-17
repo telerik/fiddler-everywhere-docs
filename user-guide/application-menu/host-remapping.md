@@ -1,13 +1,15 @@
 ---
-title: Hosts
-page_title: Host Remapping | Fiddler Everywhere
+title: Host Remapping
+page_title: Host Remapping - Application Menu | Fiddler Everywhere
 description: "Use Host Remapping to redirect traffic for a host to a different host, IP address, or port - feature parity with Fiddler Classic's Tools > HOSTS."
-slug: settings-host-remapping
+slug: host-remapping
+tags: Fiddler Host Remapping, Fiddler Tools menu, redirect host traffic
 publish: true
-position: 105
+position: 4
+previous_url: /user-guide/settings/host-remapping, /user-guide/host-remapping
 ---
 
-# Hosts (Host Remapping)
+# Host Remapping
 
 **Host Remapping** lets you redirect traffic requested for one host to a different host, IP address, or port, without changing what the client or the destination server actually see. This is Fiddler Everywhere's built-in replacement for Fiddler Classic's **Tools** > **HOSTS** dialog, extended with per-mapping port and protocol control.
 
@@ -21,7 +23,9 @@ Host Remapping is commonly used to:
 
 ## Enabling Host Remapping
 
-Open the **Host Remapping** window from the **Tools** menu or the status bar. Unlike a typical Settings tab, there is no separate "Enable Host Remapping" checkbox - the window's own **Enable**/**Disable** button (see below) is what turns the feature on and off globally.
+Open the **Host Remapping** window via **View** > **Tools** > **Host Remapping** (see [Tools Menu](slug://app-menu-tools)), or from the status bar indicator - a "route" icon that shows the count of currently active/enabled mappings; its dropdown shows the current Enabled/Disabled status and a **Manage host remapping** link that opens the window. You can also use the keyboard shortcut **Alt+H** (Windows/Linux) or **Option+H** (macOS). The window is non-modal - you can move or resize it, and keep working elsewhere in the app while it stays open, unlike a modal Settings dialog.
+
+Unlike a typical Settings tab, there is no separate "Enable Host Remapping" checkbox - the window's own **Enable**/**Disable** button (see below) is what turns the feature on and off globally.
 
 The window has three buttons at the bottom:
 
@@ -143,6 +147,7 @@ Both features share the same underlying protocol choices (`Auto`/`HTTP`/`HTTPS`)
 
 ## See Also
 
+- [Tools Menu](slug://app-menu-tools)
 - [Reverse Proxy](slug://fiddler-reverse-proxy)
 - [Connections Settings](slug://connections-submenu)
 - [HTTPS Settings](slug://decrypt-https-traffic)
