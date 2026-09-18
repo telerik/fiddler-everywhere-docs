@@ -19,7 +19,7 @@ The **Help** section of the [application menu](slug://app-menu-section) contains
 - **Open Application Logs Folder**&mdash;Opens the Fiddler application folder that contains [the application logs files](slug://fiddler-log-files).
 - **About**&mdash;Opens an application dialog with detailed information about the currently installed version of Fiddler Everywhere. On macOS, this option is available in the menu's **Fiddler Everywhere** section.
 - **Privacy Center**&mdash;Opens the Progress privacy center page.
-- **Contact Support**&mdash;Opens the Telerik's [**Support Center**](https://www.progress.com/legal/privacy-center) landing page.
+- **Contact Support**&mdash;Opens the Telerik's [**Support Center**](https://www.telerik.com/account/support-center) landing page.
 
 ## See Also
 
