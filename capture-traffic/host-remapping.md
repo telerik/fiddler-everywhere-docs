@@ -21,6 +21,8 @@ Host Remapping is commonly used to:
 
 >tip [Learn more about the differences between Host Remapping and the Reverse Proxy feature.](#host-remapping-vs-reverse-proxy)
 
+>tip Looking for a lighter-weight, rule-based alternative? A [Map Remote (URLs) rule](slug://adv_map_remote_url) can redirect traffic to another host too. See [Host Remapping vs. Map Remote (Rules)](#host-remapping-vs-map-remote-rules) for how the two compare.
+
 ## Enabling Host Remapping
 
 Open the **Host Remapping** window via **View** > **Tools** > **Host Remapping** (see [Tools Menu](slug://app-menu-tools)), or from the status bar indicator - a "route" icon that shows the count of currently active/enabled mappings; its dropdown shows the current Enabled/Disabled status and a **Manage host remapping** link that opens the window. You can also use the keyboard shortcut **Alt+H** (Windows/Linux) or **Option+H** (macOS). The window is non-modal - you can move or resize it, and keep working elsewhere in the app while it stays open, unlike a modal Settings dialog.
@@ -136,6 +138,21 @@ Host Remapping and [Reverse Proxy](slug://fiddler-reverse-proxy) can look simila
 
 Both features share the same underlying protocol choices (`Auto`/`HTTP`/`HTTPS`) and a **Preserve Host** option, so the two are easy to reason about together, but they are configured and applied independently and can be used at the same time.
 
+## Host Remapping vs. Map Remote (Rules)
+
+Fiddler's [Rules](slug://modify-traffic-get-started) engine offers its own way to redirect a host to another target: a [Map Remote (URLs)](slug://adv_map_remote_url) rule, which matches a **URL** condition and rewrites it with an **Update URL** action. It can look like it does the same thing as Host Remapping, but the two operate at different layers and are suited to different scenarios:
+
+| | Host Remapping | [Map Remote (Rules)](slug://adv_map_remote_url) |
+|:---|:---|:---|
+| Where it applies | Below the HTTP layer, at connection time - Fiddler opens the physical connection to **Redirect To** directly, similar to an OS hosts file (DNS-style) entry. | At the HTTP/HTTPS rule-processing layer - Fiddler first receives the request as sent by the client, then a matching rule rewrites its target URL. |
+| Matching granularity | Whole `host` or `host:port` only - you cannot match on path, query string, headers, or other request details. | Any condition supported by the Rules Builder - full URL, path, headers, request body, and more - so you can redirect only specific paths or requests that meet extra criteria. |
+| `Host` header / SNI control | Explicit **Preserve Host** toggle - choose whether the destination (and Rules) see the original hostname or the new one, independently of the redirect itself. | No dedicated toggle - the `Host` header follows the rewritten URL unless you add a separate **Set Header** (or similar) action to override it. |
+| Non-HTTP/opaque traffic | Redirects the underlying connection regardless of payload, so it also affects the TLS handshake target (SNI) before any HTTP request is parsed. | Only applies once Fiddler has parsed an HTTP(S) request; it cannot influence which physical host a connection is made to before that point. |
+| Enable/disable model | One global on/off toggle for all mappings via the Host Remapping window's **Enable**/**Disable** button. | Each rule has its own toggle in the **Rules** tab, and can be freely combined with other rules, breakpoints, or scripting. |
+| Typical use case | Quietly send **all** traffic for a hostname elsewhere with minimal setup - closest to editing the OS hosts file. | Redirect or mock **specific** requests (for example, only a certain path or API call) as part of a broader rules-based testing workflow. |
+
+Use Host Remapping when you want a simple, DNS-like redirect for an entire host (optionally scoped to a port). Use a Map Remote rule when you need finer-grained matching, want to combine the redirect with other rule conditions/actions (for example, mocking a response body), or you're already working within the Rules Builder for other traffic modifications.
+
 ## Troubleshooting
 
 - **Mapping doesn't seem to apply:** Confirm the mapping's own per-row enabled checkbox is checked, that Host Remapping is globally enabled (the window's primary button reads **Disable**, meaning it's currently on), and that you clicked **Enable**/**Disable** (or previously **Save**, if it was already enabled) rather than **Cancel**.
@@ -152,4 +169,5 @@ Both features share the same underlying protocol choices (`Auto`/`HTTP`/`HTTPS`)
 - [Connections Settings](slug://connections-submenu)
 - [HTTPS Settings](slug://decrypt-https-traffic)
 - [Rules](slug://modify-traffic-get-started)
+- [Map Remote URL](slug://adv_map_remote_url)
 - [Fiddler Classic Migration](slug://fe-migrating-from-classic)
