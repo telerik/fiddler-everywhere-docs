@@ -129,12 +129,6 @@ The following tables list the keyboard shortcuts available on macOS.
 |Save Composer request|`Cmd` + `S`|
 |Save As Composer request|`Cmd` + `Shift` + `S`|
 
-### Scripting
-
-| Action  |  Keyboard Shortcut  |
-|---------|---------------------|
-|Save script (Script Editor pop-out window)|`Cmd` + `S`|
-
 ## Windows and Linux Shortcuts
 
 The following tables list the keyboard shortcuts available on Windows and Linux.
@@ -256,9 +250,3 @@ The following tables list the keyboard shortcuts available on Windows and Linux.
 |Save (Composer request)|`Ctrl` + `S`|
 |Save As (Composer request)|`Ctrl` + `Shift` + `S`|
 |Execute request|`Ctrl` + `Enter`|
-
-### Scripting
-
-| Action  |  Keyboard Shortcut  |
-|---------|---------------------|
-|Save script (Script Editor pop-out window)|`Ctrl` + `S`|

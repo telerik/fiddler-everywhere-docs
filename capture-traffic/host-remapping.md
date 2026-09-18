@@ -25,15 +25,15 @@ Host Remapping is commonly used to:
 
 ## Enabling Host Remapping
 
-Open the **Host Remapping** window via **View** > **Tools** > **Host Remapping** (see [Tools Menu](slug://app-menu-tools)), or from the status bar indicator - a "route" icon that shows the count of currently active/enabled mappings; its dropdown shows the current Enabled/Disabled status and a **Manage host remapping** link that opens the window. You can also use the keyboard shortcut **Alt+H** (Windows/Linux) or **Option+H** (macOS). The window is non-modal - you can move or resize it, and keep working elsewhere in the app while it stays open, unlike a modal Settings dialog.
+Open the **Host Remapping** dialog via the **Tools** menu (see [Tools Menu](slug://app-menu-tools)) - on macOS, **Tools** is a top-level menu; on Windows/Linux, it is a section inside the main application menu - or from the status bar indicator - a "route" icon that shows the count of currently active/enabled mappings; its dropdown shows the current Enabled/Disabled status and a **Manage host remapping** link that opens the dialog. You can also use the keyboard shortcut **Alt+H** (Windows/Linux) or **Option+H** (macOS). The dialog is modal - it cannot be moved or resized, and you must close it (via **Cancel**, **Save**, or **Enable**/**Disable**) before interacting with the rest of the app.
 
-Unlike a typical Settings tab, there is no separate "Enable Host Remapping" checkbox - the window's own **Enable**/**Disable** button (see below) is what turns the feature on and off globally.
+Unlike a typical Settings tab, there is no separate "Enable Host Remapping" checkbox - the dialog's own **Enable**/**Disable** button (see below) is what turns the feature on and off globally.
 
-The window has three buttons at the bottom:
+The dialog has three buttons at the bottom:
 
-- **Cancel**&mdash;Discards any unsaved local edits (added, removed, or updated mappings) and closes the window without changing anything.
+- **Cancel**&mdash;Discards any unsaved local edits (added, removed, or updated mappings) and closes the dialog without changing anything.
 - **Save**&mdash;Persists your mapping edits (add/remove/update) without changing whether Host Remapping is globally enabled or disabled.
-- **Enable**/**Disable** (primary button)&mdash;Persists your edits and also flips the global on/off state, then closes the window. The button's label reflects the action it will take next: it reads **Enable** when Host Remapping is currently off, and **Disable** when it's currently on. **Enable** is disabled (greyed out) until at least one mapping row has its own per-row enabled checkbox checked.
+- **Enable**/**Disable** (primary button)&mdash;Persists your edits and also flips the global on/off state, then closes the dialog. The button's label reflects the action it will take next: it reads **Enable** when Host Remapping is currently off, and **Disable** when it's currently on. **Enable** is disabled (greyed out) until at least one mapping row has its own per-row enabled checkbox checked.
 
 To set up Host Remapping:
 
@@ -148,14 +148,14 @@ Fiddler's [Rules](slug://modify-traffic-get-started) engine offers its own way t
 | Matching granularity | Whole `host` or `host:port` only - you cannot match on path, query string, headers, or other request details. | Any condition supported by the Rules Builder - full URL, path, headers, request body, and more - so you can redirect only specific paths or requests that meet extra criteria. |
 | `Host` header / SNI control | Explicit **Preserve Host** toggle - choose whether the destination (and Rules) see the original hostname or the new one, independently of the redirect itself. | No dedicated toggle - the `Host` header follows the rewritten URL unless you add a separate **Set Header** (or similar) action to override it. |
 | Non-HTTP/opaque traffic | Redirects the underlying connection regardless of payload, so it also affects the TLS handshake target (SNI) before any HTTP request is parsed. | Only applies once Fiddler has parsed an HTTP(S) request; it cannot influence which physical host a connection is made to before that point. |
-| Enable/disable model | One global on/off toggle for all mappings via the Host Remapping window's **Enable**/**Disable** button. | Each rule has its own toggle in the **Rules** tab, and can be freely combined with other rules, breakpoints, or scripting. |
+| Enable/disable model | One global on/off toggle for all mappings via the Host Remapping dialog's **Enable**/**Disable** button. | Each rule has its own toggle in the **Rules** tab, and can be freely combined with other rules, breakpoints, or scripting. |
 | Typical use case | Quietly send **all** traffic for a hostname elsewhere with minimal setup - closest to editing the OS hosts file. | Redirect or mock **specific** requests (for example, only a certain path or API call) as part of a broader rules-based testing workflow. |
 
 Use Host Remapping when you want a simple, DNS-like redirect for an entire host (optionally scoped to a port). Use a Map Remote rule when you need finer-grained matching, want to combine the redirect with other rule conditions/actions (for example, mocking a response body), or you're already working within the Rules Builder for other traffic modifications.
 
 ## Troubleshooting
 
-- **Mapping doesn't seem to apply:** Confirm the mapping's own per-row enabled checkbox is checked, that Host Remapping is globally enabled (the window's primary button reads **Disable**, meaning it's currently on), and that you clicked **Enable**/**Disable** (or previously **Save**, if it was already enabled) rather than **Cancel**.
+- **Mapping doesn't seem to apply:** Confirm the mapping's own per-row enabled checkbox is checked, that Host Remapping is globally enabled (the dialog's primary button reads **Disable**, meaning it's currently on), and that you clicked **Enable**/**Disable** (or previously **Save**, if it was already enabled) rather than **Cancel**.
 - **Connection refused to a local dev server:** If **Redirect To** is a loopback IP literal (`127.0.0.1`/`::1`), switch it to `localhost` - see [Loopback Addresses vs. localhost](#loopback-addresses-vs-localhost).
 - **Redirect reaches the wrong port (or times out) after importing from the OS hosts file:** The imported mapping has no port on **Redirect To** - see [Port Behavior](#port-behavior-original-host-vs-redirect-to) for how to fix it.
 - **HTTPS request to a dev server hangs or fails:** Set **Protocol** to **HTTP** on that mapping if the target only serves plain HTTP - see [Protocol Override](#protocol-override).
