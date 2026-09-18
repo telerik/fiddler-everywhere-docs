@@ -36,7 +36,7 @@ Double-clicking a script (or choosing **Edit**) opens it in a dedicated pop-out 
 - C# syntax highlighting.
 - Inline validation diagnostics (red squiggles for errors, yellow for warnings) that update as you type.
 - Autocomplete suggestions (triggered by typing `.`) for members available on the current expression's type.
-- A **Save** action (also available via the editor's command palette) that validates the script before saving. A script with errors cannot be saved while it is enabled without first fixing the reported errors.
+- A **Save** action (also available via the editor's command palette, or the **Ctrl+S**/**Cmd+S** keyboard shortcut) that validates the script before saving. The shortcut only saves when the script form is valid and has unsaved changes, and it is scoped to the script editor pop-out window - it has no effect outside that window. A script with errors cannot be saved while it is enabled without first fixing the reported errors.
 
 ## The Sample Script
 

@@ -80,6 +80,7 @@ The following tables list the keyboard shortcuts available on macOS.
 |Save selected session(s)|`Cmd` + `S`|
 |Open AutoSave dialog|`Opt` + `S`|
 |Enable/Disable AutoSave dialog|`Cmd` + `Opt` + `S`|
+|Open Host Remapping window|`Opt` + `H`|
 |Clear all sessions|`Shift` + `Del`|
 |Open delete menu|`Opt` + `Del`|
 |Copy selected inspector key and value data|`Cmd` + `C`|
@@ -202,6 +203,7 @@ The following tables list the keyboard shortcuts available on Windows and Linux.
 |Save selected session(s)|`Ctrl` + `S`
 |Open AutoSave dialog|`Alt` + `S`|
 |Enable/Disable AutoSave dialog|`Ctrl` + `Alt` + `S`|
+|Open Host Remapping window|`Alt` + `H`|
 |Clear all sessions|`Shift` + `Del`|
 |Open delete menu|`Alt` + `Del`|
 |Copy selected inspector key and value data (headers, cookies)|`Ctrl` + `C`|
