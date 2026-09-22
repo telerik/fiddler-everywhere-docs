@@ -1,5 +1,37 @@
 [
     {
+        "version": "8.2.0",
+        "title": "Fiddler Everywhere v8.2.0",
+        "date": "Sept 24, 2026",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Added scripting functionality in Fiddler Everywhere."
+                    },
+                    {
+                        "title": "Added host remapping functionality in Fiddler Everywhere."
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Fixes for CVE-2026-86157."
+                    },
+                    {
+                        "title": "Fixes for CVE-2026-86158."
+                    },
+                    {
+                        "title": "Updated third-party dependencies to address potential security vulnerabilities."    
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "8.1.0",
         "title": "Fiddler Everywhere v8.1.0",
         "date": "Aug 31, 2026",
