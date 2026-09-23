@@ -19,10 +19,13 @@
                 "type": "Fixed",
                 "entries": [
                     {
-                        "title": "Fixes for CVE-2026-86157."
+                        "title": "Warning for unsaved filter appears in Snapshots when closing the application."
                     },
                     {
-                        "title": "Fixes for CVE-2026-86158."
+                        "title": "Fixed CVE-2026-86158: Missing Authentication in the local .NET backend of Progress Telerik Fiddler Everywhere"
+                    },
+                    {
+                        "title": "Fixed CVE-2026-86157: Exposure of Privileged IPC Functionality in Progress Telerik Fiddler Everywhere."
                     },
                     {
                         "title": "Updated third-party dependencies to address potential security vulnerabilities."    
