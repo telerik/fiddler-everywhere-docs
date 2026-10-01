@@ -1,12 +1,12 @@
 ---
-title: Single Sign-On (SSO) Setup
-page_title: Single Sign-On (SSO) Setup - Installation | Fiddler Everywhere
-description: "Learn how Fiddler Everywhere Enterprise customers can configure and use SAML-based single sign-on (SSO) for streamlined and secure authentication."
+title: Single Sign-On (SSO) and SCIM Provisioning Setup
+page_title: Single Sign-On (SSO) and SCIM Provisioning Setup - Installation | Fiddler Everywhere
+description: "Learn how Fiddler Everywhere Enterprise customers can configure and use SAML-based single sign-on (SSO) for streamlined and secure authentication, and automate license seat management with SCIM provisioning."
 slug: fe-sso-setup
 position: 45
 ---
 
-# Single Sign-On (SSO) Setup
+# Single Sign-On (SSO) and SCIM Provisioning Setup
 
 The **Fiddler Everywhere Enterprise** license tier supports **single sign-on (SSO)**, allowing your organization's users to log in to Fiddler Everywhere with their existing identity provider (IdP) credentials instead of a separate Fiddler/Telerik username and password. SSO streamlines authentication and improves security by centralizing access control at the organization level.
 
@@ -79,13 +79,66 @@ Test the login URL to verify that the configuration works. Once successful, you 
 * Affected users receive an email notification with login instructions.
 * If a license expires, users can still sign in via SSO for **10 days**. After that period, they need to recover their password and sign in with a username and password.
 
-You can also automate user access and license assignments through SCIM provisioning. For more information, refer to the [SCIM Provisioning blog post](https://www.telerik.com/blogs/scim-provisioning-telerik-kendo-ui-licenses).
+You can also automate user access and license assignments through SCIM provisioning. For more information, see [SCIM Provisioning](#scim-provisioning) below.
+
+## SCIM Provisioning
+
+**System for Cross-domain Identity Management (SCIM)** extends SSO by automating how license access is assigned and maintained. Instead of managing users separately in your Telerik account, access becomes part of your organization's existing identity management processes: when developers are added to the right group in your identity provider (IdP), they automatically receive access to their license; when they are removed from the group, their access is updated accordingly.
+
+SCIM is available for **DevCraft Complete** and **DevCraft Ultimate** subscription licenses, as well as **Fiddler Everywhere Enterprise** and **ThemeBuilder Enterprise** licenses.
+
+>tip SCIM builds on top of SSO. [SSO must already be configured](#setting-up-saml-sso-self-guided) for your domain before you can enable SCIM.
+
+Using SCIM helps organizations:
+
+* Keep license access aligned with internal identity management systems.
+* Eliminate manual seat management in the Telerik account.
+* Reduce the risk of unused or outdated license assignments.
+
+### Setting Up SCIM
+
+1. **Enable SSO.** SCIM requires SSO to already be configured for your domain. If you have not enabled it yet, complete the [Setting Up SAML SSO](#setting-up-saml-sso-self-guided) steps above first.
+1. **Open SCIM setup in your Telerik account.** Go to [Manage SSO and SCIM](https://www.telerik.com/account/sso-management) and click **SCIM Setup**.
+1. **Generate your SCIM key.** In the SCIM Setup screen:
+    * Copy the **SCIM URL** to use when configuring your identity provider.
+    * Add a **Key Note** to help differentiate your keys later.
+    * Click **Generate** to create the **SCIM API key**, copy it, and click **Finish Setup**.
+
+    >warning Copy the SCIM API key immediately. Once setup is complete, you will no longer have access to the full key.
+
+1. **Configure SCIM in your identity provider and create an IdP group.** In your IdP (for example, Okta or Microsoft Entra ID):
+    * Add the Telerik SCIM URL and use the generated API key for authentication.
+    * Enable provisioning and verify that **Create**, **Update**, and **Deactivate** user actions are enabled.
+    * Create an IdP group with a clear, distinctive name that corresponds to your license (for example, "Telerik DCU Subscription") and add users to it.
+
+    >warning If your Telerik license already has seated users assigned, add those same users to the IdP group *before* enabling SCIM provisioning. Once SCIM provisioning is enabled, all users in the selected IdP group are synchronized with the associated license. If the corresponding IdP group is empty while users are already assigned to the license, the license assignments are updated to match the (empty) IdP group, removing all currently assigned developers. Verify that the IdP group membership matches the existing license assignments before enabling SCIM provisioning to avoid disruption.
+
+1. **Enable provisioning and map your license to your IdP group.** In [Manage SSO & SCIM](https://www.telerik.com/account/sso-management):
+    * Identify the DevCraft Complete, DevCraft Ultimate, Fiddler Everywhere Enterprise, or ThemeBuilder Enterprise license you want to enable SCIM for, and click **Configure**.
+    * Enable **SCIM Provisioning**.
+    * Once configured and enabled, select the corresponding group from the **IdP Group Name** dropdown.
+
+    From this point on, access to the license is controlled through group membership in your identity provider.
+
+1. **Verify user synchronization.** After completing setup, confirm the configuration from the [Licensed Users](https://www.telerik.com/account/manage-licensed-users/product-list) view:
+    * Users added to the mapped IdP group start appearing automatically.
+    * Existing users (with a Telerik account) show as **Assigned** and continue signing in via SSO as before.
+    * New users (without a Telerik account) appear with an **Invited** status and receive an email invitation; they must complete account setup on first login.
+
+### What Happens After SCIM Is Enabled
+
+* User access is driven entirely by group membership in your identity provider; Telerik reflects those changes automatically.
+* New users are guided through a simple onboarding experience at login.
+* The Licensed Users view becomes read-only for the affected license, serving for visibility and reporting instead of manual seat management.
+* There is no need to manually manage seats in Telerik - your identity provider handles all updates.
 
 ## Considerations
 
 * SSO configuration is managed at the Telerik account level, not from within the Fiddler Everywhere application itself.
 * If your organization also uses the Telerik NuGet server or Visual Studio Extensions (VSX), verify that all affected developers use [Telerik NuGet Keys](https://www.telerik.com/blogs/announcing-nuget-keys) instead of password-based authentication before enabling SSO, since password-based login to the NuGet feed stops working once SSO is enforced.
 * For non-SAML identity providers, contact [Telerik support](https://www.telerik.com/account/support-tickets) to request assisted SSO setup.
+* SCIM provisioning is optional and separate from SSO. You can use SSO without enabling SCIM, but SCIM requires SSO to already be configured.
+* Enabling SCIM for a license whose assigned users are not already present in the mapped IdP group removes those users' access. Always reconcile group membership before enabling SCIM provisioning for a license.
 
 ## See Also
 
@@ -95,3 +148,4 @@ You can also automate user access and license assignments through SCIM provision
 * [Managed App Configuration]({%slug fe-restrict-policies%})
 * [Security Highlights]({%slug fe-security-highlights%})
 * [SSO Comes to DevCraft Complete and Ultimate Subscription Licenses (Telerik blog)](https://www.telerik.com/blogs/sso-telerik-kendo-ui-simpler-more-secure-access-account)
+* [SCIM Provisioning for DevCraft Subscriptions (Telerik blog)](https://www.telerik.com/blogs/scim-provisioning-telerik-kendo-ui-licenses)
