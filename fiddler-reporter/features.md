@@ -128,8 +128,6 @@ Open the **Sanitization Options…** dialog from the **Tools** menu to configure
 
 Sanitization rules configured here are applied when you export a capture: click **Save Capture**, then select the **Enable Sanitization** checkbox in the save dialog before confirming the export. Leaving the checkbox cleared saves the capture without sanitizing it, regardless of the configured rules.
 
->tip An IT administrator can lock down the Reporter's sanitization configuration and prevent end users from changing it using the `DefaultSanitizationSettings` and `DisableSanitizationSettingsUpdate` [managed application policies](slug://fe-restrict-policies).
-
 ## Configuring Fiddler Certificate
 
 Use the **Certificate** section within the application menu to trust, export, reset, and remove the Fiddler certificate authority (CA) or ignore server certificate errors. The options are as follows:
@@ -157,4 +155,3 @@ The Fiddler Everywhere Reporter tool automatically shows up for each captured HT
 
 - [Sanitization Settings](slug://settings-sanitization)
 - [Data Sanitization](slug://fe-sanitization)
-- [Managed App Configuration](slug://fe-restrict-policies)
