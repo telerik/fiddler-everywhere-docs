@@ -83,7 +83,7 @@ You can also automate user access and license assignments through SCIM provision
 
 ## SCIM Provisioning
 
-**System for Cross-domain Identity Management (SCIM)** extends SSO by automating how license access is assigned and maintained. Instead of managing users separately in your Telerik account, access becomes part of your organization's existing identity management processes: when developers are added to the right group in your identity provider (IdP), they automatically receive access to their license; when they are removed from the group, their access is updated accordingly.
+**System for Cross-domain Identity Management (SCIM)** complements SSO by automating how license access is assigned and maintained. Instead of managing users separately in your Telerik account, access becomes part of your organization's existing identity management processes: when developers are added to the right group in your identity provider (IdP), they automatically receive access to their license; when they are removed from the group, their access is updated accordingly.
 
 SCIM is available for **DevCraft Complete** and **DevCraft Ultimate** subscription licenses, as well as **Fiddler Everywhere Enterprise** and **ThemeBuilder Enterprise** licenses.
 
