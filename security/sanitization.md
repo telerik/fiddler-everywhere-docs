@@ -46,6 +46,8 @@ Specify which components of the HTTP(S) traffic to sanitize. Sanitization applie
 
 >important The difference between "Sanitize" and "Strip" options: Sanitization replaces sensitive values with the mask string while preserving the structure of the data. Stripping completely removes the entire body content, which may affect your ability to debug or analyze the traffic later.
 
+>note **Sanitizing large or complex HTML response bodies.** Selective masking of elements within an HTML body (for example, matching a specific tag by keyword) is a best-effort feature and is not guaranteed for large or untrusted HTML - especially when the sensitive text sits inside raw-text elements such as `<script>` or `<style>`, where markup-like strings in the element's own content can confuse tag matching and leave some values unmasked. If your goal is to guarantee that no sensitive data remains in the body rather than to mask specific values within it, use **Strip Response Body** instead - it removes the *entire* HTTP body (not only the HTML `<body>` element) and does not depend on tag matching.
+
 ### Additional Settings
 
 Enhance the sanitization process by defining custom rules to target specific sensitive data patterns. Each rule type matches a different part of the traffic and depends on the corresponding **Parts of the Session to Sanitize** toggle being enabled.

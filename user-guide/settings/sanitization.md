@@ -37,6 +37,8 @@ Controls which parts of a captured session are processed by the sanitization rul
 - **Strip response body**: Removes the entire response body instead of masking individual values.
 - **Sanitize cookies**: Masks cookie values in both requests and responses.
 
+>note **Sanitizing large or complex HTML response bodies.** Selective masking of elements within an HTML body (for example, matching a specific tag by keyword) is a best-effort feature and is not guaranteed for large or untrusted HTML - especially when the sensitive text sits inside raw-text elements such as `<script>` or `<style>`, where markup-like strings in the element's own content can confuse tag matching and leave some values unmasked. If your goal is to guarantee that no sensitive data remains in the body rather than to mask specific values within it, use **Strip response body** instead - it removes the *entire* HTTP body (not only the HTML `<body>` element) and does not depend on tag matching.
+
 ## Additional Settings
 
 Defines custom sanitization rules applied on top of the built-in ones. Rules are organized into three tabs, and each depends on the corresponding **Parts of the Session to Sanitize** toggle being enabled to take effect.
