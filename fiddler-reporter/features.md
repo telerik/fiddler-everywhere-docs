@@ -105,11 +105,30 @@ Use the manual setup  option as follows:
 
 ## Tools
 
-Use the **Tools** section within the application menu to set the default browser (for the [**Start Capturing Browser**](#capturing-browser-option) option) and to explicitly allow remote devices to connect.
+Use the **Tools** section within the application menu to set the default browser (for the [**Start Capturing Browser**](#capturing-browser-option) option), configure data sanitization, and explicitly allow remote devices to connect.
 
 - **Default Browser** - This option allows you to set the default browser that Fiddler Everywhere Reporter uses to create a sandboxed browser instance. Currently, Google Chrome and Microsoft Edge are supported browsers.
 
+- **Sanitization Options…** - Opens the [Sanitization](#sanitization) dialog, where you can configure automatic masking of sensitive data in captured traffic before it is exported.
+
 - **Allow Remote Devices to Connect** - Controls whether inbound connections to Fiddler Everywhere Reporter are allowed. Enable this option to capture traffic from remote devices. Behind the scenes, the option opens (or closes) the Fiddler Everywhere Reporter port for inbound connections on the host machine.
+
+## Sanitization
+
+The Fiddler Everywhere Reporter provides data sanitization capabilities to automatically mask sensitive information in captured traffic before it is exported as a SAZ file. This is useful when sharing captures with a licensed Fiddler Everywhere user who was not involved in the capture.
+
+>important Fiddler attempts to sanitize HTTP(S) traffic, but complete removal of sensitive data is not guaranteed. Unstructured, encrypted, compressed, obfuscated, or binary data may bypass sanitization. You are responsible for verifying outputs and preventing unintended disclosure of sensitive information.
+
+Open the **Sanitization Options…** dialog from the **Tools** menu to configure the rules. Unlike the Fiddler Everywhere desktop application, the Reporter does not expose **When to Sanitize** toggles directly in this dialog. Instead:
+
+- **Mask** - The placeholder text that replaces sanitized values. The default value is `!!!sanitized!!!`. You can change this to any string that suits your workflow.
+- **Parts of the Session to Sanitize** - The same options available in the Fiddler Everywhere desktop application: **Sanitize URL**, **Sanitize headers**, **Sanitize cookies**, **Sanitize request body**, **Sanitize response body**, **Strip request body**, and **Strip response body**.
+- **Additional Settings** - Custom **Headers**, **Keywords**, and **Regexes** rules. See the [Sanitization Settings](slug://settings-sanitization#additional-settings) article for detailed pattern syntax and behavior, since the matching logic is identical between Fiddler Everywhere and the Reporter.
+- **Reset to Default** - Restores all sanitization settings to their factory defaults.
+
+Sanitization rules configured here are applied when you export a capture: click **Save Capture**, then select the **Enable Sanitization** checkbox in the save dialog before confirming the export. Leaving the checkbox cleared saves the capture without sanitizing it, regardless of the configured rules.
+
+>tip An IT administrator can lock down the Reporter's sanitization configuration and prevent end users from changing it using the `DefaultSanitizationSettings` and `DisableSanitizationSettingsUpdate` [managed application policies](slug://fe-restrict-policies).
 
 ## Configuring Fiddler Certificate
 
@@ -133,3 +152,9 @@ Use the **Certificate** section within the application menu to trust, export, re
 ## Hiding and Showing Captured Data
 
 The Fiddler Everywhere Reporter tool automatically shows up for each captured HTTP(S) session by default. To capture the session privately, toggle OFF the **Details** switch (located at the top-right corner of the application).
+
+## See Also
+
+- [Sanitization Settings](slug://settings-sanitization)
+- [Data Sanitization](slug://fe-sanitization)
+- [Managed App Configuration](slug://fe-restrict-policies)
