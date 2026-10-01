@@ -164,9 +164,9 @@ The `DefaultSanitizationSettings` value accepts a JSON object with the following
 - `sanitizeUrl`, `sanitizeHeaders`, `sanitizeCookies`, `sanitizeRequestBody`, `sanitizeResponseBody` - Boolean values controlling which traffic components are sanitized
 - `stripRequestBody`, `stripResponseBody` - Boolean values controlling whether to completely remove body content
 - `sanitizeOnSave`, `sanitizeOnExport`, `sanitizeMcpOutput` - Boolean values controlling when sanitization occurs
-- `additionalHeaders` - **String** of semicolon-separated header-name patterns to sanitize (can be `null`, empty, or omitted). See [Headers](slug://settings-sanitization#additional-settings) for pattern syntax.
-- `additionalKeywords` - **String** of semicolon-separated field-name patterns whose values are masked (can be `null`, empty, or omitted). See [Keywords](slug://settings-sanitization#additional-settings) for pattern syntax.
-- `additionalRegexes` - **String** of semicolon-separated regular-expression patterns for advanced sanitization (can be `null`, empty, or omitted). See [Regular Expression Patterns](slug://settings-sanitization#additional-settings) for pattern syntax.
+- `additionalHeaders` - **String** of semicolon-separated header-name patterns to sanitize. See [Headers](slug://settings-sanitization#additional-settings) for pattern syntax.
+- `additionalKeywords` - **String** of semicolon-separated field-name patterns whose values are masked. See [Keywords](slug://settings-sanitization#additional-settings) for pattern syntax.
+- `additionalRegexes` - **String** of semicolon-separated regular-expression patterns for advanced sanitization. See [Regular Expression Patterns](slug://settings-sanitization#additional-settings) for pattern syntax.
 
 >important `additionalHeaders`, `additionalKeywords`, and `additionalRegexes` are each a single **string** containing semicolon-separated patterns, not a JSON array. All patterns in these three properties must use the [.NET (C#) regular-expression syntax](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
