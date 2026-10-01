@@ -109,7 +109,7 @@ Using SCIM helps organizations:
 1. **Configure SCIM in your identity provider and create an IdP group.** In your IdP (for example, Okta or Microsoft Entra ID):
     * Add the Telerik SCIM URL and use the generated API key for authentication.
     * Enable provisioning and verify that **Create**, **Update**, and **Deactivate** user actions are enabled.
-    * Create an IdP group with a clear, distinctive name that corresponds to your license (for example, "Telerik DCU Subscription") and add users to it.
+    * Create an IdP group with a clear, distinctive name that corresponds to your license (for example, "Telerik DCU Subscription"), add users to it, and include the group in the Telerik application's provisioning scope (for example, assign or push it) so that Telerik can discover it.
 
     >warning If your Telerik license already has seated users assigned, add those same users to the IdP group *before* enabling SCIM provisioning. Once SCIM provisioning is enabled, all users in the selected IdP group are synchronized with the associated license. If the corresponding IdP group is empty while users are already assigned to the license, the license assignments are updated to match the (empty) IdP group, removing all currently assigned developers. Verify that the IdP group membership matches the existing license assignments before enabling SCIM provisioning to avoid disruption.
 
