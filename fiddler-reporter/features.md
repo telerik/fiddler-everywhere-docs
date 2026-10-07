@@ -9,7 +9,7 @@ position: 10
 
 # Fiddler Everywhere Reporter Features
 
-The Fiddler Everywhere Reporter presents several capturing modes to best suit different environment scenarios. The application also provides options to configure the default browser instance, control the Fiddler certificate authority (CA) file installation, and set additional capturing settings.
+The Fiddler Everywhere Reporter presents several capturing modes to best suit different environment scenarios. The application also provides options to configure the default browser instance, control the Fiddler certificate authority (CA) file installation, and set additional capturing settings. By default, the application lists every captured HTTP(S) session in the **Details** view as soon as it is captured.
 
 ## Capturing Modes
 
@@ -82,8 +82,7 @@ Use the capturing terminal option as follows:
 
 ### Manual Setup Option
 
-When this mode is selected, Fiddler Everywhere Reporter will start listening to the address and port printed next to the
-**Details** switch. The address can be copied and used to specify the proxy registry setting of your application and
+When this mode is selected, Fiddler Everywhere Reporter will start listening to the address and port printed at the top of the application (labeled **Capturing at**). The address can be copied and used to specify the proxy registry setting of your application and
 manually configure it to send incoming and outgoing traffic to Fiddler Everywhere Reporter. In addition, the
 Fiddler Root Certificate must be trusted from the Tools menu or manually exported and trusted.
 
@@ -102,6 +101,8 @@ Use the manual setup  option as follows:
 1. Click the **Stop Capture** button. 
 
 1. Click the **Save Capture** option, set a password, and choose a location to store your SAZ file.
+
+>note The **Tools** and **Certificate** menus are hidden until you accept the Fiddler Everywhere Reporter End User License Agreement (EULA). Once the EULA is accepted, both menus become visible and remain available for the rest of your session.
 
 ## Tools
 
@@ -123,10 +124,10 @@ Open the **Sanitization Options…** dialog from the **Tools** menu to configure
 
 - **Mask** - The placeholder text that replaces sanitized values. The default value is `!!!sanitized!!!`. You can change this to any string that suits your workflow.
 - **Parts of the Session to Sanitize** - The same options available in the Fiddler Everywhere desktop application: **Sanitize URL**, **Sanitize headers**, **Sanitize cookies**, **Sanitize request body**, **Sanitize response body**, **Strip request body**, and **Strip response body**.
-- **Additional Settings** - Custom **Headers**, **Keywords**, and **Regexes** rules. See the [Sanitization Settings](slug://settings-sanitization#additional-settings) article for detailed pattern syntax and behavior, since the matching logic is identical between Fiddler Everywhere and the Reporter.
-- **Reset to Default** - Restores all sanitization settings to their factory defaults.
+- **Additional Settings** - Custom **Headers**, **Keywords**, and **Regexes** rules. See the [Sanitization Settings](slug://settings-sanitization#additional-settings) article for detailed pattern syntax and behavior, since the matching logic is identical between Fiddler Everywhere and the Reporter. Use these fields to define your own field names (for example, custom data such as `Name`, `Address`, or any other application-specific field) when the sensitive data in your traffic does not match the built-in rules.
+- **Reset to Default** - A link in the dialog that restores all sanitization settings to their factory defaults. The link is only active (clickable) when the current settings differ from the defaults.
 
-Sanitization rules configured here are applied when you export a capture: click **Save Capture**, then select the **Enable Sanitization** checkbox in the save dialog before confirming the export. Leaving the checkbox cleared saves the capture without sanitizing it, regardless of the configured rules.
+Sanitization rules configured here are applied when you export a capture: click **Save Capture**, then select the **Enable Sanitization** checkbox in the save dialog before confirming the export. The checkbox value is persisted only when you confirm the save - the next time you open the save dialog, it remembers its last confirmed value. If you change the checkbox and then dismiss the dialog with **Cancel** or by closing it, the change is discarded and the previously saved value is kept. Leaving the checkbox cleared saves the capture without sanitizing it, regardless of the configured rules.
 
 ## Configuring Fiddler Certificate
 
@@ -146,10 +147,6 @@ Use the **Certificate** section within the application menu to trust, export, re
 - **Capture HTTPS Traffic** -  Configures Fiddler Reporter to capture secure HTTP traffic (it requires an installed and trusted certificate).
 
 - **Ignore Server Certificate Errors (unsafe)** - Configures Fiddler Everywhere Reporter to automatically ignore all server certificate errors.
-
-## Hiding and Showing Captured Data
-
-The Fiddler Everywhere Reporter tool automatically shows up for each captured HTTP(S) session by default. To capture the session privately, toggle OFF the **Details** switch (located at the top-right corner of the application).
 
 ## See Also
 
