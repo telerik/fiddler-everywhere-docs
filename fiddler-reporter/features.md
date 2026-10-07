@@ -133,7 +133,7 @@ The **Mask** field defines the placeholder text that replaces sanitized values. 
 Controls which parts of a captured session are processed by the sanitization rules. By default, **Sanitize URL**, **Sanitize headers**, **Sanitize cookies**, **Sanitize request body**, and **Sanitize response body** are enabled, while **Strip request body** and **Strip response body** are disabled.
 
 - **Sanitize URL** - Masks sensitive parameters and path segments in request URLs (for example, API keys, tokens, user IDs).
-- **Sanitize headers** - Masks sensitive HTTP headers such as `Authorization`, `Cookie`, `X-API-Key`, and other custom headers containing credentials or tokens.
+- **Sanitize headers** - Masks sensitive HTTP headers such as `Authorization`, `X-API-Key`, and other custom headers containing credentials or tokens.
 - **Sanitize cookies** - Masks cookie values that may contain session identifiers, authentication tokens, or user-specific data.
 - **Sanitize request body** - Masks sensitive data within HTTP request bodies, such as passwords, credit card numbers, personal information, or proprietary data.
 - **Sanitize response body** - Masks sensitive data within HTTP response bodies, including user data, API responses containing secrets, or any confidential information returned by servers.
