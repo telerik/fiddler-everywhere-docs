@@ -18,8 +18,9 @@ The **Export** context menu option allows you to export the captured traffic in 
 - Select one or more sessions from the sessions grid.
 - Right-click to invoke the context menu and choose **Export**.
 - Use the **Choose Format** to export the desired sessions in the preferred file format.
-- Set a snapshot name (the current timestamp is the default snapshot name).
+- On the second step of the dialog, set a snapshot name (the current timestamp is the default snapshot name).
 - (Optional) Set a password by enabling AES-256 encryption.
+- (Optional) Select the **Enable Sanitization** checkbox to mask or strip sensitive data in the exported sessions according to your configured sanitization rules. This checkbox mirrors the **On Export** option in **Settings** > **Sanitization** - changing either one updates the other. See [Data Sanitization](slug://fe-sanitization) for details on configuring the sanitization rules that get applied.
 
 ## Importing
 
@@ -31,3 +32,5 @@ Use the **Import Snapshot** option (within the saved **Snapshots** tree) to load
 
 - [Saving Captured Traffic](slug://fiddler-saving)
 - [Sharing Captured Traffic](slug://fiddler-sharing)
+- [Data Sanitization](slug://fe-sanitization)
+- [Sanitization Settings](slug://settings-sanitization)

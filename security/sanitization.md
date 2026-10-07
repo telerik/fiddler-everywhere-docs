@@ -27,7 +27,7 @@ The **Sanitization** settings screen provides comprehensive options to control h
 Control when sanitization occurs by enabling or disabling sanitization for specific actions:
 
 - **On Save** - Automatically sanitizes session snapshots before any save operation in Fiddler Everywhere. Enable this option to ensure saved sessions does not contain sensitive data locally.
-- **On Export** - Automatically sanitizes session snapshots before any export operation in Fiddler Everywhere. Enable this option when sharing exported files with team members or external parties.
+- **On Export** - Automatically sanitizes session snapshots before any export operation in Fiddler Everywhere. Enable this option when sharing exported files with team members or external parties. This setting is mirrored by the **Enable Sanitization** checkbox shown on the second step of the [**Export** dialog](slug://fiddler-export-and-import#exporting) - changing either one updates the other.
 - **On MCP Output** - Automatically sanitizes session snapshots before data is sent to the Fiddler Everywhere MCP server. This option is **enabled by default** to protect sensitive information from being processed by language models.
 
 >tip Enable all three sanitization options if you regularly work with highly sensitive data or need to comply with strict data protection policies.
@@ -43,6 +43,8 @@ Specify which components of the HTTP(S) traffic to sanitize. Sanitization applie
 - **Sanitize Response Body** - Masks sensitive data within HTTP response bodies, including user data, API responses containing secrets, or any confidential information returned by servers.
 - **Strip Request Body** - Completely removes all HTTP request bodies from sessions. Use this option when request bodies consistently contain highly sensitive data that must not be stored at all.
 - **Strip Response Body** - Completely removes all HTTP response bodies from sessions. Use this option when response bodies consistently contain highly sensitive data that must not be stored at all.
+
+>tip By default, **Sanitize URL**, **Sanitize Headers**, **Sanitize Cookies**, **Sanitize Request Body**, and **Sanitize Response Body** are enabled, while **Strip Request Body** and **Strip Response Body** are disabled.
 
 >important The difference between "Sanitize" and "Strip" options: Sanitization replaces sensitive values with the mask string while preserving the structure of the data. Stripping completely removes the entire body content, which may affect your ability to debug or analyze the traffic later.
 
