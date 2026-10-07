@@ -116,16 +116,57 @@ Use the **Tools** section within the application menu to set the default browser
 
 ## Sanitization
 
-The Fiddler Everywhere Reporter provides data sanitization capabilities to automatically mask sensitive information in captured traffic before it is exported as a SAZ file. This is useful when sharing captures with a licensed Fiddler Everywhere user who was not involved in the capture.
+The Fiddler Everywhere Reporter provides data sanitization capabilities to automatically mask or remove sensitive information in captured traffic before it is exported as a SAZ file. This is useful when sharing captures with a licensed Fiddler Everywhere user (such as a support or triage team) who was not involved in the original capture. Because every organization names its own sensitive data fields differently (for example, `Name`, `Address`, `DiseaseStatus`, or any other application-specific field), the **Keywords** rule lets you define exactly which field names should be scrubbed instead of relying on a fixed built-in list.
 
 >important Fiddler attempts to sanitize HTTP(S) traffic, but complete removal of sensitive data is not guaranteed. Unstructured, encrypted, compressed, obfuscated, or binary data may bypass sanitization. You are responsible for verifying outputs and preventing unintended disclosure of sensitive information.
 
-Open the **Sanitization Options…** dialog from the **Tools** menu to configure the rules. Unlike the Fiddler Everywhere desktop application, the Reporter does not expose **When to Sanitize** toggles directly in this dialog. Instead:
+Open the **Sanitization Options…** dialog from the **Tools** menu to configure the rules. The dialog contains the following settings:
 
-- **Mask** - The placeholder text that replaces sanitized values. The default value is `!!!sanitized!!!`. You can change this to any string that suits your workflow.
-- **Parts of the Session to Sanitize** - The same options available in the Fiddler Everywhere desktop application: **Sanitize URL**, **Sanitize headers**, **Sanitize cookies**, **Sanitize request body**, **Sanitize response body**, **Strip request body**, and **Strip response body**.
-- **Additional Settings** - Custom **Headers**, **Keywords**, and **Regexes** rules. See the [Sanitization Settings](slug://settings-sanitization#additional-settings) article for detailed pattern syntax and behavior, since the matching logic is identical between Fiddler Everywhere and the Reporter. Use these fields to define your own field names (for example, custom data such as `Name`, `Address`, or any other application-specific field) when the sensitive data in your traffic does not match the built-in rules.
-- **Reset to Default** - A link in the dialog that restores all sanitization settings to their factory defaults. The link is only active (clickable) when the current settings differ from the defaults.
+### Mask
+
+The **Mask** field defines the placeholder text that replaces sanitized values. The default value is `!!!sanitized!!!`. You can change this to any string that suits your workflow.
+
+>note Unlike the Fiddler Everywhere desktop application, the Reporter dialog does not expose **When to Sanitize** toggles (**On Save**, **On Export**, **On MCP Output**). Instead, sanitization is applied (or skipped) per export through the **Enable Sanitization** checkbox described below.
+
+### Parts of the Session to Sanitize
+
+Controls which parts of a captured session are processed by the sanitization rules. By default, **Sanitize URL**, **Sanitize headers**, **Sanitize cookies**, **Sanitize request body**, and **Sanitize response body** are enabled, while **Strip request body** and **Strip response body** are disabled.
+
+- **Sanitize URL** - Masks sensitive parameters and path segments in request URLs (for example, API keys, tokens, user IDs).
+- **Sanitize headers** - Masks sensitive HTTP headers such as `Authorization`, `Cookie`, `X-API-Key`, and other custom headers containing credentials or tokens.
+- **Sanitize cookies** - Masks cookie values that may contain session identifiers, authentication tokens, or user-specific data.
+- **Sanitize request body** - Masks sensitive data within HTTP request bodies, such as passwords, credit card numbers, personal information, or proprietary data.
+- **Sanitize response body** - Masks sensitive data within HTTP response bodies, including user data, API responses containing secrets, or any confidential information returned by servers.
+- **Strip request body** - Completely removes all HTTP request bodies from sessions instead of masking individual values. Use this option when request bodies consistently contain highly sensitive data that must not be stored at all.
+- **Strip response body** - Completely removes all HTTP response bodies from sessions instead of masking individual values. Use this option when response bodies consistently contain highly sensitive data that must not be stored at all.
+
+>note **Sanitizing large or complex HTML response bodies.** Selective masking of elements within an HTML body (for example, matching a specific tag by keyword) is a best-effort feature and is not guaranteed for large or untrusted HTML - especially when the sensitive text sits inside raw-text elements such as `<script>` or `<style>`, where markup-like strings in the element's own content can confuse tag matching and leave some values unmasked. If your goal is to guarantee that no sensitive data remains in the body rather than to mask specific values within it, use **Strip response body** instead.
+
+### Additional Settings
+
+Defines custom sanitization rules applied on top of the built-in ones. Rules are organized into three tabs, and each depends on the corresponding **Parts of the Session to Sanitize** toggle being enabled to take effect.
+
+>important All three tabs (**Headers**, **Keywords**, and **Regexes**) always parse every semicolon-separated entry as a [.NET (C#) regular expression](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference), not JavaScript, PCRE, POSIX, or any other regex flavor - there is no separate "plain text" mode. A simple alphanumeric value such as `Authorization` or `DiseaseStatus` has no special regex meaning, so it is matched literally and does not require any regex knowledge to use. Characters with special meaning in .NET regex (for example `. * + ? [ ] ( ) ^ $ | \`) are interpreted as regex syntax, not literal characters - escape them with a backslash (for example `\.`) if you need to match them literally. Matching is always case-insensitive.
+
+- **Headers** - Enter application-specific header-name patterns separated by semicolons, for example `^X-Org-Reference$;^X-Partner-Id$`. When a request or response header name matches, its entire value is replaced with the configured mask; the header name itself remains unchanged. Use `^` and `$` to match an exact name.
+
+    >important **Sanitize headers** must be enabled for this rule to apply. This setting does not search header *values* - it matches header *names* only. Cookies are controlled separately through **Sanitize cookies**.
+
+- **Keywords** - Enter field-name patterns separated by semicolons, for example `Name;Address;DiseaseStatus;HighlySecureInfo`. A pattern without anchors (`^`/`$`) can match part of a field name. When a supported field name matches in a URL query parameter or a structured body, its entire value is replaced with the mask.
+
+    Keywords do not search arbitrary body text or HTTP headers - they match *field names*, not free text. Enable **Sanitize URL** for query parameters, or the corresponding **Sanitize request body** / **Sanitize response body** setting for body fields. In a JSON body, this rule covers string values and named objects or arrays, but not numeric or boolean values.
+
+    For example, with the keywords above and body sanitization enabled, the JSON `{"Name":"Jane Doe","Address":"123 Main St","DiseaseStatus":"active","status":"ok"}` becomes `{"Name":"!!!sanitized!!!","Address":"!!!sanitized!!!","DiseaseStatus":"!!!sanitized!!!","status":"ok"}`. This lets you define your own custom field names, since Fiddler cannot maintain a built-in list covering every application's data model.
+
+- **Regexes** - Enter value patterns separated by semicolons, for example `INV-[0-9]{6}`. In a plain-text body, only the matching text is replaced, for example `Invoice INV-123456 approved` becomes `Invoice !!!sanitized!!! approved`. In a JSON string, XML element, form field, or URL query parameter, a match masks the *entire* field value instead of just the matched substring.
+
+    >important The relevant **Sanitize URL**, **Sanitize request body**, or **Sanitize response body** toggle must be enabled for a regex pattern to be applied to that part of the session. Regexes do not inspect HTTP header values - use **Headers** to mask header contents instead.
+
+### Reset to Default
+
+A link in the dialog that restores all sanitization settings to their factory defaults. The link is only active (clickable) when the current settings differ from the defaults.
+
+### Enabling Sanitization on Export
 
 Sanitization rules configured here are applied when you export a capture: click **Save Capture**, then select the **Enable Sanitization** checkbox in the save dialog before confirming the export. The checkbox value is persisted only when you confirm the save - the next time you open the save dialog, it remembers its last confirmed value. If you change the checkbox and then dismiss the dialog with **Cancel** or by closing it, the change is discarded and the previously saved value is kept. Leaving the checkbox cleared saves the capture without sanitizing it, regardless of the configured rules.
 
