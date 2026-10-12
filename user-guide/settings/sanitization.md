@@ -22,7 +22,7 @@ The **Mask** field defines the placeholder text that replaces sanitized values. 
 Controls the events that trigger sanitization. Multiple options can be active simultaneously.
 
 - **On Save**: Sanitizes session data when saving to a Fiddler archive.
-- **On Export**: Sanitizes session data when exporting traffic.
+- **On Export**: Sanitizes session data when exporting traffic. This setting is mirrored by the **Enable Sanitization** checkbox shown on the second step of the **Export** dialog - changing either one updates the other.
 - **On MCP Output**: Sanitizes data before it is passed to the MCP server. Enabled by default.
 
 ## Parts of the Session to Sanitize
@@ -36,6 +36,8 @@ Controls which parts of a captured session are processed by the sanitization rul
 - **Sanitize response body**: Masks sensitive values in the response body.
 - **Strip response body**: Removes the entire response body instead of masking individual values.
 - **Sanitize cookies**: Masks cookie values in both requests and responses.
+
+>tip By default, **Sanitize URL**, **Sanitize headers**, **Sanitize cookies**, **Sanitize request body**, and **Sanitize response body** are enabled, while **Strip request body** and **Strip response body** are disabled.
 
 >note **Sanitizing large or complex HTML response bodies.** Selective masking of elements within an HTML body (for example, matching a specific tag by keyword) is a best-effort feature and is not guaranteed for large or untrusted HTML - especially when the sensitive text sits inside raw-text elements such as `<script>` or `<style>`, where markup-like strings in the element's own content can confuse tag matching and leave some values unmasked. If your goal is to guarantee that no sensitive data remains in the body rather than to mask specific values within it, use **Strip response body** instead - it removes the *entire* HTTP body (not only the HTML `<body>` element) and does not depend on tag matching.
 
