@@ -21,13 +21,13 @@ When you open a session in a custom inspector, Fiddler Everywhere:
 
 1. Starts the inspector host process (or reuses the running one) and loads all approved inspectors.
 1. Sends the request and response headers and bodies of the selected session to the host.
-1. Displays the inspectors in a separate **Fiddler Everywhere - Custom Inspectors (Preview)** window with a **Request** and a **Response** tab strip, similar to the inspectors layout in Fiddler Classic.
+1. Displays the inspectors in a separate **Fiddler Everywhere - Custom Inspectors (Preview)** window, with the request inspectors in the upper pane and the response inspectors in the lower pane, as in Fiddler Classic.
 
 The window stays open and follows your session selection, so you can browse the captured traffic without reopening it.
 
 ## Prerequisites
 
-- Fiddler Everywhere running on Windows. The **Custom Inspectors** settings section and the related toolbar button are unavailable on macOS and Linux, because Classic inspectors are .NET Framework WinForms assemblies.
+- Fiddler Everywhere running on Windows. The **Custom Inspectors** settings section and the **Custom Inspector** button are unavailable on macOS and Linux, because Classic inspectors are .NET Framework WinForms assemblies.
 - A Trial, Pro, or Enterprise license. The feature is not available on Lite licenses.
 - The feature is not disabled by your organization through the `DisableCustomInspectors` policy. When the policy is set, the **Custom Inspectors** settings section displays a message that your administrators have restricted the feature. For details, refer to [Managed App Configuration](slug://fe-restrict-policies).
 - A custom inspector DLL built for Fiddler Classic, together with any dependency DLLs that it requires.
@@ -66,6 +66,8 @@ The Fiddler Classic import wizard, available in the **Home** pane, includes a **
 
 The wizard only copies files. Imported inspectors are not approved automatically. You must approve them in **Settings** > **Custom Inspectors** before they can load. For more information about the wizard, refer to the [Fiddler Classic Migration](slug://fe-migrating-from-classic) article.
 
+>tip The wizard skips the inspectors that ship with Fiddler Classic, such as `Standard.dll` (which provides the **Headers**, **TextView**, **HexView**, **Raw**, **JSON**, **XML**, and other built-in inspectors) and `SyntaxView.dll`. To use them in Fiddler Everywhere, copy them manually from the `Inspectors` subfolder of your Fiddler Classic installation, together with their dependencies.
+
 ## Approving Custom Inspectors
 
 Fiddler Everywhere never loads an inspector until you explicitly approve it.
@@ -91,12 +93,30 @@ The **Custom Inspectors** section also provides the following options:
 
 ## Using Custom Inspectors
 
-1. Capture traffic and select a single session in the **Live Traffic** list. The same option is also available in the inspectors of the **Composer**.
-1. In the **Request** or **Response** inspectors toolbar, click the **Custom Inspector** button. The button is visible only when at least one inspector is approved.
-1. The **Fiddler Everywhere - Custom Inspectors (Preview)** window opens and displays the approved inspectors in the **Request** and **Response** tab strips. The window title also shows the URL of the inspected session.
-1. Select another session in Fiddler Everywhere to update the window content. If you select multiple sessions or none, the window prompts you to select exactly one session.
+To open a session in the custom inspectors:
 
-Clicking the **Custom Inspector** button while the window is open brings it to the front instead of opening a new window.
+1. Capture traffic and select a single session in the **Live Traffic** list.
+1. In the **HTTP Inspector** tab, click the **Custom Inspector** button next to the **Request** or **Response** section title. The button is visible only when at least one inspector is approved. It is also available in the request and response inspectors of the **Composer**.
+
+    ![Custom Inspector button in the HTTP Inspector tab](images/custom-inspector-button.png)
+
+1. The **Fiddler Everywhere - Custom Inspectors (Preview)** window opens. The window title also shows the URL of the inspected session.
+
+The window follows the Fiddler Classic inspectors layout:
+
+- The upper pane contains the request inspectors and the lower pane contains the response inspectors.
+- Each pane displays one tab per approved inspector that supports the corresponding side. An inspector that implements both `IRequestInspector2` and `IResponseInspector2` appears in both panes.
+- The tab names and the content are rendered by the inspectors themselves, so they look the same as in Fiddler Classic. For example, the following screenshot shows the Fiddler Classic built-in inspectors (**Headers**, **TextView**, **WebForms**, **HexView**, **Raw**, **JSON**, **XML**, and others) together with **SyntaxView**.
+
+![Custom Inspectors window with request and response inspectors](images/custom-inspector-window.png)
+
+Because the preview is read-only, inspectors that support editing show their read-only state. For example, SyntaxView displays a **Readonly** indicator, and you cannot modify the session from the window.
+
+While the window is open:
+
+- Select another session in Fiddler Everywhere to update the window content. If you select multiple sessions or none, the window prompts you to select exactly one session.
+- Click the **Custom Inspector** button again to bring the existing window to the front. Fiddler Everywhere does not open a second window.
+- Use the **Keep the Custom Inspector window on top of other windows** setting to keep the window visible while you browse the traffic in the main window.
 
 ### Working with Encoded Bodies
 
