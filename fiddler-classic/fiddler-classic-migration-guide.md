@@ -41,9 +41,9 @@ The following table compares the two products:
 
 ## Using the Import Wizard
 
-Starting with version 5.20.0, Fiddler Everywhere provides a built-in wizard for importing configuration from Fiddler Classic. To start it, open the **Home** pane in Fiddler Everywhere.
+Starting with version 5.20.0, Fiddler Everywhere provides the built-in **Import Fiddler Classic Settings** wizard for importing configuration from Fiddler Classic. To start it, open the **Home** pane in Fiddler Everywhere.
 
-The wizard lets you select which of the following items to import:
+The wizard guides you through the **How it Works?**, **Options**, **AutoResponder**, **Filters**, **Quick Filters**, **Custom Inspectors**, and **Confirm Choice** steps, where you can select which of the following items to import:
 
 - [Application options](#importing-application-options)
 - [AutoResponder rules](#importing-autoresponder-rules)
@@ -96,14 +96,22 @@ Fiddler Classic **Quick Filters** work similarly to the filters in Fiddler Every
 
 ## Importing Custom Inspectors
 
-On Windows, Fiddler Everywhere can run custom inspectors built for Fiddler Classic as a [preview feature](slug://custom-inspectors). The **Custom Inspectors** step of the wizard copies the inspector DLLs into the Fiddler Everywhere Inspectors folder and provides the following options:
+On Windows, Fiddler Everywhere can run custom inspectors built for Fiddler Classic as a [preview feature](slug://custom-inspectors). The **Custom Inspectors** step of the wizard copies the inspector files into the Fiddler Everywhere Inspectors folder and provides the following options:
 
 - **Custom Inspectors from your Fiddler Classic install folder**&mdash;Imports the inspectors that you added to the Fiddler Classic installation directory. The inspectors that ship with Fiddler Classic by default are excluded.
 - **Custom Inspectors from your Fiddler Classic user folder**&mdash;Imports the inspectors from the `Documents\Fiddler2\Inspectors` folder.
 
+![Custom Inspectors step of the Import Fiddler Classic Settings wizard](images/import-wizard-custom-inspectors.png)
+
 The options are unavailable if no custom inspectors are detected, if your license does not include the feature, or if an administrator has disabled it through the `DisableCustomInspectors` policy.
 
->important Imported inspectors are not approved automatically. Before Fiddler Everywhere can load an inspector, you must review and approve it in **Settings** > **Custom Inspectors**. For details about approving and using custom inspectors, as well as the feature limitations and security considerations, refer to the [Custom Inspectors](slug://custom-inspectors) article.
+To start using the imported inspectors:
+
+1. Complete the wizard by clicking **Next** and confirming your selection on the **Confirm Choice** step.
+1. Open **Settings** > **Custom Inspectors** and approve each imported inspector. Imported inspectors are not trusted automatically, and Fiddler Everywhere does not load them until you approve them.
+1. Select a session and click the **Custom Inspector** button in the **HTTP Inspector** tab to open it in the Custom Inspectors window.
+
+>important Before approving an inspector, review the security considerations. An approved inspector runs with the full privileges of your user account and receives the decrypted content of the sessions that you open in it. For details about approving and using custom inspectors, as well as the feature limitations, refer to the [Custom Inspectors](slug://custom-inspectors) article.
 
 ## See Also
 

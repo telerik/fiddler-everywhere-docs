@@ -59,12 +59,20 @@ Fiddler Everywhere discovers inspectors by following the same rules as Fiddler C
 
 ### Importing Inspectors from Fiddler Classic
 
-The Fiddler Classic import wizard, available in the **Home** pane, includes a **Custom Inspectors** step that copies inspectors into the Inspectors folder for you. It provides the following options, each available only if inspectors are detected in the corresponding location:
+If Fiddler Classic is installed on the same machine, you can use the **Import Fiddler Classic Settings** wizard to copy your existing custom inspectors instead of copying the files manually:
 
-- **Custom Inspectors from your Fiddler Classic install folder**&mdash;Imports the inspectors that you added to the Fiddler Classic installation directory. The inspectors that ship with Fiddler Classic by default are excluded.
-- **Custom Inspectors from your Fiddler Classic user folder**&mdash;Imports the inspectors from the `Documents\Fiddler2\Inspectors` folder.
+1. Open the **Home** pane in Fiddler Everywhere and start the Fiddler Classic import wizard.
+1. Go through the wizard steps (**How it Works?**, **Options**, **AutoResponder**, **Filters**, and **Quick Filters**) and select the items that you want to import.
+1. On the **Custom Inspectors** step, select one or both of the following options. Each option is available only if Fiddler Everywhere detects custom inspectors in the corresponding location. Hover over the question mark icon next to an option to see what it imports.
+    - **Custom Inspectors from your Fiddler Classic install folder**&mdash;Imports the inspectors that you added to the `Inspectors` subfolder of the Fiddler Classic installation directory. The inspectors that ship with Fiddler Classic by default are excluded.
+    - **Custom Inspectors from your Fiddler Classic user folder**&mdash;Imports the inspectors from the `Documents\Fiddler2\Inspectors` folder.
 
-The wizard only copies files. Imported inspectors are not approved automatically. You must approve them in **Settings** > **Custom Inspectors** before they can load. For more information about the wizard, refer to the [Fiddler Classic Migration](slug://fe-migrating-from-classic) article.
+    ![Custom Inspectors step of the Import Fiddler Classic Settings wizard](images/import-wizard-custom-inspectors.png)
+
+1. Click **Next**, review your selection on the **Confirm Choice** step, and complete the import. The wizard copies the inspector files into the Fiddler Everywhere Inspectors folder.
+1. Open **Settings** > **Custom Inspectors** and [approve](#approving-custom-inspectors) the imported inspectors.
+
+The wizard only copies files. As the wizard notes, imported inspectors are not trusted automatically, so you must approve them in **Settings** > **Custom Inspectors** before they can load. The **Custom Inspectors** step options are unavailable if your license does not include the feature or if an administrator has disabled it through the `DisableCustomInspectors` policy. For more information about the wizard, refer to the [Fiddler Classic Migration](slug://fe-migrating-from-classic) article.
 
 >tip The wizard skips the inspectors that ship with Fiddler Classic, such as `Standard.dll` (which provides the **Headers**, **TextView**, **HexView**, **Raw**, **JSON**, **XML**, and other built-in inspectors) and `SyntaxView.dll`. To use them in Fiddler Everywhere, copy them manually from the `Inspectors` subfolder of your Fiddler Classic installation, together with their dependencies.
 
