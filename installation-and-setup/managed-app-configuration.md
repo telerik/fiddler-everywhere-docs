@@ -120,6 +120,7 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | `DisableAssistant` | Enables or disables the Debugging Assistant feature | DWORD-32 | `1` |
 | `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) of the Debugging Assistant | REG_SZ (string) |  See the [JSON structure in the Debugging Assistant article](slug://fiddler-assistant#configuring-the-defaultassistantsettings-policy)  |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the settings of the Debugging Assistant | DWORD-32 | `1` |
+| `DisableCustomInspectors` | Disables the [Custom Inspectors](slug://custom-inspectors) feature (Windows only), including importing custom inspectors from Fiddler Classic | DWORD-32 (hexadecimal) | `1` |
 
 By leveraging these configuration options, IT administrators can ensure Fiddler Everywhere is deployed securely and consistently across their organization, while maintaining control over critical settings and features.
 

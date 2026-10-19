@@ -67,6 +67,9 @@ meta:
     security:
         title: Security
         position: 100
+    fiddler-classic:
+        title: Fiddler Classic Compatibility
+        position: 110
     fiddler-reporter:
         title: Fiddler Everywhere Reporter
         position: 200
