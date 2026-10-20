@@ -1,5 +1,40 @@
 [
     {
+        "version": "8.3.0",
+        "title": "Fiddler Everywhere v8.3.0",
+        "date": "Oct 20, 2026",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add support for custom inspectors built for Fiddler Classic on Windows."
+                    },
+                    {
+                        "title": "Add support for GPT-6 models in the Chat Assistant."
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Sanitization does not consistently mask nested JSON and XML values."
+                    },
+                    {
+                        "title": "Removed sanitization keywords continue to mask matching data until the application restarts."
+                    },
+                    {
+                        "title": "The Do Not Show rule action incorrectly changes gateway proxy behavior."
+                    },
+                    {
+                        "title": "Updated third-party dependencies to address potential security vulnerabilities."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "8.2.0",
         "title": "Fiddler Everywhere v8.2.0",
         "date": "Sept 29, 2026",
