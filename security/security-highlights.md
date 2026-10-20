@@ -86,6 +86,6 @@ The Fiddler Everywhere application is certified by an independent third party to
 
 ## See Also
 
-* [Single Sign-On (SSO) Setup](slug://fe-sso-setup)
+* [Single Sign-On (SSO) and SCIM Provisioning Setup](slug://fe-sso-setup)
 * [Managed App Configuration](slug://fe-restrict-policies)
 * [Applying sanitization for captured traffic in Fiddler Everywhere](slug://fe-sanitization)
