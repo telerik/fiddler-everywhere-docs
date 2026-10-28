@@ -36,6 +36,7 @@ You will first have to install the latest version of Fiddler Everywhere on your 
 
 1. Download and install the latest macOS version of [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 
+>tip Fiddler Everywhere includes the [`fiddler-cli` command](slug://fiddler-cli) for controlling the application from a terminal. The PKG installer registers the command automatically. If you install from a DMG or ZIP file, Fiddler Everywhere offers to install the command the first time its window opens.
 
 ## Step 2: Create Your Fiddler Account
 
@@ -73,3 +74,4 @@ Now you are equipped to delve deeper into Fiddler Everywhere and make the most o
 * [Creating API requests](slug://composer-get-started)
 * [Grouping the API requests in collections](slug://composer-collections-get-started)
 * [Mocking server responses](slug://rulesbuilder-get-started)
+* [Controlling Fiddler Everywhere from the command line](slug://fiddler-cli)

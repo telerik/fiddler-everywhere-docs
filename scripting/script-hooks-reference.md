@@ -28,7 +28,7 @@ A Fiddler Everywhere script is a plain C# script (`.csx`-style code, without an 
 | `OnShutdown` | `void OnShutdown()` | Once, when the Fiddler Everywhere backend begins shutting down. |
 | `OnValidateServerCertificate` | `void OnValidateServerCertificate(ValidateServerCertificateEventArgs args)` | A server's HTTPS certificate is evaluated. Set `args.ValidityState` to override the default validation result (for example, `CertificateValidity.ForceValid`). |
 | `OnWebSocketMessage` | `void OnWebSocketMessage(WebSocketMessage oWSM)` | A WebSocket message is captured. |
-
+| `OnExecAction` | `ExecResult OnExecAction(string[] parameters)` | A `fiddler-cli` command that is not a built-in command is run. `parameters[0]` is the lowercased command name, and the remaining items are its arguments. Return an `ExecResult`, or `null` to decline the command. For details, see [Custom CLI Commands](slug://fiddler-script-cli-commands). |
 Each hook receives its typed argument (`Session`, `ValidateServerCertificateEventArgs`, or `WebSocketMessage`) directly&mdash;there is no need to declare or reference a globals object; the argument name in the signature (`oSession`, `args`, `oWSM`) can be changed freely since it is just a regular method parameter.
 
 ## Full Sample Script
@@ -100,6 +100,15 @@ void OnWebSocketMessage(WebSocketMessage oWSM)
 {
     // Runs when a WebSocket message is captured.
 }
+
+ExecResult OnExecAction(string[] parameters)
+{
+    // Runs when a custom command is invoked from a terminal:
+    // fiddler-cli <command> [arguments]
+    // parameters[0] is the lowercased command; the remaining items are its arguments.
+    // Return null to decline a command; the CLI reports it as unknown.
+    return null;
+}
 ```
 
 ## Autocomplete and Validation
@@ -113,5 +122,6 @@ While editing a script, the built-in editor offers:
 
 - [Scripting Overview](slug://fiddler-script)
 - [Common Scripting Examples](slug://fiddler-script-examples)
+- [Custom CLI Commands](slug://fiddler-script-cli-commands)
 - [Scripting Settings and Limits](slug://fiddler-script-settings)
 - [Scripting Security Considerations](slug://fiddler-script-security)
