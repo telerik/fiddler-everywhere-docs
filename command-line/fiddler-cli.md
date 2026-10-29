@@ -75,7 +75,7 @@ The copied value is the full path to the executable file. The location depends o
 
 | Operating System | Executable | Folder to Add to `PATH` |
 |:-----------------|:-----------|:------------------------|
-| Windows | `<installation folder>\resources\app.asar.unpacked\out\cli\fiddler-cli.exe`<br>For example, `C:\Users\<user>\AppData\Local\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli\fiddler-cli.exe` | The folder that contains `fiddler-cli.exe` (the path without the trailing `\fiddler-cli.exe`) |
+| Windows | `<installation folder>\resources\app.asar.unpacked\out\cli\fiddler-cli.exe`<br>For a per-user installation, for example, `%LOCALAPPDATA%\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli\fiddler-cli.exe` | The folder that contains `fiddler-cli.exe` (the path without the trailing `\fiddler-cli.exe`) |
 | macOS | `/Applications/Fiddler Everywhere.app/Contents/Resources/app.asar.unpacked/out/cli/fiddler-cli` | The folder that contains `fiddler-cli` (the path without the trailing `/fiddler-cli`) |
 | Linux (AppImage) | A temporary path inside the mounted AppImage, valid only while Fiddler Everywhere is running | Not recommended. See [Linux](#linux). |
 
@@ -85,18 +85,20 @@ The copied value is the full path to the executable file. The location depends o
 
 Open **PowerShell** or **Command Prompt** and use one of the following options.
 
+The examples use the `LOCALAPPDATA` environment variable (`%LOCALAPPDATA%` in Command Prompt and `$env:LOCALAPPDATA` in PowerShell), which points to `C:\Users\<user>\AppData\Local` and matches the default per-user installation folder. Don't use `%APPDATA%`&mdash;it points to the `Roaming` folder, which is a different location. If you installed Fiddler Everywhere per machine or in a custom folder, replace the variable-based part of the path with the folder from the **CLI Executable** field.
+
 **Option 1: Run the executable by its full path**
 
 Paste the copied path and add the command. In PowerShell, put the path in quotes and prefix it with the call operator (`&`) because it contains spaces:
 
 ```powershell
 # Windows PowerShell
-& "C:\Users\Jane\AppData\Local\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli\fiddler-cli.exe" help
+& "$env:LOCALAPPDATA\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli\fiddler-cli.exe" help
 ```
 
 ```bat
 :: Command Prompt
-"C:\Users\Jane\AppData\Local\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli\fiddler-cli.exe" help
+"%LOCALAPPDATA%\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli\fiddler-cli.exe" help
 ```
 
 **Option 2: Add the folder to PATH for the current terminal session only**
@@ -105,13 +107,13 @@ The change is lost when you close the terminal:
 
 ```powershell
 # Windows PowerShell
-$env:Path += ";C:\Users\Jane\AppData\Local\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli"
+$env:Path += ";$env:LOCALAPPDATA\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli"
 fiddler-cli help
 ```
 
 ```bat
 :: Command Prompt
-set "PATH=%PATH%;C:\Users\Jane\AppData\Local\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli"
+set "PATH=%PATH%;%LOCALAPPDATA%\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli"
 fiddler-cli help
 ```
 
@@ -129,7 +131,7 @@ Alternatively, run the following command in PowerShell. Replace the folder with 
 
 ```powershell
 # Windows PowerShell
-$cliFolder = "C:\Users\Jane\AppData\Local\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli"
+$cliFolder = "$env:LOCALAPPDATA\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli"
 $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
 if (($userPath -split ";") -notcontains $cliFolder) {
     [Environment]::SetEnvironmentVariable("Path", "$userPath;$cliFolder", "User")
