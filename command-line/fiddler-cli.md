@@ -281,6 +281,73 @@ fiddler-cli bpu "example.com/api?debug=true"
 fiddler-cli bpu 'example.com/api?debug=true'
 ```
 
+## Examples
+
+The following examples show common tasks. For all commands, see the [Fiddler CLI Command Reference](slug://fiddler-cli-commands).
+
+**Check the state of Fiddler Everywhere**
+
+```sh
+fiddler-cli status
+```
+
+```txt
+userSignedIn: True
+proxyEnabled: False
+scriptingEnabled: False
+```
+
+**Start capturing, do your work, and stop capturing**
+
+```sh
+fiddler-cli start
+fiddler-cli stop
+```
+
+**Start Fiddler Everywhere in the background and capture**
+
+```sh
+fiddler-cli --hidden start
+```
+
+**Pause requests to a specific URL, inspect them in Fiddler Everywhere, and resume**
+
+```sh
+fiddler-cli bpu example.com/api
+fiddler-cli go
+fiddler-cli bpu
+```
+
+The last command clears the breakpoint.
+
+**Redirect a host to a local server temporarily**
+
+```sh
+fiddler-cli overridehost example.com localhost:5000
+fiddler-cli overridehost
+```
+
+The last command clears the host override.
+
+**Export the captured sessions to a SAZ file**
+
+```powershell
+# Windows PowerShell
+fiddler-cli dump C:\captures
+```
+
+```sh
+# macOS and Linux
+fiddler-cli dump ~/captures
+```
+
+**Use the exit code in a script**
+
+```sh
+fiddler-cli start && echo "Capturing started"
+```
+
+>tip If you didn't add the CLI folder to your `PATH`, replace `fiddler-cli` in the examples with the full path to the executable. See [Setting Up the CLI Executable Path](#setting-up-the-cli-executable-path).
 ## Restrictions
 
 The following restrictions apply to Fiddler CLI commands:

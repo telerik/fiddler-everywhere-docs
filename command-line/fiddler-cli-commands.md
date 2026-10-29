@@ -149,7 +149,7 @@ fiddler-cli bpu example.com/auth  # Replace the URL condition
 fiddler-cli bpu                   # Clear the URL breakpoint
 ```
 
-<!-- TODO verify: Confirm whether the bpu/bpafter text match and the bpv/bpm method match are case-sensitive. -->
+The text and method values that you pass to the breakpoint commands are **case-sensitive**. For example, `fiddler-cli bpu /API/` doesn't match the `/api/` URLs, and `fiddler-cli bpm POST` doesn't match requests that use a lowercase method value.
 
 The `g` command (or its alias `go`) resumes all sessions that are currently paused at a breakpoint:
 
