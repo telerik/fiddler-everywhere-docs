@@ -63,9 +63,9 @@ The output contains the following values (`True` or `False`):
 
 | Value | Description |
 |:------|:------------|
-| `userSignedIn` | A user is signed in to Fiddler Everywhere. |
-| `proxyEnabled` | Fiddler Everywhere is attached as the system proxy (traffic capturing is on). |
-| `scriptingEnabled` | Scripting is enabled and at least one script is enabled. |
+| `userSignedIn` | The user information is loaded and a user profile exists (the user is signed in). |
+| `proxyEnabled` | System traffic capturing is enabled. |
+| `scriptingEnabled` | Scripting is switched on and at least one script is marked as enabled. |
 
 <!-- TODO screenshot: Terminal output of "fiddler-cli status" -->
 
