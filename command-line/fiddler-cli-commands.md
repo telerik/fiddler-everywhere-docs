@@ -104,8 +104,8 @@ The `dump` command exports the live sessions to a SAZ file and then clears the e
 The command prints the full path to the created file:
 
 ```txt
-Live sessions exported to '/Users/jane/Desktop/quickexec-dump-20250101-093000123-....saz' and cleared.
-path: /Users/jane/Desktop/quickexec-dump-20250101-093000123-....saz
+Live sessions exported to '/Users/<user>/Desktop/quickexec-dump-20250101-093000123-....saz' and cleared.
+path: /Users/<user>/Desktop/quickexec-dump-20250101-093000123-....saz
 ```
 
 If there are no live sessions, the CLI prints `No live sessions to dump.`.
@@ -113,9 +113,16 @@ If there are no live sessions, the CLI prints `No live sessions to dump.`.
 The following examples export the sessions to a specific directory:
 
 ```powershell
-# Windows PowerShell or Command Prompt
+# Windows PowerShell
 fiddler-cli dump C:\captures
-fiddler-cli dump "C:\Users\Jane\My Captures"
+fiddler-cli dump "$env:USERPROFILE\My Captures"
+fiddler-cli dump .\captures
+```
+
+```bat
+:: Windows Command Prompt
+fiddler-cli dump C:\captures
+fiddler-cli dump "%USERPROFILE%\My Captures"
 fiddler-cli dump .\captures
 ```
 
