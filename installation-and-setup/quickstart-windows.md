@@ -41,7 +41,7 @@ Fiddler Everywhere for Windows offers you the flexibility to select the installa
 
 When Fiddler Everywhere is installed per machine, each individual user must log in to Fiddler Everywhere with their credentials, and the generated data will not be accessible from the other users.
 
->tip The installer also adds the bundled [`fiddler-cli` command](slug://fiddler-cli) to the `PATH` of the current user, so you can control Fiddler Everywhere from a terminal. Open a new terminal window after the installation to use the command.
+>tip Fiddler Everywhere includes the bundled [`fiddler-cli` command](slug://fiddler-cli) for controlling the application from a terminal. The CLI is disabled by default, and the installer does not add it to your `PATH`. To use it, enable **Settings** > **Connections** > **Enable Fiddler CLI** and [set up the CLI executable path](slug://fiddler-cli#setting-up-the-cli-executable-path).
 
 ## Step 2: Create Your Fiddler Account
 

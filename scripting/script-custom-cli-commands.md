@@ -1,7 +1,7 @@
 ---
 title: Custom CLI Commands
 page_title: Custom CLI Commands with OnExecAction - Scripting | Fiddler Everywhere
-description: "Implement custom fiddler-cli commands in Fiddler Everywhere with the OnExecAction script hook, read positional arguments, return results, and compose built-in QuickExec commands from a script."
+description: "Implement custom fiddler-cli commands in Fiddler Everywhere with the OnExecAction script hook, read positional arguments, return results, and run built-in Fiddler CLI commands from a script."
 slug: fiddler-script-cli-commands
 publish: true
 position: 22
@@ -17,6 +17,7 @@ The `OnExecAction` script hook lets you extend the [Fiddler CLI](slug://fiddler-
 
 Custom commands run only when all of the following conditions are met:
 
+- The [Fiddler CLI is enabled and set up](slug://fiddler-cli#enabling-the-fiddler-cli) (**Settings** > **Connections** > **Enable Fiddler CLI**).
 - Scripting is enabled in the **Scripting** tab.
 - A valid script is active.
 - The active script defines an `OnExecAction` handler that handles the command.
@@ -158,7 +159,7 @@ The sample script that Fiddler Everywhere creates for new scripts includes these
 
 ## See Also
 
-- [Fiddler CLI (QuickExec)](slug://fiddler-cli)
+- [Fiddler CLI](slug://fiddler-cli)
 - [Fiddler CLI Command Reference](slug://fiddler-cli-commands)
 - [Script Hooks Reference](slug://fiddler-script-hooks)
 - [Script Settings and Limits](slug://fiddler-script-settings)

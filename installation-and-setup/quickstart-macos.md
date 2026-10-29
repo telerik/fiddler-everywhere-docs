@@ -36,7 +36,7 @@ You will first have to install the latest version of Fiddler Everywhere on your 
 
 1. Download and install the latest macOS version of [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 
->tip Fiddler Everywhere includes the [`fiddler-cli` command](slug://fiddler-cli) for controlling the application from a terminal. The PKG installer registers the command automatically. If you install from a DMG or ZIP file, Fiddler Everywhere offers to install the command the first time its window opens.
+>tip Fiddler Everywhere includes the bundled [`fiddler-cli` command](slug://fiddler-cli) for controlling the application from a terminal. The CLI is disabled by default, and the installation does not register it on your `PATH`. To use it, enable **Settings** > **Connections** > **Enable Fiddler CLI** and [set up the CLI executable path](slug://fiddler-cli#macos).
 
 ## Step 2: Create Your Fiddler Account
 

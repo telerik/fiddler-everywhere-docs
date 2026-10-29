@@ -53,7 +53,7 @@ If the proxy is already in the requested state, the CLI reports `Proxy is alread
 
 ### status
 
-The `status` command reports the readiness of Fiddler Everywhere. It doesn't require a signed-in user, so you can use it to check whether the application is ready to accept other commands.
+The `status` command reports the sign-in, proxy, and scripting state of Fiddler Everywhere. It doesn't require a signed-in user.
 
 ```sh
 fiddler-cli status
@@ -63,16 +63,10 @@ The output contains the following values (`True` or `False`):
 
 | Value | Description |
 |:------|:------------|
-| `processRunning` | The Fiddler Everywhere process is running. |
-| `backendAvailable` | The application services are initialized. |
-| `userSignedIn` | A user is signed in. |
-| `licensePolicyOk` | The signed-in account has a valid license. |
-| `proxyAvailable` | The proxy is available. |
-| `scriptingAvailable` | Scripting is available for custom commands. |
-| `rulesAvailable` | Rules are available. |
-| `proxyAttached` | Fiddler Everywhere is set as the system proxy (traffic capturing is on). |
+| `userSignedIn` | A user is signed in to Fiddler Everywhere. |
+| `proxyEnabled` | Fiddler Everywhere is attached as the system proxy (traffic capturing is on). |
+| `scriptingEnabled` | Scripting is enabled and at least one script is enabled. |
 
-<!-- TODO verify: Confirm the exact semantics of proxyAvailable, scriptingAvailable, and rulesAvailable with the development team. -->
 <!-- TODO screenshot: Terminal output of "fiddler-cli status" -->
 
 ### show and hide
@@ -242,7 +236,7 @@ Cleared 2 QuickExec host override(s).
 
 ## See Also
 
-- [Fiddler CLI (QuickExec)](slug://fiddler-cli)
+- [Fiddler CLI](slug://fiddler-cli)
 - [Custom CLI Commands](slug://fiddler-script-cli-commands)
 - [Modifying Traffic with Rules](slug://modify-traffic-get-started)
 - [Exporting and Importing Sessions](slug://fiddler-export-and-import)

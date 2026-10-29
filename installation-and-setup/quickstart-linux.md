@@ -62,9 +62,9 @@ Recent reports on Ubuntu version 24.04 showed a bug related to most Electron-bas
 
 The above installs the required dependencies to run .appimage files on Ubuntu 24.04. If the application does not start, try to start it from the terminal and check the output for errors. If you see an error "The SUID sandbox helper binary was found, but is not configured correctly" then you must add the `--no-sandbox` command line option when starting the application from the terminal. 
 
-### Fiddler CLI Registration
+### Fiddler CLI
 
-Each time Fiddler Everywhere starts, it registers the bundled [`fiddler-cli` command](slug://fiddler-cli) as `~/.local/bin/fiddler-cli`, so you can control the application from a terminal. Start Fiddler Everywhere at least once to register the command, and make sure that `~/.local/bin` is part of your `PATH`.
+Fiddler Everywhere includes the bundled [`fiddler-cli` command](slug://fiddler-cli) for controlling the application from a terminal. The CLI is disabled by default, and Fiddler Everywhere does not register it on your `PATH`. To use it, enable **Settings** > **Connections** > **Enable Fiddler CLI**, copy the temporary **CLI Executable** path, and [run the command by its full path](slug://fiddler-cli#linux).
 
 ## Step 2: Create Your Fiddler Account
 
