@@ -27,6 +27,13 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
 - **Keep it ON after app restart**&mdash;With this option enabled, the **Allow remote devices to connect** persists for subsequent times the application starts.
 
+- **Enable Fiddler CLI**&mdash;Controls whether Fiddler Everywhere accepts commands from the [`fiddler-cli` command-line tool](slug://fiddler-cli). Disabled by default. When the option is disabled, `fiddler-cli` reports `Fiddler CLI is currently disabled.` and does not start Fiddler Everywhere. The option controls only the connection between the CLI and the application&mdash;it does not install the `fiddler-cli` command and does not change your `PATH`. The option is unavailable when your subscription tier doesn't include the Fiddler CLI or when your administrator has disabled it through the [`DisableCLI` policy](slug://fe-restrict-policies).
+
+- **CLI Directory** (Windows and macOS)&mdash;Shows the folder that contains the `fiddler-cli` executable. Click the copy button to copy the folder, and then [add it to your `PATH`](slug://fiddler-cli#setting-up-the-cli-path) to run `fiddler-cli` from any terminal.
+- **CLI Executable** (Linux)&mdash;Shows the full path to the `fiddler-cli` executable. Click the copy button to copy the path and run the command by its full path. In AppImage builds, the path is temporary and valid only while Fiddler Everywhere is running.
+
+    ![Enable Fiddler CLI and CLI Executable settings](./images/settings-connections-cli.png)
+
 - **Bypass Fiddler for URLs that starts with:**&mdash;Allows you to manually add addresses that the Fiddler Everywhere proxy will explicitly bypass.
     A common scenario for using this option is [setting up a VPN connection alongside Fiddler Everywhere](slug://configure-vpn-fiddler). You can separate the individual addresses with a comma, semicolon, new line, or white space. The option will set the bypass list in the related OS settings&mdash;for example, on Windows 10, that will be **Proxy Settings** > **Proxy** > **Manual Proxy** > **Use proxy server except for addresses...**. You can also quickly add domains while selecting a session from the Live Traffic grid and using the [context menu](slug://web-sessions-list#bypassing-the-proxy).
 

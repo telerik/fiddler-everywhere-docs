@@ -62,6 +62,10 @@ Recent reports on Ubuntu version 24.04 showed a bug related to most Electron-bas
 
 The above installs the required dependencies to run .appimage files on Ubuntu 24.04. If the application does not start, try to start it from the terminal and check the output for errors. If you see an error "The SUID sandbox helper binary was found, but is not configured correctly" then you must add the `--no-sandbox` command line option when starting the application from the terminal. 
 
+### Fiddler CLI
+
+Fiddler Everywhere includes the bundled [`fiddler-cli` command](slug://fiddler-cli) for controlling the application from a terminal. The CLI is disabled by default, and Fiddler Everywhere does not register it on your `PATH`. To use it, enable **Settings** > **Connections** > **Enable Fiddler CLI**, copy the temporary **CLI Executable** path, and [run the command by its full path](slug://fiddler-cli#linux).
+
 ## Step 2: Create Your Fiddler Account
 
 In this step, you will register by creating your unified Telerik account.   
@@ -98,6 +102,7 @@ Now you are equipped to delve deeper into Fiddler Everywhere and make the most o
 * [Creating API requests](slug://composer-get-started)
 * [Grouping the API requests in collections](slug://composer-collections-get-started)
 * [Mocking server responses](slug://rulesbuilder-get-started)
+* [Controlling Fiddler Everywhere from the command line](slug://fiddler-cli)
 * [Configuring Fiddler Everywhere on Fedora, CentOS, or RedHat](slug://fiddler-fedora-centos)
 * [Configuring Fiddler Everywhere on XFCE](slug://fiddler-xfce)
 * [Creating PEM certificate](slug://how-to-create-pem)

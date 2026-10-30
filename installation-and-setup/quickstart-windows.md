@@ -41,6 +41,8 @@ Fiddler Everywhere for Windows offers you the flexibility to select the installa
 
 When Fiddler Everywhere is installed per machine, each individual user must log in to Fiddler Everywhere with their credentials, and the generated data will not be accessible from the other users.
 
+>tip Fiddler Everywhere includes the bundled [`fiddler-cli` command](slug://fiddler-cli) for controlling the application from a terminal. The CLI is disabled by default, and the installer does not add it to your `PATH`. To use it, enable **Settings** > **Connections** > **Enable Fiddler CLI** and [set up the CLI path](slug://fiddler-cli#setting-up-the-cli-path).
+
 ## Step 2: Create Your Fiddler Account
 
 In this step, you will register by creating your unified Telerik account.   
@@ -77,3 +79,4 @@ Now you are equipped to delve deeper into Fiddler Everywhere and make the most o
 * [Creating API requests](slug://composer-get-started)
 * [Grouping the API requests in collections](slug://composer-collections-get-started)
 * [Mocking server responses](slug://rulesbuilder-get-started)
+* [Controlling Fiddler Everywhere from the command line](slug://fiddler-cli)

@@ -40,7 +40,7 @@ Double-clicking a script (or choosing **Edit**) opens it in a dedicated pop-out 
 
 ## The Sample Script
 
-Every new script starts from a bundled sample template that demonstrates all the available [script hooks](slug://fiddler-script-hooks), including `OnBeforeRequest`, `OnBeforeResponse`, `OnPeekAtRequestHeaders`, `OnPeekAtResponseHeaders`, `OnSessionCompleted`, `OnAttach`, `OnDetach`, `OnBoot`, `OnShutdown`, `OnValidateServerCertificate`, and `OnWebSocketMessage`. Use it as a starting point and remove the hooks you do not need.
+Every new script starts from a bundled sample template that demonstrates all the available [script hooks](slug://fiddler-script-hooks), including `OnBeforeRequest`, `OnBeforeResponse`, `OnPeekAtRequestHeaders`, `OnPeekAtResponseHeaders`, `OnSessionCompleted`, `OnAttach`, `OnDetach`, `OnBoot`, `OnShutdown`, `OnValidateServerCertificate`, `OnWebSocketMessage`, and `OnExecAction` (for [custom CLI commands](slug://fiddler-script-cli-commands)). Use it as a starting point and remove the hooks you do not need.
 
 ## Validation and Enabling Scripts
 
@@ -56,6 +56,7 @@ If any check fails, the script is not enabled/saved, and the editor highlights t
 
 - [Script Hooks Reference](slug://fiddler-script-hooks)
 - [Common Scripting Examples](slug://fiddler-script-examples)
+- [Custom CLI Commands](slug://fiddler-script-cli-commands)
 - [Scripting Settings and Limits](slug://fiddler-script-settings)
 - [Scripting Security Considerations](slug://fiddler-script-security)
 - [Using Conditions and Actions with Rules](slug://fiddler-rules-actions)

@@ -43,6 +43,7 @@ IT teams managing macOS systems can apply app configuration using their preferre
 | `DisableAssistant` | Enables or disables the Debugging Assistant feature | integer | `1` |
 | `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) of the Debugging Assistant | string | See the [JSON structure in the Debugging Assistant article](slug://fiddler-assistant#configuring-the-defaultassistantsettings-policy)  |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the settings of the Debugging Assistant | integer | `1` |
+| `DisableCLI` | Disables the [Fiddler CLI](slug://fiddler-cli) (`fiddler-cli` commands) | integer | `1` |
 
 >important Even with **DisableCloud** enabled, users still need access to [required Fiddler Everywhere API endpoints](slug://first_steps_windows#prerequisites). For environments with limited internet access, consider using [the Fiddler offline mode](https://www.telerik.com/blogs/offline-mode-fiddler-everywhere).
 
@@ -121,6 +122,7 @@ HKEY_CURRENT_USER\SOFTWARE\Policies\Progress\Fiddler Everywhere
 | `DefaultAssistantSettings` | Sets the default settings (model provider, API key, and model) of the Debugging Assistant | REG_SZ (string) |  See the [JSON structure in the Debugging Assistant article](slug://fiddler-assistant#configuring-the-defaultassistantsettings-policy)  |
 | `DisableAssistantSettingsUpdate` | Enables or disables the option to update the settings of the Debugging Assistant | DWORD-32 | `1` |
 | `DisableCustomInspectors` | Disables the [Custom Inspectors](slug://custom-inspectors) feature (Windows only), including importing custom inspectors from Fiddler Classic | DWORD-32 (hexadecimal) | `1` |
+| `DisableCLI` | Disables the [Fiddler CLI](slug://fiddler-cli) (`fiddler-cli` commands) | DWORD-32 (hexadecimal) | `1` |
 
 By leveraging these configuration options, IT administrators can ensure Fiddler Everywhere is deployed securely and consistently across their organization, while maintaining control over critical settings and features.
 
@@ -130,6 +132,7 @@ For more details on each configuration key or for troubleshooting, refer to the 
 
 * [Applying sanitization for captured traffic in Fiddler Everywhere](slug://fe-sanitization)
 * [Enabling and disabling the Fiddler Everywhere MCP server](slug://fiddler-mcp-server)
+* [Controlling Fiddler Everywhere from the command line](slug://fiddler-cli)
 * [Not capturing traffic due to group policy](slug://resolve-proxysettingsperuser-policy)
 * [Policies for managing access and usage of the Fiddler MCP server](slug://fiddler-mcp-server#mcp-access-policies)
 * [Policies for managing access and usage of the Fiddler Debugging Assistant](slug://fiddler-assistant#debugging-assistant-access-policies)
