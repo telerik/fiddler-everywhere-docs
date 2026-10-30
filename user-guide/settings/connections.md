@@ -29,7 +29,8 @@ The **Connections** menu exposes options allowing granular control over proxy se
 
 - **Enable Fiddler CLI**&mdash;Controls whether Fiddler Everywhere accepts commands from the [`fiddler-cli` command-line tool](slug://fiddler-cli). Disabled by default. When the option is disabled, `fiddler-cli` reports `Fiddler CLI is currently disabled.` and does not start Fiddler Everywhere. The option controls only the connection between the CLI and the application&mdash;it does not install the `fiddler-cli` command and does not change your `PATH`. The option is unavailable when your subscription tier doesn't include the Fiddler CLI or when your administrator has disabled it through the [`DisableCLI` policy](slug://fe-restrict-policies).
 
-- **CLI Executable**&mdash;Shows the full path to the `fiddler-cli` executable. Click the copy button to copy the path, and then use it to run the command or to [add its folder to your `PATH`](slug://fiddler-cli#setting-up-the-cli-executable-path) on Windows, macOS, or Linux. On Linux (AppImage), the path is temporary and valid only while Fiddler Everywhere is running.
+- **CLI Directory** (Windows and macOS)&mdash;Shows the folder that contains the `fiddler-cli` executable. Click the copy button to copy the folder, and then [add it to your `PATH`](slug://fiddler-cli#setting-up-the-cli-path) to run `fiddler-cli` from any terminal.
+- **CLI Executable** (Linux)&mdash;Shows the full path to the `fiddler-cli` executable. Click the copy button to copy the path and run the command by its full path. In AppImage builds, the path is temporary and valid only while Fiddler Everywhere is running.
 
     ![Enable Fiddler CLI and CLI Executable settings](./images/settings-connections-cli.png)
 

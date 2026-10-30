@@ -82,7 +82,7 @@ fiddler-cli show
 
 ### clear and cls
 
-The `clear` command (or its alias `cls`) deletes the completed sessions from the **Live Traffic** list. Sessions that are still in progress are kept.
+The `clear` command (or its alias `cls`) deletes the completed sessions from the **Live Traffic** list. Sessions that are still in progress are kept. After the command completes, Fiddler Everywhere also clears the session selection in the **Live Traffic** list.
 
 ```sh
 fiddler-cli clear

@@ -22,7 +22,7 @@ Custom commands run only when all of the following conditions are met:
 - A valid script is active.
 - The active script defines an `OnExecAction` handler that handles the command.
 
-Otherwise, the CLI reports the `script_unavailable` error. Built-in commands, such as `start` or `dump`, don't require an active script.
+If scripting is disabled, no valid script is active, or the active script has no `OnExecAction` handler, the CLI reports the `script_unavailable` error. If the CLI is disabled, it prints `Fiddler CLI is currently disabled.`, and if your handler declines the command, the CLI reports `unknown_command`. Built-in commands, such as `start` or `dump`, don't require an active script.
 
 The [Fiddler CLI restrictions](slug://fiddler-cli#restrictions), including the sign-in and license requirements, also apply to custom commands.
 
@@ -61,7 +61,7 @@ Return an `ExecResult` object to report the outcome of the command to the CLI. R
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| `Success` | `bool` | `true` when the command succeeded. When `false`, the CLI prints the message to the standard error and returns exit code `1`. |
+| `Success` | `bool` | `true` when the command succeeded. When `false`, the CLI prints the message to the standard error and returns a non-zero exit code. See [Output and Exit Codes](slug://fiddler-cli#output-and-exit-codes) for the exit code that matches each error. |
 | `Message` | `string` | The message that the CLI prints. |
 | `ErrorCode` | `string` | An error code that the CLI prints as `errorCode:` when the command fails&mdash;for example, `invalid_arguments`. |
 | `RemediationText` | `string` | A suggested action that the CLI prints as `Suggested action:` when the command fails. |

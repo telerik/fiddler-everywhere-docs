@@ -1,7 +1,7 @@
 ---
 title: Fiddler CLI
 page_title: Fiddler CLI - Command Line | Fiddler Everywhere
-description: "Control Fiddler Everywhere from a terminal with the bundled fiddler-cli command. Enable the CLI, set up the executable path on Windows, macOS, and Linux, and run commands to control capturing, sessions, breakpoints, and temporary rules."
+description: "Control Fiddler Everywhere from a terminal with the bundled fiddler-cli command. Enable the CLI, set up the CLI path on Windows, macOS, and Linux, and run commands to control capturing, sessions, breakpoints, and temporary rules."
 slug: fiddler-cli
 publish: true
 position: 1
@@ -29,7 +29,7 @@ The command names follow the Fiddler Classic shorthand syntax&mdash;for example,
 To start using the Fiddler CLI, complete the following steps:
 
 1. [Enable the Fiddler CLI](#enabling-the-fiddler-cli) in the Fiddler Everywhere settings. The CLI is disabled by default.
-1. [Set up the CLI executable path](#setting-up-the-cli-executable-path) for your operating system, so that your terminal can find the `fiddler-cli` command.
+1. [Set up the CLI path](#setting-up-the-cli-path) for your operating system, so that your terminal can find the `fiddler-cli` command.
 1. [Run a command](#running-commands).
 
 ## Prerequisites
@@ -48,7 +48,9 @@ The Fiddler CLI is **disabled by default**. To enable it:
 1. Select the **Enable Fiddler CLI** checkbox.
 1. Click **Save**.
 
-![Enable Fiddler CLI and CLI Executable in the Connections settings](./images/fiddler-cli-settings-connections.png)
+![Enable Fiddler CLI and the CLI path in the Connections settings](./images/fiddler-cli-settings-connections.png)
+
+<!-- TODO screenshot: Replace with the updated Settings > Connections screenshot. On Windows and macOS, the path field is now labeled "CLI Directory" and shows the folder, not the executable. -->
 
 The option controls only whether Fiddler Everywhere accepts commands from `fiddler-cli`. It doesn't install the command and doesn't change your `PATH`. Fiddler Everywhere never modifies the `PATH` environment variable for you&mdash;you set it up yourself, as described in the next section.
 
@@ -56,40 +58,40 @@ When the option is disabled, running any `fiddler-cli` command prints `Fiddler C
 
 >tip The checkbox is unavailable when your subscription tier doesn't include the Fiddler CLI or when your administrator has disabled the CLI through the [`DisableCLI` policy](slug://fe-restrict-policies).
 
-## Setting Up the CLI Executable Path
+## Setting Up the CLI Path
 
 Fiddler Everywhere doesn't register the `fiddler-cli` command on your `PATH` during installation. To run the command, use one of the following approaches:
 
 - **Run the executable by its full path**&mdash;Works immediately and requires no configuration.
 - **Add the executable's folder to the `PATH` environment variable**&mdash;Lets you run `fiddler-cli` from any terminal and any folder.
 
-### Copying the Executable Path
+### Copying the CLI Path
 
-Fiddler Everywhere shows the location of the CLI executable in the settings:
+Fiddler Everywhere shows the location of the CLI in the settings. On Windows and macOS, the field is named **CLI Directory** and contains the folder of the executable. On Linux, the field is named **CLI Executable** and contains the full path to the executable.
 
 1. Open **Settings** > **Connections**.
-1. Find the **CLI Executable** field below the **Enable Fiddler CLI** checkbox.
+1. Find the **CLI Directory** (Windows and macOS) or **CLI Executable** (Linux) field below the **Enable Fiddler CLI** checkbox.
 1. Click the copy button next to the field. Fiddler Everywhere confirms with the **CLI Path Copied!** message.
 
-The copied value is the full path to the executable file. The location depends on your operating system and installation:
+The copied value is the folder that contains iddler-cli on Windows and macOS, and the full path to the executable on Linux. The location depends on your operating system and installation:
 
-| Operating System | Executable | Folder to Add to `PATH` |
-|:-----------------|:-----------|:------------------------|
-| Windows | `<installation folder>\resources\app.asar.unpacked\out\cli\fiddler-cli.exe`<br>For a per-user installation, for example, `%LOCALAPPDATA%\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli\fiddler-cli.exe` | The folder that contains `fiddler-cli.exe` (the path without the trailing `\fiddler-cli.exe`) |
-| macOS | `/Applications/Fiddler Everywhere.app/Contents/Resources/app.asar.unpacked/out/cli/fiddler-cli` | The folder that contains `fiddler-cli` (the path without the trailing `/fiddler-cli`) |
-| Linux (AppImage) | A temporary path inside the mounted AppImage, valid only while Fiddler Everywhere is running | Not recommended. See [Linux](#linux). |
+| Operating System | Field | Copied Value |
+|:-----------------|:------|:-------------|
+| Windows | **CLI Directory** | `<installation folder>\resources\app.asar.unpacked\out\cli`<br>For a per-user installation, for example, `%LOCALAPPDATA%\Programs\Fiddler Everywhere\resources\app.asar.unpacked\out\cli`. Add this folder to `PATH`. |
+| macOS | **CLI Directory** | `/Applications/Fiddler Everywhere.app/Contents/Resources/app.asar.unpacked/out/cli`. Add this folder to `PATH`. |
+| Linux (AppImage) | **CLI Executable** | The full path to `fiddler-cli`, inside the mounted AppImage. The path is temporary and valid only while Fiddler Everywhere is running. Adding it to `PATH` is not recommended. See [Linux](#linux). |
 
->important Always use the path shown in the **CLI Executable** field of your installation. The folder differs between per-user and per-machine installations on Windows and if you install the app in a custom location.
+>important Always use the path shown in the **CLI Directory** field of your installation. The folder differs between per-user and per-machine installations on Windows and if you install the app in a custom location.
 
 ### Windows
 
 Open **PowerShell** or **Command Prompt** and use one of the following options.
 
-The examples use the `LOCALAPPDATA` environment variable (`%LOCALAPPDATA%` in Command Prompt and `$env:LOCALAPPDATA` in PowerShell), which points to `C:\Users\<user>\AppData\Local` and matches the default per-user installation folder. Don't use `%APPDATA%`&mdash;it points to the `Roaming` folder, which is a different location. If you installed Fiddler Everywhere per machine or in a custom folder, replace the variable-based part of the path with the folder from the **CLI Executable** field.
+The examples use the `LOCALAPPDATA` environment variable (`%LOCALAPPDATA%` in Command Prompt and `$env:LOCALAPPDATA` in PowerShell), which points to `C:\Users\<user>\AppData\Local` and matches the default per-user installation folder. Don't use `%APPDATA%`&mdash;it points to the `Roaming` folder, which is a different location. If you installed Fiddler Everywhere per machine or in a custom folder, replace the variable-based part of the path with the folder from the **CLI Directory** field.
 
 **Option 1: Run the executable by its full path**
 
-Paste the copied path and add the command. In PowerShell, put the path in quotes and prefix it with the call operator (`&`) because it contains spaces:
+Paste the copied folder, append `\fiddler-cli.exe`, and add the command. In PowerShell, put the path in quotes and prefix it with the call operator (`&`) because it contains spaces:
 
 ```powershell
 # Windows PowerShell
@@ -153,7 +155,7 @@ Open **Terminal** and use one of the following options.
 
 **Option 1: Run the executable by its full path**
 
-Paste the copied path and add the command. Wrap the path in quotes because it contains a space:
+Paste the copied folder, append `/fiddler-cli`, and add the command. Wrap the path in quotes because it contains a space:
 
 ```sh
 "/Applications/Fiddler Everywhere.app/Contents/Resources/app.asar.unpacked/out/cli/fiddler-cli" help
@@ -191,7 +193,7 @@ which fiddler-cli
 fiddler-cli help
 ```
 
-If you moved the application out of the `/Applications` folder, replace the folder in the commands with the one from the **CLI Executable** field.
+If you moved the application out of the `/Applications` folder, replace the folder in the commands with the one from the **CLI Directory** field.
 
 ### Linux
 
@@ -349,7 +351,7 @@ fiddler-cli dump ~/captures
 fiddler-cli start && echo "Capturing started"
 ```
 
->tip If you didn't add the CLI folder to your `PATH`, replace `fiddler-cli` in the examples with the full path to the executable. See [Setting Up the CLI Executable Path](#setting-up-the-cli-executable-path).
+>tip If you didn't add the CLI folder to your `PATH`, replace `fiddler-cli` in the examples with the full path to the executable. See [Setting Up the CLI Path](#setting-up-the-cli-path).
 ## Restrictions
 
 The following restrictions apply to Fiddler CLI commands:
@@ -412,7 +414,7 @@ If your terminal reports that it doesn't recognize the command, the folder of th
 - Command Prompt: `'fiddler-cli' is not recognized as an internal or external command, operable program or batch file.`
 - macOS and Linux: `fiddler-cli: command not found`
 
-To resolve the problem, set up the executable path as described in [Setting Up the CLI Executable Path](#setting-up-the-cli-executable-path), and open a new terminal window after changing the `PATH`.
+To resolve the problem, set up the CLI path as described in [Setting Up the CLI Path](#setting-up-the-cli-path), and open a new terminal window after changing the `PATH`.
 
 ### The CLI Is Disabled
 
