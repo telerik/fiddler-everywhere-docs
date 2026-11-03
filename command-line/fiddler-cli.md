@@ -48,9 +48,7 @@ The Fiddler CLI is **disabled by default**. To enable it:
 1. Select the **Enable Fiddler CLI** checkbox.
 1. Click **Save**.
 
-![Enable Fiddler CLI and the CLI path in the Connections settings](./images/fiddler-cli-settings-connections.png)
-
-<!-- TODO screenshot: Replace with the updated Settings > Connections screenshot. On Windows and macOS, the path field is now labeled "CLI Directory" and shows the folder, not the executable. -->
+<!-- TODO screenshot: Settings > Connections > Enable Fiddler CLI and the CLI Directory (Windows and macOS) / CLI Executable (Linux) field -->
 
 The option controls only whether Fiddler Everywhere accepts commands from `fiddler-cli`. It doesn't install the command and doesn't change your `PATH`. Fiddler Everywhere never modifies the `PATH` environment variable for you&mdash;you set it up yourself, as described in the next section.
 
