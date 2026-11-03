@@ -71,7 +71,7 @@ Fiddler Everywhere shows the location of the CLI in the settings. On Windows and
 1. Find the **CLI Directory** (Windows and macOS) or **CLI Executable** (Linux) field below the **Enable Fiddler CLI** checkbox.
 1. Click the copy button next to the field. Fiddler Everywhere confirms with the **CLI Path Copied!** message.
 
-The copied value is the folder that contains iddler-cli on Windows and macOS, and the full path to the executable on Linux. The location depends on your operating system and installation:
+The copied value is the folder that contains `fiddler-cli` on Windows and macOS, and the full path to the executable on Linux. The location depends on your operating system and installation:
 
 | Operating System | Field | Copied Value |
 |:-----------------|:------|:-------------|
