@@ -375,7 +375,7 @@ An error message can include the following additional lines:
 For example:
 
 ```txt
-Sign-in is required before this QuickExec command can run.
+Sign-in is required before this Fiddler CLI command can run.
 Suggested action: Open Fiddler Everywhere, sign in, and run the command again.
 You can follow the quick link: https://...
 errorCode: sign_in_required
@@ -426,20 +426,20 @@ When a command fails, the CLI prints an error message and an `errorCode` value. 
 
 | Error Code | Message | Resolution |
 |:-----------|:--------|:-----------|
-| `unknown_command` | `This command is not recognized as a built-in or custom command.` or `No built-in command or active script handled this command.` | Check the command spelling and run `fiddler-cli help`. For custom commands, make sure that the active script's `OnExecAction` handler handles the command. |
+| `unknown_command` | `This command is not recognized as a built-in or custom command.` or `No built-in command or active script handled this command.` | Check the command spelling and run `fiddler-cli help`. For custom commands, make sure that the active script's `OnCliCommand` handler handles the command. |
 | `invalid_arguments` | Varies by command&mdash;for example, `Usage: urlreplace <find> <replace> or urlreplace.` or `Response status must be an integer from 100 through 599.` | Correct the command arguments. See the [Fiddler CLI Command Reference](slug://fiddler-cli-commands). |
 | `not_ready` | Varies&mdash;for example, Fiddler Everywhere is still restoring the sign-in state, still initializing backend services, or the main window is not available. | Wait until Fiddler Everywhere finishes starting and run the command again. |
-| `sign_in_required` | `Sign-in is required before this QuickExec command can run.` | Sign in to Fiddler Everywhere (use the link in the output) and run the command again. |
-| `license_required` | `A valid Fiddler Everywhere license is required before this QuickExec command can run.` | Open Fiddler Everywhere and check your license or account state. |
-| `script_unavailable` | Varies&mdash;scripting is disabled, no valid script is active, scripting was disabled after repeated script failures, or the active script has no `OnExecAction` handler. | Open the **Scripting** tab, enable scripting, and activate a valid script that has an `OnExecAction` handler. See [Custom CLI Commands](slug://fiddler-script-cli-commands). |
-| `script_execution_failed` | `The active script could not execute this command: ...` | Review the runtime diagnostics in the **Scripting** tab and fix the `OnExecAction` handler. |
-| `policy_blocked` | `QuickExec is disabled by the DisableCLI enterprise policy.` or `QuickExec is disabled by the CLI quota for this account.` | Contact your Fiddler administrator, or check whether your subscription tier includes the Fiddler CLI. |
+| `sign_in_required` | `Sign-in is required before this Fiddler CLI command can run.` | Sign in to Fiddler Everywhere (use the link in the output) and run the command again. |
+| `license_required` | `A valid Fiddler Everywhere license is required before this Fiddler CLI command can run.` | Open Fiddler Everywhere and check your license or account state. |
+| `script_unavailable` | Varies&mdash;scripting is disabled, no valid script is active, scripting was disabled after repeated script failures, or the active script has no `OnCliCommand` handler. | Open the **Scripting** tab, enable scripting, and activate a valid script that has an `OnCliCommand` handler. See [Custom CLI Commands](slug://fiddler-script-cli-commands). |
+| `script_execution_failed` | `The active script could not execute this command: ...` | Review the runtime diagnostics in the **Scripting** tab and fix the `OnCliCommand` handler. |
+| `policy_blocked` | `Fiddler CLI is disabled by the DisableCLI enterprise policy.` or `Fiddler CLI is disabled by the CLI quota for this account.` | Contact your Fiddler administrator, or check whether your subscription tier includes the Fiddler CLI. |
 | `proxy_unavailable` | `Failed to enable the proxy: ...` or `Failed to disable the proxy: ...` | Check the proxy state in Fiddler Everywhere and make sure that the proxy settings are not restricted on your machine. |
-| `operation_in_progress` | `Another QuickExec session command is in progress. Try again when it completes.` | Wait until the running `clear`, `cls`, or `dump` command completes and try again. |
+| `operation_in_progress` | `Another Fiddler CLI session command is in progress. Try again when it completes.` | Wait until the running `clear`, `cls`, or `dump` command completes and try again. |
 | `operation_failed` | Varies&mdash;for example, `The command failed unexpectedly.`, `Timed out waiting for Fiddler Everywhere to start.`, or details about a failed session export. | Read the message details and run the command again. |
-| `protocol_mismatch` | `QuickExec protocol version mismatch ...` | The `fiddler-cli` command and the running Fiddler Everywhere instance come from different versions. Restart Fiddler Everywhere so that both versions match. |
+| `protocol_mismatch` | `Fiddler CLI protocol version mismatch ...` | The `fiddler-cli` command and the running Fiddler Everywhere instance come from different versions. Restart Fiddler Everywhere so that both versions match. |
 
-<!-- TODO verify: Some CLI messages still contain the internal name "QuickExec". The messages are quoted verbatim from the product; update them if the product strings are renamed to "Fiddler CLI". -->
+<!-- TODO verify: Confirm the exact wording of the protocol-mismatch message in a build that includes the Fiddler CLI rename (PR 5877). -->
 
 The following message is related to the CLI configuration:
 

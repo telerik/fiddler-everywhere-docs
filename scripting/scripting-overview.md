@@ -40,7 +40,7 @@ Double-clicking a script (or choosing **Edit**) opens it in a dedicated pop-out 
 
 ## The Sample Script
 
-Every new script starts from a bundled sample template that demonstrates all the available [script hooks](slug://fiddler-script-hooks), including `OnBeforeRequest`, `OnBeforeResponse`, `OnPeekAtRequestHeaders`, `OnPeekAtResponseHeaders`, `OnSessionCompleted`, `OnAttach`, `OnDetach`, `OnBoot`, `OnShutdown`, `OnValidateServerCertificate`, `OnWebSocketMessage`, and `OnExecAction` (for [custom CLI commands](slug://fiddler-script-cli-commands)). Use it as a starting point and remove the hooks you do not need.
+Every new script starts from a bundled sample template that demonstrates all the available [script hooks](slug://fiddler-script-hooks), including `OnBeforeRequest`, `OnBeforeResponse`, `OnPeekAtRequestHeaders`, `OnPeekAtResponseHeaders`, `OnSessionCompleted`, `OnAttach`, `OnDetach`, `OnBoot`, `OnShutdown`, `OnValidateServerCertificate`, `OnWebSocketMessage`, and `OnCliCommand` (for [custom CLI commands](slug://fiddler-script-cli-commands)). Use it as a starting point and remove the hooks you do not need.
 
 ## Validation and Enabling Scripts
 

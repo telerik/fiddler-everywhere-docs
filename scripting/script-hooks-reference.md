@@ -28,7 +28,7 @@ A Fiddler Everywhere script is a plain C# script (`.csx`-style code, without an 
 | `OnShutdown` | `void OnShutdown()` | Once, when the Fiddler Everywhere backend begins shutting down. |
 | `OnValidateServerCertificate` | `void OnValidateServerCertificate(ValidateServerCertificateEventArgs args)` | A server's HTTPS certificate is evaluated. Set `args.ValidityState` to override the default validation result (for example, `CertificateValidity.ForceValid`). |
 | `OnWebSocketMessage` | `void OnWebSocketMessage(WebSocketMessage oWSM)` | A WebSocket message is captured. |
-| `OnExecAction` | `ExecResult OnExecAction(string[] parameters)` | A `fiddler-cli` command that is not a built-in command is run. `parameters[0]` is the lowercased command name, and the remaining items are its arguments. Return an `ExecResult`, or `null` to decline the command. For details, see [Custom CLI Commands](slug://fiddler-script-cli-commands). |
+| `OnCliCommand` | `CliResult OnCliCommand(string[] parameters)` | A `fiddler-cli` command that is not a built-in command is run. `parameters[0]` is the lowercased command name, and the remaining items are its arguments. Return an `CliResult`, or `null` to decline the command. For details, see [Custom CLI Commands](slug://fiddler-script-cli-commands). |
 Each hook receives its typed argument (`Session`, `ValidateServerCertificateEventArgs`, or `WebSocketMessage`) directly&mdash;there is no need to declare or reference a globals object; the argument name in the signature (`oSession`, `args`, `oWSM`) can be changed freely since it is just a regular method parameter.
 
 ## Full Sample Script
@@ -101,7 +101,7 @@ void OnWebSocketMessage(WebSocketMessage oWSM)
     // Runs when a WebSocket message is captured.
 }
 
-ExecResult OnExecAction(string[] parameters)
+CliResult OnCliCommand(string[] parameters)
 {
     // Runs when a custom command is invoked from a terminal:
     // fiddler-cli <command> [arguments]

@@ -33,7 +33,7 @@ Commands are case-insensitive. Arguments are positional&mdash;pass values direct
 | `overridehost <host> <target>` | Adds a temporary host mapping. Run without values to clear all host mappings added through the CLI. | `fiddler-cli overridehost example.com 127.0.0.1:8080` |
 | `help`, `--help`, `-h`, or no command | Lists the available commands. | `fiddler-cli help` |
 
-Any other command name is forwarded to the `OnExecAction` handler of the active script. For details, see [Custom CLI Commands](slug://fiddler-script-cli-commands).
+Any other command name is forwarded to the `OnCliCommand` handler of the active script. For details, see [Custom CLI Commands](slug://fiddler-script-cli-commands).
 
 ## Capture and Application Commands
 
@@ -94,7 +94,7 @@ Cleared 42 completed live session(s); active sessions were kept.
 
 ### dump
 
-The `dump` command exports the live sessions to a SAZ file and then clears the exported sessions. The CLI creates a uniquely named file, for example, `quickexec-dump-20250101-093000123-<id>.saz`, so running the command repeatedly never overwrites previous exports.
+The `dump` command exports the live sessions to a SAZ file and then clears the exported sessions. The CLI creates a uniquely named file, for example, `fiddler-cli-dump-20250101-093000123-<id>.saz`, so running the command repeatedly never overwrites previous exports.
 
 - When you omit the directory, the CLI saves the file to your Desktop.
 - A relative directory is resolved from the current working directory of the terminal.
@@ -104,8 +104,8 @@ The `dump` command exports the live sessions to a SAZ file and then clears the e
 The command prints the full path to the created file:
 
 ```txt
-Live sessions exported to '/Users/<user>/Desktop/quickexec-dump-20250101-093000123-....saz' and cleared.
-path: /Users/<user>/Desktop/quickexec-dump-20250101-093000123-....saz
+Live sessions exported to '/Users/<user>/Desktop/fiddler-cli-dump-20250101-093000123-....saz' and cleared.
+path: /Users/<user>/Desktop/fiddler-cli-dump-20250101-093000123-....saz
 ```
 
 If there are no live sessions, the CLI prints `No live sessions to dump.`.
@@ -238,7 +238,7 @@ fiddler-cli overridehost
 ```
 
 ```txt
-Cleared 2 QuickExec host override(s).
+Cleared 2 Fiddler CLI host override(s).
 ```
 
 ## See Also
