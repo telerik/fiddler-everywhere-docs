@@ -1,5 +1,37 @@
 [
     {
+        "version": "8.4.0-insiders",
+        "title": "Fiddler Everywhere v8.4.0",
+        "date": "Nov 5, 2026",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Added a Fiddler CLI for command-line control of Fiddler Everywhere."
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "Fixed CVE-2026-104657: Improved integrity verification for release binaries installed by the official agent skill."
+                    },
+                    {
+                        "title": "Fixed CVE-2026-104656: Sanitized URLs in imported session archives before displaying them."
+                    },
+                    {
+                        "title": "Fiddler remains responsive after Windows wakes from sleep."
+                    },
+                    {
+                        "title": "Updated third-party dependencies to address potential security vulnerabilities."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "8.3.0-insiders",
         "title": "Fiddler Everywhere v8.3.0",
         "date": "Oct 20, 2026",
