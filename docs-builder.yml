@@ -46,6 +46,9 @@ meta:
     scripting:
         title: Scripting
         position: 52
+    command-line:
+        title: Command Line
+        position: 53
     agent-tools:
         title: Agent Tools
         position: 55
