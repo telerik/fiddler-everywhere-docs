@@ -133,7 +133,7 @@ fiddler-cli dump "$HOME/My Captures"
 fiddler-cli dump ./captures
 ```
 
-You can open the exported SAZ files in Fiddler Everywhere or Fiddler Classic. For more information, see [Exporting and Importing Sessions](slug://fiddler-export-and-import).
+You can open the exported SAZ files in Fiddler Everywhere. For more information, see [Exporting and Importing Sessions](slug://fiddler-export-and-import).
 
 >tip Only one `clear`, `cls`, or `dump` command can run at a time. If you run another one while the previous command is still in progress, the CLI reports the `operation_in_progress` error.
 
