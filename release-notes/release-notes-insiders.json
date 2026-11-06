@@ -22,7 +22,7 @@
                         "title": "Fixed CVE-2026-104656: Sanitized URLs in imported session archives before displaying them."
                     },
                     {
-                        "title": "Fiddler remains responsive after Windows wakes from sleep."
+                        "title": "Fiddler remains unresponsive after Windows wakes from sleep."
                     },
                     {
                         "title": "Updated third-party dependencies to address potential security vulnerabilities."
