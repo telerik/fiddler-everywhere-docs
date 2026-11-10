@@ -24,6 +24,16 @@ The default timeout is **3000 ms**.
 
 Up to **four** hook invocations can run at the same time. If all execution slots are busy, additional dispatches wait for a free slot until the configured timeout elapses; if none becomes free in time, that particular hook invocation is skipped for that session/event, and a warning diagnostic is raised, but the traffic pipeline is not blocked.
 
+## Body and IPC Size Limits
+
+Each script callback can receive a request body and a response body of up to **16 MiB** each. If either body is larger than 16 MiB when a callback is invoked, that invocation is skipped—even if the hook only needs to inspect headers. A body of exactly 16 MiB is allowed.
+
+There is also a separate **80 MiB** limit for the complete serialized message sent between the Fiddler Everywhere backend and the scripting process. This message includes bodies, headers, and metadata, so it can exceed the limit even when neither body exceeds its individual 16 MiB limit.
+
+## Session Copies
+
+Hooks receive a copy of the session rather than the live backend object. Changes made to that copy during the callback still apply to the real session. If a script retains the session reference after the callback ends, it will not reflect later session changes, and changes made through that retained reference will not affect the real session.
+
 ## Consecutive-Error Kill Switch
 
 Fiddler Everywhere tracks consecutive failures per hook (compile errors surfaced at runtime, unhandled exceptions thrown by the script, and timeouts). Once a hook accumulates a configurable number of **consecutive** failures:

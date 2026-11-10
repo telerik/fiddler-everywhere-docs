@@ -31,6 +31,8 @@ A Fiddler Everywhere script is a plain C# script (`.csx`-style code, without an 
 | `OnCliCommand` | `CliResult OnCliCommand(string[] parameters)` | A `fiddler-cli` command that is not a built-in command is run. `parameters[0]` is the lowercased command name, and the remaining items are its arguments. Return an `CliResult`, or `null` to decline the command. For details, see [Custom CLI Commands](slug://fiddler-script-cli-commands). |
 Each hook receives its typed argument (`Session`, `ValidateServerCertificateEventArgs`, or `WebSocketMessage`) directly&mdash;there is no need to declare or reference a globals object; the argument name in the signature (`oSession`, `args`, `oWSM`) can be changed freely since it is just a regular method parameter.
 
+>important A hook receives a copy of its `Session`, not the live backend object. Changes made during the callback are applied to the real session, but a reference retained after the callback ends will not reflect later session changes, and edits through it will not affect the real session. See [Scripting Settings and Limits](slug://fiddler-script-settings#session-copies) for details.
+
 ## Full Sample Script
 
 The following is the built-in template that every new script starts from. It declares every supported hook as an empty stub&mdash;delete the hooks you do not need:
@@ -38,11 +40,11 @@ The following is the built-in template that every new script starts from. It dec
 ```csharp
 // Fiddler Everywhere sample script.
 //
-// Security warning: scripts run in-process with the Fiddler backend and are not
-// a hard security sandbox. Only run scripts you trust; scripts from untrusted
-// sources may access available application resources and can contain harmful
-// code. A non-cooperating tight loop or deep recursion can also hang or crash
-// the backend process.
+// Security warning: scripts run in a separate process, but are not a hard
+// security sandbox. Only run scripts you trust; scripts from untrusted sources
+// may access resources available to the script runtime and can contain harmful
+// code. A non-cooperating tight loop or deep recursion can hang or crash the
+// scripting process.
 
 void OnBeforeRequest(Session oSession)
 {

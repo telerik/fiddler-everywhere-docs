@@ -9,7 +9,7 @@ position: 40
 
 # Scripting Security Considerations
 
->warning Scripts run **in-process** with the Fiddler Everywhere application. Scripting applies a set of guardrails described below, but it is **not a hard security sandbox**. Only run scripts you trust. A script from an untrusted source can still access available application resources, and a non-cooperating tight loop or deep recursion can hang or crash the backend process.
+>warning Scripts run in a **separate process** from the Fiddler Everywhere backend, but scripting is **not a hard security sandbox**. Only run scripts you trust. A script from an untrusted source can still access resources available to the script runtime, and a non-cooperating tight loop or deep recursion can hang or crash the scripting process.
 
 ## Guardrails Applied to Every Script
 
@@ -44,11 +44,12 @@ These checks run both as a syntax-level (AST) pass and a semantic (symbol-bound)
 
 ## What the Guardrails Do Not Protect Against
 
-The guardrails are a **best-effort allowlist/blocklist**, not process isolation. In particular, be aware that:
+The guardrails are a **best-effort allowlist/blocklist**, not a hard security boundary. In particular, be aware that:
 
-- A script can still perform expensive or blocking synchronous work that is not expressed as a recognized loop construct (see [Loop Cancellation](slug://fiddler-script-settings#loop-cancellation)), which can delay traffic processing until the [execution timeout](slug://fiddler-script-settings#execution-timeout) is reached.
+- A script can still perform expensive or blocking synchronous work that is not expressed as a recognized loop construct (see [Loop Cancellation](slug://fiddler-script-settings#loop-cancellation)), which can delay its callback until the [execution timeout](slug://fiddler-script-settings#execution-timeout) is reached.
 - A script can read and modify any data exposed to it through the hook arguments (`Session`, `WebSocketMessage`, `ValidateServerCertificateEventArgs`)&mdash;including request/response headers and bodies, and certificate validation results.
 - Repeated non-cooperating executions can exhaust the bounded execution capacity described in [Concurrency Limit](slug://fiddler-script-settings#concurrency-limit), causing later hook invocations to be skipped until the offending execution completes or times out.
+- Script callbacks are subject to request/response body and serialized IPC message size limits. See [Body and IPC Size Limits](slug://fiddler-script-settings#body-and-ipc-size-limits).
 
 ## Best Practices
 
