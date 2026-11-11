@@ -19,7 +19,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on Lin
 
 - Install Ubuntu 22+ x64.
 - Provide 400MB of free disk space.
-- Create an account with administrative rights, which you will need for capturing and decoding HTTPS traffic.
+- Use a Linux account with administrator rights, which are required to capture and decrypt HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
   ```sh
   https://*.telerik.com/
@@ -36,22 +36,22 @@ Install the latest version of Fiddler Everywhere on your machine.
 
 1. Download the latest version of [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere).
 1. Install the downloaded package. On most Linux distributions, you must set the installation file as executable before starting the installation. To achieve this, either use the command line or the GUI of the desired distribution. 
-    - Setting the installation plan as executable through the command line:
+    - Setting the downloaded AppImage file as executable through the command line:
         1. Open a terminal.
         1. Navigate to the folder where the installation file resides.
-        1. Type `sudo chmod +x filename.appimage`. You can omit the `sudo` command if the currently logged user is the one that downloaded the executable.
+        1. Type `sudo chmod +x filename.AppImage`. You can omit `sudo` if your current account owns the downloaded file.
         1. If prompted, enter your username and password. Press the `Enter` key.
-    - Setting the installation plan as executable through the GUI.
+    - Setting the downloaded AppImage file as executable through the GUI.
         * For the Gnome distribution
           ![Gnome setting executable](./images/exec-gnome.jpg)
         * For the Cinnamon distribution
           ![Cinnamon setting executable](./images/exec-cinnamon.jpg)
-        * For the KDI distribution
+        * For the KDE desktop environment
           ![KDE setting executable](./images/exec-kde.jpg)
 
 ### Ubuntu 24.04 Specifics
 
-Recent reports on Ubuntu version 24.04 showed a bug related to most Electron-based applications (like Fiddler Everywhere) where the file can not be set as executable (refer to [this GitHub thread](https://github.com/electron/electron/issues/42510)). In case you are unable to execute the Fiddler installation after the above steps, then try the following:
+Recent reports on Ubuntu 24.04 describe an issue affecting some Electron-based applications, including Fiddler Everywhere, where AppImage files cannot be marked as executable (see [this GitHub thread](https://github.com/electron/electron/issues/42510)). If you cannot launch the Fiddler AppImage after following the steps above, try the following:
 
 1. Open a terminal
 1. Run the following command:
@@ -60,7 +60,7 @@ Recent reports on Ubuntu version 24.04 showed a bug related to most Electron-bas
   sudo apt install libfuse2
   ```
 
-The above installs the required dependencies to run .appimage files on Ubuntu 24.04. If the application does not start, try to start it from the terminal and check the output for errors. If you see an error "The SUID sandbox helper binary was found, but is not configured correctly" then you must add the `--no-sandbox` command line option when starting the application from the terminal. 
+The command installs the required dependencies to run AppImage files on Ubuntu 24.04. If the application does not start, launch it from a terminal and check the output for errors. If you see the error "The SUID sandbox helper binary was found, but is not configured correctly," add the `--no-sandbox` command-line option when starting the application from the terminal.
 
 ### Fiddler CLI
 
@@ -75,18 +75,18 @@ In this step, you will register by creating your unified Telerik account.
   >tip The [Fiddler Everywhere Enterprise subscription plan](https://www.telerik.com/purchase/fiddler) supports SSO login. Refer to the [Single Sign-On (SSO) Setup]({%slug fe-sso-setup%}) article for detailed instructions on configuring your company-specific SSO.
 1. Enter the requested information on the **Enter Your Email to Sign in or Create an Account** screen.
 1. Check your inbox, open the confirmation email, and complete your account activation.
-1. Return the Fiddler Everywhere application and choose whether to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
+1. Return to the Fiddler Everywhere application and choose whether to start a trial or purchase a subscription by selecting **Start Free Trial** or **BUY NOW**.
 
-After successful login into Fiddler Everywhere, you will see your personal and license information within the **Home** pane.
+After you sign in to Fiddler Everywhere, your personal and license information appears in the **Home** pane.
 
 ## Step 3: Interact with the Captured Traffic
 
 You can now take advantage of the Fiddler Everywhere capabilities - capture, inspect, save & share, import & export, mock and modify HTTPS traffic.
 
 1. Capture HTTPS traffic through the preferred [capturing mode](slug://capture-traffic-get-started).
-  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)](slug://trust-certificate). Alternatively, you can explicitly [install the Fiddler CA certificate in a third-party certificate store](slug://trust-certificate) (for example, [through intalling the CA in Firefox](slug://how-to-install-fiddler-root-certificate-in-firefox-on-linux)) and capture traffic only from that application.
+  >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)](slug://trust-certificate). Alternatively, you can install the Fiddler CA certificate in a third-party certificate store (for example, [install the CA in Firefox](slug://how-to-install-fiddler-root-certificate-in-firefox-on-linux)) and capture traffic only from that application.
 1. [Inspect the captured data](slug://inspecting-traffic-get-started).
-1. [Save](slug://fiddler-saving), [share](slug://fiddler-sharing). or [export](slug://fiddler-export-and-import) the captured HTTPS traffic.
+1. [Save](slug://fiddler-saving), [share](slug://fiddler-sharing), or [export](slug://fiddler-export-and-import) the captured HTTPS traffic.
 1. [Modify a session through the **Composer**](slug://composer-get-started#edit-captured-api-request)
 1. [Mock client and server behavior through the **Rules** tab](slug://rulesbuilder-get-started)
 

@@ -19,7 +19,7 @@ This tutorial describes how to install and start using Fiddler Everywhere on mac
 
 - Install macOS version 12 or above.
 - Provide 400MB of free disk space.
-- Create an account with administrative rights which you will need for capturing and decoding HTTPS traffic.
+- Use a macOS account with administrator rights, which are required to capture and decrypt HTTPS traffic.
 - Provide an active Internet connection with access to the following URLs:
   ```sh
   https://*.telerik.com/
@@ -47,9 +47,9 @@ In this step, you will register by creating your unified Telerik account.
   >tip The [Fiddler Everywhere Enterprise subscription plan](https://www.telerik.com/purchase/fiddler) supports SSO login. Refer to the [Single Sign-On (SSO) Setup]({%slug fe-sso-setup%}) article for detailed instructions on configuring your company-specific SSO.
 1. Enter the requested information on the **Enter Your Email to Sign in or Create an Account** screen.
 1. Check your inbox, open the confirmation email, and complete your account activation.
-1. Return the Fiddler Everywhere application and choose whether to become a trial user or purchase a subscription plan by selecting either the **Start Free Trial** or the **BUY NOW** link.
+1. Return to the Fiddler Everywhere application and choose whether to start a trial or purchase a subscription by selecting **Start Free Trial** or **BUY NOW**.
 
-After successful login into Fiddler Everywhere, you will see your personal and license information within the **Home** pane.
+After you sign in to Fiddler Everywhere, your personal and license information appears in the **Home** pane.
 
 ## Step 3: Interact with the Captured Traffic
 
@@ -58,7 +58,7 @@ You can now take advantage of the Fiddler Everywhere capabilities - capture, ins
 1. Capture HTTPS traffic through the preferred [capturing mode](slug://capture-traffic-get-started).
   >tip To capture and decrypt secure HTTPS traffic, you need to explicitly [install and trust the Fiddler certificate authority (CA)](slug://trust-certificate).
 1. [Inspect the captured data](slug://inspecting-traffic-get-started).
-1. [Save](slug://fiddler-saving), [share](slug://fiddler-sharing). or [export](slug://fiddler-export-and-import) the captured HTTPS traffic.
+1. [Save](slug://fiddler-saving), [share](slug://fiddler-sharing), or [export](slug://fiddler-export-and-import) the captured HTTPS traffic.
 1. [Modify a session through the **Composer**](slug://composer-get-started#edit-captured-api-request)
 1. [Mock client and server behavior through the **Rules** tab](slug://rulesbuilder-get-started)
 
