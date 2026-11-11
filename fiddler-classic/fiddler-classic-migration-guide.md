@@ -66,7 +66,7 @@ The imported application options behave the same way as in Fiddler Classic. Afte
 
     >important The default proxy port of Fiddler Classic is 8888, while the default proxy port of Fiddler Everywhere is 8866. This difference is often overlooked when following a proxy tutorial written for the other application.
 
-- **Bypassed URLs**&mdash;Imports the value of the Fiddler Classic **Tools** > **Options** > **Connections** > **Bypass Fiddler for URLs that start with** option into the Fiddler Everywhere **Settings** > **Connections** > **Bypass Fiddler for URLs that starts with** option.
+- **Bypassed URLs**&mdash;Imports the value of the Fiddler Classic **Tools** > **Options** > **Connections** > **Bypass Fiddler for URLs that start with** option into the Fiddler Everywhere **Settings** > **Connections** > **Bypass Fiddler for URLs that start with** option.
 - **Gateway settings**&mdash;Imports the Fiddler Classic **Tools** > **Options** > **Gateway** configuration into the Fiddler Everywhere **Settings** > **Gateway** section. This option is unavailable if Fiddler Classic is configured to **Automatically detect proxy using WPAD**.
 - **Allow remote computers to connect**&mdash;Imports the value of the Fiddler Classic **Tools** > **Options** > **Connections** > **Allow remote computers to connect** option into the Fiddler Everywhere **Settings** > **Connections** > **Allow remote devices to connect** option.
 

@@ -104,7 +104,7 @@ To prevent Apple services from losing connectivity, the Fiddler Everywhere appli
 However, this is not the case for the other operating systems where these services are not commonly used. If you like to continue using Apple services like iTunes or AppStore on different operating systems, ensure to add the above endpoints manually as follows:
 
 - Open Fiddler Everywhere on the host machine and go to **Settings** > **Connections**.
-- In the **Bypass Fiddler for URLs that starts with:** field, add the following Apple root domains:
+- In the **Bypass Fiddler for URLs that start with:** field, add the following Apple root domains:
     ```txt
     *.apple.com, *.itunes.com, *mzstatic.com
     ```

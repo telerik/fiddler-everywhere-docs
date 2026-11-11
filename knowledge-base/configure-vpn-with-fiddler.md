@@ -36,7 +36,7 @@ The following section showcases how to use Cisco VPN alongside [the Fiddler **sy
 1. Make sure your Cisco AnyConnect client is disconnected.
 1. Start Fiddler Everywhere and toggle on the **System Proxy** switch (system capturing mode).
 1. Open the **Settings** > **HTTP** menu, trust the Fiddler certificate, and check the **Capture HTTPS traffic** box.
-1. Open the **Settings** > **Connections** menu and, in **Bypass Fiddler for URLs that starts with:**, add the VPN addresses of your VPN servers. Click the **Save** button to preserve the bypass list.
+1. Open **Settings** > **Connections** and, in **Bypass Fiddler for URLs that start with:**, add your VPN server addresses. Click **Save** to preserve the bypass list.
     ![Bypassing VPN addresses](./images/vpn-cisco-bypass.png)
 
  You can use a comma, semicolon, new line, and white space as a separator for multiple addresses in the bypass list. All separators will be converted to the OS-supported separator after saving the values. Once the addresses in **Bypass Fiddler for URLs that start with:** are set, the values persist and are used by Fiddler Everywhere to set the OS bypass list. For example, you can open the **Proxy Settings** on Windows OS and check that the values are persisted in the **Use the proxy server except for addresses that start with..** textbox.

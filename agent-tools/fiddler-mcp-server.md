@@ -1,7 +1,7 @@
 ---
 title: Fiddler MCP Server
 page_title: Fiddler Everywhere MCP Server – Connect LLM-Powered Coding Tools to Live HTTPS Traffic
-description: "Install and configure the Fiddler Everywhere MCP server to give LLM-powered coding assistants (VS Code, Cursor, Claude, Windsurf) real-time access to captured HTTPS traffic for debugging, security analysis, and performance optimization."
+description: "Install and configure the Fiddler Everywhere MCP server to give LLM-powered coding assistants (VS Code, Cursor, Claude Code, GitHub Copilot CLI, and Codex CLI) real-time access to captured HTTPS traffic for debugging, security analysis, and performance optimization."
 slug: fiddler-mcp-server
 publish: true
 position: 1
@@ -47,6 +47,21 @@ The generic settings for the Fiddler Everywhere MCP server are:
 * **Server type**: `http`
 * **Server URL**: `http://localhost:8868/mcp` (default value - the port can be customized through **Settings** > **MCP Server** > **Manual setup**)
 * **Authorization**: A generated unique API key to be placed as an `Authorization` header.
+
+### Codex CLI
+
+To configure the Fiddler Everywhere MCP server in Codex CLI, add the following entry to `~/.codex/config.toml`:
+
+```toml
+[mcp_servers.fiddler]
+enabled = true
+url = "http://localhost:8868/mcp"
+
+[mcp_servers.fiddler.http_headers]
+Authorization = "ApiKey FIDDLER_API_KEY_HERE"
+```
+
+Replace `FIDDLER_API_KEY_HERE` with the API key generated in **Settings** > **MCP Server** > **Manual setup**. Keep the configuration file private because it contains the API key in plaintext.
 
 ### GitHub Copilot in Visual Studio Code
 
@@ -213,12 +228,13 @@ To use the Fiddler Everywhere MCP server:
 2. Configure the MCP server in your IDE:
     * [GitHub Copilot in Visual Studio Code](#github-copilot-in-visual-studio-code)
     * [GitHub Copilot CLI](#github-copilot-cli)
+    * [Codex CLI](#codex-cli)
     * [Cursor](#cursor)
     * [Claude Code](#claude-code)
     * [Claude Desktop](#claude-desktop)
     * Or any other compatible tool that supports MCP servers.
 3. Enable the **agent mode** in your IDE.
-4. Start your prompt with `#fiddler` (or with `#` followed by your custom server name, if configured).
+4. If your client supports MCP server mentions, start your prompt with `#fiddler` (or `#` followed by your custom server name, if configured).
 
 The MCP server will provide context from your captured HTTPS traffic to enhance your MCP-assisted development workflow.
 
@@ -233,7 +249,7 @@ The Fiddler Everywhere MCP server supports the following capturing modes:
 - [Browser capturing mode](slug://capture-browser-traffic)
 - [Terminal capturing mode](slug://capture-terminal-traffic)
 - [Reverse proxy](slug://fiddler-reverse-proxy)
-- [Network capturing mode](slug://capture-network-traffic) (via the `capture_application` tool)
+- [Network capturing mode](slug://capture-network-traffic) through the `capture_application` tool on Windows and macOS. This mode is not supported on Linux; use terminal capturing mode instead.
 
 ## Available MCP Tools
 
@@ -254,16 +270,15 @@ The Fiddler Everywhere MCP server exposes the following tools. These tools can b
 |:-----|:------------|
 | `start_capture_with_browser` | Opens a fresh Chrome-based browser instance with Fiddler proxy settings applied. |
 | `start_capture_with_terminal` | Starts a new terminal with Fiddler proxy settings applied. |
-| `capture_application` | Starts network-level traffic capture scoped to a specific application. Accepts an optional process name or PID parameter — when omitted, the tool auto-detects the target from the active IDE or CLI context. Can be invoked as a natural-language prompt (`#fiddler capture traffic from my app`) or as a slash command (`/mcp.fiddler.capture-application`). If the network capture extension is not yet installed and enabled, the tool guides the user through the prerequisite setup flow, including the admin rights requirement and system-level extension approval. |
+| `capture_application` | Starts network-level traffic capture scoped to a specific application on Windows and macOS. Requires a process name or PID; the MCP client must supply it. Can be invoked as a natural-language prompt (`#fiddler capture traffic from my app`) or as a slash command (`/mcp.fiddler.capture-application`). If the network capture extension is not yet installed and enabled, the tool guides the user through the prerequisite setup flow, including the admin rights requirement and system-level extension approval. Not supported on Linux; use `start_capture_with_terminal` there. |
 
 ### Capturing Application Traffic (`capture_application`)
 
-The `capture_application` tool enables a streamlined, in-chat traffic capture workflow. Instead of leaving the IDE or CLI to configure a reverse proxy or manually start a capturing session, developers can ask their coding assistant to start capturing their app's traffic and the MCP handles the rest.
+The `capture_application` tool enables a streamlined, in-chat traffic capture workflow on Windows and macOS. Instead of leaving the IDE or CLI to configure a reverse proxy or manually start a capturing session, developers can ask their coding assistant to start capturing their app's traffic and the MCP handles the rest.
 
-The tool can target a process in two ways:
+The tool requires the target process name or PID as the `processNameOrPid` parameter. The MCP client must provide this value; the tool does not automatically detect the process from the active IDE or CLI context.
 
-- **Auto-detect (no parameter)** — The tool reads process metadata or the active port from the model request context and scopes capture to the detected application automatically.
-- **Manual targeting (process name or PID)** — You can explicitly specify the process to capture by providing its name or numeric PID. When invoking the tool as a slash command (`/mcp.fiddler.capture-application`), a prompt appears where you can enter the process name or PID directly.
+Provide a process name or numeric PID. Multi-word process names must be wrapped in quotes. On Windows, include the `.exe` extension in process names (for example, `chrome.exe`). When invoking the tool as a slash command (`/mcp.fiddler.capture-application`), enter the process name or PID when prompted.
 
 **Example prompts**
 
@@ -281,7 +296,7 @@ The tool can target a process in two ways:
 
 #### Prerequisite: Network Capture Enablement
 
-The `capture_application` tool relies on the [network capturing mode](slug://capture-network-traffic), which requires a system-level network extension (macOS) or kernel driver (Windows) to be installed and enabled. This setup happens automatically when you first invoke the tool, but the following constraints apply:
+The `capture_application` tool relies on the [network capturing mode](slug://capture-network-traffic), which is available on Windows and macOS and requires a system-level network extension (macOS) or kernel driver (Windows) to be installed and enabled. This setup happens automatically when you first invoke the tool, but the following constraints apply:
 
 - **Administrator privileges are required.** The user must have admin rights on the machine. The MCP notifies the user of this requirement *before* initiating the installation prompt.
 - **Extension installation approval is required.** The user must accept the system-level prompt to install the network capture extension.
