@@ -1,5 +1,46 @@
 [
     {
+        "version": "8.5.0",
+        "title": "Fiddler Everywhere v8.5.0",
+        "date": "Nov 30, 2026",
+        "items": [
+            {
+                "type": "New",
+                "entries": [
+                    {
+                        "title": "Add support for client certificate authentication."
+                    },
+                    {
+                        "title": "Update the Windows network capture driver for better Windows 11 26H2 compatibility."
+                    },
+                    {
+                        "title": "Run scripts in a separate process for improved isolation."
+                    },
+                    {
+                        "title": "Add integrity verification for scripts before execution."
+                    }
+                ]
+            },
+            {
+                "type": "Fixed",
+                "entries": [
+                    {
+                        "title": "App may hang on Windows in certain PowerShell environments."
+                    },
+                    {
+                        "title": "Anonymous analytics might be sent before a user logs in even when the DisableAnalytics policy is set."
+                    },
+                    {
+                        "title": "Rules with very large responses may fail to load."
+                    },
+                    {
+                        "title": "Update third party dependencies to mitigate potential security vulnerabilities."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "version": "8.4.0",
         "title": "Fiddler Everywhere v8.4.0",
         "date": "Nov 5, 2026",
