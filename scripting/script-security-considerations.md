@@ -11,6 +11,10 @@ position: 40
 
 >warning Scripts run in a **separate process** from the Fiddler Everywhere backend, but scripting is **not a hard security sandbox**. Only run scripts you trust. A script from an untrusted source can still access resources available to the script runtime, and a non-cooperating tight loop or deep recursion can hang or crash the scripting process.
 
+## Script Integrity
+
+Fiddler Everywhere uses a trusted hash to check that a script's content has not changed without your knowledge. If a script is changed outside Fiddler Everywhere, you must review and confirm it before it can run. Script source code is not uploaded as part of these checks. Hashing verifies integrity; it does not encrypt scripts or restrict access to files on your computer. Continue to run only scripts you trust.
+
 ## Guardrails Applied to Every Script
 
 Before a script can be enabled, Fiddler Everywhere statically analyzes its code and rejects it if it contains any of the following:
