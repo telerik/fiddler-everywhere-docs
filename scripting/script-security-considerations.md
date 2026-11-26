@@ -13,7 +13,7 @@ position: 40
 
 ## Script Integrity
 
-Fiddler Everywhere uses a trusted hash to check that a script's content has not changed without your knowledge. If a script is changed outside Fiddler Everywhere, you must review and confirm it before it can run. Script source code is not uploaded as part of these checks. Hashing verifies integrity; it does not encrypt scripts or restrict access to files on your computer. Continue to run only scripts you trust.
+Fiddler Everywhere uses a trusted hash to check that a script's content has not changed without your knowledge. If a script cannot be verified, including when it has changed outside Fiddler Everywhere, Fiddler marks it as unverified and prevents it from running. An active script is disabled. Review and confirm the script before enabling it. Script source code is not uploaded as part of these checks. Hashing verifies integrity; it does not encrypt scripts or restrict access to files on your computer. Continue to run only scripts you trust.
 
 ## Guardrails Applied to Every Script
 

@@ -17,7 +17,7 @@ When using Fiddler Everywhere, consider the following security highlights:
 - When HTTPS capturing is enabled, the captured data will contain readable, usually decrypted information. Share that data with trusted parties only and carefully consider what the requests and responses include.
 - All users accessing the Fiddler Everywhere application or saved sessions can also access the captured data.
 - Fiddler supports password protection for saved sessions stored locally or in the cloud. Sessions are stored as SAZ files; enabling password protection adds 256-bit AES encryption. Anyone with access to an unprotected SAZ file can open it.
-- Captured data remains local unless you explicitly upload it through the **Snapshots** collections, **Requests** collections, or **rules**, or share it with collaborators. Signing in verifies your credentials in the cloud.
+- Fiddler Everywhere does not store captured data in its cloud unless you explicitly upload it through the **Snapshots** collections, **Requests** collections, or **rules**, or share it with collaborators. Integrations such as the [Fiddler MCP server](#using-fiddler-mcp-server) can separately provide captured traffic to connected tools, which may send it to model providers. Signing in verifies your credentials in the cloud.
 - Sessions uploaded to the Fiddler Everywhere cloud space are encrypted when password protection is enabled. All uploaded sessions are stored in the cloud as [Fiddler archives](slug://fiddler-saz-format).
 - Fiddler Everywhere can be installed per machine on Windows OS (macOS and Linux installation is only per user). In that case, each Fiddler user logs into the application with their credentials, and the generated data is accessible to the other users.
 - Fiddler Everywhere is [SOC 2 compliant](#soc-compliance).
@@ -74,7 +74,7 @@ Fiddler Everywhere comes with [collaboration in mind](slug://fiddler-sharing) an
 
 ## Using Scripts Securely
 
-Fiddler Everywhere uses a trusted hash to detect changes to script content. If a script changes outside the supported save workflow, review and confirm it before it can run. Script source code is not uploaded as part of these checks.
+Fiddler Everywhere uses a trusted hash to detect changes to script content. If a script cannot be verified, including when it has changed outside the supported save workflow, Fiddler marks it as unverified and prevents it from running. An active script is disabled. Review and confirm the script before enabling it. Script source code is not uploaded as part of these checks.
 
 Hashing verifies integrity; it does not encrypt scripts or restrict access to files on your computer. Only run scripts you trust. For more information, see [Scripting Security Considerations](slug://fiddler-script-security).
 
