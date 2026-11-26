@@ -35,6 +35,12 @@ To capture and decrypt HTTPS traffic, you must install and trust the Fiddler roo
   - **Checkbox active, ignore list populated**: Ignores errors only for listed endpoints (new connections only).
   - **Checkbox inactive**: Fiddler will show a warning page for certificate errors, with a quick link to add the endpoint to the ignore list.
 
+## Client Certificate
+
+Use **Client certificate** to select and **Validate** a certificate that Fiddler can present to servers requesting TLS client authentication. Leave the path empty to use a `ClientCertificate` file in the default `ClientCertificates` directory. Select **Clear** to remove an explicit path, and **Save** to apply changes.
+
+The **Don't warn when a site requests a client certificate** option suppresses the warning shown when a server requests a certificate and none is configured. For supported formats, default-directory file names, and per-host selection with rules or scripts, see [Using Client Certificates](slug://client-certificates).
+
 ## Default HTTPS Settings
 
 The following figure displays the default settings of the **HTTPS** menu:

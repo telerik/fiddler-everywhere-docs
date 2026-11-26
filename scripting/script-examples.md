@@ -205,6 +205,10 @@ void OnBeforeRequest(Session oSession)
 }
 ```
 
+## Select a Client Certificate
+
+Set the `https-Client-Certificate` flag on a CONNECT session to select a client certificate for the destination. For a complete example, supported formats, and connection-reuse limitations, see [Using Client Certificates](slug://client-certificates#select-a-certificate-with-a-script).
+
 ## See Also
 
 - [Scripting Overview](slug://fiddler-script)
