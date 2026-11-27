@@ -401,6 +401,14 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
             <td>Final </td>
         </tr>
         <tr>
+            <td><b>Use client certificate</b></td>
+            <td>Certificate file path or file picker</td>
+            <td>n/a</td>
+            <td>n/a</td>
+            <td>Selects a client certificate for newly captured CONNECT requests when HTTPS capturing is enabled. Match the destination host and port before TLS negotiation.</td>
+            <td>Non-final</td>
+        </tr>
+        <tr>
             <td><b>Close Gracefully</b></td>
             <td>n/a</td>
             <td>n/a</td>
@@ -442,6 +450,8 @@ Apart from returning files or predefined responses, a rule in Fiddler Everywhere
         </tr>
     </tbody>
 </table>
+
+For certificate formats, configuration steps, and connection-reuse limitations, see [Using Client Certificates](slug://client-certificates).
 
 ## Final and Non-Final Actions
 
